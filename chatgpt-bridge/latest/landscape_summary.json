@@ -22,17 +22,17 @@
         "center": [
           760.0,
           575.0,
-          4335.546875
+          4299.21875
         ],
         "extent": [
           50800.0,
           50800.0,
-          4565.234375
+          4601.5625
         ],
         "min": [
           -50040.0,
           -50225.0,
-          -229.6875
+          -302.34375
         ],
         "max": [
           51560.0,
@@ -42,11 +42,11 @@
         "dimensions_cm": [
           101600.0,
           101600.0,
-          9130.46875
+          9203.125
         ]
       },
       "world_z_bounds": [
-        -229.6875,
+        -302.34375,
         8900.78125
       ],
       "landscape_material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_HouseValley.MI_EX_HouseValley",
@@ -60,7 +60,8 @@
         "layer1": {},
         "layer2": {},
         "Layer3": {},
-        "NoGrass": {}
+        "NoGrass": {},
+        "__LANDSCAPE_VISIBILITY__": {}
       },
       "components": [
         {
@@ -70,46 +71,6 @@
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_1",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_2",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_3",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_4",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_5",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_6",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_7",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_8",
-          "class": "LandscapeComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_9",
           "class": "LandscapeComponent",
           "layer_allocations": null
         },
@@ -164,6 +125,11 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_2",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_20",
           "class": "LandscapeComponent",
           "layer_allocations": null
@@ -210,6 +176,11 @@
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_29",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_3",
           "class": "LandscapeComponent",
           "layer_allocations": null
         },
@@ -264,6 +235,11 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_4",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_40",
           "class": "LandscapeComponent",
           "layer_allocations": null
@@ -310,6 +286,11 @@
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_49",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_5",
           "class": "LandscapeComponent",
           "layer_allocations": null
         },
@@ -364,6 +345,11 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_6",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_60",
           "class": "LandscapeComponent",
           "layer_allocations": null
@@ -384,52 +370,27 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_7",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_8",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeComponent_9",
+          "class": "LandscapeComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_0",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_1",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_2",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_3",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_4",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_5",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_6",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_7",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_8",
-          "class": "LandscapeHeightfieldCollisionComponent",
-          "layer_allocations": null
-        },
-        {
-          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_9",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
         },
@@ -484,6 +445,11 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_2",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_20",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
@@ -530,6 +496,11 @@
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_29",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_3",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
         },
@@ -584,6 +555,11 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_4",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_40",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
@@ -630,6 +606,11 @@
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_49",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_5",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
         },
@@ -684,6 +665,11 @@
           "layer_allocations": null
         },
         {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_6",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_60",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
@@ -700,6 +686,21 @@
         },
         {
           "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_63",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_7",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_8",
+          "class": "LandscapeHeightfieldCollisionComponent",
+          "layer_allocations": null
+        },
+        {
+          "path": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.Landscape_0.LandscapeHeightfieldCollisionComponent_9",
           "class": "LandscapeHeightfieldCollisionComponent",
           "layer_allocations": null
         }
