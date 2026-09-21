@@ -32,28 +32,28 @@
   },
   "framing_bounds": {
     "min": [
-      -5182.287614035755,
-      -4367.84330913311,
+      -3592.359512364324,
+      -3515.0816889584316,
       -669.0
     ],
     "max": [
-      7627.968305137089,
-      11090.741045926747,
+      6620.753858067654,
+      10396.186634946804,
       1351.0
     ],
     "center": [
-      1222.8403455506673,
-      3361.4488683968184,
+      1514.1971728516648,
+      3440.5524729941862,
       341.0
     ],
     "extent": [
-      6405.127959586422,
-      7729.292177529928,
+      5106.556685215989,
+      6955.634161952617,
       1010.0
     ],
     "dimensions_cm": [
-      12810.255919172843,
-      15458.584355059857,
+      10213.113370431978,
+      13911.268323905235,
       2020.0
     ]
   },
@@ -64,13 +64,13 @@
     0.0
   ],
   "units": "centimeters; 100 Unreal units = 1 meter",
-  "actor_count": 684,
-  "indexed_actor_count": 684,
+  "actor_count": 685,
+  "indexed_actor_count": 685,
   "static_mesh_actor_count": 599,
   "instanced_component_count": 40,
   "hism_component_count": 40,
-  "foliage_instance_count": 9316,
-  "all_ism_instance_count": 9316,
+  "foliage_instance_count": 2560,
+  "all_ism_instance_count": 2560,
   "landscape_proxy_count": 1,
   "light_count": 29,
   "lighting_types": {
@@ -79,6 +79,7 @@
     "DirectionalLightComponent": 1,
     "SkyLightComponent": 1,
     "PostProcessVolume": 2,
+    "ExponentialHeightFog": 1,
     "PointLightComponent": 15
   },
   "water_actor_count": 1,

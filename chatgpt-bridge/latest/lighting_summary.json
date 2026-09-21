@@ -1,7 +1,7 @@
 {
   "lighting": [
     {
-      "actor": "ReviewOnly_Atmosphere",
+      "actor": "EX_PostRain_Atmosphere",
       "type": "SkyAtmosphere",
       "location": [
         0.0,
@@ -352,7 +352,7 @@
       "indirect_lighting_intensity": 1.5
     },
     {
-      "actor": "ReviewOnly_Sun",
+      "actor": "EX_PostRain_Sun",
       "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.DirectionalLight_0.LightComponent0",
       "type": "DirectionalLightComponent",
       "location": [
@@ -361,8 +361,8 @@
         1300.0
       ],
       "rotation": [
-        -37.00000000000001,
-        -65.0,
+        -32.00000000000001,
+        -38.000000000000014,
         -0.0
       ],
       "scale": [
@@ -370,8 +370,8 @@
         2.5,
         2.5
       ],
-      "intensity": 8000.0,
-      "temperature": 5900.0,
+      "intensity": 6000.0,
+      "temperature": 6500.0,
       "use_temperature": true,
       "light_color": {
         "b": 255,
@@ -387,7 +387,7 @@
       "indirect_lighting_intensity": 1.0
     },
     {
-      "actor": "ReviewOnly_Sky",
+      "actor": "EX_PostRain_Sky",
       "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.SkyLight_0.SkyLightComponent0",
       "type": "SkyLightComponent",
       "location": [
@@ -405,7 +405,7 @@
         1.0,
         1.0
       ],
-      "intensity": 120.0,
+      "intensity": 1.0,
       "temperature": null,
       "use_temperature": null,
       "light_color": {
@@ -422,7 +422,7 @@
       "indirect_lighting_intensity": 1.0
     },
     {
-      "actor": "ReviewOnly_Exposure",
+      "actor": "EX_PostRain_NeutralExposure",
       "type": "PostProcessVolume",
       "location": [
         0.0,
@@ -674,6 +674,70 @@
       "cast_static_shadows": true,
       "attenuation_radius": 4000.0,
       "indirect_lighting_intensity": 1.0
+    },
+    {
+      "actor": "EX_PostRain_Humidity",
+      "type": "ExponentialHeightFog",
+      "location": [
+        0.0,
+        4000.0,
+        -100.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          4000.0,
+          -100.0
+        ],
+        "extent": [
+          128.0,
+          128.0,
+          128.0
+        ],
+        "min": [
+          -128.0,
+          3872.0,
+          -228.0
+        ],
+        "max": [
+          128.0,
+          4128.0,
+          28.0
+        ],
+        "dimensions_cm": [
+          256.0,
+          256.0,
+          256.0
+        ]
+      },
+      "components": [
+        {
+          "class": "BillboardComponent",
+          "fog_density": null,
+          "fog_height_falloff": null,
+          "volumetric_fog": null,
+          "mobility": "<ComponentMobility.MOVABLE: 2>"
+        },
+        {
+          "class": "ExponentialHeightFogComponent",
+          "fog_density": 0.006000000052154064,
+          "fog_height_falloff": 0.18000000715255737,
+          "volumetric_fog": null,
+          "mobility": "<ComponentMobility.MOVABLE: 2>"
+        }
+      ],
+      "unbound": null,
+      "priority": null
     },
     {
       "actor": "LivingLamp",
