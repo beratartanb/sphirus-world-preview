@@ -1,0 +1,62 @@
+{
+  "water": [
+    {
+      "actor": "EX_Pond_CalmSurface",
+      "class": "StaticMeshActor",
+      "location": [
+        -150.0,
+        4200.0,
+        -125.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        10.0,
+        8.0,
+        1.0
+      ],
+      "bounds": {
+        "center": [
+          -150.0,
+          4200.0,
+          -125.0
+        ],
+        "extent": [
+          2000.0,
+          1600.0,
+          1.4210854715202004e-14
+        ],
+        "min": [
+          -2150.0,
+          2600.0,
+          -125.00000000000001
+        ],
+        "max": [
+          1850.0,
+          5800.0,
+          -124.99999999999999
+        ],
+        "dimensions_cm": [
+          4000.0,
+          3200.0,
+          2.842170943040401e-14
+        ]
+      },
+      "detection_evidence": [
+        "/Game/PineForestPack/Meshes/Water/SM_WaterPlane.SM_WaterPlane",
+        "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond.MI_EX_Pond"
+      ],
+      "materials": [
+        "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond.MI_EX_Pond"
+      ],
+      "components": [
+        "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.StaticMeshActor_5.StaticMeshComponent0"
+      ],
+      "spline_components": []
+    }
+  ],
+  "custom_solution": "Asset-backed detection includes SM_WaterPlane / MI_EX_Pond, verified in project source; inspect detection_evidence"
+}
