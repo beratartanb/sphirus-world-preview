@@ -3,7 +3,7 @@
 Read bridge_status.json first, then scene_summary.json, then Screenshots/.
 For environment review read foliage_summary, landscape_summary, water_summary and lighting_summary. For specific objects read actors_index and asset_usage. camera_plan describes capture poses; verification records preservation checks.
 
-Run: 2026-09-22_024909_672953_bd59bb
+Run: 2026-09-22_100144_119050_69598a
 Map: /Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse
 Engine: 5.8.1-56057345+++UE5+Release-5.8
 
@@ -22,8 +22,12 @@ Screenshots:
 - 09_house_to_forest.png
 - 10_forest_to_house.png
 - 11_forest_edge.png
-- 12_pond_west_approach.png
-- 13_shore_and_forest_depth.png
+- 12_house_to_pond_slope.png
+- 13_pond_side_path.png
+- 14_uphill_path.png
+- 15_uphill_forest_lookback.png
+- 16_small_front_footpath.png
+- 17_shoreline_gameplay.png
 
 Warnings:
 - Scope: currently loaded editor actors only; unloaded World Partition cells and levels are not loaded or modified.
