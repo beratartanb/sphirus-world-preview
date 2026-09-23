@@ -88,7 +88,609 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_10",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_12",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/OakForestEnv/Meshes/ScanAssets/SM_Root_4.SM_Root_4",
+      "instance_count": 4,
+      "bounds": {
+        "min": [
+          -1072.786865234375,
+          -2732.4560546875,
+          -84.62263769153566
+        ],
+        "max": [
+          2787.94580078125,
+          3687.776885986328,
+          435.7477789496997
+        ],
+        "center": [
+          857.5794677734375,
+          477.66041564941406,
+          175.56257062908202
+        ],
+        "extent": [
+          1930.3663330078125,
+          3210.116470336914,
+          260.1852083206177
+        ]
+      },
+      "sample_count": 4,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.41999998688697815,
+          0.41999998688697815,
+          0.41999998688697815
+        ],
+        "max": [
+          0.6999999880790712,
+          0.6999999880790713,
+          0.699999988079071
+        ],
+        "mean": [
+          0.5799999907612801,
+          0.5799999907612801,
+          0.5799999907612801
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -1,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -940.0,
+          -2670.0,
+          -58.58156675342531
+        ],
+        "max": [
+          2680.0,
+          3590.0,
+          408.765992641449
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_220",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/OakForestEnv/Meshes/Trees_Leaf/Spring/SM_Oak_L_4.SM_Oak_L_4",
+      "instance_count": 2,
+      "bounds": {
+        "min": [
+          -2687.2350463867188,
+          -523.3363647460938,
+          -23.329509258270264
+        ],
+        "max": [
+          2671.85888671875,
+          9318.1455078125,
+          2541.8835644721985
+        ],
+        "center": [
+          -7.688079833984375,
+          4397.404571533203,
+          1259.277027606964
+        ],
+        "extent": [
+          2679.5469665527344,
+          4920.740936279297,
+          1282.6065368652344
+        ]
+      },
+      "sample_count": 2,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "max": [
+          0.8000000119209292,
+          0.8000000119209292,
+          0.800000011920929
+        ],
+        "mean": [
+          0.8000000119209291,
+          0.8000000119209291,
+          0.800000011920929
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -3,
+            0
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            8
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -2140.0,
+          250.0,
+          39.15252733230591
+        ],
+        "max": [
+          1960.0,
+          8420.0,
+          350.6726269721985
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_221",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/PineForestPack/Meshes/TerrainPatches/SM_TreeStump01.SM_TreeStump01",
+      "instance_count": 2,
+      "bounds": {
+        "min": [
+          -805.0965728759766,
+          1648.311351776123,
+          -55.143738576028824
+        ],
+        "max": [
+          4252.11767578125,
+          5699.485107421875,
+          205.5203658856411
+        ],
+        "center": [
+          1723.5105514526367,
+          3673.898229598999,
+          75.18831365480614
+        ],
+        "extent": [
+          2528.6071243286133,
+          2025.586877822876,
+          130.33205223083496
+        ]
+      },
+      "sample_count": 2,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.8500000238418578,
+          0.8500000238418578,
+          0.8500000238418579
+        ],
+        "max": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ],
+        "mean": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -1,
+            1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -740.0,
+          1710.0,
+          -31.98419649228859
+        ],
+        "max": [
+          4190.0,
+          5650.0,
+          146.09552781954002
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_250",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/OakForestEnv/Meshes/Trees_Leaf/Spring/SM_Oak_L_2.SM_Oak_L_2",
+      "instance_count": 2,
+      "bounds": {
+        "min": [
+          -3571.599609375,
+          -2463.6318359375,
+          113.83452224731445
+        ],
+        "max": [
+          4377.305419921875,
+          3568.8018798828125,
+          3314.442970275879
+        ],
+        "center": [
+          402.8529052734375,
+          552.5850219726562,
+          1714.1387462615967
+        ],
+        "extent": [
+          3974.4525146484375,
+          3016.2168579101562,
+          1600.3042240142822
+        ]
+      },
+      "sample_count": 2,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "max": [
+          0.8000000119209292,
+          0.8000000119209292,
+          0.800000011920929
+        ],
+        "mean": [
+          0.8000000119209291,
+          0.8000000119209291,
+          0.800000011920929
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -3,
+            -2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -2680.0,
+          -1730.0,
+          164.9876480102539
+        ],
+        "max": [
+          3540.0,
+          2820.0,
+          1063.5451917648315
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_252",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/OakForestEnv/Meshes/Trees_Leaf/Spring/SM_Oak_L_1.SM_Oak_L_1",
+      "instance_count": 2,
+      "bounds": {
+        "min": [
+          -3366.254150390625,
+          1469.5792846679688,
+          -70.86899137496948
+        ],
+        "max": [
+          -518.645263671875,
+          8616.1904296875,
+          1742.0483918190002
+        ],
+        "center": [
+          -1942.44970703125,
+          5042.884857177734,
+          835.5897002220154
+        ],
+        "extent": [
+          1423.804443359375,
+          3573.3055725097656,
+          906.4586915969849
+        ]
+      },
+      "sample_count": 2,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "max": [
+          0.8000000119209292,
+          0.8000000119209292,
+          0.800000011920929
+        ],
+        "mean": [
+          0.8000000119209291,
+          0.8000000119209291,
+          0.800000011920929
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -3,
+            8
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -2650.0,
+          2060.0,
+          -41.316842555999756
+        ],
+        "max": [
+          -1100.0,
+          8000.0,
+          -2.5974864959716797
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_261",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/Real_Ivy_Pack/Meshes/foliage/Ivy/SM_ivy_corner_left_sparse_up_01_leaves.SM_ivy_corner_left_sparse_up_01_leaves",
+      "instance_count": 1,
+      "bounds": {
+        "min": [
+          -31.258996963500977,
+          -32.56974411010742,
+          102.98828935623169
+        ],
+        "max": [
+          287.473388671875,
+          282.6820068359375,
+          354.15419816970825
+        ],
+        "center": [
+          128.107195854187,
+          125.05613136291504,
+          228.57124376296997
+        ],
+        "extent": [
+          159.366192817688,
+          157.62587547302246,
+          125.58295440673828
+        ]
+      },
+      "sample_count": 1,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "max": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "mean": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -1,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -3.0,
+          -3.0,
+          111.38719987869263
+        ],
+        "max": [
+          -3.0,
+          -3.0,
+          111.38719987869263
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_262",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/Real_Ivy_Pack/Meshes/foliage/Ivy/SM_ivy_corner_left_sparse_up_01_branches.SM_ivy_corner_left_sparse_up_01_branches",
+      "instance_count": 1,
+      "bounds": {
+        "min": [
+          -21.493988037109375,
+          -23.531694412231445,
+          110.5199943780899
+        ],
+        "max": [
+          280.033447265625,
+          276.0742492675781,
+          351.6296467781067
+        ],
+        "center": [
+          129.2697296142578,
+          126.27127742767334,
+          231.0748205780983
+        ],
+        "extent": [
+          150.7637176513672,
+          149.80297183990479,
+          120.55482620000839
+        ]
+      },
+      "sample_count": 1,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "max": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "mean": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -1,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -3.0,
+          -3.0,
+          111.38719987869263
+        ],
+        "max": [
+          -3.0,
+          -3.0,
+          111.38719987869263
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_27",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -98,22 +700,22 @@
         "min": [
           -5390.33927799313,
           -5529.854009101846,
-          -107.09926795959473
+          -116.36441469192505
         ],
         "max": [
           5613.96247981937,
           9879.478510429404,
-          1837.4227046966553
+          1837.4227290153503
         ],
         "center": [
           111.81160091311995,
           2174.812250663779,
-          865.1617183685303
+          860.5291571617126
         ],
         "extent": [
           5502.15087890625,
           7704.666259765625,
-          972.260986328125
+          976.8935718536377
         ]
       },
       "sample_count": 143,
@@ -707,7 +1309,7 @@
         "min": [
           -5264.0,
           -5446.0,
-          -105.13053606033326
+          -114.3526899871826
         ],
         "max": [
           5499.0,
@@ -718,35 +1320,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_11",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_28",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/Calysto/World/Vegetation/Meshes/SM_Young_Black_Spruce_02.SM_Young_Black_Spruce_02",
-      "instance_count": 242,
+      "instance_count": 239,
       "bounds": {
         "min": [
           -9769.898521053943,
           -9287.463287618277,
-          -79.29514503479004
+          -65.89697360992432
         ],
         "max": [
           8628.288002383557,
           13462.785735819223,
-          2133.0132961273193
+          2133.0133771896362
         ],
         "center": [
           -570.8052593351931,
           2087.661224100473,
-          1026.8590755462646
+          1033.558201789856
         ],
         "extent": [
           9199.09326171875,
           11375.12451171875,
-          1106.1542205810547
+          1099.4551753997803
         ]
       },
-      "sample_count": 242,
+      "sample_count": 239,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -756,14 +1358,14 @@
           0.6899999976158142
         ],
         "max": [
-          1.4424477815628054,
-          1.4424477815628054,
+          1.4424477815628052,
+          1.4424477815628052,
           1.4424477815628052
         ],
         "mean": [
-          1.0318982155362437,
-          1.0318982155362437,
-          1.0318982155362437
+          1.0321628027381258,
+          1.0321628027381258,
+          1.0321628027381258
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -1361,8 +1963,8 @@
             -1,
             8
           ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
+          "sample_count": 2,
+          "estimated_instances": 2.0
         },
         {
           "cell_xy": [
@@ -1417,8 +2019,8 @@
             0,
             8
           ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
+          "sample_count": 3,
+          "estimated_instances": 3.0
         },
         {
           "cell_xy": [
@@ -1595,14 +2197,6 @@
           ],
           "sample_count": 3,
           "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            6
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -2001,7 +2595,7 @@
         "min": [
           -9657.0,
           -9219.0,
-          -78.36823844909668
+          -64.97006797790527
         ],
         "max": [
           8495.0,
@@ -2012,7 +2606,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_115",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_29",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -2022,22 +2616,22 @@
         "min": [
           -3717.3409729003906,
           4406.793930053711,
-          -142.16167449951172
+          -141.6146855354309
         ],
         "max": [
           3332.5537109375,
           6528.889404296875,
-          47.86511993408203
+          63.527610301971436
         ],
         "center": [
           -192.3936309814453,
           5467.841667175293,
-          -47.148277282714844
+          -39.043537616729736
         ],
         "extent": [
           3524.9473419189453,
           1061.047737121582,
-          95.01339721679688
+          102.57114791870117
         ]
       },
       "sample_count": 6,
@@ -2046,7 +2640,7 @@
       "scale_statistics": {
         "min": [
           0.6000000238418577,
-          0.6000000238418578,
+          0.6000000238418577,
           0.6000000238418579
         ],
         "max": [
@@ -2111,18 +2705,96 @@
         "min": [
           -3650.0,
           4520.0,
-          -120.74481773376465
+          -120.19782590866089
         ],
         "max": [
           3280.0,
           6440.0,
-          -16.24605941772461
+          -4.654460430145264
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_12",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_3",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/PineForestPack/Meshes/Cliffs/SM_PineGroundRock05.SM_PineGroundRock05",
+      "instance_count": 1,
+      "bounds": {
+        "min": [
+          2653.569320678711,
+          774.8366241455078,
+          163.4950876235962
+        ],
+        "max": [
+          2949.063278198242,
+          976.3136596679688,
+          307.62736225128174
+        ],
+        "center": [
+          2801.3162994384766,
+          875.5751419067383,
+          235.56122493743896
+        ],
+        "extent": [
+          147.74697875976562,
+          100.73851776123047,
+          72.06613731384277
+        ]
+      },
+      "sample_count": 1,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.5600000023841858,
+          0.5600000023841858,
+          0.5600000023841858
+        ],
+        "max": [
+          0.5600000023841858,
+          0.5600000023841858,
+          0.5600000023841858
+        ],
+        "mean": [
+          0.5600000023841858,
+          0.5600000023841858,
+          0.5600000023841858
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            2,
+            0
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          2800.0,
+          876.0,
+          200.8467149734497
+        ],
+        "max": [
+          2800.0,
+          876.0,
+          200.8467149734497
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_30",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -2132,22 +2804,22 @@
         "min": [
           -3647.8551025390625,
           -2950.9482421875,
-          -101.46318197250366
+          -81.27331590652466
         ],
         "max": [
           3692.2666015625,
           6779.24609375,
-          983.5597367286682
+          1390.307647228241
         ],
         "center": [
           22.20574951171875,
           1914.14892578125,
-          441.0482773780823
+          654.5171656608582
         ],
         "extent": [
           3670.0608520507812,
           4865.09716796875,
-          542.5114593505859
+          735.7904815673828
         ]
       },
       "sample_count": 4,
@@ -2156,12 +2828,12 @@
       "scale_statistics": {
         "min": [
           0.899999976158142,
-          0.8999999761581422,
+          0.8999999761581421,
           0.8999999761581421
         ],
         "max": [
-          1.2000000476837158,
-          1.200000047683716,
+          1.2000000476837165,
+          1.2000000476837165,
           1.2000000476837158
         ],
         "mean": [
@@ -2213,18 +2885,18 @@
         "min": [
           -3490.0,
           -2740.0,
-          -56.573970805602016
+          -36.38408948083395
         ],
         "max": [
           3470.0,
           6510.0,
-          871.6432869488979
+          1278.391164546707
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_121",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_31",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -2234,22 +2906,22 @@
         "min": [
           -2873.318359375,
           2659.1302490234375,
-          -133.95602226257324
+          -157.2755560874939
         ],
         "max": [
           2459.5753479003906,
           7606.78515625,
-          48.47519874572754
+          68.23908472061157
         ],
         "center": [
           -206.8715057373047,
           5132.957702636719,
-          -42.74041175842285
+          -44.51823568344116
         ],
         "extent": [
           2666.4468536376953,
           2473.8274536132812,
-          91.21561050415039
+          112.75732040405273
         ]
       },
       "sample_count": 112,
@@ -2257,8 +2929,8 @@
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.7530000209808348,
-          0.7530000209808348,
+          0.753000020980835,
+          0.753000020980835,
           0.753000020980835
         ],
         "max": [
@@ -2419,28 +3091,28 @@
         "min": [
           -2848.0,
           2686.0,
-          -133.8452388977051
+          -157.1705907722473
         ],
         "max": [
           2435.0,
           7580.0,
-          -10.072044372558594
+          9.691842555999756
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_13",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_32",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PN_coniferBushes_I/Meshes/Pine/Pine_08.Pine_08",
-      "instance_count": 67,
+      "instance_count": 65,
       "bounds": {
         "min": [
           -5495.8388671875,
           -8446.71142578125,
-          -58.58098602294922
+          -52.49706268310547
         ],
         "max": [
           6675.92431640625,
@@ -2450,15 +3122,15 @@
         "center": [
           590.042724609375,
           1005.393310546875,
-          1011.0540390014648
+          1014.0960006713867
         ],
         "extent": [
           6085.881591796875,
           9452.104736328125,
-          1069.635025024414
+          1066.5930633544922
         ]
       },
-      "sample_count": 67,
+      "sample_count": 65,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -2473,9 +3145,9 @@
           1.159999966621399
         ],
         "mean": [
-          0.9091188044690374,
-          0.9091188044690374,
-          0.9091188044690374
+          0.9087839988561777,
+          0.9087839988561777,
+          0.9087839988561777
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -2625,8 +3297,8 @@
             2,
             3
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -2641,8 +3313,8 @@
             2,
             6
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -2817,7 +3489,7 @@
         "min": [
           -5440.0,
           -8360.0,
-          -57.36713790893555
+          -51.11711406707764
         ],
         "max": [
           6600.0,
@@ -2828,35 +3500,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_14",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_33",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/Fishermans_Cabin/Meshes/Foliage/Bush/SM_Bush_03.SM_Bush_03",
-      "instance_count": 202,
+      "instance_count": 200,
       "bounds": {
         "min": [
           -6868.91796875,
           -7647.427734375,
-          -79.18799209594727
+          -64.14787530899048
         ],
         "max": [
           6752.56640625,
           11372.8134765625,
-          1923.5422096252441
+          1949.4263644218445
         ],
         "center": [
           -58.17578125,
           1862.69287109375,
-          922.1771087646484
+          942.639244556427
         ],
         "extent": [
           6810.7421875,
           9510.12060546875,
-          1001.3651008605957
+          1006.7871198654175
         ]
       },
-      "sample_count": 202,
+      "sample_count": 200,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -2871,9 +3543,9 @@
           1.3700000047683716
         ],
         "mean": [
-          1.0110063098444797,
-          1.0110063098444797,
-          1.0110063098444797
+          1.01080636292696,
+          1.01080636292696,
+          1.01080636292696
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -3359,8 +4031,8 @@
             2,
             6
           ],
-          "sample_count": 5,
-          "estimated_instances": 5.0
+          "sample_count": 3,
+          "estimated_instances": 3.0
         },
         {
           "cell_xy": [
@@ -3631,18 +4303,18 @@
         "min": [
           -6773.0,
           -7582.0,
-          -77.44198226928711
+          -62.428406715393066
         ],
         "max": [
           6696.0,
           11282.0,
-          1830.845287612915
+          1842.093040325165
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_16",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_34",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -3652,22 +4324,22 @@
         "min": [
           -8072.825059761782,
           -7634.921128303733,
-          -13.534901905059996
+          117.54031152725202
         ],
         "max": [
           6532.020887503843,
           10767.973891227517,
-          3426.2506205558775
+          3417.4461342811583
         ],
         "center": [
           -770.4020861289691,
           1566.526381461892,
-          1706.3578593254088
+          1767.4932229042051
         ],
         "extent": [
           7302.4229736328125,
           9201.447509765625,
-          1719.8927612304688
+          1649.9529113769531
         ]
       },
       "sample_count": 14,
@@ -3813,18 +4485,18 @@
         "min": [
           -7718.743501246039,
           -7296.763261690237,
-          487.2448097229004
+          618.3200727462769
         ],
         "max": [
           6168.003611042192,
           10354.327190389497,
-          2630.5457810359367
+          2621.7413405375846
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_2",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_35",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -3834,22 +4506,22 @@
         "min": [
           -4225.644775390625,
           -3918.5009765625,
-          -215.61257934570312
+          -215.61257696151733
         ],
         "max": [
           4343.9697265625,
           8458.0400390625,
-          1154.3330688476562
+          1142.5671105384827
         ],
         "center": [
           59.1624755859375,
           2269.76953125,
-          469.36024475097656
+          463.47726678848267
         ],
         "extent": [
           4284.8072509765625,
           6188.2705078125,
-          684.9728240966797
+          679.08984375
         ]
       },
       "sample_count": 7,
@@ -3867,7 +4539,7 @@
           1.2999999523162842
         ],
         "mean": [
-          0.9871428438595365,
+          0.9871428438595367,
           0.9871428438595365,
           0.9871428438595363
         ]
@@ -3939,190 +4611,18 @@
         "min": [
           -3800.0,
           -3500.0,
-          -79.05805397033691
+          -87.49317598342896
         ],
         "max": [
           3930.0,
           8010.0,
-          962.8345937728882
+          951.0686368942261
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_200",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/OakForestEnv/Meshes/Trees_Leaf/Spring/SM_Oak_L_4.SM_Oak_L_4",
-      "instance_count": 2,
-      "bounds": {
-        "min": [
-          -2687.2350463867188,
-          -523.3363647460938,
-          -44.09391784667969
-        ],
-        "max": [
-          2671.85888671875,
-          9318.1455078125,
-          2359.6251373291016
-        ],
-        "center": [
-          -7.688079833984375,
-          4397.404571533203,
-          1157.765609741211
-        ],
-        "extent": [
-          2679.5469665527344,
-          4920.740936279297,
-          1201.8595275878906
-        ]
-      },
-      "sample_count": 2,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.800000011920929,
-          0.800000011920929,
-          0.800000011920929
-        ],
-        "max": [
-          0.8000000119209292,
-          0.8000000119209292,
-          0.800000011920929
-        ],
-        "mean": [
-          0.8000000119209291,
-          0.8000000119209291,
-          0.800000011920929
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -3,
-            0
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            8
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -2140.0,
-          250.0,
-          18.38811683654785
-        ],
-        "max": [
-          1960.0,
-          8420.0,
-          168.41419982910156
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_208",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/PineForestPack/Meshes/TerrainPatches/SM_TreeStump01.SM_TreeStump01",
-      "instance_count": 2,
-      "bounds": {
-        "min": [
-          -805.0965728759766,
-          1648.311351776123,
-          42.23052852525902
-        ],
-        "max": [
-          4252.11767578125,
-          5699.485107421875,
-          151.37745159044456
-        ],
-        "center": [
-          1723.5105514526367,
-          3673.898229598999,
-          96.80399005785179
-        ],
-        "extent": [
-          2528.6071243286133,
-          2025.586877822876,
-          54.57346153259277
-        ]
-      },
-      "sample_count": 2,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.8500000238418578,
-          0.8500000238418577,
-          0.8500000238418578
-        ],
-        "max": [
-          0.8500000238418579,
-          0.8500000238418579,
-          0.8500000238418579
-        ],
-        "mean": [
-          0.8500000238418579,
-          0.8500000238418578,
-          0.8500000238418579
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -1,
-            1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -740.0,
-          1710.0,
-          54.42745845689964
-        ],
-        "max": [
-          4190.0,
-          5650.0,
-          83.23080699815941
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_26",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_36",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -4132,22 +4632,22 @@
         "min": [
           -20526.086378820226,
           -18295.822265371455,
-          -23.519978942871603
+          37.08341413497874
         ],
         "max": [
           22008.399949304774,
           22117.101562753545,
-          6016.828653869628
+          6016.828897533416
         ],
         "center": [
           741.156785242274,
           1910.6396486910453,
-          2996.6543374633784
+          3026.9561558341975
         ],
         "extent": [
           21267.2431640625,
           20206.4619140625,
-          3020.17431640625
+          2989.8727416992188
         ]
       },
       "sample_count": 385,
@@ -6965,7 +7465,7 @@
         "min": [
           -20043.0,
           -17823.0,
-          465.33430550994876
+          497.1016924301148
         ],
         "max": [
           21678.0,
@@ -6976,7 +7476,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_27",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_37",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -10590,7 +11090,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_29",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_38",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -10600,7 +11100,7 @@
         "min": [
           -20381.173828125,
           -18508.509765625,
-          -139.06538627014197
+          -136.62214896545447
         ],
         "max": [
           21636.185546875,
@@ -10610,12 +11110,12 @@
         "center": [
           627.505859375,
           1990.4384765625,
-          3720.5643134368893
+          3721.785932089233
         ],
         "extent": [
           21008.6796875,
           20498.9482421875,
-          3859.6296997070312
+          3858.4080810546875
         ]
       },
       "sample_count": 300,
@@ -12849,7 +13349,7 @@
         "min": [
           -19908.0,
           -17761.0,
-          54.74269530944824
+          57.18600890808105
         ],
         "max": [
           21098.0,
@@ -12860,85 +13360,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_3",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/PineForestPack/Meshes/Cliffs/SM_PineGroundRock05.SM_PineGroundRock05",
-      "instance_count": 1,
-      "bounds": {
-        "min": [
-          2653.569320678711,
-          774.8366241455078,
-          163.4950876235962
-        ],
-        "max": [
-          2949.063278198242,
-          976.3136596679688,
-          307.62736225128174
-        ],
-        "center": [
-          2801.3162994384766,
-          875.5751419067383,
-          235.56122493743896
-        ],
-        "extent": [
-          147.74697875976562,
-          100.73851776123047,
-          72.06613731384277
-        ]
-      },
-      "sample_count": 1,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.5600000023841858,
-          0.5600000023841858,
-          0.5600000023841858
-        ],
-        "max": [
-          0.5600000023841858,
-          0.5600000023841858,
-          0.5600000023841858
-        ],
-        "mean": [
-          0.5600000023841858,
-          0.5600000023841858,
-          0.5600000023841858
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            2,
-            0
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          2800.0,
-          876.0,
-          200.8467149734497
-        ],
-        "max": [
-          2800.0,
-          876.0,
-          200.8467149734497
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_34",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_39",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -12948,22 +13370,22 @@
         "min": [
           -3664.76171875,
           -2998.3984375,
-          -116.56250953674316
+          -92.48235130310059
         ],
         "max": [
           3588.898208618164,
           6650.939392089844,
-          645.8466510772705
+          593.0400714874268
         ],
         "center": [
           -37.93175506591797,
           1826.2704772949219,
-          264.6420707702637
+          250.2788600921631
         ],
         "extent": [
           3626.829963684082,
           4824.668914794922,
-          381.20458030700684
+          342.7612113952637
         ]
       },
       "sample_count": 8,
@@ -13061,18 +13483,18 @@
         "min": [
           -3480.0,
           -2850.0,
-          -84.09988212585449
+          -73.91609954833984
         ],
         "max": [
           3440.0,
           6480.0,
-          579.1447649002075
+          526.3381490707397
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_35",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_40",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -13082,22 +13504,22 @@
         "min": [
           -4083.0472717285156,
           -1917.30908203125,
-          -112.24564434509278
+          -122.34309221725465
         ],
         "max": [
           2565.583984375,
           7676.330078125,
-          303.70451282043456
+          303.70451520462035
         ],
         "center": [
           -758.7316436767578,
           2879.510498046875,
-          95.72943423767089
+          90.68071149368285
         ],
         "extent": [
           3324.315628051758,
           4796.819580078125,
-          207.97507858276367
+          213.0238037109375
         ]
       },
       "sample_count": 6,
@@ -13179,7 +13601,7 @@
         "min": [
           -3810.0,
           -1720.0,
-          -97.40111547088623
+          -107.49855952835082
         ],
         "max": [
           2293.0,
@@ -13190,35 +13612,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_37",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_41",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Plants/SM_FernWide_01.SM_FernWide_01",
-      "instance_count": 175,
+      "instance_count": 171,
       "bounds": {
         "min": [
           -4130.34209803621,
           -5108.396892504457,
-          -96.16246604919434
+          -86.88613319396973
         ],
         "max": [
           5631.62665196379,
           8516.765705151793,
-          1607.5915546417236
+          1607.591537475586
         ],
         "center": [
           750.6422769637902,
           1704.1844063236676,
-          755.7145442962646
+          760.3527021408081
         ],
         "extent": [
           4880.984375,
           6812.581298828125,
-          851.877010345459
+          847.2388353347778
         ]
       },
-      "sample_count": 175,
+      "sample_count": 171,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -13233,9 +13655,9 @@
           1.2000000476837158
         ],
         "mean": [
-          0.9400152032715934,
-          0.9400152032715934,
-          0.9400152032715934
+          0.9393781318999174,
+          0.9393781318999174,
+          0.9393781318999174
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -13561,8 +13983,8 @@
             2,
             5
           ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
+          "sample_count": 2,
+          "estimated_instances": 2.0
         },
         {
           "cell_xy": [
@@ -13657,8 +14079,8 @@
             3,
             5
           ],
-          "sample_count": 7,
-          "estimated_instances": 7.0
+          "sample_count": 4,
+          "estimated_instances": 4.0
         },
         {
           "cell_xy": [
@@ -13745,7 +14167,7 @@
         "min": [
           -4065.9232302697196,
           -5030.0,
-          -96.36884117126465
+          -87.09251070022583
         ],
         "max": [
           5519.0,
@@ -13756,7 +14178,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_38",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_42",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -13766,22 +14188,22 @@
         "min": [
           -9951.283749999999,
           -8707.403369140626,
-          -211.18709564208984
+          -157.01326751708984
         ],
         "max": [
           10378.174257812501,
           11526.774609375,
-          5357.833168029785
+          5262.018226623535
         ],
         "center": [
           213.4452539062513,
           1409.6856201171868,
-          2573.3230361938477
+          2552.5024795532227
         ],
         "extent": [
           10164.72900390625,
           10117.088989257812,
-          2784.5101318359375
+          2709.5157470703125
         ]
       },
       "sample_count": 181,
@@ -14751,18 +15173,18 @@
         "min": [
           -9402.8,
           -8110.0,
-          -110.8829345703125
+          -67.75942993164062
         ],
         "max": [
           9735.91,
           10678.090873542982,
-          2033.2840328216553
+          1924.469316482544
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_39",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_43",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -14772,22 +15194,22 @@
         "min": [
           -9625.94826171875,
           -9759.2220703125,
-          -243.39443254470825
+          -189.28249168395996
         ],
         "max": [
           10548.670390625,
           11297.48984375,
-          4901.254249095917
+          4864.05393409729
         ],
         "center": [
           461.36106445312544,
           769.1338867187496,
-          2328.9299082756042
+          2337.385721206665
         ],
         "extent": [
           10087.309326171875,
           10528.35595703125,
-          2572.3243408203125
+          2526.668212890625
         ]
       },
       "sample_count": 152,
@@ -15645,18 +16067,18 @@
         "min": [
           -9058.48504978528,
           -9020.0,
-          -63.755428314208984
+          -17.75578212738037
         ],
         "max": [
           9984.37,
           10757.93,
-          2061.0432271957397
+          2022.2406034469604
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_40",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_44",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -15666,22 +16088,22 @@
         "min": [
           -20488.203091855394,
           -18334.03877439935,
-          -151.59493255615234
+          -34.102091789245605
         ],
         "max": [
           22138.351595644606,
           22530.21903810065,
-          5376.88712310791
+          5376.886860847473
         ],
         "center": [
           825.0742518946063,
           2098.0901318506512,
-          2612.646095275879
+          2671.3923845291138
         ],
         "extent": [
           21313.27734375,
           20432.12890625,
-          2764.2410278320312
+          2705.4944763183594
         ]
       },
       "sample_count": 1211,
@@ -22435,7 +22857,7 @@
         "min": [
           -20262.0,
           -18058.0,
-          -127.59796333312988
+          -9.580985883331302
         ],
         "max": [
           21856.0,
@@ -22446,7 +22868,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_41",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_45",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -22456,22 +22878,22 @@
         "min": [
           -20543.38671875,
           -18410.025390625,
-          -67.8540443306265
+          170.77080260464572
         ],
         "max": [
           27167.55078125,
           22615.533203125,
-          5943.854634868592
+          5943.854603874177
         ],
         "center": [
           3312.08203125,
           2102.75390625,
-          2938.000295268983
+          3057.3127032394113
         ],
         "extent": [
           23855.46875,
           20512.779296875,
-          3005.8543395996094
+          2886.5419006347656
         ]
       },
       "sample_count": 808,
@@ -27881,7 +28303,7 @@
         "min": [
           -20214.0,
           -18072.0,
-          369.6639609158883
+          604.8188280881295
         ],
         "max": [
           26829.34127906794,
@@ -27892,7 +28314,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_42",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_46",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -27902,22 +28324,22 @@
         "min": [
           -9054.533203125,
           -9445.61328125,
-          -125.80576419830322
+          -112.44530153274536
         ],
         "max": [
           9477.587890625,
           11334.603759765625,
-          4167.991171836853
+          4053.8676867485046
         ],
         "center": [
           211.52734375,
           944.4952392578125,
-          2021.092703819275
+          1970.7111926078796
         ],
         "extent": [
           9266.060546875,
           10390.108520507812,
-          2146.898468017578
+          2083.156494140625
         ]
       },
       "sample_count": 181,
@@ -28871,18 +29293,18 @@
         "min": [
           -8673.31,
           -9120.0,
-          -74.73493576049805
+          -70.40295553207397
         ],
         "max": [
           9104.9,
           10995.655389486468,
-          2080.961072921753
+          1966.8375496864319
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_44",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_47",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -30992,35 +31414,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_46",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_48",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Rocks/SM_PineStone02.SM_PineStone02",
-      "instance_count": 18,
+      "instance_count": 17,
       "bounds": {
         "min": [
           -3823.7431640625,
           -3426.4677734375,
-          -163.9621751455695
+          -69.88090540451117
         ],
         "max": [
           4477.78515625,
           9290.70703125,
-          597.8115522714227
+          792.4686124177545
         ],
         "center": [
           327.02099609375,
           2932.11962890625,
-          216.9246885629266
+          361.29385350662164
         ],
         "extent": [
           4150.76416015625,
           6358.58740234375,
-          380.8868637084961
+          431.1747589111328
         ]
       },
-      "sample_count": 18,
+      "sample_count": 17,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -31030,14 +31452,14 @@
           0.5199999809265137
         ],
         "max": [
-          0.9100000262260437,
-          0.9100000262260437,
+          0.9100000262260436,
+          0.9100000262260436,
           0.9100000262260437
         ],
         "mean": [
-          0.7262826528814105,
-          0.7262826528814105,
-          0.7262826528814104
+          0.7219463376437918,
+          0.7219463376437918,
+          0.7219463376437917
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -31097,14 +31519,6 @@
         {
           "cell_xy": [
             2,
-            4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
             6
           ],
           "sample_count": 1,
@@ -31139,63 +31553,63 @@
         "min": [
           -3770.0,
           -3360.7891254502056,
-          -155.99049377441406
+          -50.70888328552246
         ],
         "max": [
           4380.0,
           9200.0,
-          525.6354200458527
+          721.6092926318161
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_47",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_49",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/DeadLeaves/SM_DeadBranch01.SM_DeadBranch01",
-      "instance_count": 33,
+      "instance_count": 32,
       "bounds": {
         "min": [
           -2904.56689453125,
           -2818.8115234375,
-          -133.84231396678092
+          -76.95608349803092
         ],
         "max": [
           3740.8936157226562,
           8297.487670898438,
-          652.9081132793128
+          622.8661210918128
         ],
         "center": [
           418.1633605957031,
           2739.3380737304688,
-          259.53289965626595
+          272.95501879689095
         ],
         "extent": [
           3322.730255126953,
           5558.149597167969,
-          393.3752136230469
+          349.9111022949219
         ]
       },
-      "sample_count": 33,
+      "sample_count": 32,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.6000000238418575,
-          0.6000000238418575,
+          0.6000000238418577,
+          0.6000000238418577,
           0.6000000238418578
         ],
         "max": [
-          1.120000004768372,
-          1.120000004768372,
+          1.1200000047683718,
+          1.1200000047683718,
           1.1200000047683716
         ],
         "mean": [
-          0.889143497654886,
-          0.8891434976548861,
-          0.889143497654886
+          0.8894292321056128,
+          0.8894292321056128,
+          0.8894292321056128
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -31289,8 +31703,8 @@
             2,
             4
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -31337,18 +31751,18 @@
         "min": [
           -2840.0,
           -2750.1002948009454,
-          -130.67541885375977
+          -73.46529722213745
         ],
         "max": [
           3670.0,
           8250.0,
-          619.158261051178
+          589.1162683868408
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_49",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_50",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -31358,22 +31772,22 @@
         "min": [
           -3747.86181640625,
           -3798.8876953125,
-          -98.93416547775269
+          -96.01393842697144
         ],
         "max": [
           4048.185546875,
           7762.3759765625,
-          901.6811299324036
+          885.6418843269348
         ],
         "center": [
           150.161865234375,
           1981.744140625,
-          401.37348222732544
+          394.8139729499817
         ],
         "extent": [
           3898.023681640625,
           5780.6318359375,
-          500.3076477050781
+          490.8279113769531
         ]
       },
       "sample_count": 67,
@@ -31382,7 +31796,7 @@
       "scale_statistics": {
         "min": [
           0.5099999904632571,
-          0.5099999904632571,
+          0.5099999904632572,
           0.5099999904632568
         ],
         "max": [
@@ -31575,120 +31989,18 @@
         "min": [
           -3600.0,
           -3678.0,
-          -97.9300700531006
+          -95.00985969161988
         ],
         "max": [
           3905.0,
           7558.0,
-          810.3933541634673
+          790.7817571023102
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_5",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/OakForestEnv/Meshes/ScanAssets/SM_Root_4.SM_Root_4",
-      "instance_count": 4,
-      "bounds": {
-        "min": [
-          -1072.786865234375,
-          -2732.4560546875,
-          -64.98976272586793
-        ],
-        "max": [
-          2787.94580078125,
-          3687.776885986328,
-          435.74777847286254
-        ],
-        "center": [
-          857.5794677734375,
-          477.66041564941406,
-          185.3790078734973
-        ],
-        "extent": [
-          1930.3663330078125,
-          3210.116470336914,
-          250.36877059936523
-        ]
-      },
-      "sample_count": 4,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.41999998688697815,
-          0.41999998688697815,
-          0.4199999868869782
-        ],
-        "max": [
-          0.6999999880790712,
-          0.6999999880790712,
-          0.699999988079071
-        ],
-        "mean": [
-          0.5799999907612801,
-          0.5799999907612801,
-          0.5799999907612801
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -1,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -940.0,
-          -2670.0,
-          -52.70145225524902
-        ],
-        "max": [
-          2680.0,
-          3590.0,
-          408.765992641449
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_56",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_51",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -31698,7 +32010,7 @@
         "min": [
           -3581.75439453125,
           4316.493591308594,
-          -57.999748671054846
+          -47.193840467929846
         ],
         "max": [
           3538.067413330078,
@@ -31708,12 +32020,12 @@
         "center": [
           -21.843490600585938,
           5105.466278076172,
-          33.416537797451014
+          38.819491899013514
         ],
         "extent": [
           3559.910903930664,
           788.9726867675781,
-          91.41628646850586
+          86.01333236694336
         ]
       },
       "sample_count": 3,
@@ -31721,17 +32033,17 @@
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
+          0.7499999999999998,
           0.7499999999999999,
-          0.7500000000000001,
-          0.7500000000000001
+          0.75
         ],
         "max": [
           0.9499999880790712,
-          0.949999988079071,
+          0.9499999880790713,
           0.9499999880790712
         ],
         "mean": [
-          0.850000003973643,
+          0.8500000039736428,
           0.850000003973643,
           0.850000003973643
         ]
@@ -31771,7 +32083,7 @@
         "min": [
           -3510.0,
           4390.0,
-          -42.949184381485
+          -32.143279516220105
         ],
         "max": [
           3490.0,
@@ -31782,35 +32094,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_59",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_52",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/Fishermans_Cabin/Meshes/Foliage/Bush/SM_Bush_06.SM_Bush_06",
-      "instance_count": 220,
+      "instance_count": 218,
       "bounds": {
         "min": [
           -8199.1103515625,
           -8160.857421875,
-          -85.99631690979004
+          -69.05950021743774
         ],
         "max": [
           7304.35595703125,
           11717.8427734375,
-          2011.7948818206787
+          2005.6327910423279
         ],
         "center": [
           -447.377197265625,
           1778.49267578125,
-          962.8992824554443
+          968.2866454124451
         ],
         "extent": [
           7751.733154296875,
           9939.35009765625,
-          1048.8955993652344
+          1037.3461456298828
         ]
       },
-      "sample_count": 220,
+      "sample_count": 218,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -31825,9 +32137,9 @@
           1.3799999952316284
         ],
         "mean": [
-          1.0154413374987517,
-          1.0154413374987517,
-          1.0154413374987517
+          1.0161011470567196,
+          1.0161011470567196,
+          1.0161011470567196
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -32105,8 +32417,8 @@
             -1,
             8
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -32375,14 +32687,6 @@
         {
           "cell_xy": [
             2,
-            5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
             7
           ],
           "sample_count": 1,
@@ -32625,18 +32929,18 @@
         "min": [
           -8108.0,
           -8032.0,
-          -84.12263679504395
+          -67.01665306091309
         ],
         "max": [
           7206.0,
           11611.0,
-          1810.8980641685487
+          1804.7359571777342
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_6",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_53",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -32646,22 +32950,22 @@
         "min": [
           2464.081802368164,
           -2341.586669921875,
-          -6.797440409660339
+          -7.041521430015564
         ],
         "max": [
           3559.1658325195312,
           2027.0305786132812,
-          598.1365596055984
+          543.0968853235245
         ],
         "center": [
           3011.6238174438477,
           -157.27804565429688,
-          295.66955959796906
+          268.02768194675446
         ],
         "extent": [
           547.5420150756836,
           2184.308624267578,
-          302.4670000076294
+          275.06920337677
         ]
       },
       "sample_count": 3,
@@ -32670,16 +32974,16 @@
       "scale_statistics": {
         "min": [
           0.5600000023841858,
-          0.5600000023841858,
+          0.5600000023841859,
           0.5600000023841858
         ],
         "max": [
-          0.5799999833106998,
-          0.5799999833106997,
+          0.5799999833106994,
+          0.5799999833106995,
           0.5799999833106995
         ],
         "mean": [
-          0.5666666626930238,
+          0.5666666626930237,
           0.5666666626930238,
           0.5666666626930237
         ]
@@ -32719,46 +33023,46 @@
         "min": [
           2706.0,
           -2066.0,
-          20.56075394153595
+          20.316672921180725
         ],
         "max": [
           3410.0,
           1750.0,
-          437.9868632555008
+          382.9472190141678
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_60",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_54",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Plants/SM_Fern01.SM_Fern01",
-      "instance_count": 80,
+      "instance_count": 78,
       "bounds": {
         "min": [
           -3817.15171004472,
           -5161.484440677659,
-          -97.03006935119629
+          -87.33066320419312
         ],
         "max": [
           5513.30385636153,
           8613.98626244734,
-          1619.558271408081
+          1612.5352272987366
         ],
         "center": [
           848.076073158405,
           1726.2509108848408,
-          761.2641010284424
+          762.6022820472717
         ],
         "extent": [
           4665.227783203125,
           6887.7353515625,
-          858.2941703796387
+          849.9329452514648
         ]
       },
-      "sample_count": 80,
+      "sample_count": 78,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -32768,14 +33072,14 @@
           0.6969712376594543
         ],
         "max": [
-          1.2000000476837156,
-          1.2000000476837156,
+          1.2000000476837158,
+          1.2000000476837158,
           1.2000000476837158
         ],
         "mean": [
-          0.9398621194064617,
-          0.9398621194064617,
-          0.9398621194064617
+          0.9389726382035476,
+          0.9389726382035476,
+          0.9389726382035476
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -32989,8 +33293,8 @@
             2,
             6
           ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
+          "sample_count": 2,
+          "estimated_instances": 2.0
         },
         {
           "cell_xy": [
@@ -33109,46 +33413,46 @@
         "min": [
           -3773.203878958315,
           -5122.769741729988,
-          -95.25218200683594
+          -85.5527777671814
         ],
         "max": [
           5475.0,
           8580.003445910985,
-          1553.7431253433228
+          1551.6561788749696
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_62",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_55",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Grass/SM_GrassSmall01.SM_GrassSmall01",
-      "instance_count": 260,
+      "instance_count": 251,
       "bounds": {
         "min": [
           -4568.930512057412,
           -4582.438629928491,
-          -102.68959426879883
+          -118.22714281082153
         ],
         "max": [
           4500.868316067588,
           8299.84554975901,
-          1088.9262351989746
+          1084.6541895866394
         ],
         "center": [
           -34.03109799491176,
           1858.7034599152594,
-          493.1183204650879
+          483.21352338790894
         ],
         "extent": [
           4534.8994140625,
           6441.14208984375,
-          595.8079147338867
+          601.4406661987305
         ]
       },
-      "sample_count": 260,
+      "sample_count": 251,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -33163,9 +33467,9 @@
           1.249705195426941
         ],
         "mean": [
-          0.945664598620855,
-          0.945664598620855,
-          0.945664598620855
+          0.9481081649126759,
+          0.9481081649126759,
+          0.9481081649126759
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -33235,8 +33539,8 @@
             -3,
             2
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -33371,8 +33675,8 @@
             1,
             2
           ],
-          "sample_count": 22,
-          "estimated_instances": 22.0
+          "sample_count": 17,
+          "estimated_instances": 17.0
         },
         {
           "cell_xy": [
@@ -33387,8 +33691,8 @@
             1,
             6
           ],
-          "sample_count": 7,
-          "estimated_instances": 7.0
+          "sample_count": 6,
+          "estimated_instances": 6.0
         },
         {
           "cell_xy": [
@@ -33547,8 +33851,8 @@
             3,
             5
           ],
-          "sample_count": 13,
-          "estimated_instances": 13.0
+          "sample_count": 11,
+          "estimated_instances": 11.0
         },
         {
           "cell_xy": [
@@ -33571,46 +33875,46 @@
         "min": [
           -4504.413668562305,
           -4530.0,
-          -99.09799712295532
+          -114.87755279922487
         ],
         "max": [
           4443.3213434896115,
           8220.398849659776,
-          1070.234570980072
+          1065.9625272750854
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_63",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_56",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/GroundCover/SM_GroundCover03.SM_GroundCover03",
-      "instance_count": 201,
+      "instance_count": 194,
       "bounds": {
         "min": [
           -3246.88634765625,
           -4733.191953125,
-          -88.38614392235013
+          -97.31175351097318
         ],
         "max": [
           3901.5838748168944,
           7968.036806640625,
-          1038.3008220200327
+          1038.3007800583628
         ],
         "center": [
           327.34876358032216,
           1617.422426757813,
-          474.9573390488413
+          470.4945132736948
         ],
         "extent": [
           3574.2351112365723,
           6350.6143798828125,
-          563.3434829711914
+          567.806266784668
         ]
       },
-      "sample_count": 201,
+      "sample_count": 194,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -33625,9 +33929,9 @@
           1.291046380996704
         ],
         "mean": [
-          0.9863390797999367,
-          0.9863390797999367,
-          0.9863390797999367
+          0.9863557661931539,
+          0.9863557661931539,
+          0.9863557661931539
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -33857,8 +34161,8 @@
             2,
             3
           ],
-          "sample_count": 7,
-          "estimated_instances": 7.0
+          "sample_count": 5,
+          "estimated_instances": 5.0
         },
         {
           "cell_xy": [
@@ -33873,16 +34177,16 @@
             2,
             5
           ],
-          "sample_count": 6,
-          "estimated_instances": 6.0
+          "sample_count": 5,
+          "estimated_instances": 5.0
         },
         {
           "cell_xy": [
             2,
             6
           ],
-          "sample_count": 6,
-          "estimated_instances": 6.0
+          "sample_count": 5,
+          "estimated_instances": 5.0
         },
         {
           "cell_xy": [
@@ -33935,18 +34239,10 @@
         {
           "cell_xy": [
             3,
-            4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
             5
           ],
-          "sample_count": 11,
-          "estimated_instances": 11.0
+          "sample_count": 9,
+          "estimated_instances": 9.0
         },
         {
           "cell_xy": [
@@ -33961,7 +34257,7 @@
         "min": [
           -3177.3899275617478,
           -4648.121531665638,
-          -87.48808097839355
+          -96.5826768875122
         ],
         "max": [
           3795.62,
@@ -33972,35 +34268,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_64",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_57",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/Fishermans_Cabin/Meshes/Foliage/Bush/SM_Bush_02.SM_Bush_02",
-      "instance_count": 200,
+      "instance_count": 198,
       "bounds": {
         "min": [
           -7678.87109375,
           -7655.09765625,
-          -94.3745002746582
+          -103.9084358215332
         ],
         "max": [
           6504.87890625,
           11711.0703125,
-          1938.775234222412
+          1877.3634757995605
         ],
         "center": [
           -586.99609375,
           2027.986328125,
-          922.200366973877
+          886.7275199890137
         ],
         "extent": [
           7091.875,
           9683.083984375,
-          1016.5748672485352
+          990.6359558105469
         ]
       },
-      "sample_count": 200,
+      "sample_count": 198,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -34015,9 +34311,9 @@
           1.3899999856948853
         ],
         "mean": [
-          1.0158802738785744,
-          1.0158802738785744,
-          1.0158802738785744
+          1.0155444961003584,
+          1.0155444961003584,
+          1.0155444961003584
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -34335,8 +34631,8 @@
             0,
             8
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -34609,14 +34905,6 @@
           ],
           "sample_count": 6,
           "estimated_instances": 6.0
-        },
-        {
-          "cell_xy": [
-            3,
-            4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -34799,46 +35087,46 @@
         "min": [
           -7559.0,
           -7561.0,
-          -91.6818871925354
+          -101.3602773902893
         ],
         "max": [
           6363.0,
           11610.0,
-          1742.9649631881714
+          1687.0484913185119
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_65",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_58",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Grass/SM_GrassMedium01.SM_GrassMedium01",
-      "instance_count": 285,
+      "instance_count": 271,
       "bounds": {
         "min": [
           -4411.62815426079,
           -5871.507917175173,
-          -88.87780570983887
+          -78.31271362304688
         ],
         "max": [
           3917.8569531610847,
           8769.459367981077,
-          1109.1258640289307
+          1109.1258392333984
         ],
         "center": [
           -246.88560054985282,
           1448.9757254029519,
-          510.1240291595459
+          515.4065628051758
         ],
         "extent": [
           4164.7425537109375,
           7320.483642578125,
-          599.0018348693848
+          593.7192764282227
         ]
       },
-      "sample_count": 285,
+      "sample_count": 271,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -34853,9 +35141,9 @@
           1.2480037212371826
         ],
         "mean": [
-          0.9615768852986788,
-          0.9615768852986788,
-          0.9615768852986788
+          0.9611931183681277,
+          0.9611931183681277,
+          0.9611931183681277
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -35045,8 +35333,8 @@
             0,
             7
           ],
-          "sample_count": 5,
-          "estimated_instances": 5.0
+          "sample_count": 4,
+          "estimated_instances": 4.0
         },
         {
           "cell_xy": [
@@ -35101,8 +35389,8 @@
             1,
             2
           ],
-          "sample_count": 14,
-          "estimated_instances": 14.0
+          "sample_count": 13,
+          "estimated_instances": 13.0
         },
         {
           "cell_xy": [
@@ -35117,8 +35405,8 @@
             1,
             7
           ],
-          "sample_count": 10,
-          "estimated_instances": 10.0
+          "sample_count": 8,
+          "estimated_instances": 8.0
         },
         {
           "cell_xy": [
@@ -35189,8 +35477,8 @@
             2,
             2
           ],
-          "sample_count": 12,
-          "estimated_instances": 12.0
+          "sample_count": 11,
+          "estimated_instances": 11.0
         },
         {
           "cell_xy": [
@@ -35213,16 +35501,16 @@
             2,
             5
           ],
-          "sample_count": 10,
-          "estimated_instances": 10.0
+          "sample_count": 5,
+          "estimated_instances": 5.0
         },
         {
           "cell_xy": [
             2,
             6
           ],
-          "sample_count": 9,
-          "estimated_instances": 9.0
+          "sample_count": 7,
+          "estimated_instances": 7.0
         },
         {
           "cell_xy": [
@@ -35285,15 +35573,15 @@
             3,
             5
           ],
-          "sample_count": 17,
-          "estimated_instances": 17.0
+          "sample_count": 15,
+          "estimated_instances": 15.0
         }
       ],
       "sample_location_bounds": {
         "min": [
           -4355.544081169834,
           -5815.24679502286,
-          -88.40566062927246
+          -77.944091796875
         ],
         "max": [
           3861.1895404659413,
@@ -35304,35 +35592,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_66",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_59",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Plants/SM_FernLong01.SM_FernLong01",
-      "instance_count": 204,
+      "instance_count": 200,
       "bounds": {
         "min": [
           -3922.2083041874903,
           -5308.994781161002,
-          -102.00556182861328
+          -99.9488296508789
         ],
         "max": [
           5675.147408703135,
           8651.037933682748,
-          1764.8023986816406
+          1623.9232063293457
         ],
         "center": [
           876.4695522578222,
           1671.0215762608732,
-          831.3984184265137
+          761.9871883392334
         ],
         "extent": [
           4798.6778564453125,
           6980.016357421875,
-          933.403980255127
+          861.9360179901123
         ]
       },
-      "sample_count": 204,
+      "sample_count": 200,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -35347,9 +35635,9 @@
           1.2239320278167725
         ],
         "mean": [
-          0.9630635152844822,
-          0.9630635152844822,
-          0.9630635152844822
+          0.9625319197773934,
+          0.9625319197773934,
+          0.9625319197773934
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -35448,14 +35736,6 @@
         },
         {
           "cell_xy": [
-            -1,
-            8
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
             0,
             -2
           ],
@@ -35491,8 +35771,8 @@
             0,
             8
           ],
-          "sample_count": 5,
-          "estimated_instances": 5.0
+          "sample_count": 4,
+          "estimated_instances": 4.0
         },
         {
           "cell_xy": [
@@ -35563,8 +35843,8 @@
             1,
             6
           ],
-          "sample_count": 6,
-          "estimated_instances": 6.0
+          "sample_count": 5,
+          "estimated_instances": 5.0
         },
         {
           "cell_xy": [
@@ -35659,8 +35939,8 @@
             2,
             4
           ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
+          "sample_count": 2,
+          "estimated_instances": 2.0
         },
         {
           "cell_xy": [
@@ -35827,46 +36107,46 @@
         "min": [
           -3824.690820697119,
           -5184.993684352275,
-          -98.42541625442504
+          -96.34179587173463
         ],
         "max": [
           5529.0,
           8545.882655332467,
-          1669.0328232765198
+          1522.929924030304
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_67",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_60",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/GroundCover/SM_GroundCover01.SM_GroundCover01",
-      "instance_count": 190,
+      "instance_count": 180,
       "bounds": {
         "min": [
           -2372.54267578125,
           -5422.4467578125,
-          -96.14481722398568
+          -84.93837200685311
         ],
         "max": [
           4057.5051300048826,
           8576.006733398437,
-          912.3435250611706
+          887.896604189436
         ],
         "center": [
           842.4812271118162,
           1576.7799877929683,
-          408.09935391859244
+          401.4791160912914
         ],
         "extent": [
           3215.0239028930664,
           6999.226745605469,
-          504.2441711425781
+          486.41748809814453
         ]
       },
-      "sample_count": 190,
+      "sample_count": 180,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -35881,9 +36161,9 @@
           1.295009970664978
         ],
         "mean": [
-          0.9928884700724953,
-          0.9928884700724953,
-          0.9928884700724953
+          0.9963402801089817,
+          0.9963402801089817,
+          0.9963402801089817
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -36025,8 +36305,8 @@
             1,
             2
           ],
-          "sample_count": 22,
-          "estimated_instances": 22.0
+          "sample_count": 16,
+          "estimated_instances": 16.0
         },
         {
           "cell_xy": [
@@ -36113,32 +36393,32 @@
             2,
             2
           ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
+          "sample_count": 3,
+          "estimated_instances": 3.0
         },
         {
           "cell_xy": [
             2,
             3
           ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
+          "sample_count": 3,
+          "estimated_instances": 3.0
         },
         {
           "cell_xy": [
             2,
             4
           ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
+          "sample_count": 3,
+          "estimated_instances": 3.0
         },
         {
           "cell_xy": [
             2,
             5
           ],
-          "sample_count": 6,
-          "estimated_instances": 6.0
+          "sample_count": 5,
+          "estimated_instances": 5.0
         },
         {
           "cell_xy": [
@@ -36225,51 +36505,51 @@
         "min": [
           -2335.9831181466925,
           -5381.665804793111,
-          -94.5452709197998
+          -83.33882284164429
         ],
         "max": [
           4000.2517712030312,
           8534.98,
-          908.0704193115234
+          884.0080242156982
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_68",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_61",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/DeadLeaves/SM_DeadLeaves02.SM_DeadLeaves02",
-      "instance_count": 69,
+      "instance_count": 67,
       "bounds": {
         "min": [
           -298.8012548828128,
           -5084.0808984375,
-          -119.17715409953098
+          -64.31047013957004
         ],
         "max": [
           3871.0182031249997,
           8234.627475585938,
-          788.7463612202932
+          772.1814198140432
         ],
         "center": [
           1786.1084741210934,
           1575.273288574219,
-          334.78460356038113
+          353.9354748372366
         ],
         "extent": [
           2084.9097290039062,
           6659.354187011719,
-          453.9617576599121
+          418.24594497680664
         ]
       },
-      "sample_count": 69,
+      "sample_count": 67,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.7099999785423279,
+          0.709999978542328,
           0.709999978542328,
           0.7099999785423279
         ],
@@ -36279,9 +36559,9 @@
           1.2000000476837158
         ],
         "mean": [
-          1.0132651519084321,
-          1.0132651519084321,
-          1.0132651519084321
+          1.014467096150811,
+          1.014467096150811,
+          1.014467096150811
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -36359,8 +36639,8 @@
             1,
             2
           ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
+          "sample_count": 2,
+          "estimated_instances": 2.0
         },
         {
           "cell_xy": [
@@ -36455,8 +36735,8 @@
             2,
             4
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
+          "sample_count": 1,
+          "estimated_instances": 1.0
         },
         {
           "cell_xy": [
@@ -36511,46 +36791,46 @@
         "min": [
           -205.0,
           -4977.0,
-          -117.90654945373535
+          -63.095311667633055
         ],
         "max": [
           3767.1275193836664,
           8131.593444247088,
-          743.2180449872097
+          726.6530797391019
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_69",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_62",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Plants/SM_Fern03.SM_Fern03",
-      "instance_count": 123,
+      "instance_count": 121,
       "bounds": {
         "min": [
           -3981.2247658498436,
           -4939.32363431972,
-          -83.85444068908691
+          -81.79455614089966
         ],
         "max": [
           5654.516200947031,
           8192.65878755528,
-          1593.392126083374
+          1593.392062664032
         ],
         "center": [
           836.6457175485939,
           1626.6675766177796,
-          754.7688426971436
+          755.7987532615662
         ],
         "extent": [
           4817.8704833984375,
           6565.9912109375,
-          838.6232833862305
+          837.5933094024658
         ]
       },
-      "sample_count": 123,
+      "sample_count": 121,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -36565,9 +36845,9 @@
           1.2200000286102295
         ],
         "mean": [
-          0.9229855905703412,
-          0.9229855905703412,
-          0.9229855905703412
+          0.924654773936784,
+          0.924654773936784,
+          0.924654773936784
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -36698,14 +36978,6 @@
         },
         {
           "cell_xy": [
-            -1,
-            8
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
             0,
             -1
           ],
@@ -36781,8 +37053,8 @@
             1,
             2
           ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
+          "sample_count": 7,
+          "estimated_instances": 7.0
         },
         {
           "cell_xy": [
@@ -37029,734 +37301,28 @@
         "min": [
           -3946.7076106072996,
           -4910.0,
-          -82.87162123413086
+          -80.71788047485353
         ],
         "max": [
           5617.0,
-          8159.0,
+          8155.257038700722,
           1561.4389986991882
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_7",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/OakForestEnv/Meshes/Trees_Leaf/Spring/SM_Oak_L_2.SM_Oak_L_2",
-      "instance_count": 2,
-      "bounds": {
-        "min": [
-          -3571.599609375,
-          -2463.6318359375,
-          17.463825225830078
-        ],
-        "max": [
-          4377.305419921875,
-          3568.8018798828125,
-          2881.4958572387695
-        ],
-        "center": [
-          402.8529052734375,
-          552.5850219726562,
-          1449.4798412322998
-        ],
-        "extent": [
-          3974.4525146484375,
-          3016.2168579101562,
-          1432.0160160064697
-        ]
-      },
-      "sample_count": 2,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.800000011920929,
-          0.800000011920929,
-          0.800000011920929
-        ],
-        "max": [
-          0.8000000119209292,
-          0.8000000119209292,
-          0.800000011920929
-        ],
-        "mean": [
-          0.8000000119209291,
-          0.8000000119209291,
-          0.800000011920929
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -3,
-            -2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -2680.0,
-          -1730.0,
-          68.61695098876953
-        ],
-        "max": [
-          3540.0,
-          2820.0,
-          630.598032951355
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_70",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/PineForestPack/Meshes/Plants/SM_FernWild01.SM_FernWild01",
-      "instance_count": 169,
-      "bounds": {
-        "min": [
-          -3704.09427999169,
-          -5980.8098051384,
-          -98.41182708740234
-        ],
-        "max": [
-          5696.42720438331,
-          9825.7829682991,
-          1619.7139282226562
-        ],
-        "center": [
-          996.1664621958098,
-          1922.4865815803496,
-          760.651050567627
-        ],
-        "extent": [
-          4700.2607421875,
-          7903.29638671875,
-          859.0628776550293
-        ]
-      },
-      "sample_count": 169,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.526164174079895,
-          0.526164174079895,
-          0.526164174079895
-        ],
-        "max": [
-          1.1830840110778806,
-          1.1830840110778806,
-          1.1830840110778809
-        ],
-        "mean": [
-          0.9459492546566844,
-          0.9459492546566844,
-          0.9459492546566844
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -4,
-            3
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            -4,
-            4
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            -4,
-            5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -3,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -3,
-            4
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            1
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            7
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            8
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            -1,
-            1
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            -1,
-            2
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            -1,
-            8
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            -6
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            -5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            -4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            -2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            -1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            8
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -4
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -3
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -2
-          ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -1
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            1,
-            0
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            2
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
-        },
-        {
-          "cell_xy": [
-            1,
-            7
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            1,
-            8
-          ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -6
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -4
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -3
-          ],
-          "sample_count": 14,
-          "estimated_instances": 14.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -2
-          ],
-          "sample_count": 7,
-          "estimated_instances": 7.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -1
-          ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
-        },
-        {
-          "cell_xy": [
-            2,
-            0
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            1
-          ],
-          "sample_count": 6,
-          "estimated_instances": 6.0
-        },
-        {
-          "cell_xy": [
-            2,
-            2
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            3
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            7
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            9
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -4
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -3
-          ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -2
-          ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -1
-          ],
-          "sample_count": 5,
-          "estimated_instances": 5.0
-        },
-        {
-          "cell_xy": [
-            3,
-            0
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            3,
-            1
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
-        },
-        {
-          "cell_xy": [
-            3,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            3
-          ],
-          "sample_count": 5,
-          "estimated_instances": 5.0
-        },
-        {
-          "cell_xy": [
-            3,
-            4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            5
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            3,
-            6
-          ],
-          "sample_count": 5,
-          "estimated_instances": 5.0
-        },
-        {
-          "cell_xy": [
-            4,
-            -3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            -2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            5,
-            -4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            5,
-            -3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            5,
-            -1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -3606.8295066546048,
-          -5899.534129287435,
-          -91.16808549194336
-        ],
-        "max": [
-          5595.0,
-          9727.111932942555,
-          1529.2863180541992
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_71",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/OakForestEnv/Meshes/Trees_Leaf/Spring/SM_Oak_L_1.SM_Oak_L_1",
-      "instance_count": 2,
-      "bounds": {
-        "min": [
-          -3366.254150390625,
-          1469.5792846679688,
-          -59.80023002624512
-        ],
-        "max": [
-          -518.645263671875,
-          8616.1904296875,
-          1742.048427581787
-        ],
-        "center": [
-          -1942.44970703125,
-          5042.884857177734,
-          841.124098777771
-        ],
-        "extent": [
-          1423.804443359375,
-          3573.3055725097656,
-          900.9243288040161
-        ]
-      },
-      "sample_count": 2,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.800000011920929,
-          0.800000011920929,
-          0.800000011920929
-        ],
-        "max": [
-          0.8000000119209292,
-          0.8000000119209292,
-          0.800000011920929
-        ],
-        "mean": [
-          0.8000000119209291,
-          0.8000000119209291,
-          0.800000011920929
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -3,
-            8
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -2650.0,
-          2060.0,
-          -30.24808120727539
-        ],
-        "max": [
-          -1100.0,
-          8000.0,
-          -2.5974864959716797
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_72",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_64",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/Fab/Megascans/3D/Nordic_Forest_Ground_Patch_Root_tkwqbbofa/High/tkwqbbofa_tier_1/StaticMeshes/tkwqbbofa_tier_1.tkwqbbofa_tier_1",
-      "instance_count": 42,
+      "instance_count": 41,
       "bounds": {
         "min": [
           -3625.1875,
           -5131.61669921875,
-          -97.02252054214478
+          -91.27346658706665
         ],
         "max": [
           3439.7237548828125,
@@ -37766,15 +37332,15 @@
         "center": [
           -92.73187255859375,
           1547.615966796875,
-          307.6810927391052
+          310.5556197166443
         ],
         "extent": [
           3532.4556274414062,
           6679.232666015625,
-          404.70361328125
+          401.82908630371094
         ]
       },
-      "sample_count": 42,
+      "sample_count": 41,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -37785,13 +37351,13 @@
         ],
         "max": [
           1.1200000047683716,
-          1.1200000047683716,
+          1.1200000047683714,
           1.1200000047683716
         ],
         "mean": [
-          0.9048333366711935,
-          0.9048333366711935,
-          0.9048333366711935
+          0.9012926875091181,
+          0.9012926875091181,
+          0.9012926875091181
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -37948,14 +37514,6 @@
           "cell_xy": [
             2,
             5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            6
           ],
           "sample_count": 1,
           "estimated_instances": 1.0
@@ -37989,7 +37547,7 @@
         "min": [
           -3545.0,
           -5046.0,
-          -96.61899694061279
+          -90.86995013809204
         ],
         "max": [
           3350.0,
@@ -38000,7 +37558,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_73",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_65",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -38010,22 +37568,22 @@
         "min": [
           -3496.85400390625,
           -2116.93701171875,
-          -65.20249938964844
+          -59.58863544464111
         ],
         "max": [
           3850.1185302734375,
           5445.15771484375,
-          676.0471439361572
+          672.1095476150513
         ],
         "center": [
           176.63226318359375,
           1664.1103515625,
-          305.4223222732544
+          306.2604560852051
         ],
         "extent": [
           3673.4862670898438,
           3781.04736328125,
-          370.62482166290283
+          365.8490915298462
         ]
       },
       "sample_count": 9,
@@ -38038,8 +37596,8 @@
           0.5
         ],
         "max": [
-          0.8700000047683719,
-          0.8700000047683719,
+          0.8700000047683718,
+          0.8700000047683718,
           0.8700000047683716
         ],
         "mean": [
@@ -38107,46 +37665,46 @@
         "min": [
           -3420.0,
           -2036.0,
-          -51.59519004821777
+          -42.55543041229248
         ],
         "max": [
           3734.0,
           5370.0,
-          650.156170387268
+          649.1235199165344
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_74",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_66",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Plants/SM_Fern02.SM_Fern02",
-      "instance_count": 123,
+      "instance_count": 122,
       "bounds": {
         "min": [
           -4523.444862772988,
           -4712.158595320154,
-          -84.8444766998291
+          -64.49630737304688
         ],
         "max": [
           5523.994834492637,
           8277.232517961096,
-          1439.656530380249
+          1439.6565895080566
         ],
         "center": [
           500.2749858598245,
           1782.5369613204712,
-          677.40602684021
+          687.5801410675049
         ],
         "extent": [
           5023.7198486328125,
           6494.695556640625,
-          762.2505035400391
+          752.0764484405518
         ]
       },
-      "sample_count": 123,
+      "sample_count": 122,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -38161,9 +37719,9 @@
           1.19430673122406
         ],
         "mean": [
-          0.9426677609846844,
-          0.9426677609846844,
-          0.9426677609846844
+          0.9441036323054892,
+          0.9441036323054892,
+          0.9441036323054892
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -38336,14 +37894,6 @@
           "cell_xy": [
             1,
             2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            7
           ],
           "sample_count": 1,
           "estimated_instances": 1.0
@@ -38569,7 +38119,7 @@
         "min": [
           -4481.883646150867,
           -4661.316999393882,
-          -83.68329392166137
+          -63.329986572265625
         ],
         "max": [
           5482.0,
@@ -38580,7 +38130,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_78",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_67",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -38590,22 +38140,22 @@
         "min": [
           2147.5753173828125,
           -3865.1953125,
-          -76.72457046031946
+          -81.68505067348474
         ],
         "max": [
           5438.97412109375,
           6505.700057983398,
-          1693.2685173082352
+          1690.0679400491715
         ],
         "center": [
           3793.2747192382812,
           1320.2523727416992,
-          808.2719734239579
+          804.1914446878434
         ],
         "extent": [
           1645.6994018554688,
           5185.447685241699,
-          884.9965438842773
+          885.8764953613281
         ]
       },
       "sample_count": 5,
@@ -38618,8 +38168,8 @@
           0.6700000166893005
         ],
         "max": [
-          0.9499999880790712,
-          0.9499999880790712,
+          0.949999988079071,
+          0.9499999880790709,
           0.9499999880790709
         ],
         "mean": [
@@ -38679,18 +38229,18 @@
         "min": [
           2240.0,
           -3771.0,
-          -70.57661437988281
+          -75.53709173202515
         ],
         "max": [
           5219.0,
           6340.0,
-          1609.510815525055
+          1606.3102249145509
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_79",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_68",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -38700,22 +38250,22 @@
         "min": [
           1226.36279296875,
           -3764.11376953125,
-          121.96278209686284
+          122.5231229782105
         ],
         "max": [
           5755.80322265625,
           2456.549560546875,
-          1583.2918378829957
+          1583.2917615890503
         ],
         "center": [
           3491.0830078125,
           -653.7821044921875,
-          852.6273099899292
+          852.9074422836304
         ],
         "extent": [
           2264.72021484375,
           3110.3316650390625,
-          730.6645278930664
+          730.3843193054199
         ]
       },
       "sample_count": 14,
@@ -38725,12 +38275,12 @@
         "min": [
           0.7300000190734864,
           0.7300000190734863,
-          0.7300000190734862
+          0.7300000190734863
         ],
         "max": [
           0.959999978542328,
-          0.9599999785423279,
-          0.9599999785423279
+          0.959999978542328,
+          0.959999978542328
         ],
         "mean": [
           0.8657142817974091,
@@ -38848,35 +38398,35 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_69",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/PineForestPack/Meshes/Trees/SM_Pine_Juvenile_01.SM_Pine_Juvenile_01",
-      "instance_count": 208,
+      "instance_count": 207,
       "bounds": {
         "min": [
           -5834.487007433174,
           -9474.025543359432,
-          -104.51239585876465
+          -69.29098272323608
         ],
         "max": [
           7165.956351941826,
           10269.086273046818,
-          2219.093496322632
+          2162.523057460785
         ],
         "center": [
           665.7346722543261,
           397.53036484369295,
-          1057.2905502319336
+          1046.6160373687744
         ],
         "extent": [
           6500.2216796875,
           9871.555908203125,
-          1161.8029460906982
+          1115.9070200920105
         ]
       },
-      "sample_count": 208,
+      "sample_count": 207,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -38891,9 +38441,9 @@
           2.700000047683716
         ],
         "mean": [
-          1.3565386270101254,
-          1.3565386270101254,
-          1.3565386270101254
+          1.3552020793951651,
+          1.3552020793951651,
+          1.3552020793951651
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -39355,8 +38905,8 @@
             3,
             5
           ],
-          "sample_count": 12,
-          "estimated_instances": 12.0
+          "sample_count": 11,
+          "estimated_instances": 11.0
         },
         {
           "cell_xy": [
@@ -39475,104 +39025,18 @@
         "min": [
           -5720.0,
           -9400.0,
-          -88.90892028808594
+          -58.4392466545105
         ],
         "max": [
           7070.0,
           10160.0,
-          1807.4977350234985
+          1914.8583364486694
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_88",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/PineForestPack/Meshes/TerrainPatches/SM_FallenTree01.SM_FallenTree01",
-      "instance_count": 2,
-      "bounds": {
-        "min": [
-          4048.2315979003906,
-          -3657.164840698242,
-          915.2007809638976
-        ],
-        "max": [
-          4967.440246582031,
-          -117.9609375,
-          1372.4057370185851
-        ],
-        "center": [
-          4507.835922241211,
-          -1887.562889099121,
-          1143.8032589912414
-        ],
-        "extent": [
-          459.6043243408203,
-          1769.601951599121,
-          228.60247802734375
-        ]
-      },
-      "sample_count": 2,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.8500000238418584,
-          0.8500000238418581,
-          0.8500000238418579
-        ],
-        "max": [
-          0.9800000190734863,
-          0.9800000190734864,
-          0.9800000190734863
-        ],
-        "mean": [
-          0.9150000214576723,
-          0.9150000214576723,
-          0.9150000214576721
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            4,
-            -4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            -1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          4303.0,
-          -3473.0,
-          1095.7955117225647
-        ],
-        "max": [
-          4549.0,
-          -788.0,
-          1136.6411953926086
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_89",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_70",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -39582,7 +39046,7 @@
         "min": [
           2048.91259765625,
           -2693.054443359375,
-          160.1853632926941
+          138.0390009880066
         ],
         "max": [
           5760.0263671875,
@@ -39592,12 +39056,12 @@
         "center": [
           3904.469482421875,
           -140.490234375,
-          891.8419642448425
+          880.7687830924988
         ],
         "extent": [
           1855.556884765625,
           2552.564208984375,
-          731.6566009521484
+          742.7297821044922
         ]
       },
       "sample_count": 8,
@@ -39605,18 +39069,18 @@
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.479999989271164,
           0.4799999892711639,
-          0.47999998927116394
+          0.47999998927116394,
+          0.4799999892711639
         ],
         "max": [
-          0.5500000119209288,
+          0.550000011920929,
           0.550000011920929,
           0.550000011920929
         ],
         "mean": [
-          0.5019891522824765,
-          0.5019891522824765,
+          0.5019891522824764,
+          0.5019891522824764,
           0.5019891522824764
         ]
       },
@@ -39687,7 +39151,7 @@
         "min": [
           2189.0,
           -2605.8421538737043,
-          167.82566833496094
+          145.67938375473022
         ],
         "max": [
           5630.0,
@@ -39698,7 +39162,7 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_9",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_71",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
@@ -39708,22 +39172,22 @@
         "min": [
           -20528.767300883228,
           -18371.176120788234,
-          -61.95655670165979
+          192.2920037269596
         ],
         "max": [
           22109.117464741772,
           22192.525051086766,
-          5676.3394027709965
+          5676.339428043366
         ],
         "center": [
           790.175081929272,
           1910.6744651492663,
-          2807.1914230346683
+          2934.3157158851627
         ],
         "extent": [
           21318.9423828125,
           20281.8505859375,
-          2869.147979736328
+          2742.023712158203
         ]
       },
       "sample_count": 310,
@@ -39731,8 +39195,8 @@
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.8510000109672545,
-          0.8510000109672545,
+          0.8510000109672546,
+          0.8510000109672546,
           0.8510000109672546
         ],
         "max": [
@@ -41989,7 +41453,7 @@
         "min": [
           -20228.0,
           -18055.0,
-          488.05930107116706
+          742.3078605461121
         ],
         "max": [
           21839.0,
@@ -42000,52 +41464,52 @@
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_91",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_72",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
-      "mesh": "/Game/Real_Ivy_Pack/Meshes/foliage/Ivy/SM_ivy_corner_left_sparse_up_01_leaves.SM_ivy_corner_left_sparse_up_01_leaves",
-      "instance_count": 1,
+      "mesh": "/Game/PineForestPack/Meshes/TerrainPatches/SM_FallenTree01.SM_FallenTree01",
+      "instance_count": 2,
       "bounds": {
         "min": [
-          -31.258996963500977,
-          -32.56974411010742,
-          98.60108947753906
+          4048.2315979003906,
+          -3657.164840698242,
+          871.985691165924
         ],
         "max": [
-          287.473388671875,
-          282.6820068359375,
-          349.7669982910156
+          4967.440246582031,
+          -117.9609375,
+          1327.8202706336974
         ],
         "center": [
-          128.107195854187,
-          125.05613136291504,
-          224.18404388427734
+          4507.835922241211,
+          -1887.562889099121,
+          1099.9029808998107
         ],
         "extent": [
-          159.366192817688,
-          157.62587547302246,
-          125.58295440673828
+          459.6043243408203,
+          1769.601951599121,
+          227.91728973388672
         ]
       },
-      "sample_count": 1,
+      "sample_count": 2,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.3499999940395355,
-          0.3499999940395355,
-          0.3499999940395355
+          0.8500000238418581,
+          0.8500000238418581,
+          0.850000023841858
         ],
         "max": [
-          0.3499999940395355,
-          0.3499999940395355,
-          0.3499999940395355
+          0.9800000190734861,
+          0.9800000190734863,
+          0.9800000190734862
         ],
         "mean": [
-          0.3499999940395355,
-          0.3499999940395355,
-          0.3499999940395355
+          0.9150000214576721,
+          0.9150000214576722,
+          0.9150000214576721
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -42056,7 +41520,15 @@
       "grid": [
         {
           "cell_xy": [
-            -1,
+            4,
+            -4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
             -1
           ],
           "sample_count": 1,
@@ -42065,65 +41537,65 @@
       ],
       "sample_location_bounds": {
         "min": [
-          -3.0,
-          -3.0,
-          107.0
+          4303.0,
+          -3473.0,
+          1066.0589332580566
         ],
         "max": [
-          -3.0,
-          -3.0,
-          107.0
+          4549.0,
+          -788.0,
+          1092.0557290077209
         ]
       }
     },
     {
       "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_92",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_73",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
-      "mesh": "/Game/Real_Ivy_Pack/Meshes/foliage/Ivy/SM_ivy_corner_left_sparse_up_01_branches.SM_ivy_corner_left_sparse_up_01_branches",
-      "instance_count": 1,
+      "mesh": "/Game/PineForestPack/Meshes/Plants/SM_FernWild01.SM_FernWild01",
+      "instance_count": 168,
       "bounds": {
         "min": [
-          -21.493988037109375,
-          -23.531694412231445,
-          106.13279449939728
+          -3704.09427999169,
+          -5980.8098051384,
+          -82.84321355819702
         ],
         "max": [
-          280.033447265625,
-          276.0742492675781,
-          347.24244689941406
+          5696.42720438331,
+          9825.7829682991,
+          1619.713900089264
         ],
         "center": [
-          129.2697296142578,
-          126.27127742767334,
-          226.68762069940567
+          996.1664621958098,
+          1922.4865815803496,
+          768.4353432655334
         ],
         "extent": [
-          150.7637176513672,
-          149.80297183990479,
-          120.55482620000839
+          4700.2607421875,
+          7903.29638671875,
+          851.2785568237305
         ]
       },
-      "sample_count": 1,
+      "sample_count": 168,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.3499999940395355,
-          0.3499999940395355,
-          0.3499999940395355
+          0.526164174079895,
+          0.526164174079895,
+          0.526164174079895
         ],
         "max": [
-          0.3499999940395355,
-          0.3499999940395355,
-          0.3499999940395355
+          1.1830840110778809,
+          1.1830840110778809,
+          1.1830840110778809
         ],
         "mean": [
-          0.3499999940395355,
-          0.3499999940395355,
-          0.3499999940395355
+          0.9448060953900927,
+          0.9448060953900927,
+          0.9448060953900927
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -42134,7 +41606,455 @@
       "grid": [
         {
           "cell_xy": [
+            -4,
+            3
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            -4,
+            4
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            -4,
+            5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -3,
+            4
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            1
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            7
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            8
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
             -1,
+            1
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            -1,
+            2
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            -1,
+            8
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            -6
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            -5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            -4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            -2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            8
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -4
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -3
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -2
+          ],
+          "sample_count": 8,
+          "estimated_instances": 8.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -1
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            1,
+            0
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            2
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            1,
+            7
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            1,
+            8
+          ],
+          "sample_count": 8,
+          "estimated_instances": 8.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -6
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -4
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -3
+          ],
+          "sample_count": 14,
+          "estimated_instances": 14.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -2
+          ],
+          "sample_count": 7,
+          "estimated_instances": 7.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -1
+          ],
+          "sample_count": 8,
+          "estimated_instances": 8.0
+        },
+        {
+          "cell_xy": [
+            2,
+            0
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            2,
+            1
+          ],
+          "sample_count": 6,
+          "estimated_instances": 6.0
+        },
+        {
+          "cell_xy": [
+            2,
+            2
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            2,
+            3
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            2,
+            7
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            9
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -4
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -3
+          ],
+          "sample_count": 8,
+          "estimated_instances": 8.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -2
+          ],
+          "sample_count": 8,
+          "estimated_instances": 8.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -1
+          ],
+          "sample_count": 5,
+          "estimated_instances": 5.0
+        },
+        {
+          "cell_xy": [
+            3,
+            0
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            3,
+            1
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            3,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            3
+          ],
+          "sample_count": 5,
+          "estimated_instances": 5.0
+        },
+        {
+          "cell_xy": [
+            3,
+            4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            5
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            3,
+            6
+          ],
+          "sample_count": 5,
+          "estimated_instances": 5.0
+        },
+        {
+          "cell_xy": [
+            4,
+            -3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            -2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            5,
+            -4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            5,
+            -3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            5,
             -1
           ],
           "sample_count": 1,
@@ -42143,14 +42063,14 @@
       ],
       "sample_location_bounds": {
         "min": [
-          -3.0,
-          -3.0,
-          107.0
+          -3606.8295066546048,
+          -5899.534129287435,
+          -76.36967473525999
         ],
         "max": [
-          -3.0,
-          -3.0,
-          107.0
+          5595.0,
+          9727.111932942555,
+          1529.2863180541992
         ]
       }
     }
