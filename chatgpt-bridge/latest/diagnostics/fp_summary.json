@@ -1,0 +1,134 @@
+{
+ "pass": "Final art-direction / environment polish",
+ "baseline_run": "2026-09-24_204856_592665_c3a350",
+ "final_run": "2026-09-24_224428_337702_10d2c7",
+ "superseded_intermediate_run": "2026-09-24_222445_799135_d229c7 (exported before PIE-found fixes; not the final state)",
+ "foliage": {
+  "baseline_c3a350": 8187,
+  "after_build_intermediate": 8206,
+  "after_edge_encroach_intermediate": 8288,
+  "after_gash_and_porch_ferns_intermediate": 8293,
+  "FINAL": 8288,
+  "note": "Earlier ArtDirection ad_build.json 'after 8189' was an intermediate count before its side-mouth/cone removals; that pass's final was 8187."
+ },
+ "perf": {
+  "method": "same 5 editor poses, 12 s warm + 12 s csvprofile, fresh editor session without PIE for both",
+  "baseline_file": "perf_baseline_c3a350_summary.json (phase baseline_c3a350)",
+  "after_file": "perf_final_fresh_summary.json (phase final_fresh, measured at 8293 instances; final state has 5 fewer)",
+  "RenderThreadTime": "excluded: CSV column is ~0.002 ms in some editor sessions and ~32 ms in others (session-dependent stat source), not comparable",
+  "uphill_primitives_spike": "Intermittent single frames with ~9-11M RHI/PrimitivesDrawn at pose 05 (and occasionally 20). GPU time on spike frames equals normal frames; count varies 0-17 per 12 s run for identical content (0 in final repeat). Disabling VSM raised them to 165 frames and median prims to 7.2M (non-virtual shadow cascades redraw), Lumen change raised them to 55, hiding all foliage left 18. Diagnosis: transient shadow-depth/instance re-render bursts on the render side, not visible geometry or LOD; no content change warranted.",
+  "per_pose": {
+   "02_house_to_pond.png": {
+    "GPUTime": [
+     26.67,
+     26.1
+    ],
+    "FrameTime": [
+     27.5,
+     26.89
+    ],
+    "RHI/DrawCalls": [
+     682.14,
+     681.87
+    ],
+    "GPUMem/LocalUsedMB": [
+     4817.35,
+     4977.56
+    ],
+    "TextureStreaming/WantedMips": [
+     467.41,
+     467.21
+    ]
+   },
+   "05_uphill_lookback.png": {
+    "GPUTime": [
+     32.82,
+     32.84
+    ],
+    "FrameTime": [
+     33.65,
+     33.61
+    ],
+    "RHI/DrawCalls": [
+     3303.22,
+     3296.01
+    ],
+    "GPUMem/LocalUsedMB": [
+     4853.74,
+     4863.52
+    ],
+    "TextureStreaming/WantedMips": [
+     446.4,
+     446.25
+    ]
+   },
+   "06_rear_trail.png": {
+    "GPUTime": [
+     33.22,
+     33.3
+    ],
+    "FrameTime": [
+     34.03,
+     34.08
+    ],
+    "RHI/DrawCalls": [
+     670.73,
+     670.64
+    ],
+    "GPUMem/LocalUsedMB": [
+     4690.68,
+     4699.94
+    ],
+    "TextureStreaming/WantedMips": [
+     448.53,
+     448.48
+    ]
+   },
+   "15_edge_west.png": {
+    "GPUTime": [
+     31.05,
+     30.83
+    ],
+    "FrameTime": [
+     31.82,
+     31.59
+    ],
+    "RHI/DrawCalls": [
+     675.17,
+     670.96
+    ],
+    "GPUMem/LocalUsedMB": [
+     4819.18,
+     4700.76
+    ],
+    "TextureStreaming/WantedMips": [
+     456.89,
+     456.81
+    ]
+   },
+   "20_oblique.png": {
+    "GPUTime": [
+     31.02,
+     31.05
+    ],
+    "FrameTime": [
+     31.77,
+     31.79
+    ],
+    "RHI/DrawCalls": [
+     1302.78,
+     1321.68
+    ],
+    "GPUMem/LocalUsedMB": [
+     4820.61,
+     4829.52
+    ],
+    "TextureStreaming/WantedMips": [
+     115.77,
+     115.73
+    ]
+   }
+  }
+ },
+ "legacy_label_fix": "perf_before_summary.json in the ArtDirection diagnostics was a copy of the SurfaceIntegration 'after' capture (hence phase 'after'); this pass publishes explicitly named baseline/final files and the capture script records the real phase."
+}
