@@ -1,0 +1,164 @@
+{
+ "pass": "Final exterior visual acceptance / forest-aged house integration / atmospheric polish",
+ "baseline_run": "2026-09-24_224428_337702_10d2c7 (latest published at pass start; the brief named c3a350 but the project had advanced)",
+ "final_run": "2026-09-25_013635_109121_0d1ad1",
+ "superseded_intermediate": "2026-09-25_000725_487064_f10373 (before uphill log collision fix)",
+ "foliage": {
+  "start": 8288,
+  "final": 8290
+ },
+ "verdict": "PARTIAL ACCEPTANCE - not final",
+ "perf_note": "Same 5 poses, fresh sessions. RenderThreadTime CSV column reads ~0.00 ms in these sessions (invalid); RT_busy_excl_wait = sum of Exclusive/RenderThread/* minus EventWait/Idle is ~6 ms and unchanged -> GPU-bound. PrimitivesDrawn spike frame counts vary run to run (shadow/instance bursts) and are not a content cost metric.",
+ "per_pose": {
+  "02_house_to_pond.png": {
+   "GPUTime": [
+    24.82,
+    24.86
+   ],
+   "FrameTime": [
+    25.61,
+    25.71
+   ],
+   "GameThreadTime": [
+    9.85,
+    10.17
+   ],
+   "RT_busy_excl_wait": [
+    5.96,
+    5.84
+   ],
+   "RHI/DrawCalls": [
+    682.18,
+    681.52
+   ],
+   "GPUMem/LocalUsedMB": [
+    4973.75,
+    4663.02
+   ],
+   "TextureStreaming/WantedMips": [
+    467.22,
+    467.22
+   ]
+  },
+  "05_uphill_lookback.png": {
+   "GPUTime": [
+    31.12,
+    31.48
+   ],
+   "FrameTime": [
+    31.9,
+    32.3
+   ],
+   "GameThreadTime": [
+    9.98,
+    10.29
+   ],
+   "RT_busy_excl_wait": [
+    6.6,
+    6.54
+   ],
+   "RHI/DrawCalls": [
+    3302.16,
+    3298.74
+   ],
+   "GPUMem/LocalUsedMB": [
+    4862.57,
+    4832.15
+   ],
+   "TextureStreaming/WantedMips": [
+    446.25,
+    446.25
+   ]
+  },
+  "06_rear_trail.png": {
+   "GPUTime": [
+    31.67,
+    31.81
+   ],
+   "FrameTime": [
+    32.45,
+    32.62
+   ],
+   "GameThreadTime": [
+    9.9,
+    10.28
+   ],
+   "RT_busy_excl_wait": [
+    5.91,
+    5.88
+   ],
+   "RHI/DrawCalls": [
+    671.01,
+    670.62
+   ],
+   "GPUMem/LocalUsedMB": [
+    4698.69,
+    4666.76
+   ],
+   "TextureStreaming/WantedMips": [
+    448.48,
+    448.48
+   ]
+  },
+  "15_edge_west.png": {
+   "GPUTime": [
+    29.58,
+    29.46
+   ],
+   "FrameTime": [
+    30.3,
+    30.25
+   ],
+   "GameThreadTime": [
+    9.91,
+    10.26
+   ],
+   "RT_busy_excl_wait": [
+    6.03,
+    5.99
+   ],
+   "RHI/DrawCalls": [
+    671.32,
+    670.85
+   ],
+   "GPUMem/LocalUsedMB": [
+    4700.01,
+    4667.53
+   ],
+   "TextureStreaming/WantedMips": [
+    456.81,
+    456.81
+   ]
+  },
+  "20_oblique.png": {
+   "GPUTime": [
+    29.67,
+    29.59
+   ],
+   "FrameTime": [
+    30.38,
+    30.33
+   ],
+   "GameThreadTime": [
+    9.89,
+    10.26
+   ],
+   "RT_busy_excl_wait": [
+    6.35,
+    6.3
+   ],
+   "RHI/DrawCalls": [
+    1310.53,
+    1324.81
+   ],
+   "GPUMem/LocalUsedMB": [
+    4827.82,
+    4795.65
+   ],
+   "TextureStreaming/WantedMips": [
+    115.73,
+    115.73
+   ]
+  }
+ }
+}
