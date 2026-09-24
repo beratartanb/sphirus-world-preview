@@ -636,48 +636,48 @@
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
       "foliage_type": null,
-      "mesh": "/Game/Fab/Megascans/3D/Nordic_Forest_Ground_Patch_Root_tkwqbbofa/High/tkwqbbofa_tier_1/StaticMeshes/tkwqbbofa_tier_1.tkwqbbofa_tier_1",
-      "instance_count": 59,
+      "mesh": "/Game/PineForestPack/Meshes/TerrainPatches/SM_PineDeadTrunk03.SM_PineDeadTrunk03",
+      "instance_count": 18,
       "bounds": {
         "min": [
-          -3625.1875,
-          -5131.61669921875,
-          -90.19323587417603
+          -1218.579778869611,
+          -3764.1137799579237,
+          -160.43214063644405
         ],
         "max": [
-          3439.7237548828125,
-          8226.8486328125,
-          712.3847060203552
+          5755.803277771014,
+          5870.127430979576,
+          1583.291736316681
         ],
         "center": [
-          -92.73187255859375,
-          1547.615966796875,
-          311.0957350730896
+          2268.6117494507016,
+          1053.0068255108263,
+          711.4297978401185
         ],
         "extent": [
-          3532.4556274414062,
-          6679.232666015625,
-          401.2889709472656
+          3487.1915283203125,
+          4817.12060546875,
+          871.8619384765625
         ]
       },
-      "sample_count": 59,
+      "sample_count": 18,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
         "min": [
-          0.6800000071525575,
-          0.6800000071525575,
-          0.44999998807907104
+          0.7300000190734864,
+          0.7300000190734863,
+          0.7300000190734863
         ],
         "max": [
-          1.1399999856948855,
-          1.1399999856948853,
-          1.1399999856948853
+          1.009999990463258,
+          1.0099999904632582,
+          1.0099999904632568
         ],
         "mean": [
-          0.9144745782270269,
-          0.9144745782270269,
-          0.8992203413429907
+          0.8777777784400517,
+          0.8777777784400517,
+          0.8777777784400516
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -688,107 +688,11 @@
       "grid": [
         {
           "cell_xy": [
-            -4,
-            5
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
-        },
-        {
-          "cell_xy": [
-            -4,
-            6
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
-        },
-        {
-          "cell_xy": [
-            -3,
-            2
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            -3,
-            5
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            -3,
-            6
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -3,
-            8
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -2,
-            7
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            -1,
-            0
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
             -1,
             2
           ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            -1,
-            7
-          ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
-        },
-        {
-          "cell_xy": [
-            0,
-            1
-          ],
           "sample_count": 1,
           "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            2
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
         },
         {
           "cell_xy": [
@@ -801,110 +705,6 @@
         {
           "cell_xy": [
             1,
-            -6
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            3
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -4
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -3
-          ],
-          "sample_count": 3,
-          "estimated_instances": 3.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -1
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            2,
-            0
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            1
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            2,
-            4
-          ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
-        },
-        {
-          "cell_xy": [
-            2,
-            5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
             -2
           ],
           "sample_count": 1,
@@ -912,8 +712,64 @@
         },
         {
           "cell_xy": [
+            1,
+            3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -3
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -2
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
             3,
             -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            2
           ],
           "sample_count": 1,
           "estimated_instances": 1.0
@@ -925,18 +781,42 @@
           ],
           "sample_count": 1,
           "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            -4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            4,
+            0
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            5,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
         }
       ],
       "sample_location_bounds": {
         "min": [
-          -3545.0,
-          -5046.0,
-          -89.78973516082763
+          -990.0,
+          -3633.0,
+          -109.43721172332764
         ],
         "max": [
-          3350.0,
-          8130.0,
-          698.4032240180969
+          5625.0,
+          5644.660140947053,
+          1510.9985998153686
         ]
       }
     },
@@ -7205,11 +7085,11 @@
       "native_foliage": true,
       "foliage_type": null,
       "mesh": "/Game/Calysto/World/Vegetation/Meshes/SM_Grass_Sedge_02.SM_Grass_Sedge_02",
-      "instance_count": 126,
+      "instance_count": 130,
       "bounds": {
         "min": [
           -2873.318359375,
-          2659.1302490234375,
+          2610.6162109375,
           -157.27555990219116
         ],
         "max": [
@@ -7219,16 +7099,16 @@
         ],
         "center": [
           -206.8715057373047,
-          5132.957702636719,
+          5108.70068359375,
           -44.1653265953064
         ],
         "extent": [
           2666.4468536376953,
-          2473.8274536132812,
+          2498.08447265625,
           113.11023330688477
         ]
       },
-      "sample_count": 126,
+      "sample_count": 130,
       "sampled": false,
       "sampling": "deterministic stratified instance indices",
       "scale_statistics": {
@@ -7243,9 +7123,9 @@
           1.1490000486373901
         ],
         "mean": [
-          0.9400555519830613,
-          0.9400555519830613,
-          0.9400555519830613
+          0.9364967919312992,
+          0.9364967919312992,
+          0.9364967919312991
         ]
       },
       "grid_cell_size_cm": 1000,
@@ -7331,16 +7211,16 @@
             0,
             2
           ],
-          "sample_count": 4,
-          "estimated_instances": 4.0
+          "sample_count": 7,
+          "estimated_instances": 7.0
         },
         {
           "cell_xy": [
             0,
             3
           ],
-          "sample_count": 8,
-          "estimated_instances": 8.0
+          "sample_count": 9,
+          "estimated_instances": 9.0
         },
         {
           "cell_xy": [
@@ -7402,7 +7282,7 @@
       "sample_location_bounds": {
         "min": [
           -2848.0,
-          2686.0,
+          2631.192172741254,
           -157.1705907722473
         ],
         "max": [
@@ -33092,6 +32972,308 @@
     },
     {
       "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_5",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/Fab/Megascans/3D/Nordic_Forest_Ground_Patch_Root_tkwqbbofa/High/tkwqbbofa_tier_1/StaticMeshes/tkwqbbofa_tier_1.tkwqbbofa_tier_1",
+      "instance_count": 57,
+      "bounds": {
+        "min": [
+          -3625.1875,
+          -5131.61669921875,
+          -90.19323587417603
+        ],
+        "max": [
+          3439.7237548828125,
+          8226.8486328125,
+          712.3847060203552
+        ],
+        "center": [
+          -92.73187255859375,
+          1547.615966796875,
+          311.0957350730896
+        ],
+        "extent": [
+          3532.4556274414062,
+          6679.232666015625,
+          401.2889709472656
+        ]
+      },
+      "sample_count": 57,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.6800000071525575,
+          0.6800000071525575,
+          0.44999998807907104
+        ],
+        "max": [
+          1.1399999856948853,
+          1.1399999856948853,
+          1.1399999856948853
+        ],
+        "mean": [
+          0.9156140371372825,
+          0.9156140371372825,
+          0.8998245638713502
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -4,
+            5
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            -4,
+            6
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            -3,
+            2
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            -3,
+            5
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            -3,
+            6
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -3,
+            8
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -2,
+            7
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -1,
+            0
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            -1,
+            2
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            -1,
+            7
+          ],
+          "sample_count": 8,
+          "estimated_instances": 8.0
+        },
+        {
+          "cell_xy": [
+            0,
+            1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            2
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            0,
+            3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -6
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            -4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            3
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -4
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -3
+          ],
+          "sample_count": 3,
+          "estimated_instances": 3.0
+        },
+        {
+          "cell_xy": [
+            2,
+            0
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            1
+          ],
+          "sample_count": 2,
+          "estimated_instances": 2.0
+        },
+        {
+          "cell_xy": [
+            2,
+            4
+          ],
+          "sample_count": 4,
+          "estimated_instances": 4.0
+        },
+        {
+          "cell_xy": [
+            2,
+            5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -3545.0,
+          -5046.0,
+          -89.78973516082763
+        ],
+        "max": [
+          3350.0,
+          8130.0,
+          698.4032240180969
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
       "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_50",
       "component_type": "FoliageInstancedStaticMeshComponent",
       "native_foliage": true,
@@ -34355,196 +34537,6 @@
           7206.0,
           11611.0,
           1804.7359571777342
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_52",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/PineForestPack/Meshes/TerrainPatches/SM_PineDeadTrunk03.SM_PineDeadTrunk03",
-      "instance_count": 18,
-      "bounds": {
-        "min": [
-          -1218.57958984375,
-          -3764.11376953125,
-          -160.43216209411617
-        ],
-        "max": [
-          5755.80322265625,
-          5870.12744140625,
-          1583.2918369293213
-        ],
-        "center": [
-          2268.61181640625,
-          1053.0068359375,
-          711.4298374176026
-        ],
-        "extent": [
-          3487.19140625,
-          4817.12060546875,
-          871.8619995117188
-        ]
-      },
-      "sample_count": 18,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.7300000190734864,
-          0.7300000190734863,
-          0.7300000190734863
-        ],
-        "max": [
-          1.009999990463258,
-          1.0099999904632582,
-          1.0099999904632568
-        ],
-        "mean": [
-          0.8777777784400518,
-          0.8777777784400518,
-          0.8777777784400516
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -1,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            -2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -3
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -1
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            -1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            -4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            4,
-            0
-          ],
-          "sample_count": 2,
-          "estimated_instances": 2.0
-        },
-        {
-          "cell_xy": [
-            5,
-            -1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -990.0,
-          -3633.0,
-          -109.43721172332764
-        ],
-        "max": [
-          5625.0,
-          5644.660140947053,
-          1510.9985998153686
         ]
       }
     },
@@ -36275,148 +36267,6 @@
           9735.91,
           10678.090873542982,
           1924.469316482544
-        ]
-      }
-    },
-    {
-      "actor": "InstancedFoliageActor0",
-      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_61",
-      "component_type": "FoliageInstancedStaticMeshComponent",
-      "native_foliage": true,
-      "foliage_type": null,
-      "mesh": "/Game/PineForestPack/Meshes/Rocks/SM_PineStone03.SM_PineStone03",
-      "instance_count": 9,
-      "bounds": {
-        "min": [
-          -3581.75439453125,
-          -1436.03515625,
-          -80.61677633002985
-        ],
-        "max": [
-          3625.5719451904297,
-          6515.529052734375,
-          314.80312265678657
-        ],
-        "center": [
-          21.908775329589844,
-          2539.7469482421875,
-          117.09317316337835
-        ],
-        "extent": [
-          3603.66316986084,
-          3975.7821044921875,
-          197.7099494934082
-        ]
-      },
-      "sample_count": 9,
-      "sampled": false,
-      "sampling": "deterministic stratified instance indices",
-      "scale_statistics": {
-        "min": [
-          0.48420479893684376,
-          0.48420479893684376,
-          0.4842047989368438
-        ],
-        "max": [
-          0.990000009536743,
-          0.990000009536743,
-          0.9499999880790712
-        ],
-        "mean": [
-          0.711719688442018,
-          0.7117196884420182,
-          0.7100067767832015
-        ]
-      },
-      "grid_cell_size_cm": 1000,
-      "grid_origin_cm": [
-        0,
-        0
-      ],
-      "grid": [
-        {
-          "cell_xy": [
-            -4,
-            4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            0,
-            2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            1,
-            3
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -2
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            -1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            2,
-            1
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            4
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            5
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        },
-        {
-          "cell_xy": [
-            3,
-            6
-          ],
-          "sample_count": 1,
-          "estimated_instances": 1.0
-        }
-      ],
-      "sample_location_bounds": {
-        "min": [
-          -3510.0,
-          -1398.0416377715997,
-          -60.096401882171634
-        ],
-        "max": [
-          3587.31282501308,
-          6478.17179374673,
-          247.09766960144043
         ]
       }
     },
@@ -41335,6 +41185,148 @@
           3280.0,
           6440.0,
           -13.741572198111827
+        ]
+      }
+    },
+    {
+      "actor": "InstancedFoliageActor0",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_8",
+      "component_type": "FoliageInstancedStaticMeshComponent",
+      "native_foliage": true,
+      "foliage_type": null,
+      "mesh": "/Game/PineForestPack/Meshes/Rocks/SM_PineStone03.SM_PineStone03",
+      "instance_count": 9,
+      "bounds": {
+        "min": [
+          -3581.75439453125,
+          -1436.03515625,
+          -80.61677633002985
+        ],
+        "max": [
+          3625.5719451904297,
+          6515.529052734375,
+          314.80312265678657
+        ],
+        "center": [
+          21.908775329589844,
+          2539.7469482421875,
+          117.09317316337835
+        ],
+        "extent": [
+          3603.66316986084,
+          3975.7821044921875,
+          197.7099494934082
+        ]
+      },
+      "sample_count": 9,
+      "sampled": false,
+      "sampling": "deterministic stratified instance indices",
+      "scale_statistics": {
+        "min": [
+          0.4842047989368437,
+          0.48420479893684365,
+          0.4842047989368438
+        ],
+        "max": [
+          0.9900000095367426,
+          0.9900000095367427,
+          0.9499999880790712
+        ],
+        "mean": [
+          0.711719688442018,
+          0.711719688442018,
+          0.7100067767832015
+        ]
+      },
+      "grid_cell_size_cm": 1000,
+      "grid_origin_cm": [
+        0,
+        0
+      ],
+      "grid": [
+        {
+          "cell_xy": [
+            -4,
+            4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            0,
+            2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            1,
+            3
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -2
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            -1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            2,
+            1
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            4
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            5
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        },
+        {
+          "cell_xy": [
+            3,
+            6
+          ],
+          "sample_count": 1,
+          "estimated_instances": 1.0
+        }
+      ],
+      "sample_location_bounds": {
+        "min": [
+          -3510.0,
+          -1398.0416377715997,
+          -60.096401882171634
+        ],
+        "max": [
+          3587.31282501308,
+          6478.17179374673,
+          247.09766960144043
         ]
       }
     },
