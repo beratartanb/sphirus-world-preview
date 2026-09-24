@@ -1,0 +1,7 @@
+{"pass": "Art direction / atmosphere / routes / backyard / house exterior character", "baseline_run": "2026-09-24_175448_014533_a9cc9f",
+ "foliage": {"before": 8159, "after": 8187},
+ "light": {"sun_pitch": "-32 -> -27", "sun_source_angle": "8 -> 1.3", "sun_volumetric_scattering": "1 -> 2.2", "sky_volumetric_scattering": "1 -> 0.35", "volumetric_fog": "off -> on (extinction 1.7, scattering dist 0.8, 40 m)"},
+ "atmosphere": "7 AD_Air_* pockets using existing NS_TW_RefugeLocalAir (backyard x2, pond path, exit mouth, exit shaft, uphill rise, porch front)",
+ "props": "AD_Life_* / AD_Life2_* / AD_Life3_* in EXTERIOR/HouseLife: rain barrel at downpipe, rear doormat, pots, tool rack, bucket, chopping block + split wood, yard chair, fence + gate posts at trail junction, rear stepping stones, front flagstone footing, porch step pots, firewood stack, 3 restrained ivy, 6 causal weathering decals",
+ "materials": "Exterior-only weathered copies for veranda boards/oak/skirt (interior users unchanged)",
+ "acceptance": {"routes": "Tier 3", "side_to_backyard": "Tier 3", "backyard_identity": "Tier 2-3", "house_character": "Tier 2", "atmosphere_light": "Tier 3 backlit / Tier 1-2 frontlit"}}
