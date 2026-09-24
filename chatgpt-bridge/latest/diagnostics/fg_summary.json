@@ -1,0 +1,6 @@
+{"pass": "Final exterior acceptance gate", "baseline_run": "2026-09-25_013635_109121_0d1ad1", "final_run": "2026-09-25_024058_725422_06d8c8", "foliage": 8290, "actors": 771,
+ "verdict": "PARTIAL ACCEPTANCE", "failed_rows": ["House front facade (PARTIAL)", "Shoreline (PARTIAL)"],
+ "kept_changes": ["MI_EX_SlabEdgeAged on Architecture_01_GROUND_GroundSlab (exterior-face gated; interior floor verified unchanged FG12)", "front shelter gradient in exterior age layer (M_EX_Integration_ExposureLime/LimeOak)"],
+ "reverted_probes": ["MI_EX_Pond Edge Distance/Calm Normal Amplitude/Roughness/Specular (no measurable effect)", "ReviewOnly_NeutralSky hidden (glare barely changed, frontlit depth weaker)", "shelf micro-terrain plan_g1 (no clear effect; restored, readback identical)"],
+ "shoreline_root_cause": "Single Layer Water grazing-angle Fresnel reflection of bright sky gaps between trees; the reflection is brighter than the directly seen hazy sky (not attenuated by height/volumetric fog). Not a material-parameter or terrain issue; needs a reflection/fog-in-reflection or exposure-level solution.",
+ "perf_note": "5 poses, fresh sessions. RenderThreadTime CSV invalid (~0); RT_busy_excl_wait used."}
