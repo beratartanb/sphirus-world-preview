@@ -1,15 +1,20 @@
 {
- "run_id": "2026-09-24_042848_583551_1fbe36",
- "purpose": "structural pass #2 diagnostics (additional to the standard 18 views)",
+ "run_id": "2026-09-24_091455_841494_f31562",
+ "purpose": "naturalization pass diagnostics (additional to the standard 18 views)",
  "files": [
-  "D1_descent_before_after.jpg",
-  "D2_approach_shore_before_after.jpg",
-  "D3_90deg_lookback_before_after.jpg",
-  "D4_terrain_only_before_after.jpg",
-  "D5_terrain_oblique_before_after.jpg",
-  "D6_player_camera_traversal_stations.jpg",
-  "landscape_evidence.json",
-  "pie_house_pond.json",
-  "camera_plan.json"
+  "N01_shoreline_before_after.jpg",
+  "N02_berm_close_before_after.jpg",
+  "N03_root_integration.jpg",
+  "N04_water_land_transition.jpg",
+  "N05_descent_ground_detail.jpg",
+  "N06_pond_side_path.jpg",
+  "N07_house_ground_contact.jpg",
+  "N08_90deg_left_right.jpg",
+  "N09_player_camera_traversal.jpg",
+  "nat_plan.json",
+  "nat_applied.json",
+  "perf_before_summary.json",
+  "perf_after_summary.json",
+  "pie_house_pond.json"
  ]
 }
