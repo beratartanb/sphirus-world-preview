@@ -1,0 +1,15 @@
+{
+ "pass": "Surface integration / material realism (shoreline, house-to-pond descent, house-ground contact)",
+ "baseline_run": "2026-09-24_091455_841494_f31562",
+ "root_cause_found": "Pale beige shore sheet = grazing sky specular on landscape (dry spec const 0.1) + pale Megascans root/leaf patches (brightness 0.5, spec 0.25) + height-only 1 m wet ring; histogram auto-exposure (EV -2..16) re-normalises plain albedo darkening, so local breakup and sheen removal were required.",
+ "changes": {
+  "M_EX_Integration_Floor": "Custom_8/10 zone-gated (pond+house zone only, outside unchanged): uniform wet ring replaced by +-16 cm wobbling waterline lip; mask-driven wet/damp/transition/dry soil response; pale gravel earth -> humus soil in zone; muted moss; roughness wet .50 / damp .68-.82 / dry .78-.91. LinearInterpolate_1.const_a (dry spec) 0.1 -> 0.03 (whole landscape).",
+  "T_EX_RefugeHabitat": "habitat_si.png: broken wet lip (0.35-1.7 m, interrupted), damp band 1.3-6.5 m with sunny-stretch variation, damp patches, litter tongues and 1-3 m litter drifts, moss pockets at roots/rocks/deadwood/trees (no ring), foundation drip line + rear/west moss, path tread drier / shoulder litter.",
+  "terrain": "Waterline micro only: 274 vertices with |z+100|<30 cm, max 7 cm; readback verified 0 mismatch. No macro sculpt.",
+  "material_instances": "RootPatch/MossRoot brightness .5->.21/.25, spec .25->.05/.06, warmer tint; GroundRock03, PineStone01-04, SmallStones: blue-grey tints warmed, brightness and specular lowered; DeadLeaves01 brightness .36->.27, spec .22->.07; DeadTrunk02 1.3->.95; RefugeFoundation ground effect opacity .28->.7, gradient 260..60. YoungPine/Juvenile experiments reverted to original values.",
+  "foliage": "Reseated in zone: 15 RootPatch, 30 MossRoot, 3 Root04, 21 rocks, 11 small stones, 11 deadwood; 75 dead-leaf mats aligned to ground; removed 23 isolated dead-leaf stickers; added 25 + 57 house-base contact instances (GroundCover01/03, FernWild01, Fern02, DeadLeaves02)."
+ },
+ "foliage_count": {"before": 8100, "after": 8159, "delta": 59},
+ "perf_note": "Same five editor poses as baseline AFTER capture. GPU +0.2..+0.9 ms, draw calls about -75, wanted mips -82..-110, local VRAM -200..+96 MB. Physical RAM not comparable (different editor session load).",
+ "acceptance": {"shoreline_zone_D": "Tier 3 (pale sheet removed at thumbnail in 17, 13, 12, S04, 07, C03, T02, PIE st06)", "house_contact_zone_A": "Tier 2 (rooted clumps and drip line added; plinth base still reads clean)", "remaining": ["S03 left bank and sunlit far bank still pale", "waterline still geometric where flat shelf meets water (C03)", "yellow young spruce sapling (texture) in 13/17", "house plinth band still clean in S09"]}
+}

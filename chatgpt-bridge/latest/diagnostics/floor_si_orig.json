@@ -1,0 +1,5 @@
+{
+ "MaterialExpressionCustom_8": "float nearPond=1.-smoothstep(1.,1.18,length((P.xy-float2(-650.,5050.))/float2(4100.,3300.)));float wet=max(H.b,nearPond*(1.-smoothstep(-95.,10.,P.z))*.90);float3 earth=E*float3(.19,.185,.16);float3 litter=L*float3(.27,.285,.25);float3 col=lerp(earth,litter,smoothstep(.18,.82,C));float moss=saturate((.97-H.r)/.46);col=lerp(col,Moss*float3(.36,.40,.32),moss);float lum=dot(col,float3(.2126,.7152,.0722));return lerp(lum.xxx,col,.82)*lerp(1.,.60,wet);",
+ "MaterialExpressionCustom_10": "float nearPond=1.-smoothstep(1.,1.18,length((P.xy-float2(-650.,5050.))/float2(4100.,3300.)));float wet=max(H.b,nearPond*(1.-smoothstep(-95.,10.,P.z))*.90);return lerp(lerp(.78,.91,C),.60,wet);",
+ "Lerp1_const_a": 0.10000000149011612
+}

@@ -1,6 +1,6 @@
 {
- "run_id": "2026-09-24_091455_841494_f31562",
- "purpose": "naturalization pass diagnostics (additional to the standard 18 views)",
+ "run_id": "2026-09-24_175448_014533_a9cc9f",
+ "purpose": "surface integration pass diagnostics (additional to the standard 18 views)",
  "files": [
   "N01_shoreline_before_after.jpg",
   "N02_berm_close_before_after.jpg",
@@ -11,10 +11,13 @@
   "N07_house_ground_contact.jpg",
   "N08_90deg_left_right.jpg",
   "N09_player_camera_traversal.jpg",
-  "nat_plan.json",
-  "nat_applied.json",
+  "si_summary.json",
+  "assets_si.json",
+  "assets_house2.json",
   "perf_before_summary.json",
   "perf_after_summary.json",
-  "pie_house_pond.json"
+  "pie_house_pond.json",
+  "mi_cohesion_orig.json",
+  "floor_si_orig.json"
  ]
 }
