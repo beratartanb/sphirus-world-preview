@@ -1,0 +1,77 @@
+{
+ "before_run": "2026-09-24_021246_966552_fd8ed3",
+ "after_run": "2026-09-24_042848_583551_1fbe36",
+ "heightmap_sha1_before": "c1214c1f189f344f6b4c496754ffe34c5f674c91",
+ "heightmap_sha1_after_live_readback": "c67ca8eef31109ea610ab75acffdff3ae50862dd",
+ "changed_vertices": 1180,
+ "delta_cm_min_max": [
+  -99,
+  98
+ ],
+ "affected_bbox_cm": [
+  -3140,
+  1375,
+  3160,
+  5475
+ ],
+ "wet_area_m2_before_after": [
+  2052,
+  2052
+ ],
+ "live_readback_equals_design": true,
+ "descent": {
+  "len_m": 13.6,
+  "z_start": 98,
+  "z_end": -62,
+  "max_grade_deg": 17.4,
+  "profile_every_2m": [
+   98,
+   98,
+   79,
+   66,
+   29,
+   13,
+   9,
+   7,
+   5,
+   -15,
+   -30,
+   -64,
+   -75,
+   -62
+  ]
+ },
+ "pondside": {
+  "len_m": 40.1,
+  "z_start": -62,
+  "z_end": -72,
+  "max_grade_deg": 10.9,
+  "profile_every_2m": [
+   -62,
+   -62,
+   -50,
+   -38,
+   -14,
+   -16,
+   -23,
+   -27,
+   -27,
+   -27,
+   -26,
+   -26,
+   -28,
+   -35,
+   -42,
+   -44,
+   -44,
+   -35,
+   -34,
+   -35,
+   -45,
+   -63,
+   -68,
+   -72
+  ]
+ },
+ "operations": "heightmap import via Landscape render-target (RG16), single transaction per iteration; iterations q2..q5"
+}
