@@ -1,7 +1,5 @@
-{"pass": "Art direction / atmosphere / routes / backyard / house exterior character", "baseline_run": "2026-09-24_175448_014533_a9cc9f",
+{"pass": "Art direction + house exterior character (continuation)", "baseline_run": "2026-09-24_175448_014533_a9cc9f",
  "foliage": {"before": 8159, "after": 8187},
- "light": {"sun_pitch": "-32 -> -27", "sun_source_angle": "8 -> 1.3", "sun_volumetric_scattering": "1 -> 2.2", "sky_volumetric_scattering": "1 -> 0.35", "volumetric_fog": "off -> on (extinction 1.7, scattering dist 0.8, 40 m)"},
- "atmosphere": "7 AD_Air_* pockets using existing NS_TW_RefugeLocalAir (backyard x2, pond path, exit mouth, exit shaft, uphill rise, porch front)",
- "props": "AD_Life_* / AD_Life2_* / AD_Life3_* in EXTERIOR/HouseLife: rain barrel at downpipe, rear doormat, pots, tool rack, bucket, chopping block + split wood, yard chair, fence + gate posts at trail junction, rear stepping stones, front flagstone footing, porch step pots, firewood stack, 3 restrained ivy, 6 causal weathering decals",
- "materials": "Exterior-only weathered copies for veranda boards/oak/skirt (interior users unchanged)",
- "acceptance": {"routes": "Tier 3", "side_to_backyard": "Tier 3", "backyard_identity": "Tier 2-3", "house_character": "Tier 2", "atmosphere_light": "Tier 3 backlit / Tier 1-2 frontlit"}}
+ "facade": "Exterior-only age layer re-authored in owned M_EX_Integration_ExposureLime/LimeOak: irregular soil-splash base, green-grey damp on shaded rear/east, sun-bleach on exposed west/front, corner grime, macro blotches, double-frequency leak streaks; front kept maintained. Horizontal cladding slot moved to owned MI_EX_CladdingAged (same textures, age-layer parent). Plinth darkened; lime plaster warmed. 6 original base patina decals hidden (visibility off, not deleted) and 7 pass-added decal duplicates removed: they read as pale rectangles on the aged wall.",
+ "perf_fresh_session_vs_baseline": "GPU -0.5..+0.9 ms, draw calls +75..+118, local VRAM -20..-190 MB, wanted mips +0.4..+0.8; volumetric fog ~0.6 ms of GPU",
+ "acceptance": {"routes": "Tier 3", "side_to_backyard": "Tier 3", "backyard": "Tier 3", "house_rear_side": "Tier 3", "house_front_porch": "Tier 2-3", "atmosphere": "Tier 3 backlit / Tier 1-2 frontlit"}}
