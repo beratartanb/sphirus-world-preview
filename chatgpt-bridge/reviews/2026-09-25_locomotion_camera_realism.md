@@ -1,5 +1,7 @@
 # SPHIRUS: locomotion and character-camera realism pass (2026-09-25)
 
+> **Second pass (appended below as section 10):** standing-jump pop fixed with an owned stand-air loop, and foot-placement plant tuning cuts stop, turn and landing slide broadly. The verdict is still PARTIAL.
+
 **Verdict: PARTIAL ACCEPTANCE.**
 
 - Technical evidence was gathered in-engine on the QA floor fixture and the stairs, corridor and wall fixtures, using injected Enhanced Input at 30 FPS plus 10 FPS stress runs, and viewed through the player camera.
@@ -113,3 +115,87 @@ No parallel controller, camera or selection system was added. Every change is in
 - **Untouched:** AAMS/vendor originals (hash-verified), the house map on disk, and scene art.
 - **Rollback:** copy the files back from `Checkpoint` with the editor closed, or set `EnableFacingLockedReversal=false` and `ReversalGripSpeed=0` for a soft disable.
 - **Tooling:** `Tools/LocomotionRealism_20260925/`. Evidence is in `Saved/Codex/LocomotionRealism_20260925/Evidence/`.
+
+## 10. Second pass (same day, after the 11:58 editor crash)
+
+### 10.1 Standing-jump pop: root cause and fix
+- **Cause:**
+  - The standing takeoff (`A_CT_JumpTakeoff_Stand`, 0.4 s) ends with the hips forward and the arms up.
+  - The air clip for every jump was `A_CT_StableFall`, a running-fall loop with split legs and arm sweeps.
+  - At the handover the hips moved 26 cm and the hands 43 cm within about 0.1 s.
+  - The legs then split ±30 cm in the air, so the character landed in a stride and both feet slid about 20 cm into idle.
+- **Fix, inside the existing owner:**
+  - `Update_MotionMatching` → `K2Node_Select_5`, the low-speed airborne branch (<160 cm/s): option 1 now points to the new `PSD_LR_StandAir`.
+  - Its only member is `A_LR_StandAir_Loop`, an owned copy of the retargeted Core Motion `am_Jump_Fall_Loop`. It keeps the feet under the pelvis with ±15 cm of leg motion and steady arms.
+  - The source clip is untouched (hash-verified).
+  - Moving jumps (≥160 cm/s) keep `A_CT_StableFall`.
+- **Result:**
+  - Hip jump at the handover: 26 → 11–14 cm.
+  - Feet in the air: ±30 → ±8 cm.
+  - Frames `Evidence/v2_s2_idle.jpg`: the apex shows the legs together and tucked with symmetric arms, not the old split squat with one arm flung out.
+  - Standing-jump air-plus-landing slide: 30.8 → 11.5 cm (together with 10.2).
+
+### 10.2 Foot-placement plant tuning (Base AnimBP variables `PlantSettings_Default` / `PlantSettings_Stops`)
+- **Finding:** after stops and landings, the idle clip (which has no footspeed curves) cross-blended the feet 11–20 cm at zero speed.
+- **A/B:** five variants were compared on the same injected protocols, suites 1/2/3/5/10, at 30 FPS plus 10 FPS stops:
+  - A: radius 45 with stop speed 60
+  - B: original
+  - C: stop speed 60 only
+  - D: radius 45 only
+  - E: radius 45 with stop speed 40
+- **Stop speed 60 rejected:** it helped at 30 FPS but made 10 FPS walk stops much worse. Summed slide went 306 → 402/512, and the sustained forward stop went 5.9 → 27 cm.
+- **Adopted E:** `PlantSettings_Default.UnplantRadius` 20→45 and `PlantSettings_Stops.SpeedThreshold` 20→40, persisted on both AnimBP class defaults.
+
+| Metric (summed or per stage, cm) | Original | E (adopted) |
+|---|---|---|
+| Suite 10 starts/stops, 30 FPS | 295 | 231 |
+| Suite 10 starts/stops, 10 FPS | 306 | 239 (stops 220 → 221) |
+| Suite 3 regression total | 316 | 251 |
+| Walk stop / wall stop | 9.2 / 5.5 | 1.0 / 1.7 |
+| Short stops | about 12.5 | about 5 |
+| Jog left turn | 32.4 | 4.6 |
+| Diagonal starts (±45 sustained) | 17–21 | 3.6–4.0 |
+| Sprint stops (suites 1/5) | 7–21 | 2.6–7.8 |
+| Sprint 180 left reversal | 17.4 | 1.9 |
+| Standing-jump landing | 20.7 | 11.5 |
+
+- **Small regressions accepted:**
+  - Fast camera-driven 180° recovery: 3.2 → 7.4 cm.
+  - Sustained diagonal walk stops: +1 to +4 cm (they were already the worst rows).
+- **Protected behaviours:**
+  - P2 holds: the same `M_Neutral_Walk_Stop_*` clips are acquired at 10 FPS.
+  - P1: taps unchanged.
+  - Crouch, jump distinction and turns: unchanged.
+
+### 10.3 Tooling incidents (evidence integrity)
+- **Editor crash (11:58):** an access violation in python311 during the runner tick, right after an AudioMixer hardware timeout (same pattern as 05:06). All assets had already been saved.
+  - On relaunch the crash-restore dialog was accepted, which rewrote `L_GR_SphirusHouse.umap` (17:25) from its pre-crash autosave.
+  - The loaded world has no `PBI_QA_*` actors, and its game-mode override is the original `BP_GM_GR_GraceRanger`.
+  - A byte-for-byte comparison with the post-E2 map is not possible, because no post-E2 hash was recorded.
+- **Orphaned PIE watcher:** one from a killed QA chain ended later PIE sessions. The affected D runs were discarded and rerun.
+  - Every A/B/C/E number above was recorded before or after the incident.
+  - The watcher was fixed to unregister only its own handle, and the orphan was neutralised.
+
+### 10.4 Newly observed issue (not fixed)
+- **Jump apex camera:** the camera does not follow the jump height (camera Z relative to the capsule drops to 38 cm at the apex), so the head leaves the top of the frame (`v2_s2_idle.jpg` frames 4–5).
+  - Unchanged from the baseline.
+  - It needs a camera-owned vertical-follow decision (`GR_UpdateRig`), not an animation change.
+
+### 10.5 Updated remaining issues
+1. Walk forward jump air/landing slide is still 51 cm. Walk jumps now also use the stand-air loop below 160 cm/s, and the momentum carry (P5) is physical, so it is unchanged.
+2. Sustained diagonal walk stops: 22–31 cm.
+3. Idle settle after a sprint stop (`finish`): 18–19 cm. That is the idle cross-blend in the Stops→idle hand-off, which foot placement still releases. The root cause is not yet identified.
+4. `wall_retreat` and `camera_backward_settle` slide proxies: 26 and 68 cm (backpedal away from a wall), unverified.
+5. Jump apex camera framing (10.4).
+6. Physical keyboard/mouse, gamepad, real 60 FPS and real-house play: still NOT_TESTED.
+
+### 10.6 Assets changed in the second pass
+- **New:**
+  - `/Game/GraceRanger/Experimental/BodyInertia/JumpAir/PSD_LR_StandAir`
+  - `.../JumpAir/A_LR_StandAir_Loop`
+- **Modified:**
+  - Sandbox `ABP_GR_MotionMatchingBase`: Select_5 option, `PlantSettings_*` defaults.
+  - Sandbox `ABP_GR_MotionMatching`: `PlantSettings_*` defaults.
+- **Checkpoint:** `Saved/Codex/LocomotionRealism_20260925/Checkpoint2_JumpAir/` (both AnimBPs from before the second pass, plus `sha256.txt`).
+- **Compile:** all touched Blueprints are `BS_UP_TO_DATE`. The Base keeps its existing IsValid thread-safety warning.
+- **Dirty:** no content packages. The house map is dirty in memory only (QA fixture add/remove). **Close the editor with "Don't Save".**
