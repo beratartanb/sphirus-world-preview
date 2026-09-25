@@ -1,0 +1,974 @@
+[
+ {
+  "label": "EX_PostRain_Atmosphere",
+  "cls": "SkyAtmosphere",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": []
+ },
+ {
+  "label": "ReviewOnly_WindowDay_LivingSouth",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "12000.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "600.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_LivingEast",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "6900.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "600.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_KitchenNorth",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "7500.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "450.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_KitchenEast",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "6600.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "450.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Workshop",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "9000.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "450.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Reading",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "7500.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "450.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Bedroom",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "7500.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "450.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Bath",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/WindowDaylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "4200.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "450.0",
+    "indirect_lighting_intensity": "1.5",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "5500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_Ground",
+  "cls": "StaticMeshActor",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "True",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": []
+ },
+ {
+  "label": "EX_PostRain_Sun",
+  "cls": "DirectionalLight",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "DirectionalLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "1150.0",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "2.200000047683716",
+    "temperature": "6500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "EX_PostRain_Sky",
+  "cls": "SkyLight",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "SkyLightComponent0",
+    "cls": "SkyLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "2.200000047683716",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_NeutralSky",
+  "cls": "StaticMeshActor",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "True",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": []
+ },
+ {
+  "label": "EX_PostRain_NeutralExposure",
+  "cls": "PostProcessVolume",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [],
+  "enabled": "True",
+  "unbound": "True",
+  "priority": "0.0",
+  "blend_weight": "1.0",
+  "pp": {
+   "override_auto_exposure_method": "True",
+   "auto_exposure_method": "<AutoExposureMethod.AEM_HISTOGRAM: 0>",
+   "override_auto_exposure_bias": "True",
+   "auto_exposure_bias": "-0.6499999761581421",
+   "override_auto_exposure_min_brightness": "True",
+   "auto_exposure_min_brightness": "-2.0",
+   "override_auto_exposure_max_brightness": "True",
+   "auto_exposure_max_brightness": "16.0",
+   "override_local_exposure_highlight_contrast_scale": "False",
+   "local_exposure_highlight_contrast_scale": "1.0",
+   "override_local_exposure_shadow_contrast_scale": "False",
+   "local_exposure_shadow_contrast_scale": "1.0",
+   "override_bloom_intensity": "True",
+   "bloom_intensity": "0.0",
+   "override_white_temp": "True",
+   "white_temp": "6500.0",
+   "override_vignette_intensity": "True",
+   "vignette_intensity": "0.0"
+  }
+ },
+ {
+  "label": "ReviewOnly_PlayerStart",
+  "cls": "PlayerStart",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": []
+ },
+ {
+  "label": "ReviewOnly_SkyBounce_North",
+  "cls": "RectLight",
+  "folder": "ReviewOnly/Daylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "180000.0",
+    "intensity_units": "<LightUnits.CANDELAS: 1>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "2600.0",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "6500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_SkyBounce_West",
+  "cls": "RectLight",
+  "folder": "ReviewOnly/Daylight",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "140000.0",
+    "intensity_units": "<LightUnits.CANDELAS: 1>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "2600.0",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "6500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_R05_LocalExposure",
+  "cls": "PostProcessVolume",
+  "folder": "ReviewEnvironment",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [],
+  "enabled": "False",
+  "unbound": "True",
+  "priority": "20.0",
+  "blend_weight": "1.0",
+  "pp": {
+   "override_auto_exposure_method": "False",
+   "auto_exposure_method": "<AutoExposureMethod.AEM_HISTOGRAM: 0>",
+   "override_auto_exposure_bias": "False",
+   "auto_exposure_bias": "1.0",
+   "override_auto_exposure_min_brightness": "False",
+   "auto_exposure_min_brightness": "-10.0",
+   "override_auto_exposure_max_brightness": "False",
+   "auto_exposure_max_brightness": "20.0",
+   "override_local_exposure_highlight_contrast_scale": "True",
+   "local_exposure_highlight_contrast_scale": "0.8500000238418579",
+   "override_local_exposure_shadow_contrast_scale": "True",
+   "local_exposure_shadow_contrast_scale": "0.699999988079071",
+   "override_bloom_intensity": "False",
+   "bloom_intensity": "0.0",
+   "override_white_temp": "False",
+   "white_temp": "6500.0",
+   "override_vignette_intensity": "False",
+   "vignette_intensity": "0.0"
+  }
+ },
+ {
+  "label": "ReviewOnly_YardSoftbox",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/NeutralReviewSoftboxes",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "300000.0",
+    "intensity_units": "<LightUnits.CANDELAS: 1>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "3200.0",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "6500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_ExteriorSoftbox",
+  "cls": "RectLight",
+  "folder": "ReviewEnvironment/NeutralReviewSoftboxes",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "True",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "300000.0",
+    "intensity_units": "<LightUnits.CANDELAS: 1>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "4000.0",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "6500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "EX_PostRain_Humidity",
+  "cls": "ExponentialHeightFog",
+  "folder": "None",
+  "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "HeightFogComponent0",
+    "cls": "ExponentialHeightFogComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "fog_density": "0.012000000104308128",
+    "fog_height_falloff": "0.18000000715255737",
+    "fog_max_opacity": "0.5",
+    "start_distance": "700.0",
+    "enable_volumetric_fog": "True",
+    "fog_inscattering_luminance": "<Struct 'LinearColor' (0x000001F0858C22B4) {r: 0.055000, g: 0.062000, b: 0.066000, a: 1.000000}>"
+   }
+  ]
+ },
+ {
+  "label": "LivingLamp",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "420.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "550.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "HearthGlow",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "100.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "240.0",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "2300.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "KitchenPendant",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "1100.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "500.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "WorkshopPendant",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "950.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "500.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "HallSconce",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "400.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "85.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "ReadingLamp",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "430.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "400.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "BathLamp",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "500.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "420.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "LowerWCLight",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "300.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "270.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "LowerStoreLight",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "220.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "230.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "RearExit",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "190.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "280.0",
+    "indirect_lighting_intensity": "1.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3000.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "AtticServiceLight",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "1100.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "520.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3600.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "LivingPendantLight",
+  "cls": "PointLight",
+  "folder": "House/Lights",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "1200.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "500.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "R05_BedsideLampRightLight",
+  "cls": "PointLight",
+  "folder": "House/Lamps",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "450.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "300.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "R05_LivingFloorLampLight",
+  "cls": "PointLight",
+  "folder": "House/Lamps",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "750.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "1000.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3500.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ },
+ {
+  "label": "R05_MainStairWallLampLight",
+  "cls": "PointLight",
+  "folder": "House/Lamps",
+  "level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent",
+  "hidden_ed": false,
+  "hidden_game": "False",
+  "editor_only": "False",
+  "temporarily_hidden": false,
+  "comps": [
+   {
+    "name": "LightComponent0",
+    "cls": "PointLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "550.0",
+    "intensity_units": "<LightUnits.LUMENS: 2>",
+    "affects_world": "True",
+    "cast_shadows": "True",
+    "attenuation_radius": "1000.0",
+    "indirect_lighting_intensity": "2.0",
+    "volumetric_scattering_intensity": "1.0",
+    "temperature": "3800.0",
+    "use_temperature": "True",
+    "enable_light_shaft_bloom": "False",
+    "bloom_scale": "0.20000000298023224"
+   }
+  ]
+ }
+]

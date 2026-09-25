@@ -1,0 +1,838 @@
+{
+  "phase": "e2_after",
+  "note": "RenderThreadTime reported but unreliable across sessions; RT_exclusive_sum = sum of Exclusive/RenderThread/* stats as cross-check",
+  "views": [
+    {
+      "view": "02_house_to_pond.png",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071156).csv",
+      "samples": 431,
+      "values": {
+        "FrameTime": {
+          "mean": 27.94776909975669,
+          "median": 27.9519,
+          "p95": 28.5601
+        },
+        "GPUTime": {
+          "mean": 27.144028223844284,
+          "median": 27.1357,
+          "p95": 27.3543
+        },
+        "GameThreadTime": {
+          "mean": 8.806736253041363,
+          "median": 8.7698,
+          "p95": 9.2487
+        },
+        "RenderThreadTime": {
+          "mean": 27.93621678832117,
+          "median": 27.9616,
+          "p95": 28.525
+        },
+        "RHIThreadTime": {
+          "mean": 3.553642092457421,
+          "median": 3.5341,
+          "p95": 3.911
+        },
+        "RHI/DrawCalls": {
+          "mean": 604.8515815085158,
+          "median": 601.0,
+          "p95": 630.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 383890.4087591241,
+          "median": 368196.0,
+          "p95": 558720.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7059.499686374696,
+          "median": 7059.5,
+          "p95": 7059.5
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5460.554968856448,
+          "median": 5460.9102,
+          "p95": 5460.9102
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 405.2031,
+          "median": 405.2031,
+          "p95": 405.2031
+        },
+        "PhysicalUsedMB": {
+          "mean": 15591.937248418491,
+          "median": 15606.3789,
+          "p95": 15611.6836
+        },
+        "VirtualUsedMB": {
+          "mean": 17645.427882968368,
+          "median": 17645.7656,
+          "p95": 17651.3906
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 467.2773,
+          "median": 467.2773,
+          "p95": 467.2773
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 467.2773,
+          "median": 467.2773,
+          "p95": 467.2773
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 193.2344,
+          "median": 193.2344,
+          "p95": 193.2344
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 160.32924647201946,
+          "median": 160.3292,
+          "p95": 160.3302
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 27.921040875912404
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.057888807785888
+        },
+        "spike_frames_prim_gt_3M": 0
+      }
+    },
+    {
+      "view": "05_uphill_lookback.png",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071220).csv",
+      "samples": 358,
+      "values": {
+        "FrameTime": {
+          "mean": 33.71327662721893,
+          "median": 33.70545,
+          "p95": 34.5721
+        },
+        "GPUTime": {
+          "mean": 32.88729704142012,
+          "median": 32.898849999999996,
+          "p95": 33.3174
+        },
+        "GameThreadTime": {
+          "mean": 8.938641124260355,
+          "median": 8.89185,
+          "p95": 9.4927
+        },
+        "RenderThreadTime": {
+          "mean": 33.7039523668639,
+          "median": 33.6942,
+          "p95": 34.5593
+        },
+        "RHIThreadTime": {
+          "mean": 3.833931952662722,
+          "median": 3.8070500000000003,
+          "p95": 4.2422
+        },
+        "RHI/DrawCalls": {
+          "mean": 3216.266272189349,
+          "median": 3215.0,
+          "p95": 3314.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 1207387.5443786983,
+          "median": 576719.0,
+          "p95": 3298098.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7059.5,
+          "median": 7059.5,
+          "p95": 7059.5
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5496.3633,
+          "median": 5496.3633,
+          "p95": 5496.3633
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 405.73046686390535,
+          "median": 405.3281,
+          "p95": 409.3281
+        },
+        "PhysicalUsedMB": {
+          "mean": 15069.207196153846,
+          "median": 15042.6172,
+          "p95": 15195.2539
+        },
+        "VirtualUsedMB": {
+          "mean": 17682.495502071004,
+          "median": 17684.3789,
+          "p95": 17684.6289
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 446.207,
+          "median": 446.207,
+          "p95": 446.207
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 446.207,
+          "median": 446.207,
+          "p95": 446.207
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 214.3047,
+          "median": 214.3047,
+          "p95": 214.3047
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 164.75864289940827,
+          "median": 164.75855,
+          "p95": 164.7606
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 33.68981834319526
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.660127514792899
+        },
+        "spike_frames_prim_gt_3M": 35
+      }
+    },
+    {
+      "view": "06_rear_trail.png",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071244).csv",
+      "samples": 361,
+      "values": {
+        "FrameTime": {
+          "mean": 33.404285630498535,
+          "median": 33.3833,
+          "p95": 34.2152
+        },
+        "GPUTime": {
+          "mean": 32.60026568914956,
+          "median": 32.6163,
+          "p95": 32.8883
+        },
+        "GameThreadTime": {
+          "mean": 8.872446334310851,
+          "median": 8.8295,
+          "p95": 9.389
+        },
+        "RenderThreadTime": {
+          "mean": 33.39982228739003,
+          "median": 33.3921,
+          "p95": 34.2291
+        },
+        "RHIThreadTime": {
+          "mean": 3.546056891495601,
+          "median": 3.525,
+          "p95": 3.9175
+        },
+        "RHI/DrawCalls": {
+          "mean": 592.4310850439882,
+          "median": 592.0,
+          "p95": 594.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 303641.9560117302,
+          "median": 303627.0,
+          "p95": 303647.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7059.5,
+          "median": 7059.5,
+          "p95": 7059.5
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5458.568851612903,
+          "median": 5458.9102,
+          "p95": 5458.9102
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 405.3281,
+          "median": 405.3281,
+          "p95": 405.3281
+        },
+        "PhysicalUsedMB": {
+          "mean": 14558.587994428153,
+          "median": 14603.6875,
+          "p95": 14664.0273
+        },
+        "VirtualUsedMB": {
+          "mean": 17634.332597947214,
+          "median": 17633.0898,
+          "p95": 17641.9805
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 448.3008,
+          "median": 448.3008,
+          "p95": 448.3008
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 448.3008,
+          "median": 448.3008,
+          "p95": 448.3008
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 212.2109,
+          "median": 212.2109,
+          "p95": 212.2109
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 161.80467448680352,
+          "median": 161.8046,
+          "p95": 161.8063
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 33.38488328445747
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.019606744868035
+        },
+        "spike_frames_prim_gt_3M": 0
+      }
+    },
+    {
+      "view": "15_edge_west.png",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071308).csv",
+      "samples": 388,
+      "values": {
+        "FrameTime": {
+          "mean": 31.122008695652173,
+          "median": 31.102649999999997,
+          "p95": 32.2033
+        },
+        "GPUTime": {
+          "mean": 30.315296739130435,
+          "median": 30.31235,
+          "p95": 30.5908
+        },
+        "GameThreadTime": {
+          "mean": 8.921438858695652,
+          "median": 8.8978,
+          "p95": 9.4144
+        },
+        "RenderThreadTime": {
+          "mean": 31.11632527173913,
+          "median": 31.0817,
+          "p95": 32.1774
+        },
+        "RHIThreadTime": {
+          "mean": 3.5414880434782607,
+          "median": 3.5225999999999997,
+          "p95": 3.8839
+        },
+        "RHI/DrawCalls": {
+          "mean": 593.4239130434783,
+          "median": 589.0,
+          "p95": 630.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 306626.8043478261,
+          "median": 271908.0,
+          "p95": 542812.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7048.875,
+          "median": 7048.875,
+          "p95": 7048.875
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5441.817456521739,
+          "median": 5459.7305,
+          "p95": 5459.7305
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 405.26644918478263,
+          "median": 405.2656,
+          "p95": 405.3281
+        },
+        "PhysicalUsedMB": {
+          "mean": 14338.115891847827,
+          "median": 14337.4922,
+          "p95": 14344.7773
+        },
+        "VirtualUsedMB": {
+          "mean": 17637.59639945652,
+          "median": 17636.790999999997,
+          "p95": 17650.4648
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 456.8008,
+          "median": 456.8008,
+          "p95": 456.8008
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 456.8008,
+          "median": 456.8008,
+          "p95": 456.8008
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 203.7109,
+          "median": 203.7109,
+          "p95": 203.7109
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 161.80439891304349,
+          "median": 161.8046,
+          "p95": 161.8058
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 31.09519809782608
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.2300236413043475
+        },
+        "spike_frames_prim_gt_3M": 0
+      }
+    },
+    {
+      "view": "20_oblique.png",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071332).csv",
+      "samples": 388,
+      "values": {
+        "FrameTime": {
+          "mean": 31.084086141304347,
+          "median": 30.9705,
+          "p95": 32.1096
+        },
+        "GPUTime": {
+          "mean": 30.28823206521739,
+          "median": 30.19095,
+          "p95": 30.818
+        },
+        "GameThreadTime": {
+          "mean": 9.110227989130435,
+          "median": 8.8489,
+          "p95": 9.6162
+        },
+        "RenderThreadTime": {
+          "mean": 31.075551086956523,
+          "median": 30.97505,
+          "p95": 32.0724
+        },
+        "RHIThreadTime": {
+          "mean": 3.652399456521739,
+          "median": 3.6199000000000003,
+          "p95": 4.159
+        },
+        "RHI/DrawCalls": {
+          "mean": 1243.108695652174,
+          "median": 1211.0,
+          "p95": 1409.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 920287.7282608695,
+          "median": 643880.0,
+          "p95": 1021240.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7048.875,
+          "median": 7048.875,
+          "p95": 7048.875
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5459.146977173913,
+          "median": 5459.3711,
+          "p95": 5459.3711
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 405.56723043478263,
+          "median": 405.3281,
+          "p95": 409.3281
+        },
+        "PhysicalUsedMB": {
+          "mean": 14144.076873369566,
+          "median": 14124.3438,
+          "p95": 14246.9883
+        },
+        "VirtualUsedMB": {
+          "mean": 17631.118336141306,
+          "median": 17633.3594,
+          "p95": 17633.7344
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 115.7266,
+          "median": 115.7266,
+          "p95": 115.7266
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 115.7266,
+          "median": 115.7266,
+          "p95": 115.7266
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 544.7852,
+          "median": 544.7852,
+          "p95": 544.7852
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 178.063775,
+          "median": 178.0636,
+          "p95": 178.0653
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 31.05987255434782
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.35285597826087
+        },
+        "spike_frames_prim_gt_3M": 10
+      }
+    },
+    {
+      "view": "F01_front_approach",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071356).csv",
+      "samples": 454,
+      "values": {
+        "FrameTime": {
+          "mean": 26.54731198156682,
+          "median": 26.54665,
+          "p95": 27.1918
+        },
+        "GPUTime": {
+          "mean": 25.760567511520737,
+          "median": 25.78125,
+          "p95": 25.9967
+        },
+        "GameThreadTime": {
+          "mean": 8.85864400921659,
+          "median": 8.80685,
+          "p95": 9.4405
+        },
+        "RenderThreadTime": {
+          "mean": 26.534398156682027,
+          "median": 26.53485,
+          "p95": 27.1626
+        },
+        "RHIThreadTime": {
+          "mean": 3.712787557603687,
+          "median": 3.69415,
+          "p95": 4.086
+        },
+        "RHI/DrawCalls": {
+          "mean": 3478.573732718894,
+          "median": 3470.0,
+          "p95": 3553.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 568755.5207373272,
+          "median": 490144.0,
+          "p95": 867854.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7049.222629262673,
+          "median": 7049.375,
+          "p95": 7049.375
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5494.513802995391,
+          "median": 5494.6289,
+          "p95": 5494.6289
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 435.215052764977,
+          "median": 435.23435,
+          "p95": 437.2656
+        },
+        "PhysicalUsedMB": {
+          "mean": 14144.402215207374,
+          "median": 14146.0234,
+          "p95": 14146.1758
+        },
+        "VirtualUsedMB": {
+          "mean": 17708.814876036868,
+          "median": 17709.5352,
+          "p95": 17709.7852
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 467.7148,
+          "median": 467.7148,
+          "p95": 467.7148
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 467.7148,
+          "median": 467.7148,
+          "p95": 467.7148
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 192.7969,
+          "median": 192.7969,
+          "p95": 192.7969
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 167.7263435483871,
+          "median": 167.7263,
+          "p95": 167.7274
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 26.523526497695848
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.505471198156682
+        },
+        "spike_frames_prim_gt_3M": 1
+      }
+    },
+    {
+      "view": "F03_house_hero_from_descent",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071420).csv",
+      "samples": 578,
+      "values": {
+        "FrameTime": {
+          "mean": 20.81981899641577,
+          "median": 20.78855,
+          "p95": 21.5821
+        },
+        "GPUTime": {
+          "mean": 20.027359139784945,
+          "median": 19.9648,
+          "p95": 20.4107
+        },
+        "GameThreadTime": {
+          "mean": 9.104306630824373,
+          "median": 8.862,
+          "p95": 10.2031
+        },
+        "RenderThreadTime": {
+          "mean": 20.791594623655914,
+          "median": 20.767850000000003,
+          "p95": 21.5808
+        },
+        "RHIThreadTime": {
+          "mean": 3.798100537634409,
+          "median": 3.6601,
+          "p95": 4.3214
+        },
+        "RHI/DrawCalls": {
+          "mean": 3364.6272401433694,
+          "median": 3362.0,
+          "p95": 3391.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 1659693.8673835124,
+          "median": 1628440.0,
+          "p95": 1918754.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7049.374537992831,
+          "median": 7049.375,
+          "p95": 7049.375
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5494.730453763441,
+          "median": 5494.8789,
+          "p95": 5494.8789
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 425.4571322580645,
+          "median": 433.3281,
+          "p95": 437.3281
+        },
+        "PhysicalUsedMB": {
+          "mean": 14110.48621111111,
+          "median": 14109.9805,
+          "p95": 14114.1875
+        },
+        "VirtualUsedMB": {
+          "mean": 17704.01421236559,
+          "median": 17704.3867,
+          "p95": 17707.3867
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 466.6992,
+          "median": 466.6992,
+          "p95": 466.6992
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 466.6992,
+          "median": 466.6992,
+          "p95": 466.6992
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 193.8125,
+          "median": 193.8125,
+          "p95": 193.8125
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 173.6331327956989,
+          "median": 173.6334,
+          "p95": 173.6344
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 20.789651254480283
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.50642329749104
+        },
+        "spike_frames_prim_gt_3M": 1
+      }
+    },
+    {
+      "view": "D02_descent_mid",
+      "csv": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Profiling\\CSV\\Profile(20260925_071444).csv",
+      "samples": 425,
+      "values": {
+        "FrameTime": {
+          "mean": 28.373504444444443,
+          "median": 28.3177,
+          "p95": 28.9866
+        },
+        "GPUTime": {
+          "mean": 27.57215777777778,
+          "median": 27.5164,
+          "p95": 27.7886
+        },
+        "GameThreadTime": {
+          "mean": 9.011111851851853,
+          "median": 8.8429,
+          "p95": 9.4766
+        },
+        "RenderThreadTime": {
+          "mean": 28.363913827160495,
+          "median": 28.3257,
+          "p95": 28.98
+        },
+        "RHIThreadTime": {
+          "mean": 3.6908353086419754,
+          "median": 3.6427,
+          "p95": 4.0602
+        },
+        "RHI/DrawCalls": {
+          "mean": 962.7555555555556,
+          "median": 961.0,
+          "p95": 971.0
+        },
+        "RHI/PrimitivesDrawn": {
+          "mean": 410064.84444444446,
+          "median": 369116.0,
+          "p95": 659450.0
+        },
+        "GPUMem/LocalBudgetMB": {
+          "mean": 7049.375,
+          "median": 7049.375,
+          "p95": 7049.375
+        },
+        "GPUMem/LocalUsedMB": {
+          "mean": 5459.5039,
+          "median": 5459.5039,
+          "p95": 5459.5039
+        },
+        "GPUMem/SystemUsedMB": {
+          "mean": 401.3281,
+          "median": 401.3281,
+          "p95": 401.3281
+        },
+        "PhysicalUsedMB": {
+          "mean": 14109.541839259258,
+          "median": 14107.8359,
+          "p95": 14114.5664
+        },
+        "VirtualUsedMB": {
+          "mean": 17663.290427407406,
+          "median": 17662.1289,
+          "p95": 17668.8711
+        },
+        "TextureStreaming/StreamingPool": {
+          "mean": 467.5273,
+          "median": 467.5273,
+          "p95": 467.5273
+        },
+        "TextureStreaming/WantedMips": {
+          "mean": 467.5273,
+          "median": 467.5273,
+          "p95": 467.5273
+        },
+        "TextureStreaming/CachedMips": {
+          "mean": 192.9844,
+          "median": 192.9844,
+          "p95": 192.9844
+        },
+        "TextureStreaming/NonStreamingMips": {
+          "mean": 473.2344,
+          "median": 473.2344,
+          "p95": 473.2344
+        },
+        "RayTracingGeometry/TotalResidentSizeMB": {
+          "mean": 164.77267629629628,
+          "median": 164.7728,
+          "p95": 164.7743
+        },
+        "RayTracingGeometry/TotalAlwaysResidentSizeMB": {
+          "mean": 118.4003,
+          "median": 118.4003,
+          "p95": 118.4003
+        },
+        "RT_exclusive_sum": {
+          "mean": 28.347879012345675
+        },
+        "RT_busy_excl_wait": {
+          "mean": 6.158680493827161
+        },
+        "spike_frames_prim_gt_3M": 0
+      }
+    }
+  ]
+}

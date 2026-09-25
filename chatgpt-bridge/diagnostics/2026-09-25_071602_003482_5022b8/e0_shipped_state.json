@@ -1,0 +1,303 @@
+[
+ {
+  "label": "ReviewOnly_WindowDay_LivingSouth",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "12000.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_LivingEast",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "6900.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_KitchenNorth",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "7500.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_KitchenEast",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "6600.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Workshop",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "9000.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Reading",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "7500.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Bedroom",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "7500.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_WindowDay_Bath",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "4200.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_Ground",
+  "cls": "StaticMeshActor",
+  "editor_only": "False",
+  "hidden_game": "True",
+  "enabled": null,
+  "priority": null,
+  "components": []
+ },
+ {
+  "label": "EX_PostRain_Sun",
+  "cls": "DirectionalLight",
+  "editor_only": "False",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "DirectionalLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "1150.0"
+   }
+  ]
+ },
+ {
+  "label": "EX_PostRain_Sky",
+  "cls": "SkyLight",
+  "editor_only": "False",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "SkyLightComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": "2.200000047683716"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_NeutralSky",
+  "cls": "StaticMeshActor",
+  "editor_only": "False",
+  "hidden_game": "True",
+  "enabled": null,
+  "priority": null,
+  "components": []
+ },
+ {
+  "label": "EX_PostRain_NeutralExposure",
+  "cls": "PostProcessVolume",
+  "editor_only": "False",
+  "hidden_game": "False",
+  "enabled": "True",
+  "priority": "0.0",
+  "components": []
+ },
+ {
+  "label": "ReviewOnly_PlayerStart",
+  "cls": "PlayerStart",
+  "editor_only": "False",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": []
+ },
+ {
+  "label": "ReviewOnly_SkyBounce_North",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "180000.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_SkyBounce_West",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "140000.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_R05_LocalExposure",
+  "cls": "PostProcessVolume",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": "False",
+  "priority": "20.0",
+  "components": []
+ },
+ {
+  "label": "ReviewOnly_YardSoftbox",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "300000.0"
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_ExteriorSoftbox",
+  "cls": "RectLight",
+  "editor_only": "True",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "RectLightComponent",
+    "visible": "False",
+    "hidden_in_game": "True",
+    "intensity": "300000.0"
+   }
+  ]
+ },
+ {
+  "label": "EX_PostRain_Humidity",
+  "cls": "ExponentialHeightFog",
+  "editor_only": "False",
+  "hidden_game": "False",
+  "enabled": null,
+  "priority": null,
+  "components": [
+   {
+    "cls": "ExponentialHeightFogComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "intensity": null
+   }
+  ]
+ },
+ {
+  "label": "ReviewOnly_NeutralSky",
+  "cls": "StaticMeshActor",
+  "editor_only": "False",
+  "hidden_game": "False",
+  "components": [
+   {
+    "cls": "StaticMeshComponent",
+    "visible": "True",
+    "hidden_in_game": "False",
+    "material": "M_ReviewSky_Radiance",
+    "scale": 1000,
+    "note": "visible in game; FinalGate hid-probe reverted (frontlit depth weaker). Kept unchanged in E2; flagged for E4."
+   }
+  ]
+ }
+]
