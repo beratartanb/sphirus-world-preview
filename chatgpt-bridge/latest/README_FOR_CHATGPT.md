@@ -3,7 +3,7 @@
 Read bridge_status.json first, then scene_summary.json, then Screenshots/.
 For environment review read foliage_summary, landscape_summary, water_summary and lighting_summary. For specific objects read actors_index and asset_usage. camera_plan describes capture poses; verification records preservation checks.
 
-Run: 2026-09-25_024058_725422_06d8c8
+Run: 2026-09-25_071602_003482_5022b8
 Map: /Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse
 Engine: 5.8.1-56057345+++UE5+Release-5.8
 
