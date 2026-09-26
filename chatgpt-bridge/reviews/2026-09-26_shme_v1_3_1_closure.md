@@ -235,3 +235,12 @@ newer than the checkpoint. **Production map**: `bb9cf344160013cd...` unchanged. 
 StartTransfer not authored, multi-step recovery gap, sprint-wall skating, diagonal-stop bisect, human 1x judgement. New
 in this pass and technically PASS: walk / jog / sprint turn physics measured and scaling, real-house moving coverage,
 recovery second-pulse tooling with a located gap, APA consumer installed, error gate clean, vendor / map integrity.
+
+## Correction (added by the V1.3.4 pass, 2026-09-26)
+
+Section 4's reading of the late second shove said "contact confidence 0.0" at the push: the telemetry key `con` is the
+environment constraint level (`ConstrainedLevel`), not contact confidence (`cl` / `cr`, which were 0.36-0.58). The
+located cause stands on the other numbers: at the push frame the capture error was 0.35 and the foot-target confidence
+0.12 (no candidate); by the time capture error (0.81-0.92) and confidence (0.53-0.77) coincided 0.35 s later the push
+memory had decayed to 0.57 and the demand (0.38-0.50) sat under the 0.45 route threshold. V1.3.4 fixes it (push memory
+held while the capture error is unsettled, recovery exit gated on stable support); see the V1.3.4 report.
