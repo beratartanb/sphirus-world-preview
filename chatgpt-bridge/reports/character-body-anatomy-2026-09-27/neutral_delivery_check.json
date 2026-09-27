@@ -1,0 +1,33 @@
+{
+  "editable": {
+    "active_keys": {
+      "TARGET_BODY": {
+        "Basis": 1.0,
+        "SPH_Concept_Form": 1.0,
+        "SPH_Concept_Identity_P2": 1.0,
+        "SPH_Concept_Softening": 1.0,
+        "SPH_Body_Reference_Correction": 1.0,
+        "SPH_Body_Anatomy_Correction": 1.0
+      },
+      "TARGET_HEAD": {
+        "SPH_Concept_Form": 1.0,
+        "SPH_Concept_Identity_P2": 1.0,
+        "SPH_Concept_Softening": 1.0,
+        "SPH_Body_Reference_Correction": 1.0
+      }
+    },
+    "reference_armature_poses_unchanged": true,
+    "missing_images": []
+  },
+  "neutral": {
+    "armatures": 0,
+    "visible_meshes": [
+      "SM_SPH_ANAT_BodyTarget",
+      "SM_SPH_ANAT_HeadTarget",
+      "SM_SPH_ANAT_LeftEyeTarget",
+      "SM_SPH_ANAT_RightEyeTarget",
+      "SM_SPH_ANAT_TeethTarget"
+    ],
+    "missing_images": []
+  }
+}

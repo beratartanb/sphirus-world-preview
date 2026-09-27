@@ -1,0 +1,31 @@
+{
+  "pass": "BODY-ONLY ANATOMICAL CORRECTION PASS",
+  "candidate": "v3",
+  "baseline": "Latest completed Sphirus_Softening_EDITABLE.blend, including SPH_Body_Reference_Correction",
+  "head": "UNCHANGED, 0 mm, no new head shape key",
+  "views_reviewed": [
+    "front",
+    "true side",
+    "back",
+    "front three-quarter",
+    "rear three-quarter",
+    "large torso/chest close-ups",
+    "diffuse flat clay",
+    "black silhouette",
+    "12 body stress poses",
+    "4 torso stress close-ups"
+  ],
+  "chest_review": "Lower and lateral fullness restored with a longer upper-pole slope, chest-wall attachment and a soft curved inframammary return. The side profile is no longer suppressed into the torso. No pushed-together cleavage or uniform object scaling.",
+  "torso_review": "Costal arch to upper abdomen is clearer; soft lower abdomen and oblique/iliac continuity retained without six-pack or extreme hourglass. Pelvic-to-upper-thigh connection adjusted modestly.",
+  "iteration_correction": "v2 produced six opposed triangles at anterior axillary folds in arms-forward. Local shape displacement reduced with a broad falloff. v3: zero new opposed or degenerate triangles in all 12 poses.",
+  "visual_decision": "Anatomically more coherent and visually acceptable as a BODY SHAPE CANDIDATE for a later controlled MetaHuman Conform test. This is a visual judgment, not measured scan likeness or production acceptance.",
+  "technical_decision": "PASS for checked topology, UV, weights, old keys, rest matrices, vertex/edge/polygon order, height, seam and FBX round trip.",
+  "limitations": [
+    "References are uncalibrated and include support from underwear; unsupported anatomy is interpreted, not scanned.",
+    "Legacy rig deformation still shows shoulder/armpit stretching and compressed torso folds in extreme poses. No old-weight repainting.",
+    "Static normal/degeneracy and visual checks are not an exhaustive self-intersection or continuous-animation proof.",
+    "No breast soft-tissue dynamics, final skin, material or texture production.",
+    "MetaHuman Conform, DNA, Unreal import and runtime integration NOT RUN. Existing facial risks were not retested; HEAD is unchanged."
+  ],
+  "evidence_boards": 12
+}

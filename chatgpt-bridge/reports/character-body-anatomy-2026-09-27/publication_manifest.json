@@ -1,0 +1,135 @@
+{
+  "report_id": "character-body-anatomy-2026-09-27",
+  "repository": "beratartanb/sphirus-world-preview",
+  "repository_path": "chatgpt-bridge/reports/character-body-anatomy-2026-09-27",
+  "scope": "Body-only anatomical correction from latest softening result; 12 comparison boards and validation evidence. Head unchanged. Source meshes remain local.",
+  "source_report_sha256": "3119179d034bbd0d8bc03b9b694b9a5749d240cdf0021566d2178ac5fc04c05c",
+  "files": [
+    {
+      "name": "artistic_review.json",
+      "bytes": 2254,
+      "sha256": "92b3394fda00e65537bfaffd9a22d1475a361b2a8cbee7919e069d5d5d2d47a7",
+      "git_blob_sha": "759e7963ed238840267ae756663be9412fd3550c"
+    },
+    {
+      "name": "body_reference_comparison.jpg",
+      "bytes": 305876,
+      "sha256": "f7a7630f9293efcaad3b6c3d62df2a644326f02dae991f0b9155dcda4b0b1f36",
+      "git_blob_sha": "2dae02c617a9d21aa78eea2f235f059a51d254c1"
+    },
+    {
+      "name": "delivery_hashes.json",
+      "bytes": 2589,
+      "sha256": "ab3b092923396ad965b72330f55975cc8dc01e8273356c63845db2aac4e79aad",
+      "git_blob_sha": "0731ac2fc1cf0840b9aa76c20577e29363a61617"
+    },
+    {
+      "name": "fbx_roundtrip.json",
+      "bytes": 4052,
+      "sha256": "b8dbbb3ea13870fbf8d48fd7a23d87b5d11b3b35df0fa444e918f4a225bcbf2a",
+      "git_blob_sha": "5bd23404e8c8a6c75758500c5198ee91652c6f89"
+    },
+    {
+      "name": "flat_clay_comparison.jpg",
+      "bytes": 407904,
+      "sha256": "ef1e49fc50eb8f1899adc922b9b630cbe84438284e36265364e44ae5a410c6e5",
+      "git_blob_sha": "e9eba7955070b5d0750c26e9deb573f3df0100b1"
+    },
+    {
+      "name": "neutral_delivery_check.json",
+      "bytes": 860,
+      "sha256": "3835eb502a137e1205ee6db3dbd8025b5fe358ecca75107113ce25f5f5e2a695",
+      "git_blob_sha": "8627e3d6d468354705dfc50731c28bb26de17676"
+    },
+    {
+      "name": "poses_1.jpg",
+      "bytes": 237807,
+      "sha256": "15218d368a7b4bda7994ac873f7b78533d0e4241d76f5b77de27ebfeb103ffb1",
+      "git_blob_sha": "dd935203075330db352c86fe1a14b05c5d5d5cd9"
+    },
+    {
+      "name": "poses_2.jpg",
+      "bytes": 234412,
+      "sha256": "ebb40a361541242eaf99de040bf1ba6415b8493a4cdbe7ffb706dbbceb5cd6e8",
+      "git_blob_sha": "ea5e25990d005b8fec061957d7c43b39b04ccc8f"
+    },
+    {
+      "name": "poses_3.jpg",
+      "bytes": 231450,
+      "sha256": "d2e575a65f2067161040547b6db6d71ea3bbff73c2f4ec0e2f5d29da98080d75",
+      "git_blob_sha": "e0b38194eca7d38cad1a32c4a6857eb5155378ad"
+    },
+    {
+      "name": "preservation_check.json",
+      "bytes": 166022,
+      "sha256": "c0a1fa2d22263cda1db1147752398b17ca26aa9b3fc27ebbda72d32cc80b4582",
+      "git_blob_sha": "1d170c0cb65f5352240c403552de3054f7e6dcfb"
+    },
+    {
+      "name": "silhouette_comparison.jpg",
+      "bytes": 252519,
+      "sha256": "703df36b50b538b378517f110604087eb1108bb170450ae28777dd999f24b7cb",
+      "git_blob_sha": "d64b8ad37fba749a9bb3603b9e0749cff702956e"
+    },
+    {
+      "name": "target_manifest.json",
+      "bytes": 4172,
+      "sha256": "d0b71c6d604eea2d338feeaac245906b4962be39449455ad0c85e31cd08ef015",
+      "git_blob_sha": "32e1df1c93901d405e3b315d242e9dd30c24400f"
+    },
+    {
+      "name": "TEKNIK_RAPOR.md",
+      "bytes": 11147,
+      "sha256": "2e12b577633d55cfbf35ad4f9ecc501718adac9b7f4a9e2539a102226dd72d5c",
+      "git_blob_sha": "cb3c07bb5888362e91531c400aa072f4fd3f05dc"
+    },
+    {
+      "name": "torso_pose_checks.jpg",
+      "bytes": 485970,
+      "sha256": "d4157888d778047a9d7886512148a8e76ffe17cb6a3e99f39166690ddf7716e2",
+      "git_blob_sha": "cbc1d5ad6d46204fc5df45af3496ac5647716ec3"
+    },
+    {
+      "name": "torso_reference_comparison.jpg",
+      "bytes": 291178,
+      "sha256": "8308fcb61ee0f4b9afc177e66af7c9b256213833171809a3c66c72db00f5aefb",
+      "git_blob_sha": "ad5c006e332102e585bf5e47138ea7e493c454de"
+    },
+    {
+      "name": "v3_body_comparison.jpg",
+      "bytes": 379339,
+      "sha256": "3bc871cad0c3f923dd40410c06a7d9a5123721b4433c362c61a139d7f73d99e8",
+      "git_blob_sha": "f592383dfd653c8464bd707fdf17caf33ae02818"
+    },
+    {
+      "name": "v3_change_metrics.json",
+      "bytes": 404,
+      "sha256": "f685cd10f5801868778aa9f306e52719719b4f0ae0be3abfeb8d58f300d64f5a",
+      "git_blob_sha": "7fb5ff69a82091293f635e9403872dd80157d909"
+    },
+    {
+      "name": "v3_chest_comparison.jpg",
+      "bytes": 180203,
+      "sha256": "f9f5e2a593c19dbb6306258b537a01554dfb5ccc56076f9a35dff5971488f459",
+      "git_blob_sha": "e5c5039c874ffce7fbac76bc309f53113a2c84a6"
+    },
+    {
+      "name": "v3_torso_comparison.jpg",
+      "bytes": 485929,
+      "sha256": "09f33e02c8ffdecacfb39d8fa97ce1fea1894be105c7215c6e45f45903194df7",
+      "git_blob_sha": "3a044ba172e9b8d2749c8958aa4012d2a94452b1"
+    },
+    {
+      "name": "v3_torso_rear_comparison.jpg",
+      "bytes": 164391,
+      "sha256": "c770d611ab74d1eb50fd9c7d3ad8e1fb90874f238423b9a7ac375e29d080c434",
+      "git_blob_sha": "040cfa53bf07af86877f8227b6fefcf8b22221db"
+    },
+    {
+      "name": "v3_validation.json",
+      "bytes": 37560,
+      "sha256": "a339a819a03dff64ba781d29507df2244c4287e43152de718853065b8f492a84",
+      "git_blob_sha": "a6104d24799c13785abdeb790aadd3844d2aca3b"
+    }
+  ]
+}
