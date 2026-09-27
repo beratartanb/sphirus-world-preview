@@ -1,0 +1,443 @@
+{
+  "before": [
+    {
+      "name": "Height",
+      "active": true,
+      "value": 172.27633666992188,
+      "min": 114.08956146240234,
+      "max": 185.92372131347656
+    },
+    {
+      "name": "Chest",
+      "active": true,
+      "value": 89.64313507080078,
+      "min": 63.383087158203125,
+      "max": 135.21725463867188
+    },
+    {
+      "name": "Bust Span",
+      "active": true,
+      "value": 24.37383270263672,
+      "min": 11.831509590148926,
+      "max": 30.42388343811035
+    },
+    {
+      "name": "Underbust",
+      "active": true,
+      "value": 70.63282012939453,
+      "min": 52.39668655395508,
+      "max": 139.4427947998047
+    },
+    {
+      "name": "Waist",
+      "active": true,
+      "value": 66.27908325195312,
+      "min": 46.48093032836914,
+      "max": 135.21725463867188
+    },
+    {
+      "name": "Rise",
+      "active": false,
+      "value": 77.67660522460938,
+      "min": 49.01625442504883,
+      "max": 118.31510162353516
+    },
+    {
+      "name": "Inseam",
+      "active": true,
+      "value": 73.53787994384766,
+      "min": 40.56517791748047,
+      "max": 92.96186065673828
+    },
+    {
+      "name": "Hip",
+      "active": true,
+      "value": 94.9478530883789,
+      "min": 64.22819519042969,
+      "max": 139.4427947998047
+    },
+    {
+      "name": "High Hip",
+      "active": true,
+      "value": 76.3829116821289,
+      "min": 55.77711868286133,
+      "max": 139.4427947998047
+    },
+    {
+      "name": "Neck Base",
+      "active": true,
+      "value": 31.85497283935547,
+      "min": 27.888559341430664,
+      "max": 54.932010650634766
+    },
+    {
+      "name": "Neck",
+      "active": true,
+      "value": 35.62337875366211,
+      "min": 26.19834327697754,
+      "max": 47.3260383605957
+    },
+    {
+      "name": "Thigh",
+      "active": true,
+      "value": 47.76723098754883,
+      "min": 32.959205627441406,
+      "max": 88.736328125
+    },
+    {
+      "name": "Knee",
+      "active": true,
+      "value": 32.30693054199219,
+      "min": 21.97280502319336,
+      "max": 48.171146392822266
+    },
+    {
+      "name": "Calf",
+      "active": true,
+      "value": 32.19024658203125,
+      "min": 21.97280502319336,
+      "max": 50.70647048950195
+    },
+    {
+      "name": "Front Interscye Length",
+      "active": true,
+      "value": 32.392608642578125,
+      "min": 22.81791114807129,
+      "max": 46.48093032836914
+    },
+    {
+      "name": "Upper Arm Length",
+      "active": true,
+      "value": 31.83609390258789,
+      "min": 21.127696990966797,
+      "max": 45.63582229614258
+    },
+    {
+      "name": "Lower Arm Length",
+      "active": true,
+      "value": 25.164005279541016,
+      "min": 15.211941719055176,
+      "max": 29.57877540588379
+    },
+    {
+      "name": "Bicep",
+      "active": true,
+      "value": 25.276111602783203,
+      "min": 16.902156829833984,
+      "max": 53.24179458618164
+    },
+    {
+      "name": "Elbow",
+      "active": true,
+      "value": 20.814056396484375,
+      "min": 13.52172565460205,
+      "max": 40.56517791748047
+    },
+    {
+      "name": "Wrist",
+      "active": true,
+      "value": 13.118677139282227,
+      "min": 9.296186447143555,
+      "max": 27.0434513092041
+    },
+    {
+      "name": "Neck to Waist",
+      "active": true,
+      "value": 35.885467529296875,
+      "min": 22.81791114807129,
+      "max": 44.79071807861328
+    },
+    {
+      "name": "Across Shoulder",
+      "active": true,
+      "value": 29.123380661010742,
+      "min": 18.59237289428711,
+      "max": 45.63582229614258
+    },
+    {
+      "name": "Shoulder Height",
+      "active": false,
+      "value": 147.02439880371094,
+      "min": 94.6520767211914,
+      "max": 162.26071166992188
+    },
+    {
+      "name": "Shoulder to Apex",
+      "active": true,
+      "value": 26.096359252929688,
+      "min": 16.057048797607422,
+      "max": 37.18474578857422
+    },
+    {
+      "name": "Neck Length",
+      "active": true,
+      "value": 8.294302940368652,
+      "min": 3.3804314136505127,
+      "max": 15.211941719055176
+    },
+    {
+      "name": "Forearm",
+      "active": false,
+      "value": 21.5277042388916,
+      "min": 11.831509590148926,
+      "max": 42.255393981933594
+    },
+    {
+      "name": "Hand Circumference",
+      "active": true,
+      "value": 19.1273193359375,
+      "min": 10.141294479370117,
+      "max": 27.0434513092041
+    },
+    {
+      "name": "Fat",
+      "active": true,
+      "value": 0.40517449378967285,
+      "min": -2.7530617713928223,
+      "max": 2.7530617713928223
+    },
+    {
+      "name": "Masculine/Feminine",
+      "active": true,
+      "value": 0.03126716613769531,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "Muscularity",
+      "active": true,
+      "value": -1.2010186910629272,
+      "min": -2.3231425285339355,
+      "max": 2.3231425285339355
+    }
+  ],
+  "requested_changes": {
+    "Height": 173.4,
+    "Chest": 88.5,
+    "Underbust": 73.0,
+    "Waist": 69.8,
+    "Hip": 93.5,
+    "High Hip": 79.0,
+    "Across Shoulder": 29.8,
+    "Bicep": 26.5,
+    "Forearm": 21.5,
+    "Thigh": 49.0,
+    "Calf": 33.3,
+    "Fat": 0.3,
+    "Muscularity": -0.75
+  },
+  "after": [
+    {
+      "name": "Height",
+      "active": true,
+      "value": 173.39999389648438,
+      "min": 114.08956146240234,
+      "max": 185.92372131347656
+    },
+    {
+      "name": "Chest",
+      "active": true,
+      "value": 88.5,
+      "min": 63.383087158203125,
+      "max": 135.21725463867188
+    },
+    {
+      "name": "Bust Span",
+      "active": true,
+      "value": 24.37383270263672,
+      "min": 11.831509590148926,
+      "max": 30.42388343811035
+    },
+    {
+      "name": "Underbust",
+      "active": true,
+      "value": 73.0,
+      "min": 52.39668655395508,
+      "max": 139.4427947998047
+    },
+    {
+      "name": "Waist",
+      "active": true,
+      "value": 69.80000305175781,
+      "min": 46.48093032836914,
+      "max": 135.21725463867188
+    },
+    {
+      "name": "Rise",
+      "active": false,
+      "value": 77.1808853149414,
+      "min": 49.01625442504883,
+      "max": 118.31510162353516
+    },
+    {
+      "name": "Inseam",
+      "active": true,
+      "value": 73.53787994384766,
+      "min": 40.56517791748047,
+      "max": 92.96186065673828
+    },
+    {
+      "name": "Hip",
+      "active": true,
+      "value": 93.5,
+      "min": 64.22819519042969,
+      "max": 139.4427947998047
+    },
+    {
+      "name": "High Hip",
+      "active": true,
+      "value": 79.0,
+      "min": 55.77711868286133,
+      "max": 139.4427947998047
+    },
+    {
+      "name": "Neck Base",
+      "active": true,
+      "value": 31.85497283935547,
+      "min": 27.888559341430664,
+      "max": 54.932010650634766
+    },
+    {
+      "name": "Neck",
+      "active": true,
+      "value": 35.62337875366211,
+      "min": 26.19834327697754,
+      "max": 47.3260383605957
+    },
+    {
+      "name": "Thigh",
+      "active": true,
+      "value": 49.0,
+      "min": 32.959205627441406,
+      "max": 88.736328125
+    },
+    {
+      "name": "Knee",
+      "active": true,
+      "value": 32.30693054199219,
+      "min": 21.97280502319336,
+      "max": 48.171146392822266
+    },
+    {
+      "name": "Calf",
+      "active": true,
+      "value": 33.29999923706055,
+      "min": 21.97280502319336,
+      "max": 50.70647048950195
+    },
+    {
+      "name": "Front Interscye Length",
+      "active": true,
+      "value": 32.392608642578125,
+      "min": 22.81791114807129,
+      "max": 46.48093032836914
+    },
+    {
+      "name": "Upper Arm Length",
+      "active": true,
+      "value": 31.83609390258789,
+      "min": 21.127696990966797,
+      "max": 45.63582229614258
+    },
+    {
+      "name": "Lower Arm Length",
+      "active": true,
+      "value": 25.164005279541016,
+      "min": 15.211941719055176,
+      "max": 29.57877540588379
+    },
+    {
+      "name": "Bicep",
+      "active": true,
+      "value": 26.5,
+      "min": 16.902156829833984,
+      "max": 53.24179458618164
+    },
+    {
+      "name": "Elbow",
+      "active": true,
+      "value": 20.814056396484375,
+      "min": 13.52172565460205,
+      "max": 40.56517791748047
+    },
+    {
+      "name": "Wrist",
+      "active": true,
+      "value": 13.118677139282227,
+      "min": 9.296186447143555,
+      "max": 27.0434513092041
+    },
+    {
+      "name": "Neck to Waist",
+      "active": true,
+      "value": 35.885467529296875,
+      "min": 22.81791114807129,
+      "max": 44.79071807861328
+    },
+    {
+      "name": "Across Shoulder",
+      "active": true,
+      "value": 29.80000114440918,
+      "min": 18.59237289428711,
+      "max": 45.63582229614258
+    },
+    {
+      "name": "Shoulder Height",
+      "active": false,
+      "value": 147.85084533691406,
+      "min": 94.6520767211914,
+      "max": 162.26071166992188
+    },
+    {
+      "name": "Shoulder to Apex",
+      "active": true,
+      "value": 26.096359252929688,
+      "min": 16.057048797607422,
+      "max": 37.18474578857422
+    },
+    {
+      "name": "Neck Length",
+      "active": true,
+      "value": 8.294302940368652,
+      "min": 3.3804314136505127,
+      "max": 15.211941719055176
+    },
+    {
+      "name": "Forearm",
+      "active": true,
+      "value": 21.5,
+      "min": 11.831509590148926,
+      "max": 42.255393981933594
+    },
+    {
+      "name": "Hand Circumference",
+      "active": true,
+      "value": 19.1273193359375,
+      "min": 10.141294479370117,
+      "max": 27.0434513092041
+    },
+    {
+      "name": "Fat",
+      "active": true,
+      "value": 0.30000001192092896,
+      "min": -2.7530617713928223,
+      "max": 2.7530617713928223
+    },
+    {
+      "name": "Masculine/Feminine",
+      "active": true,
+      "value": 0.03126716613769531,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "Muscularity",
+      "active": true,
+      "value": -0.75,
+      "min": -2.3231425285339355,
+      "max": 2.3231425285339355
+    }
+  ],
+  "method": "Native parametric body constraints only. No Blender body mesh input.",
+  "face_dna_blendshapes_after": true
+}

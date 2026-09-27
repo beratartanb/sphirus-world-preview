@@ -1,0 +1,15 @@
+{
+  "character": "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/MH_Sphirus_AlignedTest.MH_Sphirus_AlignedTest",
+  "result": "<ImportErrorCode.SUCCESS: 13>",
+  "isolate_head_from_body": false,
+  "adapt_neck": true,
+  "match_vertices_by_u_vs": true,
+  "alignment": "RotationTranslation",
+  "body_conform_used": false,
+  "body_parameters_unchanged": true,
+  "assets": [
+    "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/AlignedNeutral/MH_Sphirus_AlignedTest_Body.MH_Sphirus_AlignedTest_Body",
+    "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/AlignedNeutral/MH_Sphirus_AlignedTest_Head.MH_Sphirus_AlignedTest_Head"
+  ],
+  "reason": "Isolated head preserved shape but stayed at archetype height; enable native neck/body adaptation without a body conform input."
+}

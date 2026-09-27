@@ -1,0 +1,22 @@
+{
+  "scope": "Head-only Blender refinement, head-only MetaHuman Conform, native parametric body; controlled staging candidate, not production replacement.",
+  "statuses": {
+    "FACE SHAPE": "PASS",
+    "METAHUMAN CONFORM": "PASS",
+    "FACIAL DEFORMATION": "PARTIAL",
+    "BODY PROPORTIONS": "PASS",
+    "BODY DEFORMATION": "PASS"
+  },
+  "head_visual_review": "Jaw/chin transitions less square; bridge and lobule rounder; mouth volume softer; mature orbital aperture retained. Front, side and both three-quarter views reviewed against supplied concept.",
+  "conform_review": "Native neck adaptation and native HeadScale compensation retain facial form. Face-region rigid-only error below 0.758 mm. Neck interface deliberately adapts to native body.",
+  "facial_review": "19 actual RigLogic states, two views each. Blink closes and left/right blink isolates; gaze, brows, smile, jaw and lips move. Full funnel shows tight corner/perioral folding; lip-contact quality across blends and lower LODs not certified. Remains PARTIAL.",
+  "body_review": "Native back coherent; waist less pinched, ribcage/chest integrated, arms and lower legs more active in silhouette. Reference is not a scan and chest support is not copied.",
+  "body_pose_review": "12 named cases plus eight locomotion phase samples, 44 actual Unreal captures. Native post process and Face Copy Pose active; matching head bones. No major new tearing or disconnected neck in inspected poses. This is not gameplay/retarget/foot-contact certification.",
+  "remaining_risks": [
+    "Extreme funnel/purse corner softness and blended speech lip contact require a dedicated facial polish/validation pass.",
+    "LOD0 only; lower LOD facial/body quality not certified.",
+    "No final skin/groom/clothing or live gameplay integration tested.",
+    "Concept likeness is an artistic approximation, not a calibrated reconstruction."
+  ],
+  "production_replaced": false
+}

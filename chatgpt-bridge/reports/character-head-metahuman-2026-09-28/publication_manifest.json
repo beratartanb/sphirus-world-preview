@@ -1,0 +1,212 @@
+{
+  "report_id": "character-head-metahuman-2026-09-28",
+  "repository": "beratartanb/sphirus-world-preview",
+  "repository_path": "chatgpt-bridge/reports/character-head-metahuman-2026-09-28",
+  "scope": "Head-only Blender refinement and MetaHuman Conform; native parametric body. 17 comparison boards, technical records. Facial deformation explicitly PARTIAL. No source binaries or logs uploaded.",
+  "files": [
+    {
+      "name": "01_blender_head_before_after.jpg",
+      "bytes": 249629,
+      "sha256": "3bf73271e3cfc170cd9bd0a6a23afb908de8545cb1bb0e147af97211c03e8a33",
+      "git_blob_sha": "3b264720d5a2814977d607883051ffbf033517f3"
+    },
+    {
+      "name": "02_head_history.jpg",
+      "bytes": 361460,
+      "sha256": "c88ef4cd84d7b258e3e6314288f1e157009e6ae84a5dfb760535d2643c800734",
+      "git_blob_sha": "d45c9eb17eb3b18327d2fade1a40c4fec091da67"
+    },
+    {
+      "name": "03_blender_vs_metahuman.jpg",
+      "bytes": 262181,
+      "sha256": "90a619f13c45640d7c1979d31e55328053e97716589886be20266daee6873f1d",
+      "git_blob_sha": "28f2b103b8242b5e4dd22a5ed73e01af265f1dfd"
+    },
+    {
+      "name": "04_head_concept.jpg",
+      "bytes": 284356,
+      "sha256": "d5168c92d389347faab649f188dc60424623695184ab646d1e8622665fe6bbc6",
+      "git_blob_sha": "25d98fc2923db1ead28525456386706c0d16f6c1"
+    },
+    {
+      "name": "05_unreal_head_four_views.jpg",
+      "bytes": 157488,
+      "sha256": "ba94c827ae346142d019801e4ff5409268bc29342ac0bdb5e6b41582e08e849d",
+      "git_blob_sha": "2aff2be2e832c80dca389accf8792f5baff42a51"
+    },
+    {
+      "name": "06_native_body_before_after.jpg",
+      "bytes": 250328,
+      "sha256": "c91841b5cdcb75b1efd2e1ee6ce1b7b597b7ede6dd8ffebd942c60c0780a0a24",
+      "git_blob_sha": "f972256f252b0487f95efad1ad2f342f5ab17b34"
+    },
+    {
+      "name": "07_body_reference.jpg",
+      "bytes": 217433,
+      "sha256": "603991a9bf0f72496218a7b9bf06d9b32b5332c154cc3a24450969e611eeb604",
+      "git_blob_sha": "b2933fc1e2181bbed1860def97571d0ac102043e"
+    },
+    {
+      "name": "08_native_back.jpg",
+      "bytes": 295541,
+      "sha256": "d872098c9c37b1e8c586993420291e2cc4459360de0a406db97983034279870b",
+      "git_blob_sha": "8e74bec811756bb8a8522086ac0dbf0ec9d00fe0"
+    },
+    {
+      "name": "09_torso_detail.jpg",
+      "bytes": 254545,
+      "sha256": "6d76061ac659c1deff176160f3e1ee68672d3fd2b72317caa101068fad39288a",
+      "git_blob_sha": "ba6ed7524193635a3a9db4324cc4098d0fc21fd5"
+    },
+    {
+      "name": "10_facial_1.jpg",
+      "bytes": 268993,
+      "sha256": "3a7f69f7291c6417b92504dca2805fbd813c76b5f56a9e5d55f72b68de36c32e",
+      "git_blob_sha": "13dbd9d40dbdd7d00d53fa003cef150a89886a39"
+    },
+    {
+      "name": "10_facial_2.jpg",
+      "bytes": 273860,
+      "sha256": "5429bac8bdb06ec14f8d2ce1c4676199675fc27d41ba0688f8613af38bf0ef00",
+      "git_blob_sha": "68b16c1df972df540a10036aaad1bd3d36f854d0"
+    },
+    {
+      "name": "10_facial_3.jpg",
+      "bytes": 277258,
+      "sha256": "100579826f99ed33fad41e7addbbccf4d2a8792ca88bf0b42af15e963f405c64",
+      "git_blob_sha": "7ed74c20e6f754da80e34fe2ee876fde80c65cc8"
+    },
+    {
+      "name": "10_facial_4.jpg",
+      "bytes": 225996,
+      "sha256": "6f175bc01a1175e4f9e7f52c88d5c853ce22380947ba12c501c90b90ff34a91b",
+      "git_blob_sha": "3958dee420055ee71a75b9a1f4a584231a258934"
+    },
+    {
+      "name": "11_body_poses_1.jpg",
+      "bytes": 238177,
+      "sha256": "016b3d5ade37f3369bc76638ff06b08a3562d9c753133479c0d2c3d3267489be",
+      "git_blob_sha": "8863eb492637f9bdaa584b34a1d3902ef6dd550c"
+    },
+    {
+      "name": "11_body_poses_2.jpg",
+      "bytes": 243663,
+      "sha256": "7efc888dc4d1fd22e1e4427ec2889acc2a92ba6fb3db2ece2841da5c867d988a",
+      "git_blob_sha": "3da839a66ea219c2affdd162b8ad8cdbd467befd"
+    },
+    {
+      "name": "11_body_poses_3.jpg",
+      "bytes": 247095,
+      "sha256": "8510f48a80c6323a2db2d28098d2c9785d9916a6c5c00de85c082ca4bec718fc",
+      "git_blob_sha": "aade2fc13ebc2b05cb5f34ad7afb049af3349626"
+    },
+    {
+      "name": "12_locomotion_samples.jpg",
+      "bytes": 193744,
+      "sha256": "fe71298c4cb62ae8b3c66a36e5abb134e3e439b17038e78eb0c25ad1336c5dda",
+      "git_blob_sha": "492e859698f1b23454882490e064e32e5273d720"
+    },
+    {
+      "name": "TEKNIK_RAPOR.md",
+      "bytes": 14595,
+      "sha256": "a32a2faf08c1d807f05fa53ef68c530fad337432405409abc238e97d0027f5fd",
+      "git_blob_sha": "c8ec773befde0149c17acde7598de842cca7381d"
+    },
+    {
+      "name": "boards_manifest.json",
+      "bytes": 2160,
+      "sha256": "50d8ac1adef0e9eb76f24552ef0d1a831cc319f10596075827032b98e959d87f",
+      "git_blob_sha": "5fd64ada5b6f0b72bed9425e0670a414648ea216"
+    },
+    {
+      "name": "delivery_hashes.json",
+      "bytes": 2014,
+      "sha256": "d46c6bdc3d9ae66c884ffb9c471c43b04a22e4593490b61fd3229a11abeafae2",
+      "git_blob_sha": "600e295a25e91368660bc327063cd5253b26307b"
+    },
+    {
+      "name": "final_review.json",
+      "bytes": 1943,
+      "sha256": "05aaeec1192908a67e78e36bc0895f1a88187917580f44dec28a8ab5e7c6f73e",
+      "git_blob_sha": "60148ddaafbfa8c8d2d2e8e7d628aaa1a4b5c486"
+    },
+    {
+      "name": "head_fbx_roundtrip.json",
+      "bytes": 916,
+      "sha256": "99cb9d5ee5078e8889a48978116d6648119c77e00145d35e263f608eb0178dce",
+      "git_blob_sha": "2d5749d428a0b818fbd20d3f7b689276f75c5931"
+    },
+    {
+      "name": "head_final_conform_deviation.json",
+      "bytes": 2388,
+      "sha256": "4f9639b9b71888c8e43353bc69ce844b01a6d3694120e4ae72bdea248678e9ef",
+      "git_blob_sha": "d10515934b3fa660f194c257fd6fbda62b4d1fc3"
+    },
+    {
+      "name": "head_validation.json",
+      "bytes": 6161,
+      "sha256": "91c2ccf879931c7c2ec804ca701d5fe4871d8ad59cc0987f347bcc6f0ba77c7d",
+      "git_blob_sha": "0cf6d8bda967f10db1117bba137b07f490a1fe67"
+    },
+    {
+      "name": "preservation_final.json",
+      "bytes": 11564,
+      "sha256": "e9c3ea1f7e9d7081265e4a9c2b7d8d740e1c2f3c276d0d193ec3e43e0ebda8e9",
+      "git_blob_sha": "d469ef63c7f59d3bdbf1e53cccb2bc49e1acdb64"
+    },
+    {
+      "name": "ue_body_parameters_v2.json",
+      "bytes": 10359,
+      "sha256": "7b67426074a6a58dd1963423618683b37dd9476f001e8082dc0bd1d30606b083",
+      "git_blob_sha": "e3aaaa8beaa2d495da614765daaae519a74acf0b"
+    },
+    {
+      "name": "ue_body_validation.json",
+      "bytes": 143975,
+      "sha256": "db58cd631c1a9ccbf2eaa546b32079c08f3db965fd521ef18bc1497764c7e525",
+      "git_blob_sha": "dd2bb0e66799de764f6c13fc09370e489cc3b1d2"
+    },
+    {
+      "name": "ue_final_asset_audit.json",
+      "bytes": 8071,
+      "sha256": "82e75a0c9d6fd72d07331944c327cb44135c86a1b110fdca995c6ce294d3b53f",
+      "git_blob_sha": "292b351ed3e40943df7a35e9af84b394af41ab40"
+    },
+    {
+      "name": "ue_final_facial_tests.json",
+      "bytes": 290429,
+      "sha256": "8dd00bb9a9cd121675c4713cb1510fc2d454f502dbd96bb6df638821a0984543",
+      "git_blob_sha": "e9b89ac7eee9ebbe6a321758f69aa9d2afccb077"
+    },
+    {
+      "name": "ue_head_alignment_correction.json",
+      "bytes": 787,
+      "sha256": "4bcc579267e41e1d4a5cfea2c24a745960fcbadcb85a0bc68fd0b620d568be1b",
+      "git_blob_sha": "e4d71016bb2e1800d9647360737a8ceadaf7bc32"
+    },
+    {
+      "name": "ue_native_head_scale_adjustment.json",
+      "bytes": 2718,
+      "sha256": "b5ed4787b32bfcd8b0d8a99bf3012568e1a863307aa35b95e6240ec7cd5f2f55",
+      "git_blob_sha": "c0dafcc72c138770b1946d95364dc297623c120f"
+    },
+    {
+      "name": "ue_production_database_readonly_check.json",
+      "bytes": 491,
+      "sha256": "4082647735624cd5b9ccdbd165eef4fa094e40a88a2e01362bc60e246e4d524f",
+      "git_blob_sha": "e4fd114ece7a220188ae7dad155615fb2f0a94a8"
+    },
+    {
+      "name": "ue_qa_retarget_results.json",
+      "bytes": 900,
+      "sha256": "70555390741331990d16c9bb3028f418d23ff9cb56e71012d7eed6b71a4847f5",
+      "git_blob_sha": "16954cc22c3e5c5c00f1ab5367c519af76e1a553"
+    },
+    {
+      "name": "v2_change_metrics.json",
+      "bytes": 296,
+      "sha256": "746c24e177b1a62cb8be82d944745b2efa4aa200fe2899d05906afee0ab684aa",
+      "git_blob_sha": "8657851a20ff440c0b5833cc40422eb4006b4af9"
+    }
+  ]
+}

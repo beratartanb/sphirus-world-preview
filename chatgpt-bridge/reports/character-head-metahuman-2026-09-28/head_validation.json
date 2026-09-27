@@ -1,0 +1,226 @@
+{
+  "version": "v2",
+  "topology_uv_weights_vertex_order_preserved": true,
+  "all_previous_keys_preserved": true,
+  "body_entire_signature_unchanged": true,
+  "armature_rest_matrices_unchanged": true,
+  "previous_head_keys": 863,
+  "new_head_key": "SPH_Final_Head_Identity",
+  "neutral": {
+    "triangles": 64094,
+    "source_degenerate": 0,
+    "new_degenerate": 0,
+    "opposed_normals": 0,
+    "area_ratio_min_max": [
+      0.8941659331321716,
+      1.2228151559829712
+    ],
+    "area_ratio_p01_p99": [
+      0.9245358777046203,
+      1.0895271503925323
+    ]
+  },
+  "seam_pairs": 93,
+  "neutral_seam_max_mm": 0.00024256081087514758,
+  "height_cm": 173.40184020996094,
+  "expressions": [
+    {
+      "name": "blink",
+      "keys": [
+        "head_lod0_mesh__eye_blink_L",
+        "head_lod0_mesh__eye_blink_R"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.894148588180542,
+          1.222870111465454
+        ],
+        "area_ratio_p01_p99": [
+          0.9244805228710175,
+          1.0894860470294951
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 16
+    },
+    {
+      "name": "brows_up",
+      "keys": [
+        "head_lod0_mesh__brow_raise_L",
+        "head_lod0_mesh__brow_raise_R"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.894148588180542,
+          1.222870111465454
+        ],
+        "area_ratio_p01_p99": [
+          0.9245277762413024,
+          1.089510234594345
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 0
+    },
+    {
+      "name": "brows_down",
+      "keys": [
+        "head_lod0_mesh__brow_down_L",
+        "head_lod0_mesh__brow_down_R"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.894148588180542,
+          1.222870111465454
+        ],
+        "area_ratio_p01_p99": [
+          0.9245277762413024,
+          1.0894860470294951
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 0
+    },
+    {
+      "name": "smile",
+      "keys": [
+        "head_lod0_mesh__mouth_cornerPull_left",
+        "head_lod0_mesh__mouth_cornerPull_right"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8459669947624207,
+          1.2277417182922363
+        ],
+        "area_ratio_p01_p99": [
+          0.9236654227972031,
+          1.0894326210021972
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 5
+    },
+    {
+      "name": "mouth_open",
+      "keys": [
+        "head_lod0_mesh__mouth_upperLipRaise_left",
+        "head_lod0_mesh__mouth_upperLipRaise_right",
+        "head_lod0_mesh__mouth_lowerLipDepress_left",
+        "head_lod0_mesh__mouth_lowerLipDepress_right"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8907776474952698,
+          1.232524037361145
+        ],
+        "area_ratio_p01_p99": [
+          0.9237103128433227,
+          1.091656937599182
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 1
+    },
+    {
+      "name": "jaw_open",
+      "keys": [
+        "head_lod0_mesh__jaw_open"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8917210698127747,
+          1.223776936531067
+        ],
+        "area_ratio_p01_p99": [
+          0.9240367901325226,
+          1.0916223323345184
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 0
+    },
+    {
+      "name": "lip_purse",
+      "keys": [
+        "head_lod0_mesh__mouth_lipsPurse_UL",
+        "head_lod0_mesh__mouth_lipsPurse_UR",
+        "head_lod0_mesh__mouth_lipsPurse_DL",
+        "head_lod0_mesh__mouth_lipsPurse_DR"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8950892090797424,
+          1.2245062589645386
+        ],
+        "area_ratio_p01_p99": [
+          0.9244959568977356,
+          1.0887581038475036
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 10
+    },
+    {
+      "name": "lip_funnel",
+      "keys": [
+        "head_lod0_mesh__mouth_funnel_UL",
+        "head_lod0_mesh__mouth_funnel_UR",
+        "head_lod0_mesh__mouth_funnel_DL",
+        "head_lod0_mesh__mouth_funnel_DR"
+      ],
+      "missing": [],
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8911789655685425,
+          1.2255666255950928
+        ],
+        "area_ratio_p01_p99": [
+          0.9243380510807038,
+          1.0953729784488677
+        ]
+      },
+      "additional_opposed_triangles": 0,
+      "total_opposed_new_raw_probe": 10
+    }
+  ],
+  "expression_scope": "Raw Blender corrective probes only. No RigLogic. Partial sanity check, not final facial rig validation."
+}

@@ -1,0 +1,128 @@
+{
+  "method": "Native HeadScale field, then normal remove/re-add for editing to evaluate face state; native Height constraint compensates increased head height. No mesh sculpt or skeletal edits.",
+  "head_scale": "<Struct 'MetaHumanCharacterFaceEvaluationSettings' (ADDRESS_OMITTED) {global_delta: 1.000000, high_frequency_delta: 0.000000, head_scale: 1.057911}>",
+  "prior_constraints": [
+    {
+      "name": "Height",
+      "value": 173.39999389648438
+    },
+    {
+      "name": "Chest",
+      "value": 88.5
+    },
+    {
+      "name": "Bust Span",
+      "value": 24.37383270263672
+    },
+    {
+      "name": "Underbust",
+      "value": 73.0
+    },
+    {
+      "name": "Waist",
+      "value": 69.80000305175781
+    },
+    {
+      "name": "Rise",
+      "value": 77.1808853149414
+    },
+    {
+      "name": "Inseam",
+      "value": 73.53787994384766
+    },
+    {
+      "name": "Hip",
+      "value": 93.5
+    },
+    {
+      "name": "High Hip",
+      "value": 79.0
+    },
+    {
+      "name": "Neck Base",
+      "value": 31.85497283935547
+    },
+    {
+      "name": "Neck",
+      "value": 35.62337875366211
+    },
+    {
+      "name": "Thigh",
+      "value": 49.0
+    },
+    {
+      "name": "Knee",
+      "value": 32.30693054199219
+    },
+    {
+      "name": "Calf",
+      "value": 33.29999923706055
+    },
+    {
+      "name": "Front Interscye Length",
+      "value": 32.392608642578125
+    },
+    {
+      "name": "Upper Arm Length",
+      "value": 31.83609390258789
+    },
+    {
+      "name": "Lower Arm Length",
+      "value": 25.164005279541016
+    },
+    {
+      "name": "Bicep",
+      "value": 26.5
+    },
+    {
+      "name": "Elbow",
+      "value": 20.814056396484375
+    },
+    {
+      "name": "Wrist",
+      "value": 13.118677139282227
+    },
+    {
+      "name": "Neck to Waist",
+      "value": 35.885467529296875
+    },
+    {
+      "name": "Across Shoulder",
+      "value": 29.80000114440918
+    },
+    {
+      "name": "Shoulder Height",
+      "value": 147.85084533691406
+    },
+    {
+      "name": "Shoulder to Apex",
+      "value": 26.096359252929688
+    },
+    {
+      "name": "Neck Length",
+      "value": 8.294302940368652
+    },
+    {
+      "name": "Forearm",
+      "value": 21.5
+    },
+    {
+      "name": "Hand Circumference",
+      "value": 19.1273193359375
+    },
+    {
+      "name": "Fat",
+      "value": 0.30000001192092896
+    },
+    {
+      "name": "Masculine/Feminine",
+      "value": 0.03126716613769531
+    },
+    {
+      "name": "Muscularity",
+      "value": -0.75
+    }
+  ],
+  "requested_height_constraint_cm": 171.75,
+  "exact_height_pending_mesh_measurement": true
+}

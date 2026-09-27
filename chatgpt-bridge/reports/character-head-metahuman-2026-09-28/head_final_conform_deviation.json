@@ -1,0 +1,96 @@
+{
+  "uv_samples_matched": 24408,
+  "target_uv_samples": 24408,
+  "conformed_uv_samples": 24408,
+  "raw_bounds_m": [
+    [
+      -0.1546381562948227,
+      -0.16084717214107513,
+      1.333909273147583
+    ],
+    [
+      0.14999869465827942,
+      0.06391601264476776,
+      1.7328294515609741
+    ]
+  ],
+  "target_bounds_m": [
+    [
+      -0.1572394073009491,
+      -0.1585012525320053,
+      1.3310164213180542
+    ],
+    [
+      0.15260031819343567,
+      0.06383605301380157,
+      1.7323181629180908
+    ]
+  ],
+  "rigid_alignment_rotation": [
+    [
+      0.9999982714653015,
+      0.001878157490864396,
+      0.00018263468518853188
+    ],
+    [
+      -0.0018747595604509115,
+      0.9998520612716675,
+      -0.017098261043429375
+    ],
+    [
+      -0.00021471967920660973,
+      0.017097890377044678,
+      0.9998537302017212
+    ]
+  ],
+  "rigid_alignment_translation_m": [
+    0.00034515070728957653,
+    -0.02509085088968277,
+    0.0009216070175170898
+  ],
+  "scale_fitted": false,
+  "after_rigid_alignment_error_mm": {
+    "max": 9.490649223327637,
+    "mean": 0.9862490892410278,
+    "p95": 3.9466354846954346
+  },
+  "face": {
+    "samples": 14925,
+    "max_mm": 1.0597082376480103,
+    "mean_mm": 0.4149215817451477
+  },
+  "nose": {
+    "samples": 4298,
+    "max_mm": 0.6585135459899902,
+    "mean_mm": 0.3738221824169159
+  },
+  "mouth": {
+    "samples": 5363,
+    "max_mm": 0.5811270475387573,
+    "mean_mm": 0.3240257203578949
+  },
+  "jaw": {
+    "samples": 1563,
+    "max_mm": 1.1776654720306396,
+    "mean_mm": 0.5735551118850708
+  },
+  "face_region_rigid_only": {
+    "samples": 14734,
+    "max_mm": 0.7570671439170837,
+    "mean_mm": 0.2529969811439514,
+    "p95_mm": 0.49620863795280457
+  },
+  "face_similarity_diagnostic_only": {
+    "scale": 0.9944677948951721,
+    "max_mm": 0.00751173822209239,
+    "mean_mm": 0.006794153247028589,
+    "note": "Scale fitted only to diagnose drift, never applied to delivered mesh."
+  },
+  "final_combined_height_cm": 173.41867065429688,
+  "neutral_join_nearest_surface": {
+    "samples_within_2mm": 93,
+    "max_of_close_mm": 0.00024076445015452919,
+    "min_mm": 7.450580596923828e-06,
+    "note": "Diagnostic nearest-surface seam neighborhood, not index-identical seam proof. Native body topology differs from frozen Blender body."
+  }
+}
