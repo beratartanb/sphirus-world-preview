@@ -1,0 +1,24 @@
+{
+  "version": "Concept Identity Refinement Pass 2; final internal candidate v5",
+  "reviewed_views": [
+    "front",
+    "true side",
+    "back",
+    "front three-quarter",
+    "rear three-quarter",
+    "black silhouette",
+    "uniform untextured clay"
+  ],
+  "face_judgment": "Materially closer than Pass 1: less exposed eyes, connected brow/root, more projected mature nose and midface, fuller lip plane and defined lower face. Skull and inherited topology still carry some source identity; not an exact portrait reconstruction.",
+  "body_judgment": "Materially closer than Pass 1: stronger neck/shoulder support, active arm volume, reduced chest dominance, fuller ribcage/waist and less lateral hip emphasis. Natural non-muscular anatomy retained.",
+  "shape_readiness": "READY_FOR_CONTROLLED_METAHUMAN_CONFORM_TEST_WITH_DOCUMENTED_EXPRESSION_RISK",
+  "production_rig_readiness": "NOT_VALIDATED",
+  "metahuman_conform": "NOT_RUN",
+  "unreal_import": "NOT_RUN",
+  "limitations": [
+    "Primary reference is clothed and uncalibrated; inferred anatomy is an artistic interpretation.",
+    "Raw blink correctives produce 13 additional triangle-normal warnings versus Pass 1, without RigLogic drivers.",
+    "Existing extreme shoulder/elbow/knee skinning volume loss remains.",
+    "Pose tests are static samples, not continuous gameplay animation or exhaustive collision testing."
+  ]
+}

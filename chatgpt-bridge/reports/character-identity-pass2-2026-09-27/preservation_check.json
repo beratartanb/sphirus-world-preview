@@ -1,0 +1,510 @@
+{
+  "pass1_checkpoint_byte_identical": true,
+  "all_previous_files_unchanged": true,
+  "files": [
+    {
+      "file": "SourceAssets\\Characters\\SphirusShapeTargets_20260927\\Sphirus_ShapeTargets_EDITABLE.blend",
+      "sha256": "5f5ec8d47bbcdd5559c9aaff2e5da10877e397d789d23c94d2693e4143422d7c",
+      "unchanged": true
+    },
+    {
+      "file": "SourceAssets\\Characters\\SphirusShapeTargets_20260927\\Original_Preserved.blend",
+      "sha256": "02d316e2083bdc2057a979ea16c0a5a4ec3a9e94af7bc5778f70f3d4d5f17d42",
+      "unchanged": true
+    },
+    {
+      "file": "SourceAssets\\Characters\\SphirusShapeTargets_20260927\\Sphirus_NeutralTargets.blend",
+      "sha256": "6b4c4d2749c07383e37c923cb69cd16b61b43076ca9d0a18febcd650db74d52b",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\fbx_roundtrip.json",
+      "sha256": "7e3636d6127478c8dd89bcf634620edb8f7830a166d55a0451dd40c00428232c",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\form_changes_v1.json",
+      "sha256": "58b0b93bc76a99e74f3c61f09dba59b27e515e692eaad979419346afe00e2895",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\form_changes_v2.json",
+      "sha256": "dfbaf36c778f00b9c37ef5c3cb4bcd36434a1b83923c6a99db12c77d0b5b0979",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\form_changes_v3.json",
+      "sha256": "4b2eb591ed2d4737db583d0edfc86258cb500f192601a240a3eb6b88df92c9ae",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\github_publish_status.json",
+      "sha256": "f7ee1177fc368fc69be1b3f0cc9b72195fcf4ecf80dbe1fd14e7eeac3e37633c",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\head_compression_review.json",
+      "sha256": "f6ac32ea3e45a43048110251caa820632c58f852335caa5a28d3c98eb05f9068",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\neutral_delivery_check.json",
+      "sha256": "0fbaa8b927a68c3d1de82dd41b9610fb7a0530e6b27f25bc98e0f03604c10bac",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\preservation_check.json",
+      "sha256": "90a28eb018bb8894dd87554782f24d61a88cb00ed55be15b192004731d285d5b",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\review_cameras.json",
+      "sha256": "cde43f10ca60f48673eadc4d38de51b366f2d0b1c7bf9e42d1a9c2fa7d0c6274",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\source_audit.json",
+      "sha256": "148156ad25ff3ca5f5ea5767d3d052e68dc6702ce4eb49e468488f37393845d1",
+      "unchanged": true
+    },
+    {
+      "file": "Saved\\Codex\\CharacterShape_20260927\\validation.json",
+      "sha256": "6b6848ef61af8fdc31b8290bd9be06d563f3e42418703ef04b76d617f20f2a4d",
+      "unchanged": true
+    }
+  ],
+  "unreal_packages_checked": 86,
+  "unreal_packages_unchanged": true,
+  "packages": [
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/Baked/T_Body_BC_VT",
+      "sha256": "8fab3505b90896bc85c5acc4003405172d447601e434a7c74f0b373b97e36292",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/Baked/T_Body_N_VT",
+      "sha256": "fe533ee86d3dd8cb8549cf5d56f1781bcacadd6a5e527cb9e0d852695cdf1412",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/Baked/T_Body_SRMF_VT",
+      "sha256": "3ba433e1555d503a2c898a2bec02f2a95a61be4034a1073b2b09bfa27675aa4c",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/Baked/T_Body_Scatter_VT",
+      "sha256": "0e362115f432b375d77bf78e8cb13a9fc8a8401e218224ad2e17c70143181943",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeIrisL_BC",
+      "sha256": "2c14523ec358cf09b86db0ee383435b6c59319043f988fdebe00a355a344ff66",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeIrisL_N",
+      "sha256": "48d49eb0cbb496e258945cb474241632b1494a8a561e3347531c6045b919f8cc",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeIrisR_BC",
+      "sha256": "268b707143730d8333380fde536b8873dd6330a389f97c180f64f09f7ffe1de6",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeIrisR_N",
+      "sha256": "c74a4090e6fcee55f24f5bce48d70477ce793b5f2e1efe323a8e4c049a10c26f",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeScleraL_BC",
+      "sha256": "665d520e3ce1c1ad0fe8f16cb111633b1420941ec4e80b19e8ab7bcea913abd3",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeScleraL_N",
+      "sha256": "e0ac7552d8ce53e92dd9c70a59e1efa48e5ef3115d85a7b073a5896f08969fa6",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeScleraR_BC",
+      "sha256": "ac47a2e0eb70a79d7644040e70bb27d427c509c18e2e0292ef58c2ba4bb43e8e",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_EyeScleraR_N",
+      "sha256": "21f59e2257917dc7a48823825b800d340c0308a76f1c5c4ec9060561f91bfbfb",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_BC_VT",
+      "sha256": "aa99a0ae44c17e705b3bf6dcbe529ced995dc40b51947df23ecd8b73991244c9",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_N_VT",
+      "sha256": "06324037716a312fce8ca2f7a548fa4960cbea15802c91eb2af407f962dd5aaf",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_SRMF_VT",
+      "sha256": "8366ac78f75eac01628141d346d552ca9e8fd1b06f58ce51b1e29aa0787f3563",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_Scatter_VT",
+      "sha256": "c580999addf209645d7c3eda7fc049b8b7aab5d24a5771b800d5f8d617ec6447",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Teeth_BC",
+      "sha256": "ce8e04ac64f3096e5980cd10e1186169a28a2871a376f69cddb94075a9e27a5c",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Teeth_N",
+      "sha256": "a83fa0107ffe52083f5167e1eea56e6490105563ddf71d0ba8d59ad52e37c4ea",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Teeth_SRM",
+      "sha256": "ee5a5d89ac468c7a986b1dcf76b00e212283e025a8f18bf8dc03fb9ef7e7e2b6",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Teeth_Scatter",
+      "sha256": "22e215470593d03164573c339b22acf4c567b2b1078a24a69a9192b7c709b8c6",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Textures/Eyebrows_M_Slit_CardsAtlas_Attribute",
+      "sha256": "561eb830cb45bba7d8692c97ef0e1671a1687d335af83c1ddab0fd904d39e364",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Textures/Hair_S_Cornrows_CardsAtlas_Attribute",
+      "sha256": "3fed41968c6c10c98763d4547a39765c001e7bfbc6229d015915d3e93a629c7a",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Textures/Hair_S_Cornrows_RootUVSeedCoverage",
+      "sha256": "bea483b54b3123784aadbacbc50a27f22230f86386d3df70fb3f9b3be7b10e6b",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/BP_MH_MainCharacter",
+      "sha256": "b70b9a73d32a3762543eb15736fcb0c866a174ba319e0fe4eb4688a43d9f29cf",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/PHYS_MH_MainCharacter",
+      "sha256": "e49c1cfad86e0ce9fd9300bad23ef5c509f09e412fe9548b45b57ba3d2787b18",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh",
+      "sha256": "cc17c8b434d9b1069f4a88194c802aa3413eac9215574bf717c5a59ac287e038",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh_DNA",
+      "sha256": "6a1199c9223e1813686d939524e938b5f2be35d023f4a08468194cb30cdba64b",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Body/Materials/MI_Body_Baked_VT",
+      "sha256": "c41e53f3b7a1a355ff8eaf8991ac8978ce390d52fbb21ff3883dec0433bce881",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Clothing/MH_MainCharacter_Outfits",
+      "sha256": "d4d07c6e4d509d0891820e700bc4998b23596608472168e50e11573efadcd13f",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh",
+      "sha256": "08326531c105add918fba796c1083fa36d185237995b34a9bbe3db7cd7496d5b",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh_DNA",
+      "sha256": "89add3749e2bcc81a8e0c956c09bb0928469ce389e4afe4eda989aaaf0ac1aeb",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_BakedNormal_LOD3",
+      "sha256": "6c4bc3add3c192bb4fc78b9c177038a912938adbcc6ee7eb8d344bd329764006",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_BakedNormal_LOD4",
+      "sha256": "5e9e8b9794dcdca925da916b0930ecb074ca9e52f28533d68e8beb3dba3fd0ad",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_BakedNormal_LOD5",
+      "sha256": "62713d62558c838acf43d98aa109543f5d6986697fb4125935653bea7cf8098a",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD1_BC_VT",
+      "sha256": "0c2ed1d0c37680db1d5030cb4b8d43492e2fbbe2cd0135e33e7f3473385ddc1b",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD1_N_VT",
+      "sha256": "2ca08253f4602a4386dfa4664181d1fa1a08b419d327238c979f8a48dc2effe8",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD1_Scatter_VT",
+      "sha256": "f8fd438521c81d09f0f29921fc9aa27f9250a9cf2c22382b9c5feb3c7bf805d1",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD1_SRMF_VT",
+      "sha256": "3545cf4e4b73ce57b8fe50e48843ca7b04da3970fc17d7929cc5563fcd5b3d99",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD5to7_BC_VT",
+      "sha256": "a1e5933790629fa3f153e6b6e690aa08aceddefcf067df7a2958be75cc1f5880",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD5to7_N_VT",
+      "sha256": "858fab6c3b4a3650383235e715bc0d8c17f2fa0179c8abea99157d18b09f7d20",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD5to7_Scatter_VT",
+      "sha256": "951abc2ac702eacd87a4546cb6676480dcf939ab5e047bfd00036149e9e6ce32",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Baked/T_Head_LOD5to7_SRMF",
+      "sha256": "16e8d6fd8ad7fa2da733bfa6374461aa97328a5ae70d499a3797b4aa67f3c038",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_EyeL_Baked",
+      "sha256": "46155cb35f529c515c068510ed01e1b83745af6d66bdc53c2c8f6b36ddbdffcf",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_EyeR_Baked",
+      "sha256": "d04a941da2c0791add36a4f9c6a8d34d37d0abe8dabc1bd9ef9dfd5fa5f41920",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Eyelashes",
+      "sha256": "f41739a1209c464957698ed78ebec9131360aafb990b27c52c599af676bf97ae",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_EyelashesHiLODs",
+      "sha256": "51d596d676ffb20050f4cef9689e884d047e847ec2e1b104609684e51adf07a4",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_EyeShell",
+      "sha256": "93c6ab699c5bdabc7fa6c0bbd04386e8172ec088a007e03d08a5780056f71fa8",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_LacrimalFluid",
+      "sha256": "77f7df6d2ef7a73eca26f7d490d135a52e887b0b38adbbb21bc919af72665539",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD0_VT",
+      "sha256": "74a1e59849dde00ebdd300280892a47ee00fcaf069749ab5040aede508b138ab",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD1_VT",
+      "sha256": "3b706b70d3d7169bac238894eddc4e3050d70c751c296ee1e00bad4c0efafeb5",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD2_VT",
+      "sha256": "4ad0421117057348f2a04bdc4f4991c02eaa19a7834d31df94bc41d02fe6ae5f",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD3_VT",
+      "sha256": "cbb839e6b5e0bba67e05f88c87a5f293370f6ab6b947fb9a1fa9d34070048666",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD4_VT",
+      "sha256": "c7a3fed06d6fd682c2c3e9d389353b4c0a4c2900ece06e07557e7e77d3685307",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD5to7_VT",
+      "sha256": "3ccd817ce71a27c51ba824fc19b1bfe107a244f2ad810bdb5b2a331a54dd1a1e",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Teeth_Baked",
+      "sha256": "b5712f7da8aa0dcbbfe370e49755ea935d834de886651034f9cb250b9fb351db",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Textures/T_Face_Basecolor_Animated_CM1",
+      "sha256": "63da3e7ae6bc7c16a2a81fe4b29097eb62fb01e0530aefaa801962a7b0d8d6a5",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Textures/T_Face_Basecolor_Animated_CM2",
+      "sha256": "6ec487103fecd389ce637602c70170f71bb491784f49e206cf14261ffa043c7e",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Textures/T_Face_Basecolor_Animated_CM3",
+      "sha256": "7d539c51ed784cd7f12bdbcb115c8ccfc174ca5c1a6e71f87c0929ca11b4b472",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Textures/T_Face_Normal_Animated_WM1",
+      "sha256": "4a26c0efaa8e06dcb4afbf83030a73f7c85844339fc2c828bf2eab76df72418c",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Textures/T_Face_Normal_Animated_WM2",
+      "sha256": "ba81d0a0615c0760ea54528f243280a20d02be5963cda86683e08981b3b80936",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Face/Textures/T_Face_Normal_Animated_WM3",
+      "sha256": "720203b30bf0db703b313b647583e86cc5a0345b4ad45d9162cc491613969377",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit",
+      "sha256": "3eafe7327ad65bfba8f8fc84e7ee22e074434d863f67f541a5749c26952f8216",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_Binding",
+      "sha256": "358f11b14c22625342868eeadb78c545a373430a1fbba103d1b622858a289c6e",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_CardsMesh_Group0_LOD0",
+      "sha256": "15042ab89d5d9eaf71ee8c331bb4b7797a478da033c2218035b8b357ecc9fc18",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_CardsMesh_Group0_LOD1",
+      "sha256": "b056d6f24840d852129321db03098830d0ff9cff674bfadafc0ab18d090d5862",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_CardsMesh_Group0_LOD2",
+      "sha256": "98e8cbda4ab4c6ea2858ec9585f7f3725d3ff4b0230450b7f1a53351537fd925",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_CardsMesh_Group0_LOD3",
+      "sha256": "debb0979e9cb190d99dcced741da360e0af76409c3d7e9cd6e03831d17a09cb0",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_CardsMesh_Group0_LOD4",
+      "sha256": "4dba4dc656b4d7d2c32a5fd9ce86a838f9d87494e17b0abd7e77e68ead489ec7",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl",
+      "sha256": "17d079ad9e9dae93e1df2fe70bc5af1f40cd916cddc686e936079d8616d6b50d",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl_Binding",
+      "sha256": "6b355e9808e687e076646a7846196da64f98787763aed6b8bceeaff4edda6cb1",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows",
+      "sha256": "4bc89026193e2009f46412d2a53b5c9a61b5a5b7a2f60d1952e3d440ac7acdc5",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Binding",
+      "sha256": "0131a36f1e8cc283e8bb653aa3ad82984314c1dba831afba450e7090b139238a",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_CardsMesh_Group0_LOD0",
+      "sha256": "fe2efee879a6d6469ab64a139bca0744616b9ab99edf3c38de6c12440a5ef80a",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_CardsMesh_Group0_LOD1",
+      "sha256": "e1d02d60accf328aa8ea209280a10e1de853f5bd6d9a025167dfc6c841c9025e",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_CardsMesh_Group0_LOD2",
+      "sha256": "bf6e1676ed651e9f34c5522e3ba1c9be858f1cff795f1edff6d18bcd4750cf89",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_CardsMesh_Group0_LOD3",
+      "sha256": "225f548106e55ee3f5f8cc464682b2346f89c2edb9b3f9a7384e86ef7a6be38f",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_CardsMesh_Group0_LOD4",
+      "sha256": "7dac4d0ab549626b12857e533a2e495d628de90cc5a76906527b57305a204b49",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Helmet_LOD5",
+      "sha256": "65ba6e4e99be9f0856eb17ec2a9973c05dceb06039c62d61ce2d0f7e9e33643a",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Helmet_LOD6",
+      "sha256": "a876d37b9fb29ce71aeaf65d5db9837eea3748cebc47e590e48263612c6a0664",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Helmet_LOD7",
+      "sha256": "79a44b64b2f35a6b20a9fda125ab2c57f3258f82e64c87a9ed0423ffeb94d8e4",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyebrows_M_Slit_Facial_Hair",
+      "sha256": "13647522d877027eae686242fc7952db9a3c1d5206115a9fbf36297dfcf268d7",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyebrows_M_Slit_Hair",
+      "sha256": "133a22ea132425025cd14efa6411c901d39823551bc8df48f0fbaeeee26a4007",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyelashes_L_Curl_Hair",
+      "sha256": "0575434c00055586afc6873d5e1b4d1c7bc58484e90df69ae2e851fa07e4219e",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair",
+      "sha256": "8e9cad214f146b9a2dd6add5b9f2a0ae1ef3f6220ae851bb489970a850dce4da",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair_Cards",
+      "sha256": "549d9b356a2e4a66eaf9f16b51d140d73295e2acd34634bce1c71e2d1b4c1d40",
+      "unchanged": true
+    },
+    {
+      "package": "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair_Helmet",
+      "sha256": "29bdcd9b37dd41b6d1042d167a57e6159df91b81247a810fbc033297c5e41ee5",
+      "unchanged": true
+    }
+  ]
+}
