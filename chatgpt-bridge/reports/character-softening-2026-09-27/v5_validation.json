@@ -1,0 +1,1552 @@
+{
+  "version": "Corrective Softening after Pass 2 / v5",
+  "scope": "Existing reference rig geometric stress only; no RigLogic, DNA or MetaHuman Conform execution.",
+  "preservation": {
+    "TARGET_BODY": {
+      "vertices": true,
+      "polygons": true,
+      "loops": true,
+      "poly_sizes": true,
+      "uv": true,
+      "weights": true,
+      "groups": true,
+      "matrix_world": true,
+      "all_previous_key_data_and_relations_equal": true,
+      "all_softening_v3_keys_and_relations_equal": true,
+      "previous_key_count": 3,
+      "new_keys": [
+        "SPH_Concept_Softening",
+        "SPH_Body_Reference_Correction"
+      ],
+      "passed": true
+    },
+    "TARGET_HEAD": {
+      "vertices": true,
+      "polygons": true,
+      "loops": true,
+      "poly_sizes": true,
+      "uv": true,
+      "weights": true,
+      "groups": true,
+      "matrix_world": true,
+      "all_previous_key_data_and_relations_equal": true,
+      "all_softening_v3_keys_and_relations_equal": true,
+      "previous_key_count": 861,
+      "new_keys": [
+        "SPH_Concept_Softening",
+        "SPH_Body_Reference_Correction"
+      ],
+      "passed": true
+    },
+    "all_armature_rest_matrices_equal": true
+  },
+  "neutral": {
+    "TARGET_BODY": {
+      "previous_vs_new": {
+        "triangles": 60816,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8812664747238159,
+          1.1412931680679321
+        ],
+        "area_ratio_p01_p99": [
+          0.9545858681201935,
+          1.0849560439586639
+        ]
+      },
+      "original_vs_new": {
+        "triangles": 60816,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.7398779392242432,
+          1.3833277225494385
+        ],
+        "area_ratio_p01_p99": [
+          0.8634449779987335,
+          1.1918902039527892
+        ]
+      },
+      "max_from_previous_mm": 9.052445411682129,
+      "max_from_original_mm": 28.727087020874023
+    },
+    "TARGET_HEAD": {
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8978647589683533,
+          1.1829235553741455
+        ],
+        "area_ratio_p01_p99": [
+          0.9203518497943878,
+          1.0572116768360138
+        ]
+      },
+      "original_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.5930046439170837,
+          1.5411511659622192
+        ],
+        "area_ratio_p01_p99": [
+          0.7320113295316697,
+          1.3611121356487275
+        ]
+      },
+      "max_from_previous_mm": 3.561539888381958,
+      "max_from_original_mm": 10.259721755981445
+    },
+    "seam_pairs": 93,
+    "original_height_cm": 173.40184020996094,
+    "original_seam_max_mm": 0.00024256081087514758,
+    "previous_height_cm": 173.40184020996094,
+    "previous_seam_max_mm": 0.00024256081087514758,
+    "new_height_cm": 173.40184020996094,
+    "new_seam_max_mm": 0.00024256081087514758
+  },
+  "poses": [
+    {
+      "name": "neutral_idle",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8812669515609741,
+            1.1412945985794067
+          ],
+          "area_ratio_p01_p99": [
+            0.9529379278421402,
+            1.084869533777237
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7398806810379028,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8668033123016358,
+            1.1959806680679321
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00047915978939272463,
+        "previous": 0.00047736073611304164,
+        "new": 0.0004788121150340885
+      }
+    },
+    {
+      "name": "walk_stance",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "thigh_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -25
+        },
+        {
+          "bone": "thigh_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 20
+        },
+        {
+          "bone": "calf_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 12
+        },
+        {
+          "bone": "calf_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 25
+        },
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 18
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -18
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8788292407989502,
+            1.140550971031189
+          ],
+          "area_ratio_p01_p99": [
+            0.9525163680315017,
+            1.0847626626491544
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7397699952125549,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.867596048116684,
+            1.1959931075572967
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00048435936332680285,
+        "previous": 0.00048245026846416295,
+        "new": 0.0004840584297198802
+      }
+    },
+    {
+      "name": "run_stance",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "spine_03",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 8
+        },
+        {
+          "bone": "thigh_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -65
+        },
+        {
+          "bone": "thigh_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 25
+        },
+        {
+          "bone": "calf_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 85
+        },
+        {
+          "bone": "calf_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 100
+        },
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 32
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -40
+        },
+        {
+          "bone": "lowerarm_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -80
+        },
+        {
+          "bone": "lowerarm_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -85
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.838994562625885,
+            1.1583846807479858
+          ],
+          "area_ratio_p01_p99": [
+            0.9512892037630081,
+            1.0848540544509888
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8978589177131653,
+            1.1830403804779053
+          ],
+          "area_ratio_p01_p99": [
+            0.920356183052063,
+            1.0572700488567353
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.3567971885204315,
+            1.3738512992858887
+          ],
+          "area_ratio_p01_p99": [
+            0.8648876696825027,
+            1.1993689298629755
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5925871133804321,
+            1.5413391590118408
+          ],
+          "area_ratio_p01_p99": [
+            0.73199016392231,
+            1.3610649490356446
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00048725883243605494,
+        "previous": 0.0007217323291115463,
+        "new": 0.0007211979245766997
+      }
+    },
+    {
+      "name": "crouch",
+      "rotations": [
+        {
+          "bone": "spine_03",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 15
+        },
+        {
+          "bone": "spine_04",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 12
+        },
+        {
+          "bone": "thigh_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -80
+        },
+        {
+          "bone": "thigh_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -80
+        },
+        {
+          "bone": "calf_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 115
+        },
+        {
+          "bone": "calf_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 115
+        },
+        {
+          "bone": "foot_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -35
+        },
+        {
+          "bone": "foot_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -35
+        },
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 25
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -25
+        },
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -25
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -25
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8770928978919983,
+            1.1394091844558716
+          ],
+          "area_ratio_p01_p99": [
+            0.9473511010408402,
+            1.0843974649906158
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8978815078735352,
+            1.1829161643981934
+          ],
+          "area_ratio_p01_p99": [
+            0.9203146409988403,
+            1.0572449815273286
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7528693079948425,
+            1.3670927286148071
+          ],
+          "area_ratio_p01_p99": [
+            0.8691599488258361,
+            1.1929739117622375
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5931501388549805,
+            1.541137933731079
+          ],
+          "area_ratio_p01_p99": [
+            0.7319190871715546,
+            1.361026450395584
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.0007362139294855297,
+        "previous": 0.0007315240800380707,
+        "new": 0.0006197880138643086
+      }
+    },
+    {
+      "name": "arms_raised",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -110
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 110
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8812669515609741,
+            1.1720428466796875
+          ],
+          "area_ratio_p01_p99": [
+            0.956716713309288,
+            1.0880900144577026
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.6282892823219299,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8657835334539413,
+            1.1913548707962036
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.0004920204519294202,
+        "previous": 0.00048708796384744346,
+        "new": 0.0004786173813045025
+      }
+    },
+    {
+      "name": "arms_forward",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -90
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -90
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8812669515609741,
+            1.1412945985794067
+          ],
+          "area_ratio_p01_p99": [
+            0.9491179287433624,
+            1.0847880423069
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5148333311080933,
+            1.5366765260696411
+          ],
+          "area_ratio_p01_p99": [
+            0.8719340622425079,
+            1.1932588338851928
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.0004905551322735846,
+        "previous": 0.00048060575500130653,
+        "new": 0.0004803746996913105
+      }
+    },
+    {
+      "name": "shoulder_rotation",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -55
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 55
+        },
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            0,
+            1
+          ],
+          "degrees": -40
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            0,
+            1
+          ],
+          "degrees": 40
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8812669515609741,
+            1.1412945985794067
+          ],
+          "area_ratio_p01_p99": [
+            0.9567381232976914,
+            1.0848448395729064
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7398806810379028,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8618549197912216,
+            1.1911683738231658
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.0005976276006549597,
+        "previous": 0.00048391864402219653,
+        "new": 0.0004930297727696598
+      }
+    },
+    {
+      "name": "elbow_flexion",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "lowerarm_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -105
+        },
+        {
+          "bone": "lowerarm_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -105
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8812669515609741,
+            1.1412945985794067
+          ],
+          "area_ratio_p01_p99": [
+            0.9529379278421402,
+            1.084869533777237
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7398806810379028,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8668033123016358,
+            1.2017438948154449
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00047915978939272463,
+        "previous": 0.00047736073611304164,
+        "new": 0.0004788121150340885
+      }
+    },
+    {
+      "name": "hip_flexion",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "thigh_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -100
+        },
+        {
+          "bone": "calf_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 110
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8779633641242981,
+            1.1412895917892456
+          ],
+          "area_ratio_p01_p99": [
+            0.94893399477005,
+            1.0848514258861541
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7398824095726013,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8662607908248902,
+            1.1965032815933219
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00047915978939272463,
+        "previous": 0.00047736073611304164,
+        "new": 0.0004788121150340885
+      }
+    },
+    {
+      "name": "wide_stance",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "thigh_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -28
+        },
+        {
+          "bone": "thigh_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 28
+        },
+        {
+          "bone": "calf_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 12
+        },
+        {
+          "bone": "calf_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 12
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.880871593952179,
+            1.140710473060608
+          ],
+          "area_ratio_p01_p99": [
+            0.9532381445169449,
+            1.084752607345581
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7390514016151428,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8676740288734436,
+            1.1959806680679321
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00047915978939272463,
+        "previous": 0.00047736073611304164,
+        "new": 0.0004788121150340885
+      }
+    },
+    {
+      "name": "knee_bend",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "calf_l",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 125
+        },
+        {
+          "bone": "calf_r",
+          "world_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 75
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8812669515609741,
+            1.1395386457443237
+          ],
+          "area_ratio_p01_p99": [
+            0.9529379278421402,
+            1.0846850752830506
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.89786297082901,
+            1.1830888986587524
+          ],
+          "area_ratio_p01_p99": [
+            0.9203480041027069,
+            1.057221086025238
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7398806810379028,
+            1.3833285570144653
+          ],
+          "area_ratio_p01_p99": [
+            0.8668033123016358,
+            1.1959806680679321
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5930010080337524,
+            1.5411611795425415
+          ],
+          "area_ratio_p01_p99": [
+            0.7320099639892579,
+            1.3611010587215424
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.00047915978939272463,
+        "previous": 0.00047736073611304164,
+        "new": 0.0004788121150340885
+      }
+    },
+    {
+      "name": "torso_twist",
+      "rotations": [
+        {
+          "bone": "upperarm_l",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 29
+        },
+        {
+          "bone": "upperarm_r",
+          "world_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": -29
+        },
+        {
+          "bone": "spine_03",
+          "world_axis": [
+            0,
+            0,
+            1
+          ],
+          "degrees": 20
+        },
+        {
+          "bone": "spine_04",
+          "world_axis": [
+            0,
+            0,
+            1
+          ],
+          "degrees": 15
+        },
+        {
+          "bone": "spine_05",
+          "world_axis": [
+            0,
+            0,
+            1
+          ],
+          "degrees": 10
+        }
+      ],
+      "previous_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.870243489742279,
+            1.1412945985794067
+          ],
+          "area_ratio_p01_p99": [
+            0.9515369862318039,
+            1.0848448395729064
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.8978638648986816,
+            1.1830840110778809
+          ],
+          "area_ratio_p01_p99": [
+            0.920361465215683,
+            1.057209026813507
+          ]
+        }
+      },
+      "original_vs_new": {
+        "TARGET_BODY": {
+          "triangles": 60816,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.6187249422073364,
+            1.4918601512908936
+          ],
+          "area_ratio_p01_p99": [
+            0.8674487769603729,
+            1.2008941471576684
+          ]
+        },
+        "TARGET_HEAD": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5929955840110779,
+            1.5411444902420044
+          ],
+          "area_ratio_p01_p99": [
+            0.7320108336210251,
+            1.3610919189453126
+          ]
+        }
+      },
+      "seam_max_mm": {
+        "original": 0.0006031289813108742,
+        "previous": 0.0004908909322693944,
+        "new": 0.0006073479889892042
+      }
+    }
+  ]
+}

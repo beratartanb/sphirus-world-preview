@@ -1,0 +1,153 @@
+{
+  "report_id": "character-softening-2026-09-27",
+  "repository": "beratartanb/sphirus-world-preview",
+  "repository_path": "chatgpt-bridge/reports/character-softening-2026-09-27",
+  "scope": "Corrective softening after Pass 2, additional user-directed body reference refinement, 13 comparison boards and validation evidence; source meshes remain local",
+  "source_report_sha256": "65b18916b9401a55d28e518ff607442c5e54296cd1affc981352ebfe2f535e58",
+  "files": [
+    {
+      "name": "additional_body_checkpoint.json",
+      "bytes": 7552,
+      "sha256": "49110be57c11fa6cf45970e19cf7391f68c82da9bda4e313e866c44e9da667c1",
+      "git_blob_sha": "8e99ce0f8e67591ea1c11455be76c774f375557d"
+    },
+    {
+      "name": "artistic_review.json",
+      "bytes": 2491,
+      "sha256": "ce6f976dfd65ae247a3b8b2151b5dc089563d61478cafffb6300642cf80ba0d4",
+      "git_blob_sha": "e8839b605957afc52c78f0ad2a155675dda54bad"
+    },
+    {
+      "name": "body_five_views.jpg",
+      "bytes": 324710,
+      "sha256": "adb12855df5019aeb14d1477f521c18715287c5887dc1d1e095c71d1550e1f7c",
+      "git_blob_sha": "45540e15c5967add9b68bb5927f93b9a5fd63647"
+    },
+    {
+      "name": "body_reference_correction.jpg",
+      "bytes": 369984,
+      "sha256": "97cacda6983d1397bea7593ab5ac530a1a8f6556ceb8c066ad999338de0e4238",
+      "git_blob_sha": "32caeeae39338b0b4a285756adb7aa01e706c671"
+    },
+    {
+      "name": "concept_body_fiveway.jpg",
+      "bytes": 329530,
+      "sha256": "d42a6d898888e85ade1e69c553519b921d047923ad83ee045e89abb693c57266",
+      "git_blob_sha": "86a86bffdd51f842e405db023fa92eb5e1ce0cdb"
+    },
+    {
+      "name": "concept_head_fiveway.jpg",
+      "bytes": 423698,
+      "sha256": "e1a5a0bbb77baf6ae13b395e6e434c0f4104749e34989589100c53e05e349b35",
+      "git_blob_sha": "c9d81c97c5a875b3d744a70ab68060f31816cc59"
+    },
+    {
+      "name": "delivery_hashes.json",
+      "bytes": 2585,
+      "sha256": "a02d85850ac02d870f0ec83eaaf9e880df7d72f53d4b9395f066c5d712b22955",
+      "git_blob_sha": "32e76b7f286c393f9b08f8381bb81444bef5352d"
+    },
+    {
+      "name": "expression_probes_1.jpg",
+      "bytes": 337294,
+      "sha256": "84dabcd1b5403962b3e421148e6caee283ed06aa8e69f4eba3f137d61e386df6",
+      "git_blob_sha": "f343b6d368efc2635e4180e589c870cf6c1f80de"
+    },
+    {
+      "name": "expression_probes_2.jpg",
+      "bytes": 341186,
+      "sha256": "011fa7ef2438d3ad4c39331589f88398697eac4808b54f94ea2f3a5f19860b65",
+      "git_blob_sha": "2afebc7462f89b5c475eae740dd0a8fad7f6c251"
+    },
+    {
+      "name": "expression_validation.json",
+      "bytes": 16301,
+      "sha256": "b65329de717fd004413a3ac879fcc2fa37c5d7c48079615c1a197378389dcb42",
+      "git_blob_sha": "8431f02643193e116f3605abcf21fb8480c1604d"
+    },
+    {
+      "name": "fbx_roundtrip.json",
+      "bytes": 4052,
+      "sha256": "2590cca67aa047825945d439a7e640a1747692fe7f716e456f6dbfc6d7763933",
+      "git_blob_sha": "2d91e19c776ad0bd668431a12f606ee9e6f3acbe"
+    },
+    {
+      "name": "neutral_delivery_check.json",
+      "bytes": 815,
+      "sha256": "655661e633c81d794dc349ff6523b7a080870c3ef3ef8a3aa49eefefd2a1ec44",
+      "git_blob_sha": "228651595c5175f2afa4befa5233083660fef2d6"
+    },
+    {
+      "name": "poses_1.jpg",
+      "bytes": 225640,
+      "sha256": "370b157933c8fce0c32bd1bf8774aba366cc3e4bae0a3984582c0c9a200aa7d1",
+      "git_blob_sha": "b090497d8125999cf68945febd33a1541bb0f166"
+    },
+    {
+      "name": "poses_2.jpg",
+      "bytes": 227422,
+      "sha256": "2673ffd803580ebcffeff3752e72b7c998de176aeed18c8fdb2bad6abf6e1634",
+      "git_blob_sha": "087261aae49b192156dd4adea6be9f65df60dd43"
+    },
+    {
+      "name": "poses_3.jpg",
+      "bytes": 222555,
+      "sha256": "b467e65f34c3f940e4a87c74837d83f36a38bc1413d5d5b5cad15c581166099b",
+      "git_blob_sha": "d8050ad806a883d47b428cc5250cb64f880a4a49"
+    },
+    {
+      "name": "preservation_check.json",
+      "bytes": 104428,
+      "sha256": "54460dea11b5d710b4b4d78aea06f40605505c26041b3b1596297c6928ab4607",
+      "git_blob_sha": "a0053b0c1a609a3f6f6a83f36afbab75286bab0a"
+    },
+    {
+      "name": "silhouette_comparison.jpg",
+      "bytes": 295936,
+      "sha256": "031d18a3451aa51f99ce4d6cc0884c0862a55efc5eafeb17f883f202dc473a98",
+      "git_blob_sha": "e3aec964e5d8424508e7274b2e902dc7f2b86254"
+    },
+    {
+      "name": "target_manifest.json",
+      "bytes": 4166,
+      "sha256": "37584b1ddebbb983f76dc85fb2f51c1f455b7297ce93c25adf52d60a68b81c0a",
+      "git_blob_sha": "e5d0aa80d74ed1905ff967ad28b49e63b5bdcf88"
+    },
+    {
+      "name": "TEKNIK_RAPOR.md",
+      "bytes": 13151,
+      "sha256": "65a3a558d4b7e4190365c57de14bd76e7422e8885843b2da023d32de3e8a9cdb",
+      "git_blob_sha": "c8be5f4d50be8aa93e57fd86316f2185a25ad82c"
+    },
+    {
+      "name": "untextured_face_comparison.jpg",
+      "bytes": 257544,
+      "sha256": "2bce702c55a9f619d43d1dacb7d134f406b883f90b9be32478545602b5f30dae",
+      "git_blob_sha": "2366537513a9d1a6638ceaf7c2da7e0ee4162f98"
+    },
+    {
+      "name": "v5_body_comparison.jpg",
+      "bytes": 261360,
+      "sha256": "13527d74b5c0fdf04911bafe0d7175a7be239178317234aa19b5e9026b5f13e4",
+      "git_blob_sha": "6a762e8a6864c84b1ed9ae61ac0977155ba236d3"
+    },
+    {
+      "name": "v5_change_metrics.json",
+      "bytes": 310,
+      "sha256": "da628f88dd475d7ccb3493ec1acd9e12f7748431878aec481a7a997f12b602e5",
+      "git_blob_sha": "65bf8cfbf6ea509161d58bc72c6bcab48af89365"
+    },
+    {
+      "name": "v5_head_comparison.jpg",
+      "bytes": 269767,
+      "sha256": "bd46548b7b0d55198a9af00634bff399b16870edb0cccb41f8277c2b1cab556a",
+      "git_blob_sha": "c84a1f413048d77a898c791abecc956e19353180"
+    },
+    {
+      "name": "v5_validation.json",
+      "bytes": 37133,
+      "sha256": "7275953721236e5705048312fad750856efcbbf8c73ea5a2922732d5265b352e",
+      "git_blob_sha": "b87830d6ad65d88cf862884d2e30796d3631f24b"
+    }
+  ]
+}

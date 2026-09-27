@@ -1,0 +1,573 @@
+{
+  "version": "v5",
+  "baseline": "Completed Pass 2",
+  "scope": "Raw preserved FBX corrective shape keys at weight 1. No RigLogic joint drivers, no production facial rig. Full closure/opening is not reproducible with these correctives alone.",
+  "status": "PARTIAL_SANITY_CHECK_NOT_FINAL_FACIAL_VALIDATION",
+  "cases": [
+    {
+      "name": "blink",
+      "keys": [
+        "head_lod0_mesh__eye_blink_L",
+        "head_lod0_mesh__eye_blink_R"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 6,
+          "area_ratio_min_max": [
+            0.3099662959575653,
+            2.1461355686187744
+          ],
+          "area_ratio_p01_p99": [
+            0.8497189199924469,
+            1.2512764322757721
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 19,
+          "area_ratio_min_max": [
+            0.2172139585018158,
+            2.4643781185150146
+          ],
+          "area_ratio_p01_p99": [
+            0.8348616510629654,
+            1.2758970403671264
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 16,
+          "area_ratio_min_max": [
+            0.23489660024642944,
+            2.461435556411743
+          ],
+          "area_ratio_p01_p99": [
+            0.8371446430683136,
+            1.277726866006851
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8978701829910278,
+          1.248537540435791
+        ],
+        "area_ratio_p01_p99": [
+          0.920457860827446,
+          1.0584017360210418
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 2.245711326599121
+    },
+    {
+      "name": "brows_up",
+      "keys": [
+        "head_lod0_mesh__brow_raise_L",
+        "head_lod0_mesh__brow_raise_R"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.6830529570579529,
+            1.2923129796981812
+          ],
+          "area_ratio_p01_p99": [
+            0.9686081713438034,
+            1.0361383044719696
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.6818015575408936,
+            1.4040035009384155
+          ],
+          "area_ratio_p01_p99": [
+            0.9680897384881973,
+            1.036219800710678
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.6925554871559143,
+            1.3897820711135864
+          ],
+          "area_ratio_p01_p99": [
+            0.9679509949684143,
+            1.0366713285446167
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8978701829910278,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.9202737611532211,
+          1.0572155106067658
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 0.584883451461792
+    },
+    {
+      "name": "brows_down",
+      "keys": [
+        "head_lod0_mesh__brow_down_L",
+        "head_lod0_mesh__brow_down_R"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.7308605909347534,
+            1.7420848608016968
+          ],
+          "area_ratio_p01_p99": [
+            0.95851253926754,
+            1.0414448237419127
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5820242762565613,
+            2.1230242252349854
+          ],
+          "area_ratio_p01_p99": [
+            0.9590689426660538,
+            1.0440971052646637
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.5985114574432373,
+            2.085512399673462
+          ],
+          "area_ratio_p01_p99": [
+            0.9587235409021377,
+            1.0440622091293335
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8978701829910278,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.9202865344285965,
+          1.0573242580890656
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 0.7439071536064148
+    },
+    {
+      "name": "smile",
+      "keys": [
+        "head_lod0_mesh__mouth_cornerPull_left",
+        "head_lod0_mesh__mouth_cornerPull_right"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 5,
+          "area_ratio_min_max": [
+            0.15611964464187622,
+            2.0187599658966064
+          ],
+          "area_ratio_p01_p99": [
+            0.7970505428314208,
+            1.2424563109874724
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 5,
+          "area_ratio_min_max": [
+            0.19981317222118378,
+            1.9127336740493774
+          ],
+          "area_ratio_p01_p99": [
+            0.8006637495756149,
+            1.23117480635643
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 5,
+          "area_ratio_min_max": [
+            0.19838690757751465,
+            1.9140607118606567
+          ],
+          "area_ratio_p01_p99": [
+            0.8037473863363266,
+            1.231699595451355
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8926102519035339,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.9205709940195084,
+          1.0613591086864471
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 2.0292534828186035
+    },
+    {
+      "name": "mouth_open",
+      "keys": [
+        "head_lod0_mesh__mouth_upperLipRaise_left",
+        "head_lod0_mesh__mouth_upperLipRaise_right",
+        "head_lod0_mesh__mouth_lowerLipDepress_left",
+        "head_lod0_mesh__mouth_lowerLipDepress_right"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.201616108417511,
+            2.198878288269043
+          ],
+          "area_ratio_p01_p99": [
+            0.8334255766868591,
+            1.2055893337726593
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 1,
+          "area_ratio_min_max": [
+            0.20191103219985962,
+            1.8121397495269775
+          ],
+          "area_ratio_p01_p99": [
+            0.8385986095666885,
+            1.1901995241641998
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 1,
+          "area_ratio_min_max": [
+            0.20050732791423798,
+            1.861733317375183
+          ],
+          "area_ratio_p01_p99": [
+            0.8416505491733551,
+            1.1899064254760743
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8969843983650208,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.920116930603981,
+          1.058311369419098
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 1.10062575340271
+    },
+    {
+      "name": "jaw_open",
+      "keys": [
+        "head_lod0_mesh__jaw_open"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.33474934101104736,
+            3.745436906814575
+          ],
+          "area_ratio_p01_p99": [
+            0.83478540122509,
+            1.1866497766971589
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.357183039188385,
+            4.907632350921631
+          ],
+          "area_ratio_p01_p99": [
+            0.8402713239192963,
+            1.1749030458927154
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 0,
+          "area_ratio_min_max": [
+            0.35763269662857056,
+            4.9152302742004395
+          ],
+          "area_ratio_p01_p99": [
+            0.8410549509525299,
+            1.1744786965847016
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.8935301303863525,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.920478076338768,
+          1.0581211364269256
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 5.764112949371338
+    },
+    {
+      "name": "lip_purse",
+      "keys": [
+        "head_lod0_mesh__mouth_lipsPurse_UL",
+        "head_lod0_mesh__mouth_lipsPurse_UR",
+        "head_lod0_mesh__mouth_lipsPurse_DL",
+        "head_lod0_mesh__mouth_lipsPurse_DR"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 10,
+          "area_ratio_min_max": [
+            0.14879989624023438,
+            1.4308022260665894
+          ],
+          "area_ratio_p01_p99": [
+            0.8705592632293702,
+            1.1329361236095428
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 10,
+          "area_ratio_min_max": [
+            0.2173609882593155,
+            1.9394499063491821
+          ],
+          "area_ratio_p01_p99": [
+            0.8771078652143478,
+            1.1230283319950103
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 10,
+          "area_ratio_min_max": [
+            0.2164141982793808,
+            1.9439880847930908
+          ],
+          "area_ratio_p01_p99": [
+            0.8776626259088516,
+            1.1217277204990386
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.896135151386261,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.92004130423069,
+          1.0579418861865997
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 0.8514880537986755
+    },
+    {
+      "name": "lip_funnel",
+      "keys": [
+        "head_lod0_mesh__mouth_funnel_UL",
+        "head_lod0_mesh__mouth_funnel_UR",
+        "head_lod0_mesh__mouth_funnel_DL",
+        "head_lod0_mesh__mouth_funnel_DR"
+      ],
+      "missing": [],
+      "expression_vs_neutral": {
+        "original": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 12,
+          "area_ratio_min_max": [
+            0.23495043814182281,
+            2.280858039855957
+          ],
+          "area_ratio_p01_p99": [
+            0.7791003733873367,
+            1.2726878619194029
+          ]
+        },
+        "previous": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 10,
+          "area_ratio_min_max": [
+            0.2640545964241028,
+            2.8831777572631836
+          ],
+          "area_ratio_p01_p99": [
+            0.7938319146633148,
+            1.249915323257446
+          ]
+        },
+        "new": {
+          "triangles": 64094,
+          "source_degenerate": 0,
+          "new_degenerate": 0,
+          "opposed_normals": 10,
+          "area_ratio_min_max": [
+            0.2626887261867523,
+            2.88942289352417
+          ],
+          "area_ratio_p01_p99": [
+            0.796256223320961,
+            1.2496749591827392
+          ]
+        }
+      },
+      "previous_vs_new": {
+        "triangles": 64094,
+        "source_degenerate": 0,
+        "new_degenerate": 0,
+        "opposed_normals": 0,
+        "area_ratio_min_max": [
+          0.896267294883728,
+          1.1829196214675903
+        ],
+        "area_ratio_p01_p99": [
+          0.920468510389328,
+          1.0604029607772827
+        ]
+      },
+      "additional_opposed_triangles_vs_pass2": 0,
+      "additional_warning_triangles": [],
+      "additional_warning_neutral_centers_m": [],
+      "max_expression_motion_mm": 1.350577712059021
+    }
+  ]
+}

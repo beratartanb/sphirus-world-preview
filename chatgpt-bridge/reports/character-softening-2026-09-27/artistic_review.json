@@ -1,0 +1,41 @@
+{
+  "pass": "Corrective softening after Pass 2, including additional user-directed body-reference refinement",
+  "final_candidate": "v5",
+  "reference_authority": {
+    "identity": "Bakır tonlu saçlı karakter konsepti.png",
+    "additional_body_anatomy": "Adsız.png, explicitly resupplied during this task",
+    "limits": "Uncalibrated references; pose, lens, lighting and clothing support are not anatomical measurements."
+  },
+  "views_reviewed": [
+    "front",
+    "true side",
+    "back",
+    "front three-quarter",
+    "rear three-quarter",
+    "all-clay face",
+    "black silhouettes",
+    "12 body stress poses",
+    "8 partial raw facial probes"
+  ],
+  "face_review": {
+    "jaw_chin": "Reduced hard perimeter and blocky chin, adult support retained.",
+    "nose": "Softer root/bridge/tip transitions with adult projection retained.",
+    "orbit": "Less severe supraorbital transition, no eyeball scaling or youthful eye enlargement.",
+    "cheeks_mouth": "Healthier malar-to-buccal transition and less compressed perioral contour; restrained fullness.",
+    "identity_retained": "Still more mature and structured than original/Pass 1. Source skull traits remain; not an exact portrait."
+  },
+  "body_review": {
+    "upper_body": "Softer neck/trapezius/deltoid transitions and modest chest convexity; support retained.",
+    "additional_work": "Less cylindrical abdomen, connected rib/waist/iliac transition, fuller distal lateral/medial thigh and calf heads, restrained posterior upper-arm/proximal forearm volume.",
+    "silhouette": "More natural female balance than Pass 2 while retaining active proportions. No idealized bust or extreme hourglass.",
+    "limits": "Neutral mesh interpretation of an uncalibrated body reference; underwear support and photographic surface detail not reproduced."
+  },
+  "geometry_review": "No major new structural failure observed in matched 12-pose renders. Extreme legacy elbow/knee/shoulder volume loss remains.",
+  "expression_status": "PARTIAL_SANITY_CHECK; blink opposed triangles 19 to 16, none of 8 probes adds a warning versus Pass 2. Full RigLogic facial validation NOT RUN.",
+  "visual_decision": "Better balanced shape candidate for a later controlled MetaHuman Conform test. Not final production or integration approval.",
+  "metahuman_conform": "NOT_RUN",
+  "unreal_import": "NOT_RUN",
+  "production_changes": false,
+  "evidence_count": 13,
+  "additional_body_head_displacement_mm": 0.0
+}
