@@ -1,0 +1,158 @@
+{
+  "scope": "Neutral static geometry only. Unreal import and MetaHuman Conform deliberately not run.",
+  "blender_world": "metres; -Y forward; +Z up",
+  "fbx_settings": {
+    "axis_forward": "X",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE",
+    "bake_space_transform": true,
+    "animation": false,
+    "object_types": [
+      "MESH"
+    ]
+  },
+  "objects": [
+    {
+      "name": "SM_SPH_BodyTarget",
+      "file": "ConformTargets\\SM_SPH_BodyTarget.fbx",
+      "vertices": 32334,
+      "polygons": 60816,
+      "source_material_indices": [
+        0
+      ],
+      "bounds_blender_m": [
+        [
+          -0.5082730650901794,
+          -0.28640854358673096,
+          -0.0017002810491248965
+        ],
+        [
+          0.5036331415176392,
+          0.09030599147081375,
+          1.4344375133514404
+        ]
+      ],
+      "role": "conform_component"
+    },
+    {
+      "name": "SM_SPH_HeadTarget",
+      "file": "ConformTargets\\SM_SPH_HeadTarget.fbx",
+      "vertices": 24414,
+      "polygons": 48004,
+      "source_material_indices": [
+        0
+      ],
+      "bounds_blender_m": [
+        [
+          -0.15391400456428528,
+          -0.15581993758678436,
+          1.331478476524353
+        ],
+        [
+          0.14927494525909424,
+          0.06530525535345078,
+          1.7323181629180908
+        ]
+      ],
+      "role": "conform_component"
+    },
+    {
+      "name": "SM_SPH_LeftEyeTarget",
+      "file": "ConformTargets\\Auxiliary\\SM_SPH_LeftEyeTarget.fbx",
+      "vertices": 802,
+      "polygons": 1536,
+      "source_material_indices": [
+        3
+      ],
+      "bounds_blender_m": [
+        [
+          0.012016006745398045,
+          -0.11952932178974152,
+          1.6074665784835815
+        ],
+        [
+          0.039455242455005646,
+          -0.09183277189731598,
+          1.6348414421081543
+        ]
+      ],
+      "role": "conform_component"
+    },
+    {
+      "name": "SM_SPH_RightEyeTarget",
+      "file": "ConformTargets\\Auxiliary\\SM_SPH_RightEyeTarget.fbx",
+      "vertices": 802,
+      "polygons": 1536,
+      "source_material_indices": [
+        4
+      ],
+      "bounds_blender_m": [
+        [
+          -0.04399098455905914,
+          -0.11950714141130447,
+          1.6076222658157349
+        ],
+        [
+          -0.016785873100161552,
+          -0.09181138873100281,
+          1.6347033977508545
+        ]
+      ],
+      "role": "conform_component"
+    },
+    {
+      "name": "SM_SPH_TeethTarget",
+      "file": "ConformTargets\\Auxiliary\\SM_SPH_TeethTarget.fbx",
+      "vertices": 4613,
+      "polygons": 8350,
+      "source_material_indices": [
+        1
+      ],
+      "bounds_blender_m": [
+        [
+          -0.03575799986720085,
+          -0.12379904091358185,
+          1.5433217287063599
+        ],
+        [
+          0.029895996674895287,
+          -0.05116803199052811,
+          1.585547924041748
+        ]
+      ],
+      "role": "conform_component"
+    },
+    {
+      "name": "REF_SPH_HeadFullTopology",
+      "file": "ConformTargets\\ReferenceOnly\\REF_SPH_HeadFullTopology.fbx",
+      "vertices": 34657,
+      "polygons": 64094,
+      "source_material_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "bounds_blender_m": [
+        [
+          -0.15391400456428528,
+          -0.15581993758678436,
+          1.331478476524353
+        ],
+        [
+          0.14927494525909424,
+          0.06530525535345078,
+          1.7323181629180908
+        ]
+      ],
+      "role": "full_topology_reference"
+    }
+  ]
+}
