@@ -1,0 +1,30 @@
+{
+  "BODY_PROPORTIONS": "PASS",
+  "FACE_IDENTITY": "PRESERVED",
+  "NEUTRAL_HEAD_BODY_SEAM": "PASS",
+  "BODY_PERSISTENCE": "PASS",
+  "BODY_PERSISTENCE_SCOPE": "Accepted unchanged B2: previous fresh/reload head/body arrays 0 mm, same source hash/parameters now. No successful corrected-rig reload exists.",
+  "SHOULDER_DEFORMATION": "FAIL",
+  "ARMPIT_DEFORMATION": "PARTIAL",
+  "BODY_DEFORMATION": "PARTIAL",
+  "PRODUCTION_CHARACTER_MODIFIED": "NO",
+  "READY_FOR_USER_APPROVAL": "NO",
+  "PERMANENT_CORRECTION_APPLIED": false,
+  "NATIVE_TEST_CANDIDATE": "PREPARED_BUT_UNPACKING_BLOCKED_NOT_ACCEPTED",
+  "LOCAL_WEIGHT_CANDIDATE": "NOT_CREATED",
+  "HEAD_SCALE": 1.0653988122940063,
+  "HEIGHT_CM": 173.27168560028076,
+  "NEUTRAL_SEAM_MM": {
+    "mean_mm": 0.00015682353163402356,
+    "p95_mm": 0.0003171684069354512,
+    "max_mm": 0.00046644814291797623
+  },
+  "MAX_TESTED_SEAM_MM": 0.00046644814291797623,
+  "GEOMETRY_FINITE": true,
+  "NEW_DEGENERATE_TRIANGLES": 0,
+  "ISOLATED_INTERNAL_EXTERNAL_ROTATION": "NOT_RUN",
+  "ISOLATED_ABDUCTION_ROM": "NOT_RUN",
+  "SPRINT_VISUAL_REVIEW": "NOT_ACCEPTED_FRAMING",
+  "NATIVE_ROM_NOTE": "30/60/90/120 are measured relative to the torso in an unmodified native clip with coupled torso movement, not a clean isolated arm-abduction ladder. Full-raise control retains ~157-158 degrees.",
+  "LIMITATION": "Public BuildMetaHuman recreates a default pipeline; PipelineOverride is protected in Python. Official UI assembly is required for the configured RBF unpack. No bypass or engine edit attempted."
+}

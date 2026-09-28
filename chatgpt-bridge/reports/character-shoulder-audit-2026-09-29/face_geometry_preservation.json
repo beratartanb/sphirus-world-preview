@@ -1,0 +1,100 @@
+{
+  "baseline": "User accepted current NativeWorkflow B2Reload",
+  "scope": "Actual neutral CPU-skinned geometry vs accepted export, canonical material/UV correspondence. Source geometry files unchanged by SHA256; tiny extraction differences are numerical precision.",
+  "parts": {
+    "Head": {
+      "samples": 34343,
+      "mean_mm": 0.0001491714731321262,
+      "p95_mm": 0.00020455190921117933,
+      "max_mm": 0.00033324060839950845,
+      "triangles_identical": true
+    },
+    "Body": {
+      "samples": 32334,
+      "mean_mm": 5.104071753373931e-05,
+      "p95_mm": 0.00015377536293599222,
+      "max_mm": 0.00023282157165019422,
+      "triangles_identical": true
+    }
+  },
+  "regions": {
+    "face_identity_combined": {
+      "samples": 15835,
+      "mean_mm": 0.00014400063705705943,
+      "p95_mm": 0.00020415091160400054,
+      "max_mm": 0.00032655730717340775
+    },
+    "forehead": {
+      "samples": 881,
+      "mean_mm": 0.0001607682116376853,
+      "p95_mm": 0.0002209974332095426,
+      "max_mm": 0.0002459296600003744
+    },
+    "brow": {
+      "samples": 655,
+      "mean_mm": 0.00015186303797826942,
+      "p95_mm": 0.00020301589686621716,
+      "max_mm": 0.00020476255944808854
+    },
+    "eyelids_orbits": {
+      "samples": 3522,
+      "mean_mm": 0.00014842425048599214,
+      "p95_mm": 0.0002051092740440666,
+      "max_mm": 0.00024482929806034665
+    },
+    "nose": {
+      "samples": 3540,
+      "mean_mm": 0.00014781029496139888,
+      "p95_mm": 0.0002051092740440666,
+      "max_mm": 0.0003264180224775741
+    },
+    "midface": {
+      "samples": 486,
+      "mean_mm": 0.00017865021006968783,
+      "p95_mm": 0.00020502259539507207,
+      "max_mm": 0.00022998435001099935
+    },
+    "cheeks": {
+      "samples": 2001,
+      "mean_mm": 0.0001406851353461043,
+      "p95_mm": 0.00019752803017814618,
+      "max_mm": 0.00021663316138459296
+    },
+    "lips_mouth": {
+      "samples": 4619,
+      "mean_mm": 0.0001304487434036554,
+      "p95_mm": 0.0001971247349605025,
+      "max_mm": 0.00032655730717340775
+    },
+    "jaw": {
+      "samples": 723,
+      "mean_mm": 0.00013410077691030321,
+      "p95_mm": 0.0001971247349605025,
+      "max_mm": 0.00021965585339128534
+    },
+    "chin": {
+      "samples": 628,
+      "mean_mm": 0.00012004785466943667,
+      "p95_mm": 0.0001969660716278351,
+      "max_mm": 0.00021589144625549063
+    },
+    "neck_attachment": {
+      "samples": 1784,
+      "mean_mm": 0.00010767313560381124,
+      "p95_mm": 0.00018251094063763274,
+      "max_mm": 0.00019127055282718258
+    },
+    "upper_jaw_neck_transition": {
+      "samples": 834,
+      "mean_mm": 0.00012111493428991143,
+      "p95_mm": 0.0001920988566916472,
+      "max_mm": 0.00021589144625549063
+    },
+    "whole_skin_head": {
+      "samples": 24408,
+      "mean_mm": 0.00015341467607177839,
+      "p95_mm": 0.00020680664484216157,
+      "max_mm": 0.00033324060839950845
+    }
+  }
+}

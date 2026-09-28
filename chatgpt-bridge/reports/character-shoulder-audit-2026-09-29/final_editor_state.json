@@ -1,0 +1,22 @@
+{
+  "world_before_verify": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "expected_world": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "accepted_parameters_identical_before_cleanup": true,
+  "test_parameters_identical_before_cleanup": true,
+  "head_scale": 1.0653988122940063,
+  "body_parameter_edit_calls": 0,
+  "face_edit_calls": 0,
+  "skin_weight_edit_calls": 0,
+  "main_animation_edit_calls": 0,
+  "rig_calibration_applied": false,
+  "candidate_promoted": false,
+  "native_body_postprocess_restored_before_cleanup": true,
+  "unpacked_rbf_asset_count": 0,
+  "source_registered": false,
+  "test_registered": false,
+  "cleanup_note": "First map-load call raised a copied ARKit animation ControlRig/skeleton mismatch error. This follow-up verifies the actual loaded world and dirty packages rather than assuming cleanup failed or succeeded.",
+  "world": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "dirty_content": [],
+  "dirty_maps": [],
+  "experimental_workflows_enabled": false
+}
