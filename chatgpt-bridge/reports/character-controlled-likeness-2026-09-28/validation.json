@@ -1,0 +1,397 @@
+{
+  "baseline": "Sphirus_FinalIdentity_EDITABLE.blend / SPH_FinalIdentity_Refinement",
+  "v5_used_as_baseline": false,
+  "topology_uv_weights_vertex_order_preserved": true,
+  "all_previous_keys_preserved": true,
+  "body_entire_signature_unchanged": true,
+  "body_displacement_mm": 0,
+  "armature_rest_matrices_unchanged": true,
+  "source_attributes_identical": true,
+  "attributes": {
+    "TARGET_BODY": {
+      ".select_vert": {
+        "domain": "POINT",
+        "type": "BOOLEAN",
+        "hash": "609e305583eafe8f4a28fc66481e0f663100a796ebf1c1f00de65f4a425a2954"
+      },
+      "position": {
+        "domain": "POINT",
+        "type": "FLOAT_VECTOR",
+        "hash": "43dbbeea120781c289e3a36b1a1d3b2ebccaccab3b0e7c8b850733e138d3b3b6"
+      },
+      ".corner_vert": {
+        "domain": "CORNER",
+        "type": "INT",
+        "hash": "51c7f04cd5129f06641b520412c0bc0f6868e3bbe1ee66cdfbd705fc472de10a"
+      },
+      ".corner_edge": {
+        "domain": "CORNER",
+        "type": "INT",
+        "hash": "786743d01d2d778c43fe77df522c9bb1674a5e9d820bd47a81e3d9f3ccdf7f96"
+      },
+      ".select_poly": {
+        "domain": "FACE",
+        "type": "BOOLEAN",
+        "hash": "9ee377737826961ef478340d7f2445ab1716ec297f87a7e82551f6e222ba7ce7"
+      },
+      "material_index": {
+        "domain": "FACE",
+        "type": "INT",
+        "hash": "ed7722bcb2d228a752a62332ae115cecca4765045685e10717b1866c0386a4f8"
+      },
+      "DiffuseUV": {
+        "domain": "CORNER",
+        "type": "FLOAT2",
+        "hash": "e22f77480c2d0cfff06c8709dafa957b18114aba40c2a33168a268c346b2ef78"
+      },
+      "Attribute": {
+        "domain": "CORNER",
+        "type": "BYTE_COLOR",
+        "hash": "64384eb77772ddd2f47685639125d373d46ce1db9b008080cc1f511fde3c6926"
+      },
+      ".edge_verts": {
+        "domain": "EDGE",
+        "type": "INT32_2D",
+        "hash": "fc6a92d39732cfc2e106825e90e4c2946246d1431cd494f7b5f345d027acdd26"
+      },
+      "custom_normal": {
+        "domain": "CORNER",
+        "type": "INT16_2D",
+        "hash": "806aec0627b3ebfba2436479c8010eab85f3a44d5109ef4c08c1d7481dd48642"
+      },
+      "sharp_edge": {
+        "domain": "EDGE",
+        "type": "BOOLEAN",
+        "hash": "e52a7768f30e575e0412ba15803155fa13cb521db19d1b5a697291fd1cfc3a35"
+      }
+    },
+    "TARGET_HEAD": {
+      ".select_vert": {
+        "domain": "POINT",
+        "type": "BOOLEAN",
+        "hash": "043d52da346307539de3a96e5fdb2dd7c7b1917c214955d35ce3a87ecf39c027"
+      },
+      "position": {
+        "domain": "POINT",
+        "type": "FLOAT_VECTOR",
+        "hash": "a27068584ca03d574c8137be582099d817e931a6acace727319867981a94f56d"
+      },
+      ".corner_vert": {
+        "domain": "CORNER",
+        "type": "INT",
+        "hash": "4d86a312612cb1085ec43f6d09f7ddc94a8ba52c9a2dc09e7ca39a08dbb903e2"
+      },
+      ".corner_edge": {
+        "domain": "CORNER",
+        "type": "INT",
+        "hash": "53d50a37e98e4e62df637b17a613ab650e1bb6813695026e5f948e3c6c7e2897"
+      },
+      ".select_poly": {
+        "domain": "FACE",
+        "type": "BOOLEAN",
+        "hash": "459a63970fa29cba414d5d920ab45b0677305f41c22979e9d7c834ef91e603de"
+      },
+      "material_index": {
+        "domain": "FACE",
+        "type": "INT",
+        "hash": "8c5e7348c41312d1f6fdf536abc51b03d4b7a00177c377e42c1d4b1f17a5de03"
+      },
+      "DiffuseUV": {
+        "domain": "CORNER",
+        "type": "FLOAT2",
+        "hash": "85d86b3be6523d6b08acec2731c7f6f8bb23028577870f04d25cd6e216795934"
+      },
+      "Attribute": {
+        "domain": "CORNER",
+        "type": "BYTE_COLOR",
+        "hash": "c0bb304b0d2ccd76bdffa00e0c42703f24cb198243b2ae8146e6de322146b524"
+      },
+      ".edge_verts": {
+        "domain": "EDGE",
+        "type": "INT32_2D",
+        "hash": "8a904a1d9969452893917c3cefcfb34637c50cffd03522ee2e23a94ebdd86ffe"
+      },
+      "custom_normal": {
+        "domain": "CORNER",
+        "type": "INT16_2D",
+        "hash": "ae2c7743b61bdb3a0774274d0c9f5e5f0823d8f2f4d3be03eaf5eb2b5659f05b"
+      },
+      "sharp_edge": {
+        "domain": "EDGE",
+        "type": "BOOLEAN",
+        "hash": "23609fed0680076044c03e5fc6e8a806f57d38b55c97dabd8ecacbf948f9212b"
+      }
+    }
+  },
+  "previous_head_keys": 866,
+  "new_head_key": "SPH_Controlled_Likeness",
+  "neutral": {
+    "triangles": 64094,
+    "source_degenerate": 0,
+    "new_degenerate": 0,
+    "opposed_normals": 0,
+    "area_ratio_min_max": [
+      0.8642674088478088,
+      1.1740778684616089
+    ],
+    "area_ratio_p01_p99": [
+      0.9979971712827682,
+      1.004691025018692
+    ]
+  },
+  "region_displacement": {
+    "whole_head": {
+      "vertices": 34657,
+      "max_mm": 0.7105658054351807,
+      "mean_mm": 0.0014158468693494797,
+      "changed_over_0_01mm": 560
+    },
+    "cranium": {
+      "vertices": 2024,
+      "max_mm": 0.0,
+      "mean_mm": 0.0,
+      "changed_over_0_01mm": 0
+    },
+    "nose": {
+      "vertices": 2619,
+      "max_mm": 0.7105658054351807,
+      "mean_mm": 0.013661370612680912,
+      "changed_over_0_01mm": 351
+    },
+    "mouth": {
+      "vertices": 5057,
+      "max_mm": 0.20000338554382324,
+      "mean_mm": 0.0017347016837447882,
+      "changed_over_0_01mm": 127
+    },
+    "midface_cheeks": {
+      "vertices": 2194,
+      "max_mm": 0.17999857664108276,
+      "mean_mm": 0.001793012605048716,
+      "changed_over_0_01mm": 68
+    },
+    "jaw_chin": {
+      "vertices": 1592,
+      "max_mm": 0.15000998973846436,
+      "mean_mm": 0.0006984825595282018,
+      "changed_over_0_01mm": 23
+    },
+    "eyes_brow": {
+      "vertices": 3495,
+      "max_mm": 0.03727525472640991,
+      "mean_mm": 3.6890498449793085e-05,
+      "changed_over_0_01mm": 5
+    },
+    "neck_interface": {
+      "vertices": 1558,
+      "max_mm": 0.0,
+      "mean_mm": 0.0,
+      "changed_over_0_01mm": 0
+    },
+    "teeth": {
+      "max_mm": 0.0,
+      "vertices": 4613
+    },
+    "left_eyeball": {
+      "max_mm": 0.0,
+      "vertices": 802
+    },
+    "right_eyeball": {
+      "max_mm": 0.0,
+      "vertices": 802
+    }
+  },
+  "seam_pairs": 93,
+  "neutral_seam_max_mm": 0.00024256081087514758,
+  "baseline_seam_max_mm": 0.00024256081087514758,
+  "height_cm": 173.40184020996094,
+  "baseline_height_cm": 173.40184020996094,
+  "metahuman_conform": "NOT_RUN",
+  "facial_deformation": "NOT_RUN",
+  "body_proportions": "NOT_RUN",
+  "body_deformation": "NOT_RUN",
+  "global_head_scale_changed": false,
+  "preservation_signatures": {
+    "TARGET_BODY": {
+      "before": {
+        "vertices": 32334,
+        "polygons": 60816,
+        "source_mesh_vertex_positions": "43dbbeea120781c289e3a36b1a1d3b2ebccaccab3b0e7c8b850733e138d3b3b6",
+        "edge_vertex_order": "fc6a92d39732cfc2e106825e90e4c2946246d1431cd494f7b5f345d027acdd26",
+        "material_indices": "ed7722bcb2d228a752a62332ae115cecca4765045685e10717b1866c0386a4f8",
+        "loops": "51c7f04cd5129f06641b520412c0bc0f6868e3bbe1ee66cdfbd705fc472de10a",
+        "poly_sizes": "06c20bc8321c525365f35a42a1039fc4a316d01dd1b6c9debf69671a46be3d87",
+        "uv": {
+          "DiffuseUV": "e22f77480c2d0cfff06c8709dafa957b18114aba40c2a33168a268c346b2ef78"
+        },
+        "weights": "fa39fa425072d11d51a02af38040335592f42e8f4d9c7458a9d1c6adc59b3c49",
+        "matrix_world": [
+          [
+            0.009999999776482582,
+            3.8417054259998196e-11,
+            4.656612768993984e-12,
+            2.38418573772492e-09
+          ],
+          [
+            3.8417054259998196e-11,
+            0.009999999776482582,
+            4.656612768993984e-12,
+            -3.5762786065873797e-09
+          ],
+          [
+            4.656612768993984e-12,
+            4.656612768993984e-12,
+            0.009999999776482582,
+            6.303191213419268e-08
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "groups_sha256": "c2d9d6b6c3478dfa6bc5ac6f5aa5f3322fce413bc7ebce7c7e4e1184bacc8ac4",
+        "previous_keys_data_and_relations_sha256": "4a9a12a0b81f1b0c8eb17479632a973bc4dbf5491eb1069991692b19dfc3fc30"
+      },
+      "after": {
+        "vertices": 32334,
+        "polygons": 60816,
+        "source_mesh_vertex_positions": "43dbbeea120781c289e3a36b1a1d3b2ebccaccab3b0e7c8b850733e138d3b3b6",
+        "edge_vertex_order": "fc6a92d39732cfc2e106825e90e4c2946246d1431cd494f7b5f345d027acdd26",
+        "material_indices": "ed7722bcb2d228a752a62332ae115cecca4765045685e10717b1866c0386a4f8",
+        "loops": "51c7f04cd5129f06641b520412c0bc0f6868e3bbe1ee66cdfbd705fc472de10a",
+        "poly_sizes": "06c20bc8321c525365f35a42a1039fc4a316d01dd1b6c9debf69671a46be3d87",
+        "uv": {
+          "DiffuseUV": "e22f77480c2d0cfff06c8709dafa957b18114aba40c2a33168a268c346b2ef78"
+        },
+        "weights": "fa39fa425072d11d51a02af38040335592f42e8f4d9c7458a9d1c6adc59b3c49",
+        "matrix_world": [
+          [
+            0.009999999776482582,
+            3.8417054259998196e-11,
+            4.656612768993984e-12,
+            2.38418573772492e-09
+          ],
+          [
+            3.8417054259998196e-11,
+            0.009999999776482582,
+            4.656612768993984e-12,
+            -3.5762786065873797e-09
+          ],
+          [
+            4.656612768993984e-12,
+            4.656612768993984e-12,
+            0.009999999776482582,
+            6.303191213419268e-08
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "groups_sha256": "c2d9d6b6c3478dfa6bc5ac6f5aa5f3322fce413bc7ebce7c7e4e1184bacc8ac4",
+        "previous_keys_data_and_relations_sha256": "4a9a12a0b81f1b0c8eb17479632a973bc4dbf5491eb1069991692b19dfc3fc30"
+      }
+    },
+    "TARGET_HEAD": {
+      "before": {
+        "vertices": 34657,
+        "polygons": 64094,
+        "source_mesh_vertex_positions": "a27068584ca03d574c8137be582099d817e931a6acace727319867981a94f56d",
+        "edge_vertex_order": "8a904a1d9969452893917c3cefcfb34637c50cffd03522ee2e23a94ebdd86ffe",
+        "material_indices": "8c5e7348c41312d1f6fdf536abc51b03d4b7a00177c377e42c1d4b1f17a5de03",
+        "loops": "4d86a312612cb1085ec43f6d09f7ddc94a8ba52c9a2dc09e7ca39a08dbb903e2",
+        "poly_sizes": "f3a6fd0cc49dbe92417c34054289252e66dbba34678387751bbe55649a4ecc93",
+        "uv": {
+          "DiffuseUV": "85d86b3be6523d6b08acec2731c7f6f8bb23028577870f04d25cd6e216795934"
+        },
+        "weights": "0d61933af373e0d8430f27ce267a07bd3af91f5b366208342395ab2fd7bec9d1",
+        "matrix_world": [
+          [
+            0.009999999776482582,
+            -5.684341759025859e-16,
+            6.252776040807564e-15,
+            3.903551093475954e-11
+          ],
+          [
+            -5.684341759025859e-16,
+            0.009999999776482582,
+            -5.186018173057583e-14,
+            1.0552891005488618e-08
+          ],
+          [
+            6.252776040807564e-15,
+            -5.186018173057583e-14,
+            0.009999999776482582,
+            -1.0291401508766285e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "groups_sha256": "300fdbc5a7f1427d0df5d5d6cc6979249bacce97f96334e7afc68c984ec432d8",
+        "previous_keys_data_and_relations_sha256": "246f2e589e3eba8a5ab29dab89a5ba7e059cfee65961c06bcb79628fc03c5bd8"
+      },
+      "after": {
+        "vertices": 34657,
+        "polygons": 64094,
+        "source_mesh_vertex_positions": "a27068584ca03d574c8137be582099d817e931a6acace727319867981a94f56d",
+        "edge_vertex_order": "8a904a1d9969452893917c3cefcfb34637c50cffd03522ee2e23a94ebdd86ffe",
+        "material_indices": "8c5e7348c41312d1f6fdf536abc51b03d4b7a00177c377e42c1d4b1f17a5de03",
+        "loops": "4d86a312612cb1085ec43f6d09f7ddc94a8ba52c9a2dc09e7ca39a08dbb903e2",
+        "poly_sizes": "f3a6fd0cc49dbe92417c34054289252e66dbba34678387751bbe55649a4ecc93",
+        "uv": {
+          "DiffuseUV": "85d86b3be6523d6b08acec2731c7f6f8bb23028577870f04d25cd6e216795934"
+        },
+        "weights": "0d61933af373e0d8430f27ce267a07bd3af91f5b366208342395ab2fd7bec9d1",
+        "matrix_world": [
+          [
+            0.009999999776482582,
+            -5.684341759025859e-16,
+            6.252776040807564e-15,
+            3.903551093475954e-11
+          ],
+          [
+            -5.684341759025859e-16,
+            0.009999999776482582,
+            -5.186018173057583e-14,
+            1.0552891005488618e-08
+          ],
+          [
+            6.252776040807564e-15,
+            -5.186018173057583e-14,
+            0.009999999776482582,
+            -1.0291401508766285e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "groups_sha256": "300fdbc5a7f1427d0df5d5d6cc6979249bacce97f96334e7afc68c984ec432d8",
+        "previous_keys_data_and_relations_sha256": "246f2e589e3eba8a5ab29dab89a5ba7e059cfee65961c06bcb79628fc03c5bd8"
+      }
+    }
+  },
+  "body_shape_key_values_unchanged": true,
+  "region_definition_note": "World-space coordinate masks, may overlap. Mean includes all vertices in each region, including unchanged vertices. Whole head includes accessory submeshes. These are displacement measurements of the mesh, not inferred dimensions of the reference woman.",
+  "region_definitions": {
+    "coordinate_system": "meters; x=abs(world_x+0.00232), y=world_y, z=world_z; skin=material slot 0",
+    "whole_head": "all vertices",
+    "cranium": "skin and z>=1.65",
+    "nose": "skin and x<0.026 and 1.575<z<1.634 and y<-0.125",
+    "mouth": "skin and x<0.040 and 1.541<z<1.574 and y<-0.105",
+    "midface_cheeks": "skin and 0.024<x<0.065 and 1.57<z<1.62 and y<-0.06",
+    "jaw_chin": "skin and 1.501<z<1.546 and y<-0.045",
+    "eyes_brow": "skin and 0.013<x<0.052 and 1.613<z<1.65 and y<-0.105",
+    "neck_interface": "skin and z<1.49"
+  }
+}

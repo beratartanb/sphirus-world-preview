@@ -1,0 +1,134 @@
+{
+  "report_id": "character-controlled-likeness-2026-09-28",
+  "repository": "beratartanb/sphirus-world-preview",
+  "repository_path": "chatgpt-bridge/reports/character-controlled-likeness-2026-09-28",
+  "scope": "Controlled local Blender head candidate directly from FinalIdentity, not v5. Likeness remains PARTIAL; candidate not promoted. Unreal/conform/expression/body stages NOT_RUN by user scope. Source binaries/logs excluded.",
+  "files": [
+    {
+      "name": "01_front.jpg",
+      "bytes": 254901,
+      "sha256": "13e1e84150ac4e33cde18c952e12b5409c1adedcead91cd4e816b61efe7597ee",
+      "git_blob_sha": "2ada703a5040444e29a7527cb43633b4b15d88ff"
+    },
+    {
+      "name": "01_left_side.jpg",
+      "bytes": 271101,
+      "sha256": "5ebd3db1b42f356016464d534c3d4df51f0bedbf92e4ab724178118bf87c4771",
+      "git_blob_sha": "3daba9af0bb22cd3ad92bc4e3d6827e474a7579f"
+    },
+    {
+      "name": "02_threequarters.jpg",
+      "bytes": 297114,
+      "sha256": "91df4555cb29be7d9f778d065058687c3586b907e093fe86dcb207fa581a9f72",
+      "git_blob_sha": "6e8d9b013fcc969d9e692f42d82a382226453cc3"
+    },
+    {
+      "name": "03_concept.jpg",
+      "bytes": 305498,
+      "sha256": "34f5fb536e998d783ff2cf3ed296bf94211e16519d3a5c7e339be12328e9b254",
+      "git_blob_sha": "e94e1debda7d89944113ec1643a5b8004b3d7721"
+    },
+    {
+      "name": "04_midface.jpg",
+      "bytes": 119995,
+      "sha256": "73fc63683f7f76a37221a132fa9cd2ab0ee26834ec904bea43b6c92b78a89b1a",
+      "git_blob_sha": "298f91f0b7bb8650966560ef75469a838106dacb"
+    },
+    {
+      "name": "04_mouth.jpg",
+      "bytes": 95741,
+      "sha256": "a1d76bc4eeaa7cecf216f329fd73b1c1b3210e292351859a307d4d89fb638cc1",
+      "git_blob_sha": "b3a22738e7de3287efb69e57a294b436b527349e"
+    },
+    {
+      "name": "04_nose_profile.jpg",
+      "bytes": 137648,
+      "sha256": "0774360d7ed1110112547a9f65be1320ffda15013748c08720f26b07f233ce37",
+      "git_blob_sha": "7823af1fcedcb5462ff431335966919e08a2d38a"
+    },
+    {
+      "name": "05_front_alignment.jpg",
+      "bytes": 294341,
+      "sha256": "bf99793fd5a60a40db855c1dee2fce895a57aace27a14f74b7212590d16add51",
+      "git_blob_sha": "1093217fa29d42a561a222ab2755b7ba907d9cc0"
+    },
+    {
+      "name": "05_side_alignment.jpg",
+      "bytes": 291225,
+      "sha256": "ae33b05d6e35bbd727290231ac00bf355385d00983a30c13ef96a1e78d6377c7",
+      "git_blob_sha": "9670814e3d894f564fc2c12b748f58eee3ebff27"
+    },
+    {
+      "name": "06_landmarks_front.jpg",
+      "bytes": 270240,
+      "sha256": "10195d65d533900df05725bb5616a9a1d8057eaf208653ff69c6b527c74cc1c0",
+      "git_blob_sha": "aaa0fabe548e37a2aa240a6937a493c5caa9775a"
+    },
+    {
+      "name": "06_landmarks_left_side.jpg",
+      "bytes": 282593,
+      "sha256": "1f7ed2f61c0d9d38db39da3e4e3a4b5ede2134c63e9c039abedbd708e7c0d8cf",
+      "git_blob_sha": "a37e7b11fc5e12ab141dd9569978c03a664876fa"
+    },
+    {
+      "name": "07_profile_delta.jpg",
+      "bytes": 121179,
+      "sha256": "6efd8b6cb3b53465c17b297b42caad5c3b8d5301acffe4d5c117f1a76f049946",
+      "git_blob_sha": "b9b46805818df02e9ced506081d794866221690f"
+    },
+    {
+      "name": "BASELINE_DECISION.json",
+      "bytes": 832,
+      "sha256": "121dbc58821e27f967531af8991d8aa55ab85a10b8f6123b5273a4c88fd28e39",
+      "git_blob_sha": "b2e49cb3e7419b835850e5e398e982b01aae597e"
+    },
+    {
+      "name": "TEKNIK_RAPOR.md",
+      "bytes": 11189,
+      "sha256": "f70f77fc614a151bc54d3e03dd318a6dcba1991311ef5247e537102c3f6d0b3d",
+      "git_blob_sha": "0cd9a70e17302e77e1f5117c73c04d87c18ee3ac"
+    },
+    {
+      "name": "boards_manifest.json",
+      "bytes": 1335,
+      "sha256": "a7d36d7e8bf18766001d701d7d2af7ff89cf04a97526191f15f590aee0c8e8ed",
+      "git_blob_sha": "9f7eec9e593d4c0bb6338fd2ed77954e4eaf704a"
+    },
+    {
+      "name": "delivery_hashes.json",
+      "bytes": 676,
+      "sha256": "c4f03e24193dd7952fb31158c8c9baab4ab1b99ba72568e80ad6d0414e2fd624",
+      "git_blob_sha": "93aa39bf1bca7ba87f42b576df38cbbd1e2ad434"
+    },
+    {
+      "name": "landmark_changes.json",
+      "bytes": 13705,
+      "sha256": "819fd9f8f940f97f4c16c87048554bf9f482b87316fa0d5b762dd19e52bf6726",
+      "git_blob_sha": "4fbae18b4f2eb1f20619d94784a7fd1a24b16b9b"
+    },
+    {
+      "name": "landmark_projections.json",
+      "bytes": 13583,
+      "sha256": "ec831d35db433707fd016fd8c30f66a5fffca31e17e8464607fe198781e1842d",
+      "git_blob_sha": "afd03092addd80fc98bee22d79a2fa0e3ec28387"
+    },
+    {
+      "name": "preservation_final.json",
+      "bytes": 11567,
+      "sha256": "94f57185cf99173e2f4dcdbb0e7b5cbd136c101bf6de8e40249263fa434d27fc",
+      "git_blob_sha": "9a6d802f686ef27a633436632aa4ce8aadedb292"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 14101,
+      "sha256": "285683ccf1fae1b4c0e103c77ca27d84e08117da3d6e8ee649394d5ccd3a5d31",
+      "git_blob_sha": "ddf2cf44d6d01cc59ed30b888691fb46eb09e2d5"
+    },
+    {
+      "name": "visual_review.json",
+      "bytes": 2081,
+      "sha256": "7f6c65a428eb4a6ba79f4a8b0c4cf3374a692b5e5de8641f78646ff1e8439edf",
+      "git_blob_sha": "17e817b36c61023262e085141ceb472b3e8ffed4"
+    }
+  ]
+}

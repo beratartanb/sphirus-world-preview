@@ -1,0 +1,37 @@
+{
+  "scope": "One controlled local Blender head candidate from previous FinalIdentity. No v5 continuation; no Unreal step.",
+  "overall_likeness_clearly_improved": false,
+  "face_shape": "PARTIAL",
+  "candidate_promoted": false,
+  "working_baseline": "SourceAssets/Characters/SphirusFinalIdentity_20260928/Sphirus_FinalIdentity_EDITABLE.blend / SPH_FinalIdentity_Refinement",
+  "local_findings": {
+    "nose": "Small visible root/dorsum/tip adjustment in enlarged side comparison; insufficient to establish reference identity.",
+    "mouth": "Very small projection/corner adjustment; visually near baseline. Relaxed reference mouth not conclusively achieved.",
+    "midface": "No broad swelling introduced; reference-specific cheek and maxilla identity still unresolved.",
+    "eyes_brow": "Calm baseline aperture retained; no eyeball edit or aperture-opening operation. Reference lid/orbit match remains limited.",
+    "jaw_chin": "Main mature lower-face envelope retained; only mentolabial transition changed locally.",
+    "cranium": "Exactly unchanged; no crown collapse, no global scale or head-height reduction.",
+    "regressions": "No obvious v5-like regression in reviewed views. Does not establish that every local surface is improved; nose tip/alar flow remains an unresolved likeness area."
+  },
+  "reviewed_evidence": [
+    "01_front.jpg",
+    "01_left_side.jpg",
+    "02_threequarters.jpg",
+    "03_concept.jpg",
+    "04_nose_profile.jpg",
+    "04_mouth.jpg",
+    "04_midface.jpg",
+    "05_front_alignment.jpg",
+    "06_landmarks_left_side.jpg",
+    "06_landmarks_front.jpg"
+  ],
+  "stop_reason": "User explicitly requested stopping and reporting honestly if likeness is not clearly improved, rather than starting another broad exploratory sculpt.",
+  "acceptance": {
+    "FACE SHAPE": "PARTIAL",
+    "METAHUMAN CONFORM": "NOT_RUN",
+    "FACIAL DEFORMATION": "NOT_RUN",
+    "BODY PROPORTIONS": "NOT_RUN",
+    "BODY DEFORMATION": "NOT_RUN"
+  },
+  "not_run_reason": "Excluded by the latest user task; not an editor-access blocker."
+}

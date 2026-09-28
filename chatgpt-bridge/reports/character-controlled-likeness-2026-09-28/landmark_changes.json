@@ -1,0 +1,592 @@
+{
+  "method": "Compact-support Wendland C2 landmark interpolation; finite supports and pinned zero landmarks. Artist-selected conservative 3D offsets informed by visible uncalibrated 2D landmarks, not photogrammetric reconstruction.",
+  "baseline_file": "Sphirus_FinalIdentity_EDITABLE.blend",
+  "baseline_key": "SPH_FinalIdentity_Refinement",
+  "v5_used": false,
+  "new_key": "SPH_Controlled_Likeness",
+  "control_count": 20,
+  "kernel_condition_number": 1.0,
+  "landmarks": [
+    {
+      "id": "N1_radix",
+      "vertex": 13910,
+      "source_world_m": [
+        -0.0025401466991752386,
+        -0.13960140943527222,
+        1.6249589920043945
+      ],
+      "requested_delta_mm": [
+        0.0,
+        0.65,
+        0.1
+      ],
+      "support_radius_mm": 8.5,
+      "reason": "Side nasion sits behind the brow; remove the straight brow-to-bridge continuation.",
+      "reference_front_pixel": [
+        333,
+        187
+      ],
+      "reference_side_pixel": [
+        151,
+        166
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.6499886512756348,
+        0.09989738464355469
+      ]
+    },
+    {
+      "id": "N2_upper_bridge",
+      "vertex": 9913,
+      "source_world_m": [
+        -0.0024126532953232527,
+        -0.14803755283355713,
+        1.6142772436141968
+      ],
+      "requested_delta_mm": [
+        0.0,
+        -0.15,
+        0.15
+      ],
+      "support_radius_mm": 8,
+      "reason": "Retain adult bridge length while smoothing the root-to-dorsum transition.",
+      "reference_front_pixel": [
+        332,
+        213
+      ],
+      "reference_side_pixel": [
+        142,
+        191
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.1499950885772705,
+        0.1499652862548828
+      ]
+    },
+    {
+      "id": "N3_dorsum",
+      "vertex": 7144,
+      "source_world_m": [
+        -0.002503270749002695,
+        -0.15300394594669342,
+        1.6004774570465088
+      ],
+      "requested_delta_mm": [
+        0.0,
+        -0.45,
+        0.0
+      ],
+      "support_radius_mm": 8,
+      "reason": "Side dorsal line has restrained convexity rather than a straight wedge.",
+      "reference_front_pixel": [
+        332,
+        229
+      ],
+      "reference_side_pixel": [
+        129,
+        210
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.45000016689300537,
+        0.0
+      ]
+    },
+    {
+      "id": "N4_supratip",
+      "vertex": 7131,
+      "source_world_m": [
+        -0.002590807620435953,
+        -0.1580827534198761,
+        1.5927635431289673
+      ],
+      "requested_delta_mm": [
+        0.0,
+        0.1,
+        -0.15
+      ],
+      "support_radius_mm": 6,
+      "reason": "Soften supratip continuity without making a button nose.",
+      "reference_front_pixel": null,
+      "reference_side_pixel": [
+        117,
+        223
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.10000169277191162,
+        -0.1499652862548828
+      ]
+    },
+    {
+      "id": "N5_tip",
+      "vertex": 7061,
+      "source_world_m": [
+        -0.0027273716405034065,
+        -0.1612803339958191,
+        1.5858221054077148
+      ],
+      "requested_delta_mm": [
+        0.0,
+        -0.45,
+        -0.55
+      ],
+      "support_radius_mm": 7.5,
+      "reason": "Reference tip is adult and gently lower; add slight length and restrained projection.",
+      "reference_front_pixel": [
+        332,
+        245
+      ],
+      "reference_side_pixel": [
+        113,
+        231
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.45000016689300537,
+        -0.5499124526977539
+      ]
+    },
+    {
+      "id": "N6_columella",
+      "vertex": 7332,
+      "source_world_m": [
+        -0.0028204089030623436,
+        -0.15013214945793152,
+        1.5799424648284912
+      ],
+      "requested_delta_mm": [
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "support_radius_mm": 5,
+      "reason": "Maintain tip/columella relationship and natural nasolabial angle.",
+      "reference_front_pixel": [
+        333,
+        264
+      ],
+      "reference_side_pixel": [
+        151,
+        247
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.0,
+        -0.20003318786621094
+      ]
+    },
+    {
+      "id": "N7_alar_L",
+      "vertex": 8075,
+      "source_world_m": [
+        0.014503533951938152,
+        -0.14176911115646362,
+        1.5827841758728027
+      ],
+      "requested_delta_mm": [
+        0.1,
+        -0.1,
+        -0.1
+      ],
+      "support_radius_mm": 5.5,
+      "reason": "Front nostril/alar width retained with a tiny lateral attachment adjustment.",
+      "reference_front_pixel": [
+        356,
+        254
+      ],
+      "reference_side_pixel": null,
+      "achieved_delta_mm": [
+        0.09999983012676239,
+        -0.10000169277191162,
+        -0.10001659393310547
+      ]
+    },
+    {
+      "id": "N7_alar_R",
+      "vertex": 20451,
+      "source_world_m": [
+        -0.018819749355316162,
+        -0.1416405439376831,
+        1.583098292350769
+      ],
+      "requested_delta_mm": [
+        -0.1,
+        -0.1,
+        -0.1
+      ],
+      "support_radius_mm": 5.5,
+      "reason": "Front nostril/alar width retained with a tiny lateral attachment adjustment.",
+      "reference_front_pixel": [
+        311,
+        254
+      ],
+      "reference_side_pixel": null,
+      "achieved_delta_mm": [
+        -0.09999983012676239,
+        -0.10000169277191162,
+        -0.09989738464355469
+      ]
+    },
+    {
+      "id": "M1_paranasal_L",
+      "vertex": 8259,
+      "source_world_m": [
+        0.01982899382710457,
+        -0.12905043363571167,
+        1.5930595397949219
+      ],
+      "requested_delta_mm": [
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "support_radius_mm": 8,
+      "reason": "Front alar-to-cheek junction needs a less abrupt surface transition.",
+      "reference_front_pixel": [
+        371,
+        258
+      ],
+      "reference_side_pixel": [
+        173,
+        248
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.24999678134918213,
+        0.0
+      ]
+    },
+    {
+      "id": "M1_paranasal_R",
+      "vertex": 6472,
+      "source_world_m": [
+        -0.024029137566685677,
+        -0.12892544269561768,
+        1.5927165746688843
+      ],
+      "requested_delta_mm": [
+        -0.0,
+        -0.25,
+        0.0
+      ],
+      "support_radius_mm": 8,
+      "reason": "Front alar-to-cheek junction needs a less abrupt surface transition.",
+      "reference_front_pixel": [
+        297,
+        258
+      ],
+      "reference_side_pixel": [
+        173,
+        248
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.24999678134918213,
+        0.0
+      ]
+    },
+    {
+      "id": "M2_infraorbital_L",
+      "vertex": 9710,
+      "source_world_m": [
+        0.04173893854022026,
+        -0.1150001585483551,
+        1.6099674701690674
+      ],
+      "requested_delta_mm": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "support_radius_mm": 7,
+      "reason": "Retain healthy support immediately under the orbital rim; no cheek enlargement.",
+      "reference_front_pixel": [
+        407,
+        222
+      ],
+      "reference_side_pixel": [
+        203,
+        209
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.17999857664108276,
+        0.0
+      ]
+    },
+    {
+      "id": "M2_infraorbital_R",
+      "vertex": 5156,
+      "source_world_m": [
+        -0.045276232063770294,
+        -0.11559683084487915,
+        1.6087751388549805
+      ],
+      "requested_delta_mm": [
+        -0.0,
+        -0.18,
+        0.0
+      ],
+      "support_radius_mm": 7,
+      "reason": "Retain healthy support immediately under the orbital rim; no cheek enlargement.",
+      "reference_front_pixel": [
+        260,
+        222
+      ],
+      "reference_side_pixel": [
+        203,
+        209
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.17999112606048584,
+        0.0
+      ]
+    },
+    {
+      "id": "L1_commissure_L",
+      "vertex": 9527,
+      "source_world_m": [
+        0.026834875345230103,
+        -0.13185596466064453,
+        1.5578030347824097
+      ],
+      "requested_delta_mm": [
+        0.05,
+        -0.18,
+        0.06
+      ],
+      "support_radius_mm": 5,
+      "reason": "Reference closed mouth has relaxed corners; almost no width change.",
+      "reference_front_pixel": [
+        372,
+        302
+      ],
+      "reference_side_pixel": [
+        154,
+        286
+      ],
+      "achieved_delta_mm": [
+        0.05000084638595581,
+        -0.17999112606048584,
+        0.05996227264404297
+      ]
+    },
+    {
+      "id": "L1_commissure_R",
+      "vertex": 16196,
+      "source_world_m": [
+        -0.03234734758734703,
+        -0.13048160076141357,
+        1.555823564529419
+      ],
+      "requested_delta_mm": [
+        -0.05,
+        -0.18,
+        0.06
+      ],
+      "support_radius_mm": 5,
+      "reason": "Reference closed mouth has relaxed corners; almost no width change.",
+      "reference_front_pixel": [
+        295,
+        302
+      ],
+      "reference_side_pixel": [
+        154,
+        286
+      ],
+      "achieved_delta_mm": [
+        -0.05000084638595581,
+        -0.1800060272216797,
+        0.05996227264404297
+      ]
+    },
+    {
+      "id": "L2_upper_vermilion_L",
+      "vertex": 9148,
+      "source_world_m": [
+        0.006074495613574982,
+        -0.14515595138072968,
+        1.5661873817443848
+      ],
+      "requested_delta_mm": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "support_radius_mm": 3.8,
+      "reason": "Reduce the forward-stuck upper-lip impression, not add lip volume.",
+      "reference_front_pixel": [
+        346,
+        291
+      ],
+      "reference_side_pixel": [
+        136,
+        274
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.20000338554382324,
+        0.0
+      ]
+    },
+    {
+      "id": "L2_upper_vermilion_R",
+      "vertex": 21236,
+      "source_world_m": [
+        -0.010152946226298809,
+        -0.1448170244693756,
+        1.5653119087219238
+      ],
+      "requested_delta_mm": [
+        -0.0,
+        0.2,
+        0.0
+      ],
+      "support_radius_mm": 3.8,
+      "reason": "Reduce the forward-stuck upper-lip impression, not add lip volume.",
+      "reference_front_pixel": [
+        323,
+        291
+      ],
+      "reference_side_pixel": [
+        136,
+        274
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.20000338554382324,
+        0.0
+      ]
+    },
+    {
+      "id": "L3_mentolabial_L",
+      "vertex": 18077,
+      "source_world_m": [
+        0.009947588667273521,
+        -0.1300220489501953,
+        1.5385315418243408
+      ],
+      "requested_delta_mm": [
+        0.0,
+        -0.15,
+        0.0
+      ],
+      "support_radius_mm": 5.5,
+      "reason": "Slightly soften the lower-lip-to-chin indentation while retaining strong chin projection.",
+      "reference_front_pixel": [
+        343,
+        334
+      ],
+      "reference_side_pixel": [
+        154,
+        310
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.15000998973846436,
+        0.0
+      ]
+    },
+    {
+      "id": "L3_mentolabial_R",
+      "vertex": 16047,
+      "source_world_m": [
+        -0.013824235647916794,
+        -0.13011051714420319,
+        1.5380184650421143
+      ],
+      "requested_delta_mm": [
+        -0.0,
+        -0.15,
+        0.0
+      ],
+      "support_radius_mm": 5.5,
+      "reason": "Slightly soften the lower-lip-to-chin indentation while retaining strong chin projection.",
+      "reference_front_pixel": [
+        325,
+        334
+      ],
+      "reference_side_pixel": [
+        154,
+        310
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        -0.15000998973846436,
+        0.0
+      ]
+    },
+    {
+      "id": "P1_lip_contact",
+      "vertex": 21278,
+      "source_world_m": [
+        -0.0026424312964081764,
+        -0.1397521197795868,
+        1.5591093301773071
+      ],
+      "requested_delta_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "support_radius_mm": 4,
+      "reason": "Pin central neutral lip contact; no mouth opening.",
+      "reference_front_pixel": [
+        334,
+        305
+      ],
+      "reference_side_pixel": [
+        144,
+        286
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "P2_glabella",
+      "vertex": 21792,
+      "source_world_m": [
+        -0.0017253614496439695,
+        -0.13276241719722748,
+        1.6374773979187012
+      ],
+      "requested_delta_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "support_radius_mm": 6,
+      "reason": "Preserve adult brow/orbital character.",
+      "reference_front_pixel": [
+        333,
+        168
+      ],
+      "reference_side_pixel": [
+        143,
+        144
+      ],
+      "achieved_delta_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "max_mm": 0.7105658054351807,
+  "mean_mm": 0.0014158468693494797,
+  "vertices_changed_over_0_01mm": 560,
+  "vertices_over_0_1mm": 155,
+  "vertices_over_1mm": 0,
+  "vertices_bitwise_unchanged": 33501,
+  "total_vertices": 34657,
+  "body_displacement_mm": 0,
+  "global_head_scaling": false,
+  "crown_edited": false
+}
