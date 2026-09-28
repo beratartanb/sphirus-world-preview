@@ -1,0 +1,194 @@
+{
+  "report_id": "character-reference-fit-2026-09-28",
+  "repository": "beratartanb/sphirus-world-preview",
+  "repository_path": "chatgpt-bridge/reports/character-reference-fit-2026-09-28",
+  "scope": "Independent two-view reference target FAILED visual and geometry gates. FinalIdentity source preserved. No MetaHuman transfer, Conform, expression, body, gameplay, hair or clothing work. Source binaries and logs excluded.",
+  "files": [
+    {
+      "name": "01_match_front.jpg",
+      "bytes": 201060,
+      "sha256": "e080096026efd691450c909dd6bdeef9554f2c584445adb5e557d239dd59661b",
+      "git_blob_sha": "9409decb81fefc108e5a8c0ed84f021f3e13cb58"
+    },
+    {
+      "name": "01_match_side.jpg",
+      "bytes": 228154,
+      "sha256": "4d0cb8b05333659168c43fc3b79bc602707955e5f397648af8a21a8bc0fd9724",
+      "git_blob_sha": "4ca6a90b8794b43d6ccbebc156f581289395ff9d"
+    },
+    {
+      "name": "02_true_views.jpg",
+      "bytes": 240184,
+      "sha256": "6868adb88f4eee441c0bfdcddb91467a32757ef00de93f290af9d1f1d72fc6e5",
+      "git_blob_sha": "80c43b5f02c72c2dc1c5d5e7257923916698f216"
+    },
+    {
+      "name": "03_threequarters.jpg",
+      "bytes": 244223,
+      "sha256": "485956754876750876de97fc050e035e85225b79547b5997b3c6b8c2cfcd36bd",
+      "git_blob_sha": "00e09e354db6dedda6c7216d477707bfaa8b9170"
+    },
+    {
+      "name": "04_concept.jpg",
+      "bytes": 264288,
+      "sha256": "683f5d42c8386a612552041ea69e9b94d25244703fee537dc37f236ff954cfb1",
+      "git_blob_sha": "28341b692888769689a5a2cce183804aaa2047f8"
+    },
+    {
+      "name": "05_landmarks_front.jpg",
+      "bytes": 226624,
+      "sha256": "94036cbdac4f42ef3f3850474cf57d4b5f46f68e789d68a23f13f4edfd1efcac",
+      "git_blob_sha": "05fc265e6383aa009eed4a3bae6828d2fac8244d"
+    },
+    {
+      "name": "05_landmarks_side.jpg",
+      "bytes": 255785,
+      "sha256": "d3c2fdb33df665b071324f186e13848718c1ab9de5ea90a39a5925c992459f3b",
+      "git_blob_sha": "be96fff352947becc2ce3a707c86b99224b30e50"
+    },
+    {
+      "name": "06_silhouette_front.jpg",
+      "bytes": 154060,
+      "sha256": "546718b4dc32e910874bb48b481e15d707128a6f1cf1a658ec8939dad6a59ae6",
+      "git_blob_sha": "d3576e2858ff9d4dcdfdbc24047abc8e703bc090"
+    },
+    {
+      "name": "06_silhouette_side.jpg",
+      "bytes": 184105,
+      "sha256": "75c2ce7c67fcee6afd822c4ab3f310dfcf3f65df483972595105d8b2346f0503",
+      "git_blob_sha": "ea2fdd56cfc27f61536d09aa1c3c6d14ea60320d"
+    },
+    {
+      "name": "07_detail_midface.jpg",
+      "bytes": 190959,
+      "sha256": "20eeae52e96706adb3bc6b6063c971c3ca9518d19c2fa7a83001d21bd0f90241",
+      "git_blob_sha": "de6c05dfc10414a3dc95b9dee54c59277bff770f"
+    },
+    {
+      "name": "07_detail_mouth.jpg",
+      "bytes": 154412,
+      "sha256": "227b74079c9bab7c00fb4edc43a5fc76ead0928d91248cfc04f6249d3d570d89",
+      "git_blob_sha": "f35e0781213d6c3d3df8ca26140cf2c5741d9a95"
+    },
+    {
+      "name": "07_detail_nose.jpg",
+      "bytes": 156099,
+      "sha256": "df32a6beda0cbfe0bc0b14c737d7ade325d3552aad881e232a5e4c0831bc521d",
+      "git_blob_sha": "b372baba642fe40979c6340b02f28c57475131fe"
+    },
+    {
+      "name": "08_target_iterations.jpg",
+      "bytes": 197435,
+      "sha256": "7da7d147497d2313bc53f5ef8fe2d7135496cd645a1c52f22734596124ee2522",
+      "git_blob_sha": "f040a0f50ea27733b7bc372d3293f7e1588dbebd"
+    },
+    {
+      "name": "TARGET_GATE.json",
+      "bytes": 739,
+      "sha256": "9d8eafd30325144bbdebdc231afdeb95803060861fa2930979d78f243235161b",
+      "git_blob_sha": "16b7f983111795ff11a4691263b0fab0bfb9e047"
+    },
+    {
+      "name": "TEKNIK_RAPOR.md",
+      "bytes": 14628,
+      "sha256": "7a9482ad8dada3767f3b93d128ec27f46a957e9a585c50d5c1276091d506a223",
+      "git_blob_sha": "8872761a1b12c37f3338d873f245f984fbb698fe"
+    },
+    {
+      "name": "annotation_review.json",
+      "bytes": 7743,
+      "sha256": "f19b5abd5ceb7fa2436e5858298a52c15384aab1fff002bbc15788efe1bd28da",
+      "git_blob_sha": "6caf71d98d7344fa34f1e78cbeddb093ff0d64cc"
+    },
+    {
+      "name": "boards_manifest.json",
+      "bytes": 1457,
+      "sha256": "11008a52bde3ee75a42f9e16497ae1d6f757bbb64f3df968b9cc61bde8fe894d",
+      "git_blob_sha": "0ce1a65f52f0c2d655f7ef4b0a4d79cee56dc546"
+    },
+    {
+      "name": "camera_estimates_v2.json",
+      "bytes": 6658,
+      "sha256": "10c6321c0c952b1bb8267fc34524a69d8d9dbec6a7888ebe24802f5271797c1b",
+      "git_blob_sha": "609142e0f09fe05fbf2195fb8cf2b793b86499db"
+    },
+    {
+      "name": "camera_estimates_v3.json",
+      "bytes": 6629,
+      "sha256": "5e65c4f87aff1909dc3a3488720331b32cde659e53794793c3621bfe7e580dc5",
+      "git_blob_sha": "6254e5c6274ec0da556decaa38e8bae784bf48f4"
+    },
+    {
+      "name": "delivery_hashes.json",
+      "bytes": 1020,
+      "sha256": "c7bb9f72e28adc03bc64e3beffef552d131a4318e3e308ff538c55db61ed9a3f",
+      "git_blob_sha": "b087fbc06ee52bb1c86fdf5e14320af671b1bfb4"
+    },
+    {
+      "name": "fit_metrics_v1.json",
+      "bytes": 107354,
+      "sha256": "eff6a9f64dff431730ded3be79104674df8b053b806a565db7c9510d38cc08c5",
+      "git_blob_sha": "ab221162863840f44c14dc205cb3f8dfea653d69"
+    },
+    {
+      "name": "fit_metrics_v2.json",
+      "bytes": 107460,
+      "sha256": "0568b4f1dffd96ee1b74462eb0bbcb79a8f907e509f151034b44b15ed63125d9",
+      "git_blob_sha": "b1c1ea49dd95050b3f4610949ef4cbe82b078fc1"
+    },
+    {
+      "name": "fit_metrics_v3.json",
+      "bytes": 107490,
+      "sha256": "1b89fb23db02d6186d6bdb2e7b91482b8dbb526e2e64e61fcd116177cee001e1",
+      "git_blob_sha": "a663fb7e2701d08a258303398b3075901f26033d"
+    },
+    {
+      "name": "geometry_failures.json",
+      "bytes": 586,
+      "sha256": "ecd87fdc629a4b937e3dcaaaf972305a7aaca3a11c30b48675a58a9735259371",
+      "git_blob_sha": "412bb2d9d87f496f9082def16e20ba819c0ff833"
+    },
+    {
+      "name": "mesh_landmarks_v3.json",
+      "bytes": 96469,
+      "sha256": "d8e0df17eef01c53771825a199f79295f5d0e4e12de214dfe5d1fc62823ea2b8",
+      "git_blob_sha": "b57518ca7fbfbfa0b8e7c975078d4c9725a349d5"
+    },
+    {
+      "name": "preservation_final.json",
+      "bytes": 25226,
+      "sha256": "f04d6e11a8f9d260767f0672e65f4493f11a7b5a8c8c94a5f3cba3fa05b8c0f6",
+      "git_blob_sha": "3f3ab8b12bb8c7dd85ae3bbfae0b8fdc00fe1658"
+    },
+    {
+      "name": "reference_landmarks.json",
+      "bytes": 55869,
+      "sha256": "2b42a8d0af9a49a8a157650b9b8ff5719f85451dc94b13c8dcd793a17da0d803",
+      "git_blob_sha": "feda3c33529dd6a4714e40cdb90a06159af2c15b"
+    },
+    {
+      "name": "reference_landmarks_v3.json",
+      "bytes": 56141,
+      "sha256": "fb90927816f37313361293bd324e560b0ce7f81bf0c547d97163b3c894c779e7",
+      "git_blob_sha": "992f51430cf22f4d93b90744e9ad726bb738d366"
+    },
+    {
+      "name": "silhouette_metrics.json",
+      "bytes": 3657,
+      "sha256": "4ab1a5a6fff4d08e9ffd0235e4634e4af1eadf48aef9cddcb64ee2aac277b711",
+      "git_blob_sha": "1274d55f41bbe8c8f78c707b3e157dd8e3902272"
+    },
+    {
+      "name": "target_validation.json",
+      "bytes": 8070,
+      "sha256": "f7bc0a8858e094a44ddbf35356ea6174868c4da70befbfb4dcd4b39fd4b08fdd",
+      "git_blob_sha": "1ac574a38fb9c4b91dfc81b4adf3a6fff6b92c24"
+    },
+    {
+      "name": "visual_review.json",
+      "bytes": 2939,
+      "sha256": "f5d32c011815a182ec52ba568a2b9a58b4279ba7e6625c4f00ebd907e5d9df03",
+      "git_blob_sha": "debbc6e039eaff1f08f3d7fbe0dbb7afffcf7503"
+    }
+  ]
+}

@@ -1,0 +1,4328 @@
+{
+  "references": {
+    "front": {
+      "file": "PRIMARY_FRONT.jpg",
+      "size": [
+        640,
+        517
+      ]
+    },
+    "side": {
+      "file": "PRIMARY_SIDE.jpg",
+      "size": [
+        473,
+        506
+      ]
+    },
+    "art": {
+      "file": "PRIMARY_ART_CONCEPT.jpg"
+    }
+  },
+  "annotation_method": "Manual visible anatomical correspondences; front paired annotations use approximate symmetry around x=334. Pixels are reviewable estimates with uncertainty, not scan measurements. Hidden anatomy is regularized to a human-head prior.",
+  "landmarks": [
+    {
+      "name": "crown",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        123
+      ],
+      "reference_pixel": [
+        333,
+        20
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.7,
+      "vertex": 2608,
+      "source_world_m": [
+        -0.0023259588051587343,
+        -0.031457532197237015,
+        1.7319444417953491
+      ],
+      "source_pick_error_pixels": 0.9977543930630668
+    },
+    {
+      "name": "crown_arc_a_R",
+      "view": "front",
+      "source_render_pixel": [
+        405,
+        131
+      ],
+      "reference_pixel": [
+        304,
+        24
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 2622,
+      "source_world_m": [
+        -0.019404692575335503,
+        -0.025906551629304886,
+        1.7289012670516968
+      ],
+      "source_pick_error_pixels": 4.9074122400287035
+    },
+    {
+      "name": "crown_arc_a_L",
+      "view": "front",
+      "source_render_pixel": [
+        537.6,
+        131
+      ],
+      "reference_pixel": [
+        364,
+        24
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 22159,
+      "source_world_m": [
+        0.01455757301300764,
+        -0.025963133201003075,
+        1.7286970615386963
+      ],
+      "source_pick_error_pixels": 5.952594692147286
+    },
+    {
+      "name": "crown_arc_b_R",
+      "view": "front",
+      "source_render_pixel": [
+        344,
+        160
+      ],
+      "reference_pixel": [
+        272,
+        36
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 2706,
+      "source_world_m": [
+        -0.036220598965883255,
+        -0.02636224962770939,
+        1.7210079431533813
+      ],
+      "source_pick_error_pixels": 4.97321454448687
+    },
+    {
+      "name": "crown_arc_b_L",
+      "view": "front",
+      "source_render_pixel": [
+        598.6,
+        160
+      ],
+      "reference_pixel": [
+        396,
+        36
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 22210,
+      "source_world_m": [
+        0.031032059341669083,
+        -0.026584604755043983,
+        1.7207345962524414
+      ],
+      "source_pick_error_pixels": 6.3964911185298785
+    },
+    {
+      "name": "crown_arc_c_R",
+      "view": "front",
+      "source_render_pixel": [
+        291,
+        201
+      ],
+      "reference_pixel": [
+        246,
+        58
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 2796,
+      "source_world_m": [
+        -0.05072353780269623,
+        -0.032600875943899155,
+        1.7102655172348022
+      ],
+      "source_pick_error_pixels": 4.423931842959718
+    },
+    {
+      "name": "crown_arc_c_L",
+      "view": "front",
+      "source_render_pixel": [
+        651.6,
+        201
+      ],
+      "reference_pixel": [
+        422,
+        58
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 22221,
+      "source_world_m": [
+        0.04547587409615517,
+        -0.03283984959125519,
+        1.7101246118545532
+      ],
+      "source_pick_error_pixels": 4.899949307300919
+    },
+    {
+      "name": "frontal_arc_R",
+      "view": "front",
+      "source_render_pixel": [
+        246,
+        260
+      ],
+      "reference_pixel": [
+        228,
+        88
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 2720,
+      "source_world_m": [
+        -0.061012573540210724,
+        -0.038371533155441284,
+        1.6937755346298218
+      ],
+      "source_pick_error_pixels": 8.795594872127399
+    },
+    {
+      "name": "frontal_arc_L",
+      "view": "front",
+      "source_render_pixel": [
+        696.6,
+        260
+      ],
+      "reference_pixel": [
+        440,
+        88
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 21447,
+      "source_world_m": [
+        0.05593593046069145,
+        -0.038628336042165756,
+        1.6938276290893555
+      ],
+      "source_pick_error_pixels": 9.713360648399705
+    },
+    {
+      "name": "temple_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        212,
+        348
+      ],
+      "reference_pixel": [
+        217,
+        126
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 2760,
+      "source_world_m": [
+        -0.06845074892044067,
+        -0.04586200788617134,
+        1.6726558208465576
+      ],
+      "source_pick_error_pixels": 11.438134713632868
+    },
+    {
+      "name": "temple_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        730.6,
+        348
+      ],
+      "reference_pixel": [
+        451,
+        126
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 22254,
+      "source_world_m": [
+        0.06329745054244995,
+        -0.04594807326793671,
+        1.6727954149246216
+      ],
+      "source_pick_error_pixels": 13.421587581616471
+    },
+    {
+      "name": "temple_mid_R",
+      "view": "front",
+      "source_render_pixel": [
+        201,
+        418
+      ],
+      "reference_pixel": [
+        212,
+        157
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 1495,
+      "source_world_m": [
+        -0.07281248271465302,
+        -0.032772716134786606,
+        1.6525375843048096
+      ],
+      "source_pick_error_pixels": 7.027351178134821
+    },
+    {
+      "name": "temple_mid_L",
+      "view": "front",
+      "source_render_pixel": [
+        741.6,
+        418
+      ],
+      "reference_pixel": [
+        456,
+        157
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 22258,
+      "source_world_m": [
+        0.06756950169801712,
+        -0.04147985577583313,
+        1.6543166637420654
+      ],
+      "source_pick_error_pixels": 8.72380042453088
+    },
+    {
+      "name": "temple_lower_R",
+      "view": "front",
+      "source_render_pixel": [
+        197,
+        485
+      ],
+      "reference_pixel": [
+        215,
+        188
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 1483,
+      "source_world_m": [
+        -0.07430191338062286,
+        -0.03209628164768219,
+        1.6349586248397827
+      ],
+      "source_pick_error_pixels": 5.111531236714753
+    },
+    {
+      "name": "temple_lower_L",
+      "view": "front",
+      "source_render_pixel": [
+        745.6,
+        485
+      ],
+      "reference_pixel": [
+        453,
+        188
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 12165,
+      "source_world_m": [
+        0.06926236301660538,
+        -0.027102017775177956,
+        1.6354217529296875
+      ],
+      "source_pick_error_pixels": 5.937599714084501
+    },
+    {
+      "name": "orbit_outer_contour_R",
+      "view": "front",
+      "source_render_pixel": [
+        202,
+        551
+      ],
+      "reference_pixel": [
+        222,
+        215
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 4833,
+      "source_world_m": [
+        -0.07329005002975464,
+        -0.04579491168260574,
+        1.617870807647705
+      ],
+      "source_pick_error_pixels": 3.246485447908589
+    },
+    {
+      "name": "orbit_outer_contour_L",
+      "view": "front",
+      "source_render_pixel": [
+        740.6,
+        551
+      ],
+      "reference_pixel": [
+        446,
+        215
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 11444,
+      "source_world_m": [
+        0.06907109916210175,
+        -0.03560126945376396,
+        1.617974042892456
+      ],
+      "source_pick_error_pixels": 1.6210277074580037
+    },
+    {
+      "name": "zyg_contour_R",
+      "view": "front",
+      "source_render_pixel": [
+        224,
+        624
+      ],
+      "reference_pixel": [
+        231,
+        244
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 21140,
+      "source_world_m": [
+        -0.06758755445480347,
+        -0.07974092662334442,
+        1.5986098051071167
+      ],
+      "source_pick_error_pixels": 2.5469362194622938
+    },
+    {
+      "name": "zyg_contour_L",
+      "view": "front",
+      "source_render_pixel": [
+        718.6,
+        624
+      ],
+      "reference_pixel": [
+        437,
+        244
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 11139,
+      "source_world_m": [
+        0.06346024572849274,
+        -0.0712180882692337,
+        1.597952127456665
+      ],
+      "source_pick_error_pixels": 2.508396166387275
+    },
+    {
+      "name": "cheek_contour_R",
+      "view": "front",
+      "source_render_pixel": [
+        247,
+        685
+      ],
+      "reference_pixel": [
+        240,
+        274
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 21176,
+      "source_world_m": [
+        -0.061323780566453934,
+        -0.09989044815301895,
+        1.5820122957229614
+      ],
+      "source_pick_error_pixels": 3.265819065218936
+    },
+    {
+      "name": "cheek_contour_L",
+      "view": "front",
+      "source_render_pixel": [
+        695.6,
+        685
+      ],
+      "reference_pixel": [
+        428,
+        274
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 9676,
+      "source_world_m": [
+        0.05666631460189819,
+        -0.1024976372718811,
+        1.5826470851898193
+      ],
+      "source_pick_error_pixels": 3.3170021024114518
+    },
+    {
+      "name": "jaw_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        271,
+        749
+      ],
+      "reference_pixel": [
+        247,
+        297
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 21069,
+      "source_world_m": [
+        -0.05496469885110855,
+        -0.09635241329669952,
+        1.5659890174865723
+      ],
+      "source_pick_error_pixels": 3.95547624118869
+    },
+    {
+      "name": "jaw_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        671.6,
+        749
+      ],
+      "reference_pixel": [
+        421,
+        297
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 10395,
+      "source_world_m": [
+        0.050606392323970795,
+        -0.09631087630987167,
+        1.5655083656311035
+      ],
+      "source_pick_error_pixels": 2.03859994239296
+    },
+    {
+      "name": "mandibular_angle_R",
+      "view": "front",
+      "source_render_pixel": [
+        300,
+        817
+      ],
+      "reference_pixel": [
+        263,
+        326
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 20037,
+      "source_world_m": [
+        -0.04813827574253082,
+        -0.09276656806468964,
+        1.5485340356826782
+      ],
+      "source_pick_error_pixels": 5.278166299704419
+    },
+    {
+      "name": "mandibular_angle_L",
+      "view": "front",
+      "source_render_pixel": [
+        642.6,
+        817
+      ],
+      "reference_pixel": [
+        405,
+        326
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 10446,
+      "source_world_m": [
+        0.04342014715075493,
+        -0.09227007627487183,
+        1.5486042499542236
+      ],
+      "source_pick_error_pixels": 5.520546914170598
+    },
+    {
+      "name": "jaw_taper_R",
+      "view": "front",
+      "source_render_pixel": [
+        332,
+        864
+      ],
+      "reference_pixel": [
+        282,
+        345
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 15458,
+      "source_world_m": [
+        -0.03929169476032257,
+        -0.0667644813656807,
+        1.5347590446472168
+      ],
+      "source_pick_error_pixels": 0.8867014984991619
+    },
+    {
+      "name": "jaw_taper_L",
+      "view": "front",
+      "source_render_pixel": [
+        610.6,
+        864
+      ],
+      "reference_pixel": [
+        386,
+        345
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 10482,
+      "source_world_m": [
+        0.03452865406870842,
+        -0.08835792541503906,
+        1.5343419313430786
+      ],
+      "source_pick_error_pixels": 1.4783322856998997
+    },
+    {
+      "name": "chin_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        378,
+        917
+      ],
+      "reference_pixel": [
+        306,
+        363
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 15508,
+      "source_world_m": [
+        -0.02637646533548832,
+        -0.05649816617369652,
+        1.519910454750061
+      ],
+      "source_pick_error_pixels": 3.726641701661138
+    },
+    {
+      "name": "chin_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        564.6,
+        917
+      ],
+      "reference_pixel": [
+        362,
+        363
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 17533,
+      "source_world_m": [
+        0.02172125317156315,
+        -0.05637345463037491,
+        1.5212424993515015
+      ],
+      "source_pick_error_pixels": 4.284549526649092
+    },
+    {
+      "name": "chin_lower",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        944
+      ],
+      "reference_pixel": [
+        334,
+        373
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 1,
+      "vertex": 15842,
+      "source_world_m": [
+        -0.0023653984535485506,
+        -0.11950995028018951,
+        1.5135009288787842
+      ],
+      "source_pick_error_pixels": 0.888014339857473
+    },
+    {
+      "name": "brow_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        310,
+        501
+      ],
+      "reference_pixel": [
+        249,
+        166
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 2025,
+      "source_world_m": [
+        -0.045202068984508514,
+        -0.11676499247550964,
+        1.630226492881775
+      ],
+      "source_pick_error_pixels": 4.428096298808904
+    },
+    {
+      "name": "brow_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        632.6,
+        501
+      ],
+      "reference_pixel": [
+        419,
+        166
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 12517,
+      "source_world_m": [
+        0.04037174955010414,
+        -0.11578896641731262,
+        1.6320613622665405
+      ],
+      "source_pick_error_pixels": 2.7577576928426004
+    },
+    {
+      "name": "brow_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        327,
+        489
+      ],
+      "reference_pixel": [
+        261,
+        158
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 2109,
+      "source_world_m": [
+        -0.04125354066491127,
+        -0.12193866819143295,
+        1.634345293045044
+      ],
+      "source_pick_error_pixels": 1.950630069955048
+    },
+    {
+      "name": "brow_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        615.6,
+        489
+      ],
+      "reference_pixel": [
+        407,
+        158
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 12673,
+      "source_world_m": [
+        0.03620007261633873,
+        -0.12125607579946518,
+        1.6343977451324463
+      ],
+      "source_pick_error_pixels": 0.7731991317172744
+    },
+    {
+      "name": "brow_apex_R",
+      "view": "front",
+      "source_render_pixel": [
+        351,
+        483
+      ],
+      "reference_pixel": [
+        278,
+        154
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 2203,
+      "source_world_m": [
+        -0.03406403586268425,
+        -0.12583142518997192,
+        1.6362937688827515
+      ],
+      "source_pick_error_pixels": 1.3080164756780785
+    },
+    {
+      "name": "brow_apex_L",
+      "view": "front",
+      "source_render_pixel": [
+        591.6,
+        483
+      ],
+      "reference_pixel": [
+        390,
+        154
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 12850,
+      "source_world_m": [
+        0.029471544548869133,
+        -0.1253967434167862,
+        1.637069582939148
+      ],
+      "source_pick_error_pixels": 3.435665264476388
+    },
+    {
+      "name": "brow_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        387,
+        490
+      ],
+      "reference_pixel": [
+        304,
+        160
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 2238,
+      "source_world_m": [
+        -0.02455947734415531,
+        -0.12689697742462158,
+        1.6344935894012451
+      ],
+      "source_pick_error_pixels": 1.0838288592230283
+    },
+    {
+      "name": "brow_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        555.6,
+        490
+      ],
+      "reference_pixel": [
+        364,
+        160
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 13246,
+      "source_world_m": [
+        0.01999993436038494,
+        -0.1274043619632721,
+        1.6348870992660522
+      ],
+      "source_pick_error_pixels": 2.161632577123783
+    },
+    {
+      "name": "brow_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        413,
+        506
+      ],
+      "reference_pixel": [
+        317,
+        169
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 21852,
+      "source_world_m": [
+        -0.01819920353591442,
+        -0.12491777539253235,
+        1.6302393674850464
+      ],
+      "source_pick_error_pixels": 1.4051562850706965
+    },
+    {
+      "name": "brow_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        529.6,
+        506
+      ],
+      "reference_pixel": [
+        351,
+        169
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 13261,
+      "source_world_m": [
+        0.013338517397642136,
+        -0.12434900552034378,
+        1.6299859285354614
+      ],
+      "source_pick_error_pixels": 0.5172993068758625
+    },
+    {
+      "name": "glabella",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        503
+      ],
+      "reference_pixel": [
+        333,
+        169
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7,
+      "vertex": 14038,
+      "source_world_m": [
+        -0.0021443322766572237,
+        -0.1346338838338852,
+        1.6305783987045288
+      ],
+      "source_pick_error_pixels": 1.4449154521055945
+    },
+    {
+      "name": "outer_canthus_R",
+      "view": "front",
+      "source_render_pixel": [
+        309,
+        542
+      ],
+      "reference_pixel": [
+        252,
+        188
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 5402,
+      "source_world_m": [
+        -0.04531408101320267,
+        -0.11187069863080978,
+        1.6209129095077515
+      ],
+      "source_pick_error_pixels": 1.9874375234189972
+    },
+    {
+      "name": "outer_canthus_L",
+      "view": "front",
+      "source_render_pixel": [
+        633.6,
+        542
+      ],
+      "reference_pixel": [
+        416,
+        188
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 10873,
+      "source_world_m": [
+        0.040909308940172195,
+        -0.1118297278881073,
+        1.6205312013626099
+      ],
+      "source_pick_error_pixels": 0.30773566869190583
+    },
+    {
+      "name": "upper_lid_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        329,
+        529
+      ],
+      "reference_pixel": [
+        265,
+        177
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 5432,
+      "source_world_m": [
+        -0.04003552347421646,
+        -0.11905502527952194,
+        1.6247003078460693
+      ],
+      "source_pick_error_pixels": 3.003928081338024
+    },
+    {
+      "name": "upper_lid_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        613.6,
+        529
+      ],
+      "reference_pixel": [
+        403,
+        177
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 12614,
+      "source_world_m": [
+        0.03581828624010086,
+        -0.11873398721218109,
+        1.6243276596069336
+      ],
+      "source_pick_error_pixels": 1.6440714698820706
+    },
+    {
+      "name": "upper_lid_center_R",
+      "view": "front",
+      "source_render_pixel": [
+        359,
+        524
+      ],
+      "reference_pixel": [
+        281,
+        174
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 5453,
+      "source_world_m": [
+        -0.03179430961608887,
+        -0.12211166322231293,
+        1.6256263256072998
+      ],
+      "source_pick_error_pixels": 2.226362515149212
+    },
+    {
+      "name": "upper_lid_center_L",
+      "view": "front",
+      "source_render_pixel": [
+        583.6,
+        524
+      ],
+      "reference_pixel": [
+        387,
+        174
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 12626,
+      "source_world_m": [
+        0.027720140293240547,
+        -0.12252333760261536,
+        1.625624179840088
+      ],
+      "source_pick_error_pixels": 1.385740377645349
+    },
+    {
+      "name": "upper_lid_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        389,
+        532
+      ],
+      "reference_pixel": [
+        297,
+        180
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 23405,
+      "source_world_m": [
+        -0.024333178997039795,
+        -0.1204725056886673,
+        1.6236426830291748
+      ],
+      "source_pick_error_pixels": 1.9262775893179351
+    },
+    {
+      "name": "upper_lid_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        553.6,
+        532
+      ],
+      "reference_pixel": [
+        371,
+        180
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 10831,
+      "source_world_m": [
+        0.019821928814053535,
+        -0.12100069969892502,
+        1.6235041618347168
+      ],
+      "source_pick_error_pixels": 1.5716083286537788
+    },
+    {
+      "name": "inner_canthus_R",
+      "view": "front",
+      "source_render_pixel": [
+        410,
+        546
+      ],
+      "reference_pixel": [
+        309,
+        193
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 23650,
+      "source_world_m": [
+        -0.018499357625842094,
+        -0.1203228011727333,
+        1.6189641952514648
+      ],
+      "source_pick_error_pixels": 1.7505636797037265
+    },
+    {
+      "name": "inner_canthus_L",
+      "view": "front",
+      "source_render_pixel": [
+        532.6,
+        546
+      ],
+      "reference_pixel": [
+        359,
+        193
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 14151,
+      "source_world_m": [
+        0.013676571659743786,
+        -0.12006804347038269,
+        1.6198283433914185
+      ],
+      "source_pick_error_pixels": 2.0745485855354056
+    },
+    {
+      "name": "lower_lid_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        390,
+        552
+      ],
+      "reference_pixel": [
+        298,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 23707,
+      "source_world_m": [
+        -0.023804720491170883,
+        -0.12213227152824402,
+        1.6172322034835815
+      ],
+      "source_pick_error_pixels": 2.2516461810018633
+    },
+    {
+      "name": "lower_lid_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        552.6,
+        552
+      ],
+      "reference_pixel": [
+        370,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 14249,
+      "source_world_m": [
+        0.01975429244339466,
+        -0.1216447651386261,
+        1.6174023151397705
+      ],
+      "source_pick_error_pixels": 2.1000662231986444
+    },
+    {
+      "name": "lower_lid_center_R",
+      "view": "front",
+      "source_render_pixel": [
+        360,
+        557
+      ],
+      "reference_pixel": [
+        282,
+        199
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 10171,
+      "source_world_m": [
+        -0.03118676319718361,
+        -0.12336959689855576,
+        1.6161110401153564
+      ],
+      "source_pick_error_pixels": 3.3284801038410934
+    },
+    {
+      "name": "lower_lid_center_L",
+      "view": "front",
+      "source_render_pixel": [
+        582.6,
+        557
+      ],
+      "reference_pixel": [
+        386,
+        199
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 13627,
+      "source_world_m": [
+        0.027418533340096474,
+        -0.12292954325675964,
+        1.6161552667617798
+      ],
+      "source_pick_error_pixels": 1.188200105462498
+    },
+    {
+      "name": "lower_lid_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        332,
+        552
+      ],
+      "reference_pixel": [
+        266,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 10138,
+      "source_world_m": [
+        -0.040130604058504105,
+        -0.11874557286500931,
+        1.6175339221954346
+      ],
+      "source_pick_error_pixels": 2.6822601026408748
+    },
+    {
+      "name": "lower_lid_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        610.6,
+        552
+      ],
+      "reference_pixel": [
+        402,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 10682,
+      "source_world_m": [
+        0.03499382734298706,
+        -0.11974232643842697,
+        1.6168583631515503
+      ],
+      "source_pick_error_pixels": 3.586346464064081
+    },
+    {
+      "name": "lid_crease_R",
+      "view": "front",
+      "source_render_pixel": [
+        360,
+        515
+      ],
+      "reference_pixel": [
+        281,
+        170
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 2189,
+      "source_world_m": [
+        -0.0317198783159256,
+        -0.12202814966440201,
+        1.6279933452606201
+      ],
+      "source_pick_error_pixels": 1.6137512367950915
+    },
+    {
+      "name": "lid_crease_L",
+      "view": "front",
+      "source_render_pixel": [
+        582.6,
+        515
+      ],
+      "reference_pixel": [
+        387,
+        170
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95,
+      "vertex": 12586,
+      "source_world_m": [
+        0.02732166275382042,
+        -0.12067659944295883,
+        1.6271363496780396
+      ],
+      "source_pick_error_pixels": 1.9938783954896373
+    },
+    {
+      "name": "infraorbital_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        398,
+        579
+      ],
+      "reference_pixel": [
+        305,
+        209
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 10033,
+      "source_world_m": [
+        -0.02162977121770382,
+        -0.12244774401187897,
+        1.610489845275879
+      ],
+      "source_pick_error_pixels": 0.979701527307448
+    },
+    {
+      "name": "infraorbital_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        544.6,
+        579
+      ],
+      "reference_pixel": [
+        363,
+        209
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 8516,
+      "source_world_m": [
+        0.01701151579618454,
+        -0.12269528955221176,
+        1.610161542892456
+      ],
+      "source_pick_error_pixels": 1.8314998933699131
+    },
+    {
+      "name": "infraorbital_center_R",
+      "view": "front",
+      "source_render_pixel": [
+        354,
+        588
+      ],
+      "reference_pixel": [
+        279,
+        213
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 10078,
+      "source_world_m": [
+        -0.03372499719262123,
+        -0.12235432863235474,
+        1.608427882194519
+      ],
+      "source_pick_error_pixels": 0.9746724888056637
+    },
+    {
+      "name": "infraorbital_center_L",
+      "view": "front",
+      "source_render_pixel": [
+        588.6,
+        588
+      ],
+      "reference_pixel": [
+        389,
+        213
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 8595,
+      "source_world_m": [
+        0.02940749190747738,
+        -0.12242080271244049,
+        1.6079412698745728
+      ],
+      "source_pick_error_pixels": 1.9383919582155766
+    },
+    {
+      "name": "infraorbital_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        307,
+        595
+      ],
+      "reference_pixel": [
+        254,
+        222
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 5155,
+      "source_world_m": [
+        -0.045624617487192154,
+        -0.11604098975658417,
+        1.6061584949493408
+      ],
+      "source_pick_error_pixels": 2.017208178124127
+    },
+    {
+      "name": "infraorbital_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        635.6,
+        595
+      ],
+      "reference_pixel": [
+        414,
+        222
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 8645,
+      "source_world_m": [
+        0.04138551652431488,
+        -0.11663086712360382,
+        1.6058099269866943
+      ],
+      "source_pick_error_pixels": 2.0039835375757913
+    },
+    {
+      "name": "malar_max_R",
+      "view": "front",
+      "source_render_pixel": [
+        273,
+        625
+      ],
+      "reference_pixel": [
+        247,
+        240
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 6208,
+      "source_world_m": [
+        -0.054316386580467224,
+        -0.11384367197751999,
+        1.5981899499893188
+      ],
+      "source_pick_error_pixels": 3.356891960642444
+    },
+    {
+      "name": "malar_max_L",
+      "view": "front",
+      "source_render_pixel": [
+        669.6,
+        625
+      ],
+      "reference_pixel": [
+        421,
+        240
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 9692,
+      "source_world_m": [
+        0.05120677873492241,
+        -0.11282961070537567,
+        1.5986427068710327
+      ],
+      "source_pick_error_pixels": 2.688608044831313
+    },
+    {
+      "name": "paranasal_R",
+      "view": "front",
+      "source_render_pixel": [
+        407,
+        662
+      ],
+      "reference_pixel": [
+        303,
+        249
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 6828,
+      "source_world_m": [
+        -0.019013889133930206,
+        -0.14067909121513367,
+        1.5887634754180908
+      ],
+      "source_pick_error_pixels": 2.030211796854616
+    },
+    {
+      "name": "paranasal_L",
+      "view": "front",
+      "source_render_pixel": [
+        535.6,
+        662
+      ],
+      "reference_pixel": [
+        365,
+        249
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 7942,
+      "source_world_m": [
+        0.01449908223003149,
+        -0.1405150294303894,
+        1.5885967016220093
+      ],
+      "source_pick_error_pixels": 1.3216856392908902
+    },
+    {
+      "name": "nasolabial_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        396,
+        697
+      ],
+      "reference_pixel": [
+        293,
+        269
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 6455,
+      "source_world_m": [
+        -0.021549595519900322,
+        -0.13230209052562714,
+        1.579419732093811
+      ],
+      "source_pick_error_pixels": 3.365010277656822
+    },
+    {
+      "name": "nasolabial_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        546.6,
+        697
+      ],
+      "reference_pixel": [
+        375,
+        269
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 8224,
+      "source_world_m": [
+        0.01756659522652626,
+        -0.13299930095672607,
+        1.579227089881897
+      ],
+      "source_pick_error_pixels": 0.8059944083330227
+    },
+    {
+      "name": "maxilla_support_R",
+      "view": "front",
+      "source_render_pixel": [
+        417,
+        722
+      ],
+      "reference_pixel": [
+        312,
+        277
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 20571,
+      "source_world_m": [
+        -0.016629667952656746,
+        -0.13907577097415924,
+        1.572525978088379
+      ],
+      "source_pick_error_pixels": 0.6763616588490646
+    },
+    {
+      "name": "maxilla_support_L",
+      "view": "front",
+      "source_render_pixel": [
+        525.6,
+        722
+      ],
+      "reference_pixel": [
+        356,
+        277
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 8877,
+      "source_world_m": [
+        0.011750554665923119,
+        -0.13942931592464447,
+        1.572165846824646
+      ],
+      "source_pick_error_pixels": 1.90527332789645
+    },
+    {
+      "name": "cheek_to_mouth_R",
+      "view": "front",
+      "source_render_pixel": [
+        353,
+        731
+      ],
+      "reference_pixel": [
+        274,
+        283
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 21033,
+      "source_world_m": [
+        -0.03371785208582878,
+        -0.1311967521905899,
+        1.5691299438476562
+      ],
+      "source_pick_error_pixels": 3.5567626546400564
+    },
+    {
+      "name": "cheek_to_mouth_L",
+      "view": "front",
+      "source_render_pixel": [
+        589.6,
+        731
+      ],
+      "reference_pixel": [
+        394,
+        283
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 8782,
+      "source_world_m": [
+        0.028327278792858124,
+        -0.13201068341732025,
+        1.569980263710022
+      ],
+      "source_pick_error_pixels": 3.388232431481897
+    },
+    {
+      "name": "cheek_to_jaw_R",
+      "view": "front",
+      "source_render_pixel": [
+        321,
+        781
+      ],
+      "reference_pixel": [
+        266,
+        310
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 19861,
+      "source_world_m": [
+        -0.04187913239002228,
+        -0.12004255503416061,
+        1.5561630725860596
+      ],
+      "source_pick_error_pixels": 2.8962539067318858
+    },
+    {
+      "name": "cheek_to_jaw_L",
+      "view": "front",
+      "source_render_pixel": [
+        621.6,
+        781
+      ],
+      "reference_pixel": [
+        402,
+        310
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55,
+      "vertex": 9643,
+      "source_world_m": [
+        0.03733634948730469,
+        -0.12194865196943283,
+        1.5559710264205933
+      ],
+      "source_pick_error_pixels": 3.2704463273059035
+    },
+    {
+      "name": "nasion",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        537
+      ],
+      "reference_pixel": [
+        333,
+        189
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 13943,
+      "source_world_m": [
+        -0.0024812822230160236,
+        -0.14340896904468536,
+        1.621335744857788
+      ],
+      "source_pick_error_pixels": 1.7674384411298403
+    },
+    {
+      "name": "upper_bridge",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        580
+      ],
+      "reference_pixel": [
+        333,
+        214
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 7783,
+      "source_world_m": [
+        -0.0024183038622140884,
+        -0.14962805807590485,
+        1.6099090576171875
+      ],
+      "source_pick_error_pixels": 1.5925138500903204
+    },
+    {
+      "name": "mid_dorsum",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        620
+      ],
+      "reference_pixel": [
+        333,
+        231
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 7144,
+      "source_world_m": [
+        -0.002503270749002695,
+        -0.15300394594669342,
+        1.6004774570465088
+      ],
+      "source_pick_error_pixels": 3.065027780460725
+    },
+    {
+      "name": "supratip",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        650
+      ],
+      "reference_pixel": [
+        333,
+        241
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 7268,
+      "source_world_m": [
+        -0.0026128508616238832,
+        -0.159061461687088,
+        1.5913305282592773
+      ],
+      "source_pick_error_pixels": 1.4919841361140098
+    },
+    {
+      "name": "tip",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        673
+      ],
+      "reference_pixel": [
+        334,
+        245
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 7061,
+      "source_world_m": [
+        -0.0027273716405034065,
+        -0.1612803339958191,
+        1.5858221054077148
+      ],
+      "source_pick_error_pixels": 1.6370006478773667
+    },
+    {
+      "name": "columella",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        701
+      ],
+      "reference_pixel": [
+        334,
+        266
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 20602,
+      "source_world_m": [
+        -0.0026719507295638323,
+        -0.13913950324058533,
+        1.5785706043243408
+      ],
+      "source_pick_error_pixels": 2.147379674740238
+    },
+    {
+      "name": "philtrum_top",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        715
+      ],
+      "reference_pixel": [
+        334,
+        274
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 20620,
+      "source_world_m": [
+        -0.0027461322024464607,
+        -0.1375291794538498,
+        1.574745774269104
+      ],
+      "source_pick_error_pixels": 2.019140923306185
+    },
+    {
+      "name": "philtrum_lower",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        740
+      ],
+      "reference_pixel": [
+        334,
+        281
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 0.8,
+      "vertex": 20735,
+      "source_world_m": [
+        -0.0030158504378050566,
+        -0.1447865515947342,
+        1.5673843622207642
+      ],
+      "source_pick_error_pixels": 2.5405179274144234
+    },
+    {
+      "name": "nasal_sidewall_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        451,
+        603
+      ],
+      "reference_pixel": [
+        320,
+        224
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7149,
+      "source_world_m": [
+        -0.00781434029340744,
+        -0.1482885330915451,
+        1.6050618886947632
+      ],
+      "source_pick_error_pixels": 3.2463268299701435
+    },
+    {
+      "name": "nasal_sidewall_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        491.6,
+        603
+      ],
+      "reference_pixel": [
+        348,
+        224
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7776,
+      "source_world_m": [
+        0.002825325122103095,
+        -0.1479283720254898,
+        1.6046589612960815
+      ],
+      "source_pick_error_pixels": 1.9930601679991278
+    },
+    {
+      "name": "nasal_sidewall_lower_R",
+      "view": "front",
+      "source_render_pixel": [
+        440,
+        642
+      ],
+      "reference_pixel": [
+        317,
+        243
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7068,
+      "source_world_m": [
+        -0.010381138883531094,
+        -0.15369877219200134,
+        1.5939304828643799
+      ],
+      "source_pick_error_pixels": 1.1772365917902259
+    },
+    {
+      "name": "nasal_sidewall_lower_L",
+      "view": "front",
+      "source_render_pixel": [
+        502.6,
+        642
+      ],
+      "reference_pixel": [
+        351,
+        243
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7614,
+      "source_world_m": [
+        0.006200479809194803,
+        -0.15121117234230042,
+        1.5938044786453247
+      ],
+      "source_pick_error_pixels": 0.6520156260290099
+    },
+    {
+      "name": "tip_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        449,
+        671
+      ],
+      "reference_pixel": [
+        322,
+        249
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 6970,
+      "source_world_m": [
+        -0.00818671565502882,
+        -0.14535638689994812,
+        1.5855637788772583
+      ],
+      "source_pick_error_pixels": 1.9095134511920087
+    },
+    {
+      "name": "tip_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        493.6,
+        671
+      ],
+      "reference_pixel": [
+        346,
+        249
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7294,
+      "source_world_m": [
+        0.003671203972771764,
+        -0.16036184132099152,
+        1.5858694314956665
+      ],
+      "source_pick_error_pixels": 0.7582541201163105
+    },
+    {
+      "name": "alar_max_R",
+      "view": "front",
+      "source_render_pixel": [
+        411,
+        680
+      ],
+      "reference_pixel": [
+        308,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 20450,
+      "source_world_m": [
+        -0.017926722764968872,
+        -0.1436900943517685,
+        1.5836125612258911
+      ],
+      "source_pick_error_pixels": 1.7863495682895154
+    },
+    {
+      "name": "alar_max_L",
+      "view": "front",
+      "source_render_pixel": [
+        531.6,
+        680
+      ],
+      "reference_pixel": [
+        360,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7954,
+      "source_world_m": [
+        0.013454850763082504,
+        -0.14452798664569855,
+        1.583935260772705
+      ],
+      "source_pick_error_pixels": 1.5244515690637064
+    },
+    {
+      "name": "nostril_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        421,
+        687
+      ],
+      "reference_pixel": [
+        313,
+        260
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 6892,
+      "source_world_m": [
+        -0.01588684692978859,
+        -0.1429799348115921,
+        1.582370638847351
+      ],
+      "source_pick_error_pixels": 2.215977516253204
+    },
+    {
+      "name": "nostril_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        521.6,
+        687
+      ],
+      "reference_pixel": [
+        355,
+        260
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7963,
+      "source_world_m": [
+        0.011233760043978691,
+        -0.14444421231746674,
+        1.5824296474456787
+      ],
+      "source_pick_error_pixels": 2.4191876549176876
+    },
+    {
+      "name": "nostril_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        450,
+        691
+      ],
+      "reference_pixel": [
+        325,
+        259
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7017,
+      "source_world_m": [
+        -0.008042885921895504,
+        -0.15232200920581818,
+        1.5809365510940552
+      ],
+      "source_pick_error_pixels": 0.778851262604457
+    },
+    {
+      "name": "nostril_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        492.6,
+        691
+      ],
+      "reference_pixel": [
+        343,
+        259
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7373,
+      "source_world_m": [
+        0.0036016490776091814,
+        -0.15381476283073425,
+        1.5812984704971313
+      ],
+      "source_pick_error_pixels": 2.304875476413927
+    },
+    {
+      "name": "nose_cheek_R",
+      "view": "front",
+      "source_render_pixel": [
+        405,
+        677
+      ],
+      "reference_pixel": [
+        305,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 20444,
+      "source_world_m": [
+        -0.019619455561041832,
+        -0.1404867172241211,
+        1.5849026441574097
+      ],
+      "source_pick_error_pixels": 2.1701144778664596
+    },
+    {
+      "name": "nose_cheek_L",
+      "view": "front",
+      "source_render_pixel": [
+        537.6,
+        677
+      ],
+      "reference_pixel": [
+        363,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 7951,
+      "source_world_m": [
+        0.015288013964891434,
+        -0.14042487740516663,
+        1.584800124168396
+      ],
+      "source_pick_error_pixels": 1.2792716753538826
+    },
+    {
+      "name": "mouth_corner_R",
+      "view": "front",
+      "source_render_pixel": [
+        365,
+        775
+      ],
+      "reference_pixel": [
+        291,
+        302
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 16278,
+      "source_world_m": [
+        -0.031070608645677567,
+        -0.13284875452518463,
+        1.5587704181671143
+      ],
+      "source_pick_error_pixels": 2.231840072170294
+    },
+    {
+      "name": "mouth_corner_L",
+      "view": "front",
+      "source_render_pixel": [
+        577.6,
+        775
+      ],
+      "reference_pixel": [
+        375,
+        303
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 9442,
+      "source_world_m": [
+        0.026085367426276207,
+        -0.1327325403690338,
+        1.558901071548462
+      ],
+      "source_pick_error_pixels": 2.140368010436927
+    },
+    {
+      "name": "upper_lip_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        400,
+        763
+      ],
+      "reference_pixel": [
+        310,
+        293
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 19692,
+      "source_world_m": [
+        -0.0215421412140131,
+        -0.14128170907497406,
+        1.5618342161178589
+      ],
+      "source_pick_error_pixels": 1.3733971507272322
+    },
+    {
+      "name": "upper_lip_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        542.6,
+        763
+      ],
+      "reference_pixel": [
+        358,
+        294
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 9004,
+      "source_world_m": [
+        0.01696147955954075,
+        -0.1404893547296524,
+        1.5616825819015503
+      ],
+      "source_pick_error_pixels": 1.1508134376501826
+    },
+    {
+      "name": "cupid_peak_R",
+      "view": "front",
+      "source_render_pixel": [
+        445,
+        751
+      ],
+      "reference_pixel": [
+        324,
+        283
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 21236,
+      "source_world_m": [
+        -0.010152946226298809,
+        -0.1448170244693756,
+        1.5653119087219238
+      ],
+      "source_pick_error_pixels": 3.762195372090964
+    },
+    {
+      "name": "cupid_peak_L",
+      "view": "front",
+      "source_render_pixel": [
+        497.6,
+        751
+      ],
+      "reference_pixel": [
+        344,
+        283
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 9153,
+      "source_world_m": [
+        0.004638707730919123,
+        -0.14463837444782257,
+        1.5649386644363403
+      ],
+      "source_pick_error_pixels": 0.7967741256845877
+    },
+    {
+      "name": "upper_lip_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        456,
+        757
+      ],
+      "reference_pixel": [
+        329,
+        285
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 21247,
+      "source_world_m": [
+        -0.00721651641651988,
+        -0.14369945228099823,
+        1.5631822347640991
+      ],
+      "source_pick_error_pixels": 3.067423001121185
+    },
+    {
+      "name": "upper_lip_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        486.6,
+        757
+      ],
+      "reference_pixel": [
+        339,
+        285
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 21387,
+      "source_world_m": [
+        0.0016128203133121133,
+        -0.14334532618522644,
+        1.5631059408187866
+      ],
+      "source_pick_error_pixels": 0.5614015528131401
+    },
+    {
+      "name": "contact_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        402,
+        775
+      ],
+      "reference_pixel": [
+        310,
+        300
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 19573,
+      "source_world_m": [
+        -0.020661672577261925,
+        -0.1377514898777008,
+        1.5588045120239258
+      ],
+      "source_pick_error_pixels": 1.8414899322406484
+    },
+    {
+      "name": "contact_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        540.6,
+        775
+      ],
+      "reference_pixel": [
+        358,
+        301
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 9048,
+      "source_world_m": [
+        0.015795307233929634,
+        -0.13626402616500854,
+        1.558579921722412
+      ],
+      "source_pick_error_pixels": 1.650880364226503
+    },
+    {
+      "name": "contact_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        439,
+        773
+      ],
+      "reference_pixel": [
+        324,
+        299
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 16579,
+      "source_world_m": [
+        -0.011143411509692669,
+        -0.13847799599170685,
+        1.5584527254104614
+      ],
+      "source_pick_error_pixels": 1.740744198764718
+    },
+    {
+      "name": "contact_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        503.6,
+        773
+      ],
+      "reference_pixel": [
+        344,
+        300
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 9169,
+      "source_world_m": [
+        0.006728427950292826,
+        -0.13923051953315735,
+        1.5590847730636597
+      ],
+      "source_pick_error_pixels": 1.8251282211153674
+    },
+    {
+      "name": "lower_lip_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        399,
+        793
+      ],
+      "reference_pixel": [
+        310,
+        309
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 16441,
+      "source_world_m": [
+        -0.021999003365635872,
+        -0.13903242349624634,
+        1.5530157089233398
+      ],
+      "source_pick_error_pixels": 2.4508443827105135
+    },
+    {
+      "name": "lower_lip_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        543.6,
+        793
+      ],
+      "reference_pixel": [
+        358,
+        311
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 18010,
+      "source_world_m": [
+        0.017130186781287193,
+        -0.13908524811267853,
+        1.5529682636260986
+      ],
+      "source_pick_error_pixels": 2.213031656119901
+    },
+    {
+      "name": "lower_lip_mid_R",
+      "view": "front",
+      "source_render_pixel": [
+        438,
+        802
+      ],
+      "reference_pixel": [
+        324,
+        316
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 2847,
+      "source_world_m": [
+        -0.011328455992043018,
+        -0.12756207585334778,
+        1.5513031482696533
+      ],
+      "source_pick_error_pixels": 0.7984775458666392
+    },
+    {
+      "name": "lower_lip_mid_L",
+      "view": "front",
+      "source_render_pixel": [
+        504.6,
+        802
+      ],
+      "reference_pixel": [
+        344,
+        317
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 17950,
+      "source_world_m": [
+        0.00643932307139039,
+        -0.14299458265304565,
+        1.5512232780456543
+      ],
+      "source_pick_error_pixels": 0.5644089155899632
+    },
+    {
+      "name": "commissure_support_R",
+      "view": "front",
+      "source_render_pixel": [
+        354,
+        782
+      ],
+      "reference_pixel": [
+        288,
+        309
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 16260,
+      "source_world_m": [
+        -0.03367914259433746,
+        -0.13052573800086975,
+        1.5566030740737915
+      ],
+      "source_pick_error_pixels": 0.5913897543774385
+    },
+    {
+      "name": "commissure_support_L",
+      "view": "front",
+      "source_render_pixel": [
+        588.6,
+        782
+      ],
+      "reference_pixel": [
+        380,
+        309
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 9538,
+      "source_world_m": [
+        0.02896214835345745,
+        -0.13108742237091064,
+        1.5564950704574585
+      ],
+      "source_pick_error_pixels": 0.10681845569496905
+    },
+    {
+      "name": "mentolabial_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        426,
+        831
+      ],
+      "reference_pixel": [
+        316,
+        328
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 16505,
+      "source_world_m": [
+        -0.014056891202926636,
+        -0.13657309114933014,
+        1.5442243814468384
+      ],
+      "source_pick_error_pixels": 3.348496805630716
+    },
+    {
+      "name": "mentolabial_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        516.6,
+        831
+      ],
+      "reference_pixel": [
+        352,
+        328
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 17959,
+      "source_world_m": [
+        0.008765384554862976,
+        -0.13434964418411255,
+        1.542893648147583
+      ],
+      "source_pick_error_pixels": 4.185329426132665
+    },
+    {
+      "name": "cupid_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        759
+      ],
+      "reference_pixel": [
+        334,
+        286
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 21246,
+      "source_world_m": [
+        -0.002847476629540324,
+        -0.14300119876861572,
+        1.5622023344039917
+      ],
+      "source_pick_error_pixels": 2.2449106824175136
+    },
+    {
+      "name": "lip_contact_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        774
+      ],
+      "reference_pixel": [
+        334,
+        299
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 21278,
+      "source_world_m": [
+        -0.0026424312964081764,
+        -0.1397521197795868,
+        1.5591093301773071
+      ],
+      "source_pick_error_pixels": 2.1153130187045988
+    },
+    {
+      "name": "lower_lip_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        806
+      ],
+      "reference_pixel": [
+        334,
+        319
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 17675,
+      "source_world_m": [
+        -0.002108589746057987,
+        -0.14172610640525818,
+        1.5504794120788574
+      ],
+      "source_pick_error_pixels": 1.8946917635543252
+    },
+    {
+      "name": "mentolabial_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        838
+      ],
+      "reference_pixel": [
+        334,
+        332
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 15955,
+      "source_world_m": [
+        -0.0022477181628346443,
+        -0.1320124715566635,
+        1.5412205457687378
+      ],
+      "source_pick_error_pixels": 1.3045786954419107
+    },
+    {
+      "name": "chin_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        891
+      ],
+      "reference_pixel": [
+        334,
+        350
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 15923,
+      "source_world_m": [
+        -0.0024372353218495846,
+        -0.13083268702030182,
+        1.528852105140686
+      ],
+      "source_pick_error_pixels": 5.447184232358103
+    },
+    {
+      "name": "chin_eminence_R",
+      "view": "front",
+      "source_render_pixel": [
+        419,
+        893
+      ],
+      "reference_pixel": [
+        315,
+        350
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 15910,
+      "source_world_m": [
+        -0.015028155408799648,
+        -0.1270517110824585,
+        1.5273735523223877
+      ],
+      "source_pick_error_pixels": 5.018339621228029
+    },
+    {
+      "name": "chin_eminence_L",
+      "view": "front",
+      "source_render_pixel": [
+        523.6,
+        893
+      ],
+      "reference_pixel": [
+        353,
+        350
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 17639,
+      "source_world_m": [
+        0.010470072738826275,
+        -0.12688808143138885,
+        1.5275254249572754
+      ],
+      "source_pick_error_pixels": 4.991406364046339
+    },
+    {
+      "name": "chin_shoulders_R",
+      "view": "front",
+      "source_render_pixel": [
+        385,
+        879
+      ],
+      "reference_pixel": [
+        296,
+        345
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 19905,
+      "source_world_m": [
+        -0.024701999500393867,
+        -0.115941621363163,
+        1.5312161445617676
+      ],
+      "source_pick_error_pixels": 3.308121815719274
+    },
+    {
+      "name": "chin_shoulders_L",
+      "view": "front",
+      "source_render_pixel": [
+        557.6,
+        879
+      ],
+      "reference_pixel": [
+        372,
+        345
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1,
+      "vertex": 17219,
+      "source_world_m": [
+        0.020306479185819626,
+        -0.11681877821683884,
+        1.5303558111190796
+      ],
+      "source_pick_error_pixels": 1.715535206722817
+    },
+    {
+      "name": "helix_superior_R",
+      "view": "front",
+      "source_render_pixel": [
+        159,
+        530
+      ],
+      "reference_pixel": [
+        203,
+        183
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 4742,
+      "source_world_m": [
+        -0.08557657152414322,
+        -0.025278476998209953,
+        1.6242964267730713
+      ],
+      "source_pick_error_pixels": 2.3632340678010575
+    },
+    {
+      "name": "helix_superior_L",
+      "view": "front",
+      "source_render_pixel": [
+        783.6,
+        530
+      ],
+      "reference_pixel": [
+        465,
+        183
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 11649,
+      "source_world_m": [
+        0.0800558477640152,
+        -0.02819291688501835,
+        1.6236804723739624
+      ],
+      "source_pick_error_pixels": 3.390966116599457
+    },
+    {
+      "name": "helix_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        164,
+        603
+      ],
+      "reference_pixel": [
+        200,
+        209
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 4216,
+      "source_world_m": [
+        -0.08392057567834854,
+        -0.007662015967071056,
+        1.6046981811523438
+      ],
+      "source_pick_error_pixels": 2.274749606656722
+    },
+    {
+      "name": "helix_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        778.6,
+        603
+      ],
+      "reference_pixel": [
+        468,
+        209
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 18301,
+      "source_world_m": [
+        0.07963098585605621,
+        -0.007302685175091028,
+        1.6047277450561523
+      ],
+      "source_pick_error_pixels": 1.9791102393232705
+    },
+    {
+      "name": "tragus_R",
+      "view": "front",
+      "source_render_pixel": [
+        205,
+        634
+      ],
+      "reference_pixel": [
+        217,
+        232
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 6112,
+      "source_world_m": [
+        -0.07284777611494064,
+        -0.04010990262031555,
+        1.5961151123046875
+      ],
+      "source_pick_error_pixels": 1.9442562286283667
+    },
+    {
+      "name": "tragus_L",
+      "view": "front",
+      "source_render_pixel": [
+        737.6,
+        634
+      ],
+      "reference_pixel": [
+        451,
+        232
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 11368,
+      "source_world_m": [
+        0.06856076419353485,
+        -0.03695479780435562,
+        1.5959681272506714
+      ],
+      "source_pick_error_pixels": 0.5139715787311421
+    },
+    {
+      "name": "lobule_R",
+      "view": "front",
+      "source_render_pixel": [
+        219,
+        724
+      ],
+      "reference_pixel": [
+        223,
+        264
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 20101,
+      "source_world_m": [
+        -0.06956911832094193,
+        -0.03520525246858597,
+        1.5727075338363647
+      ],
+      "source_pick_error_pixels": 2.905560636779143
+    },
+    {
+      "name": "lobule_L",
+      "view": "front",
+      "source_render_pixel": [
+        723.6,
+        724
+      ],
+      "reference_pixel": [
+        445,
+        264
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65,
+      "vertex": 14428,
+      "source_world_m": [
+        0.06498931348323822,
+        -0.03411519527435303,
+        1.5722975730895996
+      ],
+      "source_pick_error_pixels": 1.3703152711491124
+    },
+    {
+      "name": "jaw_neck_break_R",
+      "view": "front",
+      "source_render_pixel": [
+        318,
+        879
+      ],
+      "reference_pixel": [
+        270,
+        356
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35,
+      "vertex": 1118,
+      "source_world_m": [
+        -0.04192616790533066,
+        -0.026099829003214836,
+        1.5306544303894043
+      ],
+      "source_pick_error_pixels": 4.781229224514256
+    },
+    {
+      "name": "jaw_neck_break_L",
+      "view": "front",
+      "source_render_pixel": [
+        624.6,
+        879
+      ],
+      "reference_pixel": [
+        398,
+        356
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35,
+      "vertex": 22880,
+      "source_world_m": [
+        0.03716082125902176,
+        -0.021976206451654434,
+        1.5295356512069702
+      ],
+      "source_pick_error_pixels": 6.592473871993267
+    },
+    {
+      "name": "neck_side_R",
+      "view": "front",
+      "source_render_pixel": [
+        301,
+        966
+      ],
+      "reference_pixel": [
+        264,
+        394
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35,
+      "vertex": 1132,
+      "source_world_m": [
+        -0.04554685950279236,
+        -0.019936859607696533,
+        1.5058064460754395
+      ],
+      "source_pick_error_pixels": 10.14586871735745
+    },
+    {
+      "name": "neck_side_L",
+      "view": "front",
+      "source_render_pixel": [
+        641.6,
+        966
+      ],
+      "reference_pixel": [
+        404,
+        394
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35,
+      "vertex": 22917,
+      "source_world_m": [
+        0.041027188301086426,
+        -0.0208188034594059,
+        1.5074472427368164
+      ],
+      "source_pick_error_pixels": 7.750069005150912
+    },
+    {
+      "name": "crown",
+      "view": "side",
+      "source_render_pixel": [
+        536,
+        151
+      ],
+      "reference_pixel": [
+        292,
+        27
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 22153,
+      "source_world_m": [
+        0.0034243776462972164,
+        -0.023924851790070534,
+        1.7318062782287598
+      ],
+      "source_pick_error_pixels": 1.6246155849337753
+    },
+    {
+      "name": "crown_front",
+      "view": "side",
+      "source_render_pixel": [
+        373,
+        171
+      ],
+      "reference_pixel": [
+        216,
+        46
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 22062,
+      "source_world_m": [
+        0.005974372383207083,
+        -0.07104049623012543,
+        1.726115107536316
+      ],
+      "source_pick_error_pixels": 2.9803383907532335
+    },
+    {
+      "name": "frontal_upper",
+      "view": "side",
+      "source_render_pixel": [
+        287,
+        222
+      ],
+      "reference_pixel": [
+        180,
+        72
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 21729,
+      "source_world_m": [
+        0.014586753211915493,
+        -0.09247123450040817,
+        1.711751103401184
+      ],
+      "source_pick_error_pixels": 7.903920515483662
+    },
+    {
+      "name": "forehead_mid",
+      "view": "side",
+      "source_render_pixel": [
+        231,
+        305
+      ],
+      "reference_pixel": [
+        156,
+        105
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 21589,
+      "source_world_m": [
+        0.01905469037592411,
+        -0.10981447249650955,
+        1.689428448677063
+      ],
+      "source_pick_error_pixels": 3.954234010116223
+    },
+    {
+      "name": "forehead_lower",
+      "view": "side",
+      "source_render_pixel": [
+        190,
+        375
+      ],
+      "reference_pixel": [
+        147,
+        129
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 13212,
+      "source_world_m": [
+        0.015471290796995163,
+        -0.1211794912815094,
+        1.666792392730713
+      ],
+      "source_pick_error_pixels": 7.737981922333493
+    },
+    {
+      "name": "brow_projection",
+      "view": "side",
+      "source_render_pixel": [
+        161,
+        488
+      ],
+      "reference_pixel": [
+        144,
+        148
+      ],
+      "region": "brow",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 13232,
+      "source_world_m": [
+        0.01592044159770012,
+        -0.13010218739509583,
+        1.6373153924942017
+      ],
+      "source_pick_error_pixels": 2.2814198056194157
+    },
+    {
+      "name": "radix",
+      "view": "side",
+      "source_render_pixel": [
+        145,
+        519
+      ],
+      "reference_pixel": [
+        149,
+        176
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 13943,
+      "source_world_m": [
+        -0.0024812822230160236,
+        -0.14340896904468536,
+        1.621335744857788
+      ],
+      "source_pick_error_pixels": 1.176259445016107,
+      "source_shared_with_front": "nasion"
+    },
+    {
+      "name": "upper_bridge",
+      "view": "side",
+      "source_render_pixel": [
+        112,
+        564
+      ],
+      "reference_pixel": [
+        139,
+        189
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 7783,
+      "source_world_m": [
+        -0.0024183038622140884,
+        -0.14962805807590485,
+        1.6099090576171875
+      ],
+      "source_pick_error_pixels": 2.592718689819989,
+      "source_shared_with_front": "upper_bridge"
+    },
+    {
+      "name": "mid_dorsum",
+      "view": "side",
+      "source_render_pixel": [
+        86,
+        607
+      ],
+      "reference_pixel": [
+        128,
+        207
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 7144,
+      "source_world_m": [
+        -0.002503270749002695,
+        -0.15300394594669342,
+        1.6004774570465088
+      ],
+      "source_pick_error_pixels": 2.6343202730690476,
+      "source_shared_with_front": "mid_dorsum"
+    },
+    {
+      "name": "supratip",
+      "view": "side",
+      "source_render_pixel": [
+        65,
+        644
+      ],
+      "reference_pixel": [
+        116,
+        218
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 7268,
+      "source_world_m": [
+        -0.0026128508616238832,
+        -0.159061461687088,
+        1.5913305282592773
+      ],
+      "source_pick_error_pixels": 0.28717105668038545,
+      "source_shared_with_front": "supratip"
+    },
+    {
+      "name": "tip",
+      "view": "side",
+      "source_render_pixel": [
+        52,
+        666
+      ],
+      "reference_pixel": [
+        113,
+        229
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 7061,
+      "source_world_m": [
+        -0.0027273716405034065,
+        -0.1612803339958191,
+        1.5858221054077148
+      ],
+      "source_pick_error_pixels": 2.203363306997606,
+      "source_shared_with_front": "tip"
+    },
+    {
+      "name": "tip_lower",
+      "view": "side",
+      "source_render_pixel": [
+        60,
+        679
+      ],
+      "reference_pixel": [
+        120,
+        239
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 7362,
+      "source_world_m": [
+        0.003454545047134161,
+        -0.15918642282485962,
+        1.5831749439239502
+      ],
+      "source_pick_error_pixels": 2.077342823191023
+    },
+    {
+      "name": "columella",
+      "view": "side",
+      "source_render_pixel": [
+        107,
+        690
+      ],
+      "reference_pixel": [
+        137,
+        245
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 20602,
+      "source_world_m": [
+        -0.0026719507295638323,
+        -0.13913950324058533,
+        1.5785706043243408
+      ],
+      "source_pick_error_pixels": 3.1176641910941076,
+      "source_shared_with_front": "columella"
+    },
+    {
+      "name": "nasolabial",
+      "view": "side",
+      "source_render_pixel": [
+        120,
+        708
+      ],
+      "reference_pixel": [
+        144,
+        255
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 8869,
+      "source_world_m": [
+        0.006102059502154589,
+        -0.14037258923053741,
+        1.5734254121780396
+      ],
+      "source_pick_error_pixels": 6.694994785652468
+    },
+    {
+      "name": "philtrum",
+      "view": "side",
+      "source_render_pixel": [
+        114,
+        718
+      ],
+      "reference_pixel": [
+        139,
+        262
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 20754,
+      "source_world_m": [
+        0.005437212064862251,
+        -0.14341026544570923,
+        1.5707154273986816
+      ],
+      "source_pick_error_pixels": 3.1736348191156973
+    },
+    {
+      "name": "upper_vermilion",
+      "view": "side",
+      "source_render_pixel": [
+        110,
+        731
+      ],
+      "reference_pixel": [
+        133,
+        267
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 9136,
+      "source_world_m": [
+        0.008865008130669594,
+        -0.14462803304195404,
+        1.567638874053955
+      ],
+      "source_pick_error_pixels": 1.1266982968935977
+    },
+    {
+      "name": "upper_lip_projection",
+      "view": "side",
+      "source_render_pixel": [
+        119,
+        748
+      ],
+      "reference_pixel": [
+        135,
+        274
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 9010,
+      "source_world_m": [
+        0.014988024719059467,
+        -0.1421593576669693,
+        1.5633147954940796
+      ],
+      "source_pick_error_pixels": 0.9789768881512775
+    },
+    {
+      "name": "lip_contact",
+      "view": "side",
+      "source_render_pixel": [
+        143,
+        767
+      ],
+      "reference_pixel": [
+        144,
+        281
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 21278,
+      "source_world_m": [
+        -0.0026424312964081764,
+        -0.1397521197795868,
+        1.5591093301773071
+      ],
+      "source_pick_error_pixels": 1.661652283980468,
+      "source_shared_with_front": "lip_contact_center"
+    },
+    {
+      "name": "lower_lip_projection",
+      "view": "side",
+      "source_render_pixel": [
+        116,
+        789
+      ],
+      "reference_pixel": [
+        138,
+        290
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 17969,
+      "source_world_m": [
+        0.00811148900538683,
+        -0.14286287128925323,
+        1.5514569282531738
+      ],
+      "source_pick_error_pixels": 0.9548850629726885
+    },
+    {
+      "name": "lower_lip_lower",
+      "view": "side",
+      "source_render_pixel": [
+        146,
+        812
+      ],
+      "reference_pixel": [
+        143,
+        298
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 18053,
+      "source_world_m": [
+        0.017187949270009995,
+        -0.13318951427936554,
+        1.5449103116989136
+      ],
+      "source_pick_error_pixels": 5.096479700478911
+    },
+    {
+      "name": "mentolabial",
+      "view": "side",
+      "source_render_pixel": [
+        159,
+        837
+      ],
+      "reference_pixel": [
+        153,
+        307
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 17658,
+      "source_world_m": [
+        0.00701538659632206,
+        -0.130524143576622,
+        1.538346529006958
+      ],
+      "source_pick_error_pixels": 2.3087175645214515
+    },
+    {
+      "name": "chin_projection",
+      "view": "side",
+      "source_render_pixel": [
+        166,
+        881
+      ],
+      "reference_pixel": [
+        145,
+        329
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 15990,
+      "source_world_m": [
+        0.007426643278449774,
+        -0.1277603805065155,
+        1.524577021598816
+      ],
+      "source_pick_error_pixels": 5.121010959411667
+    },
+    {
+      "name": "chin_lower",
+      "view": "side",
+      "source_render_pixel": [
+        202,
+        923
+      ],
+      "reference_pixel": [
+        163,
+        346
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 15842,
+      "source_world_m": [
+        -0.0023653984535485506,
+        -0.11950995028018951,
+        1.5135009288787842
+      ],
+      "source_pick_error_pixels": 1.0355283565131008,
+      "source_shared_with_front": "chin_lower"
+    },
+    {
+      "name": "submental",
+      "view": "side",
+      "source_render_pixel": [
+        283,
+        913
+      ],
+      "reference_pixel": [
+        199,
+        341
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8,
+      "vertex": 17467,
+      "source_world_m": [
+        0.009459045715630054,
+        -0.09568140655755997,
+        1.5176266431808472
+      ],
+      "source_pick_error_pixels": 4.6480272830585365
+    },
+    {
+      "name": "jaw_neck_break",
+      "view": "side",
+      "source_render_pixel": [
+        367,
+        917
+      ],
+      "reference_pixel": [
+        226,
+        341
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 17494,
+      "source_world_m": [
+        0.006961860693991184,
+        -0.07116472721099854,
+        1.516432762145996
+      ],
+      "source_pick_error_pixels": 5.337321587183644
+    },
+    {
+      "name": "neck_front",
+      "view": "side",
+      "source_render_pixel": [
+        393,
+        1005
+      ],
+      "reference_pixel": [
+        244,
+        390
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 22704,
+      "source_world_m": [
+        0.00418832479044795,
+        -0.06314677745103836,
+        1.4894356727600098
+      ],
+      "source_pick_error_pixels": 6.033959486587002
+    },
+    {
+      "name": "crown_rear",
+      "view": "side",
+      "source_render_pixel": [
+        683,
+        180
+      ],
+      "reference_pixel": [
+        362,
+        48
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 1547,
+      "source_world_m": [
+        -0.002452103653922677,
+        0.015552160330116749,
+        1.722851276397705
+      ],
+      "source_pick_error_pixels": 8.03191381377264
+    },
+    {
+      "name": "occiput_upper",
+      "view": "side",
+      "source_render_pixel": [
+        793,
+        276
+      ],
+      "reference_pixel": [
+        397,
+        84
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 710,
+      "source_world_m": [
+        -0.002028133487328887,
+        0.04798238351941109,
+        1.69187593460083
+      ],
+      "source_pick_error_pixels": 17.554256230207898
+    },
+    {
+      "name": "occiput_max",
+      "view": "side",
+      "source_render_pixel": [
+        846,
+        444
+      ],
+      "reference_pixel": [
+        420,
+        154
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 14743,
+      "source_world_m": [
+        0.008129375986754894,
+        0.06298066675662994,
+        1.6467628479003906
+      ],
+      "source_pick_error_pixels": 8.968561471704142
+    },
+    {
+      "name": "occiput_lower",
+      "view": "side",
+      "source_render_pixel": [
+        801,
+        564
+      ],
+      "reference_pixel": [
+        402,
+        212
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 14767,
+      "source_world_m": [
+        0.02351773902773857,
+        0.04966563358902931,
+        1.616172432899475
+      ],
+      "source_pick_error_pixels": 5.685774806312626
+    },
+    {
+      "name": "neck_rear_upper",
+      "view": "side",
+      "source_render_pixel": [
+        758,
+        669
+      ],
+      "reference_pixel": [
+        381,
+        266
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 14579,
+      "source_world_m": [
+        0.018562322482466698,
+        0.03778039664030075,
+        1.5888056755065918
+      ],
+      "source_pick_error_pixels": 12.34451141134471
+    },
+    {
+      "name": "neck_rear",
+      "view": "side",
+      "source_render_pixel": [
+        731,
+        779
+      ],
+      "reference_pixel": [
+        375,
+        319
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5,
+      "vertex": 14788,
+      "source_world_m": [
+        0.01404479332268238,
+        0.02992597222328186,
+        1.5578694343566895
+      ],
+      "source_pick_error_pixels": 13.33626137621874
+    },
+    {
+      "name": "helix_superior",
+      "view": "side",
+      "source_render_pixel": [
+        549,
+        530
+      ],
+      "reference_pixel": [
+        331,
+        169
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 11694,
+      "source_world_m": [
+        0.08441901206970215,
+        -0.01977744698524475,
+        1.6249836683273315
+      ],
+      "source_pick_error_pixels": 2.4322952586349627
+    },
+    {
+      "name": "helix_outer",
+      "view": "side",
+      "source_render_pixel": [
+        604,
+        582
+      ],
+      "reference_pixel": [
+        353,
+        188
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 18183,
+      "source_world_m": [
+        0.0825362280011177,
+        -0.005054717417806387,
+        1.6100369691848755
+      ],
+      "source_pick_error_pixels": 0.6999987325102593
+    },
+    {
+      "name": "helix_lower",
+      "view": "side",
+      "source_render_pixel": [
+        596,
+        661
+      ],
+      "reference_pixel": [
+        345,
+        234
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 12057,
+      "source_world_m": [
+        0.05489958077669144,
+        -0.008229464292526245,
+        1.58740234375
+      ],
+      "source_pick_error_pixels": 4.024615914668703
+    },
+    {
+      "name": "lobule",
+      "view": "side",
+      "source_render_pixel": [
+        547,
+        713
+      ],
+      "reference_pixel": [
+        319,
+        254
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 14496,
+      "source_world_m": [
+        0.0700579285621643,
+        -0.021248163655400276,
+        1.574110984802246
+      ],
+      "source_pick_error_pixels": 4.062947303277649
+    },
+    {
+      "name": "tragus",
+      "view": "side",
+      "source_render_pixel": [
+        508,
+        608
+      ],
+      "reference_pixel": [
+        309,
+        219
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 11476,
+      "source_world_m": [
+        0.07240299880504608,
+        -0.03169576823711395,
+        1.6021828651428223
+      ],
+      "source_pick_error_pixels": 2.3426917544667125
+    },
+    {
+      "name": "antitragus",
+      "view": "side",
+      "source_render_pixel": [
+        526,
+        655
+      ],
+      "reference_pixel": [
+        320,
+        236
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 18600,
+      "source_world_m": [
+        0.06984933465719223,
+        -0.026787595823407173,
+        1.5890676975250244
+      ],
+      "source_pick_error_pixels": 1.3843477264423907
+    },
+    {
+      "name": "brow_medial",
+      "view": "side",
+      "source_render_pixel": [
+        179,
+        494
+      ],
+      "reference_pixel": [
+        151,
+        147
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 12857,
+      "source_world_m": [
+        0.026806209236383438,
+        -0.12503162026405334,
+        1.6352128982543945
+      ],
+      "source_pick_error_pixels": 1.091284929506718
+    },
+    {
+      "name": "brow_apex",
+      "view": "side",
+      "source_render_pixel": [
+        209,
+        500
+      ],
+      "reference_pixel": [
+        176,
+        143
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 12519,
+      "source_world_m": [
+        0.04112448915839195,
+        -0.11637097597122192,
+        1.633357286453247
+      ],
+      "source_pick_error_pixels": 1.4578322601663576
+    },
+    {
+      "name": "brow_lateral",
+      "view": "side",
+      "source_render_pixel": [
+        250,
+        524
+      ],
+      "reference_pixel": [
+        212,
+        155
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 12383,
+      "source_world_m": [
+        0.04889266937971115,
+        -0.10520954430103302,
+        1.6266915798187256
+      ],
+      "source_pick_error_pixels": 0.5786560912900992
+    },
+    {
+      "name": "upper_lid",
+      "view": "side",
+      "source_render_pixel": [
+        202,
+        532
+      ],
+      "reference_pixel": [
+        169,
+        169
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 12610,
+      "source_world_m": [
+        0.03615005686879158,
+        -0.11876322329044342,
+        1.6248314380645752
+      ],
+      "source_pick_error_pixels": 1.9933478641296463
+    },
+    {
+      "name": "lower_lid",
+      "view": "side",
+      "source_render_pixel": [
+        211,
+        556
+      ],
+      "reference_pixel": [
+        175,
+        184
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 10646,
+      "source_world_m": [
+        0.039581555873155594,
+        -0.11570163816213608,
+        1.6170440912246704
+      ],
+      "source_pick_error_pixels": 2.351299215891531
+    },
+    {
+      "name": "outer_canthus",
+      "view": "side",
+      "source_render_pixel": [
+        231,
+        548
+      ],
+      "reference_pixel": [
+        193,
+        177
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 10895,
+      "source_world_m": [
+        0.04193871468305588,
+        -0.11050374805927277,
+        1.6198567152023315
+      ],
+      "source_pick_error_pixels": 0.4650571249902796
+    },
+    {
+      "name": "infraorbital",
+      "view": "side",
+      "source_render_pixel": [
+        249,
+        582
+      ],
+      "reference_pixel": [
+        201,
+        207
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 11088,
+      "source_world_m": [
+        0.05125231295824051,
+        -0.10516916215419769,
+        1.6100890636444092
+      ],
+      "source_pick_error_pixels": 0.9919436692738259
+    },
+    {
+      "name": "zygomatic_max",
+      "view": "side",
+      "source_render_pixel": [
+        339,
+        607
+      ],
+      "reference_pixel": [
+        245,
+        217
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 11134,
+      "source_world_m": [
+        0.0634235292673111,
+        -0.07846035808324814,
+        1.6027706861495972
+      ],
+      "source_pick_error_pixels": 5.328756626957123
+    },
+    {
+      "name": "malar",
+      "view": "side",
+      "source_render_pixel": [
+        315,
+        649
+      ],
+      "reference_pixel": [
+        244,
+        238
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 21213,
+      "source_world_m": [
+        -0.06636855006217957,
+        -0.08714079111814499,
+        1.5911134481430054
+      ],
+      "source_pick_error_pixels": 1.3793095470668766
+    },
+    {
+      "name": "paranasal",
+      "view": "side",
+      "source_render_pixel": [
+        181,
+        669
+      ],
+      "reference_pixel": [
+        169,
+        236
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 8442,
+      "source_world_m": [
+        0.04016786068677902,
+        -0.12431450933218002,
+        1.5859140157699585
+      ],
+      "source_pick_error_pixels": 2.1671886044246165
+    },
+    {
+      "name": "alar",
+      "view": "side",
+      "source_render_pixel": [
+        143,
+        686
+      ],
+      "reference_pixel": [
+        159,
+        242
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 8116,
+      "source_world_m": [
+        0.014723013155162334,
+        -0.1350940465927124,
+        1.5800949335098267
+      ],
+      "source_pick_error_pixels": 2.344917740016266
+    },
+    {
+      "name": "nostril_lateral",
+      "view": "side",
+      "source_render_pixel": [
+        128,
+        678
+      ],
+      "reference_pixel": [
+        143,
+        240
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 8077,
+      "source_world_m": [
+        0.015119855292141438,
+        -0.14004293084144592,
+        1.5832487344741821
+      ],
+      "source_pick_error_pixels": 1.645880736076905
+    },
+    {
+      "name": "maxilla",
+      "view": "side",
+      "source_render_pixel": [
+        201,
+        713
+      ],
+      "reference_pixel": [
+        174,
+        266
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 8697,
+      "source_world_m": [
+        0.04253574460744858,
+        -0.12025561928749084,
+        1.5731028318405151
+      ],
+      "source_pick_error_pixels": 4.27597777503477
+    },
+    {
+      "name": "mouth_corner",
+      "view": "side",
+      "source_render_pixel": [
+        195,
+        771
+      ],
+      "reference_pixel": [
+        164,
+        284
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 0.85,
+      "vertex": 23918,
+      "source_world_m": [
+        0.020713014528155327,
+        -0.12114091217517853,
+        1.5569833517074585
+      ],
+      "source_pick_error_pixels": 2.0598163251807304
+    },
+    {
+      "name": "nasolabial_upper",
+      "view": "side",
+      "source_render_pixel": [
+        201,
+        684
+      ],
+      "reference_pixel": [
+        177,
+        252
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 8683,
+      "source_world_m": [
+        0.04549214616417885,
+        -0.11863680928945541,
+        1.5797836780548096
+      ],
+      "source_pick_error_pixels": 5.207161656220596
+    },
+    {
+      "name": "cheek_jaw",
+      "view": "side",
+      "source_render_pixel": [
+        377,
+        801
+      ],
+      "reference_pixel": [
+        269,
+        287
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 3181,
+      "source_world_m": [
+        -0.013713035732507706,
+        -0.06832994520664215,
+        1.5477687120437622
+      ],
+      "source_pick_error_pixels": 3.171357078431341
+    },
+    {
+      "name": "mandibular_angle",
+      "view": "side",
+      "source_render_pixel": [
+        470,
+        790
+      ],
+      "reference_pixel": [
+        293,
+        288
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 0.6,
+      "vertex": 14413,
+      "source_world_m": [
+        0.03972048684954643,
+        -0.042382918298244476,
+        1.550171971321106
+      ],
+      "source_pick_error_pixels": 3.8538405432287757
+    }
+  ],
+  "count": 195,
+  "per_view": {
+    "front": 140,
+    "side": 55
+  },
+  "annotation_review": "Reviewed original front mouth and side profile at 5x/6x with pixel grids. Corrected lip-contact line, cupid bow, columella and mentolabial landmark labels; no reference image warp. Uncertain hidden cheek and brow contours remain low-confidence."
+}

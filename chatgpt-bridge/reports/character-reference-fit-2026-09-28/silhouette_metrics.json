@@ -1,0 +1,123 @@
+{
+  "method": "Reference contour annotation point to nearest actual rendered alpha-contour distance, in source-reference pixels. Sparse one-way check, not IoU/full silhouette reconstruction. Neck excluded. FRONT measures only external cranial/temporal points; jaw/chin-over-neck and cheeks-behind-ear are internal occlusion contours, so their alpha distances are not treated as measurements. Face internal contours are reviewed in the clay and landmark boards.",
+  "results": {
+    "front": {
+      "baseline": {
+        "reference_outline_points": 15,
+        "mean_nearest_outline_pixels": 3.0297875248073898,
+        "max_nearest_outline_pixels": 5.024937810560445,
+        "distances": [
+          4.272001872658765,
+          2.692582403567252,
+          3.0413812651491097,
+          1.118033988749895,
+          1.4142135623730951,
+          2.9154759474226504,
+          3.5355339059327378,
+          3.8078865529319543,
+          5.024937810560445,
+          3.0,
+          3.8078865529319543,
+          4.5,
+          4.6097722286464435,
+          1.0,
+          0.7071067811865476
+        ]
+      },
+      "target": {
+        "reference_outline_points": 15,
+        "mean_nearest_outline_pixels": 2.278645626411124,
+        "max_nearest_outline_pixels": 5.5,
+        "distances": [
+          5.5,
+          3.8078865529319543,
+          4.031128874149275,
+          0.0,
+          0.5,
+          1.118033988749895,
+          1.8027756377319946,
+          2.0,
+          2.9154759474226504,
+          1.0,
+          2.0615528128088303,
+          3.5,
+          3.640054944640259,
+          0.5,
+          1.8027756377319946
+        ]
+      }
+    },
+    "side": {
+      "baseline": {
+        "reference_outline_points": 28,
+        "mean_nearest_outline_pixels": 6.200369433185196,
+        "max_nearest_outline_pixels": 16.688319268278637,
+        "distances": [
+          7.5,
+          4.031128874149275,
+          11.10180165558726,
+          14.983324063771697,
+          16.688319268278637,
+          14.534441853748634,
+          1.8027756377319946,
+          4.031128874149275,
+          1.0,
+          3.2015621187164243,
+          0.5,
+          1.5,
+          5.1478150704935,
+          6.726812023536855,
+          1.8027756377319946,
+          5.5901699437494745,
+          3.640054944640259,
+          5.70087712549569,
+          4.924428900898052,
+          8.602325267042627,
+          1.0,
+          14.089002803605371,
+          14.560219778561036,
+          11.543396380615196,
+          0.7071067811865476,
+          2.5,
+          5.70087712549569,
+          0.5
+        ]
+      },
+      "target": {
+        "reference_outline_points": 28,
+        "mean_nearest_outline_pixels": 6.122953462135263,
+        "max_nearest_outline_pixels": 16.140012391568973,
+        "distances": [
+          6.0,
+          3.5355339059327378,
+          11.10180165558726,
+          14.866068747318506,
+          15.787653403846944,
+          12.649110640673518,
+          1.8027756377319946,
+          3.8078865529319543,
+          5.408326913195984,
+          5.315072906367325,
+          1.0,
+          1.5,
+          3.605551275463989,
+          7.7781745930520225,
+          1.4142135623730951,
+          6.103277807866851,
+          3.3541019662496847,
+          7.158910531638177,
+          2.8284271247461903,
+          6.264982043070834,
+          3.5,
+          12.020815280171307,
+          16.140012391568973,
+          10.5,
+          0.5,
+          2.5,
+          4.5,
+          0.5
+        ]
+      }
+    }
+  }
+}

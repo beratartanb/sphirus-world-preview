@@ -1,0 +1,43 @@
+{
+  "reference_target_gate": "FAIL",
+  "target_approved": false,
+  "target_transfer_run": false,
+  "transfer_strength_candidates": [],
+  "conform_run": false,
+  "production_promoted": false,
+  "statuses": {
+    "REFERENCE 3D TARGET": "FAIL",
+    "METAHUMAN HEAD LIKENESS": "PARTIAL",
+    "METAHUMAN CONFORM": "NOT_RUN",
+    "FACIAL DEFORMATION": "NOT_RUN",
+    "BODY PROPORTIONS": "NOT_RUN",
+    "BODY DEFORMATION": "NOT_RUN"
+  },
+  "reference_fit": "Front reprojection improves, side improvement weak. Camera solutions are shape-dependent and the final side azimuth reaches the imposed near-profile bound. This is not reliable scan reconstruction.",
+  "skull": "No crown compression: vertex peak rises about 1.10 mm. Temporal outline slightly closer, but forehead slope/profile remain mismatched.",
+  "eyes": "Aperture fitted around fixed globes. Neutral surface normal flags concentrate here; target is unsafe to transfer.",
+  "brow": "Broad plane remains too angular/generic; photo eyebrow hair is an uncertain proxy for underlying orbital geometry.",
+  "nose": "Projected tip/bridge landmarks shift, but dorsum/columella/upper-lip relationship remains artificial and insufficiently reference-specific.",
+  "midface_cheeks": "Some frontal contour agreement improved, but healthy reference-specific malar/maxillary volume is not established; 3/4 retains planar generic features.",
+  "mouth": "Width and 2D lip-contact alignment change, yet perioral volume looks pinched/pursed and mentolabial transition is unnaturally sharp. Regression relative to relaxed neutral goal.",
+  "jaw_chin": "Frontal taper changes but profile chin/lower-face proportion is not convincingly resolved. Not accepted as the mature reference woman.",
+  "technical_failure": "219 target triangles have normal dot products below zero versus baseline (218 skin, 1 eye shell), all in eye/orbit z band; not a proof of 219 self-intersections. No new zero-area triangle. Severe local area distortion remains.",
+  "over_4mm_decision": "The fitted target contains >4 mm regions. Two-view agreement plus anatomical-coherence justification is insufficient; these displacements are rejected, not transferred.",
+  "stop_reason": "User failure conditions: target still not convincing and 3/4 anatomy/technical diagnostics fail. Stop at independent target; do not force a topology fit or run Unreal.",
+  "working_baseline": "SourceAssets/Characters/SphirusFinalIdentity_20260928/Sphirus_FinalIdentity_EDITABLE.blend / SPH_FinalIdentity_Refinement",
+  "reviewed_boards": [
+    "01_match_front.jpg",
+    "01_match_side.jpg",
+    "02_true_views.jpg",
+    "03_threequarters.jpg",
+    "04_concept.jpg",
+    "05_landmarks_front.jpg",
+    "05_landmarks_side.jpg",
+    "06_silhouette_front.jpg",
+    "06_silhouette_side.jpg",
+    "07_detail_nose.jpg",
+    "07_detail_mouth.jpg",
+    "07_detail_midface.jpg",
+    "08_target_iterations.jpg"
+  ]
+}

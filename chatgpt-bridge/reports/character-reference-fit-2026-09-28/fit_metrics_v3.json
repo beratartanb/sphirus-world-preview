@@ -1,0 +1,4389 @@
+{
+  "target_version": "v3",
+  "method": "Joint two-view perspective reprojection least squares, symmetric volumetric Gaussian basis, robust residuals, smooth displacement prior, locked neck interface. Fitted independent duplicate only.",
+  "camera_estimation_completed_before_geometry": true,
+  "production_head_modified": false,
+  "continuous_midsagittal_field": true,
+  "globe_radial_contact_constraint": true,
+  "basis_count": 121,
+  "landmark_count": 195,
+  "iterations": [
+    {
+      "iteration": 0,
+      "reprojection_rms": {
+        "front": 9.16835537759307,
+        "side": 18.269752447193216
+      },
+      "coefficient_step_max_mm": 3.9361808643928202
+    },
+    {
+      "iteration": 1,
+      "reprojection_rms": {
+        "front": 6.024924447740883,
+        "side": 17.111578598342938
+      },
+      "coefficient_step_max_mm": 1.233467083601018
+    },
+    {
+      "iteration": 2,
+      "reprojection_rms": {
+        "front": 5.6507444850588096,
+        "side": 16.882825301985147
+      },
+      "coefficient_step_max_mm": 0.3803397109204918
+    },
+    {
+      "iteration": 3,
+      "reprojection_rms": {
+        "front": 5.594889619409092,
+        "side": 16.829533986103357
+      },
+      "coefficient_step_max_mm": 0.1396741714149616
+    },
+    {
+      "iteration": 4,
+      "reprojection_rms": {
+        "front": 5.584325224240364,
+        "side": 16.815480087683774
+      },
+      "coefficient_step_max_mm": 0.05015916231004527
+    },
+    {
+      "iteration": 5,
+      "reprojection_rms": {
+        "front": 5.5822342853097275,
+        "side": 16.811498814658684
+      },
+      "coefficient_step_max_mm": 0.010911098675815294
+    },
+    {
+      "iteration": 6,
+      "reprojection_rms": {
+        "front": 5.581754118175372,
+        "side": 16.81046895745334
+      },
+      "coefficient_step_max_mm": 0.0026629744121859306
+    },
+    {
+      "iteration": 7,
+      "reprojection_rms": {
+        "front": 5.581640257585938,
+        "side": 16.810187327346387
+      },
+      "coefficient_step_max_mm": 0.000981873213821995
+    },
+    {
+      "iteration": 8,
+      "reprojection_rms": {
+        "front": 5.581612497538123,
+        "side": 16.81010583668955
+      },
+      "coefficient_step_max_mm": 0.0003604223079033772
+    }
+  ],
+  "max_mm": 7.471179704745035,
+  "mean_mm": 1.6163149642238896,
+  "crown_max_mm": 3.3283112885725603,
+  "landmarks": [
+    {
+      "name": "crown",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 2608,
+      "reference_pixel": [
+        333,
+        20
+      ],
+      "before_pixel": [
+        333.9910063494282,
+        20.780463293103054
+      ],
+      "target_pixel": [
+        333.9872028114109,
+        18.857150610679383
+      ],
+      "before_error_pixels": 1.261434317151798,
+      "target_error_pixels": 1.5101900931763799,
+      "displacement_mm": 1.2903841451727873
+    },
+    {
+      "name": "crown_arc_a_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 2622,
+      "reference_pixel": [
+        304,
+        24
+      ],
+      "before_pixel": [
+        306.08991594074257,
+        27.604934819019604
+      ],
+      "target_pixel": [
+        304.3587316639441,
+        25.9677686083306
+      ],
+      "before_error_pixels": 4.1669297676766535,
+      "target_error_pixels": 2.000200415620263,
+      "displacement_mm": 1.5060813195212968
+    },
+    {
+      "name": "crown_arc_a_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22159,
+      "reference_pixel": [
+        364,
+        24
+      ],
+      "before_pixel": [
+        361.62824159064746,
+        27.810060718985653
+      ],
+      "target_pixel": [
+        363.3431387704865,
+        26.163801993372516
+      ],
+      "before_error_pixels": 4.48796174612618,
+      "target_error_pixels": 2.2613062024769746,
+      "displacement_mm": 1.502090770164621
+    },
+    {
+      "name": "crown_arc_b_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 2706,
+      "reference_pixel": [
+        272,
+        36
+      ],
+      "before_pixel": [
+        278.5585643294614,
+        40.30279914681236
+      ],
+      "target_pixel": [
+        275.5883305151185,
+        39.67364948159883
+      ],
+      "before_error_pixels": 7.844032544647703,
+      "target_error_pixels": 5.135349686183216,
+      "displacement_mm": 1.8632995021899068
+    },
+    {
+      "name": "crown_arc_b_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22210,
+      "reference_pixel": [
+        396,
+        36
+      ],
+      "before_pixel": [
+        388.64477862449075,
+        40.473717580270886
+      ],
+      "target_pixel": [
+        391.6005779913102,
+        39.81946932547589
+      ],
+      "before_error_pixels": 8.6089157546565,
+      "target_error_pixels": 5.82608444315694,
+      "displacement_mm": 1.8558270427235537
+    },
+    {
+      "name": "crown_arc_c_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 2796,
+      "reference_pixel": [
+        246,
+        58
+      ],
+      "before_pixel": [
+        254.2686965149993,
+        55.92385836920781
+      ],
+      "target_pixel": [
+        250.53171533079188,
+        56.777803201278175
+      ],
+      "before_error_pixels": 8.525356656954015,
+      "target_error_pixels": 4.693634929789498,
+      "displacement_mm": 2.327020393863864
+    },
+    {
+      "name": "crown_arc_c_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22221,
+      "reference_pixel": [
+        422,
+        58
+      ],
+      "before_pixel": [
+        412.8445555822475,
+        55.807116176871205
+      ],
+      "target_pixel": [
+        416.5786286941126,
+        56.62922355523682
+      ],
+      "before_error_pixels": 9.414398650380994,
+      "target_error_pixels": 5.5919848799703535,
+      "displacement_mm": 2.3173211817237704
+    },
+    {
+      "name": "frontal_arc_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 2720,
+      "reference_pixel": [
+        228,
+        88
+      ],
+      "before_pixel": [
+        236.64787284011186,
+        81.33894235873359
+      ],
+      "target_pixel": [
+        232.71874413813754,
+        83.84658740018259
+      ],
+      "before_error_pixels": 10.91583224307785,
+      "target_error_pixels": 6.286285267590824,
+      "displacement_mm": 2.810714948547133
+    },
+    {
+      "name": "frontal_arc_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 21447,
+      "reference_pixel": [
+        440,
+        88
+      ],
+      "before_pixel": [
+        430.76019404865184,
+        80.87875096596036
+      ],
+      "target_pixel": [
+        434.69704452823794,
+        83.35857875694225
+      ],
+      "before_error_pixels": 11.66559907691754,
+      "target_error_pixels": 7.047278048367251,
+      "displacement_mm": 2.8012178514641004
+    },
+    {
+      "name": "temple_upper_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 2760,
+      "reference_pixel": [
+        217,
+        126
+      ],
+      "before_pixel": [
+        223.31080441265874,
+        114.36102338383253
+      ],
+      "target_pixel": [
+        220.1102226252218,
+        118.37676662804077
+      ],
+      "before_error_pixels": 13.239789613378536,
+      "target_error_pixels": 8.233296534304746,
+      "displacement_mm": 3.0676478854310183
+    },
+    {
+      "name": "temple_upper_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22254,
+      "reference_pixel": [
+        451,
+        126
+      ],
+      "before_pixel": [
+        443.9439841642663,
+        113.81234848323291
+      ],
+      "target_pixel": [
+        447.16737914035537,
+        117.80845007867254
+      ],
+      "before_error_pixels": 14.082833840114715,
+      "target_error_pixels": 9.043808532216014,
+      "displacement_mm": 3.0629042739674053
+    },
+    {
+      "name": "temple_mid_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 1495,
+      "reference_pixel": [
+        212,
+        157
+      ],
+      "before_pixel": [
+        217.53269616536056,
+        150.52957561711787
+      ],
+      "target_pixel": [
+        215.89875353420774,
+        155.3643223379753
+      ],
+      "before_error_pixels": 8.513349432085532,
+      "target_error_pixels": 4.227968842664756,
+      "displacement_mm": 3.085873923951707
+    },
+    {
+      "name": "temple_mid_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22258,
+      "reference_pixel": [
+        456,
+        157
+      ],
+      "before_pixel": [
+        450.7114407086026,
+        145.54476838501688
+      ],
+      "target_pixel": [
+        452.41293033236735,
+        150.5707239450697
+      ],
+      "before_error_pixels": 12.617099140909318,
+      "target_error_pixels": 7.362245539979665,
+      "displacement_mm": 3.17544492686818
+    },
+    {
+      "name": "temple_lower_R",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 1483,
+      "reference_pixel": [
+        215,
+        188
+      ],
+      "before_pixel": [
+        215.04748695743606,
+        179.57552947573242
+      ],
+      "target_pixel": [
+        215.75542068551397,
+        184.0525379890941
+      ],
+      "before_error_pixels": 8.424604360169072,
+      "target_error_pixels": 4.01909401975714,
+      "displacement_mm": 2.737937160815797
+    },
+    {
+      "name": "temple_lower_L",
+      "view": "front",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 12165,
+      "reference_pixel": [
+        453,
+        188
+      ],
+      "before_pixel": [
+        451.9613597720646,
+        179.4596378271713
+      ],
+      "target_pixel": [
+        451.63094126683535,
+        183.43462541141955
+      ],
+      "before_error_pixels": 8.60328771843469,
+      "target_error_pixels": 4.766231944514508,
+      "displacement_mm": 2.418190380632259
+    },
+    {
+      "name": "orbit_outer_contour_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "silhouette",
+      "vertex": 4833,
+      "reference_pixel": [
+        222,
+        215
+      ],
+      "before_pixel": [
+        214.87644020734595,
+        205.74498394090512
+      ],
+      "target_pixel": [
+        218.47377193789572,
+        210.36544253857207
+      ],
+      "before_error_pixels": 11.679059310304988,
+      "target_error_pixels": 5.823521890509988,
+      "displacement_mm": 3.4831856524007323
+    },
+    {
+      "name": "orbit_outer_contour_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "silhouette",
+      "vertex": 11444,
+      "reference_pixel": [
+        446,
+        215
+      ],
+      "before_pixel": [
+        452.77536626788185,
+        206.88941903668294
+      ],
+      "target_pixel": [
+        450.10900455342596,
+        210.3794079732458
+      ],
+      "before_error_pixels": 10.568212319331607,
+      "target_error_pixels": 6.183347725769572,
+      "displacement_mm": 2.6335591373512317
+    },
+    {
+      "name": "zyg_contour_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "silhouette",
+      "vertex": 21140,
+      "reference_pixel": [
+        231,
+        244
+      ],
+      "before_pixel": [
+        220.14635842934342,
+        234.00918381558625
+      ],
+      "target_pixel": [
+        228.45080566590997,
+        240.65029619737632
+      ],
+      "before_error_pixels": 14.751879316718538,
+      "target_error_pixels": 4.20938324677954,
+      "displacement_mm": 6.096559757387389
+    },
+    {
+      "name": "zyg_contour_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "silhouette",
+      "vertex": 11139,
+      "reference_pixel": [
+        437,
+        244
+      ],
+      "before_pixel": [
+        447.64057428350736,
+        236.05635514942674
+      ],
+      "target_pixel": [
+        440.1552975178388,
+        241.76073517420826
+      ],
+      "before_error_pixels": 13.278678947654294,
+      "target_error_pixels": 3.86913548303852,
+      "displacement_mm": 5.431444158400393
+    },
+    {
+      "name": "cheek_contour_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "silhouette",
+      "vertex": 21176,
+      "reference_pixel": [
+        240,
+        274
+      ],
+      "before_pixel": [
+        228.56634367217276,
+        261.02088276968044
+      ],
+      "target_pixel": [
+        237.01500027069855,
+        271.1916696676329
+      ],
+      "before_error_pixels": 17.29699341218704,
+      "target_error_pixels": 4.098407329637081,
+      "displacement_mm": 7.42079312949924
+    },
+    {
+      "name": "cheek_contour_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "silhouette",
+      "vertex": 9676,
+      "reference_pixel": [
+        428,
+        274
+      ],
+      "before_pixel": [
+        439.42284877990784,
+        259.56782075270496
+      ],
+      "target_pixel": [
+        431.40384770496945,
+        269.877078396402
+      ],
+      "before_error_pixels": 18.405685862653844,
+      "target_error_pixels": 5.346462545276167,
+      "displacement_mm": 7.301130741906502
+    },
+    {
+      "name": "jaw_upper_R",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 21069,
+      "reference_pixel": [
+        247,
+        297
+      ],
+      "before_pixel": [
+        240.19774387824128,
+        289.8020113190113
+      ],
+      "target_pixel": [
+        248.25614643087323,
+        297.8767496903129
+      ],
+      "before_error_pixels": 9.903622034268352,
+      "target_error_pixels": 1.5318596134304718,
+      "displacement_mm": 6.433486645963624
+    },
+    {
+      "name": "jaw_upper_L",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 10395,
+      "reference_pixel": [
+        421,
+        297
+      ],
+      "before_pixel": [
+        428.0424279640799,
+        290.63467743883575
+      ],
+      "target_pixel": [
+        419.9758440083994,
+        298.6182294644212
+      ],
+      "before_error_pixels": 9.492793210479244,
+      "target_error_pixels": 1.9150880122470204,
+      "displacement_mm": 6.392120528788002
+    },
+    {
+      "name": "mandibular_angle_R",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 20037,
+      "reference_pixel": [
+        263,
+        326
+      ],
+      "before_pixel": [
+        252.58862802865312,
+        320.95952462074473
+      ],
+      "target_pixel": [
+        261.2859008244777,
+        324.34439981045364
+      ],
+      "before_error_pixels": 11.567327192339032,
+      "target_error_pixels": 2.3830962991772084,
+      "displacement_mm": 5.285735175483984
+    },
+    {
+      "name": "mandibular_angle_L",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 10446,
+      "reference_pixel": [
+        405,
+        326
+      ],
+      "before_pixel": [
+        414.98316065766323,
+        320.86147648494665
+      ],
+      "target_pixel": [
+        406.19389761938055,
+        324.24062712142734
+      ],
+      "before_error_pixels": 11.227997178102212,
+      "target_error_pixels": 2.126213641998283,
+      "displacement_mm": 5.330691097476588
+    },
+    {
+      "name": "jaw_taper_R",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 15458,
+      "reference_pixel": [
+        282,
+        345
+      ],
+      "before_pixel": [
+        270.1603387649924,
+        345.4398872496131
+      ],
+      "target_pixel": [
+        281.81993592896725,
+        343.3462956948373
+      ],
+      "before_error_pixels": 11.84783013686954,
+      "target_error_pixels": 1.6634785837486912,
+      "displacement_mm": 6.917344896938457
+    },
+    {
+      "name": "jaw_taper_L",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 10482,
+      "reference_pixel": [
+        386,
+        345
+      ],
+      "before_pixel": [
+        398.9972138360917,
+        346.1971849307082
+      ],
+      "target_pixel": [
+        389.1032268344131,
+        347.1446884834816
+      ],
+      "before_error_pixels": 13.052234263121713,
+      "target_error_pixels": 3.772228184641021,
+      "displacement_mm": 5.623002362175661
+    },
+    {
+      "name": "chin_lateral_R",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 15508,
+      "reference_pixel": [
+        306,
+        363
+      ],
+      "before_pixel": [
+        292.89848614608377,
+        370.8497073055583
+      ],
+      "target_pixel": [
+        303.6442118823278,
+        366.91829942471855
+      ],
+      "before_error_pixels": 15.273099555993676,
+      "target_error_pixels": 4.571958884014084,
+      "displacement_mm": 6.705911465029134
+    },
+    {
+      "name": "chin_lateral_L",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 17533,
+      "reference_pixel": [
+        362,
+        363
+      ],
+      "before_pixel": [
+        375.0649379807783,
+        368.5997955745716
+      ],
+      "target_pixel": [
+        364.1237511057284,
+        364.5720554184304
+      ],
+      "before_error_pixels": 14.214440366000193,
+      "target_error_pixels": 2.642286320158919,
+      "displacement_mm": 6.831061113348808
+    },
+    {
+      "name": "chin_lower",
+      "view": "front",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 15842,
+      "reference_pixel": [
+        334,
+        373
+      ],
+      "before_pixel": [
+        333.6476595291029,
+        384.42957206946863
+      ],
+      "target_pixel": [
+        333.6427591659063,
+        380.87701875589084
+      ],
+      "before_error_pixels": 11.43500159591635,
+      "target_error_pixels": 7.88511543949739,
+      "displacement_mm": 3.7762787550125467
+    },
+    {
+      "name": "brow_lateral_R",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 2025,
+      "reference_pixel": [
+        249,
+        166
+      ],
+      "before_pixel": [
+        255.97794837384458,
+        172.13267495222914
+      ],
+      "target_pixel": [
+        253.4637961521501,
+        167.77966866489675
+      ],
+      "before_error_pixels": 9.289858210852248,
+      "target_error_pixels": 4.8054860986965195,
+      "displacement_mm": 2.818361752819557
+    },
+    {
+      "name": "brow_lateral_L",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 12517,
+      "reference_pixel": [
+        419,
+        166
+      ],
+      "before_pixel": [
+        411.0620364821466,
+        168.86846484112732
+      ],
+      "target_pixel": [
+        413.72028573742443,
+        164.22679175775363
+      ],
+      "before_error_pixels": 8.44034095019598,
+      "target_error_pixels": 5.569528720171422,
+      "displacement_mm": 2.9943524841706743
+    },
+    {
+      "name": "brow_outer_R",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 2109,
+      "reference_pixel": [
+        261,
+        158
+      ],
+      "before_pixel": [
+        262.70905001335166,
+        163.6291573814774
+      ],
+      "target_pixel": [
+        261.2468917668192,
+        157.67196346239024
+      ],
+      "before_error_pixels": 5.88287895282393,
+      "target_error_pixels": 0.41056487249898616,
+      "displacement_mm": 3.95738551842091
+    },
+    {
+      "name": "brow_outer_L",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 12673,
+      "reference_pixel": [
+        407,
+        158
+      ],
+      "before_pixel": [
+        403.8977653498876,
+        163.53442735959112
+      ],
+      "target_pixel": [
+        405.33677962370734,
+        157.50974527064992
+      ],
+      "before_error_pixels": 6.344583991322733,
+      "target_error_pixels": 1.733969930467426,
+      "displacement_mm": 3.9836294016482423
+    },
+    {
+      "name": "brow_apex_R",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 2203,
+      "reference_pixel": [
+        278,
+        154
+      ],
+      "before_pixel": [
+        275.53949427256265,
+        159.25486290010573
+      ],
+      "target_pixel": [
+        277.44542825781815,
+        153.62736236060294
+      ],
+      "before_error_pixels": 5.80238507285234,
+      "target_error_pixels": 0.6681381799613173,
+      "displacement_mm": 4.471818220633753
+    },
+    {
+      "name": "brow_apex_L",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 12850,
+      "reference_pixel": [
+        390,
+        154
+      ],
+      "before_pixel": [
+        391.8716378988081,
+        157.81412522926837
+      ],
+      "target_pixel": [
+        389.98816587930366,
+        152.1931447455301
+      ],
+      "before_error_pixels": 4.248597378994191,
+      "target_error_pixels": 1.806894008241248,
+      "displacement_mm": 4.438557202746079
+    },
+    {
+      "name": "brow_inner_R",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 2238,
+      "reference_pixel": [
+        304,
+        160
+      ],
+      "before_pixel": [
+        292.8765047915619,
+        162.29346033872287
+      ],
+      "target_pixel": [
+        297.96037599846585,
+        158.2439404881209
+      ],
+      "before_error_pixels": 11.357469171318062,
+      "target_error_pixels": 6.289737918957232,
+      "displacement_mm": 4.554592374396631
+    },
+    {
+      "name": "brow_inner_L",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 13246,
+      "reference_pixel": [
+        364,
+        160
+      ],
+      "before_pixel": [
+        374.6139200312616,
+        161.38539853449424
+      ],
+      "target_pixel": [
+        369.46225793929693,
+        157.36283925856412
+      ],
+      "before_error_pixels": 10.70395382694616,
+      "target_error_pixels": 6.065548497175091,
+      "displacement_mm": 4.572041921029099
+    },
+    {
+      "name": "brow_medial_R",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 21852,
+      "reference_pixel": [
+        317,
+        169
+      ],
+      "before_pixel": [
+        304.60358580252705,
+        170.4441109960811
+      ],
+      "target_pixel": [
+        309.97523820859664,
+        168.18299678686952
+      ],
+      "before_error_pixels": 12.480246052234357,
+      "target_error_pixels": 7.07211230653375,
+      "displacement_mm": 3.5715903679328487
+    },
+    {
+      "name": "brow_medial_L",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 13261,
+      "reference_pixel": [
+        351,
+        169
+      ],
+      "before_pixel": [
+        362.30921588200795,
+        170.96465734893724
+      ],
+      "target_pixel": [
+        356.9850968756234,
+        168.79243783256362
+      ],
+      "before_error_pixels": 11.478599320674709,
+      "target_error_pixels": 5.988694904897729,
+      "displacement_mm": 3.506680575269449
+    },
+    {
+      "name": "glabella",
+      "view": "front",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 14038,
+      "reference_pixel": [
+        333,
+        169
+      ],
+      "before_pixel": [
+        333.9413191636883,
+        167.8212760498372
+      ],
+      "target_pixel": [
+        333.88522578721006,
+        166.92772913582587
+      ],
+      "before_error_pixels": 1.5084667442851647,
+      "target_error_pixels": 2.253426552796133,
+      "displacement_mm": 2.306344982200143
+    },
+    {
+      "name": "outer_canthus_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 5402,
+      "reference_pixel": [
+        252,
+        188
+      ],
+      "before_pixel": [
+        256.1846352868777,
+        189.8118229942475
+      ],
+      "target_pixel": [
+        255.74542112684847,
+        188.58491151610409
+      ],
+      "before_error_pixels": 4.560030158525949,
+      "target_error_pixels": 3.790817972300179,
+      "displacement_mm": 0.9152529353636613
+    },
+    {
+      "name": "outer_canthus_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10873,
+      "reference_pixel": [
+        416,
+        188
+      ],
+      "before_pixel": [
+        411.764777163704,
+        190.37778195933294
+      ],
+      "target_pixel": [
+        412.28675630018165,
+        189.27287281688817
+      ],
+      "before_error_pixels": 4.857052554709707,
+      "target_error_pixels": 3.925351446967963,
+      "displacement_mm": 0.8849818651790461
+    },
+    {
+      "name": "upper_lid_outer_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 5432,
+      "reference_pixel": [
+        265,
+        177
+      ],
+      "before_pixel": [
+        265.12837661318645,
+        181.67289696458107
+      ],
+      "target_pixel": [
+        265.42340294928493,
+        180.37624964201427
+      ],
+      "before_error_pixels": 4.67466005142665,
+      "target_error_pixels": 3.4026947707169803,
+      "displacement_mm": 0.7339113947050857
+    },
+    {
+      "name": "upper_lid_outer_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 12614,
+      "reference_pixel": [
+        403,
+        177
+      ],
+      "before_pixel": [
+        403.06102238028654,
+        182.28690551548306
+      ],
+      "target_pixel": [
+        402.895631177748,
+        181.42837270645487
+      ],
+      "before_error_pixels": 5.287257669202533,
+      "target_error_pixels": 4.429602428924368,
+      "displacement_mm": 0.48153806968963414
+    },
+    {
+      "name": "upper_lid_center_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 5453,
+      "reference_pixel": [
+        281,
+        174
+      ],
+      "before_pixel": [
+        279.906689977209,
+        179.40567941651494
+      ],
+      "target_pixel": [
+        281.95078328366606,
+        177.35057660909047
+      ],
+      "before_error_pixels": 5.51513343084903,
+      "target_error_pixels": 3.4828655538052256,
+      "displacement_mm": 1.6011308115337388
+    },
+    {
+      "name": "upper_lid_center_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 12626,
+      "reference_pixel": [
+        387,
+        174
+      ],
+      "before_pixel": [
+        388.5397697422724,
+        179.23449305507322
+      ],
+      "target_pixel": [
+        386.50970401899366,
+        176.95153502876872
+      ],
+      "before_error_pixels": 5.456263227047191,
+      "target_error_pixels": 2.99198081127532,
+      "displacement_mm": 1.7225835401122582
+    },
+    {
+      "name": "upper_lid_inner_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 23405,
+      "reference_pixel": [
+        297,
+        180
+      ],
+      "before_pixel": [
+        293.59172908516683,
+        183.30131505219168
+      ],
+      "target_pixel": [
+        294.64155581630797,
+        182.90105174534807
+      ],
+      "before_error_pixels": 4.74499649132906,
+      "target_error_pixels": 3.7387645281266173,
+      "displacement_mm": 0.6529827443493971
+    },
+    {
+      "name": "upper_lid_inner_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10831,
+      "reference_pixel": [
+        371,
+        180
+      ],
+      "before_pixel": [
+        374.0529694504544,
+        183.385439291002
+      ],
+      "target_pixel": [
+        371.91008775671287,
+        182.5713613151588
+      ],
+      "before_error_pixels": 4.558708332243672,
+      "target_error_pixels": 2.7276654373316953,
+      "displacement_mm": 1.2974839521526356
+    },
+    {
+      "name": "inner_canthus_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 23650,
+      "reference_pixel": [
+        309,
+        193
+      ],
+      "before_pixel": [
+        304.21327768864546,
+        191.80719884040303
+      ],
+      "target_pixel": [
+        306.88904058383304,
+        192.3928005088802
+      ],
+      "before_error_pixels": 4.933100961094877,
+      "target_error_pixels": 2.196552043253265,
+      "displacement_mm": 1.5250842081482443
+    },
+    {
+      "name": "inner_canthus_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 14151,
+      "reference_pixel": [
+        359,
+        193
+      ],
+      "before_pixel": [
+        362.82694241676825,
+        190.23634647599482
+      ],
+      "target_pixel": [
+        360.1923691619145,
+        190.63565390828717
+      ],
+      "before_error_pixels": 4.720515762287659,
+      "target_error_pixels": 2.64799483754829,
+      "displacement_mm": 1.483761625896565
+    },
+    {
+      "name": "lower_lid_inner_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 23707,
+      "reference_pixel": [
+        298,
+        196
+      ],
+      "before_pixel": [
+        294.45946785304767,
+        194.64678241779671
+      ],
+      "target_pixel": [
+        295.77145717906717,
+        194.9181195443213
+      ],
+      "before_error_pixels": 3.7903252773854357,
+      "target_error_pixels": 2.4772703576942865,
+      "displacement_mm": 0.7348202648693982
+    },
+    {
+      "name": "lower_lid_inner_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 14249,
+      "reference_pixel": [
+        370,
+        196
+      ],
+      "before_pixel": [
+        373.9739834808641,
+        194.35887379681037
+      ],
+      "target_pixel": [
+        372.74044019336793,
+        194.54021539488633
+      ],
+      "before_error_pixels": 4.299516242669202,
+      "target_error_pixels": 3.1049933247518156,
+      "displacement_mm": 0.6884146433302419
+    },
+    {
+      "name": "lower_lid_center_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10171,
+      "reference_pixel": [
+        282,
+        199
+      ],
+      "before_pixel": [
+        280.9059289349268,
+        196.48562622127562
+      ],
+      "target_pixel": [
+        282.92193281289303,
+        196.8233446960366
+      ],
+      "before_error_pixels": 2.7420917188465985,
+      "target_error_pixels": 2.363850338697622,
+      "displacement_mm": 1.249349283845921
+    },
+    {
+      "name": "lower_lid_center_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 13627,
+      "reference_pixel": [
+        386,
+        199
+      ],
+      "before_pixel": [
+        388.0478878853745,
+        196.39713121742543
+      ],
+      "target_pixel": [
+        386.16580670708953,
+        196.63810900629454
+      ],
+      "before_error_pixels": 3.311913448501473,
+      "target_error_pixels": 2.367703725186669,
+      "displacement_mm": 1.1558959994437943
+    },
+    {
+      "name": "lower_lid_outer_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10138,
+      "reference_pixel": [
+        266,
+        196
+      ],
+      "before_pixel": [
+        264.95338080412785,
+        194.7051604276784
+      ],
+      "target_pixel": [
+        265.2130073806993,
+        194.31498934190682
+      ],
+      "before_error_pixels": 1.6649388154578049,
+      "target_error_pixels": 1.859736083620835,
+      "displacement_mm": 0.4057258789943944
+    },
+    {
+      "name": "lower_lid_outer_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10682,
+      "reference_pixel": [
+        402,
+        196
+      ],
+      "before_pixel": [
+        401.6684978448816,
+        195.6522438023436
+      ],
+      "target_pixel": [
+        401.2781450535118,
+        195.5629952969569
+      ],
+      "before_error_pixels": 0.48044568044325975,
+      "target_error_pixels": 0.8438291736194243,
+      "displacement_mm": 0.49000093451473653
+    },
+    {
+      "name": "lid_crease_R",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 2189,
+      "reference_pixel": [
+        281,
+        170
+      ],
+      "before_pixel": [
+        280.05485672031614,
+        175.12267177741586
+      ],
+      "target_pixel": [
+        282.11445370415464,
+        172.81556362452437
+      ],
+      "before_error_pixels": 5.209132553339811,
+      "target_error_pixels": 3.0281026373702766,
+      "displacement_mm": 1.7736376889099024
+    },
+    {
+      "name": "lid_crease_L",
+      "view": "front",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 12586,
+      "reference_pixel": [
+        387,
+        170
+      ],
+      "before_pixel": [
+        387.7005326970955,
+        176.84120226576448
+      ],
+      "target_pixel": [
+        385.8088390418541,
+        175.22917922498146
+      ],
+      "before_error_pixels": 6.8769756798174715,
+      "target_error_pixels": 5.363131528798147,
+      "displacement_mm": 1.3715895886905354
+    },
+    {
+      "name": "infraorbital_medial_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 10033,
+      "reference_pixel": [
+        305,
+        209
+      ],
+      "before_pixel": [
+        298.4024581209653,
+        206.86112429447158
+      ],
+      "target_pixel": [
+        300.3999265486726,
+        209.882832504512
+      ],
+      "before_error_pixels": 6.935585637083299,
+      "target_error_pixels": 4.684022735708047,
+      "displacement_mm": 2.0058363802748578
+    },
+    {
+      "name": "infraorbital_medial_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8516,
+      "reference_pixel": [
+        363,
+        209
+      ],
+      "before_pixel": [
+        369.0225891300406,
+        207.37040478102426
+      ],
+      "target_pixel": [
+        367.08176990205715,
+        210.51162428709523
+      ],
+      "before_error_pixels": 6.239163438073405,
+      "target_error_pixels": 4.352683484779909,
+      "displacement_mm": 2.04417466476219
+    },
+    {
+      "name": "infraorbital_center_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 10078,
+      "reference_pixel": [
+        279,
+        213
+      ],
+      "before_pixel": [
+        276.3144948785909,
+        210.64558506330454
+      ],
+      "target_pixel": [
+        277.50850168826577,
+        214.45244553977633
+      ],
+      "before_error_pixels": 3.5714433288586904,
+      "target_error_pixels": 2.0818658121796023,
+      "displacement_mm": 2.194098240019951
+    },
+    {
+      "name": "infraorbital_center_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8595,
+      "reference_pixel": [
+        389,
+        213
+      ],
+      "before_pixel": [
+        391.6874655610194,
+        211.44398573528997
+      ],
+      "target_pixel": [
+        390.5684697789511,
+        215.51008344538815
+      ],
+      "before_error_pixels": 3.1054229234753805,
+      "target_error_pixels": 2.959833838291363,
+      "displacement_mm": 2.3146235227340086
+    },
+    {
+      "name": "infraorbital_lateral_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 5155,
+      "reference_pixel": [
+        254,
+        222
+      ],
+      "before_pixel": [
+        255.17260121178572,
+        215.7300184370868
+      ],
+      "target_pixel": [
+        256.1724670556952,
+        221.31869277495997
+      ],
+      "before_error_pixels": 6.378688141079844,
+      "target_error_pixels": 2.2767943787204,
+      "displacement_mm": 3.1584447425132107
+    },
+    {
+      "name": "infraorbital_lateral_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8645,
+      "reference_pixel": [
+        414,
+        222
+      ],
+      "before_pixel": [
+        413.1112338370132,
+        216.17271143175446
+      ],
+      "target_pixel": [
+        412.09074534433785,
+        221.91815846591248
+      ],
+      "before_error_pixels": 5.894675338818536,
+      "target_error_pixels": 1.911007947882322,
+      "displacement_mm": 3.2405420852935194
+    },
+    {
+      "name": "malar_max_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 6208,
+      "reference_pixel": [
+        247,
+        240
+      ],
+      "before_pixel": [
+        239.61984591550825,
+        230.4416812990188
+      ],
+      "target_pixel": [
+        243.30087892924175,
+        238.72166455729567
+      ],
+      "before_error_pixels": 12.075931877100304,
+      "target_error_pixels": 3.913775440696842,
+      "displacement_mm": 5.078196171423209
+    },
+    {
+      "name": "malar_max_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 9692,
+      "reference_pixel": [
+        421,
+        240
+      ],
+      "before_pixel": [
+        430.61141111772463,
+        229.65310556249617
+      ],
+      "target_pixel": [
+        426.5284352496868,
+        237.6999166115404
+      ],
+      "before_error_pixels": 14.122232407617728,
+      "target_error_pixels": 5.9878192945218025,
+      "displacement_mm": 5.052878404588793
+    },
+    {
+      "name": "paranasal_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 6828,
+      "reference_pixel": [
+        303,
+        249
+      ],
+      "before_pixel": [
+        302.41562078862506,
+        244.35843018402358
+      ],
+      "target_pixel": [
+        303.9542703323094,
+        249.3362264905837
+      ],
+      "before_error_pixels": 4.678212203317696,
+      "target_error_pixels": 1.0117707843657875,
+      "displacement_mm": 3.3635945044696025
+    },
+    {
+      "name": "paranasal_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 7942,
+      "reference_pixel": [
+        365,
+        249
+      ],
+      "before_pixel": [
+        365.03685469307254,
+        244.66096433852786
+      ],
+      "target_pixel": [
+        363.4727621498686,
+        249.57727131358484
+      ],
+      "before_error_pixels": 4.339192175961838,
+      "target_error_pixels": 1.6326964262722075,
+      "displacement_mm": 3.35324597828522
+    },
+    {
+      "name": "nasolabial_upper_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 6455,
+      "reference_pixel": [
+        293,
+        269
+      ],
+      "before_pixel": [
+        298.047989686663,
+        262.60722303159326
+      ],
+      "target_pixel": [
+        300.1602079852457,
+        266.7771380675506
+      ],
+      "before_error_pixels": 8.145538487076701,
+      "target_error_pixels": 7.49731242264244,
+      "displacement_mm": 3.087709419631603
+    },
+    {
+      "name": "nasolabial_upper_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8224,
+      "reference_pixel": [
+        375,
+        269
+      ],
+      "before_pixel": [
+        370.50805646510736,
+        262.87329012223955
+      ],
+      "target_pixel": [
+        368.09816306695734,
+        266.9581725181762
+      ],
+      "before_error_pixels": 7.596981680043149,
+      "target_error_pixels": 7.19752822264996,
+      "displacement_mm": 3.1684741499001605
+    },
+    {
+      "name": "maxilla_support_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 20571,
+      "reference_pixel": [
+        312,
+        277
+      ],
+      "before_pixel": [
+        306.90546648461645,
+        274.7977415754742
+      ],
+      "target_pixel": [
+        313.0463726987851,
+        276.14661102147403
+      ],
+      "before_error_pixels": 5.550154403956794,
+      "target_error_pixels": 1.3502475970844738,
+      "displacement_mm": 3.405102786838125
+    },
+    {
+      "name": "maxilla_support_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8877,
+      "reference_pixel": [
+        356,
+        277
+      ],
+      "before_pixel": [
+        359.905423384656,
+        275.42798011085495
+      ],
+      "target_pixel": [
+        353.62523776147583,
+        276.60047994865687
+      ],
+      "before_error_pixels": 4.209938045302504,
+      "target_error_pixels": 2.408134539627208,
+      "displacement_mm": 3.4494114240181166
+    },
+    {
+      "name": "cheek_to_mouth_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 21033,
+      "reference_pixel": [
+        274,
+        283
+      ],
+      "before_pixel": [
+        275.5757370993638,
+        281.7288191432736
+      ],
+      "target_pixel": [
+        280.7314100152993,
+        286.92070747334367
+      ],
+      "before_error_pixels": 2.024561230691491,
+      "target_error_pixels": 7.789982534358102,
+      "displacement_mm": 4.0248661402429455
+    },
+    {
+      "name": "cheek_to_mouth_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8782,
+      "reference_pixel": [
+        394,
+        283
+      ],
+      "before_pixel": [
+        390.43946654869296,
+        280.0720618904321
+      ],
+      "target_pixel": [
+        385.3825506269169,
+        285.0445993994527
+      ],
+      "before_error_pixels": 4.609796094333934,
+      "target_error_pixels": 8.856682245733596,
+      "displacement_mm": 3.934013475605058
+    },
+    {
+      "name": "cheek_to_jaw_R",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 19861,
+      "reference_pixel": [
+        266,
+        310
+      ],
+      "before_pixel": [
+        261.4130602457274,
+        306.23017102862997
+      ],
+      "target_pixel": [
+        266.6101363030306,
+        310.9625138485934
+      ],
+      "before_error_pixels": 5.937308041756551,
+      "target_error_pixels": 1.1396048512576185,
+      "displacement_mm": 3.858814392336666
+    },
+    {
+      "name": "cheek_to_jaw_L",
+      "view": "front",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 9643,
+      "reference_pixel": [
+        402,
+        310
+      ],
+      "before_pixel": [
+        406.4102875964826,
+        306.49238701766535
+      ],
+      "target_pixel": [
+        400.82276561166765,
+        310.85336486701107
+      ],
+      "before_error_pixels": 5.63506748118696,
+      "target_error_pixels": 1.4539987624895219,
+      "displacement_mm": 3.885609660225722
+    },
+    {
+      "name": "nasion",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 13943,
+      "reference_pixel": [
+        333,
+        189
+      ],
+      "before_pixel": [
+        333.2775162890371,
+        183.207683325365
+      ],
+      "target_pixel": [
+        333.28612914273447,
+        184.3582574787588
+      ],
+      "before_error_pixels": 5.798960919848972,
+      "target_error_pixels": 4.650553033760683,
+      "displacement_mm": 5.481395418036076
+    },
+    {
+      "name": "upper_bridge",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7783,
+      "reference_pixel": [
+        333,
+        214
+      ],
+      "before_pixel": [
+        333.36911662484613,
+        203.47687997439715
+      ],
+      "target_pixel": [
+        333.33034995333253,
+        209.38256357306167
+      ],
+      "before_error_pixels": 10.529591737383816,
+      "target_error_pixels": 4.629238625139536,
+      "displacement_mm": 5.799917380034225
+    },
+    {
+      "name": "mid_dorsum",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7144,
+      "reference_pixel": [
+        333,
+        231
+      ],
+      "before_pixel": [
+        333.1949929379282,
+        220.71571549054192
+      ],
+      "target_pixel": [
+        333.09128479427443,
+        227.07277704624443
+      ],
+      "before_error_pixels": 10.286132903930476,
+      "target_error_pixels": 3.9282837273000517,
+      "displacement_mm": 3.9928308161415367
+    },
+    {
+      "name": "supratip",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7268,
+      "reference_pixel": [
+        333,
+        241
+      ],
+      "before_pixel": [
+        332.9575677088759,
+        237.22687358641656
+      ],
+      "target_pixel": [
+        332.8834164033534,
+        238.8993253061788
+      ],
+      "before_error_pixels": 3.773365001190725,
+      "target_error_pixels": 2.1039072945992197,
+      "displacement_mm": 0.9806785993313961
+    },
+    {
+      "name": "tip",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7061,
+      "reference_pixel": [
+        334,
+        245
+      ],
+      "before_pixel": [
+        332.72800368423816,
+        247.46379224607995
+      ],
+      "target_pixel": [
+        332.7012249908205,
+        246.8604483739886
+      ],
+      "before_error_pixels": 2.7727688073756465,
+      "target_error_pixels": 2.268939108205863,
+      "displacement_mm": 0.4159198092776507
+    },
+    {
+      "name": "columella",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 20602,
+      "reference_pixel": [
+        334,
+        266
+      ],
+      "before_pixel": [
+        332.9592378883957,
+        263.51452436516263
+      ],
+      "target_pixel": [
+        333.00296642723777,
+        265.34904748674757
+      ],
+      "before_error_pixels": 2.6945825102084484,
+      "target_error_pixels": 1.1907204204701816,
+      "displacement_mm": 2.4243326433909096
+    },
+    {
+      "name": "philtrum_top",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 20620,
+      "reference_pixel": [
+        334,
+        274
+      ],
+      "before_pixel": [
+        332.831032947189,
+        270.7870257897288
+      ],
+      "target_pixel": [
+        332.9083843489344,
+        271.7337916774935
+      ],
+      "before_error_pixels": 3.419018462428315,
+      "target_error_pixels": 2.515417438646913,
+      "displacement_mm": 2.0319055458864237
+    },
+    {
+      "name": "philtrum_lower",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 20735,
+      "reference_pixel": [
+        334,
+        281
+      ],
+      "before_pixel": [
+        332.2859963886913,
+        283.972783036615
+      ],
+      "target_pixel": [
+        332.6373139432613,
+        281.26046204491377
+      ],
+      "before_error_pixels": 3.431508030351269,
+      "target_error_pixels": 1.387354953164746,
+      "displacement_mm": 1.703330399570556
+    },
+    {
+      "name": "nasal_sidewall_upper_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7149,
+      "reference_pixel": [
+        320,
+        224
+      ],
+      "before_pixel": [
+        323.2151348196393,
+        212.80638619980402
+      ],
+      "target_pixel": [
+        319.99720690807993,
+        221.51307368230047
+      ],
+      "before_error_pixels": 11.646204609931713,
+      "target_error_pixels": 2.486927886173824,
+      "displacement_mm": 6.049295410236574
+    },
+    {
+      "name": "nasal_sidewall_upper_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7776,
+      "reference_pixel": [
+        348,
+        224
+      ],
+      "before_pixel": [
+        343.2524755195727,
+        213.60578235874644
+      ],
+      "target_pixel": [
+        346.32833735461475,
+        222.29840676212902
+      ],
+      "before_error_pixels": 11.427105891957202,
+      "target_error_pixels": 2.385346001557148,
+      "displacement_mm": 5.983702980583447
+    },
+    {
+      "name": "nasal_sidewall_lower_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7068,
+      "reference_pixel": [
+        317,
+        243
+      ],
+      "before_pixel": [
+        318.25208361616814,
+        233.00436717549334
+      ],
+      "target_pixel": [
+        316.5166941347374,
+        240.12523550177784
+      ],
+      "before_error_pixels": 10.073747512432083,
+      "target_error_pixels": 2.915108142013903,
+      "displacement_mm": 3.9959177846465264
+    },
+    {
+      "name": "nasal_sidewall_lower_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7614,
+      "reference_pixel": [
+        351,
+        243
+      ],
+      "before_pixel": [
+        349.6702373275769,
+        233.5574804502515
+      ],
+      "target_pixel": [
+        351.27536905268886,
+        241.16739444111917
+      ],
+      "before_error_pixels": 9.535693168949631,
+      "target_error_pixels": 1.8531786879898209,
+      "displacement_mm": 4.237503220339513
+    },
+    {
+      "name": "tip_lateral_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 6970,
+      "reference_pixel": [
+        322,
+        249
+      ],
+      "before_pixel": [
+        322.5596789313466,
+        249.79266375430942
+      ],
+      "target_pixel": [
+        323.407600876425,
+        254.0175857834255
+      ],
+      "before_error_pixels": 0.9703382573047145,
+      "target_error_pixels": 5.211286532263032,
+      "displacement_mm": 2.384769085688691
+    },
+    {
+      "name": "tip_lateral_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7294,
+      "reference_pixel": [
+        346,
+        249
+      ],
+      "before_pixel": [
+        344.9744734306039,
+        247.47626782085783
+      ],
+      "target_pixel": [
+        344.91242695239094,
+        249.0797322437406
+      ],
+      "before_error_pixels": 1.8366993489111656,
+      "target_error_pixels": 1.0904917994086705,
+      "displacement_mm": 1.0079881406215836
+    },
+    {
+      "name": "alar_max_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 20450,
+      "reference_pixel": [
+        308,
+        255
+      ],
+      "before_pixel": [
+        304.3220473064469,
+        253.64066446271764
+      ],
+      "target_pixel": [
+        307.95260764924046,
+        257.4800944978509
+      ],
+      "before_error_pixels": 3.9211132499499675,
+      "target_error_pixels": 2.4805472688866383,
+      "displacement_mm": 3.19003230848429
+    },
+    {
+      "name": "alar_max_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7954,
+      "reference_pixel": [
+        360,
+        255
+      ],
+      "before_pixel": [
+        363.2156268594948,
+        252.92238336515277
+      ],
+      "target_pixel": [
+        359.65299233681543,
+        256.8676570980888
+      ],
+      "before_error_pixels": 3.828413115234359,
+      "target_error_pixels": 1.8996203184716243,
+      "displacement_mm": 3.2234980792709687
+    },
+    {
+      "name": "nostril_lateral_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 6892,
+      "reference_pixel": [
+        313,
+        260
+      ],
+      "before_pixel": [
+        308.170164083222,
+        256.0395550023277
+      ],
+      "target_pixel": [
+        311.9122027117363,
+        259.5638043855191
+      ],
+      "before_error_pixels": 6.245993881087811,
+      "target_error_pixels": 1.1719938372048648,
+      "displacement_mm": 2.910412187277911
+    },
+    {
+      "name": "nostril_lateral_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7963,
+      "reference_pixel": [
+        355,
+        260
+      ],
+      "before_pixel": [
+        359.04443108011947,
+        255.7558884382224
+      ],
+      "target_pixel": [
+        355.19964518763277,
+        259.2736854982032
+      ],
+      "before_error_pixels": 5.862585241226827,
+      "target_error_pixels": 0.7532535804530158,
+      "displacement_mm": 2.9447527594204477
+    },
+    {
+      "name": "nostril_medial_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7017,
+      "reference_pixel": [
+        325,
+        259
+      ],
+      "before_pixel": [
+        322.7070312085413,
+        257.753757888365
+      ],
+      "target_pixel": [
+        324.3511247764234,
+        258.98744505367966
+      ],
+      "before_error_pixels": 2.609755789229334,
+      "target_error_pixels": 0.6489966736807828,
+      "displacement_mm": 1.1436701189761207
+    },
+    {
+      "name": "nostril_medial_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7373,
+      "reference_pixel": [
+        343,
+        259
+      ],
+      "before_pixel": [
+        344.79030218274494,
+        256.9036713861283
+      ],
+      "target_pixel": [
+        343.2671546732555,
+        258.10007418471076
+      ],
+      "before_error_pixels": 2.7567690441672137,
+      "target_error_pixels": 0.9387428255205217,
+      "displacement_mm": 1.0315261912364573
+    },
+    {
+      "name": "nose_cheek_R",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 20444,
+      "reference_pixel": [
+        305,
+        255
+      ],
+      "before_pixel": [
+        301.2862153786334,
+        251.5805786055123
+      ],
+      "target_pixel": [
+        304.1293422292872,
+        255.6314525785052
+      ],
+      "before_error_pixels": 5.04823126322271,
+      "target_error_pixels": 1.0755358258112229,
+      "displacement_mm": 3.2631366876280543
+    },
+    {
+      "name": "nose_cheek_L",
+      "view": "front",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 7951,
+      "reference_pixel": [
+        363,
+        255
+      ],
+      "before_pixel": [
+        366.51796792667903,
+        251.7527811638537
+      ],
+      "target_pixel": [
+        363.6687540107699,
+        255.7685945357787
+      ],
+      "before_error_pixels": 4.787538877436468,
+      "target_error_pixels": 1.0188078755828662,
+      "displacement_mm": 3.2860296382257244
+    },
+    {
+      "name": "mouth_corner_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 16278,
+      "reference_pixel": [
+        291,
+        302
+      ],
+      "before_pixel": [
+        280.33096776326295,
+        300.8041112099284
+      ],
+      "target_pixel": [
+        290.3700191278167,
+        303.32805266993205
+      ],
+      "before_error_pixels": 10.7358464438885,
+      "target_error_pixels": 1.4698978853751952,
+      "displacement_mm": 5.7280884427831085
+    },
+    {
+      "name": "mouth_corner_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 9442,
+      "reference_pixel": [
+        375,
+        303
+      ],
+      "before_pixel": [
+        386.3659357443188,
+        300.56147727159436
+      ],
+      "target_pixel": [
+        376.3447656312774,
+        303.14559674806014
+      ],
+      "before_error_pixels": 11.624581215722761,
+      "target_error_pixels": 1.3526244919084756,
+      "displacement_mm": 5.713909575943981
+    },
+    {
+      "name": "upper_lip_lateral_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 19692,
+      "reference_pixel": [
+        310,
+        293
+      ],
+      "before_pixel": [
+        297.6141168712832,
+        294.62028678626325
+      ],
+      "target_pixel": [
+        308.4427746344086,
+        294.55957841099496
+      ],
+      "before_error_pixels": 12.49141425731972,
+      "target_error_pixels": 2.2039137141192473,
+      "displacement_mm": 5.8007100842412065
+    },
+    {
+      "name": "upper_lip_lateral_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 9004,
+      "reference_pixel": [
+        358,
+        294
+      ],
+      "before_pixel": [
+        369.7114312243147,
+        294.94429470127363
+      ],
+      "target_pixel": [
+        358.8653519058356,
+        295.06183656594004
+      ],
+      "before_error_pixels": 11.74943887190818,
+      "target_error_pixels": 1.3697922520224228,
+      "displacement_mm": 5.813140535172563
+    },
+    {
+      "name": "cupid_peak_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 21236,
+      "reference_pixel": [
+        324,
+        283
+      ],
+      "before_pixel": [
+        318.8659518478684,
+        287.86740674729054
+      ],
+      "target_pixel": [
+        324.12961200442896,
+        285.8887572682472
+      ],
+      "before_error_pixels": 7.0746094501375305,
+      "target_error_pixels": 2.8916635050681854,
+      "displacement_mm": 2.998781410693769
+    },
+    {
+      "name": "cupid_peak_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 9153,
+      "reference_pixel": [
+        344,
+        283
+      ],
+      "before_pixel": [
+        346.68131146068146,
+        288.57696628087433
+      ],
+      "target_pixel": [
+        341.9952342537541,
+        286.47126520714687
+      ],
+      "before_error_pixels": 6.188051716589882,
+      "target_error_pixels": 4.008586762896521,
+      "displacement_mm": 2.7420714099569397
+    },
+    {
+      "name": "upper_lip_medial_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 21247,
+      "reference_pixel": [
+        329,
+        285
+      ],
+      "before_pixel": [
+        324.40416870757645,
+        291.9407501669909
+      ],
+      "target_pixel": [
+        327.66133041059237,
+        289.6865388176768
+      ],
+      "before_error_pixels": 8.324402570094955,
+      "target_error_pixels": 4.873980135289477,
+      "displacement_mm": 2.1193908727428576
+    },
+    {
+      "name": "upper_lip_medial_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 21387,
+      "reference_pixel": [
+        339,
+        285
+      ],
+      "before_pixel": [
+        340.9875446180762,
+        292.10439557260077
+      ],
+      "target_pixel": [
+        338.44554980796363,
+        289.7895086760614
+      ],
+      "before_error_pixels": 7.377179004255825,
+      "target_error_pixels": 4.821494412888679,
+      "displacement_mm": 1.844116925246332
+    },
+    {
+      "name": "contact_lateral_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 19573,
+      "reference_pixel": [
+        310,
+        300
+      ],
+      "before_pixel": [
+        299.41472694283647,
+        300.4814222068891
+      ],
+      "target_pixel": [
+        310.01377118561555,
+        301.27682518224464
+      ],
+      "before_error_pixels": 10.596215033491825,
+      "target_error_pixels": 1.276899444579449,
+      "displacement_mm": 5.782625305001188
+    },
+    {
+      "name": "contact_lateral_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 9048,
+      "reference_pixel": [
+        358,
+        301
+      ],
+      "before_pixel": [
+        367.3887053330095,
+        300.9743730006985
+      ],
+      "target_pixel": [
+        357.2800802784383,
+        302.1889973673046
+      ],
+      "before_error_pixels": 9.388740308112396,
+      "target_error_pixels": 1.3899637207318511,
+      "displacement_mm": 5.556571979748726
+    },
+    {
+      "name": "contact_inner_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 16579,
+      "reference_pixel": [
+        324,
+        299
+      ],
+      "before_pixel": [
+        317.15120478423233,
+        301.0986320471794
+      ],
+      "target_pixel": [
+        322.9495255341563,
+        300.9882700766571
+      ],
+      "before_error_pixels": 7.1631175040599855,
+      "target_error_pixels": 2.248713966052521,
+      "displacement_mm": 3.111751421901057
+    },
+    {
+      "name": "contact_inner_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 9169,
+      "reference_pixel": [
+        344,
+        300
+      ],
+      "before_pixel": [
+        350.5378426017801,
+        299.87590044678734
+      ],
+      "target_pixel": [
+        344.4514761650758,
+        299.52116728683865
+      ],
+      "before_error_pixels": 6.539020307718746,
+      "target_error_pixels": 0.6581120685909173,
+      "displacement_mm": 3.2656696923816133
+    },
+    {
+      "name": "lower_lip_lateral_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 16441,
+      "reference_pixel": [
+        310,
+        309
+      ],
+      "before_pixel": [
+        296.84863146912875,
+        311.23132698997216
+      ],
+      "target_pixel": [
+        307.87447566081266,
+        312.019275411533
+      ],
+      "before_error_pixels": 13.339314613988567,
+      "target_error_pixels": 3.6924081203417174,
+      "displacement_mm": 6.203993737311688
+    },
+    {
+      "name": "lower_lip_lateral_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 18010,
+      "reference_pixel": [
+        358,
+        311
+      ],
+      "before_pixel": [
+        369.9979179809617,
+        311.31882910639496
+      ],
+      "target_pixel": [
+        359.0062550590777,
+        312.11873449091024
+      ],
+      "before_error_pixels": 12.002153468314274,
+      "target_error_pixels": 1.504698011253985,
+      "displacement_mm": 6.16892384897487
+    },
+    {
+      "name": "lower_lip_mid_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 2847,
+      "reference_pixel": [
+        324,
+        316
+      ],
+      "before_pixel": [
+        317.0620885075118,
+        314.8506567192145
+      ],
+      "target_pixel": [
+        319.6927002354139,
+        316.9285567613845
+      ],
+      "before_error_pixels": 7.0324679775087775,
+      "target_error_pixels": 4.406251118708107,
+      "displacement_mm": 2.037358782682337
+    },
+    {
+      "name": "lower_lip_mid_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 17950,
+      "reference_pixel": [
+        344,
+        317
+      ],
+      "before_pixel": [
+        350.0635360074207,
+        314.4384850243892
+      ],
+      "target_pixel": [
+        344.31710681191026,
+        315.33941656219844
+      ],
+      "before_error_pixels": 6.582387703832519,
+      "target_error_pixels": 1.690589862758188,
+      "displacement_mm": 3.1307858164077036
+    },
+    {
+      "name": "commissure_support_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 16260,
+      "reference_pixel": [
+        288,
+        309
+      ],
+      "before_pixel": [
+        275.6544157021734,
+        304.9345452450438
+      ],
+      "target_pixel": [
+        284.90425343403376,
+        307.73073946415815
+      ],
+      "before_error_pixels": 12.99774495900493,
+      "target_error_pixels": 3.345843557092486,
+      "displacement_mm": 5.424633929042066
+    },
+    {
+      "name": "commissure_support_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 9538,
+      "reference_pixel": [
+        380,
+        309
+      ],
+      "before_pixel": [
+        391.61343735008995,
+        305.1043900988254
+      ],
+      "target_pixel": [
+        382.11670931414704,
+        307.70872658344075
+      ],
+      "before_error_pixels": 12.249396049870953,
+      "target_error_pixels": 2.479484897495738,
+      "displacement_mm": 5.51309142770953
+    },
+    {
+      "name": "mentolabial_lateral_R",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 16505,
+      "reference_pixel": [
+        316,
+        328
+      ],
+      "before_pixel": [
+        311.75484807438227,
+        327.7295500194707
+      ],
+      "target_pixel": [
+        317.26293518576404,
+        329.4408989528243
+      ],
+      "before_error_pixels": 4.253758110605755,
+      "target_error_pixels": 1.9160362928950376,
+      "displacement_mm": 3.699528950873078
+    },
+    {
+      "name": "mentolabial_lateral_L",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 17959,
+      "reference_pixel": [
+        352,
+        328
+      ],
+      "before_pixel": [
+        354.2788714405939,
+        330.2601924176877
+      ],
+      "target_pixel": [
+        349.653181526391,
+        331.6252433370406
+      ],
+      "before_error_pixels": 3.2096300110335667,
+      "target_error_pixels": 4.318558347507866,
+      "displacement_mm": 3.405391241090812
+    },
+    {
+      "name": "cupid_center",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 21246,
+      "reference_pixel": [
+        334,
+        286
+      ],
+      "before_pixel": [
+        332.6147513263075,
+        293.8225036872176
+      ],
+      "target_pixel": [
+        332.90791456581866,
+        291.25652694510455
+      ],
+      "before_error_pixels": 7.944210333601424,
+      "target_error_pixels": 5.36877324164108,
+      "displacement_mm": 1.3887588873189805
+    },
+    {
+      "name": "lip_contact_center",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 21278,
+      "reference_pixel": [
+        334,
+        299
+      ],
+      "before_pixel": [
+        333.0181223024303,
+        299.80305022873546
+      ],
+      "target_pixel": [
+        333.1884908880426,
+        298.2204936887504
+      ],
+      "before_error_pixels": 1.268453185126218,
+      "target_error_pixels": 1.1252453634953463,
+      "displacement_mm": 0.8635527775282529
+    },
+    {
+      "name": "lower_lip_center",
+      "view": "front",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 17675,
+      "reference_pixel": [
+        334,
+        319
+      ],
+      "before_pixel": [
+        334.01196659028574,
+        315.8805110311779
+      ],
+      "target_pixel": [
+        333.9027306651311,
+        316.32680089350197
+      ],
+      "before_error_pixels": 3.1195119211001425,
+      "target_error_pixels": 2.674968184201022,
+      "displacement_mm": 0.37153791306551215
+    },
+    {
+      "name": "mentolabial_center",
+      "view": "front",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 15955,
+      "reference_pixel": [
+        334,
+        332
+      ],
+      "before_pixel": [
+        333.7979218496477,
+        333.40732259334044
+      ],
+      "target_pixel": [
+        333.76780354322636,
+        333.19120372517506
+      ],
+      "before_error_pixels": 1.4217568218849037,
+      "target_error_pixels": 1.213623297983837,
+      "displacement_mm": 1.4186956227573848
+    },
+    {
+      "name": "chin_center",
+      "view": "front",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 15923,
+      "reference_pixel": [
+        334,
+        350
+      ],
+      "before_pixel": [
+        333.45669336791616,
+        356.3853686243135
+      ],
+      "target_pixel": [
+        333.4767699555848,
+        351.6634860128987
+      ],
+      "before_error_pixels": 6.408440884086686,
+      "target_error_pixels": 1.7438335340531743,
+      "displacement_mm": 4.266008620533541
+    },
+    {
+      "name": "chin_eminence_R",
+      "view": "front",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 15910,
+      "reference_pixel": [
+        315,
+        350
+      ],
+      "before_pixel": [
+        310.2286977389023,
+        359.06745346343774
+      ],
+      "target_pixel": [
+        313.1652819213855,
+        353.0553350858735
+      ],
+      "before_error_pixels": 10.246171849933267,
+      "target_error_pixels": 3.5638831230785954,
+      "displacement_mm": 5.4639742280507315
+    },
+    {
+      "name": "chin_eminence_L",
+      "view": "front",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 17639,
+      "reference_pixel": [
+        353,
+        350
+      ],
+      "before_pixel": [
+        357.3096511278504,
+        358.80004135731787
+      ],
+      "target_pixel": [
+        354.3229798867909,
+        352.82456487263516
+      ],
+      "before_error_pixels": 9.798664232143423,
+      "target_error_pixels": 3.1190451264093273,
+      "displacement_mm": 5.448401950496221
+    },
+    {
+      "name": "chin_shoulders_R",
+      "view": "front",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 19905,
+      "reference_pixel": [
+        296,
+        345
+      ],
+      "before_pixel": [
+        292.95252724299763,
+        351.8806382577953
+      ],
+      "target_pixel": [
+        296.5546727418819,
+        347.64388432048565
+      ],
+      "before_error_pixels": 7.525308833483694,
+      "target_error_pixels": 2.70144149496092,
+      "displacement_mm": 4.30445781728206
+    },
+    {
+      "name": "chin_shoulders_L",
+      "view": "front",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 17219,
+      "reference_pixel": [
+        372,
+        345
+      ],
+      "before_pixel": [
+        375.0350090102211,
+        353.4833566079266
+      ],
+      "target_pixel": [
+        371.4126879415846,
+        348.8982677224925
+      ],
+      "before_error_pixels": 9.009917814795838,
+      "target_error_pixels": 3.9422616212254438,
+      "displacement_mm": 4.464559785038756
+    },
+    {
+      "name": "helix_superior_R",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 4742,
+      "reference_pixel": [
+        203,
+        183
+      ],
+      "before_pixel": [
+        197.33586462689235,
+        198.19083754804615
+      ],
+      "target_pixel": [
+        198.33657501860904,
+        199.75921806423918
+      ],
+      "before_error_pixels": 16.212463567762246,
+      "target_error_pixels": 17.395945581709036,
+      "displacement_mm": 1.133652338030766
+    },
+    {
+      "name": "helix_superior_L",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 11649,
+      "reference_pixel": [
+        465,
+        183
+      ],
+      "before_pixel": [
+        469.99927519851997,
+        198.55156587834455
+      ],
+      "target_pixel": [
+        468.66693857774794,
+        200.58858139565845
+      ],
+      "before_error_pixels": 16.335359003677492,
+      "target_error_pixels": 17.96676470722202,
+      "displacement_mm": 1.471638976583634
+    },
+    {
+      "name": "helix_outer_R",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 4216,
+      "reference_pixel": [
+        200,
+        209
+      ],
+      "before_pixel": [
+        202.35698100399537,
+        232.34842771061028
+      ],
+      "target_pixel": [
+        202.07843871315438,
+        230.44931135157358
+      ],
+      "before_error_pixels": 23.467092619470122,
+      "target_error_pixels": 21.54977644758948,
+      "displacement_mm": 1.2020628771188138
+    },
+    {
+      "name": "helix_outer_L",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 18301,
+      "reference_pixel": [
+        468,
+        209
+      ],
+      "before_pixel": [
+        466.66926554593346,
+        232.2021245109398
+      ],
+      "target_pixel": [
+        466.9697347069409,
+        230.26480532227149
+      ],
+      "before_error_pixels": 23.240254645945537,
+      "target_error_pixels": 21.289748518199733,
+      "displacement_mm": 1.225115936166979
+    },
+    {
+      "name": "tragus_R",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 6112,
+      "reference_pixel": [
+        217,
+        232
+      ],
+      "before_pixel": [
+        216.20238113759956,
+        242.79789655897895
+      ],
+      "target_pixel": [
+        218.6201715611087,
+        243.83385820552076
+      ],
+      "before_error_pixels": 10.827315731429762,
+      "target_error_pixels": 11.944252003193682,
+      "displacement_mm": 1.5716704327113422
+    },
+    {
+      "name": "tragus_L",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 11368,
+      "reference_pixel": [
+        451,
+        232
+      ],
+      "before_pixel": [
+        452.2429246551826,
+        243.2736213620678
+      ],
+      "target_pixel": [
+        450.25722557827,
+        243.93279954849027
+      ],
+      "before_error_pixels": 11.341931066345445,
+      "target_error_pixels": 11.95589473464976,
+      "displacement_mm": 1.2506889125318175
+    },
+    {
+      "name": "lobule_R",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 20101,
+      "reference_pixel": [
+        223,
+        264
+      ],
+      "before_pixel": [
+        222.1251478425625,
+        282.1976734876985
+      ],
+      "target_pixel": [
+        221.95606942695946,
+        280.6643633615605
+      ],
+      "before_error_pixels": 18.218690585831318,
+      "target_error_pixels": 16.697029594734772,
+      "displacement_mm": 0.9362115689710007
+    },
+    {
+      "name": "lobule_L",
+      "view": "front",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 14428,
+      "reference_pixel": [
+        445,
+        264
+      ],
+      "before_pixel": [
+        446.1213668741212,
+        282.91017819501
+      ],
+      "target_pixel": [
+        446.39475280810365,
+        281.3403160428026
+      ],
+      "before_error_pixels": 18.943397346659037,
+      "target_error_pixels": 17.396318457075644,
+      "displacement_mm": 0.9665624236956253
+    },
+    {
+      "name": "jaw_neck_break_R",
+      "view": "front",
+      "region": "neck",
+      "kind": "feature",
+      "vertex": 1118,
+      "reference_pixel": [
+        270,
+        356
+      ],
+      "before_pixel": [
+        268.6222980566531,
+        352.25756120135014
+      ],
+      "target_pixel": [
+        272.50663576794994,
+        347.6827259011651
+      ],
+      "before_error_pixels": 3.9879707629747725,
+      "target_error_pixels": 8.686787168356085,
+      "displacement_mm": 3.6583735397886845
+    },
+    {
+      "name": "jaw_neck_break_L",
+      "view": "front",
+      "region": "neck",
+      "kind": "feature",
+      "vertex": 22880,
+      "reference_pixel": [
+        398,
+        356
+      ],
+      "before_pixel": [
+        399.1641302473598,
+        354.115789942513
+      ],
+      "target_pixel": [
+        395.8578360775084,
+        349.86643757479294
+      ],
+      "before_error_pixels": 2.2148243211490133,
+      "target_error_pixels": 6.496880350963567,
+      "displacement_mm": 3.2891808342071274
+    },
+    {
+      "name": "neck_side_R",
+      "view": "front",
+      "region": "neck",
+      "kind": "feature",
+      "vertex": 1132,
+      "reference_pixel": [
+        264,
+        394
+      ],
+      "before_pixel": [
+        263.02363119663835,
+        393.15720791008334
+      ],
+      "target_pixel": [
+        264.3683318506934,
+        391.39623264637885
+      ],
+      "before_error_pixels": 1.2898040731072102,
+      "target_error_pixels": 2.629690625153177,
+      "displacement_mm": 1.3423695124745543
+    },
+    {
+      "name": "neck_side_L",
+      "view": "front",
+      "region": "neck",
+      "kind": "feature",
+      "vertex": 22917,
+      "reference_pixel": [
+        404,
+        394
+      ],
+      "before_pixel": [
+        405.55413202550915,
+        390.56977972101254
+      ],
+      "target_pixel": [
+        403.9028477270406,
+        388.43621219448227
+      ],
+      "before_error_pixels": 3.76586477652743,
+      "target_error_pixels": 5.564635954756521,
+      "displacement_mm": 1.6306567429711598
+    },
+    {
+      "name": "crown",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22153,
+      "reference_pixel": [
+        292,
+        27
+      ],
+      "before_pixel": [
+        307.89420700212145,
+        34.58106862556616
+      ],
+      "target_pixel": [
+        307.0009078926614,
+        32.97715173523579
+      ],
+      "before_error_pixels": 17.609611515641966,
+      "target_error_pixels": 16.147866127452996,
+      "displacement_mm": 1.3323238238791604
+    },
+    {
+      "name": "crown_front",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 22062,
+      "reference_pixel": [
+        216,
+        46
+      ],
+      "before_pixel": [
+        243.48285260402753,
+        39.09663032499418
+      ],
+      "target_pixel": [
+        242.43989043754738,
+        38.52926382480081
+      ],
+      "before_error_pixels": 28.336614125976528,
+      "target_error_pixels": 27.475074255567336,
+      "displacement_mm": 0.8588651704203205
+    },
+    {
+      "name": "frontal_upper",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 21729,
+      "reference_pixel": [
+        180,
+        72
+      ],
+      "before_pixel": [
+        214.09839347994674,
+        54.82064575897556
+      ],
+      "target_pixel": [
+        213.49007096658926,
+        54.852754972957
+      ],
+      "before_error_pixels": 38.18154855492216,
+      "target_error_pixels": 37.6246310993827,
+      "displacement_mm": 0.6448156158721922
+    },
+    {
+      "name": "forehead_mid",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 21589,
+      "reference_pixel": [
+        156,
+        105
+      ],
+      "before_pixel": [
+        189.31948379625635,
+        83.57460898101564
+      ],
+      "target_pixel": [
+        189.30697065984407,
+        83.8224479861255
+      ],
+      "before_error_pixels": 39.613575712946755,
+      "target_error_pixels": 39.46951993419826,
+      "displacement_mm": 0.6367297515095718
+    },
+    {
+      "name": "forehead_lower",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 13212,
+      "reference_pixel": [
+        147,
+        129
+      ],
+      "before_pixel": [
+        172.4393243918882,
+        115.68363781687347
+      ],
+      "target_pixel": [
+        171.51687069555956,
+        115.75539445999573
+      ],
+      "before_error_pixels": 28.713842085445826,
+      "target_error_pixels": 27.865687226643075,
+      "displacement_mm": 1.3191631632306224
+    },
+    {
+      "name": "brow_projection",
+      "view": "side",
+      "region": "brow",
+      "kind": "silhouette",
+      "vertex": 13232,
+      "reference_pixel": [
+        144,
+        148
+      ],
+      "before_pixel": [
+        158.87081409389364,
+        156.5054886309009
+      ],
+      "target_pixel": [
+        155.30436113702856,
+        155.24972870833162
+      ],
+      "before_error_pixels": 17.131387820767195,
+      "target_error_pixels": 13.42933904035375,
+      "displacement_mm": 4.289344583034788
+    },
+    {
+      "name": "radix",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 13943,
+      "reference_pixel": [
+        149,
+        176
+      ],
+      "before_pixel": [
+        139.6754095088163,
+        181.90701848133136
+      ],
+      "target_pixel": [
+        147.3173437529332,
+        182.2018538525404
+      ],
+      "before_error_pixels": 11.038154518173032,
+      "target_error_pixels": 6.4260659235696656,
+      "displacement_mm": 5.481395418036076
+    },
+    {
+      "name": "upper_bridge",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 7783,
+      "reference_pixel": [
+        139,
+        189
+      ],
+      "before_pixel": [
+        130.60444804410093,
+        197.46648253322783
+      ],
+      "target_pixel": [
+        137.6865863799564,
+        201.40095490744284
+      ],
+      "before_error_pixels": 11.923364421573828,
+      "target_error_pixels": 12.470314268443545,
+      "displacement_mm": 5.799917380034225
+    },
+    {
+      "name": "mid_dorsum",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 7144,
+      "reference_pixel": [
+        128,
+        207
+      ],
+      "before_pixel": [
+        125.56113809079179,
+        210.42871751075202
+      ],
+      "target_pixel": [
+        128.82311280180957,
+        214.94139119846903
+      ],
+      "before_error_pixels": 4.2076301145329165,
+      "target_error_pixels": 7.9839344218013375,
+      "displacement_mm": 3.9928308161415367
+    },
+    {
+      "name": "supratip",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 7268,
+      "reference_pixel": [
+        116,
+        218
+      ],
+      "before_pixel": [
+        116.75918406332667,
+        222.9316723871132
+      ],
+      "target_pixel": [
+        117.42771060459326,
+        224.12797304475725
+      ],
+      "before_error_pixels": 4.989764821694902,
+      "target_error_pixels": 6.292091163336681,
+      "displacement_mm": 0.9806785993313961
+    },
+    {
+      "name": "tip",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 7061,
+      "reference_pixel": [
+        113,
+        229
+      ],
+      "before_pixel": [
+        113.45664372465212,
+        230.5296225016591
+      ],
+      "target_pixel": [
+        113.82144590298813,
+        230.07924087705823
+      ],
+      "before_error_pixels": 1.5963296930289885,
+      "target_error_pixels": 1.3562943051747265,
+      "displacement_mm": 0.4159198092776507
+    },
+    {
+      "name": "tip_lower",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 7362,
+      "reference_pixel": [
+        120,
+        239
+      ],
+      "before_pixel": [
+        116.03929500917008,
+        233.52837098027214
+      ],
+      "target_pixel": [
+        116.64400135341326,
+        234.2080295835941
+      ],
+      "before_error_pixels": 6.754695267287274,
+      "target_error_pixels": 5.850274129269607,
+      "displacement_mm": 0.6967201946264971
+    },
+    {
+      "name": "columella",
+      "view": "side",
+      "region": "nose",
+      "kind": "silhouette",
+      "vertex": 20602,
+      "reference_pixel": [
+        137,
+        245
+      ],
+      "before_pixel": [
+        144.2313130341284,
+        241.34886964433556
+      ],
+      "target_pixel": [
+        141.16682383839805,
+        242.7945842645201
+      ],
+      "before_error_pixels": 8.100780275480224,
+      "target_error_pixels": 4.714475524015856,
+      "displacement_mm": 2.4243326433909096
+    },
+    {
+      "name": "nasolabial",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 8869,
+      "reference_pixel": [
+        144,
+        255
+      ],
+      "before_pixel": [
+        142.23458432546227,
+        247.539787641541
+      ],
+      "target_pixel": [
+        141.48650333806472,
+        248.3414030736879
+      ],
+      "before_error_pixels": 7.666254687734276,
+      "target_error_pixels": 7.117202996729314,
+      "displacement_mm": 2.187104323910597
+    },
+    {
+      "name": "philtrum",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 20754,
+      "reference_pixel": [
+        139,
+        262
+      ],
+      "before_pixel": [
+        137.85586200644912,
+        251.3206712042601
+      ],
+      "target_pixel": [
+        137.1517031643191,
+        251.00432016623054
+      ],
+      "before_error_pixels": 10.740442973909698,
+      "target_error_pixels": 11.149940636593202,
+      "displacement_mm": 2.4530912683255806
+    },
+    {
+      "name": "upper_vermilion",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 9136,
+      "reference_pixel": [
+        133,
+        267
+      ],
+      "before_pixel": [
+        135.9631392580776,
+        255.27443483208953
+      ],
+      "target_pixel": [
+        136.0439161883146,
+        254.7828692087283
+      ],
+      "before_error_pixels": 12.09417515871488,
+      "target_error_pixels": 12.590619942342899,
+      "displacement_mm": 3.7573436631459836
+    },
+    {
+      "name": "upper_lip_projection",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 9010,
+      "reference_pixel": [
+        135,
+        274
+      ],
+      "before_pixel": [
+        139.23080099648732,
+        260.90557236345984
+      ],
+      "target_pixel": [
+        139.17742435587158,
+        261.13049099874763
+      ],
+      "before_error_pixels": 13.760948811781287,
+      "target_error_pixels": 13.530526086680622,
+      "displacement_mm": 5.414740262773087
+    },
+    {
+      "name": "lip_contact",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 21278,
+      "reference_pixel": [
+        144,
+        281
+      ],
+      "before_pixel": [
+        142.73166767688667,
+        268.4326157257178
+      ],
+      "target_pixel": [
+        142.93041163557467,
+        267.243090281077
+      ],
+      "before_error_pixels": 12.63122378787301,
+      "target_error_pixels": 13.798426877144804,
+      "displacement_mm": 0.8635527775282529
+    },
+    {
+      "name": "lower_lip_projection",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 17969,
+      "reference_pixel": [
+        138,
+        290
+      ],
+      "before_pixel": [
+        137.93520849137218,
+        278.2743001577885
+      ],
+      "target_pixel": [
+        137.06868713405783,
+        279.19207401184144
+      ],
+      "before_error_pixels": 11.7258788467743,
+      "target_error_pixels": 10.84797713031248,
+      "displacement_mm": 3.7390525556882523
+    },
+    {
+      "name": "lower_lip_lower",
+      "view": "side",
+      "region": "mouth",
+      "kind": "silhouette",
+      "vertex": 18053,
+      "reference_pixel": [
+        143,
+        298
+      ],
+      "before_pixel": [
+        151.45306386371297,
+        287.2889373781685
+      ],
+      "target_pixel": [
+        147.29958799340295,
+        288.2240044244131
+      ],
+      "before_error_pixels": 13.644821404943562,
+      "target_error_pixels": 10.679725951863606,
+      "displacement_mm": 5.073975687300856
+    },
+    {
+      "name": "mentolabial",
+      "view": "side",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 17658,
+      "reference_pixel": [
+        153,
+        307
+      ],
+      "before_pixel": [
+        155.02682455680295,
+        297.25858276856536
+      ],
+      "target_pixel": [
+        151.06485673441102,
+        296.6930687207567
+      ],
+      "before_error_pixels": 9.95003655575954,
+      "target_error_pixels": 10.487021114377457,
+      "displacement_mm": 3.2552338521313464
+    },
+    {
+      "name": "chin_projection",
+      "view": "side",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 15990,
+      "reference_pixel": [
+        145,
+        329
+      ],
+      "before_pixel": [
+        158.5070156437168,
+        316.8334899829335
+      ],
+      "target_pixel": [
+        152.73048801838183,
+        311.6708362932354
+      ],
+      "before_error_pixels": 18.1786533493268,
+      "target_error_pixels": 18.97525651416053,
+      "displacement_mm": 5.658819328220599
+    },
+    {
+      "name": "chin_lower",
+      "view": "side",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 15842,
+      "reference_pixel": [
+        163,
+        346
+      ],
+      "before_pixel": [
+        169.6646169931941,
+        332.8324862301461
+      ],
+      "target_pixel": [
+        165.2344368706866,
+        329.93705266983704
+      ],
+      "before_error_pixels": 14.75806689730275,
+      "target_error_pixels": 16.217613420619973,
+      "displacement_mm": 3.7762787550125467
+    },
+    {
+      "name": "submental",
+      "view": "side",
+      "region": "jaw",
+      "kind": "silhouette",
+      "vertex": 17467,
+      "reference_pixel": [
+        199,
+        341
+      ],
+      "before_pixel": [
+        203.86922005527668,
+        327.52264304432225
+      ],
+      "target_pixel": [
+        200.97411478010073,
+        329.24822697031146
+      ],
+      "before_error_pixels": 14.329984454194781,
+      "target_error_pixels": 11.916429771803593,
+      "displacement_mm": 3.1493349341249783
+    },
+    {
+      "name": "jaw_neck_break",
+      "view": "side",
+      "region": "neck",
+      "kind": "silhouette",
+      "vertex": 17494,
+      "reference_pixel": [
+        226,
+        341
+      ],
+      "before_pixel": [
+        238.24666796427215,
+        329.88189131689194
+      ],
+      "target_pixel": [
+        237.60098361885878,
+        331.1513422900748
+      ],
+      "before_error_pixels": 16.54065346098916,
+      "target_error_pixels": 15.217715978828709,
+      "displacement_mm": 3.191914957051775
+    },
+    {
+      "name": "neck_front",
+      "view": "side",
+      "region": "neck",
+      "kind": "silhouette",
+      "vertex": 22704,
+      "reference_pixel": [
+        244,
+        390
+      ],
+      "before_pixel": [
+        248.54961365070133,
+        368.2169594278577
+      ],
+      "target_pixel": [
+        248.54961365070133,
+        368.2169594278577
+      ],
+      "before_error_pixels": 22.253086099196324,
+      "target_error_pixels": 22.253086099196324,
+      "displacement_mm": 0.0
+    },
+    {
+      "name": "crown_rear",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 1547,
+      "reference_pixel": [
+        362,
+        48
+      ],
+      "before_pixel": [
+        360.06183600110194,
+        50.54048593859153
+      ],
+      "target_pixel": [
+        359.5399450246189,
+        48.92404097505522
+      ],
+      "before_error_pixels": 3.1953948880859495,
+      "target_error_pixels": 2.627874084783827,
+      "displacement_mm": 1.25628592230307
+    },
+    {
+      "name": "occiput_upper",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 710,
+      "reference_pixel": [
+        397,
+        84
+      ],
+      "before_pixel": [
+        403.4651392887894,
+        93.49609599129136
+      ],
+      "target_pixel": [
+        402.8152634284946,
+        92.32199295828036
+      ],
+      "before_error_pixels": 11.487987861208234,
+      "target_error_pixels": 10.152480265455058,
+      "displacement_mm": 0.9889793463454098
+    },
+    {
+      "name": "occiput_max",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 14743,
+      "reference_pixel": [
+        420,
+        154
+      ],
+      "before_pixel": [
+        426.4227478747148,
+        152.8428313085367
+      ],
+      "target_pixel": [
+        425.05851702291545,
+        153.4231625020376
+      ],
+      "before_error_pixels": 6.526157341242718,
+      "target_error_pixels": 5.091300027515658,
+      "displacement_mm": 1.096849441064094
+    },
+    {
+      "name": "occiput_lower",
+      "view": "side",
+      "region": "cranium",
+      "kind": "silhouette",
+      "vertex": 14767,
+      "reference_pixel": [
+        402,
+        212
+      ],
+      "before_pixel": [
+        412.624763087842,
+        191.74306155940326
+      ],
+      "target_pixel": [
+        411.089963093607,
+        194.30071783803615
+      ],
+      "before_error_pixels": 22.874202623455435,
+      "target_error_pixels": 19.89703540962697,
+      "displacement_mm": 2.1045152679225567
+    },
+    {
+      "name": "neck_rear_upper",
+      "view": "side",
+      "region": "neck",
+      "kind": "silhouette",
+      "vertex": 14579,
+      "reference_pixel": [
+        381,
+        266
+      ],
+      "before_pixel": [
+        394.2954111830818,
+        230.45501970054366
+      ],
+      "target_pixel": [
+        393.01532943262566,
+        233.8832424609951
+      ],
+      "before_error_pixels": 37.950146021009665,
+      "target_error_pixels": 34.29073134527388,
+      "displacement_mm": 2.5932267351925553
+    },
+    {
+      "name": "neck_rear",
+      "view": "side",
+      "region": "neck",
+      "kind": "silhouette",
+      "vertex": 14788,
+      "reference_pixel": [
+        375,
+        319
+      ],
+      "before_pixel": [
+        381.73272847044086,
+        274.07049796641525
+      ],
+      "target_pixel": [
+        381.15367534570225,
+        276.22310270485394
+      ],
+      "before_error_pixels": 45.431154350760025,
+      "target_error_pixels": 43.21724959388066,
+      "displacement_mm": 1.5861491810759552
+    },
+    {
+      "name": "helix_superior",
+      "view": "side",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 11694,
+      "reference_pixel": [
+        331,
+        169
+      ],
+      "before_pixel": [
+        328.24394798496695,
+        164.09268130079062
+      ],
+      "target_pixel": [
+        328.47946369469037,
+        164.6689256395062
+      ],
+      "before_error_pixels": 5.628285664851937,
+      "target_error_pixels": 5.011118476199773,
+      "displacement_mm": 0.44746208119473535
+    },
+    {
+      "name": "helix_outer",
+      "view": "side",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 18183,
+      "reference_pixel": [
+        353,
+        188
+      ],
+      "before_pixel": [
+        349.84015842891426,
+        187.78422391091993
+      ],
+      "target_pixel": [
+        350.01977382986956,
+        185.83252713756994
+      ],
+      "before_error_pixels": 3.1672003528321753,
+      "target_error_pixels": 3.6850626364420296,
+      "displacement_mm": 1.282330368954368
+    },
+    {
+      "name": "helix_lower",
+      "view": "side",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 12057,
+      "reference_pixel": [
+        345,
+        234
+      ],
+      "before_pixel": [
+        338.0262175671284,
+        226.03472724541265
+      ],
+      "target_pixel": [
+        338.4363766605625,
+        227.15453028668367
+      ],
+      "before_error_pixels": 10.586746973268033,
+      "target_error_pixels": 9.48375489655549,
+      "displacement_mm": 0.888635329528171
+    },
+    {
+      "name": "lobule",
+      "view": "side",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 14496,
+      "reference_pixel": [
+        319,
+        254
+      ],
+      "before_pixel": [
+        321.8825445574163,
+        243.390744745241
+      ],
+      "target_pixel": [
+        322.0688475985455,
+        242.22242078515524
+      ],
+      "before_error_pixels": 10.993878305044213,
+      "target_error_pixels": 12.170833896863517,
+      "displacement_mm": 0.9053422884464739
+    },
+    {
+      "name": "tragus",
+      "view": "side",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 11476,
+      "reference_pixel": [
+        309,
+        219
+      ],
+      "before_pixel": [
+        307.249527567313,
+        200.4307395795445
+      ],
+      "target_pixel": [
+        307.2478454667894,
+        201.14958638010273
+      ],
+      "before_error_pixels": 18.651584015849483,
+      "target_error_pixels": 17.936201156032578,
+      "displacement_mm": 1.172166513971805
+    },
+    {
+      "name": "antitragus",
+      "view": "side",
+      "region": "ear",
+      "kind": "feature",
+      "vertex": 18600,
+      "reference_pixel": [
+        320,
+        236
+      ],
+      "before_pixel": [
+        313.8315125205911,
+        220.73301515492608
+      ],
+      "target_pixel": [
+        313.919235874421,
+        220.0174884276857
+      ],
+      "before_error_pixels": 16.466057938782466,
+      "target_error_pixels": 17.1001862127314,
+      "displacement_mm": 0.5080670076410024
+    },
+    {
+      "name": "brow_medial",
+      "view": "side",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 12857,
+      "reference_pixel": [
+        151,
+        147
+      ],
+      "before_pixel": [
+        166.18913506733753,
+        157.32759749450503
+      ],
+      "target_pixel": [
+        161.30312328337686,
+        153.82871557836512
+      ],
+      "before_error_pixels": 18.367609918068524,
+      "target_error_pixels": 12.360651513681182,
+      "displacement_mm": 4.6051187891142575
+    },
+    {
+      "name": "brow_apex",
+      "view": "side",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 12519,
+      "reference_pixel": [
+        176,
+        143
+      ],
+      "before_pixel": [
+        179.04800495539212,
+        157.20702685687218
+      ],
+      "target_pixel": [
+        177.5193604833508,
+        152.70042303931717
+      ],
+      "before_error_pixels": 14.530311294668886,
+      "target_error_pixels": 9.81868949606226,
+      "displacement_mm": 3.5083607910313193
+    },
+    {
+      "name": "brow_lateral",
+      "view": "side",
+      "region": "brow",
+      "kind": "feature",
+      "vertex": 12383,
+      "reference_pixel": [
+        212,
+        155
+      ],
+      "before_pixel": [
+        195.56559490996108,
+        165.6837856847083
+      ],
+      "target_pixel": [
+        197.4677887924153,
+        163.47554176501149
+      ],
+      "before_error_pixels": 19.601860810144416,
+      "target_error_pixels": 16.82319740097894,
+      "displacement_mm": 2.3837873576518875
+    },
+    {
+      "name": "upper_lid",
+      "view": "side",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 12610,
+      "reference_pixel": [
+        169,
+        169
+      ],
+      "before_pixel": [
+        175.13913892482412,
+        170.4880359205779
+      ],
+      "target_pixel": [
+        174.9557662503189,
+        169.471743311406
+      ],
+      "before_error_pixels": 6.316904118254509,
+      "target_error_pixels": 5.974419919983358,
+      "displacement_mm": 0.736534702719822
+    },
+    {
+      "name": "lower_lid",
+      "view": "side",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10646,
+      "reference_pixel": [
+        175,
+        184
+      ],
+      "before_pixel": [
+        179.46465714940587,
+        181.1901275427468
+      ],
+      "target_pixel": [
+        179.60893532893758,
+        181.22961323950324
+      ],
+      "before_error_pixels": 5.275276929960266,
+      "target_error_pixels": 5.377483395517338,
+      "displacement_mm": 0.3410645067597928
+    },
+    {
+      "name": "outer_canthus",
+      "view": "side",
+      "region": "eye",
+      "kind": "feature",
+      "vertex": 10895,
+      "reference_pixel": [
+        193,
+        177
+      ],
+      "before_pixel": [
+        187.2437792678208,
+        176.85712691109944
+      ],
+      "target_pixel": [
+        188.22297092507483,
+        176.08402720744124
+      ],
+      "before_error_pixels": 5.7579935600087,
+      "target_error_pixels": 4.864053139038296,
+      "displacement_mm": 0.9044617960586336
+    },
+    {
+      "name": "infraorbital",
+      "view": "side",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 11088,
+      "reference_pixel": [
+        201,
+        207
+      ],
+      "before_pixel": [
+        195.25151193530414,
+        189.56821924631512
+      ],
+      "target_pixel": [
+        197.26416756456916,
+        192.84398289021135
+      ],
+      "before_error_pixels": 18.35516535677326,
+      "target_error_pixels": 14.640671582896942,
+      "displacement_mm": 2.831881321526589
+    },
+    {
+      "name": "zygomatic_max",
+      "view": "side",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 11134,
+      "reference_pixel": [
+        245,
+        217
+      ],
+      "before_pixel": [
+        235.7770853101136,
+        199.27856284945378
+      ],
+      "target_pixel": [
+        236.30212357688092,
+        205.24568476488344
+      ],
+      "before_error_pixels": 19.97777490256816,
+      "target_error_pixels": 14.622482036861738,
+      "displacement_mm": 5.6705986815846146
+    },
+    {
+      "name": "malar",
+      "view": "side",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 21213,
+      "reference_pixel": [
+        244,
+        238
+      ],
+      "before_pixel": [
+        212.51313955652552,
+        233.44215529493619
+      ],
+      "target_pixel": [
+        213.71647413276054,
+        238.8530877837861
+      ],
+      "before_error_pixels": 31.81503306524003,
+      "target_error_pixels": 30.29553923795724,
+      "displacement_mm": 6.991237143290692
+    },
+    {
+      "name": "paranasal",
+      "view": "side",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 8442,
+      "reference_pixel": [
+        169,
+        236
+      ],
+      "before_pixel": [
+        165.86963552014146,
+        226.05420464933113
+      ],
+      "target_pixel": [
+        168.5840064789585,
+        234.20945726833702
+      ],
+      "before_error_pixels": 10.426793703442426,
+      "target_error_pixels": 1.8382311833552447,
+      "displacement_mm": 5.892694465295808
+    },
+    {
+      "name": "alar",
+      "view": "side",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 8116,
+      "reference_pixel": [
+        159,
+        242
+      ],
+      "before_pixel": [
+        149.89472909596975,
+        237.32037233347145
+      ],
+      "target_pixel": [
+        152.25640757071696,
+        240.20990202537988
+      ],
+      "before_error_pixels": 10.237425131990916,
+      "target_error_pixels": 6.977140503890015,
+      "displacement_mm": 2.947722799479007
+    },
+    {
+      "name": "nostril_lateral",
+      "view": "side",
+      "region": "nose",
+      "kind": "feature",
+      "vertex": 8077,
+      "reference_pixel": [
+        143,
+        240
+      ],
+      "before_pixel": [
+        142.9306461666639,
+        232.62824611173588
+      ],
+      "target_pixel": [
+        145.75499157972803,
+        235.56941380806305
+      ],
+      "before_error_pixels": 7.372080123230867,
+      "target_error_pixels": 5.2172859427632226,
+      "displacement_mm": 3.251168839042722
+    },
+    {
+      "name": "maxilla",
+      "view": "side",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8697,
+      "reference_pixel": [
+        174,
+        266
+      ],
+      "before_pixel": [
+        171.4738947400986,
+        244.64680855407676
+      ],
+      "target_pixel": [
+        173.51433312251433,
+        252.579408090145
+      ],
+      "before_error_pixels": 21.502092751877694,
+      "target_error_pixels": 13.429376736347532,
+      "displacement_mm": 5.62946274599606
+    },
+    {
+      "name": "mouth_corner",
+      "view": "side",
+      "region": "mouth",
+      "kind": "feature",
+      "vertex": 23918,
+      "reference_pixel": [
+        164,
+        284
+      ],
+      "before_pixel": [
+        169.18401119930564,
+        270.12145777954527
+      ],
+      "target_pixel": [
+        167.51347474360972,
+        274.35187970309033
+      ],
+      "before_error_pixels": 14.81512424110817,
+      "target_error_pixels": 10.267946729391602,
+      "displacement_mm": 3.5778417207156163
+    },
+    {
+      "name": "nasolabial_upper",
+      "view": "side",
+      "region": "cheek",
+      "kind": "feature",
+      "vertex": 8683,
+      "reference_pixel": [
+        177,
+        252
+      ],
+      "before_pixel": [
+        174.15334767472808,
+        234.5326578677748
+      ],
+      "target_pixel": [
+        176.42773624776777,
+        243.4935136502141
+      ],
+      "before_error_pixels": 17.697781517048572,
+      "target_error_pixels": 8.525713801272746,
+      "displacement_mm": 6.301821470118183
+    },
+    {
+      "name": "cheek_jaw",
+      "view": "side",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 3181,
+      "reference_pixel": [
+        269,
+        287
+      ],
+      "before_pixel": [
+        240.83538200572403,
+        287.02140709376414
+      ],
+      "target_pixel": [
+        242.51650833789193,
+        287.3417788843374
+      ],
+      "before_error_pixels": 28.16462612972445,
+      "target_error_pixels": 26.48569695935386,
+      "displacement_mm": 3.482124570206965
+    },
+    {
+      "name": "mandibular_angle",
+      "view": "side",
+      "region": "jaw",
+      "kind": "feature",
+      "vertex": 14413,
+      "reference_pixel": [
+        293,
+        288
+      ],
+      "before_pixel": [
+        284.49372607001436,
+        281.00081085838076
+      ],
+      "target_pixel": [
+        285.47303605975554,
+        278.41522906177045
+      ],
+      "before_error_pixels": 11.015686306904078,
+      "target_error_pixels": 12.187002096334856,
+      "displacement_mm": 3.262036931310959
+    }
+  ],
+  "view_errors": {
+    "front": {
+      "before_rms": 9.16835537759307,
+      "target_rms": 5.671713155741336
+    },
+    "side": {
+      "before_rms": 18.269752447193216,
+      "target_rms": 16.822813783342387
+    }
+  }
+}

@@ -1,0 +1,2954 @@
+{
+  "references": {
+    "front": {
+      "file": "PRIMARY_FRONT.jpg",
+      "size": [
+        640,
+        517
+      ]
+    },
+    "side": {
+      "file": "PRIMARY_SIDE.jpg",
+      "size": [
+        473,
+        506
+      ]
+    },
+    "art": {
+      "file": "PRIMARY_ART_CONCEPT.jpg"
+    }
+  },
+  "annotation_method": "Manual visible anatomical correspondences; front paired annotations use approximate symmetry around x=334. Pixels are reviewable estimates with uncertainty, not scan measurements. Hidden anatomy is regularized to a human-head prior.",
+  "landmarks": [
+    {
+      "name": "crown",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        123
+      ],
+      "reference_pixel": [
+        333,
+        20
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.7
+    },
+    {
+      "name": "crown_arc_a_R",
+      "view": "front",
+      "source_render_pixel": [
+        405,
+        131
+      ],
+      "reference_pixel": [
+        304,
+        24
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "crown_arc_a_L",
+      "view": "front",
+      "source_render_pixel": [
+        537.6,
+        131
+      ],
+      "reference_pixel": [
+        364,
+        24
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "crown_arc_b_R",
+      "view": "front",
+      "source_render_pixel": [
+        344,
+        160
+      ],
+      "reference_pixel": [
+        272,
+        36
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "crown_arc_b_L",
+      "view": "front",
+      "source_render_pixel": [
+        598.6,
+        160
+      ],
+      "reference_pixel": [
+        396,
+        36
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "crown_arc_c_R",
+      "view": "front",
+      "source_render_pixel": [
+        291,
+        201
+      ],
+      "reference_pixel": [
+        246,
+        58
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "crown_arc_c_L",
+      "view": "front",
+      "source_render_pixel": [
+        651.6,
+        201
+      ],
+      "reference_pixel": [
+        422,
+        58
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "frontal_arc_R",
+      "view": "front",
+      "source_render_pixel": [
+        246,
+        260
+      ],
+      "reference_pixel": [
+        228,
+        88
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "frontal_arc_L",
+      "view": "front",
+      "source_render_pixel": [
+        696.6,
+        260
+      ],
+      "reference_pixel": [
+        440,
+        88
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "temple_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        212,
+        348
+      ],
+      "reference_pixel": [
+        217,
+        126
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "temple_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        730.6,
+        348
+      ],
+      "reference_pixel": [
+        451,
+        126
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "temple_mid_R",
+      "view": "front",
+      "source_render_pixel": [
+        201,
+        418
+      ],
+      "reference_pixel": [
+        212,
+        157
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "temple_mid_L",
+      "view": "front",
+      "source_render_pixel": [
+        741.6,
+        418
+      ],
+      "reference_pixel": [
+        456,
+        157
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "temple_lower_R",
+      "view": "front",
+      "source_render_pixel": [
+        197,
+        485
+      ],
+      "reference_pixel": [
+        215,
+        188
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "temple_lower_L",
+      "view": "front",
+      "source_render_pixel": [
+        745.6,
+        485
+      ],
+      "reference_pixel": [
+        453,
+        188
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "orbit_outer_contour_R",
+      "view": "front",
+      "source_render_pixel": [
+        202,
+        551
+      ],
+      "reference_pixel": [
+        222,
+        215
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "orbit_outer_contour_L",
+      "view": "front",
+      "source_render_pixel": [
+        740.6,
+        551
+      ],
+      "reference_pixel": [
+        446,
+        215
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "zyg_contour_R",
+      "view": "front",
+      "source_render_pixel": [
+        224,
+        624
+      ],
+      "reference_pixel": [
+        231,
+        244
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "zyg_contour_L",
+      "view": "front",
+      "source_render_pixel": [
+        718.6,
+        624
+      ],
+      "reference_pixel": [
+        437,
+        244
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "cheek_contour_R",
+      "view": "front",
+      "source_render_pixel": [
+        247,
+        685
+      ],
+      "reference_pixel": [
+        240,
+        274
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "cheek_contour_L",
+      "view": "front",
+      "source_render_pixel": [
+        695.6,
+        685
+      ],
+      "reference_pixel": [
+        428,
+        274
+      ],
+      "region": "cheek",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "jaw_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        271,
+        749
+      ],
+      "reference_pixel": [
+        247,
+        297
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "jaw_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        671.6,
+        749
+      ],
+      "reference_pixel": [
+        421,
+        297
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "mandibular_angle_R",
+      "view": "front",
+      "source_render_pixel": [
+        300,
+        817
+      ],
+      "reference_pixel": [
+        263,
+        326
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "mandibular_angle_L",
+      "view": "front",
+      "source_render_pixel": [
+        642.6,
+        817
+      ],
+      "reference_pixel": [
+        405,
+        326
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "jaw_taper_R",
+      "view": "front",
+      "source_render_pixel": [
+        332,
+        864
+      ],
+      "reference_pixel": [
+        282,
+        345
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "jaw_taper_L",
+      "view": "front",
+      "source_render_pixel": [
+        610.6,
+        864
+      ],
+      "reference_pixel": [
+        386,
+        345
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "chin_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        378,
+        917
+      ],
+      "reference_pixel": [
+        306,
+        363
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "chin_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        564.6,
+        917
+      ],
+      "reference_pixel": [
+        362,
+        363
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "chin_lower",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        944
+      ],
+      "reference_pixel": [
+        334,
+        373
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 1
+    },
+    {
+      "name": "brow_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        310,
+        501
+      ],
+      "reference_pixel": [
+        249,
+        166
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        632.6,
+        501
+      ],
+      "reference_pixel": [
+        419,
+        166
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        327,
+        489
+      ],
+      "reference_pixel": [
+        261,
+        158
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        615.6,
+        489
+      ],
+      "reference_pixel": [
+        407,
+        158
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_apex_R",
+      "view": "front",
+      "source_render_pixel": [
+        351,
+        483
+      ],
+      "reference_pixel": [
+        278,
+        154
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_apex_L",
+      "view": "front",
+      "source_render_pixel": [
+        591.6,
+        483
+      ],
+      "reference_pixel": [
+        390,
+        154
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        387,
+        490
+      ],
+      "reference_pixel": [
+        304,
+        160
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        555.6,
+        490
+      ],
+      "reference_pixel": [
+        364,
+        160
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        413,
+        506
+      ],
+      "reference_pixel": [
+        317,
+        169
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "brow_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        529.6,
+        506
+      ],
+      "reference_pixel": [
+        351,
+        169
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "glabella",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        503
+      ],
+      "reference_pixel": [
+        333,
+        169
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.7
+    },
+    {
+      "name": "outer_canthus_R",
+      "view": "front",
+      "source_render_pixel": [
+        309,
+        542
+      ],
+      "reference_pixel": [
+        252,
+        188
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "outer_canthus_L",
+      "view": "front",
+      "source_render_pixel": [
+        633.6,
+        542
+      ],
+      "reference_pixel": [
+        416,
+        188
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "upper_lid_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        329,
+        529
+      ],
+      "reference_pixel": [
+        265,
+        177
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "upper_lid_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        613.6,
+        529
+      ],
+      "reference_pixel": [
+        403,
+        177
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "upper_lid_center_R",
+      "view": "front",
+      "source_render_pixel": [
+        359,
+        524
+      ],
+      "reference_pixel": [
+        281,
+        174
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "upper_lid_center_L",
+      "view": "front",
+      "source_render_pixel": [
+        583.6,
+        524
+      ],
+      "reference_pixel": [
+        387,
+        174
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "upper_lid_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        389,
+        532
+      ],
+      "reference_pixel": [
+        297,
+        180
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "upper_lid_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        553.6,
+        532
+      ],
+      "reference_pixel": [
+        371,
+        180
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "inner_canthus_R",
+      "view": "front",
+      "source_render_pixel": [
+        410,
+        546
+      ],
+      "reference_pixel": [
+        309,
+        193
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "inner_canthus_L",
+      "view": "front",
+      "source_render_pixel": [
+        532.6,
+        546
+      ],
+      "reference_pixel": [
+        359,
+        193
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lower_lid_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        390,
+        552
+      ],
+      "reference_pixel": [
+        298,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lower_lid_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        552.6,
+        552
+      ],
+      "reference_pixel": [
+        370,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lower_lid_center_R",
+      "view": "front",
+      "source_render_pixel": [
+        360,
+        557
+      ],
+      "reference_pixel": [
+        282,
+        199
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lower_lid_center_L",
+      "view": "front",
+      "source_render_pixel": [
+        582.6,
+        557
+      ],
+      "reference_pixel": [
+        386,
+        199
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lower_lid_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        332,
+        552
+      ],
+      "reference_pixel": [
+        266,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lower_lid_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        610.6,
+        552
+      ],
+      "reference_pixel": [
+        402,
+        196
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lid_crease_R",
+      "view": "front",
+      "source_render_pixel": [
+        360,
+        515
+      ],
+      "reference_pixel": [
+        281,
+        170
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "lid_crease_L",
+      "view": "front",
+      "source_render_pixel": [
+        582.6,
+        515
+      ],
+      "reference_pixel": [
+        387,
+        170
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.95
+    },
+    {
+      "name": "infraorbital_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        398,
+        579
+      ],
+      "reference_pixel": [
+        305,
+        209
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "infraorbital_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        544.6,
+        579
+      ],
+      "reference_pixel": [
+        363,
+        209
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "infraorbital_center_R",
+      "view": "front",
+      "source_render_pixel": [
+        354,
+        588
+      ],
+      "reference_pixel": [
+        279,
+        213
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "infraorbital_center_L",
+      "view": "front",
+      "source_render_pixel": [
+        588.6,
+        588
+      ],
+      "reference_pixel": [
+        389,
+        213
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "infraorbital_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        307,
+        595
+      ],
+      "reference_pixel": [
+        254,
+        222
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "infraorbital_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        635.6,
+        595
+      ],
+      "reference_pixel": [
+        414,
+        222
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "malar_max_R",
+      "view": "front",
+      "source_render_pixel": [
+        273,
+        625
+      ],
+      "reference_pixel": [
+        247,
+        240
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "malar_max_L",
+      "view": "front",
+      "source_render_pixel": [
+        669.6,
+        625
+      ],
+      "reference_pixel": [
+        421,
+        240
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "paranasal_R",
+      "view": "front",
+      "source_render_pixel": [
+        407,
+        662
+      ],
+      "reference_pixel": [
+        303,
+        249
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "paranasal_L",
+      "view": "front",
+      "source_render_pixel": [
+        535.6,
+        662
+      ],
+      "reference_pixel": [
+        365,
+        249
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "nasolabial_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        396,
+        697
+      ],
+      "reference_pixel": [
+        293,
+        269
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "nasolabial_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        546.6,
+        697
+      ],
+      "reference_pixel": [
+        375,
+        269
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "maxilla_support_R",
+      "view": "front",
+      "source_render_pixel": [
+        417,
+        722
+      ],
+      "reference_pixel": [
+        312,
+        277
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "maxilla_support_L",
+      "view": "front",
+      "source_render_pixel": [
+        525.6,
+        722
+      ],
+      "reference_pixel": [
+        356,
+        277
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "cheek_to_mouth_R",
+      "view": "front",
+      "source_render_pixel": [
+        353,
+        731
+      ],
+      "reference_pixel": [
+        274,
+        283
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "cheek_to_mouth_L",
+      "view": "front",
+      "source_render_pixel": [
+        589.6,
+        731
+      ],
+      "reference_pixel": [
+        394,
+        283
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "cheek_to_jaw_R",
+      "view": "front",
+      "source_render_pixel": [
+        321,
+        781
+      ],
+      "reference_pixel": [
+        266,
+        310
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "cheek_to_jaw_L",
+      "view": "front",
+      "source_render_pixel": [
+        621.6,
+        781
+      ],
+      "reference_pixel": [
+        402,
+        310
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.55
+    },
+    {
+      "name": "nasion",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        537
+      ],
+      "reference_pixel": [
+        333,
+        189
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "upper_bridge",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        580
+      ],
+      "reference_pixel": [
+        333,
+        214
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "mid_dorsum",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        620
+      ],
+      "reference_pixel": [
+        333,
+        231
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "supratip",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        650
+      ],
+      "reference_pixel": [
+        333,
+        241
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "tip",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        673
+      ],
+      "reference_pixel": [
+        334,
+        247
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "columella",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        701
+      ],
+      "reference_pixel": [
+        334,
+        266
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "philtrum_top",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        715
+      ],
+      "reference_pixel": [
+        334,
+        274
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "philtrum_lower",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        740
+      ],
+      "reference_pixel": [
+        334,
+        286
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 0.8
+    },
+    {
+      "name": "nasal_sidewall_upper_R",
+      "view": "front",
+      "source_render_pixel": [
+        451,
+        603
+      ],
+      "reference_pixel": [
+        320,
+        224
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nasal_sidewall_upper_L",
+      "view": "front",
+      "source_render_pixel": [
+        491.6,
+        603
+      ],
+      "reference_pixel": [
+        348,
+        224
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nasal_sidewall_lower_R",
+      "view": "front",
+      "source_render_pixel": [
+        440,
+        642
+      ],
+      "reference_pixel": [
+        317,
+        243
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nasal_sidewall_lower_L",
+      "view": "front",
+      "source_render_pixel": [
+        502.6,
+        642
+      ],
+      "reference_pixel": [
+        351,
+        243
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "tip_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        449,
+        671
+      ],
+      "reference_pixel": [
+        322,
+        249
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "tip_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        493.6,
+        671
+      ],
+      "reference_pixel": [
+        346,
+        249
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "alar_max_R",
+      "view": "front",
+      "source_render_pixel": [
+        411,
+        680
+      ],
+      "reference_pixel": [
+        308,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "alar_max_L",
+      "view": "front",
+      "source_render_pixel": [
+        531.6,
+        680
+      ],
+      "reference_pixel": [
+        360,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nostril_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        421,
+        687
+      ],
+      "reference_pixel": [
+        313,
+        260
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nostril_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        521.6,
+        687
+      ],
+      "reference_pixel": [
+        355,
+        260
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nostril_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        450,
+        691
+      ],
+      "reference_pixel": [
+        325,
+        259
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nostril_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        492.6,
+        691
+      ],
+      "reference_pixel": [
+        343,
+        259
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nose_cheek_R",
+      "view": "front",
+      "source_render_pixel": [
+        405,
+        677
+      ],
+      "reference_pixel": [
+        305,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "nose_cheek_L",
+      "view": "front",
+      "source_render_pixel": [
+        537.6,
+        677
+      ],
+      "reference_pixel": [
+        363,
+        255
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "mouth_corner_R",
+      "view": "front",
+      "source_render_pixel": [
+        365,
+        775
+      ],
+      "reference_pixel": [
+        293,
+        303
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "mouth_corner_L",
+      "view": "front",
+      "source_render_pixel": [
+        577.6,
+        775
+      ],
+      "reference_pixel": [
+        375,
+        303
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "upper_lip_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        400,
+        763
+      ],
+      "reference_pixel": [
+        310,
+        297
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "upper_lip_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        542.6,
+        763
+      ],
+      "reference_pixel": [
+        358,
+        297
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "cupid_peak_R",
+      "view": "front",
+      "source_render_pixel": [
+        445,
+        751
+      ],
+      "reference_pixel": [
+        325,
+        289
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "cupid_peak_L",
+      "view": "front",
+      "source_render_pixel": [
+        497.6,
+        751
+      ],
+      "reference_pixel": [
+        343,
+        289
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "upper_lip_medial_R",
+      "view": "front",
+      "source_render_pixel": [
+        456,
+        757
+      ],
+      "reference_pixel": [
+        329,
+        292
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "upper_lip_medial_L",
+      "view": "front",
+      "source_render_pixel": [
+        486.6,
+        757
+      ],
+      "reference_pixel": [
+        339,
+        292
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "contact_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        402,
+        775
+      ],
+      "reference_pixel": [
+        310,
+        304
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "contact_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        540.6,
+        775
+      ],
+      "reference_pixel": [
+        358,
+        304
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "contact_inner_R",
+      "view": "front",
+      "source_render_pixel": [
+        439,
+        773
+      ],
+      "reference_pixel": [
+        324,
+        305
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "contact_inner_L",
+      "view": "front",
+      "source_render_pixel": [
+        503.6,
+        773
+      ],
+      "reference_pixel": [
+        344,
+        305
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "lower_lip_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        399,
+        793
+      ],
+      "reference_pixel": [
+        311,
+        311
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "lower_lip_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        543.6,
+        793
+      ],
+      "reference_pixel": [
+        357,
+        311
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "lower_lip_mid_R",
+      "view": "front",
+      "source_render_pixel": [
+        438,
+        802
+      ],
+      "reference_pixel": [
+        324,
+        317
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "lower_lip_mid_L",
+      "view": "front",
+      "source_render_pixel": [
+        504.6,
+        802
+      ],
+      "reference_pixel": [
+        344,
+        317
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "commissure_support_R",
+      "view": "front",
+      "source_render_pixel": [
+        354,
+        782
+      ],
+      "reference_pixel": [
+        288,
+        309
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "commissure_support_L",
+      "view": "front",
+      "source_render_pixel": [
+        588.6,
+        782
+      ],
+      "reference_pixel": [
+        380,
+        309
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "mentolabial_lateral_R",
+      "view": "front",
+      "source_render_pixel": [
+        426,
+        831
+      ],
+      "reference_pixel": [
+        316,
+        328
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "mentolabial_lateral_L",
+      "view": "front",
+      "source_render_pixel": [
+        516.6,
+        831
+      ],
+      "reference_pixel": [
+        352,
+        328
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "cupid_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        759
+      ],
+      "reference_pixel": [
+        334,
+        292
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "lip_contact_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        774
+      ],
+      "reference_pixel": [
+        334,
+        305
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "lower_lip_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        806
+      ],
+      "reference_pixel": [
+        334,
+        319
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "mentolabial_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        838
+      ],
+      "reference_pixel": [
+        334,
+        332
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "chin_center",
+      "view": "front",
+      "source_render_pixel": [
+        471,
+        891
+      ],
+      "reference_pixel": [
+        334,
+        350
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "chin_eminence_R",
+      "view": "front",
+      "source_render_pixel": [
+        419,
+        893
+      ],
+      "reference_pixel": [
+        315,
+        350
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "chin_eminence_L",
+      "view": "front",
+      "source_render_pixel": [
+        523.6,
+        893
+      ],
+      "reference_pixel": [
+        353,
+        350
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "chin_shoulders_R",
+      "view": "front",
+      "source_render_pixel": [
+        385,
+        879
+      ],
+      "reference_pixel": [
+        296,
+        345
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "chin_shoulders_L",
+      "view": "front",
+      "source_render_pixel": [
+        557.6,
+        879
+      ],
+      "reference_pixel": [
+        372,
+        345
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 1
+    },
+    {
+      "name": "helix_superior_R",
+      "view": "front",
+      "source_render_pixel": [
+        159,
+        530
+      ],
+      "reference_pixel": [
+        203,
+        183
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "helix_superior_L",
+      "view": "front",
+      "source_render_pixel": [
+        783.6,
+        530
+      ],
+      "reference_pixel": [
+        465,
+        183
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "helix_outer_R",
+      "view": "front",
+      "source_render_pixel": [
+        164,
+        603
+      ],
+      "reference_pixel": [
+        200,
+        209
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "helix_outer_L",
+      "view": "front",
+      "source_render_pixel": [
+        778.6,
+        603
+      ],
+      "reference_pixel": [
+        468,
+        209
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "tragus_R",
+      "view": "front",
+      "source_render_pixel": [
+        205,
+        634
+      ],
+      "reference_pixel": [
+        217,
+        232
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "tragus_L",
+      "view": "front",
+      "source_render_pixel": [
+        737.6,
+        634
+      ],
+      "reference_pixel": [
+        451,
+        232
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "lobule_R",
+      "view": "front",
+      "source_render_pixel": [
+        219,
+        724
+      ],
+      "reference_pixel": [
+        223,
+        264
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "lobule_L",
+      "view": "front",
+      "source_render_pixel": [
+        723.6,
+        724
+      ],
+      "reference_pixel": [
+        445,
+        264
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.65
+    },
+    {
+      "name": "jaw_neck_break_R",
+      "view": "front",
+      "source_render_pixel": [
+        318,
+        879
+      ],
+      "reference_pixel": [
+        270,
+        356
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35
+    },
+    {
+      "name": "jaw_neck_break_L",
+      "view": "front",
+      "source_render_pixel": [
+        624.6,
+        879
+      ],
+      "reference_pixel": [
+        398,
+        356
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35
+    },
+    {
+      "name": "neck_side_R",
+      "view": "front",
+      "source_render_pixel": [
+        301,
+        966
+      ],
+      "reference_pixel": [
+        264,
+        394
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35
+    },
+    {
+      "name": "neck_side_L",
+      "view": "front",
+      "source_render_pixel": [
+        641.6,
+        966
+      ],
+      "reference_pixel": [
+        404,
+        394
+      ],
+      "region": "neck",
+      "kind": "feature",
+      "confidence": 0.35
+    },
+    {
+      "name": "crown",
+      "view": "side",
+      "source_render_pixel": [
+        536,
+        151
+      ],
+      "reference_pixel": [
+        292,
+        27
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "crown_front",
+      "view": "side",
+      "source_render_pixel": [
+        373,
+        171
+      ],
+      "reference_pixel": [
+        216,
+        46
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "frontal_upper",
+      "view": "side",
+      "source_render_pixel": [
+        287,
+        222
+      ],
+      "reference_pixel": [
+        180,
+        72
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "forehead_mid",
+      "view": "side",
+      "source_render_pixel": [
+        231,
+        305
+      ],
+      "reference_pixel": [
+        156,
+        105
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "forehead_lower",
+      "view": "side",
+      "source_render_pixel": [
+        190,
+        375
+      ],
+      "reference_pixel": [
+        147,
+        129
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "brow_projection",
+      "view": "side",
+      "source_render_pixel": [
+        161,
+        488
+      ],
+      "reference_pixel": [
+        144,
+        148
+      ],
+      "region": "brow",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "radix",
+      "view": "side",
+      "source_render_pixel": [
+        145,
+        519
+      ],
+      "reference_pixel": [
+        149,
+        171
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "upper_bridge",
+      "view": "side",
+      "source_render_pixel": [
+        112,
+        564
+      ],
+      "reference_pixel": [
+        139,
+        190
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "mid_dorsum",
+      "view": "side",
+      "source_render_pixel": [
+        86,
+        607
+      ],
+      "reference_pixel": [
+        128,
+        207
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "supratip",
+      "view": "side",
+      "source_render_pixel": [
+        65,
+        644
+      ],
+      "reference_pixel": [
+        116,
+        222
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "tip",
+      "view": "side",
+      "source_render_pixel": [
+        52,
+        666
+      ],
+      "reference_pixel": [
+        113,
+        232
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "tip_lower",
+      "view": "side",
+      "source_render_pixel": [
+        60,
+        679
+      ],
+      "reference_pixel": [
+        121,
+        241
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "columella",
+      "view": "side",
+      "source_render_pixel": [
+        107,
+        690
+      ],
+      "reference_pixel": [
+        147,
+        250
+      ],
+      "region": "nose",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "nasolabial",
+      "view": "side",
+      "source_render_pixel": [
+        120,
+        708
+      ],
+      "reference_pixel": [
+        150,
+        258
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "philtrum",
+      "view": "side",
+      "source_render_pixel": [
+        114,
+        718
+      ],
+      "reference_pixel": [
+        140,
+        266
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "upper_vermilion",
+      "view": "side",
+      "source_render_pixel": [
+        110,
+        731
+      ],
+      "reference_pixel": [
+        132,
+        272
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "upper_lip_projection",
+      "view": "side",
+      "source_render_pixel": [
+        119,
+        748
+      ],
+      "reference_pixel": [
+        136,
+        278
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "lip_contact",
+      "view": "side",
+      "source_render_pixel": [
+        143,
+        767
+      ],
+      "reference_pixel": [
+        144,
+        283
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "lower_lip_projection",
+      "view": "side",
+      "source_render_pixel": [
+        116,
+        789
+      ],
+      "reference_pixel": [
+        136,
+        293
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "lower_lip_lower",
+      "view": "side",
+      "source_render_pixel": [
+        146,
+        812
+      ],
+      "reference_pixel": [
+        149,
+        305
+      ],
+      "region": "mouth",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "mentolabial",
+      "view": "side",
+      "source_render_pixel": [
+        159,
+        837
+      ],
+      "reference_pixel": [
+        154,
+        317
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "chin_projection",
+      "view": "side",
+      "source_render_pixel": [
+        166,
+        881
+      ],
+      "reference_pixel": [
+        146,
+        330
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "chin_lower",
+      "view": "side",
+      "source_render_pixel": [
+        202,
+        923
+      ],
+      "reference_pixel": [
+        162,
+        346
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "submental",
+      "view": "side",
+      "source_render_pixel": [
+        283,
+        913
+      ],
+      "reference_pixel": [
+        199,
+        341
+      ],
+      "region": "jaw",
+      "kind": "silhouette",
+      "confidence": 0.8
+    },
+    {
+      "name": "jaw_neck_break",
+      "view": "side",
+      "source_render_pixel": [
+        367,
+        917
+      ],
+      "reference_pixel": [
+        226,
+        341
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "neck_front",
+      "view": "side",
+      "source_render_pixel": [
+        393,
+        1005
+      ],
+      "reference_pixel": [
+        244,
+        390
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "crown_rear",
+      "view": "side",
+      "source_render_pixel": [
+        683,
+        180
+      ],
+      "reference_pixel": [
+        362,
+        48
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "occiput_upper",
+      "view": "side",
+      "source_render_pixel": [
+        793,
+        276
+      ],
+      "reference_pixel": [
+        397,
+        84
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "occiput_max",
+      "view": "side",
+      "source_render_pixel": [
+        846,
+        444
+      ],
+      "reference_pixel": [
+        420,
+        154
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "occiput_lower",
+      "view": "side",
+      "source_render_pixel": [
+        801,
+        564
+      ],
+      "reference_pixel": [
+        402,
+        212
+      ],
+      "region": "cranium",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "neck_rear_upper",
+      "view": "side",
+      "source_render_pixel": [
+        758,
+        669
+      ],
+      "reference_pixel": [
+        381,
+        266
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "neck_rear",
+      "view": "side",
+      "source_render_pixel": [
+        731,
+        779
+      ],
+      "reference_pixel": [
+        375,
+        319
+      ],
+      "region": "neck",
+      "kind": "silhouette",
+      "confidence": 0.5
+    },
+    {
+      "name": "helix_superior",
+      "view": "side",
+      "source_render_pixel": [
+        549,
+        530
+      ],
+      "reference_pixel": [
+        331,
+        169
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "helix_outer",
+      "view": "side",
+      "source_render_pixel": [
+        604,
+        582
+      ],
+      "reference_pixel": [
+        353,
+        188
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "helix_lower",
+      "view": "side",
+      "source_render_pixel": [
+        596,
+        661
+      ],
+      "reference_pixel": [
+        345,
+        234
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "lobule",
+      "view": "side",
+      "source_render_pixel": [
+        547,
+        713
+      ],
+      "reference_pixel": [
+        319,
+        254
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "tragus",
+      "view": "side",
+      "source_render_pixel": [
+        508,
+        608
+      ],
+      "reference_pixel": [
+        309,
+        219
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "antitragus",
+      "view": "side",
+      "source_render_pixel": [
+        526,
+        655
+      ],
+      "reference_pixel": [
+        320,
+        236
+      ],
+      "region": "ear",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "brow_medial",
+      "view": "side",
+      "source_render_pixel": [
+        179,
+        494
+      ],
+      "reference_pixel": [
+        151,
+        147
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "brow_apex",
+      "view": "side",
+      "source_render_pixel": [
+        209,
+        500
+      ],
+      "reference_pixel": [
+        176,
+        143
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "brow_lateral",
+      "view": "side",
+      "source_render_pixel": [
+        250,
+        524
+      ],
+      "reference_pixel": [
+        212,
+        155
+      ],
+      "region": "brow",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "upper_lid",
+      "view": "side",
+      "source_render_pixel": [
+        202,
+        532
+      ],
+      "reference_pixel": [
+        169,
+        169
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "lower_lid",
+      "view": "side",
+      "source_render_pixel": [
+        211,
+        556
+      ],
+      "reference_pixel": [
+        175,
+        184
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "outer_canthus",
+      "view": "side",
+      "source_render_pixel": [
+        231,
+        548
+      ],
+      "reference_pixel": [
+        193,
+        177
+      ],
+      "region": "eye",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "infraorbital",
+      "view": "side",
+      "source_render_pixel": [
+        249,
+        582
+      ],
+      "reference_pixel": [
+        201,
+        207
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "zygomatic_max",
+      "view": "side",
+      "source_render_pixel": [
+        339,
+        607
+      ],
+      "reference_pixel": [
+        245,
+        217
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "malar",
+      "view": "side",
+      "source_render_pixel": [
+        315,
+        649
+      ],
+      "reference_pixel": [
+        244,
+        238
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "paranasal",
+      "view": "side",
+      "source_render_pixel": [
+        181,
+        669
+      ],
+      "reference_pixel": [
+        169,
+        236
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "alar",
+      "view": "side",
+      "source_render_pixel": [
+        143,
+        686
+      ],
+      "reference_pixel": [
+        159,
+        242
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "nostril_lateral",
+      "view": "side",
+      "source_render_pixel": [
+        128,
+        678
+      ],
+      "reference_pixel": [
+        143,
+        240
+      ],
+      "region": "nose",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "maxilla",
+      "view": "side",
+      "source_render_pixel": [
+        201,
+        713
+      ],
+      "reference_pixel": [
+        174,
+        266
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "mouth_corner",
+      "view": "side",
+      "source_render_pixel": [
+        195,
+        771
+      ],
+      "reference_pixel": [
+        164,
+        284
+      ],
+      "region": "mouth",
+      "kind": "feature",
+      "confidence": 0.85
+    },
+    {
+      "name": "nasolabial_upper",
+      "view": "side",
+      "source_render_pixel": [
+        201,
+        684
+      ],
+      "reference_pixel": [
+        177,
+        252
+      ],
+      "region": "cheek",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "cheek_jaw",
+      "view": "side",
+      "source_render_pixel": [
+        377,
+        801
+      ],
+      "reference_pixel": [
+        269,
+        287
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 0.6
+    },
+    {
+      "name": "mandibular_angle",
+      "view": "side",
+      "source_render_pixel": [
+        470,
+        790
+      ],
+      "reference_pixel": [
+        293,
+        288
+      ],
+      "region": "jaw",
+      "kind": "feature",
+      "confidence": 0.6
+    }
+  ],
+  "count": 195,
+  "per_view": {
+    "front": 140,
+    "side": 55
+  }
+}
