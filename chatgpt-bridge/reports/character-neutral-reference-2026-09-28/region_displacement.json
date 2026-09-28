@@ -1,0 +1,50 @@
+{
+  "cranium": {
+    "vertices": 2024,
+    "max_mm": 14.000239372253418,
+    "mean_mm": 7.22452449798584
+  },
+  "nose": {
+    "vertices": 2619,
+    "max_mm": 3.2954936027526855,
+    "mean_mm": 2.162423849105835
+  },
+  "mouth": {
+    "vertices": 5057,
+    "max_mm": 2.8528525829315186,
+    "mean_mm": 1.661296010017395
+  },
+  "midface_cheeks": {
+    "vertices": 2194,
+    "max_mm": 2.6715147495269775,
+    "mean_mm": 1.6075912714004517
+  },
+  "jaw_chin": {
+    "vertices": 1592,
+    "max_mm": 3.9805784225463867,
+    "mean_mm": 2.17691707611084
+  },
+  "eyes_brow": {
+    "vertices": 3495,
+    "max_mm": 2.503366470336914,
+    "mean_mm": 1.2408604621887207
+  },
+  "neck_interface": {
+    "vertices": 1558,
+    "max_mm": 0.0,
+    "mean_mm": 0.0
+  },
+  "teeth": {
+    "max_mm": 0.0,
+    "vertices": 4613
+  },
+  "left_eyeball": {
+    "max_mm": 0.0,
+    "vertices": 802
+  },
+  "right_eyeball": {
+    "max_mm": 0.0,
+    "vertices": 802
+  },
+  "note": "Measurements are mesh-to-mesh changes from previous FinalIdentity, not calibrated measurements inferred from photographs. Regions overlap."
+}

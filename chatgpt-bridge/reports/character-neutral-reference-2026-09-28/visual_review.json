@@ -1,0 +1,26 @@
+{
+  "candidate": "NeutralIdentity v5",
+  "baseline": "FinalIdentity latest editable head, not original",
+  "face_shape": "PARTIAL",
+  "head_conform": "PARTIAL - new candidate NOT_RUN",
+  "facial_deformation": "PARTIAL - permanent calibration explicitly deferred; no new RigLogic evaluation",
+  "body_proportions": "PARTIAL - native changes NOT_RUN",
+  "body_deformation": "PARTIAL - new native body not produced/tested",
+  "blender_correspondence": "PASS",
+  "artistic_acceptance": "REVIEW_REQUIRED",
+  "unreal_changes_this_pass": false,
+  "head_scale_recomputed": false,
+  "head_scale_previous_reference_only": 1.0675376653671265,
+  "permanent_expression_work": false,
+  "body_blender_displacement_mm": 0,
+  "observations": {
+    "skull": "Shorter crown and narrower lateral cranial envelope improve face/cranium balance. Temporal support retained locally. Whole-head scale unchanged.",
+    "eyes": "Greater vertical lid aperture and arched upper lid around unchanged globes; closer to the open almond direction.",
+    "nose": "Root depth, dorsal continuity, tip descent and alar support changed. Tip/alar form still reads too geometric relative to the reference; full identity acceptance withheld.",
+    "mouth": "Commissures relaxed, bow and lower-lip arc developed, lateral soft tissue supported. Some flat-band/rigid-corner character remains; likeness not certified.",
+    "cheeks": "Healthy infraorbital, malar and paranasal support added. Does not yet reproduce all reference-specific facial rhythm.",
+    "jaw_chin": "Shorter lower contour and rounder chin, with adult mandibular definition retained.",
+    "neck": "Upper neck support locally increased, frozen neck interface unchanged.",
+    "whole_identity": "Improved crown/lid/lower-face balance is visible; not sufficient to claim the exact concept woman has been achieved."
+  }
+}
