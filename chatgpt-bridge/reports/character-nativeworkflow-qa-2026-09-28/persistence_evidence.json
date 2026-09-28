@@ -1,0 +1,48 @@
+{
+  "source": "Previous B2Fresh/B2Reload comparison; linked to current unchanged source hash, not a new regeneration this turn",
+  "persistence": {
+    "Head": {
+      "arrays_identical": {
+        "positions": true,
+        "triangles": true,
+        "uv": true,
+        "loop_normals": true,
+        "triangle_material": true
+      },
+      "position_delta_mm": {
+        "count": 34657,
+        "mean_mm": 0.0,
+        "p95_mm": 0.0,
+        "max_mm": 0.0
+      }
+    },
+    "Body": {
+      "arrays_identical": {
+        "positions": true,
+        "triangles": true,
+        "uv": true,
+        "loop_normals": true,
+        "triangle_material": true
+      },
+      "position_delta_mm": {
+        "count": 32334,
+        "mean_mm": 0.0,
+        "p95_mm": 0.0,
+        "max_mm": 0.0
+      }
+    },
+    "parameters_identical": true,
+    "face_signature_identical": true,
+    "head_DNA_hash_identical": true
+  },
+  "head_scale": {
+    "OriginalFresh": 1.0653988122940063,
+    "B2Fresh": 1.0653988122940063,
+    "B2Reload": 1.0653988122940063
+  },
+  "height_cm": {
+    "OriginalFresh": 173.4018611907959,
+    "B2Fresh": 173.27168560028076,
+    "B2Reload": 173.27168560028076
+  }
+}

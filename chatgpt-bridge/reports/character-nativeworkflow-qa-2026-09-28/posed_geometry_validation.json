@@ -1,0 +1,533 @@
+{
+  "scope": "Actual CPU-skinned native MetaHuman LOD0 geometry after native post-process evaluation. 93 historical UV-corresponded seam samples; static poses, not locomotion certification. Triangle-area checks cannot certify absence of self-intersection.",
+  "cases": {
+    "accepted_identity_final": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 1.0,
+        "area_ratio_p99": 1.0,
+        "minimum_area_ratio": 1.0,
+        "maximum_area_ratio": 1.0
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 1.0,
+        "area_ratio_p99": 1.0,
+        "minimum_area_ratio": 1.0,
+        "maximum_area_ratio": 1.0
+      },
+      "seam": {
+        "mean_mm": 9.151629253171268e-05,
+        "p95_mm": 0.00030788323321071485,
+        "max_mm": 0.0003085103248524058
+      },
+      "seam_normal_angle_degrees": {
+        "mean": 1.620963100421727e-07,
+        "p95": 8.537736462515939e-07,
+        "max": 1.2074182697257333e-06
+      }
+    },
+    "arms_forward": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6144226767841213,
+        "area_ratio_p99": 1.709445314926111,
+        "minimum_area_ratio": 0.05179978598737118,
+        "maximum_area_ratio": 5.34053113411231
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6951170448273375,
+        "area_ratio_p99": 1.0838348896095593,
+        "minimum_area_ratio": 0.5226128647039209,
+        "maximum_area_ratio": 1.4322392967434519
+      },
+      "seam": {
+        "mean_mm": 0.00016108395922199745,
+        "p95_mm": 0.0003136426731072918,
+        "max_mm": 0.00033051729510980335
+      },
+      "seam_normal_angle_degrees": {
+        "mean": 1.7642206202247144e-07,
+        "p95": 1.2074182697257333e-06,
+        "max": 1.4787793334710982e-06
+      }
+    },
+    "arms_raised": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.627015303022718,
+        "area_ratio_p99": 2.0055456719213334,
+        "minimum_area_ratio": 0.02971029862999544,
+        "maximum_area_ratio": 8.663315790677485
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6078076696237152,
+        "area_ratio_p99": 1.1512636081295042,
+        "minimum_area_ratio": 0.3341956194607328,
+        "maximum_area_ratio": 1.6879367833121277
+      },
+      "seam": {
+        "mean_mm": 0.00016688826047456015,
+        "p95_mm": 0.0003228437591516639,
+        "max_mm": 0.0003455671488188446
+      }
+    },
+    "arms_raised_normals": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.627015303022718,
+        "area_ratio_p99": 2.0055456719213334,
+        "minimum_area_ratio": 0.02971029862999544,
+        "maximum_area_ratio": 8.663315790677485
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6078076696237152,
+        "area_ratio_p99": 1.1512636081295042,
+        "minimum_area_ratio": 0.3341956194607328,
+        "maximum_area_ratio": 1.6879367833121277
+      },
+      "seam": {
+        "mean_mm": 0.00016688826047456015,
+        "p95_mm": 0.0003228437591516639,
+        "max_mm": 0.0003455671488188446
+      },
+      "seam_normal_angle_degrees": {
+        "mean": 1.992757475660399e-07,
+        "p95": 9.952314956412465e-07,
+        "max": 1.4787793334710982e-06
+      }
+    },
+    "crouch": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5991165381228465,
+        "area_ratio_p99": 1.9874847008794847,
+        "minimum_area_ratio": 0.07130967775195457,
+        "maximum_area_ratio": 4.541150970210813
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.8348665633353713,
+        "area_ratio_p99": 1.6352592451563719,
+        "minimum_area_ratio": 0.30122663806144795,
+        "maximum_area_ratio": 2.9282217500395884
+      },
+      "seam": {
+        "mean_mm": 0.00015108703109452414,
+        "p95_mm": 0.00026623335879317393,
+        "max_mm": 0.0003618939583017402
+      }
+    },
+    "deep_squat": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.47865092386837316,
+        "area_ratio_p99": 1.9901686799400822,
+        "minimum_area_ratio": 0.011720628094725275,
+        "maximum_area_ratio": 6.921733557491523
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.713244413306779,
+        "area_ratio_p99": 1.02223575319637,
+        "minimum_area_ratio": 0.5156283542443301,
+        "maximum_area_ratio": 1.3249180094104087
+      },
+      "seam": {
+        "mean_mm": 0.00015650461586142863,
+        "p95_mm": 0.0002566075143255941,
+        "max_mm": 0.00031690842911364096
+      },
+      "seam_normal_angle_degrees": {
+        "mean": 2.1940601006024136e-07,
+        "p95": 1.2074182697257333e-06,
+        "max": 1.2074182697257333e-06
+      }
+    },
+    "DIAGNOSTIC_arms_raised_verified_PP_DISABLED": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6128374644713127,
+        "area_ratio_p99": 2.0621348862629523,
+        "minimum_area_ratio": 0.1175608367052067,
+        "maximum_area_ratio": 8.713376757164104
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5973437210704429,
+        "area_ratio_p99": 1.1511788402410184,
+        "minimum_area_ratio": 0.3344983810286999,
+        "maximum_area_ratio": 1.6879367833121277
+      },
+      "seam": {
+        "mean_mm": 0.0001664795273760315,
+        "p95_mm": 0.0002870006991024869,
+        "max_mm": 0.0003431322973524813
+      }
+    },
+    "hip_flexion": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5854776607305838,
+        "area_ratio_p99": 2.023607497166038,
+        "minimum_area_ratio": 0.04399789330739108,
+        "maximum_area_ratio": 8.675182600744053
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.7087773771908803,
+        "area_ratio_p99": 1.2487997377623887,
+        "minimum_area_ratio": 0.3712864185675626,
+        "maximum_area_ratio": 1.662555144411664
+      },
+      "seam": {
+        "mean_mm": 0.00015739849690790835,
+        "p95_mm": 0.00026702880859375,
+        "max_mm": 0.0003369049402743472
+      }
+    },
+    "idle": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5704654294707876,
+        "area_ratio_p99": 1.2757295694451094,
+        "minimum_area_ratio": 0.080277880359447,
+        "maximum_area_ratio": 3.942110890958085
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.8736958623488821,
+        "area_ratio_p99": 1.031704299858705,
+        "minimum_area_ratio": 0.5297282121624525,
+        "maximum_area_ratio": 1.1623025516423544
+      },
+      "seam": {
+        "mean_mm": 0.0001724867824657007,
+        "p95_mm": 0.000318311195818946,
+        "max_mm": 0.0003232660533271464
+      }
+    },
+    "jog": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5371443814362268,
+        "area_ratio_p99": 1.6532212435949782,
+        "minimum_area_ratio": 0.021517086003094505,
+        "maximum_area_ratio": 3.3956968433563057
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.9083359262386929,
+        "area_ratio_p99": 1.1804212777863514,
+        "minimum_area_ratio": 0.7771029984717053,
+        "maximum_area_ratio": 1.5875293415799874
+      },
+      "seam": {
+        "mean_mm": 0.00017291780701843396,
+        "p95_mm": 0.00032833855528734867,
+        "max_mm": 0.0003445127843511284
+      }
+    },
+    "jump": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5023471950085647,
+        "area_ratio_p99": 2.2150861958068084,
+        "minimum_area_ratio": 0.055273650192542094,
+        "maximum_area_ratio": 4.802994042326663
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.7879257926170631,
+        "area_ratio_p99": 1.1128735700650232,
+        "minimum_area_ratio": 0.4463228929213653,
+        "maximum_area_ratio": 1.4384616828737016
+      },
+      "seam": {
+        "mean_mm": 0.0002016700665242793,
+        "p95_mm": 0.00030938695515176197,
+        "max_mm": 0.0003423943151667832
+      }
+    },
+    "neutral_mesh": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 1.0,
+        "area_ratio_p99": 1.0,
+        "minimum_area_ratio": 1.0,
+        "maximum_area_ratio": 1.0
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 1.0,
+        "area_ratio_p99": 1.0,
+        "minimum_area_ratio": 1.0,
+        "maximum_area_ratio": 1.0
+      },
+      "seam": {
+        "mean_mm": 9.151629253171268e-05,
+        "p95_mm": 0.00030788323321071485,
+        "max_mm": 0.0003085103248524058
+      }
+    },
+    "neutral_mesh_normals": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 1.0,
+        "area_ratio_p99": 1.0,
+        "minimum_area_ratio": 1.0,
+        "maximum_area_ratio": 1.0
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 1.0,
+        "area_ratio_p99": 1.0,
+        "minimum_area_ratio": 1.0,
+        "maximum_area_ratio": 1.0
+      },
+      "seam": {
+        "mean_mm": 9.151629253171268e-05,
+        "p95_mm": 0.00030788323321071485,
+        "max_mm": 0.0003085103248524058
+      },
+      "seam_normal_angle_degrees": {
+        "mean": 1.620963100421727e-07,
+        "p95": 8.537736462515939e-07,
+        "max": 1.2074182697257333e-06
+      }
+    },
+    "shoulder_rotation": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6332776401041226,
+        "area_ratio_p99": 1.6556283826782932,
+        "minimum_area_ratio": 0.09344976085603292,
+        "maximum_area_ratio": 4.525383452911334
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.7173521324700541,
+        "area_ratio_p99": 1.1098628610836276,
+        "minimum_area_ratio": 0.38348228381718835,
+        "maximum_area_ratio": 1.4096722081460686
+      },
+      "seam": {
+        "mean_mm": 0.000188764339873557,
+        "p95_mm": 0.0003533807795893318,
+        "max_mm": 0.0003594352826126624
+      }
+    },
+    "shoulder_rotation_normals": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6332776401041226,
+        "area_ratio_p99": 1.6556283826782932,
+        "minimum_area_ratio": 0.09344976085603292,
+        "maximum_area_ratio": 4.525383452911334
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.7173521324700541,
+        "area_ratio_p99": 1.1098628610836276,
+        "minimum_area_ratio": 0.38348228381718835,
+        "maximum_area_ratio": 1.4096722081460686
+      },
+      "seam": {
+        "mean_mm": 0.000188764339873557,
+        "p95_mm": 0.0003533807795893318,
+        "max_mm": 0.0003594352826126624
+      },
+      "seam_normal_angle_degrees": {
+        "mean": 1.5134084718674356e-07,
+        "p95": 1.2074182697257333e-06,
+        "max": 1.2074182697257333e-06
+      }
+    },
+    "sprint": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.5506889579981076,
+        "area_ratio_p99": 1.8329045030876756,
+        "minimum_area_ratio": 0.0900890781686209,
+        "maximum_area_ratio": 3.3899389640144655
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.8271988267636455,
+        "area_ratio_p99": 1.296952016607777,
+        "minimum_area_ratio": 0.5748843881402281,
+        "maximum_area_ratio": 1.9643316935581978
+      },
+      "seam": {
+        "mean_mm": 0.00019245743933379159,
+        "p95_mm": 0.00034596170706209284,
+        "max_mm": 0.00038647350154785405
+      }
+    },
+    "torso_twist": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.656512817983159,
+        "area_ratio_p99": 1.5872377358224004,
+        "minimum_area_ratio": 0.04911871109379544,
+        "maximum_area_ratio": 4.657319948079017
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.8112154670069283,
+        "area_ratio_p99": 1.099531981934868,
+        "minimum_area_ratio": 0.6065255113286425,
+        "maximum_area_ratio": 1.4836073468809157
+      },
+      "seam": {
+        "mean_mm": 0.00016151813403666646,
+        "p95_mm": 0.00034343346877482183,
+        "max_mm": 0.0003462327050345736
+      }
+    },
+    "walk": {
+      "Body": {
+        "vertices": 32334,
+        "triangles": 60816,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.6374007171510467,
+        "area_ratio_p99": 1.3087869200062254,
+        "minimum_area_ratio": 0.08805124629412185,
+        "maximum_area_ratio": 3.9634987450432324
+      },
+      "Head": {
+        "vertices": 34657,
+        "triangles": 64094,
+        "finite": true,
+        "new_degenerate_triangles": 0,
+        "area_ratio_p01": 0.8846716677580744,
+        "area_ratio_p99": 1.0814100524470587,
+        "minimum_area_ratio": 0.7220233489603841,
+        "maximum_area_ratio": 1.2366780122713328
+      },
+      "seam": {
+        "mean_mm": 0.0001636993222138676,
+        "p95_mm": 0.00033242195947185544,
+        "max_mm": 0.0003414050825252706
+      }
+    }
+  },
+  "neutral_identity": {
+    "Head": {
+      "mean_mm": 9.37260109175225e-05,
+      "p95_mm": 0.0001553730294011524,
+      "max_mm": 0.00031020996726324236
+    },
+    "Body": {
+      "mean_mm": 5.104071753373931e-05,
+      "p95_mm": 0.00015377536293599222,
+      "max_mm": 0.00023282157165019422
+    }
+  }
+}

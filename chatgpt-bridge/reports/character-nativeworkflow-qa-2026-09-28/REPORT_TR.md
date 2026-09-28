@@ -29,7 +29,7 @@ Kanıtlar incelemeye hazır. Sonuç CharacterLab'da kaldı. Oyun karakterine akt
 
 ## Vücut oranları
 
-Beş açıdan mevcut vücut (görsel kanıt yerel rapor paketinde): ön, yan, arka, ön 3/4, arka 3/4. Mevcut baş takılıdır.
+[Beş açıdan mevcut vücut](boards/01_current_native_body.jpg): ön, yan, arka, ön 3/4, arka 3/4. Mevcut baş takılıdır.
 
 Omuzlar başı yeterli biçimde destekliyor. Üst kol/önkol/el ilişkisi makul; el büyütme ihtiyacı görülmedi. Bel tanımlı, pelvis ve uyluk hacmiyle geçişi tutarlı. Omuz/kalça ve gövde/bacak ilişkisi yetişkin kadın anatomisi içinde makul. Sırtın doğal MetaHuman yapısı korundu. Bu değerlendirme yeni bir B/B2 üstünlük deneyi değildir: kullanıcı tarafından sonradan düzenlenen mevcut B2, son talimatla inceleme başlangıcı seçildi.
 
@@ -72,7 +72,7 @@ Bu turdaki parametre değişiklikleri: **0**. Aşağıdaki değerler kullanıcı
 
 ## Yüz ve teknik korunma
 
-Mevcut kabul edilmiş yüz — dört açı (görsel kanıt yerel rapor paketinde).
+[Mevcut kabul edilmiş yüz — dört açı](boards/accepted_current_face.jpg).
 
 Kaynak karakter dosyası byte düzeyinde aynı. Face katsayıları, HeadScale ve bütün native vücut kontrol değerleri başlangıçla aynı. Ölçüm ayrıca gerçek LOD0 mesh pozisyonları üzerinden yapıldı; DNA hash'i tek başına kanıt olarak kullanılmadı.
 
@@ -129,13 +129,13 @@ Tüm 12 ana pozda sonlu mesh koordinatları ve **0 yeni dejenere üçgen**. Alan
 
 ## Gerçek derin çömelme
 
-Üç açıdan derin çömelme (görsel kanıt yerel rapor paketinde). Diz fleksiyonu sol **145.376°**, sağ **144.580°**; kalça sol **106.299°**, sağ **107.239°**. Bunlar kemik segmentlerinden hesaplanan QA açılarıdır.
+[Üç açıdan derin çömelme](boards/13_deep_squat.jpg). Diz fleksiyonu sol **145.376°**, sağ **144.580°**; kalça sol **106.299°**, sağ **107.239°**. Bunlar kemik segmentlerinden hesaplanan QA açılarıdır.
 
 Yeni teşhis animasyonu: `/Game/Sphirus/CharacterLab/NativeWorkflowQA_20260928/QA_DeepSquat`. Public AnimationDataController ile native ROM tabanlı sabit QA pozu oluşturuldu. Klip retarget source asset'i kabul edilmiş body mesh'iyle eşleştirildi; böylece teşhis klibinin ikinci kez uzunluk uyarlaması yapması düzeltildi. Karakter iskelet/rest matrislerine dokunulmadı. Poz fiziksel denge veya oyun animasyonu olarak onaylanmadı.
 
 ## Açık deformasyon sorunu
 
-Omuz yakın planları (görsel kanıt yerel rapor paketinde) ve PostProcess karşılaştırması (görsel kanıt yerel rapor paketinde).
+[Omuz yakın planları](boards/detail_arms_raised.jpg) ve [PostProcess karşılaştırması](boards/diagnostic_postprocess.jpg).
 
 Tam kol kaldırmada omuz üstünde sert, sivri bir hacim geçişi kalıyor. Omuz rotasyonunda arka boyun/trapez bölgesinde de düzlemsel bir bant hissi var. Sınır pozisyonları ve normalleri uyumlu; sorun salt head/body açıklığı değil.
 
@@ -153,6 +153,13 @@ Bu test tek başına hatayı belirli bir ağırlık/bone/corrective'ye bağlamaz
 
 Geçici QA level kaydedilmedi. Önceki `L_GR_SphirusHouse` yeniden açıldı; dirty content/map listeleri boş. Level, camera, locomotion, AAMS, Core Motion, PoseSearch, input ve üretim Blueprint'lerine dokunulmadı. Blender, Body Conform, Head Conform, saç, kıyafet ve yüz ifadesi düzeltmesi yapılmadı.
 
-## Yayın kapsamı
+## Kanıt dosyaları
 
-Bu GitHub yayını yalnız bu metin raporunu içerir. Görsel panolar, ham ölçüm JSON dosyaları, karakter kaynak dosyaları, DNA ve checkpoint dosyaları yüklenmedi. Görseller ve ayrıntılı doğrulama verileri projedeki `Saved/Codex/CharacterNativeWorkflowQA_20260928` yerel paketinde korunuyor.
+- [Görsel galeri](README.md)
+- [Makine tarafından okunabilir son durum](final_status.json)
+- [Bölgesel yüz korunma ölçümü](accepted_face_geometry_preservation.json)
+- [Poz geometri ölçümleri](posed_geometry_validation.json)
+- [Tam native parametreler ve son editör durumu](final_editor_state.json)
+- [Hash ve dosya korunma denetimi](final_preservation.json)
+- [Animasyon kaynakları ve zamanları](final_pose_plan.json)
+- [Önceki kalıcılık ölçümleri](persistence_evidence.json)

@@ -1,0 +1,50 @@
+{
+  "idle": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/Idle/mhc_mh001_fmn_b_idle",
+    "time": 0.5
+  },
+  "walk": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/UEFNAnimPreset/Locomotion/AS_MH_Neutral_Walk_Loop_F",
+    "time": 0.5
+  },
+  "jog": {
+    "animation": "/Game/Sphirus/CharacterLab/NativeBody_20260928/Diagnostics/Motion/QA_jog",
+    "time": 0.25
+  },
+  "sprint": {
+    "animation": "/Game/Sphirus/CharacterLab/NativeBody_20260928/Diagnostics/Motion/QA_sprint",
+    "time": 0.5
+  },
+  "crouch": {
+    "animation": "/Game/Sphirus/CharacterLab/NativeBody_20260928/Diagnostics/Motion/QA_crouch",
+    "time": 1
+  },
+  "jump": {
+    "animation": "/Game/Sphirus/CharacterLab/NativeBody_20260928/Diagnostics/Motion/QA_jump",
+    "time": 0.65
+  },
+  "arms_raised": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/BodyROM/mhc_body_rom_body",
+    "time": 16.2
+  },
+  "arms_forward": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/BodyROM/mhc_body_rom_body",
+    "time": 21.5
+  },
+  "shoulder_rotation": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/BodyROM/mhc_body_rom_body",
+    "time": 26
+  },
+  "torso_twist": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/BodyROM/mhc_body_rom_body",
+    "time": 24.5
+  },
+  "hip_flexion": {
+    "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/BodyROM/mhc_body_rom_body",
+    "time": 15
+  },
+  "deep_squat": {
+    "animation": "/Game/Sphirus/CharacterLab/NativeWorkflowQA_20260928/QA_DeepSquat",
+    "time": 0.5
+  }
+}

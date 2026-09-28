@@ -1,0 +1,103 @@
+{
+  "baseline": "User-accepted current NativeWorkflow B2Reload, NOT OriginalFresh",
+  "alignment": "Same preserved object/world transform; no scale or rigid correction needed. Coordinate correspondence by material + UV.",
+  "regions": {
+    "face_identity_combined": {
+      "count": 15835,
+      "mean_mm": 0.00011676312131820692,
+      "p95_mm": 0.00015599572947459783,
+      "max_mm": 0.00030669934713146215
+    },
+    "forehead": {
+      "count": 881,
+      "mean_mm": 0.00011788140094227289,
+      "p95_mm": 0.00016050369910914264,
+      "max_mm": 0.00030979739896356173
+    },
+    "brow": {
+      "count": 655,
+      "mean_mm": 9.909423367246774e-05,
+      "p95_mm": 0.0001555614963801792,
+      "max_mm": 0.00015730206683355985
+    },
+    "eyelids_orbits": {
+      "count": 3522,
+      "mean_mm": 0.0001196653881286681,
+      "p95_mm": 0.00015757285730226808,
+      "max_mm": 0.00030547365909665996
+    },
+    "nose": {
+      "count": 3540,
+      "mean_mm": 0.00010283629499226899,
+      "p95_mm": 0.0001553638252959797,
+      "max_mm": 0.00016045056684867132
+    },
+    "midface": {
+      "count": 486,
+      "mean_mm": 7.096377222412662e-05,
+      "p95_mm": 0.0001537938444411291,
+      "max_mm": 0.00015526523738064704
+    },
+    "cheeks": {
+      "count": 2001,
+      "mean_mm": 0.00012913072364910652,
+      "p95_mm": 0.00015757285730226808,
+      "max_mm": 0.00030547365909665996
+    },
+    "lips_mouth": {
+      "count": 4619,
+      "mean_mm": 0.00012843412123314142,
+      "p95_mm": 0.00015525150782666854,
+      "max_mm": 0.00016214216361922553
+    },
+    "jaw": {
+      "count": 723,
+      "mean_mm": 0.00013357453025023577,
+      "p95_mm": 0.0001578485582562905,
+      "max_mm": 0.00016214216361922553
+    },
+    "chin": {
+      "count": 628,
+      "mean_mm": 0.00013411557061042474,
+      "p95_mm": 0.00015553957395839777,
+      "max_mm": 0.00015764949670524412
+    },
+    "neck_attachment": {
+      "count": 1784,
+      "mean_mm": 3.33055933332928e-05,
+      "p95_mm": 0.0001538492756357353,
+      "max_mm": 0.00015735626220703125
+    },
+    "upper_jaw_neck_transition": {
+      "count": 834,
+      "mean_mm": 9.865336085982622e-05,
+      "p95_mm": 0.00015570394389396376,
+      "max_mm": 0.00015764949670524412
+    },
+    "whole_skin_head": {
+      "count": 24408,
+      "mean_mm": 9.334940897869395e-05,
+      "p95_mm": 0.00015556102869041075,
+      "max_mm": 0.00031020996726324236
+    }
+  },
+  "parts": {
+    "Head": {
+      "count": 34343,
+      "mean_mm": 9.37260109175225e-05,
+      "p95_mm": 0.0001553730294011524,
+      "max_mm": 0.00031020996726324236,
+      "triangles_identical": true,
+      "uv_sample_keys_identical": true
+    },
+    "Body": {
+      "count": 32334,
+      "mean_mm": 5.104071753373931e-05,
+      "p95_mm": 0.00015377536293599222,
+      "max_mm": 0.00023282157165019422,
+      "triangles_identical": true,
+      "uv_sample_keys_identical": true
+    }
+  },
+  "mask_note": "Inherited overlapping spatial screening masks, not exact anatomical segmentation. Residuals are floating-point render extraction differences; source asset SHA256 is unchanged."
+}
