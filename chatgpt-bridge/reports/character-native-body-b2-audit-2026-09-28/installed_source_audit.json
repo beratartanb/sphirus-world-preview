@@ -1,0 +1,129 @@
+{
+  "engine_version": "5.8.1-56057345+++UE5+Release-5.8",
+  "source_root": "UE_5.8/Engine/Plugins/MetaHuman",
+  "files": [
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorCommands.cpp",
+      "sha256": "e6824be09733269908ebdc341bcc8b7d3ea98d55897262f1c869038814bdd276"
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "sha256": "fbe4ec92af27fae92fae2dcb45251e3f1624e0020fad7f7350966f2394904d68"
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorToolkit.cpp",
+      "sha256": "6c06a79490a7fcf09336ba272bd0f442f43b2ffd086af94d8a304f62b7ef2a5b"
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/Tools/MetaHumanCharacterEditorBodyEditingTools.cpp",
+      "sha256": "c5103ad21a100aeb0746c8ccb93fb04e2637b39ee574b943454fbb06568da326"
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Public/MetaHumanCharacterEditorSubsystem.h",
+      "sha256": "0121fc08fb29bd32fb11c18293b2e4fdee7b45ce4446f63e6878a6613101bc39"
+    },
+    {
+      "relative_file": "MetaHumanCoreTechLib/Source/MetaHumanCoreTechLib/Private/api/MetaHumanCreatorAPI.cpp",
+      "sha256": "f3e65c14fe52cc71f9692293a62f26c73e4e8f57aac0240bcc34bad4923bf0c4"
+    }
+  ],
+  "findings": [
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/Tools/MetaHumanCharacterEditorBodyEditingTools.cpp",
+      "line": 70,
+      "operation": "Body tool eligibility",
+      "finding": "CanBuildTool rejects rigged characters."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorCommands.cpp",
+      "line": 34,
+      "operation": "UI labels",
+      "finding": "Create Full Rig, Create Joints Only Rig, Remove Rig; Body Params / Parametric at lines 94–95."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorToolkit.cpp",
+      "line": 1250,
+      "operation": "Official Remove Rig button",
+      "finding": "On non-fixed character, removes body rig first, then face rig; snapshots undo data."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 3192,
+      "operation": "RemoveBodyRig",
+      "finding": "Clears stored BodyDNABuffer, rebuilds body from current native state; not exposed to Python."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 3129,
+      "operation": "RemoveFaceRig",
+      "finding": "Clears face DNA and morph targets, applies aligned archetype DNA. This is not body-only invalidation."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 5124,
+      "operation": "CommitBodyState",
+      "finding": "Serializes BodyState; full application updates preview mesh and mesh-associated DNA. Does not replace Character BodyDNABuffer."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 5540,
+      "operation": "SetBodyConstraints",
+      "finding": "Evaluates body constraints and updates both body mesh and face-from-body preview."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 5772,
+      "operation": "UpdateFaceFromBodyInternal",
+      "finding": "Sets body joints/body-face vertices/normals; evaluates face and optionally updates bind pose."
+    },
+    {
+      "relative_file": "MetaHumanCoreTechLib/Source/MetaHumanCoreTechLib/Private/api/MetaHumanCreatorAPI.cpp",
+      "line": 4233,
+      "operation": "Core body-to-face dependency",
+      "finding": "Fits body-face state and estimates body scale; unchanged face coefficients do not imply unchanged evaluated head geometry."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 675,
+      "operation": "SetupEditorDataSKMsFromCharacter",
+      "finding": "Non-fixed body with saved DNA reloads base vertices/joints/weights/DNA from buffer, not current parameter geometry."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 3423,
+      "operation": "Auto-rig completion",
+      "finding": "Aligns returned face DNA with current body; generates parametric BodyState DNA and writes body and face buffers at 3440–3465."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 2661,
+      "operation": "AlignFaceDNAWithBody",
+      "finding": "Uses native current body state DNA, shared joints and skin weights/normals. No exact-identity guarantee established by source audit."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Public/MetaHumanCharacterEditorSubsystem.h",
+      "line": 1370,
+      "operation": "API exposure",
+      "finding": "RemoveBodyRig lacks UFUNCTION; CommitBodyDNA also lacks UFUNCTION at line 1634. Live Python audit confirms absence."
+    },
+    {
+      "relative_file": "MetaHumanCharacter/Source/MetaHumanCharacterEditor/Private/MetaHumanCharacterEditorSubsystem.cpp",
+      "line": 2297,
+      "operation": "BuildMetaHuman",
+      "finding": "Assembly uses current character pipeline; no body-cache invalidation here. Not a demonstrated substitute for native rig lifecycle."
+    }
+  ],
+  "supported_UI_lifecycle": [
+    "Remove Rig on isolated duplicate",
+    "Head & Body > Body Params > Parametric",
+    "Create Full Rig",
+    "Save and reopen"
+  ],
+  "available_automation": "Unreal Python queue; no native desktop UI control callable in this session.",
+  "blocking_gap": "Official body-rig invalidation/commit/alignment operations are not reflected in installed Python API. remove_face_rig alone is not equivalent to toolbar Remove Rig.",
+  "not_claimed": "UI lifecycle has not been tested on B2; original facial identity preservation and seam closure remain unproven.",
+  "official_documentation": [
+    "https://dev.epicgames.com/documentation/metahuman/navigating-metahuman-creator-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/metahuman/metahuman-creator-python-scripting-in-unreal-engine?lang=en-US"
+  ]
+}

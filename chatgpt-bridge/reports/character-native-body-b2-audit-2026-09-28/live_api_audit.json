@@ -1,0 +1,101 @@
+{
+  "time": "2026-09-28T16:31:17.658658",
+  "engine": "5.8.1-56057345+++UE5+Release-5.8",
+  "world": "/Temp/Untitled_1.Untitled",
+  "dirty_content_before": [],
+  "dirty_maps": [
+    "/Temp/Untitled_1"
+  ],
+  "characters": {
+    "/Game/Character/MainCharacter/MH_MainCharacter": {
+      "type": "MetaHumanCharacter",
+      "fixed_body_type": false,
+      "has_face_dna_blendshapes": true,
+      "head_scale": 1.0653988122940063,
+      "registered_for_editing": false
+    },
+    "/Game/Sphirus/CharacterLab/NativeBody_20260928/MH_B_SlightlyActive": {
+      "type": "MetaHumanCharacter",
+      "fixed_body_type": false,
+      "has_face_dna_blendshapes": true,
+      "head_scale": 1.0653988122940063,
+      "registered_for_editing": false
+    }
+  },
+  "apis": {
+    "remove_body_rig": {
+      "available": false,
+      "doc": null
+    },
+    "remove_face_rig": {
+      "available": true,
+      "doc": "x.remove_face_rig(character) -> None\r\nRemove the face rig from InCharacter, reverting the face mesh back to the\narchetype DNA and unregistering any morph targets.\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): Character to remove the face rig from. No-op if null."
+    },
+    "commit_body_dna": {
+      "available": false,
+      "doc": null
+    },
+    "commit_body_state": {
+      "available": true,
+      "doc": "x.commit_body_state(character) -> None\r\nCommits the Body State of the given Character to be serialized. This needs to be done after after using the\nsculpting or blending APIs to persist the changes\nRequires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter):"
+    },
+    "set_body_constraints": {
+      "available": true,
+      "doc": "x.set_body_constraints(character, body_constraints) -> None\r\n\r\nbrief: Set body constraints and evaluate the parametric body Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to update the constraints\r\n    body_constraints (Array[MetaHumanCharacterBodyConstraint]):"
+    },
+    "request_auto_rigging": {
+      "available": true,
+      "doc": "x.request_auto_rigging(character, params=[MetaHumanRigType.JOINTS_ONLY, True, False]) -> None\r\n\r\nbrief: Make a request to auto-rig a character Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to be auto-rigged\r\n    params (MetaHumanCharacterAutoRiggingRequestParams): Parameters to control the auto-rigging process"
+    },
+    "parametric_fit_to_dna_body": {
+      "available": false,
+      "doc": null
+    },
+    "align_face_dna_with_body": {
+      "available": false,
+      "doc": null
+    },
+    "build_meta_human": {
+      "available": true,
+      "doc": "x.build_meta_human(character, params) -> None\r\n\r\nbrief: Assemble a MetaHuman Character. Which type of assembly and configuration options can be set using InParams\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to be assembled. The character must be opened for edit or the build will fail\r\n    params (MetaHumanCharacterEditorBuildParameters): Parameter that determine which type of build to make"
+    },
+    "assemble_for_preview": {
+      "available": true,
+      "doc": "x.assemble_for_preview(character) -> None\r\nRuns the editor pipeline (Preview quality) for the given character. Use whenever changes are made that should be reflected in the preview\r\n\r\nArgs:\r\n    character (MetaHumanCharacter):"
+    },
+    "can_build_meta_human": {
+      "available": true,
+      "doc": "x.can_build_meta_human(character, log_error=False) -> bool\r\n\r\nbrief: Checks if MetaHuman character is ready for assembly. If the character is not ready a message with the reason why can be printed in the logs using bInLogError.\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to verify\r\n    log_error (bool): Set to log an error message if the character can't be built\r\n\r\nReturns:\r\n    bool: true if the character can be built and false otherwise"
+    },
+    "update_face_from_body_internal": {
+      "available": false,
+      "doc": null
+    }
+  },
+  "related_api_names": [
+    "build_meta_human",
+    "can_build_meta_human",
+    "commit_body_state",
+    "compare_body_state",
+    "conform_body",
+    "conform_body_to_target",
+    "fit_face_state_from_body_with_eyes_teeth_dna",
+    "fit_face_state_from_body_with_eyes_teeth_template",
+    "get_body_constraints",
+    "get_joints_for_body_conforming",
+    "get_joints_for_body_conforming_from_dna",
+    "get_joints_for_body_conforming_from_template",
+    "get_mesh_for_body_conforming",
+    "get_mesh_for_body_conforming_from_dna",
+    "get_mesh_for_body_conforming_from_template",
+    "get_preset_body_key_points",
+    "import_body_whole_rig",
+    "import_from_face_dna",
+    "remove_face_rig",
+    "request_auto_rigging",
+    "set_body_constraints",
+    "set_body_joints",
+    "set_body_mesh"
+  ],
+  "dirty_content_after": []
+}
