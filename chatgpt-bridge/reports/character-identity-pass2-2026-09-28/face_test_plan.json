@@ -1,0 +1,322 @@
+{
+  "animation": "/Game/Sphirus/CharacterLab/IdentityP2_20260928/Diagnostics/AS_IDP2_RigLogic_Singles_Blends.AS_IDP2_RigLogic_Singles_Blends",
+  "cases": [
+    {
+      "name": "neutral",
+      "controls": {},
+      "category": "single",
+      "sample_time": 0.5
+    },
+    {
+      "name": "blink",
+      "controls": {
+        "eyeblinkl": 1,
+        "eyeblinkr": 1
+      },
+      "category": "single",
+      "sample_time": 1.5
+    },
+    {
+      "name": "blink_left",
+      "controls": {
+        "eyeblinkl": 1
+      },
+      "category": "single",
+      "sample_time": 2.5
+    },
+    {
+      "name": "blink_right",
+      "controls": {
+        "eyeblinkr": 1
+      },
+      "category": "single",
+      "sample_time": 3.5
+    },
+    {
+      "name": "squint",
+      "controls": {
+        "eyesquintinnerl": 1,
+        "eyesquintinnerr": 1
+      },
+      "category": "single",
+      "sample_time": 4.5
+    },
+    {
+      "name": "look_up",
+      "controls": {
+        "eyelookupl": 1,
+        "eyelookupr": 1
+      },
+      "category": "single",
+      "sample_time": 5.5
+    },
+    {
+      "name": "look_down",
+      "controls": {
+        "eyelookdownl": 1,
+        "eyelookdownr": 1
+      },
+      "category": "single",
+      "sample_time": 6.5
+    },
+    {
+      "name": "look_left",
+      "controls": {
+        "eyelookleftl": 1,
+        "eyelookleftr": 1
+      },
+      "category": "single",
+      "sample_time": 7.5
+    },
+    {
+      "name": "look_right",
+      "controls": {
+        "eyelookrightl": 1,
+        "eyelookrightr": 1
+      },
+      "category": "single",
+      "sample_time": 8.5
+    },
+    {
+      "name": "brows_up",
+      "controls": {
+        "browraiseinl": 1,
+        "browraiseinr": 1,
+        "browraiseouterl": 1,
+        "browraiseouterr": 1
+      },
+      "category": "single",
+      "sample_time": 9.5
+    },
+    {
+      "name": "brows_down",
+      "controls": {
+        "browdownl": 1,
+        "browdownr": 1
+      },
+      "category": "single",
+      "sample_time": 10.5
+    },
+    {
+      "name": "smile",
+      "controls": {
+        "mouthcornerpulll": 1,
+        "mouthcornerpullr": 1
+      },
+      "category": "single",
+      "sample_time": 11.5
+    },
+    {
+      "name": "frown",
+      "controls": {
+        "mouthcornerdepressl": 1,
+        "mouthcornerdepressr": 1
+      },
+      "category": "single",
+      "sample_time": 12.5
+    },
+    {
+      "name": "mouth_open",
+      "controls": {
+        "jawopen": 0.45,
+        "mouthupperlipraisel": 0.5,
+        "mouthupperlipraiser": 0.5,
+        "mouthlowerlipdepressl": 0.5,
+        "mouthlowerlipdepressr": 0.5
+      },
+      "category": "single",
+      "sample_time": 13.5
+    },
+    {
+      "name": "jaw_open",
+      "controls": {
+        "jawopen": 1
+      },
+      "category": "single",
+      "sample_time": 14.5
+    },
+    {
+      "name": "lip_purse",
+      "controls": {
+        "mouthlipspurseul": 1,
+        "mouthlipspurseur": 1,
+        "mouthlipspursedl": 1,
+        "mouthlipspursedr": 1
+      },
+      "category": "single",
+      "sample_time": 15.5
+    },
+    {
+      "name": "lip_funnel",
+      "controls": {
+        "mouthfunnelul": 1,
+        "mouthfunnelur": 1,
+        "mouthfunneldl": 1,
+        "mouthfunneldr": 1
+      },
+      "category": "single",
+      "sample_time": 16.5
+    },
+    {
+      "name": "wide_mouth",
+      "controls": {
+        "mouthstretchl": 1,
+        "mouthstretchr": 1
+      },
+      "category": "single",
+      "sample_time": 17.5
+    },
+    {
+      "name": "cheek_raise",
+      "controls": {
+        "eyecheekraisel": 1,
+        "eyecheekraiser": 1
+      },
+      "category": "single",
+      "sample_time": 18.5
+    },
+    {
+      "name": "smile_jaw",
+      "controls": {
+        "mouthcornerpulll": 1,
+        "mouthcornerpullr": 1,
+        "jawopen": 0.55
+      },
+      "category": "combined",
+      "sample_time": 19.5
+    },
+    {
+      "name": "funnel_jaw",
+      "controls": {
+        "mouthfunnelul": 1,
+        "mouthfunnelur": 1,
+        "mouthfunneldl": 1,
+        "mouthfunneldr": 1,
+        "jawopen": 0.55
+      },
+      "category": "combined",
+      "sample_time": 20.5
+    },
+    {
+      "name": "purse_jaw",
+      "controls": {
+        "mouthlipspurseul": 1,
+        "mouthlipspurseur": 1,
+        "mouthlipspursedl": 1,
+        "mouthlipspursedr": 1,
+        "jawopen": 0.45
+      },
+      "category": "combined",
+      "sample_time": 21.5
+    },
+    {
+      "name": "brow_squint",
+      "controls": {
+        "browdownl": 0.8,
+        "browdownr": 0.8,
+        "eyesquintinnerl": 0.8,
+        "eyesquintinnerr": 0.8
+      },
+      "category": "combined",
+      "sample_time": 22.5
+    },
+    {
+      "name": "smile_cheek",
+      "controls": {
+        "mouthcornerpulll": 1,
+        "mouthcornerpullr": 1,
+        "eyecheekraisel": 0.75,
+        "eyecheekraiser": 0.75
+      },
+      "category": "combined",
+      "sample_time": 23.5
+    },
+    {
+      "name": "wide_jaw",
+      "controls": {
+        "mouthstretchl": 1,
+        "mouthstretchr": 1,
+        "jawopen": 0.45
+      },
+      "category": "combined",
+      "sample_time": 24.5
+    },
+    {
+      "name": "speech_MBP",
+      "controls": {
+        "mouthlipstogetherul": 0.85,
+        "mouthlipstogetherur": 0.85,
+        "mouthlipstogetherdl": 0.85,
+        "mouthlipstogetherdr": 0.85,
+        "mouthlipspressl": 0.35,
+        "mouthlipspressr": 0.35,
+        "jawopen": 0.12
+      },
+      "category": "speech_like",
+      "sample_time": 25.5
+    },
+    {
+      "name": "speech_AH",
+      "controls": {
+        "jawopen": 0.65,
+        "mouthlowerlipdepressl": 0.25,
+        "mouthlowerlipdepressr": 0.25,
+        "mouthupperlipraisel": 0.15,
+        "mouthupperlipraiser": 0.15
+      },
+      "category": "speech_like",
+      "sample_time": 26.5
+    },
+    {
+      "name": "speech_EE",
+      "controls": {
+        "mouthstretchl": 0.55,
+        "mouthstretchr": 0.55,
+        "mouthcornerpulll": 0.25,
+        "mouthcornerpullr": 0.25,
+        "jawopen": 0.2
+      },
+      "category": "speech_like",
+      "sample_time": 27.5
+    },
+    {
+      "name": "speech_OH",
+      "controls": {
+        "mouthfunnelul": 0.7,
+        "mouthfunnelur": 0.7,
+        "mouthfunneldl": 0.7,
+        "mouthfunneldr": 0.7,
+        "jawopen": 0.38
+      },
+      "category": "speech_like",
+      "sample_time": 28.5
+    },
+    {
+      "name": "speech_OO",
+      "controls": {
+        "mouthlipspurseul": 0.65,
+        "mouthlipspurseur": 0.65,
+        "mouthlipspursedl": 0.65,
+        "mouthlipspursedr": 0.65,
+        "mouthfunnelul": 0.25,
+        "mouthfunnelur": 0.25,
+        "mouthfunneldl": 0.25,
+        "mouthfunneldr": 0.25,
+        "jawopen": 0.16
+      },
+      "category": "speech_like",
+      "sample_time": 29.5
+    },
+    {
+      "name": "speech_FV",
+      "controls": {
+        "mouthlowerlipbitel": 0.65,
+        "mouthlowerlipbiter": 0.65,
+        "jawopen": 0.12
+      },
+      "category": "speech_like",
+      "sample_time": 30.5
+    }
+  ],
+  "scope": "Native RigLogic controls; full single-expression range retained. New isolated QA animation only. Speech-like poses, not dialogue certification."
+}

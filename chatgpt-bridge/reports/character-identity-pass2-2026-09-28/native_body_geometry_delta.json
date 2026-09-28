@@ -1,0 +1,30 @@
+{
+  "native_body_vertices": 32334,
+  "same_exported_topology": true,
+  "same_exported_uv": true,
+  "max_native_body_change_mm": 18.44098472595215,
+  "mean_native_body_change_mm": 4.545762062072754,
+  "regions": {
+    "torso": {
+      "count": 4469,
+      "max_mm": 18.44098472595215,
+      "mean_mm": 7.440709590911865
+    },
+    "hip_thigh": {
+      "count": 12807,
+      "max_mm": 11.899428367614746,
+      "mean_mm": 4.156872272491455
+    },
+    "calf_ankle": {
+      "count": 3094,
+      "max_mm": 11.504034996032715,
+      "mean_mm": 6.355482578277588
+    },
+    "arms": {
+      "count": 14050,
+      "max_mm": 9.735708236694336,
+      "mean_mm": 3.7029411792755127
+    }
+  },
+  "scope": "Read-only comparison of native MetaHuman exports. No Blender body editing. Values describe two native meshes, not measurements inferred from the photograph."
+}

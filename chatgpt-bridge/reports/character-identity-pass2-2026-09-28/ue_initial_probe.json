@@ -1,0 +1,194 @@
+{
+  "world": "/Temp/Untitled_1.Untitled",
+  "dirty_content": [],
+  "dirty_maps": [
+    "/Temp/Untitled_1"
+  ],
+  "engine": "5.8.1-56057345+++UE5+Release-5.8",
+  "source": "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/MH_Sphirus_AlignedTest",
+  "new_candidate": "/Game/Sphirus/CharacterLab/IdentityP2_20260928/MH_Sphirus_IdentityP2",
+  "head_settings": "<Struct 'MetaHumanCharacterFaceEvaluationSettings' (ADDRESS_OMITTED) {global_delta: 1.000000, high_frequency_delta: 0.000000, head_scale: 1.057911}>",
+  "body_constraints": [
+    {
+      "name": "Height",
+      "target": 171.75,
+      "active": true
+    },
+    {
+      "name": "Chest",
+      "target": 88.5,
+      "active": true
+    },
+    {
+      "name": "Bust Span",
+      "target": 24.37383270263672,
+      "active": true
+    },
+    {
+      "name": "Underbust",
+      "target": 73.0,
+      "active": true
+    },
+    {
+      "name": "Waist",
+      "target": 69.80000305175781,
+      "active": true
+    },
+    {
+      "name": "Rise",
+      "target": 76.40264892578125,
+      "active": false
+    },
+    {
+      "name": "Inseam",
+      "target": 73.53787994384766,
+      "active": true
+    },
+    {
+      "name": "Hip",
+      "target": 93.5,
+      "active": true
+    },
+    {
+      "name": "High Hip",
+      "target": 79.0,
+      "active": true
+    },
+    {
+      "name": "Neck Base",
+      "target": 31.85497283935547,
+      "active": true
+    },
+    {
+      "name": "Neck",
+      "target": 35.62337875366211,
+      "active": true
+    },
+    {
+      "name": "Thigh",
+      "target": 49.0,
+      "active": true
+    },
+    {
+      "name": "Knee",
+      "target": 32.30693054199219,
+      "active": true
+    },
+    {
+      "name": "Calf",
+      "target": 33.29999923706055,
+      "active": true
+    },
+    {
+      "name": "Front Interscye Length",
+      "target": 32.392608642578125,
+      "active": true
+    },
+    {
+      "name": "Upper Arm Length",
+      "target": 31.83609390258789,
+      "active": true
+    },
+    {
+      "name": "Lower Arm Length",
+      "target": 25.164005279541016,
+      "active": true
+    },
+    {
+      "name": "Bicep",
+      "target": 26.5,
+      "active": true
+    },
+    {
+      "name": "Elbow",
+      "target": 20.814056396484375,
+      "active": true
+    },
+    {
+      "name": "Wrist",
+      "target": 13.118677139282227,
+      "active": true
+    },
+    {
+      "name": "Neck to Waist",
+      "target": 35.885467529296875,
+      "active": true
+    },
+    {
+      "name": "Across Shoulder",
+      "target": 29.80000114440918,
+      "active": true
+    },
+    {
+      "name": "Shoulder Height",
+      "target": 146.6378936767578,
+      "active": false
+    },
+    {
+      "name": "Shoulder to Apex",
+      "target": 26.096359252929688,
+      "active": true
+    },
+    {
+      "name": "Neck Length",
+      "target": 8.294302940368652,
+      "active": true
+    },
+    {
+      "name": "Forearm",
+      "target": 21.5,
+      "active": true
+    },
+    {
+      "name": "Hand Circumference",
+      "target": 19.1273193359375,
+      "active": true
+    },
+    {
+      "name": "Fat",
+      "target": 0.30000001192092896,
+      "active": true
+    },
+    {
+      "name": "Masculine/Feminine",
+      "target": 0.03126716613769531,
+      "active": true
+    },
+    {
+      "name": "Muscularity",
+      "target": -0.75,
+      "active": true
+    }
+  ],
+  "subsystem_methods": {
+    "commit_body_state": "x.commit_body_state(character) -> None\r\nCommits the Body State of the given Character to be serialized. This needs to be done after after using the\nsculpting or blending APIs to persist the changes\nRequires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter):",
+    "commit_face_state": "x.commit_face_state(character) -> None\r\nCommits the Face State of the given Character to be serialized. This needs to be done after after using the\nsculpting or blending APIs to persist the changes\nRequires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter):",
+    "compare_body_state": "x.compare_body_state(character1, character2, tolerance) -> bool\r\nEvaluate the body state for each of the supplied characters, and compare the vertices and vertex normals\nRequires the characters to have been added for edit using TryAddObjectToEdit\nReturns true if all corresponding vertices and vertex normals are within InTolerance of each other in terms of vector norm\r\n\r\nArgs:\r\n    character1 (MetaHumanCharacter): \r\n    character2 (MetaHumanCharacter): \r\n    tolerance (float): \r\n\r\nReturns:\r\n    bool:",
+    "compare_face_state": "x.compare_face_state(character1, character2, tolerance) -> bool\r\nEvaluate the face state for each of the supplied characters, and compare the vertices and vertex normals\nRequires the characters to have been added for edit using TryAddObjectToEdit\nReturns true if all corresponding vertices and vertex normals are within InTolerance of each other in terms of vector norm\r\n\r\nArgs:\r\n    character1 (MetaHumanCharacter): \r\n    character2 (MetaHumanCharacter): \r\n    tolerance (float): \r\n\r\nReturns:\r\n    bool:",
+    "compare_face_textures": "X.compare_face_textures(character1, character2, pixel_tolerance) -> bool\r\nCompare the face textures for the two supplied characters\nDoes NOT require the characters to have been added for edit\nReturns true if face textures are identical to within the specified tolerance for each channel of each pixel, false otherwise\r\n\r\nArgs:\r\n    character1 (MetaHumanCharacter): \r\n    character2 (MetaHumanCharacter): \r\n    pixel_tolerance (int32): \r\n\r\nReturns:\r\n    bool:",
+    "conform_body": "x.conform_body(meta_human_character, vertices, joint_rotations, repose, estimate_joints_from_mesh) -> bool\r\nConform Body\r\ndeprecated: Use ConformBodyToTarget instead.\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    vertices (Array[Vector]): \r\n    joint_rotations (Array[Vector]): \r\n    repose (bool): \r\n    estimate_joints_from_mesh (bool): \r\n\r\nReturns:\r\n    bool:",
+    "conform_body_to_target": "x.conform_body_to_target(meta_human_character, vertices, joint_rotations, target_is_in_a_pose, estimate_joints_from_mesh) -> bool\r\nConform Body to Target\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    vertices (Array[Vector3f]): \r\n    joint_rotations (Array[Vector3f]): \r\n    target_is_in_a_pose (bool): \r\n    estimate_joints_from_mesh (bool): \r\n\r\nReturns:\r\n    bool:",
+    "fit_face_state_from_body_with_eyes_teeth_dna": "x.fit_face_state_from_body_with_eyes_teeth_dna(meta_human_character, face_dna_file_path) -> bool\r\nUpdates the face state to fit the current body state, then re-fits teeth and eyes using\nvertex positions read from a face DNA file. The head shape is driven by the body,\nnot the DNA — only teeth (mesh index 1), left eye (3), and right eye (4) are taken from the DNA.\nCall this after ConformBody.\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): The character whose face state will be updated.\r\n    face_dna_file_path (str): Path to the face DNA file to extract teeth and eye vertices from.\r\n\r\nReturns:\r\n    bool: true if the face state was successfully updated.",
+    "fit_face_state_from_body_with_eyes_teeth_template": "x.fit_face_state_from_body_with_eyes_teeth_template(meta_human_character, teeth_mesh, left_eye_mesh, right_eye_mesh, match_vertices_by_u_vs) -> bool\r\nUpdates the face state to fit the current body state, and optionally re-fits teeth and/or eyes\nusing vertices extracted from the supplied template mesh objects. Call this after ConformBody.\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): The character whose face state will be updated.\r\n    teeth_mesh (Object): Optional static or skeletal mesh in MetaHuman teeth topology. Pass null to skip.\r\n    left_eye_mesh (Object): Optional static or skeletal mesh in MetaHuman left eye topology. Pass null to skip.\r\n    right_eye_mesh (Object): Optional static or skeletal mesh in MetaHuman right eye topology. Pass null to skip.\r\n    match_vertices_by_u_vs (bool): When true, use UV correspondence to map template vertices to the DNA archetype order.\r\n\r\nReturns:\r\n    bool: true if the face state was successfully updated.",
+    "get_body_constraints": "x.get_body_constraints(character, scale_measurement_ranges_with_height=False) -> Array[MetaHumanCharacterBodyConstraint]\r\n\r\nbrief: Gets the list of body constrains from the underlying parametric body model Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): the character to retrieve the body constraints for\r\n    scale_measurement_ranges_with_height (bool): scale the measurement ranges by height to help stay within realistic model proportions\r\n\r\nReturns:\r\n    Array[MetaHumanCharacterBodyConstraint]: the list of body constraints provided by the underlying parametric body model",
+    "get_face_landmarks": "x.get_face_landmarks(character) -> Array[Vector]\r\n\r\nbrief: Gets the positions of the face landmarks for a given character. Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to obtain the landmarks for\r\n\r\nReturns:\r\n    Array[Vector]: \r\n\r\n    out_face_landmarks (Array[Vector]): the list with the face landmarks positions",
+    "get_face_model_coefficients": "x.get_face_model_coefficients(character) -> Array[float]\r\n\r\nbrief: Gets the coefficients of the underlying face model for the given character. Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to obtain the coefficients for\r\n\r\nReturns:\r\n    Array[float]: \r\n\r\n    out_coefficients (Array[float]): The coefficients array to fill",
+    "get_joints_for_body_conforming": "x.get_joints_for_body_conforming(template_mesh) -> (ImportErrorCode, out_joint_world_translations=Array[Vector], out_joint_rotations=Array[Vector])\r\nGet Joints for Body Conforming\r\ndeprecated: Use GetJointsForBodyConformingFromTemplate instead.\r\n\r\nArgs:\r\n    template_mesh (SkeletalMesh): \r\n\r\nReturns:\r\n    tuple: \r\n\r\n    out_joint_world_translations (Array[Vector]): \r\n\r\n    out_joint_rotations (Array[Vector]):",
+    "get_joints_for_body_conforming_from_dna": "x.get_joints_for_body_conforming_from_dna(body_dna_file_path) -> (ImportErrorCode, out_joint_world_translations=Array[Vector3f], out_joint_rotations=Array[Vector3f])\r\nGet the body joint data for conforming, from a DNA file path.\nSuitable for use from Python and Blueprints.\r\n\r\nArgs:\r\n    body_dna_file_path (str): Absolute file path to the body DNA file\r\n\r\nReturns:\r\n    tuple: EImportErrorCode::Success on success, otherwise an error code describing the failure\r\n\r\n    out_joint_world_translations (Array[Vector3f]): On success, contains the body joint world translations\r\n\r\n    out_joint_rotations (Array[Vector3f]): On success, contains the body joint rotations",
+    "get_joints_for_body_conforming_from_template": "x.get_joints_for_body_conforming_from_template(template_mesh) -> (ImportErrorCode, out_joint_world_translations=Array[Vector3f], out_joint_rotations=Array[Vector3f])\r\nGet Joints for Body Conforming from Template\r\n\r\nArgs:\r\n    template_mesh (SkeletalMesh): \r\n\r\nReturns:\r\n    tuple: \r\n\r\n    out_joint_world_translations (Array[Vector3f]): \r\n\r\n    out_joint_rotations (Array[Vector3f]):",
+    "get_mesh_for_body_conforming": "x.get_mesh_for_body_conforming(meta_human_character, body_template_mesh, head_template_mesh, match_vertices_by_u_vs) -> (ImportErrorCode, out_vertices=Array[Vector])\r\nGet Mesh for Body Conforming\r\ndeprecated: Use GetMeshForBodyConformingFromTemplate instead.\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    body_template_mesh (Object): \r\n    head_template_mesh (Object): \r\n    match_vertices_by_u_vs (bool): \r\n\r\nReturns:\r\n    Array[Vector]: \r\n\r\n    out_vertices (Array[Vector]):",
+    "get_mesh_for_body_conforming_from_dna": "x.get_mesh_for_body_conforming_from_dna(meta_human_character, body_dna_file_path, head_dna_file_path) -> (ImportErrorCode, out_vertices=Array[Vector3f])\r\nGet the body mesh vertices for conforming, from DNA file paths.\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): The character to conform\r\n    body_dna_file_path (str): Absolute file path to the body DNA file\r\n    head_dna_file_path (str): Absolute file path to the head DNA file (optional, pass empty string to omit)\r\n\r\nReturns:\r\n    Array[Vector3f]: EImportErrorCode::Success on success, otherwise an error code describing the failure\r\n\r\n    out_vertices (Array[Vector3f]): On success, contains the body mesh vertices",
+    "get_mesh_for_body_conforming_from_template": "x.get_mesh_for_body_conforming_from_template(meta_human_character, body_template_mesh, head_template_mesh, match_vertices_by_u_vs) -> (ImportErrorCode, out_vertices=Array[Vector3f])\r\nGet Mesh for Body Conforming from Template\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    body_template_mesh (Object): \r\n    head_template_mesh (Object): \r\n    match_vertices_by_u_vs (bool): \r\n\r\nReturns:\r\n    Array[Vector3f]: \r\n\r\n    out_vertices (Array[Vector3f]):",
+    "get_preset_body_key_points": "x.get_preset_body_key_points(character) -> Map[Name, int32]\r\nGet preset keypoints from MetaHumanCreator API (body or head) without committing them\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): \r\n\r\nReturns:\r\n    Map[Name, int32]:",
+    "import_body_whole_rig": "x.import_body_whole_rig(meta_human_character, body_dna_file_path, head_dna_file_path) -> ImportErrorCode\r\nImport body as a fully rigged Character from DNA file paths, sets character to a fixed body type\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    body_dna_file_path (str): \r\n    head_dna_file_path (str): \r\n\r\nReturns:\r\n    ImportErrorCode:",
+    "import_from_face_dna": "x.import_from_face_dna(character, dna_file_path, import_params) -> ImportErrorCode\r\n\r\nbrief: Either fits the Character face state to the input face DNA, or imports the DNA as-is, depending on options Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to import the DNA to\r\n    dna_file_path (str): Path to the DNA file to be imported\r\n    import_params (ImportFromDNAParams): Options for how to perform the import operation\r\n\r\nReturns:\r\n    ImportErrorCode: code indicating success or failure",
+    "remove_face_rig": "x.remove_face_rig(character) -> None\r\nRemove the face rig from InCharacter, reverting the face mesh back to the\narchetype DNA and unregistering any morph targets.\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): Character to remove the face rig from. No-op if null.",
+    "request_auto_rigging": "x.request_auto_rigging(character, params=[MetaHumanRigType.JOINTS_ONLY, True, False]) -> None\r\n\r\nbrief: Make a request to auto-rig a character Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to be auto-rigged\r\n    params (MetaHumanCharacterAutoRiggingRequestParams): Parameters to control the auto-rigging process",
+    "set_body_constraints": "x.set_body_constraints(character, body_constraints) -> None\r\n\r\nbrief: Set body constraints and evaluate the parametric body Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to update the constraints\r\n    body_constraints (Array[MetaHumanCharacterBodyConstraint]):",
+    "set_body_joints": "x.set_body_joints(meta_human_character, component_joint_translations, joint_rotations, import_helper_joints) -> bool\r\nSet custom body joints\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    component_joint_translations (Array[Vector3f]): \r\n    joint_rotations (Array[Vector3f]): \r\n    import_helper_joints (bool): \r\n\r\nReturns:\r\n    bool:",
+    "set_body_mesh": "x.set_body_mesh(meta_human_character, vertices, reposition_helper_joints) -> bool\r\nSet custom body neutral mesh\r\n\r\nArgs:\r\n    meta_human_character (MetaHumanCharacter): \r\n    vertices (Array[Vector3f]): \r\n    reposition_helper_joints (bool): \r\n\r\nReturns:\r\n    bool:",
+    "set_face_model_coefficients": "x.set_face_model_coefficients(character, coefficients) -> None\r\n\r\nbrief: Sets the coefficients of the underlying face model for the given character. Requires the character to be added for edit using TryAddObjectToEdit\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): The character to update\r\n    coefficients (Array[float]): The coefficients to apply",
+    "track_face_landmarks_from_image": "x.track_face_landmarks_from_image(image_data, width, height) -> Map[str, TrackingPoints] or None\r\nRun face landmark detection on an image and return tracking contour curves.\nUse with a front-facing portrait of the target mesh — typically a SceneCapture2D\nrender. The first call after editor start synchronously loads the face contour\ntracker NNE models (the default tracker asset), so it can take several seconds;\nsubsequent calls hit the cached models and are fast.\r\n\r\nArgs:\r\n    image_data (Array[Color]): Raw pixel data (BGRA8); length must equal InWidth * InHeight.\r\n    width (int32): Image width in pixels.\r\n    height (int32): Image height in pixels.\r\n\r\nReturns:\r\n    Map[str, TrackingPoints] or None: true if any landmarks were detected; false on invalid input, model load failure, or no face found.\r\n\r\n    out_curve_tracking_points (Map[str, TrackingPoints]): Named contour curves (2D points in image space).",
+    "translate_face_landmarks": "x.translate_face_landmarks(character, landmark_indices, deltas) -> None\r\n\r\nbrief: Translates the face landmarks by the given deltas Requires the character to be added for edit using TryAddObjectToEdit The number of landmark indices and deltas must match\r\n\r\nArgs:\r\n    character (MetaHumanCharacter): the character to translate the landmarks for\r\n    landmark_indices (Array[int32]): The index of each landmark to be translated\r\n    deltas (Array[Vector]): the list of translation deltas to apply to each landmark"
+  }
+}

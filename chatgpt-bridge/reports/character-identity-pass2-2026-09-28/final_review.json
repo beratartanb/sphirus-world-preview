@@ -1,0 +1,193 @@
+{
+  "gates": {
+    "FACE SHAPE": {
+      "status": "PARTIAL",
+      "reason": "Çene genişliği/sertliği azaldı; göz açıklığı ve dudak desteği iyileşti. Burun, ağız ve orta yüzün konsept kimliği henüz yeterince özgül değil."
+    },
+    "METAHUMAN CONFORM": {
+      "status": "PASS",
+      "reason": "Yeni yüz UV/template yöntemiyle korunuyor; boyun adaptasyonu ayrı ölçüldü, native birleşim temiz. Bu yalnızca Conform kabulüdür."
+    },
+    "FACIAL DEFORMATION": {
+      "status": "PARTIAL",
+      "reason": "RigLogic çalışıyor; funnel/wide ve bazı ağız birleşimlerinde katlanma/sertlik sürüyor. Kalıcı DNA corrective düzenlemesi yapılmadı."
+    },
+    "BODY PROPORTIONS": {
+      "status": "PARTIAL",
+      "reason": "Native bel/kol/bacak dengesi ilerledi; referanstaki daha aktif gövde ve uzuv oranları henüz yeterince yakalanmadı."
+    },
+    "BODY DEFORMATION": {
+      "status": "PASS",
+      "reason": "Test edilen LOD0 pozları ve hareket fazlarında büyük yeni çökme, yırtılma veya boyun kopması görülmedi; gameplay/ayak teması sertifikasyonu değildir."
+    }
+  },
+  "head_visual_review": "Yeni alt yüz daha az kare; kapak açıklığı ve yanak desteği daha doğal. Dudaklar önceki hedefe göre hacimli, fakat nötr ağız çizgisi hâlâ sıkı. Burun–orta yüz–ağız ilişkisi ve tüm yüz kimliği ana konseptteki kadını henüz güçlü biçimde tanımlamıyor. Üç iterasyona rağmen genel MetaHuman izlenimi tamamen kalkmadı; FACE SHAPE için PASS verilmedi.",
+  "facial_visual_review": "Funnel köşelerinde ve halka biçiminde perioral kıvrım, wide-mouth pozunda düz bant etkisi, bazı gülüşlerde mekanik köşe hareketi devam ediyor. İkincil native kontrol kalibrasyonu küçük bir iyileşme sağladı; bunu kalıcı rig düzeltmesi olarak sunmuyoruz. Blend geçişleri ve dudak teması tüm karelerde ölçülmedi.",
+  "body_visual_review": "Beş native varyant içinden seçilen E, bel/üst kalça geçişini belirginleştiriyor ve kol-uyluk-baldır hacmini daha aktif bir dengeye taşıyor. Ön/yan/arka ve iki 3/4 görünüşte native sırt anatomisi bütün. Ancak gövde ve uzuvların genel yumuşaklığı, referansın daha belirgin ribcage/waist/limb ilişkisine hâlâ tam yaklaşmıyor. Bu nedenle referans eşleşmesi PARTIAL; native anatominin çalışması tek başına sanat kabulü değil.",
+  "body_pose_review": "44 ana görüntünün tamamı incelendi. Sprint yan görünüşündeki parlaklığı ve kalça bükülmesindeki el kadrajını açıklığa kavuşturan iki ek görüntü daha alındı (toplam 46). Bu ikisinde yalnızca geçici QA ışık şiddeti/kadraj değişti; pozlar aynı kaldı. Büyük yeni yırtılma, pelvis/diz çökmesi veya baş-boyun kopması görülmedi. Sıkışmış koltukaltı/torso temas bölgeleri görsel olarak kontrol edildi; tüm yüzeyler için çarpışma çözümü veya üretim locomotion doğrulaması yapılmadı.",
+  "remaining_summary": "Yüz kimliği, bazı ağız deformasyonları ve bedenin tam referans eşleşmesi açık. Üretime geçiş için yüzün konsept kimliği üzerinde daha nitelikli form değerlendirmesi, expression düzeyinde kalıcı corrective kalibrasyonu ve sürekli konuşma/temas testi gerekiyor. Native bedenin parametre eşleşmesi de henüz final sanat kabulü almıyor. Yeni aday korunmuş bir çalışma sonucudur; üretim karakterini değiştirmek için onaylanmış final değildir.",
+  "expressions": [
+    {
+      "name": "neutral",
+      "status": "PASS",
+      "finding": "Nötr mesh bütün; bu sonuç konsept kimliğine PASS anlamına gelmez."
+    },
+    {
+      "name": "blink",
+      "status": "PASS",
+      "finding": "İki kapak kapanıyor; incelenen ön ve 3/4 görüntülerde büyük katlanma veya açıkta kalan göz küresi yok."
+    },
+    {
+      "name": "blink_left",
+      "status": "PASS",
+      "finding": "Tek taraflı kapanma çalışıyor; karşı göz korunuyor."
+    },
+    {
+      "name": "blink_right",
+      "status": "PASS",
+      "finding": "Tek taraflı kapanma çalışıyor; karşı göz korunuyor."
+    },
+    {
+      "name": "squint",
+      "status": "PASS",
+      "finding": "Kapak/orbit sıkışması okunuyor; büyük yırtılma görülmedi."
+    },
+    {
+      "name": "look_up",
+      "status": "PASS",
+      "finding": "Göz yönü ve kapak takibi test edilen pozda makul."
+    },
+    {
+      "name": "look_down",
+      "status": "PASS",
+      "finding": "Alt kapak gölgesi belirgin; büyük göz küresi penetrasyonu görülmedi. Temas sayısal ölçülmedi."
+    },
+    {
+      "name": "look_left",
+      "status": "PASS",
+      "finding": "Test edilen yatay bakışta büyük kapak sorunu görülmedi."
+    },
+    {
+      "name": "look_right",
+      "status": "PASS",
+      "finding": "Test edilen yatay bakışta büyük kapak sorunu görülmedi."
+    },
+    {
+      "name": "brows_up",
+      "status": "PASS",
+      "finding": "Kaş/alın hareketi çalışıyor; yeni büyük yüzey kırılması yok."
+    },
+    {
+      "name": "brows_down",
+      "status": "PASS",
+      "finding": "Glabella sıkışması mevcut; büyük yüzey kopması yok."
+    },
+    {
+      "name": "smile",
+      "status": "PARTIAL",
+      "finding": "Yanak katılımı var; ağız köşesi çizgisi ve genişleme hâlâ mekanik. İkincil destek sınırlı iyileştiriyor."
+    },
+    {
+      "name": "frown",
+      "status": "PASS",
+      "finding": "Test edilen aşağı köşe hareketinde büyük geometrik hata görülmedi."
+    },
+    {
+      "name": "mouth_open",
+      "status": "PASS",
+      "finding": "Test edilen açıklıkta dudak/çene bağlantısı korunuyor."
+    },
+    {
+      "name": "jaw_open",
+      "status": "PASS",
+      "finding": "Çene açılmasında yüzey sürekliliği korunuyor; üretim konuşma onayı değildir."
+    },
+    {
+      "name": "lip_purse",
+      "status": "PARTIAL",
+      "finding": "Dudak büzülmesi çalışıyor; köşelerde sıkı geçiş sürüyor."
+    },
+    {
+      "name": "lip_funnel",
+      "status": "PARTIAL",
+      "finding": "Perioral halka ve köşe katlanması belirgin. Destek eğrileri ağır katlanmayı tamamen gidermiyor."
+    },
+    {
+      "name": "wide_mouth",
+      "status": "PARTIAL",
+      "finding": "Yatay uzama fazla düz bir bant oluşturuyor; köşe geçişi ve dudak kalınlığı yeterince doğal değil."
+    },
+    {
+      "name": "cheek_raise",
+      "status": "PASS",
+      "finding": "Yanak/alt kapak katılımında büyük yeni hata görülmedi."
+    },
+    {
+      "name": "smile_jaw",
+      "status": "PARTIAL",
+      "finding": "Açılan çene ile gülüş çalışıyor; köşe sertliği devam ediyor."
+    },
+    {
+      "name": "funnel_jaw",
+      "status": "PARTIAL",
+      "finding": "Çene açılmasıyla funnel çevresinde kalın halka ve köşe sıkışması sürüyor."
+    },
+    {
+      "name": "purse_jaw",
+      "status": "PARTIAL",
+      "finding": "Çene/dudak birleşimi yırtılmıyor; köşe ve dudak temasının üretim kalitesi doğrulanmadı."
+    },
+    {
+      "name": "brow_squint",
+      "status": "PASS",
+      "finding": "Birleşik üst yüz pozunda büyük katlanma veya kopma görülmedi."
+    },
+    {
+      "name": "smile_cheek",
+      "status": "PARTIAL",
+      "finding": "Yanak katılımı daha organik; ağız köşelerinin sertliği tamamen çözülmedi."
+    },
+    {
+      "name": "wide_jaw",
+      "status": "PARTIAL",
+      "finding": "Açık ağızda yatay bant etkisi ve köşe sertliği devam ediyor."
+    },
+    {
+      "name": "speech_MBP",
+      "status": "PARTIAL",
+      "finding": "Dudak kapanmasına yaklaşım mevcut; çizgi düzensiz. Tam dudak teması/ara kareler sayısal doğrulanmadı."
+    },
+    {
+      "name": "speech_AH",
+      "status": "PASS",
+      "finding": "Bu temsilî açık ağız pozunda büyük geometrik hata görülmedi."
+    },
+    {
+      "name": "speech_EE",
+      "status": "PARTIAL",
+      "finding": "Yatay ağız şekli düzleşiyor; köşe geçişi üretim kalitesinde değil."
+    },
+    {
+      "name": "speech_OH",
+      "status": "PARTIAL",
+      "finding": "Funnel kaynaklı halka/köşe sıkışması bu birleşime de taşınıyor."
+    },
+    {
+      "name": "speech_OO",
+      "status": "PARTIAL",
+      "finding": "Düşük genlikte daha sakin görünüm; temas ve geçiş sürekliliği tam doğrulanmadı."
+    },
+    {
+      "name": "speech_FV",
+      "status": "PARTIAL",
+      "finding": "Alt dudak/diş ilişkisi temsilî olarak çalıştırıldı; gerçek fonetik diş-dudak teması onaylanmadı."
+    }
+  ],
+  "visual_scope": "Actual Blender and Unreal geometry renders, neutral and tested LOD0 frames. No generated or retouched model evidence.",
+  "body_main_captures": 44,
+  "body_supplemental_captures": 2,
+  "face_raw_captures": 62,
+  "face_supported_captures": 28,
+  "production_replaced": false,
+  "overall_success_claimed": false
+}

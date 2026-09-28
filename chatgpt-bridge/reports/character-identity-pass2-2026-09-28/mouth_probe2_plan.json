@@ -1,0 +1,102 @@
+{
+  "animation": "/Game/Sphirus/CharacterLab/IdentityP2_20260928/Diagnostics/AS_IDP2_MouthSupport_Probe2.AS_IDP2_MouthSupport_Probe2",
+  "cases": [
+    {
+      "name": "funnel_width_0.2",
+      "category": "calibration_probe",
+      "controls": {
+        "mouthfunnelul": 1,
+        "mouthfunnelur": 1,
+        "mouthfunneldl": 1,
+        "mouthfunneldr": 1,
+        "mouthcornerrounderul": 0.6,
+        "mouthcornerrounderur": 0.6,
+        "mouthcornerrounderdl": 0.6,
+        "mouthcornerrounderdr": 0.6,
+        "mouthcornerwidel": 0.2,
+        "mouthcornerwider": 0.2
+      },
+      "sample_time": 0.5
+    },
+    {
+      "name": "funnel_width_0.4",
+      "category": "calibration_probe",
+      "controls": {
+        "mouthfunnelul": 1,
+        "mouthfunnelur": 1,
+        "mouthfunneldl": 1,
+        "mouthfunneldr": 1,
+        "mouthcornerrounderul": 0.6,
+        "mouthcornerrounderur": 0.6,
+        "mouthcornerrounderdl": 0.6,
+        "mouthcornerrounderdr": 0.6,
+        "mouthcornerwidel": 0.4,
+        "mouthcornerwider": 0.4
+      },
+      "sample_time": 1.5
+    },
+    {
+      "name": "funnel_width_0.6",
+      "category": "calibration_probe",
+      "controls": {
+        "mouthfunnelul": 1,
+        "mouthfunnelur": 1,
+        "mouthfunneldl": 1,
+        "mouthfunneldr": 1,
+        "mouthcornerrounderul": 0.6,
+        "mouthcornerrounderur": 0.6,
+        "mouthcornerrounderdl": 0.6,
+        "mouthcornerrounderdr": 0.6,
+        "mouthcornerwidel": 0.6,
+        "mouthcornerwider": 0.6
+      },
+      "sample_time": 2.5
+    },
+    {
+      "name": "wide_corner_0.25",
+      "category": "calibration_probe",
+      "controls": {
+        "mouthstretchl": 1,
+        "mouthstretchr": 1,
+        "mouthlipsthickul": 0.65,
+        "mouthlipsthickur": 0.65,
+        "mouthlipsthickdl": 0.65,
+        "mouthlipsthickdr": 0.65,
+        "mouthcornernarrowl": 0.25,
+        "mouthcornernarrowr": 0.25
+      },
+      "sample_time": 3.5
+    },
+    {
+      "name": "wide_corner_0.5",
+      "category": "calibration_probe",
+      "controls": {
+        "mouthstretchl": 1,
+        "mouthstretchr": 1,
+        "mouthlipsthickul": 0.65,
+        "mouthlipsthickur": 0.65,
+        "mouthlipsthickdl": 0.65,
+        "mouthlipsthickdr": 0.65,
+        "mouthcornernarrowl": 0.5,
+        "mouthcornernarrowr": 0.5
+      },
+      "sample_time": 4.5
+    },
+    {
+      "name": "wide_corner_0.75",
+      "category": "calibration_probe",
+      "controls": {
+        "mouthstretchl": 1,
+        "mouthstretchr": 1,
+        "mouthlipsthickul": 0.65,
+        "mouthlipsthickur": 0.65,
+        "mouthlipsthickdl": 0.65,
+        "mouthlipsthickdr": 0.65,
+        "mouthcornernarrowl": 0.75,
+        "mouthcornernarrowr": 0.75
+      },
+      "sample_time": 5.5
+    }
+  ],
+  "scope": "Secondary native controls only; primary funnel/stretch/pull remains 1.0. Not a DNA corrective yet."
+}

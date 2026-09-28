@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "image": "body_detail_sprint_side.png",
+      "name": "sprint",
+      "animation": "/Game/Sphirus/CharacterLab/IdentityP2_20260928/Diagnostics/Motion/QA_IDP2_M_Neutral_Sprint_Loop_F",
+      "sample_time": 0.5,
+      "head_body_bone_error_cm": 1.509903313490213e-14,
+      "light_factor": 0.55
+    },
+    {
+      "image": "body_detail_hip_flexion_side.png",
+      "name": "hip_flexion",
+      "animation": "/MetaHumanCharacter/Optional/Animation/TemplateAnimations/Technical_Loops/BodyROM/mhc_body_rom_body",
+      "sample_time": 15,
+      "head_body_bone_error_cm": 3.552713678800501e-15,
+      "light_factor": 0.55
+    }
+  ],
+  "reason": "Supplement over-bright sprint side and hip-flexion side hand framing. Same actual poses, temporary QA light intensity x0.55."
+}

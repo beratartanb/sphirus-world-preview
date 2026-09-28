@@ -1,0 +1,482 @@
+{
+  "before": [
+    {
+      "name": "Height",
+      "target": 171.75,
+      "active": true
+    },
+    {
+      "name": "Chest",
+      "target": 89.0,
+      "active": true
+    },
+    {
+      "name": "Bust Span",
+      "target": 24.37383270263672,
+      "active": true
+    },
+    {
+      "name": "Underbust",
+      "target": 72.5,
+      "active": true
+    },
+    {
+      "name": "Waist",
+      "target": 67.80000305175781,
+      "active": true
+    },
+    {
+      "name": "Rise",
+      "target": 76.00981903076172,
+      "active": false
+    },
+    {
+      "name": "Inseam",
+      "target": 73.53787994384766,
+      "active": true
+    },
+    {
+      "name": "Hip",
+      "target": 94.0,
+      "active": true
+    },
+    {
+      "name": "High Hip",
+      "target": 78.0,
+      "active": true
+    },
+    {
+      "name": "Neck Base",
+      "target": 31.85497283935547,
+      "active": true
+    },
+    {
+      "name": "Neck",
+      "target": 34.79999923706055,
+      "active": true
+    },
+    {
+      "name": "Thigh",
+      "target": 51.0,
+      "active": true
+    },
+    {
+      "name": "Knee",
+      "target": 32.30693054199219,
+      "active": true
+    },
+    {
+      "name": "Calf",
+      "target": 34.20000076293945,
+      "active": true
+    },
+    {
+      "name": "Front Interscye Length",
+      "target": 32.392608642578125,
+      "active": true
+    },
+    {
+      "name": "Upper Arm Length",
+      "target": 31.83609390258789,
+      "active": true
+    },
+    {
+      "name": "Lower Arm Length",
+      "target": 25.164005279541016,
+      "active": true
+    },
+    {
+      "name": "Bicep",
+      "target": 26.5,
+      "active": true
+    },
+    {
+      "name": "Elbow",
+      "target": 20.814056396484375,
+      "active": true
+    },
+    {
+      "name": "Wrist",
+      "target": 13.118677139282227,
+      "active": true
+    },
+    {
+      "name": "Neck to Waist",
+      "target": 35.885467529296875,
+      "active": true
+    },
+    {
+      "name": "Across Shoulder",
+      "target": 29.399999618530273,
+      "active": true
+    },
+    {
+      "name": "Shoulder Height",
+      "target": 146.52655029296875,
+      "active": false
+    },
+    {
+      "name": "Shoulder to Apex",
+      "target": 26.096359252929688,
+      "active": true
+    },
+    {
+      "name": "Neck Length",
+      "target": 8.294302940368652,
+      "active": true
+    },
+    {
+      "name": "Forearm",
+      "target": 21.799999237060547,
+      "active": true
+    },
+    {
+      "name": "Hand Circumference",
+      "target": 19.1273193359375,
+      "active": true
+    },
+    {
+      "name": "Fat",
+      "target": -0.18000000715255737,
+      "active": true
+    },
+    {
+      "name": "Masculine/Feminine",
+      "target": 0.550000011920929,
+      "active": true
+    },
+    {
+      "name": "Muscularity",
+      "target": 0.05000000074505806,
+      "active": true
+    }
+  ],
+  "globals": {
+    "Height": 171.75,
+    "Fat": -0.65,
+    "Muscularity": 0.45,
+    "Masculine/Feminine": 0.55
+  },
+  "global_fit": [
+    {
+      "name": "Height",
+      "target": 171.75,
+      "active": true
+    },
+    {
+      "name": "Chest",
+      "target": 87.8117446899414,
+      "active": false
+    },
+    {
+      "name": "Bust Span",
+      "target": 22.887968063354492,
+      "active": false
+    },
+    {
+      "name": "Underbust",
+      "target": 70.61807250976562,
+      "active": false
+    },
+    {
+      "name": "Waist",
+      "target": 64.00392150878906,
+      "active": false
+    },
+    {
+      "name": "Rise",
+      "target": 75.04835510253906,
+      "active": false
+    },
+    {
+      "name": "Inseam",
+      "target": 74.57667541503906,
+      "active": false
+    },
+    {
+      "name": "Hip",
+      "target": 92.30792236328125,
+      "active": false
+    },
+    {
+      "name": "High Hip",
+      "target": 72.1736068725586,
+      "active": false
+    },
+    {
+      "name": "Neck Base",
+      "target": 30.7347469329834,
+      "active": false
+    },
+    {
+      "name": "Neck",
+      "target": 33.37190246582031,
+      "active": false
+    },
+    {
+      "name": "Thigh",
+      "target": 51.61824417114258,
+      "active": false
+    },
+    {
+      "name": "Knee",
+      "target": 31.507951736450195,
+      "active": false
+    },
+    {
+      "name": "Calf",
+      "target": 33.74806213378906,
+      "active": false
+    },
+    {
+      "name": "Front Interscye Length",
+      "target": 32.34872817993164,
+      "active": false
+    },
+    {
+      "name": "Upper Arm Length",
+      "target": 31.644081115722656,
+      "active": false
+    },
+    {
+      "name": "Lower Arm Length",
+      "target": 25.10723114013672,
+      "active": false
+    },
+    {
+      "name": "Bicep",
+      "target": 26.79781150817871,
+      "active": false
+    },
+    {
+      "name": "Elbow",
+      "target": 20.89420509338379,
+      "active": false
+    },
+    {
+      "name": "Wrist",
+      "target": 12.744937896728516,
+      "active": false
+    },
+    {
+      "name": "Neck to Waist",
+      "target": 36.11156463623047,
+      "active": false
+    },
+    {
+      "name": "Across Shoulder",
+      "target": 29.248327255249023,
+      "active": false
+    },
+    {
+      "name": "Shoulder Height",
+      "target": 146.6309356689453,
+      "active": false
+    },
+    {
+      "name": "Shoulder to Apex",
+      "target": 25.4993953704834,
+      "active": false
+    },
+    {
+      "name": "Neck Length",
+      "target": 9.598132133483887,
+      "active": false
+    },
+    {
+      "name": "Forearm",
+      "target": 21.989351272583008,
+      "active": false
+    },
+    {
+      "name": "Hand Circumference",
+      "target": 18.898651123046875,
+      "active": false
+    },
+    {
+      "name": "Fat",
+      "target": -0.6499999761581421,
+      "active": true
+    },
+    {
+      "name": "Masculine/Feminine",
+      "target": 0.550000011920929,
+      "active": true
+    },
+    {
+      "name": "Muscularity",
+      "target": 0.44999998807907104,
+      "active": true
+    }
+  ],
+  "regional": {
+    "Chest": 89.0,
+    "Underbust": 72.5,
+    "Waist": 68.0,
+    "Hip": 94.0,
+    "High Hip": 78.0,
+    "Across Shoulder": 29.4,
+    "Bicep": 26.5,
+    "Forearm": 21.8,
+    "Thigh": 51.0,
+    "Calf": 34.2,
+    "Neck": 34.8
+  },
+  "after": [
+    {
+      "name": "Height",
+      "target": 171.75,
+      "active": true
+    },
+    {
+      "name": "Chest",
+      "target": 89.0,
+      "active": true
+    },
+    {
+      "name": "Bust Span",
+      "target": 22.9801082611084,
+      "active": false
+    },
+    {
+      "name": "Underbust",
+      "target": 72.5,
+      "active": true
+    },
+    {
+      "name": "Waist",
+      "target": 68.0,
+      "active": true
+    },
+    {
+      "name": "Rise",
+      "target": 75.11522674560547,
+      "active": false
+    },
+    {
+      "name": "Inseam",
+      "target": 74.54874420166016,
+      "active": false
+    },
+    {
+      "name": "Hip",
+      "target": 94.0,
+      "active": true
+    },
+    {
+      "name": "High Hip",
+      "target": 78.0,
+      "active": true
+    },
+    {
+      "name": "Neck Base",
+      "target": 32.19642639160156,
+      "active": false
+    },
+    {
+      "name": "Neck",
+      "target": 34.79999923706055,
+      "active": true
+    },
+    {
+      "name": "Thigh",
+      "target": 51.0,
+      "active": true
+    },
+    {
+      "name": "Knee",
+      "target": 31.489389419555664,
+      "active": false
+    },
+    {
+      "name": "Calf",
+      "target": 34.20000076293945,
+      "active": true
+    },
+    {
+      "name": "Front Interscye Length",
+      "target": 32.532379150390625,
+      "active": false
+    },
+    {
+      "name": "Upper Arm Length",
+      "target": 31.67510986328125,
+      "active": false
+    },
+    {
+      "name": "Lower Arm Length",
+      "target": 25.102811813354492,
+      "active": false
+    },
+    {
+      "name": "Bicep",
+      "target": 26.5,
+      "active": true
+    },
+    {
+      "name": "Elbow",
+      "target": 20.884334564208984,
+      "active": false
+    },
+    {
+      "name": "Wrist",
+      "target": 12.738502502441406,
+      "active": false
+    },
+    {
+      "name": "Neck to Waist",
+      "target": 36.40207290649414,
+      "active": false
+    },
+    {
+      "name": "Across Shoulder",
+      "target": 29.399999618530273,
+      "active": true
+    },
+    {
+      "name": "Shoulder Height",
+      "target": 147.04510498046875,
+      "active": false
+    },
+    {
+      "name": "Shoulder to Apex",
+      "target": 25.989871978759766,
+      "active": false
+    },
+    {
+      "name": "Neck Length",
+      "target": 9.301290512084961,
+      "active": false
+    },
+    {
+      "name": "Forearm",
+      "target": 21.799999237060547,
+      "active": true
+    },
+    {
+      "name": "Hand Circumference",
+      "target": 18.89165687561035,
+      "active": false
+    },
+    {
+      "name": "Fat",
+      "target": -0.6499999761581421,
+      "active": true
+    },
+    {
+      "name": "Masculine/Feminine",
+      "target": 0.550000011920929,
+      "active": true
+    },
+    {
+      "name": "Muscularity",
+      "target": 0.44999998807907104,
+      "active": true
+    }
+  ],
+  "assets": [
+    "/Game/Sphirus/CharacterLab/IdentityP2_20260928/BodyD/MH_Sphirus_IdentityP2_Body.MH_Sphirus_IdentityP2_Body",
+    "/Game/Sphirus/CharacterLab/IdentityP2_20260928/BodyD/MH_Sphirus_IdentityP2_Head.MH_Sphirus_IdentityP2_Head"
+  ],
+  "reason": "Unpin inherited over-constrained lengths; global fit first, then anatomical circumferences. Native MetaHuman only."
+}
