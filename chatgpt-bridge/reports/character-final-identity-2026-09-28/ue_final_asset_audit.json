@@ -1,0 +1,193 @@
+{
+  "character": "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/MH_Sphirus_FinalIdentity.MH_Sphirus_FinalIdentity",
+  "assets_created": [
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/Diagnostics/AS_FINAL_RigLogic_Singles_Blends.AS_FINAL_RigLogic_Singles_Blends",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/Diagnostics/AS_FINAL_Speech_Transitions.AS_FINAL_Speech_Transitions",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/Diagnostics/Motion/QA_FINAL_af_Loco_Jog_Fwd.QA_FINAL_af_Loco_Jog_Fwd",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/Diagnostics/Motion/QA_FINAL_am_Crouch_Idle_01.QA_FINAL_am_Crouch_Idle_01",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/Diagnostics/Motion/QA_FINAL_M_Neutral_Jump_F_Start_Stand_Lfoot.QA_FINAL_M_Neutral_Jump_F_Start_Stand_Lfoot",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/Diagnostics/Motion/QA_FINAL_M_Neutral_Sprint_Loop_F.QA_FINAL_M_Neutral_Sprint_Loop_F",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalCandidate/MH_Sphirus_FinalIdentity_Body.MH_Sphirus_FinalIdentity_Body",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalCandidate/MH_Sphirus_FinalIdentity_Head.MH_Sphirus_FinalIdentity_Head",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalScaledNeutral/MH_Sphirus_FinalIdentity_Body.MH_Sphirus_FinalIdentity_Body",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalScaledNeutral/MH_Sphirus_FinalIdentity_Head.MH_Sphirus_FinalIdentity_Head",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalUnitScale/MH_Sphirus_FinalIdentity_Body.MH_Sphirus_FinalIdentity_Body",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalUnitScale/MH_Sphirus_FinalIdentity_Head.MH_Sphirus_FinalIdentity_Head",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/HeadTargets/SM_SPH_FinalHead.SM_SPH_FinalHead",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/HeadTargets/SM_SPH_FinalLeftEye.SM_SPH_FinalLeftEye",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/HeadTargets/SM_SPH_FinalRightEye.SM_SPH_FinalRightEye",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/HeadTargets/SM_SPH_FinalTeeth.SM_SPH_FinalTeeth",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/MH_Sphirus_FinalIdentity.MH_Sphirus_FinalIdentity",
+    "/Game/Sphirus/CharacterLab/FinalIdentity_20260928/RegionalA/MH_Sphirus_FinalIdentity_Body.MH_Sphirus_FinalIdentity_Body"
+  ],
+  "dirty_content": [],
+  "dirty_maps": [
+    "/Temp/Untitled_1"
+  ],
+  "world": "/Temp/Untitled_1.Untitled",
+  "face_settings": "<Struct 'MetaHumanCharacterFaceEvaluationSettings' (ADDRESS_OMITTED) {global_delta: 1.000000, high_frequency_delta: 0.000000, head_scale: 1.067538}>",
+  "head_scale": 1.0675376653671265,
+  "body_constraints": [
+    {
+      "name": "Height",
+      "target": 171.4499969482422,
+      "active": true
+    },
+    {
+      "name": "Chest",
+      "target": 88.5999984741211,
+      "active": true
+    },
+    {
+      "name": "Bust Span",
+      "target": 21.835906982421875,
+      "active": false
+    },
+    {
+      "name": "Underbust",
+      "target": 73.0999984741211,
+      "active": true
+    },
+    {
+      "name": "Waist",
+      "target": 67.9000015258789,
+      "active": true
+    },
+    {
+      "name": "Rise",
+      "target": 75.23527526855469,
+      "active": false
+    },
+    {
+      "name": "Inseam",
+      "target": 73.91661834716797,
+      "active": false
+    },
+    {
+      "name": "Hip",
+      "target": 93.4000015258789,
+      "active": true
+    },
+    {
+      "name": "High Hip",
+      "target": 77.80000305175781,
+      "active": true
+    },
+    {
+      "name": "Neck Base",
+      "target": 32.390968322753906,
+      "active": false
+    },
+    {
+      "name": "Neck",
+      "target": 34.79999923706055,
+      "active": true
+    },
+    {
+      "name": "Thigh",
+      "target": 51.20000076293945,
+      "active": true
+    },
+    {
+      "name": "Knee",
+      "target": 31.510942459106445,
+      "active": false
+    },
+    {
+      "name": "Calf",
+      "target": 34.0,
+      "active": true
+    },
+    {
+      "name": "Front Interscye Length",
+      "target": 32.98239517211914,
+      "active": false
+    },
+    {
+      "name": "Upper Arm Length",
+      "target": 31.477245330810547,
+      "active": false
+    },
+    {
+      "name": "Lower Arm Length",
+      "target": 24.894201278686523,
+      "active": false
+    },
+    {
+      "name": "Bicep",
+      "target": 26.799999237060547,
+      "active": true
+    },
+    {
+      "name": "Elbow",
+      "target": 22.067516326904297,
+      "active": false
+    },
+    {
+      "name": "Wrist",
+      "target": 13.14265251159668,
+      "active": false
+    },
+    {
+      "name": "Neck to Waist",
+      "target": 36.402381896972656,
+      "active": false
+    },
+    {
+      "name": "Across Shoulder",
+      "target": 29.80000114440918,
+      "active": true
+    },
+    {
+      "name": "Shoulder Height",
+      "target": 146.5708465576172,
+      "active": false
+    },
+    {
+      "name": "Shoulder to Apex",
+      "target": 25.67133331298828,
+      "active": false
+    },
+    {
+      "name": "Neck Length",
+      "target": 9.414668083190918,
+      "active": false
+    },
+    {
+      "name": "Forearm",
+      "target": 21.799999237060547,
+      "active": true
+    },
+    {
+      "name": "Hand Circumference",
+      "target": 19.144432067871094,
+      "active": false
+    },
+    {
+      "name": "Fat",
+      "target": -0.8999999761581421,
+      "active": true
+    },
+    {
+      "name": "Masculine/Feminine",
+      "target": 0.3499999940395355,
+      "active": true
+    },
+    {
+      "name": "Muscularity",
+      "target": 1.0,
+      "active": true
+    }
+  ],
+  "body_dna_data": [
+    "<Object '/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalCandidate/MH_Sphirus_FinalIdentity_Body.MH_Sphirus_FinalIdentity_Body:AnimCurveMetaData_0' (ADDRESS_OMITTED) Class 'AnimCurveMetaData'>",
+    "<Object '/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalCandidate/MH_Sphirus_FinalIdentity_Body.MH_Sphirus_FinalIdentity_Body:DNAAssetUserData_0' (ADDRESS_OMITTED) Class 'DNAAssetUserData'>"
+  ],
+  "head_dna_data": [
+    "<Object '/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalCandidate/MH_Sphirus_FinalIdentity_Head.MH_Sphirus_FinalIdentity_Head:AnimCurveMetaData_0' (ADDRESS_OMITTED) Class 'AnimCurveMetaData'>",
+    "<Object '/Game/Sphirus/CharacterLab/FinalIdentity_20260928/FinalCandidate/MH_Sphirus_FinalIdentity_Head.MH_Sphirus_FinalIdentity_Head:DNAAssetUserData_0' (ADDRESS_OMITTED) Class 'DNAAssetUserData'>"
+  ],
+  "morphs": 858,
+  "production_replaced": false,
+  "body_blender_frozen": true
+}

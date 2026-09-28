@@ -1,0 +1,41 @@
+{
+  "audited_at_utc": "2026-09-28T01:20:22.574533+00:00",
+  "installed_application_roots": [
+    "C:/Program Files",
+    "C:/Program Files (x86)"
+  ],
+  "file_patterns": [
+    "maya.exe",
+    "mayapy.exe",
+    "*ExpressionEditor*.mll",
+    "*expression_editor*.py",
+    "*dnacalib*.pyd",
+    "*MetaHumanForMaya*"
+  ],
+  "matches": [],
+  "scan_exit_code": 2,
+  "scan_errors": [
+    "rg: C:/Program Files\\Windows Defender Advanced Threat Protection\\Classification\\Configuration: Erişim engellendi. (os error 5)",
+    "rg: C:/Program Files (x86)\\ASUS\\CrashReports: Erişim engellendi. (os error 5)"
+  ],
+  "additional_locations": {
+    "C:/Users/berat/Documents/maya": false,
+    "C:/Users/berat/OneDrive/Documents/maya": false,
+    "C:/Program Files/Autodesk": false,
+    "C:/Program Files (x86)/Autodesk": false
+  },
+  "path_executables": {
+    "maya": null,
+    "mayapy": null
+  },
+  "required_workflow": "Epic MetaHuman for Maya Expression Editor; fully rigged head via DCC export, then expression-level DNA calibration.",
+  "official_reference": "https://dev.epicgames.com/documentation/metahuman/expression-editor",
+  "permanent_corrective_tooling_found": false,
+  "calibration_performed": false,
+  "dna_expression_correctives_modified": false,
+  "missing_dependencies": [
+    "Autodesk Maya executable/runtime",
+    "MetaHuman for Maya Expression Editor integration"
+  ],
+  "note": "Installed Unreal DNA import/AutoRig facilities are present. These do not by themselves supply an expression sculpt/calibration editor. No QA support curves are being presented as a permanent correction."
+}

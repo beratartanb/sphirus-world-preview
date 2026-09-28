@@ -1,0 +1,254 @@
+{
+  "reviewed_at_utc": "2026-09-28T01:51:26.473464+00:00",
+  "gates": {
+    "FACE SHAPE": {
+      "status": "PARTIAL",
+      "reason": "Burun profili uzadı, ağız genişledi ve merkez purse izlenimi azaldı. Konseptin burun ucu/alar ritmi, rahat dudak şekli ve yanak–alt yüz yumuşaklığı henüz yeterince özgül değil; tam kimlik aktarımı iddia edilmiyor."
+    },
+    "METAHUMAN CONFORM": {
+      "status": "PASS",
+      "reason": "24.408/24.408 UV eşleşmesi, yeniden çözülmüş HeadScale, yüz bölgesinde yaklaşık 0.0036 mm ortalama fark ve temiz native birleşim. Bu geçiş onayıdır, konsept benzerliği onayı değildir."
+    },
+    "FACIAL DEFORMATION": {
+      "status": "PARTIAL",
+      "reason": "Maya ve MetaHuman for Maya Expression Editor yok; kalıcı ifade kalibrasyonu yapılmadı. Funnel/wide ve bazı jaw birleşimleri görsel kalite kapısından geçmiyor. QA destek eğrileriyle gizlenmedi."
+    },
+    "BODY PROPORTIONS": {
+      "status": "PARTIAL",
+      "reason": "Native bölgesel polish, boy hedefi ve anatomik sırt korundu; bel/underbust ilişkisi sınırlı iyileşti. Referansa göre üst torso ve pelvis–uyluk dağılımı hâlâ genel bir native çözüme yakın; tam oran eşleşmesi onaylanmadı."
+    },
+    "BODY DEFORMATION": {
+      "status": "PASS",
+      "reason": "Yalnızca 12 test pozu, 8 ek faz ve 2 görünürlük ek çekimindeki LOD0 kapsamı: büyük yeni çökme, yırtık veya baş–beden kopması görülmedi. Gameplay/root-motion/ayak teması sertifikasyonu yok."
+    }
+  },
+  "head_visual_review": "Üç iterasyonun ardından burun artık daha uzun ve profilde daha yetişkin; ağız köşeleri daha geniş, merkezi öne itilmiş dudak izlenimi azaltılmış. Bununla birlikte konseptin daha organik tip/alar biçimi, philtrum–dudak ritmi ve malar–çene geçişi bütünüyle yakalanmadı. Clay görünümde yanak ve perioral bölgede hâlâ yapay sertlik var; yüz bir ölçüde özelleştirilmiş MetaHuman olarak okunuyor. FACE SHAPE bu nedenle PARTIAL; yüzü tamamen bitmiş saymıyorum.",
+  "facial_visual_review": "Funnel kalın halka ve köşe sıkışması oluşturuyor; wide-mouth alt dudağı yatay bir banda yaklaştırıyor. Smile ve jaw-open birleşimleri kopmuyor fakat köşe yörüngesi ve alt dudak konturu mekanik. Purse öne çıkan sıkı bir merkez üretmeye devam ediyor. Blink kapanıyor ancak iç üst kapak kıvrımı sert; dikey bakışta kapak teması ayrıca kalibre edilmeli. Bu sorunların kalıcı corrective düzeltmesi yapılmadı.",
+  "speech_visual_review": "81 ön ara örnek ve 8 ara 3/4 görüntü incelendi. Kontroller değişirken ani mesh kopması görülmedi; fakat yaklaşık 2.7–3.3 saniyede EE benzeri yataylaşma, 3.6–4.4 saniyede OH/funnel halkası belirginleşiyor. MBP kapanması okunabilir; FV diş/dudak temasının doğruluğu bu görüntülerle üretim düzeyinde onaylanamıyor. Akıcı kontrol interpolasyonu, doğal konuşma deformasyonu ile eş tutulmadı.",
+  "body_visual_review": "Bel ile alt kaburga arasındaki kontrast hafif arttı; kol/baldır aşırılığı artırılmadı, uyluk doluluğu ve native arka yapı korundu. Beş nötr açı anatomik süreklilik gösteriyor. Referanstaki üst torso genişliği, abdominal geçiş ve pelvis–uyluk kütle dağılımıyla fark sürüyor. Bu kontrollü küçük pass referansa tam benzerlik sağlamadı; BODY PROPORTIONS PARTIAL. Görünmeyen arka anatomi fotoğraftan uydurulmadı.",
+  "body_deformation_review": "Ön/yan/arka 3/4 kayıtlarda omuz ve koltuk altı bağlantısı, spine/bel sürekliliği, kalça/uyluk ve diz hacmi korunuyor. Crouch/hip flexion sırasında doğal hacim sıkışması var; büyük yeni yırtık veya çökme görülmedi. Boyun birleşimi pozlarda ayrılmıyor. Güçlü gölge bazı ön bükülme yüzeylerini sınırlar; yan/arka açılarla çapraz kontrol edildi. Sprint yan çekimi düşük ışık yoğunluğuyla ve hip-flexion yan çekimi elleri içeren kadrajla tekrar alındı. Jump %75 örneğinin root Z hareketi karakteri ilk sabit kadrajın altına taşıdı; test aktörünün pelvis yüksekliği yalnızca görünürlük için Z=100 cm seviyesine taşınıp aynı animasyon zamanı yeniden çekildi. İlk başarısız kadraj saklandı. Bu düzeltme root-motion veya iniş/ayak teması doğrulaması değildir.",
+  "expressions": [
+    {
+      "name": "neutral",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Nötr ağız daha geniş; merkez dudak rulosu ve perioral sertlik hâlâ konseptten farklı. Büyük geometri kopması yok."
+    },
+    {
+      "name": "blink",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "İki kapak kapanıyor, göz küresi dışarı taşmıyor; iç üst kapak kıvrımı sert. Temasın bütün aralıkta üretim kalitesi onaylanmadı."
+    },
+    {
+      "name": "blink_left",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Tek taraflı kapanma çalışıyor; iç kapak kıvrımının yumuşatılması gerekir."
+    },
+    {
+      "name": "blink_right",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Tek taraflı kapanma çalışıyor; iç kapak kıvrımının yumuşatılması gerekir."
+    },
+    {
+      "name": "squint",
+      "category": "single",
+      "status": "PASS",
+      "finding": "Test uç değerinde kapak ve yanak birlikte hareket ediyor; büyük kopma veya göz küresi penetrasyonu görünmüyor. Yalnızca bu örnek."
+    },
+    {
+      "name": "look_up",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Bakış/üst kapak takibi çalışıyor; uç bakışta alt kapak göz ilişkisi ve sklera açıklığı ayrıca kalibre edilmeli."
+    },
+    {
+      "name": "look_down",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Üst kapak bakışı takip ediyor; alt kapak çizgisi belirgin kararıyor. Sürekli göz-kapak temas onayı verilmedi."
+    },
+    {
+      "name": "look_left",
+      "category": "single",
+      "status": "PASS",
+      "finding": "Yatay bakış takibi mevcut; incelenen iki açıda belirgin küre penetrasyonu yok."
+    },
+    {
+      "name": "look_right",
+      "category": "single",
+      "status": "PASS",
+      "finding": "Yatay bakış takibi mevcut; incelenen iki açıda belirgin küre penetrasyonu yok."
+    },
+    {
+      "name": "brows_up",
+      "category": "single",
+      "status": "PASS",
+      "finding": "Kaş/alın hareketi sürekliliğini koruyor; incelenen örnekte büyük çökme yok."
+    },
+    {
+      "name": "brows_down",
+      "category": "single",
+      "status": "PASS",
+      "finding": "Glabella/kaş aşağı hareketi çalışıyor; büyük geometri kopması görünmüyor."
+    },
+    {
+      "name": "smile",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Köşeler yükseliyor, yanak katılımı var; commissure çizgisi fazla keskin ve mekanik, alt dudak geriliyor."
+    },
+    {
+      "name": "frown",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Köşeler aşağı hareket ediyor; perioral gerilim sert ve simetrik. Uç poz doğal ifade kalitesi olarak onaylanmadı."
+    },
+    {
+      "name": "mouth_open",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Ağız açıklığı, diş ve çene devamlılığı korunuyor; alt dudak kenarı fazla düz/kalın."
+    },
+    {
+      "name": "jaw_open",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Çene bağlantısı korunuyor; dudak halkası ve alt dudak düzlüğü üretim polish gerektiriyor."
+    },
+    {
+      "name": "lip_purse",
+      "category": "single",
+      "status": "PARTIAL",
+      "finding": "Merkez öne geliyor; köşe sıkışması ve silindirik dudak izlenimi sürüyor."
+    },
+    {
+      "name": "lip_funnel",
+      "category": "single",
+      "status": "FAIL",
+      "finding": "Kalın halka, köşe sıkışması ve radyal katlanma belirgin. Kalıcı corrective yapılmadı."
+    },
+    {
+      "name": "wide_mouth",
+      "category": "single",
+      "status": "FAIL",
+      "finding": "Yatay bant görünümü, sert commissure ve doğal dudak şekli kaybı sürüyor."
+    },
+    {
+      "name": "cheek_raise",
+      "category": "single",
+      "status": "PASS",
+      "finding": "Yanak/alt kapak katılımı görünür; bu örnekte büyük çökme yok."
+    },
+    {
+      "name": "smile_jaw",
+      "category": "combined",
+      "status": "PARTIAL",
+      "finding": "Açıklık ve yanak katılımı sürüyor; ağız köşeleri ve alt dudak çizgisi mekanik."
+    },
+    {
+      "name": "funnel_jaw",
+      "category": "combined",
+      "status": "FAIL",
+      "finding": "Çene açılınca kalın halka uzuyor; köşe/radyal sıkışma çözülmedi."
+    },
+    {
+      "name": "purse_jaw",
+      "category": "combined",
+      "status": "PARTIAL",
+      "finding": "Kontroller birlikte çalışıyor; dudaklar fazla sıkışık ve öne itilmiş görünüyor."
+    },
+    {
+      "name": "brow_squint",
+      "category": "combined",
+      "status": "PASS",
+      "finding": "Kaş ve kapak birlikte çalışıyor; incelenen durumda büyük geometri kopması yok."
+    },
+    {
+      "name": "smile_cheek",
+      "category": "combined",
+      "status": "PARTIAL",
+      "finding": "Yanak katılımı artıyor ancak commissure sertliği kalıyor."
+    },
+    {
+      "name": "browup_smile",
+      "category": "combined",
+      "status": "PARTIAL",
+      "finding": "Kaş hareketi stabil; smile kaynaklı dudak/köşe sertliği devam ediyor."
+    },
+    {
+      "name": "squint_smile",
+      "category": "combined",
+      "status": "PARTIAL",
+      "finding": "Üst/alt yüz birleşimi çalışıyor; ağız köşesi gerilimi çözülmüyor."
+    },
+    {
+      "name": "wide_jaw",
+      "category": "combined",
+      "status": "FAIL",
+      "finding": "Alt dudak yatay bandı ve dikdörtgene yaklaşan ağız açıklığı belirgin."
+    },
+    {
+      "name": "speech_MBP",
+      "category": "speech_like",
+      "status": "PARTIAL",
+      "finding": "Dudak kapanması okunuyor; merkez/köşe sıkılığı ve tüm geçişte temas henüz kalibre değil."
+    },
+    {
+      "name": "speech_AH",
+      "category": "speech_like",
+      "status": "PARTIAL",
+      "finding": "Çene açıklığı okunabilir; alt dudak konturu fazla bant biçimli."
+    },
+    {
+      "name": "speech_EE",
+      "category": "speech_like",
+      "status": "PARTIAL",
+      "finding": "Yatay açıklık okunuyor; köşeler sert ve dudak incelmesi doğal değil."
+    },
+    {
+      "name": "speech_OH",
+      "category": "speech_like",
+      "status": "FAIL",
+      "finding": "Funnel kaynaklı kalın dudak halkası ve yan köşe sıkışması sürüyor."
+    },
+    {
+      "name": "speech_OO",
+      "category": "speech_like",
+      "status": "PARTIAL",
+      "finding": "Yuvarlanma mevcut; perioral bölge hâlâ fazla sıkı ve öne itilmiş."
+    },
+    {
+      "name": "speech_FV",
+      "category": "speech_like",
+      "status": "PARTIAL",
+      "finding": "Alt dudak hareketi mevcut; üst diş-alt dudak temasını üretim düzeyinde doğrulayan görünür kanıt yeterli değil."
+    }
+  ],
+  "permanent_corrective_calibration_performed": false,
+  "dna_autorig_regenerated": true,
+  "dna_expression_sculpts_modified": false,
+  "qa_support_curves_applied": false,
+  "blender_body_displacement_mm": 0,
+  "visual_evidence_reviewed": [
+    "Blender previous/v3 front, side, both 3q",
+    "Native final head front, side, both 3q",
+    "Direct primary concept board and nose/mouth/midface details",
+    "33 expression cases x 2 views",
+    "81 speech transition front samples and 8 intermediate 3q samples",
+    "12 native body poses x 3 views plus 8 extra phases",
+    "Sprint and hip-flexion visibility supplements",
+    "Jump 75% same-time reframing",
+    "5 neutral native body views against previous/reference"
+  ],
+  "scope_limits": [
+    "No production replacement",
+    "No gameplay, root-motion or foot-contact certification",
+    "No lower LOD certification",
+    "No permanent expression calibration",
+    "No hair or clothing",
+    "No Blender body sculpting"
+  ]
+}
