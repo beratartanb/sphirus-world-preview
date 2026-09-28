@@ -1,0 +1,282 @@
+{
+  "A_Natural": {
+    "height_cm": 173.4003143310547,
+    "head_dna_identical": true,
+    "face_signature_identical": true,
+    "regions": {
+      "upper_head_above_150cm": {
+        "count": 32639,
+        "max_mm": 1.6275889400329795,
+        "mean_mm": 1.174232296658865,
+        "median_translation_mm": [
+          0.0014659017324447632,
+          -1.022934913635254,
+          -0.6201267242431641
+        ],
+        "translation_removed_max_mm": 1.4443123635279382
+      },
+      "neck_interface_below_150cm": {
+        "count": 1704,
+        "max_mm": 4.01817311004834,
+        "mean_mm": 1.4938613417704103,
+        "median_translation_mm": [
+          0.0005027977749705315,
+          -0.157209113240242,
+          0.11914968490600586
+        ],
+        "translation_removed_max_mm": 4.170253959342932
+      }
+    },
+    "Head": {
+      "max_mm": 4.01817311004834,
+      "mean_mm": 1.1900913623453244,
+      "matched_uv_samples": 34343,
+      "baseline_uv_samples": 34343,
+      "candidate_uv_samples": 34343,
+      "raw_fbx_indices_identical": false,
+      "raw_uv_bytes_identical": false
+    },
+    "native_head_attachment_rigid_analysis": {
+      "fit_above_156cm_max_residual_mm": 1.2830691022150635,
+      "fit_above_156cm_mean_residual_mm": 0.4502596868233092,
+      "above_150cm_max_residual_mm": 1.2830691022150635,
+      "rotation_matrix": [
+        [
+          0.9999999999987168,
+          -1.5843195182767778e-06,
+          -2.3672470033939448e-07
+        ],
+        [
+          1.5843126086452856e-06,
+          0.9999999995728397,
+          -2.918579770952091e-05
+        ],
+        [
+          2.3677093989239184e-07,
+          2.9185797334506775e-05,
+          0.9999999995740667
+        ]
+      ],
+      "scope": "Diagnostic removal of rigid attachment motion; raw displacement remains separately reported."
+    },
+    "Body": {
+      "max_mm": 14.23060382538388,
+      "mean_mm": 2.4114479033506067,
+      "matched_uv_samples": 32334,
+      "baseline_uv_samples": 32334,
+      "candidate_uv_samples": 32334,
+      "raw_fbx_indices_identical": false,
+      "raw_uv_bytes_identical": false
+    }
+  },
+  "B_SlightlyActive": {
+    "height_cm": 173.3114776611328,
+    "head_dna_identical": true,
+    "face_signature_identical": true,
+    "regions": {
+      "upper_head_above_150cm": {
+        "count": 32639,
+        "max_mm": 1.6690489505971986,
+        "mean_mm": 1.1246285250611676,
+        "median_translation_mm": [
+          0.0010458752512931824,
+          -0.5596578121185303,
+          -0.9748935699462891
+        ],
+        "translation_removed_max_mm": 1.5379549476617485
+      },
+      "neck_interface_below_150cm": {
+        "count": 1704,
+        "max_mm": 6.792527967244769,
+        "mean_mm": 2.3752723853376447,
+        "median_translation_mm": [
+          4.135654307901859e-05,
+          0.07985159754753113,
+          0.008225440979003906
+        ],
+        "translation_removed_max_mm": 6.783793861283766
+      }
+    },
+    "Head": {
+      "max_mm": 6.792527967244769,
+      "mean_mm": 1.1866818441629092,
+      "matched_uv_samples": 34343,
+      "baseline_uv_samples": 34343,
+      "candidate_uv_samples": 34343,
+      "raw_fbx_indices_identical": false,
+      "raw_uv_bytes_identical": false
+    },
+    "native_head_attachment_rigid_analysis": {
+      "fit_above_156cm_max_residual_mm": 1.1623415245314406,
+      "fit_above_156cm_mean_residual_mm": 0.3077023675818268,
+      "above_150cm_max_residual_mm": 1.464611928523245,
+      "rotation_matrix": [
+        [
+          0.9999999999992132,
+          -1.1727425341942623e-06,
+          -4.461975138485984e-07
+        ],
+        [
+          1.172726612179744e-06,
+          0.9999999993626992,
+          -3.568227625704819e-05
+        ],
+        [
+          4.4623935965549e-07,
+          3.568227573364102e-05,
+          0.999999999363288
+        ]
+      ],
+      "scope": "Diagnostic removal of rigid attachment motion; raw displacement remains separately reported."
+    },
+    "Body": {
+      "max_mm": 19.414894965155522,
+      "mean_mm": 3.480188052207352,
+      "matched_uv_samples": 32334,
+      "baseline_uv_samples": 32334,
+      "candidate_uv_samples": 32334,
+      "raw_fbx_indices_identical": false,
+      "raw_uv_bytes_identical": false
+    }
+  },
+  "C_SlimActive": {
+    "height_cm": 173.40663146972656,
+    "head_dna_identical": true,
+    "face_signature_identical": true,
+    "regions": {
+      "upper_head_above_150cm": {
+        "count": 32639,
+        "max_mm": 1.563675484408832,
+        "mean_mm": 0.6447964232741746,
+        "median_translation_mm": [
+          0.0007604248821735382,
+          -0.656716525554657,
+          0.11265277862548828
+        ],
+        "translation_removed_max_mm": 1.4864994370961897
+      },
+      "neck_interface_below_150cm": {
+        "count": 1704,
+        "max_mm": 6.453899560316504,
+        "mean_mm": 2.4936913779901535,
+        "median_translation_mm": [
+          9.499490261077881e-05,
+          -0.005954410880804062,
+          0.8055567741394043
+        ],
+        "translation_removed_max_mm": 7.239599674788245
+      }
+    },
+    "Head": {
+      "max_mm": 6.453899560316504,
+      "mean_mm": 0.7365332256163122,
+      "matched_uv_samples": 34343,
+      "baseline_uv_samples": 34343,
+      "candidate_uv_samples": 34343,
+      "raw_fbx_indices_identical": false,
+      "raw_uv_bytes_identical": false
+    },
+    "native_head_attachment_rigid_analysis": {
+      "fit_above_156cm_max_residual_mm": 0.9510568552613593,
+      "fit_above_156cm_mean_residual_mm": 0.22688593907594198,
+      "above_150cm_max_residual_mm": 1.4318623606917593,
+      "rotation_matrix": [
+        [
+          0.999999999999677,
+          -7.26283483072292e-07,
+          -3.4431799135278707e-07
+        ],
+        [
+          7.262773713796764e-07,
+          0.9999999998422148,
+          -1.774947281206777e-05
+        ],
+        [
+          3.4433088245675954e-07,
+          1.7749472562077955e-05,
+          0.9999999998424189
+        ]
+      ],
+      "scope": "Diagnostic removal of rigid attachment motion; raw displacement remains separately reported."
+    },
+    "Body": {
+      "max_mm": 18.318323568202374,
+      "mean_mm": 3.1746197162452003,
+      "matched_uv_samples": 32334,
+      "baseline_uv_samples": 32334,
+      "candidate_uv_samples": 32334,
+      "raw_fbx_indices_identical": false,
+      "raw_uv_bytes_identical": false
+    }
+  },
+  "B_Reopened": {
+    "height_cm": 173.40184020996094,
+    "head_dna_identical": true,
+    "face_signature_identical": true,
+    "regions": {
+      "upper_head_above_150cm": {
+        "count": 32639,
+        "max_mm": 0.0,
+        "mean_mm": 0.0,
+        "median_translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "translation_removed_max_mm": 0.0
+      },
+      "neck_interface_below_150cm": {
+        "count": 1704,
+        "max_mm": 0.0,
+        "mean_mm": 0.0,
+        "median_translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "translation_removed_max_mm": 0.0
+      }
+    },
+    "Head": {
+      "max_mm": 0.0,
+      "mean_mm": 0.0,
+      "matched_uv_samples": 34343,
+      "baseline_uv_samples": 34343,
+      "candidate_uv_samples": 34343,
+      "raw_fbx_indices_identical": true,
+      "raw_uv_bytes_identical": true
+    },
+    "native_head_attachment_rigid_analysis": {
+      "fit_above_156cm_max_residual_mm": 1.0103182026100663e-13,
+      "fit_above_156cm_mean_residual_mm": 1.919009849200051e-14,
+      "above_150cm_max_residual_mm": 1.0103182026100663e-13,
+      "rotation_matrix": [
+        [
+          1.0000000000000002,
+          6.247036526836483e-17,
+          1.1567686202479586e-17
+        ],
+        [
+          1.476100107673653e-16,
+          1.0000000000000004,
+          -9.594627282326161e-17
+        ],
+        [
+          2.927308188465216e-17,
+          4.499867621116143e-17,
+          1.0000000000000002
+        ]
+      ],
+      "scope": "Diagnostic removal of rigid attachment motion; raw displacement remains separately reported."
+    },
+    "Body": {
+      "max_mm": 0.0,
+      "mean_mm": 0.0,
+      "matched_uv_samples": 32334,
+      "baseline_uv_samples": 32334,
+      "candidate_uv_samples": 32334,
+      "raw_fbx_indices_identical": true,
+      "raw_uv_bytes_identical": true
+    }
+  }
+}
