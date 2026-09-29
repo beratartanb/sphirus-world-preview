@@ -1,0 +1,157 @@
+{
+ "reload": "(True, Text(\"\"))",
+ "body_morphs": [
+  "SHC_150_l",
+  "SHC_180_l",
+  "SHC_150_r",
+  "SHC_180_r",
+  "SHC_165_l",
+  "SHC_165_r",
+  "BR_Neutral"
+ ],
+ "face_morphs": [
+  "SHC_150_l",
+  "SHC_180_l",
+  "SHC_150_r",
+  "SHC_180_r",
+  "SHC_165_l",
+  "SHC_165_r",
+  "BR_Neutral"
+ ],
+ "face_morph_total": 865,
+ "mesh_pp": {
+  "body": "<Object '/Game/Sphirus/CharacterLab/BodyRealism_20260929/ABP_BR_Body_PostProcess.ABP_BR_Body_PostProcess_C' (0x000002612D2FEE00) Class 'AnimBlueprintGeneratedClass'>",
+  "face": "<Object '/Game/Sphirus/CharacterLab/BodyRealism_20260929/ABP_BR_Face_PostProcess.ABP_BR_Face_PostProcess_C' (0x00000260F2777000) Class 'AnimBlueprintGeneratedClass'>"
+ },
+ "drivers": {
+  "body": {
+   "count": 2,
+   "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+   "threshold_ok": true,
+   "curves_ok": true,
+   "total_posedrivers": 46
+  },
+  "face": {
+   "count": 2,
+   "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+   "threshold_ok": true,
+   "curves_ok": true,
+   "total_posedrivers": 2
+  }
+ },
+ "curve_meta": {
+  "body": {
+   "SHC_150_l": true,
+   "SHC_165_l": true,
+   "SHC_180_l": true,
+   "SHC_150_r": true,
+   "SHC_165_r": true,
+   "SHC_180_r": true,
+   "BR_Neutral": true
+  },
+  "face": {
+   "SHC_150_l": true,
+   "SHC_165_l": true,
+   "SHC_180_l": true,
+   "SHC_150_r": true,
+   "SHC_165_r": true,
+   "SHC_180_r": true,
+   "BR_Neutral": true
+  }
+ },
+ "skeleton_retarget_fix": {
+  "upperarm_twistCor_01_l": "(TranslationRetargetingMode=AnimationRelative)",
+  "upperarm_twistCor_02_l": "(TranslationRetargetingMode=AnimationRelative)"
+ },
+ "characters": {
+  "accepted": 1.0653988122940063,
+  "test": 1.0653988122940063
+ },
+ "lods": {
+  "body": 4,
+  "face": 8
+ },
+ "driver_165": {
+  "body": true,
+  "face": true
+ },
+ "radius40": {
+  "body": true,
+  "face": true
+ },
+ "helper_nodes": {
+  "body": [
+   [
+    "SHCB_l_150",
+    true,
+    true
+   ],
+   [
+    "SHCB_l_165",
+    true,
+    true
+   ],
+   [
+    "SHCB_l_180",
+    true,
+    true
+   ],
+   [
+    "SHCB_r_150",
+    true,
+    true
+   ],
+   [
+    "SHCB_r_165",
+    true,
+    true
+   ],
+   [
+    "SHCB_r_180",
+    true,
+    true
+   ]
+  ],
+  "face": [
+   [
+    "SHCB_l_150",
+    true,
+    true
+   ],
+   [
+    "SHCB_l_165",
+    true,
+    true
+   ],
+   [
+    "SHCB_l_180",
+    true,
+    true
+   ],
+   [
+    "SHCB_r_150",
+    true,
+    true
+   ],
+   [
+    "SHCB_r_165",
+    true,
+    true
+   ],
+   [
+    "SHCB_r_180",
+    true,
+    true
+   ]
+  ]
+ },
+ "br_curve_node": {
+  "body": [
+   "(SourcePose=(LinkID=-1,SourceLinkID=-1),CurveMap=((\"BR_Neutral\", 1.000000)),CurveValues=,CurveNames=,Alpha=1.000000,Appl"
+  ],
+  "face": [
+   "(SourcePose=(LinkID=-1,SourceLinkID=-1),CurveMap=((\"BR_Neutral\", 1.000000)),CurveValues=,CurveNames=,Alpha=1.000000,Appl"
+  ]
+ },
+ "dirty_after": []
+}
