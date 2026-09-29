@@ -1,0 +1,476 @@
+{
+ "checks": {
+  "object_present": {
+   "result": "PASS",
+   "detail": "SPH_BR_ArtistSculpt"
+  },
+  "vertex_count": {
+   "result": "PASS",
+   "detail": [
+    64300,
+    64300
+   ]
+  },
+  "triangle_count": {
+   "result": "PASS",
+   "detail": [
+    124910,
+    124910
+   ]
+  },
+  "topology_identical (polygon order + corner order + vertex ids)": {
+   "result": "PASS",
+   "detail": null
+  },
+  "edge_count": {
+   "result": "PASS",
+   "detail": [
+    188989,
+    188989
+   ]
+  },
+  "no_modifiers": {
+   "result": "PASS",
+   "detail": []
+  },
+  "object_transform_identity": {
+   "result": "PASS",
+   "detail": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "uv_integrity (single UVMap, per-corner exact)": {
+   "result": "PASS",
+   "detail": null
+  },
+  "material_ids": {
+   "result": "PASS",
+   "detail": null
+  },
+  "skin_weights_and_groups_unchanged": {
+   "result": "PASS",
+   "detail": 2.975463864185457e-08
+  },
+  "shape_keys_present": {
+   "result": "PASS",
+   "detail": [
+    "ACCEPTED_B2",
+    "BR_NEUTRAL",
+    "SCULPT_BASE",
+    "ARTIST_SCULPT"
+   ]
+  },
+  "no_extra_shape_keys": {
+   "result": "PASS",
+   "detail": []
+  },
+  "reference_key_unchanged:ACCEPTED_B2": {
+   "result": "PASS",
+   "detail": 5.7220458984375e-06
+  },
+  "reference_key_unchanged:BR_NEUTRAL": {
+   "result": "PASS",
+   "detail": 5.960434833696127e-06
+  },
+  "reference_key_unchanged:SCULPT_BASE": {
+   "result": "PASS",
+   "detail": 5.960434833696127e-06
+  },
+  "reference_keys_locked": {
+   "result": "PASS",
+   "detail": [
+    true,
+    true,
+    true
+   ]
+  },
+  "ARTIST_SCULPT_value_1_relative_to_B2": {
+   "result": "PASS",
+   "detail": [
+    1.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "finite": {
+   "result": "PASS",
+   "detail": null
+  },
+  "FACE_LOCK_zero_displacement": {
+   "result": "PASS",
+   "detail": 5.7671584756161906e-05
+  },
+  "HEAD_IDENTITY_LOCK_zero_displacement": {
+   "result": "PASS",
+   "detail": 5.943446842675005e-05
+  },
+  "face_identity_vs_accepted_B2_0mm (head verts z>149)": {
+   "result": "PASS",
+   "detail": 5.7671584756161906e-05
+  },
+  "SEAM_LOCK_zero_displacement": {
+   "result": "PASS",
+   "detail": 5.9230995704585386e-05
+  },
+  "seam_pairs_coincident": {
+   "result": "PASS",
+   "detail": 0.0002441699744488886
+  },
+  "max_vertex_displacement": {
+   "result": "PASS",
+   "detail": 6.124770057560662e-05
+  },
+  "no_new_degenerate_triangles": {
+   "result": "PASS",
+   "detail": [
+    0,
+    0
+   ]
+  },
+  "no_flipped_triangles": {
+   "result": "PASS",
+   "detail": 0
+  },
+  "no_new_sharp_creases (>40 deg dihedral increase)": {
+   "result": "PASS",
+   "detail": 0
+  },
+  "measure:neck_z146": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:chest_z128": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:underbust_z119": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:waist_z109": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:high_hip_z97": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:hip_z86": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:thigh_L_z70": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:calf_L_z35": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:bicep_L": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:forearm_L": {
+   "result": "PASS",
+   "detail": -0.0
+  },
+  "measure:thigh_R_z70": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:calf_R_z35": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:bicep_R": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:forearm_R": {
+   "result": "PASS",
+   "detail": -0.0
+  },
+  "measure:shoulder_width_z141": {
+   "result": "PASS",
+   "detail": 0.0
+  },
+  "measure:height": {
+   "result": "PASS",
+   "detail": -0.0
+  }
+ },
+ "metrics": {
+  "uv_max_err": 0.0,
+  "weight_max_err": 2.975463864185457e-08,
+  "ACCEPTED_B2_max_err_cm": 5.7220458984375e-06,
+  "BR_NEUTRAL_max_err_cm": 5.960434833696127e-06,
+  "SCULPT_BASE_max_err_cm": 5.960434833696127e-06,
+  "FACE_LOCK_max_disp_mm": 5.7671584756161906e-05,
+  "HEAD_IDENTITY_LOCK_max_disp_mm": 5.943446842675005e-05,
+  "face_identity_vs_B2_max_mm": 5.7671584756161906e-05,
+  "SEAM_LOCK_max_disp_mm": 5.9230995704585386e-05,
+  "moved_vertices": 0,
+  "disp_mm": {
+   "mean_moved": 0.0,
+   "p95_moved": 0.0,
+   "max": 6.124770057560662e-05
+  },
+  "region_disp": {
+   "ABDOMEN": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "BREASTS": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "CALVES_ANKLES": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "CHEST_RIBCAGE": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "ELBOWS_FOREARMS": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "GLUTES": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "HANDS_FEET": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "KNEES": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "LOWER_BACK": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "NECK_COLLAR": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "PELVIS_HIPS": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "SHOULDERS": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "THIGHS": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "UPPER_ARMS": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   },
+   "UPPER_BACK": {
+    "moved": 0,
+    "mean_moved_mm": 0.0,
+    "p95_mm": 0.0,
+    "max_mm": 0.0,
+    "mean_L_mm": 0.0,
+    "mean_R_mm": 0.0
+   }
+  },
+  "dihedral_increase_p999_deg": 0.030782640787520472,
+  "proportions": {
+   "neck_z146": {
+    "B2_cm": 39.671,
+    "BR_cm": 39.786,
+    "ARTIST_cm": 39.786,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 1.15
+   },
+   "chest_z128": {
+    "B2_cm": 86.84,
+    "BR_cm": 87.207,
+    "ARTIST_cm": 87.207,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 3.67
+   },
+   "underbust_z119": {
+    "B2_cm": 73.882,
+    "BR_cm": 73.727,
+    "ARTIST_cm": 73.727,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": -1.56
+   },
+   "waist_z109": {
+    "B2_cm": 71.536,
+    "BR_cm": 71.548,
+    "ARTIST_cm": 71.548,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 0.12
+   },
+   "high_hip_z97": {
+    "B2_cm": 85.729,
+    "BR_cm": 85.746,
+    "ARTIST_cm": 85.746,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 0.17
+   },
+   "hip_z86": {
+    "B2_cm": 95.546,
+    "BR_cm": 95.52,
+    "ARTIST_cm": 95.52,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": -0.26
+   },
+   "thigh_L_z70": {
+    "B2_cm": 42.674,
+    "BR_cm": 42.761,
+    "ARTIST_cm": 42.761,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 0.86
+   },
+   "calf_L_z35": {
+    "B2_cm": 18.813,
+    "BR_cm": 18.937,
+    "ARTIST_cm": 18.937,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 1.24
+   },
+   "bicep_L": {
+    "B2_cm": 28.23,
+    "BR_cm": 28.278,
+    "ARTIST_cm": 28.278,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 0.48
+   },
+   "forearm_L": {
+    "B2_cm": 21.493,
+    "BR_cm": 21.511,
+    "ARTIST_cm": 21.511,
+    "drift_vs_BR_mm": -0.0,
+    "drift_vs_B2_mm": 0.19
+   },
+   "thigh_R_z70": {
+    "B2_cm": 42.674,
+    "BR_cm": 42.761,
+    "ARTIST_cm": 42.761,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 0.87
+   },
+   "calf_R_z35": {
+    "B2_cm": 18.812,
+    "BR_cm": 18.931,
+    "ARTIST_cm": 18.931,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 1.19
+   },
+   "bicep_R": {
+    "B2_cm": 28.23,
+    "BR_cm": 28.28,
+    "ARTIST_cm": 28.28,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 0.5
+   },
+   "forearm_R": {
+    "B2_cm": 21.492,
+    "BR_cm": 21.511,
+    "ARTIST_cm": 21.511,
+    "drift_vs_BR_mm": -0.0,
+    "drift_vs_B2_mm": 0.19
+   },
+   "shoulder_width_z141": {
+    "B2_cm": 43.953,
+    "BR_cm": 44.11,
+    "ARTIST_cm": 44.11,
+    "drift_vs_BR_mm": 0.0,
+    "drift_vs_B2_mm": 1.57
+   },
+   "height": {
+    "B2_cm": 173.272,
+    "BR_cm": 173.272,
+    "ARTIST_cm": 173.272,
+    "drift_vs_BR_mm": -0.0,
+    "drift_vs_B2_mm": -0.0
+   }
+  }
+ },
+ "warnings": [],
+ "overall": "PASS",
+ "file": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\BodyRealismArtist_20260929\\Blender\\SPH_BR_ArtistSculpt_20260929.blend",
+ "package": "SPH_BR_ArtistSculpt_20260929_v1"
+}

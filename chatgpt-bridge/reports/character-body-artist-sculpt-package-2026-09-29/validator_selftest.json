@@ -1,0 +1,180 @@
+{
+ "pristine": {
+  "overall": "PASS",
+  "non_pass": {},
+  "disp": {
+   "mean_moved": 0.0,
+   "p95_moved": 0.0,
+   "max": 6.124770057560662e-05
+  },
+  "proportions_drift": {}
+ },
+ "face_lock_moved_0.5mm": {
+  "overall": "FAIL",
+  "non_pass": {
+   "FACE_LOCK_zero_displacement": "FAIL",
+   "HEAD_IDENTITY_LOCK_zero_displacement": "FAIL",
+   "face_identity_vs_accepted_B2_0mm (head verts z>149)": "FAIL",
+   "no_flipped_triangles": "FAIL",
+   "no_new_sharp_creases (>40 deg dihedral increase)": "WARN"
+  },
+  "disp": {
+   "mean_moved": 0.49999638915521444,
+   "p95_moved": 0.5000030999026863,
+   "max": 0.5000033982833807
+  },
+  "proportions_drift": {}
+ },
+ "seam_moved_0.3mm": {
+  "overall": "FAIL",
+  "non_pass": {
+   "SEAM_LOCK_zero_displacement": "FAIL",
+   "seam_pairs_coincident": "FAIL"
+  },
+  "disp": {
+   "mean_moved": 0.29999996901820397,
+   "p95_moved": 0.300001602222974,
+   "max": 0.30000169243386593
+  },
+  "proportions_drift": {}
+ },
+ "plausible_2mm_breast_fullness": {
+  "overall": "PASS",
+  "non_pass": {},
+  "disp": {
+   "mean_moved": 1.205396407502438,
+   "p95_moved": 2.000001371612944,
+   "max": 2.00001118515279
+  },
+  "proportions_drift": {
+   "chest_z128": 2.63,
+   "underbust_z119": 0.48
+  }
+ },
+ "big_grab_25mm_glutes": {
+  "overall": "FAIL",
+  "non_pass": {
+   "max_vertex_displacement": "FAIL",
+   "no_flipped_triangles": "FAIL",
+   "no_new_sharp_creases (>40 deg dihedral increase)": "WARN",
+   "measure:hip_z86": "FAIL",
+   "measure:thigh_L_z70": "FAIL",
+   "measure:thigh_R_z70": "FAIL"
+  },
+  "disp": {
+   "mean_moved": 24.99999982602847,
+   "p95_moved": 25.000002353899475,
+   "max": 25.00000402115822
+  },
+  "proportions_drift": {
+   "hip_z86": 48.93,
+   "thigh_L_z70": 46.57,
+   "thigh_R_z70": 46.57
+  }
+ },
+ "uv_edited": {
+  "overall": "FAIL",
+  "non_pass": {
+   "uv_integrity (single UVMap, per-corner exact)": "FAIL"
+  },
+  "disp": {
+   "mean_moved": 0.0,
+   "p95_moved": 0.0,
+   "max": 6.124770057560662e-05
+  },
+  "proportions_drift": {}
+ },
+ "modifier_added": {
+  "overall": "FAIL",
+  "non_pass": {
+   "no_modifiers": "FAIL"
+  },
+  "disp": {
+   "mean_moved": 0.0,
+   "p95_moved": 0.0,
+   "max": 6.124770057560662e-05
+  },
+  "proportions_drift": {}
+ },
+ "reference_key_edited": {
+  "overall": "FAIL",
+  "non_pass": {
+   "reference_key_unchanged:BR_NEUTRAL": "FAIL",
+   "reference_keys_locked": "WARN"
+  },
+  "disp": {
+   "mean_moved": 0.0,
+   "p95_moved": 0.0,
+   "max": 6.124770057560662e-05
+  },
+  "proportions_drift": {}
+ },
+ "vertex_deleted": {
+  "overall": "FAIL",
+  "non_pass": {
+   "vertex_count": "FAIL",
+   "triangle_count": "FAIL",
+   "topology_identical (polygon order + corner order + vertex ids)": "FAIL",
+   "edge_count": "FAIL",
+   "uv_integrity (single UVMap, per-corner exact)": "FAIL",
+   "skin_weights_and_groups_unchanged": "FAIL",
+   "reference_key_unchanged:ACCEPTED_B2": "FAIL",
+   "reference_key_unchanged:BR_NEUTRAL": "FAIL",
+   "reference_key_unchanged:SCULPT_BASE": "FAIL",
+   "FACE_LOCK_zero_displacement": "FAIL",
+   "HEAD_IDENTITY_LOCK_zero_displacement": "FAIL",
+   "face_identity_vs_accepted_B2_0mm (head verts z>149)": "FAIL",
+   "SEAM_LOCK_zero_displacement": "FAIL",
+   "seam_pairs_coincident": "FAIL",
+   "max_vertex_displacement": "FAIL",
+   "no_flipped_triangles": "FAIL",
+   "no_new_sharp_creases (>40 deg dihedral increase)": "WARN",
+   "measure:neck_z146": "FAIL",
+   "measure:chest_z128": "FAIL",
+   "measure:underbust_z119": "FAIL",
+   "measure:high_hip_z97": "FAIL",
+   "measure:thigh_L_z70": "FAIL",
+   "measure:calf_L_z35": "FAIL",
+   "measure:thigh_R_z70": "FAIL",
+   "measure:calf_R_z35": "FAIL"
+  },
+  "disp": {
+   "mean_moved": 15.960430826896683,
+   "p95_moved": 48.976109945490734,
+   "max": 1630.450319329444
+  },
+  "proportions_drift": {
+   "neck_z146": 155.77,
+   "chest_z128": 1230.03,
+   "underbust_z119": 71.67,
+   "waist_z109": -1.8,
+   "high_hip_z97": 55.44,
+   "hip_z86": -4.82,
+   "thigh_L_z70": 12.11,
+   "calf_L_z35": 33.03,
+   "bicep_L": -0.61,
+   "forearm_L": -0.7,
+   "thigh_R_z70": 17.55,
+   "calf_R_z35": 54.3,
+   "bicep_R": -0.8,
+   "forearm_R": -3.13
+  }
+ },
+ "artist_value_0.5": {
+  "overall": "PASS_WITH_WARNINGS",
+  "non_pass": {
+   "ARTIST_SCULPT_value_1_relative_to_B2": "WARN"
+  },
+  "disp": {
+   "mean_moved": 0.0,
+   "p95_moved": 0.0,
+   "max": 6.124770057560662e-05
+  },
+  "proportions_drift": {}
+ },
+ "tools": {
+  "isolate_glutes_unmasked_verts": 970,
+  "restore_mask_exact": true,
+  "restore_hidden_polys": 61573
+ }
+}
