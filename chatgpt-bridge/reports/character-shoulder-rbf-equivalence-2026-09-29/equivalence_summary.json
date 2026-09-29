@@ -1,0 +1,1196 @@
+{
+ "equivalence": {
+  "neutral": {
+   "body_max_mm": 0.0002,
+   "body_mean_mm": 0.0,
+   "head_max_mm": 0.0002,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00047,
+   "seam_unpacked_max_mm": 0.00047,
+   "regions_max_mm": {
+    "deltoid": 0.0002,
+    "armpit": 0.0002,
+    "clavicle": 0.0002,
+    "upper_chest": 0.0002,
+    "trapezius": 0.0002
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.0002
+  },
+  "elev_0": {
+   "body_max_mm": 0.0179,
+   "body_mean_mm": 0.0002,
+   "head_max_mm": 0.0082,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00033,
+   "seam_unpacked_max_mm": 0.00033,
+   "regions_max_mm": {
+    "deltoid": 0.0137,
+    "armpit": 0.0179,
+    "clavicle": 0.001,
+    "upper_chest": 0.0008,
+    "trapezius": 0.0176
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.1393
+  },
+  "elev_30": {
+   "body_max_mm": 0.0013,
+   "body_mean_mm": 2e-05,
+   "head_max_mm": 0.0005,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00033,
+   "seam_unpacked_max_mm": 0.00032,
+   "regions_max_mm": {
+    "deltoid": 0.0009,
+    "armpit": 0.0013,
+    "clavicle": 0.0002,
+    "upper_chest": 0.0002,
+    "trapezius": 0.0012
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.0012
+  },
+  "elev_60": {
+   "body_max_mm": 0.0308,
+   "body_mean_mm": 0.00052,
+   "head_max_mm": 0.0218,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00032,
+   "seam_unpacked_max_mm": 0.00033,
+   "regions_max_mm": {
+    "deltoid": 0.0117,
+    "armpit": 0.0235,
+    "clavicle": 0.0166,
+    "upper_chest": 0.0308,
+    "trapezius": 0.0095
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.0308
+  },
+  "elev_90": {
+   "body_max_mm": 0.0889,
+   "body_mean_mm": 0.0016,
+   "head_max_mm": 0.064,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00035,
+   "seam_unpacked_max_mm": 0.00035,
+   "regions_max_mm": {
+    "deltoid": 0.0291,
+    "armpit": 0.0697,
+    "clavicle": 0.0489,
+    "upper_chest": 0.0889,
+    "trapezius": 0.0282
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.2956
+  },
+  "elev_120": {
+   "body_max_mm": 0.1278,
+   "body_mean_mm": 0.00234,
+   "head_max_mm": 0.0957,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00039,
+   "seam_unpacked_max_mm": 0.00039,
+   "regions_max_mm": {
+    "deltoid": 0.0512,
+    "armpit": 0.1029,
+    "clavicle": 0.0753,
+    "upper_chest": 0.1278,
+    "trapezius": 0.0437
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.6257
+  },
+  "elev_150": {
+   "body_max_mm": 0.1072,
+   "body_mean_mm": 0.00208,
+   "head_max_mm": 0.0846,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00043,
+   "seam_unpacked_max_mm": 0.00038,
+   "regions_max_mm": {
+    "deltoid": 0.048,
+    "armpit": 0.0889,
+    "clavicle": 0.0678,
+    "upper_chest": 0.1072,
+    "trapezius": 0.0403
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.849
+  },
+  "elev_180": {
+   "body_max_mm": 0.0372,
+   "body_mean_mm": 0.0008,
+   "head_max_mm": 0.0309,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00036,
+   "seam_unpacked_max_mm": 0.00035,
+   "regions_max_mm": {
+    "deltoid": 0.0309,
+    "armpit": 0.0372,
+    "clavicle": 0.0323,
+    "upper_chest": 0.0372,
+    "trapezius": 0.0223
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 1.0325
+  },
+  "internal90": {
+   "body_max_mm": 0.0889,
+   "body_mean_mm": 0.0016,
+   "head_max_mm": 0.064,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00035,
+   "seam_unpacked_max_mm": 0.00035,
+   "regions_max_mm": {
+    "deltoid": 0.0292,
+    "armpit": 0.0697,
+    "clavicle": 0.0489,
+    "upper_chest": 0.0889,
+    "trapezius": 0.0282
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.2957
+  },
+  "external90": {
+   "body_max_mm": 0.0889,
+   "body_mean_mm": 0.0016,
+   "head_max_mm": 0.064,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00035,
+   "seam_unpacked_max_mm": 0.00035,
+   "regions_max_mm": {
+    "deltoid": 0.0292,
+    "armpit": 0.0697,
+    "clavicle": 0.0489,
+    "upper_chest": 0.0889,
+    "trapezius": 0.0282
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.2958
+  },
+  "forward90": {
+   "body_max_mm": 0.0822,
+   "body_mean_mm": 0.00223,
+   "head_max_mm": 0.0694,
+   "face_identity_max_mm": 0.0,
+   "seam_native_max_mm": 0.00032,
+   "seam_unpacked_max_mm": 0.00032,
+   "regions_max_mm": {
+    "deltoid": 0.0691,
+    "armpit": 0.0684,
+    "clavicle": 0.0673,
+    "upper_chest": 0.0673,
+    "trapezius": 0.0553
+   },
+   "unpacked_new_degenerate_tris": 0,
+   "body_max_mm_before_fix": 0.0822
+  }
+ },
+ "helpers_after": {
+  "neutral": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_scap_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_scap_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_pec_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_pec_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_fwd_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_fwd_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_bck_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_bck_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_in_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_in_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_r": [
+    0.0,
+    0.0
+   ]
+  },
+  "elev_0": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_scap_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_scap_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_pec_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_pec_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0001,
+    0.001
+   ],
+   "upperarm_out_r": [
+    0.0005,
+    0.002
+   ],
+   "upperarm_fwd_l": [
+    0.0005,
+    0.002
+   ],
+   "upperarm_fwd_r": [
+    0.001,
+    0.005
+   ],
+   "upperarm_bck_l": [
+    0.0022,
+    0.06
+   ],
+   "upperarm_bck_r": [
+    0.0026,
+    0.069
+   ],
+   "upperarm_in_l": [
+    0.0006,
+    0.0
+   ],
+   "upperarm_in_r": [
+    0.0007,
+    0.0
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_r": [
+    0.0,
+    0.0
+   ]
+  },
+  "elev_30": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_scap_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_scap_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_pec_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_pec_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0001,
+    0.0
+   ],
+   "upperarm_out_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_fwd_l": [
+    0.0001,
+    0.0
+   ],
+   "upperarm_fwd_r": [
+    0.0001,
+    0.0
+   ],
+   "upperarm_bck_l": [
+    0.0001,
+    0.002
+   ],
+   "upperarm_bck_r": [
+    0.0003,
+    0.005
+   ],
+   "upperarm_in_l": [
+    0.0001,
+    0.0
+   ],
+   "upperarm_in_r": [
+    0.0001,
+    0.0
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0004,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_r": [
+    0.0,
+    0.0
+   ]
+  },
+  "elev_60": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0007,
+    0.008
+   ],
+   "clavicle_out_r": [
+    0.0013,
+    0.004
+   ],
+   "clavicle_scap_l": [
+    0.0083,
+    0.038
+   ],
+   "clavicle_scap_r": [
+    0.0083,
+    0.029
+   ],
+   "clavicle_pec_l": [
+    0.0021,
+    0.051
+   ],
+   "clavicle_pec_r": [
+    0.0025,
+    0.063
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0002,
+    0.0
+   ],
+   "upperarm_out_r": [
+    0.0002,
+    0.0
+   ],
+   "upperarm_fwd_l": [
+    0.0002,
+    0.0
+   ],
+   "upperarm_fwd_r": [
+    0.0002,
+    0.001
+   ],
+   "upperarm_bck_l": [
+    0.0002,
+    0.001
+   ],
+   "upperarm_bck_r": [
+    0.0003,
+    0.001
+   ],
+   "upperarm_in_l": [
+    0.0002,
+    0.0
+   ],
+   "upperarm_in_r": [
+    0.0001,
+    0.0
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0009,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0014,
+    0.006
+   ],
+   "spine_04_latissimus_r": [
+    0.0014,
+    0.01
+   ]
+  },
+  "elev_90": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0022,
+    0.023
+   ],
+   "clavicle_out_r": [
+    0.0033,
+    0.011
+   ],
+   "clavicle_scap_l": [
+    0.011,
+    0.112
+   ],
+   "clavicle_scap_r": [
+    0.0112,
+    0.084
+   ],
+   "clavicle_pec_l": [
+    0.0042,
+    0.148
+   ],
+   "clavicle_pec_r": [
+    0.0053,
+    0.183
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0147,
+    0.014
+   ],
+   "upperarm_out_r": [
+    0.0181,
+    0.013
+   ],
+   "upperarm_fwd_l": [
+    0.0157,
+    0.009
+   ],
+   "upperarm_fwd_r": [
+    0.0186,
+    0.018
+   ],
+   "upperarm_bck_l": [
+    0.0122,
+    0.024
+   ],
+   "upperarm_bck_r": [
+    0.0152,
+    0.054
+   ],
+   "upperarm_in_l": [
+    0.0092,
+    0.005
+   ],
+   "upperarm_in_r": [
+    0.0111,
+    0.006
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0004,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0005,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.003,
+    0.015
+   ],
+   "spine_04_latissimus_r": [
+    0.0038,
+    0.023
+   ]
+  },
+  "elev_120": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0033,
+    0.033
+   ],
+   "clavicle_out_r": [
+    0.0047,
+    0.015
+   ],
+   "clavicle_scap_l": [
+    0.0104,
+    0.165
+   ],
+   "clavicle_scap_r": [
+    0.011,
+    0.122
+   ],
+   "clavicle_pec_l": [
+    0.0055,
+    0.216
+   ],
+   "clavicle_pec_r": [
+    0.0069,
+    0.267
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0106,
+    0.016
+   ],
+   "upperarm_out_r": [
+    0.0095,
+    0.014
+   ],
+   "upperarm_fwd_l": [
+    0.0156,
+    0.017
+   ],
+   "upperarm_fwd_r": [
+    0.0154,
+    0.03
+   ],
+   "upperarm_bck_l": [
+    0.0086,
+    0.002
+   ],
+   "upperarm_bck_r": [
+    0.0075,
+    0.02
+   ],
+   "upperarm_in_l": [
+    0.0079,
+    0.004
+   ],
+   "upperarm_in_r": [
+    0.0069,
+    0.008
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0002,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0001,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0052,
+    0.019
+   ],
+   "spine_04_latissimus_r": [
+    0.0065,
+    0.03
+   ]
+  },
+  "elev_150": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0028,
+    0.028
+   ],
+   "clavicle_out_r": [
+    0.0039,
+    0.013
+   ],
+   "clavicle_scap_l": [
+    0.007,
+    0.144
+   ],
+   "clavicle_scap_r": [
+    0.0076,
+    0.105
+   ],
+   "clavicle_pec_l": [
+    0.0044,
+    0.188
+   ],
+   "clavicle_pec_r": [
+    0.0055,
+    0.232
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0016,
+    0.018
+   ],
+   "upperarm_out_r": [
+    0.0014,
+    0.012
+   ],
+   "upperarm_fwd_l": [
+    0.0032,
+    0.029
+   ],
+   "upperarm_fwd_r": [
+    0.0038,
+    0.036
+   ],
+   "upperarm_bck_l": [
+    0.0015,
+    0.003
+   ],
+   "upperarm_bck_r": [
+    0.0013,
+    0.019
+   ],
+   "upperarm_in_l": [
+    0.0013,
+    0.008
+   ],
+   "upperarm_in_r": [
+    0.0013,
+    0.01
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0048,
+    0.016
+   ],
+   "spine_04_latissimus_r": [
+    0.0059,
+    0.025
+   ]
+  },
+  "elev_180": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0012,
+    0.001
+   ],
+   "clavicle_out_r": [
+    0.0008,
+    0.001
+   ],
+   "clavicle_scap_l": [
+    0.0017,
+    0.008
+   ],
+   "clavicle_scap_r": [
+    0.0012,
+    0.006
+   ],
+   "clavicle_pec_l": [
+    0.0017,
+    0.012
+   ],
+   "clavicle_pec_r": [
+    0.001,
+    0.015
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0001,
+    0.038
+   ],
+   "upperarm_out_r": [
+    0.0001,
+    0.052
+   ],
+   "upperarm_fwd_l": [
+    0.0006,
+    0.065
+   ],
+   "upperarm_fwd_r": [
+    0.0003,
+    0.152
+   ],
+   "upperarm_bck_l": [
+    0.0003,
+    0.003
+   ],
+   "upperarm_bck_r": [
+    0.0002,
+    0.043
+   ],
+   "upperarm_in_l": [
+    0.0002,
+    0.005
+   ],
+   "upperarm_in_r": [
+    0.0002,
+    0.034
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.0026,
+    0.002
+   ],
+   "spine_04_latissimus_r": [
+    0.0015,
+    0.001
+   ]
+  },
+  "internal90": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0022,
+    0.023
+   ],
+   "clavicle_out_r": [
+    0.0033,
+    0.011
+   ],
+   "clavicle_scap_l": [
+    0.011,
+    0.112
+   ],
+   "clavicle_scap_r": [
+    0.0112,
+    0.084
+   ],
+   "clavicle_pec_l": [
+    0.0042,
+    0.148
+   ],
+   "clavicle_pec_r": [
+    0.0053,
+    0.183
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0147,
+    0.014
+   ],
+   "upperarm_out_r": [
+    0.0181,
+    0.013
+   ],
+   "upperarm_fwd_l": [
+    0.0157,
+    0.009
+   ],
+   "upperarm_fwd_r": [
+    0.0187,
+    0.018
+   ],
+   "upperarm_bck_l": [
+    0.0122,
+    0.024
+   ],
+   "upperarm_bck_r": [
+    0.0153,
+    0.054
+   ],
+   "upperarm_in_l": [
+    0.0092,
+    0.005
+   ],
+   "upperarm_in_r": [
+    0.0111,
+    0.006
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0004,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0005,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.003,
+    0.015
+   ],
+   "spine_04_latissimus_r": [
+    0.0038,
+    0.023
+   ]
+  },
+  "external90": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0022,
+    0.023
+   ],
+   "clavicle_out_r": [
+    0.0033,
+    0.011
+   ],
+   "clavicle_scap_l": [
+    0.011,
+    0.112
+   ],
+   "clavicle_scap_r": [
+    0.0112,
+    0.084
+   ],
+   "clavicle_pec_l": [
+    0.0042,
+    0.148
+   ],
+   "clavicle_pec_r": [
+    0.0053,
+    0.183
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0147,
+    0.014
+   ],
+   "upperarm_out_r": [
+    0.0181,
+    0.013
+   ],
+   "upperarm_fwd_l": [
+    0.0157,
+    0.009
+   ],
+   "upperarm_fwd_r": [
+    0.0186,
+    0.018
+   ],
+   "upperarm_bck_l": [
+    0.0122,
+    0.024
+   ],
+   "upperarm_bck_r": [
+    0.0152,
+    0.054
+   ],
+   "upperarm_in_l": [
+    0.0092,
+    0.005
+   ],
+   "upperarm_in_r": [
+    0.0111,
+    0.006
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0004,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0005,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.003,
+    0.015
+   ],
+   "spine_04_latissimus_r": [
+    0.0038,
+    0.023
+   ]
+  },
+  "forward90": {
+   "clavicle_l": [
+    0.0,
+    0.0
+   ],
+   "clavicle_r": [
+    0.0,
+    0.0
+   ],
+   "clavicle_out_l": [
+    0.0022,
+    0.023
+   ],
+   "clavicle_out_r": [
+    0.0033,
+    0.011
+   ],
+   "clavicle_scap_l": [
+    0.011,
+    0.112
+   ],
+   "clavicle_scap_r": [
+    0.0112,
+    0.084
+   ],
+   "clavicle_pec_l": [
+    0.0042,
+    0.148
+   ],
+   "clavicle_pec_r": [
+    0.0053,
+    0.183
+   ],
+   "upperarm_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_r": [
+    0.0,
+    0.0
+   ],
+   "upperarm_out_l": [
+    0.0043,
+    0.045
+   ],
+   "upperarm_out_r": [
+    0.0118,
+    0.067
+   ],
+   "upperarm_fwd_l": [
+    0.0489,
+    0.243
+   ],
+   "upperarm_fwd_r": [
+    0.0249,
+    0.271
+   ],
+   "upperarm_bck_l": [
+    0.0227,
+    0.005
+   ],
+   "upperarm_bck_r": [
+    0.0216,
+    0.005
+   ],
+   "upperarm_in_l": [
+    0.0141,
+    0.004
+   ],
+   "upperarm_in_r": [
+    0.022,
+    0.013
+   ],
+   "upperarm_twistCor_01_l": [
+    0.0,
+    0.0
+   ],
+   "upperarm_twistCor_01_r": [
+    0.0,
+    0.0
+   ],
+   "spine_04_latissimus_l": [
+    0.003,
+    0.015
+   ],
+   "spine_04_latissimus_r": [
+    0.0038,
+    0.023
+   ]
+  }
+ },
+ "twistCor_01_l_before_mm": {
+  "neutral": 0,
+  "elev_0": 0.193,
+  "elev_30": 0.001,
+  "elev_60": 0.004,
+  "elev_90": 0.409,
+  "elev_120": 0.868,
+  "elev_150": 1.176,
+  "elev_180": 1.431,
+  "internal90": 0.409,
+  "external90": 0.409,
+  "forward90": 0.016
+ }
+}

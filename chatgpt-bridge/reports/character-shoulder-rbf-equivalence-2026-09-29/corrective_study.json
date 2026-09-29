@@ -1,0 +1,580 @@
+{
+ "skeleton_fix": {
+  "test_vs_plugin_differences": {
+   "upperarm_twistCor_01_l": [
+    "Skeleton",
+    "AnimationRelative"
+   ],
+   "upperarm_twistCor_02_l": [
+    "Skeleton",
+    "AnimationRelative"
+   ]
+  },
+  "dirty": []
+ },
+ "upper_bound_all_helpers": {
+  "elev_150": {
+   "baseline": 23.75455683005764,
+   "result": 17.141512665151986
+  },
+  "elev_180": {
+   "baseline": 30.41082569186988,
+   "result": 25.405094502924804
+  }
+ },
+ "up40_conservative": {
+  "l": {
+   "baseline": {
+    "elev_90": 10.773453282957526,
+    "forward90": 37.666896789912705,
+    "elev_120": 16.85155605142061,
+    "elev_150": 23.75455683005783,
+    "elev_180": 30.41082569186917
+   },
+   "result": {
+    "elev_90": 10.510641583548182,
+    "forward90": 37.69293253998934,
+    "elev_120": 16.35735547179714,
+    "elev_150": 22.917420314407774,
+    "elev_180": 29.188615083961654
+   }
+  },
+  "r": {
+   "baseline": {
+    "elev_90": 11.069123199204526,
+    "forward90": 36.54054435293913,
+    "elev_120": 17.510539520856472,
+    "elev_150": 24.981977583346435,
+    "elev_180": 33.351184379603225
+   },
+   "result": {
+    "elev_90": 10.704444202861042,
+    "forward90": 36.610483819184786,
+    "elev_120": 16.832632804418004,
+    "elev_150": 23.75983855489932,
+    "elev_180": 31.295810771134672
+   }
+  }
+ },
+ "weight_relaxation_grid": {
+  "base": {
+   "elev_30": [
+    2.235,
+    12.25,
+    30.19
+   ],
+   "elev_60": [
+    4.155,
+    4.99,
+    6.68
+   ],
+   "elev_90": [
+    10.867,
+    7.65,
+    9.95
+   ],
+   "elev_120": [
+    17.095,
+    10.14,
+    14.74
+   ],
+   "elev_150": [
+    24.246,
+    14.1,
+    21.42
+   ],
+   "elev_180": [
+    31.721,
+    17.8,
+    29.68
+   ],
+   "internal90": [
+    11.795,
+    9.16,
+    13.44
+   ],
+   "external90": [
+    13.266,
+    8.36,
+    11.09
+   ],
+   "forward90": [
+    36.921,
+    44.06,
+    88.26
+   ]
+  },
+  "0.3_2": {
+   "elev_30": [
+    2.267,
+    12.27,
+    30.16
+   ],
+   "elev_60": [
+    4.544,
+    5.66,
+    8.26
+   ],
+   "elev_90": [
+    11.891,
+    9.29,
+    14.51
+   ],
+   "elev_120": [
+    18.602,
+    12.61,
+    23.17
+   ],
+   "elev_150": [
+    26.328,
+    17.55,
+    31.29
+   ],
+   "elev_180": [
+    34.603,
+    21.86,
+    39.79
+   ],
+   "internal90": [
+    14.184,
+    14.08,
+    30.61
+   ],
+   "external90": [
+    14.226,
+    9.77,
+    12.73
+   ],
+   "forward90": [
+    53.442,
+    60.06,
+    109.67
+   ]
+  },
+  "0.5_3": {
+   "elev_30": [
+    2.274,
+    12.21,
+    29.7
+   ],
+   "elev_60": [
+    4.886,
+    6.24,
+    8.26
+   ],
+   "elev_90": [
+    12.735,
+    10.2,
+    14.19
+   ],
+   "elev_120": [
+    19.931,
+    14.12,
+    22.61
+   ],
+   "elev_150": [
+    28.57,
+    19.88,
+    30.51
+   ],
+   "elev_180": [
+    38.13,
+    25.18,
+    40.03
+   ],
+   "internal90": [
+    15.236,
+    15.16,
+    30.84
+   ],
+   "external90": [
+    15.095,
+    10.86,
+    15.1
+   ],
+   "forward90": [
+    66.336,
+    68.8,
+    121.72
+   ]
+  },
+  "0.5_6": {
+   "elev_30": [
+    2.201,
+    11.84,
+    28.95
+   ],
+   "elev_60": [
+    5.04,
+    6.77,
+    8.84
+   ],
+   "elev_90": [
+    13.105,
+    11.37,
+    16.17
+   ],
+   "elev_120": [
+    20.585,
+    15.2,
+    21.82
+   ],
+   "elev_150": [
+    29.727,
+    21.59,
+    30.21
+   ],
+   "elev_180": [
+    39.887,
+    27.13,
+    43.05
+   ],
+   "internal90": [
+    15.679,
+    16.1,
+    31.47
+   ],
+   "external90": [
+    15.513,
+    12.32,
+    17.41
+   ],
+   "forward90": [
+    71.532,
+    72.1,
+    121.79
+   ]
+  },
+  "0.7_10": {
+   "elev_30": [
+    2.055,
+    11.4,
+    27.38
+   ],
+   "elev_60": [
+    5.105,
+    7.27,
+    9.31
+   ],
+   "elev_90": [
+    13.085,
+    11.9,
+    17.62
+   ],
+   "elev_120": [
+    20.503,
+    15.69,
+    23.16
+   ],
+   "elev_150": [
+    29.965,
+    22.36,
+    33.39
+   ],
+   "elev_180": [
+    41.065,
+    28.06,
+    44.32
+   ],
+   "internal90": [
+    15.397,
+    15.19,
+    32.7
+   ],
+   "external90": [
+    15.518,
+    13.05,
+    20.07
+   ],
+   "forward90": [
+    98.097,
+    88.76,
+    164.25
+   ]
+  }
+ },
+ "weight_transfer_cd_v3": {
+  "elev_30": [
+   2.809,
+   13.33,
+   20.53,
+   1.2
+  ],
+  "elev_60": [
+   3.99,
+   8.56,
+   16.24,
+   4.19
+  ],
+  "elev_90": [
+   7.426,
+   10.76,
+   18.3,
+   9.13
+  ],
+  "elev_120": [
+   10.532,
+   11.94,
+   21.55,
+   13.52
+  ],
+  "elev_150": [
+   16.369,
+   16.23,
+   30.37,
+   17.28
+  ],
+  "elev_180": [
+   22.066,
+   17.7,
+   29.68,
+   19.78
+  ],
+  "internal90": [
+   8.49,
+   10.38,
+   17.47,
+   9.07
+  ],
+  "external90": [
+   9.552,
+   12.01,
+   16.18,
+   9.44
+  ],
+  "forward90": [
+   24.503,
+   26.42,
+   33.57,
+   10.3
+  ]
+ },
+ "fold_to_helper_plus_up40_left": {
+  "elev_30": {
+   "orig": {
+    "E": 2.2,
+    "top40": 8.2,
+    "max": 29.4,
+    "deltoid": 4.2,
+    "trapezius": 0.5,
+    "clavicle": 0.4,
+    "scapular": 8.2,
+    "armpit": 6.4,
+    "upper_chest": 2.4
+   },
+   "cand": {
+    "E": 2.2,
+    "top40": 8.3,
+    "max": 29.5,
+    "deltoid": 4.2,
+    "trapezius": 0.5,
+    "clavicle": 0.4,
+    "scapular": 8.3,
+    "armpit": 6.4,
+    "upper_chest": 2.5
+   },
+   "max_disp_mm": 0.1
+  },
+  "elev_60": {
+   "orig": {
+    "E": 4.1,
+    "top40": 4.3,
+    "max": 6.5,
+    "deltoid": 2.8,
+    "trapezius": 1.3,
+    "clavicle": 1.1,
+    "scapular": 4.8,
+    "armpit": 4.3,
+    "upper_chest": 3.3
+   },
+   "cand": {
+    "E": 4.9,
+    "top40": 6.8,
+    "max": 14.6,
+    "deltoid": 7.0,
+    "trapezius": 8.9,
+    "clavicle": 1.1,
+    "scapular": 7.0,
+    "armpit": 6.9,
+    "upper_chest": 2.9
+   },
+   "max_disp_mm": 3.5
+  },
+  "elev_90": {
+   "orig": {
+    "E": 10.8,
+    "top40": 6.4,
+    "max": 9.5,
+    "deltoid": 5.0,
+    "trapezius": 3.6,
+    "clavicle": 2.5,
+    "scapular": 6.9,
+    "armpit": 7.2,
+    "upper_chest": 5.5
+   },
+   "cand": {
+    "E": 11.6,
+    "top40": 9.1,
+    "max": 18.6,
+    "deltoid": 8.9,
+    "trapezius": 11.3,
+    "clavicle": 2.5,
+    "scapular": 8.9,
+    "armpit": 8.9,
+    "upper_chest": 4.1
+   },
+   "max_disp_mm": 6.9
+  },
+  "forward90": {
+   "orig": {
+    "E": 37.7,
+    "top40": 32.5,
+    "max": 88.3,
+    "deltoid": 37.7,
+    "trapezius": 8.4,
+    "clavicle": 13.2,
+    "scapular": 8.1,
+    "armpit": 34.7,
+    "upper_chest": 20.0
+   },
+   "cand": {
+    "E": 39.0,
+    "top40": 33.2,
+    "max": 79.7,
+    "deltoid": 38.3,
+    "trapezius": 10.8,
+    "clavicle": 12.5,
+    "scapular": 9.3,
+    "armpit": 36.6,
+    "upper_chest": 18.9
+   },
+   "max_disp_mm": 6.9
+  },
+  "internal90": {
+   "orig": {
+    "E": 11.8,
+    "top40": 7.6,
+    "max": 13.4,
+    "deltoid": 7.1,
+    "trapezius": 3.6,
+    "clavicle": 2.5,
+    "scapular": 6.3,
+    "armpit": 7.6,
+    "upper_chest": 6.2
+   },
+   "cand": {
+    "E": 12.8,
+    "top40": 10.2,
+    "max": 19.7,
+    "deltoid": 11.1,
+    "trapezius": 11.6,
+    "clavicle": 2.5,
+    "scapular": 8.9,
+    "armpit": 10.5,
+    "upper_chest": 4.8
+   },
+   "max_disp_mm": 6.9
+  },
+  "external90": {
+   "orig": {
+    "E": 13.3,
+    "top40": 7.2,
+    "max": 11.1,
+    "deltoid": 5.5,
+    "trapezius": 3.6,
+    "clavicle": 2.6,
+    "scapular": 8.2,
+    "armpit": 6.9,
+    "upper_chest": 4.6
+   },
+   "cand": {
+    "E": 14.1,
+    "top40": 9.5,
+    "max": 17.5,
+    "deltoid": 10.1,
+    "trapezius": 10.9,
+    "clavicle": 2.7,
+    "scapular": 8.9,
+    "armpit": 9.0,
+    "upper_chest": 3.5
+   },
+   "max_disp_mm": 6.9
+  },
+  "elev_120": {
+   "orig": {
+    "E": 16.9,
+    "top40": 8.5,
+    "max": 12.2,
+    "deltoid": 8.0,
+    "trapezius": 7.7,
+    "clavicle": 5.9,
+    "scapular": 8.4,
+    "armpit": 8.3,
+    "upper_chest": 7.2
+   },
+   "cand": {
+    "E": 16.3,
+    "top40": 8.6,
+    "max": 14.2,
+    "deltoid": 8.9,
+    "trapezius": 7.3,
+    "clavicle": 5.9,
+    "scapular": 7.3,
+    "armpit": 8.0,
+    "upper_chest": 5.5
+   },
+   "max_disp_mm": 11.7
+  },
+  "elev_150": {
+   "orig": {
+    "E": 23.8,
+    "top40": 11.8,
+    "max": 21.4,
+    "deltoid": 11.3,
+    "trapezius": 13.2,
+    "clavicle": 10.2,
+    "scapular": 10.9,
+    "armpit": 10.1,
+    "upper_chest": 10.5
+   },
+   "cand": {
+    "E": 21.9,
+    "top40": 11.5,
+    "max": 18.1,
+    "deltoid": 11.2,
+    "trapezius": 12.8,
+    "clavicle": 11.2,
+    "scapular": 10.5,
+    "armpit": 9.0,
+    "upper_chest": 6.5
+   },
+   "max_disp_mm": 17.0
+  },
+  "elev_180": {
+   "orig": {
+    "E": 30.4,
+    "top40": 14.1,
+    "max": 29.6,
+    "deltoid": 12.5,
+    "trapezius": 17.3,
+    "clavicle": 13.0,
+    "scapular": 13.6,
+    "armpit": 11.2,
+    "upper_chest": 11.2
+   },
+   "cand": {
+    "E": 29.9,
+    "top40": 15.5,
+    "max": 33.6,
+    "deltoid": 13.7,
+    "trapezius": 24.6,
+    "clavicle": 15.3,
+    "scapular": 12.8,
+    "armpit": 11.9,
+    "upper_chest": 8.8
+   },
+   "max_disp_mm": 22.6
+  }
+ },
+ "note": "energy = mean squared dihedral change vs neutral (deg^2) over shoulder-region edges; offline LBS-delta model validated vs Unreal."
+}

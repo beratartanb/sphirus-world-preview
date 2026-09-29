@@ -1,0 +1,510 @@
+{
+ "pose_assets": [
+  "PA_calf_l_UERBFSolver",
+  "PA_calf_r_UERBFSolver",
+  "PA_clavicle_l_UERBFSolver",
+  "PA_clavicle_r_UERBFSolver",
+  "PA_foot_l_UERBFSolver",
+  "PA_foot_r_UERBFSolver",
+  "PA_hand_l_UERBFSolver",
+  "PA_hand_r_UERBFSolver",
+  "PA_index_l_01_UERBFSolver",
+  "PA_index_l_01_half_UERBFSolver",
+  "PA_index_l_02_UERBFSolver",
+  "PA_index_l_02_half_UERBFSolver",
+  "PA_index_l_03_UERBFSolver",
+  "PA_index_l_03_half_UERBFSolver",
+  "PA_index_r_01_UERBFSolver",
+  "PA_index_r_01_half_UERBFSolver",
+  "PA_index_r_02_UERBFSolver",
+  "PA_index_r_02_half_UERBFSolver",
+  "PA_index_r_03_UERBFSolver",
+  "PA_index_r_03_half_UERBFSolver",
+  "PA_lowerarm_l_UERBFSolver",
+  "PA_lowerarm_r_UERBFSolver",
+  "PA_middle_l_01_UERBFSolver",
+  "PA_middle_l_01_half_UERBFSolver",
+  "PA_middle_l_02_UERBFSolver",
+  "PA_middle_l_02_half_UERBFSolver",
+  "PA_middle_l_03_UERBFSolver",
+  "PA_middle_l_03_half_UERBFSolver",
+  "PA_middle_r_01_UERBFSolver",
+  "PA_middle_r_01_half_UERBFSolver",
+  "PA_middle_r_02_UERBFSolver",
+  "PA_middle_r_02_half_UERBFSolver",
+  "PA_middle_r_03_UERBFSolver",
+  "PA_middle_r_03_half_UERBFSolver",
+  "PA_pinky_l_01_UERBFSolver",
+  "PA_pinky_l_01_half_UERBFSolver",
+  "PA_pinky_l_02_UERBFSolver",
+  "PA_pinky_l_02_half_UERBFSolver",
+  "PA_pinky_l_03_UERBFSolver",
+  "PA_pinky_l_03_half_UERBFSolver",
+  "PA_pinky_r_01_UERBFSolver",
+  "PA_pinky_r_01_half_UERBFSolver",
+  "PA_pinky_r_02_UERBFSolver",
+  "PA_pinky_r_02_half_UERBFSolver",
+  "PA_pinky_r_03_UERBFSolver",
+  "PA_pinky_r_03_half_UERBFSolver",
+  "PA_ring_l_01_UERBFSolver",
+  "PA_ring_l_01_half_UERBFSolver",
+  "PA_ring_l_02_UERBFSolver",
+  "PA_ring_l_02_half_UERBFSolver",
+  "PA_ring_l_03_UERBFSolver",
+  "PA_ring_l_03_half_UERBFSolver",
+  "PA_ring_r_01_UERBFSolver",
+  "PA_ring_r_01_half_UERBFSolver",
+  "PA_ring_r_02_UERBFSolver",
+  "PA_ring_r_02_half_UERBFSolver",
+  "PA_ring_r_03_UERBFSolver",
+  "PA_ring_r_03_half_UERBFSolver",
+  "PA_thigh_l_UERBFSolver",
+  "PA_thigh_r_UERBFSolver",
+  "PA_thumb_l_01_UERBFSolver",
+  "PA_thumb_l_02_UERBFSolver",
+  "PA_thumb_l_02_half_UERBFSolver",
+  "PA_thumb_l_03_UERBFSolver",
+  "PA_thumb_l_03_half_UERBFSolver",
+  "PA_thumb_r_01_UERBFSolver",
+  "PA_thumb_r_02_UERBFSolver",
+  "PA_thumb_r_02_half_UERBFSolver",
+  "PA_thumb_r_03_UERBFSolver",
+  "PA_thumb_r_03_half_UERBFSolver",
+  "PA_upperarm_l_UERBFSolver",
+  "PA_upperarm_r_UERBFSolver"
+ ],
+ "referenced": {
+  "PA_calf_l_UERBFSolver": {
+   "sources": [
+    "calf_l"
+   ],
+   "driven": [
+    "calf_knee_l",
+    "calf_kneeBack_l",
+    "calf_twistCor_02_l",
+    "thigh_twistCor_01_l",
+    "thigh_twistCor_02_l"
+   ]
+  },
+  "PA_calf_r_UERBFSolver": {
+   "sources": [
+    "calf_r"
+   ],
+   "driven": [
+    "calf_knee_r",
+    "calf_kneeBack_r",
+    "calf_twistCor_02_r",
+    "thigh_twistCor_01_r",
+    "thigh_twistCor_02_r"
+   ]
+  },
+  "PA_clavicle_l_UERBFSolver": {
+   "sources": [
+    "clavicle_l"
+   ],
+   "driven": [
+    "clavicle_pec_l",
+    "clavicle_out_l",
+    "clavicle_scap_l",
+    "spine_04_latissimus_l"
+   ]
+  },
+  "PA_clavicle_r_UERBFSolver": {
+   "sources": [
+    "clavicle_r"
+   ],
+   "driven": [
+    "clavicle_pec_r",
+    "clavicle_out_r",
+    "clavicle_scap_r",
+    "spine_04_latissimus_r"
+   ]
+  },
+  "PA_foot_l_UERBFSolver": {
+   "sources": [
+    "foot_l"
+   ],
+   "driven": [
+    "ankle_fwd_l",
+    "ankle_bck_l"
+   ]
+  },
+  "PA_foot_r_UERBFSolver": {
+   "sources": [
+    "foot_r"
+   ],
+   "driven": [
+    "ankle_fwd_r",
+    "ankle_bck_r"
+   ]
+  },
+  "PA_hand_l_UERBFSolver": {
+   "sources": [
+    "hand_l"
+   ],
+   "driven": [
+    "wrist_outer_l",
+    "wrist_inner_l"
+   ]
+  },
+  "PA_hand_r_UERBFSolver": {
+   "sources": [
+    "hand_r"
+   ],
+   "driven": [
+    "wrist_outer_r",
+    "wrist_inner_r"
+   ]
+  },
+  "PA_index_l_01_half_UERBFSolver": {
+   "sources": [
+    "index_01_l"
+   ],
+   "driven": [
+    "index_01_half_l"
+   ]
+  },
+  "PA_index_l_02_half_UERBFSolver": {
+   "sources": [
+    "index_02_l"
+   ],
+   "driven": [
+    "index_02_half_l"
+   ]
+  },
+  "PA_index_l_03_half_UERBFSolver": {
+   "sources": [
+    "index_03_l"
+   ],
+   "driven": [
+    "index_03_half_l"
+   ]
+  },
+  "PA_index_r_01_half_UERBFSolver": {
+   "sources": [
+    "index_01_r"
+   ],
+   "driven": [
+    "index_01_half_r"
+   ]
+  },
+  "PA_index_r_02_half_UERBFSolver": {
+   "sources": [
+    "index_02_r"
+   ],
+   "driven": [
+    "index_02_half_r"
+   ]
+  },
+  "PA_index_r_03_half_UERBFSolver": {
+   "sources": [
+    "index_03_r"
+   ],
+   "driven": [
+    "index_03_half_r"
+   ]
+  },
+  "PA_lowerarm_l_UERBFSolver": {
+   "sources": [
+    "lowerarm_l"
+   ],
+   "driven": [
+    "lowerarm_fwd_l",
+    "lowerarm_bck_l",
+    "lowerarm_in_l",
+    "lowerarm_out_l",
+    "upperarm_bicep_l",
+    "upperarm_tricep_l"
+   ]
+  },
+  "PA_lowerarm_r_UERBFSolver": {
+   "sources": [
+    "lowerarm_r"
+   ],
+   "driven": [
+    "lowerarm_fwd_r",
+    "lowerarm_bck_r",
+    "lowerarm_in_r",
+    "lowerarm_out_r",
+    "upperarm_bicep_r",
+    "upperarm_tricep_r"
+   ]
+  },
+  "PA_middle_l_01_half_UERBFSolver": {
+   "sources": [
+    "middle_01_l"
+   ],
+   "driven": [
+    "middle_01_half_l"
+   ]
+  },
+  "PA_middle_l_02_half_UERBFSolver": {
+   "sources": [
+    "middle_02_l"
+   ],
+   "driven": [
+    "middle_02_half_l"
+   ]
+  },
+  "PA_middle_l_03_half_UERBFSolver": {
+   "sources": [
+    "middle_03_l"
+   ],
+   "driven": [
+    "middle_03_half_l"
+   ]
+  },
+  "PA_middle_r_01_half_UERBFSolver": {
+   "sources": [
+    "middle_01_r"
+   ],
+   "driven": [
+    "middle_01_half_r"
+   ]
+  },
+  "PA_middle_r_02_half_UERBFSolver": {
+   "sources": [
+    "middle_02_r"
+   ],
+   "driven": [
+    "middle_02_half_r"
+   ]
+  },
+  "PA_middle_r_03_half_UERBFSolver": {
+   "sources": [
+    "middle_03_r"
+   ],
+   "driven": [
+    "middle_03_half_r"
+   ]
+  },
+  "PA_pinky_l_01_half_UERBFSolver": {
+   "sources": [
+    "pinky_01_l"
+   ],
+   "driven": [
+    "pinky_01_half_l"
+   ]
+  },
+  "PA_pinky_l_02_half_UERBFSolver": {
+   "sources": [
+    "pinky_02_l"
+   ],
+   "driven": [
+    "pinky_02_half_l"
+   ]
+  },
+  "PA_pinky_l_03_half_UERBFSolver": {
+   "sources": [
+    "pinky_03_l"
+   ],
+   "driven": [
+    "pinky_03_half_l"
+   ]
+  },
+  "PA_pinky_r_01_half_UERBFSolver": {
+   "sources": [
+    "pinky_01_r"
+   ],
+   "driven": [
+    "pinky_01_half_r"
+   ]
+  },
+  "PA_pinky_r_02_half_UERBFSolver": {
+   "sources": [
+    "pinky_02_r"
+   ],
+   "driven": [
+    "pinky_02_half_r"
+   ]
+  },
+  "PA_pinky_r_03_half_UERBFSolver": {
+   "sources": [
+    "pinky_03_r"
+   ],
+   "driven": [
+    "pinky_03_half_r"
+   ]
+  },
+  "PA_ring_l_01_half_UERBFSolver": {
+   "sources": [
+    "ring_01_l"
+   ],
+   "driven": [
+    "ring_01_half_l"
+   ]
+  },
+  "PA_ring_l_02_half_UERBFSolver": {
+   "sources": [
+    "ring_02_l"
+   ],
+   "driven": [
+    "ring_02_half_l"
+   ]
+  },
+  "PA_ring_l_03_half_UERBFSolver": {
+   "sources": [
+    "ring_03_l"
+   ],
+   "driven": [
+    "ring_03_half_l"
+   ]
+  },
+  "PA_ring_r_01_half_UERBFSolver": {
+   "sources": [
+    "ring_01_r"
+   ],
+   "driven": [
+    "ring_01_half_r"
+   ]
+  },
+  "PA_ring_r_02_half_UERBFSolver": {
+   "sources": [
+    "ring_02_r"
+   ],
+   "driven": [
+    "ring_02_half_r"
+   ]
+  },
+  "PA_ring_r_03_half_UERBFSolver": {
+   "sources": [
+    "ring_03_r"
+   ],
+   "driven": [
+    "ring_03_half_r"
+   ]
+  },
+  "PA_thigh_l_UERBFSolver": {
+   "sources": [
+    "thigh_l"
+   ],
+   "driven": [
+    "thigh_bck_lwr_l",
+    "thigh_bck_l",
+    "thigh_fwd_l",
+    "thigh_fwd_lwr_l",
+    "thigh_in_l",
+    "thigh_out_l"
+   ]
+  },
+  "PA_thigh_r_UERBFSolver": {
+   "sources": [
+    "thigh_r"
+   ],
+   "driven": [
+    "thigh_bck_r",
+    "thigh_bck_lwr_r",
+    "thigh_fwd_lwr_r",
+    "thigh_fwd_r",
+    "thigh_in_r",
+    "thigh_out_r"
+   ]
+  },
+  "PA_thumb_l_01_UERBFSolver": {
+   "sources": [
+    "thumb_01_l"
+   ],
+   "driven": [
+    "thumb_01_side_out_l",
+    "thumb_01_side_inn_l"
+   ]
+  },
+  "PA_thumb_l_02_half_UERBFSolver": {
+   "sources": [
+    "thumb_02_l"
+   ],
+   "driven": [
+    "thumb_02_half_l"
+   ]
+  },
+  "PA_thumb_l_03_half_UERBFSolver": {
+   "sources": [
+    "thumb_03_l"
+   ],
+   "driven": [
+    "thumb_03_half_l"
+   ]
+  },
+  "PA_thumb_r_01_UERBFSolver": {
+   "sources": [
+    "thumb_01_r"
+   ],
+   "driven": [
+    "thumb_01_side_out_r",
+    "thumb_01_side_inn_r"
+   ]
+  },
+  "PA_thumb_r_02_half_UERBFSolver": {
+   "sources": [
+    "thumb_02_r"
+   ],
+   "driven": [
+    "thumb_02_half_r"
+   ]
+  },
+  "PA_thumb_r_03_half_UERBFSolver": {
+   "sources": [
+    "thumb_03_r"
+   ],
+   "driven": [
+    "thumb_03_half_r"
+   ]
+  },
+  "PA_upperarm_l_UERBFSolver": {
+   "sources": [
+    "upperarm_l"
+   ],
+   "driven": [
+    "upperarm_fwd_l",
+    "upperarm_bck_l",
+    "upperarm_in_l",
+    "upperarm_out_l",
+    "upperarm_twistCor_01_l",
+    "upperarm_twistCor_02_l"
+   ]
+  },
+  "PA_upperarm_r_UERBFSolver": {
+   "sources": [
+    "upperarm_r"
+   ],
+   "driven": [
+    "upperarm_fwd_r",
+    "upperarm_bck_r",
+    "upperarm_in_r",
+    "upperarm_out_r",
+    "upperarm_twistCor_01_r",
+    "upperarm_twistCor_02_r"
+   ]
+  }
+ },
+ "unreferenced": [
+  "PA_index_l_01_UERBFSolver",
+  "PA_index_l_02_UERBFSolver",
+  "PA_index_l_03_UERBFSolver",
+  "PA_index_r_01_UERBFSolver",
+  "PA_index_r_02_UERBFSolver",
+  "PA_index_r_03_UERBFSolver",
+  "PA_middle_l_01_UERBFSolver",
+  "PA_middle_l_02_UERBFSolver",
+  "PA_middle_l_03_UERBFSolver",
+  "PA_middle_r_01_UERBFSolver",
+  "PA_middle_r_02_UERBFSolver",
+  "PA_middle_r_03_UERBFSolver",
+  "PA_pinky_l_01_UERBFSolver",
+  "PA_pinky_l_02_UERBFSolver",
+  "PA_pinky_l_03_UERBFSolver",
+  "PA_pinky_r_01_UERBFSolver",
+  "PA_pinky_r_02_UERBFSolver",
+  "PA_pinky_r_03_UERBFSolver",
+  "PA_ring_l_01_UERBFSolver",
+  "PA_ring_l_02_UERBFSolver",
+  "PA_ring_l_03_UERBFSolver",
+  "PA_ring_r_01_UERBFSolver",
+  "PA_ring_r_02_UERBFSolver",
+  "PA_ring_r_03_UERBFSolver",
+  "PA_thumb_l_02_UERBFSolver",
+  "PA_thumb_l_03_UERBFSolver",
+  "PA_thumb_r_02_UERBFSolver",
+  "PA_thumb_r_03_UERBFSolver"
+ ]
+}
