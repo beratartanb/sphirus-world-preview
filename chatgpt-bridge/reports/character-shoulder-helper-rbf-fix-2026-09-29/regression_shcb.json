@@ -1,0 +1,1800 @@
+{
+ "idle": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "walk": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "walk2": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "jog": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "sprint": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "sprint2": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "crouch": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "jump": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "jump2": {
+  "curves": {
+   "SHC_150_l": 0.082,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.963,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      10.1,
+      17.5
+     ],
+     "trapezius": [
+      4.7,
+      8.8
+     ],
+     "clavicle": [
+      11.4,
+      16.8
+     ],
+     "scapular": [
+      5.4,
+      9.0
+     ],
+     "armpit": [
+      10.8,
+      17.5
+     ],
+     "upper_chest": [
+      9.4,
+      17.5
+     ],
+     "top40": 11.9,
+     "max": 17.5,
+     "energy": 8.78
+    },
+    "after": {
+     "deltoid": [
+      9.8,
+      16.3
+     ],
+     "trapezius": [
+      4.6,
+      8.6
+     ],
+     "clavicle": [
+      11.0,
+      15.6
+     ],
+     "scapular": [
+      5.3,
+      9.0
+     ],
+     "armpit": [
+      10.8,
+      16.3
+     ],
+     "upper_chest": [
+      8.5,
+      16.3
+     ],
+     "top40": 11.5,
+     "max": 16.3,
+     "energy": 8.5
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      8.9,
+      17.1
+     ],
+     "trapezius": [
+      4.1,
+      8.8
+     ],
+     "clavicle": [
+      5.9,
+      8.6
+     ],
+     "scapular": [
+      3.8,
+      10.2
+     ],
+     "armpit": [
+      9.2,
+      17.1
+     ],
+     "upper_chest": [
+      5.4,
+      10.9
+     ],
+     "top40": 9.4,
+     "max": 17.1,
+     "energy": 5.01
+    },
+    "after": {
+     "deltoid": [
+      8.9,
+      17.1
+     ],
+     "trapezius": [
+      4.1,
+      8.8
+     ],
+     "clavicle": [
+      5.9,
+      8.6
+     ],
+     "scapular": [
+      3.8,
+      10.2
+     ],
+     "armpit": [
+      9.2,
+      17.1
+     ],
+     "upper_chest": [
+      5.4,
+      10.9
+     ],
+     "top40": 9.4,
+     "max": 17.1,
+     "energy": 5.01
+    }
+   }
+  }
+ },
+ "rom00": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom01": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom02": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom03": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom04": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom05": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom06": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom07": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom08": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom09": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom10": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom11": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom12": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom13": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom14": {
+  "curves": {
+   "SHC_150_l": 0.069,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.813,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      9.0,
+      17.0
+     ],
+     "trapezius": [
+      4.5,
+      7.8
+     ],
+     "clavicle": [
+      7.8,
+      15.7
+     ],
+     "scapular": [
+      5.0,
+      8.9
+     ],
+     "armpit": [
+      9.6,
+      17.0
+     ],
+     "upper_chest": [
+      8.2,
+      17.0
+     ],
+     "top40": 10.1,
+     "max": 17.0,
+     "energy": 7.71
+    },
+    "after": {
+     "deltoid": [
+      9.0,
+      16.5
+     ],
+     "trapezius": [
+      4.5,
+      6.9
+     ],
+     "clavicle": [
+      7.1,
+      14.6
+     ],
+     "scapular": [
+      4.6,
+      8.9
+     ],
+     "armpit": [
+      9.6,
+      16.5
+     ],
+     "upper_chest": [
+      7.5,
+      16.5
+     ],
+     "top40": 9.8,
+     "max": 16.5,
+     "energy": 7.48
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      12.5,
+      23.9
+     ],
+     "trapezius": [
+      4.6,
+      8.7
+     ],
+     "clavicle": [
+      8.1,
+      11.6
+     ],
+     "scapular": [
+      5.5,
+      10.4
+     ],
+     "armpit": [
+      12.3,
+      23.9
+     ],
+     "upper_chest": [
+      8.0,
+      23.9
+     ],
+     "top40": 12.3,
+     "max": 23.9,
+     "energy": 8.56
+    },
+    "after": {
+     "deltoid": [
+      12.5,
+      23.9
+     ],
+     "trapezius": [
+      4.6,
+      8.7
+     ],
+     "clavicle": [
+      8.1,
+      11.6
+     ],
+     "scapular": [
+      5.5,
+      10.4
+     ],
+     "armpit": [
+      12.3,
+      23.9
+     ],
+     "upper_chest": [
+      8.0,
+      23.9
+     ],
+     "top40": 12.3,
+     "max": 23.9,
+     "energy": 8.56
+    }
+   }
+  }
+ },
+ "rom15": {
+  "curves": {
+   "SHC_150_l": 0.209,
+   "SHC_165_l": 0.49,
+   "SHC_180_l": 0.239,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.384,
+   "SHC_180_r": 0.434
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 15.971,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      15.4,
+      24.3
+     ],
+     "trapezius": [
+      14.3,
+      23.9
+     ],
+     "clavicle": [
+      14.0,
+      18.8
+     ],
+     "scapular": [
+      11.1,
+      21.7
+     ],
+     "armpit": [
+      12.8,
+      24.3
+     ],
+     "upper_chest": [
+      13.0,
+      20.4
+     ],
+     "top40": 17.1,
+     "max": 24.3,
+     "energy": 20.26
+    },
+    "after": {
+     "deltoid": [
+      15.4,
+      23.2
+     ],
+     "trapezius": [
+      9.9,
+      20.5
+     ],
+     "clavicle": [
+      8.8,
+      14.8
+     ],
+     "scapular": [
+      8.7,
+      17.6
+     ],
+     "armpit": [
+      12.5,
+      23.2
+     ],
+     "upper_chest": [
+      9.1,
+      15.9
+     ],
+     "top40": 15.2,
+     "max": 23.2,
+     "energy": 20.39
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      16.6,
+      32.1
+     ],
+     "trapezius": [
+      13.5,
+      24.0
+     ],
+     "clavicle": [
+      15.3,
+      23.2
+     ],
+     "scapular": [
+      11.4,
+      21.6
+     ],
+     "armpit": [
+      15.0,
+      32.1
+     ],
+     "upper_chest": [
+      13.5,
+      26.7
+     ],
+     "top40": 18.9,
+     "max": 32.1,
+     "energy": 22.62
+    },
+    "after": {
+     "deltoid": [
+      18.0,
+      36.1
+     ],
+     "trapezius": [
+      9.1,
+      17.4
+     ],
+     "clavicle": [
+      9.9,
+      15.4
+     ],
+     "scapular": [
+      8.7,
+      13.7
+     ],
+     "armpit": [
+      16.2,
+      36.1
+     ],
+     "upper_chest": [
+      11.1,
+      19.8
+     ],
+     "top40": 17.7,
+     "max": 36.1,
+     "energy": 21.55
+    }
+   }
+  }
+ },
+ "rom16": {
+  "curves": {
+   "SHC_150_l": 0.172,
+   "SHC_165_l": 0.657,
+   "SHC_180_l": 0.147,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.739,
+   "SHC_180_r": 0.143
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 16.579,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      13.2,
+      18.4
+     ],
+     "trapezius": [
+      14.2,
+      24.9
+     ],
+     "clavicle": [
+      15.7,
+      20.9
+     ],
+     "scapular": [
+      13.4,
+      24.1
+     ],
+     "armpit": [
+      11.9,
+      24.1
+     ],
+     "upper_chest": [
+      13.5,
+      20.9
+     ],
+     "top40": 17.4,
+     "max": 24.9,
+     "energy": 22.34
+    },
+    "after": {
+     "deltoid": [
+      10.9,
+      19.0
+     ],
+     "trapezius": [
+      11.0,
+      19.0
+     ],
+     "clavicle": [
+      11.5,
+      17.9
+     ],
+     "scapular": [
+      8.8,
+      17.5
+     ],
+     "armpit": [
+      8.7,
+      14.0
+     ],
+     "upper_chest": [
+      8.9,
+      17.9
+     ],
+     "top40": 12.6,
+     "max": 19.0,
+     "energy": 19.94
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      14.8,
+      25.4
+     ],
+     "trapezius": [
+      15.8,
+      26.5
+     ],
+     "clavicle": [
+      16.7,
+      24.5
+     ],
+     "scapular": [
+      12.4,
+      23.5
+     ],
+     "armpit": [
+      13.7,
+      25.4
+     ],
+     "upper_chest": [
+      13.5,
+      24.5
+     ],
+     "top40": 19.1,
+     "max": 26.5,
+     "energy": 24.45
+    },
+    "after": {
+     "deltoid": [
+      12.9,
+      19.6
+     ],
+     "trapezius": [
+      10.6,
+      16.6
+     ],
+     "clavicle": [
+      11.9,
+      17.1
+     ],
+     "scapular": [
+      8.7,
+      14.4
+     ],
+     "armpit": [
+      10.8,
+      19.6
+     ],
+     "upper_chest": [
+      11.0,
+      17.1
+     ],
+     "top40": 13.7,
+     "max": 19.6,
+     "energy": 21.14
+    }
+   }
+  }
+ },
+ "rom17": {
+  "curves": {
+   "SHC_150_l": 0.299,
+   "SHC_165_l": 0.437,
+   "SHC_180_l": 0.202,
+   "SHC_150_r": 0.587,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 15.372,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      13.5,
+      20.6
+     ],
+     "trapezius": [
+      15.6,
+      29.1
+     ],
+     "clavicle": [
+      12.8,
+      17.7
+     ],
+     "scapular": [
+      15.2,
+      27.1
+     ],
+     "armpit": [
+      11.3,
+      27.1
+     ],
+     "upper_chest": [
+      10.1,
+      17.7
+     ],
+     "top40": 17.0,
+     "max": 29.1,
+     "energy": 21.82
+    },
+    "after": {
+     "deltoid": [
+      12.3,
+      23.9
+     ],
+     "trapezius": [
+      11.6,
+      22.5
+     ],
+     "clavicle": [
+      9.6,
+      17.2
+     ],
+     "scapular": [
+      10.4,
+      22.1
+     ],
+     "armpit": [
+      9.3,
+      13.9
+     ],
+     "upper_chest": [
+      7.8,
+      17.2
+     ],
+     "top40": 13.5,
+     "max": 23.9,
+     "energy": 20.61
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      17.3,
+      25.8
+     ],
+     "trapezius": [
+      16.1,
+      29.3
+     ],
+     "clavicle": [
+      14.5,
+      22.1
+     ],
+     "scapular": [
+      15.2,
+      25.8
+     ],
+     "armpit": [
+      12.8,
+      25.8
+     ],
+     "upper_chest": [
+      11.5,
+      22.1
+     ],
+     "top40": 19.2,
+     "max": 29.3,
+     "energy": 25.0
+    },
+    "after": {
+     "deltoid": [
+      14.8,
+      18.9
+     ],
+     "trapezius": [
+      12.4,
+      16.6
+     ],
+     "clavicle": [
+      9.4,
+      15.7
+     ],
+     "scapular": [
+      10.6,
+      16.2
+     ],
+     "armpit": [
+      9.5,
+      18.9
+     ],
+     "upper_chest": [
+      8.2,
+      15.7
+     ],
+     "top40": 14.5,
+     "max": 18.9,
+     "energy": 21.22
+    }
+   }
+  }
+ },
+ "rom18": {
+  "curves": {
+   "SHC_150_l": 0.299,
+   "SHC_165_l": 0.38,
+   "SHC_180_l": 0.233,
+   "SHC_150_r": 0.264,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 15.027,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      14.5,
+      21.0
+     ],
+     "trapezius": [
+      15.0,
+      28.1
+     ],
+     "clavicle": [
+      11.6,
+      16.2
+     ],
+     "scapular": [
+      15.0,
+      26.2
+     ],
+     "armpit": [
+      11.1,
+      26.2
+     ],
+     "upper_chest": [
+      9.3,
+      16.2
+     ],
+     "top40": 17.0,
+     "max": 28.1,
+     "energy": 21.54
+    },
+    "after": {
+     "deltoid": [
+      14.4,
+      27.7
+     ],
+     "trapezius": [
+      10.4,
+      22.7
+     ],
+     "clavicle": [
+      8.9,
+      16.3
+     ],
+     "scapular": [
+      10.4,
+      22.1
+     ],
+     "armpit": [
+      9.7,
+      15.6
+     ],
+     "upper_chest": [
+      8.2,
+      16.3
+     ],
+     "top40": 14.4,
+     "max": 27.7,
+     "energy": 20.91
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      17.1,
+      25.8
+     ],
+     "trapezius": [
+      15.6,
+      28.2
+     ],
+     "clavicle": [
+      12.3,
+      19.3
+     ],
+     "scapular": [
+      14.8,
+      24.5
+     ],
+     "armpit": [
+      12.7,
+      24.5
+     ],
+     "upper_chest": [
+      10.0,
+      19.3
+     ],
+     "top40": 18.8,
+     "max": 28.2,
+     "energy": 23.96
+    },
+    "after": {
+     "deltoid": [
+      16.7,
+      25.9
+     ],
+     "trapezius": [
+      13.7,
+      21.2
+     ],
+     "clavicle": [
+      9.1,
+      17.0
+     ],
+     "scapular": [
+      12.0,
+      19.8
+     ],
+     "armpit": [
+      10.5,
+      19.8
+     ],
+     "upper_chest": [
+      8.5,
+      17.0
+     ],
+     "top40": 16.9,
+     "max": 25.9,
+     "energy": 21.64
+    }
+   }
+  }
+ },
+ "rom19": {
+  "curves": {
+   "SHC_150_l": 0.338,
+   "SHC_165_l": 0.541,
+   "SHC_180_l": 0.093,
+   "SHC_150_r": 0.891,
+   "SHC_165_r": 0.083,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 15.442,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      15.5,
+      23.1
+     ],
+     "trapezius": [
+      15.6,
+      29.1
+     ],
+     "clavicle": [
+      12.7,
+      18.3
+     ],
+     "scapular": [
+      15.4,
+      26.8
+     ],
+     "armpit": [
+      11.9,
+      26.8
+     ],
+     "upper_chest": [
+      10.8,
+      18.3
+     ],
+     "top40": 17.7,
+     "max": 29.1,
+     "energy": 21.8
+    },
+    "after": {
+     "deltoid": [
+      13.2,
+      27.1
+     ],
+     "trapezius": [
+      10.6,
+      22.3
+     ],
+     "clavicle": [
+      9.8,
+      16.9
+     ],
+     "scapular": [
+      10.2,
+      21.6
+     ],
+     "armpit": [
+      10.2,
+      16.8
+     ],
+     "upper_chest": [
+      8.6,
+      16.9
+     ],
+     "top40": 14.4,
+     "max": 27.1,
+     "energy": 21.03
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      17.0,
+      24.9
+     ],
+     "trapezius": [
+      16.0,
+      27.7
+     ],
+     "clavicle": [
+      14.7,
+      22.5
+     ],
+     "scapular": [
+      14.2,
+      24.9
+     ],
+     "armpit": [
+      12.7,
+      24.9
+     ],
+     "upper_chest": [
+      11.7,
+      22.5
+     ],
+     "top40": 19.1,
+     "max": 27.7,
+     "energy": 24.29
+    },
+    "after": {
+     "deltoid": [
+      13.5,
+      16.7
+     ],
+     "trapezius": [
+      10.6,
+      14.6
+     ],
+     "clavicle": [
+      10.4,
+      17.9
+     ],
+     "scapular": [
+      10.9,
+      14.2
+     ],
+     "armpit": [
+      10.9,
+      16.7
+     ],
+     "upper_chest": [
+      9.7,
+      17.9
+     ],
+     "top40": 13.6,
+     "max": 17.9,
+     "energy": 21.3
+    }
+   }
+  }
+ },
+ "rom20": {
+  "curves": {
+   "SHC_150_l": 0.336,
+   "SHC_165_l": 0.533,
+   "SHC_180_l": 0.101,
+   "SHC_150_r": 0.752,
+   "SHC_165_r": 0.038,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 15.448,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      16.2,
+      23.5
+     ],
+     "trapezius": [
+      15.9,
+      29.4
+     ],
+     "clavicle": [
+      11.9,
+      18.3
+     ],
+     "scapular": [
+      15.1,
+      27.1
+     ],
+     "armpit": [
+      12.5,
+      27.1
+     ],
+     "upper_chest": [
+      10.8,
+      18.3
+     ],
+     "top40": 18.0,
+     "max": 29.4,
+     "energy": 20.99
+    },
+    "after": {
+     "deltoid": [
+      14.5,
+      28.9
+     ],
+     "trapezius": [
+      11.0,
+      23.0
+     ],
+     "clavicle": [
+      8.3,
+      15.7
+     ],
+     "scapular": [
+      10.4,
+      22.1
+     ],
+     "armpit": [
+      10.9,
+      18.7
+     ],
+     "upper_chest": [
+      8.3,
+      15.7
+     ],
+     "top40": 15.2,
+     "max": 28.9,
+     "energy": 20.52
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      18.1,
+      26.1
+     ],
+     "trapezius": [
+      16.1,
+      29.5
+     ],
+     "clavicle": [
+      12.9,
+      19.8
+     ],
+     "scapular": [
+      15.2,
+      26.1
+     ],
+     "armpit": [
+      14.2,
+      26.1
+     ],
+     "upper_chest": [
+      12.3,
+      22.5
+     ],
+     "top40": 19.6,
+     "max": 29.5,
+     "energy": 23.45
+    },
+    "after": {
+     "deltoid": [
+      16.1,
+      19.4
+     ],
+     "trapezius": [
+      11.4,
+      16.7
+     ],
+     "clavicle": [
+      9.8,
+      15.1
+     ],
+     "scapular": [
+      11.3,
+      16.7
+     ],
+     "armpit": [
+      10.8,
+      18.8
+     ],
+     "upper_chest": [
+      8.6,
+      15.3
+     ],
+     "top40": 14.6,
+     "max": 19.4,
+     "energy": 19.99
+    }
+   }
+  }
+ },
+ "rom21": {
+  "curves": {
+   "SHC_150_l": 0.299,
+   "SHC_165_l": 0.557,
+   "SHC_180_l": 0.105,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.659,
+   "SHC_180_r": 0.187
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 15.489,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      13.5,
+      19.2
+     ],
+     "trapezius": [
+      13.4,
+      23.6
+     ],
+     "clavicle": [
+      14.8,
+      20.3
+     ],
+     "scapular": [
+      12.8,
+      23.0
+     ],
+     "armpit": [
+      12.0,
+      23.0
+     ],
+     "upper_chest": [
+      13.4,
+      20.3
+     ],
+     "top40": 16.5,
+     "max": 23.6,
+     "energy": 20.26
+    },
+    "after": {
+     "deltoid": [
+      11.2,
+      18.8
+     ],
+     "trapezius": [
+      8.9,
+      18.8
+     ],
+     "clavicle": [
+      9.4,
+      14.7
+     ],
+     "scapular": [
+      8.5,
+      17.2
+     ],
+     "armpit": [
+      9.5,
+      13.9
+     ],
+     "upper_chest": [
+      8.7,
+      14.7
+     ],
+     "top40": 12.2,
+     "max": 18.8,
+     "energy": 18.06
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      16.0,
+      29.2
+     ],
+     "trapezius": [
+      13.1,
+      23.4
+     ],
+     "clavicle": [
+      16.7,
+      22.4
+     ],
+     "scapular": [
+      11.8,
+      22.8
+     ],
+     "armpit": [
+      15.7,
+      29.2
+     ],
+     "upper_chest": [
+      15.7,
+      26.6
+     ],
+     "top40": 19.4,
+     "max": 29.2,
+     "energy": 22.77
+    },
+    "after": {
+     "deltoid": [
+      16.6,
+      22.7
+     ],
+     "trapezius": [
+      9.4,
+      16.6
+     ],
+     "clavicle": [
+      9.0,
+      16.0
+     ],
+     "scapular": [
+      8.5,
+      14.0
+     ],
+     "armpit": [
+      13.6,
+      22.7
+     ],
+     "upper_chest": [
+      10.2,
+      19.7
+     ],
+     "top40": 15.3,
+     "max": 22.7,
+     "energy": 19.14
+    }
+   }
+  }
+ },
+ "rom22": {
+  "curves": {
+   "SHC_150_l": 0.049,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.575,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      6.0,
+      12.8
+     ],
+     "trapezius": [
+      3.4,
+      4.8
+     ],
+     "clavicle": [
+      5.7,
+      11.4
+     ],
+     "scapular": [
+      4.5,
+      7.9
+     ],
+     "armpit": [
+      7.6,
+      12.8
+     ],
+     "upper_chest": [
+      6.6,
+      12.8
+     ],
+     "top40": 7.8,
+     "max": 12.8,
+     "energy": 5.52
+    },
+    "after": {
+     "deltoid": [
+      6.3,
+      12.3
+     ],
+     "trapezius": [
+      3.2,
+      4.5
+     ],
+     "clavicle": [
+      5.1,
+      10.7
+     ],
+     "scapular": [
+      4.7,
+      7.8
+     ],
+     "armpit": [
+      7.6,
+      12.3
+     ],
+     "upper_chest": [
+      6.3,
+      12.3
+     ],
+     "top40": 7.5,
+     "max": 12.3,
+     "energy": 5.39
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      7.1,
+      15.8
+     ],
+     "trapezius": [
+      2.8,
+      5.1
+     ],
+     "clavicle": [
+      5.3,
+      8.2
+     ],
+     "scapular": [
+      4.8,
+      8.6
+     ],
+     "armpit": [
+      8.1,
+      15.8
+     ],
+     "upper_chest": [
+      6.2,
+      15.8
+     ],
+     "top40": 8.4,
+     "max": 15.8,
+     "energy": 5.56
+    },
+    "after": {
+     "deltoid": [
+      7.1,
+      15.8
+     ],
+     "trapezius": [
+      2.8,
+      5.1
+     ],
+     "clavicle": [
+      5.3,
+      8.2
+     ],
+     "scapular": [
+      4.8,
+      8.6
+     ],
+     "armpit": [
+      8.1,
+      15.8
+     ],
+     "upper_chest": [
+      6.2,
+      15.8
+     ],
+     "top40": 8.4,
+     "max": 15.8,
+     "energy": 5.56
+    }
+   }
+  }
+ },
+ "rom23": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom24": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom25": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom26": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom27": {
+  "curves": {
+   "SHC_150_l": 0.0,
+   "SHC_165_l": 0.0,
+   "SHC_180_l": 0.0,
+   "SHC_150_r": 0.0,
+   "SHC_165_r": 0.0,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 0.0
+ },
+ "rom16_2": {
+  "curves": {
+   "SHC_150_l": 0.247,
+   "SHC_165_l": 0.698,
+   "SHC_180_l": 0.043,
+   "SHC_150_r": 0.051,
+   "SHC_165_r": 0.902,
+   "SHC_180_r": 0.0
+  },
+  "pose_sync_mm": 0.0,
+  "max_disp_mm": 16.522,
+  "crease": {
+   "l": {
+    "before": {
+     "deltoid": [
+      13.0,
+      19.2
+     ],
+     "trapezius": [
+      14.3,
+      25.7
+     ],
+     "clavicle": [
+      15.8,
+      20.5
+     ],
+     "scapular": [
+      13.4,
+      24.4
+     ],
+     "armpit": [
+      11.5,
+      24.4
+     ],
+     "upper_chest": [
+      12.5,
+      20.5
+     ],
+     "top40": 17.3,
+     "max": 25.7,
+     "energy": 21.98
+    },
+    "after": {
+     "deltoid": [
+      10.2,
+      18.7
+     ],
+     "trapezius": [
+      11.0,
+      18.7
+     ],
+     "clavicle": [
+      11.3,
+      18.1
+     ],
+     "scapular": [
+      8.9,
+      17.6
+     ],
+     "armpit": [
+      8.4,
+      13.7
+     ],
+     "upper_chest": [
+      8.5,
+      18.1
+     ],
+     "top40": 12.5,
+     "max": 18.7,
+     "energy": 19.7
+    }
+   },
+   "r": {
+    "before": {
+     "deltoid": [
+      14.9,
+      24.5
+     ],
+     "trapezius": [
+      16.2,
+      26.3
+     ],
+     "clavicle": [
+      16.2,
+      24.7
+     ],
+     "scapular": [
+      12.1,
+      23.6
+     ],
+     "armpit": [
+      13.0,
+      24.5
+     ],
+     "upper_chest": [
+      13.1,
+      24.7
+     ],
+     "top40": 19.0,
+     "max": 26.3,
+     "energy": 24.28
+    },
+    "after": {
+     "deltoid": [
+      11.9,
+      18.1
+     ],
+     "trapezius": [
+      10.9,
+      15.7
+     ],
+     "clavicle": [
+      11.6,
+      17.7
+     ],
+     "scapular": [
+      9.2,
+      14.0
+     ],
+     "armpit": [
+      10.7,
+      18.1
+     ],
+     "upper_chest": [
+      10.9,
+      17.7
+     ],
+     "top40": 13.4,
+     "max": 18.1,
+     "energy": 21.11
+    }
+   }
+  }
+ }
+}
