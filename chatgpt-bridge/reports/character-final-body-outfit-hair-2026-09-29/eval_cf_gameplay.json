@@ -1,0 +1,336 @@
+{
+ "label": "cf_gameplay",
+ "poses": {
+  "cf_gp_idle": {
+   "henley": {
+    "verts": 9240,
+    "penetrating": 52,
+    "pen_ratio": 0.0056,
+    "max_penetration_cm": 4.099,
+    "clearance_p5_cm": 0.652,
+    "clearance_median_cm": 1.378,
+    "bands": {
+     "upper": {
+      "n": 3382,
+      "pen": 52,
+      "maxpen": 4.099
+     },
+     "mid": {
+      "n": 4959,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 899,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 8,
+    "finite": true
+   },
+   "shorts": {
+    "verts": 6973,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.736,
+    "clearance_median_cm": 1.104,
+    "bands": {
+     "mid": {
+      "n": 1844,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 5129,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true
+   },
+   "shirt_inside_shorts_verts": 2330,
+   "shirt_inside_shorts_max_cm": 2.942
+  },
+  "cf_gp_walk": {
+   "henley": {
+    "verts": 9240,
+    "penetrating": 45,
+    "pen_ratio": 0.0049,
+    "max_penetration_cm": 7.042,
+    "clearance_p5_cm": 0.658,
+    "clearance_median_cm": 1.373,
+    "bands": {
+     "upper": {
+      "n": 2392,
+      "pen": 35,
+      "maxpen": 7.042
+     },
+     "mid": {
+      "n": 4706,
+      "pen": 10,
+      "maxpen": 1.092
+     },
+     "lower": {
+      "n": 2142,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 9,
+    "finite": true,
+    "stretch_p99": 1.19,
+    "stretch_max": 4.166,
+    "compress_p01": 0.843,
+    "flipped_vs_ref": 81
+   },
+   "shorts": {
+    "verts": 6973,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.717,
+    "clearance_median_cm": 1.105,
+    "bands": {
+     "mid": {
+      "n": 1110,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 5863,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true,
+    "stretch_p99": 1.142,
+    "stretch_max": 1.939,
+    "compress_p01": 0.819,
+    "flipped_vs_ref": 5
+   },
+   "shirt_inside_shorts_verts": 1252,
+   "shirt_inside_shorts_max_cm": 2.994
+  },
+  "cf_gp_jog": {
+   "henley": {
+    "verts": 9240,
+    "penetrating": 52,
+    "pen_ratio": 0.0056,
+    "max_penetration_cm": 7.099,
+    "clearance_p5_cm": 0.614,
+    "clearance_median_cm": 1.327,
+    "bands": {
+     "upper": {
+      "n": 2027,
+      "pen": 52,
+      "maxpen": 7.099
+     },
+     "mid": {
+      "n": 6775,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 438,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 8,
+    "finite": true,
+    "stretch_p99": 1.275,
+    "stretch_max": 25.327,
+    "compress_p01": 0.703,
+    "flipped_vs_ref": 99
+   },
+   "shorts": {
+    "verts": 6973,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.707,
+    "clearance_median_cm": 1.114,
+    "bands": {
+     "mid": {
+      "n": 1321,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 5652,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true,
+    "stretch_p99": 1.269,
+    "stretch_max": 1.562,
+    "compress_p01": 0.74,
+    "flipped_vs_ref": 2
+   },
+   "shirt_inside_shorts_verts": 2109,
+   "shirt_inside_shorts_max_cm": 2.997
+  },
+  "cf_gp_sprint": {
+   "henley": {
+    "verts": 9240,
+    "penetrating": 53,
+    "pen_ratio": 0.0057,
+    "max_penetration_cm": 8.123,
+    "clearance_p5_cm": 0.631,
+    "clearance_median_cm": 1.357,
+    "bands": {
+     "upper": {
+      "n": 1431,
+      "pen": 45,
+      "maxpen": 8.123
+     },
+     "mid": {
+      "n": 6399,
+      "pen": 8,
+      "maxpen": 1.207
+     },
+     "lower": {
+      "n": 1410,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 8,
+    "finite": true,
+    "stretch_p99": 1.34,
+    "stretch_max": 21.506,
+    "compress_p01": 0.655,
+    "flipped_vs_ref": 117
+   },
+   "shorts": {
+    "verts": 6973,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.699,
+    "clearance_median_cm": 1.094,
+    "bands": {
+     "mid": {
+      "n": 1295,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 5678,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true,
+    "stretch_p99": 1.274,
+    "stretch_max": 2.278,
+    "compress_p01": 0.717,
+    "flipped_vs_ref": 6
+   },
+   "shirt_inside_shorts_verts": 2090,
+   "shirt_inside_shorts_max_cm": 2.988
+  },
+  "cf_gp_crouch": {
+   "henley": {
+    "verts": 9240,
+    "penetrating": 20,
+    "pen_ratio": 0.0022,
+    "max_penetration_cm": 6.14,
+    "clearance_p5_cm": 0.627,
+    "clearance_median_cm": 1.319,
+    "bands": {
+     "mid": {
+      "n": 2277,
+      "pen": 20,
+      "maxpen": 6.14
+     },
+     "lower": {
+      "n": 6963,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 8,
+    "finite": true,
+    "stretch_p99": 1.368,
+    "stretch_max": 25.591,
+    "compress_p01": 0.623,
+    "flipped_vs_ref": 136
+   },
+   "shorts": {
+    "verts": 6973,
+    "penetrating": 83,
+    "pen_ratio": 0.0119,
+    "max_penetration_cm": 0.788,
+    "clearance_p5_cm": 0.458,
+    "clearance_median_cm": 1.063,
+    "bands": {
+     "lower": {
+      "n": 6973,
+      "pen": 83,
+      "maxpen": 0.788
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true,
+    "stretch_p99": 1.537,
+    "stretch_max": 2.587,
+    "compress_p01": 0.617,
+    "flipped_vs_ref": 22
+   },
+   "shirt_inside_shorts_verts": 0,
+   "shirt_inside_shorts_max_cm": 0.0
+  },
+  "cf_gp_jump": {
+   "henley": {
+    "verts": 9240,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.646,
+    "clearance_median_cm": 1.333,
+    "bands": {
+     "upper": {
+      "n": 9240,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 8,
+    "finite": true,
+    "stretch_p99": 1.566,
+    "stretch_max": 31.998,
+    "compress_p01": 0.589,
+    "flipped_vs_ref": 163
+   },
+   "shorts": {
+    "verts": 6973,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.516,
+    "clearance_median_cm": 1.071,
+    "bands": {
+     "upper": {
+      "n": 6973,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true,
+    "stretch_p99": 1.591,
+    "stretch_max": 2.58,
+    "compress_p01": 0.56,
+    "flipped_vs_ref": 173
+   }
+  }
+ }
+}

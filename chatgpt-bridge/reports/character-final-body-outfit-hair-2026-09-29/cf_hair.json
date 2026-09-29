@@ -1,0 +1,53 @@
+{
+ "style": "Hair_S_Updo",
+ "face": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Body/SKM_CF_FaceMesh",
+ "materials": [
+  [
+   "MI_Hair_Cards",
+   "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/MI_CF_Auburn_MI_Hair_Cards.MI_CF_Auburn_MI_Hair_Cards"
+  ],
+  [
+   "MI_Hair",
+   "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/MI_CF_Auburn_MI_Hair.MI_CF_Auburn_MI_Hair"
+  ],
+  [
+   "MI_Hair_Helmet",
+   "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/MI_CF_Auburn_MI_Hair_Helmet.MI_CF_Auburn_MI_Hair_Helmet"
+  ]
+ ],
+ "binding": {
+  "path": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/Hair_S_Updo_CF_Binding.Hair_S_Updo_CF_Binding",
+  "source": "/MetaHumanCharacter/Optional/Grooms/GroomMesh/SKM_Groom_Head_Legacy01.SKM_Groom_Head_Legacy01",
+  "target": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Body/SKM_CF_FaceMesh.SKM_CF_FaceMesh",
+  "sec": 5.7,
+  "valid": null,
+  "saved": true
+ },
+ "alternates": {
+  "Hair_S_PulledBack": {
+   "path": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/QA_Hair_S_PulledBack_Binding.QA_Hair_S_PulledBack_Binding",
+   "source": "/MetaHumanCharacter/Optional/Grooms/GroomMesh/SKM_Groom_Head_Legacy02.SKM_Groom_Head_Legacy02",
+   "target": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Body/SKM_CF_FaceMesh.SKM_CF_FaceMesh",
+   "sec": 1.9,
+   "valid": null,
+   "saved": true
+  },
+  "Hair_S_SweptUp": {
+   "path": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/QA_Hair_S_SweptUp_Binding.QA_Hair_S_SweptUp_Binding",
+   "source": "/MetaHumanCharacter/Optional/Grooms/GroomMesh/SKM_Groom_Head_Legacy02.SKM_Groom_Head_Legacy02",
+   "target": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Body/SKM_CF_FaceMesh.SKM_CF_FaceMesh",
+   "sec": 8.3,
+   "valid": null,
+   "saved": true
+  },
+  "Hair_S_LowPonytail": {
+   "path": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Hair/QA_Hair_S_LowPonytail_Binding.QA_Hair_S_LowPonytail_Binding",
+   "source": "/MetaHumanCharacter/Optional/Grooms/GroomMesh/SKM_Groom_Head_Legacy01.SKM_Groom_Head_Legacy01",
+   "target": "/Game/Sphirus/CharacterLab/CharacterFinal_20260929/Body/SKM_CF_FaceMesh.SKM_CF_FaceMesh",
+   "sec": 9.0,
+   "valid": null,
+   "saved": true
+  }
+ },
+ "dirty": []
+}
