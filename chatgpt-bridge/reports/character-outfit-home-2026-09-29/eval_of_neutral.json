@@ -1,0 +1,58 @@
+{
+ "label": "of_neutral",
+ "poses": {
+  "of_neutral": {
+   "henley": {
+    "verts": 9861,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.728,
+    "clearance_median_cm": 1.756,
+    "bands": {
+     "upper": {
+      "n": 3655,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "mid": {
+      "n": 6206,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 200,
+    "finite": true
+   },
+   "trousers": {
+    "verts": 14577,
+    "penetrating": 0,
+    "pen_ratio": 0.0,
+    "max_penetration_cm": 0.0,
+    "clearance_p5_cm": 0.744,
+    "clearance_median_cm": 1.453,
+    "bands": {
+     "mid": {
+      "n": 1924,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "lower": {
+      "n": 5920,
+      "pen": 0,
+      "maxpen": 0.0
+     },
+     "low": {
+      "n": 6733,
+      "pen": 0,
+      "maxpen": 0.0
+     }
+    },
+    "degenerate_tris": 0,
+    "finite": true
+   },
+   "shirt_inside_trousers_verts": 2241,
+   "shirt_inside_trousers_max_cm": 2.01
+  }
+ }
+}
