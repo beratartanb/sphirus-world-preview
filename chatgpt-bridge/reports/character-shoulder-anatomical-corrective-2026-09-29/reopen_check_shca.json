@@ -1,0 +1,79 @@
+{
+ "reload": "(True, Text(\"\"))",
+ "body_morphs": [
+  "SHC_150_l",
+  "SHC_180_l",
+  "SHC_150_r",
+  "SHC_180_r",
+  "SHC_165_l",
+  "SHC_165_r"
+ ],
+ "face_morphs": [
+  "SHC_150_l",
+  "SHC_180_l",
+  "SHC_150_r",
+  "SHC_180_r",
+  "SHC_165_l",
+  "SHC_165_r"
+ ],
+ "face_morph_total": 864,
+ "mesh_pp": {
+  "body": "<Object '/Game/Sphirus/CharacterLab/ShoulderFix_20260928/HighElevCorrective/Anatomical/ABP_SHCA_Body_PostProcess.ABP_SHCA_Body_PostProcess_C' (0x000002587181A800) Class 'AnimBlueprintGeneratedClass'>",
+  "face": "<Object '/Game/Sphirus/CharacterLab/ShoulderFix_20260928/HighElevCorrective/Anatomical/ABP_SHCA_Face_PostProcess.ABP_SHCA_Face_PostProcess_C' (0x0000025ED0255400) Class 'AnimBlueprintGeneratedClass'>"
+ },
+ "drivers": {
+  "body": {
+   "count": 2,
+   "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+   "threshold_ok": true,
+   "curves_ok": true,
+   "total_posedrivers": 46
+  },
+  "face": {
+   "count": 2,
+   "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+   "threshold_ok": true,
+   "curves_ok": true,
+   "total_posedrivers": 2
+  }
+ },
+ "curve_meta": {
+  "body": {
+   "SHC_150_l": true,
+   "SHC_165_l": true,
+   "SHC_180_l": true,
+   "SHC_150_r": true,
+   "SHC_165_r": true,
+   "SHC_180_r": true
+  },
+  "face": {
+   "SHC_150_l": true,
+   "SHC_165_l": true,
+   "SHC_180_l": true,
+   "SHC_150_r": true,
+   "SHC_165_r": true,
+   "SHC_180_r": true
+  }
+ },
+ "skeleton_retarget_fix": {
+  "upperarm_twistCor_01_l": "(TranslationRetargetingMode=AnimationRelative)",
+  "upperarm_twistCor_02_l": "(TranslationRetargetingMode=AnimationRelative)"
+ },
+ "characters": {
+  "accepted": 1.0653988122940063,
+  "test": 1.0653988122940063
+ },
+ "lods": {
+  "body": 4,
+  "face": 8
+ },
+ "driver_165": {
+  "body": true,
+  "face": true
+ },
+ "radius40": {
+  "body": true,
+  "face": true
+ },
+ "dirty_after": []
+}
