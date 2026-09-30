@@ -1,0 +1,612 @@
+{
+ "dirty_before": [],
+ "henley": {
+  "loaded": true,
+  "morph_total": 13,
+  "rv_lk_morphs": [
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Elbow_l",
+   "RV_Elbow_r"
+  ],
+  "lod_verts": [
+   7605,
+   4162,
+   2331
+  ],
+  "sections": {
+   "0": [
+    0,
+    1,
+    2
+   ],
+   "1": [
+    0,
+    1,
+    2
+   ],
+   "2": [
+    0,
+    1,
+    2
+   ]
+  },
+  "materials": [
+   [
+    "M_Henley",
+    "MI_LK_Henley_v2"
+   ],
+   [
+    "M_Henley_Trim",
+    "MI_LK_Henley_Trim_v2"
+   ],
+   [
+    "M_Buttons",
+    "MI_LK_Buttons_v2"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "post_process_abp": null
+ },
+ "shorts": {
+  "loaded": true,
+  "morph_total": 4,
+  "rv_lk_morphs": [
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r"
+  ],
+  "lod_verts": [
+   5019,
+   2977,
+   1709
+  ],
+  "sections": {
+   "0": [
+    0,
+    1,
+    2
+   ],
+   "1": [
+    0,
+    1,
+    2
+   ],
+   "2": [
+    0,
+    1,
+    2
+   ]
+  },
+  "materials": [
+   [
+    "M_Trousers",
+    "MI_LK_Shorts_v2"
+   ],
+   [
+    "M_Trousers_Trim",
+    "MI_LK_Shorts_Trim_v2"
+   ],
+   [
+    "M_Drawstring",
+    "MI_LK_Drawstring_v2"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "post_process_abp": null
+ },
+ "body": {
+  "loaded": true,
+  "morph_total": 27,
+  "rv_lk_morphs": [
+   "LK_Neutral",
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_ArmFwd_l",
+   "RV_ArmFwd_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r",
+   "RV_Twist_l",
+   "RV_Twist_r"
+  ],
+  "lod_verts": [
+   32334,
+   8568,
+   3974,
+   1239
+  ],
+  "sections": {
+   "0": [
+    0
+   ],
+   "1": [
+    0
+   ],
+   "2": [
+    0
+   ],
+   "3": [
+    0
+   ]
+  },
+  "materials": [
+   [
+    "body_shader_shader",
+    "MI_RV_Body_Skin"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/ABP_LK_Body_PostProcess.ABP_LK_Body_PostProcess_C"
+ },
+ "face": {
+  "loaded": true,
+  "morph_total": 865,
+  "rv_lk_morphs": [],
+  "lod_verts": [
+   34657,
+   19283,
+   9714,
+   4065,
+   1967,
+   903,
+   460,
+   237
+  ],
+  "sections": {
+   "0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "1": [
+    9,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "2": [
+    10,
+    1,
+    2,
+    3,
+    4,
+    5,
+    11,
+    7
+   ],
+   "3": [
+    12,
+    1,
+    3,
+    4,
+    5,
+    11,
+    7
+   ],
+   "4": [
+    13,
+    1,
+    3,
+    4,
+    5
+   ],
+   "5": [
+    14,
+    1,
+    3,
+    4
+   ],
+   "6": [
+    14,
+    1,
+    3,
+    4
+   ],
+   "7": [
+    14,
+    1,
+    3,
+    4
+   ]
+  },
+  "materials": [
+   [
+    "head_shader_shader",
+    "MI_Face_Skin_Baked_LOD0_VT"
+   ],
+   [
+    "teeth_shader_shader",
+    "MI_Teeth_Baked"
+   ],
+   [
+    "saliva_shader_shader",
+    "M_Hide"
+   ],
+   [
+    "eyeLeft_shader_shader",
+    "MI_EyeL_Baked"
+   ],
+   [
+    "eyeRight_shader_shader",
+    "MI_EyeR_Baked"
+   ],
+   [
+    "eyeshell_shader_shader",
+    "MI_Face_EyeShell"
+   ],
+   [
+    "eyelashes_shader_shader",
+    "MI_Face_Eyelashes"
+   ],
+   [
+    "eyeEdge_shader_shader",
+    "MI_Face_LacrimalFluid"
+   ],
+   [
+    "cartilage_shader_shader",
+    "M_Hide"
+   ],
+   [
+    "head_LOD1_shader_shader",
+    "MI_Face_Skin_Baked_LOD1_VT"
+   ],
+   [
+    "head_LOD2_shader_shader",
+    "MI_Face_Skin_Baked_LOD2_VT"
+   ],
+   [
+    "eyelashes_HiLOD_shader_shader",
+    "MI_Face_EyelashesHiLODs"
+   ],
+   [
+    "head_LOD3_shader_shader",
+    "MI_Face_Skin_Baked_LOD3_VT"
+   ],
+   [
+    "head_LOD4_shader_shader",
+    "MI_Face_Skin_Baked_LOD4_VT"
+   ],
+   [
+    "head_LOD57_shader_shader",
+    "MI_Face_Skin_Baked_LOD5to7_VT"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/ABP_RV_Face_PostProcess.ABP_RV_Face_PostProcess_C"
+ },
+ "abp": {
+  "loaded": true,
+  "pose_drivers": [
+   "RV_Arm_l",
+   "RV_Arm_r",
+   "RV_Bend",
+   "RV_Elbow_l",
+   "RV_Elbow_r",
+   "RV_Hip_l",
+   "RV_Hip_r",
+   "RV_Twist",
+   "SHC_Driver_l",
+   "SHC_Driver_r",
+   "calf_l_UERBFSolver",
+   "calf_r_UERBFSolver",
+   "clavicle_l_UERBFSolver",
+   "clavicle_r_UERBFSolver",
+   "foot_l_UERBFSolver",
+   "foot_r_UERBFSolver",
+   "hand_l_UERBFSolver",
+   "hand_r_UERBFSolver",
+   "index_l_01_half_UERBFSolver",
+   "index_l_02_half_UERBFSolver",
+   "index_l_03_half_UERBFSolver",
+   "index_r_01_half_UERBFSolver",
+   "index_r_02_half_UERBFSolver",
+   "index_r_03_half_UERBFSolver",
+   "lowerarm_l_UERBFSolver",
+   "lowerarm_r_UERBFSolver",
+   "middle_l_01_half_UERBFSolver",
+   "middle_l_02_half_UERBFSolver",
+   "middle_l_03_half_UERBFSolver",
+   "middle_r_01_half_UERBFSolver",
+   "middle_r_02_half_UERBFSolver",
+   "middle_r_03_half_UERBFSolver",
+   "pinky_l_01_half_UERBFSolver",
+   "pinky_l_02_half_UERBFSolver",
+   "pinky_l_03_half_UERBFSolver",
+   "pinky_r_01_half_UERBFSolver",
+   "pinky_r_02_half_UERBFSolver",
+   "pinky_r_03_half_UERBFSolver",
+   "ring_l_01_half_UERBFSolver",
+   "ring_l_02_half_UERBFSolver",
+   "ring_l_03_half_UERBFSolver",
+   "ring_r_01_half_UERBFSolver",
+   "ring_r_02_half_UERBFSolver",
+   "ring_r_03_half_UERBFSolver",
+   "thigh_l_UERBFSolver",
+   "thigh_r_UERBFSolver",
+   "thumb_l_01_UERBFSolver",
+   "thumb_l_02_half_UERBFSolver",
+   "thumb_l_03_half_UERBFSolver",
+   "thumb_r_01_UERBFSolver",
+   "thumb_r_02_half_UERBFSolver",
+   "thumb_r_03_half_UERBFSolver",
+   "upperarm_l_UERBFSolver",
+   "upperarm_r_UERBFSolver"
+  ],
+  "modify_curve": [
+   "BR_NeutralCurve",
+   "LK_NeutralCurve"
+  ],
+  "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+ },
+ "textile_textures_v2": {
+  "T_LK_Henley_BC_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true
+  },
+  "T_LK_Henley_M_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_Henley_N_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_HenleyTrim_BC_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true
+  },
+  "T_LK_HenleyTrim_M_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_HenleyTrim_N_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_Knit_N_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_Shorts_BC_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true
+  },
+  "T_LK_Shorts_M_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_Shorts_N_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_ShortsTrim_BC_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true
+  },
+  "T_LK_ShortsTrim_M_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_ShortsTrim_N_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  },
+  "T_LK_Twill_N_v2": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true
+  }
+ },
+ "textile_materials": {
+  "M_LK_Textile_B": {
+   "loaded": true,
+   "two_sided": true
+  },
+  "MI_LK_Henley_v2": {
+   "loaded": true,
+   "parent": "M_LK_Textile_B",
+   "base": "T_LK_Henley_BC_v2",
+   "tint": " 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>"
+  },
+  "MI_LK_Henley_Trim_v2": {
+   "loaded": true,
+   "parent": "M_LK_Textile_B",
+   "base": "T_LK_HenleyTrim_BC_v2",
+   "tint": " 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>"
+  },
+  "MI_LK_Buttons_v2": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_HenleyTrim_BC_v2",
+   "tint": " 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>"
+  },
+  "MI_LK_Shorts_v2": {
+   "loaded": true,
+   "parent": "M_LK_Textile_B",
+   "base": "T_LK_Shorts_BC_v2",
+   "tint": " 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>"
+  },
+  "MI_LK_Shorts_Trim_v2": {
+   "loaded": true,
+   "parent": "M_LK_Textile_B",
+   "base": "T_LK_ShortsTrim_BC_v2",
+   "tint": " 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>"
+  },
+  "MI_LK_Drawstring_v2": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_ShortsTrim_BC_v2",
+   "tint": " 3.500000, g: 2.800000, b: 2.150000, a: 1.000000}>"
+  }
+ },
+ "grooms": {
+  "Main": {
+   "loaded": true,
+   "binding_loaded": true,
+   "lod_mode": "<GroomLODMode.MANUAL: 1>",
+   "lods": [
+    "(AutoLODBias=0.000000,LODs=((),(CurveDecimation=0.500000,VertexDecimation=0.700000,ScreenSize=0.450000),(CurveDecimation=0.200000,VertexDecimation=0.500000,ScreenSize=0.200000),(CurveDecimation=0.100000,VertexDecimation=0.500000,ScreenSize=0.080000,GeometryType=Meshes)))"
+   ],
+   "meshes": 1,
+   "sim": [
+    false
+   ],
+   "physics": [
+    "(SolverSettings=(bEnableDeformation=False,EnableSimulation=False,NiagaraSolver=AngularSprings,CustomSystem=\"/HairStrands/Emitters/StableSpringsSystem.StableSpringsSystem\",GravityPreloading=0.000000,SubSteps=5,IterationCount=5,bForceVisible=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendConstraint=(SolveBend=True,ProjectBend=False,BendDamping=0.005000,BendStiffness=0.010000,BendScale=(EditorCurveData=(Keys=((InterpMode=RCIM_Cubic,Value=1.000000),(InterpMode=RCIM_Cubic,Time=1.000"
+   ],
+   "materials": [
+    "MI_LK_Hair_v14k"
+   ]
+  },
+  "Loose": {
+   "loaded": true,
+   "binding_loaded": true,
+   "lod_mode": "<GroomLODMode.MANUAL: 1>",
+   "lods": [
+    "(AutoLODBias=0.000000,LODs=((),(CurveDecimation=0.500000,VertexDecimation=0.700000,ScreenSize=0.450000),(CurveDecimation=0.250000,VertexDecimation=0.500000,ScreenSize=0.200000),(CurveDecimation=0.100000,VertexDecimation=0.500000,ScreenSize=0.080000,bVisible=False)))"
+   ],
+   "meshes": 0,
+   "sim": [
+    true
+   ],
+   "physics": [
+    "(SolverSettings=(bEnableDeformation=False,EnableSimulation=True,NiagaraSolver=AngularSprings,CustomSystem=\"/HairStrands/Emitters/StableSpringsSystem.StableSpringsSystem\",GravityPreloading=1.000000,SubSteps=5,IterationCount=10,bForceVisible=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.300000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendConstraint=(SolveBend=True,ProjectBend=True,BendDamping=0.150000,BendStiffness=0.450000,BendScale=(EditorCurveData=(Keys=((InterpMode=RCIM_Cubic,Value=1.000000),(InterpMode=RCIM_Cubic,Time=1.0000"
+   ],
+   "materials": [
+    "MI_LK_HairLoose_v14k"
+   ]
+  },
+  "helmet": {
+   "mesh": true,
+   "mi": true
+  }
+ },
+ "skin": {
+  "MI_LK_Body_Baked_C": {
+   "loaded": true,
+   "parent": "MI_LK_Body_Baked_B",
+   "textures": {
+    "Basecolor Baked VT": "T_LK_Body_BC_v2",
+    "Normal Baked VT": "T_LK_Body_N_v2",
+    "SRMF Baked VT": "T_LK_Body_SRMF_v2"
+   }
+  },
+  "MI_LK_Face_LOD0_VT_c3": {
+   "loaded": true,
+   "parent": "MI_LK_Face_LOD0_VT_c2",
+   "textures": {
+    "Basecolor Baked VT": "T_LK_Head_BC_v2",
+    "Normal Baked VT": "T_LK_Head_N_v2",
+    "SRMF Baked VT": "T_LK_Head_SRMF_v2"
+   }
+  }
+ },
+ "curve_meta": {
+  "RV_Bend30": true,
+  "RV_Bend60": true,
+  "RV_Bend90": true,
+  "RV_Elbow_l": true,
+  "RV_Elbow_r": true,
+  "LK_Neutral": true,
+  "RV_Arm090_l": true,
+  "RV_Arm090_r": true,
+  "RV_Arm120_l": true,
+  "RV_Arm120_r": true,
+  "RV_Arm150_l": true,
+  "RV_Arm150_r": true,
+  "RV_Arm180_l": true,
+  "RV_Arm180_r": true,
+  "RV_Hip075_l": true,
+  "RV_Hip075_r": true,
+  "RV_Hip110_l": true,
+  "RV_Hip110_r": true
+ },
+ "dirty_after": []
+}
