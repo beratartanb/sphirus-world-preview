@@ -1,0 +1,457 @@
+{
+ "dirty_before": [],
+ "henley": {
+  "loaded": true,
+  "morph_total": 11,
+  "rv_morphs": [
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90"
+  ],
+  "shc_morphs": 0,
+  "lod_verts": [
+   7518,
+   4110,
+   2278
+  ],
+  "materials": [
+   [
+    "M_Henley",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Henley.MI_LK_Henley"
+   ],
+   [
+    "M_Henley_Trim",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Henley_Trim.MI_LK_Henley_Trim"
+   ],
+   [
+    "M_Buttons",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Buttons.MI_LK_Buttons"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "post_process_abp": null
+ },
+ "shorts": {
+  "loaded": true,
+  "morph_total": 4,
+  "rv_morphs": [
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r"
+  ],
+  "shc_morphs": 0,
+  "lod_verts": [
+   4771,
+   2816,
+   1616
+  ],
+  "materials": [
+   [
+    "M_Trousers",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Shorts.MI_LK_Shorts"
+   ],
+   [
+    "M_Trousers_Trim",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Shorts_Trim.MI_LK_Shorts_Trim"
+   ],
+   [
+    "M_Trousers_Trim",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Shorts_Trim.MI_LK_Shorts_Trim"
+   ],
+   [
+    "M_Drawstring",
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Outfit/Materials/MI_LK_Drawstring.MI_LK_Drawstring"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "post_process_abp": null
+ },
+ "body": {
+  "loaded": true,
+  "morph_total": 26,
+  "rv_morphs": [
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_ArmFwd_l",
+   "RV_ArmFwd_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r",
+   "RV_Twist_l",
+   "RV_Twist_r"
+  ],
+  "shc_morphs": 6,
+  "lod_verts": [
+   32334,
+   8568,
+   3974,
+   1239
+  ],
+  "materials": [
+   [
+    "body_shader_shader",
+    "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/MI_RV_Body_Skin.MI_RV_Body_Skin"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/ABP_RV_Body_PostProcess.ABP_RV_Body_PostProcess_C"
+ },
+ "face": {
+  "loaded": true,
+  "morph_total": 865,
+  "rv_morphs": [],
+  "shc_morphs": 6,
+  "lod_verts": [
+   34657,
+   19283,
+   9714,
+   4065,
+   1967,
+   903,
+   460,
+   237
+  ],
+  "materials": [
+   [
+    "head_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD0_VT.MI_Face_Skin_Baked_LOD0_VT"
+   ],
+   [
+    "teeth_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Teeth_Baked.MI_Teeth_Baked"
+   ],
+   [
+    "saliva_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Materials/M_Hide.M_Hide"
+   ],
+   [
+    "eyeLeft_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_EyeL_Baked.MI_EyeL_Baked"
+   ],
+   [
+    "eyeRight_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_EyeR_Baked.MI_EyeR_Baked"
+   ],
+   [
+    "eyeshell_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_EyeShell.MI_Face_EyeShell"
+   ],
+   [
+    "eyelashes_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Eyelashes.MI_Face_Eyelashes"
+   ],
+   [
+    "eyeEdge_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_LacrimalFluid.MI_Face_LacrimalFluid"
+   ],
+   [
+    "cartilage_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Materials/M_Hide.M_Hide"
+   ],
+   [
+    "head_LOD1_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD1_VT.MI_Face_Skin_Baked_LOD1_VT"
+   ],
+   [
+    "head_LOD2_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD2_VT.MI_Face_Skin_Baked_LOD2_VT"
+   ],
+   [
+    "eyelashes_HiLOD_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_EyelashesHiLODs.MI_Face_EyelashesHiLODs"
+   ],
+   [
+    "head_LOD3_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD3_VT.MI_Face_Skin_Baked_LOD3_VT"
+   ],
+   [
+    "head_LOD4_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD4_VT.MI_Face_Skin_Baked_LOD4_VT"
+   ],
+   [
+    "head_LOD57_shader_shader",
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD5to7_VT.MI_Face_Skin_Baked_LOD5to7_VT"
+   ]
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/ABP_RV_Face_PostProcess.ABP_RV_Face_PostProcess_C"
+ },
+ "textures": {
+  "T_LK_Henley_BC": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+  },
+  "T_LK_Henley_M": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_MASKS: 2>"
+  },
+  "T_LK_Henley_N": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+  },
+  "T_LK_HenleyTrim_BC": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+  },
+  "T_LK_HenleyTrim_M": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_MASKS: 2>"
+  },
+  "T_LK_HenleyTrim_N": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+  },
+  "T_LK_Knit_N": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+  },
+  "T_LK_Shorts_BC": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+  },
+  "T_LK_Shorts_M": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_MASKS: 2>"
+  },
+  "T_LK_Shorts_N": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+  },
+  "T_LK_ShortsTrim_BC": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": true,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+  },
+  "T_LK_ShortsTrim_M": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_MASKS: 2>"
+  },
+  "T_LK_ShortsTrim_N": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+  },
+  "T_LK_Twill_N": {
+   "size": [
+    32,
+    32
+   ],
+   "srgb": false,
+   "never_stream": true,
+   "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+  }
+ },
+ "textile_materials": {
+  "M_LK_Textile": {
+   "loaded": true,
+   "shading_model": "<MaterialShadingModel.MSM_CLOTH: 8>",
+   "two_sided": true
+  },
+  "MI_LK_Henley": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_Henley_BC",
+   "detail": "T_LK_Knit_N",
+   "tiling": 83.125
+  },
+  "MI_LK_Henley_Trim": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_HenleyTrim_BC",
+   "detail": "T_LK_Knit_N",
+   "tiling": 13.88888931274414
+  },
+  "MI_LK_Buttons": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_HenleyTrim_BC",
+   "detail": "T_LK_Knit_N",
+   "tiling": 1.0
+  },
+  "MI_LK_Shorts": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_Shorts_BC",
+   "detail": "T_LK_Twill_N",
+   "tiling": 40.818180084228516
+  },
+  "MI_LK_Shorts_Trim": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_ShortsTrim_BC",
+   "detail": "T_LK_Twill_N",
+   "tiling": 9.090909004211426
+  },
+  "MI_LK_Drawstring": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_ShortsTrim_BC",
+   "detail": "T_LK_Twill_N",
+   "tiling": 30.0
+  }
+ },
+ "grooms": {
+  "Main": {
+   "loaded": true,
+   "binding_loaded": true,
+   "lods": [
+    "(AutoLODBias=0.000000,LODs=((),(CurveDecimation=0.500000,VertexDecimation=0.700000,ScreenSize=0.450000),(CurveDecimation=0.200000,VertexDecimation=0.500000,ScreenSize=0.200000),(CurveDecimation=0.100000,VertexDecimation=0.500000,ScreenSize=0.080000,GeometryType=Meshes)))"
+   ],
+   "meshes": 1,
+   "render": [
+    "(MaterialSlotName=\"Hair\",Material=None,GeometrySettings=(HairWidth=0.006500,HairWidth_Override=True,HairRootScale=1.000000,HairTipScale=0.450000),ShadowSettings=(HairShadowDensity=1.000000,HairRaytracingRadiusScale=1.000000,bUseHairRaytracingGeometry=False,bVoxelize=True),AdvancedSettings=(bUseStabl"
+   ],
+   "sim": [
+    false
+   ],
+   "materials": [
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Hair/MI_LK_Hair_v13w.MI_LK_Hair_v13w"
+   ],
+   "binding_target": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/SKM_RV_FaceMesh.SKM_RV_FaceMesh"
+  },
+  "Loose": {
+   "loaded": true,
+   "binding_loaded": true,
+   "lods": [
+    "(AutoLODBias=0.000000,LODs=((),(CurveDecimation=0.500000,VertexDecimation=0.700000,ScreenSize=0.450000),(CurveDecimation=0.250000,VertexDecimation=0.500000,ScreenSize=0.200000),(CurveDecimation=0.100000,VertexDecimation=0.500000,ScreenSize=0.080000,bVisible=False)))"
+   ],
+   "meshes": 0,
+   "render": [
+    "(MaterialSlotName=\"Hair\",Material=None,GeometrySettings=(HairWidth=0.009000,HairWidth_Override=True,HairRootScale=1.000000,HairTipScale=0.450000),ShadowSettings=(HairShadowDensity=0.450000,HairRaytracingRadiusScale=1.000000,bUseHairRaytracingGeometry=False,bVoxelize=True),AdvancedSettings=(bUseStabl"
+   ],
+   "sim": [
+    false
+   ],
+   "materials": [
+    "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Hair/MI_LK_Hair_v13w.MI_LK_Hair_v13w"
+   ],
+   "binding_target": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/SKM_RV_FaceMesh.SKM_RV_FaceMesh"
+  },
+  "material": {
+   "loaded": true,
+   "params": {
+    "hairMelanin": 0.46000000834465027,
+    "hairRedness": 0.5,
+    "OmbreMelanin": 0.36000001430511475,
+    "HighlightsMelanin": 0.30000001192092896,
+    "Roughness": 0.7200000286102295
+   }
+  },
+  "helmet": {
+   "mesh": true,
+   "mi": true
+  }
+ },
+ "skin": {
+  "MI_LK_Body_Baked_B": {
+   "loaded": true,
+   "parent": "MI_Body_Baked_VT",
+   "textures": "n/a"
+  },
+  "MI_LK_Face_LOD0_VT_c2": {
+   "loaded": true,
+   "parent": "MI_Face_Skin_Baked_LOD0_VT"
+  }
+ },
+ "body_abp_loaded": true,
+ "curve_meta": {
+  "RV_Bend30": true,
+  "RV_Bend60": true,
+  "RV_Bend90": true,
+  "RV_Arm090_l": true,
+  "RV_Arm090_r": true,
+  "RV_Arm120_l": true,
+  "RV_Arm120_r": true,
+  "RV_Arm150_l": true,
+  "RV_Arm150_r": true,
+  "RV_Arm180_l": true,
+  "RV_Arm180_r": true,
+  "RV_Hip075_l": true,
+  "RV_Hip075_r": true,
+  "RV_Hip110_l": true,
+  "RV_Hip110_r": true
+ },
+ "dirty_after": []
+}
