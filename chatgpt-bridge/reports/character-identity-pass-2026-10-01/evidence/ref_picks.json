@@ -1,0 +1,620 @@
+{
+ "_note": "Reference / candidate 2D picks (pixels of the tracker images in Saved/Codex/CharacterIdentity_20260930/track: ref_front_x4 800x960, ref_close_x2 794x940, cand_front / cand_3q 1600x1600). Read on 5%-gridded zoom crops. type point = semantic point (candidate side: 'cand' pixel -> raycast, or 'geo' = geometric definition); contour = silhouette target with outward 2D normal n (candidate = outermost skin vertex along n inside a band).",
+ "front": {
+  "image": "ref_front_x4",
+  "cand_image": "cand_front",
+  "cam": [
+   0,
+   125,
+   159,
+   -90,
+   0
+  ],
+  "fov": 15,
+  "yaw_guess": -90,
+  "points": [
+   {
+    "name": "brow_R_head",
+    "ref": [
+     360.8,
+     374.4
+    ],
+    "cand": [
+     736.0,
+     544.0
+    ],
+    "w": 0.7
+   },
+   {
+    "name": "brow_R_mid",
+    "ref": [
+     304.8,
+     358.7
+    ],
+    "cand": [
+     646.4,
+     531.2
+    ],
+    "w": 0.7
+   },
+   {
+    "name": "brow_R_tail",
+    "ref": [
+     260.0,
+     366.0
+    ],
+    "cand": [
+     553.6,
+     537.6
+    ],
+    "w": 0.5
+   },
+   {
+    "name": "brow_L_head",
+    "ref": [
+     442.0,
+     371.6
+    ],
+    "cand": [
+     844.8,
+     544.0
+    ],
+    "w": 0.7
+   },
+   {
+    "name": "brow_L_mid",
+    "ref": [
+     500.8,
+     354.8
+    ],
+    "cand": [
+     947.2,
+     531.2
+    ],
+    "w": 0.7
+   },
+   {
+    "name": "brow_L_tail",
+    "ref": [
+     551.2,
+     363.2
+    ],
+    "cand": [
+     1056.0,
+     544.0
+    ],
+    "w": 0.5
+   },
+   {
+    "name": "pronasale",
+    "ref": [
+     408.4,
+     514.4
+    ],
+    "geo": "pronasale",
+    "w": 1.0
+   },
+   {
+    "name": "alar_R",
+    "ref": [
+     359.7,
+     525.6
+    ],
+    "w": 1.5,
+    "cand": [
+     694.4,
+     841.0
+    ]
+   },
+   {
+    "name": "alar_L",
+    "ref": [
+     457.1,
+     525.6
+    ],
+    "w": 1.5,
+    "cand": [
+     876.8,
+     841.0
+    ]
+   },
+   {
+    "name": "subnasale",
+    "ref": [
+     406.7,
+     542.4
+    ],
+    "w": 1.5,
+    "cand": [
+     784.6,
+     846.7
+    ]
+   }
+  ],
+  "contours": [
+   {
+    "name": "cheek_R_hi",
+    "ref": [
+     223.6,
+     492.0
+    ],
+    "n": [
+     -1,
+     0
+    ],
+    "band": 6,
+    "w": 0.3,
+    "region": "face"
+   },
+   {
+    "name": "cheek_L_hi",
+    "ref": [
+     587.6,
+     492.0
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.3,
+    "region": "face"
+   },
+   {
+    "name": "cheek_R_mid",
+    "ref": [
+     239.2,
+     576.0
+    ],
+    "n": [
+     -1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "face"
+   },
+   {
+    "name": "cheek_L_mid",
+    "ref": [
+     580.0,
+     576.0
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "face"
+   },
+   {
+    "name": "cheek_R_lo",
+    "ref": [
+     248.8,
+     624.0
+    ],
+    "n": [
+     -1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "face"
+   },
+   {
+    "name": "cheek_L_lo",
+    "ref": [
+     570.4,
+     624.0
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "face"
+   },
+   {
+    "name": "jaw_R",
+    "ref": [
+     299.2,
+     734.4
+    ],
+    "n": [
+     -0.6,
+     0.8
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "jaw"
+   },
+   {
+    "name": "jaw_L",
+    "ref": [
+     505.6,
+     734.4
+    ],
+    "n": [
+     0.6,
+     0.8
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "jaw"
+   },
+   {
+    "name": "chin_R",
+    "ref": [
+     352.0,
+     739.2
+    ],
+    "n": [
+     -0.2,
+     1
+    ],
+    "band": 6,
+    "w": 1.0,
+    "region": "jaw"
+   },
+   {
+    "name": "chin_L",
+    "ref": [
+     452.8,
+     739.2
+    ],
+    "n": [
+     0.2,
+     1
+    ],
+    "band": 6,
+    "w": 1.0,
+    "region": "jaw"
+   },
+   {
+    "name": "menton",
+    "ref": [
+     400.0,
+     751.2
+    ],
+    "n": [
+     0,
+     1
+    ],
+    "band": 6,
+    "w": 1.5,
+    "region": "jaw"
+   }
+  ]
+ },
+ "close": {
+  "image": "ref_close_x2",
+  "cand_image": "cand_3q",
+  "cam": [
+   -88,
+   90,
+   159,
+   -45,
+   0
+  ],
+  "fov": 15,
+  "yaw_guess": -60,
+  "points": [
+   {
+    "name": "brow_near_head",
+    "ref": [
+     568.5,
+     475.5
+    ],
+    "cand": [
+     1177.6,
+     550.4
+    ],
+    "w": 0.7
+   },
+   {
+    "name": "brow_near_peak",
+    "ref": [
+     516.9,
+     460.1
+    ],
+    "cand": [
+     1075.2,
+     537.6
+    ],
+    "w": 0.7
+   },
+   {
+    "name": "brow_near_tail",
+    "ref": [
+     460.1,
+     470.4
+    ],
+    "cand": [
+     960.0,
+     553.6
+    ],
+    "w": 0.5
+   },
+   {
+    "name": "brow_far_head",
+    "ref": [
+     599.5,
+     473.0
+    ],
+    "cand": [
+     1241.6,
+     560.0
+    ],
+    "w": 0.5
+   },
+   {
+    "name": "brow_far_peak",
+    "ref": [
+     635.6,
+     462.6
+    ],
+    "cand": [
+     1286.4,
+     548.5
+    ],
+    "w": 0.4
+   },
+   {
+    "name": "pronasale",
+    "ref": [
+     622.7,
+     607.1
+    ],
+    "geo": "pronasale",
+    "w": 1.5
+   },
+   {
+    "name": "alar_near",
+    "ref": [
+     552.0,
+     625.2
+    ],
+    "w": 1.0,
+    "cand": [
+     1132.8,
+     822.4
+    ]
+   },
+   {
+    "name": "subnasale",
+    "ref": [
+     602.1,
+     645.9
+    ],
+    "w": 1.5,
+    "cand": [
+     1262.4,
+     856.0
+    ]
+   },
+   {
+    "name": "sellion",
+    "ref": [
+     576.2,
+     509.1
+    ],
+    "geo": "sellion",
+    "w": 1.0
+   },
+   {
+    "name": "dorsum_mid",
+    "ref": [
+     602.1,
+     560.7
+    ],
+    "geo": "dorsum_mid",
+    "w": 1.0
+   },
+   {
+    "name": "ear_tragus",
+    "ref": [
+     289.8,
+     617.5
+    ],
+    "w": 0.6,
+    "cand": [
+     614.4,
+     774.4
+    ]
+   },
+   {
+    "name": "ear_lobe",
+    "ref": [
+     276.9,
+     671.7
+    ],
+    "w": 0.6,
+    "cand": [
+     614.4,
+     865.6
+    ]
+   }
+  ],
+  "contours": [
+   {
+    "name": "chin_p1",
+    "ref": [
+     622.7,
+     746.5
+    ],
+    "n": [
+     1,
+     0.1
+    ],
+    "band": 6,
+    "w": 1.0,
+    "region": "jaw"
+   },
+   {
+    "name": "chin_p2",
+    "ref": [
+     612.4,
+     798.1
+    ],
+    "n": [
+     0.9,
+     0.4
+    ],
+    "band": 6,
+    "w": 1.2,
+    "region": "jaw"
+   },
+   {
+    "name": "chin_p3",
+    "ref": [
+     594.3,
+     823.9
+    ],
+    "n": [
+     0.6,
+     0.8
+    ],
+    "band": 6,
+    "w": 1.2,
+    "region": "jaw"
+   },
+   {
+    "name": "chin_p4",
+    "ref": [
+     568.5,
+     842.0
+    ],
+    "n": [
+     0.3,
+     1
+    ],
+    "band": 6,
+    "w": 1.0,
+    "region": "jaw"
+   },
+   {
+    "name": "menton_c",
+    "ref": [
+     547.9,
+     847.1
+    ],
+    "n": [
+     0.1,
+     1
+    ],
+    "band": 6,
+    "w": 1.0,
+    "region": "jaw"
+   },
+   {
+    "name": "jawbot_1",
+    "ref": [
+     522.1,
+     847.1
+    ],
+    "n": [
+     0,
+     1
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "jaw"
+   },
+   {
+    "name": "jawbot_2",
+    "ref": [
+     470.4,
+     844.5
+    ],
+    "n": [
+     0,
+     1
+    ],
+    "band": 6,
+    "w": 0.6,
+    "region": "jaw"
+   },
+   {
+    "name": "farcheek_1",
+    "ref": [
+     671.7,
+     488.4
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.6,
+    "region": "far"
+   },
+   {
+    "name": "farcheek_2",
+    "ref": [
+     666.6,
+     540.1
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "far"
+   },
+   {
+    "name": "farcheek_3",
+    "ref": [
+     661.4,
+     591.7
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "far"
+   },
+   {
+    "name": "farcheek_4",
+    "ref": [
+     653.7,
+     643.3
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.8,
+    "region": "far"
+   },
+   {
+    "name": "farcheek_5",
+    "ref": [
+     643.3,
+     694.9
+    ],
+    "n": [
+     1,
+     0
+    ],
+    "band": 6,
+    "w": 0.6,
+    "region": "far"
+   }
+  ]
+ },
+ "tracker_weights": {
+  "eyelid": 3.0,
+  "lip_upper_outer": 1.5,
+  "lip_lower_outer": 1.5,
+  "lip_upper_inner": 1.0,
+  "lip_lower_inner": 1.0,
+  "philtrum": 0.5,
+  "nasolabial": 0.6
+ }
+}

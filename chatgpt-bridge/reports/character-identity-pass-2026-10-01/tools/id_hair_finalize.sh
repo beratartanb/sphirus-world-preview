@@ -1,0 +1,13 @@
+#!/bin/bash
+# id_hair_finalize.sh <tag> <face sfx> : groom finalization in a FRESH editor (same chain as v14k / v15c): loose-groom sim settings -> save ->
+# helmet mesh -> LOD chain -> rebind (RV bindings + identity bindings GB_ID_*_<sfx>) -> manual LOD mode
+set -u; cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; TAG=$1; FS=$2; T=Tools/CharacterLookdev_20260930; H=Saved/Codex/CharacterLookdev_20260930/hair/$TAG; R=Tools/OutfitHome_20260929/run_of.sh
+SC="C:/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/53df87b2-1800-4b0d-8cb5-35bc735c40a0/scratchpad"
+{ echo "import builtins; builtins.RV_HAIR_TAG = '$TAG'; builtins.LK_SIM = {'BendStiffness': '0.450000', 'BendDamping': '0.150000', 'AirDrag': '0.300000'}"; cat $T/ue_lk_hair_sim.py; } > "$SC/lk_sim_$TAG.py"; bash $R "$SC/lk_sim_$TAG.py" lk-sim 900 | grep -E "^(OK|ERROR)|Traceback" | head -2
+{ echo "import builtins; builtins.RV_HAIR_TAG = '$TAG'"; cat $T/ue_lk_hair_save.py; } > "$SC/lk_simsave_$TAG.py"; bash $R "$SC/lk_simsave_$TAG.py" lk-simsave 900 | grep -E "SAVED|ERROR" | head -2
+"/c/Program Files/Blender Foundation/Blender 5.2/blender.exe" -b --factory-startup --python "$(cygpath -w "$(pwd)/$T/blender_lk_hair_helmet.py")" -- "$(cygpath -w "$(pwd)/$H/hair_main.abc")" "$(cygpath -w "$(pwd)/$H/hair_loose.abc")" "$(cygpath -w "$(pwd)/$H/helmet.json")" 2500 > /dev/null 2>&1; ls -la "$H/helmet.json" | awk '{print "helmet", $5}'
+{ echo "import builtins; builtins.LK_HAIR_LOD = {'tag': '$TAG', 'helmet_json': r'$(cygpath -w "$(pwd)/$H/helmet.json")'}"; cat $T/ue_lk_hair_lods.py; } > "$SC/lk_lods_$TAG.py"; bash $R "$SC/lk_lods_$TAG.py" lk-lods 1200 | grep -E "^(OK|ERROR)|Traceback" | head -2
+sed -e "s/v14k/$TAG/g" "$SC/lk_rebind_v14k.py" > "$SC/lk_rebind_$TAG.py"; bash $R "$SC/lk_rebind_$TAG.py" lk-rebind 1200 | grep -E "REBIND|ERROR" | cut -c1-200
+Hp=/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Hair; { echo "import builtins; builtins.FM_BIND = {'face': '/Game/Sphirus/CharacterLab/CharacterIdentity_20260930/Face/SKM_ID_FaceMesh_$FS', 'suffix': '$FS', 'prefix': 'GB_ID', 'folder': '/Game/Sphirus/CharacterLab/CharacterIdentity_20260930/Face/Bindings', 'grooms': {'HairMain': '$Hp/GR_LK_Hair_Main_$TAG', 'HairLoose': '$Hp/GR_LK_Hair_Loose_$TAG'}}"; cat $T/ue_fm_bind.py; } > "$SC/id_hbindf_$TAG.py"; bash $R "$SC/id_hbindf_$TAG.py" id-hbindf 900 | tail -1 | grep -o '"dirty": \[[^]]*\]'
+sed -e "s/v14k/$TAG/g" "$SC/lk_lodmanual_v14k.py" > "$SC/lk_lodmanual_$TAG.py"; bash $R "$SC/lk_lodmanual_$TAG.py" lk-lmm 900 | grep -E "^LMM|ERROR" | cut -c1-300
+echo FINALIZE_DONE $TAG
