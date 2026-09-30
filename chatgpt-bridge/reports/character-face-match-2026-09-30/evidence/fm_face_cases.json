@@ -1,0 +1,213 @@
+{
+ "animation": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Face/Diagnostics/AS_FM_FacialRig",
+ "cases": [
+  {
+   "name": "neutral",
+   "time": 0.5,
+   "controls": {}
+  },
+  {
+   "name": "blink",
+   "time": 1.5,
+   "controls": {
+    "CTRL_expressions_eyeBlinkL": 1.0,
+    "CTRL_expressions_eyeBlinkR": 1.0
+   }
+  },
+  {
+   "name": "blink_left",
+   "time": 2.5,
+   "controls": {
+    "CTRL_expressions_eyeBlinkL": 1
+   }
+  },
+  {
+   "name": "blink_right",
+   "time": 3.5,
+   "controls": {
+    "CTRL_expressions_eyeBlinkR": 1
+   }
+  },
+  {
+   "name": "look_up",
+   "time": 4.5,
+   "controls": {
+    "CTRL_expressions_eyeLookUpL": 1.0,
+    "CTRL_expressions_eyeLookUpR": 1.0
+   }
+  },
+  {
+   "name": "look_down",
+   "time": 5.5,
+   "controls": {
+    "CTRL_expressions_eyeLookDownL": 1.0,
+    "CTRL_expressions_eyeLookDownR": 1.0
+   }
+  },
+  {
+   "name": "look_left",
+   "time": 6.5,
+   "controls": {
+    "CTRL_expressions_eyeLookLeftL": 1.0,
+    "CTRL_expressions_eyeLookLeftR": 1.0
+   }
+  },
+  {
+   "name": "look_right",
+   "time": 7.5,
+   "controls": {
+    "CTRL_expressions_eyeLookRightL": 1.0,
+    "CTRL_expressions_eyeLookRightR": 1.0
+   }
+  },
+  {
+   "name": "brows_up",
+   "time": 8.5,
+   "controls": {
+    "CTRL_expressions_browRaiseInL": 1.0,
+    "CTRL_expressions_browRaiseInR": 1.0,
+    "CTRL_expressions_browRaiseOuterL": 1.0,
+    "CTRL_expressions_browRaiseOuterR": 1.0
+   }
+  },
+  {
+   "name": "brows_down",
+   "time": 9.5,
+   "controls": {
+    "CTRL_expressions_browDownL": 1.0,
+    "CTRL_expressions_browDownR": 1.0
+   }
+  },
+  {
+   "name": "smile",
+   "time": 10.5,
+   "controls": {
+    "CTRL_expressions_mouthCornerPullL": 1.0,
+    "CTRL_expressions_mouthCornerPullR": 1.0,
+    "CTRL_expressions_eyeCheekRaiseL": 0.5,
+    "CTRL_expressions_eyeCheekRaiseR": 0.5
+   }
+  },
+  {
+   "name": "frown",
+   "time": 11.5,
+   "controls": {
+    "CTRL_expressions_mouthCornerDepressL": 1.0,
+    "CTRL_expressions_mouthCornerDepressR": 1.0
+   }
+  },
+  {
+   "name": "lips_closed",
+   "time": 12.5,
+   "controls": {
+    "CTRL_expressions_mouthLipsPressL": 0.6,
+    "CTRL_expressions_mouthLipsPressR": 0.6,
+    "CTRL_expressions_mouthLipsTogetherUL": 1.0,
+    "CTRL_expressions_mouthLipsTogetherUR": 1.0,
+    "CTRL_expressions_mouthLipsTogetherDL": 1.0,
+    "CTRL_expressions_mouthLipsTogetherDR": 1.0
+   }
+  },
+  {
+   "name": "mouth_open",
+   "time": 13.5,
+   "controls": {
+    "CTRL_expressions_jawOpen": 0.45,
+    "CTRL_expressions_mouthUpperLipRaiseL": 0.5,
+    "CTRL_expressions_mouthUpperLipRaiseR": 0.5,
+    "CTRL_expressions_mouthLowerLipDepressL": 0.5,
+    "CTRL_expressions_mouthLowerLipDepressR": 0.5
+   }
+  },
+  {
+   "name": "jaw_open",
+   "time": 14.5,
+   "controls": {
+    "CTRL_expressions_jawOpen": 1.0
+   }
+  },
+  {
+   "name": "jaw_left",
+   "time": 15.5,
+   "controls": {
+    "CTRL_expressions_jawLeft": 1.0
+   }
+  },
+  {
+   "name": "jaw_right",
+   "time": 16.5,
+   "controls": {
+    "CTRL_expressions_jawRight": 1.0
+   }
+  },
+  {
+   "name": "ph_oo",
+   "time": 17.5,
+   "controls": {
+    "CTRL_expressions_mouthFunnelUL": 1.0,
+    "CTRL_expressions_mouthFunnelUR": 1.0,
+    "CTRL_expressions_mouthFunnelDL": 1.0,
+    "CTRL_expressions_mouthFunnelDR": 1.0,
+    "CTRL_expressions_jawOpen": 0.15
+   }
+  },
+  {
+   "name": "ph_ee",
+   "time": 18.5,
+   "controls": {
+    "CTRL_expressions_mouthStretchL": 0.8,
+    "CTRL_expressions_mouthStretchR": 0.8,
+    "CTRL_expressions_mouthCornerPullL": 0.3,
+    "CTRL_expressions_mouthCornerPullR": 0.3,
+    "CTRL_expressions_jawOpen": 0.1
+   }
+  },
+  {
+   "name": "ph_mbp",
+   "time": 19.5,
+   "controls": {
+    "CTRL_expressions_mouthLipsPressL": 1.0,
+    "CTRL_expressions_mouthLipsPressR": 1.0,
+    "CTRL_expressions_mouthLipsTogetherUL": 1.0,
+    "CTRL_expressions_mouthLipsTogetherUR": 1.0,
+    "CTRL_expressions_mouthLipsTogetherDL": 1.0,
+    "CTRL_expressions_mouthLipsTogetherDR": 1.0
+   }
+  },
+  {
+   "name": "ph_w",
+   "time": 20.5,
+   "controls": {
+    "CTRL_expressions_mouthLipsPurseUL": 1.0,
+    "CTRL_expressions_mouthLipsPurseUR": 1.0,
+    "CTRL_expressions_mouthLipsPurseDL": 1.0,
+    "CTRL_expressions_mouthLipsPurseDR": 1.0
+   }
+  },
+  {
+   "name": "cheek_compress",
+   "time": 21.5,
+   "controls": {
+    "CTRL_expressions_eyeCheekRaiseL": 1.0,
+    "CTRL_expressions_eyeCheekRaiseR": 1.0,
+    "CTRL_expressions_mouthCornerPullL": 0.6,
+    "CTRL_expressions_mouthCornerPullR": 0.6,
+    "CTRL_expressions_eyeSquintInnerL": 0.6,
+    "CTRL_expressions_eyeSquintInnerR": 0.6
+   }
+  },
+  {
+   "name": "extreme",
+   "time": 22.5,
+   "controls": {
+    "CTRL_expressions_jawOpenExtreme": 1.0,
+    "CTRL_expressions_browRaiseInL": 1.0,
+    "CTRL_expressions_browRaiseInR": 1.0,
+    "CTRL_expressions_browRaiseOuterL": 1.0,
+    "CTRL_expressions_browRaiseOuterR": 1.0,
+    "CTRL_expressions_mouthStretchL": 0.6,
+    "CTRL_expressions_mouthStretchR": 0.6
+   }
+  }
+ ]
+}
