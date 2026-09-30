@@ -1,0 +1,65 @@
+{
+ "henley": {
+  "asset": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/SKM_RV_Henley.SKM_RV_Henley",
+  "rejected_triangles": 0,
+  "lod0": [
+   8251,
+   15575
+  ],
+  "lod1": [
+   4426,
+   8222
+  ],
+  "lod2": [
+   2497,
+   4532
+  ],
+  "unweighted_after_inpaint": 0,
+  "unweighted_final": 0,
+  "lod1_unweighted_final": 0,
+  "lod2_unweighted_final": 0,
+  "bones_in_mesh": 342,
+  "materials": [
+   "M_Henley",
+   "M_Henley_Trim",
+   "M_Buttons"
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "saved": true,
+  "sec": 3.5
+ },
+ "trousers": {
+  "asset": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/SKM_RV_Shorts.SKM_RV_Shorts",
+  "rejected_triangles": 0,
+  "lod0": [
+   5557,
+   10116
+  ],
+  "lod1": [
+   3024,
+   5374
+  ],
+  "lod2": [
+   1711,
+   2904
+  ],
+  "unweighted_after_inpaint": 0,
+  "unweighted_final": 0,
+  "lod1_unweighted_final": 0,
+  "lod2_unweighted_final": 0,
+  "bones_in_mesh": 342,
+  "materials": [
+   "M_Trousers",
+   "M_Trousers_Trim",
+   "M_Trousers_Trim",
+   "M_Drawstring"
+  ],
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "saved": true,
+  "sec": 5.2
+ },
+ "dirty_after": [
+  "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Test/BP_RV_LODSyncTest"
+ ],
+ "saved_dirty_in_dest": {}
+}

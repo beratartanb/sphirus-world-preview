@@ -1,0 +1,144 @@
+{
+ "facts": {
+  "z_crotch": 76.50240266919197,
+  "z_armpit": 128.08302121956032,
+  "shoulder_joint_l": [
+   16.212895851824065,
+   -0.19856183407911526,
+   137.4996952244736
+  ],
+  "elbow_l": [
+   31.373389392672983,
+   0.47550538181024576,
+   117.6362154098709
+  ],
+  "wrist_l": [
+   45.40826647293368,
+   17.662591659067026,
+   100.82019126850017
+  ],
+  "hip_l": [
+   8.710043884227847,
+   4.3031721566576895,
+   90.36564493934841
+  ],
+  "knee_l": [
+   10.686890806659715,
+   3.4313798373611477,
+   48.1182189790788
+  ],
+  "ankle_l": [
+   12.44051598210044,
+   1.9004518309607956,
+   8.38909123144493
+  ],
+  "circ": {
+   "torso_z86": 56.92,
+   "torso_z92": 76.39,
+   "torso_z97": 84.98,
+   "torso_z102": 79.2,
+   "torso_z109": 72.79,
+   "torso_z119": 73.86,
+   "torso_z128": 88.03,
+   "torso_z134": 79.86
+  },
+  "ridge": {
+   "0": [
+    6.443483352861054,
+    145.40884677737813
+   ],
+   "4": [
+    3.746318308106695,
+    145.494009630513
+   ],
+   "7": [
+    -0.29418533060768554,
+    145.41194283612842
+   ],
+   "10": [
+    -1.6591112705033404,
+    144.46985296703951
+   ],
+   "13": [
+    -0.5460815254739586,
+    143.51318181565912
+   ],
+   "16": [
+    0.30126424908971144,
+    143.00273223387552
+   ]
+  }
+ },
+ "garments": {
+  "henley": {
+   "name": "henley",
+   "verts": 6118,
+   "min_signed_cm": 0.0022041189367882907,
+   "penetrating_verts": 0,
+   "max_penetration_cm": 0.0,
+   "clearance_p5_cm": 0.6706855189986527,
+   "clearance_median_cm": 1.197384251281619,
+   "clearance_p95_cm": 2.4008662812411776
+  },
+  "trousers": {
+   "name": "trousers",
+   "verts": 3613,
+   "min_signed_cm": 0.430430518463254,
+   "penetrating_verts": 0,
+   "max_penetration_cm": 0.0,
+   "clearance_p5_cm": 0.6843865755945444,
+   "clearance_median_cm": 0.9068284183740616,
+   "clearance_p95_cm": 1.8147610127925855
+  },
+  "SPH_Henley": {
+   "post_fix_moved": 5
+  },
+  "SPH_Trousers": {
+   "post_fix_moved": 0
+  },
+  "henley_after_fix": {
+   "name": "henley",
+   "verts": 6118,
+   "min_signed_cm": 0.24999368470162153,
+   "penetrating_verts": 0,
+   "max_penetration_cm": 0.0,
+   "clearance_p5_cm": 0.6706855189986527,
+   "clearance_median_cm": 1.197384251281619,
+   "clearance_p95_cm": 2.4008662812411776
+  },
+  "trousers_after_fix": {
+   "name": "trousers",
+   "verts": 3613,
+   "min_signed_cm": 0.430430518463254,
+   "penetrating_verts": 0,
+   "max_penetration_cm": 0.0,
+   "clearance_p5_cm": 0.6843865755945444,
+   "clearance_median_cm": 0.9068284183740616,
+   "clearance_p95_cm": 1.8147610127925855
+  },
+  "henley_export": {
+   "verts": 8251,
+   "tris": 15575
+  },
+  "trousers_export": {
+   "verts": 5557,
+   "tris": 10116
+  },
+  "henley_lod1_export": {
+   "verts": 4426,
+   "tris": 8222
+  },
+  "trousers_lod1_export": {
+   "verts": 3024,
+   "tris": 5374
+  },
+  "henley_lod2_export": {
+   "verts": 2497,
+   "tris": 4532
+  },
+  "trousers_lod2_export": {
+   "verts": 1711,
+   "tris": 2904
+  }
+ }
+}

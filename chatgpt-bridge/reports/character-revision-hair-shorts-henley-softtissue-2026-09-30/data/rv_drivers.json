@@ -1,0 +1,216 @@
+{
+ "drivers": {
+  "RV_Bend": {
+   "source": "spine_05",
+   "space": "root",
+   "distance": "SwingAngle",
+   "radius": 32.0,
+   "targets": {
+    "RVn_bend0": [
+     79.18,
+     -90.0,
+     -90.0
+    ],
+    "RVn_backext": [
+     46.92,
+     -89.28,
+     -89.69
+    ],
+    "RV_Bend30": [
+     70.82,
+     90.0,
+     90.01
+    ],
+    "RV_Bend60": [
+     40.83,
+     90.0,
+     90.01
+    ],
+    "RV_Bend90": [
+     10.83,
+     90.0,
+     90.0
+    ]
+   }
+  },
+  "RV_Twist": {
+   "source": "spine_05",
+   "space": "pelvis",
+   "distance": "TwistAngle",
+   "radius": 30.0,
+   "targets": {
+    "RVn_twist0": [
+     -0.0,
+     -12.88,
+     0.0
+    ],
+    "RV_Twist_l": [
+     -6.18,
+     -10.95,
+     -34.52
+    ],
+    "RV_Twist_r": [
+     6.18,
+     -10.96,
+     34.51
+    ]
+   }
+  },
+  "RV_Arm_l": {
+   "source": "upperarm_l",
+   "space": "spine_05",
+   "distance": "SwingAngle",
+   "radius": 30.0,
+   "targets": {
+    "RVn_neutral_l": [
+     -37.34,
+     -171.12,
+     177.89
+    ],
+    "RVn_elev_0_l": [
+     -0.0,
+     -169.18,
+     177.23
+    ],
+    "RVn_elev_30_l": [
+     -30.0,
+     -169.18,
+     176.81
+    ],
+    "RVn_elev_60_l": [
+     -60.0,
+     -169.18,
+     176.51
+    ],
+    "RV_Arm090_l": [
+     -90.0,
+     7.02,
+     0.0
+    ],
+    "RV_Arm120_l": [
+     -60.0,
+     10.82,
+     -4.16
+    ],
+    "RV_Arm150_l": [
+     -30.0,
+     10.82,
+     -4.6
+    ],
+    "RV_Arm180_l": [
+     0.0,
+     10.82,
+     -5.22
+    ],
+    "RV_ArmFwd_l": [
+     -0.0,
+     100.82,
+     -129.94
+    ]
+   }
+  },
+  "RV_Hip_l": {
+   "source": "thigh_l",
+   "space": "pelvis",
+   "distance": "SwingAngle",
+   "radius": 40.0,
+   "targets": {
+    "RVn_hip0_l": [
+     2.68,
+     -0.87,
+     8.48
+    ],
+    "RV_Hip075_l": [
+     3.67,
+     -80.82,
+     8.34
+    ],
+    "RV_Hip110_l": [
+     9.96,
+     -63.92,
+     5.43
+    ]
+   }
+  },
+  "RV_Arm_r": {
+   "source": "upperarm_r",
+   "space": "spine_05",
+   "distance": "SwingAngle",
+   "radius": 30.0,
+   "targets": {
+    "RVn_neutral_r": [
+     -37.34,
+     8.88,
+     177.89
+    ],
+    "RVn_elev_0_r": [
+     0.0,
+     10.82,
+     177.23
+    ],
+    "RVn_elev_30_r": [
+     -30.0,
+     10.82,
+     176.81
+    ],
+    "RVn_elev_60_r": [
+     -60.0,
+     10.82,
+     176.51
+    ],
+    "RV_Arm090_r": [
+     -90.0,
+     -172.98,
+     0.0
+    ],
+    "RV_Arm120_r": [
+     -60.0,
+     -169.18,
+     -4.16
+    ],
+    "RV_Arm150_r": [
+     -30.0,
+     -169.18,
+     -4.6
+    ],
+    "RV_Arm180_r": [
+     -0.0,
+     -169.18,
+     -5.22
+    ],
+    "RV_ArmFwd_r": [
+     -0.0,
+     -79.18,
+     -129.94
+    ]
+   }
+  },
+  "RV_Hip_r": {
+   "source": "thigh_r",
+   "space": "pelvis",
+   "distance": "SwingAngle",
+   "radius": 40.0,
+   "targets": {
+    "RVn_hip0_r": [
+     2.68,
+     179.13,
+     8.48
+    ],
+    "RV_Hip075_r": [
+     3.7,
+     98.69,
+     10.47
+    ],
+    "RV_Hip110_r": [
+     8.86,
+     115.11,
+     5.65
+    ]
+   }
+  }
+ },
+ "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+ "root_src_before": "AnimGraphNode_ModifyCurve_0",
+ "saved": true,
+ "dirty_after": []
+}

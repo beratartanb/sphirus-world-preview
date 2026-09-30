@@ -1,0 +1,710 @@
+{
+ "loose_sim_flags": [
+  true
+ ],
+ "main_sim_flags": [
+  false
+ ],
+ "segments": [
+  {
+   "n": "hold",
+   "dur": 2.0,
+   "frames": 10
+  },
+  {
+   "n": "walk",
+   "dur": 2.4,
+   "frames": 12
+  },
+  {
+   "n": "jog",
+   "dur": 2.0,
+   "frames": 10
+  },
+  {
+   "n": "sprint",
+   "dur": 2.4,
+   "frames": 12
+  },
+  {
+   "n": "stop",
+   "dur": 1.8,
+   "frames": 9
+  },
+  {
+   "n": "yaw",
+   "dur": 2.4,
+   "frames": 12
+  },
+  {
+   "n": "bend",
+   "dur": 3.0,
+   "frames": 15
+  },
+  {
+   "n": "twist",
+   "dur": 2.4,
+   "frames": 12
+  },
+  {
+   "n": "jump",
+   "dur": 1.6,
+   "frames": 8
+  },
+  {
+   "n": "crouch",
+   "dur": 1.6,
+   "frames": 8
+  }
+ ],
+ "frames": [
+  {
+   "img": "hm_hold_00.png",
+   "seg": "hold",
+   "t": 0.0,
+   "fps_est": 81.3
+  },
+  {
+   "img": "hm_hold_01.png",
+   "seg": "hold",
+   "t": 0.211,
+   "fps_est": 58.8
+  },
+  {
+   "img": "hm_hold_02.png",
+   "seg": "hold",
+   "t": 0.422,
+   "fps_est": 61.7
+  },
+  {
+   "img": "hm_hold_03.png",
+   "seg": "hold",
+   "t": 0.628,
+   "fps_est": 57.5
+  },
+  {
+   "img": "hm_hold_04.png",
+   "seg": "hold",
+   "t": 0.835,
+   "fps_est": 63.8
+  },
+  {
+   "img": "hm_hold_05.png",
+   "seg": "hold",
+   "t": 1.041,
+   "fps_est": 61.0
+  },
+  {
+   "img": "hm_hold_06.png",
+   "seg": "hold",
+   "t": 1.247,
+   "fps_est": 64.1
+  },
+  {
+   "img": "hm_hold_07.png",
+   "seg": "hold",
+   "t": 1.455,
+   "fps_est": 62.7
+  },
+  {
+   "img": "hm_hold_08.png",
+   "seg": "hold",
+   "t": 1.661,
+   "fps_est": 59.8
+  },
+  {
+   "img": "hm_hold_09.png",
+   "seg": "hold",
+   "t": 1.869,
+   "fps_est": 57.5
+  },
+  {
+   "img": "hm_walk_00.png",
+   "seg": "walk",
+   "t": 0.0,
+   "fps_est": 8.2
+  },
+  {
+   "img": "hm_walk_01.png",
+   "seg": "walk",
+   "t": 0.216,
+   "fps_est": 57.2
+  },
+  {
+   "img": "hm_walk_02.png",
+   "seg": "walk",
+   "t": 0.428,
+   "fps_est": 56.7
+  },
+  {
+   "img": "hm_walk_03.png",
+   "seg": "walk",
+   "t": 0.641,
+   "fps_est": 60.3
+  },
+  {
+   "img": "hm_walk_04.png",
+   "seg": "walk",
+   "t": 0.854,
+   "fps_est": 58.8
+  },
+  {
+   "img": "hm_walk_05.png",
+   "seg": "walk",
+   "t": 1.067,
+   "fps_est": 59.8
+  },
+  {
+   "img": "hm_walk_06.png",
+   "seg": "walk",
+   "t": 1.282,
+   "fps_est": 59.2
+  },
+  {
+   "img": "hm_walk_07.png",
+   "seg": "walk",
+   "t": 1.484,
+   "fps_est": 57.1
+  },
+  {
+   "img": "hm_walk_08.png",
+   "seg": "walk",
+   "t": 1.684,
+   "fps_est": 61.1
+  },
+  {
+   "img": "hm_walk_09.png",
+   "seg": "walk",
+   "t": 1.9,
+   "fps_est": 56.8
+  },
+  {
+   "img": "hm_walk_10.png",
+   "seg": "walk",
+   "t": 2.101,
+   "fps_est": 59.8
+  },
+  {
+   "img": "hm_walk_11.png",
+   "seg": "walk",
+   "t": 2.303,
+   "fps_est": 63.5
+  },
+  {
+   "img": "hm_jog_00.png",
+   "seg": "jog",
+   "t": 0.0,
+   "fps_est": 7.3
+  },
+  {
+   "img": "hm_jog_01.png",
+   "seg": "jog",
+   "t": 0.204,
+   "fps_est": 62.3
+  },
+  {
+   "img": "hm_jog_02.png",
+   "seg": "jog",
+   "t": 0.41,
+   "fps_est": 59.8
+  },
+  {
+   "img": "hm_jog_03.png",
+   "seg": "jog",
+   "t": 0.615,
+   "fps_est": 57.7
+  },
+  {
+   "img": "hm_jog_04.png",
+   "seg": "jog",
+   "t": 0.82,
+   "fps_est": 62.2
+  },
+  {
+   "img": "hm_jog_05.png",
+   "seg": "jog",
+   "t": 1.024,
+   "fps_est": 58.7
+  },
+  {
+   "img": "hm_jog_06.png",
+   "seg": "jog",
+   "t": 1.231,
+   "fps_est": 67.6
+  },
+  {
+   "img": "hm_jog_07.png",
+   "seg": "jog",
+   "t": 1.442,
+   "fps_est": 54.7
+  },
+  {
+   "img": "hm_jog_08.png",
+   "seg": "jog",
+   "t": 1.648,
+   "fps_est": 59.9
+  },
+  {
+   "img": "hm_jog_09.png",
+   "seg": "jog",
+   "t": 1.851,
+   "fps_est": 56.9
+  },
+  {
+   "img": "hm_sprint_00.png",
+   "seg": "sprint",
+   "t": 0.0,
+   "fps_est": 7.1
+  },
+  {
+   "img": "hm_sprint_01.png",
+   "seg": "sprint",
+   "t": 0.21,
+   "fps_est": 56.3
+  },
+  {
+   "img": "hm_sprint_02.png",
+   "seg": "sprint",
+   "t": 0.417,
+   "fps_est": 60.6
+  },
+  {
+   "img": "hm_sprint_03.png",
+   "seg": "sprint",
+   "t": 0.633,
+   "fps_est": 58.7
+  },
+  {
+   "img": "hm_sprint_04.png",
+   "seg": "sprint",
+   "t": 0.847,
+   "fps_est": 59.7
+  },
+  {
+   "img": "hm_sprint_05.png",
+   "seg": "sprint",
+   "t": 1.062,
+   "fps_est": 62.9
+  },
+  {
+   "img": "hm_sprint_06.png",
+   "seg": "sprint",
+   "t": 1.263,
+   "fps_est": 63.3
+  },
+  {
+   "img": "hm_sprint_07.png",
+   "seg": "sprint",
+   "t": 1.479,
+   "fps_est": 58.2
+  },
+  {
+   "img": "hm_sprint_08.png",
+   "seg": "sprint",
+   "t": 1.692,
+   "fps_est": 58.1
+  },
+  {
+   "img": "hm_sprint_09.png",
+   "seg": "sprint",
+   "t": 1.907,
+   "fps_est": 56.7
+  },
+  {
+   "img": "hm_sprint_10.png",
+   "seg": "sprint",
+   "t": 2.118,
+   "fps_est": 56.9
+  },
+  {
+   "img": "hm_sprint_11.png",
+   "seg": "sprint",
+   "t": 2.322,
+   "fps_est": 63.1
+  },
+  {
+   "img": "hm_stop_00.png",
+   "seg": "stop",
+   "t": 0.0,
+   "fps_est": 7.6
+  },
+  {
+   "img": "hm_stop_01.png",
+   "seg": "stop",
+   "t": 0.208,
+   "fps_est": 56.7
+  },
+  {
+   "img": "hm_stop_02.png",
+   "seg": "stop",
+   "t": 0.412,
+   "fps_est": 61.1
+  },
+  {
+   "img": "hm_stop_03.png",
+   "seg": "stop",
+   "t": 0.619,
+   "fps_est": 64.6
+  },
+  {
+   "img": "hm_stop_04.png",
+   "seg": "stop",
+   "t": 0.825,
+   "fps_est": 62.9
+  },
+  {
+   "img": "hm_stop_05.png",
+   "seg": "stop",
+   "t": 1.031,
+   "fps_est": 61.8
+  },
+  {
+   "img": "hm_stop_06.png",
+   "seg": "stop",
+   "t": 1.235,
+   "fps_est": 60.4
+  },
+  {
+   "img": "hm_stop_07.png",
+   "seg": "stop",
+   "t": 1.439,
+   "fps_est": 58.1
+  },
+  {
+   "img": "hm_stop_08.png",
+   "seg": "stop",
+   "t": 1.643,
+   "fps_est": 58.6
+  },
+  {
+   "img": "hm_yaw_00.png",
+   "seg": "yaw",
+   "t": 0.0,
+   "fps_est": 7.8
+  },
+  {
+   "img": "hm_yaw_01.png",
+   "seg": "yaw",
+   "t": 0.213,
+   "fps_est": 56.3
+  },
+  {
+   "img": "hm_yaw_02.png",
+   "seg": "yaw",
+   "t": 0.427,
+   "fps_est": 60.1
+  },
+  {
+   "img": "hm_yaw_03.png",
+   "seg": "yaw",
+   "t": 0.64,
+   "fps_est": 64.4
+  },
+  {
+   "img": "hm_yaw_04.png",
+   "seg": "yaw",
+   "t": 0.841,
+   "fps_est": 61.0
+  },
+  {
+   "img": "hm_yaw_05.png",
+   "seg": "yaw",
+   "t": 1.042,
+   "fps_est": 58.5
+  },
+  {
+   "img": "hm_yaw_06.png",
+   "seg": "yaw",
+   "t": 1.245,
+   "fps_est": 61.2
+  },
+  {
+   "img": "hm_yaw_07.png",
+   "seg": "yaw",
+   "t": 1.448,
+   "fps_est": 59.2
+  },
+  {
+   "img": "hm_yaw_08.png",
+   "seg": "yaw",
+   "t": 1.662,
+   "fps_est": 60.6
+  },
+  {
+   "img": "hm_yaw_09.png",
+   "seg": "yaw",
+   "t": 1.877,
+   "fps_est": 61.8
+  },
+  {
+   "img": "hm_yaw_10.png",
+   "seg": "yaw",
+   "t": 2.079,
+   "fps_est": 59.2
+  },
+  {
+   "img": "hm_yaw_11.png",
+   "seg": "yaw",
+   "t": 2.283,
+   "fps_est": 61.1
+  },
+  {
+   "img": "hm_bend_00.png",
+   "seg": "bend",
+   "t": 0.0,
+   "fps_est": 7.2
+  },
+  {
+   "img": "hm_bend_01.png",
+   "seg": "bend",
+   "t": 0.205,
+   "fps_est": 60.6
+  },
+  {
+   "img": "hm_bend_02.png",
+   "seg": "bend",
+   "t": 0.405,
+   "fps_est": 57.3
+  },
+  {
+   "img": "hm_bend_03.png",
+   "seg": "bend",
+   "t": 0.609,
+   "fps_est": 58.0
+  },
+  {
+   "img": "hm_bend_04.png",
+   "seg": "bend",
+   "t": 0.816,
+   "fps_est": 59.5
+  },
+  {
+   "img": "hm_bend_05.png",
+   "seg": "bend",
+   "t": 1.027,
+   "fps_est": 61.5
+  },
+  {
+   "img": "hm_bend_06.png",
+   "seg": "bend",
+   "t": 1.244,
+   "fps_est": 56.6
+  },
+  {
+   "img": "hm_bend_07.png",
+   "seg": "bend",
+   "t": 1.46,
+   "fps_est": 59.1
+  },
+  {
+   "img": "hm_bend_08.png",
+   "seg": "bend",
+   "t": 1.667,
+   "fps_est": 56.5
+  },
+  {
+   "img": "hm_bend_09.png",
+   "seg": "bend",
+   "t": 1.875,
+   "fps_est": 60.3
+  },
+  {
+   "img": "hm_bend_10.png",
+   "seg": "bend",
+   "t": 2.078,
+   "fps_est": 57.7
+  },
+  {
+   "img": "hm_bend_11.png",
+   "seg": "bend",
+   "t": 2.28,
+   "fps_est": 57.9
+  },
+  {
+   "img": "hm_bend_12.png",
+   "seg": "bend",
+   "t": 2.481,
+   "fps_est": 58.8
+  },
+  {
+   "img": "hm_bend_13.png",
+   "seg": "bend",
+   "t": 2.694,
+   "fps_est": 58.6
+  },
+  {
+   "img": "hm_bend_14.png",
+   "seg": "bend",
+   "t": 2.902,
+   "fps_est": 57.3
+  },
+  {
+   "img": "hm_twist_00.png",
+   "seg": "twist",
+   "t": 0.0,
+   "fps_est": 7.1
+  },
+  {
+   "img": "hm_twist_01.png",
+   "seg": "twist",
+   "t": 0.206,
+   "fps_est": 61.6
+  },
+  {
+   "img": "hm_twist_02.png",
+   "seg": "twist",
+   "t": 0.415,
+   "fps_est": 55.4
+  },
+  {
+   "img": "hm_twist_03.png",
+   "seg": "twist",
+   "t": 0.629,
+   "fps_est": 57.7
+  },
+  {
+   "img": "hm_twist_04.png",
+   "seg": "twist",
+   "t": 0.833,
+   "fps_est": 67.9
+  },
+  {
+   "img": "hm_twist_05.png",
+   "seg": "twist",
+   "t": 1.034,
+   "fps_est": 64.0
+  },
+  {
+   "img": "hm_twist_06.png",
+   "seg": "twist",
+   "t": 1.24,
+   "fps_est": 63.6
+  },
+  {
+   "img": "hm_twist_07.png",
+   "seg": "twist",
+   "t": 1.44,
+   "fps_est": 64.1
+  },
+  {
+   "img": "hm_twist_08.png",
+   "seg": "twist",
+   "t": 1.651,
+   "fps_est": 56.0
+  },
+  {
+   "img": "hm_twist_09.png",
+   "seg": "twist",
+   "t": 1.857,
+   "fps_est": 61.9
+  },
+  {
+   "img": "hm_twist_10.png",
+   "seg": "twist",
+   "t": 2.072,
+   "fps_est": 60.2
+  },
+  {
+   "img": "hm_twist_11.png",
+   "seg": "twist",
+   "t": 2.286,
+   "fps_est": 60.6
+  },
+  {
+   "img": "hm_jump_00.png",
+   "seg": "jump",
+   "t": 0.0,
+   "fps_est": 7.4
+  },
+  {
+   "img": "hm_jump_01.png",
+   "seg": "jump",
+   "t": 0.2,
+   "fps_est": 68.5
+  },
+  {
+   "img": "hm_jump_02.png",
+   "seg": "jump",
+   "t": 0.402,
+   "fps_est": 73.1
+  },
+  {
+   "img": "hm_jump_03.png",
+   "seg": "jump",
+   "t": 0.618,
+   "fps_est": 61.3
+  },
+  {
+   "img": "hm_jump_04.png",
+   "seg": "jump",
+   "t": 0.835,
+   "fps_est": 57.8
+  },
+  {
+   "img": "hm_jump_05.png",
+   "seg": "jump",
+   "t": 1.035,
+   "fps_est": 63.1
+  },
+  {
+   "img": "hm_jump_06.png",
+   "seg": "jump",
+   "t": 1.24,
+   "fps_est": 58.2
+  },
+  {
+   "img": "hm_jump_07.png",
+   "seg": "jump",
+   "t": 1.442,
+   "fps_est": 62.4
+  },
+  {
+   "img": "hm_crouch_00.png",
+   "seg": "crouch",
+   "t": 0.0,
+   "fps_est": 6.7
+  },
+  {
+   "img": "hm_crouch_01.png",
+   "seg": "crouch",
+   "t": 0.203,
+   "fps_est": 6.5
+  },
+  {
+   "img": "hm_crouch_02.png",
+   "seg": "crouch",
+   "t": 0.41,
+   "fps_est": 5.7
+  },
+  {
+   "img": "hm_crouch_03.png",
+   "seg": "crouch",
+   "t": 0.622,
+   "fps_est": 64.4
+  },
+  {
+   "img": "hm_crouch_04.png",
+   "seg": "crouch",
+   "t": 0.837,
+   "fps_est": 61.7
+  },
+  {
+   "img": "hm_crouch_05.png",
+   "seg": "crouch",
+   "t": 1.049,
+   "fps_est": 62.6
+  },
+  {
+   "img": "hm_crouch_06.png",
+   "seg": "crouch",
+   "t": 1.262,
+   "fps_est": 63.9
+  },
+  {
+   "img": "hm_crouch_07.png",
+   "seg": "crouch",
+   "t": 1.476,
+   "fps_est": 59.1
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+[
+ {
+  "profile": "hair_on",
+  "frame_ms": 8.86,
+  "inclusive_ms": {
+   "<root>": 9.77,
+   "SceneRender - ViewFamilies": 9.346,
+   "MorphUpdate_SKM_RV_FaceMesh_LOD0": 0.021,
+   "MorphUpdate_SKM_RV_Henley_LOD0": 0.012,
+   "MorphUpdate_SKM_RV_Shorts_LOD0": 0.012,
+   "MorphUpdate_SKM_RV_BodyMesh_LOD0": 0.019,
+   "GPUSkinCache_UpdateSkinningBatches": 0.037,
+   "NiagaraGpuComputeDispatch": 0.365,
+   "NiagaraGpuSim(StableSpringsSystem:StableSpringsEmitter) DispatchCount(22096x1x1) Stage(ParticleSpawnUpdate 0) Iteration(0) NumT": 0.332,
+   "BasePass": 0.087,
+   "Hair": 2.001,
+   "HairInterpolation(Strands)": 1.314,
+   "CommitHairRayTracingGeometryUpdates": 1.044,
+   "HairStrandsVoxelization": 0.158,
+   "HairStrandsVisibility": 0.51,
+   "ShadowDepths": 0.701,
+   "Lights": 0.31,
+   "Niagara::PostRenderFinish": 0.011,
+   "PostProcessing": 1.829
+  }
+ },
+ {
+  "profile": "hair_off",
+  "frame_ms": 6.13,
+  "inclusive_ms": {
+   "<root>": 6.013,
+   "SceneRender - ViewFamilies": 5.223,
+   "MorphUpdate_SKM_RV_FaceMesh_LOD0": 0.02,
+   "MorphUpdate_SKM_RV_Henley_LOD0": 0.013,
+   "MorphUpdate_SKM_RV_Shorts_LOD0": 0.012,
+   "MorphUpdate_SKM_RV_BodyMesh_LOD0": 0.018,
+   "GPUSkinCache_UpdateSkinningBatches": 0.035,
+   "BasePass": 0.095,
+   "ShadowDepths": 0.707,
+   "Lights": 0.266,
+   "Niagara::PostRenderFinish": 0.001,
+   "PostProcessing": 1.51
+  }
+ }
+]

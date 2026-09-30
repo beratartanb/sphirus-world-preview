@@ -1,0 +1,312 @@
+{
+ "dirty_before": [],
+ "body": {
+  "loaded": true,
+  "morph_total": 26,
+  "rv_morphs": [
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_ArmFwd_l",
+   "RV_ArmFwd_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r",
+   "RV_Twist_l",
+   "RV_Twist_r"
+  ],
+  "shc_morphs": 6,
+  "lods": [
+   [
+    32334,
+    null
+   ],
+   [
+    8568,
+    null
+   ],
+   [
+    3974,
+    null
+   ],
+   [
+    1239,
+    null
+   ]
+  ],
+  "lod_tris": "n/a",
+  "materials": [
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/MI_RV_Body_Skin.MI_RV_Body_Skin"
+  ],
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/ABP_RV_Body_PostProcess.ABP_RV_Body_PostProcess_C",
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+ },
+ "face": {
+  "loaded": true,
+  "morph_total": 865,
+  "rv_morphs": [],
+  "shc_morphs": 6,
+  "lods": [
+   [
+    34657,
+    null
+   ],
+   [
+    19283,
+    null
+   ],
+   [
+    9714,
+    null
+   ],
+   [
+    4065,
+    null
+   ],
+   [
+    1967,
+    null
+   ],
+   [
+    903,
+    null
+   ],
+   [
+    460,
+    null
+   ],
+   [
+    237,
+    null
+   ]
+  ],
+  "lod_tris": "n/a",
+  "materials": [
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD0_VT.MI_Face_Skin_Baked_LOD0_VT",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Teeth_Baked.MI_Teeth_Baked",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Materials/M_Hide.M_Hide",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_EyeL_Baked.MI_EyeL_Baked",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_EyeR_Baked.MI_EyeR_Baked",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_EyeShell.MI_Face_EyeShell",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Eyelashes.MI_Face_Eyelashes",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_LacrimalFluid.MI_Face_LacrimalFluid",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Materials/M_Hide.M_Hide",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD1_VT.MI_Face_Skin_Baked_LOD1_VT",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD2_VT.MI_Face_Skin_Baked_LOD2_VT",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_EyelashesHiLODs.MI_Face_EyelashesHiLODs",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD3_VT.MI_Face_Skin_Baked_LOD3_VT",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD4_VT.MI_Face_Skin_Baked_LOD4_VT",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD5to7_VT.MI_Face_Skin_Baked_LOD5to7_VT"
+  ],
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/ABP_RV_Face_PostProcess.ABP_RV_Face_PostProcess_C",
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton"
+ },
+ "henley": {
+  "loaded": true,
+  "morph_total": 11,
+  "rv_morphs": [
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90"
+  ],
+  "shc_morphs": 0,
+  "lods": [
+   [
+    9508,
+    null
+   ],
+   [
+    5205,
+    null
+   ],
+   [
+    2892,
+    null
+   ]
+  ],
+  "lod_tris": "n/a",
+  "materials": [
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Henley.MI_Home2_Henley",
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Henley_Trim.MI_Home2_Henley_Trim",
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Buttons.MI_Home2_Buttons"
+  ],
+  "post_process_abp": null,
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+ },
+ "shorts": {
+  "loaded": true,
+  "morph_total": 4,
+  "rv_morphs": [
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r"
+  ],
+  "shc_morphs": 0,
+  "lods": [
+   [
+    6658,
+    null
+   ],
+   [
+    3594,
+    null
+   ],
+   [
+    2015,
+    null
+   ]
+  ],
+  "lod_tris": "n/a",
+  "materials": [
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Shorts.MI_Home2_Shorts",
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Shorts_Trim.MI_Home2_Shorts_Trim",
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Shorts_Trim.MI_Home2_Shorts_Trim",
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Outfit/Materials/MI_Home2_Drawstring.MI_Home2_Drawstring"
+  ],
+  "post_process_abp": null,
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+ },
+ "abp": {
+  "loaded": true,
+  "pose_drivers": [
+   "calf_l_UERBFSolver",
+   "calf_r_UERBFSolver",
+   "clavicle_l_UERBFSolver",
+   "clavicle_r_UERBFSolver",
+   "foot_l_UERBFSolver",
+   "foot_r_UERBFSolver",
+   "hand_l_UERBFSolver",
+   "hand_r_UERBFSolver",
+   "index_l_01_half_UERBFSolver",
+   "index_l_02_half_UERBFSolver",
+   "index_l_03_half_UERBFSolver",
+   "index_r_01_half_UERBFSolver",
+   "index_r_02_half_UERBFSolver",
+   "index_r_03_half_UERBFSolver",
+   "lowerarm_l_UERBFSolver",
+   "lowerarm_r_UERBFSolver",
+   "middle_l_01_half_UERBFSolver",
+   "middle_l_02_half_UERBFSolver",
+   "middle_l_03_half_UERBFSolver",
+   "middle_r_01_half_UERBFSolver",
+   "middle_r_02_half_UERBFSolver",
+   "middle_r_03_half_UERBFSolver",
+   "pinky_l_01_half_UERBFSolver",
+   "pinky_l_02_half_UERBFSolver",
+   "pinky_l_03_half_UERBFSolver",
+   "pinky_r_01_half_UERBFSolver",
+   "pinky_r_02_half_UERBFSolver",
+   "pinky_r_03_half_UERBFSolver",
+   "ring_l_01_half_UERBFSolver",
+   "ring_l_02_half_UERBFSolver",
+   "ring_l_03_half_UERBFSolver",
+   "ring_r_01_half_UERBFSolver",
+   "ring_r_02_half_UERBFSolver",
+   "ring_r_03_half_UERBFSolver",
+   "thigh_l_UERBFSolver",
+   "thigh_r_UERBFSolver",
+   "thumb_l_01_UERBFSolver",
+   "thumb_l_02_half_UERBFSolver",
+   "thumb_l_03_half_UERBFSolver",
+   "thumb_r_01_UERBFSolver",
+   "thumb_r_02_half_UERBFSolver",
+   "thumb_r_03_half_UERBFSolver",
+   "upperarm_l_UERBFSolver",
+   "upperarm_r_UERBFSolver",
+   "SHC_Driver_l",
+   "SHC_Driver_r",
+   "RV_Bend",
+   "RV_Twist",
+   "RV_Arm_l",
+   "RV_Hip_l",
+   "RV_Arm_r",
+   "RV_Hip_r"
+  ],
+  "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+ },
+ "curve_meta": {
+  "RV_Bend30": true,
+  "RV_Bend60": true,
+  "RV_Bend90": true,
+  "RV_Twist_l": true,
+  "RV_Twist_r": true,
+  "RV_Arm090_l": true,
+  "RV_Arm090_r": true,
+  "RV_Arm120_l": true,
+  "RV_Arm120_r": true,
+  "RV_Arm150_l": true,
+  "RV_Arm150_r": true,
+  "RV_Arm180_l": true,
+  "RV_Arm180_r": true,
+  "RV_ArmFwd_l": true,
+  "RV_ArmFwd_r": true,
+  "RV_Hip075_l": true,
+  "RV_Hip075_r": true,
+  "RV_Hip110_l": true,
+  "RV_Hip110_r": true
+ },
+ "grooms": {
+  "Main": {
+   "loaded": true,
+   "binding_loaded": true,
+   "sim": [
+    false
+   ],
+   "groups": 1,
+   "materials": [
+    "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Hair/MI_RV_Hair_Auburn.MI_RV_Hair_Auburn"
+   ],
+   "groom_info": [
+    "(bIsVisible=True,GroupIndex=0,GroupID=0,GroupName=\"Group_0\",NumCurves=39665,NumGuides=3966,NumCurveVertices=912295,NumGuideVertices=91218,MaxCurveLength=59.400581,Flags=0,LODInfos=)"
+   ],
+   "binding_target": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/SKM_RV_FaceMesh.SKM_RV_FaceMesh"
+  },
+  "Loose": {
+   "loaded": true,
+   "binding_loaded": true,
+   "sim": [
+    true
+   ],
+   "groups": 1,
+   "materials": [
+    "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Hair/MI_RV_Hair_Auburn.MI_RV_Hair_Auburn"
+   ],
+   "groom_info": [
+    "(bIsVisible=True,GroupIndex=0,GroupID=0,GroupName=\"Group_0\",NumCurves=2762,NumGuides=276,NumCurveVertices=52726,NumGuideVertices=5124,MaxCurveLength=47.061569,Flags=0,LODInfos=)"
+   ],
+   "binding_target": "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/SKM_RV_FaceMesh.SKM_RV_FaceMesh"
+  },
+  "RV_Eyebrows_M_Slit_Binding": {
+   "loaded": true
+  },
+  "RV_Eyelashes_L_Curl_Binding": {
+   "loaded": true
+  },
+  "MI_RV_Hair_Auburn": {
+   "loaded": true,
+   "parent": "/MetaHumanCharacter/Materials/MI_Hair.MI_Hair",
+   "melanin": 0.6600000262260437,
+   "redness": 0.5
+  }
+ },
+ "poselib": true,
+ "dirty_after": []
+}
