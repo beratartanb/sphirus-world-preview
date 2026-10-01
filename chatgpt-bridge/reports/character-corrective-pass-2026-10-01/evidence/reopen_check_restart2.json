@@ -1,0 +1,269 @@
+{
+ "dirty_before": [],
+ "face_j": {
+  "loaded": true,
+  "morph_total": 865,
+  "rv_morphs": [],
+  "br_neutral": true,
+  "lod_verts": [
+   34657,
+   19283,
+   9714,
+   4065,
+   1967,
+   903,
+   460,
+   237
+  ],
+  "materials": [
+   [
+    "head_shader_shader",
+    "MI_Face_Skin_Baked_LOD0_VT"
+   ],
+   [
+    "teeth_shader_shader",
+    "MI_Teeth_Baked"
+   ],
+   [
+    "saliva_shader_shader",
+    "M_Hide"
+   ],
+   [
+    "eyeLeft_shader_shader",
+    "MI_EyeL_Baked"
+   ],
+   [
+    "eyeRight_shader_shader",
+    "MI_EyeR_Baked"
+   ],
+   [
+    "eyeshell_shader_shader",
+    "MI_Face_EyeShell"
+   ],
+   [
+    "eyelashes_shader_shader",
+    "MI_Face_Eyelashes"
+   ],
+   [
+    "eyeEdge_shader_shader",
+    "MI_Face_LacrimalFluid"
+   ],
+   [
+    "cartilage_shader_shader",
+    "M_Hide"
+   ],
+   [
+    "head_LOD1_shader_shader",
+    "MI_Face_Skin_Baked_LOD1_VT"
+   ],
+   [
+    "head_LOD2_shader_shader",
+    "MI_Face_Skin_Baked_LOD2_VT"
+   ],
+   [
+    "eyelashes_HiLOD_shader_shader",
+    "MI_Face_EyelashesHiLODs"
+   ],
+   [
+    "head_LOD3_shader_shader",
+    "MI_Face_Skin_Baked_LOD3_VT"
+   ],
+   [
+    "head_LOD4_shader_shader",
+    "MI_Face_Skin_Baked_LOD4_VT"
+   ],
+   [
+    "head_LOD57_shader_shader",
+    "MI_Face_Skin_Baked_LOD5to7_VT"
+   ]
+  ],
+  "skeleton": "Face_Archetype_Skeleton",
+  "post_process_abp": "ABP_RV_Face_PostProcess.ABP_RV_Face_PostProcess_C"
+ },
+ "henley_g16c": {
+  "loaded": true,
+  "morph_total": 17,
+  "rv_morphs": [
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_ArmFwd_l",
+   "RV_ArmFwd_r",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Elbow_l",
+   "RV_Elbow_r",
+   "RV_Twist_l",
+   "RV_Twist_r"
+  ],
+  "br_neutral": false,
+  "lod_verts": [
+   8070,
+   4439,
+   2465
+  ],
+  "materials": [
+   [
+    "M_Henley",
+    "MI_LK_Henley_m1"
+   ],
+   [
+    "M_Henley_Trim",
+    "MI_LK_Henley_Trim_m1"
+   ],
+   [
+    "M_Buttons",
+    "MI_LK_Buttons_m1"
+   ]
+  ],
+  "skeleton": "metahuman_base_skel",
+  "post_process_abp": null
+ },
+ "shorts_g16c": {
+  "loaded": true,
+  "morph_total": 4,
+  "rv_morphs": [
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_l",
+   "RV_Hip110_r"
+  ],
+  "br_neutral": false,
+  "lod_verts": [
+   4696,
+   2820,
+   1664
+  ],
+  "materials": [
+   [
+    "M_Trousers",
+    "MI_LK_Shorts_m1"
+   ],
+   [
+    "M_Trousers_Trim",
+    "MI_LK_Shorts_Trim_m1"
+   ],
+   [
+    "M_Drawstring",
+    "MI_LK_Drawstring_m1"
+   ]
+  ],
+  "skeleton": "metahuman_base_skel",
+  "post_process_abp": null
+ },
+ "hair": {
+  "Main": {
+   "loaded": true,
+   "lods": 1,
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "sim": [
+    "(SolverSettings=(bEnableDeformation=False,EnableSimulation=False,NiagaraSolver=AngularSprings,CustomSystem=\"/HairStrands/Emitters/StableSpringsSystem.StableSpri"
+   ]
+  },
+  "Loose": {
+   "loaded": true,
+   "lods": 1,
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "sim": [
+    "(SolverSettings=(bEnableDeformation=False,EnableSimulation=True,NiagaraSolver=AngularSprings,CustomSystem=\"/HairStrands/Emitters/StableSpringsSystem.StableSprin"
+   ]
+  },
+  "GB_CR_HairMain_j": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_id17",
+   "target": "SKM_CR_FaceMesh_j"
+  },
+  "GB_CR_HairLoose_j": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_id17",
+   "target": "SKM_CR_FaceMesh_j"
+  },
+  "GB_CR_Eyebrows_j": {
+   "loaded": true,
+   "groom": "Eyebrows_M_Slit",
+   "target": "SKM_CR_FaceMesh_j"
+  },
+  "GB_CR_Eyelashes_j": {
+   "loaded": true,
+   "groom": "Eyelashes_L_Curl",
+   "target": "SKM_CR_FaceMesh_j"
+  }
+ },
+ "cloth": {
+  "CA_CR_Shorts_m1": {
+   "loaded": true,
+   "class": "ChaosClothAsset",
+   "physics_asset": "PHYS_CR_ShortsCollider",
+   "materials": [
+    "MI_LK_Shorts_m1_cloth",
+    "MI_LK_Shorts_Trim_m1_cloth",
+    "MI_LK_Drawstring_m1_cloth"
+   ]
+  },
+  "PHYS_CR_ShortsCollider": {
+   "loaded": true,
+   "class": "PhysicsAsset"
+  },
+  "SM_CR_Shorts_m1_Sim": {
+   "loaded": true,
+   "class": "StaticMesh"
+  },
+  "DF_CR_Shorts_m1": {
+   "loaded": true,
+   "class": "Dataflow"
+  }
+ },
+ "materials": {
+  "MI_LK_Henley_m1": {
+   "loaded": true,
+   "parent": "M_LK_Textile_B",
+   "base": "T_LK_Henley_BC_m1"
+  },
+  "MI_LK_Henley_Trim_m1": {
+   "loaded": true,
+   "parent": "M_LK_Textile_B",
+   "base": "T_LK_HenleyTrim_BC_m1"
+  },
+  "MI_LK_Buttons_m1": {
+   "loaded": true,
+   "parent": "M_LK_Textile",
+   "base": "T_LK_HenleyTrim_BC_m1"
+  },
+  "MI_LK_Shorts_m1_cloth": {
+   "loaded": true,
+   "parent": "M_CR_Textile_B",
+   "base": "T_LK_Shorts_BC_m1"
+  },
+  "MI_LK_Shorts_Trim_m1_cloth": {
+   "loaded": true,
+   "parent": "M_CR_Textile_B",
+   "base": "T_LK_ShortsTrim_BC_m1"
+  },
+  "MI_LK_Drawstring_m1_cloth": {
+   "loaded": true,
+   "parent": "M_CR_Textile",
+   "base": "T_LK_ShortsTrim_BC_m1"
+  },
+  "MI_LK_Face_LOD0_VT_c12s": {
+   "loaded": true,
+   "parent": "MI_LK_Face_LOD0_VT_c12",
+   "srmf": "T_LK_Head_SRMF_c12s",
+   "normal": "T_LK_Head_N_c12s",
+   "bc": "T_LK_Head_BC_c12"
+  },
+  "MI_LK_Face_LOD1_VT_c12s": {
+   "loaded": true,
+   "parent": "MI_LK_Face_LOD1_VT_c12",
+   "srmf": "T_LK_Head_SRMF_c12s",
+   "normal": "T_LK_Head_N_c12s",
+   "bc": "T_LK_Head_BC_c12"
+  }
+ },
+ "dirty_after": []
+}

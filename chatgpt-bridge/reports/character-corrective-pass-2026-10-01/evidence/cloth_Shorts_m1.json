@@ -1,0 +1,66 @@
+{
+ "cfg": {
+  "name": "Shorts_m1",
+  "skm": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c",
+  "kind": "shorts",
+  "high": 2.4,
+  "pa": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/PHYS_CR_ShortsCollider",
+  "damping": 0.1,
+  "bs_dist": 0.0,
+  "bs_rad": 40.0,
+  "sim_section": 0
+ },
+ "verts": 4674,
+ "weights": {
+  "pinned(0)": 2182,
+  "partial": 1477,
+  "free(>=0.6)": 1015
+ },
+ "weight_roundtrip_max_err": 2.9753623675965457e-08,
+ "materials": [
+  "MI_LK_Shorts_m1_cloth",
+  "MI_LK_Shorts_Trim_m1_cloth",
+  "MI_LK_Drawstring_m1_cloth"
+ ],
+ "pa": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/PHYS_CR_ShortsCollider.PHYS_CR_ShortsCollider",
+ "nodes": [
+  "Import",
+  "Skin",
+  "Proxy",
+  "MaxDist",
+  "Backstop",
+  "Tethers",
+  "Damping",
+  "Collision",
+  "SetPA"
+ ],
+ "props": {
+  "Import.StaticMesh": true,
+  "Import.bImportSimMesh": true,
+  "Import.bImportRenderMesh": true,
+  "Import.UVChannel": true,
+  "Import.SimMeshSection": true,
+  "Skin.SkeletalMesh": true,
+  "Skin.TargetMeshType": true,
+  "MaxDist.MaxDistance": true,
+  "Backstop.BackstopDistance": true,
+  "Backstop.BackstopRadius": true,
+  "Damping.DampingCoefficientWeighted": true,
+  "SetPA.PhysicsAsset": true
+ },
+ "connections": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "regen": true,
+ "dirty": [
+  "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/Diagnostics/M_QA_Clay"
+ ]
+}

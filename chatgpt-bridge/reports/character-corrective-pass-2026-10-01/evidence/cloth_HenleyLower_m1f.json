@@ -1,0 +1,83 @@
+{
+ "cfg": {
+  "name": "HenleyLower_m1f",
+  "skm": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Henley_g16c",
+  "kind": "henley_lower",
+  "keep": {
+   "zmax": 110.8,
+   "xmax": 21.0
+  },
+  "pin_from": 109.0,
+  "overlap_from": 109.0,
+  "overlap_push": 0.08,
+  "high": 3.5,
+  "pa": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/PHYS_CR_HenleyCollider",
+  "damping": 0.1,
+  "bs_dist": 0.0,
+  "bs_rad": 40.0,
+  "sim_section": 0,
+  "flare": {
+   "z0": 104.0,
+   "z1": 96.0,
+   "radial": 0.07,
+   "drop": 1.0,
+   "yc": 1.0
+  }
+ },
+ "cut_removed_tris": 12022,
+ "overlap_verts": 227,
+ "flare_verts": 1016,
+ "verts": 1598,
+ "weights": {
+  "pinned(0)": 303,
+  "partial": 462,
+  "free(>=0.6)": 833
+ },
+ "weight_roundtrip_max_err": 2.9743225327116818e-08,
+ "materials": [
+  "MI_LK_Henley_m1_cloth",
+  "MI_LK_Henley_Trim_m1_cloth",
+  "MI_LK_Buttons_m1_cloth"
+ ],
+ "pa": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/PHYS_CR_HenleyCollider.PHYS_CR_HenleyCollider",
+ "nodes": [
+  "Import",
+  "Skin",
+  "Proxy",
+  "MaxDist",
+  "Backstop",
+  "Tethers",
+  "Damping",
+  "Collision",
+  "SetPA"
+ ],
+ "props": {
+  "Import.StaticMesh": true,
+  "Import.bImportSimMesh": true,
+  "Import.bImportRenderMesh": true,
+  "Import.UVChannel": true,
+  "Import.SimMeshSection": true,
+  "Skin.SkeletalMesh": true,
+  "Skin.TargetMeshType": true,
+  "MaxDist.MaxDistance": true,
+  "Backstop.BackstopDistance": true,
+  "Backstop.BackstopRadius": true,
+  "Damping.DampingCoefficientWeighted": true,
+  "SetPA.PhysicsAsset": true
+ },
+ "connections": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "regen": true,
+ "dirty": [
+  "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/Diagnostics/M_QA_Clay"
+ ]
+}
