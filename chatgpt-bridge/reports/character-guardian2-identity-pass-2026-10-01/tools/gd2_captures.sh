@@ -1,0 +1,17 @@
+#!/bin/bash
+# gd_captures.sh <prefix> [sets clay,real,hair,rig] : GUARDIAN face captures on the current qa composition. Cams: reffront (recon front),
+# refclose (old recon 3/4), refclose2 (re-solved 3/4 camera, camfit_close.json), front3q, side, front, back, top
+set -u; cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; P=$1; SETS=${2:-clay,real,hair}; T=Tools/CharacterLookdev_20260930
+PY="/c/Program Files/Epic Games/UE_5.8/Engine/Binaries/ThirdParty/Python3/Win64/python.exe"; C=Saved/Codex/CharacterLookdev_20260930/captures
+bash Tools/OutfitHome_20260929/run_of.sh "$T/ue_lk_qa_setup.py" lk-setup 300 | tail -1
+CF=$("$PY" -c "import json; c=json.load(open('Saved/Codex/CharacterGuardian_20261001/camfit_close.json')); print([round(c['origin'][0],3), round(c['origin'][1],3), round(c['origin'][2],3), c['yaw'], c['pitch']])")
+run() { "$PY" -c "import json; S=$2; json.dump({'label':'$1','cases':S}, open('$C/capture_request.json','w'), indent=1)"; rm -f "$C/$1_results.json" "$C/$1_error.txt"
+  bash Tools/OutfitHome_20260929/run_of.sh "$(cygpath -w "$(pwd)/$T/ue_lk_capture.py")" lk-cap 120 | tail -1 >/dev/null
+  until [ -f "$C/$1_results.json" ] || [ -f "$C/$1_error.txt" ]; do sleep 2; done; [ -f "$C/$1_error.txt" ] && { echo "ERROR $1"; head -c 600 "$C/$1_error.txt"; } || echo "DONE $1"; }
+CAMS="{'reffront': ([0.95, 129.7, 170.3, -90.4, -3.8], 15), 'refclose': ([-91.0, 88.6, 143.3, -42.6, 8.6], 15), 'refclose2': ($CF, 15), 'front3q': ([-88, 90, 159, -45, 0], 15), 'side': ([-125, 3, 159, 0, 0], 15), 'front': ([0, 125, 159, -90, 0], 15), 'back': ([0, -125, 159, 90, 0], 15), 'top': ([0, 40, 215, -90, -50], 20)}"
+[[ $SETS == *clay* ]] && run ${P}_clay "[dict(name='${P}_clay_'+k, view='custom', cam=c, fov=f, garments=True, materials='clay', hair=False, light='studio', animation=None, time=0, light_target_z=160, hide=['Eyebrows', 'Eyelashes']) for k, (c, f) in $CAMS.items()]"
+[[ $SETS == *real* ]] && run ${P}_real "[dict(name='${P}_real_'+k, view='custom', cam=c, fov=f, garments=True, materials='real', light='studio', animation=None, time=0, light_target_z=160, hide=['HairMain', 'HairLoose']) for k, (c, f) in $CAMS.items()]"
+[[ $SETS == *hair* ]] && run ${P}_hair "[dict(name='${P}_hair_'+k, view='custom', cam=c, fov=f, garments=True, materials='real', light='studio', animation=None, time=0, light_target_z=160) for k, (c, f) in $CAMS.items()]"
+[[ $SETS == *rig* ]] && run ${P}_rig "[dict(name='${P}_rig_'+c['name']+'_'+k, view='custom', cam=cam, fov=fov, garments=True, materials='real', light='studio', animation=None, time=0, light_target_z=160, hide=['HairMain', 'HairLoose'], face_anim=J['animation'], face_time=c['time']) for J in [json.load(open('Saved/Codex/CharacterFaceMatch_20260930/fm_face_cases.json'))] for c in J['cases'] for k, cam, fov in (('front', [0, 62, 159.5, -90, 0], 20), ('3q', [-44, 44, 159.5, -45, 0], 20))]"
+[[ $SETS == *expr* ]] && run ${P}_expr "[dict(name='${P}_expr_'+c['name']+'_'+k, view='custom', cam=cam, fov=fov, garments=True, materials=MAT, light='studio', animation=None, time=0, light_target_z=160, hide=HIDE, face_anim=J['animation'], face_time=c['time']) for J in [json.load(open('Saved/Codex/CharacterGuardian2_20261001/gd2_expr_cases.json'))] for c in J['cases'] for k, (cam, fov) in {'reffront': $CAMS['reffront'], 'refclose2': $CAMS['refclose2'], 'side': $CAMS['side']}.items() for MAT, HIDE in [('real', ['HairMain', 'HairLoose'])]]"
+exit 0

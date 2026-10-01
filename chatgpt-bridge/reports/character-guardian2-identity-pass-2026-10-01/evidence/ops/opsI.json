@@ -1,0 +1,161 @@
+[
+ {
+  "name": "submalar_fill",
+  "op": "normal",
+  "c": [
+   -4.6,
+   9.5,
+   156.0
+  ],
+  "r": [
+   1.8,
+   2.6,
+   2.0
+  ],
+  "amt": 0.35,
+  "mirror": true
+ },
+ {
+  "name": "buccal_lower_fill",
+  "op": "normal",
+  "c": [
+   -4.8,
+   8.5,
+   154.0
+  ],
+  "r": [
+   1.8,
+   2.6,
+   1.8
+  ],
+  "amt": 0.22,
+  "mirror": true
+ },
+ {
+  "name": "malar_flatten_wide",
+  "op": "move",
+  "c": [
+   -4.8,
+   11.0,
+   159.6
+  ],
+  "r": [
+   1.8,
+   1.8,
+   1.4
+  ],
+  "d": [
+   -0.15,
+   -0.12,
+   0
+  ],
+  "mirror": true
+ },
+ {
+  "name": "zyg_arch_widen",
+  "op": "move",
+  "c": [
+   -6.6,
+   6.5,
+   160.0
+  ],
+  "r": [
+   1.6,
+   3.5,
+   2.0
+  ],
+  "d": [
+   -0.22,
+   0,
+   0
+  ],
+  "mirror": true
+ },
+ {
+  "name": "temple_fill",
+  "op": "normal",
+  "c": [
+   -6.2,
+   6.5,
+   165.5
+  ],
+  "r": [
+   1.6,
+   2.6,
+   2.4
+  ],
+  "amt": 0.2,
+  "mirror": true
+ },
+ {
+  "name": "nasolabial_soften",
+  "op": "smooth",
+  "c": [
+   -2.8,
+   12.2,
+   156.5
+  ],
+  "r": [
+   1.6,
+   1.6,
+   2.6
+  ],
+  "iters": 12,
+  "mirror": true
+ },
+ {
+  "name": "forehead_slope",
+  "op": "move",
+  "c": [
+   0,
+   11.0,
+   170.0
+  ],
+  "r": [
+   6.5,
+   3.5,
+   3.2
+  ],
+  "d": [
+   0,
+   -0.45,
+   -0.1
+  ]
+ },
+ {
+  "name": "jaw_angle_down",
+  "op": "move",
+  "c": [
+   -5.3,
+   2.5,
+   153.5
+  ],
+  "r": [
+   2.6,
+   3.4,
+   2.6
+  ],
+  "d": [
+   -0.2,
+   0,
+   -0.6
+  ],
+  "mirror": true
+ },
+ {
+  "name": "mandible_body_fill",
+  "op": "normal",
+  "c": [
+   -4.4,
+   5.0,
+   152.5
+  ],
+  "r": [
+   1.8,
+   2.8,
+   1.6
+  ],
+  "amt": 0.18,
+  "mirror": true
+ }
+]

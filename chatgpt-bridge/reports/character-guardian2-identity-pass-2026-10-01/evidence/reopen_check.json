@@ -1,0 +1,147 @@
+{
+ "dirty_before": [],
+ "face_p": {
+  "loaded": true,
+  "morph_total": 865,
+  "rv_morphs": 0,
+  "br_neutral": true,
+  "lod_verts": [
+   34657,
+   19283,
+   9714,
+   4065,
+   1967,
+   903,
+   460,
+   237
+  ],
+  "materials": [
+   "MI_Face_Skin_Baked_LOD0_VT",
+   "MI_Teeth_Baked",
+   "M_Hide",
+   "MI_EyeL_Baked",
+   "MI_EyeR_Baked",
+   "MI_Face_EyeShell",
+   "MI_Face_Eyelashes",
+   "MI_Face_LacrimalFluid",
+   "M_Hide",
+   "MI_Face_Skin_Baked_LOD1_VT",
+   "MI_Face_Skin_Baked_LOD2_VT",
+   "MI_Face_EyelashesHiLODs",
+   "MI_Face_Skin_Baked_LOD3_VT",
+   "MI_Face_Skin_Baked_LOD4_VT",
+   "MI_Face_Skin_Baked_LOD5to7_VT"
+  ],
+  "post_process_abp": "ABP_RV_Face_PostProcess.ABP_RV_Face_PostProcess_C"
+ },
+ "henley_g17e": {
+  "loaded": true,
+  "morph_total": 17,
+  "rv_morphs": 17,
+  "br_neutral": false,
+  "lod_verts": [
+   8116,
+   4439,
+   2469
+  ],
+  "materials": [
+   "MI_LK_Henley_g17e",
+   "MI_LK_Henley_Trim_g17e",
+   "MI_LK_Buttons_g17e"
+  ],
+  "post_process_abp": null
+ },
+ "shorts_g16c": {
+  "loaded": true,
+  "morph_total": 4,
+  "rv_morphs": 4,
+  "br_neutral": false,
+  "lod_verts": [
+   4696,
+   2820,
+   1664
+  ],
+  "materials": [
+   "MI_LK_Shorts_m1",
+   "MI_LK_Shorts_Trim_m1",
+   "MI_LK_Drawstring_m1"
+  ],
+  "post_process_abp": null
+ },
+ "grooms": {
+  "Main": {
+   "loaded": true,
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "lods": 4
+  },
+  "Loose": {
+   "loaded": true,
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "lods": 4
+  },
+  "GB_GD_HairMain_p": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_id20",
+   "target": "SKM_GD_FaceMesh_p"
+  },
+  "GB_GD_HairLoose_p": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_id20",
+   "target": "SKM_GD_FaceMesh_p"
+  },
+  "GB_GD_EyebrowsM_SlightArch_p": {
+   "loaded": true,
+   "groom": "GR_GD_Eyebrows_M_SlightArch",
+   "target": "SKM_GD_FaceMesh_p"
+  },
+  "GB_GD_EyelashesS_Thin_p": {
+   "loaded": true,
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "target": "SKM_GD_FaceMesh_p"
+  }
+ },
+ "cloth": {
+  "loaded": true,
+  "pa": "PHYS_CR_ShortsCollider",
+  "materials": [
+   "MI_LK_Shorts_m1_cloth",
+   "MI_LK_Shorts_Trim_m1_cloth",
+   "MI_LK_Drawstring_m1_cloth"
+  ]
+ },
+ "materials": {
+  "MI_LK_Face_LOD0_VT_g2c17": {
+   "loaded": true,
+   "parent": "MI_LK_Face_LOD0_VT_c14s",
+   "tint": [
+    0.883,
+    0.801,
+    0.68
+   ],
+   "bc": "T_LK_Head_BC_c17"
+  },
+  "MI_LK_Face_LOD1_VT_g2c17": {
+   "loaded": true,
+   "parent": "MI_LK_Face_LOD1_VT_c14s",
+   "tint": [
+    0.883,
+    0.801,
+    0.68
+   ],
+   "bc": "T_LK_Head_BC_c17"
+  },
+  "MI_GD_Body_t1": {
+   "loaded": true,
+   "parent": "MI_LK_Body_Baked_G",
+   "tint": [
+    0.874,
+    0.778,
+    0.65
+   ]
+  },
+  "AS_GD2_RefExpression": {
+   "loaded": true
+  }
+ },
+ "dirty_after": []
+}

@@ -1,0 +1,49 @@
+# GUARDIAN-2 measurements (2026-10-01). Tracker = MetaHuman track_face_landmarks_from_image on UE real renders, Tier A front camera; IPD-normalised. Guide only, not identity proof.
+
+## Tracker front: reference / OLD H (zf) / O / NEW P
+front                    ref_front      zf_front     g2o_front     g2p_front   cand/ref
+ipd_px                     174.332       186.355       187.299       187.595     1.07   1.07   1.08
+eye_width                    0.460         0.432         0.435         0.435     0.94   0.94   0.95
+eye_aperture                 0.157         0.137         0.142         0.152     0.87   0.90   0.96
+eye_ap_ratio                 0.342         0.317         0.326         0.349     0.92   0.95   1.02
+mouth_width                  0.844         0.878         0.863         0.873     1.04   1.02   1.03
+mouth_w/eye_w                1.835         2.033         1.987         2.004     1.11   1.08   1.09
+lower_lip_thick              0.153         0.141         0.143         0.139     0.92   0.93   0.91
+eye_to_stomion               1.119         1.072         1.065         1.090     0.96   0.95   0.97
+nasolab_top_sep              0.522         0.496         0.497         0.488     0.95   0.95   0.93
+nasolab_bot_sep              1.109         1.181         1.178         1.167     1.07   1.06   1.05
+nasolab_top_y                0.500         0.444         0.439         0.436     0.89   0.88   0.87
+mouth_center_dx             -0.016         0.018        -0.009        -0.001    -1.16   0.57   0.08
+corner_drop                  0.039        -0.009         0.032         0.028    -0.24   0.82   0.72
+
+## Per-side asymmetry (image left = character right): reference / OLD H / NEW P
+metric                      ref zf_front. g2p_front
+aperture_l                0.166     0.140     0.152
+eyewidth_l                0.468     0.441     0.446
+aperture_r                0.152     0.135     0.152
+eyewidth_r                0.447     0.421     0.423
+eye_height_r_minus_l      0.004     0.012     0.012
+corner_drop_l             0.037    -0.004     0.024
+corner_drop_r             0.039    -0.010     0.034
+mouth_shift              -0.016     0.018    -0.001
+
+## Face outline widths vs Tier A contour picks (proportional heights), OLD H then NEW P
+menton below eyes (IPD): ref 1.883 cand 1.807 ratio 0.960
+PROP cheek_hi   frac 0.21  width ref 2.088 cand 2.233 ratio 1.069
+PROP cheek_mid  frac 0.47  width ref 1.955 cand 1.899 ratio 0.971
+PROP cheek_lo   frac 0.61  width ref 1.845 cand 1.690 ratio 0.916
+menton below eyes (IPD): ref 1.883 cand 1.857 ratio 0.986
+PROP cheek_hi   frac 0.21  width ref 2.088 cand 2.178 ratio 1.043
+PROP cheek_mid  frac 0.47  width ref 1.955 cand 1.882 ratio 0.963
+PROP cheek_lo   frac 0.61  width ref 1.845 cand 1.668 ratio 0.904
+(jaw / chin rows of this tool include the neck band and are not used)
+
+## Tier B profile (aid), cm, + = candidate more anterior; OLD H then NEW P
+turnaround_p5 PROFILE {"headH": {"scale_px_per_cm": 13.18, "brow_z": 163.8500000000045, "menton_z": 150.6500000000015, "regions_cm": {"brow/forehead": -0.41, "nasion": 0.26, "dorsum": 0.75, "nose tip": 0.19, "subnasal/upper lip": -0.27, "lips": -0.02, "chin": 0.38}}}
+turnaround_p5 PROFILE {"headP": {"scale_px_per_cm": 12.89, "brow_z": 163.8500000000045, "menton_z": 150.35000000000144, "regions_cm": {"brow/forehead": -0.4, "nasion": 0.26, "dorsum": 0.82, "nose tip": 0.07, "subnasal/upper lip": -0.28, "lips": -0.02, "chin": 0.38}}}
+face_study_p4 PROFILE {"headH": {"scale_px_per_cm": 15.76, "brow_z": 163.8500000000045, "menton_z": 150.6500000000015, "regions_cm": {"brow/forehead": -0.56, "nasion": -0.04, "dorsum": 0.21, "nose tip": 0.27, "subnasal/upper lip": -0.61, "lips": -0.38, "chin": 1.2}}}
+face_study_p4 PROFILE {"headP": {"scale_px_per_cm": 15.41, "brow_z": 163.8500000000045, "menton_z": 150.35000000000144, "regions_cm": {"brow/forehead": -0.47, "nasion": 0.07, "dorsum": 0.32, "nose tip": 0.25, "subnasal/upper lip": -0.59, "lips": -0.26, "chin": 1.16}}}
+
+## MetaHumanCharacter fit residual (deployed BR_Neutral LOD0 vs authored target, translation removed), mm [mean, p95]
+RESID headH.npy {"cranium/vault": [1.19, 1.8], "forehead/brow": [0.71, 0.93], "orbits/lids": [0.44, 0.49], "nose": [0.61, 0.72], "midface/cheeks": [0.53, 0.7], "mouth/lips": [0.64, 0.75], "jaw/chin": [0.91, 1.18], "all": [0.7, 1.24]}
+RESID headP.npy {"cranium/vault": [1.46, 2.18], "forehead/brow": [0.85, 1.14], "orbits/lids": [0.54, 0.65], "nose": [0.74, 0.87], "midface/cheeks": [0.65, 0.88], "mouth/lips": [0.8, 0.91], "jaw/chin": [1.1, 1.47], "all": [0.85, 1.49]}

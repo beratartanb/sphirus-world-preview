@@ -1,0 +1,64 @@
+{
+ "animation": "/Game/Sphirus/CharacterLab/CharacterGuardian2_20261001/Face/Diagnostics/AS_GD2_RefExpression",
+ "cases": [
+  {
+   "name": "neutral",
+   "time": 0.5,
+   "controls": {}
+  },
+  {
+   "name": "ref_expr_soft",
+   "time": 1.5,
+   "controls": {
+    "CTRL_expressions_mouthCornerDepressL": 0.132,
+    "CTRL_expressions_mouthCornerDepressR": 0.132,
+    "CTRL_expressions_mouthLipsPressL": 0.06,
+    "CTRL_expressions_mouthLipsPressR": 0.06,
+    "CTRL_expressions_eyeSquintInnerL": 0.096,
+    "CTRL_expressions_eyeSquintInnerR": 0.096,
+    "CTRL_expressions_eyeBlinkL": 0.06,
+    "CTRL_expressions_eyeBlinkR": 0.06,
+    "CTRL_expressions_browDownL": 0.072,
+    "CTRL_expressions_browDownR": 0.072,
+    "CTRL_expressions_eyeCheekRaiseL": 0.03,
+    "CTRL_expressions_eyeCheekRaiseR": 0.03
+   }
+  },
+  {
+   "name": "ref_expr",
+   "time": 2.5,
+   "controls": {
+    "CTRL_expressions_mouthCornerDepressL": 0.22,
+    "CTRL_expressions_mouthCornerDepressR": 0.22,
+    "CTRL_expressions_mouthLipsPressL": 0.1,
+    "CTRL_expressions_mouthLipsPressR": 0.1,
+    "CTRL_expressions_eyeSquintInnerL": 0.16,
+    "CTRL_expressions_eyeSquintInnerR": 0.16,
+    "CTRL_expressions_eyeBlinkL": 0.1,
+    "CTRL_expressions_eyeBlinkR": 0.1,
+    "CTRL_expressions_browDownL": 0.12,
+    "CTRL_expressions_browDownR": 0.12,
+    "CTRL_expressions_eyeCheekRaiseL": 0.05,
+    "CTRL_expressions_eyeCheekRaiseR": 0.05
+   }
+  },
+  {
+   "name": "ref_expr_firm",
+   "time": 3.5,
+   "controls": {
+    "CTRL_expressions_mouthCornerDepressL": 0.33,
+    "CTRL_expressions_mouthCornerDepressR": 0.33,
+    "CTRL_expressions_mouthLipsPressL": 0.15000000000000002,
+    "CTRL_expressions_mouthLipsPressR": 0.15000000000000002,
+    "CTRL_expressions_eyeSquintInnerL": 0.24,
+    "CTRL_expressions_eyeSquintInnerR": 0.24,
+    "CTRL_expressions_eyeBlinkL": 0.15000000000000002,
+    "CTRL_expressions_eyeBlinkR": 0.15000000000000002,
+    "CTRL_expressions_browDownL": 0.18,
+    "CTRL_expressions_browDownR": 0.18,
+    "CTRL_expressions_eyeCheekRaiseL": 0.07500000000000001,
+    "CTRL_expressions_eyeCheekRaiseR": 0.07500000000000001
+   }
+  }
+ ]
+}
