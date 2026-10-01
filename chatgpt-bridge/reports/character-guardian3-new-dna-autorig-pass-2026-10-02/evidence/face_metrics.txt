@@ -1,0 +1,87 @@
+# GUARDIAN-3 measurements (2026-10-02). Tracker = MetaHuman track_face_landmarks_from_image on UE real renders, Tier A front camera, IPD-normalised. Evidence only - not the objective.
+
+## Tracker front: Tier A reference / P (GUARDIAN-2) / NEW (N7)
+front                    ref_front     g2p_front     zhf_front   cand/ref
+ipd_px                     174.332       187.595       182.053     1.08   1.04
+eye_width                    0.460         0.435         0.424     0.95   0.92
+eye_aperture                 0.157         0.152         0.156     0.96   0.99
+eye_ap_ratio                 0.342         0.349         0.368     1.02   1.07
+mouth_width                  0.844         0.873         0.794     1.03   0.94
+mouth_w/eye_w                1.835         2.004         1.873     1.09   1.02
+lower_lip_thick              0.153         0.139         0.155     0.91   1.01
+eye_to_stomion               1.119         1.090         1.101     0.97   0.98
+nasolab_top_sep              0.522         0.488         0.506     0.93   0.97
+nasolab_bot_sep              1.109         1.167         1.070     1.05   0.97
+nasolab_top_y                0.500         0.436         0.503     0.87   1.01
+mouth_center_dx             -0.016        -0.001        -0.011     0.08   0.68
+corner_drop                  0.039         0.028         0.025     0.72   0.65
+
+## Per-side (image left = character right)
+metric                      ref g2p_front zhf_front
+aperture_l                0.166     0.152     0.159
+eyewidth_l                0.468     0.446     0.425
+aperture_r                0.152     0.152     0.153
+eyewidth_r                0.447     0.423     0.418
+eye_height_r_minus_l      0.004     0.012     0.011
+corner_drop_l             0.037     0.024     0.017
+corner_drop_r             0.039     0.034     0.036
+mouth_shift              -0.016    -0.001    -0.011
+
+## Face outline widths vs Tier A contour picks (proportional heights): P then NEW
+menton below eyes (IPD): ref 1.883 cand 1.857 ratio 0.986
+PROP cheek_hi   frac 0.21  width ref 2.088 cand 2.178 ratio 1.043
+PROP cheek_mid  frac 0.47  width ref 1.955 cand 1.882 ratio 0.963
+PROP cheek_lo   frac 0.61  width ref 1.845 cand 1.668 ratio 0.904
+menton below eyes (IPD): ref 1.883 cand 1.797 ratio 0.954
+PROP cheek_hi   frac 0.21  width ref 2.088 cand 2.406 ratio 1.152
+PROP cheek_mid  frac 0.47  width ref 1.955 cand 1.981 ratio 1.013
+PROP cheek_lo   frac 0.61  width ref 1.845 cand 1.873 ratio 1.015
+
+## Tier B profile (aid, cm, + = candidate more anterior; chin row includes a submental-band artifact)
+turnaround_p5 PROFILE {"headP_baseline": {"scale_px_per_cm": 12.89, "brow_z": 163.8500000000045, "menton_z": 150.35000000000144, "regions_cm": {"brow/forehead": -0.4, "nasion": 0.26, "dorsum": 0.82, "nose tip": 0.07, "subnasal/upper lip": -0.28, "lips": -0.02, "chin": 0.38}}}
+face_study_p4 PROFILE {"headP_baseline": {"scale_px_per_cm": 15.41, "brow_z": 163.8500000000045, "menton_z": 150.35000000000144, "regions_cm": {"brow/forehead": -0.47, "nasion": 0.07, "dorsum": 0.32, "nose tip": 0.25, "subnasal/upper lip": -0.59, "lips": -0.26, "chin": 1.16}}}
+turnaround_p5 NEW(N7) PROFILE {"head_new_N6": {"scale_px_per_cm": 13.28, "brow_z": 164.35000000000463, "menton_z": 151.25000000000165, "regions_cm": {"brow/forehead": -0.6, "nasion": -0.38, "dorsum": -0.04, "nose tip": 0.23, "subnasal/upper lip": 0.09, "lips": 0.18, "chin": 0.48}}}
+face_study_p4 NEW(N7) PROFILE {"head_new_N6": {"scale_px_per_cm": 15.88, "brow_z": 164.35000000000463, "menton_z": 151.25000000000165, "regions_cm": {"brow/forehead": -0.42, "nasion": -0.33, "dorsum": -0.24, "nose tip": 0.61, "subnasal/upper lip": 0.1, "lips": 0.14, "chin": 1.65}}}
+
+## Joint comparison P vs NEW (component space, cm) - full table joint_comparison.json
+{
+ "P": {
+  "eye_joint_distance_cm": 6.082,
+  "eye_centre_z": 162.096,
+  "eye_centre_y": 10.259,
+  "eye_to_nosetip_z_cm": 2.805,
+  "eye_to_mouth_z_cm": 6.408,
+  "mouth_corner_width_cm": 4.653,
+  "jaw_joint": [
+   -0.198,
+   5.3341,
+   158.4803
+  ],
+  "eye_to_jaw_z_cm": 3.616,
+  "cheek_outer_width_cm": 7.483
+ },
+ "NEW": {
+  "eye_joint_distance_cm": 5.89,
+  "eye_centre_z": 162.225,
+  "eye_centre_y": 10.216,
+  "eye_to_nosetip_z_cm": 2.879,
+  "eye_to_mouth_z_cm": 6.861,
+  "mouth_corner_width_cm": 4.515,
+  "jaw_joint": [
+   -0.3729,
+   4.74,
+   157.6665
+  ],
+  "eye_to_jaw_z_cm": 4.559,
+  "cheek_outer_width_cm": 7.517
+ }
+}
+facial joints moved > 1 mm: 652 / 843
+FACIAL_L_Eye delta [-0.111, -0.177, 0.127] dist 0.244
+FACIAL_R_Eye delta [0.087, 0.092, 0.132] dist 0.182
+FACIAL_C_Jaw delta [-0.175, -0.594, -0.814] dist 1.023
+FACIAL_C_NoseTip delta [-0.011, -0.456, 0.056] dist 0.46
+FACIAL_L_LipCorner delta [-0.209, 0.121, -0.33] dist 0.409
+FACIAL_R_LipCorner delta [-0.067, 0.256, -0.319] dist 0.414
+FACIAL_C_TeethUpper delta [-0.141, -0.041, -0.084] dist 0.169
+FACIAL_C_TeethLower delta [-0.145, 0.399, -0.05] dist 0.427

@@ -1,0 +1,251 @@
+{
+ "cfg": {
+  "name": "MHC_GD3_N7",
+  "b2": "True",
+  "target_json": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\CharacterGuardian3_20261001\\target_n7.json",
+  "align": "NONE",
+  "rig_type": "JOINTS_AND_BLEND_SHAPES"
+ },
+ "steps": [
+  [
+   "import_body_whole_rig",
+   "ok",
+   13.81,
+   "<ImportErrorCode.SUCCESS: 13>"
+  ],
+  [
+   "fit_state_to_target_vertices",
+   "ok",
+   0.45,
+   "True"
+  ],
+  [
+   "commit_face_state",
+   "ok",
+   0.03,
+   "None"
+  ],
+  [
+   "request_auto_rigging",
+   "ok",
+   70.58,
+   "None"
+  ],
+  [
+   "export_dna",
+   "ok",
+   0.75,
+   "None"
+  ],
+  [
+   "export_geometry",
+   "ok",
+   2.04,
+   "None"
+  ]
+ ],
+ "joints_before_rig": {
+  "FACIAL_L_Eye": [
+   2.7727,
+   11.0643,
+   163.2041
+  ],
+  "FACIAL_R_Eye": [
+   -3.2562,
+   11.0374,
+   163.1967
+  ],
+  "FACIAL_C_FacialRoot": [
+   -0.2324,
+   1.9899,
+   161.0551
+  ],
+  "FACIAL_C_Jaw": [
+   -0.3298,
+   5.3881,
+   158.9057
+  ],
+  "FACIAL_C_LowerLipRotation": [
+   -0.3298,
+   5.3881,
+   158.9057
+  ],
+  "FACIAL_C_TeethUpper": [
+   -0.2489,
+   10.6898,
+   157.5926
+  ],
+  "FACIAL_C_TeethLower": [
+   -0.2341,
+   10.6736,
+   155.7448
+  ],
+  "FACIAL_L_EyelidUpperA": [
+   2.7724,
+   11.0625,
+   163.2038
+  ],
+  "FACIAL_R_EyelidUpperA": [
+   -3.2545,
+   11.0335,
+   163.1978
+  ],
+  "FACIAL_C_Nose": [
+   -0.2357,
+   13.4329,
+   161.5675
+  ],
+  "FACIAL_C_NoseTip": [
+   -0.2831,
+   14.6523,
+   159.7254
+  ],
+  "FACIAL_L_LipCorner": [
+   2.1982,
+   12.1866,
+   156.2209
+  ],
+  "FACIAL_R_LipCorner": [
+   -2.679,
+   12.1573,
+   156.1951
+  ],
+  "FACIAL_C_MouthUpper": [
+   -0.2435,
+   10.8205,
+   156.4937
+  ],
+  "FACIAL_C_MouthLower": [
+   -0.2361,
+   10.7996,
+   156.3563
+  ],
+  "head": [
+   -0.232,
+   2.9258,
+   157.2723
+  ],
+  "neck_02": [
+   -0.232,
+   1.7481,
+   151.4264
+  ],
+  "neck_01": [
+   -0.232,
+   0.504,
+   145.7346
+  ],
+  "_n_bones": 875
+ },
+ "has_face_dna_blendshapes": true,
+ "joints_after_rig": {
+  "FACIAL_L_Eye": [
+   2.698,
+   10.0961,
+   162.221
+  ],
+  "FACIAL_R_Eye": [
+   -3.1868,
+   10.3359,
+   162.2296
+  ],
+  "FACIAL_C_FacialRoot": [
+   -0.2325,
+   2.0027,
+   161.0032
+  ],
+  "FACIAL_C_Jaw": [
+   -0.3729,
+   4.74,
+   157.6665
+  ],
+  "FACIAL_C_LowerLipRotation": [
+   -0.3729,
+   4.74,
+   157.6665
+  ],
+  "FACIAL_C_TeethUpper": [
+   -0.2626,
+   10.3059,
+   157.042
+  ],
+  "FACIAL_C_TeethLower": [
+   -0.2673,
+   10.3271,
+   155.2473
+  ],
+  "FACIAL_L_EyelidUpperA": [
+   2.693,
+   10.106,
+   162.2374
+  ],
+  "FACIAL_R_EyelidUpperA": [
+   -3.1794,
+   10.3326,
+   162.238
+  ],
+  "FACIAL_C_Nose": [
+   -0.2421,
+   12.868,
+   161.3919
+  ],
+  "FACIAL_C_NoseTip": [
+   -0.2858,
+   14.1557,
+   159.3467
+  ],
+  "FACIAL_L_LipCorner": [
+   1.9216,
+   11.5601,
+   155.4197
+  ],
+  "FACIAL_R_LipCorner": [
+   -2.5882,
+   11.742,
+   155.3085
+  ],
+  "FACIAL_C_MouthUpper": [
+   -0.3626,
+   10.6184,
+   155.6177
+  ],
+  "FACIAL_C_MouthLower": [
+   -0.3098,
+   10.6622,
+   155.4916
+  ],
+  "head": [
+   -0.232,
+   2.9258,
+   157.2723
+  ],
+  "neck_02": [
+   -0.232,
+   1.7481,
+   151.4265
+  ],
+  "neck_01": [
+   -0.232,
+   0.504,
+   145.7347
+  ],
+  "_n_bones": 875
+ },
+ "face_mesh_has_dna": true,
+ "face_skeleton": "/MetaHumanCharacter/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+ "dna_files": [
+  "MHC_GD3_N7_Head.dna"
+ ],
+ "saved": true,
+ "exports": [
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/Export/MHC_GD3_N7_Head.MHC_GD3_N7_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N1_Head.MHC_GD3_N1_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N2_Head.MHC_GD3_N2_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N3_Head.MHC_GD3_N3_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N4_Head.MHC_GD3_N4_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N5_Head.MHC_GD3_N5_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N6_Head.MHC_GD3_N6_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/MHC/DNA/MHC_GD3_N7_Head.MHC_GD3_N7_Head"
+ ],
+ "dirty": []
+}

@@ -1,0 +1,125 @@
+{
+ "dirty_before": [],
+ "face_n7": {
+  "loaded": true,
+  "morph_total": 858,
+  "lod_verts": [
+   34657,
+   19285,
+   9720,
+   4067,
+   1967,
+   903,
+   460,
+   243
+  ],
+  "skeleton": "Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "pp_abp": "ABP_Face_PostProcess.ABP_Face_PostProcess_C",
+  "user_data": [
+   "AnimCurveMetaData",
+   "DNAAssetUserData"
+  ]
+ },
+ "henley_g17e": {
+  "loaded": true,
+  "morph_total": 17,
+  "lod_verts": [
+   8116,
+   4439,
+   2469
+  ],
+  "skeleton": "metahuman_base_skel.metahuman_base_skel",
+  "pp_abp": null,
+  "user_data": []
+ },
+ "shorts_g16c": {
+  "loaded": true,
+  "morph_total": 4,
+  "lod_verts": [
+   4696,
+   2820,
+   1664
+  ],
+  "skeleton": "metahuman_base_skel.metahuman_base_skel",
+  "pp_abp": null,
+  "user_data": []
+ },
+ "assets": {
+  "MHC/MHC_GD3_N7": {
+   "loaded": true,
+   "class": "MetaHumanCharacter",
+   "fixed_body_type": true,
+   "has_face_dna_blendshapes": true
+  },
+  "DNA/MHC_GD3_N7_Head": {
+   "loaded": true,
+   "class": "DNA"
+  },
+  "Diagnostics/AS_GD3_RefExpression": {
+   "loaded": true,
+   "class": "AnimSequence"
+  },
+  "Diagnostics/AS_GD3_FacialRig": {
+   "loaded": true,
+   "class": "AnimSequence"
+  },
+  "Hair/GR_LK_Hair_Main_id21": {
+   "loaded": true,
+   "class": "GroomAsset",
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "lods": 4
+  },
+  "Hair/GR_LK_Hair_Loose_id21": {
+   "loaded": true,
+   "class": "GroomAsset",
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "lods": 4
+  },
+  "Skin/MI_LK_Face_LOD0_VT_g3s1": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant",
+   "tint": [
+    0.861,
+    0.749,
+    0.663
+   ]
+  },
+  "Skin/MI_GD3_Body_s1": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "Skin/MI_GD3_EyeL_e2": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "Skin/MI_GD3_EyeR_e2": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "Cloth/CA_CR_Shorts_m1": {
+   "loaded": true,
+   "class": "ChaosClothAsset"
+  },
+  "GB_GD3_HairMain_n7f": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_id21",
+   "target": "SKM_GD3_Face_n7"
+  },
+  "GB_GD3_HairLoose_n7f": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_id21",
+   "target": "SKM_GD3_Face_n7"
+  },
+  "GB_GD3_EyebrowsM_SlightArch_n7f": {
+   "loaded": true,
+   "groom": "GR_GD_Eyebrows_M_SlightArch",
+   "target": "SKM_GD3_Face_n7"
+  },
+  "GB_GD3_EyelashesS_Thin_n7f": {
+   "loaded": true,
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "target": "SKM_GD3_Face_n7"
+  }
+ },
+ "dirty_after": []
+}

@@ -1,0 +1,305 @@
+{
+ "cfg": {
+  "ridge_pca": 0.03,
+  "clamp_pca": 3.5,
+  "free": [
+   "pca",
+   "trans"
+  ],
+  "lam_g": 0.15,
+  "ridge": 0.0001,
+  "max_step_cm": 0.6,
+  "lam": 0.0,
+  "w_curve": 1.0,
+  "w_pick": 1.5,
+  "w_cont": 3.0,
+  "w_prof": 0.25,
+  "w_collar": 50.0,
+  "w_eye": 30.0,
+  "iters": 16,
+  "damp": 0.6,
+  "base": null,
+  "brows": "Saved/Codex/CharacterGuardian3_20261001/brow_bind.json",
+  "w_brow": 2.5,
+  "front_cheeks": true,
+  "w_cheek": 0.6
+ },
+ "hist": [
+  {
+   "curve_front": 7.897,
+   "pick_front": 28.415,
+   "curve_close": 17.831,
+   "pick_close": 20.129,
+   "brow_front": 13.435,
+   "brow_close": 24.71,
+   "contour_front": 10.637,
+   "contour_close": 36.549,
+   "profile_B": 1.315
+  },
+  {
+   "curve_front": 6.837,
+   "pick_front": 27.569,
+   "curve_close": 16.705,
+   "pick_close": 18.866,
+   "brow_front": 12.6,
+   "brow_close": 22.788,
+   "contour_front": 9.904,
+   "contour_close": 28.931,
+   "profile_B": 1.227
+  },
+  {
+   "curve_front": 5.807,
+   "pick_front": 26.723,
+   "curve_close": 15.615,
+   "pick_close": 17.634,
+   "brow_front": 11.855,
+   "brow_close": 20.868,
+   "contour_front": 9.515,
+   "contour_close": 28.202,
+   "profile_B": 1.204
+  },
+  {
+   "curve_front": 5.063,
+   "pick_front": 26.082,
+   "curve_close": 14.787,
+   "pick_close": 16.708,
+   "brow_front": 11.359,
+   "brow_close": 19.4,
+   "contour_front": 9.356,
+   "contour_close": 26.535,
+   "profile_B": 1.131
+  },
+  {
+   "curve_front": 4.393,
+   "pick_front": 25.444,
+   "curve_close": 13.985,
+   "pick_close": 15.816,
+   "brow_front": 10.937,
+   "brow_close": 17.951,
+   "contour_front": 9.229,
+   "contour_close": 24.044,
+   "profile_B": 1.068
+  },
+  {
+   "curve_front": 3.852,
+   "pick_front": 24.845,
+   "curve_close": 13.235,
+   "pick_close": 14.999,
+   "brow_front": 10.603,
+   "brow_close": 16.593,
+   "contour_front": 8.958,
+   "contour_close": 22.806,
+   "profile_B": 1.011
+  },
+  {
+   "curve_front": 3.453,
+   "pick_front": 24.266,
+   "curve_close": 12.431,
+   "pick_close": 14.24,
+   "brow_front": 10.325,
+   "brow_close": 15.224,
+   "contour_front": 9.143,
+   "contour_close": 20.91,
+   "profile_B": 0.945
+  },
+  {
+   "curve_front": 3.356,
+   "pick_front": 23.945,
+   "curve_close": 12.136,
+   "pick_close": 13.947,
+   "brow_front": 10.226,
+   "brow_close": 14.663,
+   "contour_front": 9.079,
+   "contour_close": 19.914,
+   "profile_B": 0.925
+  },
+  {
+   "curve_front": 3.334,
+   "pick_front": 23.828,
+   "curve_close": 11.966,
+   "pick_close": 13.871,
+   "brow_front": 10.198,
+   "brow_close": 14.445,
+   "contour_front": 8.995,
+   "contour_close": 19.608,
+   "profile_B": 0.917
+  },
+  {
+   "curve_front": 3.331,
+   "pick_front": 23.726,
+   "curve_close": 11.894,
+   "pick_close": 13.849,
+   "brow_front": 10.181,
+   "brow_close": 14.344,
+   "contour_front": 8.899,
+   "contour_close": 19.22,
+   "profile_B": 0.91
+  },
+  {
+   "curve_front": 3.326,
+   "pick_front": 23.664,
+   "curve_close": 11.848,
+   "pick_close": 13.867,
+   "brow_front": 10.172,
+   "brow_close": 14.295,
+   "contour_front": 8.915,
+   "contour_close": 19.226,
+   "profile_B": 0.884
+  },
+  {
+   "curve_front": 3.324,
+   "pick_front": 23.601,
+   "curve_close": 11.822,
+   "pick_close": 13.888,
+   "brow_front": 10.166,
+   "brow_close": 14.268,
+   "contour_front": 8.801,
+   "contour_close": 19.2,
+   "profile_B": 0.896
+  },
+  {
+   "curve_front": 3.318,
+   "pick_front": 23.498,
+   "curve_close": 11.84,
+   "pick_close": 13.894,
+   "brow_front": 10.155,
+   "brow_close": 14.241,
+   "contour_front": 8.703,
+   "contour_close": 19.073,
+   "profile_B": 0.898
+  },
+  {
+   "curve_front": 3.321,
+   "pick_front": 23.483,
+   "curve_close": 11.81,
+   "pick_close": 13.939,
+   "brow_front": 10.153,
+   "brow_close": 14.233,
+   "contour_front": 8.663,
+   "contour_close": 19.295,
+   "profile_B": 0.902
+  },
+  {
+   "curve_front": 3.324,
+   "pick_front": 23.446,
+   "curve_close": 11.797,
+   "pick_close": 13.972,
+   "brow_front": 10.15,
+   "brow_close": 14.223,
+   "contour_front": 8.959,
+   "contour_close": 19.158,
+   "profile_B": 0.905
+  },
+  {
+   "curve_front": 3.327,
+   "pick_front": 23.414,
+   "curve_close": 11.79,
+   "pick_close": 14.002,
+   "brow_front": 10.158,
+   "brow_close": 14.233,
+   "contour_front": 8.658,
+   "contour_close": 19.131,
+   "profile_B": 0.905
+  },
+  {
+   "curve_front": 3.322,
+   "pick_front": 23.326,
+   "curve_close": 11.816,
+   "pick_close": 14.008,
+   "brow_front": 10.147,
+   "brow_close": 14.218,
+   "contour_front": 9.045,
+   "contour_close": 19.032,
+   "profile_B": 0.9
+  }
+ ],
+ "ipd_cm": [
+  6.2715670599148465,
+  5.950656688762508
+ ],
+ "eye_z": [
+  162.06894215852128,
+  162.25579707680077
+ ],
+ "max_disp_cm": 1.9326024035869027,
+ "sims": {
+  "front": [
+   0.9760577284225257
+  ],
+  "close": [
+   0.9888092421515294
+  ]
+ },
+ "sims_full": {
+  "front": [
+   0.9760577284225257,
+   [
+    [
+     0.9999260904577134,
+     -0.012157862556885538
+    ],
+    [
+     0.012157862556885533,
+     0.9999260904577137
+    ]
+   ],
+   [
+    12.758130894982344,
+    15.758451526734689
+   ]
+  ],
+  "close": [
+   0.9888092421515294,
+   [
+    [
+     0.9999295564171606,
+     -0.011869380918152705
+    ],
+    [
+     0.01186938091815265,
+     0.9999295564171605
+    ]
+   ],
+   [
+    18.286900262941003,
+    9.675815610966652
+   ]
+  ]
+ },
+ "vertices": {
+  "pronasale": 17088,
+  "subnasale": 22509,
+  "sellion": 1969,
+  "dorsum_mid": 15542,
+  "alar_R": 585,
+  "alar_L": 7227,
+  "alar_near": 585,
+  "ear_tragus": 20282,
+  "ear_lobe": 18902
+ },
+ "model_to_world": {
+  "s": 0.9529281154691155,
+  "R": [
+   [
+    0.9999999283730261,
+    -2.955032858309621e-06,
+    -0.0003784774899725802
+   ],
+   [
+    -3.8792068896768665e-06,
+    0.9998369786546346,
+    -0.018055915920372017
+   ],
+   [
+    0.0003784691458878055,
+    0.018055916095274207,
+    0.9998369070278742
+   ]
+  ],
+  "t": [
+   -0.159104734387514,
+   4.241224554812025,
+   9.128172238652837
+  ]
+ }
+}
