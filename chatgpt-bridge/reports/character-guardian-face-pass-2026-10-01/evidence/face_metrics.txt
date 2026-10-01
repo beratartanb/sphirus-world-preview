@@ -1,0 +1,37 @@
+FRONT (MetaHuman tracker on real renders in the reference frame; IPD-normalised; last cols = cand/ref)
+front                    ref_front      cj_front      zf_front   cand/ref
+ipd_px                     174.332       186.418       186.355     1.07   1.07
+eye_width                    0.460         0.414         0.432     0.90   0.94
+eye_aperture                 0.157         0.106         0.137     0.68   0.87
+eye_ap_ratio                 0.342         0.257         0.317     0.75   0.92
+mouth_width                  0.844         0.863         0.878     1.02   1.04
+mouth_w/eye_w                1.835         2.083         2.033     1.14   1.11
+upper_lip_thick                nan           nan           nan      nan    nan
+lower_lip_thick              0.153         0.153         0.141     1.00   0.92
+eye_to_stomion               1.119         0.994         1.072     0.89   0.96
+eye_to_upperlip                nan           nan           nan      nan    nan
+philtrum_top_to_lip            nan           nan           nan      nan    nan
+nasolab_top_sep              0.522         0.495         0.496     0.95   0.95
+nasolab_bot_sep              1.109         1.168         1.181     1.05   1.07
+nasolab_top_y                0.500         0.454         0.444     0.91   0.89
+mouth_center_dx             -0.016         0.010         0.018    -0.62  -1.16
+corner_drop                  0.039         0.003        -0.009     0.07  -0.24
+
+Mesh-projected (same curves bound to the mesh), front:
+front                    ref_frontpA_head_j_front_curvespH_headH_front_curves   cand/ref
+ipd_px                     174.332       186.386       186.061     1.07   1.07
+eye_width                    0.460         0.414         0.438     0.90   0.95
+eye_aperture                 0.157         0.122         0.143     0.77   0.91
+eye_ap_ratio                 0.342         0.294         0.326     0.86   0.95
+mouth_width                  0.844         0.863         0.878     1.02   1.04
+mouth_w/eye_w                1.835         2.083         2.006     1.14   1.09
+upper_lip_thick                nan           nan           nan      nan    nan
+lower_lip_thick              0.153         0.153         0.145     1.00   0.95
+eye_to_stomion               1.119         0.989         1.082     0.88   0.97
+eye_to_upperlip                nan           nan           nan      nan    nan
+philtrum_top_to_lip            nan           nan           nan      nan    nan
+nasolab_top_sep              0.522         0.495         0.496     0.95   0.95
+nasolab_bot_sep              1.109         1.168         1.196     1.05   1.08
+nasolab_top_y                0.500         0.448         0.446     0.90   0.89
+mouth_center_dx             -0.016         0.011         0.011    -0.67  -0.70
+corner_drop                  0.039         0.003        -0.014     0.07  -0.35
