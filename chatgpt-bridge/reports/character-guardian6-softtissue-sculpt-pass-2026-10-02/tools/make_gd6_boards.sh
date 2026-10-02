@@ -1,0 +1,51 @@
+#!/bin/bash
+# make_gd6_boards.sh : GUARDIAN-6 boards 01-20 -> Saved/Codex/CharacterGuardian6_20261002/boards
+# REFERENCE (Tier A front / ~33 deg 3/4 authority; Tier B only as aid) | GD5 (F5 / k7 / h6: z5f_*, z5_*, z5l_*) | GD6 (S4 sculpt / k7 / h6: z6f_*, z6_*, z6l_*), identical
+# cameras / framing / lights per row (no FOV or light changes between GD5 and GD6); rr7* = GD6 after a fresh restart.
+set -u; cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"
+K=Saved/Codex/CharacterGuardian6_20261002; O=$K/boards; P="$O/parts"; mkdir -p "$P"; C=Saved/Codex/CharacterLookdev_20260930/captures
+F4=Saved/Codex/CharacterGuardian5_20261002/frames; F5=$K/frames; TD=Saved/Codex/CharacterIdentity_20260930/track; PV=$K/pv; RB=Saved/Codex/CharacterGuardian2_20261001/refB; T=Tools/CharacterLookdev_20260930
+PY="/c/Program Files/Epic Games/UE_5.8/Engine/Binaries/ThirdParty/Python3/Win64/python.exe"; BL="/c/Program Files/Blender Foundation/Blender 5.2/blender.exe"
+ROOT="$(cygpath -m "$(pwd)")/"
+B() { local rows=(); for r in "${@:4}"; do rows+=("$(echo "$r" | sed -E "s#(^|, )([^|,]+)\|#\1${ROOT}\2|#g")"); done; "$PY" $T/lk_board.py "$ROOT$O/$1" "$2" "$3" "${rows[@]}" | tail -c 30; echo; }
+ROW() { local out=$1 crop=$2 h=$3; shift 3; CROP=$crop "$BL" -b --factory-startup --python $T/blender_gd_row.py -- "$P/$out" $h "$@" 2>&1 | grep -ci error >/dev/null; }
+RF=$TD/ref_front_x4.png; RC=$TD/ref_close_x2.png
+ROW sc_f.png 330,800,180,620 380 $RF $PV/s_head_F5_front_clay.png $PV/s_headS4_front_clay.png; ROW sc_c.png 380,860,330,794 380 $RC $PV/s_head_F5_close_clay.png $PV/s_headS4_close_clay.png; ROW sc_s.png 0,10000,0,10000 380 $PV/s_head_F5_side_clay.png $PV/s_headS4_side_clay.png
+B 00_SCULPT_TARGETS.jpg "00 SCULPT TARGETS (GUARDIAN-6 Blender sculpt on F5, guided by the Tier A nasolabial tracker curves back-projected to 3D): REFERENCE | GD5 F5 clay | GD6 S4 clay - nasolabial plane step, malar fat-pad deflation, submalar plane, tear-trough transition, nose tip de-rotation / lobule + alar slim, upper-lid weight; jaw lock kept" 1100 "$P/sc_f.png|front: REF / F5 / S4" "$P/sc_c.png|3/4: REF / F5 / S4" "$P/sc_s.png|profile: F5 / S4" "$PV/s_headS4_front_ov.png|S4 curves (red) vs reference tracker (green), $PV/s_headS4_close_ov.png|S4 3/4 curves vs reference"
+B 01_FACE_FRONT_NEUTRAL.jpg "01 FACE FRONT NEUTRAL (Tier A front cam, studio): REFERENCE | GD5 | GD6" 520 "$RF|REFERENCE, $F4/z5f_real_F.png|GD5, $F5/z6f_real_F.png|GD6" "$RF|REFERENCE, $F4/z5f_clay_F.png|GD5 clay, $F5/z6f_clay_F.png|GD6 clay"
+B 02_FACE_3Q_NEUTRAL.jpg "02 FACE 3/4 NEUTRAL (~33 deg cam): REFERENCE | GD5 | GD6" 520 "$RC|REFERENCE, $F4/z5f_real_C.png|GD5, $F5/z6f_real_C.png|GD6" "$RC|REFERENCE, $F4/z5f_clay_C.png|GD5 clay, $F5/z6f_clay_C.png|GD6 clay"
+B 03_FACE_PROFILE_NEUTRAL.jpg "03 FACE PROFILE NEUTRAL: Tier B profile (aid) | GD5 | GD6" 420 "$RB/turnaround_p5.png|Tier B (aid), $C/z5f_real_side_custom.png|GD5, $C/z6f_real_side_custom.png|GD6" "$PV/s_head_F5_side_clay.png|GD5 F5 Blender clay, $PV/s_headS4_side_clay.png|GD6 S4 Blender clay"
+ROW age_f.png 380,780,170,640 380 $RF $F4/z5f_real_F.png $F5/z6f_real_F.png; ROW age_fc.png 380,780,170,640 380 $RF $F4/z5f_clay_F.png $F5/z6f_clay_F.png
+B 04_SOFT_TISSUE_AGE_FRONT.jpg "04 SOFT-TISSUE AGE FRONT (submalar plane, descended malar fat, lid-cheek junction, nasolabial / perioral planes, prejowl / jowl weight; no wrinkle carving): REF / GD5 / GD6" 1100 "$P/age_f.png|real: REF / GD5 / GD6" "$P/age_fc.png|clay: REF / GD5 / GD6"
+ROW age_c.png 420,860,330,780 380 $RC $F4/z5f_real_C.png $F5/z6f_real_C.png; ROW age_cc.png 420,860,330,780 380 $RC $F4/z5f_clay_C.png $F5/z6f_clay_C.png
+B 05_SOFT_TISSUE_AGE_3Q.jpg "05 SOFT-TISSUE AGE 3/4: REF / GD5 / GD6" 1100 "$P/age_c.png|real: REF / GD5 / GD6" "$P/age_cc.png|clay: REF / GD5 / GD6"
+ROW eye_f.png 350,500,220,610 300 $RF $F4/z5f_real_F.png $F5/z6f_real_F.png; ROW eye_c.png 450,600,400,730 300 $RC $F4/z5f_real_C.png $F5/z6f_real_C.png
+B 06_EYE_AREA_CHARACTER.jpg "06 EYE AREA CHARACTER (lateral hood weight above the crease, lid-cheek junction, under-eye tonality; joints / fissures unchanged): REF / GD5 / GD6" 1000 "$P/eye_f.png|front" "$P/eye_c.png|3/4"
+ROW nose_f.png 430,630,310,530 300 $RF $F4/z5f_real_F.png $F5/z6f_real_F.png; ROW nose_c.png 460,710,470,740 300 $RC $F4/z5f_real_C.png $F5/z6f_real_C.png; ROW nose_cc.png 460,710,470,740 300 $RC $F4/z5f_clay_C.png $F5/z6f_clay_C.png
+B 07_NOSE_REFINEMENT.jpg "07 NOSE (tip de-bulbed, supratip / alar crease defined, nose roughness up / specular down): REF / GD5 / GD6" 1000 "$P/nose_f.png|front real" "$P/nose_c.png|3/4 real" "$P/nose_cc.png|3/4 clay"
+ROW lip_f.png 560,700,280,550 280 $RF $F4/z5f_real_F.png $F5/z6f_real_F.png; ROW lip_c.png 630,810,450,720 280 $RC $F4/z5f_real_C.png $F5/z6f_real_C.png; ROW lip_s.png 250,900,550,1150 300 $PV/s_head_F5_side_clay.png $PV/s_headS4_side_clay.png
+B 08_LIPS_REFINEMENT.jpg "08 LIPS / MOUTH VOLUME (lower lip volume / projection reduced, upper vermilion thinned, corners embedded + subtle drop; width unchanged): REF / GD5 / GD6" 1000 "$P/lip_f.png|front" "$P/lip_c.png|3/4" "$P/lip_s.png|profile clay GD5 / GD6"
+B 09_SKIN_MACRO.jpg "09 SKIN MACRO (k5: olive-beige kept; pore-cavity tone, fine freckle layer, stronger mottling, under-eye / plane tonality): REFERENCE | GD5 k3 | GD6 k5" 520 "$RF|REFERENCE, $F4/z5f_real_F.png|GD5, $F5/z6f_real_F.png|GD6" "$RC|REFERENCE, $F4/z5f_real_C.png|GD5, $F5/z6f_real_C.png|GD6"
+ROW micro.png 640,1040,430,830 420 $C/z5f_rig_neutral_front_custom.png $C/z6f_rig_neutral_front_custom.png; ROW micro_ref.png 470,620,230,400 420 $RF
+ROW dist.png 380,640,200,600 420 $RF $F4/z5f_real_F.png $F5/z6f_real_F.png
+B 10_SKIN_MICRO.jpg "10 SKIN MICRO (close cam GD5 | GD6) + PORTRAIT-DISTANCE read (REF / GD5 / GD6 at the Tier A front framing)" 800 "$P/micro_ref.png|REFERENCE cheek, $P/micro.png|close cam: GD5 / GD6" "$P/dist.png|portrait distance: REF / GD5 / GD6"
+r4=""; r5=""; for L in A_studio B_grazing C_grazingtop D_gameplay E_interior; do r4="$r4, $C/z5l_${L}_front_custom.png|GD5 $L"; r5="$r5, $C/z6l_${L}_front_custom.png|GD6 $L"; done
+r53=""; for L in A_studio B_grazing C_grazingtop D_gameplay E_interior; do r53="$r53, $C/z6l_${L}_3q_custom.png|GD6 $L 3/4"; done
+B 11_SKIN_LIGHTING_A_E.jpg "11 SKIN LIGHTING A-E (A studio, B grazing, C grazing top, D gameplay sun+sky, E interior): GD5 row | GD6 rows" 300 "${r4#, }" "${r5#, }" "${r53#, }"
+s4=""; s5=""; for L in studio grazing gameplay interior; do s4="$s4, $C/z5_seam_${L}_front_custom.png|GD5 $L"; s5="$s5, $C/z6_seam_${L}_front_custom.png|GD6 $L"; done
+B 12_HEAD_BODY_SEAM.jpg "12 HEAD / BODY SEAM (GD6: body SRMF blended toward the head collar, collar albedo matched to body BC, body spec / concavity response = face): GD5 | GD6" 330 "${s4#, }" "${s5#, }" "$C/z6_seam_studio_3q_custom.png|GD6 studio 3/4, $C/z6_seam_grazing_3q_custom.png|GD6 grazing 3/4, $C/z6_seam_gameplay_3q_custom.png|GD6 gameplay 3/4, $C/z6_seam_interior_3q_custom.png|GD6 interior 3/4"
+B 13_HAIR_FRONT_3Q.jpg "13 HAIR FRONT / 3/4 (h3 on the h2 hierarchy: asymmetric straighter stringier framing, fewer flyaways, matte weighted material): REFERENCE | GD5 h2 | GD6 h3" 520 "$RF|REFERENCE, $F4/z5f_hair_F.png|GD5 h2, $F5/z6f_hair_F.png|GD6 h3" "$RC|REFERENCE, $F4/z5f_hair_C.png|GD5 h2, $F5/z6f_hair_C.png|GD6 h3"
+ROW hl_f.png 60,420,150,650 360 $RF $F4/z5f_hair_F.png $F5/z6f_hair_F.png; ROW hl_c.png 100,520,250,780 360 $RC $F4/z5f_hair_C.png $F5/z6f_hair_C.png
+B 14_HAIRLINE_TEMPLE.jpg "14 HAIRLINE / TEMPLE (softer temple edge: wider density ramp, more fine edge hairs): REF / GD5 / GD6" 1000 "$P/hl_f.png|front" "$P/hl_c.png|3/4"
+B 15_BUN_REFINEMENT.jpg "15 BUN (smaller, less spherical, 7 loop groups, escaping ends kept, low placement kept): Tier B (aid) | GD5 | GD6" 420 "$RB/turnaround_p4.png|Tier B back, $C/z5f_hair_back_custom.png|GD5 back, $C/z6f_hair_back_custom.png|GD6 back" "$RB/turnaround_p5.png|Tier B side, $C/z5f_hair_side_custom.png|GD5 side, $C/z6f_hair_side_custom.png|GD6 side"
+B 16_REFERENCE_EXPRESSION.jpg "16 REFERENCE EXPRESSION (QA pose on the GD6 rig, not baked): REFERENCE | GD5 | GD6" 380 "$RF|REFERENCE, $F4/z5f_expr_ref_expr_F.png|GD5 ref expr, $F5/z6f_expr_ref_expr_F.png|GD6 ref expr, $F5/z6f_expr_neutral_F.png|GD6 neutral" "$RC|REFERENCE, $F4/z5f_expr_ref_expr_C.png|GD5 3/4, $F5/z6f_expr_ref_expr_C.png|GD6 3/4"
+B 17_FULL_CHARACTER.jpg "17 FULL CHARACTER (GD6 face F5 + skin k5 + hair h3 + Henley g17e + Chaos shorts m1)" 440 "$C/z6_full_fl_studio_front_custom.png|studio front, $C/z6_full_fl_studio_3q_custom.png|studio 3/4, $C/z6_full_fl_studio_side_custom.png|side, $C/z6_full_fl_studio_back_custom.png|back" "$C/z6_full_fl_gameplay_front_custom.png|gameplay front, $C/z6_full_fl_gameplay_3q_custom.png|gameplay 3/4, $C/z6_full_fl_walk_3q_custom.png|walk, $C/z6_full_fl_jog_side_custom.png|jog"
+L1=(neutral blink blink_left blink_right look_left look_right look_up look_down brows_up brows_down smile frown); L2=(cheek_compress lips_closed mouth_open jaw_open jaw_left jaw_right ph_oo ph_ee ph_mbp ph_w extreme)
+r1=""; r2=""; r3=""; for c in "${L1[@]}"; do r1="$r1, $C/z6f_rig_${c}_front_custom.png|$c"; done; for c in "${L2[@]}"; do r2="$r2, $C/z6f_rig_${c}_front_custom.png|$c"; done
+for c in neutral blink lips_closed ph_mbp jaw_open smile frown cheek_compress extreme; do r3="$r3, $C/z6f_rig_${c}_3q_custom.png|$c 3/4"; done
+B 18_RIG_TEST.jpg "18 RIG TEST (GD6 fresh auto-rig F5: RigLogic + blend shapes): 23 cases front + closure 3/4" 170 "${r1#, }" "${r2#, }" "${r3#, }"
+r=""; for l in lod0 lod1 lod2 lod3; do r="$r, $C/z6_lod_${l}_front_custom.png|face $l"; done; g=""; for l in glod0 glod1 glod2; do g="$g, $C/z6_lod_${l}_3q_custom.png|garment $l"; done
+B 19_LOD_TEST.jpg "19 LOD TEST (GD6 face 8 LODs, groom LODs)" 330 "${r#, }" "${g#, }"
+B 20_AFTER_RESTART.jpg "20 AFTER FRESH RESTART (GD6 assets from disk)" 300 "$F5/rr7f_clay_F.png|clay front, $F5/rr7f_real_F.png|real front, $F5/rr7f_real_C.png|real 3/4, $F5/rr7f_hair_F.png|hair front, $F5/rr7f_hair_C.png|hair 3/4" \
+  "$C/rr7f_rig_blink_front_custom.png|blink, $C/rr7f_rig_lips_closed_front_custom.png|lips closed, $C/rr7f_rig_jaw_open_front_custom.png|jaw open, $C/rr7f_rig_extreme_front_custom.png|extreme, $C/rr7_full_fl_studio_front_custom.png|full front, $C/rr7_lod_lod2_front_custom.png|LOD2"
+ls "$O" | grep -c jpg
