@@ -1,0 +1,249 @@
+{
+ "cfg": {
+  "name": "MHC_GD4_E1",
+  "b2": "True",
+  "target_json": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\CharacterGuardian4_20261002\\target_e1.json",
+  "align": "NONE",
+  "rig_type": "JOINTS_AND_BLEND_SHAPES"
+ },
+ "steps": [
+  [
+   "import_body_whole_rig",
+   "ok",
+   16.26,
+   "<ImportErrorCode.SUCCESS: 13>"
+  ],
+  [
+   "fit_state_to_target_vertices",
+   "ok",
+   0.54,
+   "True"
+  ],
+  [
+   "commit_face_state",
+   "ok",
+   0.05,
+   "None"
+  ],
+  [
+   "request_auto_rigging",
+   "ok",
+   71.94,
+   "None"
+  ],
+  [
+   "export_dna",
+   "ok",
+   0.98,
+   "None"
+  ],
+  [
+   "export_geometry",
+   "ok",
+   2.4,
+   "None"
+  ]
+ ],
+ "joints_before_rig": {
+  "FACIAL_L_Eye": [
+   2.7727,
+   11.0643,
+   163.2041
+  ],
+  "FACIAL_R_Eye": [
+   -3.2562,
+   11.0374,
+   163.1967
+  ],
+  "FACIAL_C_FacialRoot": [
+   -0.2324,
+   1.9899,
+   161.0551
+  ],
+  "FACIAL_C_Jaw": [
+   -0.3298,
+   5.3881,
+   158.9057
+  ],
+  "FACIAL_C_LowerLipRotation": [
+   -0.3298,
+   5.3881,
+   158.9057
+  ],
+  "FACIAL_C_TeethUpper": [
+   -0.2489,
+   10.6898,
+   157.5926
+  ],
+  "FACIAL_C_TeethLower": [
+   -0.2341,
+   10.6736,
+   155.7448
+  ],
+  "FACIAL_L_EyelidUpperA": [
+   2.7724,
+   11.0625,
+   163.2038
+  ],
+  "FACIAL_R_EyelidUpperA": [
+   -3.2545,
+   11.0335,
+   163.1978
+  ],
+  "FACIAL_C_Nose": [
+   -0.2357,
+   13.4329,
+   161.5675
+  ],
+  "FACIAL_C_NoseTip": [
+   -0.2831,
+   14.6523,
+   159.7254
+  ],
+  "FACIAL_L_LipCorner": [
+   2.1982,
+   12.1866,
+   156.2209
+  ],
+  "FACIAL_R_LipCorner": [
+   -2.679,
+   12.1573,
+   156.1951
+  ],
+  "FACIAL_C_MouthUpper": [
+   -0.2435,
+   10.8205,
+   156.4937
+  ],
+  "FACIAL_C_MouthLower": [
+   -0.2361,
+   10.7996,
+   156.3563
+  ],
+  "head": [
+   -0.232,
+   2.9258,
+   157.2723
+  ],
+  "neck_02": [
+   -0.232,
+   1.7481,
+   151.4264
+  ],
+  "neck_01": [
+   -0.232,
+   0.504,
+   145.7346
+  ],
+  "_n_bones": 875
+ },
+ "has_face_dna_blendshapes": true,
+ "joints_after_rig": {
+  "FACIAL_L_Eye": [
+   2.7045,
+   10.0967,
+   162.2205
+  ],
+  "FACIAL_R_Eye": [
+   -3.19,
+   10.335,
+   162.2305
+  ],
+  "FACIAL_C_FacialRoot": [
+   -0.2325,
+   2.0027,
+   161.0032
+  ],
+  "FACIAL_C_Jaw": [
+   -0.3648,
+   4.6592,
+   157.6747
+  ],
+  "FACIAL_C_LowerLipRotation": [
+   -0.3648,
+   4.6592,
+   157.6748
+  ],
+  "FACIAL_C_TeethUpper": [
+   -0.2513,
+   10.2824,
+   157.0417
+  ],
+  "FACIAL_C_TeethLower": [
+   -0.2539,
+   10.2946,
+   155.2796
+  ],
+  "FACIAL_L_EyelidUpperA": [
+   2.7,
+   10.1078,
+   162.2358
+  ],
+  "FACIAL_R_EyelidUpperA": [
+   -3.1834,
+   10.3333,
+   162.2387
+  ],
+  "FACIAL_C_Nose": [
+   -0.2423,
+   12.8737,
+   161.368
+  ],
+  "FACIAL_C_NoseTip": [
+   -0.2842,
+   14.1435,
+   159.3496
+  ],
+  "FACIAL_L_LipCorner": [
+   1.9744,
+   11.5129,
+   155.4061
+  ],
+  "FACIAL_R_LipCorner": [
+   -2.6184,
+   11.6961,
+   155.2903
+  ],
+  "FACIAL_C_MouthUpper": [
+   -0.3598,
+   10.5785,
+   155.621
+  ],
+  "FACIAL_C_MouthLower": [
+   -0.31,
+   10.6235,
+   155.4836
+  ],
+  "head": [
+   -0.232,
+   2.9258,
+   157.2723
+  ],
+  "neck_02": [
+   -0.232,
+   1.7481,
+   151.4265
+  ],
+  "neck_01": [
+   -0.232,
+   0.504,
+   145.7347
+  ],
+  "_n_bones": 875
+ },
+ "face_mesh_has_dna": true,
+ "face_skeleton": "/MetaHumanCharacter/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+ "dna_files": [
+  "MHC_GD4_E1_Head.dna"
+ ],
+ "saved": true,
+ "exports": [
+  "/Game/Sphirus/CharacterLab/CharacterGuardian4_20261002/MHC/Export/MHC_GD4_E1_Head.MHC_GD4_E1_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian4_20261002/MHC/DNA/MHC_GD4_B1_Head.MHC_GD4_B1_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian4_20261002/MHC/DNA/MHC_GD4_E1_Head.MHC_GD4_E1_Head",
+  "/Game/Sphirus/CharacterLab/CharacterGuardian4_20261002/MHC/DNA/MHC_GD4_S2_Head.MHC_GD4_S2_Head"
+ ],
+ "dirty": [
+  "/Game/Sphirus/CharacterLab/HeadMetaHuman_20260928/Diagnostics/M_QA_Clay"
+ ]
+}
