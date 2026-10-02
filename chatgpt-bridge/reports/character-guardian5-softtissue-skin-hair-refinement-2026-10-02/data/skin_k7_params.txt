@@ -1,0 +1,1 @@
+SUN=0.6 SPOTS=4.0 RED=0.01 MOT1=0.045 MOT2=0.03 PERI=0.32 LIPMIX=0.32 UNDEREYE=0.10 PL_SIG=1.9 PDEPTH=1.3 GRAIN=0.14 FH_BUMP=0.5 RNOSE=0.03 SNOSE=-0.05 RBREAK=0.03 PORE=0.62 PORE_BC=0.10 FRECK=2.0 FRECK_A=0.24 PLANE_TONE=0.08 (blender_gd4_skin.py k7; then blender_fm_seam_match.py -> k7b; body SRMF via blender_gd_body_seam.py MIX 0.65)
