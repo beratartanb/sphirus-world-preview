@@ -1,0 +1,74 @@
+{
+ "dirty_before": [],
+ "face_r3": {
+  "loaded": true,
+  "morph_total": 858,
+  "lod_verts": [
+   34659,
+   19283,
+   9714,
+   4067,
+   1967,
+   903,
+   460,
+   243
+  ],
+  "user_data": [
+   "AnimCurveMetaData",
+   "DNAAssetUserData"
+  ],
+  "skeleton": "/MetaHumanCharacter/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "dna": "/Game/Sphirus/CharacterLab/GD11_HeadRefinement_20261003/MHC/DNA/MHC_G11R_R3_Head.MHC_G11R_R3_Head"
+ },
+ "assets": {
+  "GR_LK_Hair_Main_h32": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "GR_LK_Hair_Loose_h32": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "MI_GD_Hair_h32": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "MI_GD_HairLoose_h32": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "MHC_G11R_R3": {
+   "loaded": true,
+   "class": "MetaHumanCharacter"
+  },
+  "MHC_G11R_R3_Head": {
+   "loaded": true,
+   "class": "DNA"
+  },
+  "AS_G11R_FacialRig": {
+   "loaded": true,
+   "class": "AnimSequence"
+  },
+  "GB_G11R_HairMain_r3h32": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_h32",
+   "target": "SKM_G11R_Face_r3"
+  },
+  "GB_G11R_HairLoose_r3h32": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_h32",
+   "target": "SKM_G11R_Face_r3"
+  },
+  "GB_G11R_EyebrowsM_SlightArch_r3h32": {
+   "loaded": true,
+   "groom": "GR_GD_Eyebrows_M_SlightArch",
+   "target": "SKM_G11R_Face_r3"
+  },
+  "GB_G11R_EyelashesS_Thin_r3h32": {
+   "loaded": true,
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "target": "SKM_G11R_Face_r3"
+  }
+ },
+ "dirty_after": []
+}
