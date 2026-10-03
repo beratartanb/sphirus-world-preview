@@ -1,0 +1,176 @@
+{
+ "mx": -0.25,
+ "ops": [
+  {
+   "name": "nose_base_fill",
+   "type": "hfill",
+   "x": [
+    -2.5,
+    2.5
+   ],
+   "z": [
+    157.95,
+    159.45
+   ],
+   "sigma": 0.35,
+   "amt": 0.9,
+   "cap": 0.12,
+   "d0": 0.3,
+   "d1": 0.3,
+   "y_floor": 12.0,
+   "nmin": 0.25,
+   "nzmin": 0.2
+  },
+  {
+   "name": "alar_cheek_fill",
+   "type": "hfill",
+   "x": [
+    -2.8,
+    2.8
+   ],
+   "z": [
+    157.7,
+    159.3
+   ],
+   "sigma": 0.5,
+   "amt": 0.6,
+   "cap": 0.1,
+   "d0": 0.3,
+   "d1": 0.3,
+   "y_floor": 11.8,
+   "nmin": 0.25,
+   "nzmin": 0.2
+  },
+  {
+   "name": "alar_rim_soft",
+   "type": "relax",
+   "c": [
+    1.45,
+    13.7,
+    158.75
+   ],
+   "r": [
+    0.6,
+    0.6,
+    0.45
+   ],
+   "iters": 2
+  },
+  {
+   "name": "philtrum_lip_fill",
+   "type": "hfill",
+   "x": [
+    -1.9,
+    1.9
+   ],
+   "z": [
+    156.45,
+    157.5
+   ],
+   "sigma": 0.3,
+   "amt": 0.6,
+   "cap": 0.05,
+   "d0": 0.25,
+   "d1": 0.2
+  },
+  {
+   "name": "lower_lip_trim",
+   "type": "hfill",
+   "mode": "cut",
+   "x": [
+    -1.8,
+    1.8
+   ],
+   "z": [
+    154.55,
+    155.3
+   ],
+   "sigma": 0.45,
+   "amt": 0.5,
+   "cap": 0.06,
+   "d0": 0.25,
+   "d1": 0.2
+  },
+  {
+   "name": "lower_lip_lateral_taper",
+   "type": "hfill",
+   "x": [
+    -2.7,
+    2.7
+   ],
+   "z": [
+    154.5,
+    155.25
+   ],
+   "sigma": 0.4,
+   "amt": 0.7,
+   "cap": 0.07,
+   "d0": 0.25,
+   "d1": 0.2
+  },
+  {
+   "name": "sublabial_fill",
+   "type": "hfill",
+   "x": [
+    -2.4,
+    2.4
+   ],
+   "z": [
+    153.5,
+    154.75
+   ],
+   "sigma": 0.4,
+   "amt": 0.8,
+   "cap": 0.1,
+   "d0": 0.3,
+   "d1": 0.25
+  },
+  {
+   "name": "corner_modiolus_fill",
+   "type": "hfill",
+   "x": [
+    -3.2,
+    3.2
+   ],
+   "z": [
+    154.8,
+    156.6
+   ],
+   "sigma": 0.45,
+   "amt": 0.5,
+   "cap": 0.06,
+   "d0": 0.2,
+   "d1": 0.15
+  },
+  {
+   "name": "perioral_relax_upper",
+   "type": "relax",
+   "c": [
+    1.0,
+    13.5,
+    156.9
+   ],
+   "r": [
+    1.6,
+    0.9,
+    0.5
+   ],
+   "iters": 2
+  },
+  {
+   "name": "perioral_relax_lower",
+   "type": "relax",
+   "c": [
+    1.0,
+    13.0,
+    154.4
+   ],
+   "r": [
+    1.8,
+    1.0,
+    0.55
+   ],
+   "iters": 2
+  }
+ ]
+}
