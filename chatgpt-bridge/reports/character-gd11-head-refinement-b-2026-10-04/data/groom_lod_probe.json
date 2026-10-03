@@ -1,0 +1,137 @@
+{
+ "assets": {
+  "GR_LK_Hair_Main_h34": {
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "groups": [
+    [
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 1.0,
+      "curve_decimation": 1.0,
+      "vertex_decimation": 1.0,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     },
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 0.44999998807907104,
+      "curve_decimation": 0.5,
+      "vertex_decimation": 0.699999988079071,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     },
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 0.20000000298023224,
+      "curve_decimation": 0.20000000298023224,
+      "vertex_decimation": 0.5,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     },
+     {
+      "geometry_type": "<GroomGeometryType.MESHES: 2>",
+      "screen_size": 0.07999999821186066,
+      "curve_decimation": 0.10000000149011612,
+      "vertex_decimation": 0.5,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     }
+    ]
+   ],
+   "hair_groups_cards": 0,
+   "hair_groups_meshes": 1
+  },
+  "GR_LK_Hair_Loose_h34": {
+   "lod_mode": "<GroomLODMode.DEFAULT: 0>",
+   "groups": [
+    [
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 1.0,
+      "curve_decimation": 1.0,
+      "vertex_decimation": 1.0,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     },
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 0.44999998807907104,
+      "curve_decimation": 0.5,
+      "vertex_decimation": 0.699999988079071,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     },
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 0.20000000298023224,
+      "curve_decimation": 0.25,
+      "vertex_decimation": 0.5,
+      "angular_threshold": 1.0,
+      "visible": true,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     },
+     {
+      "geometry_type": "<GroomGeometryType.STRANDS: 0>",
+      "screen_size": 0.07999999821186066,
+      "curve_decimation": 0.10000000149011612,
+      "vertex_decimation": 0.5,
+      "angular_threshold": 1.0,
+      "visible": false,
+      "simulation": "<GroomOverrideType.AUTO: 0>"
+     }
+    ]
+   ],
+   "hair_groups_cards": 0,
+   "hair_groups_meshes": 0
+  }
+ },
+ "components": {
+  "GroomComponent0": {
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "binding": "GB_G11RB_EyelashesS_Thin_d85h34",
+   "forced_lod_test": {
+    "-1": "ERR 'GroomComponent' object has no attribute 'set_forced_lod'",
+    "0": "ERR 'GroomComponent' object has no attribute 'set_forced_lod'",
+    "1": "ERR 'GroomComponent' object has no attribute 'set_forced_lod'",
+    "2": "ERR 'GroomComponent' object has no attribute 'set_forced_lod'",
+    "3": "ERR 'GroomComponent' object has no attribute 'set_forced_lod'"
+   },
+   "api": [
+    "add_force",
+    "add_force_at_location",
+    "add_force_at_location_local",
+    "add_force_at_position",
+    "add_radial_force",
+    "enable_auto_lod_generation",
+    "exclude_for_specific_hlod_levels",
+    "force_mip_streaming",
+    "hlod_batching_policy",
+    "ignore_radial_force",
+    "is_excluded_from_hlod_level",
+    "prestream_mesh_lods",
+    "register_as_focal_point_in_physics_replication_lod",
+    "set_excluded_from_hlod_level",
+    "unregister_as_focal_point_in_physics_replication_lod"
+   ],
+   "props": {
+    "use_cards": false,
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x000001E1D3FD5700) {override_settings: False, simulation_setup: {reset_simulation: Fa"
+   }
+  }
+ },
+ "cvars": {
+  "r.HairStrands.LODMode": 1,
+  "r.HairStrands.ForceLOD": 0,
+  "r.HairStrands.LOD.Force": 0,
+  "r.HairStrands.Enable": 1,
+  "r.HairStrands.Cards": 1,
+  "r.HairStrands.Meshes": 1,
+  "r.HairStrands.Strands": 1
+ }
+}
