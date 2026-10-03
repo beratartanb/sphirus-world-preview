@@ -1,0 +1,60 @@
+{
+ "dirty_before": [],
+ "face_g": {
+  "loaded": true,
+  "morph_total": 858,
+  "lod_verts": [
+   34657,
+   19283,
+   9714,
+   4067,
+   1967,
+   903,
+   460,
+   243
+  ],
+  "user_data": [
+   "AnimCurveMetaData",
+   "DNAAssetUserData"
+  ]
+ },
+ "assets": {
+  "GR_LK_Hair_Main_h24": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "GR_LK_Hair_Loose_h24": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "MHC_GD12C_G": {
+   "loaded": true,
+   "class": "MetaHumanCharacter"
+  },
+  "MHC_GD12C_G_Head": {
+   "loaded": true,
+   "class": "DNA"
+  },
+  "GB_GD12C_HairMain_g12c": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_h24",
+   "target": "SKM_GD12C_Face_g"
+  },
+  "GB_GD12C_HairLoose_g12c": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_h24",
+   "target": "SKM_GD12C_Face_g"
+  },
+  "GB_GD12C_EyebrowsM_SlightArch_g12c": {
+   "loaded": true,
+   "groom": "GR_GD_Eyebrows_M_SlightArch",
+   "target": "SKM_GD12C_Face_g"
+  },
+  "GB_GD12C_EyelashesS_Thin_g12c": {
+   "loaded": true,
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "target": "SKM_GD12C_Face_g"
+  }
+ },
+ "dirty_after": []
+}

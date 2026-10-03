@@ -1,0 +1,53 @@
+now False
+Tools/CharacterLookdev_20260930/gd12c_hair_cycle.sh: line 3: $2: unbound variable
+"body_srmf": "T_LK_Body_SRMF_k11b"
+"request_auto_rigging", "ok", 70.86
+"has_face_dna_blendshapes": true
+RIGFIT face mean 0.017 p95 0.068 max 0.350 eyes 0.000
+"morphs": 858
+"face_dna": "/Game/Sphirus/CharacterLab/CharacterGuardian12C_20261003/MHC/DNA/MHC_GD12C_G_Head.MHC_GD12C_G_Head"
+DONE g4g_clay
+DONE g4g_real
+DONE g4g_hair
+GD12C_CYCLE_DONE g
+C:              931G  909G   22G  98% /c
+CHAIN_A_DONE
+HC {"MI_GD_HairLoose_h24": {"hairMelanin": 0.6200000047683716}, "MI_GD_HairLoose_h24_saved": true}
+DONE g4g_hair
+DONE g4g_rig
+DONE g4g_expr
+12
+DONE z12c_neck_gt
+DONE z12c_seam_gt
+DONE z12c_lod_gt
+GD12C_FINAL_CAPS_DONE z12c
+ZEROBYTES 0
+C:              931G  910G   22G  98% /c
+JD {'F': 875, 'G': 875}
+ "eye_joint_distance_cm": 5.904,
+ "eye_to_nosetip_z_cm": 3.04,
+ "mouth_corner_width_cm": 4.666,
+ "cheek_outer_width_cm": 7.579
+ "eye_joint_distance_cm": 5.904,
+ "eye_to_nosetip_z_cm": 3.045,
+ "mouth_corner_width_cm": 4.698,
+ "cheek_outer_width_cm": 7.583
+moved>1mm 26 / 843
+now False
+dirty [] []
+face {'loaded': True, 'morph_total': 858, 'lod_verts': [34657, 19283, 9714, 4067, 1967, 903, 460, 243], 'user_data': ['AnimCurveMetaData', 'DNAAssetUserData']}
+  GR_LK_Hair_Main_h24 {'loaded': True, 'class': 'GroomAsset'}
+  GR_LK_Hair_Loose_h24 {'loaded': True, 'class': 'GroomAsset'}
+  MHC_GD12C_G {'loaded': True, 'class': 'MetaHumanCharacter'}
+  MHC_GD12C_G_Head {'loaded': True, 'class': 'DNA'}
+  GB_GD12C_HairMain_g12c {'loaded': True, 'groom': 'GR_LK_Hair_Main_h24', 'target': 'SKM_GD12C_Face_g'}
+  GB_GD12C_HairLoose_g12c {'loaded': True, 'groom': 'GR_LK_Hair_Loose_h24', 'target': 'SKM_GD12C_Face_g'}
+  GB_GD12C_EyebrowsM_SlightArch_g12c {'loaded': True, 'groom': 'GR_GD_Eyebrows_M_SlightArch', 'target': 'SKM_GD12C_Face_g'}
+  GB_GD12C_EyelashesS_Thin_g12c {'loaded': True, 'groom': 'GR_GD_Eyelashes_S_Thin', 'target': 'SKM_GD12C_Face_g'}
+DONE g4g_real
+DONE g4g_hair
+DONE g4g_rig
+DONE rr14_lod_gt
+     24 IDENTICAL
+C:              931G  910G   21G  98% /c
+G12C_CHAIN_DONE
