@@ -1,0 +1,39 @@
+DONE g4f_hair
+DONE g4f_rig
+DONE g4f_expr
+12
+DONE z12_neck_gt
+DONE z12_seam_gt
+DONE z12_lod_gt
+GD12_FINAL_CAPS_DONE z12
+ZEROBYTES 0
+C:              931G  915G   17G  99% /c
+DONE z12l
+JD {'E': 875, 'F': 875}
+ "eye_joint_distance_cm": 5.903,
+ "eye_to_nosetip_z_cm": 3.044,
+ "mouth_corner_width_cm": 4.659,
+ "cheek_outer_width_cm": 7.559
+ "eye_joint_distance_cm": 5.904,
+ "eye_to_nosetip_z_cm": 3.04,
+ "mouth_corner_width_cm": 4.666,
+ "cheek_outer_width_cm": 7.579
+moved>1mm 0 / 843
+now False
+dirty [] []
+face {'loaded': True, 'morph_total': 858, 'lod_verts': [34657, 19285, 9716, 4067, 1967, 903, 460, 243], 'user_data': ['AnimCurveMetaData', 'DNAAssetUserData']}
+  GR_LK_Hair_Main_h23 {'loaded': True, 'class': 'GroomAsset'}
+  GR_LK_Hair_Loose_h23 {'loaded': True, 'class': 'GroomAsset'}
+  MHC_GD12_F {'loaded': True, 'class': 'MetaHumanCharacter'}
+  MHC_GD12_F_Head {'loaded': True, 'class': 'DNA'}
+  GB_GD12_HairMain_f12 {'loaded': True, 'groom': 'GR_LK_Hair_Main_h23', 'target': 'SKM_GD12_Face_f'}
+  GB_GD12_HairLoose_f12 {'loaded': True, 'groom': 'GR_LK_Hair_Loose_h23', 'target': 'SKM_GD12_Face_f'}
+  GB_GD12_EyebrowsM_SlightArch_f12 {'loaded': True, 'groom': 'GR_GD_Eyebrows_M_SlightArch', 'target': 'SKM_GD12_Face_f'}
+  GB_GD12_EyelashesS_Thin_f12 {'loaded': True, 'groom': 'GR_GD_Eyelashes_S_Thin', 'target': 'SKM_GD12_Face_f'}
+DONE g4f_real
+DONE g4f_hair
+DONE g4f_rig
+DONE rr13_lod_gt
+     23 IDENTICAL
+C:              931G  908G   24G  98% /c
+G12_CHAIN_DONE
