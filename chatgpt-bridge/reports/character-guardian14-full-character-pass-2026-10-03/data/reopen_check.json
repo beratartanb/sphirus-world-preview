@@ -1,0 +1,80 @@
+{
+ "dirty_before": [],
+ "face_k2": {
+  "loaded": true,
+  "morph_total": 858,
+  "lod_verts": [
+   34659,
+   19285,
+   9715,
+   4067,
+   1967,
+   903,
+   460,
+   240
+  ],
+  "user_data": [
+   "AnimCurveMetaData",
+   "DNAAssetUserData"
+  ]
+ },
+ "assets": {
+  "GR_LK_Hair_Main_h29": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "GR_LK_Hair_Loose_h29": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "MHC_GD14_K2": {
+   "loaded": true,
+   "class": "MetaHumanCharacter"
+  },
+  "MHC_GD14_K2_Head": {
+   "loaded": true,
+   "class": "DNA"
+  },
+  "SKM_LK_Henley_g18p": {
+   "loaded": true,
+   "class": "SkeletalMesh"
+  },
+  "MI_LK_Face_LOD0_VT_g14k12": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "MI_GD14_Body_k12": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "SKM_LK_Shorts_g16c": {
+   "loaded": true,
+   "class": "SkeletalMesh"
+  },
+  "MI_GD_Hair_h29": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "GB_GD14_HairMain_k2h29": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_h29",
+   "target": "SKM_GD14_Face_k2"
+  },
+  "GB_GD14_HairLoose_k2h29": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_h29",
+   "target": "SKM_GD14_Face_k2"
+  },
+  "GB_GD14_EyebrowsM_Natural_k2h29": {
+   "loaded": true,
+   "groom": "GR_GD_Eyebrows_M_Natural",
+   "target": "SKM_GD14_Face_k2"
+  },
+  "GB_GD14_EyelashesS_Thin_k2h29": {
+   "loaded": true,
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "target": "SKM_GD14_Face_k2"
+  }
+ },
+ "dirty_after": []
+}

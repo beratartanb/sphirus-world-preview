@@ -1,0 +1,121 @@
+now False
+"body_srmf": "T_LK_Body_SRMF_k11b"
+"request_auto_rigging", "ok", 78.05
+"has_face_dna_blendshapes": true
+RIGFIT face mean 0.017 p95 0.064 max 0.361 eyes 0.000
+"morphs": 858
+"face_dna": "/Game/Sphirus/CharacterLab/CharacterGuardian14_20261003/MHC/DNA/MHC_GD14_K_Head.MHC_GD14_K_Head"
+DONE g4k_clay
+DONE g4k_real
+DONE g4k_hair
+GD14_CYCLE_DONE k
+C:              931G  906G   25G  98% /c
+CHAIN_RIG_DONE
+now False
+"request_auto_rigging", "ok", 74.68
+"has_face_dna_blendshapes": true
+RIGFIT face mean 0.017 p95 0.065 max 0.361 eyes 0.000
+"morphs": 858
+"face_dna": "/Game/Sphirus/CharacterLab/CharacterGuardian14_20261003/MHC/DNA/MHC_GD14_K2_Head.MHC_GD14_K2_Head"
+DONE g4k2_clay
+DONE g4k2_real
+DONE g4k2_hair
+GD14_CYCLE_DONE k2
+C:              931G  900G   31G  97% /c
+CHAIN_RIG2_DONE
+now False
+LMD {"Main": ["<GroomLODMode.DEFAULT: 0>", true], "Loose": ["<GroomLODMode.DEFAULT: 0>", true], "dirty": []}
+GD14_HAIR_DONE h29
+MESHES OK 4.81583309173584
+BAKE LOD 0 OK 6.6620519161224365
+BAKE LOD 1 OK 6.413022756576538
+BAKE LOD 2 OK 6.541524410247803
+CHAIN_DONE g18n
+DONE g4k2_real
+DONE g4k2_hair
+DONE t14_neck_gt
+C:              931G  901G   30G  97% /c
+CHAIN_H29_DONE
+now False
+DONE g4k2_rig
+DONE g4k2_expr
+22
+DONE z14_full_gt
+DONE z14_neck_gt
+DONE z14_seam_gt
+DONE z14_lod_gt
+DONE z14_waist_gt
+DONE z14_sleeve_gt
+GD14_FINAL_CAPS_DONE z14
+ZEROBYTES 0
+C:              931G  902G   29G  97% /c
+DONE z14l
+JD {'G': 875, 'K2': 875}
+ "eye_joint_distance_cm": 5.904,
+ "eye_to_nosetip_z_cm": 3.045,
+ "mouth_corner_width_cm": 4.698,
+ "cheek_outer_width_cm": 7.583
+ "eye_joint_distance_cm": 5.932,
+ "eye_to_nosetip_z_cm": 3.064,
+ "mouth_corner_width_cm": 4.703,
+ "cheek_outer_width_cm": 7.997
+moved>1mm 122 / 843
+now False
+dirty [] []
+face {'loaded': True, 'morph_total': 858, 'lod_verts': [34659, 19285, 9715, 4067, 1967, 903, 460, 240], 'user_data': ['AnimCurveMetaData', 'DNAAssetUserData']}
+  GR_LK_Hair_Main_h29 {'loaded': True, 'class': 'GroomAsset'}
+  GR_LK_Hair_Loose_h29 {'loaded': True, 'class': 'GroomAsset'}
+  MHC_GD14_K2 {'loaded': True, 'class': 'MetaHumanCharacter'}
+  MHC_GD14_K2_Head {'loaded': True, 'class': 'DNA'}
+  SKM_LK_Henley_g18n {'loaded': True, 'class': 'SkeletalMesh'}
+  MI_LK_Face_LOD0_VT_g14k12 {'loaded': True, 'class': 'MaterialInstanceConstant'}
+  MI_GD14_Body_k12 {'loaded': True, 'class': 'MaterialInstanceConstant'}
+  SKM_LK_Shorts_g16c {'loaded': True, 'class': 'SkeletalMesh'}
+  MI_GD_Hair_h29 {'loaded': True, 'class': 'MaterialInstanceConstant'}
+  GB_GD14_HairMain_k2h29 {'loaded': True, 'groom': 'GR_LK_Hair_Main_h29', 'target': 'SKM_GD14_Face_k2'}
+  GB_GD14_HairLoose_k2h29 {'loaded': True, 'groom': 'GR_LK_Hair_Loose_h29', 'target': 'SKM_GD14_Face_k2'}
+  GB_GD14_EyebrowsM_Natural_k2h29 {'loaded': True, 'groom': 'GR_GD_Eyebrows_M_Natural', 'target': 'SKM_GD14_Face_k2'}
+  GB_GD14_EyelashesS_Thin_k2h29 {'loaded': True, 'groom': 'GR_GD_Eyelashes_S_Thin', 'target': 'SKM_GD14_Face_k2'}
+DONE g4k2_real
+DONE g4k2_hair
+DONE g4k2_rig
+DONE rr15_lod_gt
+     26 IDENTICAL
+C:              931G  902G   29G  97% /c
+G14_FINAL_DONE
+now False
+MESHES OK 5.005092620849609
+BAKE LOD 0 OK 6.505006313323975
+BAKE LOD 1 OK 6.5232155323028564
+BAKE LOD 2 OK 6.338733434677124
+CHAIN_DONE g18p
+COMPOSITION_SET
+DONE z14_full_gt
+DONE z14_neck_gt
+DONE z14_lod_gt
+DONE z14_waist_gt
+DONE z14_sleeve_gt
+ZEROBYTES 0
+now False
+dirty [] []
+face {'loaded': True, 'morph_total': 858, 'lod_verts': [34659, 19285, 9715, 4067, 1967, 903, 460, 240], 'user_data': ['AnimCurveMetaData', 'DNAAssetUserData']}
+  GR_LK_Hair_Main_h29 {'loaded': True, 'class': 'GroomAsset'}
+  GR_LK_Hair_Loose_h29 {'loaded': True, 'class': 'GroomAsset'}
+  MHC_GD14_K2 {'loaded': True, 'class': 'MetaHumanCharacter'}
+  MHC_GD14_K2_Head {'loaded': True, 'class': 'DNA'}
+  SKM_LK_Henley_g18p {'loaded': True, 'class': 'SkeletalMesh'}
+  MI_LK_Face_LOD0_VT_g14k12 {'loaded': True, 'class': 'MaterialInstanceConstant'}
+  MI_GD14_Body_k12 {'loaded': True, 'class': 'MaterialInstanceConstant'}
+  SKM_LK_Shorts_g16c {'loaded': True, 'class': 'SkeletalMesh'}
+  MI_GD_Hair_h29 {'loaded': True, 'class': 'MaterialInstanceConstant'}
+  GB_GD14_HairMain_k2h29 {'loaded': True, 'groom': 'GR_LK_Hair_Main_h29', 'target': 'SKM_GD14_Face_k2'}
+  GB_GD14_HairLoose_k2h29 {'loaded': True, 'groom': 'GR_LK_Hair_Loose_h29', 'target': 'SKM_GD14_Face_k2'}
+  GB_GD14_EyebrowsM_Natural_k2h29 {'loaded': True, 'groom': 'GR_GD_Eyebrows_M_Natural', 'target': 'SKM_GD14_Face_k2'}
+  GB_GD14_EyelashesS_Thin_k2h29 {'loaded': True, 'groom': 'GR_GD_Eyelashes_S_Thin', 'target': 'SKM_GD14_Face_k2'}
+DONE g4k2_real
+DONE g4k2_hair
+DONE g4k2_rig
+DONE rr15_lod_gt
+     26 IDENTICAL
+C:              931G  903G   29G  97% /c
+G18P_DONE
