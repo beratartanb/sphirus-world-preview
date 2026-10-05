@@ -1,0 +1,9 @@
+{"mx": -0.23, "ops": [
+ {"name": "dorsum_sidewall_mid", "type": "normal", "c": [0.85, 13.9, 160.9], "r": [0.6, 0.75, 1.7], "amt": 0.09, "sym": true},
+ {"name": "dorsum_sidewall_upper", "type": "normal", "c": [0.9, 13.3, 162.6], "r": [0.6, 0.7, 1.2], "amt": 0.05, "sym": true},
+ {"name": "root_sides", "type": "normal", "c": [1.2, 12.5, 163.2], "r": [0.7, 0.6, 0.9], "amt": 0.03, "sym": true},
+ {"name": "tip_lobule_lateral", "type": "grab", "c": [0.6, 14.9, 158.8], "r": [0.5, 0.65, 0.65], "d": [0.06, 0.0, 0.0], "sym": true},
+ {"name": "supratip_soft", "type": "normal", "c": [0.0, 14.7, 160.0], "r": [0.75, 0.6, 0.7], "amt": 0.03, "sym": false},
+ {"name": "infratip_soft", "type": "normal", "c": [0.0, 15.1, 158.2], "r": [0.6, 0.5, 0.45], "amt": 0.02, "sym": false},
+ {"name": "relax_dorsum", "type": "relax", "c": [0.0, 13.9, 160.8], "r": [1.4, 1.2, 2.8], "iters": 1, "sym": false}
+]}

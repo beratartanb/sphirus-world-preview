@@ -1,0 +1,17 @@
+HEAT_REGION lips/mouth                   n= 3746 mean 0.000 mm max 0.00 mm
+HEAT_REGION nose base/nostrils z<160     n= 5556 mean 0.005 mm max 0.51 mm
+HEAT_REGION eyes/lids                    n= 4093 mean 0.001 mm max 0.27 mm
+HEAT_REGION chin/mandible z<154.5        n= 2709 mean 0.000 mm max 0.00 mm
+HEAT_REGION cheeks                       n= 3112 mean 0.000 mm max 0.00 mm
+HEAT_REGION ears                         n= 3165 mean 0.000 mm max 0.00 mm
+HEAT_REGION skull z>170                  n=  536 mean 0.000 mm max 0.00 mm
+HEAT_REGION radix band (edited)          n=  530 mean 0.037 mm max 0.36 mm
+HEAT_MAX 0.79 mm at x=-0.99 y=13.76 z=160.79
+REG nostril interior (y<13.0 & nose band)        N1-m2 mean 0.00 max 0.00 | N1-F4ab max 0.18 mm
+REG alar rim |x|1.0-2.4 z155.5-158 y>13          N1-m2 mean 0.00 max 0.00 | N1-F4ab max 0.01 mm
+REG columella/philtrum |x|<0.6 z155-157.5        N1-m2 mean 0.00 max 0.00 | N1-F4ab max 0.00 mm
+REG upper lip z155.6-157 y>13 |x|<2.4            N1-m2 mean 0.00 max 0.00 | N1-F4ab max 0.01 mm
+REG lids z161-164.5                              N1-m2 mean 0.00 max 0.27 | N1-F4ab max 1.13 mm
+REG glabella |x|<1.2 z164-167                    N1-m2 mean 0.00 max 0.00 | N1-F4ab max 0.00 mm
+REG nose dorsum |x|<1.6 z158.5-163.5             N1-m2 mean 0.07 max 0.79 | N1-F4ab max 1.17 mm
+TOTAL vs F4ab: max 1.67 mm, >1mm verts 632
