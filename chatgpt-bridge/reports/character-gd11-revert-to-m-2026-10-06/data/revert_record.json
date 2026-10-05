@@ -1,0 +1,118 @@
+{
+ "revert_target": "M (b02afe39b4b0aeca50e61dcb3af3c35e15beaa84): m2 face/DNA + M_SlightArch brow",
+ "hair_kept": "h51a (O, unchanged)",
+ "sha1": {
+  "face_m2": "bbcceeed142f94690d1631859ee001a63850b77f",
+  "dna_m2": "c5d1b1c1b5dd83cca6bc15f480986ff72040ad9c",
+  "brow_M_SlightArch": "2da66225215c62585c2978ed17ecd71e47844dab",
+  "brow_binding_m2h48a": "843bb53b3b0a3deff2a325b7b1d995a79e0ef514",
+  "lash_binding_m2h48a": "0534c00de166434696fd64d91c49f3aba62c797e",
+  "hair_main_h51a": "aef4ceb163df0e309ecd3fe740b46b11d9b597f0",
+  "hair_loose_h51a": "4c30bc3ecd50299d4ff5198ac6689a01a2d12ca6",
+  "new_binding_main": "3a11cd4b2b1544f1f8b3c831dcbd9e89b467fc75",
+  "new_binding_loose": "dcac8107e9ba91c6aa396572ebe4682d7e931be3"
+ },
+ "editor_read": {
+  "LKQA_Head": {
+   "skeletal_mesh": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/SKM_G11RM_Face_m2.SKM_G11RM_Face_m2",
+   "dna": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/MHC/DNA/MHC_G11RM_M2_Head.MHC_G11RM_M2_Head",
+   "materials": [
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD0_VT_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Teeth_Baked_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_M_Hide_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_EyeL_Baked_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_EyeR_Baked_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_EyeShell_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Eyelashes_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_LacrimalFluid_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_M_Hide_1",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD1_VT_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD2_VT_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_EyelashesHiLODs_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD3_VT_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD4_VT_0",
+    "/Temp/Untitled_5.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD5to7_VT_0"
+   ],
+   "anim_class": "ABP_Face_C"
+  },
+  "LKQA_Eyebrows": {
+   "groom": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Grooms/GR_GD_Eyebrows_M_SlightArch.GR_GD_Eyebrows_M_SlightArch",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/Bindings/GB_G11RM_EyebrowsM_SlightArch_m2h48a.GB_G11RM_EyebrowsM_SlightArch_m2h48a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/SKM_G11RM_Face_m2.SKM_G11RM_Face_m2",
+   "materials": [
+    "/MetaHumanCharacter/Materials/MI_Hair.MI_Hair",
+    "/MetaHumanCharacter/Materials/MI_Facial_Hair.MI_Facial_Hair"
+   ]
+  },
+  "LKQA_Eyelashes": {
+   "groom": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Grooms/GR_GD_Eyelashes_S_Thin.GR_GD_Eyelashes_S_Thin",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/Bindings/GB_G11RM_EyelashesS_Thin_m2h48a.GB_G11RM_EyelashesS_Thin_m2h48a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/SKM_G11RM_Face_m2.SKM_G11RM_Face_m2",
+   "materials": [
+    "/MetaHumanCharacter/Materials/MI_Hair.MI_Hair"
+   ]
+  },
+  "LKQA_HairMain": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/GR_LK_Hair_Main_h51a.GR_LK_Hair_Main_h51a",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_RevertM_20261006/Face/Bindings/GB_G11RV_HairMain_m2h51a.GB_G11RV_HairMain_m2h51a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/SKM_G11RM_Face_m2.SKM_G11RM_Face_m2",
+   "materials": [
+    "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/MI_GD_Hair_h51a.MI_GD_Hair_h51a"
+   ]
+  },
+  "LKQA_HairLoose": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/GR_LK_Hair_Loose_h51a.GR_LK_Hair_Loose_h51a",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_RevertM_20261006/Face/Bindings/GB_G11RV_HairLoose_m2h51a.GB_G11RV_HairLoose_m2h51a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementM_20261005/Face/SKM_G11RM_Face_m2.SKM_G11RM_Face_m2",
+   "materials": [
+    "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/MI_GD_HairLoose_h51a.MI_GD_HairLoose_h51a"
+   ]
+  }
+ },
+ "pose": {
+  "FACIAL_C_Jaw": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_L_Eye": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_R_Eye": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_C_Nose": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_L_NasolabialBulge1": {
+   "dpos_mm": 1581.501,
+   "drot_deg_max": 70.0
+  },
+  "FACIAL_L_EyelidUpperA": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_R_EyelidUpperA": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_L_ForeheadIn": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_R_ForeheadIn": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_C_LipUpper": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  },
+  "FACIAL_C_LipLower": {
+   "dpos_mm": 0.0,
+   "drot_deg_max": 0.0
+  }
+ }
+}
