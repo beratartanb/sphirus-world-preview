@@ -1,0 +1,17 @@
+HEAT_REGION lips/mouth                   n= 3742 mean 0.045 mm max 0.68 mm
+HEAT_REGION nose base/nostrils z<160     n= 5557 mean 0.043 mm max 1.10 mm
+HEAT_REGION eyes/lids                    n= 4092 mean 0.228 mm max 1.30 mm
+HEAT_REGION chin/mandible z<154.5        n= 2709 mean 0.021 mm max 0.58 mm
+HEAT_REGION cheeks                       n= 3112 mean 0.428 mm max 1.41 mm
+HEAT_REGION ears                         n= 3162 mean 0.006 mm max 0.70 mm
+HEAT_REGION skull z>170                  n=  536 mean 0.000 mm max 0.00 mm
+HEAT_REGION radix band (edited)          n=  528 mean 0.092 mm max 0.63 mm
+HEAT_MAX 1.41 mm at x=5.19 y=9.49 z=159.58
+HEAT_OK Saved/Codex/GD11_HeadRefinementM_20261005/pv/heat_M1 ramp grey=0 .. yellow=1.0 .. red=2.0 mm
+REG lower lip z154.3-155.7                 mean 0.00 max 0.00 mm
+REG upper lip z155.6-157                   mean 0.00 max 0.01 mm
+REG philtrum/nose base z156-158 |x|<1.2    mean 0.00 max 0.00 mm
+REG alar/nostril |x|1.2-2.6 z155.5-158     mean 0.07 max 0.54 mm
+REG chin z<153                             mean 0.01 max 0.34 mm
+REG lower lid margin z161.4-162.6 |x|1.3-4.6 y>10.5 mean 0.23 max 0.83 mm
+REG upper lid z162.6-164.2                       mean 0.00 max 0.24 mm
