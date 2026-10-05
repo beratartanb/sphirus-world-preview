@@ -1,0 +1,14 @@
+#!/bin/bash
+# gd11rd_combo.sh <label> <face asset> <HAIR key:tag> <bindings prefix path> <bsuf> <cases-kind: whole|haircu> : compose (no binding) + capture
+set -u; cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; T=Tools/CharacterLookdev_20260930
+L=$1; FACE=$2 NOBIND=1 BINDPFX=$4 BSUF=$5 HAIR=$3 SKIN=${SKIN_C:-gck10} GD3_EYES_TAG=e2 SETS=none CAPP=g11rltmp bash $T/gd11rl_face_run.sh x 2>&1 | grep -E "COMP4"
+"/c/Program Files/Epic Games/UE_5.8/Engine/Binaries/ThirdParty/Python3/Win64/python.exe" -c "
+import json, os; d=json.load(open('Saved/Codex/CharacterLookdev_20260930/qa_config.json')); bad=[v['binding'] for v in d['grooms'].values() if not os.path.exists(v['binding'].replace('/Game/','Content/')+'.uasset')]
+print('BINDINGS_OK' if not bad else 'MISSING_BINDINGS '+str(bad))"
+bash Tools/OutfitHome_20260929/run_of.sh "$T/ue_lk_qa_setup.py" lk-setup 300 | tail -1 >/dev/null
+{ echo "import builtins; builtins.G11RL_PROV = {'label': '$L', 'candidate': '${CAND_ID:-unset}', 'out': r'$(cygpath -w "$(pwd)/Saved/Codex/GD11_HeadRefinementL_20261005/prov/$L.json")'}"; cat $T/ue_g11rl_provenance.py; } > "/c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/b05832b1-23f7-44dd-a92f-e1907201ea47/scratchpad/prov_$L.py"; bash Tools/OutfitHome_20260929/run_of.sh "/c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/b05832b1-23f7-44dd-a92f-e1907201ea47/scratchpad/prov_$L.py" prov 300 | grep -o "G11RL_PROV.*" | cut -c1-400
+C32="[-64.468, 113.297, 160.141, -58.0, 1.0]"
+if [ "$6" == "whole" ]; then CAMS="(('front', [0, 125, 159, -90, 0], 15), ('q3', $C32, 15), ('side', [-125, 3, 159, 0, 0], 15), ('side2', [125, 3, 159, 180, 0], 15), ('back', [0, -125, 159, 90, 0], 15), ('top', [0, 40, 215, -90, -50], 20), ('rear3q', [88, -88, 161, 135, 0], 15))"; LIGHTS="('studio',)"
+elif [ "$6" == "facecu" ]; then CAMS="(('fcfront', [0, 62, 160.0, -90, 0], 22.0), ('fcq3', [-25.4, 50.8, 160.5, -58.0, 1.0], 24.0), ('fcprofR', [-58, 7, 160.0, 0, 0], 22.0), ('fcprofL', [58, 7, 160.0, 180, 0], 22.0), ('noseroot', [-15.5, 48.7, 162.0, -66, 0], 9.0), ('midface', [-29.9, 42.1, 158.5, -52, 0], 12.0), ('lips', [-11.1, 48.8, 155.8, -73, 0], 8.0), ('lipsfront', [0, 50, 155.8, -90, 0], 8.0))"; LIGHTS="('studio', 'grazing')"
+else CAMS="(('forehead', [0, 125, 169.8, -90, 0], 6.0), ('topfront', [0, 62, 196, -90, -26], 13.0), ('hairline3q', [-64.468, 113.297, 167.5, -58.0, 0.0], 8.0), ('proftop', [-125, 4, 166.5, 0, 0], 11.0), ('temple', $C32, 9.0), ('rear3q', [88, -88, 161, 135, 0], 12.0), ('bun', [0, -118, 159.5, 90, 0], 9.0))"; LIGHTS="('studio', 'grazing')"; fi
+bash $T/gd11r_capcases.sh $L "[dict(name='$L'+'_'+li+'_'+n, view='custom', cam=c, fov=f, garments=True, materials='real', light=li, animation=None, time=0, light_target_z=163) for n, c, f in $CAMS for li in $LIGHTS]"

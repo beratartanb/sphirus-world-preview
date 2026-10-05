@@ -1,0 +1,128 @@
+{
+ "dirty_before": [],
+ "face_f4ab": {
+  "loaded": true,
+  "morph_total": 858,
+  "lod_verts": [
+   34659,
+   19285,
+   9716,
+   4067,
+   1967,
+   903,
+   460,
+   240
+  ],
+  "user_data": [
+   "AnimCurveMetaData",
+   "DNAAssetUserData"
+  ],
+  "skeleton": "/MetaHumanCharacter/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "dna": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementD_20261004/MHC/DNA/MHC_G11RD_F4AB_Head.MHC_G11RD_F4AB_Head"
+ },
+ "assets": {
+  "GR_LK_Hair_Main_h47a": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "GR_LK_Hair_Loose_h47a": {
+   "loaded": true,
+   "class": "GroomAsset"
+  },
+  "MI_GD_Hair_h47a": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "MI_GD_HairLoose_h47a": {
+   "loaded": true,
+   "class": "MaterialInstanceConstant"
+  },
+  "SM_LK_HairHelmet_h47a": {
+   "loaded": true,
+   "class": "StaticMesh"
+  },
+  "MHC_G11RD_F4AB": {
+   "loaded": true,
+   "class": "MetaHumanCharacter"
+  },
+  "MHC_G11RD_F4AB_Head": {
+   "loaded": true,
+   "class": "DNA"
+  },
+  "GB_G11RL_HairMain_f4abh47a": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Main_h47a",
+   "target": "SKM_G11RD_Face_f4ab"
+  },
+  "GB_G11RL_HairLoose_f4abh47a": {
+   "loaded": true,
+   "groom": "GR_LK_Hair_Loose_h47a",
+   "target": "SKM_G11RD_Face_f4ab"
+  },
+  "GB_G11RL_EyebrowsM_SlightArch_f4abh47a": {
+   "loaded": true,
+   "groom": "GR_GD_Eyebrows_M_SlightArch",
+   "target": "SKM_G11RD_Face_f4ab"
+  },
+  "GB_G11RL_EyelashesS_Thin_f4abh47a": {
+   "loaded": true,
+   "groom": "GR_GD_Eyelashes_S_Thin",
+   "target": "SKM_G11RD_Face_f4ab"
+  }
+ },
+ "dirty_after": [],
+ "groom_lod_table": {
+  "Main": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    "STRANDS"
+   ],
+   [
+    0.65,
+    0.5,
+    1.25,
+    "STRANDS"
+   ],
+   [
+    0.4,
+    0.25,
+    1.7,
+    "STRANDS"
+   ],
+   [
+    0.1,
+    0.12,
+    1.0,
+    "MESHES:"
+   ]
+  ],
+  "Loose": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    "STRANDS"
+   ],
+   [
+    0.65,
+    0.5,
+    1.25,
+    "STRANDS"
+   ],
+   [
+    0.4,
+    0.25,
+    1.7,
+    "STRANDS"
+   ],
+   [
+    0.1,
+    0.12,
+    1.0,
+    "STRANDS"
+   ]
+  ]
+ }
+}
