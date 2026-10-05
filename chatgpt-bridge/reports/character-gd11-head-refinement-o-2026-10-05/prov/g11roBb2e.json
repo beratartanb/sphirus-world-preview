@@ -1,0 +1,291 @@
+{
+ "label": "g11roBb2e",
+ "candidate": "n1 + h49a + custom brow b2e (MI_O_Eyebrows_Mid, width 0.0055; GB_G11RO_EyebrowsCustom_b2e_n1h49a) + k10",
+ "read_at": "2026-10-05T23:02:34",
+ "qa_config": {
+  "face": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/SKM_G11RN_Face_n1",
+  "face_abp": "/MetaHumanCharacter/Face/ABP_Face.ABP_Face_C",
+  "body": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh",
+  "grooms": {
+   "HairMain": {
+    "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Hair/GR_LK_Hair_Main_h49a",
+    "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/Bindings/GB_G11RN_HairMain_n1h49a",
+    "attach": "Head"
+   },
+   "HairLoose": {
+    "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Hair/GR_LK_Hair_Loose_h49a",
+    "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/Bindings/GB_G11RN_HairLoose_n1h49a",
+    "attach": "Head"
+   },
+   "Eyebrows": {
+    "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/GR_O_Brow_b2e",
+    "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Face/Bindings/GB_G11RO_EyebrowsCustom_b2e_n1h49a",
+    "attach": "Head"
+   },
+   "Eyelashes": {
+    "groom": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Grooms/GR_GD_Eyelashes_S_Thin",
+    "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/Bindings/GB_G11RN_EyelashesS_Thin_n1h49a",
+    "attach": "Head"
+   }
+  },
+  "save_prefixes": [
+   "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005"
+  ],
+  "studio_folder": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Studio"
+ },
+ "actors": {
+  "LKQA_Body": {
+   "class": "SkeletalMeshActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "skeletal_mesh": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "dna": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Body/SKM_MH_SHOULDER_FIX_NATIVE_BodyMesh_DNA.SKM_MH_SHOULDER_FIX_NATIVE_BodyMesh_DNA",
+   "morph_targets_total": 27,
+   "post_process_abp": "<Object '/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/ABP_LK_Body_PostProcess.ABP_LK_Body_PostProcess_C' (0x000001D0B6109A00) Class 'AnimBlueprintGeneratedClass'>",
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "anim_class": null,
+   "nonzero_morph_curves": "not enumerated (curve values not exposed to Python on this component)",
+   "forced_lod": 1,
+   "lod": "unreadable: SkeletalMeshComponent: Failed to find property 'predicted_lod_level' for attribute 'predicted_lod_level' on 'SkeletalMeshComponent'",
+   "head_socket_transform": [
+    -0.23,
+    2.93,
+    157.27,
+    90.0,
+    -0.0,
+    0.0
+   ],
+   "materials": [
+    "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/MI_RV_Body_Skin.MI_RV_Body_Skin"
+   ]
+  },
+  "LKQA_Head": {
+   "class": "SkeletalMeshActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "skeletal_mesh": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/SKM_G11RN_Face_n1.SKM_G11RN_Face_n1",
+   "dna": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/MHC/DNA/MHC_G11RN_N1_Head.MHC_G11RN_N1_Head",
+   "morph_targets_total": 858,
+   "post_process_abp": "<Object '/MetaHumanCharacter/Face/ABP_Face_PostProcess.ABP_Face_PostProcess_C' (0x000001D54EFC0000) Class 'AnimBlueprintGeneratedClass'>",
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "anim_class": "ABP_Face_C",
+   "nonzero_morph_curves": "not enumerated (curve values not exposed to Python on this component)",
+   "forced_lod": 1,
+   "lod": "unreadable: SkeletalMeshComponent: Failed to find property 'predicted_lod_level' for attribute 'predicted_lod_level' on 'SkeletalMeshComponent'",
+   "head_socket_transform": [
+    -0.23,
+    2.93,
+    157.27,
+    90.0,
+    -0.0,
+    0.0
+   ],
+   "materials": [
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD0_VT_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Teeth_Baked_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_M_Hide_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_EyeL_Baked_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_EyeR_Baked_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_EyeShell_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Eyelashes_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_LacrimalFluid_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_M_Hide_1",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD1_VT_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD2_VT_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_EyelashesHiLODs_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD3_VT_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD4_VT_0",
+    "/Temp/Untitled_3.Untitled:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Face_Skin_Baked_LOD5to7_VT_0"
+   ]
+  },
+  "LKQA_Henley": {
+   "class": "SkeletalMeshActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "skeletal_mesh": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "morph_targets_total": 17,
+   "post_process_abp": "None",
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "anim_class": null,
+   "nonzero_morph_curves": "not enumerated (curve values not exposed to Python on this component)",
+   "forced_lod": 1,
+   "lod": "unreadable: SkeletalMeshComponent: Failed to find property 'predicted_lod_level' for attribute 'predicted_lod_level' on 'SkeletalMeshComponent'",
+   "head_socket_transform": [
+    -0.23,
+    2.93,
+    157.27,
+    90.0,
+    -0.0,
+    0.0
+   ],
+   "materials": [
+    "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/Materials/MI_LK_Henley_g17e.MI_LK_Henley_g17e",
+    "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/Materials/MI_LK_Henley_Trim_g17e.MI_LK_Henley_Trim_g17e",
+    "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/Materials/MI_LK_Buttons_g17e.MI_LK_Buttons_g17e"
+   ]
+  },
+  "LKQA_Cloth_Shorts": {
+   "class": "Actor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ]
+  },
+  "LKQA_HairMain": {
+   "class": "GroomActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Hair/GR_LK_Hair_Main_h49a.GR_LK_Hair_Main_h49a",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/Bindings/GB_G11RN_HairMain_n1h49a.GB_G11RN_HairMain_n1h49a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/SKM_G11RN_Face_n1.SKM_G11RN_Face_n1",
+   "binding_source": "/Game/Sphirus/CharacterLab/CharacterGuardian2_20261001/Face/SKM_GD_FaceMesh_p.SKM_GD_FaceMesh_p",
+   "groom_lod": "active LOD index not readable from Python (forced_lod property unavailable)",
+   "simulation": "unreadable",
+   "materials": [
+    "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Hair/MI_GD_Hair_h49a.MI_GD_Hair_h49a"
+   ]
+  },
+  "LKQA_HairLoose": {
+   "class": "GroomActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Hair/GR_LK_Hair_Loose_h49a.GR_LK_Hair_Loose_h49a",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/Bindings/GB_G11RN_HairLoose_n1h49a.GB_G11RN_HairLoose_n1h49a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/SKM_G11RN_Face_n1.SKM_G11RN_Face_n1",
+   "binding_source": "/Game/Sphirus/CharacterLab/CharacterGuardian2_20261001/Face/SKM_GD_FaceMesh_p.SKM_GD_FaceMesh_p",
+   "groom_lod": "active LOD index not readable from Python (forced_lod property unavailable)",
+   "simulation": "unreadable",
+   "materials": [
+    "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Hair/MI_GD_HairLoose_h49a.MI_GD_HairLoose_h49a"
+   ]
+  },
+  "LKQA_Eyebrows": {
+   "class": "GroomActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/GR_O_Brow_b2e.GR_O_Brow_b2e",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Face/Bindings/GB_G11RO_EyebrowsCustom_b2e_n1h49a.GB_G11RO_EyebrowsCustom_b2e_n1h49a",
+   "binding_target": "unreadable: 'NoneType' object has no attribute 'get_path_name'",
+   "groom_lod": "active LOD index not readable from Python (forced_lod property unavailable)",
+   "simulation": "unreadable",
+   "materials": [
+    "/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/MI_O_Eyebrows_Mid.MI_O_Eyebrows_Mid"
+   ]
+  },
+  "LKQA_Eyelashes": {
+   "class": "GroomActor",
+   "actor_transform": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "groom": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Grooms/GR_GD_Eyelashes_S_Thin.GR_GD_Eyelashes_S_Thin",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/Bindings/GB_G11RN_EyelashesS_Thin_n1h49a.GB_G11RN_EyelashesS_Thin_n1h49a",
+   "binding_target": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/SKM_G11RN_Face_n1.SKM_G11RN_Face_n1",
+   "binding_source": "/MetaHumanCharacter/Optional/Grooms/GroomMesh/SKM_Groom_Head_Legacy02.SKM_Groom_Head_Legacy02",
+   "groom_lod": "active LOD index not readable from Python (forced_lod property unavailable)",
+   "simulation": "unreadable",
+   "materials": [
+    "/MetaHumanCharacter/Materials/MI_Hair.MI_Hair"
+   ]
+  },
+  "LKQA_key": {
+   "class": "RectLight",
+   "actor_transform": [
+    -230.0,
+    300.0,
+    280.0,
+    -24.84,
+    -52.52,
+    -0.0
+   ]
+  },
+  "LKQA_fill": {
+   "class": "RectLight",
+   "actor_transform": [
+    300.0,
+    220.0,
+    150.0,
+    -6.9,
+    -143.75,
+    -0.0
+   ]
+  },
+  "LKQA_rim": {
+   "class": "RectLight",
+   "actor_transform": [
+    160.0,
+    -300.0,
+    260.0,
+    -19.44,
+    118.07,
+    0.0
+   ]
+  },
+  "LKQA_Grazing": {
+   "class": "SpotLight",
+   "actor_transform": [
+    -280.0,
+    40.0,
+    130.0,
+    0.0,
+    0.0,
+    -0.0
+   ]
+  },
+  "LKQA_GameplaySun": {
+   "class": "DirectionalLight",
+   "actor_transform": [
+    0.0,
+    0.0,
+    500.0,
+    -38.0,
+    -125.0,
+    -0.0
+   ]
+  }
+ }
+}

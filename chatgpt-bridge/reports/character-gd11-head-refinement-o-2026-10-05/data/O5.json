@@ -1,0 +1,9 @@
+{"mx": -0.23, "ops": [
+ {"name": "tip_widen", "type": "field", "axis": "x", "A": 0.10, "tz": [157.9, 158.4, 159.3, 159.8], "ty": [14.2, 14.7, 15.6, 15.7], "tx": [0.3, 0.55, 0.95, 1.35]},
+ {"name": "dome_flank_fill", "type": "normal", "c": [1.05, 14.5, 158.7], "r": [0.5, 0.6, 0.8], "amt": 0.12, "sym": true, "outer": true},
+ {"name": "soft_triangle_smooth", "type": "relax", "c": [0.95, 14.6, 158.6], "r": [0.7, 0.7, 0.9], "iters": 12, "lams": [0.5, -0.3], "sym": true, "outer": true},
+ {"name": "tip_peak_soften", "type": "normal", "c": [0.0, 15.45, 158.95], "r": [0.6, 0.5, 0.6], "amt": -0.04, "sym": false, "outer": true},
+ {"name": "infratip_round", "type": "normal", "c": [0.0, 14.5, 158.05], "r": [0.45, 0.6, 0.4], "amt": 0.10, "sym": false, "outer": true, "nz": 0.95},
+ {"name": "columella_show", "type": "grab", "c": [0.0, 14.0, 157.7], "r": [0.4, 0.6, 0.4], "d": [0.0, 0.08, 0.0], "sym": false, "outer": true, "nz": 0.95},
+ {"name": "relax_tip", "type": "relax", "c": [0.0, 14.6, 158.4], "r": [1.7, 1.3, 1.5], "iters": 2, "sym": false, "outer": true}
+]}

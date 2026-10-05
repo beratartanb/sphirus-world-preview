@@ -1,0 +1,107 @@
+{
+ "read_at": "2026-10-05T23:30:46",
+ "components": {
+  "LKQA_Body": {
+   "forced_lod_model": 1,
+   "predicted_lod_level": "ERR SkeletalMeshComponent: Failed to find property 'predicted_lod_level' for attribu",
+   "min_lod_model": 0,
+   "get_num_lods": 4
+  },
+  "LKQA_Head": {
+   "forced_lod_model": 1,
+   "predicted_lod_level": "ERR SkeletalMeshComponent: Failed to find property 'predicted_lod_level' for attribu",
+   "min_lod_model": 0,
+   "get_num_lods": 8
+  },
+  "LKQA_Henley": {
+   "forced_lod_model": 1,
+   "predicted_lod_level": "ERR SkeletalMeshComponent: Failed to find property 'predicted_lod_level' for attribu",
+   "min_lod_model": 0,
+   "get_num_lods": 3
+  },
+  "LKQA_HairMain": {
+   "lod_attrs": [
+    "enable_auto_lod_generation",
+    "exclude_for_specific_hlod_levels",
+    "hlod_batching_policy",
+    "is_excluded_from_hlod_level",
+    "prestream_mesh_lods",
+    "register_as_focal_point_in_physics_replication_lod",
+    "set_excluded_from_hlod_level",
+    "unregister_as_focal_point_in_physics_replication_lod"
+   ],
+   "enable_auto_lod_generation": "True",
+   "exclude_for_specific_hlod_levels": "[]",
+   "hlod_batching_policy": "<HLODBatchingPolicy.NONE: 0>",
+   "is_excluded_from_hlod_level": "ERR is_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "prestream_mesh_lods": "ERR prestream_mesh_lods() required argument 'seconds' (pos 1) not found",
+   "register_as_focal_point_in_physics_replication_lod": "None",
+   "set_excluded_from_hlod_level": "ERR set_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "unregister_as_focal_point_in_physics_replication_lod": "None",
+   "asset_lod_count": 4
+  },
+  "LKQA_HairLoose": {
+   "lod_attrs": [
+    "enable_auto_lod_generation",
+    "exclude_for_specific_hlod_levels",
+    "hlod_batching_policy",
+    "is_excluded_from_hlod_level",
+    "prestream_mesh_lods",
+    "register_as_focal_point_in_physics_replication_lod",
+    "set_excluded_from_hlod_level",
+    "unregister_as_focal_point_in_physics_replication_lod"
+   ],
+   "enable_auto_lod_generation": "True",
+   "exclude_for_specific_hlod_levels": "[]",
+   "hlod_batching_policy": "<HLODBatchingPolicy.NONE: 0>",
+   "is_excluded_from_hlod_level": "ERR is_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "prestream_mesh_lods": "ERR prestream_mesh_lods() required argument 'seconds' (pos 1) not found",
+   "register_as_focal_point_in_physics_replication_lod": "None",
+   "set_excluded_from_hlod_level": "ERR set_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "unregister_as_focal_point_in_physics_replication_lod": "None",
+   "asset_lod_count": 4
+  },
+  "LKQA_Eyebrows": {
+   "lod_attrs": [
+    "enable_auto_lod_generation",
+    "exclude_for_specific_hlod_levels",
+    "hlod_batching_policy",
+    "is_excluded_from_hlod_level",
+    "prestream_mesh_lods",
+    "register_as_focal_point_in_physics_replication_lod",
+    "set_excluded_from_hlod_level",
+    "unregister_as_focal_point_in_physics_replication_lod"
+   ],
+   "enable_auto_lod_generation": "True",
+   "exclude_for_specific_hlod_levels": "[]",
+   "hlod_batching_policy": "<HLODBatchingPolicy.NONE: 0>",
+   "is_excluded_from_hlod_level": "ERR is_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "prestream_mesh_lods": "ERR prestream_mesh_lods() required argument 'seconds' (pos 1) not found",
+   "register_as_focal_point_in_physics_replication_lod": "None",
+   "set_excluded_from_hlod_level": "ERR set_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "unregister_as_focal_point_in_physics_replication_lod": "None",
+   "asset_lod_count": 1
+  },
+  "LKQA_Eyelashes": {
+   "lod_attrs": [
+    "enable_auto_lod_generation",
+    "exclude_for_specific_hlod_levels",
+    "hlod_batching_policy",
+    "is_excluded_from_hlod_level",
+    "prestream_mesh_lods",
+    "register_as_focal_point_in_physics_replication_lod",
+    "set_excluded_from_hlod_level",
+    "unregister_as_focal_point_in_physics_replication_lod"
+   ],
+   "enable_auto_lod_generation": "True",
+   "exclude_for_specific_hlod_levels": "[]",
+   "hlod_batching_policy": "<HLODBatchingPolicy.NONE: 0>",
+   "is_excluded_from_hlod_level": "ERR is_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "prestream_mesh_lods": "ERR prestream_mesh_lods() required argument 'seconds' (pos 1) not found",
+   "register_as_focal_point_in_physics_replication_lod": "None",
+   "set_excluded_from_hlod_level": "ERR set_excluded_from_hlod_level() required argument 'hlod_level' (pos 1) not found",
+   "unregister_as_focal_point_in_physics_replication_lod": "None",
+   "asset_lod_count": 8
+  }
+ }
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+# brow_caps.sh <brow tag e.g. b1> <face tag n1|o1> <hair key:tag e.g. gn:h49a> <bind prefix> <bsuf> <label> : compose face + hair + CUSTOM brow (O binding GB_G11RO_EyebrowsCustom_<bsuf>) and capture brow views with provenance
+set -u; cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; bt=${1:?brow tag}; ft=${2:?face tag}; HK=${3:?hair}; BP=${4:?bindpfx}; BS=${5:?bsuf}; L=${6:?label}; T=Tools/CharacterLookdev_20260930; OD=Saved/Codex/GD11_HeadRefinementO_20261005
+SC="/c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/b05832b1-23f7-44dd-a92f-e1907201ea47/scratchpad"
+case $ft in n1) FACE=/Game/Sphirus/CharacterLab/GD11_HeadRefinementN_20261005/Face/SKM_G11RN_Face_n1;; *) FACE=/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Face/SKM_G11RO_Face_$ft;; esac
+BROWP=/Game/Sphirus/CharacterLab/GD11_HeadRefinementO_20261005/Hair/GR_O_Brow_$bt
+# composition: hair/lash bindings from BP/BS, brow binding from O (custom) - the O face_run resolves the custom brow binding as {BP}_EyebrowsCustom_{BS}
+BROW=$BROWP FACE=$FACE NOBIND=1 BINDPFX=$BP BSUF=$BS HAIR=$HK SKIN=gck10 GD3_EYES_TAG=e2 SETS=none CAPP=x bash $T/gd11ro_face_run.sh x | grep COMP4
+"/c/Program Files/Epic Games/UE_5.8/Engine/Binaries/ThirdParty/Python3/Win64/python.exe" -c "
+import json, os; d=json.load(open('Saved/Codex/CharacterLookdev_20260930/qa_config.json')); bad=[v['binding'] for v in d['grooms'].values() if not os.path.exists(v['binding'].replace('/Game/','Content/')+'.uasset')]; print('BINDINGS_OK' if not bad else 'MISSING_BINDINGS '+str(bad))"
+bash Tools/OutfitHome_20260929/run_of.sh "$T/ue_lk_qa_setup.py" lk-setup 300 | tail -1 >/dev/null
+{ echo "import builtins; builtins.G11RO_PROV = {'label': '$L', 'candidate': '$ft + ${HK#*:} + custom brow $bt (GB_G11RO_EyebrowsCustom_$BS) + k10', 'out': r'$(cygpath -w "$(pwd)/$OD/prov/$L.json")'}"; cat $T/ue_g11ro_provenance.py; } > "$SC/prov_$L.py"; bash Tools/OutfitHome_20260929/run_of.sh "$SC/prov_$L.py" prov 300 | grep -o "G11RO_PROV"
+bash $T/gd11r_capcases.sh $L "[dict(name='$L'+'_'+li+'_'+n, view='custom', cam=c, fov=f, garments=True, materials='real', light=li, animation=None, time=0, light_target_z=163) for n, c, f in (('fcfront', [0, 62, 160.0, -90, 0], 22.0), ('fcq3', [-25.4, 50.8, 160.5, -58.0, 1.0], 24.0), ('fcq3L', [25.4, 50.8, 160.5, -122.0, 1.0], 24.0), ('browfront', [0, 52, 163.0, -90, 0], 10.0), ('brow3q', [-18, 46, 163.2, -66, 0], 10.0), ('front', [0, 125, 159, -90, 0], 15), ('q3R', [-64.468, 113.297, 160.141, -58.0, 1.0], 15)) for li in ('studio', 'front')]" | grep -E "DONE|ERROR"
