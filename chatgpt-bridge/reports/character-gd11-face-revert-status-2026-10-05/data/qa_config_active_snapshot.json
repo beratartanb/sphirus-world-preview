@@ -1,0 +1,69 @@
+{
+ "body": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh",
+ "face": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementD_20261004/Face/SKM_G11RD_Face_f4ab",
+ "garments": {
+  "Henley": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e",
+  "Shorts": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c"
+ },
+ "grooms": {
+  "HairMain": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementJ_20261005/Hair/GR_LK_Hair_Main_h45b",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementJ_20261005/Face/Bindings/GB_G11RJ_HairMain_f4abh45b",
+   "attach": "Head"
+  },
+  "HairLoose": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementJ_20261005/Hair/GR_LK_Hair_Loose_h45b",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementJ_20261005/Face/Bindings/GB_G11RJ_HairLoose_f4abh45b",
+   "attach": "Head"
+  },
+  "Eyebrows": {
+   "groom": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Grooms/GR_GD_Eyebrows_M_SlightArch",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementJ_20261005/Face/Bindings/GB_G11RJ_EyebrowsM_SlightArch_f4abh45b",
+   "attach": "Head"
+  },
+  "Eyelashes": {
+   "groom": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Grooms/GR_GD_Eyelashes_S_Thin",
+   "binding": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementJ_20261005/Face/Bindings/GB_G11RJ_EyelashesS_Thin_f4abh45b",
+   "attach": "Head"
+  }
+ },
+ "material_overrides": {
+  "Body": {
+   "0": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_GC_Body_k10"
+  },
+  "Head": {
+   "0": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_LK_Face_LOD0_VT_gck10",
+   "9": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_LK_Face_LOD1_VT_gck10",
+   "10": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_LK_Face_LOD2_VT_gck10",
+   "12": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_LK_Face_LOD3_VT_gck10",
+   "13": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_LK_Face_LOD4_VT_gck10",
+   "14": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementC_20261004/Skin/MI_LK_Face_LOD5to7_VT_gck10",
+   "3": "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/Skin/MI_GD3_EyeL_e2",
+   "4": "/Game/Sphirus/CharacterLab/CharacterGuardian3_20261001/Skin/MI_GD3_EyeR_e2"
+  }
+ },
+ "studio": {
+  "key": 90.0,
+  "fill": 28.0,
+  "rim": 38.0,
+  "ev_bias": 0.0,
+  "sun": 4.5,
+  "sky": 0.55,
+  "backdrop": 0.5,
+  "floor": 0.14,
+  "floor_lift": 2.2,
+  "grazing": 110.0
+ },
+ "capture_size": [
+  1600,
+  1600
+ ],
+ "save_prefixes": [
+  "/Game/Sphirus/CharacterLab/GD11_HeadRefinementK_20261005"
+ ],
+ "studio_folder": "/Game/Sphirus/CharacterLab/GD11_HeadRefinementK_20261005/Studio",
+ "cloth_garments": {
+  "Shorts": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/CA_CR_Shorts_m1"
+ },
+ "face_abp": "/MetaHumanCharacter/Face/ABP_Face.ABP_Face_C"
+}

@@ -1,0 +1,17 @@
+REFERENCE-FRAME DEVIATION (cm; contour: + = candidate silhouette further OUT than the reference pick along its normal; point: dx,dy)
+front frame (ref_front_x4, solved camera, IPD 178 px = 5.95 cm)      F4ab (start)   K4 (candidate)   note
+cheek R hi / L hi  (eye level, lateral)                               +0.13 / +0.87  +0.23 / +0.90    match (L hi: hair edge in the reference)
+cheek R mid / L mid (nose level)                                      +0.10 / +0.20  +0.20 / +0.30    match
+cheek R lo / L lo  (mouth level)                                      -0.07 / +0.03  +0.30 / +0.37    fuller lower cheek (submalar fill + buccal)
+jaw R / L  (jaw angle -> chin diagonal)                               -1.47 / -1.14  -0.90 / -0.43    jaw was narrow/high; K4 fuller, still inside
+chin R / L  (chin sides, down-out)                                    -0.73 / -0.60  +0.03 / +0.23    match
+menton  (chin bottom, down)                                           -0.90          -0.10            chin bottom was 9 mm too high; now level
+pronasale  (dx, dy)                                                   +0.32, +0.29   +0.33, +0.29     nose tip position unchanged (3 mm low/right)
+subnasale  (columella-lip break; dx, dy)                              +0.40, +0.92   +0.40, +0.92     candidate nose base lower than the reference (NOT corrected in K4: +3 mm base lift only; measured point = columella break)
+close frame (ref_close_x2, yaw -60 deg, IPD 142 px)                   F4ab           K4
+far cheek 1..5 (far-side silhouette, lateral)                         0.00 .. +0.63  +0.17 .. +0.59   match
+jaw bottom 1 / 2  (down)                                              -1.38 / -1.17  -0.55 / -0.76    improved (chin down + jaw fullness)
+chin p4 / menton_c                                                    -1.09 / -1.34  +0.13 / -0.29    improved
+chin p1 / p2 / p3  (front-lateral, mixes projection and far-jaw width) +0.76/+0.76/-0.08  +0.92/+1.09/+1.17  NOT a projection measure in 3/4 (far jaw silhouette); front frame given priority
+sellion (radix depth point; dx, dy)                                   +0.65, -3.49   +0.70, -0.23     F4ab had NO radix dip (deepest point = glabella); K4 brow forward creates one near the reference height
+NOT measured: brows (groom, not geometry), alar width (ref picks sit on the alar crease; candidate alar base not comparable), ear picks.
