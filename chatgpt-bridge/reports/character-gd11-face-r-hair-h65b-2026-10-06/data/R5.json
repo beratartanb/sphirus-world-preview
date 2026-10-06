@@ -1,0 +1,10 @@
+{"mx": -0.23, "ops": [
+ {"name": "upper_lid_drop", "type": "lidrot", "c": [2.97, 10.5, 162.25], "deg": 3.0, "z0": 0.3, "zr0": 0.25, "z1": 1.45, "zr1": 0.5, "xw": 1.5, "rmax": 2.4, "yf": 0.25, "sym": true},
+ {"name": "upper_lid_hood", "type": "normal", "c": [3.5, 11.9, 163.8], "r": [1.15, 0.85, 0.48], "amt": 0.24, "sym": true},
+ {"name": "lateral_hood", "type": "normal", "c": [4.15, 11.2, 163.95], "r": [0.9, 0.9, 0.52], "amt": 0.15, "sym": true},
+ {"name": "zygoma_high", "type": "normal", "c": [4.75, 9.0, 159.9], "r": [1.4, 1.2, 1.05], "amt": 0.15, "sym": true},
+ {"name": "jowl_oval", "type": "normal", "c": [4.9, 6.6, 152.6], "r": [1.5, 1.8, 1.7], "amt": -0.2, "sym": true},
+ {"name": "relax_hood", "type": "relax", "c": [3.6, 11.7, 163.85], "r": [1.5, 1.2, 0.75], "iters": 2, "sym": true},
+ {"name": "relax_zyg", "type": "relax", "c": [4.75, 9.0, 159.9], "r": [1.8, 1.6, 1.5], "iters": 1, "sym": true},
+ {"name": "relax_jowl", "type": "relax", "c": [4.9, 6.6, 152.6], "r": [2.0, 2.1, 2.1], "iters": 2, "sym": true}
+]}
