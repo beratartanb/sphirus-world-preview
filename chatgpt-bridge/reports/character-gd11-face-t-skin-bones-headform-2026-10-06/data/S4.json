@@ -1,0 +1,22 @@
+{"mx": -0.23, "ops": [
+ {"name": "tip_derotate_mild", "type": "grab", "c": [0.0, 15.3, 158.95], "r": [1.2, 1.0, 0.95], "d": [0.0, 0.05, -0.09], "sym": false},
+ {"name": "columella_follow", "type": "grab", "c": [0.0, 14.3, 158.1], "r": [0.45, 0.7, 0.45], "d": [0.0, 0.02, -0.03], "sym": false},
+ {"name": "alar_narrow", "type": "grab", "c": [1.8, 12.9, 157.65], "r": [0.8, 1.0, 0.78], "d": [-0.24, -0.03, 0.0], "sym": true},
+ {"name": "alar_crease_tuck", "type": "grab", "c": [2.0, 12.5, 157.3], "r": [0.5, 0.6, 0.5], "d": [-0.05, -0.04, 0.0], "sym": true},
+ {"name": "tip_narrow", "type": "grab", "c": [0.75, 15.1, 158.95], "r": [0.55, 0.65, 0.65], "d": [-0.12, 0.0, 0.0], "sym": true},
+ {"name": "dorsum_narrow", "type": "grab", "c": [0.85, 13.8, 161.0], "r": [0.45, 0.6, 1.5], "d": [-0.09, 0.0, 0.0], "sym": true},
+ {"name": "relax_nose", "type": "relax", "c": [0.0, 14.3, 158.4], "r": [2.3, 1.7, 1.6], "iters": 2, "sym": false, "outer": true},
+ {"name": "cheek_width", "type": "grab", "c": [6.7, 6.0, 160.2], "r": [0.9, 1.8, 2.4], "d": [-0.25, 0.0, 0.0], "sym": true},
+ {"name": "malar_fat", "type": "normal", "c": [3.0, 11.0, 157.6], "r": [0.9, 0.8, 0.9], "amt": 0.14, "sym": true},
+ {"name": "relax_cheek", "type": "relax", "c": [6.5, 6.0, 160.2], "r": [1.2, 2.2, 2.8], "iters": 1, "sym": true},
+ {"name": "zygomatic_arch", "type": "normal", "c": [5.6, 7.2, 160.6], "r": [1.1, 0.9, 0.55], "amt": 0.10, "sym": true},
+ {"name": "submalar_soft", "type": "normal", "c": [4.6, 8.5, 157.6], "r": [1.0, 0.9, 0.9], "amt": -0.05, "sym": true},
+ {"name": "mandible_border", "type": "normal", "c": [4.0, 6.5, 151.4], "r": [0.9, 1.5, 0.5], "amt": 0.06, "sym": true},
+ {"name": "chin_length", "type": "grab", "c": [0.0, 11.5, 151.6], "r": [2.0, 1.6, 1.0], "d": [0.0, 0.0, -0.10], "sym": false},
+ {"name": "undereye_bag", "type": "normal", "c": [3.0, 11.55, 161.15], "r": [0.95, 0.5, 0.33], "amt": 0.08, "sym": true},
+ {"name": "tear_trough", "type": "normal", "c": [1.9, 11.9, 160.9], "r": [0.5, 0.4, 0.3], "amt": -0.04, "sym": true},
+ {"name": "nlf_1", "type": "normal", "c": [2.25, 12.3, 156.6], "r": [0.3, 0.4, 0.45], "amt": -0.045, "sym": true},
+ {"name": "nlf_2", "type": "normal", "c": [2.5, 11.9, 155.85], "r": [0.3, 0.4, 0.45], "amt": -0.045, "sym": true},
+ {"name": "nlf_3", "type": "normal", "c": [2.75, 11.4, 155.2], "r": [0.3, 0.4, 0.4], "amt": -0.04, "sym": true},
+ {"name": "relax_bone", "type": "relax", "c": [4.8, 8.0, 159.0], "r": [1.8, 2.0, 2.5], "iters": 1, "sym": true}
+]}
