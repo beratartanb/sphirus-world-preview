@@ -1,0 +1,294 @@
+{
+ "label": "s5p8",
+ "geo3d": {
+  "pronasale": [
+   -0.29,
+   15.92,
+   159.36
+  ],
+  "sellion": [
+   -0.18,
+   12.73,
+   165.74
+  ],
+  "dorsum_mid": [
+   -0.32,
+   13.79,
+   162.55
+  ],
+  "subnasale": [
+   -0.25,
+   14.48,
+   157.16
+  ],
+  "alar_L": [
+   2.97,
+   12.82,
+   157.34
+  ],
+  "alar_R": [
+   -3.42,
+   13.12,
+   156.34
+  ],
+  "alar_near": [
+   -3.42,
+   13.12,
+   156.34
+  ]
+ },
+ "front": {
+  "ipd_px": 178.2,
+  "cm_per_px": 0.0334,
+  "rows": [
+   {
+    "pick": "cheek_R_hi",
+    "kind": "contour",
+    "delta_px": 7.0,
+    "delta_cm": 0.23,
+    "w": 0.3
+   },
+   {
+    "pick": "cheek_L_hi",
+    "kind": "contour",
+    "delta_px": 28.0,
+    "delta_cm": 0.94,
+    "w": 0.3
+   },
+   {
+    "pick": "cheek_R_mid",
+    "kind": "contour",
+    "delta_px": 10.0,
+    "delta_cm": 0.33,
+    "w": 0.8
+   },
+   {
+    "pick": "cheek_L_mid",
+    "kind": "contour",
+    "delta_px": 13.0,
+    "delta_cm": 0.43,
+    "w": 0.8
+   },
+   {
+    "pick": "cheek_R_lo",
+    "kind": "contour",
+    "delta_px": 9.0,
+    "delta_cm": 0.3,
+    "w": 0.8
+   },
+   {
+    "pick": "cheek_L_lo",
+    "kind": "contour",
+    "delta_px": 10.0,
+    "delta_cm": 0.33,
+    "w": 0.8
+   },
+   {
+    "pick": "jaw_R",
+    "kind": "contour",
+    "delta_px": -39.0,
+    "delta_cm": -1.3,
+    "w": 0.8
+   },
+   {
+    "pick": "jaw_L",
+    "kind": "contour",
+    "delta_px": -29.0,
+    "delta_cm": -0.97,
+    "w": 0.8
+   },
+   {
+    "pick": "chin_R",
+    "kind": "contour",
+    "delta_px": -23.0,
+    "delta_cm": -0.77,
+    "w": 1.0
+   },
+   {
+    "pick": "chin_L",
+    "kind": "contour",
+    "delta_px": -18.0,
+    "delta_cm": -0.6,
+    "w": 1.0
+   },
+   {
+    "pick": "menton",
+    "kind": "contour",
+    "delta_px": 9.0,
+    "delta_cm": 0.3,
+    "w": 1.5
+   },
+   {
+    "pick": "pronasale",
+    "kind": "point",
+    "dx_px": 1.8,
+    "dy_px": -2.8,
+    "dx_cm": 0.06,
+    "dy_cm": -0.09,
+    "w": 1.0
+   },
+   {
+    "pick": "alar_R",
+    "kind": "point",
+    "dx_px": -44.2,
+    "dy_px": 67.9,
+    "dx_cm": -1.48,
+    "dy_cm": 2.27,
+    "w": 1.5
+   },
+   {
+    "pick": "alar_L",
+    "kind": "point",
+    "dx_px": 53.2,
+    "dy_px": 37.5,
+    "dx_cm": 1.78,
+    "dy_cm": 1.25,
+    "w": 1.5
+   },
+   {
+    "pick": "subnasale",
+    "kind": "point",
+    "dx_px": 5.1,
+    "dy_px": 31.3,
+    "dx_cm": 0.17,
+    "dy_cm": 1.05,
+    "w": 1.5
+   }
+  ]
+ },
+ "close": {
+  "ipd_px": 142.0,
+  "cm_per_px": 0.0419,
+  "rows": [
+   {
+    "pick": "chin_p1",
+    "kind": "contour",
+    "delta_px": 34.0,
+    "delta_cm": 1.42,
+    "w": 1.0
+   },
+   {
+    "pick": "chin_p2",
+    "kind": "contour",
+    "delta_px": 30.0,
+    "delta_cm": 1.26,
+    "w": 1.2
+   },
+   {
+    "pick": "chin_p3",
+    "kind": "contour",
+    "delta_px": -22.0,
+    "delta_cm": -0.92,
+    "w": 1.2
+   },
+   {
+    "pick": "chin_p4",
+    "kind": "contour",
+    "delta_px": -31.0,
+    "delta_cm": -1.3,
+    "w": 1.0
+   },
+   {
+    "pick": "menton_c",
+    "kind": "contour",
+    "delta_px": -44.0,
+    "delta_cm": -1.84,
+    "w": 1.0
+   },
+   {
+    "pick": "jawbot_1",
+    "kind": "contour",
+    "delta_px": 33.0,
+    "delta_cm": 1.38,
+    "w": 0.8
+   },
+   {
+    "pick": "jawbot_2",
+    "kind": "contour",
+    "delta_px": -32.0,
+    "delta_cm": -1.34,
+    "w": 0.6
+   },
+   {
+    "pick": "farcheek_1",
+    "kind": "contour",
+    "delta_px": -3.0,
+    "delta_cm": -0.13,
+    "w": 0.6
+   },
+   {
+    "pick": "farcheek_2",
+    "kind": "contour",
+    "delta_px": 1.0,
+    "delta_cm": 0.04,
+    "w": 0.8
+   },
+   {
+    "pick": "farcheek_3",
+    "kind": "contour",
+    "delta_px": 8.0,
+    "delta_cm": 0.34,
+    "w": 0.8
+   },
+   {
+    "pick": "farcheek_4",
+    "kind": "contour",
+    "delta_px": 22.0,
+    "delta_cm": 0.92,
+    "w": 0.8
+   },
+   {
+    "pick": "farcheek_5",
+    "kind": "contour",
+    "delta_px": 24.0,
+    "delta_cm": 1.01,
+    "w": 0.6
+   },
+   {
+    "pick": "pronasale",
+    "kind": "point",
+    "dx_px": 8.8,
+    "dy_px": -15.5,
+    "dx_cm": 0.37,
+    "dy_cm": -0.65,
+    "w": 1.5
+   },
+   {
+    "pick": "alar_near",
+    "kind": "point",
+    "dx_px": -40.7,
+    "dy_px": 57.4,
+    "dx_cm": -1.7,
+    "dy_cm": 2.41,
+    "w": 1.0
+   },
+   {
+    "pick": "subnasale",
+    "kind": "point",
+    "dx_px": 8.8,
+    "dy_px": 14.9,
+    "dx_cm": 0.37,
+    "dy_cm": 0.62,
+    "w": 1.5
+   },
+   {
+    "pick": "sellion",
+    "kind": "point",
+    "dx_px": 10.1,
+    "dy_px": -81.1,
+    "dx_cm": 0.42,
+    "dy_cm": -3.4,
+    "w": 1.0
+   },
+   {
+    "pick": "dorsum_mid",
+    "kind": "point",
+    "dx_px": -3.6,
+    "dy_px": -49.9,
+    "dx_cm": -0.15,
+    "dy_cm": -2.09,
+    "w": 1.0
+   }
+  ]
+ }
+}
