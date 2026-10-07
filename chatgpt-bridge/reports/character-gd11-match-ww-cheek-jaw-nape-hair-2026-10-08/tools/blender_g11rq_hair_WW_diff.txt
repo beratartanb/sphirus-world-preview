@@ -1,0 +1,8 @@
+481a482
+>         if os.environ.get('SPH_BE_TABLE'): BE.update({int(k): [tuple(r) for r in v] for k, v in json.loads(os.environ['SPH_BE_TABLE']).items()})   # WW: per-side behind-ear / nape-to-bun loose lock table
+482a484
+>             drop = drop*E('SPH_BE_DROP', '1.0')   # WW: deeper sag (loose nape-to-bun hair visible below the ear from the front)
+493c495
+<             loose += wave_lock(ctrl, int(n_*E('SPH_BEHIND_EAR', '1.0')), 0.42, 0.55, 7.0, 1700+j+(0 if sg > 0 else 50), taper=0.55, spread_tip=1.3)
+---
+>             loose += wave_lock(ctrl, int(n_*E('SPH_BEHIND_EAR', '1.0')), 0.42*E('SPH_BE_R', '1.0'), 0.55*E('SPH_BE_AMP', '1.0'), 7.0, 1700+j+(0 if sg > 0 else 50), taper=0.55, spread_tip=1.3*E('SPH_BE_SPREAD', '1.0'), stray=E('SPH_BE_STRAY', '0.08'))   # WW h72d: SPH_BE_R/AMP/SPREAD/STRAY diffuse the join locks (no rope tubes)
