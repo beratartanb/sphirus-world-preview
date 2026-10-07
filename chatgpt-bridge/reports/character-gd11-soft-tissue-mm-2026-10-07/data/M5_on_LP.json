@@ -1,0 +1,167 @@
+{
+ "mx": -0.23,
+ "ops": [
+  {
+   "name": "chin_back_small",
+   "type": "field",
+   "axis": "y",
+   "A": -0.1,
+   "tz": [
+    149.6,
+    150.6,
+    152.4,
+    153.4
+   ],
+   "ty": [
+    10.0,
+    11.2,
+    30,
+    31
+   ],
+   "tx": [
+    -1,
+    -0.5,
+    1.6,
+    2.8
+   ]
+  },
+  {
+   "name": "chin_narrow_small",
+   "type": "field",
+   "axis": "x",
+   "A": -0.07,
+   "tz": [
+    149.6,
+    150.6,
+    152.4,
+    153.4
+   ],
+   "ty": [
+    8.5,
+    10.0,
+    30,
+    31
+   ],
+   "tx": [
+    0.6,
+    1.2,
+    2.4,
+    3.2
+   ]
+  },
+  {
+   "name": "relax_chin",
+   "type": "relax",
+   "c": [
+    0.0,
+    11.0,
+    151.5
+   ],
+   "r": [
+    3.0,
+    2.2,
+    2.0
+   ],
+   "iters": 3,
+   "sym": false,
+   "outer": true
+  },
+  {
+   "name": "submalar_fat",
+   "type": "normal",
+   "c": [
+    4.3,
+    8.6,
+    156.6
+   ],
+   "r": [
+    1.6,
+    2.0,
+    1.9
+   ],
+   "amt": 0.22,
+   "sym": true
+  },
+  {
+   "name": "buccal_fat_low",
+   "type": "normal",
+   "c": [
+    4.6,
+    7.0,
+    154.4
+   ],
+   "r": [
+    1.5,
+    2.0,
+    1.7
+   ],
+   "amt": 0.14,
+   "sym": true
+  },
+  {
+   "name": "malar_fat_soft",
+   "type": "normal",
+   "c": [
+    3.8,
+    10.2,
+    158.6
+   ],
+   "r": [
+    1.6,
+    1.4,
+    1.2
+   ],
+   "amt": 0.08,
+   "sym": true
+  },
+  {
+   "name": "temple_soft",
+   "type": "normal",
+   "c": [
+    6.2,
+    5.0,
+    164.0
+   ],
+   "r": [
+    1.0,
+    1.8,
+    1.6
+   ],
+   "amt": 0.08,
+   "sym": true
+  },
+  {
+   "name": "relax_soft",
+   "type": "relax",
+   "c": [
+    4.3,
+    8.4,
+    156.4
+   ],
+   "r": [
+    2.4,
+    2.8,
+    3.2
+   ],
+   "iters": 1,
+   "sym": true,
+   "outer": true
+  },
+  {
+   "name": "relax_jaw_angle",
+   "type": "relax",
+   "c": [
+    5.6,
+    1.5,
+    151.2
+   ],
+   "r": [
+    1.4,
+    2.0,
+    2.0
+   ],
+   "iters": 3,
+   "sym": true
+  }
+ ]
+}
