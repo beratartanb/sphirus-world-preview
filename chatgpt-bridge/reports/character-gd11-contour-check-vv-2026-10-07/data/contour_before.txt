@@ -1,0 +1,18 @@
+PICK front n=(-1.0,0.0) vtx [-7.4, 3.4, 158.8] res_cm +0.36
+PICK front n=(1.0,0.0) vtx [6.9, 3.5, 158.9] res_cm +0.99
+PICK front n=(-1.0,0.0) vtx [-6.4, 6.4, 156.2] res_cm +0.11
+PICK front n=(1.0,0.0) vtx [5.8, 5.7, 156.2] res_cm +0.27
+PICK front n=(-1.0,0.0) vtx [-6.0, 7.0, 154.6] res_cm +0.04
+PICK front n=(1.0,0.0) vtx [5.3, 6.3, 154.4] res_cm +0.17
+PICK front n=(-0.6,0.8) vtx [-4.8, 1.1, 149.1] res_cm +0.60
+PICK front n=(0.6,0.8) vtx [4.7, 1.5, 147.4] res_cm +2.59
+PICK close n=(1.0,0.1) vtx [4.4, 8.9, 155.0] res_cm +0.80
+PICK close n=(0.9,0.4) vtx [3.8, 8.9, 153.0] res_cm +0.71
+PICK close n=(0.6,0.8) vtx [1.0, 11.5, 151.6] res_cm +0.39
+PICK close n=(1.0,0.0) vtx [4.6, 10.9, 164.4] res_cm +0.10
+PICK close n=(1.0,0.0) vtx [5.1, 9.9, 162.8] res_cm +0.15
+PICK close n=(1.0,0.0) vtx [5.2, 9.4, 160.8] res_cm +0.22
+PICK close n=(1.0,0.0) vtx [4.1, 11.2, 158.6] res_cm +0.51
+PICK close n=(1.0,0.0) vtx [3.8, 10.7, 156.8] res_cm +0.36
+FIT {"iter": 0, "resid_cm": {"front": 1.02, "close": 0.468, "bald": 1.264, "rprof": 1.322}, "n_cons": 480, "max_step_mm": 1.73}
+FIT_DONE max 1.73 mm mean(face) 0.02 mm

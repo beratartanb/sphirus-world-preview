@@ -1,0 +1,151 @@
+{
+ "mx": -0.23,
+ "ops": [
+  {
+   "name": "relax_midface_soft",
+   "type": "relax",
+   "c": [
+    3.0,
+    10.5,
+    158.5
+   ],
+   "r": [
+    3.0,
+    2.5,
+    3.0
+   ],
+   "iters": 6,
+   "sym": true,
+   "outer": true
+  },
+  {
+   "name": "gonial_soften",
+   "type": "normal",
+   "c": [
+    4.9,
+    2.8,
+    149.9
+   ],
+   "r": [
+    1.3,
+    1.7,
+    1.3
+   ],
+   "amt": -0.2,
+   "sym": true
+  },
+  {
+   "name": "relax_mandible_border",
+   "type": "relax",
+   "c": [
+    4.3,
+    5.5,
+    151.3
+   ],
+   "r": [
+    2.4,
+    3.4,
+    1.6
+   ],
+   "iters": 3,
+   "sym": true
+  },
+  {
+   "name": "broad_undereye_nose_rise",
+   "type": "normal",
+   "c": [
+    2.2,
+    12.3,
+    160.2
+   ],
+   "r": [
+    2.2,
+    1.6,
+    1.6
+   ],
+   "amt": 0.22,
+   "sym": true
+  },
+  {
+   "name": "broad_cheek_fullness",
+   "type": "normal",
+   "c": [
+    4.0,
+    10.0,
+    157.0
+   ],
+   "r": [
+    2.5,
+    2.2,
+    2.5
+   ],
+   "amt": 0.14,
+   "sym": true
+  },
+  {
+   "name": "perioral_lateral_back",
+   "type": "normal",
+   "c": [
+    3.0,
+    11.0,
+    154.5
+   ],
+   "r": [
+    0.9,
+    1.0,
+    1.4
+   ],
+   "amt": -0.3,
+   "sym": true
+  },
+  {
+   "name": "lower_cheek_front_back",
+   "type": "normal",
+   "c": [
+    3.8,
+    9.4,
+    153.0
+   ],
+   "r": [
+    1.1,
+    1.2,
+    1.3
+   ],
+   "amt": -0.3,
+   "sym": true
+  },
+  {
+   "name": "chin_side_back",
+   "type": "normal",
+   "c": [
+    1.5,
+    11.3,
+    151.9
+   ],
+   "r": [
+    0.8,
+    0.9,
+    0.9
+   ],
+   "amt": -0.15,
+   "sym": true
+  },
+  {
+   "name": "relax_lowerface",
+   "type": "relax",
+   "c": [
+    3.0,
+    10.0,
+    153.5
+   ],
+   "r": [
+    2.2,
+    2.0,
+    2.2
+   ],
+   "iters": 2,
+   "sym": true,
+   "outer": true
+  }
+ ]
+}
