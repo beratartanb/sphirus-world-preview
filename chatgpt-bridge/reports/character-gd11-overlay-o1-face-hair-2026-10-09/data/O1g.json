@@ -1,0 +1,7 @@
+{"mx": -0.23, "note": "O1g (infrazygomatic field reaches the front-lower edge of the malar plateau, y 9.6) = O1e malar plateau (3/4 far-cheek contour ~2.6 mm inside ref6_r34) + small broad infrazygomatic fill so the under-zygoma area does not read deeper next to the fuller cheek; the jaw-border relax of O1e is dropped (no measurable effect).",
+ "ops": [
+  {"name": "malar_lateral", "type": "field", "axis": "x", "A": 0.15, "tz": [156.2, 157.8, 158.9, 160.6], "ty": [7.6, 9.0, 10.8, 11.6], "tx": [4.3, 5.0, 6.0, 6.8]},
+  {"name": "malar_forward", "type": "field", "axis": "y", "A": 0.08, "tz": [156.2, 157.8, 158.9, 160.6], "ty": [7.6, 9.0, 10.8, 11.6], "tx": [4.3, 5.0, 6.0, 6.8]},
+  {"name": "infrazygomatic_lateral", "type": "field", "axis": "x", "A": 0.07, "tz": [154.6, 155.6, 157.0, 158.0], "ty": [3.6, 5.0, 9.6, 10.6], "tx": [3.9, 4.6, 5.8, 6.5]},
+  {"name": "malar_relax", "type": "relax", "c": [5.2, 9.0, 158.2], "r": [2.2, 3.2, 2.6], "iters": 8, "sym": true}
+ ]}

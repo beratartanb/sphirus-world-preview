@@ -1,0 +1,21 @@
+== front anchor res px [1.1, 0.6, 1.1, 0.5] px/cm 16.49
+  contour L forehead +35.2->+35.8 | brow +24.3->+24.3 | zygomatic +7.9->+7.9 | cheek_mass +9.1->+9.1 | lower_cheek -1.2->-1.2 | mouth -1.8->-1.2 | jaw_body -1.2->-1.2
+  contour R forehead +32.1->+32.1 | brow +20.9->+20.9 | zygomatic +5.2->+5.2 | cheek_mass +3.0->+3.0 | lower_cheek +4.9->+4.9 | mouth +2.7->+2.7 | jaw_body +3.0->+3.0
+  jaw chin_base_L +2.4->+2.4 | chin_base_R +3.3->+3.3 | chin_side_L +0.6->+0.6 | chin_side_R -1.2->-1.2 | jaw_body_L -0.3->+0.6 | jaw_body_R +1.8->+2.1 | jaw_back_L +nan->+0.6 | jaw_back_R +nan->+17.0
+  rows brow +2.1->+2.4 | nosebase +0.2->+0.4 | chin +3.6->+3.6 | eye -0.2->-0.2 | mouth -0.7->-0.6 | chin height ref 35.4 cand 39.7->39.7
+== r34 anchor res px [1.4, 0.5, 3.1, 2.7] px/cm 15.52
+  contour far forehead +4.5->+5.2 | brow +0.6->+0.6 | zygomatic -2.6->-1.9 | cheek_mass -2.6->-1.3 | lower_cheek +1.3->+2.6 | mouth +2.6->+3.5 | jaw_body +1.3->+1.9
+  jaw chin_base_L +3.9->-3.9 | chin_base_R -4.5->-3.2 | chin_side_L -3.9->-3.9 | chin_side_R +2.6->+2.3 | jaw_body_L -1.3->-1.9 | jaw_body_R +nan->-11.9 | jaw_back_L -0.3->+0.0
+  rows brow +3.9->+3.9 | nosebase -1.0->-0.9 | chin -3.2->-3.5 | eye -0.0->+0.1 | mouth -2.5->-2.6 | chin height ref 39.7 cand 39.0->38.7
+== l34 anchor res px [1.2, 1.0, 4.0, 4.1] px/cm 15.83
+  contour far forehead -19.5->-20.2 | brow +0.0->+0.0 | zygomatic -8.2->-8.2 | cheek_mass -17.6->-16.4 | lower_cheek -1.9->-1.3 | mouth -0.6->-0.6 | jaw_body -1.9->-1.9
+  jaw chin_base_L +1.9->-1.3 | chin_base_R +5.7->+5.1 | chin_side_L +52.4->-5.7 | chin_side_R -3.8->-4.4 | jaw_body_R +1.9->+1.3 | jaw_back_R +1.3->+0.6
+  rows brow +5.7->+5.1 | nosebase -0.4->-0.7 | chin +1.3->+0.6 | eye +0.0->+0.0 | mouth -1.8->-2.1 | chin height ref 36.0 cand 38.9->38.7
+== rprof anchor res px [0.0, 0.0, 2.8, 3.6, 18.0] px/cm 12.63
+  contour far forehead -17.0->-17.0 | brow -0.8->-0.8 | zygomatic +0.8->+0.8 | cheek_mass -4.0->-4.0 | lower_cheek -1.6->-1.6 | mouth -6.3->-6.3 | jaw_body -4.7->-4.7
+  under chin_front -15.0->-15.0 | under_chin -14.2->-14.2 | submandibular -4.7->-4.7
+  rows brow +3.2->+3.2 | chin -15.0->-15.0 | eye -5.9->-4.1 | mouth -11.0->-12.7 | chin height ref 44.0 cand 39.9->41.7
+== lprof anchor res px [0.0, 0.0, 5.6, 1.6, 17.0] px/cm 12.75
+  contour far forehead -14.9->-14.9 | brow -3.1->-3.1 | zygomatic +5.5->+5.5 | cheek_mass -0.8->-0.8 | lower_cheek -1.6->-1.6 | mouth -3.9->-3.9 | jaw_body -5.5->-5.5
+  under chin_front -15.7->-15.7 | under_chin -14.1->-14.1 | submandibular -6.3->-6.3
+  rows brow +7.1->+6.7 | chin -23.5->-23.5 | eye +0.8->-5.0 | mouth -4.7->-5.9 | chin height ref 44.2 cand 25.3->26.5
