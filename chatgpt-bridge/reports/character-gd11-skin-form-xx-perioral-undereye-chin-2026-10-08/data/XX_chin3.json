@@ -1,0 +1,7 @@
+{"mx": -0.23, "note": "pass XX chin round v3: corner pulled mostly BACK (v1 also lifted it +2.2 mm -> crease along the chin underside); labiomental slightly deeper, tiny pogonion accent, relax.",
+ "ops": [
+  {"name": "chin_corner_round", "type": "grab", "c": [0, 12.3, 151.55], "r": [2.2, 1.0, 0.75], "d": [0, -0.38, 0.05], "sym": false},
+  {"name": "labiomental", "type": "grab", "c": [0, 12.8, 153.3], "r": [1.7, 0.7, 0.45], "d": [0, -0.18, 0], "sym": false},
+  {"name": "pogonion_accent", "type": "grab", "c": [0, 12.8, 152.4], "r": [1.5, 0.6, 0.5], "d": [0, 0.05, 0], "sym": false},
+  {"name": "chin_relax", "type": "relax", "c": [0, 11.8, 152.0], "r": [2.6, 1.8, 1.6], "iters": 6, "sym": false}
+ ]}

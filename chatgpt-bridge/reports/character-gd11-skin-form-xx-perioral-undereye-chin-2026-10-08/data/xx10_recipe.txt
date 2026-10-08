@@ -1,0 +1,9 @@
+xx10 = WW12 ->
+ P1 blender_g11uu_ramp.py 1.35 3.2 158.9 161.0 0.35 0.4 (RAMP_SMOOTH=40)            under-eye -> nose side ramp (fill only)
+ P2 blender_g11xx_soften3.py sigma 1.3 fill .6 cut .5 x2, box ax 4.6-7.2 z 155-160.8 y>0.5 (no nose/lip masks)   cheekbone -> ear
+ P3 blender_g11xx_soften3.py sigma 1.0 fill .6 cut .5 x2, box ax 2.9-6.2 z 150.6-157 y>3, SOFT_CHINZONE=0          cheek -> jaw band
+ P4 blender_g11xx_soften3.py sigma 0.9 fill .4 cut .6 x2, box ax 0-2.9 z 150.4-152.6 y>8.5                          chin muscle bumps
+ P5 blender_g11xx_soften6.py sigma 0.8 fill .1 cut .8 x2, SOFT_BOX 0.8,4.4,151.6,157.8,8.0                          perioral ring (ridges only)
+ P6 blender_g11xx_soften6.py sigma 0.8 fill .5 cut .6 x2, SOFT_BOX 1.6,5.8,157.4,160.9,8.5                          under-eye ridge / groove
+ P7 blender_gd15_ops.py ops/XX_chin3.json                                                                             chin round (corner back), labiomental, relax
+skin x19a = T_LK_Head_BC_x19 (blender_g11xx_skinbc.py k9b 0.9 0.4: exact undo UNDEREYE .12 / PLANE_TONE .06 / SUN cheekbones / AGE_BC .05 + mid-scale evening) + Fake AO 0.4
