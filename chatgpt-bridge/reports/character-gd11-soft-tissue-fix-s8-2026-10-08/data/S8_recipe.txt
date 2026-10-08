@@ -1,0 +1,8 @@
+S8 = ww5bf (head_F1; S5 discarded) ->
+ 1 blender_gd15_ops.py ops/S7_soft.json:
+     midcheek_breadth   field x A 0.20, tz [154.0,155.4,157.6,159.4], ty [3.6,5.6,10.0,11.5], tx [3.2,4.6,6.0,6.9]  (mid-lower cheek, forward of the masseter belly, fades before the ear)
+     malar_fatpad_soft  normal c [4.1,9.6,156.4] r [2.0,2.6,2.4] amt +0.10
+     front_lower_breadth field x A 0.10, tz [150.4,151.8,153.6,155.0], ty [6.5,8.5,11.5,12.8], tx [2.4,3.4,6.0,7.0] (soft U at the jowl, not the gonial angle)
+     cheek_relax
+ 2 blender_g11xx_soften6.py sigma 1.4 fill 0.6 CUT 0 x2, SOFT_BOX 2.2,5.8,150.0,160.9,1.5 (fill-only: under-eye lateral -> cheek -> jaw border; can only lift hollows)
+ 3 blender_g11yy_unfold.py vs ww5bf (0 folds)

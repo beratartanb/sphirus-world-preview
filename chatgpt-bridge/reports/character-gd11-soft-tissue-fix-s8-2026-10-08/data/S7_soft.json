@@ -1,0 +1,7 @@
+{"mx": -0.23, "note": "pass S7 (from ww5bf; S6 + field fades before the ear (S6 crumpled the ear-front junction) and starts above the masseter belly; S5 reverted): soft-tissue only. Breadth moved UP to the mid-lower cheek and FORWARD of the masseter zone (S5 had pushed +2.2 mm onto the masseter / jaw-angle zone and left the mid cheek empty -> jaw corner + caved band). Broad malar-fat-pad fullness, soft front-lower jowl breadth (soft U, not the gonial angle), relax.",
+ "ops": [
+  {"name": "midcheek_breadth", "type": "field", "axis": "x", "A": 0.20, "tz": [154.0, 155.4, 157.6, 159.4], "ty": [3.6, 5.6, 10.0, 11.5], "tx": [3.2, 4.6, 6.0, 6.9]},
+  {"name": "malar_fatpad_soft", "type": "normal", "c": [4.1, 9.6, 156.4], "r": [2.0, 2.6, 2.4], "amt": 0.10, "sym": true},
+  {"name": "front_lower_breadth", "type": "field", "axis": "x", "A": 0.10, "tz": [150.4, 151.8, 153.6, 155.0], "ty": [6.5, 8.5, 11.5, 12.8], "tx": [2.4, 3.4, 6.0, 7.0]},
+  {"name": "cheek_relax", "type": "relax", "c": [4.4, 8.0, 155.4], "r": [3.4, 4.4, 4.4], "iters": 6, "sym": true}
+ ]}
