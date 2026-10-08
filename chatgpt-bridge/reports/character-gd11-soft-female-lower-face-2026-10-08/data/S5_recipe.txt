@@ -1,0 +1,5 @@
+S5 = ww5bf (head_F1) ->
+ 1 blender_g11uu_band.py (BAND_SMOOTH 14) under-eye -> cheekbone support band [[3.2,159.9,0.06,0.55],[3.7,160.35,0.11,0.6],[4.4,160.4,0.12,0.62],[5.0,160.5,0.10,0.6],[5.6,160.6,0.05,0.55]]  (lateral palpebromalar groove only; nose-side groove untouched)
+ 2 blender_gd15_ops.py ops/S5_lower.json: mid-lower cheek width field (+2.4 mm plateau z 152.2-155.6, toward the pre-auricular cheek), buccal soft fill, prejowl fill, chin pad breadth (+1.2 mm), relax
+ 3 blender_g11xx_soften3.py jaw-border band-pass soften (box |x| 2.6-7, z 147.8-153.6; fill .6 cut .35 x2) - rounds the jaw edge, nothing carved
+ 4 blender_g11yy_unfold.py vs ww5bf (0 new folds)

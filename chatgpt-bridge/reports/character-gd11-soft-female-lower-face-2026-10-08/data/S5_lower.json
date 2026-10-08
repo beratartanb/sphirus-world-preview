@@ -1,0 +1,8 @@
+{"mx": -0.23, "note": "pass S1: soft female lower face = soft-tissue breadth only (no muscle, no sharper border, no lengthening): mid-lower cheek lateral width (plateau field, toward the pre-auricular cheek), buccal / lower-cheek hollow filled, prejowl filled so the chin continues into the jaw, chin pad slightly broader, then relax.",
+ "ops": [
+  {"name": "midlower_cheek_width", "type": "field", "axis": "x", "A": 0.24, "tz": [150.2, 152.2, 155.6, 157.6], "ty": [0.5, 2.5, 8.6, 10.6], "tx": [3.4, 4.8, 9.0, 9.5]},
+  {"name": "buccal_soft_fill", "type": "normal", "c": [4.6, 7.6, 153.8], "r": [1.7, 2.6, 2.0], "amt": 0.12, "sym": true},
+  {"name": "prejowl_fill", "type": "normal", "c": [2.75, 10.5, 152.1], "r": [1.1, 1.2, 1.0], "amt": 0.11, "sym": true},
+  {"name": "chin_pad_breadth", "type": "field", "axis": "x", "A": 0.12, "tz": [150.4, 151.4, 152.8, 153.6], "ty": [8.5, 10.0, 14.0, 15.0], "tx": [0.6, 1.6, 3.6, 4.6]},
+  {"name": "lowerface_relax", "type": "relax", "c": [4.2, 8.0, 153.6], "r": [3.6, 4.2, 3.6], "iters": 6, "sym": true}
+ ]}
