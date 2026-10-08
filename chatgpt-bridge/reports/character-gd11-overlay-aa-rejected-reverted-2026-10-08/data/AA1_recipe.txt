@@ -1,0 +1,4 @@
+AA1 = ww5b (head_ww5b_actual) ->
+ 1 blender_g11aa_lowerface.py A 1.0 cm, GON 1.0, Z_TOP 153.9, Z_FULL 151.9, FWD 0, WID 0.4   chin + jaw border down 1 cm to the reference (front + 3/4 picks), lower jaw +4 mm wider
+ 2 blender_gd15_ops.py ops/AA_chinback.json                                                    chin front 4.5 mm back (3/4 chin picks)
+ 3 blender_g11yy_unfold.py ref ww5b (new folds only)
