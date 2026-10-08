@@ -1,0 +1,5 @@
+{"mx": -0.23, "note": "pass YY: eye -> nose junction ('tip') softened by Taubin relax of positions (fill along normals folded the V crease); two nested ellipsoids, soft edges.",
+ "ops": [
+  {"name": "eyenose_relax_core", "type": "relax", "c": [1.5, 12.6, 159.7], "r": [0.8, 1.1, 1.2], "iters": 25, "sym": true},
+  {"name": "eyenose_relax_wide", "type": "relax", "c": [1.8, 12.3, 159.6], "r": [1.5, 1.6, 1.8], "iters": 12, "sym": true}
+ ]}

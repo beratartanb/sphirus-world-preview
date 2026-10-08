@@ -1,0 +1,5 @@
+{"mx": -0.23, "note": "pass YY: soft forward chin protrusion (pogonion ball) like the reference profile; labiomental kept; relax.",
+ "ops": [
+  {"name": "pogonion_ball", "type": "grab", "c": [0, 12.8, 152.35], "r": [1.8, 0.8, 0.7], "d": [0, 0.26, 0], "sym": false},
+  {"name": "chin_relax2", "type": "relax", "c": [0, 12.2, 152.2], "r": [2.4, 1.6, 1.5], "iters": 6, "sym": false}
+ ]}

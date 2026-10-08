@@ -1,0 +1,8 @@
+yy9 = XX10 ->
+ 1 blender_g11xx_soften6.py sigma 1.1 fill .9 cut .2 x3, SOFT_BOX 1.8,6.0,151.0,158.4,6.0 SOFT_FADE .9      perioral grooves (broad fill)
+ 2 blender_g11uu_ramp.py 1.3 3.0 158.7 161.0 0.5 0.4 (RAMP_SMOOTH=30)                                        eye -> nose corner fillet (fill only)
+ 3 blender_gd15_ops.py ops/YY_eyenose.json                                                                    relax at the eye-nose junction
+ 4 blender_gd15_ops.py ops/YY_chin.json                                                                       soft chin protrusion (+2.6 mm pogonion)
+ 5 blender_g11uu_band.py crest (ops/YY_nlfold_bands3.json, BAND_SMOOTH=14)                                    nasolabial fold crest lowered
+ 6 blender_gd15_ops.py ops/YY_cheekblend2.json                                                                broad cheek / jowl fullness lateral to the fold
+ 7 blender_g11yy_unfold.py ref VV2, COS .35, RING 2, 400 it                                                   fold repair (1156 -> 32 folded tris)
