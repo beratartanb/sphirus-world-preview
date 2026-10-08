@@ -1,0 +1,7 @@
+{"mx": -0.23, "note": "S10 pass A (on S8): lower-face mass from the side and from below - lower cheek / pre-jowl lateral support (forward of the masseter, gonial untouched: ty fades out below y 4.8), soft forward pre-jowl fill, chin side masses, relax. Chin front (pogonion / menton) untouched.",
+ "ops": [
+  {"name": "lowercheek_prejowl_lateral", "type": "field", "axis": "x", "A": 0.20, "tz": [150.4, 151.6, 153.8, 155.4], "ty": [4.8, 6.4, 10.2, 11.6], "tx": [2.4, 3.4, 5.4, 6.2]},
+  {"name": "prejowl_forward", "type": "field", "axis": "y", "A": 0.08, "tz": [150.6, 151.4, 153.0, 153.9], "ty": [7.0, 8.5, 12.0, 13.0], "tx": [1.8, 2.6, 4.4, 5.2]},
+  {"name": "chin_side_masses", "type": "field", "axis": "x", "A": 0.08, "tz": [150.6, 151.4, 152.8, 153.6], "ty": [9.5, 10.6, 13.8, 14.6], "tx": [0.9, 1.6, 2.8, 3.6]},
+  {"name": "lowerface_relax", "type": "relax", "c": [3.6, 8.4, 152.6], "r": [2.8, 3.6, 3.0], "iters": 6, "sym": true}
+ ]}

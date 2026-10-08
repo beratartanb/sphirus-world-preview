@@ -1,0 +1,11 @@
+NEW (S10 final = head_S10F, UE SKM_G11RR_Face_ww5bs10f) = S8 (ww5bs8) ->
+ A  blender_gd15_ops.py ops/A_lower.json   lower cheek / pre-jowl lateral support (ty fades out below y 4.8 -> gonial untouched), soft forward pre-jowl fill, chin side masses, relax
+    blender_g11xx_soften6.py fill-only (cut 0) sigma 1.4 box 2.0,5.6,150.2,155.6,4.0
+ B  blender_gd15_ops.py ops/B_mid.json     infrazygomatic fill, small outer-cheek breadth (60 % of S9's), relax
+    soften6 fill-only box 3.4,6.0,154.6,159.0,3.0 ; under-eye lateral fill-only box 2.8,6.0,157.4,160.2,6.0 (no cut, stops below the lid)
+ C  soften6 fill-only outer cheek box 4.4,6.0,155.4,158.8,4.4 (ear junction excluded) ; buccal box 3.4,5.4,153.0,155.8,5.5
+ P  blender_g11s10_protect.py PROT=mouth   mouth corners kept at S8
+ D  blender_g11s10_dsmooth.py box 1.8,3.8,152.2,155.2,9.5 ; buccal fill-only 3.6,5.6,152.8,155.8,5.5 ; small under-eye spot 4.6,6.0,158.4,159.8,8.4
+    blender_g11s10_dsmooth.py box 1.8,4.4,152.2,156.8,9.8   (harmonic smoothing of the displacement: removes relative dips at the mouth side / nasolabial edge)
+ U  blender_g11yy_unfold.py vs S8 (0 folds)
+Rejected intermediates: S10 first version (SKM ww5bs10): under-eye band-pass with cut reached the lower lid (+2.5 mm relief bumps) and the mouth corner; S10b/S10d/S10e: small new relative hollows at the mouth side / nasolabial edge.

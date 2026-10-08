@@ -1,0 +1,6 @@
+{"mx": -0.23, "note": "S10 pass B (on A): infrazygomatic / outer cheek fill so the cheek connects to the new lower-cheek support without a relative hollow band; small outer-cheek lateral breadth (S9's but 60 %, fades before the ear and above the masseter); relax.",
+ "ops": [
+  {"name": "infrazygomatic_fill", "type": "normal", "c": [4.9, 7.6, 156.3], "r": [1.6, 2.6, 1.7], "amt": 0.11, "sym": true},
+  {"name": "outer_cheek_lateral", "type": "field", "axis": "x", "A": 0.10, "tz": [155.0, 156.2, 157.8, 158.8], "ty": [4.2, 5.6, 9.6, 11.0], "tx": [4.0, 5.0, 6.2, 6.9]},
+  {"name": "midcheek_relax", "type": "relax", "c": [4.6, 7.8, 156.0], "r": [2.6, 3.4, 3.0], "iters": 6, "sym": true}
+ ]}
