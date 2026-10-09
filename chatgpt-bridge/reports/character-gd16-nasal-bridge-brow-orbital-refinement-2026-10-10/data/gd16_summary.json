@@ -1,0 +1,28 @@
+{
+ "pass": "GD16 nasal bridge, brow arch & orbital anatomy refinement",
+ "date": "2026-10-10",
+ "start_and_rollback": "GD15 G15 (unchanged)",
+ "final_candidate": "G16",
+ "status": "PARTIAL",
+ "ue_assets_folder": "/Game/Sphirus/CharacterLab/GD16_IdentityMaster_20261010 (test assets only, not production)",
+ "final_assets": {"mhc": "MHC/MHC_GD16_G16", "mhc_rigged": "MHC/MHC_GD16_G16_Rig", "face": "Face/SKM_GD16_Face_g16", "dna": "MHC/DNA/MHC_GD16_G16_Rig_Head",
+                  "brow": "Grooms/GR_GD16_BrowCustom_c4 bound by Face/Bindings/GB_GD16_EyebrowsCustom_c4_g16 (MI_GD15_BrowS_auburnDark, width 0.0095, tip 0.5, stable rasterization)",
+                  "look": "iris MI_GD15_Eye{L,R}_h6, skin MI_GD15_Face_<LOD>_s1t5, lashes S_Thin, hair h75c (sources unchanged)"},
+ "nose_profile_bands_px_vs_reference": {"note": "fixed solved profile camera, panel px (~0.71 mm/px), + = model in front; band means [mean, rms, n]",
+   "GD15": {"radix_nasion": [4.48, 4.52], "upper_dorsum": [-0.36, 2.37], "lower_dorsum_supratip": [-2.29, 2.33], "tip": [-1.24, 1.61], "columella_subnasale": [3.3, 3.8], "dorsal_convexity": 0.0},
+   "GD16": {"radix_nasion": [3.06, 3.13], "upper_dorsum": [0.36, 1.5], "lower_dorsum_supratip": [-0.52, 0.55], "tip": [-0.55, 0.81], "columella_subnasale": [2.09, 3.11], "dorsal_convexity": 1.2},
+   "reference_dorsal_convexity": 0.81},
+ "front_alar_edge_residual_px": {"GD15_mean": 2.80, "GD16_mean": 0.65, "note": "+ = model wider than the reference (front solved camera, ~0.65 mm/px)"},
+ "brow_shape_edge_error_px": {"GD15_library_FlatThick": 6.70, "GD16_custom_c4": 3.34, "note": "mean |top/bottom hair edge - reference station edge| at 16 stations, front solved camera, panel px"},
+ "region_changes_G15S_to_G16S_mm": "data/G16S_region_changes.json (cheeks / chin-jaw / face width / cranium 0.000; upper lids <= 0.15; lips <= 0.6 commissure repair only)",
+ "transfer": {"fit_final_vs_sculpt_mm": {"mean": 0.020, "p95": 0.099, "p99": 0.213, "max": 1.153, "note": "max on 19 glabella-midline vertices"}, "postrig_vs_fit_max_mm": 0.001},
+ "rig": {"request_auto_rigging": "ok", "has_face_dna_blendshapes": true, "morphs": 858, "pp_abp": "ABP_Face_PostProcess"},
+ "gd15_to_gd16_postrig_mm": {"mean": 0.044, "p95": 0.208, "p99": 1.334, "max": 2.948},
+ "checks_final": {"flipped_tris_vs_E": 0, "flipped_GD15": 1, "new_creases": "6 borderline natural-edge creases: commissure 150 deg, nostril sill x4 123-128 deg, right lateral canthus 121 deg", "area_ratio_min": 0.295, "lids_inside_0p3mm": [360, 300], "neck_boundary_max_mm": 0.0, "eyes_teeth_change_mm": 0.0},
+ "tests": {
+  "dna_858_morphs": "PASS", "mesh_integrity": "PASS", "flipped_triangles": "PASS (0)", "sharp_creases": "PARTIAL (6 borderline natural creases kept; relaxing them collapsed the folds - rejected)",
+  "eyeball_lid": "PASS", "brow_lash_bindings": "PASS (custom brow follows brows up/down, frown, smile)", "blink": "PASS", "expressions_static": "PASS (19 RigLogic cases x 2 views)",
+  "lod": "PARTIAL (LOD0-3 captured; LOD4-7 NOT_TESTED)", "body_animation_hair_sim": "NOT_TESTED", "pie": "NOT_TESTED (C: free space 2.1-2.8 GB during the pass)",
+  "production_unchanged": "PASS (see README)"
+ }
+}

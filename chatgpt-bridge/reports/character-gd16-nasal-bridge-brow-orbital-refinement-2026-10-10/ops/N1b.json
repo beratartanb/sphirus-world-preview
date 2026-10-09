@@ -1,0 +1,151 @@
+[
+ {
+  "note": "radix / nasion deeper (ref profile rows 184-196: model 2.6-4.0 mm in front); side view, both sides grabbed together",
+  "brush": "Grab",
+  "r": 0.75,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   1,
+   0,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     163.25
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   -0.26,
+   0
+  ]
+ },
+ {
+  "note": "lower radix taper (rows 198-206: +1..+2.3 px)",
+  "brush": "Grab",
+  "r": 0.6,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   1,
+   0,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     162.4
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   -0.09,
+   0
+  ]
+ },
+ {
+  "note": "nasal bone -> rhinion bridge built forward (ref rows 212-224: model 1.4-2.6 mm behind); Draw ADD along the dorsum ridge",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.5,
+  "s": 0.12,
+  "sym": false,
+  "passes": 14,
+  "target_mm": 2.0,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     161.0
+    ]
+   },
+   {
+    "fp": [
+     -0.23,
+     160.4
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower dorsum / supratip forward (rows 230-240: 1.0-1.9 mm behind)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.1,
+  "sym": false,
+  "passes": 12,
+  "target_mm": 1.3,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     159.8
+    ]
+   },
+   {
+    "fp": [
+     -0.23,
+     159.4
+    ]
+   }
+  ]
+ },
+ {
+  "note": "infratip lobule / columella up-back (rows 248-262: lobule underside 1-2.8 mm low/forward); tip point projection kept",
+  "brush": "Grab",
+  "r": 0.5,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   1,
+   0,
+   0
+  ],
+  "pts": [
+   [
+    -0.23,
+    14.55,
+    158.05
+   ]
+  ],
+  "delta": [
+   0,
+   -0.07,
+   0.09
+  ]
+ },
+ {
+  "note": "dorsum line smoothing (removes grab seams, keeps the line)",
+  "brush": "Smooth",
+  "r": 0.35,
+  "s": 0.15,
+  "sym": false,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     163.1
+    ]
+   },
+   {
+    "fp": [
+     -0.23,
+     161.5
+    ]
+   },
+   {
+    "fp": [
+     -0.23,
+     159.6
+    ]
+   }
+  ]
+ }
+]

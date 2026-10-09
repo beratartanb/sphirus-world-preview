@@ -1,0 +1,8 @@
+[
+ {"note": "supraorbital crest reduced (ridge 5-9 mm proud of the upper-lid surface at offsets 1-3 cm; profile: near-side ridge ~3 mm beyond the reference line); soft-tissue, not carving", "brush": "Draw", "dir": "SUBTRACT", "r": 0.55, "s": 0.1, "sym": true, "passes": 14, "target_mm": 1.6, "pts": [{"fp": [0.77, 164.5]}, {"fp": [1.37, 164.35]}, {"fp": [1.97, 164.25]}, {"fp": [2.57, 164.2]}, {"fp": [3.07, 164.1]}]},
+ {"note": "lateral supraorbital ridge, lighter", "brush": "Draw", "dir": "SUBTRACT", "r": 0.5, "s": 0.08, "sym": true, "passes": 10, "target_mm": 0.8, "pts": [{"fp": [3.37, 164.0]}, {"fp": [4.07, 163.8]}]},
+ {"note": "right radix flank (radix peaks 0.45 cm right of the midline, ~5 mm proud of the mirrored point; profile radix rows +3.7 px)", "brush": "Draw", "dir": "SUBTRACT", "r": 0.45, "s": 0.08, "sym": false, "passes": 12, "target_mm": 1.5, "pts": [{"fp": [-0.68, 163.35]}, {"fp": [-0.62, 162.9]}]},
+ {"note": "corrugator knots softened (clay shows medial brow bulges / frown read)", "brush": "Smooth", "r": 0.5, "s": 0.35, "sym": true, "passes": 1, "pts": [{"fp": [0.87, 164.75]}, {"fp": [1.27, 164.65]}]},
+ {"note": "glabellar furrow softened (vertical crease not in the reference)", "brush": "Smooth", "r": 0.6, "s": 0.35, "sym": false, "passes": 1, "pts": [{"fp": [-0.23, 164.6]}, {"fp": [-0.23, 164.1]}]},
+ {"note": "brow fat pad -> ridge transition blended (soft tissue, above the lid crease)", "brush": "Smooth", "r": 0.42, "s": 0.2, "sym": true, "passes": 1, "pts": [{"fp": [1.47, 163.75]}, {"fp": [2.47, 163.65]}, {"fp": [3.37, 163.55]}]}
+]
