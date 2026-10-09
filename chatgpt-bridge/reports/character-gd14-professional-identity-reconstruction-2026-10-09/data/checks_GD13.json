@@ -1,0 +1,237 @@
+{
+ "head": "head_GD13.npy",
+ "n": 33845,
+ "finite": true,
+ "folds": 46,
+ "lids": {
+  "eyeL": {
+   "min_clear_mm": -8.42,
+   "n_inside_0p3mm": 304
+  },
+  "eyeR": {
+   "min_clear_mm": -7.8,
+   "n_inside_0p3mm": 267
+  }
+ },
+ "area_ratio_min": 0.094,
+ "area_ratio_max": 3.436,
+ "flipped_tris_vs_base": 14,
+ "vs_head_E.npy": {
+  "max_mm": 8.28,
+  "mean_moved_mm": 1.72,
+  "n_moved_0p1mm": 20443,
+  "n_moved_1mm": 12535,
+  "disp_asym_p99_mm": 1.55,
+  "regions": {
+   "forehead": {
+    "n": 1580,
+    "normal_mean_mm": 0.46,
+    "abs_max_mm": 3.51,
+    "vec_mean_mm": [
+     0.0,
+     0.45,
+     0.16
+    ],
+    "moved_gt_0p5mm": 827
+   },
+   "temple": {
+    "n": 553,
+    "normal_mean_mm": 0.08,
+    "abs_max_mm": 1.26,
+    "vec_mean_mm": [
+     0.02,
+     0.01,
+     0.08
+    ],
+    "moved_gt_0p5mm": 52
+   },
+   "brow_supraorbital": {
+    "n": 383,
+    "normal_mean_mm": -0.07,
+    "abs_max_mm": 2.48,
+    "vec_mean_mm": [
+     0.01,
+     0.06,
+     0.01
+    ],
+    "moved_gt_0p5mm": 142
+   },
+   "glabella_radix": {
+    "n": 320,
+    "normal_mean_mm": -0.11,
+    "abs_max_mm": 3.43,
+    "vec_mean_mm": [
+     -0.05,
+     -0.18,
+     0.06
+    ],
+    "moved_gt_0p5mm": 272
+   },
+   "upper_lid": {
+    "n": 1283,
+    "normal_mean_mm": -0.42,
+    "abs_max_mm": 2.48,
+    "vec_mean_mm": [
+     -0.0,
+     -0.3,
+     0.51
+    ],
+    "moved_gt_0p5mm": 687
+   },
+   "lower_lid_infraorbital": {
+    "n": 2066,
+    "normal_mean_mm": 0.77,
+    "abs_max_mm": 5.65,
+    "vec_mean_mm": [
+     0.01,
+     0.82,
+     0.26
+    ],
+    "moved_gt_0p5mm": 711
+   },
+   "malar_zygoma": {
+    "n": 543,
+    "normal_mean_mm": 1.67,
+    "abs_max_mm": 4.67,
+    "vec_mean_mm": [
+     0.1,
+     1.83,
+     0.13
+    ],
+    "moved_gt_0p5mm": 543
+   },
+   "mid_cheek": {
+    "n": 461,
+    "normal_mean_mm": 1.66,
+    "abs_max_mm": 6.21,
+    "vec_mean_mm": [
+     0.51,
+     0.71,
+     0.11
+    ],
+    "moved_gt_0p5mm": 445
+   },
+   "lower_cheek_jowl": {
+    "n": 513,
+    "normal_mean_mm": -0.04,
+    "abs_max_mm": 5.83,
+    "vec_mean_mm": [
+     0.22,
+     1.0,
+     0.44
+    ],
+    "moved_gt_0p5mm": 506
+   },
+   "nose_dorsum": {
+    "n": 622,
+    "normal_mean_mm": 1.53,
+    "abs_max_mm": 4.52,
+    "vec_mean_mm": [
+     -0.01,
+     1.84,
+     0.54
+    ],
+    "moved_gt_0p5mm": 609
+   },
+   "nose_tip_alae": {
+    "n": 1704,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 4.53,
+    "vec_mean_mm": [
+     -0.03,
+     0.16,
+     0.37
+    ],
+    "moved_gt_0p5mm": 1437
+   },
+   "upper_lip": {
+    "n": 1000,
+    "normal_mean_mm": -0.15,
+    "abs_max_mm": 3.72,
+    "vec_mean_mm": [
+     -0.02,
+     -0.33,
+     2.38
+    ],
+    "moved_gt_0p5mm": 1000
+   },
+   "lower_lip": {
+    "n": 3396,
+    "normal_mean_mm": -0.05,
+    "abs_max_mm": 4.92,
+    "vec_mean_mm": [
+     0.03,
+     -0.74,
+     2.64
+    ],
+    "moved_gt_0p5mm": 3396
+   },
+   "chin": {
+    "n": 961,
+    "normal_mean_mm": -0.69,
+    "abs_max_mm": 5.36,
+    "vec_mean_mm": [
+     0.03,
+     0.32,
+     2.39
+    ],
+    "moved_gt_0p5mm": 953
+   },
+   "jaw_body_angle": {
+    "n": 627,
+    "normal_mean_mm": 0.18,
+    "abs_max_mm": 6.62,
+    "vec_mean_mm": [
+     -0.06,
+     1.09,
+     0.1
+    ],
+    "moved_gt_0p5mm": 613
+   },
+   "submental": {
+    "n": 378,
+    "normal_mean_mm": -1.45,
+    "abs_max_mm": 8.28,
+    "vec_mean_mm": [
+     -0.05,
+     0.28,
+     2.72
+    ],
+    "moved_gt_0p5mm": 378
+   },
+   "cranium": {
+    "n": 1449,
+    "normal_mean_mm": -0.1,
+    "abs_max_mm": 7.5,
+    "vec_mean_mm": [
+     0.01,
+     0.73,
+     0.26
+    ],
+    "moved_gt_0p5mm": 972
+   },
+   "neck": {
+    "n": 1475,
+    "normal_mean_mm": -0.03,
+    "abs_max_mm": 3.02,
+    "vec_mean_mm": [
+     -0.02,
+     -0.0,
+     0.05
+    ],
+    "moved_gt_0p5mm": 90
+   },
+   "ears": {
+    "n": 4303,
+    "normal_mean_mm": 0.27,
+    "abs_max_mm": 3.18,
+    "vec_mean_mm": [
+     0.0,
+     -0.0,
+     -0.01
+    ],
+    "moved_gt_0p5mm": 2139
+   }
+  }
+ }
+}

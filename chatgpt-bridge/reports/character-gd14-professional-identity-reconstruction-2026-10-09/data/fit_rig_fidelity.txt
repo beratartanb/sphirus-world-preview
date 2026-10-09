@@ -1,0 +1,10 @@
+w9.log:FINAL W9 vs sculpt: mean 0.023 p95 0.106 p99 0.268 max 0.773 mm
+w9.log:RIGFIT postrig-vs-prerig skin mean 0.356 p95 1.181 max 2.844 eyes 0.079 mm
+final.log:FINAL W8 vs sculpt: mean 0.011 p95 0.045 p99 0.119 max 0.686 mm
+final.log:RIGFIT postrig-vs-prerig skin mean 0.360 p95 1.211 max 2.785 eyes 0.079 mm
+final.log:FINAL CMPGD12 vs sculpt: mean 0.065 p95 0.376 p99 0.744 max 1.797 mm
+final.log:RIGFIT postrig-vs-prerig skin mean 1.513 p95 3.955 max 7.638 eyes 0.000 mm
+final.log:FINAL CMPGD13 vs sculpt: mean 0.059 p95 0.330 p99 0.804 max 2.715 mm
+final.log:RIGFIT postrig-vs-prerig skin mean 1.444 p95 3.808 max 7.638 eyes 0.450 mm
+final.log:FINAL_CHAIN_DONE
+NOTE: RIGFIT postrig-vs-prerig compares against a stale pre-rig dump of the freshly duplicated MHC and is NOT a fidelity measure; the real check is postrig vs the fitted MHC state: W9 0.001 mm, W8 0.001 mm (data/W9_checks.txt).

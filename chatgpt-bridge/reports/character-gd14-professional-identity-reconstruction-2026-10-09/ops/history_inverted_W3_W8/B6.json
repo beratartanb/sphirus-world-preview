@@ -1,0 +1,166 @@
+[
+ {
+  "note": "upper vermilion forward (it sat ~3 mm BEHIND the white roll = tucked, thin upper lip; reference upper lip projects)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.08,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.9,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.0
+    ]
+   },
+   {
+    "fp": [
+     0.32,
+     156.05
+    ]
+   },
+   {
+    "fp": [
+     0.87,
+     155.95
+    ]
+   },
+   {
+    "fp": [
+     1.37,
+     155.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper vermilion lower half forward (eversion)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     155.8
+    ]
+   },
+   {
+    "fp": [
+     0.47,
+     155.8
+    ]
+   },
+   {
+    "fp": [
+     1.07,
+     155.7
+    ]
+   }
+  ]
+ },
+ {
+  "note": "Cupid's bow peaks up (defined bow)",
+  "brush": "Grab",
+  "r": 0.3,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     0.32,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.06
+  ]
+ },
+ {
+  "note": "vermilion border centre slightly up (taller upper vermilion)",
+  "brush": "Grab",
+  "r": 0.3,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.04
+  ]
+ },
+ {
+  "note": "lower lip lower half forward -> surface faces forward/up (reference full round lower lip, not a downward pout)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     154.7
+    ]
+   },
+   {
+    "fp": [
+     0.47,
+     154.72
+    ]
+   },
+   {
+    "fp": [
+     0.97,
+     154.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower lip top (pout) slightly back",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.4,
+  "s": 0.06,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.2,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     155.15
+    ]
+   }
+  ]
+ }
+]

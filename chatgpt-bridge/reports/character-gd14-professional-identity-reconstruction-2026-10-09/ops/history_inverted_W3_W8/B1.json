@@ -1,0 +1,228 @@
+[
+ {
+  "note": "upper-lid sulcus fill (deep-set stern read): soft tissue between crease and brow, tapering to the canthi",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.55,
+  "s": 0.1,
+  "sym": true,
+  "passes": 8,
+  "target_mm": 0.65,
+  "pts": [
+   {
+    "fp": [
+     1.67,
+     163.45
+    ]
+   },
+   {
+    "fp": [
+     2.37,
+     163.45
+    ]
+   },
+   {
+    "fp": [
+     3.07,
+     163.4
+    ]
+   },
+   {
+    "fp": [
+     3.67,
+     163.35
+    ]
+   }
+  ]
+ },
+ {
+  "note": "medial brow / glabella soften (procerus-corrugator bulge = frown)",
+  "brush": "Smooth",
+  "r": 0.7,
+  "s": 0.35,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     163.8
+    ]
+   },
+   {
+    "fp": [
+     0.67,
+     164.0
+    ]
+   },
+   {
+    "fp": [
+     1.37,
+     164.1
+    ]
+   }
+  ]
+ },
+ {
+  "note": "malar ridge soften (bony cheekbone plane)",
+  "brush": "Smooth",
+  "r": 0.9,
+  "s": 0.3,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     4.47,
+     160.0
+    ]
+   },
+   {
+    "fp": [
+     3.97,
+     159.0
+    ]
+   },
+   {
+    "fp": [
+     3.47,
+     158.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "submalar fill (hollow under the cheekbone -> soft fleshy mid/lower cheek)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 1.0,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.9,
+  "pts": [
+   {
+    "fp": [
+     4.37,
+     157.6
+    ]
+   },
+   {
+    "fp": [
+     4.17,
+     156.6
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     155.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "nasolabial transition soften",
+  "brush": "Smooth",
+  "r": 0.6,
+  "s": 0.35,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     2.17,
+     157.6
+    ]
+   },
+   {
+    "fp": [
+     2.67,
+     156.4
+    ]
+   },
+   {
+    "fp": [
+     2.97,
+     155.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower orbit / tear trough soften",
+  "brush": "Smooth",
+  "r": 0.55,
+  "s": 0.25,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.77,
+     161.0
+    ]
+   },
+   {
+    "fp": [
+     2.77,
+     160.8
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     161.0
+    ]
+   }
+  ]
+ },
+ {
+  "note": "nasal tip lobule rounder (reference: soft round tip)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.08,
+  "sym": false,
+  "passes": 6,
+  "target_mm": 0.3,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     159.0
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper vermilion fullness (reference upper lip fuller, defined)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.06,
+  "sym": true,
+  "passes": 6,
+  "target_mm": 0.3,
+  "pts": [
+   {
+    "fp": [
+     -0.08,
+     156.0
+    ]
+   },
+   {
+    "fp": [
+     0.47,
+     155.95
+    ]
+   },
+   {
+    "fp": [
+     0.97,
+     155.8
+    ]
+   }
+  ]
+ }
+]

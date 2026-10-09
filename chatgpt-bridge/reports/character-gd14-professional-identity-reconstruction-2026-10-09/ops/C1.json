@@ -1,0 +1,1058 @@
+[
+ {
+  "note": "upper-lid sulcus fill (deep-set stern read): soft tissue between crease and brow, tapering to the canthi",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.55,
+  "s": 0.1,
+  "sym": true,
+  "passes": 8,
+  "target_mm": 0.65,
+  "pts": [
+   {
+    "fp": [
+     1.67,
+     163.45
+    ]
+   },
+   {
+    "fp": [
+     2.37,
+     163.45
+    ]
+   },
+   {
+    "fp": [
+     3.07,
+     163.4
+    ]
+   },
+   {
+    "fp": [
+     3.67,
+     163.35
+    ]
+   }
+  ]
+ },
+ {
+  "note": "medial brow / glabella soften (procerus-corrugator bulge = frown)",
+  "brush": "Smooth",
+  "r": 0.7,
+  "s": 0.35,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     163.8
+    ]
+   },
+   {
+    "fp": [
+     0.67,
+     164.0
+    ]
+   },
+   {
+    "fp": [
+     1.37,
+     164.1
+    ]
+   }
+  ]
+ },
+ {
+  "note": "malar ridge soften (bony cheekbone plane)",
+  "brush": "Smooth",
+  "r": 0.9,
+  "s": 0.3,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     4.47,
+     160.0
+    ]
+   },
+   {
+    "fp": [
+     3.97,
+     159.0
+    ]
+   },
+   {
+    "fp": [
+     3.47,
+     158.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "submalar fill (hollow under the cheekbone -> soft fleshy mid/lower cheek)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 1.0,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.9,
+  "pts": [
+   {
+    "fp": [
+     4.37,
+     157.6
+    ]
+   },
+   {
+    "fp": [
+     4.17,
+     156.6
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     155.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "nasolabial transition soften",
+  "brush": "Smooth",
+  "r": 0.6,
+  "s": 0.35,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     2.17,
+     157.6
+    ]
+   },
+   {
+    "fp": [
+     2.67,
+     156.4
+    ]
+   },
+   {
+    "fp": [
+     2.97,
+     155.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower orbit / tear trough soften",
+  "brush": "Smooth",
+  "r": 0.55,
+  "s": 0.25,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.77,
+     161.0
+    ]
+   },
+   {
+    "fp": [
+     2.77,
+     160.8
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     161.0
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper lip roll-out: lower half of the upper vermilion forward (Draw along the normal) -> fuller visible upper lip",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.1,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.6,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     155.75
+    ]
+   },
+   {
+    "fp": [
+     0.47,
+     155.75
+    ]
+   },
+   {
+    "fp": [
+     1.07,
+     155.7
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower lip pout reduced (sulky read)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.6,
+  "s": 0.1,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     154.95
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper vermilion volume",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.1,
+  "sym": true,
+  "passes": 8,
+  "target_mm": 0.3,
+  "pts": [
+   {
+    "fp": [
+     -0.18,
+     155.9
+    ]
+   },
+   {
+    "fp": [
+     0.37,
+     155.9
+    ]
+   },
+   {
+    "fp": [
+     0.97,
+     155.85
+    ]
+   }
+  ]
+ },
+ {
+  "note": "mouth corners slightly up (calm rest, no down-pull)",
+  "brush": "Grab",
+  "r": 0.4,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     2.12,
+     155.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.05
+  ]
+ },
+ {
+  "note": "nasal tip down (reference: slight droop, columella hidden)",
+  "brush": "Grab",
+  "r": 0.8,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     159.15
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.13
+  ]
+ },
+ {
+  "note": "tip lobule rounder / softer (reference: round full tip)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.6,
+  "s": 0.2,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     158.95
+    ]
+   }
+  ]
+ },
+ {
+  "note": "alae narrower, less flare",
+  "brush": "Grab",
+  "r": 0.45,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     1.34,
+     158.75
+    ]
+   }
+  ],
+  "delta": [
+   -0.07,
+   0,
+   -0.02
+  ]
+ },
+ {
+  "note": "alar-facial groove softened (pinched crease)",
+  "brush": "Smooth",
+  "r": 0.3,
+  "s": 0.3,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.52,
+     158.6
+    ]
+   },
+   {
+    "fp": [
+     1.37,
+     158.2
+    ]
+   },
+   {
+    "fp": [
+     1.07,
+     157.9
+    ]
+   }
+  ]
+ },
+ {
+  "note": "columella base / subnasale slightly down",
+  "brush": "Grab",
+  "r": 0.4,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     157.95
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.04
+  ]
+ },
+ {
+  "note": "upper-lid crease, soft indent (Draw subtract)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.2,
+  "s": 0.05,
+  "sym": true,
+  "passes": 8,
+  "target_mm": 0.2,
+  "pts": [
+   {
+    "fp": [
+     1.67,
+     163.05
+    ]
+   },
+   {
+    "fp": [
+     2.47,
+     163.1
+    ]
+   },
+   {
+    "fp": [
+     3.27,
+     163.05
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     162.95
+    ]
+   }
+  ]
+ },
+ {
+  "note": "nasal bridge broader: sidewalls fuller (reference: wide soft bridge; W: steep pinched sidewalls)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.1,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.6,
+  "pts": [
+   {
+    "fp": [
+     0.52,
+     161.7
+    ]
+   },
+   {
+    "fp": [
+     0.52,
+     161.0
+    ]
+   },
+   {
+    "fp": [
+     0.57,
+     160.3
+    ]
+   }
+  ]
+ },
+ {
+  "note": "tip lobule fuller / bulbous (reference)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.75,
+  "s": 0.15,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     158.95
+    ]
+   }
+  ]
+ },
+ {
+  "note": "tip slightly longer: further down",
+  "brush": "Grab",
+  "r": 0.85,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     159.1
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.08
+  ]
+ },
+ {
+  "note": "alar lobules rounder (less pinched)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.1,
+  "sym": true,
+  "passes": 8,
+  "target_mm": 0.25,
+  "pts": [
+   {
+    "fp": [
+     1.22,
+     158.6
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper vermilion border (white roll) up -> taller visible upper vermilion",
+  "brush": "Grab",
+  "r": 0.55,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.03
+  ]
+ },
+ {
+  "note": "lower lip rounder across",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.4,
+  "s": 0.1,
+  "sym": true,
+  "passes": 8,
+  "target_mm": 0.25,
+  "pts": [
+   {
+    "fp": [
+     0.67,
+     155.0
+    ]
+   },
+   {
+    "fp": [
+     1.27,
+     155.05
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lateral upper-lid hood (reference: heavier lateral lid, almond, not round)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.4,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     3.27,
+     163.15
+    ]
+   },
+   {
+    "fp": [
+     3.87,
+     163.05
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower-lid / infraorbital soft fullness (reference: soft pad under the lower lid, no carved trough)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.5,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.35,
+  "pts": [
+   {
+    "fp": [
+     1.87,
+     161.0
+    ]
+   },
+   {
+    "fp": [
+     2.67,
+     160.9
+    ]
+   },
+   {
+    "fp": [
+     3.47,
+     161.0
+    ]
+   }
+  ]
+ },
+ {
+  "note": "anterior malar fullness (apple of the cheek)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.9,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     2.47,
+     159.6
+    ]
+   },
+   {
+    "fp": [
+     3.07,
+     159.4
+    ]
+   }
+  ]
+ },
+ {
+  "note": "supraorbital ridge less heavy (brow overhang)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.6,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     1.37,
+     164.4
+    ]
+   },
+   {
+    "fp": [
+     2.37,
+     164.4
+    ]
+   },
+   {
+    "fp": [
+     3.37,
+     164.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "chin corners softened (no narrowing / lengthening)",
+  "brush": "Smooth",
+  "r": 0.6,
+  "s": 0.3,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.37,
+     152.6
+    ]
+   },
+   {
+    "fp": [
+     1.67,
+     153.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "philtral columns (reference: defined philtrum ridges)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.18,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.25,
+  "pts": [
+   {
+    "fp": [
+     0.19,
+     156.4
+    ]
+   },
+   {
+    "fp": [
+     0.15,
+     156.9
+    ]
+   },
+   {
+    "fp": [
+     0.07,
+     157.5
+    ]
+   }
+  ]
+ },
+ {
+  "note": "philtrum groove (centre)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.2,
+  "s": 0.05,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.15,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.6
+    ]
+   },
+   {
+    "fp": [
+     -0.23,
+     157.3
+    ]
+   }
+  ]
+ },
+ {
+  "note": "Cupid's bow peaks slightly up (defined bow)",
+  "brush": "Grab",
+  "r": 0.25,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     0.27,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.025
+  ]
+ },
+ {
+  "note": "mouth ~1 mm narrower (tracker: W 1.7 px wider than the reference)",
+  "brush": "Grab",
+  "r": 0.45,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     2.17,
+     155.3
+    ]
+   }
+  ],
+  "delta": [
+   -0.05,
+   0,
+   0
+  ]
+ },
+ {
+  "note": "chin-pad corners rounder (no narrowing of the chin body / no lengthening)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.45,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.35,
+  "pts": [
+   {
+    "fp": [
+     1.12,
+     152.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "chin pad smoothed",
+  "brush": "Smooth",
+  "r": 0.6,
+  "s": 0.25,
+  "sym": false,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     152.6
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper vermilion forward (projects past the white roll)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.08,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.0
+    ]
+   },
+   {
+    "fp": [
+     0.32,
+     156.05
+    ]
+   },
+   {
+    "fp": [
+     0.87,
+     155.95
+    ]
+   },
+   {
+    "fp": [
+     1.37,
+     155.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "Cupid's bow peaks up (defined bow)",
+  "brush": "Grab",
+  "r": 0.3,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     0.32,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.06
+  ]
+ },
+ {
+  "note": "vermilion border centre slightly up (taller upper vermilion)",
+  "brush": "Grab",
+  "r": 0.3,
+  "s": 1.0,
+  "sym": false,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.04
+  ]
+ },
+ {
+  "note": "lower lip lower half forward -> surface faces forward/up (reference full round lower lip, not a downward pout)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.35,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.3,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     154.7
+    ]
+   },
+   {
+    "fp": [
+     0.47,
+     154.72
+    ]
+   },
+   {
+    "fp": [
+     0.97,
+     154.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "upper lip eversion at the lower vermilion edge (vermilion faced steeply down = thin pink rim + shadow; reference vermilion faces forward)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.22,
+  "s": 0.08,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.3,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     155.72
+    ]
+   },
+   {
+    "fp": [
+     0.27,
+     155.72
+    ]
+   },
+   {
+    "fp": [
+     0.77,
+     155.7
+    ]
+   },
+   {
+    "fp": [
+     1.22,
+     155.62
+    ]
+   }
+  ]
+ },
+ {
+  "note": "white roll / skin just above the vermilion border slightly back (lip reads as a roll)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.25,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.25,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.45
+    ]
+   },
+   {
+    "fp": [
+     0.32,
+     156.5
+    ]
+   },
+   {
+    "fp": [
+     0.87,
+     156.4
+    ]
+   }
+  ]
+ },
+ {
+  "note": "alar-nasolabial crease softened (reference: smooth cheek-lip transition)",
+  "brush": "Smooth",
+  "r": 0.35,
+  "s": 0.3,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.67,
+     157.6
+    ]
+   },
+   {
+    "fp": [
+     2.07,
+     156.6
+    ]
+   },
+   {
+    "fp": [
+     2.27,
+     155.8
+    ]
+   }
+  ]
+ }
+]

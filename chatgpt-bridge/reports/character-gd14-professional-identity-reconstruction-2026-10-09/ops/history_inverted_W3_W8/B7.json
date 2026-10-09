@@ -1,0 +1,96 @@
+[
+ {
+  "note": "upper lip eversion at the lower vermilion edge (vermilion faced steeply down = thin pink rim + shadow; reference vermilion faces forward)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.22,
+  "s": 0.08,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.8,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     155.72
+    ]
+   },
+   {
+    "fp": [
+     0.27,
+     155.72
+    ]
+   },
+   {
+    "fp": [
+     0.77,
+     155.7
+    ]
+   },
+   {
+    "fp": [
+     1.22,
+     155.62
+    ]
+   }
+  ]
+ },
+ {
+  "note": "white roll / skin just above the vermilion border slightly back (lip reads as a roll)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.25,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.25,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.45
+    ]
+   },
+   {
+    "fp": [
+     0.32,
+     156.5
+    ]
+   },
+   {
+    "fp": [
+     0.87,
+     156.4
+    ]
+   }
+  ]
+ },
+ {
+  "note": "alar-nasolabial crease softened (reference: smooth cheek-lip transition)",
+  "brush": "Smooth",
+  "r": 0.35,
+  "s": 0.3,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.67,
+     157.6
+    ]
+   },
+   {
+    "fp": [
+     2.07,
+     156.6
+    ]
+   },
+   {
+    "fp": [
+     2.27,
+     155.8
+    ]
+   }
+  ]
+ }
+]

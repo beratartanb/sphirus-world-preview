@@ -1,0 +1,55 @@
+{
+ "strokes": [
+  {
+   "k": 0,
+   "brush": "Draw",
+   "brush_active": "Draw",
+   "note": "direction calib: Draw ADD on the cheek must move OUT (+y)",
+   "passes": 5,
+   "max_mm": 0.4,
+   "moved": 30,
+   "outside_zone_max_mm": 0.0,
+   "result": [
+    "FINISHED"
+   ],
+   "path0_cm": [
+    3.18,
+    12.1,
+    158.5
+   ],
+   "moved_ctr_cm": [
+    3.1,
+    12.08,
+    158.53
+   ],
+   "moved_r_cm": 0.78
+  },
+  {
+   "k": 1,
+   "brush": "Inflate/Deflate",
+   "brush_active": "Inflate/Deflate",
+   "note": "direction calib: Inflate ADD must move OUT",
+   "passes": 5,
+   "max_mm": 0.1,
+   "moved": 23,
+   "outside_zone_max_mm": 0.0,
+   "result": [
+    "FINISHED"
+   ],
+   "path0_cm": [
+    -3.46,
+    12.42,
+    158.38
+   ],
+   "moved_ctr_cm": [
+    -3.4,
+    12.38,
+    158.38
+   ],
+   "moved_r_cm": 0.78
+  }
+ ],
+ "total_max_mm": 0.4,
+ "total_moved": 53,
+ "out": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\GD14_Identity_20261009\\data\\head_calibdir.npy"
+}

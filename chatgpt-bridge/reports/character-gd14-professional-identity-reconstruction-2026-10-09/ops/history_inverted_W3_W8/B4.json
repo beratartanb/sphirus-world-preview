@@ -1,0 +1,158 @@
+[
+ {
+  "note": "philtral columns (reference: defined philtrum ridges)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.18,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.25,
+  "pts": [
+   {
+    "fp": [
+     0.19,
+     156.4
+    ]
+   },
+   {
+    "fp": [
+     0.15,
+     156.9
+    ]
+   },
+   {
+    "fp": [
+     0.07,
+     157.5
+    ]
+   }
+  ]
+ },
+ {
+  "note": "philtrum groove (centre)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.2,
+  "s": 0.05,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.15,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     156.6
+    ]
+   },
+   {
+    "fp": [
+     -0.23,
+     157.3
+    ]
+   }
+  ]
+ },
+ {
+  "note": "Cupid's bow peaks slightly up (defined bow)",
+  "brush": "Grab",
+  "r": 0.25,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     0.27,
+     156.3
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   0.025
+  ]
+ },
+ {
+  "note": "mouth ~1 mm narrower (tracker: W 1.7 px wider than the reference)",
+  "brush": "Grab",
+  "r": 0.45,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     2.17,
+     155.3
+    ]
+   }
+  ],
+  "delta": [
+   -0.05,
+   0,
+   0
+  ]
+ },
+ {
+  "note": "chin-pad corners rounder (no narrowing of the chin body / no lengthening)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.45,
+  "s": 0.06,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.35,
+  "pts": [
+   {
+    "fp": [
+     1.12,
+     152.8
+    ]
+   }
+  ]
+ },
+ {
+  "note": "chin pad smoothed",
+  "brush": "Smooth",
+  "r": 0.6,
+  "s": 0.25,
+  "sym": false,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     152.6
+    ]
+   }
+  ]
+ },
+ {
+  "note": "tip lobule volume (reference: larger round tip)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.65,
+  "s": 0.15,
+  "sym": false,
+  "passes": 10,
+  "target_mm": 0.4,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     158.9
+    ]
+   }
+  ]
+ }
+]
