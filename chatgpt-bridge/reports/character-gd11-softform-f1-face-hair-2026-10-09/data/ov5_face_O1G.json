@@ -1,0 +1,477 @@
+{
+ "front": {
+  "view": "front",
+  "anchor_res_px": [
+   1.1,
+   0.6,
+   1.1,
+   0.5
+  ],
+  "scale": 0.312,
+  "t": [
+   -1.824,
+   10.167
+  ],
+  "rot_deg": 0.03,
+  "px_per_cm": 16.49,
+  "contour": {
+   "L": {
+    "forehead": 35.8,
+    "brow": 24.3,
+    "zygomatic": 7.9,
+    "cheek_mass": 9.1,
+    "lower_cheek": -1.2,
+    "mouth": -1.2,
+    "jaw_body": -1.2
+   },
+   "R": {
+    "forehead": 32.1,
+    "brow": 20.9,
+    "zygomatic": 5.2,
+    "cheek_mass": 3.0,
+    "lower_cheek": 4.9,
+    "mouth": 2.7,
+    "jaw_body": 3.0
+   }
+  },
+  "jaw": {
+   "chin_base_L": 2.4,
+   "chin_base_R": 3.3,
+   "chin_side_L": 0.6,
+   "chin_side_R": -1.2,
+   "jaw_body_L": 0.6,
+   "jaw_body_R": 2.1,
+   "jaw_back_L": 0.6,
+   "jaw_back_R": 17.0
+  },
+  "under": {},
+  "rows": {
+   "brow": 2.4,
+   "nosebase": 0.4,
+   "chin": 3.6,
+   "eye": -0.2,
+   "mouth": -0.6
+  },
+  "curves": {
+   "lip_lower_inner_l": {
+    "dx": 0.1,
+    "dy": -1.0,
+    "shape": 0.6,
+    "dlen": 0.7
+   },
+   "lip_lower_inner_r": {
+    "dx": 0.1,
+    "dy": -0.4,
+    "shape": 0.5,
+    "dlen": 1.1
+   },
+   "lip_lower_outer_l": {
+    "dx": 0.2,
+    "dy": -1.8,
+    "shape": 0.9,
+    "dlen": -2.6
+   },
+   "lip_lower_outer_r": {
+    "dx": 0.9,
+    "dy": -1.2,
+    "shape": 1.1,
+    "dlen": -3.2
+   },
+   "lip_philtrum_l": {
+    "dx": -0.2,
+    "dy": 0.1,
+    "shape": 0.3,
+    "dlen": -0.5
+   },
+   "lip_philtrum_r": {
+    "dx": 0.5,
+    "dy": 0.1,
+    "shape": 0.3,
+    "dlen": -0.6
+   },
+   "lip_upper_inner_l": {
+    "dx": -0.0,
+    "dy": -0.9,
+    "shape": 0.7,
+    "dlen": 0.6
+   },
+   "lip_upper_inner_r": {
+    "dx": 0.1,
+    "dy": -0.3,
+    "shape": 0.5,
+    "dlen": 0.9
+   },
+   "lip_upper_outer_l": {
+    "dx": -0.4,
+    "dy": 0.1,
+    "shape": 0.2,
+    "dlen": -0.5
+   },
+   "lip_upper_outer_r": {
+    "dx": 0.4,
+    "dy": 0.1,
+    "shape": 0.3,
+    "dlen": 0.1
+   },
+   "nasolabial_l": {
+    "dx": -1.1,
+    "dy": -0.6,
+    "shape": 0.2,
+    "dlen": -0.0
+   },
+   "nasolabial_r": {
+    "dx": 1.1,
+    "dy": -0.5,
+    "shape": 0.4,
+    "dlen": 1.0
+   }
+  },
+  "chin_height_mm": {
+   "ref": 35.4,
+   "cand": 39.7
+  },
+  "yaw_est_deg": {
+   "ref": 0.0,
+   "cand": 0.0
+  }
+ },
+ "r34": {
+  "view": "r34",
+  "anchor_res_px": [
+   1.4,
+   0.5,
+   3.1,
+   2.7
+  ],
+  "scale": 0.31047,
+  "t": [
+   64.743,
+   -44.461
+  ],
+  "rot_deg": 0.8,
+  "px_per_cm": 15.52,
+  "contour": {
+   "far": {
+    "forehead": 5.2,
+    "brow": 0.6,
+    "zygomatic": -1.9,
+    "cheek_mass": -1.3,
+    "lower_cheek": 2.6,
+    "mouth": 3.5,
+    "jaw_body": 1.9
+   }
+  },
+  "jaw": {
+   "chin_base_L": -3.9,
+   "chin_base_R": -3.2,
+   "chin_side_L": -3.9,
+   "chin_side_R": 2.3,
+   "jaw_body_L": -1.9,
+   "jaw_body_R": -11.9,
+   "jaw_back_L": 0.0
+  },
+  "under": {},
+  "rows": {
+   "brow": 3.9,
+   "nosebase": -0.9,
+   "chin": -3.5,
+   "eye": 0.1,
+   "mouth": -2.6
+  },
+  "curves": {
+   "lip_lower_inner_l": {
+    "dx": 0.4,
+    "dy": -3.0,
+    "shape": 0.7,
+    "dlen": -0.9
+   },
+   "lip_lower_inner_r": {
+    "dx": 0.3,
+    "dy": -2.1,
+    "shape": 0.3,
+    "dlen": 0.3
+   },
+   "lip_lower_outer_l": {
+    "dx": -0.1,
+    "dy": -5.3,
+    "shape": 1.0,
+    "dlen": -2.9
+   },
+   "lip_lower_outer_r": {
+    "dx": 0.5,
+    "dy": -4.0,
+    "shape": 1.4,
+    "dlen": -4.2
+   },
+   "lip_philtrum_l": {
+    "dx": -0.7,
+    "dy": -1.3,
+    "shape": 0.1,
+    "dlen": 0.0
+   },
+   "lip_philtrum_r": {
+    "dx": -0.6,
+    "dy": -1.0,
+    "shape": 0.1,
+    "dlen": -0.5
+   },
+   "lip_upper_inner_l": {
+    "dx": 0.2,
+    "dy": -3.1,
+    "shape": 0.7,
+    "dlen": -0.8
+   },
+   "lip_upper_inner_r": {
+    "dx": 0.1,
+    "dy": -2.1,
+    "shape": 0.4,
+    "dlen": 0.3
+   },
+   "lip_upper_outer_l": {
+    "dx": -0.9,
+    "dy": -2.2,
+    "shape": 0.9,
+    "dlen": -2.1
+   },
+   "lip_upper_outer_r": {
+    "dx": 0.0,
+    "dy": -1.3,
+    "shape": 0.5,
+    "dlen": -1.1
+   },
+   "nasolabial_l": {
+    "dx": 2.4,
+    "dy": 0.4,
+    "shape": 2.1,
+    "dlen": -6.7
+   },
+   "nasolabial_r": {
+    "dx": 1.4,
+    "dy": -0.6,
+    "shape": 1.7,
+    "dlen": -3.9
+   }
+  },
+  "chin_height_mm": {
+   "ref": 39.7,
+   "cand": 38.7
+  },
+  "yaw_est_deg": {
+   "ref": 38.2,
+   "cand": 32.8
+  }
+ },
+ "l34": {
+  "view": "l34",
+  "anchor_res_px": [
+   1.2,
+   1.0,
+   4.0,
+   4.1
+  ],
+  "scale": 0.31731,
+  "t": [
+   -69.89,
+   -40.558
+  ],
+  "rot_deg": -1.98,
+  "px_per_cm": 15.83,
+  "contour": {
+   "far": {
+    "forehead": -20.2,
+    "brow": 0.0,
+    "zygomatic": -8.2,
+    "cheek_mass": -16.4,
+    "lower_cheek": -1.3,
+    "mouth": -0.6,
+    "jaw_body": -1.9
+   }
+  },
+  "jaw": {
+   "chin_base_L": -1.3,
+   "chin_base_R": 5.1,
+   "chin_side_L": -5.7,
+   "chin_side_R": -4.4,
+   "jaw_body_R": 1.3,
+   "jaw_back_R": 0.6
+  },
+  "under": {},
+  "rows": {
+   "brow": 5.1,
+   "nosebase": -0.7,
+   "chin": 0.6,
+   "eye": 0.0,
+   "mouth": -2.1
+  },
+  "curves": {
+   "lip_lower_inner_l": {
+    "dx": -0.2,
+    "dy": -2.6,
+    "shape": 0.8,
+    "dlen": -0.2
+   },
+   "lip_lower_inner_r": {
+    "dx": -0.4,
+    "dy": -1.5,
+    "shape": 0.4,
+    "dlen": 0.5
+   },
+   "lip_lower_outer_l": {
+    "dx": -0.5,
+    "dy": -4.0,
+    "shape": 1.0,
+    "dlen": -3.1
+   },
+   "lip_lower_outer_r": {
+    "dx": 0.3,
+    "dy": -4.1,
+    "shape": 1.6,
+    "dlen": -4.7
+   },
+   "lip_philtrum_l": {
+    "dx": 1.0,
+    "dy": -0.4,
+    "shape": 0.2,
+    "dlen": -0.7
+   },
+   "lip_philtrum_r": {
+    "dx": 1.1,
+    "dy": -0.9,
+    "shape": 0.1,
+    "dlen": 0.3
+   },
+   "lip_upper_inner_l": {
+    "dx": -0.2,
+    "dy": -2.6,
+    "shape": 0.8,
+    "dlen": -0.2
+   },
+   "lip_upper_inner_r": {
+    "dx": -0.4,
+    "dy": -1.5,
+    "shape": 0.4,
+    "dlen": 0.5
+   },
+   "lip_upper_outer_l": {
+    "dx": 0.2,
+    "dy": -1.5,
+    "shape": 0.9,
+    "dlen": -2.4
+   },
+   "lip_upper_outer_r": {
+    "dx": 0.4,
+    "dy": -1.2,
+    "shape": 0.6,
+    "dlen": 0.1
+   },
+   "nasolabial_l": {
+    "dx": -1.1,
+    "dy": -0.8,
+    "shape": 1.5,
+    "dlen": -3.2
+   },
+   "nasolabial_r": {
+    "dx": -0.5,
+    "dy": -0.4,
+    "shape": 1.3,
+    "dlen": -2.2
+   }
+  },
+  "chin_height_mm": {
+   "ref": 36.0,
+   "cand": 38.7
+  },
+  "yaw_est_deg": {
+   "ref": 33.0,
+   "cand": 29.3
+  }
+ },
+ "rprof": {
+  "view": "rprof",
+  "anchor_res_px": [
+   0.0,
+   0.0,
+   2.8,
+   3.6,
+   18.0
+  ],
+  "scale": 0.25938,
+  "t": [
+   51.873,
+   7.297
+  ],
+  "rot_deg": 0.0,
+  "px_per_cm": 12.63,
+  "contour": {
+   "far": {
+    "forehead": -17.0,
+    "brow": -0.8,
+    "zygomatic": 0.8,
+    "cheek_mass": -4.0,
+    "lower_cheek": -1.6,
+    "mouth": -6.3,
+    "jaw_body": -4.7
+   }
+  },
+  "jaw": {},
+  "under": {
+   "chin_front": -15.0,
+   "under_chin": -14.2,
+   "submandibular": -4.7
+  },
+  "rows": {
+   "brow": 3.2,
+   "chin": -15.0,
+   "eye": -4.1,
+   "mouth": -12.7
+  },
+  "chin_height_mm": {
+   "ref": 44.0,
+   "cand": 41.7
+  }
+ },
+ "lprof": {
+  "view": "lprof",
+  "anchor_res_px": [
+   0.0,
+   0.0,
+   5.6,
+   1.6,
+   17.0
+  ],
+  "scale": 0.26276,
+  "t": [
+   8.605,
+   -3.82
+  ],
+  "rot_deg": 0.0,
+  "px_per_cm": 12.75,
+  "contour": {
+   "far": {
+    "forehead": -14.9,
+    "brow": -3.1,
+    "zygomatic": 5.5,
+    "cheek_mass": -0.8,
+    "lower_cheek": -1.6,
+    "mouth": -3.9,
+    "jaw_body": -5.5
+   }
+  },
+  "jaw": {},
+  "under": {
+   "chin_front": -15.7,
+   "under_chin": -14.1,
+   "submandibular": -6.3
+  },
+  "rows": {
+   "brow": 6.7,
+   "chin": -23.5,
+   "eye": -5.0,
+   "mouth": -5.9
+  },
+  "chin_height_mm": {
+   "ref": 44.2,
+   "cand": 26.5
+  }
+ }
+}

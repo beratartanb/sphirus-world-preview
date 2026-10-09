@@ -1,0 +1,8 @@
+{"mx": -0.23, "note": "F1h (on O1G): soft-tissue only, DIRECTIONAL bells (grab, ellipsoid falloff) so the front silhouette is not widened: front-lateral lower cheek filled mostly FORWARD (2.7 mm) - the flat dark plane between malar mound and jaw crest becomes a convex, light-catching surface; jowl forward (1.3 mm); submandibular filled DOWN + slightly forward (2.3 mm) so the mandibular border reads round and the jaw-neck transition is soft; blend under the malar mound (1.2 mm, normal); relax; then sigma-1.6 fill-only on the jaw-border band. Chin front, gonial, lips, nose, lids untouched.",
+ "ops": [
+  {"name": "lower_cheek_fwd", "type": "grab", "c": [4.4, 8.0, 153.2], "r": [1.8, 2.6, 2.6], "d": [0.05, 0.26, 0.0], "sym": true},
+  {"name": "jowl_fwd", "type": "grab", "c": [3.6, 9.0, 152.0], "r": [1.5, 2.0, 1.7], "d": [0.03, 0.12, -0.03], "sym": true},
+  {"name": "submandibular_down", "type": "grab", "c": [3.0, 6.6, 148.9], "r": [2.2, 3.4, 2.0], "d": [0.0, 0.06, -0.22], "sym": true},
+  {"name": "under_malar_blend", "type": "normal", "c": [4.8, 8.0, 156.4], "r": [1.6, 2.2, 1.4], "amt": 0.12, "sym": true},
+  {"name": "side_relax", "type": "relax", "c": [4.0, 7.6, 152.0], "r": [2.8, 3.8, 4.4], "iters": 8, "sym": true}
+ ]}
