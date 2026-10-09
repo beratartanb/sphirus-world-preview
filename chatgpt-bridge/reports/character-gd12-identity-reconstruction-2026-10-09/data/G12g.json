@@ -1,0 +1,381 @@
+{
+ "mx": -0.23,
+ "note": "GD12g = G12e + upper sulcus fill + strong orbit relax (removes the brow compression folds).",
+ "brushes": [
+  {
+   "name": "brow_fatpad",
+   "anchor": [
+    3.2,
+    164.3
+   ],
+   "r": [
+    2.3,
+    1.05
+   ],
+   "mode": "move",
+   "d": [
+    0.0,
+    0.08,
+    -0.36
+   ]
+  },
+  {
+   "name": "lateral_brow",
+   "anchor": [
+    4.8,
+    164.0
+   ],
+   "r": [
+    1.5,
+    1.0
+   ],
+   "mode": "move",
+   "d": [
+    0.04,
+    0.04,
+    -0.34
+   ]
+  },
+  {
+   "name": "brow_ridge_fwd",
+   "anchor": [
+    3.0,
+    164.2
+   ],
+   "r": [
+    2.0,
+    0.85
+   ],
+   "mode": "inflate",
+   "amt": 0.14
+  },
+  {
+   "name": "lid_hood_down",
+   "anchor": [
+    3.3,
+    163.5
+   ],
+   "r": [
+    1.6,
+    0.5
+   ],
+   "mode": "move",
+   "d": [
+    0.0,
+    0.12,
+    -0.16
+   ]
+  },
+  {
+   "name": "lid_hood_fill",
+   "anchor": [
+    3.5,
+    163.4
+   ],
+   "r": [
+    1.5,
+    0.42
+   ],
+   "mode": "inflate",
+   "amt": 0.14
+  },
+  {
+   "name": "upper_sulcus_fill",
+   "anchor": [
+    3.0,
+    163.9
+   ],
+   "r": [
+    1.9,
+    0.65
+   ],
+   "mode": "inflate",
+   "amt": 0.1
+  },
+  {
+   "name": "orbit_relax",
+   "anchor": [
+    3.1,
+    163.9
+   ],
+   "r": [
+    2.6,
+    1.1
+   ],
+   "mode": "relax",
+   "iters": 14
+  },
+  {
+   "name": "brow_relax",
+   "anchor": [
+    3.2,
+    164.0
+   ],
+   "r": [
+    2.6,
+    1.3
+   ],
+   "mode": "relax",
+   "iters": 5
+  },
+  {
+   "name": "tear_trough",
+   "anchor": [
+    2.6,
+    160.6
+   ],
+   "r": [
+    0.9,
+    0.5
+   ],
+   "mode": "inflate",
+   "amt": 0.08
+  },
+  {
+   "name": "midface_volume",
+   "anchor": [
+    3.9,
+    158.6
+   ],
+   "r": [
+    2.9,
+    2.5
+   ],
+   "mode": "inflate",
+   "amt": 0.24
+  },
+  {
+   "name": "zygoma_broad",
+   "anchor": [
+    5.4,
+    159.4
+   ],
+   "r": [
+    2.2,
+    1.8
+   ],
+   "mode": "inflate",
+   "amt": 0.12
+  },
+  {
+   "name": "midface_relax",
+   "anchor": [
+    4.2,
+    158.0
+   ],
+   "r": [
+    3.2,
+    3.0
+   ],
+   "mode": "relax",
+   "iters": 14
+  },
+  {
+   "name": "nose_tip",
+   "anchor": [
+    0.0,
+    159.3
+   ],
+   "r": [
+    0.9,
+    0.8
+   ],
+   "mode": "inflate",
+   "amt": 0.2
+  },
+  {
+   "name": "alar_lobule",
+   "anchor": [
+    1.35,
+    158.3
+   ],
+   "r": [
+    0.65,
+    0.6
+   ],
+   "mode": "inflate",
+   "amt": 0.18
+  },
+  {
+   "name": "alar_flare",
+   "anchor": [
+    1.5,
+    158.2
+   ],
+   "r": [
+    0.6,
+    0.6
+   ],
+   "mode": "move",
+   "d": [
+    0.1,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "upper_lip_vol",
+   "anchor": [
+    0.6,
+    155.6
+   ],
+   "r": [
+    2.0,
+    0.4
+   ],
+   "mode": "inflate",
+   "amt": 0.24
+  },
+  {
+   "name": "upper_lip_up",
+   "anchor": [
+    0.8,
+    155.8
+   ],
+   "r": [
+    2.0,
+    0.32
+   ],
+   "mode": "move",
+   "d": [
+    0.0,
+    0.0,
+    0.1
+   ]
+  },
+  {
+   "name": "lower_lip_vol",
+   "anchor": [
+    0.6,
+    154.6
+   ],
+   "r": [
+    2.0,
+    0.55
+   ],
+   "mode": "inflate",
+   "amt": 0.4
+  },
+  {
+   "name": "lower_lip_down",
+   "anchor": [
+    0.6,
+    154.45
+   ],
+   "r": [
+    2.0,
+    0.5
+   ],
+   "mode": "move",
+   "d": [
+    0.0,
+    0.06,
+    -0.16
+   ]
+  },
+  {
+   "name": "mouth_corners",
+   "anchor": [
+    2.4,
+    155.0
+   ],
+   "r": [
+    0.7,
+    0.5
+   ],
+   "mode": "move",
+   "d": [
+    0.0,
+    -0.03,
+    -0.14
+   ]
+  },
+  {
+   "name": "chin_pad",
+   "anchor": [
+    0.0,
+    152.3
+   ],
+   "r": [
+    1.5,
+    1.2
+   ],
+   "mode": "inflate",
+   "amt": 0.14
+  },
+  {
+   "name": "chin_sides",
+   "anchor": [
+    1.7,
+    152.0
+   ],
+   "r": [
+    1.3,
+    1.2
+   ],
+   "mode": "move",
+   "d": [
+    0.2,
+    0.03,
+    0.0
+   ]
+  },
+  {
+   "name": "jowl",
+   "anchor": [
+    3.6,
+    152.4
+   ],
+   "r": [
+    1.6,
+    1.5
+   ],
+   "mode": "inflate",
+   "amt": 0.16
+  },
+  {
+   "name": "jaw_angle",
+   "anchor": [
+    6.0,
+    150.6,
+    "side"
+   ],
+   "r": [
+    1.7,
+    1.5
+   ],
+   "mode": "move",
+   "d": [
+    0.14,
+    0.0,
+    -0.05
+   ]
+  },
+  {
+   "name": "lips_relax",
+   "anchor": [
+    0.0,
+    155.0
+   ],
+   "r": [
+    2.6,
+    1.0
+   ],
+   "mode": "relax",
+   "iters": 2
+  },
+  {
+   "name": "chin_relax",
+   "anchor": [
+    1.0,
+    152.0
+   ],
+   "r": [
+    2.6,
+    1.7
+   ],
+   "mode": "relax",
+   "iters": 5
+  }
+ ]
+}

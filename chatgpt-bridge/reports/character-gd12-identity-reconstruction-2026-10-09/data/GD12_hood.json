@@ -1,0 +1,7 @@
+{"mx": -0.23, "note": "GD12 hood cleanup: removes the secondary fold line on the upper lid (smooth hooded lid between brow and lash line, margin protected).",
+ "brushes": [
+  {"name": "hood_smooth_c", "anchor": [3.0, 163.35], "r": [1.5, 0.45], "mode": "smooth", "iters": 30, "k": 0.5, "gate": -1},
+  {"name": "hood_smooth_m", "anchor": [1.9, 163.3], "r": [0.9, 0.45], "mode": "smooth", "iters": 25, "k": 0.5, "gate": -1},
+  {"name": "hood_smooth_l", "anchor": [4.2, 163.25], "r": [0.9, 0.45], "mode": "smooth", "iters": 25, "k": 0.5, "gate": -1},
+  {"name": "hood_relax", "anchor": [3.0, 163.5], "r": [2.2, 0.8], "mode": "relax", "iters": 6}
+ ]}

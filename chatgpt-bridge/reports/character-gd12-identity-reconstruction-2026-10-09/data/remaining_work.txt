@@ -1,0 +1,14 @@
+GD12 remaining art and technical work
+ART
+ 1. Forehead / temporal / cranium: not changed (no reliable visible difference: hairline covers the reference forehead edges and temples).
+ 2. Nose: only tip / alar soft-tissue volume; dorsum, length and tip shape not re-authored.
+ 3. Lower face: chin / jaw angle broadened slightly; chin projection and lower-face height kept (earlier user rejections of chin lengthening).
+ 4. Upper lid hood: a faint secondary fold remains on the medial upper lid; needs a hand sculpt pass.
+ 5. Mentolabial: faint dimple under the lower lip near the corners.
+ 6. Skin: diagnostic material only (no texture, freckles, pores); identity read with the real x19a skin not yet evaluated.
+ 7. Brows: temporary vertex-colour band; real brow groom must be re-placed for the lowered brow.
+TECHNICAL (after approval only)
+ 8. Same topology / DNA vertex order as ww5bt1h -> bake as a direct delta onto a NEW SKM copy (blender_g11ww_deltamap + ue_g11uu_apply2), 858 morphs + DNA kept.
+ 9. Eyelid aperture changed (upper margin down 1.5 mm): check blink / eyelid morphs and the eyelash + eye-edge meshes in UE; possibly corrective morphs.
+10. Rebind grooms (brows / lashes / hair) to the new SKM; hair needs no cranium realignment (cranium unchanged).
+11. Rig poses + motion frames + LOD check, checkpoint, protected-asset verify; no production promotion without approval.

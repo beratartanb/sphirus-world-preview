@@ -1,0 +1,6 @@
+{"mx": -0.23, "note": "GD12j cleanup on G12i_s: jaw-angle bump and lateral-cheek vertical line relaxed; final light relax of the lower face.",
+ "brushes": [
+  {"name": "jaw_angle_relax", "anchor": [6.0, 150.6, "side"], "r": [2.2, 1.8], "mode": "relax", "iters": 14},
+  {"name": "lateral_cheek_relax", "anchor": [5.8, 156.0, "side"], "r": [2.0, 2.6], "mode": "relax", "iters": 12},
+  {"name": "lower_face_relax", "anchor": [3.6, 153.0], "r": [3.0, 2.4], "mode": "relax", "iters": 6}
+ ]}

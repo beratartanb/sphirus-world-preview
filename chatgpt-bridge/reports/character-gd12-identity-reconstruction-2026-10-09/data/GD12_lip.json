@@ -1,0 +1,5 @@
+{"mx": -0.23, "note": "GD12 lower-lip cleanup: smooth the lateral lower-lip edge step (round, full lower lip toward the corners).",
+ "brushes": [
+  {"name": "lower_lip_lateral_smooth", "anchor": [1.7, 154.55], "r": [1.0, 0.55], "mode": "smooth", "iters": 14, "k": 0.5},
+  {"name": "lower_lip_relax", "anchor": [0.0, 154.5], "r": [2.4, 0.7], "mode": "relax", "iters": 6}
+ ]}

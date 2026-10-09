@@ -1,0 +1,6 @@
+{"mx": -0.23, "note": "GD12 mentolabial cleanup: smooth the crease below the lower lip left by the lower-lip descent; small fill.",
+ "brushes": [
+  {"name": "mentolabial_smooth", "anchor": [0.9, 153.9], "r": [1.7, 0.55], "mode": "smooth", "iters": 16, "k": 0.5},
+  {"name": "mentolabial_fill", "anchor": [0.9, 153.85], "r": [1.6, 0.45], "mode": "inflate", "amt": 0.04},
+  {"name": "mento_relax", "anchor": [0.6, 153.6], "r": [2.4, 0.9], "mode": "relax", "iters": 6}
+ ]}

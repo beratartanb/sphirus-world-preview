@@ -1,0 +1,11 @@
+GD12 reference sources (all original user-supplied concept images; no AI turnaround / 6-view sheet used as primary)
+PRIMARY
+  SourceAssets/Characters/Guardian16_CustomIdentity_20261003/references/TierA_concept_sheet_approved_1122x1402.png   1122 x 1402
+    - front full-body figure: face only ~100 px wide -> low resolution, upscaled crop used for the solved front camera:
+      Saved/Codex/CharacterIdentity_20260930/track/ref_front_x4.png  800 x 960 (x4 upscale)
+    - 3/4 close-up panel: face ~250 px -> Saved/Codex/CharacterIdentity_20260930/track/ref_close_x2.png  794 x 940 (x2 upscale)
+    - cameras for both crops: gd_common.VIEWS front / close (+ camfit), solved in earlier identity passes; reused unchanged
+SECONDARY (visual only, camera not solved)
+  SourceAssets/Characters/Guardian16_CustomIdentity_20261003/references/Original_concept_2_copper_3q_1280x853.jpg      1280 x 853 (face ~300 px)
+NOT USED AS PRIMARY: AUX_generated_* (AI bald front / profile / turnaround), ref6 6-view sheet (inconsistent, see O1 report)
+Note: these are generated concept images, not calibrated photogrammetry; mm-level 3D measurements from them are not reliable.
