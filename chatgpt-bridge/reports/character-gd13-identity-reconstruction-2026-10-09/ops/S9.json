@@ -1,0 +1,7 @@
+[
+ {"name": "mouth_corner_lift", "op": "move", "at": "cheilion_S", "r": [0.8, 1.0, 0.6], "d": [0.0, 0.0, 0.06], "mask": "face"},
+ {"name": "mouth_corner_relax", "op": "relax", "at": "cheilion_S", "r": [0.9, 1.1, 0.8], "iters": 8, "k": 0.5, "mask": "face", "sym": true},
+ {"name": "nose_tip_lobules", "op": "inflate", "at": {"lm": "pronasale", "off": [0.45, -0.25, -0.15]}, "r": [0.55, 0.7, 0.55], "amt": 0.05, "mask": "nose"},
+ {"name": "alar_rim_lower", "op": "move", "at": {"lm": "alar_S", "off": [-0.35, 0.3, -0.25]}, "r": [0.65, 0.8, 0.45], "d": [0.0, 0.0, -0.05], "mask": "nose"},
+ {"name": "nose_relax", "op": "relax", "at": "pronasale", "r": [1.6, 1.6, 1.4], "iters": 3, "k": 0.4, "mask": "nose", "sym": false}
+]

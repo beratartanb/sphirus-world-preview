@@ -1,0 +1,12 @@
+[
+ {"name": "lower_face_narrow", "op": "scale", "pivot": [-0.23, 9.0, 154.5], "s": [0.94, 1.0, 1.0], "at": [-0.23, 9.0, 154.0], "r": [10.0, 14.0, 4.6], "mask": "face", "sym": false},
+ {"name": "gonial_lift_in", "op": "move", "at": "gonion_S", "r": [1.9, 2.4, 1.8], "d": [-0.15, 0.0, 0.22], "mask": "face"},
+ {"name": "radix_deepen", "op": "move", "at": "nasion", "r": [0.95, 1.6, 1.15], "d": [0.0, -0.25, -0.03], "mask": "face", "sym": false, "gate": 0.3},
+ {"name": "columella_base_back_up", "op": "move", "at": "subnasale", "r": [1.0, 1.1, 0.75], "d": [0.0, -0.28, 0.12], "mask": "face", "sym": false},
+ {"name": "alar_narrow", "op": "scale", "pivot": [-0.23, 12.5, 158.2], "s": [0.9, 1.0, 1.0], "at": "alar_S", "r": [1.3, 1.4, 1.0], "mask": "nose"},
+ {"name": "labiomental_deepen", "op": "move", "at": "labiomental", "r": [1.7, 0.9, 0.55], "d": [0.0, -0.17, 0.0], "mask": "face", "sym": false},
+ {"name": "chin_pad_forward", "op": "move", "at": {"lm": "menton", "off": [0, 1.4, 1.4]}, "r": [1.8, 1.4, 1.2], "d": [0.0, 0.26, 0.0], "mask": "face", "sym": false},
+ {"name": "upper_vermilion_fuller", "op": "move", "at": "labrale_sup", "r": [1.9, 0.9, 0.45], "d": [0.0, 0.05, 0.07], "mask": "upper_lip", "sym": false},
+ {"name": "lower_vermilion_fuller", "op": "move", "at": {"lm": "labrale_inf", "off": [0, 0, -0.2]}, "r": [1.9, 0.9, 0.5], "d": [0.0, 0.04, -0.11], "mask": "lower_lip", "sym": false},
+ {"name": "lower_face_relax", "op": "relax", "at": [-0.23, 10.0, 155.0], "r": [7.0, 8.0, 4.0], "iters": 6, "k": 0.5, "mask": "face", "sym": false}
+]

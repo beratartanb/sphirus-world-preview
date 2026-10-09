@@ -1,0 +1,132 @@
+[
+ {
+  "name": "upper_lid_open",
+  "op": "lid",
+  "lid": "upper",
+  "at": "alar_S",
+  "r": 1.0,
+  "d": -0.24,
+  "reach": 1.6,
+  "half": 1.65,
+  "xc": 0.05
+ },
+ {
+  "name": "lower_lid_down",
+  "op": "lid",
+  "lid": "lower",
+  "at": "alar_S",
+  "r": 1.0,
+  "d": -0.04,
+  "reach": 0.6,
+  "half": 1.5
+ },
+ {
+  "name": "lid_relax",
+  "op": "relax",
+  "at": "alar_S",
+  "r": 1.0,
+  "iters": 10,
+  "k": 0.5,
+  "mask": "lids",
+  "sym": false
+ },
+ {
+  "name": "lateral_canthus_out",
+  "op": "move",
+  "at": "lcanth_S",
+  "r": [
+   0.6,
+   0.7,
+   0.5
+  ],
+  "d": [
+   0.07,
+   0.0,
+   0.01
+  ],
+  "mask": "face"
+ },
+ {
+  "name": "nose_tip_rotate_down",
+  "op": "move",
+  "at": "pronasale",
+  "r": [
+   1.0,
+   1.25,
+   0.9
+  ],
+  "d": [
+   0.0,
+   0.06,
+   -0.2
+  ],
+  "mask": "nose",
+  "sym": false
+ },
+ {
+  "name": "mouth_corner_in_up",
+  "op": "move",
+  "at": "cheilion_S",
+  "r": [
+   0.75,
+   0.9,
+   0.55
+  ],
+  "d": [
+   -0.05,
+   0.0,
+   0.05
+  ],
+  "mask": "face"
+ },
+ {
+  "name": "upper_vermilion_border",
+  "op": "move",
+  "at": {
+   "lm": "labrale_sup",
+   "off": [
+    0,
+    0,
+    0.15
+   ]
+  },
+  "r": [
+   1.6,
+   0.8,
+   0.35
+  ],
+  "d": [
+   0.0,
+   0.03,
+   0.06
+  ],
+  "mask": "upper_lip",
+  "sym": false,
+  "snap": false
+ },
+ {
+  "name": "lower_vermilion_border",
+  "op": "move",
+  "at": {
+   "lm": "labrale_inf",
+   "off": [
+    0,
+    0,
+    -0.2
+   ]
+  },
+  "r": [
+   1.6,
+   0.8,
+   0.4
+  ],
+  "d": [
+   0.0,
+   0.03,
+   -0.06
+  ],
+  "mask": "lower_lip",
+  "sym": false,
+  "snap": false
+ }
+]

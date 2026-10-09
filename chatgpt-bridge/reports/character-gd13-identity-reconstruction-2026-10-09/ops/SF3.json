@@ -1,0 +1,6 @@
+[
+ {"name": "alar_wing_narrow2", "op": "scale", "pivot": [-0.23, 12.5, 158.2], "s": [0.92, 1.0, 1.0], "at": "alar_S", "r": [1.1, 1.2, 0.9], "mask": "nose"},
+ {"name": "nose_relax", "op": "relax", "at": "subnasale", "r": [2.0, 1.8, 2.0], "iters": 3, "k": 0.4, "mask": "nose", "sym": false},
+ {"name": "lateral_canthus_relax", "op": "relax", "at": "lcanth_S", "r": [0.55, 0.6, 0.45], "iters": 16, "k": 0.5, "mask": "skin", "sym": true},
+ {"name": "mouth_corner_relax2", "op": "relax", "at": "cheilion_S", "r": [1.0, 1.2, 0.8], "iters": 6, "k": 0.45, "mask": "face", "sym": true}
+]

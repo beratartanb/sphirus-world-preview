@@ -1,0 +1,22 @@
+GD13 reference sources (2026-10-09)
+PRIMARY (new user-supplied original, highest artistic priority for GD13)
+  references/GD13_REF_original_6view_sheet_user_20261009.png   1448 x 1086, 6 panels (3 x 2), panels abut (no separators)
+    panel crops (panel-original pixels, all measurements in this space):
+      GD13_REF_panel_front.png        483 x 541  front (head yawed ~8-10 deg toward her left: the ear on image-left shows more)
+      GD13_REF_panel_q3_faceR.png     483 x 541  3/4, face to image-right = sees her RIGHT side (solved camera yaw ~ -40 to -52 deg)
+      GD13_REF_panel_q3_faceL.png     482 x 541  3/4, face to image-left  = sees her LEFT side  (~ +40 to +50 deg)  - a genuine opposite view, NOT a mirror
+      GD13_REF_panel_prof_faceL.png   483 x 545  left profile (~73-78 deg, not a true 90: far lashes visible)
+      GD13_REF_panel_rear34_faceR.png 483 x 545  rear 3/4 (hair / bun only; not used for the face)
+      GD13_REF_panel_back.png         482 x 545  back (hair only; not used for the face)
+  Face size in the panels: inter-eye distance ~93 px in the front panel (~15.3 px per cm at the head).
+  Consistency: identity is consistent across front / both 3/4 / profile (same freckles, nose, brows, hair part). Lighting is soft studio light
+  from camera-left-top; the profile panel's under-chin / throat line follows a different neck posture (head pitch) -> under-chin used only near
+  the chin. All panels look AI-generated concept renders (not calibrated photogrammetry): mm values derived from them are approximate.
+SECONDARY / NOT USED
+  GD12 Tier A concept sheet and copper 3/4 (older identity, superseded for GD13 by the user's instruction), ref6 sheet (inconsistent), any
+  AI turnaround or earlier 3D renders: not used as targets.
+Evidence extracted from the PRIMARY panels
+  data/tracks_ref_metahuman_tracker.json  MetaHuman face tracker curves (eyelids, lips, philtrum, nasolabial) on front / 3/4 / profile panels
+  data/contours_auto.json                 skin-key silhouettes: profile front edge + under-chin, far 3/4 contours, front cheek contours
+  data/picks_manual.json                  manual picks read on labelled pixel grids: brows, alar edges, subnasale, chin / jaw lines, ears
+  data/cams_GD13_final.json               solved per-panel head cameras (perspective, D = 150 cm) refined on all evidence

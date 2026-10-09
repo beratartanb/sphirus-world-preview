@@ -1,0 +1,6 @@
+[
+ {"name": "lips_set_back", "op": "move", "at": "stomion", "r": [2.6, 1.6, 1.0], "plateau": [0.9, 0.8, 0.5], "d": [0.0, -0.13, 0.0], "mask": "lips", "sym": false},
+ {"name": "upper_lip_volume", "op": "inflate", "at": {"lm": "labrale_sup", "off": [0, 0, -0.05]}, "r": [1.6, 0.8, 0.42], "amt": 0.07, "mask": "upper_lip", "sym": false},
+ {"name": "lower_lip_volume", "op": "inflate", "at": {"lm": "labrale_inf", "off": [0, 0, -0.12]}, "r": [1.7, 0.9, 0.55], "amt": 0.10, "mask": "lower_lip", "sym": false},
+ {"name": "lip_relax", "op": "relax", "at": "stomion", "r": [3.0, 2.0, 1.6], "iters": 6, "k": 0.45, "mask": "lips", "sym": false}
+]

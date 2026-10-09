@@ -1,0 +1,4 @@
+[
+ {"name": "lateral_canthus_relax", "op": "relax", "at": "lcanth_S", "r": [0.55, 0.6, 0.45], "iters": 16, "k": 0.5, "mask": "skin", "sym": true},
+ {"name": "lower_lip_mid_relax", "op": "relax", "at": {"lm": "labrale_inf", "off": [0, 0, 0.0]}, "r": [0.7, 0.6, 0.4], "iters": 6, "k": 0.4, "mask": "lower_lip", "sym": false}
+]

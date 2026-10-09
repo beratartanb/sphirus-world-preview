@@ -1,0 +1,5 @@
+[
+ {"name": "posterior_jaw_lift", "op": "move", "at": {"lm": "gonion_S", "off": [0.0, 0.3, -0.6]}, "r": [1.7, 2.3, 1.7], "d": [-0.08, 0.04, 0.45], "mask": "face", "snap": false},
+ {"name": "mid_jaw_lift", "op": "move", "at": {"lm": "jawmid_S", "off": [0.0, -0.1, -0.25]}, "r": [1.8, 2.0, 1.25], "d": [-0.05, 0.02, 0.32], "mask": "face", "snap": false},
+ {"name": "jaw_relax", "op": "relax", "at": [-0.23, 5.0, 152.5], "r": [7.5, 9.0, 3.5], "iters": 6, "k": 0.5, "mask": "face", "sym": false}
+]

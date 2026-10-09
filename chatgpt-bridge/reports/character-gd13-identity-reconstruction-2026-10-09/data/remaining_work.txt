@@ -1,0 +1,13 @@
+GD13 remaining art and technical work (2026-10-09)
+ART
+ 1. Lips: vermilion height / rounded lower-lip fullness (reference fuller), mouth-corner pit (inherited from F1H), slightly pursed front read -> hand sculpt recommended.
+ 2. Nose tip / columella: rounded, slightly drooping tip of the reference; nose base - philtrum relation (subnasale definition ~6.7 mm unresolved in all heads).
+ 3. Eye shape: almond shape, visible lid crease / pretarsal band, lateral canthus height (aperture already matches: 15.4 vs 15.6 px).
+ 4. 3/4 submalar diagonal transition (inherited since F1H) and soft nasolabial tissue - without ageing or hollowing.
+ 5. Brow groom placement to the reference brow centre line (brow skin not lowered; the brow band in the boards is a diagnostic material).
+ 6. Identity check with the real x19a skin + freckles (boards use a diagnostic material only).
+TECHNICAL (only after approval)
+ 7. DNA vertex order kept -> bake as a direct delta onto a NEW SKM copy (blender_g11ww_deltamap + ue_g11uu_apply2), 858 morphs + DNA kept.
+ 8. Upper lid opened ~2.4 mm: check blink / eyelid morphs and the eyelash + eye-edge meshes in UE; corrective morphs if needed.
+ 9. Rebind hair / brow / lash grooms to the new SKM (cranium and temples unchanged -> no hair realignment; face narrowed inward -> no strand penetration expected; check face-framing strands).
+10. Rig poses, motion frames, LOD, checkpoint, protected-asset verification. No production promotion without user approval.

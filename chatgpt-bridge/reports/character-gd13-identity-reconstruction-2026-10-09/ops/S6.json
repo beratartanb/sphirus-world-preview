@@ -1,0 +1,5 @@
+[
+ {"name": "jaw_corner_relax", "op": "relax", "at": "gonion_S", "r": [2.4, 2.8, 2.2], "iters": 14, "k": 0.5, "mask": "face", "sym": true},
+ {"name": "jaw_mid_relax", "op": "relax", "at": "jawmid_S", "r": [2.0, 2.2, 1.6], "iters": 10, "k": 0.5, "mask": "face", "sym": true},
+ {"name": "radix_relax", "op": "relax", "at": "nasion", "r": [1.6, 1.8, 1.8], "iters": 12, "k": 0.5, "mask": "not_lids", "sym": false}
+]

@@ -1,0 +1,7 @@
+[
+ {"name": "lower_vermilion_evert2", "op": "move", "at": {"lm": "labrale_inf", "off": [0, -0.1, -0.38]}, "r": [1.9, 0.8, 0.36], "d": [0.0, 0.01, -0.11], "mask": "lower_lip", "sym": false},
+ {"name": "lower_lip_volume2", "op": "inflate", "at": {"lm": "labrale_inf", "off": [0, 0, -0.15]}, "r": [1.5, 0.8, 0.5], "amt": 0.06, "mask": "lower_lip", "sym": false},
+ {"name": "upper_vermilion_evert2", "op": "move", "at": {"lm": "labrale_sup", "off": [0, -0.05, 0.12]}, "r": [1.6, 0.8, 0.3], "d": [0.0, 0.02, 0.06], "mask": "upper_lip", "sym": false},
+ {"name": "alar_wing_narrow2", "op": "scale", "pivot": [-0.23, 12.5, 158.2], "s": [0.92, 1.0, 1.0], "at": "alar_S", "r": [1.1, 1.2, 0.9], "mask": "nose"},
+ {"name": "lip_nose_relax", "op": "relax", "at": "subnasale", "r": [3.0, 2.0, 2.6], "iters": 3, "k": 0.4, "mask": "face", "sym": false}
+]
