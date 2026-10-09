@@ -1,0 +1,406 @@
+[
+ {
+  "note": "brow skin lower (reference brows sit ~1.5-3 mm lower, closer to the eye): medial",
+  "brush": "Grab",
+  "r": 0.9,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     0.97,
+     164.2
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.15
+  ]
+ },
+ {
+  "note": "brow skin lower: centre",
+  "brush": "Grab",
+  "r": 0.9,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     2.37,
+     164.5
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.15
+  ]
+ },
+ {
+  "note": "brow skin lower: lateral",
+  "brush": "Grab",
+  "r": 0.9,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     3.67,
+     164.2
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.13
+  ]
+ },
+ {
+  "note": "brow tail lower",
+  "brush": "Grab",
+  "r": 0.8,
+  "s": 1.0,
+  "sym": true,
+  "view_dir": [
+   0,
+   1,
+   0
+  ],
+  "pts": [
+   {
+    "fp": [
+     4.57,
+     163.6
+    ]
+   }
+  ],
+  "delta": [
+   0,
+   0,
+   -0.1
+  ]
+ },
+ {
+  "note": "lateral upper-lid hooding (soft tissue fold over the lateral lid; reference almond / hooded, not round-open)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     3.37,
+     163.25
+    ]
+   },
+   {
+    "fp": [
+     3.97,
+     163.1
+    ]
+   }
+  ]
+ },
+ {
+  "note": "soft lower-lid pad (reference: gentle under-eye fullness; no wrinkle)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.4,
+  "s": 0.08,
+  "sym": true,
+  "passes": 10,
+  "target_mm": 0.35,
+  "pts": [
+   {
+    "fp": [
+     1.97,
+     161.35
+    ]
+   },
+   {
+    "fp": [
+     2.77,
+     161.25
+    ]
+   },
+   {
+    "fp": [
+     3.57,
+     161.35
+    ]
+   }
+  ]
+ },
+ {
+  "note": "zygomatic eminence higher / more present (reference cheekbone)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 1.0,
+  "s": 0.12,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.6,
+  "pts": [
+   {
+    "fp": [
+     4.17,
+     160.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower cheek -> chin soft-tissue continuity (reference lower face fuller in 3/4; no jaw-angle widening, no masseter)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 1.2,
+  "s": 0.09,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     3.37,
+     154.0
+    ]
+   },
+   {
+    "fp": [
+     2.37,
+     152.9
+    ]
+   }
+  ]
+ },
+ {
+  "note": "chin pad fuller / rounder forward (no lengthening, no point)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.9,
+  "s": 0.12,
+  "sym": false,
+  "passes": 14,
+  "target_mm": 0.8,
+  "pts": [
+   {
+    "fp": [
+     -0.23,
+     152.4
+    ]
+   }
+  ]
+ },
+ {
+  "note": "eyes: lateral upper-lid hood, second pass",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.1,
+  "sym": true,
+  "passes": 14,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     3.17,
+     163.2
+    ]
+   },
+   {
+    "fp": [
+     4.07,
+     163.0
+    ]
+   }
+  ]
+ },
+ {
+  "note": "eyes: central lid fold soft tissue (less exposed lid platform)",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 0.4,
+  "s": 0.08,
+  "sym": true,
+  "passes": 14,
+  "target_mm": 0.3,
+  "pts": [
+   {
+    "fp": [
+     2.37,
+     163.25
+    ]
+   }
+  ]
+ },
+ {
+  "note": "eyes: lower-lid bag, stronger (reference visible soft bag)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.45,
+  "s": 0.12,
+  "sym": true,
+  "passes": 14,
+  "target_mm": 0.6,
+  "pts": [
+   {
+    "fp": [
+     1.77,
+     161.1
+    ]
+   },
+   {
+    "fp": [
+     2.77,
+     161.0
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     161.1
+    ]
+   }
+  ]
+ },
+ {
+  "note": "lower cheek -> chin continuity, second pass",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 1.3,
+  "s": 0.09,
+  "sym": true,
+  "passes": 14,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     3.17,
+     154.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "malar fat pad toward the nasolabial (soft, fleshy, softens the crease)",
+  "brush": "Inflate/Deflate",
+  "dir": "ADD",
+  "r": 0.8,
+  "s": 0.1,
+  "sym": true,
+  "passes": 14,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     2.07,
+     158.0
+    ]
+   }
+  ]
+ },
+ {
+  "note": "zygomatic eminence, second pass",
+  "brush": "Draw",
+  "dir": "ADD",
+  "r": 1.0,
+  "s": 0.12,
+  "sym": true,
+  "passes": 14,
+  "target_mm": 0.5,
+  "pts": [
+   {
+    "fp": [
+     4.17,
+     160.2
+    ]
+   }
+  ]
+ },
+ {
+  "note": "eyes: upper-lid crease line (reference crease + pretarsal band)",
+  "brush": "Draw",
+  "dir": "SUBTRACT",
+  "r": 0.2,
+  "s": 0.06,
+  "sym": true,
+  "passes": 12,
+  "target_mm": 0.35,
+  "pts": [
+   {
+    "fp": [
+     1.67,
+     163.0
+    ]
+   },
+   {
+    "fp": [
+     2.47,
+     163.05
+    ]
+   },
+   {
+    "fp": [
+     3.27,
+     163.0
+    ]
+   },
+   {
+    "fp": [
+     3.87,
+     162.9
+    ]
+   }
+  ]
+ },
+ {
+  "note": "eyes: under-eye smoothing band (removes ripples from stacked bag strokes; away from the lid margin)",
+  "brush": "Smooth",
+  "r": 0.45,
+  "s": 0.2,
+  "sym": true,
+  "passes": 1,
+  "pts": [
+   {
+    "fp": [
+     1.77,
+     160.8
+    ]
+   },
+   {
+    "fp": [
+     2.77,
+     160.7
+    ]
+   },
+   {
+    "fp": [
+     3.77,
+     160.8
+    ]
+   }
+  ]
+ }
+]

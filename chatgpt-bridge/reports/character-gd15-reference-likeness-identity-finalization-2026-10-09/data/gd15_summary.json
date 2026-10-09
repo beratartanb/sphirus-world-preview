@@ -1,0 +1,44 @@
+{
+ "pass": "GD15 reference likeness & anatomical identity finalization",
+ "date": "2026-10-09",
+ "final_candidate": "G15",
+ "status": "PARTIAL",
+ "start_and_rollback": "GD14 W9 (unchanged)",
+ "ue_assets_folder": "/Game/Sphirus/CharacterLab/GD15_IdentityMaster_20261009 (test assets only, not production)",
+ "final_assets": {
+  "mhc_sculpt_state": "MHC/MHC_GD15_G15",
+  "mhc_rigged": "MHC/MHC_GD15_G15_Rig",
+  "face": "Face/SKM_GD15_Face_g15",
+  "dna": "MHC/DNA/MHC_GD15_G15_Rig_Head",
+  "look": "brows GR_GD15_Eyebrows_M_FlatThick_sa (MI_GD15_BrowS_auburnDark) bound through Grooms/BrowSrc/SKM_GD15_BrowSrc_SKM_Groom_Head_Legacy02_u07; lashes S_Thin; iris MI_GD15_Eye{L,R}_h6; skin MI_GD15_Face_<LOD>_s1t5 (T_GD15_Head_BC_f5); body MI_GD15_Body_s1; hair h75c (unchanged source)"
+ },
+ "geometry_steps": [
+  "MHC region preset blend nose Sunita 1.0 (region 13)",
+  "MHC region preset blend mouth Etta split: upper lip 0.2, lower lip 0.45 (region 16; blends verified exactly linear, 0.00 mm)",
+  "MHC Creator lid landmarks L1",
+  "Blender sculpt brushes E3 (lateral hooding, lower-lid pad, zygoma, lower cheek-chin continuity, chin pad +0.5 mm, malar pad, central lid fold, upper-lid crease) WITHOUT the brow-lowering grabs (removed: reference brow is higher)",
+  "upper-lid rotation over the eyeball LR2: 1.1 mm (max 1.41 mm)",
+  "anterior malar fat pad +1.4 mm, mid-cheek apple +1.0 mm (SF3); gonial / masseter / lateral face 0.0 mm",
+  "technical repairs: commissure rigid blend displacement (min triangle area ratio 0.056 -> 0.295), canthus local blends"
+ ],
+ "transfer": {"fit_first_mm": {"mean": 0.112, "p95": 0.435, "p99": 0.635, "max": 1.211}, "fit_final_after_2_feedback_mm": {"mean": 0.018, "p95": 0.080, "p99": 0.189, "max": 0.582}, "postrig_vs_fit_max_mm": 0.001},
+ "rig": {"request_auto_rigging": "ok", "has_face_dna_blendshapes": true, "face_mesh_has_dna": true, "morphs": 858, "pp_abp": "ABP_Face_PostProcess"},
+ "gd15_vs_w9_displacement_mm": {"mean": 0.523, "p95": 1.800, "p99": 2.344, "max": 2.680},
+ "checks_final": {"vertices": 33845, "folds": 38, "folds_E_baseline": 33, "new_creases": "8 borderline (121-166 deg): right commissure x3, nostril sill x4, right lateral canthus x1", "flipped_tris_vs_E": 1, "area_ratio_min": 0.295, "area_ratio_max": 2.15, "lid_inside_0p3mm": {"eyeL": 360, "eyeR": 300, "E": [343, 297]}, "neck_boundary_max_mm": 0.0003},
+ "brow_height_front_solved_camera": {"unit": "brow centreline to pupil, display px of the grid board (1 px ~ 0.16 mm)", "ref": 100, "W9": 93, "C9S4_with_brow_lowering": 88, "G15_final": 103},
+ "contour_bands": "data/contour_bands_W9_vs_GD15.json (fixed solved cameras, panel px; rms improved in 13 of 16 bands)",
+ "reproduction": "build_gd15.sh --blender-stage: rebuild vs stored G15S max 0.000 mm",
+ "tests": {
+  "mesh_integrity_normals": "PASS",
+  "folds": "PARTIAL (8 borderline creases, 1 flipped triangle; not visible in renders or the 19 expression cases at board resolution)",
+  "eyeball_lid": "PASS (no visible penetration; blink closes fully)",
+  "lash_brow_hair_penetration": "PARTIAL (brows / lashes follow the skin; h75c loose strands cross the forehead and brows - hair source protected, same on W9)",
+  "dna_858_morphs": "PASS",
+  "blink_expressions_static": "PASS (19 RigLogic cases x 2 views)",
+  "neck_connection": "PASS",
+  "lod": "PARTIAL (LOD0-3 captured and consistent; LOD4-7 NOT_TESTED)",
+  "body_animation_hair_simulation": "NOT_TESTED",
+  "pie_separate_test_character": "NOT_TESTED (C: free space fell to 3.4 GB during captures; editor/rig failures recorded below ~1 GB)",
+  "production_unchanged": "PASS (no .uasset/.umap outside the GD15 folder modified since the pass started; M_QA_Clay on disk unchanged)"
+ }
+}

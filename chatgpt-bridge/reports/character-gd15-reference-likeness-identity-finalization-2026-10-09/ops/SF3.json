@@ -1,0 +1,53 @@
+[
+ {
+  "name": "malar_fat_pad_forward",
+  "op": "inflate",
+  "at": [
+   2.97,
+   10.5,
+   158.2
+  ],
+  "snap": true,
+  "r": [
+   2.4,
+   2.4,
+   2.2
+  ],
+  "amt": 0.14,
+  "mask": "face"
+ },
+ {
+  "name": "midcheek_apple_down",
+  "op": "inflate",
+  "at": [
+   3.37,
+   9.8,
+   156.4
+  ],
+  "snap": true,
+  "r": [
+   2.2,
+   2.2,
+   2.0
+  ],
+  "amt": 0.1,
+  "mask": "face"
+ },
+ {
+  "name": "cheek_fill_relax",
+  "op": "relax",
+  "at": [
+   2.97,
+   10.0,
+   157.0
+  ],
+  "r": [
+   3.0,
+   3.0,
+   3.0
+  ],
+  "iters": 6,
+  "k": 0.5,
+  "mask": "face"
+ }
+]
