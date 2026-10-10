@@ -1,0 +1,92 @@
+[
+ {
+  "name": "chin_lateral_pad_fuller",
+  "op": "inflate",
+  "at": [
+   1.27,
+   12.3,
+   152.3
+  ],
+  "snap": true,
+  "r": [
+   1.2,
+   1.2,
+   1.1
+  ],
+  "plateau": [
+   0.55,
+   0.55,
+   0.5
+  ],
+  "amt": 0.125,
+  "mask": "lower_face",
+  "sym": true
+ },
+ {
+  "name": "chin_jaw_corner_round",
+  "op": "inflate",
+  "at": [
+   2.37,
+   11.3,
+   152.1
+  ],
+  "snap": true,
+  "r": [
+   1.2,
+   1.2,
+   1.1
+  ],
+  "plateau": [
+   0.55,
+   0.55,
+   0.5
+  ],
+  "amt": 0.105,
+  "mask": "lower_face",
+  "sym": true
+ },
+ {
+  "name": "chin_bottom_up_shorten",
+  "op": "move",
+  "at": [
+   -0.23,
+   11.3,
+   151.35
+  ],
+  "r": [
+   2.1,
+   1.7,
+   0.85
+  ],
+  "plateau": [
+   0.85,
+   0.75,
+   0.42
+  ],
+  "d": [
+   0.0,
+   0.0,
+   0.1
+  ],
+  "mask": "lower_face",
+  "sym": false
+ },
+ {
+  "name": "chin_field_relax",
+  "op": "relax",
+  "at": [
+   -0.23,
+   11.8,
+   152.0
+  ],
+  "r": [
+   3.4,
+   2.4,
+   1.9
+  ],
+  "iters": 10,
+  "k": 0.5,
+  "mask": "lower_face",
+  "sym": false
+ }
+]

@@ -1,0 +1,33 @@
+#!/bin/bash
+# gd17_caps.sh <label> <sets: ref,refnh,common,commonnh,clay,close,expr> : UE captures of the CURRENT qa composition (set by gd17_bind_comp.sh).
+# ref*  = solved reference cameras converted by gd17_uecams.py (same centre/axis) -> warped onto the 2x panel frame (r/<label>_REF_<view>_<set>.png)
+# lod = LOD 0..3 forced on every component (groom LOD automatic), fixed front / 3/4 cameras, hair shown (2026-10-09 GD17)
+# common* / clay = fixed common cameras (150 cm, fov 15, pitch 0, axis through the head centre) - same lens for every candidate
+# close = 6 regional close-ups (fov 5.5, front + 3/4); expr = 23 facial-rig cases (fm_face_cases) front + 3/4, hair hidden. LIGHT=studio|interior|front
+set -u; cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; L=$1; SETS=${2:-ref,common}; W=Saved/Codex/GD17_Identity_20261010; T=Tools/CharacterLookdev_20260930
+PY="/c/Program Files/Epic Games/UE_5.8/Engine/Binaries/ThirdParty/Python3/Win64/python.exe"; C=Saved/Codex/CharacterLookdev_20260930/captures; LI=${LIGHT:-studio}; B="/c/Program Files/Blender Foundation/Blender 5.2/blender.exe"; Wp() { cygpath -w "$(pwd)/$1"; }
+mkdir -p $W/ue
+run() { "$PY" -c "import json; U=json.load(open('$W/data/uecams.json')); S=$2; json.dump({'label':'$1','cases':S}, open('$C/capture_request.json','w'), indent=1)"; rm -f "$C/$1_results.json" "$C/$1_error.txt"
+  bash Tools/OutfitHome_20260929/run_of.sh "$(cygpath -w "$(pwd)/$T/ue_lk_capture.py")" lk-cap 120 | tail -1 >/dev/null
+  until [ -f "$C/$1_results.json" ] || [ -f "$C/$1_error.txt" ]; do sleep 2; done; [ -f "$C/$1_error.txt" ] && { echo "ERROR $1"; head -c 600 "$C/$1_error.txt"; } || echo "DONE $1"; }
+NH="['HairMain', 'HairLoose']"
+for s in ${SETS//,/ }; do case $s in
+  ref) run ${L}_ref "[dict(name='${L}_ref_'+v, view='custom', cam=c['cam'], fov=U['fov'], garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=[]) for v, c in U['ref'].items()]";;
+  refnh) run ${L}_refnh "[dict(name='${L}_refnh_'+v, view='custom', cam=c['cam'], fov=U['fov'], garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=$NH) for v, c in U['ref'].items()]";;
+  refclay) run ${L}_refclay "[dict(name='${L}_refclay_'+v, view='custom', cam=c['cam'], fov=U['fov'], garments=True, materials='clay', hair=False, light='$LI', animation=None, time=0, light_target_z=161, hide=['Eyebrows', 'Eyelashes']) for v, c in U['ref'].items()]";;
+  common) run ${L}_common "[dict(name='${L}_common_'+v, view='custom', cam=c['cam'], fov=U['fov'], garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=[]) for v, c in U['common'].items()]";;
+  commonnh) run ${L}_commonnh "[dict(name='${L}_commonnh_'+v, view='custom', cam=c['cam'], fov=U['fov'], garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=$NH) for v, c in U['common'].items()]";;
+  clay) run ${L}_clay "[dict(name='${L}_clay_'+v+'_'+lt, view='custom', cam=c['cam'], fov=U['fov'], garments=True, materials='clay', hair=False, light=lt, animation=None, time=0, light_target_z=161, hide=['Eyebrows', 'Eyelashes']) for v, c in U['common'].items() for lt in ('studio', 'front')]";;
+  close) run ${L}_close "[dict(name='${L}_close_'+k, view='custom', cam=cam, fov=fv, garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=$NH if k not in ('brow_front',) else []) for k, cam, fv in (('eyes_front', [-0.23, 155.0, 162.3, -90.0, 0.0], 5.0), ('eyes_q3', [-106.296, 111.066, 162.3, -45.0, 0.0], 5.0), ('brow_front', [-0.23, 155.0, 165.0, -90.0, 0.0], 6.5), ('cheek_q3', [-106.296, 111.066, 159.5, -45.0, 0.0], 6.0), ('nose_front', [-0.23, 155.0, 159.3, -90.0, 0.0], 4.5), ('nose_prof', [149.77, 12.5, 159.3, -180.0, 0.0], 5.0), ('mouth_front', [-0.23, 155.0, 155.3, -90.0, 0.0], 4.5), ('mouth_q3', [-106.296, 111.066, 155.3, -45.0, 0.0], 5.0), ('chin_prof', [149.77, 10.5, 152.5, -180.0, 0.0], 7.0), ('chin_q3', [-106.296, 111.066, 152.5, -45.0, 0.0], 7.0))]";;
+  closeclay) run ${L}_closeclay "[dict(name='${L}_closeclay_'+k, view='custom', cam=cam, fov=fv, garments=True, materials='clay', hair=False, light='$LI', animation=None, time=0, light_target_z=161, hide=['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes']) for k, cam, fv in (('eyes_front', [-0.23, 155.0, 162.3, -90.0, 0.0], 5.0), ('eyes_q3', [-106.296, 111.066, 162.3, -45.0, 0.0], 5.0), ('brow_front', [-0.23, 155.0, 165.0, -90.0, 0.0], 6.5), ('cheek_q3', [-106.296, 111.066, 159.5, -45.0, 0.0], 6.0), ('nose_front', [-0.23, 155.0, 159.3, -90.0, 0.0], 4.5), ('nose_prof', [149.77, 12.5, 159.3, -180.0, 0.0], 5.0), ('mouth_front', [-0.23, 155.0, 155.3, -90.0, 0.0], 4.5), ('mouth_q3', [-106.296, 111.066, 155.3, -45.0, 0.0], 5.0), ('chin_prof', [149.77, 10.5, 152.5, -180.0, 0.0], 7.0), ('chin_q3', [-106.296, 111.066, 152.5, -45.0, 0.0], 7.0))]";;
+  expr) run ${L}_expr "[dict(name='${L}_expr_'+c['name']+'_'+k, view='custom', cam=cam, fov=fv, garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=$NH, face_anim=J['animation'], face_time=c['time']) for J in [json.load(open('Saved/Codex/CharacterFaceMatch_20260930/fm_face_cases.json'))] for c in J['cases'] for k, cam, fv in (('front', [-0.23, 155.0, 160.0, -90.0, 0.0], 11.0), ('q3', [-106.296, 111.066, 160.0, -45.0, 0.0], 11.0))]";;
+  lod) run ${L}_lod "[dict(name='${L}_lod_'+str(n)+'_'+k, view='custom', cam=cam, fov=fv, garments=True, materials='real', light='$LI', animation=None, time=0, light_target_z=161, hide=[], lod=n) for n in (0, 1, 2, 3) for k, cam, fv in (('front', [-0.23, 150.0, 161.0, -90.0, 0.0], 15.0), ('q3', [-106.296, 111.066, 161.0, -45.0, 0.0], 15.0))]";;
+esac; done
+# warp ref sets onto the panel frame (2x)
+for s in ${SETS//,/ }; do case $s in ref|refnh|refclay)
+  for v in front q3_faceR q3_faceL prof_faceL; do [ -f $C/${L}_${s}_${v}_custom.png ] && "$B" -b --factory-startup --python "$(Wp $W/tools/gd17_warp.py)" -- "$(Wp $W/data/uecams.json)" $v 2 "$(Wp $C/${L}_${s}_${v}_custom.png)" "$(Wp $W/ue/${L}_${s}_${v}.png)" 2>&1 | grep -c WARPED >/dev/null; done;;
+esac; done
+for s in ${SETS//,/ }; do case $s in common|commonnh|clay|close|closeclay|expr|lod) cp $C/${L}_${s}_*_custom.png $W/ue/ 2>/dev/null;; esac; done; # 2026-10-10 disk headroom: drop raw ref captures whose warped panel image exists, and raw copies identical to GD17/ue (manifest in data/disk_cleanup_manifest.json)
+for s in ${SETS//,/ }; do case $s in ref|refnh|refclay) for v in front q3_faceR q3_faceL prof_faceL; do [ -f $W/ue/${L}_${s}_${v}.png ] && rm -f $C/${L}_${s}_${v}_custom.png; done;; esac; done
+bash $W/tools/gd17_dedup.sh >/dev/null 2>&1
+echo CAPS_DONE $L

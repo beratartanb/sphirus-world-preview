@@ -1,0 +1,6 @@
+[
+ {"name": "chin_lateral_pad_fuller", "op": "inflate", "at": [1.27, 12.3, 152.3], "snap": true, "r": [1.1, 1.1, 1.0], "amt": 0.065, "mask": "lower_face", "sym": true},
+ {"name": "chin_jaw_corner_round", "op": "inflate", "at": [2.27, 11.4, 152.1], "snap": true, "r": [1.1, 1.1, 1.0], "amt": 0.055, "mask": "lower_face", "sym": true},
+ {"name": "chin_bottom_up_shorten", "op": "move", "at": [-0.23, 11.3, 151.35], "r": [1.9, 1.6, 0.8], "plateau": [0.8, 0.7, 0.4], "d": [0.0, 0.0, 0.06], "mask": "lower_face", "sym": false},
+ {"name": "chin_field_relax", "op": "relax", "at": [-0.23, 11.8, 152.0], "r": [3.2, 2.2, 1.8], "iters": 8, "k": 0.5, "mask": "lower_face", "sym": false}
+]
