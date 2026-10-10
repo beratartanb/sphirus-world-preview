@@ -1,0 +1,46 @@
+[
+ {
+  "name": "infratip_columella_forward",
+  "op": "move",
+  "at": [
+   -0.23,
+   14.1,
+   157.9
+  ],
+  "r": [
+   0.75,
+   0.8,
+   0.4
+  ],
+  "plateau": [
+   0.3,
+   0.3,
+   0.1
+  ],
+  "d": [
+   0.0,
+   0.13,
+   -0.02
+  ],
+  "mask": "face",
+  "sym": false
+ },
+ {
+  "name": "nose_base_relax",
+  "op": "relax",
+  "at": [
+   -0.23,
+   13.9,
+   157.8
+  ],
+  "r": [
+   1.8,
+   1.1,
+   0.8
+  ],
+  "iters": 4,
+  "k": 0.5,
+  "mask": "face",
+  "sym": false
+ }
+]

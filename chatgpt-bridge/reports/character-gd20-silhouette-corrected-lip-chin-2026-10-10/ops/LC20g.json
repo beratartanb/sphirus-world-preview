@@ -1,0 +1,9 @@
+[
+ {"name": "lower_lip_body_fill_upper", "op": "move", "at": [-0.23, 13.2, 154.8], "r": [3.8, 1.6, 0.55], "plateau": [2.8, 0.8, 0.1], "d": [0.0, 0.20, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "sulcus_fill_mid", "op": "move", "at": [-0.23, 13.0, 154.35], "r": [3.8, 1.6, 0.6], "plateau": [2.8, 0.8, 0.1], "d": [0.0, 0.50, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "sulcus_fill_lower", "op": "move", "at": [-0.23, 13.0, 153.9], "r": [3.6, 1.6, 0.6], "plateau": [2.6, 0.8, 0.1], "d": [0.0, 0.35, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "upper_vermilion_forward", "op": "move", "at": [-0.23, 13.4, 156.0], "r": [2.4, 1.6, 0.75], "plateau": [1.2, 0.8, 0.15], "d": [0.0, 0.20, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "upper_lip_philtrum_forward", "op": "move", "at": [-0.23, 13.3, 156.75], "r": [2.3, 1.8, 0.95], "plateau": [1.1, 0.9, 0.4], "d": [0.0, 0.10, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "pad_top_forward", "op": "move", "at": [-0.23, 12.9, 153.45], "r": [1.8, 1.4, 0.6], "plateau": [0.9, 0.7, 0.2], "d": [0.0, 0.10, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "lip_chin_relax", "op": "relax", "at": [-0.23, 13.0, 154.7], "r": [3.8, 2.4, 2.4], "iters": 6, "k": 0.5, "mask": "lower_face", "sym": false}
+]
