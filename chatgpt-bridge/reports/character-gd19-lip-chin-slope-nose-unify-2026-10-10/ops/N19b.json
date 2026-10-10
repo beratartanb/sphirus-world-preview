@@ -1,0 +1,5 @@
+[
+ {"name": "tip_ala_junction_relax", "op": "relax", "at": [0.77, 14.5, 158.8], "r": [0.65, 0.85, 0.85], "iters": 10, "k": 0.5, "mask": "nose", "sym": true},
+ {"name": "tip_ala_junction_fill2", "op": "inflate", "at": [0.77, 14.45, 158.75], "r": [0.5, 0.6, 0.7], "plateau": [0.1, 0.2, 0.25], "amt": 0.03, "gate": 0.2, "mask": "nose", "sym": true},
+ {"name": "supra_alar_soften_relax", "op": "relax", "at": [1.17, 13.6, 159.6], "r": [0.8, 0.9, 0.9], "iters": 6, "k": 0.5, "mask": "nose", "sym": true}
+]

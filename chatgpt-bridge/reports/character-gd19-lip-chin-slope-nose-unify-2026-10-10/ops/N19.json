@@ -1,0 +1,6 @@
+[
+ {"name": "lower_nose_merge_relax", "op": "relax", "at": [-0.23, 14.3, 158.7], "r": [2.3, 1.6, 1.5], "iters": 8, "k": 0.5, "mask": "nose", "sym": false},
+ {"name": "tip_ala_junction_fill", "op": "inflate", "at": [0.77, 14.45, 158.75], "r": [0.5, 0.6, 0.7], "plateau": [0.1, 0.2, 0.25], "amt": 0.04, "gate": 0.2, "mask": "nose", "sym": true},
+ {"name": "lower_nose_unified_round", "op": "inflate", "at": [-0.23, 14.6, 158.7], "r": [1.9, 1.0, 0.9], "plateau": [0.9, 0.4, 0.4], "amt": 0.03, "gate": 0.2, "mask": "nose", "sym": false},
+ {"name": "dorsum_sidewall_round_relax", "op": "relax", "at": [-0.23, 13.6, 161.0], "r": [1.8, 1.6, 2.0], "iters": 6, "k": 0.5, "mask": "nose", "sym": false}
+]

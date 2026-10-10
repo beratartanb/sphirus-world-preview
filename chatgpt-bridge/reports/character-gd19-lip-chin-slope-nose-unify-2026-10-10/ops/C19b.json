@@ -1,0 +1,6 @@
+[
+ {"name": "lateral_mentolabial_shelf_back", "op": "move", "at": [1.27, 12.4, 154.0], "r": [0.95, 1.0, 0.8], "plateau": [0.4, 0.4, 0.3], "d": [0.0, -0.18, 0.0], "mask": "lower_face", "sym": true},
+ {"name": "upper_chin_pad_back2", "op": "move", "at": [-0.23, 13.0, 152.95], "r": [2.0, 1.2, 0.9], "plateau": [1.0, 0.5, 0.45], "d": [0.0, -0.10, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "chin_bottom_ball_forward", "op": "move", "at": [-0.23, 12.4, 151.95], "r": [1.5, 1.0, 0.6], "plateau": [0.7, 0.4, 0.2], "d": [0.0, 0.12, 0.0], "mask": "lower_face", "sym": false},
+ {"name": "lip_chin_relax2", "op": "relax", "at": [-0.23, 12.9, 153.5], "r": [3.4, 2.2, 2.2], "iters": 8, "k": 0.5, "mask": "lower_face", "sym": false}
+]
