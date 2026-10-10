@@ -1,0 +1,239 @@
+[
+ {
+  "name": "dorsum_cartilage_forward",
+  "op": "move",
+  "at": [
+   -0.23,
+   14.35,
+   160.4
+  ],
+  "r": [
+   1.0,
+   1.3,
+   1.7
+  ],
+  "plateau": [
+   0.4,
+   0.5,
+   0.9
+  ],
+  "d": [
+   0.0,
+   0.09,
+   0.0
+  ],
+  "mask": "nose",
+  "sym": false
+ },
+ {
+  "name": "tip_lobule_up_forward",
+  "op": "move",
+  "at": [
+   -0.23,
+   15.3,
+   158.9
+  ],
+  "r": [
+   1.25,
+   1.1,
+   1.0
+  ],
+  "plateau": [
+   0.55,
+   0.45,
+   0.4
+  ],
+  "d": [
+   0.0,
+   0.03,
+   0.15
+  ],
+  "mask": "nose",
+  "sym": false
+ },
+ {
+  "name": "tip_lobule_round",
+  "op": "inflate",
+  "at": [
+   -0.23,
+   15.25,
+   159.05
+  ],
+  "r": [
+   1.0,
+   0.9,
+   0.85
+  ],
+  "plateau": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "amt": 0.055,
+  "mask": "nose",
+  "sym": false
+ },
+ {
+  "name": "infratip_columella_tuck",
+  "op": "move",
+  "at": [
+   -0.23,
+   14.2,
+   157.85
+  ],
+  "r": [
+   0.85,
+   1.0,
+   0.9
+  ],
+  "plateau": [
+   0.3,
+   0.3,
+   0.2
+  ],
+  "d": [
+   0.0,
+   -0.12,
+   0.07
+  ],
+  "mask": "face",
+  "sym": false
+ },
+ {
+  "name": "alar_rim_lower_lateral",
+  "op": "move",
+  "at": [
+   1.37,
+   13.1,
+   158.1
+  ],
+  "r": [
+   0.55,
+   0.7,
+   0.65
+  ],
+  "plateau": [
+   0.1,
+   0.25,
+   0.15
+  ],
+  "d": [
+   0.0,
+   0.0,
+   -0.1
+  ],
+  "mask": "face",
+  "sym": true
+ },
+ {
+  "name": "alar_lobule_fuller",
+  "op": "inflate",
+  "at": [
+   0.87,
+   13.4,
+   158.35
+  ],
+  "r": [
+   0.6,
+   0.65,
+   0.6
+  ],
+  "plateau": [
+   0.2,
+   0.25,
+   0.2
+  ],
+  "amt": 0.045,
+  "mask": "face",
+  "sym": true,
+  "gate": 0.2
+ },
+ {
+  "name": "alar_cheek_groove_soften",
+  "op": "inflate",
+  "at": [
+   1.62,
+   12.55,
+   158.1
+  ],
+  "r": [
+   0.55,
+   0.55,
+   0.6
+  ],
+  "plateau": [
+   0.15,
+   0.15,
+   0.2
+  ],
+  "amt": 0.035,
+  "mask": "face",
+  "sym": true
+ },
+ {
+  "name": "dorsum_sidewalls_out",
+  "op": "move",
+  "at": [
+   0.55,
+   13.3,
+   161.4
+  ],
+  "r": [
+   0.5,
+   0.9,
+   1.7
+  ],
+  "plateau": [
+   0.2,
+   0.4,
+   0.9
+  ],
+  "d": [
+   0.06,
+   0.0,
+   0.0
+  ],
+  "mask": "nose",
+  "sym": true
+ },
+ {
+  "name": "nasofacial_groove_fill",
+  "op": "inflate",
+  "at": [
+   1.1,
+   12.55,
+   161.0
+  ],
+  "r": [
+   0.6,
+   0.8,
+   1.5
+  ],
+  "plateau": [
+   0.2,
+   0.3,
+   0.7
+  ],
+  "amt": 0.03,
+  "mask": "face",
+  "sym": true
+ },
+ {
+  "name": "nose_relax",
+  "op": "relax",
+  "at": [
+   -0.23,
+   14.0,
+   159.5
+  ],
+  "r": [
+   2.6,
+   2.2,
+   3.0
+  ],
+  "iters": 6,
+  "k": 0.5,
+  "mask": "nose",
+  "sym": false
+ }
+]
