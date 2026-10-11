@@ -1,0 +1,455 @@
+{
+ "head": "head_k36_postrig.npy",
+ "n": 33845,
+ "finite": true,
+ "folds": 40,
+ "lids": {
+  "eyeL": {
+   "min_clear_mm": -8.26,
+   "n_inside_0p3mm": 361
+  },
+  "eyeR": {
+   "min_clear_mm": -7.54,
+   "n_inside_0p3mm": 300
+  }
+ },
+ "area_ratio_min": 0.551,
+ "area_ratio_max": 3.011,
+ "flipped_tris_vs_base": 0,
+ "vs_head_K100.npy": {
+  "max_mm": 3.78,
+  "mean_moved_mm": 0.32,
+  "n_moved_0p1mm": 3352,
+  "n_moved_1mm": 125,
+  "disp_asym_p99_mm": 1.03,
+  "regions": {
+   "forehead": {
+    "n": 1587,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 0.4,
+    "vec_mean_mm": [
+     -0.0,
+     -0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "temple": {
+    "n": 552,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 0.47,
+    "vec_mean_mm": [
+     0.0,
+     -0.0,
+     -0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "brow_supraorbital": {
+    "n": 346,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 1.41,
+    "vec_mean_mm": [
+     0.01,
+     -0.01,
+     0.0
+    ],
+    "moved_gt_0p5mm": 45
+   },
+   "glabella_radix": {
+    "n": 317,
+    "normal_mean_mm": 0.02,
+    "abs_max_mm": 1.12,
+    "vec_mean_mm": [
+     -0.0,
+     0.01,
+     -0.0
+    ],
+    "moved_gt_0p5mm": 15
+   },
+   "upper_lid": {
+    "n": 1294,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 1.41,
+    "vec_mean_mm": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "moved_gt_0p5mm": 16
+   },
+   "lower_lid_infraorbital": {
+    "n": 2072,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 0.42,
+    "vec_mean_mm": [
+     -0.0,
+     -0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "malar_zygoma": {
+    "n": 567,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.55,
+    "vec_mean_mm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 1
+   },
+   "mid_cheek": {
+    "n": 503,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.43,
+    "vec_mean_mm": [
+     -0.0,
+     0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "lower_cheek_jowl": {
+    "n": 512,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 0.46,
+    "vec_mean_mm": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "nose_dorsum": {
+    "n": 600,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.26,
+    "vec_mean_mm": [
+     -0.0,
+     -0.0,
+     -0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "nose_tip_alae": {
+    "n": 1787,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 0.97,
+    "vec_mean_mm": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "moved_gt_0p5mm": 60
+   },
+   "upper_lip": {
+    "n": 1087,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 0.48,
+    "vec_mean_mm": [
+     -0.0,
+     -0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "lower_lip": {
+    "n": 3328,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.49,
+    "vec_mean_mm": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "chin": {
+    "n": 902,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 1.6,
+    "vec_mean_mm": [
+     -0.0,
+     0.0,
+     0.01
+    ],
+    "moved_gt_0p5mm": 232
+   },
+   "jaw_body_angle": {
+    "n": 639,
+    "normal_mean_mm": -0.11,
+    "abs_max_mm": 3.04,
+    "vec_mean_mm": [
+     0.16,
+     -0.08,
+     -0.01
+    ],
+    "moved_gt_0p5mm": 78
+   },
+   "submental": {
+    "n": 280,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 0.74,
+    "vec_mean_mm": [
+     0.01,
+     -0.01,
+     0.0
+    ],
+    "moved_gt_0p5mm": 13
+   },
+   "cranium": {
+    "n": 1446,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.18,
+    "vec_mean_mm": [
+     -0.0,
+     -0.01,
+     0.01
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "neck": {
+    "n": 1474,
+    "normal_mean_mm": 0.02,
+    "abs_max_mm": 1.31,
+    "vec_mean_mm": [
+     -0.01,
+     0.01,
+     -0.01
+    ],
+    "moved_gt_0p5mm": 19
+   },
+   "ears": {
+    "n": 4305,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.27,
+    "vec_mean_mm": [
+     -0.0,
+     0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   }
+  }
+ },
+ "vs_head_G31S.npy": {
+  "max_mm": 7.02,
+  "mean_moved_mm": 1.04,
+  "n_moved_0p1mm": 6092,
+  "n_moved_1mm": 2331,
+  "disp_asym_p99_mm": 3.91,
+  "regions": {
+   "forehead": {
+    "n": 1575,
+    "normal_mean_mm": 0.08,
+    "abs_max_mm": 3.46,
+    "vec_mean_mm": [
+     -0.11,
+     -0.1,
+     0.13
+    ],
+    "moved_gt_0p5mm": 340
+   },
+   "temple": {
+    "n": 553,
+    "normal_mean_mm": 0.78,
+    "abs_max_mm": 3.44,
+    "vec_mean_mm": [
+     -0.73,
+     0.35,
+     -0.09
+    ],
+    "moved_gt_0p5mm": 262
+   },
+   "brow_supraorbital": {
+    "n": 365,
+    "normal_mean_mm": -0.8,
+    "abs_max_mm": 3.95,
+    "vec_mean_mm": [
+     0.22,
+     -1.06,
+     0.4
+    ],
+    "moved_gt_0p5mm": 162
+   },
+   "glabella_radix": {
+    "n": 299,
+    "normal_mean_mm": -0.38,
+    "abs_max_mm": 2.42,
+    "vec_mean_mm": [
+     0.59,
+     -0.2,
+     0.0
+    ],
+    "moved_gt_0p5mm": 131
+   },
+   "upper_lid": {
+    "n": 1294,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 1.41,
+    "vec_mean_mm": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "moved_gt_0p5mm": 16
+   },
+   "lower_lid_infraorbital": {
+    "n": 2073,
+    "normal_mean_mm": -0.01,
+    "abs_max_mm": 1.7,
+    "vec_mean_mm": [
+     -0.01,
+     -0.01,
+     -0.01
+    ],
+    "moved_gt_0p5mm": 11
+   },
+   "malar_zygoma": {
+    "n": 554,
+    "normal_mean_mm": -0.48,
+    "abs_max_mm": 2.65,
+    "vec_mean_mm": [
+     0.52,
+     -0.08,
+     -0.21
+    ],
+    "moved_gt_0p5mm": 189
+   },
+   "mid_cheek": {
+    "n": 496,
+    "normal_mean_mm": -0.61,
+    "abs_max_mm": 3.01,
+    "vec_mean_mm": [
+     0.69,
+     -0.2,
+     -0.0
+    ],
+    "moved_gt_0p5mm": 196
+   },
+   "lower_cheek_jowl": {
+    "n": 519,
+    "normal_mean_mm": -0.19,
+    "abs_max_mm": 4.83,
+    "vec_mean_mm": [
+     -0.16,
+     -0.04,
+     0.65
+    ],
+    "moved_gt_0p5mm": 275
+   },
+   "nose_dorsum": {
+    "n": 601,
+    "normal_mean_mm": -0.13,
+    "abs_max_mm": 1.94,
+    "vec_mean_mm": [
+     0.19,
+     -0.02,
+     0.04
+    ],
+    "moved_gt_0p5mm": 100
+   },
+   "nose_tip_alae": {
+    "n": 1789,
+    "normal_mean_mm": 0.01,
+    "abs_max_mm": 1.21,
+    "vec_mean_mm": [
+     -0.02,
+     -0.04,
+     0.01
+    ],
+    "moved_gt_0p5mm": 169
+   },
+   "upper_lip": {
+    "n": 1087,
+    "normal_mean_mm": -0.0,
+    "abs_max_mm": 0.48,
+    "vec_mean_mm": [
+     -0.0,
+     -0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "lower_lip": {
+    "n": 3327,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.49,
+    "vec_mean_mm": [
+     -0.0,
+     0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "chin": {
+    "n": 908,
+    "normal_mean_mm": 0.02,
+    "abs_max_mm": 2.56,
+    "vec_mean_mm": [
+     -0.04,
+     0.13,
+     0.25
+    ],
+    "moved_gt_0p5mm": 450
+   },
+   "jaw_body_angle": {
+    "n": 628,
+    "normal_mean_mm": 0.76,
+    "abs_max_mm": 6.17,
+    "vec_mean_mm": [
+     -1.16,
+     0.45,
+     0.48
+    ],
+    "moved_gt_0p5mm": 311
+   },
+   "submental": {
+    "n": 293,
+    "normal_mean_mm": 0.45,
+    "abs_max_mm": 3.44,
+    "vec_mean_mm": [
+     -0.81,
+     0.1,
+     0.15
+    ],
+    "moved_gt_0p5mm": 141
+   },
+   "cranium": {
+    "n": 1446,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.18,
+    "vec_mean_mm": [
+     -0.0,
+     -0.01,
+     0.01
+    ],
+    "moved_gt_0p5mm": 0
+   },
+   "neck": {
+    "n": 1474,
+    "normal_mean_mm": 0.02,
+    "abs_max_mm": 1.31,
+    "vec_mean_mm": [
+     -0.01,
+     0.01,
+     -0.01
+    ],
+    "moved_gt_0p5mm": 19
+   },
+   "ears": {
+    "n": 4299,
+    "normal_mean_mm": 0.0,
+    "abs_max_mm": 0.27,
+    "vec_mean_mm": [
+     -0.0,
+     0.0,
+     0.0
+    ],
+    "moved_gt_0p5mm": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+GD36 outside-change scan (2026-10-11), reference time = GD35 publish (Saved/Codex/GD35_Identity_20261011/github_publish_status.json)
+Content       : clean except the new GD36 folder /Game/Sphirus/CharacterLab/GD36_IdentityMaster_20261011 (38 files):
+                FINAL: MHC_GD36_K36 (+ _f1.._f3 fit stages, _Rig), SKM_GD36_Face_k36 + DNA, bindings *_k36 (hair h75c, GD35-look brow rebuilt as
+                GR_GD36_BrowCustom_ds7n4k, GD31 S_Thin lashes), BP_GD36_Character_G36, L_GD36_Eval_G36, studio MIs.
+                TEST LEFTOVERS (first target H100 also moved the back of the head / ears - rejected, kept as test assets): MHC_GD36_G36 (+_f1/_f2,
+                _Rig), MHC_GD36_G36b, MHC_GD36_G36c, SKM_GD36_Face_g36, bindings *_g36, GR_GD36_BrowCustom_ds7n4. MHC_GD36_G31base = duplicate of
+                the read-only GD31 final MHC (fit source).
+Config / Plugins / SourceAssets / project root : clean
+Saved/Codex/CharacterFaceMatch_20260930 : fm_bindings_GB_GD36_g36h75c.json, fm_bindings_GB_GD36_k36h75c.json (binding records)
+Saved/Codex/CharacterLookdev_20260930/qa_config.json : restored from Saved/Codex/GD36_Identity_20261011/qa_config_before_gd36.json (cmp identical)
+Saved/Codex/CharacterLookdev_20260930/captures : capture_request / capture_progress + 99 GD36 capture metadata json; no raw PNG left
+Saved/Autosaves : PackageRestoreData.json -> .aside_gd36 and the restart asides _204444 / _210626 (no packages listed; editor closed without saving)

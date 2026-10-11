@@ -1,0 +1,17 @@
+#!/bin/bash
+# gd36_postchain.sh : after gd36_final30.sh - post-rig measurements (tag g31), checks vs E and GD30, relief, background-key profile bands, chin-bottom row, report boards
+cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; V=Saved/Codex/GD36_Identity_20261011; U=Saved/Codex/GD30_Identity_20261011; G=Saved/Codex/GD13_Identity_20261009; B="/c/Program Files/Blender Foundation/Blender 5.2/blender.exe"; Wp() { cygpath -w "$(pwd)/$1"; }
+[ -f $V/data/head_g31_postrig.npy ] || { echo NO_POSTRIG; exit 2; }
+bash $V/tools/gd36_measnose.sh g31_postrig 2>&1 | grep -E "^PROFLINE g31|^g31_postrig folds"
+"$B" -b --factory-startup --python "$(Wp $G/tools/gd13_checks.py)" -- "$(Wp $V/data/head_g31_postrig.npy)" "$(Wp $V/data/checks_g31_postrig.json)" "$(Wp $V/data/head_E.npy)" "$(Wp $V/data/head_g30w_postrig.npy)" 2>&1 | grep -E "^CHECKS|^DISP" | cut -c1-330
+"$B" -b --factory-startup --python-expr "
+import numpy as np
+P=np.load(r'$(Wp $V/data/head_g31_postrig.npy)'); S=np.load(r'$(Wp $V/data/head_G31S.npy)'); R=np.load(r'$(Wp $V/data/head_g30w_postrig.npy)')
+d=np.linalg.norm(P[:24049]-S[:24049],axis=1)*10; print('POSTRIG_vs_SCULPT mean %.3f p95 %.3f p99 %.3f max %.3f' % (d.mean(),np.percentile(d,95),np.percentile(d,99),d.max()))
+e=np.linalg.norm(P[:24049]-R[:24049],axis=1)*10; print('G28post_to_G31post mean %.3f p95 %.3f p99 %.3f max %.3f' % (e.mean(),np.percentile(e,95),np.percentile(e,99),e.max()))" 2>&1 | grep -E "POSTRIG|G28post"
+"$B" -b --factory-startup --python "$(Wp $V/tools/gd36_relief.py)" -- "$(Wp $V/data/head_topo.npz)" "GD30=$(Wp $V/data/head_g30w_postrig.npy)" "GD31=$(Wp $V/data/head_g31_postrig.npy)" 2>&1 | grep "^RELIEF" | tee $V/data/relief_final.txt | cut -c1-300
+bash $V/tools/gd36_rset.sh $V/data/head_g31_postrig.npy G31PM $V/data/Ec_cams.json "REF_prof_faceL:clay:A" >/dev/null 2>&1
+"$B" -b --factory-startup --python "$(Wp $V/tools/gd36_bgbands.py)" -- "$(Wp SourceAssets/Characters/GD13_IdentityMaster_20261009/references/GD13_REF_panel_prof_faceL.png)" "$(Wp $V/meas/bgbands_final.json)" "GD17=$(Wp Saved/Codex/GD17_Identity_20261010/r/G17M_REF_prof_faceL_alpha.png)" "GD19=$(Wp Saved/Codex/GD19_Identity_20261010/r/G19SM_REF_prof_faceL_alpha.png)" "GD30rig=$(Wp $U/r/G30PM_REF_prof_faceL_alpha.png)" "GD31rig=$(Wp $V/r/G31PM_REF_prof_faceL_alpha.png)" 2>&1 | grep -E "CALIB|^band|^[a-z_]+ +[0-9]+-" | tee $V/data/bgbands_final.txt | cut -c1-170
+"$B" -b --factory-startup --python "$(Wp $V/tools/_chin_edge.py)" -- "REF=$(Wp SourceAssets/Characters/GD13_IdentityMaster_20261009/references/GD13_REF_panel_front.png)" "GD31r=$(Wp $V/ue/cg31c4_refnh_front.png)" 2>&1 | grep -E "chin-bottom" | cut -c1-60
+mkdir -p $V/bd/final; "$B" -b --factory-startup --python "$(Wp $V/tools/gd36_contour_shape.py)" -- "$(Wp SourceAssets/Characters/GD13_IdentityMaster_20261009/references/GD13_REF_panel_prof_faceL.png)" "$(Wp $V/bd/final/H1_PROFIL_SEKIL_KONTUR_REF_GD30_GD31.jpg)" "$(Wp $V/meas/contour_final.json)" "GD30=$(Wp $U/r/G30PM_REF_prof_faceL_alpha.png)" "GD31=$(Wp $V/r/G31PM_REF_prof_faceL_alpha.png)" 2>&1 | grep -vE "^Blender|^Read|^$|^Fra|^ Time|Saved:" | tee $V/data/contour_final.txt | grep -E "scale|^ (tip-sn|sn-ls|ls-sto|pg-gn|pg-me)|^   " | cut -c1-150
+TAG=G31S L18=cg31c4 bash $V/tools/make_gd36_report.sh > $V/report_boards.log 2>&1; grep -E "PROFLINE|DISPM" $V/report_boards.log | cut -c1-200; ls $V/bd/final | wc -l; echo POSTCHAIN25_DONE
