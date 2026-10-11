@@ -1,0 +1,72 @@
+{
+ "animation": "/Game/Sphirus/CharacterLab/GD33_IdentityMaster_20261011/Face/AS_GD33_RestCalm",
+ "cases": [
+  {
+   "name": "neutral",
+   "time": 0.5,
+   "controls": {}
+  },
+  {
+   "name": "lid15",
+   "time": 1.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.15,
+    "CTRL_expressions_eyeUpperLidUpR": 0.15
+   }
+  },
+  {
+   "name": "lid30",
+   "time": 2.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.3,
+    "CTRL_expressions_eyeUpperLidUpR": 0.3
+   }
+  },
+  {
+   "name": "widen15",
+   "time": 3.5,
+   "controls": {
+    "CTRL_expressions_eyeWidenL": 0.15,
+    "CTRL_expressions_eyeWidenR": 0.15
+   }
+  },
+  {
+   "name": "relax30",
+   "time": 4.5,
+   "controls": {
+    "CTRL_expressions_eyeRelaxL": 0.3,
+    "CTRL_expressions_eyeRelaxR": 0.3
+   }
+  },
+  {
+   "name": "brin12",
+   "time": 5.5,
+   "controls": {
+    "CTRL_expressions_browRaiseInL": 0.12,
+    "CTRL_expressions_browRaiseInR": 0.12
+   }
+  },
+  {
+   "name": "calm1",
+   "time": 6.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.2,
+    "CTRL_expressions_eyeUpperLidUpR": 0.2,
+    "CTRL_expressions_browRaiseInL": 0.1,
+    "CTRL_expressions_browRaiseInR": 0.1
+   }
+  },
+  {
+   "name": "calm2",
+   "time": 7.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.3,
+    "CTRL_expressions_eyeUpperLidUpR": 0.3,
+    "CTRL_expressions_browRaiseInL": 0.15,
+    "CTRL_expressions_browRaiseInR": 0.15,
+    "CTRL_expressions_browRaiseOuterL": 0.05,
+    "CTRL_expressions_browRaiseOuterR": 0.05
+   }
+  }
+ ]
+}

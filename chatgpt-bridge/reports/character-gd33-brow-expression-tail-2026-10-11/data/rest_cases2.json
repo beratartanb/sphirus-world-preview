@@ -1,0 +1,64 @@
+{
+ "animation": "/Game/Sphirus/CharacterLab/GD33_IdentityMaster_20261011/Face/AS_GD33_RestCalm2",
+ "cases": [
+  {
+   "name": "neutral",
+   "time": 0.5,
+   "controls": {}
+  },
+  {
+   "name": "lid60",
+   "time": 1.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.6,
+    "CTRL_expressions_eyeUpperLidUpR": 0.6
+   }
+  },
+  {
+   "name": "lid100",
+   "time": 2.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 1.0,
+    "CTRL_expressions_eyeUpperLidUpR": 1.0
+   }
+  },
+  {
+   "name": "lid60ld30",
+   "time": 3.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.6,
+    "CTRL_expressions_eyeUpperLidUpR": 0.6,
+    "CTRL_expressions_eyeLowerLidDownL": 0.3,
+    "CTRL_expressions_eyeLowerLidDownR": 0.3
+   }
+  },
+  {
+   "name": "lid80ld30",
+   "time": 4.5,
+   "controls": {
+    "CTRL_expressions_eyeUpperLidUpL": 0.8,
+    "CTRL_expressions_eyeUpperLidUpR": 0.8,
+    "CTRL_expressions_eyeLowerLidDownL": 0.3,
+    "CTRL_expressions_eyeLowerLidDownR": 0.3
+   }
+  },
+  {
+   "name": "wid40",
+   "time": 5.5,
+   "controls": {
+    "CTRL_expressions_eyeWidenL": 0.4,
+    "CTRL_expressions_eyeWidenR": 0.4
+   }
+  },
+  {
+   "name": "wid40ld30",
+   "time": 6.5,
+   "controls": {
+    "CTRL_expressions_eyeWidenL": 0.4,
+    "CTRL_expressions_eyeWidenR": 0.4,
+    "CTRL_expressions_eyeLowerLidDownL": 0.3,
+    "CTRL_expressions_eyeLowerLidDownR": 0.3
+   }
+  }
+ ]
+}

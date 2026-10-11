@@ -1,0 +1,14 @@
+GD33 outside-change scan (2026-10-11), reference time = GD32 publish (Saved/Codex/GD32_Identity_20261011/github_publish_status.json)
+find -newer over Content, Config, Plugins, SourceAssets, project root, Saved/Codex/* (depth 1), excluding the GD33 folders:
+
+Content       : clean except the new GD33 folder /Game/Sphirus/CharacterLab/GD33_IdentityMaster_20261011 (31 files: brow grooms + bindings c5m/c5h/c5n/
+                c5hl1/c5hl2/c6t1/c6t2/c7u1/c7u2/c7u3, MI_GD33_BrowS_l1/l2, AS_GD33_RestCalm/RestCalm2/Rest_lid60, BP_GD33_Character_G31, L_GD33_Eval_G31,
+                studio MIs). The GD31 face, its bindings, the h75c hair and the GD15/GD17 looks are referenced read-only (not modified).
+Config / Plugins / SourceAssets / project root : clean
+Saved/Codex/CharacterLookdev_20260930/qa_config.json : rewritten by the GD33 compositions and restored at the end from
+                Saved/Codex/GD33_Identity_20261011/qa_config_before_gd33.json (cmp identical)
+Saved/Codex/CharacterLookdev_20260930/captures : capture_request / capture_progress + 366 GD33 capture metadata json files (bc*, e5-e9, g33*);
+                no GD33 raw PNG left there (moved to GD33/ue after a verified copy). A stale request re-captured e5_xcalm2_ref once (the 4 raw
+                PNGs were moved to GD33/ue/stale_e5_rerun, not deleted).
+Saved/Autosaves : PackageRestoreData.json moved aside after each editor stop (.aside_gd33, .aside_gd33b, .aside_gd33c and the restart-script
+                asides _185141 / _190525 / _191338); all list no packages - the editor was always closed without saving.
