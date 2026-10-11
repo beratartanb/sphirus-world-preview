@@ -1,0 +1,207 @@
+{
+ "blueprint": "/Game/Sphirus/CharacterLab/GD39_Body_20261012/Assembly/BP_GD39_Character_Body",
+ "map": "/Game/Sphirus/CharacterLab/GD39_Body_20261012/Maps/L_GD39_Eval_Body",
+ "components": {
+  "Body_GEN_VARIABLE": {
+   "mesh": "/Game/Sphirus/CharacterLab/GD39_Body_20261012/Body/SKM_GD39_BodyMesh.SKM_GD39_BodyMesh",
+   "forced_lod_model": 1,
+   "override_materials": {
+    "0": "MI_GD15_Body_s1"
+   },
+   "anim_class": "None"
+  },
+  "Face_GEN_VARIABLE": {
+   "mesh": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "forced_lod_model": 1,
+   "override_materials": {
+    "0": "MI_GD31_Face_LOD0_s1t6n_n3",
+    "3": "MI_GD15_EyeL_h6",
+    "4": "MI_GD15_EyeR_h6",
+    "9": "MI_GD31_Face_LOD1_s1t6n_n3",
+    "10": "MI_GD31_Face_LOD2_s1t6n_n3",
+    "12": "MI_GD31_Face_LOD3_s1t6n_n3",
+    "13": "MI_GD31_Face_LOD4_s1t6n_n3",
+    "14": "MI_GD31_Face_LOD5to7_s1t6n_n3"
+   },
+   "anim_class": "<Object '/MetaHumanCharacter/Face/ABP_Face.ABP_Face_C' (0x000001B3947F2A00) Class 'AnimBlueprintGeneratedClass'>"
+  },
+  "HairMain_GEN_VARIABLE": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c"
+  },
+  "HairLoose_GEN_VARIABLE": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c"
+  },
+  "Eyebrows_GEN_VARIABLE": {
+   "groom": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38"
+  },
+  "Eyelashes_GEN_VARIABLE": {
+   "groom": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38"
+  }
+ },
+ "warnings": [
+  "Body_GEN_VARIABLE.update_animation_in_editor: Exception(\"SkeletalMeshComponent: Property 'bUpdateAnimationInEditor' for attribute 'update_animation_in_editor' on 'SkeletalMeshComponent' cannot be edited on templates\")",
+  "Face_GEN_VARIABLE.update_animation_in_editor: Exception(\"SkeletalMeshComponent: Property 'bUpdateAnimationInEditor' for attribute 'update_animation_in_editor' on 'SkeletalMeshComponent' cannot be edited on templates\")"
+ ],
+ "level_actors": [
+  "CAM_BODY_back",
+  "CAM_BODY_front",
+  "CAM_BODY_front3q",
+  "CAM_HS_back",
+  "CAM_HS_back_q3L",
+  "CAM_HS_back_q3R",
+  "CAM_HS_front",
+  "CAM_HS_front_high",
+  "CAM_HS_prof_faceL",
+  "CAM_HS_prof_faceR",
+  "CAM_HS_q3_faceL",
+  "CAM_HS_q3_faceR",
+  "CAM_REF_front",
+  "CAM_REF_prof_faceL",
+  "CAM_REF_q3_faceL",
+  "CAM_REF_q3_faceR",
+  "GD39_Character_Body",
+  "GD39_PostProcess_CaptureExposure",
+  "LKQA_Backdrop",
+  "LKQA_Floor",
+  "LKQA_GameplaySun",
+  "LKQA_Grazing",
+  "LKQA_Sky",
+  "LKQA_fill",
+  "LKQA_key",
+  "LKQA_rim"
+ ],
+ "cameras": {
+  "CAM_REF_front": [
+   -11.697,
+   154.545,
+   157.798,
+   -85.615,
+   0.841,
+   15.0
+  ],
+  "CAM_REF_q3_faceR": [
+   -92.215,
+   123.38,
+   155.01,
+   -52.152,
+   1.906,
+   15.0
+  ],
+  "CAM_REF_q3_faceL": [
+   89.385,
+   125.138,
+   154.005,
+   -126.72,
+   2.291,
+   15.0
+  ],
+  "CAM_REF_prof_faceL": [
+   145.492,
+   35.551,
+   141.786,
+   -168.159,
+   6.975,
+   15.0
+  ],
+  "CAM_HS_front": [
+   -0.23,
+   170.0,
+   150.0,
+   -90.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_q3_faceR": [
+   -116.903,
+   121.673,
+   150.0,
+   -45.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_q3_faceL": [
+   116.443,
+   121.673,
+   150.0,
+   -135.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_prof_faceR": [
+   -165.23,
+   5.0,
+   150.0,
+   -0.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_prof_faceL": [
+   164.77,
+   5.0,
+   150.0,
+   -180.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_back_q3R": [
+   -116.903,
+   -111.673,
+   150.0,
+   45.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_back": [
+   -0.23,
+   -160.0,
+   150.0,
+   90.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_back_q3L": [
+   116.443,
+   -111.673,
+   150.0,
+   135.0,
+   0,
+   24.0
+  ],
+  "CAM_HS_front_high": [
+   -0.23,
+   157.985,
+   211.81,
+   -90.0,
+   -22,
+   24.0
+  ],
+  "CAM_BODY_front": [
+   0,
+   700,
+   92,
+   -90,
+   0,
+   15.5
+  ],
+  "CAM_BODY_front3q": [
+   -400,
+   574.456,
+   92,
+   -55.15,
+   0,
+   15.5
+  ],
+  "CAM_BODY_back": [
+   0,
+   -700,
+   92,
+   90,
+   0,
+   15.5
+  ]
+ }
+}

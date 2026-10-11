@@ -1,0 +1,15 @@
+GD39 outside-change scan (2026-10-12), reference time = GD38 publish (Saved/Codex/GD38_Identity_20261011/github_publish_status.json, 2026-10-11 20:38:59 UTC)
+Content       : the new GD39 folder /Game/Sphirus/CharacterLab/GD39_Body_20261012 (8 files): Body/SKM_GD39_BodyMesh (duplicate of the read-only
+                SKM_LK_BodyMesh + morph GD39_Body on LOD0-3, base geometry unchanged), Body/ABP_GD39_Body_PostProcess (duplicate of ABP_LK + Modify Curve
+                GD39_Body = 1), Assembly/BP_GD39_Character_Body, Maps/L_GD39_Eval_Body, studio MIs.
+                ONE disclosed change outside the folder: the isolated CharacterLab skeleton copy
+                /Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel got ONE additive curve
+                metadata entry 'GD39_Body' (morph flag), the same method as BR_Neutral / RV_* / LK_Neutral (29 -> 30 curves; no bone, retarget or
+                SHCB change). Pre-change copy: Saved/Codex/GD39_Body_20261012/checkpoint_skeleton/metahuman_base_skel.uasset. Production
+                /Game/MetaHumans/* untouched.
+Config / Plugins / SourceAssets / project root : clean.
+Saved/Codex/GD38_Identity_20261011 : github_publish_status.json of the GD38 publish step (same session sequence)
+Saved/Codex/CharacterLookdev_20260930/qa_config.json : restored from Saved/Codex/GD39_Body_20261012/qa_config_before_gd39.json (cmp identical)
+Saved/Codex/CharacterLookdev_20260930/captures : capture_request / capture_progress / qa_setup + GD39 capture metadata json (106 files); no raw PNG left
+Saved/Autosaves : PackageRestoreData.json -> .aside_gd39 (no packages listed; editor closed without saving)
+Saved/Config : EditorPerProjectUserSettings.ini, WorldState json (editor session state)
