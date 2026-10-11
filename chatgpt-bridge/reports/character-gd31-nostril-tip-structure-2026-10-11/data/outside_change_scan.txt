@@ -1,0 +1,21 @@
+GD31 outside-change scan (2026-10-11), reference time = GD30 publish (Saved/Codex/GD30_Identity_20261011/github_publish_status.json, 08:25)
+find -newer over Content, Config, SourceAssets, Plugins, project root, Saved/Codex/* (depth 3), excluding the GD31 folders:
+
+Content       : clean (only /Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011 written)
+Config        : clean
+Plugins       : clean
+project root  : clean
+SourceAssets  : only SourceAssets/Characters/GD30_IdentityMaster_20261011/{data,ops,tools,README_report.md,github_publish_status.json}
+                at 08:25 = the GD30 archive copy written by the GD30 publish step itself (not GD31)
+Saved/Codex (lookdev bookkeeping, same as every pass):
+  CharacterFaceMatch_20260930/fm_bindings_GB_GD31_g31cbh75c.json, fm_bindings_GB_GD31_g31h75c.json  (GD31 brow/hair binding records)
+  CharacterLookdev_20260930/captures/ qa_setup.json, capture_progress.json, capture_request.json + 138 cg31* capture metadata files
+  CharacterLookdev_20260930/qa_config.json  -> restored from Saved/Codex/GD31_Identity_20261011/qa_config_before_gd31.json (cmp identical)
+Saved/Autosaves/PackageRestoreData.json -> moved aside as PackageRestoreData.json.aside_gd31 (editor closed without saving)
+
+GD30 folder housekeeping during GD31 (no GD30 asset or published file changed):
+  17 diagnostics written into Saved/Codex/GD30_Identity_20261011/r after its publish were moved to GD31/r (GD30post_*) and
+  GD31/tools/gd30_texcrease_moved_from_gd30.py
+  4 alpha PNGs G30SM_REF_*_alpha.png + r/_jobs_G30SM.json in GD30/r were re-rendered (same head G30S, same cameras) - not part of the
+  GD30 published report
+  58 temporary copies of GD30 captures/renders in GD31 were removed after byte-identical verification against the GD30 originals
