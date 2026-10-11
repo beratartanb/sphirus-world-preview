@@ -1,0 +1,14 @@
+GD28 outside-change scan (files newer than Saved/Codex/GD28_Identity_20261011/qa_config_before_gd28.json, 2026-10-11 03:30 +0300),
+excluding Saved/Codex/GD28_Identity_20261011, Content/Sphirus/CharacterLab/GD28_IdentityMaster_20261011 and SourceAssets/Characters/GD28_IdentityMaster_20261011.
+
+Content       : none
+Config        : none
+SourceAssets  : none
+Plugins       : none
+project root  : none (sphirus.uproject unchanged)
+Saved/Codex   : only lookdev/capture tool bookkeeping, no production data:
+  CharacterFaceMatch_20260930/fm_bindings_GB_GD28_g28cbh75c.json, fm_bindings_GB_GD28_g28h75c.json (GD28 groom binding records, new files)
+  CharacterLookdev_20260930/captures/qa_setup.json, capture_progress.json, capture_request.json (capture tool state)
+  CharacterLookdev_20260930/captures/cg28c4*.json (138 GD28 capture metadata files, 359 KB; the PNGs were moved to GD28/ue)
+  CharacterLookdev_20260930/qa_config.json: qa_config.json content identical to the pre-pass snapshot (restored; only mtime newer)
+Saved/Autosaves: PackageRestoreData.json from the killed editor moved aside to PackageRestoreData.json.aside_gd28 (editor closed without saving)
