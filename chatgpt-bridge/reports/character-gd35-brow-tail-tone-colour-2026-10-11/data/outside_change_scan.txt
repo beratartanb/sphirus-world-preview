@@ -1,0 +1,8 @@
+GD35 outside-change scan (2026-10-11), reference time = GD34 publish (Saved/Codex/GD34_Identity_20261011/github_publish_status.json)
+Content       : clean except the new GD35 folder /Game/Sphirus/CharacterLab/GD35_IdentityMaster_20261011 (15 files: brow grooms + bindings ds7n2 /
+                ds7n3 / ds7n4, MI_GD35_BrowS_n2 / n3 / n4, BP_GD35_Character_G31, L_GD35_Eval_G31, studio MIs). GD34 ds6n (comparison captures),
+                GD33 rest pose and l1 MI, GD31 face / bindings / lashes, h75c hair: referenced read-only. Skin MIs NOT changed (measured, see README).
+Config / Plugins / SourceAssets / project root : clean
+Saved/Codex/CharacterLookdev_20260930/qa_config.json : restored from Saved/Codex/GD35_Identity_20261011/qa_config_before_gd35.json (cmp identical)
+Saved/Codex/CharacterLookdev_20260930/captures : capture_request / capture_progress + 79 GD35 capture metadata json; no raw PNG left
+Saved/Autosaves : PackageRestoreData.json -> .aside_gd35 and the restart aside _200320 (no packages listed; editor closed without saving)
