@@ -1,0 +1,5 @@
+#!/bin/bash
+# gd30_cavscore.sh <label=head.npy> [...] : nostril-opening IoU vs the reference in q3_faceL, q3_faceR, prof_faceL and the front left nostril
+cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS"; V=Saved/Codex/GD30_Identity_20261011; B="/c/Program Files/Blender Foundation/Blender 5.2/blender.exe"; Wp() { cygpath -w "$(pwd)/$1"; }; REF=SourceAssets/Characters/GD13_IdentityMaster_20261009/references/GD13_REF_panel
+A=(); for h in "$@"; do A+=("${h%%=*}=$(Wp ${h#*=})"); done
+for spec in "q3_faceL|110,150,258,284|10" "q3_faceR|348,398,260,286|10" "prof_faceL|45,95,240,266|8" "front|236,262,262,284|9"; do IFS='|' read v roi pct <<< "$spec"; echo "== $v"; "$B" -b --factory-startup --python "$(Wp $V/tools/gd30_cavity.py)" -- cmp "$(Wp $V/r/_cav_${v}_${CAVTAG:-x}.jpg)" "$(Wp $V/data/cavity_idx.npy)" "$(Wp $V/data/Ec_cams.json)" $v "$(Wp ${REF}_$v.png)" $roi 10 $pct "${A[@]}" 2>&1 | grep -E "opening|no visible|rror|Trace" | sed 's/ opening cols/ cols/'; done

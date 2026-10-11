@@ -1,0 +1,15 @@
+== q3_faceL
+REF       cols 123-142 rows 268-275 area 86 px^2
+GD28real  cols 116-134 rows 271-278 area 47 px^2 | IoU 0.099 | centre d(col,row) -6.8 +3.1
+Ureal     cols 121-133 rows 267-272 area 46 px^2 | IoU 0.435 | centre d(col,row) -5.1 -1.0
+W4real    cols 122-134 rows 267-272 area 43 px^2 | IoU 0.402 | centre d(col,row) -4.4 -1.3
+== q3_faceR (ROI 352-398, alar-crease shadow excluded)
+REF       cols 357-379 rows 271-277 area 109 px^2
+GD28real  cols 364-380 rows 272-281 area 61 px^2 | IoU 0.250 | centre d(col,row) +3.8 +2.3
+Ureal     cols 364-379 rows 269-275 area 55 px^2 | IoU 0.355 | centre d(col,row) +2.5 -1.8
+W4real    cols 364-379 rows 269-275 area 56 px^2 | IoU 0.352 | centre d(col,row) +2.1 -1.9
+== front
+REF       cols 245-255 rows 271-276 area 51 px^2
+GD28real  cols 255-261 rows 277-283 area 20 px^2 | IoU 0.000 | centre d(col,row) +8.0 +7.4
+Ureal     cols 245-253 rows 268-272 area 24 px^2 | IoU 0.136 | centre d(col,row) -1.2 -2.9
+W4real    cols 245-253 rows 268-272 area 25 px^2 | IoU 0.152 | centre d(col,row) -1.1 -3.1

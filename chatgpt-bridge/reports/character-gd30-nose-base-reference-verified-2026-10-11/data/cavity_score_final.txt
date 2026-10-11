@@ -1,0 +1,16 @@
+== q3_faceL
+REF      cols 123.0-142.0 rows 268.0-275.0 area 86.0 px^2
+GD28     cols 123.0-138.8 rows 271.0-277.8 area 41.2 px^2 | IoU 0.045  centre d(col,row) -3.8 +3.5 px
+U        cols 110.0-138.8 rows 267.5-278.8 area 57.5 px^2 | IoU 0.184  centre d(col,row) -7.4 +2.0 px
+== q3_faceR
+REF      cols 356.0-379.0 rows 271.0-277.0 area 115.0 px^2
+GD28     cols 357.2-374.8 rows 272.5-278.5 area 42.6 px^2 | IoU 0.232  centre d(col,row) -1.5 +1.7 px
+U        cols 357.0-392.2 rows 269.0-279.5 area 64.0 px^2 | IoU 0.291  centre d(col,row) +4.7 +0.7 px
+== prof_faceL
+REF      cols 55.0-82.0 rows 251.0-262.0 area 100.0 px^2
+GD28     cols 58.0-68.8 rows 250.5-256.5 area 29.7 px^2 | IoU 0.266  centre d(col,row) -5.1 -1.9 px
+U        cols 58.2-68.8 rows 248.5-255.2 area 24.9 px^2 | IoU 0.166  centre d(col,row) -5.3 -3.5 px
+== front
+REF      cols 245.0-255.0 rows 271.0-276.0 area 51.0 px^2
+GD28     cols 241.0-254.5 rows 271.5-277.5 area 39.9 px^2 | IoU 0.234  centre d(col,row) -3.6 +1.0 px
+U        cols 240.8-254.5 rows 268.0-277.8 area 54.7 px^2 | IoU 0.258  centre d(col,row) -3.6 -0.6 px

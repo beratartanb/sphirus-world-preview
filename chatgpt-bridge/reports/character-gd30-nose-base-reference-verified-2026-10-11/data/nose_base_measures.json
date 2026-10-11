@@ -1,0 +1,241 @@
+{
+ "method": "gd30_valcmp.py: same valley (dark line) detector on the reference panel and on Blender clay renders in the solved cameras; profile mapped onto the reference with the tip + subnasale similarity; probe = mean position of the strongest valley line; diff = model - reference (row probes: - = model higher; column probes: - = model further forward)",
+ "units": "mm (model scale via px per mm at the nose)",
+ "pre_rig_clay": {
+  "profile": {
+   "nostril_band": {
+    "GD28": -2.56,
+    "GD30": -2.27
+   },
+   "lobule_bottom_back": {
+    "GD28": -2.01,
+    "GD30": -3.44,
+    "note": "probe now lands on the crease V-bottom, see the line overlay"
+   },
+   "crease_top": {
+    "GD28": 0.14,
+    "GD30": 2.0
+   },
+   "crease_mid": {
+    "GD28": -4.49,
+    "GD30": 1.06
+   }
+  },
+  "front": {
+   "nostril_L": {
+    "GD28": 0.76,
+    "GD30": 0.76
+   },
+   "nostril_R": {
+    "GD28": 0.23,
+    "GD30": 0.23
+   },
+   "lobule_bottom_L": {
+    "GD28": -1.01,
+    "GD30": 0.15
+   },
+   "lobule_bottom_R": {
+    "GD28": -1.51,
+    "GD30": 0.0
+   },
+   "lobule_side_L": {
+    "GD28": -1.07,
+    "GD30": -1.32
+   }
+  },
+  "q3_faceR": {
+   "lobule_bottom": {
+    "GD28": -1.92,
+    "GD30": -1.52
+   },
+   "nostril": {
+    "GD28": 0.77,
+    "GD30": 1.02
+   }
+  },
+  "q3_faceL": {
+   "lobule_bottom": {
+    "GD28": -1.62,
+    "GD30": 0.17
+   },
+   "nostril": {
+    "GD28": 1.45,
+    "GD30": 1.85
+   }
+  }
+ },
+ "rejected": {
+  "GD29_L": "whole-lobule inflation 2 mm: lobule bulged but the crease stayed diagonal (user: structure broken)",
+  "G30C": "lateral push: 3 flipped triangles, nose 1.8 mm wider",
+  "G30D/E": "translation: 14/57 flipped triangles, crease overshoot",
+  "G30H": "rim arch peak lowered: profile nostril closer but 3/4 nostrils 1.8-2.6 mm too low, wider",
+  "G30I/M/O": "soft-triangle lift 2-3 mm: front nostrils 2-2.5 mm too high, 3/4 hook unchanged, 2 flips (O)",
+  "G30L/Q": "rim margin lift: front lobule bottoms worse, hook unchanged",
+  "G30N": "extra lateral lobule drop: area ratio 0.107",
+  "G30Rv": "vestibule roof deepened 2 mm: no visible change, front lobule -3.4 mm",
+  "G30J": "midline lift without the tip: profile tip 1.1 mm low relative to sn",
+  "G30F1": "multi-view aperture-loop fit (nearest-point matching): opening shrank, 37 flipped triangles",
+  "G30T1-3": "posterior nose-base lowering 2-3 mm: opening larger but lower, IoU unchanged"
+ },
+ "final": "W4 = U + form softening (lobule ridge / junction / back-edge smoothing, one broad nostril-rim arc, light posterior push); U, K and G are intermediate",
+ "pre_rig_clay_K": {
+  "profile": {
+   "nostril_band": -1.22,
+   "lobule_bottom_back": -2.66,
+   "crease_top": 2.37,
+   "crease_mid": 1.54,
+   "tip_height_rel_sn_mm_plus_lower": 0.18
+  },
+  "front": {
+   "nostril_L": -0.41,
+   "nostril_R": -0.78,
+   "lobule_bottom_L": -0.93,
+   "lobule_bottom_R": -0.62,
+   "lobule_side_L": -1.28
+  },
+  "q3_faceR": {
+   "lobule_bottom": -1.88,
+   "nostril": 0.22,
+   "tip_bottom": 1.0
+  },
+  "q3_faceL": {
+   "lobule_bottom": 0.09,
+   "nostril": 1.21,
+   "tip_bottom": 2.12
+  }
+ },
+ "tip_bottom_GD28": {
+  "q3_faceR": 0.87,
+  "q3_faceL": 2.81
+ },
+ "tip_bottom_G": {
+  "q3_faceR": 1.79,
+  "q3_faceL": 3.45
+ },
+ "sum_abs_front_q3_mm": {
+  "GD28": 12.95,
+  "G": 10.93,
+  "K": 9.26,
+  "L": 10.5,
+  "M": 11.86
+ },
+ "open": "W4: the profile crease mid moved forward again with the smoothing (-2.8 mm; U +0.2); 3/4 reference openings still larger; the profile tip sits 1.3 mm above the reference relative to sn by choice",
+ "pre_rig_clay_U": {
+  "profile": {
+   "nostril_band": -0.65,
+   "crease_mid": 0.18,
+   "tip_height_rel_sn_mm_plus_lower": -1.34,
+   "tip_fwd_mm": -0.37
+  },
+  "front": {
+   "nostril_L": -1.38,
+   "nostril_R": -2.02,
+   "lobule_bottom_L": -1.86,
+   "lobule_bottom_R": -1.15
+  },
+  "q3_faceR": {
+   "lobule_bottom": -1.95,
+   "nostril": -0.65,
+   "tip_bottom": 1.0
+  },
+  "q3_faceL": {
+   "lobule_bottom": -0.09,
+   "nostril": 0.4,
+   "tip_bottom": 2.0
+  }
+ },
+ "nostril_opening_IoU_vs_reference": {
+  "method": "gd30_cavity.py: triangle z-buffer, visible nostril-cavity triangles (fixed 211-vertex cavity set) vs darkest reference blob",
+  "q3_faceL": {
+   "GD28": 0.045,
+   "K": 0.114,
+   "U": 0.184
+  },
+  "q3_faceR": {
+   "GD28": 0.232,
+   "K": 0.263,
+   "U": 0.291
+  },
+  "front_left": {
+   "GD28": 0.234,
+   "K": 0.243,
+   "U": 0.258
+  },
+  "profile_unanchored": {
+   "GD28": 0.266,
+   "K": 0.159,
+   "U": 0.166,
+   "note": "profile panel scale differs ~10 %, reference blob includes the shadow under the lobule"
+  },
+  "area_px2": {
+   "REF": {
+    "q3_faceL": 86,
+    "q3_faceR": 115,
+    "front_left": 51
+   },
+   "U": {
+    "q3_faceL": 57.5,
+    "q3_faceR": 64.0,
+    "front_left": 54.7
+   }
+  }
+ },
+ "real_render_opening_IoU": {
+  "method": "gd30_realopen.py: darkest blob in the ROI, same segmentation on the reference photo and on UE captures (alpha-masked)",
+  "q3_faceL": {
+   "GD28": 0.099,
+   "K": 0.212,
+   "U": 0.435
+  },
+  "q3_faceR": {
+   "GD28": 0.0,
+   "K": 0.325,
+   "U": 0.325
+  },
+  "front_left": {
+   "GD28": 0.0,
+   "K": 0.0,
+   "U": 0.136
+  },
+  "note": "GD28 / K darkest blobs in q3R / front were the alar crease / columella shadow, not the nostril; profile darkest blob is the alar-crease shadow for all candidates"
+ },
+ "relief_alar_hf_max_mm": {
+  "GD28": [
+   0.037,
+   0.35
+  ],
+  "U": [
+   0.045,
+   0.72
+  ],
+  "W4": [
+   0.035,
+   0.32
+  ]
+ },
+ "pre_rig_clay_W4": {
+  "profile": {
+   "nostril_band": -0.77,
+   "lobule_bottom_back": -1.46,
+   "crease_mid": -2.78
+  },
+  "front": {
+   "lobule_bottom_L": -1.86
+  },
+  "q3_faceR": {
+   "nostril": -0.9,
+   "tip_bottom": 0.78
+  },
+  "q3_faceL": {
+   "lobule_bottom": -1.07,
+   "nostril": 0.24,
+   "tip_bottom": 1.92
+  },
+  "clay_opening_IoU": {
+   "q3_faceL": 0.186,
+   "q3_faceR": 0.297,
+   "front_left": 0.229
+  },
+  "tip_height_rel_sn_mm_plus_lower": -1.34
+ }
+}

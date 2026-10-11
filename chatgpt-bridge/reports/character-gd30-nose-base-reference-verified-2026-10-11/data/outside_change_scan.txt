@@ -1,0 +1,15 @@
+GD29 + GD30 outside-change scan (files newer than Saved/Codex/GD29_Identity_20261011/qa_config_before_gd29.json, 2026-10-11 05:31 +0300, i.e. after the
+GD28 publish), excluding the GD29 / GD30 Saved/Codex, Content/Sphirus/CharacterLab and SourceAssets/Characters folders.
+Content       : none
+Config        : none
+SourceAssets  : none
+Plugins       : none
+project root  : none
+Saved/Codex   : lookdev / capture bookkeeping only:
+  CharacterFaceMatch_20260930/fm_bindings_GB_GD29_g29*.json, fm_bindings_GB_GD30_g30k*, _g30u*, _g30w* (groom binding records, new files)
+  CharacterLookdev_20260930/captures/qa_setup.json, capture_progress.json, capture_request.json (capture tool state)
+  CharacterLookdev_20260930/captures/cg29c4* / cg30* .json (capture metadata; PNGs moved into GD29/ue_partial_rejected and GD30/ue)
+  CharacterLookdev_20260930/qa_config.json: restored from GD30/qa_config_before_gd30.json (content identical to the pre-pass state)
+Saved/Autosaves: PackageRestoreData.json of every killed editor moved aside (aside_gd29, aside_gd30k, aside_gd30u, aside_gd30w)
+b2runner job queue: one unprocessed job of a stopped chain renamed to *.py.stale (gd14-rig-g30 for G); none was pending when K was stopped
+Engine DDC: not touched.
