@@ -1,0 +1,13 @@
+GD38 target T38 reproduction (from the GD37 target head_N2.npy):
+1. blender -b --factory-startup --python tools/gd38_uvmirror.py -- data/head_N2.npy data/mirror_uv_N2.npy
+2. BRW=1.0 EYE=1.0 EYE_ROUT=2.8 PS_SMOOTH=12 PK_R0=0.10 PK_R1=0.80 (EYE_MODE=rigidbag, EYE_RIN=1.5, BR_M0=0.3, BR_MW=1.0 defaults)
+   blender -b --factory-startup --python tools/gd38_edit.py -- data/head_N2.npy data/mirror_uv_N2.npy data/head_T38.npy 2.5 1.0 4
+   = perioral sides PS 2.5 mm back (thickness ramp from the teeth front envelope, weight smoothed 12x, mouth-corner pockets kept: core 1 mm,
+     ramp 8 mm); right eye region: eyeball rigidly onto the aligned mirror of the left eyeball (-0.74 / -1.49 / -0.10 mm), the region within
+     1.5..2.8 cm of the eye centre follows rigidly (lids keep their shape and stay on the eye; extra eye meshes 30495+ too), under-eye bag
+     (below the lower lid, lid margin within 2.5 mm of the eyeball kept) and brow ridge above the upper-lid fold take the aligned mirror shape.
+3. Brow stations: blender -b --factory-startup --python tools/gd38_browsym.py -- data/head_n37_postrig.npy data/brow3d_s5.json data/brow3d_s8.json 0.25 1
+Rejected: P1/P2 (outer-flag perioral field: 158/259 flipped triangles + the bag zone caught the side of the head), Pps30 / R2 / R3 (teeth
+clearance clamp: 6..50 flips at the right mouth-corner pocket), Q2 (3 mm, pocket kept with a narrow ramp: dark corner pit in profile),
+E1/E2 (full mirror of the eye region: 70 flips in the upper-lid fold / lateral canthus), first T38 build (narrow 4 mm brow-ridge midline ramp:
+vertical crease at the glabella).
