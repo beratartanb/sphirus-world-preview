@@ -1,0 +1,66 @@
+{
+ "map": "/Game/Sphirus/CharacterLab/GD37_IdentityMaster_20261011/Maps/L_GD37_Eval_N37",
+ "game_world": "/Game/Sphirus/CharacterLab/GD37_IdentityMaster_20261011/Maps/UEDPIE_0_L_GD37_Eval_N37.L_GD37_Eval_N37",
+ "n_instances": 1,
+ "readback": {
+  "skeletal": {
+   "Body": {
+    "mesh": "SKM_LK_BodyMesh",
+    "predicted_lod": 0,
+    "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+    "anim_instance": null
+   },
+   "Face": {
+    "mesh": "SKM_GD37_Face_n37",
+    "predicted_lod": 0,
+    "anim_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+    "anim_instance": "AnimSingleNodeInstance",
+    "anim_to_play": "AS_GD33_Rest_lid60",
+    "curves": {
+     "CTRL_expressions_eyeUpperLidUpL": 0.6,
+     "CTRL_expressions_eyeUpperLidUpR": 0.6,
+     "CTRL_expressions_browRaiseInL": 0.0,
+     "CTRL_expressions_eyeBlinkL": 0.0
+    }
+   },
+   "Henley": {
+    "mesh": "SKM_LK_Henley_g17e",
+    "predicted_lod": 0,
+    "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+    "anim_instance": null
+   },
+   "Shorts": {
+    "mesh": "SKM_LK_Shorts_g16c",
+    "predicted_lod": 0,
+    "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+    "anim_instance": null
+   }
+  },
+  "grooms": {
+   "HairMain": {
+    "groom": "GR_LK_Hair_Main_h75c",
+    "binding": "GB_GD37_HairMain_n37h75c",
+    "visible": true,
+    "attach_parent": "Face"
+   },
+   "HairLoose": {
+    "groom": "GR_LK_Hair_Loose_h75c",
+    "binding": "GB_GD37_HairLoose_n37h75c",
+    "visible": true,
+    "attach_parent": "Face"
+   },
+   "Eyebrows": {
+    "groom": "GR_GD37_BrowCustom_ds7n4k",
+    "binding": "GB_GD37_EyebrowsCustom_ds7n4k_n37",
+    "visible": true,
+    "attach_parent": "Face"
+   },
+   "Eyelashes": {
+    "groom": "GR_GD31_Eyelashes_S_Thin",
+    "binding": "GB_GD37_EyelashesS_Thin31_n37",
+    "visible": true,
+    "attach_parent": "Face"
+   }
+  }
+ }
+}

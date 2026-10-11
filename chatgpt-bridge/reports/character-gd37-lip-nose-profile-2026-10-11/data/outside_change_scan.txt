@@ -1,0 +1,13 @@
+GD37 outside-change scan (2026-10-11), reference time = GD36 publish (Saved/Codex/GD36_Identity_20261011/github_publish_status.json, 18:12:40 UTC)
+Content       : clean except the new GD37 folder /Game/Sphirus/CharacterLab/GD37_IdentityMaster_20261011 (22 files):
+                MHC_GD37_K36base (duplicate of the read-only GD36 fit asset MHC_GD36_K36 = fit source), MHC_GD37_N37 (+ _f1.._f3 fit stages, _Rig),
+                SKM_GD37_Face_n37 + MHC_GD37_N37_Rig_Head + DNA, bindings *_n37 (hair h75c, GD35-look brow rebuilt as GR_GD37_BrowCustom_ds7n4k,
+                GD31 S_Thin lashes, cycle library brow/lash bindings), BP_GD37_Character_N37, L_GD37_Eval_N37, studio MIs.
+Config / Plugins / project root : clean. SourceAssets: only the GD36 pass's own copy written at 21:12:59 local (before GD37 started 21:20).
+Saved/Codex/CharacterFaceMatch_20260930 : fm_bindings_GB_GD37_n37h75c.json (binding record, written by the bind tool like every pass)
+Saved/Codex/CharacterLookdev_20260930/qa_config.json : restored from Saved/Codex/GD37_Identity_20261011/qa_config_before_gd37.json (cmp identical)
+Saved/Codex/CharacterLookdev_20260930/captures : capture_request / capture_progress / qa_setup + 46 GD37 capture metadata json; no raw PNG left
+Saved/Autosaves : PackageRestoreData.json -> .aside_gd37 (no packages listed; editor closed without saving)
+Saved/Config : EditorPerProjectUserSettings.ini, WorldState json (editor session state)
+Engine DDC (%LOCALAPPDATA%/UnrealEngine/Common/DerivedDataCache): entries written before 2026-10-08 22:13 removed (26819 files, 6.5 GB,
+                regenerable cache) because C: had 3.2 GB free before the auto-rig.
