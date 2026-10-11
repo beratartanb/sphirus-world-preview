@@ -1,0 +1,17 @@
+GD32 outside-change scan (2026-10-11), reference time = GD31 publish (Saved/Codex/GD31_Identity_20261011/github_publish_status.json)
+find -newer over Content, Config, Plugins, SourceAssets, project root, Saved/Codex/* (depth 2), excluding the GD32 folders:
+
+Content       : clean except the new GD32 folder /Game/Sphirus/CharacterLab/GD32_IdentityMaster_20261011:
+                Assembly/BP_GD32_Character_G31 (45.7 KB), Maps/L_GD32_Eval_G31 (601 KB), Studio/MI_GD32_Backdrop, Studio/MI_GD32_Floor
+                (an EMPTY L_GD32_Eval_G31 of 8.8 KB written by new_level() one minute earlier in the same GD32 job was deleted and replaced, see README)
+Config        : clean
+Plugins       : clean
+SourceAssets  : clean (only the GD31 archive written at the end of GD31 and the new GD32 archive)
+project root  : clean
+Saved/Codex (lookdev bookkeeping, same as every pass):
+  CharacterLookdev_20260930/captures/ capture_request.json, capture_progress.json + 24 g32_* capture metadata files (json only; raw PNGs were moved to GD32/ue after a verified copy)
+  CharacterLookdev_20260930/qa_config.json : NOT modified this pass (cmp identical to Saved/Codex/GD32_Identity_20261011/qa_config_before_gd32.json)
+Saved/Autosaves: PackageRestoreData.json -> .aside_gd32 and PackageRestoreData_162917.json.aside (editor restart); both list no packages
+  (editor closed without saving after the captures)
+Read-only references used (not modified): GD31 face / bindings / grooms / n3 MIs, GD15 eye + body MIs, GD11 hair h75c, lookdev body, Henley g17e,
+  Shorts g16c, lookdev studio materials, GD31 ue/cg31c4S_ref_* captures (verification only)
