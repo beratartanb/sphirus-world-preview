@@ -1,0 +1,18 @@
+now False
+== SETUP
+GD42_BODY_SETUP {"dirty_before": [], "skeleton_checkpoint": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\GD42_Breast_20261012\\checkpoint_skeleton\\metahuman_base_skel.uasset", "before_root": "('/Game/Sphirus/CharacterLab/GD42_Breast_20261012/Body/ABP_GD42_Body_PostProcess.ABP_GD42_Body_PostProcess:AnimGraph.AnimGraphNode_ModifyCurve_1', 'Pose')", "abp_status": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "skel_curves_before": 32, "skel_curves_after": 33, "modify_curve_nodes": ["BR_NeutralCurve", "LK_NeutralCurve", "GD42_BodyCurve"], "saved": [true, true, true], "
+== BAKE Saved/Codex/GD42_Breast_20261012/data/E6
+GD42_BAKE_BODY {"lod0": {"GD42_Body": {"verts": 12554, "max_mm": 28.541, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod1": {"GD42_Body": {"verts": 3143, "max_mm": 26.404, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod2": {"GD42_Body": {"verts": 1178, "max_mm": 26.774, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod3": {"GD42_Body": {"verts": 502, "max_mm": 24.545, "ok": true, "base_unchanged_max_cm": 0.0}}, "morphs": ["RV_Hip110_l", "RV_Hip075_r", "RV_Hip110_r", "LK_Neutral", "GD42_Body"], "saved": true, "dirty_after": []}
+== COMP
+GD42_COMP /Game/Sphirus/CharacterLab/GD42_Breast_20261012/Body/SKM_GD42_BodyMesh /Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38 ['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes']
+LK_QA_SCENE_READY [] ['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes'] ['Body', 'Head']
+GD42REQ full 20
+DONE g42_full
+GD42REQ close 48
+DONE g42_close
+GD42REQ dfm 36
+DONE g42_dfm
+104
+C:              931G  747G  184G  81% /c
+GD42_CHAIN_DONE
+EXIT 0
