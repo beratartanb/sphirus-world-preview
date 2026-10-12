@@ -1,0 +1,22 @@
+EDITOR_PRIVATE_GB 19
+== ASSEMBLY
+GD44_ASSEMBLY_OK 6 26 warnings 2
+== EVALQA
+GD44_EVALQA_READY {"world": "/Game/Sphirus/CharacterLab/GD44_Lines_20261012/Maps/L_GD44_Eval_Body.L_GD44_Eval_Body", "grooms": {"HairMain": ["GR_LK_Hair_Main_h75c", "GB_GD38_HairMain_t38h75c"], "HairLoose": ["GR_LK_Hair_Loose_h75c", "GB_GD38_HairLoose_t38h75c"], "Eyebrows": ["GR_GD38_BrowCustom_ds8s", "GB_GD38
+== BP CAPTURES
+DONE g44bp_body
+CAPS_DONE g44bp
+== CMP
+CMPFILES ['ue\\g44bp_body_front_custom.png', 'ue\\g44_real_front_after_front.png']
+CMP body region (z<~150 cm) mean |d| 0.0043 p95 0.0157 px>0.05 0.78 %
+CMP_OK
+== PIE
+PIE instances 1 error None
+  SK Body SKM_GD44_BodyMesh lod 0  
+  SK Face SKM_GD38_Face_t38 lod 0 AS_GD33_Rest_lid60 {'CTRL_expressions_eyeUpperLidUpL': 0.6, 'CTRL_expressions_eyeUpperLidUpR': 0.6, 'CTRL_expressions_browRaiseInL': 0.0, 'CTRL_expressions_eyeBlinkL': 0.0}
+  GR HairMain {'groom': 'GR_LK_Hair_Main_h75c', 'binding': 'GB_GD38_HairMain_t38h75c', 'visible': True}
+  GR HairLoose {'groom': 'GR_LK_Hair_Loose_h75c', 'binding': 'GB_GD38_HairLoose_t38h75c', 'visible': True}
+  GR Eyebrows {'groom': 'GR_GD38_BrowCustom_ds8s', 'binding': 'GB_GD38_EyebrowsCustom_ds8s_t38', 'visible': True}
+  GR Eyelashes {'groom': 'GR_GD31_Eyelashes_S_Thin', 'binding': 'GB_GD38_EyelashesS_Thin31_t38', 'visible': True}
+EVALCHAIN_DONE
+EXIT 0
