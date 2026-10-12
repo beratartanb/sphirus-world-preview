@@ -1,0 +1,18 @@
+now False
+== SETUP
+GD43_BODY_SETUP {"dirty_before": [], "skeleton_checkpoint": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\GD43_Anthro_20261012\\checkpoint_skeleton\\metahuman_base_skel.uasset", "before_root": "('/Game/Sphirus/CharacterLab/GD43_Anthro_20261012/Body/ABP_GD43_Body_PostProcess.ABP_GD43_Body_PostProcess:AnimGraph.AnimGraphNode_ModifyCurve_1', 'Pose')", "abp_status": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "skel_curves_before": 33, "skel_curves_after": 34, "modify_curve_nodes": ["BR_NeutralCurve", "LK_NeutralCurve", "GD43_BodyCurve"], "saved": [true, true, true], "
+== BAKE Saved/Codex/GD43_Anthro_20261012/data/F5
+GD43_BAKE_BODY {"lod0": {"GD43_Body": {"verts": 14757, "max_mm": 26.95, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod1": {"GD43_Body": {"verts": 3698, "max_mm": 26.95, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod2": {"GD43_Body": {"verts": 1336, "max_mm": 23.555, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod3": {"GD43_Body": {"verts": 565, "max_mm": 24.239, "ok": true, "base_unchanged_max_cm": 0.0}}, "morphs": ["RV_Hip110_l", "RV_Hip075_r", "RV_Hip110_r", "LK_Neutral", "GD43_Body"], "saved": true, "dirty_after": []}
+== COMP
+GD43_COMP /Game/Sphirus/CharacterLab/GD43_Anthro_20261012/Body/SKM_GD43_BodyMesh /Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38 ['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes']
+LK_QA_SCENE_READY [] ['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes'] ['Body', 'Head']
+GD43REQ full 20
+DONE g43_full
+GD43REQ close 48
+DONE g43_close
+GD43REQ dfm 36
+DONE g43_dfm
+104
+C:              931G  748G  183G  81% /c
+GD43_CHAIN_DONE
+EXIT 0
