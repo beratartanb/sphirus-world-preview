@@ -1,0 +1,16 @@
+now False
+== BAKE Saved/Codex/GD41_Body_20261012/data/D6
+GD41_BAKE_BODY {"lod0": {"GD41_Body": {"verts": 12079, "max_mm": 27.893, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod1": {"GD41_Body": {"verts": 3019, "max_mm": 25.704, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod2": {"GD41_Body": {"verts": 1131, "max_mm": 26.774, "ok": true, "base_unchanged_max_cm": 0.0}}, "lod3": {"GD41_Body": {"verts": 480, "max_mm": 21.428, "ok": true, "base_unchanged_max_cm": 0.0}}, "morphs": ["RV_Hip110_l", "RV_Hip075_r", "RV_Hip110_r", "LK_Neutral", "GD41_Body"], "saved": true, "dirty_after": []}
+== COMP
+GD41_COMP /Game/Sphirus/CharacterLab/GD41_Body_20261012/Body/SKM_GD41_BodyMesh /Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38 ['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes']
+LK_QA_SCENE_READY [] ['HairMain', 'HairLoose', 'Eyebrows', 'Eyelashes'] ['Body', 'Head']
+GD41REQ full 20
+DONE g41_full
+GD41REQ close 40
+DONE g41_close
+GD41REQ dfm 36
+DONE g41_dfm
+96
+C:              931G  747G  185G  81% /c
+GD41_CHAIN_DONE
+EXIT 0
