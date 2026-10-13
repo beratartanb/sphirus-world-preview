@@ -1,0 +1,254 @@
+{
+ "mh_body": {
+  "skeleton": "/Game/MetaHumans/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "lods": null,
+  "post_process_abp": "/Game/MetaHumans/Common/Body/ABP_Body_PostProcess.ABP_Body_PostProcess_C",
+  "physics_asset": "/Game/MetaHumans/MH_MainCharacter/Body/PHYS_MH_MainCharacter.PHYS_MH_MainCharacter",
+  "morphs": [],
+  "materials": [
+   "/Game/MetaHumans/MH_MainCharacter/Body/Materials/MI_Body_Baked_VT.MI_Body_Baked_VT"
+  ],
+  "compatible_skeletons": []
+ },
+ "mh_face": {
+  "skeleton": "/Game/MetaHumans/Common/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "lods": null,
+  "post_process_abp": "/Game/MetaHumans/Common/Face/ABP_Face_PostProcess.ABP_Face_PostProcess_C",
+  "physics_asset": "/Game/MetaHumans/Common/Face/PHYS_Face.PHYS_Face",
+  "morphs": [
+   "head_lod0_mesh__brow_down_L",
+   "head_lod0_mesh__brow_down_R",
+   "head_lod0_mesh__brow_lateral_L",
+   "head_lod0_mesh__brow_lateral_R",
+   "head_lod0_mesh__brow_raiseIn_L",
+   "head_lod0_mesh__brow_raiseIn_R",
+   "head_lod0_mesh__brow_raiseOuter_left",
+   "head_lod0_mesh__brow_raiseOuter_right",
+   "head_lod0_mesh__Bdown_Blateral__browLower_L",
+   "head_lod0_mesh__Bdown_Blateral__browLower_R",
+   "head_lod0_mesh__BraiseIn_Bdown__browInnerRaise_L",
+   "head_lod0_mesh__BraiseIn_Bdown__browInnerRaise_R",
+   "head_lod0_mesh__BraiseIn_Bdown_Blateral_L",
+   "head_lod0_mesh__BraiseIn_Bdown_Blateral_R",
+   "head_lod0_mesh__Braise_Ewiden_INL",
+   "head_lod0_mesh__Braise_Ewiden_INR",
+   "head_lod0_mesh__Braise_Ewiden_OUTL",
+   "head_lod0_mesh__Braise_Ewiden_OUTR",
+   "head_lod0_mesh__Braise_Eblink_INL",
+   "head_lod0_mesh__Braise_Eblink_INR",
+   "head_lod0_mesh__Braise_Eblink_OUTL",
+   "head_lod0_mesh__Braise_Eblink_OUTR",
+   "head_lod0_mesh__Braise_ElookDown_INL",
+   "head_lod0_mesh__Braise_ElookDown_INR",
+   "head_lod0_mesh__Braise_ElookDown_OUTL",
+   "head_lod0_mesh__Braise_ElookDown_OUTR",
+   "head_lod0_mesh__ear_up_L",
+   "head_lod0_mesh__ear_up_R",
+   "head_lod0_mesh__eye_blink_L",
+   "head_lod0_mesh__eye_blink_R",
+   "head_lod0_mesh__brow_raise_L",
+   "head_lod0_mesh__brow_raise_R",
+   "head_lod0_mesh__ElidPress_Eblink_L",
+   "head_lod0_mesh__ElidPress_Eblink_R",
+   "head_lod0_mesh__eye_widen_L",
+   "head_lod0_mesh__eye_widen_R",
+   "head_lod0_mesh__eye_squintInner_L",
+   "head_lod0_mesh__eye_squintInner_R",
+   "head_lod0_mesh__eye_cheekRaise_L",
+   "head_lod0_mesh__eye_cheekRaise_R"
+  ],
+  "materials": [
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Skin_Baked_LOD0_VT.MI_Face_Skin_Baked_LOD0_VT",
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Teeth_Baked.MI_Teeth_Baked",
+   "/Game/MetaHumans/Common/Materials/M_Hide.M_Hide",
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_EyeL_Baked.MI_EyeL_Baked",
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_EyeR_Baked.MI_EyeR_Baked",
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_EyeShell.MI_Face_EyeShell",
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_Eyelashes.MI_Face_Eyelashes",
+   "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Face_LacrimalFluid.MI_Face_LacrimalFluid"
+  ],
+  "compatible_skeletons": [
+   "/Game/MetaHumans/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+  ]
+ },
+ "lk_body": {
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "lods": null,
+  "post_process_abp": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/ABP_LK_Body_PostProcess.ABP_LK_Body_PostProcess_C",
+  "physics_asset": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Body/PHYS_MH_SHOULDER_FIX_NATIVE.PHYS_MH_SHOULDER_FIX_NATIVE",
+  "morphs": [
+   "SHC_150_l",
+   "SHC_180_l",
+   "SHC_150_r",
+   "SHC_180_r",
+   "SHC_165_l",
+   "SHC_165_r",
+   "BR_Neutral",
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Arm090_l",
+   "RV_Arm120_l",
+   "RV_Arm150_l",
+   "RV_Arm180_l",
+   "RV_ArmFwd_l",
+   "RV_Arm090_r",
+   "RV_Arm120_r",
+   "RV_Arm150_r",
+   "RV_Arm180_r",
+   "RV_ArmFwd_r",
+   "RV_Twist_l",
+   "RV_Twist_r",
+   "RV_Hip075_l",
+   "RV_Hip110_l",
+   "RV_Hip075_r",
+   "RV_Hip110_r",
+   "LK_Neutral"
+  ],
+  "materials": [
+   "/Game/Sphirus/CharacterLab/CharacterRevision_20260930/Body/MI_RV_Body_Skin.MI_RV_Body_Skin"
+  ],
+  "compatible_skeletons": [
+   "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+  ]
+ },
+ "gd38_face": {
+  "skeleton": "/MetaHumanCharacter/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton",
+  "lods": null,
+  "post_process_abp": "/MetaHumanCharacter/Face/ABP_Face_PostProcess.ABP_Face_PostProcess_C",
+  "physics_asset": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Face/PHYS_Face.PHYS_Face",
+  "morphs": [
+   "head_lod0_mesh__brow_down_L",
+   "head_lod0_mesh__brow_down_R",
+   "head_lod0_mesh__brow_lateral_L",
+   "head_lod0_mesh__brow_lateral_R",
+   "head_lod0_mesh__brow_raiseIn_L",
+   "head_lod0_mesh__brow_raiseIn_R",
+   "head_lod0_mesh__brow_raiseOuter_left",
+   "head_lod0_mesh__brow_raiseOuter_right",
+   "head_lod0_mesh__Bdown_Blateral__browLower_L",
+   "head_lod0_mesh__Bdown_Blateral__browLower_R",
+   "head_lod0_mesh__BraiseIn_Bdown__browInnerRaise_L",
+   "head_lod0_mesh__BraiseIn_Bdown__browInnerRaise_R",
+   "head_lod0_mesh__BraiseIn_Bdown_Blateral_L",
+   "head_lod0_mesh__BraiseIn_Bdown_Blateral_R",
+   "head_lod0_mesh__Braise_Ewiden_INL",
+   "head_lod0_mesh__Braise_Ewiden_INR",
+   "head_lod0_mesh__Braise_Ewiden_OUTL",
+   "head_lod0_mesh__Braise_Ewiden_OUTR",
+   "head_lod0_mesh__Braise_Eblink_INL",
+   "head_lod0_mesh__Braise_Eblink_INR",
+   "head_lod0_mesh__Braise_Eblink_OUTL",
+   "head_lod0_mesh__Braise_Eblink_OUTR",
+   "head_lod0_mesh__Braise_ElookDown_INL",
+   "head_lod0_mesh__Braise_ElookDown_INR",
+   "head_lod0_mesh__Braise_ElookDown_OUTL",
+   "head_lod0_mesh__Braise_ElookDown_OUTR",
+   "head_lod0_mesh__ear_up_L",
+   "head_lod0_mesh__ear_up_R",
+   "head_lod0_mesh__eye_blink_L",
+   "head_lod0_mesh__eye_blink_R",
+   "head_lod0_mesh__brow_raise_L",
+   "head_lod0_mesh__brow_raise_R",
+   "head_lod0_mesh__ElidPress_Eblink_L",
+   "head_lod0_mesh__ElidPress_Eblink_R",
+   "head_lod0_mesh__eye_widen_L",
+   "head_lod0_mesh__eye_widen_R",
+   "head_lod0_mesh__eye_squintInner_L",
+   "head_lod0_mesh__eye_squintInner_R",
+   "head_lod0_mesh__eye_cheekRaise_L",
+   "head_lod0_mesh__eye_cheekRaise_R"
+  ],
+  "materials": [
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Skin_Baked_LOD0_VT.MI_Face_Skin_Baked_LOD0_VT",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Teeth_Baked.MI_Teeth_Baked",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Materials/M_Hide.M_Hide",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_EyeL_Baked.MI_EyeL_Baked",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_EyeR_Baked.MI_EyeR_Baked",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_EyeShell.MI_Face_EyeShell",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_Eyelashes.MI_Face_Eyelashes",
+   "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Assembly/SHOULDER_FIX_NATIVE/Face/Materials/MI_Face_LacrimalFluid.MI_Face_LacrimalFluid"
+  ],
+  "compatible_skeletons": [
+   "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+  ]
+ },
+ "henley": {
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "lods": null,
+  "post_process_abp": null,
+  "physics_asset": null,
+  "morphs": [
+   "RV_Bend30",
+   "RV_Bend60",
+   "RV_Bend90",
+   "RV_Arm090_l",
+   "RV_Arm090_r",
+   "RV_Arm120_l",
+   "RV_Arm120_r",
+   "RV_Arm150_l",
+   "RV_Arm150_r",
+   "RV_Arm180_l",
+   "RV_Arm180_r",
+   "RV_Elbow_l",
+   "RV_Elbow_r",
+   "RV_ArmFwd_l",
+   "RV_ArmFwd_r",
+   "RV_Twist_l",
+   "RV_Twist_r"
+  ],
+  "materials": [
+   "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/Materials/MI_LK_Henley_g17e.MI_LK_Henley_g17e",
+   "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/Materials/MI_LK_Henley_Trim_g17e.MI_LK_Henley_Trim_g17e",
+   "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/Materials/MI_LK_Buttons_g17e.MI_LK_Buttons_g17e"
+  ],
+  "compatible_skeletons": [
+   "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+  ]
+ },
+ "shorts": {
+  "skeleton": "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "lods": null,
+  "post_process_abp": null,
+  "physics_asset": null,
+  "morphs": [
+   "RV_Hip075_l",
+   "RV_Hip075_r",
+   "RV_Hip110_r",
+   "RV_Hip110_l"
+  ],
+  "materials": [
+   "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/Materials/MI_LK_Shorts_m1.MI_LK_Shorts_m1",
+   "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/Materials/MI_LK_Shorts_Trim_m1.MI_LK_Shorts_Trim_m1",
+   "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/Materials/MI_LK_Drawstring_m1.MI_LK_Drawstring_m1"
+  ],
+  "compatible_skeletons": [
+   "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+  ]
+ },
+ "mh_face_folder": [
+  "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh_DNA",
+  "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh"
+ ],
+ "mh_body_folder": [
+  "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh_DNA",
+  "/Game/MetaHumans/MH_MainCharacter/Body/PHYS_MH_MainCharacter",
+  "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh"
+ ],
+ "mh_root": [
+  "/Game/MetaHumans/MH_MainCharacter/BP_MH_MainCharacter"
+ ],
+ "abp_gr_mh": {
+  "target_skeleton": "/Game/MetaHumans/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "parent": null
+ },
+ "abp_lk_pp": {
+  "target_skeleton": "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel",
+  "parent": null
+ },
+ "gb_hair": {
+  "target": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+  "source": "/Game/Sphirus/CharacterLab/CharacterGuardian2_20261001/Face/SKM_GD_FaceMesh_p.SKM_GD_FaceMesh_p",
+  "valid": null
+ }
+}

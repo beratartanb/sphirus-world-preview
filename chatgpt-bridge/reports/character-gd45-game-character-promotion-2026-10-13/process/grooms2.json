@@ -1,0 +1,34 @@
+{
+ "metahuman_component": {
+  "auto_activate": "False",
+  "component_tags": "[]",
+  "is_editor_only": "False",
+  "replicate_using_registered_sub_object_list": "False",
+  "replicates": "False"
+ },
+ "lodsync": {
+  "component_tags": "[]",
+  "components_to_sync": "[{name: \"Body\", sync_option: Drive}, {name: \"Face\", sync_option: Drive}, {name: \"SkeletalMesh\", sync_option: Passive}, {",
+  "custom_lod_mapping": "{\"Hair\": {mapping: (1,3,5,7)}, \"Beard\": {mapping: (1,3,5,7)}, \"Mustache\": {mapping: (1,3,5,7)}, \"Eyebrows\": {mapping: (1",
+  "forced_lod": "-1",
+  "min_lod": "0",
+  "num_lo_ds": "4",
+  "num_lods": "4"
+ },
+ "placed_pawns": [
+  {
+   "label": "BP_PBI_Player",
+   "name": "BP_PBI_Player_C_0",
+   "auto_possess": "<AutoReceiveInput.DISABLED: 0>",
+   "loc": [
+    0.0,
+    0.0,
+    -100000.0
+   ]
+  }
+ ],
+ "owner_saved": true,
+ "BP_GR_Player_saved": true,
+ "BP_PBI_Player_saved": true,
+ "dirty_after": []
+}

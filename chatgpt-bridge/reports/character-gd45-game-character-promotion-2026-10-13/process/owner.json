@@ -1,0 +1,264 @@
+{
+ "pawn_tree": {
+  "Fuzz_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "groom_asset": "None",
+   "binding_asset": "None",
+   "visible": true
+  },
+  "Beard_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "groom_asset": "None",
+   "binding_asset": "None",
+   "visible": true
+  },
+  "Mustache_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "groom_asset": "None",
+   "binding_asset": "None",
+   "visible": true
+  },
+  "Hair_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "groom_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows.Hair_S_Cornrows",
+   "binding_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Binding.Hair_S_Cornrows_Binding",
+   "visible": true
+  },
+  "Manny_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh.SKM_MH_MainCharacter_BodyMesh",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": true,
+   "forced_lod_model": 0,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  },
+  "Eyelashes_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "groom_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl.Eyelashes_L_Curl",
+   "binding_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl_Binding.Eyelashes_L_Curl_Binding",
+   "visible": true
+  },
+  "Eyebrows_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "groom_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit.Eyebrows_M_Slit",
+   "binding_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_Binding.Eyebrows_M_Slit_Binding",
+   "visible": true
+  },
+  "Face_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_Player_MM_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh.SKM_MH_MainCharacter_FaceMesh",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 0,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  },
+  "CharacterMesh0": {
+   "class": "SkeletalMeshComponent",
+   "outer": "Default__BP_PBI_Player_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/AAMS/Demo/Meshes/Travisty/TravistyGames_Mascot_Body.TravistyGames_Mascot_Body",
+   "anim_class": "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching.ABP_GR_MotionMatching_C",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 1,
+   "use_attach_parent_bound": false,
+   "visible": false,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  },
+  "TravistyGames_Mascot_Head_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_ExampleCharacter_MotionMatching_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/AAMS/Demo/Meshes/Travisty/TravistyGames_Mascot_Head.TravistyGames_Mascot_Head",
+   "anim_class": "None",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 0,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  }
+ },
+ "BP_GR_Player_tree": {
+  "Fuzz_GEN_VARIABLE": "BP_Player_MM_C",
+  "Beard_GEN_VARIABLE": "BP_Player_MM_C",
+  "Mustache_GEN_VARIABLE": "BP_Player_MM_C",
+  "Hair_GEN_VARIABLE": "BP_Player_MM_C",
+  "Manny_GEN_VARIABLE": "BP_Player_MM_C",
+  "Eyelashes_GEN_VARIABLE": "BP_Player_MM_C",
+  "Eyebrows_GEN_VARIABLE": "BP_Player_MM_C",
+  "Face_GEN_VARIABLE": "BP_Player_MM_C",
+  "TravistyGames_Mascot_Head_GEN_VARIABLE": "BP_ExampleCharacter_MotionMatching_C",
+  "CharacterMesh0": "Default__BP_GR_Player_C"
+ },
+ "BP_Player_MM_tree": {
+  "Fuzz_GEN_VARIABLE": "BP_Player_MM_C",
+  "Beard_GEN_VARIABLE": "BP_Player_MM_C",
+  "Mustache_GEN_VARIABLE": "BP_Player_MM_C",
+  "Hair_GEN_VARIABLE": "BP_Player_MM_C",
+  "Manny_GEN_VARIABLE": "BP_Player_MM_C",
+  "Eyelashes_GEN_VARIABLE": "BP_Player_MM_C",
+  "Eyebrows_GEN_VARIABLE": "BP_Player_MM_C",
+  "Face_GEN_VARIABLE": "BP_Player_MM_C",
+  "TravistyGames_Mascot_Head_GEN_VARIABLE": "BP_ExampleCharacter_MotionMatching_C",
+  "CharacterMesh0": "Default__BP_Player_MM_C"
+ },
+ "eval_bp": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Assembly/BP_GD38_Character_T38",
+ "eval_tree": {
+  "Eyebrows_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38",
+   "visible": true
+  },
+  "HairLoose_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c",
+   "visible": true
+  },
+  "HairMain_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c",
+   "visible": true
+  },
+  "Face_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "anim_class": "/MetaHumanCharacter/Face/ABP_Face.ABP_Face_C",
+   "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 1,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  },
+  "Body_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "anim_class": "None",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 1,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  },
+  "Eyelashes_GEN_VARIABLE": {
+   "class": "GroomComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38",
+   "visible": true
+  },
+  "Henley_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "anim_class": "None",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 1,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  },
+  "Shorts_GEN_VARIABLE": {
+   "class": "SkeletalMeshComponent",
+   "outer": "BP_GD38_Character_T38_C",
+   "inherited": null,
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c.SKM_LK_Shorts_g16c",
+   "anim_class": "None",
+   "animation_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose_component": "None",
+   "disable_post_process_blueprint": false,
+   "forced_lod_model": 1,
+   "use_attach_parent_bound": false,
+   "visible": true,
+   "collision_enabled": "ERR SkeletalMeshComponent: Failed to find property 'co",
+   "cloth": {
+    "simulate": false,
+    "collide_env": false,
+    "attached_collision": false
+   }
+  }
+ },
+ "bones_err": "'SkeletalMesh' object has no attribute 'get_num_bones'"
+}

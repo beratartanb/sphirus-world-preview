@@ -1,0 +1,200 @@
+{
+ "editor_map": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "game_world": "/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "n_instances": 2,
+ "readback": {
+  "skeletal": {
+   "CharacterMesh0": {
+    "mesh": "TravistyGames_Mascot_Body",
+    "lod": 0,
+    "anim_instance": "ABP_GR_MotionMatching_C",
+    "post_process_instance": null,
+    "pp_disabled": false,
+    "leader": null,
+    "visible": false,
+    "parent": "CollisionCylinder",
+    "spine_03": [
+     -3.83,
+     -0.44,
+     -115761.0
+    ],
+    "thigh_l": [
+     -6.62,
+     -10.5,
+     -115780.79
+    ],
+    "head": [
+     19.61,
+     1.56,
+     -115717.87
+    ]
+   },
+   "TravistyGames_Mascot_Head": {
+    "mesh": "TravistyGames_Mascot_Head",
+    "lod": 0,
+    "anim_instance": null,
+    "post_process_instance": null,
+    "pp_disabled": false,
+    "leader": "CharacterMesh0",
+    "visible": false,
+    "parent": "CharacterMesh0"
+   },
+   "Manny": {
+    "mesh": "SKM_LK_BodyMesh",
+    "lod": 0,
+    "anim_instance": "ABP_GR_MetaHuman_C",
+    "post_process_instance": "ABP_LK_Body_PostProcess_C",
+    "pp_disabled": false,
+    "leader": null,
+    "visible": true,
+    "parent": "CharacterMesh0",
+    "pp_curves": {
+     "BR_Neutral": 1.0,
+     "LK_Neutral": 1.0,
+     "RV_Bend30": 0.468,
+     "SHC_150_l": 0.0
+    },
+    "anim_curves": {
+     "BR_Neutral": 1.0,
+     "LK_Neutral": 1.0
+    },
+    "spine_03": [
+     -2.63,
+     -0.39,
+     -115765.32
+    ],
+    "thigh_l": [
+     -5.82,
+     -9.44,
+     -115783.46
+    ],
+    "head": [
+     23.63,
+     1.87,
+     -115724.33
+    ]
+   },
+   "Face": {
+    "mesh": "SKM_GD38_Face_t38",
+    "lod": 3,
+    "anim_instance": "ABP_Face_C",
+    "post_process_instance": "ABP_Face_PostProcess_C",
+    "pp_disabled": false,
+    "leader": null,
+    "visible": true,
+    "parent": "Manny",
+    "spine_03": [
+     6.24,
+     0.23,
+     -115757.93
+    ],
+    "thigh_l": [
+     0.0,
+     0.0,
+     -115866.62
+    ],
+    "head": [
+     2.93,
+     0.23,
+     -115709.35
+    ]
+   },
+   "Henley": {
+    "mesh": "SKM_LK_Henley_g17e",
+    "lod": 0,
+    "anim_instance": "ABP_GR_MetaHuman_C",
+    "post_process_instance": null,
+    "pp_disabled": false,
+    "leader": null,
+    "visible": true,
+    "parent": "Manny",
+    "spine_03": [
+     -2.92,
+     -0.48,
+     -115759.08
+    ],
+    "thigh_l": [
+     -6.01,
+     -9.54,
+     -115777.18
+    ],
+    "head": [
+     24.81,
+     1.9,
+     -115719.11
+    ]
+   },
+   "Shorts": {
+    "mesh": "SKM_LK_Shorts_g16c",
+    "lod": 0,
+    "anim_instance": "ABP_GR_MetaHuman_C",
+    "post_process_instance": null,
+    "pp_disabled": false,
+    "leader": null,
+    "visible": true,
+    "parent": "Manny",
+    "spine_03": [
+     -2.92,
+     -0.48,
+     -115759.08
+    ],
+    "thigh_l": [
+     -6.01,
+     -9.54,
+     -115777.18
+    ],
+    "head": [
+     24.81,
+     1.9,
+     -115719.11
+    ]
+   }
+  },
+  "grooms": {
+   "Eyebrows": {
+    "groom": "GR_GD38_BrowCustom_ds8s",
+    "binding": null,
+    "visible": true,
+    "parent": "Face"
+   },
+   "Eyelashes": {
+    "groom": "GR_GD31_Eyelashes_S_Thin",
+    "binding": null,
+    "visible": true,
+    "parent": "Face"
+   },
+   "Fuzz": {
+    "groom": null,
+    "binding": null,
+    "visible": true,
+    "parent": "Face"
+   },
+   "Hair": {
+    "groom": "GR_LK_Hair_Main_h75c",
+    "binding": null,
+    "visible": true,
+    "parent": "Face"
+   },
+   "Mustache": {
+    "groom": null,
+    "binding": null,
+    "visible": true,
+    "parent": "Face"
+   },
+   "Beard": {
+    "groom": null,
+    "binding": null,
+    "visible": true,
+    "parent": "Face"
+   },
+   "HairLoose": {
+    "groom": "GR_LK_Hair_Loose_h75c",
+    "binding": "GB_GD38_HairLoose_t38h75c",
+    "visible": true,
+    "parent": "Face"
+   }
+  },
+  "pawn_class": "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player.BP_PBI_Player_C",
+  "possessed": "BP_PBI_Player_C_1"
+ }
+}

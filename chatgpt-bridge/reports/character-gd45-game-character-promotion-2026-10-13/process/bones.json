@@ -1,0 +1,59 @@
+{
+ "n_bones": [
+  342,
+  342
+ ],
+ "game_not_lk": [],
+ "lk_not_game": [],
+ "order_same_prefix": true,
+ "face_bones": [
+  875,
+  875,
+  [],
+  []
+ ],
+ "template_flags": {
+  "Manny": {
+   "disable_post_process_blueprint": "True",
+   "forced_lod_model": "0",
+   "use_attach_parent_bound": "False",
+   "leader_pose_component": "None",
+   "visibility_based_anim_tick_option": "<VisibilityBasedAnimTickOption.ALWAYS_TICK_POSE_AND_REFRESH_BONES: 0>",
+   "cast_shadow": "True",
+   "min_lod_model": "0",
+   "skin_cache_usage": "[]"
+  },
+  "Face": {
+   "disable_post_process_blueprint": "False",
+   "forced_lod_model": "0",
+   "use_attach_parent_bound": "False",
+   "leader_pose_component": "None",
+   "visibility_based_anim_tick_option": "<VisibilityBasedAnimTickOption.ONLY_TICK_POSE_WHEN_RENDERED: 4>",
+   "cast_shadow": "True",
+   "min_lod_model": "0",
+   "skin_cache_usage": "[]"
+  },
+  "TravistyGames_Mascot_Head": {
+   "disable_post_process_blueprint": "False",
+   "forced_lod_model": "0",
+   "use_attach_parent_bound": "False",
+   "leader_pose_component": "None",
+   "visibility_based_anim_tick_option": "<VisibilityBasedAnimTickOption.ALWAYS_TICK_POSE_AND_REFRESH_BONES: 0>",
+   "cast_shadow": "True",
+   "min_lod_model": "0",
+   "skin_cache_usage": "[]"
+  },
+  "CharacterMesh0": {
+   "disable_post_process_blueprint": "False",
+   "forced_lod_model": "1",
+   "use_attach_parent_bound": "False",
+   "leader_pose_component": "None",
+   "visibility_based_anim_tick_option": "<VisibilityBasedAnimTickOption.ALWAYS_TICK_POSE_AND_REFRESH_BONES: 0>",
+   "cast_shadow": "True",
+   "min_lod_model": "0",
+   "skin_cache_usage": "[]"
+  }
+ },
+ "henley_cloth": [],
+ "shorts_cloth": []
+}
