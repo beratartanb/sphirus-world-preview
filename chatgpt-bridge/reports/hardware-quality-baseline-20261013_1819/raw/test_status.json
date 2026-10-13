@@ -1,0 +1,344 @@
+[
+ {
+  "id": "1.1",
+  "test": "Proje/motor/harita/karakter zinciri canlı editörden doğrulandı",
+  "status": "PASS",
+  "evidence": "inventory/editor_state.json; README §1"
+ },
+ {
+  "id": "1.2",
+  "test": "Başlangıç ayar/config anlık görüntüsü + Content/Config/Plugins manifesti",
+  "status": "PASS",
+  "evidence": "config_snapshot/ (yerel), raw/preserve_manifest_before.json (yerel)"
+ },
+ {
+  "id": "1.3",
+  "test": "Test sonunda geçici değişiklikler geri alındı, proje korundu",
+  "status": "PASS",
+  "evidence": "raw/preserve_manifest_diff.json (0 fark), raw/final_editor_state.json, README §10"
+ },
+ {
+  "id": "1.4",
+  "test": "Kullanıcı dosyası korunması: OneDrive/Documents/Unreal.png",
+  "status": "FAIL",
+  "evidence": "HighResShot yol hatası dosyanın üzerine yazdı; OneDrive sürüm geçmişinden geri alınabilir (README §10)"
+ },
+ {
+  "id": "2.1",
+  "test": "CPU/GPU/fiziksel VRAM/RAM/disk/OS/sürücü/UE envanteri",
+  "status": "PASS",
+  "evidence": "INVENTORY.md"
+ },
+ {
+  "id": "2.2",
+  "test": "Çözünürlük, iç render %, yükseltme, dinamik çöz., VSync, FPS sınırı",
+  "status": "PASS",
+  "evidence": "INVENTORY.md; README §3"
+ },
+ {
+  "id": "2.3",
+  "test": "Scalability/Lumen/Nanite/gölge/streaming/foliage ayarları",
+  "status": "PASS",
+  "evidence": "inventory/cvars_A_initial.json"
+ },
+ {
+  "id": "2.4",
+  "test": "Eşzamanlı uygulamalar ve shader derleme durumu",
+  "status": "PASS",
+  "evidence": "INVENTORY.md; README §1 (Faz 1/2)"
+ },
+ {
+  "id": "2.5",
+  "test": "GPU sıcaklık/güç/saat kısıtı (sensör)",
+  "status": "PASS",
+  "evidence": "raw/gpu_monitor_nvsmi.csv, raw/env_by_window.json"
+ },
+ {
+  "id": "2.6",
+  "test": "CPU sıcaklık/güç kısıtı",
+  "status": "NOT_TESTED",
+  "evidence": "CPU sensörü okunmadı; hüküm verilmedi"
+ },
+ {
+  "id": "2.7",
+  "test": "Süreç başına GPU belleği",
+  "status": "BLOCKED",
+  "evidence": "nvidia-smi WDDM altında süreç belleğini N/A gösteriyor; UE kendi yerel kullanımını CSV ile raporladı"
+ },
+ {
+  "id": "3.1",
+  "test": "Geçmiş kalite azaltmalarının dosya kanıtlı denetimi",
+  "status": "PASS",
+  "evidence": "HISTORY_QUALITY_REDUCTIONS.md"
+ },
+ {
+  "id": "3.2",
+  "test": "Gerekçesi bilinmeyen azaltmaların ayrılması",
+  "status": "PASS",
+  "evidence": "HISTORY_QUALITY_REDUCTIONS.md (c)"
+ },
+ {
+  "id": "3.3",
+  "test": "Değişiklik geçmişinin eksiksizliği",
+  "status": "PARTIAL",
+  "evidence": "Git yok, sohbetler yok; 09-25 sonrası çevre raporu yok"
+ },
+ {
+  "id": "4.1",
+  "test": "A editör statik 5 nokta × 3 tekrar",
+  "status": "PASS",
+  "evidence": "raw/measurements.csv (editor_viewport_static A)"
+ },
+ {
+  "id": "4.2",
+  "test": "B editör görüntü alanında",
+  "status": "BLOCKED",
+  "evidence": "r.ScreenPercentage/r.Editor.Viewport.ScreenPercentage editör görüntü alanına uygulanmadı (geçiş maliyetleri birebir aynı)"
+ },
+ {
+  "id": "4.3",
+  "test": "B PIE (5 nokta + 2 rota × 3) ve standalone 1080p",
+  "status": "PASS",
+  "evidence": "raw/measurements.csv (PIE B, SA_B_1080)"
+ },
+ {
+  "id": "4.4",
+  "test": "C editör statik 5 nokta × 3 tekrar",
+  "status": "PASS",
+  "evidence": "raw/measurements.csv (editor_viewport_static C)"
+ },
+ {
+  "id": "4.5",
+  "test": "C PIE rotaları kararlılık",
+  "status": "FAIL",
+  "evidence": "VRAM bütçe aşımı; rota başına 42–341 >50 ms takılma (Faz 1 ve 2)"
+ },
+ {
+  "id": "4.6",
+  "test": "C standalone 1080p",
+  "status": "PASS",
+  "evidence": "22.5 FPS, takılma 0, VRAM 6.0/7.04 GB"
+ },
+ {
+  "id": "4.7",
+  "test": "A/B/C PIE rotaları R1, R2 × 3 tekrar (Faz 1) + A/C Faz 2",
+  "status": "PASS",
+  "evidence": "raw/measurements.csv"
+ },
+ {
+  "id": "4.8",
+  "test": "D hafif kontrol ortamı (hareket/kamera)",
+  "status": "PASS",
+  "evidence": "raw/pie_lab_D_*.json, MOTION_CAMERA.md"
+ },
+ {
+  "id": "4.9",
+  "test": "FPS sınırı/VSync/dinamik çözünürlük maskeleme kontrolü",
+  "status": "PASS",
+  "evidence": "PIE world max tick rate 60 tespit edildi; ctrl_B_uncapped, ctrl_A_uncapped, ctrl_A_sp100"
+ },
+ {
+  "id": "4.10",
+  "test": "Darboğaz atfetme (bitki/VSM tanıları)",
+  "status": "PASS",
+  "evidence": "diag_A_nofoliage, diag_A_novsm"
+ },
+ {
+  "id": "4.11",
+  "test": "Editörden bağımsız standalone ölçüm",
+  "status": "PASS",
+  "evidence": "SA_A_1080, SA_B_1080, SA_C_1080, SA_A_1523x587 (tek poz, rota değil)"
+ },
+ {
+  "id": "4.12",
+  "test": "Paketli Development build ölçümü",
+  "status": "BLOCKED",
+  "evidence": "Paket/cook çıktısı ve yapılandırması yok; proje onarımına girilmedi"
+ },
+ {
+  "id": "4.13",
+  "test": "Unreal Insights / Memory Insights izi",
+  "status": "NOT_TESTED",
+  "evidence": "CSV profiler + GPU CSV istatistikleri kullanıldı"
+ },
+ {
+  "id": "4.14",
+  "test": "Texture streaming durumu",
+  "status": "PASS",
+  "evidence": "CSV TextureStreaming/* (bütçe aşımı görülmedi; WantedMips ≈ pool)"
+ },
+ {
+  "id": "4.15",
+  "test": "Isınma/ilk yükleme beklemeleri ayrı",
+  "status": "PASS",
+  "evidence": "Editör açılışı 4 dk 7 s; standalone harita 70–86 s; ilk 1800 kare ayrı"
+ },
+ {
+  "id": "5.1",
+  "test": "Yerinde fare dönüşü postürü",
+  "status": "PASS",
+  "evidence": "Ölçüldü; dört ortamda aynı (MOTION_CAMERA H1). Hissel onay kullanıcıda"
+ },
+ {
+  "id": "5.2",
+  "test": "Kısa yürüyüş ilk/son adım",
+  "status": "PASS",
+  "evidence": "MOTION_CAMERA H2"
+ },
+ {
+  "id": "5.3",
+  "test": "Walk/tempo/sprint ayrımı",
+  "status": "PASS",
+  "evidence": "132/245/490 cm/s"
+ },
+ {
+  "id": "5.4",
+  "test": "45/90/180 dönüş frenleme ve ağırlık aktarımı",
+  "status": "PARTIAL",
+  "evidence": "180° roll farkı kare hızına duyarlı olabilir; tek örnek"
+ },
+ {
+  "id": "5.5",
+  "test": "İleri–geri zıt yön",
+  "status": "PASS",
+  "evidence": "MOTION_CAMERA H5"
+ },
+ {
+  "id": "5.6",
+  "test": "Sprint + art arda sağ–sol donması",
+  "status": "PASS",
+  "evidence": "Ölçüldü: hafif ortamda yok; evde kapı direği çarpışması (H6)"
+ },
+ {
+  "id": "5.7",
+  "test": "Çaprazda ikinci launch / yanlış eğilme",
+  "status": "PARTIAL",
+  "evidence": "Bu girişlerle gözlenmedi; kanıt yetersiz (H7)"
+ },
+ {
+  "id": "5.8",
+  "test": "Ayak kayması",
+  "status": "PARTIAL",
+  "evidence": "Yaklaşık ölçüt; görünen ve sürücü iskelette benzer"
+ },
+ {
+  "id": "5.9",
+  "test": "Yerinde zıplama vs ileri atlayış",
+  "status": "PASS",
+  "evidence": "MOTION_CAMERA H9"
+ },
+ {
+  "id": "5.10",
+  "test": "Kamera iç/dış mesafe, duvar, kapı, merdiven (lab), eğim",
+  "status": "PASS",
+  "evidence": "MOTION_CAMERA Kamera tablosu"
+ },
+ {
+  "id": "5.11",
+  "test": "Kamera ev içi merdiven / alçak tavan / tavan arası",
+  "status": "NOT_TESTED",
+  "evidence": "Yalnız lab merdiveni"
+ },
+ {
+  "id": "5.12",
+  "test": "Karakter görünürlüğü (bitki örtmesi)",
+  "status": "PARTIAL",
+  "evidence": "İz ölçütü çarpışmasız bitkiyi görmüyor; klipte örtme görüldü"
+ },
+ {
+  "id": "5.13",
+  "test": "Farklı gerçekleşen kare hızlarında karşılaştırma",
+  "status": "PASS",
+  "evidence": "60 / 30 (gerçek) / 47–54 / 27–33 FPS"
+ },
+ {
+  "id": "6.1",
+  "test": "Karakter önden/yandan/arkadan/¾/oyun kamerası",
+  "status": "PASS",
+  "evidence": "images/charshots_lab_*"
+ },
+ {
+  "id": "6.2",
+  "test": "Karakter oranları sayısal (boy, baş/vücut)",
+  "status": "PARTIAL",
+  "evidence": "Kemik ölçüleri var; kafatası tepesi/boy ölçülemedi"
+ },
+ {
+  "id": "6.3",
+  "test": "Onaylı referansla benzerlik",
+  "status": "NOT_TESTED",
+  "evidence": "Onaylı referans bulunamadı; puan uydurulmadı"
+ },
+ {
+  "id": "6.4",
+  "test": "Çevre A↔C eşleştirme ve ayardan bağımsız eksikler",
+  "status": "PASS",
+  "evidence": "CHARACTER_ENVIRONMENT_GAMEPLAY §2; images/diff"
+ },
+ {
+  "id": "6.5",
+  "test": "Rotanın tamamının görsel değerlendirmesi",
+  "status": "PARTIAL",
+  "evidence": "5 nokta + R1 klibi"
+ },
+ {
+  "id": "6.6",
+  "test": "Ev–gölet rotası oynanabilirliği",
+  "status": "PASS",
+  "evidence": "20/20 R1, 15/15 R2 varış"
+ },
+ {
+  "id": "6.7",
+  "test": "Etkileşimler (kapı/kol kapı/tavan arası/vent/sandık)",
+  "status": "NOT_TESTED",
+  "evidence": "Aktörler mevcut; giriş denenmedi"
+ },
+ {
+  "id": "6.8",
+  "test": "Başlangıç/yeniden başlatma",
+  "status": "PARTIAL",
+  "evidence": "Başlangıç noktası kaydedildi; yeniden başlatma denenmedi"
+ },
+ {
+  "id": "6.9",
+  "test": "Kayıt/yükleme",
+  "status": "NOT_IMPLEMENTED",
+  "evidence": "Proje SaveGame sistemi yok"
+ },
+ {
+  "id": "6.10",
+  "test": "Maske/algı/görev",
+  "status": "NOT_IMPLEMENTED",
+  "evidence": "Henüz uygulanmamış"
+ },
+ {
+  "id": "7.1",
+  "test": "Tarih-saatli rapor klasörü ve README",
+  "status": "PASS",
+  "evidence": "Bu klasör"
+ },
+ {
+  "id": "7.2",
+  "test": "Ham ölçüm CSV/JSON",
+  "status": "PASS",
+  "evidence": "raw/measurements.csv + raw/*.json; ham CSV profilleri yerelde"
+ },
+ {
+  "id": "7.3",
+  "test": "Eşleştirilmiş görüntüler ve kısa klipler",
+  "status": "PASS",
+  "evidence": "images/, clips/"
+ },
+ {
+  "id": "7.4",
+  "test": "REPRODUCE.md",
+  "status": "PASS",
+  "evidence": "REPRODUCE.md"
+ },
+ {
+  "id": "7.5",
+  "test": "GitHub yayını ve doğrulama",
+  "status": "SEE_PUBLISH",
+  "evidence": "Bu klasör yayının kendisidir; blob hash ve LATEST.json değişmedi doğrulaması yerel publish_status.json dosyasında"
+ }
+]

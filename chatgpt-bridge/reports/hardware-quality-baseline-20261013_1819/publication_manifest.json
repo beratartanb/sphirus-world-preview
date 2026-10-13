@@ -1,0 +1,287 @@
+{
+ "repository": "beratartanb/sphirus-world-preview",
+ "repository_path": "chatgpt-bridge/reports/hardware-quality-baseline-20261013_1819",
+ "created_local": "2026-10-13T20:42:03",
+ "files": [
+  {
+   "name": "CHARACTER_ENVIRONMENT_GAMEPLAY.md",
+   "bytes": 6938,
+   "git_blob_sha": "5fe94b9e906056a662794862cc13cf81208ec646"
+  },
+  {
+   "name": "clips/house_A_M1_idle_mouse_turn.gif",
+   "bytes": 7868510,
+   "git_blob_sha": "027639cec06fdbe324a18a0f4859c4e9af9ab8aa"
+  },
+  {
+   "name": "clips/house_A_M4_turns_jog.gif",
+   "bytes": 8897982,
+   "git_blob_sha": "cf4ff85ecba3e05eee943c6ab7338f2667a9e44c"
+  },
+  {
+   "name": "clips/house_A_M6_sprint_zigzag.gif",
+   "bytes": 6439809,
+   "git_blob_sha": "f5eacbb72dcfa3045987c1c71c0c1fd081877588"
+  },
+  {
+   "name": "clips/house_A_R1_house_to_pond.gif",
+   "bytes": 12793615,
+   "git_blob_sha": "5047aa603cb41aa20d64283adeda5f52ddc12469"
+  },
+  {
+   "name": "clips/lab_L1b_wall_push.gif",
+   "bytes": 2697598,
+   "git_blob_sha": "c3964dd297d002d1e91c959479bb6520f21d2e37"
+  },
+  {
+   "name": "clips/lab_L1c_wall_lookback.gif",
+   "bytes": 3121566,
+   "git_blob_sha": "359379178a331a54b10063e5b4dbcd3de9dc8f79"
+  },
+  {
+   "name": "clips/lab_L2_stairs.gif",
+   "bytes": 3502729,
+   "git_blob_sha": "f70edd8a49c82cdc9e065d0f343687a4ad8a69df"
+  },
+  {
+   "name": "clips/lab_M1_idle_mouse_turn.gif",
+   "bytes": 5673114,
+   "git_blob_sha": "493df0e63386a5a740dffb9de5e213b8479413fc"
+  },
+  {
+   "name": "clips/lab_M6_sprint_zigzag.gif",
+   "bytes": 3959203,
+   "git_blob_sha": "b3eb0cf4339954a6caf57bf89fac1c6834563586"
+  },
+  {
+   "name": "HISTORY_QUALITY_REDUCTIONS.md",
+   "bytes": 6846,
+   "git_blob_sha": "c3670451988537fda8d0036014b69257eecc5fd7"
+  },
+  {
+   "name": "images/charshots_lab_char_back.jpg",
+   "bytes": 96487,
+   "git_blob_sha": "bf5720b36789203e1c773164afe2728abab9ef1c"
+  },
+  {
+   "name": "images/charshots_lab_char_front.jpg",
+   "bytes": 89396,
+   "git_blob_sha": "e80dd8b491eb90ef356ae45e93e97cfe9d470f39"
+  },
+  {
+   "name": "images/charshots_lab_char_gameplay_cam.jpg",
+   "bytes": 128554,
+   "git_blob_sha": "f3759a915adb7930d4ab512773829cd753dfdd9a"
+  },
+  {
+   "name": "images/charshots_lab_char_side_left.jpg",
+   "bytes": 94440,
+   "git_blob_sha": "21c54c4bc630a6840711ec2152a366f03dfc4563"
+  },
+  {
+   "name": "images/charshots_lab_char_threequarter.jpg",
+   "bytes": 91241,
+   "git_blob_sha": "716a3368cd0ac6bca53f69f6f9f45597b35ae63d"
+  },
+  {
+   "name": "images/diff/P1_interior_A_vs_C_x4.jpg",
+   "bytes": 54657,
+   "git_blob_sha": "5cd4a8f8e5391c0a8011d6c32e955a2e66114f19"
+  },
+  {
+   "name": "images/diff/P1_interior_noise_A_vs_A2_x4.jpg",
+   "bytes": 38060,
+   "git_blob_sha": "fc542ca6e895c45cb563bdb63593e31ec5da3d4f"
+  },
+  {
+   "name": "images/diff/P2_house_to_pond_A_vs_C_x4.jpg",
+   "bytes": 119890,
+   "git_blob_sha": "2eaafd00d79cb613389dd475b1971bcf1b3ba012"
+  },
+  {
+   "name": "images/diff/P2_house_to_pond_noise_A_vs_A2_x4.jpg",
+   "bytes": 85974,
+   "git_blob_sha": "cf43096a101d6c12ec0bc283dc9f21cd0d0237c2"
+  },
+  {
+   "name": "images/diff/P3_pond_shore_A_vs_C_x4.jpg",
+   "bytes": 116891,
+   "git_blob_sha": "576c00fa91faaa4708d0650fe02e039f6e528c75"
+  },
+  {
+   "name": "images/diff/P3_pond_shore_noise_A_vs_A2_x4.jpg",
+   "bytes": 82164,
+   "git_blob_sha": "ed115753e3b112b6fc86092a0c0b6545b0f243a5"
+  },
+  {
+   "name": "images/diff/P4_rear_trail_A_vs_C_x4.jpg",
+   "bytes": 188362,
+   "git_blob_sha": "99fe4ed93437dd86ab0d062bc30d94c2cc11f029"
+  },
+  {
+   "name": "images/diff/P4_rear_trail_noise_A_vs_A2_x4.jpg",
+   "bytes": 167973,
+   "git_blob_sha": "078b4ccdfd1df21e70876d1c57a8bc3626168a87"
+  },
+  {
+   "name": "images/diff/P5_uphill_lookback_A_vs_C_x4.jpg",
+   "bytes": 163291,
+   "git_blob_sha": "77f840d9996b4dfb7b8b9185c6bf3f39a07a8cdc"
+  },
+  {
+   "name": "images/diff/P5_uphill_lookback_noise_A_vs_A2_x4.jpg",
+   "bytes": 136195,
+   "git_blob_sha": "353665027d38da4556aa3dbe7a21baa24f97d14c"
+  },
+  {
+   "name": "images/P1_interior_A_r1.jpg",
+   "bytes": 214827,
+   "git_blob_sha": "f2de46432b17857b0d60ee4a05867a723178670b"
+  },
+  {
+   "name": "images/P1_interior_C_r1.jpg",
+   "bytes": 215553,
+   "git_blob_sha": "7e0fe91b1476e4232f6217591830bba7201834c7"
+  },
+  {
+   "name": "images/P2_house_to_pond_A_r1.jpg",
+   "bytes": 258598,
+   "git_blob_sha": "b5e03101ba564626b41435b74930484e5a95dd68"
+  },
+  {
+   "name": "images/P2_house_to_pond_C_r1.jpg",
+   "bytes": 261514,
+   "git_blob_sha": "a88db1d400a0675856361ff6d41287e7c45e30df"
+  },
+  {
+   "name": "images/P3_pond_shore_A_r1.jpg",
+   "bytes": 246491,
+   "git_blob_sha": "826fd052812116fab85bbba5fb32d7e1b48aa6f9"
+  },
+  {
+   "name": "images/P3_pond_shore_C_r1.jpg",
+   "bytes": 247469,
+   "git_blob_sha": "42b2cb82a377d4673da978f56babc4269bd4b1cb"
+  },
+  {
+   "name": "images/P4_rear_trail_A_r1.jpg",
+   "bytes": 397335,
+   "git_blob_sha": "9a93869110eb4a6639acf9220765759b757e8cb7"
+  },
+  {
+   "name": "images/P4_rear_trail_C_r1.jpg",
+   "bytes": 396757,
+   "git_blob_sha": "0cf10ef861f5a841e8c5c17e6261bbe5fd01f217"
+  },
+  {
+   "name": "images/P5_uphill_lookback_A_r1.jpg",
+   "bytes": 345461,
+   "git_blob_sha": "92c8cba4d4351a7c1c5c4e82b77fde6575354714"
+  },
+  {
+   "name": "images/P5_uphill_lookback_C_r1.jpg",
+   "bytes": 350979,
+   "git_blob_sha": "fc5bb5523d38b77737e4c3a10465e87523b7659b"
+  },
+  {
+   "name": "inventory/cvars_A_initial.json",
+   "bytes": 9107,
+   "git_blob_sha": "7100412e54f0405265273cdf363a6a3616872f82"
+  },
+  {
+   "name": "inventory/editor_state.json",
+   "bytes": 12164,
+   "git_blob_sha": "ba135695b7fc937dc6378c6f4cbed389344176b2"
+  },
+  {
+   "name": "INVENTORY.md",
+   "bytes": 5370,
+   "git_blob_sha": "442462e1f8a43220b57994b5863099b203c7a169"
+  },
+  {
+   "name": "MOTION_CAMERA.md",
+   "bytes": 7495,
+   "git_blob_sha": "d17a3a6fc351df65155437e984aaf9defca64478"
+  },
+  {
+   "name": "raw/env_by_window.json",
+   "bytes": 98902,
+   "git_blob_sha": "a96c81568cce9ef73626d063b394631f9d3be4f1"
+  },
+  {
+   "name": "raw/final_editor_state.json",
+   "bytes": 292,
+   "git_blob_sha": "22e85306070f48d10dcc44f5e174b783529b5d6d"
+  },
+  {
+   "name": "raw/image_diff_A_C.json",
+   "bytes": 8530,
+   "git_blob_sha": "cccaa9f816b10ff6e26709e38c6613c78cb08309"
+  },
+  {
+   "name": "raw/measurements.csv",
+   "bytes": 35990,
+   "git_blob_sha": "1e4a465b16c6bb56e3af345c45f684235b11822d"
+  },
+  {
+   "name": "raw/measurements.json",
+   "bytes": 100174,
+   "git_blob_sha": "883ed5437070ced4d2a027a774dce36db6294adb"
+  },
+  {
+   "name": "raw/motion_table.json",
+   "bytes": 11277,
+   "git_blob_sha": "1038e77a74c706bf48efe0cfb2e4bf7783c6a15d"
+  },
+  {
+   "name": "raw/preserve_manifest_diff.json",
+   "bytes": 92,
+   "git_blob_sha": "1130a7d48c783575e409c5a7ec5a540afbf129e5"
+  },
+  {
+   "name": "raw/profile_C_cvar_diff_vs_A.json",
+   "bytes": 5364,
+   "git_blob_sha": "1ffdbd879b598ecd2c3a32118ac6f18c219173c0"
+  },
+  {
+   "name": "raw/sum_standalone_SA_A_1080.json",
+   "bytes": 1633,
+   "git_blob_sha": "88e918019aa4bcb418a4c8c01bdbfe2003e7c6d2"
+  },
+  {
+   "name": "raw/sum_standalone_SA_A_1523x587.json",
+   "bytes": 1660,
+   "git_blob_sha": "7e18a508834bde69469e6497badbd296fdc15439"
+  },
+  {
+   "name": "raw/sum_standalone_SA_B_1080.json",
+   "bytes": 1644,
+   "git_blob_sha": "a3457c243f11c05d6443c58c5b127ab33c574012"
+  },
+  {
+   "name": "raw/sum_standalone_SA_C_1080.json",
+   "bytes": 1634,
+   "git_blob_sha": "6910374e5ed7040dc1b1681927bb0c6524bc0e33"
+  },
+  {
+   "name": "raw/test_status.json",
+   "bytes": 9719,
+   "git_blob_sha": "3ea4b50f435fdce4ef27a78c12a8357343c8151c"
+  },
+  {
+   "name": "README.md",
+   "bytes": 22962,
+   "git_blob_sha": "d57d5adb768d48cf449ac9ec97673f7bd7a8b309"
+  },
+  {
+   "name": "REPRODUCE.md",
+   "bytes": 6275,
+   "git_blob_sha": "82a71f4c2919fa9899ba34d1af9f59d9cbf64fe5"
+  },
+  {
+   "name": "TEST_STATUS.md",
+   "bytes": 6908,
+   "git_blob_sha": "738ece128b9e4bb994a783bf140aeeff738ca020"
+  }
+ ]
+}

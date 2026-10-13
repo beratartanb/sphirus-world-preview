@@ -1,0 +1,298 @@
+{
+ "fx.Niagara.QualityLevel": {
+  "A": "3",
+  "C": "4"
+ },
+ "pcg.Quality": {
+  "A": "3",
+  "C": "4"
+ },
+ "r.Bloom.ScreenPercentage": {
+  "A": "50",
+  "C": "100"
+ },
+ "r.DOF.Gather.EnableBokehSettings": {
+  "A": "0",
+  "C": "1"
+ },
+ "r.DOF.Gather.ResolutionDivisor": {
+  "A": "2",
+  "C": "1"
+ },
+ "r.DOF.Gather.RingCount": {
+  "A": "4",
+  "C": "5"
+ },
+ "r.DOF.Recombine.EnableBokehSettings": {
+  "A": "0",
+  "C": "1"
+ },
+ "r.DOF.Recombine.Quality": {
+  "A": "1",
+  "C": "2"
+ },
+ "r.DOF.Scatter.MaxSpriteRatio": {
+  "A": "0.1",
+  "C": "0.25"
+ },
+ "r.DepthOfFieldQuality": {
+  "A": "2",
+  "C": "4"
+ },
+ "r.FXAA.Quality": {
+  "A": "4",
+  "C": "5"
+ },
+ "r.GTAO.Numangles": {
+  "A": "2",
+  "C": "4"
+ },
+ "r.HairStrands.SkyAO.SampleCount": {
+  "A": "4",
+  "C": "8"
+ },
+ "r.HairStrands.SkyLighting.IntegrationType": {
+  "A": "2",
+  "C": "1"
+ },
+ "r.HairStrands.Visibility.MSAA.SamplePerPixel": {
+  "A": "4",
+  "C": "8"
+ },
+ "r.HeterogeneousVolumes.ApplyFogInscattering": {
+  "A": "2",
+  "C": "1"
+ },
+ "r.HeterogeneousVolumes.DownsampleFactor": {
+  "A": "2",
+  "C": "1"
+ },
+ "r.HeterogeneousVolumes.MaxStepCount": {
+  "A": "256",
+  "C": "1024"
+ },
+ "r.HeterogeneousVolumes.Shadows.MaxSampleCount": {
+  "A": "8",
+  "C": "16"
+ },
+ "r.HeterogeneousVolumes.Shadows.Precision": {
+  "A": "0",
+  "C": "1"
+ },
+ "r.HeterogeneousVolumes.Shadows.Resolution": {
+  "A": "512",
+  "C": "1024"
+ },
+ "r.HeterogeneousVolumes.Shadows.Type": {
+  "A": "1",
+  "C": "0"
+ },
+ "r.HeterogeneousVolumes.UseExistenceMask": {
+  "A": "0",
+  "C": "1"
+ },
+ "r.LUT.Shaper": {
+  "A": "0",
+  "C": "1"
+ },
+ "r.LUT.Size": {
+  "A": "32",
+  "C": "64"
+ },
+ "r.LensFlareQuality": {
+  "A": "2",
+  "C": "3"
+ },
+ "r.Lumen.ScreenProbeGather.DownsampleFactor": {
+  "A": "16",
+  "C": "8"
+ },
+ "r.Lumen.ScreenProbeGather.FullResolutionJitterWidth": {
+  "A": "1",
+  "C": "0.5"
+ },
+ "r.Lumen.ScreenProbeGather.NumAdaptiveProbes": {
+  "A": "8",
+  "C": "4"
+ },
+ "r.Lumen.ScreenProbeGather.RadianceCache.NumProbesToTraceBudget": {
+  "A": "150",
+  "C": "350"
+ },
+ "r.Lumen.ScreenProbeGather.TracingOctahedronResolution": {
+  "A": "8",
+  "C": "16"
+ },
+ "r.Lumen.TranslucencyReflections.FrontLayer.Enable": {
+  "A": "0",
+  "C": "1"
+ },
+ "r.Lumen.TranslucencyVolume.RadianceCache.NumProbesToTraceBudget": {
+  "A": "100",
+  "C": "350"
+ },
+ "r.Lumen.TranslucencyVolume.RadianceCache.ProbeResolution": {
+  "A": "8",
+  "C": "16"
+ },
+ "r.Lumen.TranslucencyVolume.TracingOctahedronResolution": {
+  "A": "3",
+  "C": "4"
+ },
+ "r.MegaLights.DownsampleMode": {
+  "A": "2",
+  "C": "0"
+ },
+ "r.MegaLights.FrontLayerTranslucency.SoftShadows": {
+  "A": "false",
+  "C": "true"
+ },
+ "r.MegaLights.FrontLayerTranslucency.SpecularOnly": {
+  "A": "true",
+  "C": "false"
+ },
+ "r.MegaLights.FrontLayerTranslucency.TexturedRectLights": {
+  "A": "false",
+  "C": "true"
+ },
+ "r.RenderTargetPoolMin": {
+  "A": "400",
+  "C": "1000"
+ },
+ "r.SSGI.Quality": {
+  "A": "3",
+  "C": "4"
+ },
+ "r.SSR.Quality": {
+  "A": "3",
+  "C": "4"
+ },
+ "r.Shadow.MaxCSMResolution": {
+  "A": "2048",
+  "C": "4096"
+ },
+ "r.Shadow.MaxResolution": {
+  "A": "2048",
+  "C": "4096"
+ },
+ "r.Shadow.RadiusThreshold": {
+  "A": "0.01",
+  "C": "0"
+ },
+ "r.Shadow.Virtual.MaxPhysicalPages": {
+  "A": "4096",
+  "C": "8192"
+ },
+ "r.Shadow.Virtual.ResolutionLodBiasLocalMoving": {
+  "A": "1",
+  "C": "0"
+ },
+ "r.Shadow.Virtual.SMRT.RayCountDirectional": {
+  "A": "12",
+  "C": "16"
+ },
+ "r.Shadow.Virtual.SMRT.RayCountLocal": {
+  "A": "8",
+  "C": "16"
+ },
+ "r.Shadow.Virtual.SMRT.SamplesPerRayLocal": {
+  "A": "4",
+  "C": "8"
+ },
+ "r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution": {
+  "A": "16",
+  "C": "32"
+ },
+ "r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque": {
+  "A": "1",
+  "C": "0"
+ },
+ "r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice": {
+  "A": "4",
+  "C": "8"
+ },
+ "r.SkyAtmosphere.FastSkyLUT": {
+  "A": "1",
+  "C": "0"
+ },
+ "r.SkyAtmosphere.FastSkyLUT.SampleCountMax": {
+  "A": "128",
+  "C": "256"
+ },
+ "r.SkyAtmosphere.MultiScatteringLUT.SampleCount": {
+  "A": "15",
+  "C": "20"
+ },
+ "r.SkyAtmosphere.SampleCountMax": {
+  "A": "128",
+  "C": "256"
+ },
+ "r.SkyAtmosphere.SampleCountMin": {
+  "A": "4",
+  "C": "8"
+ },
+ "r.SkyAtmosphere.TransmittanceLUT.SampleCount": {
+  "A": "10",
+  "C": "30"
+ },
+ "r.TSR.History.R11G11B10": {
+  "A": "1",
+  "C": "0"
+ },
+ "r.Translucency.HeterogeneousVolumes.Type": {
+  "A": "1",
+  "C": "0"
+ },
+ "r.ViewDistanceScale": {
+  "A": "1",
+  "C": "10"
+ },
+ "r.VolumetricFog.GridPixelSize": {
+  "A": "8",
+  "C": "4"
+ },
+ "r.VolumetricFog.HistoryMissSupersampleCount": {
+  "A": "4",
+  "C": "16"
+ },
+ "sg.AntiAliasingQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.EffectsQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.FoliageQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.GlobalIlluminationQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.LandscapeQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.PostProcessQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.ReflectionQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.ShadingQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.ShadowQuality": {
+  "A": "3",
+  "C": "4"
+ },
+ "sg.ViewDistanceQuality": {
+  "A": "3",
+  "C": "4"
+ }
+}

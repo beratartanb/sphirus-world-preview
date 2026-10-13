@@ -1,0 +1,615 @@
+{
+ "engine_version": "5.8.1-56057345+++UE5+Release-5.8",
+ "world": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "levels": [
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+  "/Game/SphirusHouse/DoorInteraction_R01/Maps/L_SphirusHouse_ASSET_YARD.L_SphirusHouse_ASSET_YARD",
+  "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent"
+ ],
+ "dirty_packages": [],
+ "cvars": {
+  "sg.ResolutionQuality": "0",
+  "sg.ViewDistanceQuality": "3",
+  "sg.AntiAliasingQuality": "3",
+  "sg.ShadowQuality": "3",
+  "sg.GlobalIlluminationQuality": "3",
+  "sg.ReflectionQuality": "3",
+  "sg.PostProcessQuality": "3",
+  "sg.TextureQuality": "3",
+  "sg.EffectsQuality": "3",
+  "sg.FoliageQuality": "3",
+  "sg.ShadingQuality": "3",
+  "sg.LandscapeQuality": "3",
+  "r.ScreenPercentage": "0",
+  "r.SecondaryScreenPercentage.GameViewport": "0",
+  "r.Editor.Viewport.ScreenPercentageMode": 0,
+  "r.Editor.Viewport.ScreenPercentage": "100",
+  "r.Editor.Viewport.MinRenderingResolution": "720",
+  "r.Editor.Viewport.MaxRenderingResolution": "2160",
+  "r.Editor.Viewport.OverridePIEScreenPercentage": "1",
+  "r.AntiAliasingMethod": "4",
+  "r.TemporalAA.Upscaler": "1",
+  "r.TSR.History.ScreenPercentage": "200",
+  "r.DynamicRes.OperationMode": "0",
+  "t.MaxFPS": "0",
+  "r.VSync": "0",
+  "r.VSyncEditor": "0",
+  "r.Nanite": "1",
+  "r.Nanite.MaxPixelsPerEdge": "1",
+  "r.DynamicGlobalIlluminationMethod": "1",
+  "r.ReflectionMethod": "1",
+  "r.Lumen.HardwareRayTracing": "1",
+  "r.RayTracing": "1",
+  "r.RayTracing.Enable": "1",
+  "r.Lumen.TraceMeshSDFs": "0",
+  "r.Lumen.ScreenProbeGather.DownsampleFactor": "16",
+  "r.Lumen.Reflections.Allow": "1",
+  "r.Shadow.Virtual.Enable": "1",
+  "r.Shadow.Virtual.SMRT.RayCountDirectional": "12",
+  "r.Shadow.Virtual.SMRT.SamplesPerRayDirectional": "8",
+  "r.Shadow.Virtual.ResolutionLodBiasDirectional": "-1.5",
+  "r.Shadow.MaxResolution": "2048",
+  "r.Shadow.DistanceScale": "1",
+  "r.ViewDistanceScale": "1",
+  "foliage.DensityScale": "1",
+  "grass.DensityScale": "1",
+  "foliage.LODDistanceScale": "1",
+  "r.StaticMeshLODDistanceScale": "1",
+  "r.Streaming.PoolSize": "1000",
+  "r.Streaming.LimitPoolSizeToVRAM": "0",
+  "r.Streaming.PoolSizeForMeshes": "-1",
+  "r.Streaming.MipBias": "0",
+  "r.MaxAnisotropy": "8",
+  "r.VolumetricFog": "1",
+  "r.VolumetricFog.GridPixelSize": "8",
+  "r.VolumetricCloud": "1",
+  "r.MotionBlurQuality": "4",
+  "r.DepthOfFieldQuality": "2",
+  "r.BloomQuality": "5",
+  "r.SSR.Quality": "3",
+  "r.AmbientOcclusionLevels": "-1",
+  "r.SkyAtmosphere": "1",
+  "r.DetailMode": "3",
+  "r.MaterialQualityLevel": "1",
+  "fx.Niagara.QualityLevel": "3",
+  "r.LightFunctionQuality": "1",
+  "r.RefractionQuality": "2",
+  "r.HZBOcclusion": "0",
+  "r.GenerateMeshDistanceFields": "1",
+  "r.Substrate": "0",
+  "r.LocalExposure": "1",
+  "r.HairStrands.Enable": "1",
+  "r.SkinCache.Mode": "1",
+  "r.GPUSkin.Support16BitBoneIndex": "1",
+  "r.Streaming.FramesForFullUpdate": "5",
+  "r.LumenScene.SurfaceCache.AtlasSize": "4096",
+  "r.Lumen.ScreenProbeGather.TracingOctahedronResolution": "8",
+  "r.Lumen.Reflections.DownsampleFactor": "1",
+  "r.Lumen.Reflections.MaxRoughnessToTrace": "-1",
+  "r.Shadow.CSM.MaxCascades": "10",
+  "r.Water.SingleLayer.Reflection": "1",
+  "r.Tonemapper.Quality": "5",
+  "r.ScreenPercentage.Default": "100",
+  "r.ScreenPercentage.Default.Desktop.Mode": "1",
+  "r.ScreenPercentage.Default.Desktop": 0
+ },
+ "game_user_settings": {
+  "get_overall_scalability_level": -1,
+  "get_view_distance_quality": 3,
+  "get_anti_aliasing_quality": 3,
+  "get_shadow_quality": 3,
+  "get_global_illumination_quality": 3,
+  "get_reflection_quality": 3,
+  "get_post_processing_quality": 3,
+  "get_texture_quality": 3,
+  "get_visual_effect_quality": 3,
+  "get_foliage_quality": 3,
+  "get_shading_quality": 3,
+  "get_frame_rate_limit": 0.0,
+  "is_v_sync_enabled": false,
+  "is_dynamic_resolution_enabled": false,
+  "get_resolution_scale_normalized": 0.0,
+  "get_screen_resolution": "<Struct 'IntPoint' (0x0000023CC4B496F8) {x: 1536, y: 960}>",
+  "get_fullscreen_mode": "<WindowMode.WINDOWED_FULLSCREEN: 1>"
+ },
+ "actor_count": 768,
+ "actor_classes": {
+  "StaticMeshActor": 670,
+  "Actor": 23,
+  "PointLight": 15,
+  "DecalActor": 13,
+  "RectLight": 12,
+  "NiagaraActor": 11,
+  "BP_SphirusHinged_C": 8,
+  "PostProcessVolume": 2,
+  "SkyAtmosphere": 1,
+  "DirectionalLight": 1,
+  "SkyLight": 1,
+  "PlayerStart": 1,
+  "BP_GR_HomeContext_C": 1,
+  "Landscape": 1,
+  "InstancedFoliageActor": 1,
+  "ExponentialHeightFog": 1,
+  "BP_Outside_Lamp_C": 1,
+  "BP_GR_AtticLadder_C": 1,
+  "BP_SmartSharpen_C": 1,
+  "BP_SphirusVentPull_C": 1,
+  "BP_GR_LeverDoor_C": 1,
+  "BP_GR_AtticContext_C": 1
+ },
+ "hidden_in_game_labels": [
+  "ReviewOnly_Ground",
+  "ReviewOnly_NeutralSky",
+  "GR_HomeIdentityVolume",
+  "AtticLadder_AAMS"
+ ],
+ "hidden_in_game_count": 4,
+ "hidden_in_editor_labels": [],
+ "foliage_by_mesh": {
+  "SM_Pine_Juvenile_01": {
+   "instances": 1414,
+   "components": 2,
+   "cull": [
+    17000,
+    22000
+   ],
+   "shadow": false
+  },
+  "SM_PineTree05": {
+   "instances": 457,
+   "components": 2,
+   "cull": [
+    35000,
+    43000
+   ],
+   "shadow": true
+  },
+  "SM_FernLong01": {
+   "instances": 197,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_FernWild01": {
+   "instances": 201,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_FernWide_01": {
+   "instances": 158,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": true
+  },
+  "wgxjfhr_tier_1": {
+   "instances": 97,
+   "components": 1,
+   "cull": [
+    4500,
+    7000
+   ],
+   "shadow": true
+  },
+  "SM_Oak_L_4": {
+   "instances": 2,
+   "components": 1,
+   "cull": [
+    42000,
+    56000
+   ],
+   "shadow": true
+  },
+  "SM_PineDeadTrunk03": {
+   "instances": 18,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_PineGroundRock03": {
+   "instances": 8,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_PineDeadTrunk02": {
+   "instances": 5,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_Oak_L_2": {
+   "instances": 2,
+   "components": 1,
+   "cull": [
+    42000,
+    56000
+   ],
+   "shadow": true
+  },
+  "SM_ivy_corner_left_sparse_up_01_leaves": {
+   "instances": 1,
+   "components": 1,
+   "cull": [
+    3800,
+    6500
+   ],
+   "shadow": true
+  },
+  "SM_ivy_corner_left_sparse_up_01_branches": {
+   "instances": 1,
+   "components": 1,
+   "cull": [
+    3800,
+    6500
+   ],
+   "shadow": true
+  },
+  "SM_Grass_Sedge_04": {
+   "instances": 11,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": false
+  },
+  "SM_Grass_Sedge_01": {
+   "instances": 12,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": false
+  },
+  "SM_Fern03": {
+   "instances": 120,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_Grass_Sedge_02": {
+   "instances": 130,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": false
+  },
+  "SM_Fir_Tree_03": {
+   "instances": 822,
+   "components": 2,
+   "cull": [
+    35000,
+    43000
+   ],
+   "shadow": true
+  },
+  "SM_GrassMedium01": {
+   "instances": 271,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "SM_Fir_Tree_04": {
+   "instances": 385,
+   "components": 1,
+   "cull": [
+    17000,
+    22000
+   ],
+   "shadow": false
+  },
+  "SM_PineTree03": {
+   "instances": 696,
+   "components": 2,
+   "cull": [
+    42000,
+    56000
+   ],
+   "shadow": true
+  },
+  "SM_PineTree01": {
+   "instances": 454,
+   "components": 2,
+   "cull": [
+    42000,
+    56000
+   ],
+   "shadow": true
+  },
+  "SM_PineGroundRock01": {
+   "instances": 2,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_SmallStones01": {
+   "instances": 21,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "SM_Bush_03": {
+   "instances": 193,
+   "components": 1,
+   "cull": [
+    4200,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_Bush_02": {
+   "instances": 195,
+   "components": 1,
+   "cull": [
+    4200,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_GrassSmall01": {
+   "instances": 261,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "tkwqbbofa_tier_1": {
+   "instances": 58,
+   "components": 1,
+   "cull": [
+    2800,
+    4500
+   ],
+   "shadow": false
+  },
+  "SM_Bush_06": {
+   "instances": 216,
+   "components": 1,
+   "cull": [
+    4200,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_Root_4": {
+   "instances": 9,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_TreeStump01": {
+   "instances": 3,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_ForestEmbankment01": {
+   "instances": 3,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_DeadBranch01": {
+   "instances": 43,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "SM_PineStone01": {
+   "instances": 12,
+   "components": 2,
+   "cull": [
+    14000,
+    22000
+   ],
+   "shadow": true
+  },
+  "SM_DeadLeaves02": {
+   "instances": 194,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "SM_PineStone04": {
+   "instances": 7,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_PineStone03": {
+   "instances": 9,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_PineDeadTrunk01": {
+   "instances": 7,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_Fern01": {
+   "instances": 74,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_TreeStump02": {
+   "instances": 8,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_Fern02": {
+   "instances": 132,
+   "components": 1,
+   "cull": [
+    4000,
+    6800
+   ],
+   "shadow": true
+  },
+  "SM_Fir_Tree_01": {
+   "instances": 311,
+   "components": 1,
+   "cull": [
+    17000,
+    22000
+   ],
+   "shadow": false
+  },
+  "SM_FallenTree01": {
+   "instances": 2,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_GroundCover01": {
+   "instances": 305,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "SM_GroundCover03": {
+   "instances": 314,
+   "components": 1,
+   "cull": [
+    2200,
+    4200
+   ],
+   "shadow": false
+  },
+  "SM_Young_Black_Spruce_01": {
+   "instances": 165,
+   "components": 1,
+   "cull": [
+    9000,
+    14000
+   ],
+   "shadow": true
+  },
+  "SM_Young_Black_Spruce_02": {
+   "instances": 239,
+   "components": 1,
+   "cull": [
+    9000,
+    14000
+   ],
+   "shadow": true
+  },
+  "Pine_08": {
+   "instances": 35,
+   "components": 1,
+   "cull": [
+    8000,
+    12000
+   ],
+   "shadow": true
+  },
+  "SM_PineStone02": {
+   "instances": 22,
+   "components": 1,
+   "cull": [
+    14000,
+    22000
+   ],
+   "shadow": true
+  },
+  "SM_PineGroundRock05": {
+   "instances": 1,
+   "components": 1,
+   "cull": [
+    10000,
+    16000
+   ],
+   "shadow": true
+  },
+  "SM_Oak_L_1": {
+   "instances": 2,
+   "components": 1,
+   "cull": [
+    42000,
+    56000
+   ],
+   "shadow": true
+  }
+ },
+ "foliage_total_instances": 8305,
+ "world_settings": {
+  "game_mode_override": "<Object '/Game/GraceRanger/BP_GM_GR_GraceRanger.BP_GM_GR_GraceRanger_C' (0x0000023CCD08D200) Class 'BlueprintGeneratedClass'>",
+  "kill_z": -1048575.0
+ },
+ "rhi": 3
+}

@@ -1,0 +1,132 @@
+﻿{
+    "P5_uphill_lookback":  {
+                               "a_vs_c":  {
+                                              "mean_abs_luma_diff":  11.35,
+                                              "pct_px_diff_gt8":  40.10,
+                                              "pct_px_diff_gt24":  12.39,
+                                              "mean_luma_A":  88.1,
+                                              "mean_luma_B":  87.1,
+                                              "band_top_mid_bottom":  [
+                                                                          16.05,
+                                                                          12.21,
+                                                                          5.79
+                                                                      ]
+                                          },
+                               "noise_floor":  {
+                                                   "mean_abs_luma_diff":  6.62,
+                                                   "pct_px_diff_gt8":  20.45,
+                                                   "pct_px_diff_gt24":  5.91,
+                                                   "mean_luma_A":  88.1,
+                                                   "mean_luma_B":  88.0,
+                                                   "band_top_mid_bottom":  [
+                                                                               8.50,
+                                                                               6.65,
+                                                                               4.70
+                                                                           ]
+                                               }
+                           },
+    "P3_pond_shore":  {
+                          "a_vs_c":  {
+                                         "mean_abs_luma_diff":  8.77,
+                                         "pct_px_diff_gt8":  30.44,
+                                         "pct_px_diff_gt24":  6.10,
+                                         "mean_luma_A":  87.9,
+                                         "mean_luma_B":  86.5,
+                                         "band_top_mid_bottom":  [
+                                                                     7.22,
+                                                                     12.85,
+                                                                     6.25
+                                                                 ]
+                                     },
+                          "noise_floor":  {
+                                              "mean_abs_luma_diff":  2.95,
+                                              "pct_px_diff_gt8":  7.80,
+                                              "pct_px_diff_gt24":  1.79,
+                                              "mean_luma_A":  87.9,
+                                              "mean_luma_B":  87.9,
+                                              "band_top_mid_bottom":  [
+                                                                          1.58,
+                                                                          3.38,
+                                                                          3.90
+                                                                      ]
+                                          }
+                      },
+    "P2_house_to_pond":  {
+                             "a_vs_c":  {
+                                            "mean_abs_luma_diff":  7.73,
+                                            "pct_px_diff_gt8":  20.74,
+                                            "pct_px_diff_gt24":  6.04,
+                                            "mean_luma_A":  87.5,
+                                            "mean_luma_B":  86.8,
+                                            "band_top_mid_bottom":  [
+                                                                        6.79,
+                                                                        9.87,
+                                                                        6.53
+                                                                    ]
+                                        },
+                             "noise_floor":  {
+                                                 "mean_abs_luma_diff":  3.32,
+                                                 "pct_px_diff_gt8":  8.29,
+                                                 "pct_px_diff_gt24":  2.45,
+                                                 "mean_luma_A":  87.5,
+                                                 "mean_luma_B":  87.5,
+                                                 "band_top_mid_bottom":  [
+                                                                             2.40,
+                                                                             2.72,
+                                                                             4.84
+                                                                         ]
+                                             }
+                         },
+    "P4_rear_trail":  {
+                          "a_vs_c":  {
+                                         "mean_abs_luma_diff":  12.19,
+                                         "pct_px_diff_gt8":  42.39,
+                                         "pct_px_diff_gt24":  14.21,
+                                         "mean_luma_A":  86.4,
+                                         "mean_luma_B":  86.2,
+                                         "band_top_mid_bottom":  [
+                                                                     17.54,
+                                                                     11.48,
+                                                                     7.56
+                                                                 ]
+                                     },
+                          "noise_floor":  {
+                                              "mean_abs_luma_diff":  9.29,
+                                              "pct_px_diff_gt8":  33.14,
+                                              "pct_px_diff_gt24":  9.84,
+                                              "mean_luma_A":  86.4,
+                                              "mean_luma_B":  86.4,
+                                              "band_top_mid_bottom":  [
+                                                                          12.54,
+                                                                          9.22,
+                                                                          6.09
+                                                                      ]
+                                          }
+                      },
+    "P1_interior":  {
+                        "a_vs_c":  {
+                                       "mean_abs_luma_diff":  2.80,
+                                       "pct_px_diff_gt8":  5.85,
+                                       "pct_px_diff_gt24":  0.42,
+                                       "mean_luma_A":  88.2,
+                                       "mean_luma_B":  89.9,
+                                       "band_top_mid_bottom":  [
+                                                                   2.75,
+                                                                   2.46,
+                                                                   3.18
+                                                               ]
+                                   },
+                        "noise_floor":  {
+                                            "mean_abs_luma_diff":  1.48,
+                                            "pct_px_diff_gt8":  2.37,
+                                            "pct_px_diff_gt24":  0.15,
+                                            "mean_luma_A":  88.2,
+                                            "mean_luma_B":  88.4,
+                                            "band_top_mid_bottom":  [
+                                                                        1.58,
+                                                                        0.97,
+                                                                        1.88
+                                                                    ]
+                                        }
+                    }
+}
