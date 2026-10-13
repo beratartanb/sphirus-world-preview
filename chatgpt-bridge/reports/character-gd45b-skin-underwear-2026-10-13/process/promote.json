@@ -1,0 +1,188 @@
+{
+ "before": {
+  "Manny": {
+   "skeletal_mesh_asset": "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh.SKM_MH_MainCharacter_BodyMesh",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "disable_post_process_blueprint": true,
+   "override_materials": [],
+   "leader_pose_component": null
+  },
+  "Face": {
+   "skeletal_mesh_asset": "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh.SKM_MH_MainCharacter_FaceMesh",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "disable_post_process_blueprint": false,
+   "override_materials": [],
+   "leader_pose_component": null
+  },
+  "Hair": {
+   "override_materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair.MI_WI_Hair_S_Cornrows_Hair",
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair_Helmet.MI_WI_Hair_S_Cornrows_Hair_Helmet",
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair_Cards.MI_WI_Hair_S_Cornrows_Hair_Cards"
+   ],
+   "groom_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows.Hair_S_Cornrows",
+   "binding_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Binding.Hair_S_Cornrows_Binding"
+  },
+  "Eyebrows": {
+   "override_materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyebrows_M_Slit_Hair.MI_WI_Eyebrows_M_Slit_Hair",
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyebrows_M_Slit_Facial_Hair.MI_WI_Eyebrows_M_Slit_Facial_Hair"
+   ],
+   "groom_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit.Eyebrows_M_Slit",
+   "binding_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_Binding.Eyebrows_M_Slit_Binding"
+  },
+  "Eyelashes": {
+   "override_materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyelashes_L_Curl_Hair.MI_WI_Eyelashes_L_Curl_Hair"
+   ],
+   "groom_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl.Eyelashes_L_Curl",
+   "binding_asset": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl_Binding.Eyelashes_L_Curl_Binding"
+  }
+ },
+ "after": {
+  "Manny": {
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "disable_post_process_blueprint": false,
+   "override_materials": [],
+   "leader_pose_component": null
+  },
+  "Face": {
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "disable_post_process_blueprint": false,
+   "override_materials": [],
+   "leader_pose_component": null
+  },
+  "Hair": {
+   "override_materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair.MI_WI_Hair_S_Cornrows_Hair",
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair_Helmet.MI_WI_Hair_S_Cornrows_Hair_Helmet",
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Hair_S_Cornrows_Hair_Cards.MI_WI_Hair_S_Cornrows_Hair_Cards"
+   ],
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c"
+  },
+  "HairLoose": {
+   "override_materials": [],
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c"
+  },
+  "Eyebrows": {
+   "override_materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyebrows_M_Slit_Hair.MI_WI_Eyebrows_M_Slit_Hair",
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyebrows_M_Slit_Facial_Hair.MI_WI_Eyebrows_M_Slit_Facial_Hair"
+   ],
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38"
+  },
+  "Eyelashes": {
+   "override_materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Grooms/MI_WI_Eyelashes_L_Curl_Hair.MI_WI_Eyelashes_L_Curl_Hair"
+   ],
+   "groom_asset": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "binding_asset": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38"
+  },
+  "Henley": {
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "anim_class": null,
+   "disable_post_process_blueprint": false,
+   "override_materials": [],
+   "leader_pose_component": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM_C:Manny_GEN_VARIABLE"
+  },
+  "Shorts": {
+   "skeletal_mesh_asset": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c.SKM_LK_Shorts_g16c",
+   "anim_class": null,
+   "disable_post_process_blueprint": false,
+   "override_materials": [],
+   "leader_pose_component": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM_C:Manny_GEN_VARIABLE"
+  }
+ },
+ "Henley_leader_set": true,
+ "Shorts_leader_set": true,
+ "compiled": true,
+ "saved": true,
+ "readback_pawn": {
+  "CharacterMesh0": {
+   "mesh": "/Game/AAMS/Demo/Meshes/Travisty/TravistyGames_Mascot_Body.TravistyGames_Mascot_Body",
+   "anim": "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching.ABP_GR_MotionMatching_C",
+   "leader": null,
+   "pp_disabled": false,
+   "parent": "CollisionCylinder"
+  },
+  "TravistyGames_Mascot_Head": {
+   "mesh": "/Game/AAMS/Demo/Meshes/Travisty/TravistyGames_Mascot_Head.TravistyGames_Mascot_Head",
+   "anim": null,
+   "leader": "CharacterMesh0",
+   "pp_disabled": false,
+   "parent": "CharacterMesh0"
+  },
+  "Manny": {
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "anim": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "leader": null,
+   "pp_disabled": false,
+   "parent": "CharacterMesh0"
+  },
+  "Face": {
+   "mesh": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "anim": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "leader": null,
+   "pp_disabled": false,
+   "parent": "Manny"
+  },
+  "Eyebrows": {
+   "groom": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38",
+   "parent": "Face"
+  },
+  "Eyelashes": {
+   "groom": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38",
+   "parent": "Face"
+  },
+  "Fuzz": {
+   "groom": null,
+   "binding": null,
+   "parent": "Face"
+  },
+  "Hair": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c",
+   "parent": "Face"
+  },
+  "Mustache": {
+   "groom": null,
+   "binding": null,
+   "parent": "Face"
+  },
+  "Beard": {
+   "groom": null,
+   "binding": null,
+   "parent": "Face"
+  },
+  "HairLoose": {
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c",
+   "parent": "Face"
+  },
+  "Henley": {
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "anim": null,
+   "leader": "Manny_GEN_VARIABLE",
+   "pp_disabled": false,
+   "parent": "Manny"
+  },
+  "Shorts": {
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c.SKM_LK_Shorts_g16c",
+   "anim": null,
+   "leader": "Manny_GEN_VARIABLE",
+   "pp_disabled": false,
+   "parent": "Manny"
+  }
+ },
+ "dirty_after": [
+  "/Game/GraceRanger/BP_GR_Player",
+  "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player"
+ ]
+}

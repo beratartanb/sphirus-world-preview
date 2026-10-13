@@ -1,0 +1,54 @@
+{
+ "before": {
+  "Manny": [],
+  "Face": []
+ },
+ "after": {
+  "Manny": [
+   "/Game/Sphirus/CharacterLab/GD15_IdentityMaster_20261009/Looks/MI_GD15_Body_s1.MI_GD15_Body_s1"
+  ],
+  "Face": [
+   "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Looks/MI_GD31_Face_LOD0_s1t6n_n3.MI_GD31_Face_LOD0_s1t6n_n3",
+   null,
+   null,
+   "/Game/Sphirus/CharacterLab/GD15_IdentityMaster_20261009/Looks/MI_GD15_EyeL_h6.MI_GD15_EyeL_h6",
+   "/Game/Sphirus/CharacterLab/GD15_IdentityMaster_20261009/Looks/MI_GD15_EyeR_h6.MI_GD15_EyeR_h6",
+   null,
+   null,
+   null,
+   null,
+   "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Looks/MI_GD31_Face_LOD1_s1t6n_n3.MI_GD31_Face_LOD1_s1t6n_n3",
+   "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Looks/MI_GD31_Face_LOD2_s1t6n_n3.MI_GD31_Face_LOD2_s1t6n_n3",
+   null,
+   "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Looks/MI_GD31_Face_LOD3_s1t6n_n3.MI_GD31_Face_LOD3_s1t6n_n3",
+   "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Looks/MI_GD31_Face_LOD4_s1t6n_n3.MI_GD31_Face_LOD4_s1t6n_n3",
+   "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Looks/MI_GD31_Face_LOD5to7_s1t6n_n3.MI_GD31_Face_LOD5to7_s1t6n_n3"
+  ]
+ },
+ "slots": {
+  "Manny": [
+   "body_shader_shader:MI_RV_Body_Skin"
+  ],
+  "Face": [
+   "head_shader_shader:MI_Face_Skin_Baked_LOD0_VT",
+   "teeth_shader_shader:MI_Teeth_Baked",
+   "saliva_shader_shader:M_Hide",
+   "eyeLeft_shader_shader:MI_EyeL_Baked",
+   "eyeRight_shader_shader:MI_EyeR_Baked",
+   "eyeshell_shader_shader:MI_Face_EyeShell",
+   "eyelashes_shader_shader:MI_Face_Eyelashes",
+   "eyeEdge_shader_shader:MI_Face_LacrimalFluid",
+   "cartilage_shader_shader:M_Hide",
+   "head_LOD1_shader_shader:MI_Face_Skin_Baked_LOD1_VT",
+   "head_LOD2_shader_shader:MI_Face_Skin_Baked_LOD2_VT",
+   "eyelashes_HiLOD_shader_shader:MI_Face_EyelashesHiLODs",
+   "head_LOD3_shader_shader:MI_Face_Skin_Baked_LOD3_VT",
+   "head_LOD4_shader_shader:MI_Face_Skin_Baked_LOD4_VT",
+   "head_LOD57_shader_shader:MI_Face_Skin_Baked_LOD5to7_VT"
+  ]
+ },
+ "owner_saved": true,
+ "BP_GR_Player_saved": true,
+ "BP_PBI_Player_saved": true,
+ "dirty_after": []
+}

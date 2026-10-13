@@ -1,0 +1,295 @@
+{
+ "class_chain": [
+  "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player.BP_PBI_Player_C"
+ ],
+ "components": [
+  {
+   "name": "CollisionCylinder",
+   "class": "CapsuleComponent",
+   "parent": null,
+   "socket": "None"
+  },
+  {
+   "name": "Arrow",
+   "class": "ArrowComponent",
+   "parent": "CollisionCylinder",
+   "socket": "None"
+  },
+  {
+   "name": "CharMoveComp",
+   "class": "CharacterMovementComponent"
+  },
+  {
+   "name": "CharacterMesh0",
+   "class": "SkeletalMeshComponent",
+   "parent": "CollisionCylinder",
+   "socket": "None",
+   "mesh": "/Game/AAMS/Demo/Meshes/Travisty/TravistyGames_Mascot_Body.TravistyGames_Mascot_Body",
+   "anim_class": "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching.ABP_GR_MotionMatching_C",
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose": null,
+   "visible": false,
+   "materials": [
+    "/Game/AAMS/Demo/Meshes/Materials/M_TravisMascot_Inst.M_TravisMascot_Inst"
+   ]
+  },
+  {
+   "name": "MotionWarping",
+   "class": "MotionWarpingComponent"
+  },
+  {
+   "name": "SpringArm",
+   "class": "SpringArmComponent",
+   "parent": "CollisionCylinder",
+   "socket": "None"
+  },
+  {
+   "name": "Camera",
+   "class": "CameraComponent",
+   "parent": "SpringArm",
+   "socket": "None"
+  },
+  {
+   "name": "CameraProxyMeshComponent_2",
+   "class": "CameraProxyMeshComponent",
+   "parent": "Camera",
+   "socket": "None"
+  },
+  {
+   "name": "DrawFrustumComponent_2",
+   "class": "DrawFrustumComponent",
+   "parent": "Camera",
+   "socket": "None"
+  },
+  {
+   "name": "PreCMCTick",
+   "class": "PreCMCTick_C"
+  },
+  {
+   "name": "AC_Action_AAMS",
+   "class": "AC_Action_AAMS_C"
+  },
+  {
+   "name": "AC_Climb_AAMS",
+   "class": "AC_Climb_AAMS_C"
+  },
+  {
+   "name": "AC_Interact_AAMS",
+   "class": "AC_Interact_AAMS_C"
+  },
+  {
+   "name": "AC_Adventure_AAMS",
+   "class": "AC_Adventure_AAMS_C"
+  },
+  {
+   "name": "AC_State_AAMS",
+   "class": "AC_State_AAMS_C"
+  },
+  {
+   "name": "AC_Footsteps_AAMS",
+   "class": "AC_Footsteps_AAMS_C"
+  },
+  {
+   "name": "AC_Compass_AAMS",
+   "class": "AC_Compass_AAMS_C"
+  },
+  {
+   "name": "AC_Elevator_Component",
+   "class": "AC_Elevator_Component_C"
+  },
+  {
+   "name": "TravistyGames_Mascot_Head",
+   "class": "SkeletalMeshComponent",
+   "parent": "CharacterMesh0",
+   "socket": "None",
+   "mesh": "/Game/AAMS/Demo/Meshes/Travisty/TravistyGames_Mascot_Head.TravistyGames_Mascot_Head",
+   "anim_class": null,
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_1.CharacterMesh0",
+   "visible": false,
+   "materials": [
+    "/Game/AAMS/Demo/Meshes/Materials/M_TravisMascot.M_TravisMascot"
+   ]
+  },
+  {
+   "name": "RotateTimeline",
+   "class": "TimelineComponent"
+  },
+  {
+   "name": "Manny",
+   "class": "SkeletalMeshComponent",
+   "parent": "CharacterMesh0",
+   "socket": "None",
+   "mesh": "/Game/MetaHumans/MH_MainCharacter/Body/SKM_MH_MainCharacter_BodyMesh.SKM_MH_MainCharacter_BodyMesh",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose": null,
+   "visible": true,
+   "materials": [
+    "/Game/MetaHumans/MH_MainCharacter/Body/Materials/MI_Body_Baked_VT.MI_Body_Baked_VT"
+   ]
+  },
+  {
+   "name": "Face",
+   "class": "SkeletalMeshComponent",
+   "parent": "Manny",
+   "socket": "None",
+   "mesh": "/Game/MetaHumans/MH_MainCharacter/Face/SKM_MH_MainCharacter_FaceMesh.SKM_MH_MainCharacter_FaceMesh",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "anim_mode": "<AnimationMode.ANIMATION_BLUEPRINT: 0>",
+   "leader_pose": null,
+   "visible": true,
+   "materials": [
+    "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_1.Face.MID_MI_Face_Skin_Baked_LOD0_VT_0",
+    "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_Teeth_Baked.MI_Teeth_Baked",
+    "/Game/MetaHumans/Common/Materials/M_Hide.M_Hide",
+    "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_EyeL_Baked.MI_EyeL_Baked",
+    "/Game/MetaHumans/MH_MainCharacter/Face/Materials/MI_EyeR_Baked.MI_EyeR_Baked"
+   ]
+  },
+  {
+   "name": "Eyebrows",
+   "class": "GroomComponent",
+   "parent": "Face",
+   "socket": "None",
+   "groom": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit.Eyebrows_M_Slit",
+   "binding": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyebrows_M_Slit_Binding.Eyebrows_M_Slit_Binding",
+   "visible": true
+  },
+  {
+   "name": "Eyelashes",
+   "class": "GroomComponent",
+   "parent": "Face",
+   "socket": "None",
+   "groom": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl.Eyelashes_L_Curl",
+   "binding": "/Game/MetaHumans/MH_MainCharacter/Grooms/Eyelashes_L_Curl_Binding.Eyelashes_L_Curl_Binding",
+   "visible": true
+  },
+  {
+   "name": "Fuzz",
+   "class": "GroomComponent",
+   "parent": "Face",
+   "socket": "None",
+   "groom": null,
+   "binding": null,
+   "visible": true
+  },
+  {
+   "name": "Hair",
+   "class": "GroomComponent",
+   "parent": "Face",
+   "socket": "None",
+   "groom": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows.Hair_S_Cornrows",
+   "binding": "/Game/MetaHumans/MH_MainCharacter/Grooms/Hair_S_Cornrows_Binding.Hair_S_Cornrows_Binding",
+   "visible": true
+  },
+  {
+   "name": "Mustache",
+   "class": "GroomComponent",
+   "parent": "Face",
+   "socket": "None",
+   "groom": null,
+   "binding": null,
+   "visible": true
+  },
+  {
+   "name": "Beard",
+   "class": "GroomComponent",
+   "parent": "Face",
+   "socket": "None",
+   "groom": null,
+   "binding": null,
+   "visible": true
+  },
+  {
+   "name": "MetaHuman",
+   "class": "MetaHumanComponentUE"
+  },
+  {
+   "name": "LODSync",
+   "class": "LODSyncComponent"
+  },
+  {
+   "name": "EnviroSenseController",
+   "class": "BP_DT_Cpmt_HandSensingController_C"
+  },
+  {
+   "name": "RangerCameraBoom",
+   "class": "SpringArmComponent",
+   "parent": "CollisionCylinder",
+   "socket": "None"
+  },
+  {
+   "name": "RangerGameplayCamera",
+   "class": "CameraComponent",
+   "parent": "RangerCameraBoom",
+   "socket": "None"
+  },
+  {
+   "name": "CameraProxyMeshComponent_3",
+   "class": "CameraProxyMeshComponent",
+   "parent": "RangerGameplayCamera",
+   "socket": "None"
+  },
+  {
+   "name": "DrawFrustumComponent_3",
+   "class": "DrawFrustumComponent",
+   "parent": "RangerGameplayCamera",
+   "socket": "None"
+  },
+  {
+   "name": "SHM_HumanMotion",
+   "class": "BP_SHM_HumanMotionComponent_C"
+  }
+ ],
+ "compat": {
+  "game_body": {
+   "bones": 354,
+   "compatible": []
+  },
+  "sf_body": {
+   "bones": 342,
+   "compatible": [
+    "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+   ]
+  },
+  "plugin_body": {
+   "bones": 342,
+   "compatible": []
+  },
+  "game_face": {
+   "bones": 875,
+   "compatible": [
+    "/Game/MetaHumans/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+   ]
+  },
+  "plugin_face": {
+   "bones": 875,
+   "compatible": [
+    "/MetaHumanCharacter/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+   ]
+  },
+  "sf_face": {
+   "bones": 875,
+   "compatible": [
+    "/Game/Sphirus/CharacterLab/ShoulderFix_20260928/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel.metahuman_base_skel"
+   ]
+  }
+ },
+ "game_body_anim": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+ "game_face_anim": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+ "tests": {
+  "lk_body_with_game_abp": {
+   "anim_instance": "ABP_MH_Ranger_Retarget_V2_C",
+   "set_ok": true
+  },
+  "gd38_face_with_game_face_abp": {
+   "anim_instance": "ABP_Face_C",
+   "set_ok": true
+  },
+  "mh_body_with_game_abp_control": {
+   "anim_instance": "ABP_MH_Ranger_Retarget_V2_C",
+   "set_ok": true
+  }
+ }
+}

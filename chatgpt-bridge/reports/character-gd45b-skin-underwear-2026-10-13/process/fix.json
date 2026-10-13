@@ -1,0 +1,164 @@
+{
+ "api": [
+  "get_associated_object",
+  "get_default_object",
+  "get_object",
+  "get_object_for_blueprint"
+ ],
+ "BP_Player_MM_before": {
+  "Hair": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c",
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "HairLoose": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c",
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Face": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "mesh": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Eyebrows": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38",
+   "groom": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Henley": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": null,
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Eyelashes": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38",
+   "groom": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Shorts": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": null,
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c.SKM_LK_Shorts_g16c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Manny": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  }
+ },
+ "BP_GR_Player_before": {
+  "Hair": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c",
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "HairLoose": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c",
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Face": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "mesh": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Eyebrows": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38",
+   "groom": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Henley": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": null,
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Eyelashes": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38",
+   "groom": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Shorts": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": null,
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c.SKM_LK_Shorts_g16c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Manny": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  }
+ },
+ "BP_PBI_Player_before": {
+  "Hair": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairMain_t38h75c.GB_GD38_HairMain_t38h75c",
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Main_h75c.GR_LK_Hair_Main_h75c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "HairLoose": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_HairLoose_t38h75c.GB_GD38_HairLoose_t38h75c",
+   "groom": "/Game/Sphirus/CharacterLab/GD11_HairQ_20261006/Hair/GR_LK_Hair_Loose_h75c.GR_LK_Hair_Loose_h75c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Face": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": "/Game/MetaHumans/Common/Face/ABP_Face.ABP_Face_C",
+   "mesh": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/SKM_GD38_Face_t38.SKM_GD38_Face_t38",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Eyebrows": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyebrowsCustom_ds8s_t38.GB_GD38_EyebrowsCustom_ds8s_t38",
+   "groom": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Henley": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": null,
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterGuardian_20261001/Outfit/SKM_LK_Henley_g17e.SKM_LK_Henley_g17e",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Eyelashes": {
+   "outer": "BP_Player_MM_C",
+   "binding": "/Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Face/Bindings/GB_GD38_EyelashesS_Thin31_t38.GB_GD38_EyelashesS_Thin31_t38",
+   "groom": "/Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Shorts": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": null,
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Outfit/SKM_LK_Shorts_g16c.SKM_LK_Shorts_g16c",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  },
+  "Manny": {
+   "outer": "BP_Player_MM_C",
+   "anim_class": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Identity/Hands/ABP_MH_Ranger_Retarget_V2.ABP_MH_Ranger_Retarget_V2_C",
+   "mesh": "/Game/Sphirus/CharacterLab/CharacterLookdev_20260930/Body/SKM_LK_BodyMesh.SKM_LK_BodyMesh",
+   "child_override_err": "SubobjectDataBlueprintFunctionLibrary: Failed to convert parameter 'data' when c"
+  }
+ },
+ "owner_saved": true,
+ "BP_GR_Player_child_overrides_set": [],
+ "BP_GR_Player_saved": true,
+ "BP_PBI_Player_child_overrides_set": [],
+ "BP_PBI_Player_saved": true,
+ "dirty_after": []
+}

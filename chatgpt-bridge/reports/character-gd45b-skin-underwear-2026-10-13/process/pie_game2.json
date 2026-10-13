@@ -1,0 +1,254 @@
+{
+ "editor_map": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "game_world": "/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "n_instances": 1,
+ "shot": "requested",
+ "readback": {
+  "skeletal": {
+   "CharacterMesh0": {
+    "mesh": "TravistyGames_Mascot_Body",
+    "lod": 0,
+    "anim_instance": "ABP_GR_MotionMatching_C",
+    "post_process_instance": null,
+    "leader": null,
+    "visible": false,
+    "parent": "CollisionCylinder",
+    "spine_03": [
+     835.35,
+     -211.01,
+     207.36
+    ],
+    "thigh_l": [
+     832.53,
+     -221.66,
+     187.25
+    ],
+    "head": [
+     827.34,
+     -210.53,
+     255.75
+    ],
+    "hand_l": [
+     836.05,
+     -241.48,
+     186.13
+    ]
+   },
+   "Manny": {
+    "mesh": "SKM_LK_BodyMesh",
+    "lod": 0,
+    "anim_instance": "ABP_GR_MetaHuman_C",
+    "post_process_instance": "ABP_LK_Body_PostProcess_C",
+    "leader": null,
+    "visible": true,
+    "parent": "CharacterMesh0",
+    "spine_03": [
+     835.57,
+     -211.56,
+     202.87
+    ],
+    "thigh_l": [
+     832.43,
+     -221.21,
+     184.29
+    ],
+    "head": [
+     829.22,
+     -211.35,
+     251.11
+    ],
+    "hand_l": [
+     837.24,
+     -238.01,
+     179.75
+    ],
+    "pp_curves": {
+     "BR_Neutral": 1.0,
+     "LK_Neutral": 1.0,
+     "RV_Bend30": 0.0,
+     "RV_Hip075_l": 0.0
+    }
+   },
+   "Face": {
+    "mesh": "SKM_GD38_Face_t38",
+    "lod": 1,
+    "anim_instance": "ABP_Face_C",
+    "post_process_instance": "ABP_Face_PostProcess_C",
+    "leader": null,
+    "visible": true,
+    "parent": "Manny",
+    "spine_03": [
+     835.57,
+     -211.56,
+     202.87
+    ],
+    "thigh_l": [
+     832.0,
+     -220.0,
+     97.04
+    ],
+    "head": [
+     829.22,
+     -211.35,
+     251.11
+    ],
+    "hand_l": [
+     832.0,
+     -220.0,
+     97.04
+    ]
+   },
+   "Henley": {
+    "mesh": "SKM_LK_Henley_g17e",
+    "lod": 0,
+    "anim_instance": null,
+    "post_process_instance": null,
+    "leader": "Manny",
+    "visible": true,
+    "parent": "Manny",
+    "spine_03": [
+     835.57,
+     -211.56,
+     202.87
+    ],
+    "thigh_l": [
+     832.43,
+     -221.21,
+     184.29
+    ],
+    "head": [
+     829.22,
+     -211.35,
+     251.11
+    ],
+    "hand_l": [
+     837.24,
+     -238.01,
+     179.75
+    ]
+   },
+   "Shorts": {
+    "mesh": "SKM_LK_Shorts_g16c",
+    "lod": 0,
+    "anim_instance": null,
+    "post_process_instance": null,
+    "leader": "Manny",
+    "visible": true,
+    "parent": "Manny",
+    "spine_03": [
+     835.57,
+     -211.56,
+     202.87
+    ],
+    "thigh_l": [
+     832.43,
+     -221.21,
+     184.29
+    ],
+    "head": [
+     829.22,
+     -211.35,
+     251.11
+    ],
+    "hand_l": [
+     837.24,
+     -238.01,
+     179.75
+    ]
+   }
+  },
+  "grooms": {
+   "Eyebrows": {
+    "groom": null,
+    "binding": null,
+    "visible": false,
+    "parent": "Face",
+    "attachment_name": "FACIAL_C_FacialRoot",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E0FFC500) {overr"
+   },
+   "Eyelashes": {
+    "groom": null,
+    "binding": null,
+    "visible": false,
+    "parent": "Face",
+    "attachment_name": "FACIAL_C_FacialRoot",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E0FFD900) {overr"
+   },
+   "Fuzz": {
+    "groom": null,
+    "binding": null,
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "FACIAL_C_FacialRoot",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E0FFE300) {overr"
+   },
+   "Hair": {
+    "groom": null,
+    "binding": null,
+    "visible": false,
+    "parent": "Face",
+    "attachment_name": "FACIAL_C_FacialRoot",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E0FFED00) {overr"
+   },
+   "Mustache": {
+    "groom": null,
+    "binding": null,
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "FACIAL_C_LipUpper",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E0FFF700) {overr"
+   },
+   "Beard": {
+    "groom": null,
+    "binding": null,
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "Facial_C_JAW",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E86A0700) {overr"
+   },
+   "HairLoose": {
+    "groom": "GR_LK_Hair_Loose_h75c",
+    "binding": "GB_GD38_HairLoose_t38h75c",
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E86A1100) {overr"
+   },
+   "HairMain2": {
+    "groom": "GR_LK_Hair_Main_h75c",
+    "binding": "GB_GD38_HairMain_t38h75c",
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E86A2500) {overr"
+   },
+   "Eyebrows2": {
+    "groom": "GR_GD38_BrowCustom_ds8s",
+    "binding": "GB_GD38_EyebrowsCustom_ds8s_t38",
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E86A2F00) {overr"
+   },
+   "Eyelashes2": {
+    "groom": "GR_GD31_Eyelashes_S_Thin",
+    "binding": "GB_GD38_EyelashesS_Thin31_t38",
+    "visible": true,
+    "parent": "Face",
+    "attachment_name": "",
+    "use_cards": "False",
+    "simulation_settings": "<Struct 'HairSimulationSettings' (0x00000236E86A3900) {overr"
+   }
+  },
+  "pawn_class": "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player.BP_PBI_Player_C"
+ }
+}

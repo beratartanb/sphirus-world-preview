@@ -1,0 +1,481 @@
+{
+ "types": {
+  "set": [
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+  ],
+  "henley": [
+   "Değişkenler|Varsayılan|HenleyAl",
+   "Sınıf|BPGD38CharacterT38|HenleyAl"
+  ],
+  "shorts": [
+   "Değişkenler|Varsayılan|ShortsAl",
+   "Sınıf|BPGD38CharacterT38|ShortsAl"
+  ],
+  "manny": [
+   "Sınıf|BPRetargetedExampleSM|MannyAl",
+   "Sınıf|BPRetargetedExampleMM|MannyAl",
+   "Değişkenler|Varsayılan|MannyAl"
+  ]
+ },
+ "pick": {
+  "set": "Bileşenler|SkinnedMesh|SetLeaderPoseComponent",
+  "henley": "Değişkenler|Varsayılan|HenleyAl",
+  "shorts": "Değişkenler|Varsayılan|ShortsAl",
+  "manny": "Değişkenler|Varsayılan|MannyAl"
+ },
+ "pins_set": {
+  "output_pins": [
+   {
+    "value": "",
+    "connected_pins": [],
+    "pin_id": {
+     "direction": "EGPD_Output",
+     "index_id": 0,
+     "node": {
+      "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+     }
+    },
+    "type_id": "Yürütme",
+    "name": "then"
+   }
+  ],
+  "input_pins": [
+   {
+    "value": "",
+    "connected_pins": [],
+    "pin_id": {
+     "direction": "EGPD_Input",
+     "index_id": 0,
+     "node": {
+      "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+     }
+    },
+    "type_id": "Yürütme",
+    "name": "execute"
+   },
+   {
+    "value": "",
+    "connected_pins": [],
+    "pin_id": {
+     "direction": "EGPD_Input",
+     "index_id": 1,
+     "node": {
+      "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+     }
+    },
+    "type_id": "Skinned Mesh Component Obje Referansı",
+    "name": "self"
+   },
+   {
+    "value": "",
+    "connected_pins": [],
+    "pin_id": {
+     "direction": "EGPD_Input",
+     "index_id": 2,
+     "node": {
+      "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+     }
+    },
+    "type_id": "Skinned Mesh Component Obje Referansı",
+    "name": "NewLeaderBoneComponent"
+   },
+   {
+    "value": "false",
+    "connected_pins": [],
+    "pin_id": {
+     "direction": "EGPD_Input",
+     "index_id": 3,
+     "node": {
+      "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+     }
+    },
+    "type_id": "Boole",
+    "name": "bForceUpdate"
+   },
+   {
+    "value": "false",
+    "connected_pins": [],
+    "pin_id": {
+     "direction": "EGPD_Input",
+     "index_id": 4,
+     "node": {
+      "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+     }
+    },
+    "type_id": "Boole",
+    "name": "bInFollowerShouldTickPose"
+   }
+  ],
+  "position": {
+   "x": 0,
+   "y": 0
+  },
+  "node": {
+   "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_1"
+  },
+  "type_id": "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+ },
+ "entry": [
+  {
+   "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_FunctionEntry_0"
+  }
+ ],
+ "entry_info": [
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [
+      {
+       "direction": "EGPD_Input",
+       "index_id": 0,
+       "node": {
+        "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallParentFunction_0"
+       }
+      }
+     ],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_FunctionEntry_0"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "then"
+    }
+   ],
+   "input_pins": [],
+   "position": {
+    "x": 0,
+    "y": 0
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_FunctionEntry_0"
+   },
+   "type_id": "|ConstructionScript"
+  }
+ ],
+ "infos": [
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "then"
+    }
+   ],
+   "input_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "execute"
+    },
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 1,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+      }
+     },
+     "type_id": "Skinned Mesh Component Obje Referansı",
+     "name": "self"
+    },
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 2,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+      }
+     },
+     "type_id": "Skinned Mesh Component Obje Referansı",
+     "name": "NewLeaderBoneComponent"
+    },
+    {
+     "value": "false",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 3,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+      }
+     },
+     "type_id": "Boole",
+     "name": "bForceUpdate"
+    },
+    {
+     "value": "false",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 4,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+      }
+     },
+     "type_id": "Boole",
+     "name": "bInFollowerShouldTickPose"
+    }
+   ],
+   "position": {
+    "x": 400,
+    "y": 0
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_2"
+   },
+   "type_id": "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+  },
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "then"
+    }
+   ],
+   "input_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "execute"
+    },
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 1,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+      }
+     },
+     "type_id": "Skinned Mesh Component Obje Referansı",
+     "name": "self"
+    },
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 2,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+      }
+     },
+     "type_id": "Skinned Mesh Component Obje Referansı",
+     "name": "NewLeaderBoneComponent"
+    },
+    {
+     "value": "false",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 3,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+      }
+     },
+     "type_id": "Boole",
+     "name": "bForceUpdate"
+    },
+    {
+     "value": "false",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 4,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+      }
+     },
+     "type_id": "Boole",
+     "name": "bInFollowerShouldTickPose"
+    }
+   ],
+   "position": {
+    "x": 800,
+    "y": 0
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+   },
+   "type_id": "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+  },
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_VariableGet_0"
+      }
+     },
+     "type_id": "Skeletal Mesh Component Obje Referansı",
+     "name": "Henley"
+    }
+   ],
+   "input_pins": [],
+   "position": {
+    "x": 100,
+    "y": 200
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_VariableGet_0"
+   },
+   "type_id": "|GetHenley"
+  },
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_VariableGet_1"
+      }
+     },
+     "type_id": "Skeletal Mesh Component Obje Referansı",
+     "name": "Shorts"
+    }
+   ],
+   "input_pins": [],
+   "position": {
+    "x": 500,
+    "y": 200
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_VariableGet_1"
+   },
+   "type_id": "|GetShorts"
+  },
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_VariableGet_2"
+      }
+     },
+     "type_id": "Skeletal Mesh Component Obje Referansı",
+     "name": "Manny"
+    }
+   ],
+   "input_pins": [],
+   "position": {
+    "x": 100,
+    "y": 320
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_VariableGet_2"
+   },
+   "type_id": "|GetManny"
+  },
+  {
+   "output_pins": [
+    {
+     "value": "",
+     "connected_pins": [],
+     "pin_id": {
+      "direction": "EGPD_Output",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallParentFunction_0"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "then"
+    }
+   ],
+   "input_pins": [
+    {
+     "value": "",
+     "connected_pins": [
+      {
+       "direction": "EGPD_Output",
+       "index_id": 0,
+       "node": {
+        "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_FunctionEntry_0"
+       }
+      }
+     ],
+     "pin_id": {
+      "direction": "EGPD_Input",
+      "index_id": 0,
+      "node": {
+       "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallParentFunction_0"
+      }
+     },
+     "type_id": "Yürütme",
+     "name": "execute"
+    }
+   ],
+   "position": {
+    "x": 200,
+    "y": 0
+   },
+   "node": {
+    "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallParentFunction_0"
+   },
+   "type_id": "|Üst:ConstructionScript"
+  }
+ ],
+ "compile": null,
+ "connections": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dsl_after": ""
+}
