@@ -1,0 +1,162 @@
+{
+ "pose": {
+  "mode": "file",
+  "file": "C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\GD46_GarmentFit_20261013\\data\\pie_gd46_before.json",
+  "n": 342,
+  "missing_in_pose": [],
+  "n_missing": 0
+ },
+ "n_unique": 6368,
+ "stretch_posed_start": {
+  "p50": 0.9974,
+  "p95": 1.0885,
+  "p05": 0.816,
+  "max": 4.303,
+  "min": 0.348,
+  "over10pct": 0.1594
+ },
+ "stretch_prerelaxed": {
+  "p50": 1.0027,
+  "p95": 1.0565,
+  "p05": 0.9679,
+  "max": 1.415,
+  "min": 0.675,
+  "over10pct": 0.0062
+ },
+ "prerelax_move_cm": {
+  "mean": 0.217,
+  "max": 1.121
+ },
+ "shorts_collider": {
+  "verts": 4674,
+  "z_top": 104.88
+ },
+ "prepush": {
+  "moved": 465,
+  "inside_before": 297
+ },
+ "trace": [
+  [
+   20,
+   1.291,
+   6.279
+  ],
+  [
+   30,
+   1.608,
+   7.66
+  ]
+ ],
+ "stretch_settled_raw": {
+  "p50": 1.0188,
+  "p95": 1.4882,
+  "p05": 0.9217,
+  "max": 27.642,
+  "min": 0.117,
+  "over10pct": 0.2151
+ },
+ "post": [
+  [
+   0,
+   972,
+   338
+  ],
+  [
+   1,
+   866,
+   405
+  ],
+  [
+   2,
+   843,
+   452
+  ],
+  [
+   3,
+   821,
+   511
+  ],
+  [
+   4,
+   794,
+   554
+  ],
+  [
+   5,
+   797,
+   590
+  ],
+  [
+   6,
+   779,
+   624
+  ],
+  [
+   7,
+   811,
+   648
+  ],
+  [
+   8,
+   786,
+   677
+  ],
+  [
+   9,
+   782,
+   698
+  ],
+  [
+   10,
+   774,
+   749
+  ],
+  [
+   11,
+   784,
+   771
+  ]
+ ],
+ "flipped_after_post": 764,
+ "post_move_cm": 5.569,
+ "dsmooth": {
+  "it": 14,
+  "pushout": 878
+ },
+ "flipped_final": 361,
+ "stretch_settled": {
+  "p50": 0.9876,
+  "p95": 1.1212,
+  "p05": 0.8203,
+  "max": 4.286,
+  "min": 0.0,
+  "over10pct": 0.1924
+ },
+ "dz_cm": {
+  "hem_z<100": 2.687,
+  "mid_100-122": -0.269,
+  "upper_122-136": -0.85,
+  "yoke_z>136": -0.438,
+  "sleeves_|x|>22": -0.659
+ },
+ "clearance_cm": {
+  "inside_gt_0.1": 34,
+  "inside_any": 81,
+  "p05": 0.35,
+  "p50": 0.837,
+  "p95": 1.915
+ },
+ "roundtrip_cm": 0.0,
+ "delta_posed_cm": {
+  "mean": 1.396,
+  "p95": 4.499,
+  "max": 6.765,
+  "yoke_z>136": 0.526,
+  "upper_122-136": 1.151,
+  "lower_<122": 1.766
+ },
+ "delta_bind_cm": {
+  "mean": 1.392,
+  "max": 6.774
+ }
+}
