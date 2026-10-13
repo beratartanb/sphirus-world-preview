@@ -1,0 +1,247 @@
+{
+ "cfg": {
+  "tag": "b3",
+  "swap": {},
+  "move": true
+ },
+ "shots": [
+  [
+   "idle_front34",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "idle_side",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "idle_back",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "idle_front",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "walk_side",
+   true,
+   51.0,
+   [
+    1093.48,
+    -220.0,
+    186.42
+   ]
+  ],
+  [
+   "walk_front34",
+   true,
+   48.9,
+   [
+    1215.53,
+    -220.0,
+    186.42
+   ]
+  ],
+  [
+   "walk_back",
+   true,
+   47.9,
+   [
+    1432.74,
+    -220.0,
+    186.16
+   ]
+  ],
+  [
+   "walk_rev_side",
+   true,
+   44.9,
+   [
+    1270.53,
+    -220.0,
+    186.43
+   ]
+  ],
+  [
+   "run_side",
+   true,
+   131.8,
+   [
+    1994.95,
+    -220.0,
+    205.28
+   ]
+  ],
+  [
+   "run_front34",
+   true,
+   127.3,
+   [
+    2316.2,
+    -220.0,
+    254.98
+   ]
+  ],
+  [
+   "run_back",
+   true,
+   113.1,
+   [
+    2583.94,
+    -220.0,
+    284.98
+   ]
+  ],
+  [
+   "run_rev_side",
+   true,
+   129.5,
+   [
+    2266.52,
+    -220.0,
+    247.92
+   ]
+  ],
+  [
+   "stop_side_0.2s",
+   true,
+   38.9,
+   [
+    2222.37,
+    -220.0,
+    241.7
+   ]
+  ],
+  [
+   "stop_side_0.7s",
+   true,
+   0.0,
+   [
+    2220.5,
+    -220.0,
+    241.38
+   ]
+  ],
+  [
+   "settled_front34",
+   true,
+   0.0,
+   [
+    2220.5,
+    -220.0,
+    241.38
+   ]
+  ]
+ ],
+ "events": [
+  [
+   "swap",
+   420,
+   {
+    "dummy": ""
+   }
+  ],
+  [
+   "bind",
+   "dummy only"
+  ],
+  [
+   "move",
+   1130,
+   [
+    0.4,
+    1.0
+   ]
+  ],
+  [
+   "move",
+   1520,
+   [
+    0.4,
+    -1.0
+   ]
+  ],
+  [
+   "move",
+   1650,
+   [
+    1.0,
+    1.0
+   ]
+  ],
+  [
+   "move",
+   2040,
+   [
+    1.0,
+    -1.0
+   ]
+  ],
+  [
+   "move",
+   2170,
+   null
+  ]
+ ],
+ "cloth": {
+  "after_swap": {
+   "HenleyCloth": null,
+   "ShortsCloth": null,
+   "Henley": {
+    "name": "Henley",
+    "class": "SkeletalMeshComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C6527B7800) Class 'SkeletalMeshComponent'>"
+   },
+   "Shorts": {
+    "name": "Shorts",
+    "class": "SkeletalMeshComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C6527B7800) Class 'SkeletalMeshComponent'>"
+   }
+  },
+  "end": {
+   "HenleyCloth": null,
+   "ShortsCloth": null,
+   "Henley": {
+    "name": "Henley",
+    "class": "SkeletalMeshComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C6527B7800) Class 'SkeletalMeshComponent'>"
+   },
+   "Shorts": {
+    "name": "Shorts",
+    "class": "SkeletalMeshComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C6527B7800) Class 'SkeletalMeshComponent'>"
+   }
+  }
+ }
+}

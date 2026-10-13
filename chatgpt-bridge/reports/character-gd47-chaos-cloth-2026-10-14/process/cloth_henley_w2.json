@@ -1,0 +1,150 @@
+{
+ "cfg": {
+  "tag": "w2",
+  "high": 8.0,
+  "damping": 0.1,
+  "push": {
+   "z0": 108.0,
+   "z1": 100.0,
+   "cm": 0.7
+  }
+ },
+ "weights_file": "C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Saved/Codex/GD47_ChaosCloth_20261014/data/weights_w2.json",
+ "weights_rep": {
+  "K": {
+   "Y": 1.5,
+   "MID": 3.5,
+   "HEM": 4.5,
+   "SLV": 3.0,
+   "NECK_R": 8.0,
+   "PLK_R": 7.0,
+   "CUFF_R": 5.0,
+   "HIGH": 8.0,
+   "Z_YOKE": 133.0,
+   "Z_MID": 120.0,
+   "Z_HEM": 100.0,
+   "CHEST": 2.0,
+   "CHEST_Y": 5.0,
+   "CHEST_Z0": 116.0
+  },
+  "verts": 8075,
+  "main_verts": 6598,
+  "armhole_seam_verts": 86,
+  "pinned_main(<0.05cm)": 569,
+  "hist_cm": {
+   "0-1": 959,
+   "1-2": 725,
+   "2-3": 774,
+   "3-4": 3107,
+   "4-5": 1033,
+   "5-6": 0,
+   "6-7": 0,
+   "7-8": 0
+  },
+  "yoke z>133 torso": [
+   0.0,
+   0.52,
+   1.5
+  ],
+  "torso 110-120": [
+   0.0,
+   3.6,
+   4.0
+  ],
+  "hem z<101 torso": [
+   4.49,
+   4.5,
+   4.5
+  ],
+  "sleeves": [
+   0.0,
+   3.0,
+   3.35
+  ]
+ },
+ "verts_before_weld": 8075,
+ "verts_after_weld": 7831,
+ "push_verts": 1239,
+ "weights_after_weld": {
+  "n": 7831,
+  "max": 0.5625,
+  "pinned": 1915,
+  "mean": 0.27241925926996247
+ },
+ "materials": [
+  [
+   "MI_LK_Henley_g17e_cloth",
+   "M_CR_Textile_B",
+   "M_Henley"
+  ],
+  [
+   "MI_LK_Henley_Trim_g17e_cloth",
+   "M_CR_Textile_B",
+   "M_Henley_Trim"
+  ],
+  [
+   "MI_LK_Buttons_g17e_cloth",
+   "M_CR_Textile",
+   "M_Buttons"
+  ]
+ ],
+ "pa": {
+  "path": "/Game/Sphirus/CharacterLab/GD47_ChaosCloth_20261014/Cloth/PHYS_GD47_HenleyCollider_w2",
+  "saved": true,
+  "changed": {}
+ },
+ "nodes": [
+  "Import",
+  "Skin",
+  "Proxy",
+  "MaxDist",
+  "Backstop",
+  "Tethers",
+  "Damping",
+  "Collision",
+  "SetPA"
+ ],
+ "props": {
+  "Import.StaticMesh": true,
+  "Import.bImportSimMesh": true,
+  "Import.bImportRenderMesh": true,
+  "Import.UVChannel": true,
+  "Import.SimMeshSection": true,
+  "Skin.SkeletalMesh": true,
+  "Skin.TargetMeshType": true,
+  "MaxDist.MaxDistance": true,
+  "Backstop.BackstopDistance": true,
+  "Backstop.BackstopRadius": true,
+  "Damping.DampingCoefficientWeighted": true,
+  "SetPA.PhysicsAsset": true
+ },
+ "connections": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "regen": true,
+ "saved": [
+  true,
+  true
+ ],
+ "ca_materials": {
+  "before": [
+   "MI_LK_Henley_g17e_cloth",
+   "MI_LK_Henley_g17e_cloth",
+   "MI_LK_Henley_g17e_cloth"
+  ],
+  "after": [
+   "MI_LK_Henley_g17e_cloth",
+   "MI_LK_Henley_Trim_g17e_cloth",
+   "MI_LK_Buttons_g17e_cloth"
+  ]
+ },
+ "dirty": []
+}

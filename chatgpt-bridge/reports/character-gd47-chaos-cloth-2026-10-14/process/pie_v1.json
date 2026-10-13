@@ -1,0 +1,349 @@
+{
+ "cfg": {
+  "tag": "v1",
+  "swap": {},
+  "move": true
+ },
+ "shots": [
+  [
+   "idle_front34",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "idle_side",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "idle_back",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "idle_front",
+   true,
+   0.0,
+   [
+    832.0,
+    -220.0,
+    185.04
+   ]
+  ],
+  [
+   "walk_side",
+   true,
+   44.9,
+   [
+    1194.1,
+    -220.0,
+    186.42
+   ]
+  ],
+  [
+   "walk_front34",
+   true,
+   47.1,
+   [
+    1485.49,
+    -220.0,
+    185.74
+   ]
+  ],
+  [
+   "walk_back",
+   true,
+   48.8,
+   [
+    1676.44,
+    -220.0,
+    177.57
+   ]
+  ],
+  [
+   "walk_rev_side",
+   true,
+   52.6,
+   [
+    1535.2,
+    -220.0,
+    183.4
+   ]
+  ],
+  [
+   "run_side",
+   true,
+   112.2,
+   [
+    2644.61,
+    -220.0,
+    289.98
+   ]
+  ],
+  [
+   "run_front34",
+   true,
+   0.3,
+   [
+    3004.07,
+    -197.45,
+    357.65
+   ]
+  ],
+  [
+   "run_back",
+   true,
+   0.0,
+   [
+    3004.99,
+    -206.41,
+    357.65
+   ]
+  ],
+  [
+   "run_rev_side",
+   true,
+   125.0,
+   [
+    2178.42,
+    -206.41,
+    234.43
+   ]
+  ],
+  [
+   "stop_side_0.2s",
+   true,
+   116.4,
+   [
+    2156.64,
+    -206.41,
+    230.69
+   ]
+  ],
+  [
+   "stop_side_0.7s",
+   true,
+   105.4,
+   [
+    2153.03,
+    -206.41,
+    230.07
+   ]
+  ],
+  [
+   "settled_front34",
+   true,
+   0.0,
+   [
+    2137.33,
+    -206.41,
+    227.41
+   ]
+  ]
+ ],
+ "events": [
+  [
+   "swap",
+   420,
+   {
+    "dummy": ""
+   }
+  ],
+  [
+   "bind",
+   "dummy only"
+  ],
+  [
+   "move",
+   1130,
+   [
+    0.4,
+    1.0
+   ]
+  ],
+  [
+   "move",
+   1520,
+   [
+    0.4,
+    -1.0
+   ]
+  ],
+  [
+   "move",
+   1650,
+   [
+    1.0,
+    1.0
+   ]
+  ],
+  [
+   "move",
+   2040,
+   [
+    1.0,
+    -1.0
+   ]
+  ],
+  [
+   "move",
+   2170,
+   null
+  ]
+ ],
+ "cloth": {
+  "start": {
+   "HenleyCloth": {
+    "name": "HenleyCloth",
+    "class": "ChaosClothComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001CB2ADC5000) Class 'SkeletalMeshComponent'>",
+    "asset": "/Game/Sphirus/CharacterLab/GD47_ChaosCloth_20261014/Cloth/CA_GD47_Henley_w2.CA_GD47_Henley_w2",
+    "is_simulation_enabled": true,
+    "is_simulation_suspended": false,
+    "materials": [
+     "MI_LK_Henley_g17e_cloth",
+     "MI_LK_Henley_Trim_g17e_cloth",
+     "MI_LK_Buttons_g17e_cloth"
+    ]
+   },
+   "ShortsCloth": {
+    "name": "ShortsCloth",
+    "class": "ChaosClothComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001CB2ADC5000) Class 'SkeletalMeshComponent'>",
+    "asset": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/CA_CR_Shorts_m1.CA_CR_Shorts_m1",
+    "is_simulation_enabled": true,
+    "is_simulation_suspended": false,
+    "materials": [
+     "MI_LK_Shorts_m1_cloth",
+     "MI_LK_Shorts_Trim_m1_cloth",
+     "MI_LK_Drawstring_m1_cloth"
+    ]
+   },
+   "Henley": {
+    "name": "Henley",
+    "class": "SkeletalMeshComponent",
+    "visible": false,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001CB2ADC5000) Class 'SkeletalMeshComponent'>"
+   },
+   "Shorts": {
+    "name": "Shorts",
+    "class": "SkeletalMeshComponent",
+    "visible": false,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001CB2ADC5000) Class 'SkeletalMeshComponent'>"
+   }
+  },
+  "after_swap": {
+   "HenleyCloth": {
+    "name": "HenleyCloth",
+    "class": "ChaosClothComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>",
+    "asset": "/Game/Sphirus/CharacterLab/GD47_ChaosCloth_20261014/Cloth/CA_GD47_Henley_w2.CA_GD47_Henley_w2",
+    "is_simulation_enabled": true,
+    "is_simulation_suspended": false,
+    "materials": [
+     "MI_LK_Henley_g17e_cloth",
+     "MI_LK_Henley_Trim_g17e_cloth",
+     "MI_LK_Buttons_g17e_cloth"
+    ]
+   },
+   "ShortsCloth": {
+    "name": "ShortsCloth",
+    "class": "ChaosClothComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>",
+    "asset": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/CA_CR_Shorts_m1.CA_CR_Shorts_m1",
+    "is_simulation_enabled": true,
+    "is_simulation_suspended": false,
+    "materials": [
+     "MI_LK_Shorts_m1_cloth",
+     "MI_LK_Shorts_Trim_m1_cloth",
+     "MI_LK_Drawstring_m1_cloth"
+    ]
+   },
+   "Henley": {
+    "name": "Henley",
+    "class": "SkeletalMeshComponent",
+    "visible": false,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>"
+   },
+   "Shorts": {
+    "name": "Shorts",
+    "class": "SkeletalMeshComponent",
+    "visible": false,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>"
+   }
+  },
+  "end": {
+   "HenleyCloth": {
+    "name": "HenleyCloth",
+    "class": "ChaosClothComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>",
+    "asset": "/Game/Sphirus/CharacterLab/GD47_ChaosCloth_20261014/Cloth/CA_GD47_Henley_w2.CA_GD47_Henley_w2",
+    "is_simulation_enabled": true,
+    "is_simulation_suspended": false,
+    "materials": [
+     "MI_LK_Henley_g17e_cloth",
+     "MI_LK_Henley_Trim_g17e_cloth",
+     "MI_LK_Buttons_g17e_cloth"
+    ]
+   },
+   "ShortsCloth": {
+    "name": "ShortsCloth",
+    "class": "ChaosClothComponent",
+    "visible": true,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>",
+    "asset": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/CA_CR_Shorts_m1.CA_CR_Shorts_m1",
+    "is_simulation_enabled": true,
+    "is_simulation_suspended": false,
+    "materials": [
+     "MI_LK_Shorts_m1_cloth",
+     "MI_LK_Shorts_Trim_m1_cloth",
+     "MI_LK_Drawstring_m1_cloth"
+    ]
+   },
+   "Henley": {
+    "name": "Henley",
+    "class": "SkeletalMeshComponent",
+    "visible": false,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>"
+   },
+   "Shorts": {
+    "name": "Shorts",
+    "class": "SkeletalMeshComponent",
+    "visible": false,
+    "attach": "Manny",
+    "leader": "<Object '/Game/GraceRanger/Maps/UEDPIE_0_L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.BP_PBI_Player_C_0.Manny' (0x000001C92CFD7800) Class 'SkeletalMeshComponent'>"
+   }
+  }
+ }
+}

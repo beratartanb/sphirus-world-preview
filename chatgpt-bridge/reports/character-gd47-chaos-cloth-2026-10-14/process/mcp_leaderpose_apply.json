@@ -1,0 +1,151 @@
+{
+ "types": {
+  "set": [
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+  ],
+  "hcloth": [
+   "Değişkenler|Varsayılan|HenleyClothAl"
+  ],
+  "scloth": [
+   "Değişkenler|Varsayılan|ShortsClothAl"
+  ],
+  "manny": [
+   "Değişkenler|Varsayılan|MannyAl",
+   "Sınıf|BPRetargetedExampleSM|MannyAl",
+   "Sınıf|BPRetargetedExampleMM|MannyAl"
+  ]
+ },
+ "pick": {
+  "set": "Bileşenler|SkinnedMesh|SetLeaderPoseComponent",
+  "hcloth": "Değişkenler|Varsayılan|HenleyClothAl",
+  "scloth": "Değişkenler|Varsayılan|ShortsClothAl",
+  "manny": "Değişkenler|Varsayılan|MannyAl"
+ },
+ "entry": [
+  {
+   "refPath": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_FunctionEntry_0"
+  }
+ ],
+ "chain_nodes": [
+  [
+   "K2Node_FunctionEntry_0",
+   "|ConstructionScript"
+  ],
+  [
+   "K2Node_CallParentFunction_0",
+   "|Üst:ConstructionScript"
+  ],
+  [
+   "K2Node_CallFunction_2",
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+  ],
+  [
+   "K2Node_CallFunction_3",
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent"
+  ],
+  [
+   "K2Node_VariableGet_2",
+   "|GetManny"
+  ],
+  [
+   "K2Node_VariableGet_1",
+   "|GetShorts"
+  ],
+  [
+   "K2Node_VariableGet_0",
+   "|GetHenley"
+  ]
+ ],
+ "ends": [
+  "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM.BP_Player_MM:UserConstructionScript.K2Node_CallFunction_3"
+ ],
+ "compile": null,
+ "connections": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "chain_after": [
+  [
+   "K2Node_FunctionEntry_0",
+   "|ConstructionScript",
+   []
+  ],
+  [
+   "K2Node_CallParentFunction_0",
+   "|Üst:ConstructionScript",
+   [
+    "K2Node_FunctionEntry_0"
+   ]
+  ],
+  [
+   "K2Node_CallFunction_2",
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent",
+   [
+    "K2Node_CallParentFunction_0",
+    "K2Node_VariableGet_0",
+    "K2Node_VariableGet_2"
+   ]
+  ],
+  [
+   "K2Node_CallFunction_3",
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent",
+   [
+    "K2Node_CallFunction_2",
+    "K2Node_VariableGet_1",
+    "K2Node_VariableGet_2"
+   ]
+  ],
+  [
+   "K2Node_CallFunction_0",
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent",
+   [
+    "K2Node_CallFunction_3",
+    "K2Node_VariableGet_3",
+    "K2Node_VariableGet_5"
+   ]
+  ],
+  [
+   "K2Node_CallFunction_1",
+   "Bileşenler|SkinnedMesh|SetLeaderPoseComponent",
+   [
+    "K2Node_CallFunction_0",
+    "K2Node_VariableGet_4",
+    "K2Node_VariableGet_5"
+   ]
+  ],
+  [
+   "K2Node_VariableGet_5",
+   "|GetManny",
+   []
+  ],
+  [
+   "K2Node_VariableGet_4",
+   "|GetShortsCloth",
+   []
+  ],
+  [
+   "K2Node_VariableGet_3",
+   "|GetHenleyCloth",
+   []
+  ],
+  [
+   "K2Node_VariableGet_2",
+   "|GetManny",
+   []
+  ],
+  [
+   "K2Node_VariableGet_1",
+   "|GetShorts",
+   []
+  ],
+  [
+   "K2Node_VariableGet_0",
+   "|GetHenley",
+   []
+  ]
+ ]
+}

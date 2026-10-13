@@ -1,0 +1,30 @@
+{
+ "cfg": {
+  "HenleyCloth": "/Game/Sphirus/CharacterLab/GD47_ChaosCloth_20261014/Cloth/CA_GD47_Henley_w2",
+  "ShortsCloth": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/CA_CR_Shorts_m1"
+ },
+ "after": {
+  "HenleyCloth": {
+   "class": "ChaosClothComponent",
+   "visible": true,
+   "asset": "/Game/Sphirus/CharacterLab/GD47_ChaosCloth_20261014/Cloth/CA_GD47_Henley_w2.CA_GD47_Henley_w2"
+  },
+  "ShortsCloth": {
+   "class": "ChaosClothComponent",
+   "visible": true,
+   "asset": "/Game/Sphirus/CharacterLab/CharacterCorrective_20261001/Cloth/CA_CR_Shorts_m1.CA_CR_Shorts_m1"
+  },
+  "Henley": {
+   "class": "SkeletalMeshComponent",
+   "visible": false
+  },
+  "Shorts": {
+   "class": "SkeletalMeshComponent",
+   "visible": false
+  }
+ },
+ "owner_saved": true,
+ "BP_GR_Player_saved": true,
+ "BP_PBI_Player_saved": true,
+ "dirty_after": []
+}
