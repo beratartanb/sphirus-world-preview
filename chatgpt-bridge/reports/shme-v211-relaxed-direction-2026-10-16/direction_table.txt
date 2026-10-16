@@ -1,0 +1,19 @@
+v211d_d_idle_base_r1 mv_walk_0_0             4.02- 5.16 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +4.8 | vel settles 0.31 s | v_end  132
+v211d_d_idle_base_r1 mv_walk_0_2             7.03- 8.20 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +5.3 | vel settles 0.31 s | v_end  132
+v211d_d_idle_base_r1 mv_walk_0_4            10.03-11.17 s | max|cam-ctl|  35.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel  -14.4 body-cap   +6.3 | vel settles 0.63 s | v_end  132
+v211e_d_idle_orb_r1 mv_walk_0_0             4.03- 5.17 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +5.0 | vel settles 0.33 s | v_end  132
+v211e_d_idle_orb_r1 mv_walk_0_2             7.04- 8.18 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +5.0 | vel settles 0.34 s | v_end  132
+v211e_d_idle_orb_r1 mv_walk_0_4            10.13-11.16 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   -2.0 body-cap   +4.0 | vel settles 0.35 s | v_end  132
+v211d_d_walk_base_r1 mv_walk_0_0             2.01-15.96 s | max|cam-ctl|   0.1 | max|acc-want|   6.4 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   -2.5 | vel settles 0.31 s | v_end  132
+v211d_d_jog_base_r1 mv_jog_0_0              2.03-15.96 s | max|cam-ctl|   0.7 | max|acc-want|  17.6 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap  -10.3 | vel settles 0.19 s | v_end  300
+v211d_d_sprint_base_r1 mv_sprint_0_0           2.00-15.99 s | max|cam-ctl|   1.2 | max|acc-want|  26.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +9.6 | vel settles 0.16 s | v_end  490
+v211d_d_backw_base_r1 mv_walk_180_0           2.02-12.98 s | max|cam-ctl|   0.1 | max|acc-want|  25.4 | end |vel-acc|   0.1 cap-vel -179.9 body-cap   -2.2 | vel settles 0.31 s | v_end  125
+v211d_d_back_base_r1 mv_jog_180_0            2.04-12.98 s | max|cam-ctl|   0.4 | max|acc-want|   5.7 | end |vel-acc|   0.2 cap-vel -179.8 body-cap   +5.3 | vel settles 0.29 s | v_end  245
+v211d_d_strafe_base_r1 mv_jog_90_0             2.01- 4.97 s | max|cam-ctl|   0.3 | max|acc-want|   4.0 | end |vel-acc|   0.8 cap-vel  -89.2 body-cap  +54.3 | vel settles 0.23 s | v_end  255
+v211d_d_strafe_base_r1 mv_jog_-90_1            5.00- 7.99 s | max|cam-ctl|   0.3 | max|acc-want|   4.0 | end |vel-acc|   0.7 cap-vel  +89.3 body-cap  +39.2 | vel settles 0.55 s | v_end  255
+v211d_d_strafe_base_r1 mv_jog_135_2            8.02-10.99 s | max|cam-ctl|   0.3 | max|acc-want|   3.9 | end |vel-acc|   0.7 cap-vel -134.3 body-cap  -16.2 | vel settles 0.55 s | v_end  245
+v211d_d_strafe_base_r1 mv_jog_-135_3          11.03-13.97 s | max|cam-ctl|   0.5 | max|acc-want|   4.1 | end |vel-acc|   0.8 cap-vel +134.2 body-cap  +13.1 | vel settles 0.34 s | v_end  245
+v211e_d_sdiag_base_r1 mv_sprint_0_0           2.02- 4.49 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +4.5 | vel settles 0.20 s | v_end  490
+v211e_d_sdiag_base_r1 mv_sprint_45_1          4.52-10.48 s | max|cam-ctl|   1.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   -0.0 body-cap   -7.3 | vel settles 0.41 s | v_end  468
+v211e_d_jdiag_base_r1 mv_jog_0_0              2.06- 4.49 s | max|cam-ctl|   0.0 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel   +0.0 body-cap   +8.5 | vel settles 0.21 s | v_end  300
+v211e_d_jdiag_base_r1 mv_jog_45_1             4.52-10.48 s | max|cam-ctl|   0.6 | max|acc-want|   0.0 | end |vel-acc|   0.0 cap-vel  -45.0 body-cap  +17.9 | vel settles 0.37 s | v_end  287
