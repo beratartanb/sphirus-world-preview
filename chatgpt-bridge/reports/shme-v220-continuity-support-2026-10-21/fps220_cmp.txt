@@ -1,0 +1,110 @@
+## chain_scutrel
+  v220x20 base L  17.1/ 23.0 R  27.0/ 58.0 | dt 0.0500 max 0.050 | rec - | A_RR_M_Relaxed_Run_Sta@0.73 > A_LB_Sprint_Fwd@2.20 > A_SHM_Sprint_Curve_R25@0.70 > Cut_R_090_Lfoot@0.43 > Cut_R_090_Rfoot@0.77 > SHM_A_RR_M_Relaxed_Run@0.97 > SHM_M_Neutral_Stand_Tu@0.13 > A_RR_M_Relaxed_Run_Sta@0.07
+  v220x60 base L  11.6/ 15.9 R  43.1/ 52.8 | dt 0.0167 max 0.017 | rec - | A_RR_M_Relaxed_Run_Sta@0.79 > A_LB_Sprint_Fwd@2.23 > A_SHM_Sprint_Curve_R25@0.73 > Cut_R_090_Lfoot@0.43 > Cut_R_090_Rfoot@0.77 > SHM_A_RR_M_Relaxed_Run@0.93 > A_RR_M_Relaxed_Run_Sta@0.07
+  v220x120 base L  26.0/ 31.9 R  28.5/ 32.6 | dt 0.0083 max 0.008 | rec - | A_RR_M_Relaxed_Run_Sta@0.81 > A_LB_Sprint_Fwd@2.23 > A_SHM_Sprint_Curve_R25@0.73 > A_LB_Sprint_Fwd@0.17 > Cut_R_090_Rfoot@0.77 > SHM_A_RR_M_Relaxed_Run@0.93 > A_RR_M_Relaxed_Run_Sta@0.07
+## k_cut_back
+  v219x20 base L   1.9/  5.7 R   6.0/ 21.5 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@1.32 > A_SHM_Sprint_Curve_R25@1.43 > Cut_R_090_Lfoot@0.47 > A_CP2_Jog_Fwd_Pivot@0.10 > BackLink_3@0.03 > A_RB_Run_Rear@1.23
+  v220x20 base L   2.9/  6.4 R   6.2/ 26.5 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@1.32 > A_SHM_Sprint_Curve_R25@1.43 > Cut_R_090_Lfoot@0.47 > A_CP2_Jog_Fwd_Pivot@0.03 > BackLink_2@0.03 > A_RB_Run_Rear@1.70
+  v219q60 base L   2.2/  4.6 R  42.4/ 50.5 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@0.82 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > A_CP2_Jog_Fwd_Pivot@0.13 > BackLink_2@0.07 > A_RB_Run_Rear@1.70
+  v220x60 base L   5.6/  9.5 R   6.7/ 12.3 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@0.82 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > A_CP2_Jog_Fwd_Pivot@0.17 > BackLink_2@0.03 > A_RB_Run_Rear@1.70
+  v219x120 base L  18.1/ 22.7 R  13.3/ 16.9 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.84 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > A_CP2_Jog_Fwd_Pivot@0.17 > BackLink_1@0.07 > A_RB_Run_Rear@0.27
+  v220x120 base L  18.5/ 23.3 R  12.8/ 16.2 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.84 > A_SHM_Sprint_Curve_R25@0.90 > A_LB_Sprint_Fwd@0.33 > Cut_R_090_Lfoot@0.77 > A_CP2_Jog_Fwd_Pivot@0.17 > BackLink_1@0.07 > A_RB_Run_Rear@0.27
+## p_j2s
+  v219x20 base L  18.7/ 30.5 R   4.3/  9.7 | dt 0.0500 max 0.050 | rec - | A_CT_Jog_Fwd@0.99 > J2S_Rfoot_a@0.70 > A_LB_Sprint_Fwd@1.73
+  v220x20 base L  18.7/ 30.5 R   4.3/  9.7 | dt 0.0500 max 0.050 | rec - | A_CT_Jog_Fwd@0.99 > J2S_Rfoot_a@0.70 > A_LB_Sprint_Fwd@1.73
+  v219q60 base L   3.4/  7.9 R   8.6/ 11.8 | dt 0.0167 max 0.017 | rec - | A_CT_Jog_Fwd@0.96 > J2S_Lfoot_b@0.83 > A_RR_M_Relaxed_Run_Sta@0.43 > A_LB_Sprint_Fwd@1.00
+  v220x60 base L   3.4/  5.8 R   8.6/ 11.8 | dt 0.0167 max 0.017 | rec - | A_CT_Jog_Fwd@0.96 > J2S_Lfoot_b@0.83 > A_LB_Sprint_Fwd@1.03
+  v219x120 base L   4.9/  5.2 R   8.5/  9.7 | dt 0.0083 max 0.008 | rec - | A_CT_Jog_Fwd@0.94 > J2S_Lfoot_b@0.83 > A_LB_Sprint_Fwd@2.13
+  v220x120 base L   4.9/  5.2 R  10.2/ 11.5 | dt 0.0083 max 0.008 | rec - | A_CT_Jog_Fwd@0.94 > J2S_Lfoot_b@0.83 > A_LB_Sprint_Fwd@2.13
+## p_j2s_tap
+  v219x20 base L   8.6/ 11.3 R   4.4/ 13.7 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@0.52 > A_CT_Jog_Fwd@1.43 > A_LB_Sprint_Fwd@1.17
+  v220x20 base L   3.7/  3.7 R   3.2/  7.9 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@0.52
+  v220x60 base L   3.4/  3.3 R   3.8/  3.9 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@2.13
+  v219x120 base L  33.8/ 33.5 R   8.6/ 12.5 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.97 > A_CT_Jog_Fwd@0.53 > A_LB_Sprint_Fwd@2.13
+  v220x120 base L   4.6/  5.1 R   3.3/  5.5 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.97
+## p_tapretrig
+  v220x20 base L   3.4/  9.3 R   5.9/ 14.1 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@0.39
+  v220x60 base L   4.8/  6.8 R   4.9/  6.7 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@2.10
+  v220x120 base L   5.0/  5.1 R   5.3/  5.6 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@2.11
+## p_w2s_late
+  v219x20 base L   3.8/  7.9 R  16.2/ 36.5 | dt 0.0500 max 0.050 | rec - | A_LB_Walk_Fwd@0.38 > W2S_Rfoot_b@0.90 > A_LB_Sprint_Fwd@0.17
+  v220x20 base L   6.2/ 12.8 R  16.2/ 36.5 | dt 0.0500 max 0.050 | rec - | A_LB_Walk_Fwd@0.38 > W2S_Rfoot_b@0.90 > A_LB_Sprint_Fwd@0.17
+  v219q60 base L   5.9/  5.7 R  14.3/ 17.2 | dt 0.0167 max 0.017 | rec - | A_LB_Walk_Fwd@0.29 > W2S_Rfoot_a@0.63 > A_LB_Sprint_Fwd@1.27
+  v220x60 base L   5.9/  5.7 R  14.3/ 17.2 | dt 0.0167 max 0.017 | rec - | A_LB_Walk_Fwd@0.29 > W2S_Rfoot_a@0.63 > A_LB_Sprint_Fwd@1.27
+  v219x120 base L   7.6/  6.5 R  14.2/ 17.2 | dt 0.0083 max 0.008 | rec - | A_LB_Walk_Fwd@1.60 > W2S_Rfoot_a@0.63 > A_LB_Sprint_Fwd@0.17
+  v220x120 base L   7.6/  6.5 R  13.9/ 16.9 | dt 0.0083 max 0.008 | rec - | A_LB_Walk_Fwd@1.60 > W2S_Rfoot_a@0.63 > A_LB_Sprint_Fwd@0.17
+## p_w2s_mid
+  v219x20 base L   3.4/  9.0 R   5.7/  8.6 | dt 0.0500 max 0.050 | rec - | A_LB_Walk_Fwd@0.07 > W2S_Rfoot_a@0.63 > A_LB_Sprint_Fwd@0.10
+  v220x20 base L   3.4/  9.0 R   5.7/  8.6 | dt 0.0500 max 0.050 | rec - | A_LB_Walk_Fwd@0.07 > W2S_Rfoot_a@0.63 > A_LB_Sprint_Fwd@0.10
+  v219q60 base L   9.6/ 11.0 R  15.7/ 15.8 | dt 0.0167 max 0.017 | rec - | A_LB_Walk_Fwd@6.81 > W2S_Lfoot_b@0.90 > A_LB_Sprint_Fwd@1.10
+  v220x60 base L   9.6/ 11.0 R  15.7/ 15.8 | dt 0.0167 max 0.017 | rec - | A_LB_Walk_Fwd@6.81 > W2S_Lfoot_b@0.90 > A_LB_Sprint_Fwd@1.10
+  v219x120 base L   7.5/  8.3 R  13.1/ 13.6 | dt 0.0083 max 0.008 | rec - | A_LB_Walk_Fwd@1.28 > W2S_Lfoot_b@0.90 > A_LB_Sprint_Fwd@2.23
+  v220x120 base L   7.5/  8.3 R  13.1/ 13.6 | dt 0.0083 max 0.008 | rec - | A_LB_Walk_Fwd@1.28 > W2S_Lfoot_b@0.90 > A_LB_Sprint_Fwd@2.23
+## r_cutrev_l
+  v219x20 base L   5.8/ 14.4 R   1.9/  4.2 | dt 0.0500 max 0.050 | rec - | Cut_L_090_Lfoot@0.62 > Cut_R_090_Rfoot@0.50 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.37
+  v220x20 base L   3.9/ 14.4 R   1.9/  4.2 | dt 0.0500 max 0.050 | rec - | Cut_L_090_Lfoot@0.62 > Cut_R_090_Rfoot@0.50 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.37
+  v219q60 base L   9.1/ 10.8 R  13.0/ 14.5 | dt 0.0167 max 0.017 | rec - | Cut_L_090_Lfoot@0.72 > Cut_R_090_Rfoot@0.50 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.87
+  v220x60 base L   7.7/ 10.1 R  15.1/ 16.2 | dt 0.0167 max 0.017 | rec - | Cut_L_090_Lfoot@0.72 > Cut_R_090_Rfoot@0.50 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.27
+  v219x120 base L   8.5/ 10.8 R  22.6/ 23.4 | dt 0.0083 max 0.008 | rec - | Cut_L_090_Lfoot@0.74 > Cut_R_090_Rfoot@0.50 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.23
+  v220x120 base L   7.3/ 11.9 R  26.9/ 30.9 | dt 0.0083 max 0.008 | rec - | Cut_L_090_Lfoot@0.78 > Cut_R_090_Rfoot@0.53 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.23
+## r_cutrev_l0
+  v219x20 base L   5.1/ 10.7 R   2.3/  2.3 | dt 0.0500 max 0.050 | rec 5.25 | A_LB_Sprint_Fwd@1.36 > A_SHM_Sprint_Curve_L25@1.43 > Cut_L_090_Lfoot@0.47 > Recover_R_Lfoot@1.07 > A_LB_Sprint_Fwd@1.20
+  v220x20 base L   5.5/ 11.2 R   1.9/ 10.7 | dt 0.0500 max 0.050 | rec 5.25 | A_LB_Sprint_Fwd@1.36 > A_SHM_Sprint_Curve_L25@1.43 > Cut_L_090_Lfoot@0.47 > Recover_R_Lfoot@1.07 > A_LB_Sprint_Fwd@0.63
+  v219q60 base L   6.7/  8.6 R   7.0/  7.9 | dt 0.0167 max 0.017 | rec 5.18 | A_LB_Sprint_Fwd@0.86 > A_SHM_Sprint_Curve_L25@0.90 > Cut_L_090_Lfoot@0.47 > Recover_R_Lfoot@1.10 > A_LB_Sprint_Fwd@0.63
+  v220x60 base L   7.6/ 11.3 R   5.8/ 11.1 | dt 0.0167 max 0.017 | rec 5.18 | A_LB_Sprint_Fwd@0.86 > A_SHM_Sprint_Curve_L25@0.90 > Cut_L_090_Lfoot@0.47 > Recover_R_Lfoot@1.10 > A_LB_Sprint_Fwd@0.07
+  v219x120 base L   9.3/ 11.6 R  10.2/ 10.6 | dt 0.0083 max 0.008 | rec 5.17 | A_LB_Sprint_Fwd@0.88 > A_SHM_Sprint_Curve_L25@0.90 > Cut_L_090_Lfoot@0.47 > Recover_R_Lfoot@1.10 > A_LB_Sprint_Fwd@1.77
+  v220x120 base L   9.1/ 11.6 R  13.0/ 15.2 | dt 0.0083 max 0.008 | rec 5.17 | A_LB_Sprint_Fwd@0.88 > A_SHM_Sprint_Curve_L25@0.90 > A_LB_Sprint_Fwd@0.33 > Recover_R_Lfoot@1.10 > A_LB_Sprint_Fwd@0.63
+## r_cutrev_r
+  v219x20 base L   3.4/ 12.2 R   3.5/ 10.4 | dt 0.0500 max 0.050 | rec - | Cut_R_090_Lfoot@0.62 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@2.10
+  v220x20 base L   3.5/ 12.2 R   2.6/ 10.5 | dt 0.0500 max 0.050 | rec - | Cut_R_090_Lfoot@0.62 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@2.10
+  v219q60 base L   4.7/ 12.9 R  23.6/ 31.6 | dt 0.0167 max 0.017 | rec - | Cut_R_090_Lfoot@0.72 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@0.90
+  v220x60 base L   5.5/ 12.2 R   7.5/ 12.9 | dt 0.0167 max 0.017 | rec - | Cut_R_090_Lfoot@0.72 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@2.00
+  v219x120 base L   6.6/ 13.5 R  13.7/ 14.9 | dt 0.0083 max 0.008 | rec - | Cut_R_090_Lfoot@0.74 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@1.97
+  v220x120 base L   6.8/ 14.7 R  22.8/ 26.5 | dt 0.0083 max 0.008 | rec - | Cut_R_090_Lfoot@0.78 > Cut_L_090_Rfoot@0.53 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@1.97
+## r_cutrev_r0
+  v219x20 base L   7.4/  8.1 R   5.3/  7.8 | dt 0.0500 max 0.050 | rec 5.25 | A_LB_Sprint_Fwd@1.36 > A_SHM_Sprint_Curve_R25@1.43 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.03
+  v220x20 base L   2.6/  2.6 R   2.4/  7.8 | dt 0.0500 max 0.050 | rec 5.25 | A_LB_Sprint_Fwd@1.36 > A_SHM_Sprint_Curve_R25@1.43 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.03
+  v219q60 base L   6.1/  8.0 R   7.0/  8.0 | dt 0.0167 max 0.017 | rec 5.18 | A_LB_Sprint_Fwd@0.86 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.03
+  v220x60 base L   4.8/  4.9 R   5.3/  9.5 | dt 0.0167 max 0.017 | rec 5.18 | A_LB_Sprint_Fwd@0.86 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.03
+  v219x120 base L   7.6/  6.0 R   9.8/ 10.3 | dt 0.0083 max 0.008 | rec 5.17 | A_LB_Sprint_Fwd@0.88 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.03
+  v220x120 base L   5.1/  6.2 R  12.8/ 14.5 | dt 0.0083 max 0.008 | rec 5.17 | A_LB_Sprint_Fwd@0.88 > A_SHM_Sprint_Curve_R25@0.90 > A_LB_Sprint_Fwd@0.33 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.03
+## r_cutrev_r0_w
+  v220x20 base L  14.4/ 17.9 R  20.9/ 23.4 | dt 0.0500 max 0.050 | rec 5.25 | A_RR_M_Relaxed_Run_Sta@0.51 > A_LB_Sprint_Fwd@0.47 > A_SHM_Sprint_Curve_R25@1.43 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > SHM214_RevPush_Rfoot@1.47 > A_LB_Sprint_Fwd@2.20 > SHM_A_RR_M_Relaxed_Run@0.40
+  v220x60 base L  13.5/ 13.0 R  17.7/ 17.9 | dt 0.0167 max 0.017 | rec 5.18 | A_RR_M_Relaxed_Run_Sta@0.59 > A_LB_Sprint_Fwd@2.17 > A_SHM_Sprint_Curve_R25@0.90 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > SHM214_RevPush_Rfoot@1.47 > A_LB_Sprint_Fwd@2.23 > SHM_A_RR_M_Relaxed_Run@0.40
+  v220x120 base L  14.6/ 16.0 R  17.7/ 17.6 | dt 0.0083 max 0.008 | rec 5.17 | A_RR_M_Relaxed_Run_Sta@0.61 > A_LB_Sprint_Fwd@2.17 > A_SHM_Sprint_Curve_R25@0.90 > A_LB_Sprint_Fwd@0.33 > Recover_L_Lfoot@1.10 > SHM214_RevPush_Rfoot@1.47 > A_LB_Sprint_Fwd@2.23 > SHM_A_RR_M_Relaxed_Run@0.40
+## r_cutrev_r2
+  v219x20 base L   2.1/ 18.5 R   1.8/  2.4 | dt 0.0500 max 0.050 | rec - | Cut_R_090_Lfoot@0.77 > Cut_L_090_Lfoot@0.50 > RevTurn_L_Lfoot@0.53
+  v220x20 base L   2.1/ 18.1 R   0.9/  4.1 | dt 0.0500 max 0.050 | rec - | Cut_R_090_Lfoot@0.77 > Cut_L_090_Lfoot@0.50 > RevTurn_L_Lfoot@0.53
+  v219q60 base L   2.9/ 10.8 R   5.6/  5.4 | dt 0.0167 max 0.017 | rec - | Cut_R_090_Lfoot@0.87 > Cut_L_090_Lfoot@0.50 > RevTurn_L_Lfoot@0.53
+  v220x60 base L  12.0/ 22.7 R   5.0/  5.5 | dt 0.0167 max 0.017 | rec - | Cut_R_090_Lfoot@0.87 > Cut_L_090_Lfoot@0.50 > RevTurn_L_Lfoot@0.53
+  v219x120 base L  11.6/ 16.8 R   6.8/  6.4 | dt 0.0083 max 0.008 | rec - | Cut_R_090_Lfoot@0.89 > Cut_L_090_Lfoot@0.50 > RevTurn_L_Lfoot@0.53
+  v220x120 base L  38.1/ 42.7 R   5.4/  5.2 | dt 0.0083 max 0.008 | rec - | Cut_R_090_Lfoot@0.93 > Cut_L_090_Lfoot@0.53 > RevTurn_L_Lfoot@0.53
+## r_kb2
+  v219x20 base L  17.2/ 39.1 R   8.6/ 18.5 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@0.87 > A_LR_Run_Pivot_F_B_Rfo@0.53 > A_CT_Jog_Fwd@0.73 > SHM215_PushLow_Rfoot@0.20 > A_LB_Sprint_Fwd@2.17 > SHM_A_RR_M_Relaxed_Run@0.40
+  v220x20 base L  17.2/ 39.1 R   8.6/ 18.5 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@0.87 > A_LR_Run_Pivot_F_B_Rfo@0.53 > A_CT_Jog_Fwd@0.73 > SHM215_PushLow_Rfoot@0.20 > A_LB_Sprint_Fwd@2.17 > SHM_A_RR_M_Relaxed_Run@0.40
+  v219q60 base L  11.3/ 14.9 R  19.5/ 20.7 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@0.94 > A_LR_Run_Pivot_F_B_Rfo@0.53 > A_C01R_Sprint_WalkToSp@1.03 > SHM215_PushLow_Rfoot@0.20 > A_LB_Sprint_Fwd@0.47 > SHM_A_RR_M_Relaxed_Run@0.40
+  v220x60 base L   9.3/ 11.5 R   9.1/ 13.9 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@0.94 > A_LR_Run_Pivot_B_F_Rfo@3.67 > A_LR_Run_Pivot_F_B_Rfo@0.57 > A_C01R_Sprint_WalkToSp@1.03 > SHM215_PushLow_Rfoot@0.20 > A_LB_Sprint_Fwd@2.13 > SHM_A_RR_M_Relaxed_Run@0.40
+  v219x120 base L  10.4/ 15.1 R   7.4/ 18.7 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.96 > A_LR_Run_Pivot_F_B_Rfo@0.53 > M_Neutral_Sprint_Start@0.00 > SHM215_PushLow_Lfoot@0.20 > A_LB_Sprint_Fwd@0.17 > SHM_A_RR_M_Relaxed_Run@0.40
+  v220x120 base L  15.6/ 19.8 R  11.5/ 28.2 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.96 > A_LR_Run_Pivot_B_F_Rfo@3.67 > A_LR_Run_Pivot_F_B_Rfo@0.27 > A_C01R_Sprint_WalkToSp@1.03 > SHM215_PushLow_Lfoot@0.20 > A_LB_Sprint_Fwd@0.17 > SHM_A_RR_M_Relaxed_Run@0.40
+## r_wcurve
+  v219x20 base L   5.3/ 15.1 R   7.4/ 13.0 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@1.28 > A_SHM_Sprint_Curve_R12@1.43 > A_LB_Sprint_Fwd@1.77 > A_SHM_Sprint_Curve_L12@0.23 > A_LB_Sprint_Fwd@0.60 > A_SHM_Sprint_Curve_L12@0.97 > A_LB_Sprint_Fwd@1.33 > A_SHM_Sprint_Curve_R12@2.03
+  v220x20 base L   5.3/ 15.1 R   7.4/ 13.0 | dt 0.0500 max 0.050 | rec - | A_LB_Sprint_Fwd@1.28 > A_SHM_Sprint_Curve_R12@1.43 > A_LB_Sprint_Fwd@1.77 > A_SHM_Sprint_Curve_L12@0.23 > A_LB_Sprint_Fwd@0.60 > A_SHM_Sprint_Curve_L12@0.97 > A_LB_Sprint_Fwd@1.33 > A_SHM_Sprint_Curve_R12@2.03
+  v219q60 base L   7.0/ 11.5 R   6.2/  8.2 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@0.78 > A_SHM_Sprint_Curve_R12@0.90 > A_LB_Sprint_Fwd@1.20 > A_SHM_Sprint_Curve_L12@1.97 > A_LB_Sprint_Fwd@0.00 > A_SHM_Sprint_Curve_L12@0.43 > A_LB_Sprint_Fwd@0.77 > A_SHM_Sprint_Curve_R12@1.53
+  v220x60 base L   7.0/ 11.5 R   6.2/  8.2 | dt 0.0167 max 0.017 | rec - | A_LB_Sprint_Fwd@0.78 > A_SHM_Sprint_Curve_R12@0.90 > A_LB_Sprint_Fwd@1.20 > A_SHM_Sprint_Curve_L12@1.97 > A_LB_Sprint_Fwd@0.00 > A_SHM_Sprint_Curve_L12@0.43 > A_LB_Sprint_Fwd@0.77 > A_SHM_Sprint_Curve_R12@1.53
+  v219x120 base L  13.0/ 17.7 R   7.4/ 10.2 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.80 > A_SHM_Sprint_Curve_R12@0.90 > A_LB_Sprint_Fwd@1.20 > A_SHM_Sprint_Curve_L12@2.00 > A_LB_Sprint_Fwd@0.03 > A_SHM_Sprint_Curve_L12@0.47 > A_LB_Sprint_Fwd@0.80 > A_SHM_Sprint_Curve_R12@1.57 > A_LB_Sprint_Fwd@1.87
+  v220x120 base L  13.1/ 17.8 R   6.2/  9.4 | dt 0.0083 max 0.008 | rec - | A_LB_Sprint_Fwd@0.80 > A_SHM_Sprint_Curve_R12@0.90 > A_LB_Sprint_Fwd@1.20 > A_SHM_Sprint_Curve_L12@2.00 > A_LB_Sprint_Fwd@0.03 > A_SHM_Sprint_Curve_L12@0.47 > A_LB_Sprint_Fwd@0.77 > A_SHM_Sprint_Curve_R12@1.53 > A_LB_Sprint_Fwd@1.83
+## t_tiprev
+  v219x20 base L   4.0/  9.8 R  15.8/ 20.5 | dt 0.0500 max 0.050 | rec - | af_Stand_Idle_NaturalB@69.25 > SHM_M_Neutral_Stand_Tu@0.00
+  v220x20 base L   5.3/  9.3 R  16.2/ 18.6 | dt 0.0500 max 0.050 | rec - | af_Stand_Idle_NaturalB@69.25 > SHM_M_Neutral_Stand_Tu@0.00
+  v219q60 base L   4.1/  6.0 R  15.3/ 20.5 | dt 0.0167 max 0.017 | rec - | af_Stand_Idle_NaturalB@69.28 > SHM_M_Neutral_Stand_Tu@0.00
+  v220x60 base L   5.5/  7.8 R  16.2/ 20.5 | dt 0.0167 max 0.017 | rec - | af_Stand_Idle_NaturalB@69.28 > SHM_M_Neutral_Stand_Tu@0.00
+  v219x120 base L   4.2/  4.7 R  17.5/ 24.2 | dt 0.0083 max 0.008 | rec - | af_Stand_Idle_NaturalB@69.29 > SHM_M_Neutral_Stand_Tu@0.00
+  v220x120 base L   5.6/  6.9 R  15.9/ 21.2 | dt 0.0083 max 0.008 | rec - | af_Stand_Idle_NaturalB@69.29 > SHM_M_Neutral_Stand_Tu@0.00
+## t_trv2_180e
+  v220x20 base L   4.0/  5.2 R  13.9/ 17.4 | dt 0.0500 max 0.050 | rec - | af_Stand_Idle_NaturalB@69.05 > SHM_M_Neutral_Stand_Tu@0.07 > af_Stand_Idle_NaturalB@43.07
+  v220x60 base L   4.7/  6.5 R  15.2/ 26.5 | dt 0.0167 max 0.017 | rec - | af_Stand_Idle_NaturalB@69.08 > SHM_M_Neutral_Stand_Tu@0.00 > af_Stand_Idle_NaturalB@4.97
+  v220x120 base L   5.3/  8.0 R  16.8/ 26.0 | dt 0.0083 max 0.008 | rec - | af_Stand_Idle_NaturalB@69.09 > SHM_M_Neutral_Stand_Tu@0.00 > af_Stand_Idle_NaturalB@5.20
+## t_trv2_m
+  v220x20 base L   4.8/  7.3 R  11.5/  7.1 | dt 0.0500 max 0.050 | rec - | af_Stand_Idle_NaturalB@69.05 > SHM_M_Neutral_Stand_Tu@0.13 > af_Stand_Idle_NaturalB@65.70
+  v220x60 base L   7.9/  6.5 R  12.2/  8.3 | dt 0.0167 max 0.017 | rec - | af_Stand_Idle_NaturalB@69.08 > SHM_M_Neutral_Stand_Tu@0.13 > af_Stand_Idle_NaturalB@1.37
+  v220x120 base L   8.0/  6.1 R  12.0/ 11.1 | dt 0.0083 max 0.008 | rec - | af_Stand_Idle_NaturalB@69.09 > SHM_M_Neutral_Stand_Tu@0.13 > af_Stand_Idle_NaturalB@39.50
