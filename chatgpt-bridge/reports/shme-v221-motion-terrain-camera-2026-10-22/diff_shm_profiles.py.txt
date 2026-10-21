@@ -1,0 +1,20 @@
+--- Saved/Codex/SHME_V221_20261021/checkpoint/tools_v1/shm_profiles.py.v221a	2026-10-15 09:05:40.604674300 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-21 19:46:23.963609600 +0300
+@@ -143,4 +143,17 @@
+     ('CurveLeanMeasTau', 'float', 0.0, 'V25'),
+     # ---- V2.6 (2026-10-15, Saved/Codex/SHME_V26_20261015): P1 relaxed walk posture (SHM_UpdateBodyTargets)
+     ('WalkRelaxFwdDeg', 'float', 0.0, 'V26'),
++    # ---- V2.21 (2026-10-21, Saved/Codex/SHME_V221_20261021): settle / terrain body / living camera (SHM_UpdateBodyTargets, SHM_UpdateCameraV21)
++    ('SettleBodyEnabled', 'bool', False, 'V221'), ('SettleBodyDeg', 'float', 6.0, 'V221'), ('SettleBodyDipCm', 'float', 2.0, 'V221'),
++    ('SettleBodyPeriod', 'float', 0.9, 'V221'), ('SettleBodyTau', 'float', 0.35, 'V221'), ('SettleBodyMinSpeed', 'float', 60.0, 'V221'),
++    ('TerrainBodyEnabled', 'bool', False, 'V221'), ('TerrainAheadTime', 'float', 0.45, 'V221'), ('TerrainSlopeTau', 'float', 0.25, 'V221'),
++    ('TerrainLeanUpGain', 'float', 0.15, 'V221'), ('TerrainLeanUpMax', 'float', 2.5, 'V221'), ('TerrainLeanDownGain', 'float', 0.1, 'V221'),
++    ('TerrainLeanDownMax', 'float', 1.2, 'V221'), ('TerrainDownDipPerDeg', 'float', 0.1, 'V221'), ('TerrainDownDipMax', 'float', 2.0, 'V221'),
++    ('TerrainCrossLeanGain', 'float', 0.25, 'V221'), ('TerrainCrossLeanMax', 'float', 3.0, 'V221'), ('TerrainDropAbsorbGain', 'float', 0.25, 'V221'),
++    ('TerrainDropAbsorbMax', 'float', 4.0, 'V221'), ('TerrainDropTau', 'float', 0.25, 'V221'),
++    ('CamV221Enabled', 'bool', False, 'V221'), ('CamFxScale', 'float', 1.0, 'V221'), ('CamStepGainWalk', 'float', 0.5, 'V221'),
++    ('CamStepGainJog', 'float', 0.9, 'V221'), ('CamStepGainSprint', 'float', 1.3, 'V221'), ('CamStepFreq', 'float', 14.0, 'V221'),
++    ('CamStepMinInterval', 'float', 0.18, 'V221'), ('CamLookAheadWalk', 'float', 4.0, 'V221'), ('CamLookAheadSprint', 'float', 18.0, 'V221'),
++    ('CamLookAheadTau', 'float', 0.8, 'V221'), ('CamFOVSpeedMax', 'float', 0.0, 'V221'), ('CamFOVRiseTau', 'float', 0.7, 'V221'),
++    ('CamFOVFallTau', 'float', 1.2, 'V221'), ('CamComfortScale', 'float', 1.0, 'V221'),
+ ]

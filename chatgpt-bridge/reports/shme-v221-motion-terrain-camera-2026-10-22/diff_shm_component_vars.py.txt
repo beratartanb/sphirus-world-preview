@@ -1,0 +1,13 @@
+--- Saved/Codex/SHME_V221_20261021/checkpoint/tools_v1/shm_component_vars.py.v221a	2026-10-15 04:59:28.483448300 +0300
++++ Tools/SHME_V1_20260925/shm_component_vars.py	2026-10-21 19:46:12.653538900 +0300
+@@ -61,4 +61,10 @@
+     ('CamBodyLatVel', F, 'SHM|CameraV24'), ('CamBodyFwdVel', F, 'SHM|CameraV24'), ('CamV24Init', B_, 'SHM|CameraV24'),
+     ('CamRollV24', F, 'SHM|CameraV24'), ('CamRollVel', F, 'SHM|CameraV24'),
+     ('CurveLeanMeasSlow', F, 'SHM|BodyV25'),
++    # V2.21 settle / terrain / living camera
++    ('SettleT', F, 'SHM|V221'), ('SettleAmp', F, 'SHM|V221'), ('SettleWas', B_, 'SHM|V221'), ('SettleLean', F, 'SHM|V221'),
++    ('TerrainSlope', F, 'SHM|V221'), ('TerrainCross', F, 'SHM|V221'), ('TerrainGroundZ', F, 'SHM|V221'), ('TerrainDropDip', F, 'SHM|V221'),
++    ('TerrainAheadDrop', F, 'SHM|V221'), ('TerrainInit', B_, 'SHM|V221'), ('TerrainLean', F, 'SHM|V221'),
++    ('CamStepZ', F, 'SHM|V221'), ('CamStepVel', F, 'SHM|V221'), ('CamStepAge', F, 'SHM|V221'), ('CamStepSide', F, 'SHM|V221'), ('CamStepCount', F, 'SHM|V221'),
++    ('CamLookAhead', V, 'SHM|V221'), ('CamFOVSpd', F, 'SHM|V221'), ('CamStepFire', B_, 'SHM|V221'), ('CamV221Pos', V, 'SHM|V221'), ('CamV221Init', B_, 'SHM|V221'),
+ ]

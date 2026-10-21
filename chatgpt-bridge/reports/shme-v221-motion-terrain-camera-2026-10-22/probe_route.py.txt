@@ -1,0 +1,35 @@
+"""probe_route.py (read-only editor job): find open outdoor walking lines on L_GR_SphirusHouse from its REAL collision (no tags / names).
+For start points on a grid and 8 headings: a capsule-sized sphere sweep 90 cm above the ground along 24 m (blocked -> length so far),
+plus the ground height every 50 cm (line trace) -> clear length, ground range, max slope between samples, max step. Prints the best
+lines (long, open, with real terrain variation and no step > 40 cm) as ROUTE221 lines."""
+import unreal as u, math, json
+w = u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
+SL = u.SystemLibrary
+def ground(x, y, ztop=3000.0):
+    hit = SL.line_trace_single(w, u.Vector(x, y, ztop), u.Vector(x, y, -3000.0), u.TraceTypeQuery.TRACE_TYPE_QUERY1, False, [], u.DrawDebugTrace.NONE, True)
+    if not hit: return None
+    t = hit.to_tuple(); return (t[4].z, str(t[9].get_class().get_name()) if t[9] else '')
+def sweep(a, b):
+    hit = SL.sphere_trace_single(w, a, b, 30.0, u.TraceTypeQuery.TRACE_TYPE_QUERY1, False, [], u.DrawDebugTrace.NONE, True)
+    if not hit: return None
+    t = hit.to_tuple(); return t[3] if t[0] else None
+res = []
+for gx in range(-3000, 4001, 500):
+    for gy in range(-3000, 4001, 500):
+        g0 = ground(gx, gy)
+        if not g0 or 'Landscape' not in g0[1]: continue
+        for hd in range(0, 360, 45):
+            dx, dy = math.cos(math.radians(hd)), math.sin(math.radians(hd))
+            zs = []; ok = 0.0; prev = g0[0]; mstep = 0.0; mslope = 0.0
+            for i in range(1, 49):
+                d = i * 50.0; g = ground(gx + dx * d, gy + dy * d)
+                if not g: break
+                st = g[0] - prev
+                a = u.Vector(gx + dx * (d - 50), gy + dy * (d - 50), prev + 90.0); b = u.Vector(gx + dx * d, gy + dy * d, g[0] + 90.0)
+                if abs(st) > 40.0 or sweep(a, b) is not None: break
+                mstep = max(mstep, abs(st)); mslope = max(mslope, math.degrees(math.atan2(abs(st), 50.0))); zs.append(g[0]); prev = g[0]; ok = d
+            if ok >= 1200: res.append({'o': [gx, gy, round(g0[0], 1)], 'yaw': hd, 'clear': ok, 'zrng': round(max(zs) - min(zs), 1), 'slope': round(mslope, 1), 'step': round(mstep, 1)})
+res = [r for r in res if math.hypot(r['o'][0] - 600, r['o'][1] - 600) <= 2600 and r['slope'] <= 20 and 25 <= r['zrng'] <= 320 and r['clear'] >= 1800]
+res.sort(key=lambda r: (math.hypot(r['o'][0] - 600, r['o'][1] - 600), -r['clear']))
+print('ROUTE221 n %d' % len(res))
+for r in res[:25]: print('ROUTE221 ' + json.dumps(r))
