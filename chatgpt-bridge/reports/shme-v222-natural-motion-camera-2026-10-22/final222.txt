@@ -1,0 +1,112 @@
+## a_restart2
+  v222fin o    L  11.5/ 14.3 R  37.0/ 40.0 | dt 0.0333 max 0.033 | rec - | A_LB_Walk_Fwd@6.81 > SHM_M_Neutral_Walk_Sto@1.33 > M_Ranger_Walk_Loop_F_P@2.17 > A_LB_Walk_Fwd@3.17 > SHM_M_Neutral_Walk_Sto@1.40 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@6.57
+  v222fin p    L   8.1/ 12.8 R   9.8/ 17.7 | dt 0.0333 max 0.033 | rec - | M_Ranger_Walk_Loop_F_P@2.83 > A_LB_Walk_Fwd@4.80 > SHM_M_Neutral_Walk_Sto@1.33 > M_Ranger_Walk_Loop_F_P@0.10 > A_LB_Walk_Fwd@2.77 > SHM_M_Neutral_Walk_Sto@1.17 > M_Ranger_Walk_Loop_F_P@0.27
+## a_tipw
+  v222fin o    L  10.8/ 15.7 R   6.9/ 11.0 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@69.07 > SHM_M_Neutral_Stand_Tu@0.13 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@3.17 > SHM_M_Neutral_Walk_Sto@1.40
+  v222fin p    L  10.4/  9.0 R   6.1/  9.0 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@69.07 > SHM_M_Neutral_Stand_Tu@0.13 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@5.47 > SHM_M_Neutral_Walk_Sto@1.20
+## cam_corr
+  v222fin o    L  34.3/ 35.9 R  15.1/ 20.3 | dt 0.0333 max 0.033 | rec - | A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53 > SHM_A_CP2_Jog_Fwd_Stop@0.37
+  v222fin p    L  34.3/ 35.9 R  15.1/ 20.3 | dt 0.0333 max 0.033 | rec - | A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53 > SHM_A_CP2_Jog_Fwd_Stop@0.37
+## chain_jogcut
+  v222fin p    L  17.3/ 22.8 R   7.9/ 14.6 | dt 0.0333 max 0.033 | rec - | A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53 > A_CT_Jog_FwdRight@0.53 > A_CT_Jog_Right@0.27 > A_CT_Jog_FwdRight@0.53 > A_CT_Jog_Fwd@0.97 > A_CT_Jog_FwdLeft@0.73 > A_CT_Jog_Left@0.50
+## chain_sscut
+  v222fin p    L  59.0/ 78.0 R   3.2/ 10.0 | dt 0.0333 max 0.033 | rec - | Cut_R_090_Lfoot@0.70 > A_SHM_Sprint_Curve_L25@0.43 > J2S_Rfoot_a@0.70 > A_C01R_Sprint_WalkToSp@1.03 > Cut_L_090_Rfoot@0.77 > A_SHM_Sprint_Curve_R25@1.37
+## chain_walk
+  v222fin p    L  22.5/ 24.3 R   5.6/  5.0 | dt 0.0333 max 0.033 | rec - | M_Ranger_Walk_Loop_F_P@2.83 > A_LB_Walk_Fwd@4.80 > SHM_M_Neutral_Walk_Sto@1.13 > af_Stand_Idle_NaturalB@57.77 > SHM_M_Neutral_Stand_Tu@0.13 > M_Ranger_Walk_Loop_F_P@2.73
+## d_jog
+  v222fin o    L   7.1/ 12.8 R   8.1/  9.9 | dt 0.0333 max 0.033 | rec - | A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53
+  v222fin p    L   7.1/ 12.8 R   8.1/  9.9 | dt 0.0333 max 0.033 | rec - | A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53
+## d_sprint
+  v222fin o    L   8.8/ 14.3 R   8.6/ 16.4 | dt 0.0333 max 0.033 | rec - | A_RR_M_Relaxed_Run_Sta@0.76 > A_LB_Sprint_Fwd@2.23 > A_SHM_Sprint_Curve_R12@0.50 > A_LB_Sprint_Fwd@0.77 > A_SHM_Sprint_Curve_R12@1.73 > A_LB_Sprint_Fwd@2.00 > A_SHM_Sprint_Curve_L12@0.70 > A_LB_Sprint_Fwd@1.33
+  v222fin p    L   8.8/ 14.3 R   8.6/ 16.4 | dt 0.0333 max 0.033 | rec - | A_RR_M_Relaxed_Run_Sta@0.76 > A_LB_Sprint_Fwd@2.23 > A_SHM_Sprint_Curve_R12@0.50 > A_LB_Sprint_Fwd@0.77 > A_SHM_Sprint_Curve_R12@1.73 > A_LB_Sprint_Fwd@2.00 > A_SHM_Sprint_Curve_L12@0.70 > A_LB_Sprint_Fwd@1.33
+## d_walk
+  v222fin o    L   5.4/  5.3 R   6.2/  5.9 | dt 0.0333 max 0.033 | rec - | A_LB_Walk_Fwd@6.81
+  v222fin p    L   6.4/  7.9 R   6.8/  9.0 | dt 0.0333 max 0.033 | rec - | M_Ranger_Walk_Loop_F_P@2.83 > A_LB_Walk_Fwd@4.80
+## k_cut_back
+  v222fin p    L   9.0/ 15.1 R  11.7/ 15.7 | dt 0.0333 max 0.033 | rec - | A_LB_Sprint_Fwd@1.86 > A_SHM_Sprint_Curve_R25@1.93 > Cut_R_090_Lfoot@0.47 > A_CP2_Jog_Fwd_Pivot@0.17 > BackLink_4@0.03 > A_RB_Run_Rear@0.77
+## k_ws_clean
+  v222fin p    L  41.9/ 47.5 R  27.8/ 43.4 | dt 0.0333 max 0.033 | rec - | W2S_Lfoot_a@0.84 > A_LB_Sprint_Fwd@0.97 > SHM_A_RR_M_Relaxed_Run@0.37 > A_LB_Sprint_Fwd@2.03 > A_LR_Run_Pivot_F_B_Lfo@0.13 > SHM_JogQ_af_Loco_Jog_B@0.03 > BackLink_3@0.03 > A_RB_Run_Rear@1.23 > SHM_M_Neutral_Walk_Sto@0.77
+## legs_slope_jog
+  v222fin p    L  16.9/ 25.4 R  27.8/ 43.6 | dt 0.0333 max 0.033 | rec - | A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53 > SHM_A_CP2_Jog_Fwd_Stop@0.73 > SHM_M_Neutral_Stand_Tu@0.13 > A_CP2_Jog_Fwd_Start@0.00 > SHM_JogQ_A_CP2_Jog_Fwd@0.00 > A_CP2_Jog_Fwd_Start@0.60 > A_GR_Jog_Fwd_Contact@0.47 > A_CT_Jog_Fwd@0.53
+## map_r1
+  v222fin o    L  15.5/ 18.0 R  18.8/ 23.9 | dt 0.0333 max 0.033 | rec 18.73 | af_Stand_Idle_NaturalB@78.90 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@3.20 > A_CT_Jog_Fwd@0.43
+  v222fin p    L  10.6/ 19.9 R  10.2/ 25.2 | dt 0.0333 max 0.033 | rec 18.73 | af_Stand_Idle_NaturalB@78.83 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@5.50 > A_CT_Jog_Fwd@0.57
+## map_r2
+  v222fin o    L  14.0/ 17.8 R   8.3/  9.9 | dt 0.0333 max 0.033 | rec 18.73 | SHM_M_Neutral_Stand_Tu@0.57 > M_Ranger_Walk_Loop_F_P@2.70 > A_LB_Walk_Fwd@3.83 > A_CT_Jog_Fwd@0.10
+  v222fin p    L  14.5/ 16.9 R   7.8/ 16.1 | dt 0.0333 max 0.033 | rec 18.73 | SHM_M_Neutral_Stand_Tu@0.57 > M_Ranger_Walk_Loop_F_P@2.70 > A_LB_Walk_Fwd@4.80 > A_CT_Jog_Fwd@0.13
+## map_r3
+  v222fin o    L  11.8/ 10.5 R   6.2/  8.0 | dt 0.0333 max 0.033 | rec 18.73 | SHM_M_Neutral_Stand_Tu@0.57 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@6.57 > A_CT_Jog_Fwd@0.10
+  v222fin p    L  20.5/ 24.3 R  12.5/ 15.4 | dt 0.0333 max 0.033 | rec 18.73 | SHM_M_Neutral_Stand_Tu@0.57 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@6.17 > A_CT_Jog_Fwd@0.17
+## p_revpush
+  v222fin p    L  15.6/ 27.0 R   3.5/  1.5 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@68.03 > M_Ranger_Walk_Loop_F_P@2.73 > W2S_Lfoot_a@0.70 > A_LB_Sprint_Fwd@0.97
+## pilot
+  v222fin o    L   9.3/ 13.7 R  23.4/ 34.3 | dt 0.0333 max 0.033 | rec 26.73 | af_Stand_Idle_NaturalB@78.90 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@3.17
+  v222fin p    L  20.9/ 34.2 R   6.2/  6.3 | dt 0.0333 max 0.033 | rec 26.73 | af_Stand_Idle_NaturalB@78.93 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@5.47
+## r_cutrev_l
+  v222fin p    L   6.4/  8.1 R   6.2/ 11.3 | dt 0.0333 max 0.033 | rec - | Cut_L_090_Lfoot@0.67 > Cut_R_090_Rfoot@0.50 > RevTurn_R_Rfoot@0.53 > A_LB_Sprint_Fwd@0.90
+## r_cutrev_l0
+  v222fin p    L   4.2/  9.7 R  11.8/ 11.2 | dt 0.0333 max 0.033 | rec 5.23 | A_LB_Sprint_Fwd@1.89 > A_SHM_Sprint_Curve_L25@1.93 > Cut_L_090_Lfoot@0.47 > Recover_R_Lfoot@1.10 > A_LB_Sprint_Fwd@1.77
+## r_cutrev_r
+  v222fin p    L   3.2/ 19.6 R   5.6/ 13.9 | dt 0.0333 max 0.033 | rec - | Cut_R_090_Lfoot@0.67 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@0.37
+## r_cutrev_r0
+  v222fin p    L   3.0/  3.0 R  11.7/ 13.7 | dt 0.0333 max 0.033 | rec 5.23 | A_LB_Sprint_Fwd@1.89 > A_SHM_Sprint_Curve_R25@1.93 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > A_LB_Sprint_Fwd@0.07
+## r_cutrev_r0_rel
+  v222fin p    L   2.6/  4.6 R  12.6/ 17.4 | dt 0.0333 max 0.033 | rec 5.23 | W2S_Lfoot_a@0.84 > A_LB_Sprint_Fwd@0.97 > A_SHM_Sprint_Curve_R25@1.93 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > SHM_A_RR_M_Relaxed_Run@1.00
+## r_cutrev_r0_w
+  v222fin p    L   8.4/  9.4 R  11.7/ 12.1 | dt 0.0333 max 0.033 | rec 5.23 | W2S_Lfoot_a@0.84 > A_LB_Sprint_Fwd@0.97 > A_SHM_Sprint_Curve_R25@1.93 > Cut_R_090_Lfoot@0.47 > Recover_L_Lfoot@1.10 > SHM214_RevPush_Rfoot@1.47 > A_LB_Sprint_Fwd@1.10 > SHM_A_RR_M_Relaxed_Run@0.43
+## ss_realign
+  v222fin o    L  15.0/ 25.8 R  11.1/ 20.3 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@69.07 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_FR_R@0.00 > SHM_StartTransfer_BL_L@0.00 > af_Stand_Idle_NaturalB@78.27 > M_Neutral_Walk_Loop_F_@0.23 > SHM_StartTransfer_FL_L@0.00 > SHM_StartTransfer_B_Rf@0.00 > af_Stand_Idle_NaturalB@78.27
+  v222fin p    L  15.0/ 25.8 R  11.1/ 20.3 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@69.07 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_FR_R@0.00 > SHM_StartTransfer_BL_L@0.00 > af_Stand_Idle_NaturalB@78.27 > M_Neutral_Walk_Loop_F_@0.23 > SHM_StartTransfer_FL_L@0.00 > SHM_StartTransfer_B_Rf@0.00 > af_Stand_Idle_NaturalB@78.23
+## ss_taphold
+  v222fin o    L  13.0/ 36.7 R   7.0/ 11.0 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@78.90 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@3.17 > SHM_M_Neutral_Walk_Sto@1.40 > af_Stand_Idle_NaturalB@57.77 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_RL_R@0.00 > SHM_StartTransfer_BL_L@0.00 > SHM_StartTransfer_RR_R@0.00
+  v222fin p    L  10.4/ 25.4 R   7.1/  9.0 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@78.93 > M_Ranger_Walk_Loop_F_P@2.73 > A_LB_Walk_Fwd@5.47 > SHM_M_Neutral_Walk_Sto@1.20 > af_Stand_Idle_NaturalB@57.77 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_RL_R@0.00 > SHM_StartTransfer_BL_L@0.00 > SHM_StartTransfer_RR_R@0.00
+## ss_taps
+  v222fin o    L  12.1/ 25.1 R  24.4/ 23.1 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@78.90 > A_CR_Stand_M_Neutral_W@0.00 > SHM_StartTransfer_B_Rf@0.00 > af_Stand_Idle_NaturalB@9.57 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_RL_R@0.00 > SHM_StartTransfer_BL_L@0.00 > af_Stand_Idle_NaturalB@78.27 > M_Neutral_Walk_Shuffle@1.33
+  v222fin p    L  12.1/ 25.1 R  22.4/ 45.4 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@78.93 > A_CR_Stand_M_Neutral_W@0.00 > SHM_StartTransfer_B_Rf@0.00 > af_Stand_Idle_NaturalB@9.57 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_RL_R@0.00 > SHM_StartTransfer_BL_L@0.00 > af_Stand_Idle_NaturalB@78.27 > M_Neutral_Walk_Shuffle@1.33
+## t_tipw_early
+  v222fin o    L   7.8/  6.6 R  12.0/ 13.9 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@69.07 > M_Neutral_Walk_Loop_F_@2.70 > SHM_StartTransfer_FR_R@0.00 > SHM_StartTransfer_F_Rf@0.00 > A_LB_Walk_Fwd@2.87 > SHM_M_Neutral_Walk_Sto@1.40
+  v222fin p    L   7.8/  6.6 R  12.0/ 13.9 | dt 0.0333 max 0.033 | rec - | af_Stand_Idle_NaturalB@69.07 > M_Neutral_Walk_Loop_F_@2.70 > SHM_StartTransfer_FR_R@0.00 > SHM_StartTransfer_F_Rf@0.00 > A_LB_Walk_Fwd@2.87 > SHM_M_Neutral_Walk_Sto@1.40
+## ter_hill8_walk
+  v222fin o    L   6.9/  8.2 R   6.2/  5.6 | dt 0.0333 max 0.033 | rec - | A_LB_Walk_Fwd@6.81
+  v222fin p    L   6.3/  5.5 R   5.7/  4.7 | dt 0.0333 max 0.033 | rec - | M_Ranger_Walk_Loop_F_P@2.83 > A_LB_Walk_Fwd@4.80
+## wstart
+  v222fin o    L  12.3/ 25.8 R   2.3/  6.4 | dt 0.0333 max 0.033 | rec - | A_LB_Walk_Fwd@6.81 > SHM_M_Neutral_Walk_Sto@1.20 > af_Stand_Idle_NaturalB@57.77 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_FR_R@0.00 > A_LB_Walk_FwdRight@0.13 > SHM_M_Neutral_Walk_Sto@1.33 > M_Neutral_Walk_Loop_F_@2.23 > SHM_StartTransfer_FL_R@0.00
+  v222fin p    L  12.3/ 25.2 R   3.7/  7.8 | dt 0.0333 max 0.033 | rec - | M_Ranger_Walk_Loop_F_P@2.83 > SHM_M_Neutral_Walk_Sto@1.23 > af_Stand_Idle_NaturalB@57.77 > M_Neutral_Walk_Loop_F_@2.73 > SHM_StartTransfer_FR_R@0.00 > A_LB_Walk_FwdRight@0.13 > SHM_M_Neutral_Walk_Sto@1.33 > M_Neutral_Walk_Loop_F_@2.23 > SHM_StartTransfer_FL_R@0.00
+d_walk p   RANGE head f/l/u 7.8/5.5/0.6  handL f/l/u 25.5/8.1/2.6  handR f/l/u 21.2/5.2/3.2  pitch 8.0..18.3
+d_walk o   RANGE head f/l/u 4.3/4.1/0.8  handL f/l/u 27.5/12.0/2.6  handR f/l/u 45.9/6.2/13.4  pitch 8.1..17.5
+a_restart2 p   RANGE head f/l/u 7.8/5.4/0.6  handL f/l/u 25.5/8.1/2.6  handR f/l/u 21.2/5.2/3.3  pitch 8.0..18.3
+a_restart2 o   RANGE head f/l/u 4.3/4.1/0.8  handL f/l/u 27.5/12.0/2.6  handR f/l/u 45.9/6.2/13.4  pitch 8.1..17.5
+r_cutrev_r p   RANGE head f/l/u 21.1/18.0/11.2  handL f/l/u 55.7/32.0/24.5  handR f/l/u 33.4/28.1/13.4  pitch 25.6..46.6
+r_cutrev_l p   RANGE head f/l/u 32.9/24.6/17.6  handL f/l/u 73.2/72.5/27.0  handR f/l/u 63.1/43.9/20.0  pitch 11.0..46.9
+CAM v222fin_d_walk_o_r1                      fov 60.0..60.9 (rng 0.90) dF1 0.10 rate 3.0 pump 0 | zjump 0.33 zjerk 0.8 | hgt 145..153 | dist 218..228 jerk 5.9 | roll 0.60 dR 0.03 dP 0.00 dY 4.00 | frame 11.0 | steps 1.40/s | camsteps 1.65/s dip -0.35
+CAM v222fin_d_walk_p_r1                      fov 60.0..60.9 (rng 0.90) dF1 0.10 rate 3.0 pump 0 | zjump 0.20 zjerk 0.8 | hgt 145..153 | dist 196..206 jerk 5.1 | roll 0.54 dR 0.03 dP 0.00 dY 4.00 | frame 12.5 | steps 1.21/s | camsteps 1.59/s dip -0.35
+CAM v222fin_d_jog_o_r1                       fov 60.0..62.6 (rng 2.60) dF1 0.20 rate 5.9 pump 0 | zjump 0.36 zjerk 1.4 | hgt 145..152 | dist 220..244 jerk 16.5 | roll 0.49 dR 0.03 dP 0.00 dY 4.01 | frame 9.0 | steps 2.09/s | camsteps 2.35/s dip -0.60
+CAM v222fin_d_jog_p_r1                       fov 60.0..62.6 (rng 2.60) dF1 0.20 rate 5.9 pump 0 | zjump 0.43 zjerk 1.4 | hgt 145..152 | dist 199..226 jerk 13.3 | roll 0.49 dR 0.03 dP 0.00 dY 4.01 | frame 9.8 | steps 1.97/s | camsteps 2.35/s dip -0.60
+CAM v222fin_d_sprint_o_r1                    fov 60.2..65.0 (rng 4.80) dF1 0.20 rate 6.1 pump 0 | zjump 0.51 zjerk 1.9 | hgt 134..152 | dist 200..262 jerk 11.8 | roll 0.76 dR 0.05 dP 0.00 dY 4.02 | frame 9.0 | steps 1.08/s | camsteps 1.21/s dip -0.90
+CAM v222fin_d_sprint_p_r1                    fov 60.2..65.0 (rng 4.80) dF1 0.20 rate 6.1 pump 0 | zjump 0.55 zjerk 1.8 | hgt 134..152 | dist 180..254 jerk 14.1 | roll 0.78 dR 0.05 dP 0.00 dY 4.02 | frame 10.0 | steps 1.14/s | camsteps 1.78/s dip -0.90
+CAM v222fin_pilot_o_r1                       fov 60.0..65.0 (rng 5.00) dF1 0.20 rate 6.1 pump 0 | zjump 10.99 zjerk 31.8 | hgt 138..162 | dist 200..263 jerk 20.8 | roll 0.64 dR 0.05 dP 0.00 dY 0.37 | frame 12.2 | steps 1.40/s | camsteps 1.85/s dip -0.90
+CAM v222fin_pilot_p_r1                       fov 60.0..65.0 (rng 5.00) dF1 0.20 rate 6.1 pump 0 | zjump 11.28 zjerk 32.2 | hgt 135..162 | dist 181..251 jerk 14.4 | roll 0.72 dR 0.04 dP 0.00 dY 0.37 | frame 13.0 | steps 1.47/s | camsteps 1.78/s dip -0.90
+CAM v222fin_map_r1_o_r1                      fov 60.0..64.9 (rng 4.90) dF1 0.30 rate 9.1 pump 3 | zjump 4.85 zjerk 13.5 | hgt 107..155 | dist 134..255 jerk 401.3 | roll 0.78 dR 0.06 dP 0.00 dY 12.00 | frame 18.4 | steps 1.02/s | camsteps 1.14/s dip -0.90
+CAM v222fin_map_r1_p_r1                      fov 60.0..64.9 (rng 4.90) dF1 0.30 rate 9.1 pump 3 | zjump 4.70 zjerk 13.4 | hgt 107..153 | dist 132..247 jerk 321.3 | roll 0.78 dR 0.06 dP 0.00 dY 12.00 | frame 19.7 | steps 0.90/s | camsteps 1.23/s dip -0.90
+CAM v222fin_map_r2_o_r1                      fov 60.0..64.9 (rng 4.90) dF1 0.20 rate 6.1 pump 0 | zjump 0.84 zjerk 2.5 | hgt 129..155 | dist 200..258 jerk 24.3 | roll 0.60 dR 0.06 dP 0.00 dY 12.00 | frame 12.0 | steps 0.90/s | camsteps 1.19/s dip -0.90
+CAM v222fin_map_r2_p_r1                      fov 60.0..64.9 (rng 4.90) dF1 0.20 rate 6.1 pump 0 | zjump 0.73 zjerk 3.3 | hgt 129..154 | dist 180..249 jerk 17.8 | roll 0.61 dR 0.06 dP 0.00 dY 12.00 | frame 14.8 | steps 0.86/s | camsteps 1.19/s dip -0.90
+CAM v222fin_map_r3_o_r1                      fov 60.0..64.8 (rng 4.80) dF1 0.20 rate 6.1 pump 5 | zjump 1.58 zjerk 4.8 | hgt 134..154 | dist 199..249 jerk 24.0 | roll 0.75 dR 0.06 dP 0.00 dY 12.00 | frame 13.7 | steps 1.14/s | camsteps 1.35/s dip -0.90
+CAM v222fin_map_r3_p_r1                      fov 60.0..64.8 (rng 4.80) dF1 0.20 rate 6.1 pump 5 | zjump 1.60 zjerk 4.9 | hgt 134..154 | dist 179..243 jerk 16.4 | roll 0.73 dR 0.06 dP 0.00 dY 12.00 | frame 14.5 | steps 0.94/s | camsteps 1.27/s dip -0.90
+CAM v222fin_cam_corr_o_r1                    fov 60.2..62.6 (rng 2.40) dF1 0.10 rate 3.0 pump 0 | zjump 0.44 zjerk 1.4 | hgt 109..152 | dist 59..229 jerk 158.6 | roll 0.12 dR 0.02 dP 0.00 dY 6.00 | frame 58.9 | steps 0.90/s | camsteps 1.06/s dip -0.60
+CAM v222fin_cam_corr_p_r1                    fov 60.2..62.6 (rng 2.40) dF1 0.10 rate 3.0 pump 0 | zjump 0.36 zjerk 1.4 | hgt 109..152 | dist 59..209 jerk 154.2 | roll 0.13 dR 0.02 dP 0.00 dY 6.00 | frame 58.9 | steps 0.90/s | camsteps 0.98/s dip -0.60
+COL v222fin_cam_corr_o_r1                pen frames 0 max 0.0 cm | max d(dist)/frame 18.5 cm | orbit dist 59..96
+COL v222fin_cam_corr_p_r1                pen frames 0 max 0.0 cm | max d(dist)/frame 18.0 cm | orbit dist 59..96
+SS v222fin_ss_taps_o_r1            2.00 W   move   2.8 cm (  2.8,  0.0) peak  23 rest 0.27 | L 12.4/13.0 R  2.2/ 0.0 steps 2+0 | af_Stand_Idle_NaturalBas > M_Ranger_Walk_Loop_F_Pur > SHM_StartTransfer_BL_Lfo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_o_r1            3.50 S   move   2.3 cm ( -2.3,  0.0) peak  19 rest 0.27 | L  5.4/ 1.0 R 12.9/10.7 steps 0+2 | af_Stand_Idle_NaturalBas > A_CR_Stand_M_Neutral_Wal > SHM_StartTransfer_B_Rfoo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_o_r1            5.00 D   move   2.5 cm (  0.0,  2.5) peak  20 rest 0.27 | L 11.8/22.4 R 13.2/ 8.0 steps 1+1 | af_Stand_Idle_NaturalBas > M_Neutral_Walk_Loop_F_R_ > SHM_StartTransfer_RL_Rfo > SHM_StartTransfer_BL_Lfo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_o_r1            6.50 A   move   2.5 cm (  0.0, -2.5) peak  20 rest 0.27 | L  8.1/ 3.4 R  6.6/ 9.4 steps 1+3 | af_Stand_Idle_NaturalBas > M_Neutral_Walk_Shuffle_L > SHM_StartTransfer_LL_Lfo > SHM_StartTransfer_B_Rfoo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_o_r1            8.00 WD  move   4.2 cm (  3.0,  3.0) peak  27 rest 0.33 | L  9.1/21.7 R  3.0/ 0.0 steps 1+0 | af_Stand_Idle_NaturalBas > M_Neutral_Walk_Loop_F_R_ > SHM_StartTransfer_FR_Rfo > SHM_StartTransfer_BL_Lfo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_o_r1            9.70 W   move  16.7 cm ( 16.7,  0.0) peak  57 rest 0.63 | L  9.3/12.0 R  1.4/ 1.4 steps 1+1 | af_Stand_Idle_NaturalBas > M_Ranger_Walk_Loop_F_Pur > SHM_StartTransfer_B_Rfoo > SHM_M_Neutral_Walk_Stop_
+SS v222fin_ss_taps_o_r1           11.60 S   move  11.9 cm (-11.9,  0.0) peak  44 rest 0.57 | L  1.2/ 0.0 R  4.2/ 4.9 steps 1+1 | SHM_M_Neutral_Walk_Stop_ > A_CR_Stand_M_Neutral_Wal > SHM_StartTransfer_B_Rfoo > A_CR_Stand_M_Neutral_Wal > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_p_r1            2.00 W   move   2.8 cm (  2.8,  0.0) peak  23 rest 0.27 | L 12.2/23.0 R  2.2/ 0.0 steps 1+0 | af_Stand_Idle_NaturalBas > M_Ranger_Walk_Loop_F_Pur > SHM_StartTransfer_BL_Lfo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_p_r1            3.50 S   move   2.3 cm ( -2.3,  0.0) peak  19 rest 0.27 | L  5.4/ 1.0 R 14.4/19.6 steps 0+1 | af_Stand_Idle_NaturalBas > A_CR_Stand_M_Neutral_Wal > SHM_StartTransfer_B_Rfoo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_p_r1            5.00 D   move   2.5 cm (  0.0,  2.5) peak  20 rest 0.27 | L 11.8/22.4 R 13.7/23.2 steps 1+0 | af_Stand_Idle_NaturalBas > M_Neutral_Walk_Loop_F_R_ > SHM_StartTransfer_RL_Rfo > SHM_StartTransfer_BL_Lfo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_p_r1            6.50 A   move   2.5 cm (  0.0, -2.5) peak  20 rest 0.27 | L  8.1/ 3.4 R 10.9/13.4 steps 1+2 | af_Stand_Idle_NaturalBas > M_Neutral_Walk_Shuffle_L > SHM_StartTransfer_LL_Lfo > SHM_StartTransfer_B_Rfoo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_p_r1            8.00 WD  move   4.2 cm (  3.0,  3.0) peak  27 rest 0.33 | L  9.1/21.7 R  3.4/ 1.5 steps 1+0 | af_Stand_Idle_NaturalBas > M_Neutral_Walk_Loop_F_R_ > SHM_StartTransfer_FR_Rfo > SHM_StartTransfer_BL_Lfo > af_Stand_Idle_NaturalBas
+SS v222fin_ss_taps_p_r1            9.70 W   move  16.7 cm ( 16.7,  0.0) peak  57 rest 0.63 | L  4.8/11.0 R  3.0/ 1.4 steps 1+1 | af_Stand_Idle_NaturalBas > M_Ranger_Walk_Loop_F_Pur > SHM_StartTransfer_B_Rfoo > SHM_M_Neutral_Walk_Stop_
+SS v222fin_ss_taps_p_r1           11.60 S   move  11.9 cm (-11.9,  0.0) peak  44 rest 0.57 | L  1.2/ 0.0 R  4.1/ 4.9 steps 0+1 | SHM_M_Neutral_Walk_Stop_ > A_CR_Stand_M_Neutral_Wal > SHM_StartTransfer_B_Rfoo > A_CR_Stand_M_Neutral_Wal > af_Stand_Idle_NaturalBas

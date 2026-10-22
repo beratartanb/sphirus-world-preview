@@ -1,0 +1,17 @@
+--- Saved/Codex/SHME_V222_20261022/checkpoint/tools_v1/shm_src.py.v222a	2026-10-21 21:39:26.471121600 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-22 05:51:42.057195200 +0300
+@@ -1014,6 +1014,14 @@
+   (bind fTau (select (> fT CamFOVSpd) (R CamFOVRiseTau) (R CamFOVFallTau)))
+   (set CamFOVSpd (select tele 0.0 (+ CamFOVSpd (* (- fT CamFOVSpd) (- 1.0 (exp (/ (- 0.0 h) (max fTau 0.05))))))))
+   (set CamFOVDelta (+ CamFOVDelta (* CamFOVSpd fx)))
++  ; ---- V2.22 closeness by speed: boom x k(v) (stand / walk 140 / jog 300 / sprint 490 cm/s keys), outdoors only (x CamOpenness)
++  (bind kw (lerp (R CamCloseStand) (R CamCloseWalk) (clamp (/ Speed 140.0) 0.0 1.0)))
++  (bind kj (lerp (R CamCloseWalk) (R CamCloseJog) (clamp (/ (- Speed 140.0) 160.0) 0.0 1.0)))
++  (bind ks (lerp (R CamCloseJog) (R CamCloseSprint) (clamp (/ (- Speed 300.0) 190.0) 0.0 1.0)))
++  (bind kv (select (< Speed 140.0) kw (select (< Speed 300.0) kj ks)))
++  (bind kt (select (R CamCloseEnabled) (lerp 1.0 kv CamOpenness) 1.0))
++  (set CamCloseK (select tele kt (+ CamCloseK (* (- kt CamCloseK) (- 1.0 (exp (/ (- 0.0 h) (max (R CamCloseTau) 0.05))))))))
++  (set CamBoomScale (* CamBoomScale CamCloseK))
+   ; comfort scale (CamComfortScale 1 = authored, ~0.3 = low-motion profile): the WHOLE SHME camera offset and FOV change
+   (bind cs (clamp (R CamComfortScale) 0.0 1.0))
+   (set CamOffset (vscale CamOffset cs))

@@ -1,0 +1,210 @@
+"""rb222_revturn.py (editor job) - V2.22 B: a NEW upper-body performance for the post-turn re-acceleration clips SHM216_RevTurn_*.
+Measured (clipscan222 + body222 on v221fin r_cutrev_r): the clip legs / root / contacts are the V2.16-V2.19 re-planted ones (production
+contact numbers), but the upper body is the vendor sprint-turn performance: trunk pitch up to 32 deg (sprint loop 20-25), roll -15..+20
+(loop -4..+7), head +-20 cm lateral (loop +-9), hands up to 69 cm forward / 45 up, at runtime pitch 42-50 deg and arms flung to 41 deg
+abduction while the capsule re-accelerates 132 -> 416 cm/s = the 'start a race again' gesture.
+Design (legs, root, pelvis untouched - readback must show 0 change there):
+  phase   : the clip's own heel strikes (ball height in root space) are mapped onto the loops' heel strikes of the same foot, in order;
+            loop time is piecewise-linear between them (extrapolated with the first / last interval) -> arms / trunk swing with the
+            legs that actually step (contralateral arm forward with each step), whatever the clip's cadence.
+  trunk   : spine_05 orientation in the HEADING frame (root rotation) = the loop's, blended jog (A_CT_Jog_Fwd) -> sprint
+            (A_LB_Sprint_Fwd) by the clip's own root speed (250 -> 416 cm/s); spine locals = the loop's, the residual heading-frame
+            difference applied at spine_01; KEEP_TWIST of the source's chest-vs-pelvis yaw is kept (the shoulders still lead the turn).
+  arms / neck / head: the loop's locals at the mapped phase (same jog -> sprint blend).
+  entry   : source -> new over [ENTRY0, ENTRY1] (smoothstep), so the cut clip's exit pose is still met at the MM entry window (0.52-0.68).
+Source keys are cached once in Saved/Codex/SHME_V222_20261022/revturn_src/<clip>.json (every bake starts from the ORIGINAL keys).
+Clips are project-owned (SHME/Animations/V216) and baked IN PLACE (file checkpoint in Saved/Codex/SHME_V222_20261022/checkpoint/revturn/).
+builtins.RB222 = {'dry_run': True, 'only': None, 'keep_twist': 0.5, 'entry0': 0.50, 'entry1': 0.95, 'v_jog': 250, 'v_sprint': 416}.
+Prints RB222 per clip: contacts used, phase map, trunk pitch / roll ranges before -> after, hand fwd / up / abduction ranges, readback."""
+import unreal as u, json, math, builtins, pathlib, importlib, sys
+P = pathlib.Path(u.Paths.project_dir()).resolve(); sys.path.insert(0, str(P / 'Tools/SHME_V1_20260925'))
+import v137_animedit as ae; importlib.reload(ae)
+AL = u.AnimationLibrary; EAL = u.EditorAssetLibrary
+cfg = getattr(builtins, 'RB222', {}); DRY = bool(cfg.get('dry_run', True)); ONLY = cfg.get('only')
+KEEP_TWIST = float(cfg.get('keep_twist', 0.5)); E0 = float(cfg.get('entry0', 0.50)); E1 = float(cfg.get('entry1', 0.95))
+VJ = float(cfg.get('v_jog', 250.0)); VS = float(cfg.get('v_sprint', 416.0)); FPS = 30.0
+CLIPS = ['/Game/GraceRanger/SHME/Animations/V216/SHM216_RevTurn_' + s for s in ('L_Lfoot', 'L_Rfoot', 'R_Lfoot', 'R_Rfoot')]
+JOG = '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Fwd'; SPR = '/Game/GraceRanger/Animations/LocomotionBehavior/A_LB_Sprint_Fwd'
+SRC = P / 'Saved/Codex/SHME_V222_20261022/revturn_src'; SRC.mkdir(parents=True, exist_ok=True)
+UB = ['spine_01', 'spine_02', 'spine_03', 'spine_04', 'spine_05', 'neck_01', 'neck_02', 'head', 'clavicle_l', 'clavicle_r', 'upperarm_l', 'upperarm_r', 'lowerarm_l', 'lowerarm_r', 'hand_l', 'hand_r']
+KEY = ['root', 'pelvis', 'spine_05', 'head', 'hand_l', 'hand_r', 'ball_l', 'ball_r', 'foot_l', 'foot_r', 'upperarm_l', 'upperarm_r']
+def slerp(a, b, t):
+    d = sum(a[i] * b[i] for i in range(4))
+    if d < 0: b = tuple(-x for x in b); d = -d
+    if d > 0.9995: return ae.qnorm(tuple(a[i] + (b[i] - a[i]) * t for i in range(4)))
+    th = math.acos(min(d, 1.0)); s = math.sin(th)
+    return tuple((math.sin((1 - t) * th) * a[i] + math.sin(t * th) * b[i]) / s for i in range(4))
+def lerp(a, b, t): return tuple(a[i] + (b[i] - a[i]) * t for i in range(len(a)))
+def sm(x): x = min(1.0, max(0.0, x)); return x * x * (3 - 2 * x)
+def yaw_of(q):
+    f = ae.qrot(q, (0.0, 1.0, 0.0)); return math.degrees(math.atan2(f[1], f[0]))
+class Loop:
+    def __init__(self, path):
+        self.seq = u.load_asset(path); self.n = ae.num_frames(self.seq); self.T = (self.n - 1) / FPS
+        self.clip = ae.Clip(self.seq, KEY + UB); self.L = self.clip.local
+        self.hs = {s: [] for s in 'lr'}; bz = {s: [self.rel('ball_' + s, f)[2] for f in range(self.n)] for s in 'lr'}
+        for s in 'lr':
+            z0 = min(bz[s])
+            for f in range(1, self.n):
+                if bz[s][f] < z0 + 1.5 and bz[s][f - 1] >= z0 + 1.5: self.hs[s].append(f / FPS)
+    def rel(self, b, f):
+        tmp = dict(self.L); r = self.L['root'][f]; tmp['root'] = [((0, 0, 0), (0, 0, 0, 1), r[2])] * self.n
+        return self.clip.comp(b, f, tmp)[0]
+    def legs(self):
+        """leg phase table: D = fore-aft separation foot_l - foot_r (root frame, +Y forward), its slope, normalised by the max; mean locals"""
+        self.D = [self.rel('foot_l', f)[1] - self.rel('foot_r', f)[1] for f in range(self.n)]
+        self.Dmax = max(abs(x) for x in self.D)
+        self.DD = [self.D[min(f + 1, self.n - 1)] - self.D[max(f - 1, 0)] for f in range(self.n)]
+        self.mean = {}
+        for bb in UB:
+            q0 = self.L[bb][0][1]; acc = [0.0, 0.0, 0.0, 0.0]; tt = [0.0, 0.0, 0.0]
+            for f in range(self.n - 1):
+                q = self.L[bb][f][1]; sgn = 1.0 if sum(q[i] * q0[i] for i in range(4)) >= 0 else -1.0
+                for i in range(4): acc[i] += sgn * q[i]
+                for i in range(3): tt[i] += self.L[bb][f][0][i]
+            self.mean[bb] = (tuple(x / (self.n - 1) for x in tt), ae.qnorm(tuple(acc)), self.L[bb][0][2])
+    def phase_of(self, dn, slope):
+        """loop time whose normalised leg separation / slope sign best match the clip's"""
+        best = None
+        for f in range(self.n - 1):
+            c = (dn - self.D[f] / self.Dmax) ** 2 + (0.35 if (slope > 0) != (self.DD[f] > 0) else 0.0)
+            if best is None or c < best[0]: best = (c, f)
+        return best[1] / FPS
+    def local_at(self, b, tau):
+        x = (tau % self.T) * FPS; i = int(math.floor(x)); w = x - i; i = min(i, self.n - 2)
+        (t0, q0, s0), (t1, q1, s1) = self.L[b][i], self.L[b][i + 1]
+        return (lerp(t0, t1, w), slerp(q0, q1, w), lerp(s0, s1, w))
+    def heading_rot(self, b, tau):
+        """component rotation of bone b in the loop's root frame at loop time tau"""
+        loc = {x: [self.local_at(x, tau)] for x in self.clip.parent if x in self.L}
+        q = self.clip.comp(b, 0, loc)[1]; qr = self.clip.comp('root', 0, loc)[1]
+        return ae.qnorm(ae.qmul(ae.qinv(qr), q))
+jog = Loop(JOG); spr = Loop(SPR); jog.legs(); spr.legs()
+out = {'loops': {'jog': {'T': round(jog.T, 3), 'hs': {s: [round(x, 3) for x in jog.hs[s]] for s in 'lr'}}, 'sprint': {'T': round(spr.T, 3), 'hs': {s: [round(x, 3) for x in spr.hs[s]] for s in 'lr'}}}, 'clips': {}}
+def phase_map(events, lp):
+    """events [(t_clip, foot)] sorted -> list of (t_clip, tau_loop) anchors, monotonic. A strike of the SAME foot as the previous one
+    is a re-plant (pivot / adjusting step), not a new gait step: it is skipped, so the phase moves slowly through a pivot (v1 advanced a
+    whole loop period for each -> 0.3 s arm / trunk flail, pitch -10 deg in RevTurn_R_Rfoot)"""
+    anchors = []; tau = None; last = None
+    for t, s in events:
+        if s == last: continue
+        last = s
+        cand = [h + k * lp.T for k in range(0, 40) for h in lp.hs[s]]
+        tau = min(c for c in cand if tau is None or c > tau + 0.05) if tau is not None else min(lp.hs[s])
+        anchors.append((t, tau))
+    return anchors
+def tau_at(anchors, t, lp):
+    if len(anchors) < 2: return t
+    if t <= anchors[0][0]: (a, ta), (b, tb) = anchors[0], anchors[1]
+    elif t >= anchors[-1][0]: (a, ta), (b, tb) = anchors[-2], anchors[-1]
+    else:
+        i = max(k for k in range(len(anchors)) if anchors[k][0] <= t); (a, ta), (b, tb) = anchors[i], anchors[i + 1]
+    return ta + (t - a) * (tb - ta) / max(b - a, 1e-4)
+for path in CLIPS:
+    name = path.rsplit('/', 1)[-1]
+    if ONLY and name not in ONLY: continue
+    seq = u.load_asset(path); n = ae.num_frames(seq)
+    names = [str(x) for x in AL.get_animation_track_names(seq)]
+    sj = SRC / (name + '.json')
+    if not sj.exists():
+        loc0 = ae.read_local(seq, names, list(range(n))); sj.write_text(json.dumps({b: [[list(k[0]), list(k[1]), list(k[2])] for k in loc0[b]] for b in loc0}))
+    S = {b: [(tuple(k[0]), tuple(k[1]), tuple(k[2])) for k in v] for b, v in json.loads(sj.read_text()).items()}
+    clip = ae.Clip(seq, KEY + UB)
+    src = {b: list(S[b]) for b in clip.local if b in S}       # original keys for every bone the FK needs
+    def relS(b, f, L):
+        tmp = dict(L); r = L['root'][f]; tmp['root'] = [((0, 0, 0), (0, 0, 0, 1), r[2])] * n
+        return clip.comp(b, f, tmp)
+    # contacts / speed from the ORIGINAL keys
+    bz = {s: [relS('ball_' + s, f, src)[0][2] for f in range(n)] for s in 'lr'}
+    ev = []
+    for s in 'lr':
+        z0 = min(bz[s])
+        for f in range(1, n):
+            if bz[s][f] < z0 + 1.5 and bz[s][f - 1] >= z0 + 1.5: ev.append((f / FPS, s))
+    ev.sort()
+    rp = [src['root'][f][0] for f in range(n)]
+    spd = [math.hypot(rp[min(f + 1, n - 1)][0] - rp[max(f - 1, 0)][0], rp[min(f + 1, n - 1)][1] - rp[max(f - 1, 0)][1]) / ((min(f + 1, n - 1) - max(f - 1, 0)) / FPS) for f in range(n)]
+    # V2.22 v3: the arm / trunk phase comes from the LEGS of every frame (which foot is ahead, by how much, opening or closing) - re-plants
+    # and pivots included (v2 skipped same-foot strikes and parked the arms 0.8 s in a swing extreme); the swing AMPLITUDE follows the
+    # clip's own stride (local max separation / the loop's)
+    def fsep(f):
+        rq = src['root'][f][1]; fw = ae.qrot(rq, (0, 1, 0)); fw = ae.vnorm((fw[0], fw[1], 0))
+        return ae.vdot(ae.vsub(clip.comp('foot_l', f, src)[0], clip.comp('foot_r', f, src)[0]), fw)
+    dsep = [fsep(f) for f in range(n)]
+    W = int(round(0.35 * FPS))
+    amp = [max(15.0, max(abs(dsep[k]) for k in range(max(0, f - W), min(n, f + W + 1)))) for f in range(n)]
+    def phases(lp):
+        ang = []
+        for f in range(n):
+            sl = dsep[min(f + 1, n - 1)] - dsep[max(f - 1, 0)]
+            ang.append(2 * math.pi * lp.phase_of(max(-1.0, min(1.0, dsep[f] / amp[f])), sl) / lp.T)
+        for f in range(1, n):                                                  # unwrap
+            while ang[f] - ang[f - 1] > math.pi: ang[f] -= 2 * math.pi
+            while ang[f] - ang[f - 1] < -math.pi: ang[f] += 2 * math.pi
+        # gait phase only moves FORWARD and at most 2.2x the loop's own rate (a pivot / re-plant can slow it, never reverse or jump it:
+        # v3 had a one-frame phase jump in a clip tail -> hand 55 cm up)
+        mx = 2 * math.pi * 2.2 / (lp.T * FPS)
+        for f in range(1, n): ang[f] = min(max(ang[f], ang[f - 1]), ang[f - 1] + mx)
+        sm_ = []
+        for f in range(n):                                                     # gauss sigma 2 frames
+            ws = [(math.exp(-0.5 * ((k - f) / 2.0) ** 2), ang[k]) for k in range(max(0, f - 6), min(n, f + 7))]
+            sm_.append(sum(w_ * a_ for w_, a_ in ws) / sum(w_ for w_, a_ in ws))
+        return [x * lp.T / (2 * math.pi) for x in sm_], [max(0.35, min(1.0, amp[f] / lp.Dmax)) for f in range(n)]
+    tauJ, ampJ = phases(jog); tauS, ampS = phases(spr)
+    new = {b: list(src[b]) for b in src}
+    def trunk_metrics(L):
+        pit, rol, hf, hu, ab = [], [], [], [], []
+        for f in range(0, n, 2):
+            rq = L['root'][f][1]; fw = ae.qrot(rq, (0, 1, 0)); fw = ae.vnorm((fw[0], fw[1], 0)); la = (-fw[1], fw[0], 0)
+            pe = clip.comp('pelvis', f, L)[0]; ch = clip.comp('spine_05', f, L)[0]; d = ae.vsub(ch, pe)
+            pit.append(math.degrees(math.atan2(ae.vdot(d, fw), d[2]))); rol.append(math.degrees(math.atan2(ae.vdot(d, la), d[2])))
+            for s in 'lr':
+                h = ae.vsub(clip.comp('hand_' + s, f, L)[0], pe); hf.append(ae.vdot(h, fw)); hu.append(h[2])
+        return {'pitch': [round(min(pit), 1), round(max(pit), 1)], 'roll': [round(min(rol), 1), round(max(rol), 1)], 'hand_f': [round(min(hf), 1), round(max(hf), 1)], 'hand_u': [round(min(hu), 1), round(max(hu), 1)], 'series': [(round(f * 2 / FPS, 2), round(pit[f], 1), round(rol[f], 1), round(max(hu[2 * f], hu[2 * f + 1]), 1)) for f in range(0, len(pit), 2)]}
+    before = trunk_metrics(src)
+    for f in range(n):
+        t = f / FPS; w = sm((spd[f] - VJ) / (VS - VJ)); we = sm((t - E0) / (E1 - E0))
+        if we <= 0.0: continue
+        tj = tauJ[f]; ts = tauS[f]
+        tgt = {}
+        for b in UB:
+            a, c = jog.local_at(b, tj), spr.local_at(b, ts)
+            ma, mc = jog.mean[b], spr.mean[b]                                  # swing amplitude about the loop mean = the clip's stride
+            a = (lerp(ma[0], a[0], ampJ[f]), slerp(ma[1], a[1], ampJ[f]), a[2]); c = (lerp(mc[0], c[0], ampS[f]), slerp(mc[1], c[1], ampS[f]), c[2])
+            tgt[b] = (lerp(a[0], c[0], w), slerp(a[1], c[1], w), lerp(a[2], c[2], w))
+        cur = dict(new)
+        for b in UB: cur[b] = list(new[b]); cur[b][f] = tgt[b]
+        # residual: spine_05 heading-frame rotation = the blended loops'
+        qj = jog.heading_rot('spine_05', tj); qs = spr.heading_rot('spine_05', ts); qT = slerp(qj, qs, w)
+        qr = clip.comp('root', f, cur)[1]; q5 = clip.comp('spine_05', f, cur)[1]
+        q5h = ae.qnorm(ae.qmul(ae.qinv(qr), q5))
+        # keep part of the SOURCE chest-vs-pelvis yaw (the shoulders lead the turn)
+        yS = yaw_of(clip.comp('spine_05', f, src)[1]) - yaw_of(clip.comp('pelvis', f, src)[1])
+        yN = yaw_of(q5) - yaw_of(clip.comp('pelvis', f, cur)[1])
+        dy = ((KEEP_TWIST * yS + (1 - KEEP_TWIST) * yN) - yN + 180.0) % 360.0 - 180.0
+        Rh = ae.qnorm(ae.qmul(qT, ae.qinv(q5h)))                                        # heading frame residual
+        Rc = ae.qnorm(ae.qmul(ae.qmul(qr, Rh), ae.qinv(qr)))                             # -> component space
+        ae.apply_bone_delta(clip, cur, 'spine_01', f, Rc)
+        # the kept twist turns the chest about the TRUNK axis (spine_01 -> spine_05), not the world vertical: a vertical rotation of a
+        # forward-leaning trunk swings the lean sideways (v2: pitch -3.9 deg at the RevTurn_R_Rfoot pivot)
+        ax = ae.vnorm(ae.vsub(clip.comp('spine_05', f, cur)[0], clip.comp('spine_01', f, cur)[0]))
+        ae.apply_bone_delta(clip, cur, 'spine_01', f, ae.qaxis(ax, dy))
+        for b in UB:
+            s0 = src[b][f]; nb = cur[b][f]
+            new[b][f] = (lerp(s0[0], nb[0], we), slerp(s0[1], nb[1], we), lerp(s0[2], nb[2], we))
+    after = trunk_metrics(new)
+    # readback guard: legs / root / pelvis untouched by construction
+    info = {'frames': n, 'len': round((n - 1) / FPS, 2), 'events': [(round(t, 2), s) for t, s in ev], 'speed': [round(min(spd)), round(max(spd))],
+            'before': before, 'after': after}
+    if not DRY:
+        ck = P / 'Saved/Codex/SHME_V222_20261022/checkpoint/revturn'; ck.mkdir(parents=True, exist_ok=True)
+        fs = P / ('Content' + path[len('/Game'):] + '.uasset')
+        if not (ck / fs.name).exists(): import shutil; shutil.copy2(fs, ck / fs.name)
+        ae.write_tracks(seq, new, [b for b in UB if b in names], note='SHME V2.22 revturn upper body', guard=False)
+        info['saved'] = EAL.save_loaded_asset(seq, False)
+        back = ae.read_local(seq, ['root', 'pelvis', 'thigh_l', 'calf_r', 'foot_l'], list(range(0, n, 5)))
+        info['readback_leg_change_cm'] = round(max(ae.vlen(ae.vsub(back[b][i][0], src[b][i * 5][0])) for b in back for i in range(len(back[b]))), 3)
+    out['clips'][name] = info
+    print('RB222 %s %s' % (name, json.dumps({k: ({kk: vv for kk, vv in info[k].items() if kk != 'series'} if isinstance(info[k], dict) else info[k]) for k in info if k != 'events'})))
+(P / ('Saved/Codex/SHME_V222_20261022/rb222_%s.json' % ('dry' if DRY else 'bake'))).write_text(json.dumps(out, indent=1))
+print('RB222_DONE')

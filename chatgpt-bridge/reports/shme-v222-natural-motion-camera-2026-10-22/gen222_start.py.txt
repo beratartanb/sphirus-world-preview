@@ -1,0 +1,296 @@
+"""gen222_start.py (editor job) - V2.22 A: walk START with a new upper-body performance (legs / root / timing = the V2.8 contact-planned
+start, unchanged, so the installed SHM28 distance clock - built from the V2.8 root curve - stays valid).
+Why: production starts (A_LS_M_Relaxed_Walk_Start_F_L/R on the CP start branch) carry the forward hand 34-38 cm forward / 14-15 cm UP
+(walk loop 25-29 / +1-2) and hold it through a 0.6 s first swing (body222: right hand +38 fwd +12 up 2.2-2.8 s, then a 36 cm snap into
+the loop); the V2.8 start keeps the arms in the loop envelope but blends toward a FROZEN heel-strike loop pose -> the arm is parked forward
+(+13 cm) for 0.6 s, then starts swinging.
+Design (V2.22): rest -> small weight transfer (APA) -> stepping foot lifts (T_LIFT) -> first heel strike (t_hs, from the root profile
+and stance geometry, = V2.8) -> walk loop. Upper body = idle -> loop with a PHASE-COHERENT virtual loop clock: before heel strike the arms
+/ trunk / head take the loop pose at tau_u(t), running from the loop's toe-off of the stepping foot (at T_LIFT) to its heel strike (at
+t_hs) - the contralateral arm comes forward WITH the swinging leg; before T_LIFT tau_u holds the toe-off pose. The amplitude of the
+upper-body change grows monotonically idle -> loop (AMP_T0 .. t_hs + AMP_TAIL) - no parked arm, no second opening.
+Output: /Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_L / _R (new assets; V2.8 clips untouched).
+builtins.G222 = {'dry_run': True, 'amp_t0': 0.05, 'amp_tail': 0.35, 't_lift': 0.26, 'apa_cm': 1.8}"""
+import unreal as u, json, math, builtins, pathlib, importlib, sys
+P = pathlib.Path(u.Paths.project_dir()).resolve(); sys.path.insert(0, str(P / 'Tools/SHME_V1_20260925'))
+import v137_animedit as ae; importlib.reload(ae)
+AL = u.AnimationLibrary; EAL = u.EditorAssetLibrary
+cfg = getattr(builtins, 'G222', {}); DRY = bool(cfg.get('dry_run', True)); NPH = int(cfg.get('nph', 12)); ONLY = cfg.get('only')
+LOOP = '/Game/GraceRanger/Animations/LocomotionBehavior/A_LB_Walk_Fwd'
+IDLE = '/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/Phase275Support/Idle/af_Stand_Idle_NaturalBaseline_Phase275'
+OUTDIR = '/Game/GraceRanger/SHME/Animations/V222'
+IDLE_T = float(cfg.get('idle_t', 7.0)); FPS = 30.0; DT = 1.0 / FPS; T1 = 1.3666667; NK1 = 41
+STEP_LAG = float(cfg.get('step_lag', 0.0)); ROT_DELAY = float(cfg.get('rot_delay', 0.0)); LATE_T = float(cfg.get('late_t', 0.25)); LATE_CM = float(cfg.get('late_cm', 6.0)); CLOSE_CM = float(cfg.get('close_cm', 4.0)); HOLD = float(cfg.get('hold', 0.35)); APA_CM = float(cfg.get('apa_cm', 1.8)); T_LIFT = float(cfg.get('t_lift', 0.26)); AMP_T0 = float(cfg.get('amp_t0', 0.05)); AMP_TAIL = float(cfg.get('amp_tail', 0.35)); LEAN_DEG = float(cfg.get('lean_deg', 6.0)); SWING_H = float(cfg.get('swing_h', 10.0)); FADE_DELAY = float(cfg.get('fade_delay', 0.10)); FADE_LEN = float(cfg.get('fade_len', 0.50))   # v4: first-step clearance (7 cm skimmed: ball 4-7 cm in game)
+prof = json.loads((P / 'Saved/Codex/SHME_V28_20261015/capsule_profiles.json').read_text())
+def prof_fn(tab):
+    ts = [x[0] for x in tab]; ds = [x[3] for x in tab]; vs = [x[1] for x in tab]
+    def at(t, arr):
+        if t <= ts[0]: return arr[0]
+        if t >= ts[-1]: return arr[-1] + (vs[-1] * (t - ts[-1]) if arr is ds else 0.0)
+        i = max(k for k in range(len(ts)) if ts[k] <= t); w = (t - ts[i]) / max(ts[i + 1] - ts[i], 1e-6); return arr[i] + (arr[i + 1] - arr[i]) * w
+    return (lambda t: at(t, ds)), (lambda t: at(t, vs))
+stop_d, stop_v = prof_fn(prof['stop']); start_d, start_v = prof_fn(prof['start'])
+if 'stop_model' in prof:                       # V2.8b: smooth CMC-style braking fit (the measured table jitters frame to frame)
+    _sm = prof['stop_model']
+    def _stop(t, _m=_sm):
+        tl, A, F, v0 = _m['lead'], _m['A'], _m['F'], _m['v0']
+        if t <= tl: return v0 * t, v0
+        k = A / F; T = math.log((v0 + k) / k) / F; tt = min(t - tl, T)
+        return v0 * tl + ((v0 + k) * (1 - math.exp(-F * tt)) / F - k * tt), max(0.0, (v0 + k) * math.exp(-F * tt) - k)
+    stop_d = lambda t: _stop(t)[0]; stop_v = lambda t: _stop(t)[1]
+
+def _start_tab(_m):
+    """dense (t, d, v) table of the smooth start model, 2 ms steps up to 3 s"""
+    def smx(x): x = min(1.0, max(0.0, x)); return x * x * (3 - 2 * x)
+    ts, ds, vs = [0.0], [0.0], [0.0]; dt_ = 0.002
+    for i in range(1, 1501):
+        t_ = i * dt_; v_ = _m['vmax'] * smx((t_ - _m['t0']) / _m['T']) ** _m['q'] if t_ > _m['t0'] else 0.0
+        ts.append(t_); ds.append(ds[-1] + 0.5 * (v_ + vs[-1]) * dt_); vs.append(v_)
+    def at(t_, arr):
+        if t_ <= 0: return arr[0]
+        if t_ >= ts[-1]: return arr[-1] + (vs[-1] * (t_ - ts[-1]) if arr is ds else 0.0)
+        i = int(t_ / dt_); w = (t_ - ts[i]) / dt_; return arr[i] + (arr[i + 1] - arr[i]) * w
+    return (lambda t_: at(t_, ds)), (lambda t_: at(t_, vs))
+if 'start_model' in prof: start_d, start_v = _start_tab(prof['start_model'])      # V2.8b smooth start fit
+loop = u.load_asset(LOOP); idle = u.load_asset(IDLE)
+NAMES = [str(n) for n in AL.get_animation_track_names(loop)]
+Lk = ae.read_local(loop, NAMES, list(range(NK1 + 1)))
+Ik = ae.read_local(idle, NAMES, [int(round(IDLE_T * FPS))]); IDL = {b: Ik[b][0] for b in NAMES}
+clip = ae.Clip(loop, ['root', 'pelvis', 'foot_l', 'foot_r', 'ball_l', 'ball_r', 'calf_l', 'calf_r', 'head', 'spine_05', 'spine_01'] + [b for b in ('ik_foot_l', 'ik_foot_r') if b in NAMES])
+D = ae.vsub(Lk['root'][NK1][0], Lk['root'][0][0]); VLOOP = ae.vlen(D) / T1        # 106.4 cm/s of loop time
+FWD = ae.vnorm(D)
+def slerp(a, b, t):
+    d = sum(a[i] * b[i] for i in range(4))
+    if d < 0: b = tuple(-x for x in b); d = -d
+    if d > 0.9995: return ae.qnorm(tuple(a[i] + (b[i] - a[i]) * t for i in range(4)))
+    th = math.acos(min(d, 1.0)); s = math.sin(th)
+    return tuple((math.sin((1 - t) * th) * a[i] + math.sin(t * th) * b[i]) / s for i in range(4))
+def lerp(a, b, t): return tuple(a[i] + (b[i] - a[i]) * t for i in range(len(a)))
+def sm(x): x = min(1.0, max(0.0, x)); return x * x * (3 - 2 * x)
+def mj(x): x = min(1.0, max(0.0, x)); return x * x * x * (10 - 15 * x + 6 * x * x)
+def loop_local(tau):
+    """loop locals at loop time tau (periodic; root continues by D per cycle)"""
+    c, r = divmod(tau, T1); f = r / T1 * NK1; i = int(math.floor(f)); w = f - i; i = min(i, NK1 - 1)
+    o = {}
+    for b in NAMES:
+        (t0, q0, s0), (t1, q1, s1) = Lk[b][i], Lk[b][i + 1]
+        t = lerp(t0, t1, w); q = slerp(q0, q1, w)
+        if b == 'root': t = ae.vadd(t, ae.vsc(D, c))
+        o[b] = (t, q, lerp(s0, s1, w))
+    return o
+def comp_of(loc, bone):
+    tmp = {b: [loc[b]] for b in loc}; return clip.comp(bone, 0, tmp)
+def rel(loc, bone):
+    """component position / rotation of a bone with the root at the origin (root-relative)"""
+    tmp = {b: [loc[b]] for b in loc}; r0 = loc['root']; tmp['root'] = [((0.0, 0.0, 0.0), r0[1], r0[2])]
+    return clip.comp(bone, 0, tmp)
+# loop contact table (ball height over the cycle) -> planted test at any tau
+BZ = {s: [rel(loop_local(k * T1 / NK1), 'ball_' + s)[0][2] for k in range(NK1 + 1)] for s in ('l', 'r')}
+BZ0 = {s: min(BZ[s]) for s in ('l', 'r')}
+def planted(s, tau): k = int(round((tau % T1) / T1 * NK1)); return BZ[s][k] < BZ0[s] + 1.5
+def next_land(s, tau):
+    """loop time of the next landing (ball reaches the floor) of foot s after tau"""
+    for k in range(1, NK1 * 2):
+        t = tau + k * T1 / NK1
+        if planted(s, t) and not planted(s, t - T1 / NK1): return t
+    return tau + T1
+IDLE_REL = {s: rel(IDL, 'foot_' + s) for s in ('l', 'r')}; IDLE_BALL = {s: rel(IDL, 'ball_' + s)[0] for s in ('l', 'r')}
+ARMS = [b for b in NAMES if b.startswith(('clavicle_', 'upperarm_', 'lowerarm_', 'hand_', 'thumb_', 'index_', 'middle_', 'ring_', 'pinky_'))]
+UB = [b for b in NAMES if b not in ('root', 'thigh_l', 'calf_l', 'foot_l', 'ball_l', 'thigh_r', 'calf_r', 'foot_r', 'ball_r', 'ik_foot_l', 'ik_foot_r', 'ik_foot_root')
+      and not b.startswith(('calf_twist', 'thigh_twist'))]
+def blend_pose(A, Bp, w, bones):
+    o = dict(A)
+    for b in bones: o[b] = (lerp(A[b][0], Bp[b][0], w), slerp(A[b][1], Bp[b][1], w), lerp(A[b][2], Bp[b][2], w))
+    return o
+def swing(p0, v0, p1, t0, t1, t, h, z0=None, lag=0.0):
+    """horizontal cubic Hermite p0 (velocity v0) -> p1 (velocity 0) over [t0, t1]; vertical arc of height h over the floor path.
+    lag > 0 (steps from standing): the horizontal motion starts only after that fraction of the step, when the foot is off the floor"""
+    if t <= t0: return p0
+    if t >= t1: return p1
+    T = t1 - t0; x = (t - t0) / T; xh = min(1.0, max(0.0, (x - lag) / (1.0 - lag))) if lag else x
+    h00 = 2 * xh ** 3 - 3 * xh * xh + 1; h10 = xh ** 3 - 2 * xh * xh + xh; h01 = -2 * xh ** 3 + 3 * xh * xh
+    xy = [h00 * p0[i] + h10 * T * (1.0 - lag) * v0[i] + h01 * p1[i] for i in range(2)]
+    zb = (z0 if z0 is not None else p0[2]) * (1 - mj(x)) + p1[2] * mj(x)
+    return (xy[0], xy[1], zb + h * math.sin(math.pi * x) * (1 - 0.5 * x))
+BALL_LOCAL = {s: Lk['ball_' + s][0][0] for s in ('l', 'r')}
+def foot_at_ball(s, ball, q): return ae.vsub(ball, ae.qrot(q, BALL_LOCAL[s]))
+def ball_of(s, foot, q): return ae.vadd(foot, ae.qrot(q, BALL_LOCAL[s]))
+def build(kind, key):
+    frames = []
+    if kind == 'stop':
+        tau0 = key * T1 / NPH; r0 = 132.0 / VLOOP
+        L0 = loop_local(tau0); root0 = (0.0, 0.0, 0.0)
+        feet0 = {s: rel(L0, 'foot_' + s) for s in ('l', 'r')}; ball0 = {s: rel(L0, 'ball_' + s)[0] for s in ('l', 'r')}
+        h0 = {s: ball0[s][2] - BZ0[s] for s in ('l', 'r')}
+        S0 = 'l' if (planted('l', tau0) and (not planted('r', tau0) or ball0['l'][1] > ball0['r'][1])) else 'r'
+        F1 = 'r' if S0 == 'l' else 'l'
+        e = 1e-3; pa = rel(loop_local(tau0), 'foot_' + F1)[0]; pb = rel(loop_local(tau0 + e), 'foot_' + F1)[0]
+        vF1 = tuple((pb[i] - pa[i]) / e * r0 + FWD[i] * 132.0 for i in range(3))
+        land = next_land(F1, tau0); t1 = min(0.55, max(0.12, (land - tau0) / r0))
+        if planted(F1, tau0): t1 = max(0.30, t1); vF1 = (0.0, 0.0, 0.0)
+        dfin = stop_d(2.0); rootF = ae.vadd(root0, ae.vsc(FWD, dfin))
+        tgt = {s: ae.vadd(rootF, IDLE_REL[s][0]) for s in ('l', 'r')}
+        S0ball = ae.vadd(root0, ball0[S0])
+        s0end = ae.vadd(rootF, ae.vsub(IDLE_BALL[S0], (0, 0, 0)))
+        close = math.hypot(S0ball[0] - s0end[0], S0ball[1] - s0end[1]) > CLOSE_CM
+        tc0, tc1 = t1, t1 + 0.34
+        # V2.8b late swing: too little swing time left to redirect F1 to its stance spot -> it lands where the gait puts it
+        # (shortened by the decelerating root), S0 closes, then F1 makes a small adjusting step (no foot moves on the floor)
+        lr = rel(loop_local(land), 'foot_' + F1)[0]; f1land = ae.vadd(ae.vsc(FWD, stop_d(t1)), (lr[0], lr[1], 0.0))
+        # never land behind the swing foot's own path: a target behind it makes the Hermite overshoot and come BACK while landing
+        # (V2.8c: 5 cm backward slide of the landing foot in late-swing bins); the adjusting step then places it
+        f1land = (f1land[0], max(f1land[1], ae.vadd(root0, feet0[F1][0])[1] + max(0.0, vF1[1]) * t1 / 3.0) if not planted(F1, tau0) else f1land[1], IDLE_REL[F1][0][2])
+        late = t1 < LATE_T and math.hypot(f1land[0] - tgt[F1][0], f1land[1] - tgt[F1][1]) > LATE_CM
+        ta0 = (tc1 if close else t1) + 0.02; ta1 = ta0 + 0.30
+        tub0, tub1 = 0.15, ((ta1 if late else tc1 if close else t1 + 0.15)) + 0.10
+        L = tub1 + HOLD; N = int(math.ceil(L / DT)) + 1; tau = tau0
+        info = {'S0': S0, 'F1': F1, 't1': round(t1, 3), 'closing': close, 'tau0': round(tau0, 3), 'late_adjust': late}
+        qF0 = feet0[F1][1]; qFm = slerp(qF0, IDLE_REL[F1][1], 0.5)
+        f1pos0 = ae.vadd(root0, feet0[F1][0]); qS0 = feet0[S0][1]; s0pinned = True; s0lift = None
+        for f in range(N):
+            t = f * DT
+            r = r0 * max(0.0, 1.0 - t / (t1 + 0.12)); tau += r * DT if f else 0.0
+            Lp = loop_local(tau); w = sm((t - tub0) / (tub1 - tub0))
+            pose = blend_pose(Lp, IDL, w, UB)
+            rt = ae.vadd(root0, ae.vsc(FWD, stop_d(t))); pose['root'] = (rt, Lk['root'][0][1], Lk['root'][0][2])
+            ft = {}
+            # S0: ball pinned; rotation follows the loop (heel roll) while the loop still has it on the floor, then held
+            if planted(S0, tau) and (not close or t < tc0): qS0 = rel(Lp, 'foot_' + S0)[1]
+            if close and t >= tc0:
+                if s0lift is None: s0lift = (foot_at_ball(S0, S0ball, qS0), qS0)
+                x = (t - tc0) / (tc1 - tc0)
+                ft[S0] = (swing(s0lift[0], (0, 0, 0), tgt[S0], tc0, tc1, t, 4.5, lag=STEP_LAG), slerp(s0lift[1], IDLE_REL[S0][1], mj((x - ROT_DELAY) / (1.0 - ROT_DELAY))))
+            else: ft[S0] = (foot_at_ball(S0, S0ball, qS0), qS0)
+            if late:
+                if t < ta0: ft[F1] = (swing(f1pos0, vF1, f1land, 0.0, t1, t, 3.0 + max(0.0, 5.0 - h0[F1]), z0=f1pos0[2]), slerp(qF0, qFm, mj(t / t1)))
+                else: ft[F1] = (swing(f1land, (0, 0, 0), tgt[F1], ta0, ta1, t, 3.0, lag=STEP_LAG), slerp(qFm, IDLE_REL[F1][1], mj((t - ta0) / (ta1 - ta0))))
+            else:
+                ft[F1] = (swing(f1pos0, vF1, tgt[F1], 0.0, t1, t, 3.0 + max(0.0, 5.0 - h0[F1]), z0=f1pos0[2]), slerp(feet0[F1][1], IDLE_REL[F1][1], mj(t / t1)))
+            frames.append((pose, ft))
+        info.update(len=round(L, 3), frames=N)
+    else:
+        X = key; S = 'r' if X == 'l' else 'l'
+        tauHS = next_land(X, 0.05)
+        LH = loop_local(tauHS); sBallLoop = rel(LH, 'ball_' + S)[0]; xLoop = rel(LH, 'foot_' + X); qSHS = rel(LH, 'foot_' + S)[1]
+        need = IDLE_BALL[S][1] - sBallLoop[1]
+        t_hs = next(k * 0.005 for k in range(1, 400) if start_d(k * 0.005) >= need)
+        root0 = (0.0, 0.0, 0.0); rtHS = ae.vadd(root0, ae.vsc(FWD, start_d(t_hs)))
+        info = {'X': X, 'S': S, 'tauHS': round(tauHS, 3), 't_hs': round(t_hs, 3), 'need_cm': round(need, 1)}
+        L = t_hs + 0.75; N = int(math.ceil(L / DT)) + 1
+        sBall = ae.vadd(root0, IDLE_BALL[S]); xIdle = IDLE_REL[X]
+        sLoopW = ae.vadd(rtHS, sBallLoop)
+        off0 = (sBall[0] - sLoopW[0], sBall[1] - sLoopW[1], 0.0)            # horizontal: pinned stance ball vs the loop's at heel strike
+        tauLiftS = next(tauHS + k * T1 / NK1 for k in range(1, NK1 * 2) if not planted(S, tauHS + k * T1 / NK1))
+        tauTO = max(tauHS - k * T1 / NK1 for k in range(1, NK1) if planted(X, tauHS - k * T1 / NK1))   # loop toe-off of the stepping foot
+        info['tauTO'] = round(tauTO, 3)
+        tau = tauHS
+        for f in range(N):
+            t = f * DT; d = start_d(t); rt = ae.vadd(root0, ae.vsc(FWD, d))
+            if t <= t_hs: Lp = loop_local(tauHS)
+            else: tau = tauHS + (d - start_d(t_hs)) / VLOOP; Lp = loop_local(tau)
+            # V2.22 upper body: phase-coherent virtual loop clock before heel strike, monotonic amplitude ramp idle -> loop
+            if t <= t_hs:
+                tu = tauTO if t <= T_LIFT else tauTO + (tauHS - tauTO) * (t - T_LIFT) / max(t_hs - T_LIFT, 1e-3)
+                Lu = loop_local(tu)
+            else: Lu = Lp
+            # v2: ONLY the arm chain runs on the phase clock; trunk / neck / head / pelvis keep the V2.8 root-consistent path (v1 put the
+            # whole upper body on the toe-off pose: trunk pitch 11 -> 6 deg, head 3.7 cm BACK at the start)
+            w = sm((t - AMP_T0) / (t_hs + AMP_TAIL - AMP_T0)); wt = sm((t - 0.08) / (t_hs + 0.18 - 0.08))
+            pose = blend_pose(IDL, Lp, wt, [b for b in UB if b not in ARMS]); pose = blend_pose(pose, Lu, 0.0, [])
+            for b in ARMS: pose[b] = (lerp(IDL[b][0], Lu[b][0], w), slerp(IDL[b][1], Lu[b][1], w), lerp(IDL[b][2], Lu[b][2], w))
+            apa = APA_CM * math.sin(math.pi * min(1.0, t / (T_LIFT + 0.15))) * (1 if S == 'r' else -1) if t < T_LIFT + 0.15 else 0.0
+            pt, pq, ps = pose['pelvis']; pose['pelvis'] = ((pt[0] - apa, pt[1], pt[2]), pq, ps)
+            pose['root'] = (rt, Lk['root'][0][1], Lk['root'][0][2])
+            ft = {}
+            if t <= t_hs:
+                qs = slerp(IDLE_REL[S][1], qSHS, mj((t - T_LIFT) / (t_hs - T_LIFT)))
+                zr = mj((t - (t_hs - 0.12)) / 0.12)                            # early toe lift into the loop's height at heel strike
+                ft[S] = (foot_at_ball(S, (sBall[0], sBall[1], sBall[2] + (sLoopW[2] - sBall[2]) * zr), qs), qs)
+                landpos = ae.vadd(rtHS, xLoop[0])
+                ft[X] = (swing(ae.vadd(root0, xIdle[0]), (0, 0, 0), landpos, T_LIFT, t_hs, t, SWING_H), slerp(xIdle[1], xLoop[1], mj((t - T_LIFT) / (t_hs - T_LIFT))))
+            else:
+                lx = rel(Lp, 'foot_' + X); ft[X] = (ae.vadd(rt, lx[0]), lx[1])
+                ls = rel(Lp, 'foot_' + S)
+                # v5: the idle -> loop stance-width offset (off0, ~18 cm) is removed only once the foot is OFF the floor (loop time +0.10 after
+                # its lift) and over 0.50: removing it from the lift frame swept a low foot sideways (skim, pilot L 21 cm)
+                fade = 1.0 if tau <= tauLiftS + FADE_DELAY else 1.0 - mj((tau - tauLiftS - FADE_DELAY) / FADE_LEN)
+                ft[S] = (ae.vadd(ae.vadd(rt, ls[0]), ae.vsc(off0, fade)), ls[1])
+            frames.append((pose, ft))
+        info.update(len=round(L, 3), frames=N, off0=[round(x, 1) for x in off0])
+    # ---- assemble locals + IK
+    local = {b: [fr[0][b] for fr in frames] for b in NAMES}
+    # v3 (starts only): designed initiation lean - the body falls forward into the first step (LEAN_DEG at ~0.35 s about the lateral
+    # axis at spine_01), fading as the loop trunk takes over; measured: from the in-game idle the start drifted 4-5 deg BACK at 0.2 s
+    if kind == 'start' and LEAN_DEG:
+        lat = ae.vnorm(ae.vcross(FWD, (0.0, 0.0, 1.0)))
+        for f in range(len(frames)):
+            tt = f * DT; a = LEAN_DEG * sm((tt - 0.03) / 0.30) * (1.0 - sm((tt - (info['t_hs'] - 0.15)) / 0.45))
+            if a > 1e-3: ae.apply_bone_delta(clip, local, 'spine_01', f, ae.qaxis(lat, -a))
+    for f, (pose, ft) in enumerate(frames):
+        for s in ('l', 'r'):
+            kh = clip.comp('calf_' + s, f, local)[0]
+            ae.solve_leg(clip, local, s, f, ft[s][0], ft[s][1], kh)
+    # ik_foot bones follow the feet (their parent ik_foot_root keeps its loop transform)
+    for s in ('l', 'r'):
+        b = 'ik_foot_' + s
+        if b in NAMES and 'ik_foot_root' in NAMES:
+            for f in range(len(frames)):
+                fp, fq = clip.comp('foot_' + s, f, local); pp, pq = clip.comp('ik_foot_root', f, local)
+                lt = ae.qrot(ae.qinv(pq), ae.vsub(fp, pp)); lq = ae.qnorm(ae.qmul(ae.qinv(pq), fq)); local[b][f] = (lt, lq, local[b][f][2])
+    # ---- checks
+    def bw(f, s): return clip.comp('ball_' + s, f, local)[0]
+    ferr = max(ae.vlen(ae.vsub(clip.comp('foot_' + s, f, local)[0], frames[f][1][s][0])) for f in range(len(frames)) for s in ('l', 'r'))
+    drift = 0.0; pen = 0.0
+    for s in ('l', 'r'):
+        for f in range(1, len(frames)):
+            a, b_ = bw(f - 1, s), bw(f, s)
+            pen = min(pen, b_[2] - BZ0[s])
+            if a[2] < BZ0[s] + 1.0 and b_[2] < BZ0[s] + 1.0: drift += math.hypot(b_[0] - a[0], b_[1] - a[1]) if math.hypot(b_[0] - a[0], b_[1] - a[1]) > 0.05 else 0.0
+    pz = [clip.comp('pelvis', f, local)[0][2] - local['root'][f][0][2] for f in range(len(frames))]
+    fin = len(frames) - 1
+    fe = max(ae.vlen(ae.vsub(ae.vsub(clip.comp('foot_' + s, fin, local)[0], local['root'][fin][0]), IDLE_REL[s][0])) for s in ('l', 'r'))
+    he = ae.vlen(ae.vsub(ae.vsub(clip.comp('head', fin, local)[0], local['root'][fin][0]), rel(IDL, 'head')[0]))
+    if kind == 'stop':
+        e0 = max(ae.vlen(ae.vsub(ae.vsub(clip.comp(bn, 0, local)[0], local['root'][0][0]), rel(loop_local(key * T1 / NPH), bn)[0])) for bn in ('foot_l', 'foot_r', 'head', 'pelvis'))
+    else:
+        e0 = max(ae.vlen(ae.vsub(ae.vsub(clip.comp(bn, 0, local)[0], local['root'][0][0]), rel(IDL, bn)[0])) for bn in ('foot_l', 'foot_r', 'head', 'pelvis'))
+    info.update(foot_err=round(ferr, 2), planted_drift=round(drift, 2), penetration=round(pen, 2), pelvis_min_minus_final=round(min(pz) - pz[-1], 1),
+                pelvis_start_minus_final=round(pz[0] - pz[-1], 1), entry_err=round(e0, 2), final_foot_err=round(fe, 2), final_head_err=round(he, 2),
+                root_dist=round(ae.vlen(ae.vsub(local['root'][-1][0], local['root'][0][0])), 1))
+    return local, info
+def write(name, local, nframes):
+    path = OUTDIR + '/' + name
+    ae.leg_guard(u.load_asset(LOOP), local, label=name)   # V2.10: refuse a clip with a backward / off-hinge knee before any asset is created
+    if EAL.does_asset_exist(path): seq = u.load_asset(path)
+    else: seq = EAL.duplicate_asset(LOOP, path)
+    for tr in [str(t) for t in AL.get_animation_notify_track_names(seq)]:
+        AL.remove_animation_notify_events_by_track(seq, tr)
+        try: AL.remove_animation_notify_track(seq, tr)
+        except Exception: pass
+    c = ae.controller(seq)
+    try: c.open_bracket(u.Text('SHME V2.22 start ' + name), True)
+    except Exception: c.open_bracket('SHME V2.8 ' + name, True)
+    try:
+        c.set_number_of_frames(u.FrameNumber(nframes - 1), True)
+        for b in NAMES:
+            ks = local[b]
+            if not c.set_bone_track_keys(b, [u.Vector(*k[0]) for k in ks], [u.Quat(*k[1]) for k in ks], [u.Vector(*k[2]) for k in ks], True): raise RuntimeError('keys ' + b)
+    finally: c.close_bracket(True)
+    for cn in [str(n) for n in AL.get_animation_curve_names(seq, u.RawCurveTrackTypes.RCT_FLOAT)]: AL.remove_curve(seq, cn, False)
+    try: seq.set_editor_property('loop', False)
+    except Exception: pass
+    return EAL.save_loaded_asset(seq, False), path
+out = {'loop_speed': round(VLOOP, 2), 'idle_t': IDLE_T, 'clips': {}}
+GJ = P / 'Saved/Codex/SHME_V222_20261022/gen222_start.json'
+if ONLY and GJ.exists(): old = json.loads(GJ.read_text()); out['clips'] = old.get('clips', {}); out['features'] = old.get('features', {})
+jobs = [('start', 'l', 'A_SHM222_WalkStart_L'), ('start', 'r', 'A_SHM222_WalkStart_R')]
+for kind, key, name in jobs:
+    if ONLY and name not in ONLY: continue
+    local, info = build(kind, key)
+    if not DRY: info['saved'], info['path'] = write(name, local, len(local['root']))
+    out['clips'][name] = info
+# entry features for the runtime selector: ball positions of every stop clip's frame 0 (root space: +Y forward, +X = character left)
+out.setdefault('features', {}); pass
+if not DRY: GJ.write_text(json.dumps(out, indent=1))
+else: (P / 'Saved/Codex/SHME_V222_20261022/gen222_start_dry.json').write_text(json.dumps(out, indent=1))
+print('G222', json.dumps({k: v for k, v in out.items() if k != 'features'}))

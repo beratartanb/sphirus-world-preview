@@ -1,0 +1,47 @@
+## a_restart2
+  v222f20 p    L   8.4/ 13.7 R  12.2/ 20.2 | dt 0.0500 max 0.050 | rec - | M_Ranger_Walk_Loop_F_P@2.80 > A_LB_Walk_Fwd@0.70 > SHM_M_Neutral_Walk_Sto@1.33 > M_Ranger_Walk_Loop_F_P@2.17 > A_LB_Walk_Fwd@2.77 > SHM_M_Neutral_Walk_Sto@1.17 > M_Ranger_Walk_Loop_F_P@0.27
+## d_jog
+  v222f20 p    L   5.1/ 13.5 R   6.6/ 14.3 | dt 0.0500 max 0.050 | rec - | A_CP2_Jog_Fwd_Start@0.85 > A_GR_Jog_Fwd_Contact@0.50 > A_CT_Jog_Fwd@0.53
+## d_walk
+  v222f20 p    L   8.4/  9.4 R   6.7/  7.5 | dt 0.0500 max 0.050 | rec - | M_Ranger_Walk_Loop_F_P@2.80 > A_LB_Walk_Fwd@0.70
+## r_cutrev_r
+  v222f20 p    L   3.5/ 12.2 R   2.6/ 11.2 | dt 0.0500 max 0.050 | rec - | Cut_R_090_Lfoot@0.62 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@2.10
+f20 r_cutrev_r   RANGE head f/l/u 20.1/18.2/10.2  handL f/l/u 54.8/32.9/26.1  handR f/l/u 34.3/28.3/15.3  pitch 25.2..46.6
+f20 d_walk   RANGE head f/l/u 8.0/5.4/0.6  handL f/l/u 25.5/8.0/2.6  handR f/l/u 21.2/4.9/3.3  pitch 7.9..18.3
+CAM v222f20_d_jog_p_r1                       fov 60.0..62.6 (rng 2.60) dF1 0.30 rate 6.0 pump 0 | zjump 0.63 zjerk 1.2 | hgt 144..152 | dist 199..226 jerk 12.0 | roll 0.48 dR 0.05 dP 0.00 dY 6.01 | fr
+## a_restart2
+  v222f60 p    L   9.8/ 12.0 R  14.7/ 21.6 | dt 0.0167 max 0.017 | rec - | M_Ranger_Walk_Loop_F_P@2.85 > A_LB_Walk_Fwd@4.80 > SHM_M_Neutral_Walk_Sto@1.33 > M_Ranger_Walk_Loop_F_P@0.10 > A_LB_Walk_Fwd@2.73 > SHM_M_Neutral_Walk_Sto@1.17 > M_Ranger_Walk_Loop_F_P@0.27
+## d_jog
+  v222f60 p    L   7.6/ 11.2 R   8.3/ 10.4 | dt 0.0167 max 0.017 | rec - | A_GR_Jog_Fwd_Contact@0.50 > A_CT_Jog_Fwd@0.53
+## d_walk
+  v222f60 p    L   8.6/  9.0 R   7.4/  8.4 | dt 0.0167 max 0.017 | rec - | M_Ranger_Walk_Loop_F_P@2.85 > A_LB_Walk_Fwd@4.80
+## r_cutrev_r
+  v222f60 p    L   4.7/ 12.9 R   9.6/ 11.5 | dt 0.0167 max 0.017 | rec - | Cut_R_090_Lfoot@0.72 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@0.90
+f60 r_cutrev_r   RANGE head f/l/u 20.8/18.9/11.0  handL f/l/u 56.5/33.6/21.8  handR f/l/u 48.2/27.5/20.0  pitch 27.2..46.4
+f60 d_walk   RANGE head f/l/u 7.7/5.6/0.6  handL f/l/u 25.6/8.1/2.6  handR f/l/u 21.5/5.7/3.3  pitch 8.1..18.2
+CAM v222f60_d_jog_p_r1                       fov 60.0..62.6 (rng 2.60) dF1 0.10 rate 6.3 pump 0 | zjump 0.20 zjerk 1.7 | hgt 145..152 | dist 199..226 jerk 20.2 | roll 0.49 dR 0.02 dP 0.00 dY 2.00 | fr
+## a_restart2
+  v222f120 p    L  12.2/ 13.0 R   7.1/ 14.5 | dt 0.0083 max 0.008 | rec - | M_Ranger_Walk_Loop_F_P@2.86 > A_LB_Walk_Fwd@3.40 > SHM_M_Neutral_Walk_Sto@1.33 > M_Ranger_Walk_Loop_F_P@0.10 > A_LB_Walk_Fwd@1.33 > SHM_M_Neutral_Walk_Sto@1.40 > M_Ranger_Walk_Loop_F_P@0.27
+## d_jog
+  v222f120 p    L   9.3/ 11.8 R   6.3/ 13.2 | dt 0.0083 max 0.008 | rec - | A_GR_Jog_Fwd_Contact@0.94 > A_CT_Jog_Fwd@0.93
+## d_walk
+  v222f120 p    L   8.4/  8.0 R   7.3/  9.0 | dt 0.0083 max 0.008 | rec - | M_Ranger_Walk_Loop_F_P@2.86 > A_LB_Walk_Fwd@3.40
+## r_cutrev_r
+  v222f120 p    L   7.9/ 13.5 R  13.7/ 15.3 | dt 0.0083 max 0.008 | rec - | Cut_R_090_Rfoot@0.78 > Cut_L_090_Rfoot@0.50 > RevTurn_L_Rfoot@0.53 > A_LB_Sprint_Fwd@1.97
+f120 r_cutrev_r   RANGE head f/l/u 19.4/21.4/10.1  handL f/l/u 56.4/38.1/21.4  handR f/l/u 53.7/27.7/29.0  pitch 27.1..46.4
+f120 d_walk   RANGE head f/l/u 7.7/5.6/0.6  handL f/l/u 25.6/8.1/2.6  handR f/l/u 21.5/5.7/3.2  pitch 8.1..18.2
+CAM v222f120_d_jog_p_r1                      fov 60.0..62.6 (rng 2.60) dF1 0.10 rate 12.5 pump 0 | zjump 0.09 zjerk 2.1 | hgt 144..152 | dist 199..227 jerk 35.7 | roll 0.46 dR 0.01 dP 0.00 dY 1.00 | f
+## a_restart2
+  v222f520 p    L   8.4/ 13.7 R  12.2/ 20.2 | dt 0.0500 max 0.050 | rec - | M_Ranger_Walk_
+## d_walk
+  v222f520 p    L   8.4/  9.4 R   7.2/  9.7 | dt 0.0500 max 0.050 | rec - | M_Ranger_Walk_
+## pilot
+  v222f520 p    L  33.5/ 43.7 R   5.2/  5.8 | dt 0.0500 max 0.050 | rec 26.75 | af_Stand_I
+  RANGE head f/l/u 8.0/5.4/0.6  handL f/l/u 25.6/8.0/2.6  handR f/l/u 21.2/4.9/3.3  pitch 7.9..18.3
+## a_restart2
+  v222f560 p    L   7.6/  9.5 R   5.8/ 11.2 | dt 0.0167 max 0.017 | rec - | M_Ranger_Walk_
+## d_walk
+  v222f560 p    L   8.6/  8.9 R   7.4/  8.0 | dt 0.0167 max 0.017 | rec - | M_Ranger_Walk_
+## pilot
+  v222f560 p    L  42.4/ 48.1 R   5.7/  4.4 | dt 0.0167 max 0.017 | rec 26.68 | af_Stand_I
+  RANGE head f/l/u 7.7/5.6/0.6  handL f/l/u 25.6/8.1/2.6  handR f/l/u 21.5/5.7/3.3  pitch 8.1..18.2
