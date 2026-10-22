@@ -1,0 +1,83 @@
+"""install_v223_revpush.py (editor job) - V2.23 A1 speed authority after a jog reversal: the capsule's re-push follows the reversal content.
+Measured (v223t1/t2 j23_ws, fixed 30): after the zero crossing of a jog W<->S reversal the capsule re-accelerates at RunAcceleration
+270 cm/s2 (~0.9-1.1 s to jog speed) while the backward->forward pivot content pushes at ~360 cm/s2 and its steps are planted for that
+travel -> the steps out-run the body (the 'slow motion' re-start) until the loop takes over.
+Owner: BP_GR_Player.GR_Impl_CP_PhysicalRedirect (the pawn's velocity owner; already writes CMC Velocity for the V2.15 line brake and the
+V2.21 tap step). New profile knobs (BP_GR_MotionProfile / DA_GR_LocomotionBehavior), default OFF = GR223_RevPushAccel 0:
+  against = input present, speed > 60 and velocity . input_dir < -0.3 x speed (moving against the request) -> GR223_RevAgainstT = now
+  push    = accel > 0, CMC max speed (gait cap) within [GR223_RevPushVMin, GR223_RevPushVMax] (jog by default), on ground, input present,
+            now - GR223_RevAgainstT <= GR223_RevPushWin, velocity . input_dir >= 0 (past the zero crossing), speed below the cap
+  -> CMC Velocity += input_dir x min(max(0, GR223_RevPushAccel - CMC max acceleration) x dt, cap - speed) (z kept); the CMC's own
+     acceleration then adds the rest: total = GR223_RevPushAccel for the re-push only. Brake side unchanged.
+Inserted right before IfThenElse_2, after the V2.21 tap step chain. Pawn var GR223_RevAgainstT. builtins.V223_SAVE saves (value-checked:
+DA RevPushAccel 0). Prints RP223 {...}."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+from qa_graph import G, connect, disconnect, src, pn, info, obj, op, pin as qpin
+import builtins, json
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+PB = '/Game/GraceRanger/BP_GR_Player'; PC = '/Game/GraceRanger/Profiles/BP_GR_MotionProfile'; CHILD = '/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player'
+DA = '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior'; PCC = op(PC) + '_C'; M = '/Script/Engine.KismetMathLibrary:'
+ABP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'
+DAS = {DA, '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (PB, CHILD, PC, ABP, ABP.replace('Base', '')) for n in names), ('unexpected dirty', names)
+if dirty: LS.reload_packages(dirty, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+out = {'reloaded': names}
+KN = {'GR223_RevPushAccel': 0.0, 'GR223_RevPushWin': 0.9, 'GR223_RevPushVMin': 250.0, 'GR223_RevPushVMax': 360.0}
+prof = u.load_asset(PC)
+ensure_vars(prof, [(k, 'float', 'V223') for k in KN])
+for k in KN: B.set_variable_instance_editable(prof, k, True)
+out['profile'] = str(compile_ok(prof)[0]); set_defaults(prof, KN)
+bp = u.load_asset(PB)
+ensure_vars(bp, [('GR223_RevAgainstT', 'float', 'V223')]); compile_ok(bp)
+g = G(op(PB) + ':GR_Impl_CP_PhysicalRedirect'); N = {pn(n).rsplit('.', 1)[-1]: pn(n) for n in B.find_nodes(obj(g.path))}
+def tid(p):
+    try: return str(info(p).type_id)
+    except Exception: return ''
+if any('SetGR223_RevAgainstT' in tid(p) for p in N.values()): out['graph'] = 'already'
+else:
+    br2 = N['K2Node_IfThenElse_2']; assert 'IfThenElse' in br2
+    tails = src((br2, 'execute')); assert tails, 'no exec into IfThenElse_2'
+    cmc = (N['K2Node_VariableGet_0'], 'CharacterMovement'); vel = (N['K2Node_CallFunction_0'], 'ReturnValue')
+    inp = (N['K2Node_CallFunction_2'], 'ReturnValue'); dt = (N['K2Node_CallFunction_21'], 'ReturnValue'); gnd = (N['K2Node_CallFunction_116'], 'ReturnValue')
+    assert 'GetVelocity' in tid(vel[0]) and 'GetLastInputVector' in tid(inp[0]) and 'GetWorldDeltaSeconds' in tid(dt[0]) and 'IsMovingOnGround' in tid(gnd[0])
+    def P(k): return g.get(k, PCC, g.get('GR_Profile'))
+    def rng(v, lo, hi): return g.pure(M + 'InRange_FloatFloat', {'Value': v, 'Min': lo, 'Max': hi, 'InclusiveMin': True, 'InclusiveMax': True})
+    now = g.pure('Now')
+    hasIn = rng(g.pure(M + 'VSizeXY', {'A': inp}), 0.1, 1e9)
+    dirIn = g.pure(M + 'Vector_Normal2D', {'A': inp, 'Tolerance': 0.0001})
+    spd = g.pure(M + 'VSizeXY', {'A': vel})
+    vd = g.pure(M + 'Dot_VectorVector', {'A': vel, 'B': dirIn})
+    # against: vd < -0.3 x speed  <=>  vd + 0.3 x speed < 0
+    against = g.AND(g.AND(hasIn, rng(spd, 60.0, 1e9)), rng(g.math(vd, g.mul(spd, 0.3), 1), -1e9, -0.001))
+    tA = g.pure(M + 'SelectFloat', {'A': now, 'B': g.get('GR223_RevAgainstT'), 'bPickA': against})
+    for t_ in tails: B.break_pins(qpin(t_, True).pin_id, qpin((br2, 'execute')).pin_id)
+    s1 = g.set('GR223_RevAgainstT', tA, tails[0])
+    for t_ in tails[1:]: connect(t_, (s1[0], 'execute'))
+    cap = g.pure('/Script/Engine.MovementComponent:GetMaxSpeed', {'self': cmc})
+    amax = g.pure('/Script/Engine.CharacterMovementComponent:GetMaxAcceleration', {'self': cmc})
+    on = g.AND(rng(P('GR223_RevPushAccel'), 0.5, 1e9), g.pure(M + 'InRange_FloatFloat', {'Value': cap, 'Min': P('GR223_RevPushVMin'), 'Max': P('GR223_RevPushVMax'), 'InclusiveMin': True, 'InclusiveMax': True}))
+    since = g.sub(now, g.get('GR223_RevAgainstT'))
+    inWin = g.pure(M + 'InRange_FloatFloat', {'Value': since, 'Min': 0.0, 'Max': P('GR223_RevPushWin'), 'InclusiveMin': True, 'InclusiveMax': True})
+    push = g.AND(g.AND(on, gnd), g.AND(g.AND(hasIn, inWin), g.AND(rng(vd, 0.0, 1e9), rng(g.sub(cap, spd), 0.5, 1e9))))
+    extra = g.pure(M + 'FMax', {'A': g.sub(P('GR223_RevPushAccel'), amax), 'B': 0.0})
+    add = g.pure(M + 'FMin', {'A': g.mul(extra, dt), 'B': g.sub(cap, spd)})
+    bd = g.fn('BreakVector', {'InVec': dirIn}); bv = g.fn('BreakVector', {'InVec': vel})
+    nv = g.pure('MakeVector', {'X': g.math((bv, 'X'), g.mul((bd, 'X'), add), 1), 'Y': g.math((bv, 'Y'), g.mul((bd, 'Y'), add), 1), 'Z': (bv, 'Z')})
+    y, n = g.branch(push, s1)
+    sv = g.record(g.editor().add_set_member_variable_node('Velocity', '/Script/Engine.MovementComponent'))
+    connect(cmc, (sv, 'self')); connect(nv, (sv, 'Velocity')); connect(y, (sv, 'execute'))
+    connect((sv, 'then'), (br2, 'execute')); connect(n, (br2, 'execute'))
+    out['graph'] = {'tails': [t_[0].rsplit('.', 1)[-1] for t_ in tails], 'set': sv.rsplit('.', 1)[-1]}
+st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:6]
+cb = u.load_asset(CHILD); out['child'] = str(compile_ok(cb)[0])
+pawn = u.get_default_object(cb.generated_class()); out['child_profile'] = str(pawn.get_editor_property('GR_Profile'))[:60]
+da = u.load_asset(DA); out['da_push'] = da.get_editor_property('GR223_RevPushAccel')
+ok = 'UP_TO_DATE' in str(st) and not errs and 'UP_TO_DATE' in out['child'] and 'None' not in out['child_profile'] and float(out['da_push']) == 0.0
+out['ok'] = ok
+if ok and getattr(builtins, 'V223_SAVE', False):
+    save(bp, cb, prof)
+    if DA in [p.get_name() for p in LS.get_dirty_content_packages()]: save(da)
+    out['saved'] = True
+print('RP223 ' + json.dumps(out, default=str))

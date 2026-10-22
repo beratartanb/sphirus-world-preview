@@ -1,0 +1,38 @@
+"""cam223.py <run> <t0> <t1> [...] : V2.23 camera read-out per window (game camera rows: camera, camrot, fov, vb_chest, ax, cy).
+  screen x / y  : the visible chest projected with the camera's own rotation and FOV (-1..1, + right / + up): range and the frame-to-frame
+                  jitter (95th percentile |dx| per frame, x1000) - 'character nailed to the screen' vs 'moves within the frame'
+  cam move      : camera world path in the window vs capsule path (how much a tap / settle moves the view)
+  cam jerk      : 95th / max |second difference| of the camera position (cm per frame^2) - smoothness
+  yaw lag       : max |camera yaw - control yaw| (deg) - added look latency (must stay ~0: look stays direct)
+  fov / dist    : FOV range, camera -> chest distance range
+  follow        : SHME CamFolLat / CamFolFwd ranges when logged."""
+import json, sys, math, pathlib
+P = next(q for q in pathlib.Path(__file__).resolve().parents if (q / 'sphirus.uproject').exists()); E = P / 'Saved/Codex/SHME_V1_20260925/Evidence'
+def rot(r):
+    p = r.get('camrot')
+    if isinstance(p, list): return p
+    s = str(p); d = dict(x.split('=') for x in s.split())
+    return [float(d['P']), float(d['Y']), float(d['R'])]
+def pct(a, q): a = sorted(a); return a[min(len(a) - 1, int(q * len(a)))] if a else 0.0
+a = sys.argv[1:]
+for i in range(0, len(a), 3):
+    lab, t0, t1 = a[i], float(a[i + 1]), float(a[i + 2])
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and isinstance(r.get('camera'), list) and isinstance(r.get('vb_chest'), list) and t0 <= float(r['t']) <= t1], key=lambda r: float(r['t']))
+    sx = []; sy = []; lag = []; fov = []; dist = []; cam = []; cap = []; fl = []; ff = []
+    for r in R:
+        pt, yw, rl = rot(r); c = r['camera']; x = r['vb_chest']
+        yr, pr = math.radians(yw), math.radians(pt)
+        fwd = (math.cos(pr) * math.cos(yr), math.cos(pr) * math.sin(yr), math.sin(pr)); rt = (-math.sin(yr), math.cos(yr), 0.0)
+        up = (fwd[1] * rt[2] - fwd[2] * rt[1], fwd[2] * rt[0] - fwd[0] * rt[2], fwd[0] * rt[1] - fwd[1] * rt[0])
+        d = (x[0] - c[0], x[1] - c[1], x[2] - c[2]); z = sum(d[k] * fwd[k] for k in range(3))
+        th = math.tan(math.radians(float(r.get('fov') or 90.0)) / 2.0)
+        if z > 1: sx.append(sum(d[k] * rt[k] for k in range(3)) / z / th); sy.append(sum(d[k] * up[k] for k in range(3)) / z / th / (9 / 16))
+        lag.append(abs(((yw - float(r.get('cy') or yw)) + 180) % 360 - 180)); fov.append(float(r.get('fov') or 0)); dist.append(math.dist(c, x))
+        cam.append(c); cap.append(r['ax'] if isinstance(r.get('ax'), list) else x)
+        if r.get('cv_CamFolLat') not in (None, 'err'): fl.append(float(r['cv_CamFolLat'])); ff.append(float(r['cv_CamFolFwd']))
+    jit = [abs(b - a_) for a_, b in zip(sx, sx[1:])]
+    jerk = [math.dist((cam[k + 1][0] - 2 * cam[k][0] + cam[k - 1][0], cam[k + 1][1] - 2 * cam[k][1] + cam[k - 1][1], cam[k + 1][2] - 2 * cam[k][2] + cam[k - 1][2]), (0, 0, 0)) for k in range(1, len(cam) - 1)]
+    cmv = sum(math.dist(p, q) for p, q in zip(cam, cam[1:])); kmv = sum(math.dist(p, q) for p, q in zip(cap, cap[1:]))
+    print('CAM223 %-28s [%5.2f %5.2f] screen x %+.2f..%+.2f y %+.2f..%+.2f jit95 %4.1f | cam path %5.1f / capsule %5.1f cm | jerk95 %4.2f max %5.2f | yaw lag %4.2f | fov %4.1f..%4.1f | dist %5.1f..%5.1f | fol L %s F %s' % (
+        lab[-28:], t0, t1, min(sx), max(sx), min(sy), max(sy), pct(jit, 0.95) * 1000, cmv, kmv, pct(jerk, 0.95), max(jerk or [0]), max(lag), min(fov), max(fov), min(dist), max(dist),
+        ('%.1f..%.1f' % (min(fl), max(fl))) if fl else '-', ('%.1f..%.1f' % (min(ff), max(ff))) if ff else '-'))

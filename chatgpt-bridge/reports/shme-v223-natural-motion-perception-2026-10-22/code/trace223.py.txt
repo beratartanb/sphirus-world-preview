@@ -1,0 +1,54 @@
+"""trace223.py <run> [--thr=3.0 --t0= --t1= --all] : V2.23 position-authority trace of the VISIBLE pelvis.
+World chain per frame:  vb_pelvis = ax (capsule) + [mesh comp - ax] + [MM root - mesh comp] + [MM pelvis - MM root] + [vb pelvis - MM pelvis]
+For every frame the change of each layer (beyond what the capsule velocity explains for the capsule itself) is split, in the actor-yaw
+frame of the previous row (fwd / left / up, cm). A frame is flagged when the visible pelvis moves more than --thr cm beyond the capsule's
+own displacement (residual), or the capsule moves more than --thr cm beyond v*dt (capsule jump). Camera: change of camera - ax and
+pivot - ax; 'tc' = residual projected on the camera->pelvis direction (negative = towards the camera).
+Context: stage, selected clip / time, CP start/stop owned, montage, root motion flag."""
+import json, sys, math, pathlib
+P = next(q for q in pathlib.Path(__file__).resolve().parents if (q / 'sphirus.uproject').exists()); E = P / 'Saved/Codex/SHME_V1_20260925/Evidence'
+args = [a for a in sys.argv[1:] if not a.startswith('--')]; opt = dict((a[2:].split('=', 1) + [''])[:2] for a in sys.argv[1:] if a.startswith('--'))
+THR = float(opt.get('thr') or 3.0)
+def V(r, k):
+    x = r.get(k); return x if isinstance(x, list) and len(x) == 3 else None
+def sub(a, b): return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
+def frame(d, yaw):
+    a = math.radians(yaw); f = (math.cos(a), math.sin(a)); l = (-f[1], f[0])
+    return (d[0] * f[0] + d[1] * f[1], d[0] * l[0] + d[1] * l[1], d[2])
+def n(d): return math.sqrt(d[0] ** 2 + d[1] ** 2 + d[2] ** 2)
+def clip(r):
+    if str(r.get('av_CP_StartOwned')) == 'True': return 'CPstart@%.2f' % float(r.get('av_CP_StartEvalTime') or 0)
+    if str(r.get('av_CP_StopOwned')) == 'True': return 'CPstop@%.2f' % float(r.get('av_CP_StopEvalTime') or 0)
+    m = str(r.get('mona') or 'none')
+    if m != 'none': return 'M:' + m.rsplit('/', 1)[-1][-26:] + '@%s' % r.get('mpos')
+    return str(r.get('av_Phase27_SelectedObject')).rsplit('.', 1)[-1][-28:] + '@%.2f' % float(r.get('av_Phase27_SelectedTime') or 0)
+out_all = {}
+for lab in args:
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and V(r, 'ax') and V(r, 'vb_pelvis') and V(r, 'mwl')], key=lambda r: float(r['t']))
+    t0 = float(opt.get('t0') or -1); t1 = float(opt.get('t1') or 1e9)
+    flags = []; worst = {'res': 0, 'cap': 0, 'cam': 0}
+    print('TRACE223 %s rows %d thr %.1f cm' % (lab, len(R), THR))
+    for a, b in zip(R, R[1:]):
+        t = float(b['t'])
+        if not (t0 <= t <= t1): continue
+        dt = float(b.get('wdt') or (t - float(a['t'])) or 1 / 30.0); yaw = float(a.get('ay') or 0)
+        def L(r):
+            ax, mw, rt, mp, vp = V(r, 'ax'), V(r, 'mwl'), V(r, 'mh_root'), V(r, 'mh_pelvis'), V(r, 'vb_pelvis')
+            return {'cap': ax, 'mesh': sub(mw, ax), 'root': sub(rt, mw) if rt else (0, 0, 0), 'pel': sub(mp, rt) if (mp and rt) else (0, 0, 0), 'vb': sub(vp, mp) if mp else (0, 0, 0), 'cam': sub(V(r, 'camera'), ax) if V(r, 'camera') else (0, 0, 0), 'piv': sub(V(r, 'apv'), ax) if V(r, 'apv') else (0, 0, 0)}
+        la, lb = L(a), L(b)
+        vavg = ((float(a.get('avx') or 0) + float(b.get('avx') or 0)) / 2 * dt, (float(a.get('avy') or 0) + float(b.get('avy') or 0)) / 2 * dt, 0.0)
+        dcap = sub(lb['cap'], la['cap']); capj = sub(dcap, vavg); capj = (capj[0], capj[1], 0.0)
+        D = {k: frame(sub(lb[k], la[k]), yaw) for k in ('mesh', 'root', 'pel', 'vb', 'cam', 'piv')}
+        res = tuple(D['mesh'][i] + D['root'][i] + D['pel'][i] + D['vb'][i] for i in range(3))
+        cp = V(b, 'camera'); vp = V(b, 'vb_pelvis'); tc = 0.0
+        if cp and vp:
+            c2p = sub(vp, cp); nn = n(c2p) or 1.0; rw = sub(sub(V(b, 'vb_pelvis'), V(a, 'vb_pelvis')), dcap); tc = (rw[0] * c2p[0] + rw[1] * c2p[1] + rw[2] * c2p[2]) / nn
+        worst['res'] = max(worst['res'], n(res)); worst['cap'] = max(worst['cap'], n(capj)); worst['cam'] = max(worst['cam'], n(D['cam']))
+        if n(res) > THR or n(capj) > THR or 'all' in opt:
+            flags.append(t)
+            print('  %.3f %-10s sp%4.0f dt%.3f | RES f%+5.1f l%+5.1f u%+5.1f tc%+5.1f | capJ %4.1f | mesh %4.1f root f%+5.1f l%+5.1f pel %4.1f vb %4.1f | cam %4.1f piv %4.1f | rm%s mrl %s %s | %s' % (
+                t, str(b.get('stage'))[:10], float(b.get('Speed2D') or 0), dt, res[0], res[1], res[2], tc, n(capj), n(D['mesh']), D['root'][0], D['root'][1], n(D['pel']), n(D['vb']), n(D['cam']), n(D['piv']),
+                b.get('rmp'), '/'.join('%.0f' % x for x in (V(b, 'mrl') or [0, 0, 0])), b.get('mry'), clip(b)))
+    print('  WORST residual %.1f cm  capsule-jump %.1f cm  camera-rel %.1f cm  flagged %d' % (worst['res'], worst['cap'], worst['cam'], len(flags)))
+    out_all[lab] = worst
+print('TRACE223_JSON ' + json.dumps(out_all))

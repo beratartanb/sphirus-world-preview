@@ -1,0 +1,77 @@
+"""author223_jrev.py (editor job) - V2.23 A1: authored STRAFE jog reversal pivots on the capsule path (V2.16 method: time first, then space).
+Target capsule profile (clip time of the MM entry; Saved/Codex/SHME_V223_20261022/paths/jrev_*.json = the measured brake of v223t4 g2qp):
+  brake        : measured (CMC + RedirectFriction, ~480-600 cm/s2), unchanged
+  zero crossing: B_F 1.15 s, F_B 0.667 s (clip time)
+  re-push      : v = v0 + PUSH x (t - tz), capped at the loop speed (B_F forward 300, F_B rear 245); PUSH = the GR223_RevPushAccel the
+                 capsule will run (default 420 cm/s2) - the 'slow motion' re-start was 180-270 cm/s2 with long, slow steps
+Jobs:
+  1. timewarp216 (cadence mode) SHM_DPP_Jog_Bwd_Pivot -> SHM223_JogPiv_B_F_tw from the zero crossing: its re-push steps were 0.44-0.46 s
+     (jog loops 0.33-0.37 s) -> rate toward 0.36 s per step (r <= 1.35); the brake keeps its own timing (MM entry frame unchanged)
+  2. remap216 SHM223_JogPiv_B_F_tw -> SHM223_JogPiv_B_F and A_CP2_Jog_Fwd_Pivot -> SHM223_JogPiv_F_B onto the target profile (root =
+     capsule path, stances anchored once in the world, swing errors blended, legs re-solved, leg_guard); lat_scale 1, floor_keep 0.3
+  3. PSD_SHM223_JogReversal (schema / biases of PSD_SHM_Redirect_JogReversal) = SHM223_JogPiv_F_B + SHM223_JogPiv_B_F + the rear / back
+     loops of the production database (A_CT_Jog_Bwd, A_RB_Jog_Rear / RearLeft / RearRight) - no forward loop (Q rule: the bridge played
+     it through the zero crossing), no A_CP2 / A_DPP forward pivots (one pivot per family: MM alternated between duplicates)
+builtins.V223_JR = {'push': 420, 'dry_run': True|False, 'steps': [1,2,3]}. Prints JR223 {...}."""
+import unreal as u, json, builtins, pathlib, math
+P = pathlib.Path(u.Paths.project_dir()).resolve(); T = P / 'Tools'
+L = u.AnimationLibrary; EAL = u.EditorAssetLibrary; AT = u.AssetToolsHelpers.get_asset_tools()
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+cfg = getattr(builtins, 'V223_JR', {}); DRY = bool(cfg.get('dry_run', True)); PUSH = float(cfg.get('push', 420.0)); STEPS = cfg.get('steps', [1, 2, 3])
+V = '/Game/GraceRanger/SHME/Animations/V223/'; RD = '/Game/GraceRanger/SHME/Animations/Redirect/'
+SRC_BF = RD + 'SHM_DPP_Jog_Bwd_Pivot'; SRC_FB = '/Game/GraceRanger/Animations/CorePerformance/A_CP2_Jog_Fwd_Pivot'
+TW_BF = V + 'SHM223_JogPiv_B_F_tw'; DST_BF = V + 'SHM223_JogPiv_B_F'; DST_FB = V + 'SHM223_JogPiv_F_B'
+out = {'dry': DRY, 'push': PUSH}
+def prof(name, pre_v, pre_h, entry, tz, v_loop, h_after, t_end=3.6):
+    d = json.loads((P / 'Saved/Codex/SHME_V223_20261022/paths' / (name + '.json')).read_text())
+    meas = {round(s[0], 3): s[1] for s in d['speed']}
+    sp, hd = [], []
+    v0 = None
+    for k in range(int(t_end * 30) + 1):
+        t = k / 30.0
+        if t < entry: v, h = pre_v, pre_h
+        elif t <= tz:
+            v = meas.get(round(t, 3), min(meas.items(), key=lambda kv: abs(kv[0] - t))[1]); h = pre_h; v0 = v
+        else:
+            v = min(v_loop, (v0 or 0.0) + PUSH * (t - tz)); h = h_after
+        sp.append([round(t, 4), round(v, 1)]); hd.append([round(t, 4), h])
+    return sp, hd
+sp_bf, hd_bf = prof('jrev_b_f', 200.0, 270.0, 0.87, 1.15, 300.0, 90.0, 3.7)
+sp_fb, hd_fb = prof('jrev_f_b', 300.0, 90.0, 0.17, 0.667, 245.0, 270.0, 2.6)
+out['profile_bf'] = sp_bf[24:66:3]; out['profile_fb'] = sp_fb[3:45:3]
+if 1 in STEPS:
+    builtins.V216_TW = {'jobs': [{'src': SRC_BF, 'dst': TW_BF, 'entry': 1.15, 'mode': 'cadence', 'speed': sp_bf, 'step_dur': [[0.0, 0.36], [400.0, 0.36]],
+                                  'r_min': 0.95, 'r_max': 1.35, 'slew': 3.0, 'dry_run': DRY}]}
+    exec(compile((T / 'SHME_V216_20261018/timewarp216.py').read_text(encoding='utf8'), 'timewarp216.py', 'exec'), {'__name__': '__tw__'})
+    out['tw'] = json.loads((P / 'Saved/Codex/SHME_V216_20261018/tw216_last.json').read_text())
+if 2 in STEPS:
+    src_bf = TW_BF if EAL.does_asset_exist(TW_BF) else SRC_BF
+    builtins.V216_RM = {'jobs': [{'src': src_bf, 'dst': DST_BF, 'speed': sp_bf, 'heading': hd_bf, 'facing': [[0.0, 90.0]], 'lat_scale': 1.0, 'floor_keep': 0.3, 'dry_run': DRY},
+                                 {'src': SRC_FB, 'dst': DST_FB, 'speed': sp_fb, 'heading': hd_fb, 'facing': [[0.0, 90.0]], 'lat_scale': 1.0, 'floor_keep': 0.3, 'dry_run': DRY}]}
+    exec(compile((T / 'SHME_V216_20261018/remap216.py').read_text(encoding='utf8'), 'remap216.py', 'exec'), {'__name__': '__rm__'})
+    lst = P / 'Saved/Codex/SHME_V216_20261018/rm216_last.json'
+    out['rm'] = json.loads(lst.read_text()) if lst.exists() else 'see RM216 line'
+if 3 in STEPS and not DRY:
+    JR = u.load_asset(RD + 'PSD_SHM_Redirect_JogReversal'); n = 'PSD_SHM223_JogReversal'; path = V + n
+    clips = [DST_FB, DST_BF, '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Bwd'] + ['/Game/GraceRanger/Animations/LocomotionBehavior/RearRevision/A_RB_Jog_Rear' + s for s in ('', 'Left', 'Right')]
+    u.SystemLibrary.execute_console_command(None, 'a.MotionMatch.ReindexCancelledDatabases 1')
+    if not EAL.does_asset_exist(path):
+        f = u.DataAssetFactory(); f.set_editor_property('data_asset_class', u.PoseSearchDatabase)
+        db = AT.create_asset(n, V.rstrip('/'), u.PoseSearchDatabase, f); assert db, n
+        db.set_editor_property('schema', JR.get_editor_property('schema'))
+        for k in ('base_cost_bias', 'continuing_pose_cost_bias', 'looping_cost_bias', 'normalization_set'):
+            try: db.set_editor_property(k, JR.get_editor_property(k))
+            except Exception as e: out.setdefault('prop_err', []).append([k, str(e)[:80]])
+        assert EAL.save_asset(path, False)
+    db = u.load_asset(path); tr = 'SHME_V223_JogReversal'
+    for c in clips:
+        s = u.load_asset(c); assert s, c
+        if tr in [str(t) for t in L.get_animation_notify_track_names(s)]: L.remove_animation_notify_track(s, tr)
+        L.add_animation_notify_track(s, tr); ln = float(s.get_play_length()); loop = 'Pivot' not in c
+        st = L.add_animation_notify_state_event(s, tr, 0.0, ln if loop else max(0.01, ln - 0.001), u.AnimNotifyState_PoseSearchBranchIn)
+        st.set_editor_property('database', db); assert EAL.save_asset(c, False), c
+    assert EAL.save_asset(path, False)
+    out['db'] = {'n': db.get_num_animation_assets(), 'entries': [db.get_animation_asset(i).get_name() for i in range(db.get_num_animation_assets())]}
+    u.SystemLibrary.execute_console_command(None, 'a.MotionMatch.RequestAsyncBuildIndexOnPostLoad 1'); u.SystemLibrary.execute_console_command(None, 'a.MotionMatch.ReindexCancelledDatabases')
+out['dirty'] = [q.get_name() for q in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+print('JR223 ' + json.dumps(out, default=str)[:9000])

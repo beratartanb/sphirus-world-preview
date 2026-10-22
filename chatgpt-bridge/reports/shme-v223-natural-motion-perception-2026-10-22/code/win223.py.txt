@@ -1,0 +1,25 @@
+"""win223.py <run> <t0> <t1> [<run> <t0> <t1> ...] : one line per window - contact221 (window-local calibration) per foot: worst net slip
+per contact, summed drag path, skim path, sink frames; the visible pelvis vs capsule offset range along the travel; speed min / max;
+the selected clips in the window. Used for the V2.23 A/B tables (same window for both variants)."""
+import json, sys, math, pathlib, subprocess
+P = next(q for q in pathlib.Path(__file__).resolve().parents if (q / 'sphirus.uproject').exists()); E = P / 'Saved/Codex/SHME_V1_20260925/Evidence'
+a = sys.argv[1:]
+for i in range(0, len(a), 3):
+    lab, t0, t1 = a[i], float(a[i + 1]), float(a[i + 2])
+    subprocess.run([sys.executable, str(P / 'Tools/SHME_V221_20261021/contact221.py'), lab, '--t0=%s' % t0, '--t1=%s' % t1, '--json'], capture_output=True)
+    C = json.loads((P / 'Saved/Codex/SHME_V216_20261018/contact' / (lab + '.json')).read_text())
+    o = {}
+    for s in 'lr':
+        f = C['feet'][s]; cs = f['contacts']
+        o[s] = (max([c['net_cm'] for c in cs] or [0]), sum(c['drag_path_cm'] for c in cs), f.get('skim_path_cm', 0), f.get('sink_frames', 0))
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and isinstance(r.get('ax'), list) and t0 <= float(r['t']) <= t1], key=lambda r: float(r['t']))
+    off = []; clips = []
+    for r in R:
+        v = (float(r['avx']), float(r['avy'])); n = math.hypot(*v)
+        yaw = math.radians(float(r.get('ay') or 0)); f_ = (math.cos(yaw), math.sin(yaw))
+        d = (r['vb_pelvis'][0] - r['ax'][0], r['vb_pelvis'][1] - r['ax'][1]); off.append(d[0] * f_[0] + d[1] * f_[1])
+        c = str(r.get('av_Phase27_SelectedObject')).rsplit('.', 1)[-1]
+        if not clips or clips[-1] != c: clips.append(c)
+    sp = [float(r['Speed2D']) for r in R]
+    print('WIN223 %-30s [%5.2f %5.2f] L net %5.1f drag %5.1f skim %5.1f sink %2d | R net %5.1f drag %5.1f skim %5.1f sink %2d | pelvis-cap fwd %+5.1f..%+5.1f | sp %3.0f..%3.0f | %s' % (
+        lab[-30:], t0, t1, *o['l'], *o['r'], min(off), max(off), min(sp), max(sp), ' > '.join(x[-22:] for x in clips)))

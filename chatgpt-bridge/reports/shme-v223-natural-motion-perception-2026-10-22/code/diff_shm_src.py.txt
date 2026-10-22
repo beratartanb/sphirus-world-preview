@@ -1,0 +1,70 @@
+--- Saved/Codex/SHME_V223_20261022/checkpoint/tools_v1/shm_src.py.v223a	2026-10-22 05:51:42.057195200 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-22 15:05:26.793107500 +0300
+@@ -1006,7 +1006,16 @@
+   (set CamStepAge aN)
+   ; look-ahead along the real travel direction, grows with speed, slow and bounded; it never rotates the view
+   (bind laD (lerp (R CamLookAheadWalk) (R CamLookAheadSprint) (clamp (/ (- Speed 130.0) 360.0) 0.0 1.0)))
+-  (bind laT (selv (and cOn (> Speed 60.0)) (vscale vh laD) "(X=0,Y=0,Z=0)"))
++  ; V2.23: camera yaw frame (the player's view), shared by the view look-ahead and the perceptual follow below
++  (bind pcm3 (Oyun|GetPlayerCameraManager :PlayerIndex 0))
++  (bind (cr3 cp3 cy3) (Matematik|Döndürücü|BreakRotator :InRot (Kamera|GetCameraRotation :self pcm3)))
++  (bind yr3 (Matematik|Döndürücü|MakeRotator :Roll 0.0 :Pitch 0.0 :Yaw cy3))
++  (bind cfw (Matematik|Vektör|GetForwardVector :InRot yr3))
++  (bind crt (Matematik|Vektör|GetRightVector :InRot yr3))
++  (bind folOn (R CamFollowEnabled))
++  ; V2.23 view look-ahead: along the view only for travel with the view, sideways x CamLookSide, never toward the camera
++  (bind laV (+ (vscale cfw (* laD (clamp (dot vh cfw) 0.0 1.0))) (vscale crt (* (* laD (R CamLookSide)) (dot vh crt)))))
++  (bind laT (selv (and cOn (> Speed 60.0)) (selv folOn laV (vscale vh laD)) "(X=0,Y=0,Z=0)"))
+   (set CamLookAhead (selv tele "(X=0,Y=0,Z=0)" (+ CamLookAhead (vscale (- laT CamLookAhead) (- 1.0 (exp (/ (- 0.0 h) (max (R CamLookAheadTau) 0.05))))))))
+   (set CamOffset (+ CamOffset (vscale (+ CamLookAhead (vec 0.0 0.0 CamStepZ)) fx)))
+   ; speed FOV: small at jog, the rest above jog speed; rises slower than speed changes, falls slower still (Shift taps)
+@@ -1014,6 +1023,49 @@
+   (bind fTau (select (> fT CamFOVSpd) (R CamFOVRiseTau) (R CamFOVFallTau)))
+   (set CamFOVSpd (select tele 0.0 (+ CamFOVSpd (* (- fT CamFOVSpd) (- 1.0 (exp (/ (- 0.0 h) (max fTau 0.05))))))))
+   (set CamFOVDelta (+ CamFOVDelta (* CamFOVSpd fx)))
++  ; ---- V2.23 perceptual follow: per-axis soft zone in the camera frame (e = follow point - capsule, cm; + right / + view forward)
++  ; the capsule's displacement this frame (Position - CamV221Pos, before its update) moves e; the zone law then pulls the point:
++  ; spring on the part of e outside the zone, velocity reference = the capsule's own axis velocity while it pushes the edge
++  (bind dP (- Position CamV221Pos))
++  (bind vL (dot PlanarVelocity crt))
++  (bind vF (dot PlanarVelocity cfw))
++  ; V2.23b world-frame follow: the stored offset / velocity are world x / y, projected on the camera axes for the zone law
++  (bind eW (vec (- CamFolLat (.x dP)) (- CamFolFwd (.y dP)) 0.0))
++  (bind uW (vec CamFolVLat CamFolVFwd 0.0))
++  (bind eL0 (dot eW crt))
++  (bind eF0 (dot eW cfw))
++  (bind uL0 (dot uW crt))
++  (bind uF0 (dot uW cfw))
++  (bind zL (R CamFolDZLat))
++  (bind zF (R CamFolDZFwd))
++  (bind xL (- eL0 (clamp eL0 (- 0.0 zL) zL)))
++  (bind xF (- eF0 (clamp eF0 (- 0.0 zF) zF)))
++  ; edge weight: 0 inside 60 % of the zone, 1 at the edge; push = the capsule moves away from the point on that axis
++  (bind kL (* (clamp (/ (- (abs eL0) (* 0.6 zL)) (max (* 0.4 zL) 1.0)) 0.0 1.0) (clamp (/ (- 0.0 (* eL0 vL)) (+ (* (abs eL0) 30.0) 1.0)) 0.0 1.0)))
++  (bind kF (* (clamp (/ (- (abs eF0) (* 0.6 zF)) (max (* 0.4 zF) 1.0)) 0.0 1.0) (clamp (/ (- 0.0 (* eF0 vF)) (+ (* (abs eF0) 30.0) 1.0)) 0.0 1.0)))
++  ; resting (slow, no input): re-centre gently, then rest
++  (bind rest (select (< Speed 20.0) 1.0 0.0))
++  (bind wR (R CamFolRecentreW))
++  (bind wL (R CamFolWLat))
++  (bind wF (R CamFolWFwd))
++  ; damping: critical for the zone spring; while resting inside the zone critical for the slow re-centre spring
++  (bind dL (* 2.0 (select (and (> rest 0.5) (< (abs xL) 0.5)) wR wL)))
++  (bind dF (* 2.0 (select (and (> rest 0.5) (< (abs xF) 0.5)) wR wF)))
++  (bind aL (- (- (* (* wL wL) (- 0.0 xL)) (* (* (* wR wR) rest) eL0)) (* dL (- uL0 (* kL vL)))))
++  (bind aF (- (- (* (* wF wF) (- 0.0 xF)) (* (* (* wR wR) rest) eF0)) (* dF (- uF0 (* kF vF)))))
++  (bind uL (+ uL0 (* aL h)))
++  (bind uF (+ uF0 (* aF h)))
++  (bind fm (R CamFolMax))
++  (bind live (and folOn (not tele)))
++  (bind eL1 (clamp (+ eL0 (* uL h)) (- 0.0 fm) fm))
++  (bind eF1 (clamp (+ eF0 (* uF h)) (- 0.0 fm) fm))
++  (bind eW1 (+ (vscale crt eL1) (vscale cfw eF1)))
++  (bind uW1 (+ (vscale crt uL) (vscale cfw uF)))
++  (set CamFolVLat (select live (.x uW1) 0.0))
++  (set CamFolVFwd (select live (.y uW1) 0.0))
++  (set CamFolLat (select live (.x eW1) 0.0))
++  (set CamFolFwd (select live (.y eW1) 0.0))
++  (set CamOffset (+ CamOffset (vec CamFolLat CamFolFwd 0.0)))
+   ; ---- V2.22 closeness by speed: boom x k(v) (stand / walk 140 / jog 300 / sprint 490 cm/s keys), outdoors only (x CamOpenness)
+   (bind kw (lerp (R CamCloseStand) (R CamCloseWalk) (clamp (/ Speed 140.0) 0.0 1.0)))
+   (bind kj (lerp (R CamCloseWalk) (R CamCloseJog) (clamp (/ (- Speed 140.0) 160.0) 0.0 1.0)))

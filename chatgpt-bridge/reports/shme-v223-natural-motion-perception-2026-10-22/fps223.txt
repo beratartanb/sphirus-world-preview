@@ -1,0 +1,39 @@
+# V2.23 frame-rate check: fixed step 20 / 60 / 120 (and real time). S->W windows, p = V2.23 production, o = V2.22
+v223f20_j23_ws_p_r1 | rows 293 rate 20.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2}
+v223f20_ss_taps_p_r1 | rows 277 rate 20.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1}
+v223f20_d_jog_p_r1 | rows 358 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223f20_st_jog_p_r1 | rows 356 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223f60_j23_ws_p_r1 | rows 881 rate 60.1/s | pops >25 m/s2: 25 (worst 43) | by owner {'in-clip': 25}
+v223f60_ss_taps_p_r1 | rows 835 rate 60.1/s | pops >25 m/s2: 4 (worst 49) | by owner {'in-clip': 4}
+v223f60_d_jog_p_r1 | rows 1078 rate 60.1/s | pops >25 m/s2: 32 (worst 35) | by owner {'in-clip': 32}
+v223f60_st_jog_p_r1 | rows 1072 rate 60.1/s | pops >25 m/s2: 21 (worst 32) | by owner {'in-clip': 21}
+v223f120_j23_ws_p_r1 | rows 1763 rate 120.1/s | pops >25 m/s2: 9 (worst 91) | by owner {'in-clip': 9}
+v223f120_ss_taps_p_r1 | rows 1672 rate 120.1/s | pops >25 m/s2: 10 (worst 117) | by owner {'in-clip': 10}
+v223f120_d_jog_p_r1 | rows 2158 rate 120.1/s | pops >25 m/s2: 7 (worst 98) | by owner {'in-clip': 7}
+v223f120_st_jog_p_r1 | rows 2146 rate 120.1/s | pops >25 m/s2: 8 (worst 83) | by owner {'in-clip': 8}
+v223rt_j23_ws_p_r1 | rows 435 rate 30.5/s | pops >25 m/s2: 2 (worst 51) | by owner {'in-clip': 2}
+v223rt_d_jog_p_r1 | rows 451 rate 25.8/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223rt_ss_taps_p_r1 | rows 401 rate 29.7/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1}
+v223fo20_j23_ws_o_r1 | rows 293 rate 20.1/s | pops >25 m/s2: 2 (worst 135) | by owner {'in-clip': 2}
+v223fo20_j23_ovl_o_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 2 (worst 135) | by owner {'in-clip': 2}
+v223fo20_j23_ovl_p_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 1 (worst 29) | by owner {'in-clip': 1}
+v223fo60_j23_ws_o_r1 | rows 881 rate 60.1/s | pops >25 m/s2: 18 (worst 1108) | by owner {'in-clip': 18}
+v223fo60_j23_ovl_o_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 24 (worst 1062) | by owner {'in-clip': 24}
+v223fo60_j23_ovl_p_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 25 (worst 39) | by owner {'in-clip': 25}
+v223fo120_j23_ws_o_r1 | rows 1763 rate 120.1/s | pops >25 m/s2: 8 (worst 2053) | by owner {'in-clip': 8}
+v223fo120_j23_ovl_o_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 11 (worst 1975) | by owner {'in-clip': 11}
+v223fo120_j23_ovl_p_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 6 (worst 75) | by owner {'in-clip': 6}
+v223fo30_j23_ovl_o_r1 | rows 434 rate 30.1/s | pops >25 m/s2: 2 (worst 296) | by owner {'in-clip': 2}
+WIN223 v223fo20_j23_ws_o_r1           [ 7.75  9.60] L net  25.5 drag  35.2 skim  13.2 sink  0 | R net  49.4 drag  65.3 skim 116.3 sink  3 | pelvis-cap fwd -18.6.. +3.8 | sp   4..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Lfoot > A_CT_Jog_Fwd
+WIN223 v223f20_j23_ws_p_r1            [ 7.75  9.60] L net  22.0 drag  83.7 skim  49.1 sink  3 | R net  43.8 drag  87.6 skim 140.0 sink  3 | pelvis-cap fwd  -3.3.. +5.2 | sp   4..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > A_CP2_Jog_Fwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fo20_j23_ovl_o_r1          [ 7.60  9.60] L net   6.2 drag  11.4 skim  29.3 sink  0 | R net  55.1 drag  82.6 skim  91.4 sink  2 | pelvis-cap fwd -18.6.. +7.4 | sp   4..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Lfoot > A_CT_Jog_Fwd
+WIN223 v223fo20_j23_ovl_p_r1          [ 7.60  9.60] L net  17.5 drag  72.7 skim  74.9 sink  3 | R net  35.8 drag  80.9 skim 157.1 sink  1 | pelvis-cap fwd  -2.2.. +7.4 | sp   4..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > A_CP2_Jog_Fwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fo60_j23_ws_o_r1           [ 7.75  9.60] L net  16.0 drag  23.4 skim  12.4 sink  0 | R net   2.1 drag   5.0 skim 103.6 sink  0 | pelvis-cap fwd -19.3.. +5.4 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Lfoot > A_CT_Jog_Fwd
+WIN223 v223f60_j23_ws_p_r1            [ 7.75  9.60] L net   9.3 drag  42.5 skim  53.4 sink  0 | R net  14.5 drag  33.1 skim 127.0 sink  0 | pelvis-cap fwd  -3.5.. +6.4 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fo60_j23_ovl_o_r1          [ 7.60  9.60] L net  27.1 drag  46.5 skim  34.1 sink  3 | R net  17.8 drag  38.5 skim  86.0 sink  0 | pelvis-cap fwd -25.7.. +7.4 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Rfoot > A_CT_Jog_Fwd
+WIN223 v223fo60_j23_ovl_p_r1          [ 7.60  9.60] L net   9.3 drag  21.8 skim  85.7 sink  0 | R net  20.7 drag  34.3 skim  78.2 sink  5 | pelvis-cap fwd  -3.5.. +7.4 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fo120_j23_ws_o_r1          [ 7.75  9.60] L net  17.2 drag  20.9 skim  16.2 sink  0 | R net   6.7 drag   8.5 skim 146.1 sink  0 | pelvis-cap fwd -19.3.. +5.7 | sp   0..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Lfoot > A_CT_Jog_Fwd
+WIN223 v223f120_j23_ws_p_r1           [ 7.75  9.60] L net  17.1 drag  46.3 skim  53.4 sink  2 | R net  17.9 drag  41.7 skim 110.2 sink  0 | pelvis-cap fwd  -2.1.. +6.0 | sp   0..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fo120_j23_ovl_o_r1         [ 7.60  9.60] L net  43.2 drag  55.2 skim  33.3 sink  2 | R net  18.1 drag  26.3 skim  98.9 sink  0 | pelvis-cap fwd -26.0.. +6.7 | sp   0..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Rfoot > A_CT_Jog_Fwd
+WIN223 v223fo120_j23_ovl_p_r1         [ 7.60  9.60] L net  21.6 drag  52.3 skim  51.2 sink  9 | R net 110.1 drag 135.4 skim  96.2 sink 18 | pelvis-cap fwd  -2.2.. +5.1 | sp   0..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223rt_j23_ws_p_r1             [ 7.75  9.60] L net  21.1 drag  69.8 skim  48.0 sink  0 | R net  11.5 drag  43.0 skim  59.7 sink  6 | pelvis-cap fwd  -1.1..+11.2 | sp   0..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd

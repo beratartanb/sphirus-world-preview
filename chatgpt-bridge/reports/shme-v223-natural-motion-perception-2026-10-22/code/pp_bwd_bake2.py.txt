@@ -1,0 +1,15 @@
+"""V2.23 A1 posture: SHM_DPP_Jog_Bwd_Pivot (project-owned copy, only in PSD_SHM_Redirect_JogReversalP / Q) re-push lean 30.6 deg (jog loop max
+11.7) + arm drive -> excess pitch over 11 kept x0.3, arm swing toward its running mean x0.7 inside the push (normalized 0.38-0.78); feet /
+root exact (legs re-solved, leg_guard). Then re-key the two databases (tag SHME_V223_BWD) so the cached index is rebuilt."""
+import builtins, json
+import unreal as u
+builtins.V212_PP = {'clips': ['/Game/GraceRanger/SHME/Animations/Redirect/SHM_DPP_Jog_Bwd_Pivot'], 'baseline_pitch': 11.0, 'keep': 0.0, 'max_fix': 25.0, 'src': {'/Game/GraceRanger/SHME/Animations/Redirect/SHM_DPP_Jog_Bwd_Pivot': '/Game/GraceRanger/Experimental/BodyInertia/DirectionPhase/A_DPP_Jog_Bwd_Pivot'},
+  'head_keep_gaze': 0.8, 'arm_damp': 0.6, 'arm_range': [0.38, 0.78], 'arm_edge': 0.06, 'dry_run': False, 'out': 'bwd223b', 'note': 'SHME V2.23 jog bwd pivot posture',
+  'out_dir': 'Saved/Codex/SHME_V223_20261022', 'bk_dir': 'Saved/Codex/SHME_V223_20261022/checkpoint/pre_bwd', 'prefix': 'pp223_'}
+exec(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V212_20261017/v212_push_posture.py', encoding='utf8').read(), {'__name__': 'pp'})
+out = {}
+for p in ('/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ', '/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalP'):
+    db = u.load_asset(p); tags = list(db.get_editor_property('tags') or [])
+    if 'SHME_V223_BWD2' not in [str(t) for t in tags]: tags.append('SHME_V223_BWD2'); db.set_editor_property('tags', tags)
+    out[p.rsplit('/', 1)[-1]] = u.EditorAssetLibrary.save_asset(p, False)
+print('BWDBAKE ' + json.dumps(out))

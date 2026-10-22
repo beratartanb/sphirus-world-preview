@@ -1,0 +1,13 @@
+--- Saved/Codex/SHME_V223_20261022/checkpoint/tools_v1/shm_profiles.py.v223a	2026-10-22 05:51:42.053709000 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-22 12:41:46.802243100 +0300
+@@ -158,5 +158,9 @@
+     ('CamFOVFallTau', 'float', 1.2, 'V221'), ('CamComfortScale', 'float', 1.0, 'V221'),
+     # ---- V2.22 (2026-10-22, Saved/Codex/SHME_V222_20261022): camera closeness by speed (SHM_UpdateCameraV21)
+     ('CamCloseEnabled', 'bool', False, 'V222'), ('CamCloseStand', 'float', 0.90, 'V222'), ('CamCloseWalk', 'float', 0.88, 'V222'),
+-    ('CamCloseJog', 'float', 0.92, 'V222'), ('CamCloseSprint', 'float', 0.97, 'V222'), ('CamCloseTau', 'float', 0.6, 'V222'),
++    ('CamCloseJog', 'float', 0.92, 'V222'), ('CamCloseSprint', 'float', 0.97, 'V222'), ('CamCloseTau', 'float', 0.6, 'V222'),
++    # ---- V2.23 (2026-10-22, Saved/Codex/SHME_V223_20261022): perceptual follow (soft zone per camera axis) + view-based look-ahead
++    ('CamFollowEnabled', 'bool', False, 'V223'), ('CamFolDZLat', 'float', 12.0, 'V223'), ('CamFolDZFwd', 'float', 10.0, 'V223'),
++    ('CamFolWLat', 'float', 6.0, 'V223'), ('CamFolWFwd', 'float', 7.0, 'V223'), ('CamFolRecentreW', 'float', 1.5, 'V223'),
++    ('CamFolMax', 'float', 40.0, 'V223'), ('CamLookSide', 'float', 0.5, 'V223'),
+ ]

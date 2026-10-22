@@ -1,0 +1,73 @@
+# V2.23 final regression (fixed 30 FPS, fresh editor after save; verify ALL_OK before, ALL_OK after reopen)
+RELAUNCH fin3 30 17:50:03
+ALL_OK
+v223fin3_j23_ws_p_r1 | rows 440 rate 30.1/s | pops >25 m/s2: 3 (worst 41) | by owner {'in-clip': 3}
+v223fin3_j23_ws_p_r2 | rows 439 rate 30.1/s | pops >25 m/s2: 3 (worst 41) | by owner {'in-clip': 3}
+v223fin3_j23_ad_p_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 10 (worst 291) | by owner {'in-clip': 10}
+v223fin3_j23_ovl_p_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2}
+v223fin3_j23_dg_p_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 3 (worst 40) | by owner {'in-clip': 3}
+v223fin3_j23_m180_p_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 7 (worst 318) | by owner {'in-clip': 7}
+v212_warm_175839 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_j23_m180_p_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 7 (worst 318) | by owner {'in-clip': 7}
+v223fin3_ss_taps_p_r1 | rows 417 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2}
+v223fin3_ss_taphold_p_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 30) | by owner {'in-clip': 1}
+v223fin3_wstart_p_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_a_restart2_p_r1 | rows 532 rate 30.1/s | pops >25 m/s2: 1 (worst 51) | by owner {'in-clip': 1}
+v223fin3_s23_idle_p_r1 | rows 937 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_s23_jstart_p_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_pilot_p_r1 | rows 943 rate 30.0/s | pops >25 m/s2: 11 (worst 131) | by owner {'in-clip': 10, 'montage': 1}
+v223fin3_map_r1_p_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 9 (worst 57) | by owner {'montage': 2, 'in-clip': 7}
+v223fin3_map_r2_p_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 6 (worst 64) | by owner {'montage': 4, 'in-clip': 2}
+v212_warm_181413 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_d_sprint_p_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 5 (worst 29) | by owner {'in-clip': 5}
+v223fin3_d_jog_p_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_st_jog_p_r1 | rows 535 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_r_cutrev_r_p_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 6 (worst 57) | by owner {'in-clip': 5, 'montage': 1}
+v223fin3_r_cutrev_l_p_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 6 (worst 322) | by owner {'in-clip': 5, 'montage': 1}
+v223fin3_cam_corr_p_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 1, 'montage': 3}
+v223fin3_ter_bump_walk_p_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223fin3_c23_jog_p_r1 | rows 928 rate 30.0/s | pops >25 m/s2: 4 (worst 300) | by owner {'in-clip': 4}
+RELAUNCH f20 20 18:26:06
+v223f20_j23_ws_p_r1 | rows 293 rate 20.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2}
+v223f20_ss_taps_p_r1 | rows 277 rate 20.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1}
+v223f20_d_jog_p_r1 | rows 358 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223f20_st_jog_p_r1 | rows 356 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+RELAUNCH f60 60 18:31:56
+v223f60_j23_ws_p_r1 | rows 881 rate 60.1/s | pops >25 m/s2: 25 (worst 43) | by owner {'in-clip': 25}
+v223f60_ss_taps_p_r1 | rows 835 rate 60.1/s | pops >25 m/s2: 4 (worst 49) | by owner {'in-clip': 4}
+v223f60_d_jog_p_r1 | rows 1078 rate 60.1/s | pops >25 m/s2: 32 (worst 35) | by owner {'in-clip': 32}
+v223f60_st_jog_p_r1 | rows 1072 rate 60.1/s | pops >25 m/s2: 21 (worst 32) | by owner {'in-clip': 21}
+RELAUNCH f120 120 18:39:18
+v223f120_j23_ws_p_r1 | rows 1763 rate 120.1/s | pops >25 m/s2: 9 (worst 91) | by owner {'in-clip': 9}
+v223f120_ss_taps_p_r1 | rows 1672 rate 120.1/s | pops >25 m/s2: 10 (worst 117) | by owner {'in-clip': 10}
+v223f120_d_jog_p_r1 | rows 2158 rate 120.1/s | pops >25 m/s2: 7 (worst 98) | by owner {'in-clip': 7}
+v223f120_st_jog_p_r1 | rows 2146 rate 120.1/s | pops >25 m/s2: 8 (worst 83) | by owner {'in-clip': 8}
+v212_warm_184858 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7}
+RELAUNCH rt real 18:53:01
+v223rt_j23_ws_p_r1 | rows 435 rate 30.5/s | pops >25 m/s2: 2 (worst 51) | by owner {'in-clip': 2}
+v223rt_d_jog_p_r1 | rows 451 rate 25.8/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223rt_ss_taps_p_r1 | rows 401 rate 29.7/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1}
+RELAUNCH cap 30 18:58:12
+v223cap_j23_ws_oS_r1 | rows 440 rate 30.1/s | pops >25 m/s2: 4 (worst 296) | by owner {'in-clip': 4}
+v223cap_j23_ws_pS_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 3 (worst 41) | by owner {'in-clip': 3}
+v223cap_j23_ws_oD_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 4 (worst 296) | by owner {'in-clip': 4}
+v223cap_j23_ws_pD_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 3 (worst 41) | by owner {'in-clip': 3}
+v223cap_j23_ws_oG_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 4 (worst 296) | by owner {'in-clip': 4}
+v223cap_j23_ws_pG_r1 | rows 439 rate 30.1/s | pops >25 m/s2: 3 (worst 41) | by owner {'in-clip': 3}
+v223cap_d_jog_pG_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223cap_s23_jstart_pS_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {}
+v223cap_ss_taps_pD_r1 | rows 417 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1}
+v223cap_map_r2_pG_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 6 (worst 64) | by owner {'montage': 4, 'in-clip': 2}
+ALL_OK
+
+# S->W windows (p = V2.23, o = V2.22)
+WIN223 v223fin3_j23_ws_p_r1           [ 7.75  9.60] L net  16.8 drag  59.9 skim  58.8 sink  1 | R net  13.3 drag  45.9 skim  60.6 sink  6 | pelvis-cap fwd  -1.3..+11.0 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fin3_j23_ws_p_r2           [ 7.75  9.60] L net  16.8 drag  59.9 skim  58.7 sink  1 | R net  13.3 drag  45.9 skim  60.6 sink  6 | pelvis-cap fwd  -1.3..+11.0 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223fin3_j23_ovl_p_r1          [ 7.60  9.60] L net  11.6 drag  44.9 skim  59.0 sink  1 | R net  15.3 drag  54.1 skim  72.8 sink  6 | pelvis-cap fwd  -1.3..+10.9 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM_DPP_Jog_Bwd_Pivot > A_CT_Jog_Fwd
+WIN223 v223t6_j23_ws_o_r1             [ 7.75  9.60] L net  12.4 drag  28.3 skim  27.3 sink  0 | R net  51.7 drag  60.9 skim 120.0 sink  3 | pelvis-cap fwd -19.4.. +3.8 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Lfoot > A_CT_Jog_Fwd
+WIN223 v223fo30_j23_ovl_o_r1          [ 7.60  9.60] L net   8.2 drag  25.4 skim  21.8 sink  0 | R net  53.6 drag  71.1 skim 111.7 sink  3 | pelvis-cap fwd -19.4.. +7.4 | sp   1..300 | A_RB_Jog_Rear > A_CP2_Jog_Right_Pivot > SHM216_RevTurn_R_Lfoot > A_CT_Jog_Fwd
+# W->S windows
+WIN223 v223fin3_j23_ws_p_r1           [ 5.25  7.10] L net  11.7 drag  20.3 skim  69.9 sink  0 | R net   9.6 drag  24.9 skim  63.4 sink  0 | pelvis-cap fwd  -6.3.. +8.0 | sp   0..300 | A_CT_Jog_Fwd > A_CP2_Jog_Fwd_Pivot > A_RB_Jog_Rear
+WIN223 v223fin3_j23_ws_p_r1           [10.15 12.00] L net  52.5 drag  59.0 skim  57.4 sink  3 | R net  13.3 drag  23.2 skim  95.6 sink  0 | pelvis-cap fwd  -9.2.. +5.9 | sp   0..300 | A_CT_Jog_Fwd > A_CP2_Jog_Fwd_Pivot > A_RB_Jog_Rear
+WIN223 v223t6_j23_ws_o_r1             [ 5.25  7.10] L net  11.7 drag  20.3 skim  69.9 sink  0 | R net   9.6 drag  24.9 skim  63.4 sink  0 | pelvis-cap fwd  -6.3.. +8.0 | sp   0..300 | A_CT_Jog_Fwd > A_CP2_Jog_Fwd_Pivot > A_RB_Jog_Rear
+WIN223 v223t6_j23_ws_o_r1             [10.15 12.00] L net  20.7 drag  51.6 skim  40.5 sink  0 | R net   5.4 drag   9.1 skim 113.4 sink  0 | pelvis-cap fwd -10.1.. +5.0 | sp   0..300 | A_CT_Jog_Fwd > A_CP2_Jog_Fwd_Pivot > A_RB_Jog_Rear

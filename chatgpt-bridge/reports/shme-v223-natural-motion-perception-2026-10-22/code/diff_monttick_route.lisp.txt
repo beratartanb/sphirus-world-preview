@@ -1,0 +1,29 @@
+--- Saved/Codex/SHME_V221_20261021/install_route_src.lisp	2026-10-21 16:19:25.098431000 +0300
++++ Saved/Codex/SHME_V223_20261022/install_route_src.lisp	2026-10-22 13:44:30.957771600 +0300
+@@ -52,7 +52,12 @@
+   (set SHM217_RecPrev SHM218_FlipOn)
+   (set SHM217_RecOn (and SHM218_FlipOn (and (> SHM217_Recover 0.0) SHM218_FlipEarly)))
+   (set SHM_RedirectActive (or SHM_RedirectActive SHM218_FlipOn))
+-  (bind rt (or SHM218_FlipOn (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0))))))))))
++  ; V2.23 jog backpedal -> forward is a plant-and-push in place, not a running turn: no forward-reversal route while moving backward
++  ; relative to the actor's own facing (strafe backpedal); gate 2 also while moving sideways (strafe A <-> D); 0 = V2.22
++  (bind af (Dönüşüm|GetActorForwardVector :self (Animasyon|TryGetPawnOwner)))
++  (bind vaf (dot v (normal (vec :X (.x af) :Y (.y af) :Z 0.0))))
++  (bind backRev (or (and (> SHM223_RevRearGate 0.5) (< vaf -0.5)) (and (> SHM223_RevRearGate 1.5) (< vaf 0.5))))
++  (bind rt (or SHM218_FlipOn (and (not backRev) (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0)))))))))))
+   (set SHM_RedirectHold (and SHM_RedirectHold (not (and (> SHM217_RevFlip 0.5) (and rt (not SHM214_RtPrev))))))
+   ; tail: after the component's reversal episode ends (alignment) the plant-and-redirect database is kept while the re-acceleration
+   ; runs (input present, forward request, speed < SHM214_TailSpeed, at most SHM214_TailMax s): the reface start and the sprint loop
+@@ -112,4 +117,12 @@
+   ; V2.15 turn-in-place lock: full plant lock on the first turning frame while standing (no rise lag after an interrupted turn)
+   (bind yr (abs (Sınıf|BPSHMHumanMotionComponent|YawRateAl :self comp)))
+   (set SHM_FootLockTurn (select (and (> SHM215_TipLock 0.5) (and (< sp 30.0) (> yr 20.0))) 1.0 SHM_FootLockTurn))
++  ; V2.23 jog reversal hold: the jog reversal episode (class 2, jog redirect gait) is kept for SHM223_JrHold s after the component ends it
++  ; while the authored re-push still accelerates (input, speed < 235): MM stays in the reversal database instead of falling to the
++  ; capture-error recovery steps in the middle of the push; 0 = V2.22
++  (bind jrNow (and SHM_RedirectActive (and (> SHM_RedirectClass 1.5) (< SHM_RedirectGait 0.5))))
++  (set SHM223_JrT0 (select jrNow now SHM223_JrT0))
++  (set SHM223_JrOn (and (> SHM223_JrHold 0.0) (and (not jrNow) (and hasIn (and (< sp 235.0) (and (not SHM218_FlipOn) (< (- now SHM223_JrT0) SHM223_JrHold)))))))
++  (set SHM_RedirectActive (or SHM_RedirectActive SHM223_JrOn))
++  (set SHM_RedirectClass (select SHM223_JrOn 2.0 SHM_RedirectClass))
+   (set SHM213_MontStartNow start))

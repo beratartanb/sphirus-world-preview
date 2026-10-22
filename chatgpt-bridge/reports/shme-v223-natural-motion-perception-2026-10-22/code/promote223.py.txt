@@ -1,0 +1,45 @@
+"""promote223.py (editor job): V2.23 production.
+  A1 ABP_GR_MotionMatchingBase CDO: SHM223_RevRearGate 1 (jog backpedal -> forward leaves the forward-run reversal route) +
+     SHM_RedirectDB_JR = PSD_SHM_Redirect_JogReversalQ (the V2.2 database with the backward->forward jog pivot SHM_DPP_Jog_Bwd_Pivot and
+     without the forward loop); SHM223_JrHold 0 (candidate off).
+  C  (builtins.V223_CAM, default True): DA_GR_LocomotionBehavior GR223_PivotXY 1 (the SHME horizontal pivot offset reaches the camera)
+     + DA_SHM_Response_Default CamFollowEnabled true, CamBrakeCarry 0, CamAccelCarry 0 (the blind-tuned carries made the reversal jerk
+     2.1 -> 7.8 cm/frame^2 once the offset became visible).
+  Candidates kept OFF: GR223_RevPushAccel 0, SHM223 authored pivots / PSD_SHM223_JogReversal unused.
+Refuses with PIE or unexpected dirty packages; prints PROMO223 {before, after, saved}. builtins.V223_PROMO_SAVE saves."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+import builtins, json
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+SDA = '/Game/GraceRanger/SHME/DA_SHM_Response_Default'; GDA = '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior'
+Q = '/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ'
+DAS = {GDA, SDA, '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (AP, CP) for n in names), ('unexpected dirty', names)
+if dirty: LS.reload_packages(dirty, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+CAM = bool(getattr(builtins, 'V223_CAM', True))
+abp = u.load_asset(AP); cdo = u.get_default_object(abp.generated_class()); sda = u.load_asset(SDA); gda = u.load_asset(GDA)
+def rd():
+    return {'RevRearGate': float(cdo.get_editor_property('SHM223_RevRearGate')), 'JrHold': float(cdo.get_editor_property('SHM223_JrHold')),
+            'JR': str(cdo.get_editor_property('SHM_RedirectDB_JR').get_path_name()), 'PivotXY': float(gda.get_editor_property('GR223_PivotXY')),
+            'RevPushAccel': float(gda.get_editor_property('GR223_RevPushAccel')), 'CamFollowEnabled': bool(sda.get_editor_property('CamFollowEnabled')),
+            'CamBrakeCarry': float(sda.get_editor_property('CamBrakeCarry')), 'CamAccelCarry': float(sda.get_editor_property('CamAccelCarry'))}
+out = {'before': rd(), 'cam': CAM}
+q = u.load_asset(Q); assert q, Q
+cdo.set_editor_property('SHM223_RevRearGate', 1.0); cdo.set_editor_property('SHM223_JrHold', 0.0); cdo.set_editor_property('SHM_RedirectDB_JR', q)
+st, errs = compile_ok(abp); cp = u.load_asset(CP); st2 = compile_ok(cp)[0]
+cdo = u.get_default_object(abp.generated_class())
+gda.set_editor_property('GR223_RevPushAccel', 0.0)
+if CAM:
+    gda.set_editor_property('GR223_PivotXY', 1.0)
+    sda.set_editor_property('CamFollowEnabled', True); sda.set_editor_property('CamBrakeCarry', 0.0); sda.set_editor_property('CamAccelCarry', 0.0)
+out['after'] = rd(); out['status'] = [str(st), str(st2)]
+a = out['after']
+ok = a['RevRearGate'] == 1.0 and a['JR'].endswith('PSD_SHM_Redirect_JogReversalQ') and 'UP_TO_DATE' in str(st) and not errs and (not CAM or (a['PivotXY'] == 1.0 and a['CamFollowEnabled']))
+out['ok'] = ok
+if ok and getattr(builtins, 'V223_PROMO_SAVE', False):
+    save(abp, cp)
+    for d in (gda, sda): d.modify(True); u.EditorAssetLibrary.save_loaded_asset(d, False)
+    out['saved'] = True; out['dirty_after'] = [p.get_name() for p in LS.get_dirty_content_packages()]
+print('PROMO223 ' + json.dumps(out, default=str))

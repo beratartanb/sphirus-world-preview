@@ -1,0 +1,64 @@
+"""install_v223_pivotxy.py (editor job) - V2.23 C0: the camera pivot's HORIZONTAL offset reaches the camera.
+Verified cause (graph dump 2026-10-22, BP_GR_Player.GR_CameraSafeOrigin): DesiredPivot = (0, 0, height) + GR_SHM_PivotOffset (SHME CamOffset:
+brake / accel carry, turn offsets, side escape, look-ahead, perceptual follow) is swept from the capsule (sphere, CameraProbeRadius) but the
+function RETURNS MakeVector(0, 0, GR_SafePivotZ): X / Y are dropped, so every horizontal SHME camera offset since V1.3.x never moved the
+camera (runs v223t5 wfwd o / c: camera path identical to 0.1 cm while CamFolFwd = -5.6 cm).
+Fix (profile knob GR223_PivotXY on BP_GR_MotionProfile / DA_GR_LocomotionBehavior, default 0 = V2.22 behaviour):
+  frac   = blocking hit ? hit Time : 1           (the same sweep: an offset into a wall is shortened to the free part, safety first)
+  offXY  = (DesiredPivot.X, DesiredPivot.Y) x frac x GR223_PivotXY      (world-aligned, like CamOffset)
+  local  = UnrotateVector(actor rotation, offXY)  (the boom is attached to the capsule: its relative location rotates with the actor)
+  SafePivot = (local.X, local.Y, GR_SafePivotZ)   (Z path untouched)
+builtins.V223_SAVE saves (value-checked: DA GR223_PivotXY 0). Prints PX223 {...}."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+from qa_graph import G, connect, disconnect, src, pn, info, obj, op, pin as qpin
+import builtins, json
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+PB = '/Game/GraceRanger/BP_GR_Player'; PC = '/Game/GraceRanger/Profiles/BP_GR_MotionProfile'; CHILD = '/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player'
+DA = '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior'; PCC = op(PC) + '_C'; M = '/Script/Engine.KismetMathLibrary:'
+ABP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'
+DAS = {DA, '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (PB, CHILD, PC, ABP, ABP.replace('Base', '')) for n in names), ('unexpected dirty', names)
+if dirty: LS.reload_packages(dirty, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+out = {'reloaded': names}
+KN = {'GR223_PivotXY': 0.0}
+prof = u.load_asset(PC)
+ensure_vars(prof, [(k, 'float', 'V223') for k in KN])
+for k in KN: B.set_variable_instance_editable(prof, k, True)
+out['profile'] = str(compile_ok(prof)[0]); set_defaults(prof, KN)
+bp = u.load_asset(PB)
+g = G(op(PB) + ':GR_CameraSafeOrigin'); N = {pn(n).rsplit('.', 1)[-1]: pn(n) for n in B.find_nodes(obj(g.path))}
+def tid(p):
+    try: return str(info(p).type_id)
+    except Exception: return ''
+res = N['K2Node_FunctionResult_0']
+cur = src((res, 'SafePivot')); out['old_src'] = [c[0].rsplit('.', 1)[-1] for c in cur]
+if not cur or cur[0][0].rsplit('.', 1)[-1] != 'K2Node_CallFunction_17': out['graph'] = 'already'
+else:
+    assert cur and cur[0][0].rsplit('.', 1)[-1] == 'K2Node_CallFunction_17', cur
+    dp = (N['K2Node_CallFunction_59'], 'ReturnValue'); hit = N['K2Node_CallFunction_6']; trace = N['K2Node_CallFunction_5']
+    assert 'MakeVector' in tid(dp[0]) and 'BreakHitResult' in tid(hit) and 'SphereTrace' in tid(trace)
+    def P(k): return g.get(k, PCC, g.get('GR_Profile'))
+    frac = g.pure(M + 'SelectFloat', {'A': (hit, 'Time'), 'B': 1.0, 'bPickA': (hit, 'bBlockingHit')})
+    k = g.mul(frac, P('GR223_PivotXY'))
+    bd = g.fn('BreakVector', {'InVec': dp})
+    off = g.pure('MakeVector', {'X': g.mul((bd, 'X'), k), 'Y': g.mul((bd, 'Y'), k), 'Z': 0.0})
+    rot = g.pure('/Script/Engine.Actor:K2_GetActorRotation')
+    loc = g.pure(M + 'LessLess_VectorRotator', {'A': off, 'B': rot})
+    bl = g.fn('BreakVector', {'InVec': loc})
+    zv = g.fn('BreakVector', {'InVec': (N['K2Node_CallFunction_17'], 'ReturnValue')})
+    nv = g.pure('MakeVector', {'X': (bl, 'X'), 'Y': (bl, 'Y'), 'Z': (zv, 'Z')})
+    disconnect((res, 'SafePivot')); connect(nv, (res, 'SafePivot'))
+    out['graph'] = 'wired'
+st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:6]
+cb = u.load_asset(CHILD); out['child'] = str(compile_ok(cb)[0])
+pawn = u.get_default_object(cb.generated_class()); out['child_profile'] = str(pawn.get_editor_property('GR_Profile'))[:60]
+da = u.load_asset(DA); out['da_pxy'] = da.get_editor_property('GR223_PivotXY')
+ok = 'UP_TO_DATE' in str(st) and not errs and 'UP_TO_DATE' in out['child'] and 'None' not in out['child_profile'] and float(out['da_pxy']) == 0.0
+out['ok'] = ok
+if ok and getattr(builtins, 'V223_SAVE', False):
+    save(bp, cb, prof)
+    if DA in [p.get_name() for p in LS.get_dirty_content_packages()]: save(da)
+    out['saved'] = True
+print('PX223 ' + json.dumps(out, default=str))

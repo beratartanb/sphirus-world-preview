@@ -1,0 +1,82 @@
+"""install_v223_reargate.py (editor job) - V2.23 A1: jog BACKPEDAL -> forward reversal must not be routed to the forward-run
+reversal databases (SHM216_RevTurn_*: a sprint-authored running turn arc, 121 deg root yaw, speed never below ~140 cm/s). Measured
+(v223t1 j23_ws, fixed 30): S->W at jog plays RevTurn_R_Lfoot from 0.53 while the capsule stops to 0 and re-accelerates at 270 cm/s2:
+legs run at 150-300 cm/s on a body at 0-130 cm/s (slow motion), pelvis 15-19 cm behind the capsule for 1.3 s, 12 cm pelvis drop.
+New ABP knob SHM223_RevRearGate (default 0 = V2.22 behaviour): > 0.5 removes the forward-reversal route (rt) while the character
+moves BACKWARD relative to its own facing (dot(velocity, actor forward) < -0.5 = backpedal, strafe facing); the sprint reversal
+(facing movement) is unchanged. MM then searches its normal databases (jog backward->forward pivots).
+Source = Saved/Codex/SHME_V223_20261022/install_route_src.lisp (copy of the V2.21 / V2.20 source + this change).
+builtins.V223_SAVE saves. Prints RG223 {...}."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+from qa_graph import G, connect, disconnect, src, pn, info, obj, op, pin as qpin
+import builtins, json
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+DAS = {'/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior', '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (AP, CP) for n in names), ('unexpected dirty', names)
+rl = [p for p in dirty if p.get_name() in DAS or p.get_name() in (AP, CP)]   # V2.20: harness abp_flags live in the loaded ABP: reload to the saved production first
+if rl: LS.reload_packages(rl, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+out = {'reloaded': [p.get_name() for p in rl]}
+bp = u.load_asset(AP); DBC = u.PoseSearchDatabase.static_class()
+NEWV = [('SHM223_RevRearGate', 'float', 'SHM223'), ('SHM223_JrHold', 'float', 'SHM223'), ('SHM223_JrT0', 'float', 'SHM223'), ('SHM223_JrOn', 'bool', 'SHM223'), ('SHM217_JogLink', 'float', 'SHM217'), ('SHM217_JogOn', 'bool', 'SHM217'), ('SHM217_JogT0', 'float', 'SHM217'), ('SHM217_JogArm', 'float', 'SHM217'), ('SHM217_SpOnT', 'float', 'SHM217'), ('SHM217_SpOffT', 'float', 'SHM217'), ('SHM217_SpPrev', 'bool', 'SHM217'), ('SHM217_RecWait', 'float', 'SHM217'), ('SHM217_CutNew', 'bool', 'SHM217'), ('SHM218_FlipLatch', 'float', 'SHM218'), ('SHM218_FlipOn', 'bool', 'SHM218'), ('SHM218_FlipEarly', 'bool', 'SHM218'), ('SHM218_RdEndT', 'float', 'SHM218'), ('SHM218_RdPrev', 'bool', 'SHM218'), ('SHM220_RecHold', 'float', 'SHM220'), ('SHM220_PivotT0', 'float', 'SHM220'), ('SHM220_PivotNoRd', 'float', 'SHM220'), ('SHM220_RecHoldT', 'float', 'SHM220'), ('SHM220_RecWin', 'bool', 'SHM220'), ('SHM220_Search', 'bool', 'SHM220'), ('SHM220_PivotOn', 'float', 'SHM220'), ('SHM220_PivotPlant', 'bool', 'SHM220'), ('SHM219_RecExit', 'float', 'SHM219'), ('SHM219_RecEnd', 'bool', 'SHM219')]
+ensure_vars(bp, NEWV); compile_ok(bp)
+_c = u.get_default_object(bp.generated_class())
+if abs(float(_c.get_editor_property('SHM217_JogArm'))) < 1e-6: set_defaults(bp, {'SHM217_JogArm': 0.5})
+if abs(float(_c.get_editor_property('SHM217_RecWait'))) < 1e-6: set_defaults(bp, {'SHM217_RecWait': 0.4})
+
+have = set(str(x) for x in B.list_variables(bp)); assert all(n in have for n, _, _ in NEWV), have
+cdo = u.get_default_object(bp.generated_class())
+cat = {}
+for n in ('SHM_RedirectActive', 'SHM_RedirectClass', 'SHM_RedirectGait', 'SHM_RedirectFrames', 'CharacterMovement', 'SHM212_RevNew', 'SHM212_RevTurn', 'SHM212_RevTurnMode', 'SHM212_RevOn', 'CT_RearSelected', 'SHM211_Push', 'SHM211_PushMaxSpeed', 'SHM_FootLockTurn', 'SHM212_JogPushOn', 'SHM212_SprintIntent', 'SHM_RedirectHold', 'SHM211_Acc', 'SHM211_PushMinAccel', 'SHM211_PushDirMax', 'SHM28_Dir', 'CP_StartOwned', 'SHM212_PushWalk'):
+    c_ = str(B.get_variable_category(bp, n) or ''); cat[n] = 'Varsayılan' if c_ in ('Default', 'None', '') else c_
+members = dict(cat)
+members.update({n: 'SHM213' for n in ['SHM213_RevMont', 'SHM213_MontAngle', 'SHM213_MontMinSpeed', 'SHM213_MontStart', 'SHM213_MontLen', 'SHM213_MontT', 'SHM213_MontEndT', 'SHM213_MontSide', 'SHM213_MontOn', 'SHM213_MontStartNow', 'SHM213_MontStopNow']})
+members.update({n: 'SHM214' for n in ('SHM214_RevTurnMode', 'SHM214_TailSpeed', 'SHM214_TailMax', 'SHM214_TailT0', 'SHM214_TailOn', 'SHM214_RtPrev', 'SHM214_PushRevOn', 'SHM214_PushRestore', 'SHM214_RevEndT', 'SHM214_PushRevWin')})
+members.update({n: 'SHM215' for n in ('SHM215_LinkOn', 'SHM215_LowSpeed', 'SHM215_LowOn', 'SHM215_PushPrev', 'SHM215_PivFoot', 'SHM215_PivFootOn', 'SHM215_BrakeL', 'SHM215_TipLock')})
+members.update({'SHM223_RevRearGate': 'SHM223', 'SHM223_JrHold': 'SHM223', 'SHM223_JrT0': 'SHM223', 'SHM223_JrOn': 'SHM223'})
+SRC = (P / 'Saved/Codex/SHME_V221_20261021/install_route_src.lisp').read_text(encoding='utf8')
+OLD = "  (bind rt (or SHM218_FlipOn (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0))))))))))"
+NEW = """  ; V2.23 jog backpedal -> forward is a plant-and-push in place, not a running turn: no forward-reversal route while moving backward
+  ; relative to the actor's own facing (strafe backpedal); gate 2 also while moving sideways (strafe A <-> D); 0 = V2.22
+  (bind af (Dönüşüm|GetActorForwardVector :self (Animasyon|TryGetPawnOwner)))
+  (bind vaf (dot v (normal (vec :X (.x af) :Y (.y af) :Z 0.0))))
+  (bind backRev (or (and (> SHM223_RevRearGate 0.5) (< vaf -0.5)) (and (> SHM223_RevRearGate 1.5) (< vaf 0.5))))
+  (bind rt (or SHM218_FlipOn (and (not backRev) (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0)))))))))))"""
+SRC = (P / 'Saved/Codex/SHME_V221_20261021/install_route_src.lisp').read_text(encoding='utf8')
+if OLD in SRC: SRC = SRC.replace(OLD, NEW, 1)
+assert NEW in SRC and SRC.count('(') == SRC.count(')')
+(P / 'Saved/Codex/SHME_V223_20261022/install_route_src.lisp').write_text(SRC, encoding='utf8')
+
+OLD2 = "  (set SHM213_MontStartNow start))"
+NEW2 = """  ; V2.23 jog reversal hold: the jog reversal episode (class 2, jog redirect gait) is kept for SHM223_JrHold s after the component ends it
+  ; while the authored re-push still accelerates (input, speed < 235): MM stays in the reversal database instead of falling to the
+  ; capture-error recovery steps in the middle of the push; 0 = V2.22
+  (bind jrNow (and SHM_RedirectActive (and (> SHM_RedirectClass 1.5) (< SHM_RedirectGait 0.5))))
+  (set SHM223_JrT0 (select jrNow now SHM223_JrT0))
+  (set SHM223_JrOn (and (> SHM223_JrHold 0.0) (and (not jrNow) (and hasIn (and (< sp 235.0) (and (not SHM218_FlipOn) (< (- now SHM223_JrT0) SHM223_JrHold)))))))
+  (set SHM_RedirectActive (or SHM_RedirectActive SHM223_JrOn))
+  (set SHM_RedirectClass (select SHM223_JrOn 2.0 SHM_RedirectClass))
+  (set SHM213_MontStartNow start))"""
+assert SRC.count(OLD2) == 1; SRC = SRC.replace(OLD2, NEW2, 1)
+assert SRC.count('(') == SRC.count(')')
+(P / 'Saved/Codex/SHME_V223_20261022/install_route_src.lisp').write_text(SRC, encoding='utf8')
+import re as _re
+_have = set(str(x) for x in B.list_variables(bp))
+for n_ in sorted(_have):
+    if n_ not in members and _re.search(r'(?<![A-Za-z0-9_])' + _re.escape(n_) + r'(?![A-Za-z0-9_])', SRC):
+        c_ = str(B.get_variable_category(bp, n_) or ''); members[n_] = 'Varsayılan' if c_ in ('Default', 'None', '') else c_
+print('DBG223', 'SHM217_CutNew' in members, 'SHM217_CutNew' in _have, len(members))
+out['fn_nodes'] = rebuild_function(bp, 'SHM213_MontTick', [], [], SRC, shm_dsl.Translator(members, {}, {}))
+# V2.21 trap: the DSL translates (Piyon|GetControlRotation :self pawn) through the first Controller-typed Pawn member (LastHitBy, None)
+# -> camOK used world X. Re-apply the V2.21 repair after EVERY rebuild (verify_prod checks lasthitby_linked).
+_lhb = {'__name__': 'lhb_lib'}; exec(open(str(P / 'Tools/SHME_V221_20261021/fix_v221_lasthitby.py'), encoding='utf8').read(), _lhb)
+out['lhb'] = _lhb['patch'](bp)
+st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:6]
+cpb = u.load_asset(CP); out['child'] = str(compile_ok(cpb)[0])
+cdo = u.get_default_object(bp.generated_class()); out['gate'] = float(cdo.get_editor_property('SHM223_RevRearGate')); out['hold'] = float(cdo.get_editor_property('SHM223_JrHold'))
+ok = 'UP_TO_DATE' in str(st) and not errs and 'UP_TO_DATE' in out['child'] and out['gate'] == 0.0 and out['hold'] == 0.0
+out['ok'] = ok
+if ok and getattr(builtins, 'V223_SAVE', False): save(bp, cpb); out['saved'] = True
+print('RG223 ' + json.dumps(out, default=str))
