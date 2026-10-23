@@ -1,0 +1,25 @@
+#!/bin/bash
+# media224.sh : V2.24 published media from the final fixed-step captures (30 FPS game time = real speed; unedited frames, PIE-only clay
+# test look on the visible body). Frames = the whole game viewport minus a 15 px border (1728x924 aligned centre copy of 1758x940, same
+# aspect 1.87 - the MediaIOCore crash guard refuses unaligned widths); no zoom, no further crop.
+# o = V2.23 production, p = V2.24 production. GIF real speed; AVI realtime (mode 2 also a 1/3-speed AVI for inspection only).
+cd "/c/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS" || exit 1
+M=Tools/SHME_V211_20261016/make_media211.sh; O=Saved/Codex/SHME_V211_20261016/vid; PUB=Saved/Codex/SHME_V224_20261022/pub/vid; mkdir -p $PUB
+mk() { lab=$1; name=$2; avi=$3; shift 3; [ -d Saved/Codex/SHME_V138_20260927/Video/$lab ] && [ -n "$(ls Saved/Codex/SHME_V138_20260927/Video/$lab)" ] || { echo "MISSING $lab"; return; }; AVI=$avi GIFSCALE=${GS:-0.38} bash $M $lab $name 0 0 1 1 "$*" > /dev/null
+  for f in $O/$name.gif $O/${name}_realtime.avi $O/${name}_slow3x.avi; do [ -f $f ] && cp $f $PUB/; done; echo "OK $name"; }
+mk v224cc1_j24_sw_ph4_oS_r1 jogrev_SW_ph4_before_side 2 "tempolu S > W (sag ayak yerde) | ONCE V2.23 | yan"
+mk v224cc1_j24_sw_ph4_pS_r1 jogrev_SW_ph4_after_side 2 "tempolu S > W (sag ayak yerde) | SONRA V2.24 | yan"
+mk v224cc1_j24_sw_ph4_oD_r1 jogrev_SW_ph4_before_diag 1 "tempolu S > W | ONCE V2.23 | capraz"
+mk v224cc1_j24_sw_ph4_pD_r1 jogrev_SW_ph4_after_diag 1 "tempolu S > W | SONRA V2.24 | capraz"
+mk v224cc1_j24_ph2_oG_r1 jogrev_WSW_before_game 1 "tempolu W > S > W | ONCE V2.23 | oyun kamerasi (tam kare)"
+mk v224cc1_j24_ph2_pG_r1 jogrev_WSW_after_game 1 "tempolu W > S > W | SONRA V2.24 | oyun kamerasi (tam kare)"
+mk v224cc1_j24_ad_ph0_oD_r1 jog_AD_before_diag 1 "tempolu A <> D | ONCE (kosu donus kavisi) | capraz"
+mk v224cc1_j24_ad_ph0_pD_r1 jog_AD_after_diag 1 "tempolu A <> D | SONRA (yan pivot) | capraz"
+mk v224cc2_d_jog_oG_r1 cam_mouse_turns_before_game 1 "tempolu + fare donusleri | kamera V2.23 | tam kare"
+mk v224cc2_d_jog_pG_r1 cam_mouse_turns_after_game 1 "tempolu + fare donusleri | kamera V2.24 algisal takip | tam kare"
+mk v224cc3_ter_bump_walk_oS_r1 terrain_bump_walk_before_side 2 "yuruyus tumsek > tepe > inis > duz | ONCE | yan"
+mk v224cc3_ter_bump_walk_pS_r1 terrain_bump_walk_after_side 2 "yuruyus tumsek > tepe > inis > duz | SONRA (salinan ayak acikligi) | yan"
+mk v224cc3_ter_bump_jog_pS_r1 terrain_bump_jog_after_side 1 "tempolu tumsek | SONRA | yan"
+mk v224cc4_map_r2_oG_r1 map_house_forest_before_game 1 "ev - orman rotasi | ONCE V2.23 | oyun kamerasi (tam kare)"
+mk v224cc4_map_r2_pG_r1 map_house_forest_after_game 1 "ev - orman rotasi | SONRA V2.24 | oyun kamerasi (tam kare)"
+ls -la $PUB | tail -n +2 | wc -l

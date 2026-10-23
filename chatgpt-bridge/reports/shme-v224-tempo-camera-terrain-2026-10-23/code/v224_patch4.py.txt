@@ -1,0 +1,28 @@
+"""V2.24 SHME source patch D: the perceptual follow releases while the VIEW turns (CamFolYawFade, deg/s; 0 = V2.23 law).
+Measured (v224t6, fixed 30 FPS): with CamFollowEnabled the screen-x jitter of the mouse-turn run d_jog went 5.3 -> 10.8 and strafing 13 -> 18;
+the stored follow offset is world-frame while the soft zone is camera-frame, so a view turn sweeps the offset across the zone edges and
+the zone spring answers it. A view turn is the player's own framing: while the camera yaw rate is high the follow offset re-centres on a
+critically damped spring (rate CamFolYawW) instead of being re-pushed, weight = clamp(|yaw rate| / CamFolYawFade, 0, 1)."""
+import pathlib
+V1 = pathlib.Path(__file__).resolve().parents[2] / 'Tools/SHME_V1_20260925'
+def patch(fname, old, new, marker):
+    p = V1 / fname; t = p.read_bytes().decode('utf8')
+    if marker in t: print(fname, marker, 'already'); return
+    for nl in ('\n', '\r\n'):
+        o = old.replace('\n', nl)
+        if t.count(o) == 1: p.write_bytes(t.replace(o, new.replace('\n', nl)).encode('utf8')); print(fname, marker, 'patched'); return
+    raise AssertionError((fname, marker))
+patch('shm_profiles.py', "('CamFolMax', 'float', 40.0, 'V223'),", "('CamFolMax', 'float', 40.0, 'V223'), ('CamFolYawFade', 'float', 0.0, 'V224'), ('CamFolYawW', 'float', 9.0, 'V224'),", 'CamFolYawFade')
+patch('shm_component_vars.py', "('CamV221Pos', V, 'SHM|V221'),", "('CamV221Pos', V, 'SHM|V221'), ('CamFolPrevYaw', F, 'SHM|V224'), ('CamFolYawK', F, 'SHM|V224'),", 'CamFolPrevYaw')
+patch('shm_src.py', "  (bind aL (- (- (* (* wL wL) (- 0.0 xL)) (* (* (* wR wR) rest) eL0)) (* dL (- uL0 (* kL vL)))))\n"
+      "  (bind aF (- (- (* (* wF wF) (- 0.0 xF)) (* (* (* wR wR) rest) eF0)) (* dF (- uF0 (* kF vF)))))\n",
+      "  ; V2.24 D: while the view turns the follow re-centres (critically damped, CamFolYawW) instead of being re-pushed by the zone\n"
+      "  (bind yd3 (- cy3 CamFolPrevYaw))\n"
+      "  (bind ydw (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A yd3) :X (Matematik|Trig|Cos(Degrees) :A yd3)))\n"
+      "  (bind yK (select (and (> (R CamFolYawFade) 0.5) (not tele)) (clamp (/ (abs (/ ydw (max h 0.001))) (R CamFolYawFade)) 0.0 1.0) 0.0))\n"
+      "  (bind wY (R CamFolYawW))\n"
+      "  (bind aL (+ (* (- 1.0 yK) (- (- (* (* wL wL) (- 0.0 xL)) (* (* (* wR wR) rest) eL0)) (* dL (- uL0 (* kL vL))))) (* yK (- (* (* wY wY) (- 0.0 eL0)) (* (* 2.0 wY) uL0)))))\n"
+      "  (bind aF (+ (* (- 1.0 yK) (- (- (* (* wF wF) (- 0.0 xF)) (* (* (* wR wR) rest) eF0)) (* dF (- uF0 (* kF vF))))) (* yK (- (* (* wY wY) (- 0.0 eF0)) (* (* 2.0 wY) uF0)))))\n"
+      "  (set CamFolYawK yK)\n"
+      "  (set CamFolPrevYaw cy3)\n", 'V2.24 D: while the view turns')
+print('done')

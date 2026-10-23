@@ -1,0 +1,73 @@
+"""install_v224_swinglift.py (editor job) - V2.24 C (terrain): the swing foot's IK target is lifted by the SHME clearance deficit.
+ABP_GR_MotionMatchingBase:
+  vars SHM224_LiftL / SHM224_LiftR (float, cm) <- SHM_Snapshot copies the component's SwingLiftL / SwingLiftR (0 when HumanStateEnabled is
+  off), written right after SHM_PelvisOffset (same pattern as the V2.0 body targets).
+  FeetIK_Layer: two 'Transform (Modify) Bone' nodes on ik_foot_l / ik_foot_r (translation ADDITIVE in COMPONENT space, (0, 0, Lift)),
+  inserted after FootPlacement (LocalToComponentSpace_1) and before the PBI pelvis ModifyBone_2 -> LegIK then solves the lifted
+  target. FootPlacement keeps the planted foot (the component's lift is 0 for a foot in contact), nothing else is placed twice.
+Idempotent (looks for the ik_foot_l lift node). The profile switch SwingLiftEnabled (SHME DA, default false) keeps it dormant.
+builtins.V224_SAVE saves. Prints SL224 {...}."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+from qa_graph import G, connect, disconnect, src, pn, info, obj, op, arg
+from editor_toolset.toolsets.object import ObjectTools as O
+import builtins, json
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+COMP = '/Game/GraceRanger/SHME/BP_SHM_HumanMotionComponent.BP_SHM_HumanMotionComponent_C'
+MB = 'Animation|SkeletalControls|KemiğiDönüştürme(Değiştirme)'
+DAS = {'/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior', '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (AP, CP) for n in names), ('unexpected dirty', names)
+rl = [p for p in dirty if p.get_name() in DAS or p.get_name() in (AP, CP)]
+if rl: LS.reload_packages(rl, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+out = {'reloaded': [p.get_name() for p in rl]}
+bp = u.load_asset(AP)
+ensure_vars(bp, [('SHM224_LiftL', 'float', 'SHM224'), ('SHM224_LiftR', 'float', 'SHM224')]); compile_ok(bp)
+def tid(p):
+    try: return str(info(p).type_id)
+    except Exception: return ''
+def outpin(p): return [q.name for q in info(p).output_pins if q.name not in ('then',)][0]
+# ---- 1. SHM_Snapshot: copy the component lifts
+sg = pn(graph(bp, 'SHM_Snapshot')); gs = G(sg); sn = [pn(n) for n in B.find_nodes(obj(sg))]
+if any('SetSHM224_LiftL' in tid(p) for p in sn): out['snapshot'] = 'already'
+else:
+    po = [p for p in sn if 'SetSHM_PelvisOffset' in tid(p)]; assert len(po) == 1, po
+    comp = [p for p in sn if 'GetComponentByClass' in tid(p) or 'GetComponentbyClass' in tid(p)]; assert comp, 'component getter'
+    hs = [p for p in sn if tid(p).endswith('|GetHumanStateEnabled')]; assert hs, 'HumanStateEnabled getter'
+    nxt = [p for p in sn if any(q.name == 'execute' for q in info(p).input_pins) and (po[0], 'then') in src((p, 'execute'))]; assert nxt
+    for x in nxt: disconnect((x, 'execute'))
+    tail = (po[0], 'then')
+    for v, c in (('SHM224_LiftL', 'SwingLiftL'), ('SHM224_LiftR', 'SwingLiftR')):
+        val = gs.pure('/Script/Engine.KismetMathLibrary:SelectFloat', {'A': gs.get(c, COMP, (comp[0], 'ReturnValue')), 'B': 0.0, 'bPickA': (hs[0], 'HumanStateEnabled')})
+        tail = gs.set(v, val, tail)
+    for x in nxt: connect(tail, (x, 'execute'))
+    out['snapshot'] = 'wired'
+# ---- 2. FeetIK_Layer: lift nodes
+fik = graph(bp, 'FeetIK_Layer'); fp = pn(fik); gf = G(fp); fn_ = {pn(n).rsplit('.', 1)[-1]: pn(n) for n in B.find_nodes(obj(fp))}
+have = [p for p in fn_.values() if obj(p).get_class().get_name() == 'AnimGraphNode_ModifyBone' and 'ik_foot_l' in obj(p).get_editor_property('node').export_text() and 'BMM_Additive' in obj(p).get_editor_property('node').export_text()]
+if have: out['feetik'] = 'already'
+else:
+    l2c1 = fn_['AnimGraphNode_LocalToComponentSpace_1']; mb2 = fn_['AnimGraphNode_ModifyBone_2']
+    assert obj(mb2).get_class().get_name() == 'AnimGraphNode_ModifyBone' and 'pelvis' in obj(mb2).get_editor_property('node').export_text()
+    assert (l2c1, outpin(l2c1)) in src((mb2, 'ComponentPose')), src((mb2, 'ComponentPose'))
+    disconnect((mb2, 'ComponentPose')); tail = (l2c1, outpin(l2c1)); made = []
+    for k, (bone, var) in enumerate((('ik_foot_l', 'SHM224_LiftL'), ('ik_foot_r', 'SHM224_LiftR'))):
+        n = pn(B.create_node(obj(fp), MB, u.IntPoint(-1800 + 300 * k, -600)))
+        rt = obj(n).get_editor_property('node')
+        rt.import_text('(BoneToModify=(BoneName="%s"),Translation=(X=0.000000,Y=0.000000,Z=0.000000),TranslationMode=BMM_Additive,RotationMode=BMM_Ignore,ScaleMode=BMM_Ignore,TranslationSpace=BCS_ComponentSpace,RotationSpace=BCS_ComponentSpace,ScaleSpace=BCS_ComponentSpace)' % bone)
+        obj(n).set_editor_property('node', rt)
+        t = obj(n).get_editor_property('node').export_text(); assert ('BoneName="%s"' % bone) in t and 'BMM_Additive' in t, t[:300]
+        show = json.loads(O.get_properties(obj(n), ['ShowPinForProperties']))
+        for o_ in show['ShowPinForProperties']:
+            if o_['propertyName'] == 'Translation': o_['bShowPin'] = True
+        O.set_properties(obj(n), json.dumps(show))
+        vec = gf.pure('/Script/Engine.KismetMathLibrary:MakeVector', {'X': 0.0, 'Y': 0.0, 'Z': gf.get(var)})
+        connect(vec, (n, 'Translation')); connect(tail, (n, 'ComponentPose')); tail = (n, outpin(n)); made.append(n.rsplit('.', 1)[-1])
+    connect(tail, (mb2, 'ComponentPose')); out['feetik'] = made
+st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:6]
+cpb = u.load_asset(CP); out['child'] = str(compile_ok(cpb)[0])
+ok = 'UP_TO_DATE' in str(st) and not errs and 'UP_TO_DATE' in out['child']
+out['ok'] = ok
+if ok and getattr(builtins, 'V224_SAVE', False): save(bp, cpb); out['saved'] = True
+print('SL224 ' + json.dumps(out, default=str))

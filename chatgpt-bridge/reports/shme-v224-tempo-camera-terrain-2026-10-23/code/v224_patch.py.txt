@@ -1,0 +1,31 @@
+"""V2.24 SHME source patch A (apply only when NO qa chain runs; checkpoints *.v224a first).
+Frame-rate-stable redirect classing (SHM_UpdateRouting): the bridge class / gait were latched from `Speed` on the episode's first
+frame - a frame that has already braked once (20 FPS: 245 -> 178 cm/s in one 50 ms frame, below RedirectBridgeMinSpeed 200 -> class 0 ->
+no reversal bridge -> the generic pivot database served the wrong-direction pivot; 30 FPS: 200 -> class 2). New: SpeedOnset = max(Speed,
+SpeedOnset - RedirectSpeedDecay x dt) (profile key, default 0 = old behaviour: SpeedOnset == Speed) - the pre-brake speed survives the
+first frames of a redirect at every frame rate; used for the bridge class, the bridge gait and the lateral class only (the episode
+start / end logic is unchanged)."""
+import pathlib, shutil
+R = pathlib.Path(__file__).resolve().parents[2]; V1 = R / 'Tools/SHME_V1_20260925'; CK = R / 'Saved/Codex/SHME_V224_20261022/checkpoint/tools_v1'
+CK.mkdir(parents=True, exist_ok=True)
+for f in ('shm_profiles.py', 'shm_component_vars.py', 'shm_src.py'):
+    if not (CK / (f + '.v224a')).exists(): shutil.copy2(V1 / f, CK / (f + '.v224a'))
+def patch(fname, old, new, marker):
+    p = V1 / fname; t = p.read_bytes().decode('utf8')
+    if marker in t: print(fname, marker, 'already'); return
+    for nl in ('\n', '\r\n'):
+        o = old.replace('\n', nl)
+        if t.count(o) == 1: p.write_bytes(t.replace(o, new.replace('\n', nl)).encode('utf8')); print(fname, marker, 'patched'); return
+    raise AssertionError((fname, marker))
+patch('shm_profiles.py', "('RedirectBridgeMinSpeed', 'float', 200.0,",
+      "('RedirectSpeedDecay', 'float', 0.0, 'V224'), ('RedirectBridgeMinSpeed', 'float', 200.0,", 'RedirectSpeedDecay')
+patch('shm_component_vars.py', "('CamCloseK', F, 'SHM|V222'),", "('CamCloseK', F, 'SHM|V222'), ('SpeedOnset', F, 'SHM|V224'),", 'SpeedOnset')
+patch('shm_src.py', "  (bind rdClassNow (select (and (R RedirectBridgeEnabled) (> Speed (R RedirectBridgeMinSpeed))) (select (> RedirectionAngle (R RedirectReversalClassAngle)) 2.0 1.0) 0.0))\n"
+      "  (set RedirectClass (select rdStart rdClassNow RedirectClass))\n"
+      "  (set RedirectGait (select rdStart (select (> Speed (R RedirectSprintSpeed)) 1.0 0.0) RedirectGait))\n",
+      "  ; V2.24 frame-rate-stable classing: the speed BEFORE the first braked frame (decays at RedirectSpeedDecay cm/s2; 0 = plain Speed)\n"
+      "  (set SpeedOnset (select (> (R RedirectSpeedDecay) 0.5) (max Speed (- SpeedOnset (* (R RedirectSpeedDecay) dt))) Speed))\n"
+      "  (bind rdClassNow (select (and (R RedirectBridgeEnabled) (> SpeedOnset (R RedirectBridgeMinSpeed))) (select (> RedirectionAngle (R RedirectReversalClassAngle)) 2.0 1.0) 0.0))\n"
+      "  (set RedirectClass (select rdStart rdClassNow RedirectClass))\n"
+      "  (set RedirectGait (select rdStart (select (> SpeedOnset (R RedirectSprintSpeed)) 1.0 0.0) RedirectGait))\n", 'V2.24 frame-rate-stable classing')
+print('done')

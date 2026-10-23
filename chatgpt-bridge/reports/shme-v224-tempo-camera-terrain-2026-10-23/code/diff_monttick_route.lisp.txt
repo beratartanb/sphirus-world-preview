@@ -1,0 +1,22 @@
+--- Saved/Codex/SHME_V223_20261022/install_route_src.lisp	2026-10-22 13:44:30.957771600 +0300
++++ Saved/Codex/SHME_V224_20261022/install_route_src.lisp	2026-10-23 04:08:23.684223400 +0300
+@@ -57,7 +57,18 @@
+   (bind af (Dönüşüm|GetActorForwardVector :self (Animasyon|TryGetPawnOwner)))
+   (bind vaf (dot v (normal (vec :X (.x af) :Y (.y af) :Z 0.0))))
+   (bind backRev (or (and (> SHM223_RevRearGate 0.5) (< vaf -0.5)) (and (> SHM223_RevRearGate 1.5) (< vaf 0.5))))
+-  (bind rt (or SHM218_FlipOn (and (not backRev) (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0)))))))))))
++  ; V2.24 request identity (latched on the episode's first frames): 1 forward run -> back, 2 backpedal -> forward, 3 strafe lateral
++  (bind intNow (select (> vaf 0.5) 1.0 (select (< vaf -0.5) 2.0 3.0)))
++  ; V2.24 A2: the reversal request is visible in this frame's input before the component's episode starts (one tick later)
++  (set SHM224_EarlyRev (and (> SHM224_JRMode 1.5) (and (not SHM_RedirectActive) (and hasIn (and (> ang 150.0) (and (> sp 150.0) (< sp 340.0)))))))
++  (set SHM224_RevIntent (select (or SHM224_EarlyRev (and SHM_RedirectActive (< SHM_RedirectFrames 1.5))) intNow (select SHM_RedirectActive SHM224_RevIntent 0.0)))
++  ; V2.24 A3: the pivot variant follows the foot planted at the request (ball heights over the support plane, 2 cm margin)
++  (bind hBL (Sınıf|BPSHMHumanMotionComponent|FootHeightLAl :self comp))
++  (bind hBR (Sınıf|BPSHMHumanMotionComponent|FootHeightRAl :self comp))
++  (bind mirNow (or (and (> intNow 1.5) (and (< intNow 2.5) (< hBR (- hBL 2.0)))) (and (< intNow 1.5) (< hBL (- hBR 2.0)))))
++  (set SHM224_RevMir (selb (or SHM224_EarlyRev (and SHM_RedirectActive (< SHM_RedirectFrames 1.5))) mirNow (selb SHM_RedirectActive SHM224_RevMir false)))
++  (bind latRev (and (> SHM224_JRMode 0.5) (> SHM224_RevIntent 2.5)))
++  (bind rt (or SHM218_FlipOn (and (not (or backRev latRev)) (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0)))))))))))
+   (set SHM_RedirectHold (and SHM_RedirectHold (not (and (> SHM217_RevFlip 0.5) (and rt (not SHM214_RtPrev))))))
+   ; tail: after the component's reversal episode ends (alignment) the plant-and-redirect database is kept while the re-acceleration
+   ; runs (input present, forward request, speed < SHM214_TailSpeed, at most SHM214_TailMax s): the reface start and the sprint loop

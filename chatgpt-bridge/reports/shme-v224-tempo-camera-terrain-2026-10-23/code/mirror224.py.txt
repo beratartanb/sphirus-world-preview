@@ -1,0 +1,108 @@
+"""mirror224.py (editor job) - V2.24 A: bake a LEFT/RIGHT mirrored copy of a project-owned pivot clip (the opposite-foot variant).
+Measured (v224t4, 20 FPS, request-split DB): the backpedal->forward pivot SHM_DPP_Jog_Bwd_Pivot is entered at 0.87 s in EVERY support phase
+(it is the only foot variant), so when the incoming stride has the other foot leading the planted foot sinks / slides (R net 58-62 cm in
+two of five phases). The project has no MirrorDataTable and Pose Search database entries are not script-editable, so the mirror is baked.
+Method (component space, mirror plane = the skeleton's lateral axis X):
+  partner(b) = name with _l <-> _r swapped (suffix or infix);  Rf(t) = (-x, y, z);  Rf(q) = (x, -y, -z, w)
+  C_new[p] = Rf(C_src[b]) with the rotation corrected by the reference pose:  q_new[p] = Rf(q_src[b]) * inv(Rf(qref[b])) * qref[p]
+  local = inv(C_new[parent]) * C_new[bone]  -> written with the controller for every bone track of the clip.
+The copy's BranchIn tracks are ALL removed (copy-leak trap) and one SHME_V224_<db> track is added for builtins.V224_MR['db'].
+Checks (dry run too): mirror(mirror(clip)) == clip (max error), foot-contact timeline L/R swapped, root path lateral flipped.
+builtins.V224_MR = {'src', 'dst', 'db', 'dry_run'} -> MR224 {...}"""
+import unreal as u, json, math, builtins, re, pathlib
+A = u.AnimPoseExtensions; EAL = u.EditorAssetLibrary; L = u.AnimationLibrary
+cfg = getattr(builtins, 'V224_MR', {}); DRY = bool(cfg.get('dry_run', True))
+def qmul(a, b):
+    ax, ay, az, aw = a; bx, by, bz, bw = b
+    return (aw * bx + ax * bw + ay * bz - az * by, aw * by - ax * bz + ay * bw + az * bx, aw * bz + ax * by - ay * bx + az * bw, aw * bw - ax * bx - ay * by - az * bz)
+def qinv(q): return (-q[0], -q[1], -q[2], q[3])
+def qn(q): n = math.sqrt(sum(x * x for x in q)) or 1.0; return tuple(x / n for x in q)
+def qrot(q, v):
+    p = qmul(qmul(q, (v[0], v[1], v[2], 0.0)), qinv(q)); return (p[0], p[1], p[2])
+def rf_t(t): return (-t[0], t[1], t[2])
+def rf_q(q): return (q[0], -q[1], -q[2], q[3])
+def partner(n):
+    for a, b in (('_l', '_r'), ('_r', '_l')):
+        if n.endswith(a): return n[:-2] + b
+        if (a + '_') in n: return n.replace(a + '_', b + '_')
+    return n
+def tq(tr): return ((tr.translation.x, tr.translation.y, tr.translation.z), qn((tr.rotation.x, tr.rotation.y, tr.rotation.z, tr.rotation.w)))
+src = u.load_asset(cfg['src']); assert src, cfg.get('src'); skel = src.get_skeleton()
+ref = A.get_reference_pose(skel); names = [str(n) for n in A.get_bone_names(ref)]
+def _par(n):
+    pth = [str(x) for x in L.find_bone_path_to_root(src, n)]
+    return pth[1] if len(pth) > 1 else None
+parent = {n: _par(n) for n in names}
+W = u.AnimPoseSpaces.WORLD
+qref = {n: tq(A.get_bone_pose(ref, n, W))[1] for n in names}
+missing = sorted(set(partner(n) for n in names) - set(names))
+nk = int(L.get_num_keys(src)) if hasattr(L, 'get_num_keys') else int(L.get_num_frames(src)) + 1
+opt = u.AnimPoseEvaluationOptions()
+def comp_frames(seq):
+    out = []
+    for f in range(nk):
+        p = A.get_anim_pose_at_frame(seq, f, opt); out.append({n: tq(A.get_bone_pose(p, n, W)) for n in names})
+    return out
+def mirror(C):
+    M = []
+    for fr in C:
+        m = {}
+        for p in names:
+            b = partner(p) if partner(p) in fr else p
+            t, q = fr[b]
+            m[p] = (rf_t(t), qn(qmul(qmul(rf_q(q), qinv(rf_q(qref[b]))), qref[p])))
+        M.append(m)
+    return M
+def to_local(M):
+    loc = {n: [] for n in names}
+    for m in M:
+        for n in names:
+            t, q = m[n]; pa = parent[n]
+            if pa is None: loc[n].append((t, q))
+            else:
+                pt, pq = m[pa]; iq = qinv(pq); d = (t[0] - pt[0], t[1] - pt[1], t[2] - pt[2])
+                loc[n].append((qrot(iq, d), qn(qmul(iq, q))))
+    return loc
+C = comp_frames(src); M = mirror(C); MM = mirror(M)
+err_t = max(math.dist(C[f][n][0], MM[f][n][0]) for f in range(nk) for n in names)
+err_q = max(1.0 - abs(sum(a * b for a, b in zip(C[f][n][1], MM[f][n][1]))) for f in range(nk) for n in names)
+def contacts(F, side):
+    z = [F[f]['ball_' + side][0][2] for f in range(nk)]; fl = sorted(z)[max(0, int(0.05 * nk))]
+    on = [x - fl < 2.5 for x in z]; return [round(f / 30.0, 2) for f in range(1, nk) if on[f] and not on[f - 1]]
+out = {'src': cfg['src'].rsplit('/', 1)[-1], 'keys': nk, 'bones': len(names), 'unpaired_partners': missing[:8], 'mirror_twice_err_cm': round(err_t, 4), 'mirror_twice_err_q': round(err_q, 6),
+       'src_plants': {'l': contacts(C, 'l'), 'r': contacts(C, 'r')}, 'mir_plants': {'l': contacts(M, 'l'), 'r': contacts(M, 'r')},
+       'root_end_src': [round(x, 1) for x in C[-1]['root'][0]], 'root_end_mir': [round(x, 1) for x in M[-1]['root'][0]]}
+ok = err_t < 0.05 and err_q < 1e-4 and not missing
+out['ok'] = ok
+if ok and not DRY:
+    dst = cfg['dst']
+    if not EAL.does_asset_exist(dst): assert EAL.duplicate_asset(cfg['src'], dst), dst
+    seq = u.load_asset(dst)
+    for tr in [str(t) for t in L.get_animation_notify_track_names(seq)]:
+        L.remove_animation_notify_track(seq, tr)
+    loc = to_local(M); tracks = [str(t) for t in L.get_animation_track_names(seq)]
+    import sys; sys.path.insert(0, str(pathlib.Path(u.Paths.project_dir()).resolve() / 'Tools/SHME_V1_20260925'))
+    import v137_animedit as ae
+    c = ae.controller(seq)
+    try: c.open_bracket(u.Text('SHME V2.24 mirror bake'), True)
+    except Exception: pass
+    try:
+        for b in tracks:
+            if b not in loc: continue
+            keys = loc[b]
+            if not c.set_bone_track_keys(b, [u.Vector(*k[0]) for k in keys], [u.Quat(*k[1]) for k in keys], [u.Vector(1, 1, 1) for _ in keys], True): raise RuntimeError(b)
+    finally:
+        try: c.close_bracket(True)
+        except Exception: pass
+    db = u.load_asset(cfg['db']); trn = 'SHME_V224_' + cfg['db'].rsplit('/', 1)[-1].replace('PSD_SHM224_', '')
+    L.add_animation_notify_track(seq, trn); ln = float(seq.get_play_length())
+    st = L.add_animation_notify_state_event(seq, trn, 0.0, max(0.01, ln - 0.001), u.AnimNotifyState_PoseSearchBranchIn); st.set_editor_property('database', db)
+    out['saved'] = bool(EAL.save_asset(dst, False))
+    C2 = comp_frames(seq); out['baked_vs_mirror_cm'] = round(max(math.dist(C2[f][n][0], M[f][n][0]) for f in range(nk) for n in names), 3)
+    out['notify_tracks'] = [str(t) for t in L.get_animation_notify_track_names(seq)]
+    tags = list(db.get_editor_property('tags') or [])
+    if 'SHME_V224_MIR' not in [str(t) for t in tags]: tags.append('SHME_V224_MIR'); db.set_editor_property('tags', tags)
+    out['db_saved'] = bool(EAL.save_asset(cfg['db'], False))
+    out['db_entries'] = [db.get_animation_asset(i).get_name() for i in range(db.get_num_animation_assets())]
+out['dirty'] = [q.get_name() for q in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+print('MR224 ' + json.dumps(out, default=str))

@@ -1,0 +1,29 @@
+"""camoff224.py <run> <t0> <t1> [...] : where the camera sits relative to the capsule, per window (V2.24 camera signal-path check).
+Per frame: the camera and the spring-arm pivot (apv) relative to the capsule (ax), projected on the CAMERA yaw frame (fwd = camera
+forward, lat = camera right, up) -> mean / min / max of the pivot offset and of the camera offset; the SHME CamOffset (cv_CamOffset,
+world) projected the same way; CamFolLat/Fwd. Two runs that differ by one known offset must differ by that offset in 'pivot fwd'."""
+import json, sys, math, pathlib
+P = next(q for q in pathlib.Path(__file__).resolve().parents if (q / 'sphirus.uproject').exists()); E = P / 'Saved/Codex/SHME_V1_20260925/Evidence'
+def vec(x):
+    if isinstance(x, list) and len(x) == 3: return x
+    s = str(x)
+    try: d = dict(p.split('=') for p in s.replace('{', '').replace('}', '').replace(',', ' ').split() if '=' in p); return [float(d['x']), float(d['y']), float(d['z'])]
+    except Exception: return None
+def rot(r):
+    p = r.get('camrot')
+    if isinstance(p, list): return p
+    d = dict(x.split('=') for x in str(p).split()); return [float(d['P']), float(d['Y']), float(d['R'])]
+a = sys.argv[1:]
+for i in range(0, len(a), 3):
+    lab, t0, t1 = a[i], float(a[i + 1]), float(a[i + 2])
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and isinstance(r.get('camera'), list) and isinstance(r.get('ax'), list) and t0 <= float(r['t']) <= t1], key=lambda r: float(r['t']))
+    piv = {'f': [], 'l': [], 'u': []}; cam = {'f': [], 'l': [], 'u': []}; sho = {'f': [], 'l': []}
+    for r in R:
+        yw = math.radians(rot(r)[1]); f = (math.cos(yw), math.sin(yw)); l = (-math.sin(yw), math.cos(yw))
+        ax = r['ax']; c = r['camera']; pv = r.get('apv') if isinstance(r.get('apv'), list) else ax
+        for store, p in ((piv, pv), (cam, c)):
+            d = (p[0] - ax[0], p[1] - ax[1], p[2] - ax[2]); store['f'].append(d[0] * f[0] + d[1] * f[1]); store['l'].append(d[0] * l[0] + d[1] * l[1]); store['u'].append(d[2])
+        co = vec(r.get('cv_CamOffset'))
+        if co: sho['f'].append(co[0] * f[0] + co[1] * f[1]); sho['l'].append(co[0] * l[0] + co[1] * l[1])
+    def st(a): return '%+6.1f (%+6.1f..%+6.1f)' % (sum(a) / len(a), min(a), max(a)) if a else '-'
+    print('CAMOFF224 %-28s [%5.2f %5.2f] n %3d | pivot-capsule fwd %s lat %s up %s | camera-capsule fwd %s lat %s | SHME CamOffset fwd %s lat %s' % (lab[-28:], t0, t1, len(R), st(piv['f']), st(piv['l']), st(piv['u']), st(cam['f']), st(cam['l']), st(sho['f']), st(sho['l'])))

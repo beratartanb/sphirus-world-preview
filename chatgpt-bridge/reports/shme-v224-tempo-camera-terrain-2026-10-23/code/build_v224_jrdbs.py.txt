@@ -1,0 +1,43 @@
+"""build_v224_jrdbs.py (editor job): the jog reversal databases split by REQUEST IDENTITY (V2.24 A). One database per intent, so the
+search can no longer pick the opposite-direction pivot (20 FPS picked A_CP2_Jog_Fwd_Pivot for a backpedal->forward request):
+  PSD_SHM224_JogRevFwd  forward run -> backward request : A_CP2_Jog_Fwd_Pivot + the rear loops (A_CT_Jog_Bwd, A_RB_Jog_Rear/RearLeft/RearRight)
+  PSD_SHM224_JogRevBwd  backpedal   -> forward request  : SHM_DPP_Jog_Bwd_Pivot (re-postured V2.23 copy) + the rear loops
+  PSD_SHM224_JogRevLat  strafe left <-> right           : A_CP2_Jog_Left_Pivot + A_CP2_Jog_Right_Pivot + A_CT_Jog_Left + A_CT_Jog_Right
+Schema / biases / normalization copied from the V2.2 seed PSD_SHM_Redirect_JogReversalQ; entries by BranchIn tracks SHME_V224_<db> (loops
+0..len looping, pivots 0..len-0.001). Existing databases are never edited. builtins.V224_DRY prints only."""
+import unreal as u, json, builtins
+L = u.AnimationLibrary; EAL = u.EditorAssetLibrary; AT = u.AssetToolsHelpers.get_asset_tools()
+DRY = bool(getattr(builtins, 'V224_DRY', True))
+D = '/Game/GraceRanger/SHME/Animations/V224/'; RD = '/Game/GraceRanger/SHME/Animations/Redirect/'; CP = '/Game/GraceRanger/Animations/CorePerformance/'
+CT = '/Game/GraceRanger/Animations/Continuity/'; RB = '/Game/GraceRanger/Animations/LocomotionBehavior/RearRevision/'
+REAR = [CT + 'A_CT_Jog_Bwd', RB + 'A_RB_Jog_Rear', RB + 'A_RB_Jog_RearLeft', RB + 'A_RB_Jog_RearRight']
+PLAN = {'PSD_SHM224_JogRevFwd': [CP + 'A_CP2_Jog_Fwd_Pivot'] + REAR, 'PSD_SHM224_JogRevBwd': [RD + 'SHM_DPP_Jog_Bwd_Pivot'] + REAR,
+        'PSD_SHM224_JogRevLat': [CP + 'A_CP2_Jog_Left_Pivot', CP + 'A_CP2_Jog_Right_Pivot', CT + 'A_CT_Jog_Left', CT + 'A_CT_Jog_Right']}
+seed = u.load_asset(RD + 'PSD_SHM_Redirect_JogReversalQ'); assert seed
+def is_loop(path): return 'Pivot' not in path
+out = {'dry': DRY, 'missing': [c for cs in PLAN.values() for c in cs if not EAL.does_asset_exist(c)]}
+if not DRY and not out['missing']:
+    u.SystemLibrary.execute_console_command(None, 'a.MotionMatch.ReindexCancelledDatabases 1'); res = {}
+    for n, clips in PLAN.items():
+        path = D + n
+        if not EAL.does_asset_exist(path):
+            f = u.DataAssetFactory(); f.set_editor_property('data_asset_class', u.PoseSearchDatabase)
+            db = AT.create_asset(n, D.rstrip('/'), u.PoseSearchDatabase, f); assert db, n
+            db.set_editor_property('schema', seed.get_editor_property('schema'))
+            for k in ('base_cost_bias', 'continuing_pose_cost_bias', 'looping_cost_bias', 'normalization_set'):
+                try: db.set_editor_property(k, seed.get_editor_property(k))
+                except Exception as e: out.setdefault('prop_err', []).append([n, k, str(e)[:80]])
+            assert EAL.save_asset(path, False)
+        db = u.load_asset(path); tr = 'SHME_V224_' + n.replace('PSD_SHM224_', '')
+        for c in clips:
+            s = u.load_asset(c)
+            if tr in [str(t) for t in L.get_animation_notify_track_names(s)]: L.remove_animation_notify_track(s, tr)
+            L.add_animation_notify_track(s, tr); ln = float(s.get_play_length())
+            st = L.add_animation_notify_state_event(s, tr, 0.0, ln if is_loop(c) else max(0.01, ln - 0.001), u.AnimNotifyState_PoseSearchBranchIn)
+            st.set_editor_property('database', db); assert EAL.save_asset(c, False), c
+        assert EAL.save_asset(path, False)
+        res[n] = [db.get_animation_asset(i).get_name() for i in range(db.get_num_animation_assets())]
+    out['dbs'] = res
+    u.SystemLibrary.execute_console_command(None, 'a.MotionMatch.RequestAsyncBuildIndexOnPostLoad 1'); u.SystemLibrary.execute_console_command(None, 'a.MotionMatch.ReindexCancelledDatabases')
+out['dirty'] = [q.get_name() for q in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+print('JRDB224 ' + json.dumps(out, default=str))

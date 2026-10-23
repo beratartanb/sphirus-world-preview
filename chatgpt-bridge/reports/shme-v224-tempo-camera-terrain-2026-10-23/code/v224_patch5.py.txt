@@ -1,0 +1,13 @@
+"""V2.24 SHME source patch E: the rising-ground gate of the swing lift is measured from the SUPPORT PLANE (FootZ = capsule bottom, the
+plane the contact heights use), not from baseZ (capsule centre - 86, a few cm above the floor). Measured (v224t8 sl2 after patch C): the
+gate removed the flat-ground lift (0 frames) but also the bump benefit (walk catch 12 = lift off) because the bump had to rise more than
+the baseZ offset before the gate opened."""
+import pathlib
+V1 = pathlib.Path(__file__).resolve().parents[2] / 'Tools/SHME_V1_20260925'
+p = V1 / 'shm_src.py'; t = p.read_bytes().decode('utf8')
+OLD = ["(bind wRL (clamp (/ (- (- gL baseZ) (R SwingLiftRiseMin))", "(bind wRR (clamp (/ (- (- gRt baseZ) (R SwingLiftRiseMin))"]
+NEW = ["(bind wRL (clamp (/ (- (- gL FootZ) (R SwingLiftRiseMin))", "(bind wRR (clamp (/ (- (- gRt FootZ) (R SwingLiftRiseMin))"]
+if NEW[0] in t: print('shm_src.py V2.24 E already')
+else:
+    for o, n in zip(OLD, NEW): assert t.count(o) == 1, o; t = t.replace(o, n)
+    p.write_bytes(t.encode('utf8')); print('shm_src.py V2.24 E patched')

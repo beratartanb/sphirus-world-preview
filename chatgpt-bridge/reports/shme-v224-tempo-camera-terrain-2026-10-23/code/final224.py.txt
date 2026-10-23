@@ -1,0 +1,39 @@
+"""final224.py: the V2.24 final table from one session (o = V2.23 production pinned, p = V2.24 production [+ swing lift on top], pn = p
+without the swing lift). Reversals: worst planted-foot net slip (win223 height contact), lowest ball height (sinking), pops; camera:
+cam223; terrain: ter224 + cslip224. Usage: final224.py TAG (e.g. t9) -> prints FINAL224 lines (and writes final224_<TAG>.txt)."""
+import sys, subprocess, re, pathlib, json, math
+R0 = pathlib.Path(__file__).resolve().parents[2]; E = R0 / 'Saved/Codex/SHME_V1_20260925/Evidence'; PY = sys.executable
+T = R0 / 'Tools'; tag = sys.argv[1]; out = []
+def run(tool, *a): return subprocess.run([PY, str(tool)] + [str(x) for x in a], capture_output=True, text=True).stdout
+def have(lab): return (E / (lab + '.json')).exists()
+def lowball(lab, t0, t1):
+    R = [r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and t0 <= float(r['t']) <= t1]
+    return min(min(r['vb_ball_l'][2], r['vb_ball_r'][2]) for r in R if isinstance(r.get('vb_ball_l'), list))
+REV = [('S>W ph%d' % k, 'j24_sw_ph%d' % k, 4.9 + 0.08 * k, 7.3 + 0.08 * k) for k in (0, 2, 4)] + [('W>S>W ph%d (S>W)' % k, 'j24_ph%d' % k, 7.4 + 0.08 * k, 9.6 + 0.08 * k) for k in (0, 2)] + \
+      [('W>S ph%d' % k, 'j24_ph%d' % k, 4.9 + 0.08 * k, 7.3 + 0.08 * k) for k in (0, 2)] + [('A<>D ph0', 'j24_ad_ph0', 4.9, 6.9), ('A<>D ph2', 'j24_ad_ph2', 5.06, 7.06),
+      ('overlap S/W', 'j24_ovl120', 4.9, 10.2), ('release/re-press', 'j24_rel', 4.9, 8.6), ('second reversal', 'j24_dbl', 4.9, 9.2), ('mouse 180 + W', 'j23_m180', 6.9, 10.7), ('sprint cut-reverse', 'r_cutrev_r', 2.0, 12.0)]
+out.append('REVERSALS (worst planted-foot net cm | lowest ball cm | pops >25 m/s2 count/worst | clip chain)')
+pops = {}
+for f in sorted(R0.glob('Saved/Codex/SHME_V224_20261022/ab_*.log')):
+    for line in f.read_text(errors='ignore').splitlines():
+        m = re.search(r'(v224%s_\S+_r1) \| rows .*pops >25 m/s2: (\d+) \(worst (\d+)\)' % tag, line)
+        if m: pops[m.group(1)] = (int(m.group(2)), int(m.group(3)))
+for name, sc, t0, t1 in REV:
+    for v in ('o', 'p'):
+        lab = 'v224%s_%s_%s_r1' % (tag, sc, v)
+        if not have(lab): continue
+        w = run(T / 'SHME_V223_20261022/win223.py', lab, t0, t1).strip().splitlines()[-1]
+        nl, nr = [float(x) for x in re.findall(r'net\s+([\d.]+)', w)[:2]]; ch = w.split('|')[-1].strip()
+        po = pops.get(lab, ('-', '-'))
+        out.append('  %-22s %s  worst %5.1f | low %6.1f | pops %s/%s | %s' % (name, v, max(nl, nr), lowball(lab, t0, t1), po[0], po[1], ch[:120]))
+out.append('CAMERA (cam223: screen-x jitter95, camera jerk95 / max cm/frame^2, path cam/capsule, min distance)')
+for sc, t0, t1 in (('d_jog', 3.5, 15.5), ('d_strafe', 3, 14), ('jstopphase', 2, 20), ('wstart', 2, 12), ('ss_taps', 2, 13), ('map_r2', 2, 40), ('cam_corr', 2, 14.5)):
+    for v in ('o', 'p'):
+        lab = 'v224%s_%s_%s_r1' % (tag, sc, v)
+        if have(lab): out.append('  ' + run(T / 'SHME_V223_20261022/cam223.py', lab, t0, t1).strip()[7:240])
+out.append('TERRAIN (ter224 per segment; cslip224 contact-flag slip)')
+for sc in ('ter_bump_walk', 'ter_bump_jog', 'ter_drop_walk'):
+    for v in ('o', 'pn', 'p'):
+        lab = 'v224%s_%s_%s_r1' % (tag, sc, v)
+        if have(lab): out.append(run(T / 'SHME_V224_20261022/ter224.py', lab).rstrip())
+txt = '\n'.join(out); (R0 / ('Saved/Codex/SHME_V224_20261022/final224_%s.txt' % tag)).write_text(txt, encoding='utf8'); print(txt)

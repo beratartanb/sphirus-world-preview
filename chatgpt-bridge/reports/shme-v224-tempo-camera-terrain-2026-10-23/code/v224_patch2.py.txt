@@ -1,0 +1,49 @@
+"""V2.24 SHME source patch B (apply only when NO qa chain runs; v224_patch.py checkpointed the sources).
+Swing-foot clearance over terrain (SwingLiftEnabled, default OFF), appended to SHM_UpdateBodyTargets (ticks every frame with dt):
+  per foot, while the foot is in SWING (component ContactL/R false, foot speed > SwingLiftMinSpeed, grounded, travelling):
+    probe = foot centre + travel direction x SwingLiftAhead x Speed (where the foot will be in ~0.12 s), one Visibility line trace
+    deficit = (ground at the probe + SwingLiftMargin) - foot centre z   (how much the foot is BELOW the clearance it needs ahead)
+    target  = clamp(deficit, 0, SwingLiftMax)                             (0 on flat / over a drop: the foot is never pushed down)
+  smoothed up fast (SwingLiftTauUp) / released slower (SwingLiftTauDown); forced to 0 while the foot is in contact (the planted foot
+  stays with FootPlacement). Outputs SwingLiftL / SwingLiftR (cm) -> ABP SHM224_LiftL/R -> FeetIK layer ik_foot_l/r +Z before LegIK.
+Owner split: FootPlacement plants the stance foot, this lifts only the swing target, LegIK solves the leg - no second placement."""
+import pathlib
+R = pathlib.Path(__file__).resolve().parents[2]; V1 = R / 'Tools/SHME_V1_20260925'
+def patch(fname, old, new, marker):
+    p = V1 / fname; t = p.read_bytes().decode('utf8')
+    if marker in t: print(fname, marker, 'already'); return
+    for nl in ('\n', '\r\n'):
+        o = old.replace('\n', nl)
+        if t.count(o) == 1: p.write_bytes(t.replace(o, new.replace('\n', nl)).encode('utf8')); print(fname, marker, 'patched'); return
+    raise AssertionError((fname, marker))
+patch('shm_profiles.py', "('RedirectSpeedDecay', 'float', 0.0, 'V224'),",
+      "('RedirectSpeedDecay', 'float', 0.0, 'V224'), ('SwingLiftEnabled', 'bool', False, 'V224'), ('SwingLiftMargin', 'float', 4.0, 'V224'),\n"
+      "    ('SwingLiftMax', 'float', 25.0, 'V224'), ('SwingLiftAhead', 'float', 0.12, 'V224'), ('SwingLiftMinSpeed', 'float', 60.0, 'V224'),\n"
+      "    ('SwingLiftTauUp', 'float', 0.04, 'V224'), ('SwingLiftTauDown', 'float', 0.12, 'V224'),", 'SwingLiftEnabled')
+patch('shm_component_vars.py', "('SpeedOnset', F, 'SHM|V224'),", "('SpeedOnset', F, 'SHM|V224'), ('SwingLiftL', F, 'SHM|V224'), ('SwingLiftR', F, 'SHM|V224'), ('SwingGroundL', F, 'SHM|V224'), ('SwingGroundR', F, 'SHM|V224'),", 'SwingLiftL')
+patch('shm_src.py', "  (set TerrainAheadDrop aheadDrop)\n  (set TerrainInit true))\n",
+      "  (set TerrainAheadDrop aheadDrop)\n"
+      "  ; ---- V2.24 swing-foot clearance (SwingLiftEnabled): the swing foot's target is lifted by the deficit against the ground AHEAD of it\n"
+      "  (bind slOn (and (R SwingLiftEnabled) (and Grounded (> Speed 40.0))))\n"
+      "  (bind slDir (Matematik|Vektör|Normalize2D(Vector) :A PlanarVelocity :Tolerance 0.0001))\n"
+      "  (bind slA (* (R SwingLiftAhead) Speed))\n"
+      "  (bind pL (+ FootCenterL (vscale slDir slA)))\n"
+      "  (bind pR2 (+ FootCenterR (vscale slDir slA)))\n"
+      "  (bind (sx1 sh1 sok1) (Çarpışma|LineTraceByChannel :Start (vec (.x pL) (.y pL) (+ baseZ 70.0)) :End (vec (.x pL) (.y pL) (- baseZ 90.0)) :TraceChannel \"TraceTypeQuery1\" :bTraceComplex false :bIgnoreSelf true))\n"
+      "  (bind (sbh1 sio1 stm1 sdd1 sloc1 sip1 snrm1) (Çarpışma|BreakHitResult :Hit sh1))\n"
+      "  (bind (sx2 sh2 sok2) (Çarpışma|LineTraceByChannel :Start (vec (.x pR2) (.y pR2) (+ baseZ 70.0)) :End (vec (.x pR2) (.y pR2) (- baseZ 90.0)) :TraceChannel \"TraceTypeQuery1\" :bTraceComplex false :bIgnoreSelf true))\n"
+      "  (bind (sbh2 sio2 stm2 sdd2 sloc2 sip2 snrm2) (Çarpışma|BreakHitResult :Hit sh2))\n"
+      "  (bind gL (select sok1 (.z sip1) baseZ))\n"
+      "  (bind gRt (select sok2 (.z sip2) baseZ))\n"
+      "  (bind swL (and slOn (and (not ContactL) (> FootSpeedL (R SwingLiftMinSpeed)))))\n"
+      "  (bind swR (and slOn (and (not ContactR) (> FootSpeedR (R SwingLiftMinSpeed)))))\n"
+      "  (bind tL (select swL (clamp (- (+ gL (R SwingLiftMargin)) (.z FootCenterL)) 0.0 (R SwingLiftMax)) 0.0))\n"
+      "  (bind tR (select swR (clamp (- (+ gRt (R SwingLiftMargin)) (.z FootCenterR)) 0.0 (R SwingLiftMax)) 0.0))\n"
+      "  (bind aUp (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauUp) 0.01)))))\n"
+      "  (bind aDn (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauDown) 0.01)))))\n"
+      "  (set SwingLiftL (select slOn (+ SwingLiftL (* (- tL SwingLiftL) (select (> tL SwingLiftL) aUp aDn))) 0.0))\n"
+      "  (set SwingLiftR (select slOn (+ SwingLiftR (* (- tR SwingLiftR) (select (> tR SwingLiftR) aUp aDn))) 0.0))\n"
+      "  (set SwingGroundL (- gL baseZ))\n"
+      "  (set SwingGroundR (- gRt baseZ))\n"
+      "  (set TerrainInit true))\n", 'V2.24 swing-foot clearance')
+print('done')

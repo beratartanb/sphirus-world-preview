@@ -1,0 +1,45 @@
+"""promote224.py (editor job): V2.24 production. The decision is passed in builtins.V224_PROMO (keys below, defaults = keep current);
+every value written is read back.
+  JRMode     ABP_GR_MotionMatchingBase CDO SHM224_JRMode (1 = request-split jog reversal databases, 2 = + first-braking-frame route,
+             3 = + planted-foot pivot variant)
+  Decay      DA_SHM_Response_Default RedirectSpeedDecay (cm/s^2; frame-rate-stable redirect classing, 0 = V2.23)
+  SwingLift  DA_SHM_Response_Default SwingLiftEnabled (+ SwingLiftMargin / SwingLiftAhead when given)
+  YawFade    DA_SHM_Response_Default CamFolYawFade (follow release while the view turns)
+  Camera     True = stage D production: DA_GR_LocomotionBehavior GR223_PivotXY 1 (the SHME horizontal pivot offset reaches the camera),
+             the legacy horizontal contributions that never reached it set to 0 (brake / accel / turn carry, turn comp, side shift,
+             look-ahead walk / sprint) and CamFollowEnabled true. Rollback: PivotXY 0 + CamFollowEnabled false.
+Refuses with PIE or unexpected dirty packages; prints PROMO224 {before, after, saved}. builtins.V224_PROMO_SAVE saves."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+import builtins, json
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+SDA = '/Game/GraceRanger/SHME/DA_SHM_Response_Default'; GDA = '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior'
+DAS = {GDA, SDA, '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (AP, CP) for n in names), ('unexpected dirty', names)
+if dirty: LS.reload_packages(dirty, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+D = dict(getattr(builtins, 'V224_PROMO', {}))
+abp = u.load_asset(AP); cdo = u.get_default_object(abp.generated_class()); sda = u.load_asset(SDA)
+ZH = ('CamBrakeCarry', 'CamAccelCarry', 'CamTurnCarry', 'CamTurnCompGain', 'CamSideShiftMax', 'CamLookAheadWalk', 'CamLookAheadSprint')
+KEYS = ('RedirectSpeedDecay', 'SwingLiftEnabled', 'SwingLiftMargin', 'SwingLiftAhead', 'CamFolYawFade', 'CamFollowEnabled') + ZH
+gda = u.load_asset(GDA)
+def rd(): return dict({'JRMode': float(cdo.get_editor_property('SHM224_JRMode')), 'JR': cdo.get_editor_property('SHM_RedirectDB_JR').get_name(), 'PivotXY': float(gda.get_editor_property('GR223_PivotXY'))}, **{k: sda.get_editor_property(k) for k in KEYS})
+out = {'before': rd(), 'decision': D}
+if 'JRMode' in D: cdo.set_editor_property('SHM224_JRMode', float(D['JRMode']))
+st, errs = compile_ok(abp); cp = u.load_asset(CP); st2 = compile_ok(cp)[0]
+cdo = u.get_default_object(abp.generated_class())
+for k, dk in (('RedirectSpeedDecay', 'Decay'), ('SwingLiftEnabled', 'SwingLift'), ('SwingLiftMargin', 'Margin'), ('SwingLiftAhead', 'Ahead'), ('CamFolYawFade', 'YawFade')):
+    if dk in D: sda.set_editor_property(k, D[dk])
+if D.get('Camera'):
+    gda.set_editor_property('GR223_PivotXY', 1.0); sda.set_editor_property('CamFollowEnabled', True)
+    for k in ZH: sda.set_editor_property(k, 0.0)
+out['after'] = rd(); out['status'] = [str(st), str(st2)]
+a = out['after']
+ok = 'UP_TO_DATE' in str(st) and not errs and ('JRMode' not in D or a['JRMode'] == float(D['JRMode'])) and ('Decay' not in D or abs(a['RedirectSpeedDecay'] - D['Decay']) < 1e-4)
+out['ok'] = ok
+if ok and getattr(builtins, 'V224_PROMO_SAVE', False):
+    save(abp, cp)
+    for d_ in (sda, gda): d_.modify(True); u.EditorAssetLibrary.save_loaded_asset(d_, False)
+    out['saved'] = True; out['dirty_after'] = [p.get_name() for p in LS.get_dirty_content_packages()]
+print('PROMO224 ' + json.dumps(out, default=str))

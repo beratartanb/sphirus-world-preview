@@ -1,0 +1,28 @@
+"""entry224.py: at each reversal-pivot ENTRY frame (first frame a *Pivot* clip is the selected asset), print the incoming support state
+(component ContactL/R, SupportSide, GaitPhase, previous clip@time) and the pivot entry time, plus the planted-foot slip that follows
+(win223 contact metric over entry .. entry+1.0 s, per foot). Usage: entry224.py label [label ...]"""
+import json, sys, math, pathlib
+E = pathlib.Path(__file__).resolve().parents[2] / 'Saved/Codex/SHME_V1_20260925/Evidence'
+def foot_slip(R, i0, i1, side):
+    b = 'vb_ball_' + side; mx = 0.0; on = None
+    for k in range(i0, i1):
+        r = R[k]; c = r.get('cv_Contact' + side.upper())
+        if c in (True, 1, 'true', 'True') and isinstance(r.get(b), list):
+            if on is None: on = r[b]
+            mx = max(mx, math.hypot(r[b][0] - on[0], r[b][1] - on[1]))
+        else: on = None
+    return mx
+for lab in sys.argv[1:]:
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None], key=lambda r: float(r['t']))
+    prev = None
+    for i, r in enumerate(R):
+        a = str(r.get('anim') or r.get('av_Phase27_SelectedObject') or '')
+        if 'Pivot' in a and (prev is None or 'Pivot' not in prev):
+            j = i
+            while j < len(R) and float(R[j]['t']) < float(r['t']) + 1.0: j += 1
+            pr = R[i - 1] if i else r
+            print('ENTRY %-26s t %5.2f %-24s@%.2f <- %s@%s | sp %3.0f | CL %s CR %s sup %s ph %s | slipL %.1f slipR %.1f' % (
+                lab[:26], float(r['t']), a.split('.')[-1][-24:], float(r.get('av_Phase27_SelectedTime') or -1), str(pr.get('av_Phase27_SelectedObject')).split('.')[-1][-18:],
+                pr.get('av_Phase27_SelectedTime'), float(r.get('cv_Speed') or 0), r.get('cv_ContactL'), r.get('cv_ContactR'), r.get('cv_SupportSide'),
+                round(float(r.get('cv_GaitPhase') or 0), 2), foot_slip(R, i, j, 'l'), foot_slip(R, i, j, 'r')))
+        prev = a

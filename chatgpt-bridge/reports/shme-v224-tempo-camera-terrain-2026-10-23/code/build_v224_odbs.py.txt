@@ -1,0 +1,48 @@
+"""build_v224_odbs.py (editor job) - V2.24 A3b: clean ORIGINAL-variant reversal databases.
+Measured (v224t7 / t7b, planted-foot routing on): the mirrored pivots kept being searched from PSD_SHM224_JogRevBwd / JogRevFwd after
+their BranchIn tracks were moved (the databases keep their synchronized entry list), so the 'original' route still picked the mirror.
+New databases built from scratch, never touched by a mirror track:
+  PSD_SHM224_JogRevBwdO : SHM_DPP_Jog_Bwd_Pivot + rear loops      PSD_SHM224_JogRevFwdO : A_CP2_Jog_Fwd_Pivot + rear loops
+ABP_GR_MotionMatchingBase defaults SHM224_DB_JRBwd / SHM224_DB_JRFwd are re-pointed to them (the old ones stay, unused).
+builtins.V224_DRY prints only. Prints ODB224 {...}."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+import builtins, json
+L = u.AnimationLibrary; AT = u.AssetToolsHelpers.get_asset_tools()
+DRY = bool(getattr(builtins, 'V224_DRY', True))
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+V = '/Game/GraceRanger/SHME/Animations/V224/'; RD = '/Game/GraceRanger/SHME/Animations/Redirect/'; CPF = '/Game/GraceRanger/Animations/CorePerformance/'
+CT = '/Game/GraceRanger/Animations/Continuity/'; RB = '/Game/GraceRanger/Animations/LocomotionBehavior/RearRevision/'
+REAR = [CT + 'A_CT_Jog_Bwd', RB + 'A_RB_Jog_Rear', RB + 'A_RB_Jog_RearLeft', RB + 'A_RB_Jog_RearRight']
+PLAN = {'PSD_SHM224_JogRevBwdO': ([RD + 'SHM_DPP_Jog_Bwd_Pivot'] + REAR, 'SHM224_DB_JRBwd'), 'PSD_SHM224_JogRevFwdO': ([CPF + 'A_CP2_Jog_Fwd_Pivot'] + REAR, 'SHM224_DB_JRFwd')}
+seed = u.load_asset(V + 'PSD_SHM224_JogRevBwd'); assert seed
+out = {'dry': DRY}
+if not DRY:
+    res = {}; bp = u.load_asset(AP)
+    for n, (clips, var) in PLAN.items():
+        path = V + n
+        if not EAL.does_asset_exist(path):
+            f = u.DataAssetFactory(); f.set_editor_property('data_asset_class', u.PoseSearchDatabase)
+            db = AT.create_asset(n, V.rstrip('/'), u.PoseSearchDatabase, f); assert db, n
+            db.set_editor_property('schema', seed.get_editor_property('schema'))
+            for k in ('base_cost_bias', 'continuing_pose_cost_bias', 'looping_cost_bias', 'normalization_set'):
+                try: db.set_editor_property(k, seed.get_editor_property(k))
+                except Exception as e: out.setdefault('prop_err', []).append([n, k, str(e)[:80]])
+            assert EAL.save_asset(path, False)
+        db = u.load_asset(path); tr = 'SHME_V224_' + n.replace('PSD_SHM224_', '')
+        for c in clips:
+            s = u.load_asset(c); names = [str(t) for t in L.get_animation_notify_track_names(s)]
+            if tr in names: L.remove_animation_notify_track(s, tr)
+            L.add_animation_notify_track(s, tr); ln = float(s.get_play_length())
+            st = L.add_animation_notify_state_event(s, tr, 0.0, ln if 'Pivot' not in c else max(0.01, ln - 0.001), u.AnimNotifyState_PoseSearchBranchIn)
+            st.set_editor_property('database', db); assert EAL.save_asset(c, False), c
+        assert EAL.save_asset(path, False)
+        res[n] = [db.get_animation_asset(i).get_name() for i in range(db.get_num_animation_assets())]
+        set_defaults(bp, {var: db})
+    st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:4]
+    cpb = u.load_asset(CP); out['child'] = str(compile_ok(cpb)[0])
+    cdo = u.get_default_object(bp.generated_class()); out['defaults'] = {v: cdo.get_editor_property(v).get_name() for v in ('SHM224_DB_JRBwd', 'SHM224_DB_JRFwd', 'SHM224_DB_JRBwdM', 'SHM224_DB_JRFwdM')}
+    out['mode'] = float(cdo.get_editor_property('SHM224_JRMode'))
+    if 'UP_TO_DATE' in str(st) and not errs and out['mode'] == 0.0: save(bp, cpb); out['saved'] = True
+    out['dbs'] = res
+out['dirty'] = [q.get_name() for q in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+print('ODB224 ' + json.dumps(out, default=str))

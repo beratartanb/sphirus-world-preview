@@ -1,0 +1,74 @@
+"""install_v224_revfoot.py (editor job) - V2.24 A3: the reversal pivot variant follows the PLANTED foot (knob SHM224_JRMode >= 2.5).
+Measured (phase224.py over 40 runs, 20/30 FPS): SHM_DPP_Jog_Bwd_Pivot keeps the slip at 12-23 cm when the LEFT ball is planted at the
+request and 37-65 cm when the RIGHT one is; its mirror is the reverse. A_CP2_Jog_Fwd_Pivot is good with the right foot planted or both
+up and bad (35-64 cm) with the left planted; its mirror cut that case to 24 cm. So, latched with the request identity:
+  SHM224_RevMir = (intent 2 and right ball clearly lower than the left) or (intent 1 and left ball clearly lower than the right)
+  (ball heights = the component's FootHeightL/R over the support plane; 'clearly' = 2 cm)
+EventGraph, after the V2.24 A block: JRMode >= 2.5 and RevMir -> SHM_RedirectDB_JR = DB_JRBwdM (intent 2) / DB_JRFwdM (intent 1).
+Re-applies the V2.21 LastHitBy repair after the MontTick rebuild. builtins.V224_SAVE saves. Prints RF224 {...}."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+from qa_graph import G, connect, disconnect, src, pn, info, obj, arg
+import builtins, json, re as _re
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+V = '/Game/GraceRanger/SHME/Animations/V224/'
+DAS = {'/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior', '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (AP, CP) for n in names), ('unexpected dirty', names)
+rl = [p for p in dirty if p.get_name() in DAS or p.get_name() in (AP, CP)]
+if rl: LS.reload_packages(rl, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+out = {'reloaded': [p.get_name() for p in rl]}
+bp = u.load_asset(AP); DBC = u.PoseSearchDatabase.static_class()
+ensure_vars(bp, [('SHM224_RevMir', 'bool', 'SHM224'), ('SHM224_DB_JRBwdM', DBC, 'SHM224'), ('SHM224_DB_JRFwdM', DBC, 'SHM224')]); compile_ok(bp)
+cdo = u.get_default_object(bp.generated_class())
+for m, nm in (('SHM224_DB_JRBwdM', 'PSD_SHM224_JogRevBwdM'), ('SHM224_DB_JRFwdM', 'PSD_SHM224_JogRevFwdM')):
+    a = u.load_asset(V + nm); assert a, nm
+    if cdo.get_editor_property(m) is None: set_defaults(bp, {m: a})
+def tid(p):
+    try: return str(info(p).type_id)
+    except Exception: return ''
+# ---- MontTick DSL
+LP = P / 'Saved/Codex/SHME_V224_20261022/install_route_src.lisp'; SRC = LP.read_text(encoding='utf8')
+OLD = "  (bind latRev (and (> SHM224_JRMode 0.5) (> SHM224_RevIntent 2.5)))"
+NEW = """  ; V2.24 A3: the pivot variant follows the foot planted at the request (ball heights over the support plane, 2 cm margin)
+  (bind hBL (Sınıf|BPSHMHumanMotionComponent|FootHeightLAl :self comp))
+  (bind hBR (Sınıf|BPSHMHumanMotionComponent|FootHeightRAl :self comp))
+  (bind mirNow (or (and (> intNow 1.5) (and (< intNow 2.5) (< hBR (- hBL 2.0)))) (and (< intNow 1.5) (< hBL (- hBR 2.0)))))
+  (set SHM224_RevMir (selb (or SHM224_EarlyRev (and SHM_RedirectActive (< SHM_RedirectFrames 1.5))) mirNow (selb SHM_RedirectActive SHM224_RevMir false)))
+  (bind latRev (and (> SHM224_JRMode 0.5) (> SHM224_RevIntent 2.5)))"""
+if 'V2.24 A3' not in SRC:
+    assert SRC.count(OLD) == 1, 'latRev line not found'; SRC = SRC.replace(OLD, NEW, 1)
+assert SRC.count('(') == SRC.count(')')
+LP.write_text(SRC, encoding='utf8')
+members = {}
+for n_ in sorted(set(str(x) for x in B.list_variables(bp))):
+    if _re.search(r'(?<![A-Za-z0-9_])' + _re.escape(n_) + r'(?![A-Za-z0-9_])', SRC):
+        c_ = str(B.get_variable_category(bp, n_) or ''); members[n_] = 'Varsayılan' if c_ in ('Default', 'None', '') else c_
+out['fn_nodes'] = rebuild_function(bp, 'SHM213_MontTick', [], [], SRC, shm_dsl.Translator(members, {}, {}))
+_lhb = {'__name__': 'lhb_lib'}; exec(open(str(P / 'Tools/SHME_V221_20261021/fix_v221_lasthitby.py'), encoding='utf8').read(), _lhb); out['lhb'] = _lhb['patch'](bp)
+# ---- EventGraph: after the A block
+eg = pn(graph(bp, 'EventGraph')); ge = G(eg); en = [pn(n) for n in B.find_nodes(obj(eg))]
+if any(tid(p).endswith('|GetSHM224_RevMir') for p in en): out['eg'] = 'already'
+else:
+    jrs = [p for p in en if 'SetSHM_RedirectDB_JR' in tid(p)]; assert len(jrs) == 3, jrs
+    tails = set((p, 'then') for p in jrs)
+    nxt = [p for p in en if any(q.name == 'execute' for q in info(p).input_pins) and any(s in tails for s in src((p, 'execute')))]
+    assert len(nxt) == 1, nxt
+    feeders = src((nxt[0], 'execute')); disconnect((nxt[0], 'execute'))
+    cond = ge.AND(ge.within(ge.get('SHM224_JRMode'), 2.5, 9.0), ge.get('SHM224_RevMir'))
+    g0 = pn(B.create_node(obj(eg), 'İşlevsellikler|AkışKontrolü|Dal', u.IntPoint(0, 0)))
+    for f_ in feeders: connect(f_, (g0, 'execute'))
+    connect(cond, (g0, 'Condition'))
+    yb, nb = ge.branch(ge.within(ge.get('SHM224_RevIntent'), 1.5, 2.5), (g0, 'then'))
+    tb = ge.set('SHM_RedirectDB_JR', ge.get('SHM224_DB_JRBwdM'), yb)
+    tf = ge.set('SHM_RedirectDB_JR', ge.get('SHM224_DB_JRFwdM'), nb)
+    for t_ in (tb, tf, (g0, 'else')): connect(t_, (nxt[0], 'execute'))
+    out['eg'] = {'next': nxt[0].rsplit('.', 1)[-1], 'feeders': len(feeders)}
+st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:6]
+cpb = u.load_asset(CP); out['child'] = str(compile_ok(cpb)[0])
+cdo = u.get_default_object(bp.generated_class()); out['mode'] = float(cdo.get_editor_property('SHM224_JRMode'))
+ok = 'UP_TO_DATE' in str(st) and not errs and 'UP_TO_DATE' in out['child'] and out['mode'] == 0.0
+out['ok'] = ok
+if ok and getattr(builtins, 'V224_SAVE', False): save(bp, cpb); out['saved'] = True
+print('RF224 ' + json.dumps(out, default=str))

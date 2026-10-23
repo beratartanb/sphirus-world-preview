@@ -1,0 +1,35 @@
+"""V2.24 SHME source patch C: the swing lift is released FAST once the foot is in contact (SwingLiftTauContact, 0.03 s) and it only
+exists where the ground AHEAD RISES over the support ground (SwingLiftRiseMin 1 cm, full at +SwingLiftRiseRamp 2 cm).
+Measured: with the 0.12 s release the planted foot still carried 0.3-0.7 cm of lift after touchdown (v224t5 wfwd_sl), and the sole-
+referenced margin (v224t6 sl2) cleared the bump but also lifted the swing feet on flat ground in half the walk frames (a lift layer
+everywhere). The lift belongs to the swing foot over rising ground only."""
+import pathlib
+V1 = pathlib.Path(__file__).resolve().parents[2] / 'Tools/SHME_V1_20260925'
+def patch(fname, old, new, marker):
+    p = V1 / fname; t = p.read_bytes().decode('utf8')
+    if marker in t: print(fname, marker, 'already'); return
+    for nl in ('\n', '\r\n'):
+        o = old.replace('\n', nl)
+        if t.count(o) == 1: p.write_bytes(t.replace(o, new.replace('\n', nl)).encode('utf8')); print(fname, marker, 'patched'); return
+    raise AssertionError((fname, marker))
+patch('shm_profiles.py', "('SwingLiftTauDown', 'float', 0.12, 'V224'),",
+      "('SwingLiftTauDown', 'float', 0.12, 'V224'), ('SwingLiftTauContact', 'float', 0.03, 'V224'), ('SwingLiftRiseMin', 'float', 1.0, 'V224'), ('SwingLiftRiseRamp', 'float', 2.0, 'V224'),",
+      'SwingLiftTauContact')
+OLD_T = ("  (bind tL (select swL (clamp (- (+ gL (R SwingLiftMargin)) (.z FootCenterL)) 0.0 (R SwingLiftMax)) 0.0))\n"
+         "  (bind tR (select swR (clamp (- (+ gRt (R SwingLiftMargin)) (.z FootCenterR)) 0.0 (R SwingLiftMax)) 0.0))\n")
+NEW_T = ("  ; V2.24 C3: only where the ground ahead rises over the support ground (no lift on flat or downhill)\n"
+         "  (bind wRL (clamp (/ (- (- gL baseZ) (R SwingLiftRiseMin)) (max (R SwingLiftRiseRamp) 0.1)) 0.0 1.0))\n"
+         "  (bind wRR (clamp (/ (- (- gRt baseZ) (R SwingLiftRiseMin)) (max (R SwingLiftRiseRamp) 0.1)) 0.0 1.0))\n"
+         "  (bind tL (select swL (* wRL (clamp (- (+ gL (R SwingLiftMargin)) (.z FootCenterL)) 0.0 (R SwingLiftMax))) 0.0))\n"
+         "  (bind tR (select swR (* wRR (clamp (- (+ gRt (R SwingLiftMargin)) (.z FootCenterR)) 0.0 (R SwingLiftMax))) 0.0))\n")
+patch('shm_src.py', OLD_T, NEW_T, 'V2.24 C3: only where')
+OLD_R = ("  (bind aDn (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauDown) 0.01)))))\n"
+         "  (set SwingLiftL (select slOn (+ SwingLiftL (* (- tL SwingLiftL) (select (> tL SwingLiftL) aUp aDn))) 0.0))\n"
+         "  (set SwingLiftR (select slOn (+ SwingLiftR (* (- tR SwingLiftR) (select (> tR SwingLiftR) aUp aDn))) 0.0))\n")
+NEW_R = ("  (bind aDn (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauDown) 0.01)))))\n"
+         "  (bind aCt (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauContact) 0.005)))))\n"
+         "  ; V2.24 C3 release: in contact the lift goes fast (the stance foot belongs to FootPlacement)\n"
+         "  (set SwingLiftL (select slOn (+ SwingLiftL (* (- tL SwingLiftL) (select (> tL SwingLiftL) aUp (select ContactL aCt aDn)))) 0.0))\n"
+         "  (set SwingLiftR (select slOn (+ SwingLiftR (* (- tR SwingLiftR) (select (> tR SwingLiftR) aUp (select ContactR aCt aDn)))) 0.0))\n")
+patch('shm_src.py', OLD_R, NEW_R, 'V2.24 C3 release')
+print('done')

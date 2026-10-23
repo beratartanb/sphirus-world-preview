@@ -1,0 +1,62 @@
+"""lumbar224.py (editor job) - V2.24: un-hunch the LOWER trunk of a project-owned clip without changing the chest / head direction.
+Measured (lean224.py, one bone pair per column, standing reference removed): on the S->W push the runtime ADDS nothing at the chest
+(clip p5 +20.2 == MM mesh +20.2) and the retarget adds +4 (chest) / +11 (lower trunk); the 'bent forward' read is the CLIP's lumbar
+flexion: pelvis->spine_03 +26.6 over standing while pelvis->neck is only +11 (an S-curve the pelvis->neck posture metric cannot see).
+Fix (content): per key, the excess of the pelvis->spine_03 pitch over 'base3' (standing) is reduced to keep x excess:
+  delta = (1 - keep) x excess (capped max_fix); spine_01 rotates BACK by delta x w1, spine_02 by delta x w2 (about the heading's
+  lateral axis, component space, children follow); spine_04 rotates FORWARD by delta x w4 so the chest line (pelvis->spine_05) and the
+  head keep their authored pitch within ~1 deg (counter-rotation); head gaze kept by head_keep_gaze (v212 rule). Pelvis, legs, root and
+  arms (local) untouched - contacts are bit-identical. Window (normalized clip time) with smoothstep edges.
+builtins.V224_LB = {'clips': [{'path', 'src'?, 'base3', 'keep', 'max_fix', 'window': [a, b], 'edge'}], 'dry_run', 'out'}  -> LB224 [...]."""
+import unreal as u, json, math, builtins, pathlib, sys, importlib, shutil
+P = pathlib.Path(u.Paths.project_dir()).resolve(); sys.path.insert(0, str(P / 'Tools/SHME_V1_20260925'))
+import v137_animedit as ae; importlib.reload(ae)
+L = u.AnimationLibrary; EAL = u.EditorAssetLibrary
+cfg = getattr(builtins, 'V224_LB', {}); DRY = bool(cfg.get('dry_run', True)); OUT = P / 'Saved/Codex/SHME_V224_20261022'; BK = OUT / 'checkpoint/pre_lumbar'; BK.mkdir(parents=True, exist_ok=True)
+def ss(x): x = min(max(x, 0.0), 1.0); return x * x * (3.0 - 2.0 * x)
+def job(j):
+    path = j['path']; rec = {'path': path.rsplit('/', 1)[-1]}
+    if not path.startswith('/Game/GraceRanger/'): return dict(rec, refused='not project-owned')
+    seq = u.load_asset(path); assert seq, path
+    src = u.load_asset(j['src']) if j.get('src') else seq
+    bones = ['root', 'pelvis', 'spine_01', 'spine_02', 'spine_03', 'spine_04', 'spine_05', 'neck_01', 'head']
+    clip = ae.Clip(src, bones); nk = clip.nf
+    # work on a copy of the local tracks of every bone in the chain (children of spine_05 follow automatically)
+    local = {b: list(v) for b, v in clip.local.items()}
+    base3 = float(j['base3']); keep = float(j.get('keep', 0.35)); mx = float(j.get('max_fix', 20.0)); w1, w2, w4 = j.get('weights', [0.55, 0.45, 1.0]); a, b = j.get('window', [0.0, 1.0]); ed = float(j.get('edge', 0.08)); gaze = float(j.get('head_keep_gaze', 0.8))
+    def pitch(b_, f, loc):
+        pv = clip.comp('pelvis', f, loc)[0]; x = clip.comp(b_, f, loc)[0]; rq = clip.comp('root', f, loc)[1]; fwd = ae.qrot(rq, (0.0, 1.0, 0.0)); fwd = ae.vnorm((fwd[0], fwd[1], 0.0))
+        d = ae.vsub(x, pv); return math.degrees(math.atan2(ae.vdot(d, fwd), d[2]))
+    before = [(pitch('spine_03', f, local), pitch('spine_05', f, local), pitch('head', f, local)) for f in range(nk)]
+    fixes = []
+    for f in range(nk):
+        x = f / float(max(nk - 1, 1)); wgt = ss((x - a) / ed) * (1.0 - ss((b - x) / ed) if b < 1.0 else 1.0)
+        if b >= 1.0: wgt = ss((x - a) / ed)
+        exc = before[f][0] - base3; fix = min(max(exc, 0.0) * (1.0 - keep), mx) * wgt
+        fixes.append(fix)
+        if fix < 1e-3: continue
+        rq = clip.comp('root', f, local)[1]; fwd = ae.qrot(rq, (0.0, 1.0, 0.0)); fwd = ae.vnorm((fwd[0], fwd[1], 0.0)); lat = ae.vcross((0.0, 0.0, 1.0), fwd)
+        hq0 = clip.comp('head', f, local)[1]
+        for bone, w in (('spine_01', -w1), ('spine_02', -w2), ('spine_04', w4)):
+            ae.apply_bone_delta(clip, local, bone, f, ae.qaxis(lat, w * fix))
+        # keep the head gaze: counter-rotate the head toward its original orientation
+        hq1 = clip.comp('head', f, local)[1]; corr = ae.qmul(hq0, ae.qinv(hq1))
+        ang = 2.0 * math.degrees(math.acos(max(-1.0, min(1.0, corr[3])))); ang = ang - 360.0 if ang > 180.0 else ang
+        if abs(ang) > 0.05:
+            axis = ae.vnorm(corr[:3]) if ae.vlen(corr[:3]) > 1e-6 else lat
+            ae.apply_bone_delta(clip, local, 'head', f, ae.qaxis(axis, ang * gaze))
+    after = [(pitch('spine_03', f, local), pitch('spine_05', f, local), pitch('head', f, local)) for f in range(nk)]
+    rec.update({'base3': base3, 'before': {'p3_max': round(max(x[0] for x in before), 1), 'p5_max': round(max(x[1] for x in before), 1)}, 'after': {'p3_max': round(max(x[0] for x in after), 1), 'p5_max': round(max(x[1] for x in after), 1)},
+                'chest_change_max': round(max(abs(a_[1] - b_[1]) for a_, b_ in zip(after, before)), 2), 'fix_max': round(max(fixes), 1), 'keys': nk})
+    if DRY: return rec
+    fs = P / ('Content' + path[len('/Game'):] + '.uasset'); bk = BK / fs.name
+    if fs.exists() and not bk.exists(): shutil.copy2(fs, bk)
+    ae.write_tracks(seq, local, ['spine_01', 'spine_02', 'spine_04', 'head'], note='SHME V2.24 lumbar un-hunch', guard=False)
+    rec['saved'] = bool(EAL.save_loaded_asset(seq, False)); return rec
+res = []
+for j in cfg.get('clips', []):
+    try: res.append(job(j))
+    except Exception:
+        import traceback; res.append({'path': j.get('path'), 'err': traceback.format_exc()[-800:]})
+(OUT / ('lumbar224_%s.json' % cfg.get('out', 'default'))).write_text(json.dumps(res, indent=1))
+print('LB224 ' + json.dumps(res, default=str))

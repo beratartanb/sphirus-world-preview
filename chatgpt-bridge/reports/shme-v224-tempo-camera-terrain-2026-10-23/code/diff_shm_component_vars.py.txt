@@ -1,0 +1,9 @@
+--- Saved/Codex/SHME_V224_20261022/checkpoint/tools/shm_component_vars.py.v224a	2026-10-22 20:21:54.134885800 +0300
++++ Tools/SHME_V1_20260925/shm_component_vars.py	2026-10-23 04:00:17.183813000 +0300
+@@ -66,5 +66,5 @@
+     ('TerrainSlope', F, 'SHM|V221'), ('TerrainCross', F, 'SHM|V221'), ('TerrainGroundZ', F, 'SHM|V221'), ('TerrainDropDip', F, 'SHM|V221'),
+     ('TerrainAheadDrop', F, 'SHM|V221'), ('TerrainInit', B_, 'SHM|V221'), ('TerrainLean', F, 'SHM|V221'),
+     ('CamStepZ', F, 'SHM|V221'), ('CamStepVel', F, 'SHM|V221'), ('CamStepAge', F, 'SHM|V221'), ('CamStepSide', F, 'SHM|V221'), ('CamStepCount', F, 'SHM|V221'),
+-    ('CamLookAhead', V, 'SHM|V221'), ('CamFOVSpd', F, 'SHM|V221'), ('CamStepFire', B_, 'SHM|V221'), ('CamV221Pos', V, 'SHM|V221'), ('CamV221Init', B_, 'SHM|V221'), ('CamCloseK', F, 'SHM|V222'), ('CamFolLat', F, 'SHM|V223'), ('CamFolFwd', F, 'SHM|V223'), ('CamFolVLat', F, 'SHM|V223'), ('CamFolVFwd', F, 'SHM|V223'),
++    ('CamLookAhead', V, 'SHM|V221'), ('CamFOVSpd', F, 'SHM|V221'), ('CamStepFire', B_, 'SHM|V221'), ('CamV221Pos', V, 'SHM|V221'), ('CamFolPrevYaw', F, 'SHM|V224'), ('CamFolYawK', F, 'SHM|V224'), ('CamV221Init', B_, 'SHM|V221'), ('CamCloseK', F, 'SHM|V222'), ('SpeedOnset', F, 'SHM|V224'), ('SwingLiftL', F, 'SHM|V224'), ('SwingLiftR', F, 'SHM|V224'), ('SwingGroundL', F, 'SHM|V224'), ('SwingGroundR', F, 'SHM|V224'), ('CamFolLat', F, 'SHM|V223'), ('CamFolFwd', F, 'SHM|V223'), ('CamFolVLat', F, 'SHM|V223'), ('CamFolVFwd', F, 'SHM|V223'),
+ ]

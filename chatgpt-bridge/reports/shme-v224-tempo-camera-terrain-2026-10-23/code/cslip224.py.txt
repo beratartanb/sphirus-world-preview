@@ -1,0 +1,21 @@
+"""cslip224.py: planted-foot slip measured with the COMPONENT's own contact flags (ContactL/R): per contact segment the horizontal travel
+of the ball while the flag stays on (max / mean over segments, segments >= 3 frames), plus the lowest ball height. Independent of the
+win223 floor estimate (a constant few-mm lift of a planted foot moves that estimate). Usage: cslip224.py label t0 t1 [label t0 t1 ...]"""
+import json, sys, math, pathlib
+E = pathlib.Path(__file__).resolve().parents[2] / 'Saved/Codex/SHME_V1_20260925/Evidence'
+a = sys.argv[1:]
+for i in range(0, len(a), 3):
+    lab, t0, t1 = a[i], float(a[i + 1]), float(a[i + 2])
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and t0 <= float(r['t']) <= t1 and isinstance(r.get('vb_ball_l'), list)], key=lambda r: float(r['t']))
+    res = []
+    for s in ('l', 'r'):
+        segs = []; cur = []
+        for r in R:
+            if r.get('cv_Contact' + s.upper()) in (True, 'True', 1): cur.append(r['vb_ball_' + s])
+            else:
+                if len(cur) >= 3: segs.append(cur)
+                cur = []
+        if len(cur) >= 3: segs.append(cur)
+        tr = [max(math.hypot(p[0] - g[0][0], p[1] - g[0][1]) for p in g) for g in segs]
+        res.append('%s seg %2d slip max %5.1f mean %4.1f low %5.1f' % (s.upper(), len(segs), max(tr) if tr else float('nan'), sum(tr) / len(tr) if tr else float('nan'), min(r['vb_ball_' + s][2] for r in R)))
+    print('CSLIP %-28s [%5.2f %5.2f] %s' % (lab[:28], t0, t1, ' | '.join(res)))

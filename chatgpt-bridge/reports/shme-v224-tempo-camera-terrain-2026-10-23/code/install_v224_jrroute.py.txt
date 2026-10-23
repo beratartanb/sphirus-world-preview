@@ -1,0 +1,77 @@
+"""install_v224_jrroute.py (editor job) - V2.24 A: the jog reversal bridge database follows the REQUEST IDENTITY.
+Measured (v224t1, fixed 20 / 30 FPS): the same S->W request got class 0 at 20 FPS (no bridge) and class 2 at 30 (bridge = the mixed
+PSD_SHM_Redirect_JogReversalQ with both pivots); the generic pivot database then served the forward->backward pivot for a backward->forward
+request. Four intents are now told apart on the episode's first frame from the velocity against the ACTOR facing (strafe control):
+  1 forward run -> backward request (vaf > 0.5)      -> SHM224_DB_JRFwd (A_CP2_Jog_Fwd_Pivot + rear loops)
+  2 backpedal   -> forward request  (vaf < -0.5)     -> SHM224_DB_JRBwd (SHM_DPP_Jog_Bwd_Pivot + rear loops)
+  3 strafe left <-> right          (|vaf| <= 0.5)    -> SHM224_DB_JRLat (A_CP2_Jog_Left/Right_Pivot + lateral loops); never the RevTurn arc
+  (the camera-forward 'turn and run' reversal while facing the movement = intent 1 at sprint keeps the V2.16 RevTurn route)
+MontTick (DSL, rebuilt from the V2.23 lisp): SHM224_RevIntent latched while SHM_RedirectFrames < 1.5 of a class-2 episode; rt excludes
+intent 2 (V2.23 gate) and intent 3 when SHM224_JRMode > 0.5. EventGraph right after the MontTick call: JRMode > 0.5 -> branch chain
+writes SHM_RedirectDB_JR (intent 2 -> JRBwd, 3 -> JRLat, else JRFwd) BEFORE Update_MotionMatching reads it on the bridge frame.
+Knob SHM224_JRMode default 0 = V2.23 behaviour. Re-applies the V2.21 LastHitBy repair after the rebuild. builtins.V224_SAVE saves."""
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V1_20260925/shm_build.py', encoding='utf8').read(), 'shm_build.py', 'exec'))
+from qa_graph import G, connect, disconnect, src, pn, info, obj, op, pin as qpin
+import builtins, json, re as _re
+LS = u.EditorLoadingAndSavingUtils
+assert u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None, 'PIE running'
+AP = '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase'; CP = AP.replace('Base', '')
+V = '/Game/GraceRanger/SHME/Animations/V224/'
+DAS = {'/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior', '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype'}
+dirty = list(LS.get_dirty_content_packages()); names = [p.get_name() for p in dirty]
+assert all(n in DAS or n in (AP, CP) for n in names), ('unexpected dirty', names)
+rl = [p for p in dirty if p.get_name() in DAS or p.get_name() in (AP, CP)]
+if rl: LS.reload_packages(rl, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE); u.SystemLibrary.collect_garbage()
+out = {'reloaded': [p.get_name() for p in rl]}
+bp = u.load_asset(AP); DBC = u.PoseSearchDatabase.static_class()
+ensure_vars(bp, [('SHM224_JRMode', 'float', 'SHM224'), ('SHM224_RevIntent', 'float', 'SHM224'), ('SHM224_DB_JRFwd', DBC, 'SHM224'), ('SHM224_DB_JRBwd', DBC, 'SHM224'), ('SHM224_DB_JRLat', DBC, 'SHM224')]); compile_ok(bp)
+cdo = u.get_default_object(bp.generated_class())
+for m, nm in (('SHM224_DB_JRFwd', 'PSD_SHM224_JogRevFwd'), ('SHM224_DB_JRBwd', 'PSD_SHM224_JogRevBwd'), ('SHM224_DB_JRLat', 'PSD_SHM224_JogRevLat')):
+    a = u.load_asset(V + nm); assert a, nm
+    if cdo.get_editor_property(m) is None: set_defaults(bp, {m: a})
+cdo = u.get_default_object(bp.generated_class())
+# ---- MontTick DSL
+SRC = (P / 'Saved/Codex/SHME_V223_20261022/install_route_src.lisp').read_text(encoding='utf8')
+OLD = "  (bind rt (or SHM218_FlipOn (and (not backRev) (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0)))))))))))"
+NEW = """  ; V2.24 request identity (latched on the episode's first frames): 1 forward run -> back, 2 backpedal -> forward, 3 strafe lateral
+  (bind intNow (select (> vaf 0.5) 1.0 (select (< vaf -0.5) 2.0 3.0)))
+  (set SHM224_RevIntent (select (and SHM_RedirectActive (< SHM_RedirectFrames 1.5)) intNow (select SHM_RedirectActive SHM224_RevIntent 0.0)))
+  (bind latRev (and (> SHM224_JRMode 0.5) (> SHM224_RevIntent 2.5)))
+  (bind rt (or SHM218_FlipOn (and (not (or backRev latRev)) (and (> SHM214_RevTurnMode 0.5) (and SHM_RedirectActive (and hasIn (and camOK (and (> sp 150.0) (or flip (or (> SHM_RedirectClass 1.5) (> ang 100.0)))))))))))"""
+if 'V2.24 request identity' not in SRC:
+    assert SRC.count(OLD) == 1, 'rt line not found'; SRC = SRC.replace(OLD, NEW, 1)
+assert SRC.count('(') == SRC.count(')')
+(P / 'Saved/Codex/SHME_V224_20261022/install_route_src.lisp').write_text(SRC, encoding='utf8')
+members = {}
+_have = set(str(x) for x in B.list_variables(bp))
+for n_ in sorted(_have):
+    if _re.search(r'(?<![A-Za-z0-9_])' + _re.escape(n_) + r'(?![A-Za-z0-9_])', SRC):
+        c_ = str(B.get_variable_category(bp, n_) or ''); members[n_] = 'Varsayılan' if c_ in ('Default', 'None', '') else c_
+out['fn_nodes'] = rebuild_function(bp, 'SHM213_MontTick', [], [], SRC, shm_dsl.Translator(members, {}, {}))
+_lhb = {'__name__': 'lhb_lib'}; exec(open(str(P / 'Tools/SHME_V221_20261021/fix_v221_lasthitby.py'), encoding='utf8').read(), _lhb); out['lhb'] = _lhb['patch'](bp)
+# ---- EventGraph: after the MontTick call, JRMode > 0.5 -> DB_JR by intent
+eg = pn(graph(bp, 'EventGraph')); ge = G(eg); en = [pn(n) for n in B.find_nodes(obj(eg))]
+def tid(p):
+    try: return str(info(p).type_id)
+    except Exception: return ''
+if any('SetSHM_RedirectDB_JR' in tid(p) for p in en): out['eg'] = 'already'
+else:
+    mt = [p for p in en if tid(p).split('|')[-1] == 'SHM213_MontTick']; assert len(mt) == 1, mt
+    nxt = [p for p in en if any(q.name == 'execute' for q in info(p).input_pins) and (mt[0], 'then') in src((p, 'execute'))]; assert nxt
+    for x in nxt: disconnect((x, 'execute'))
+    on, off = ge.branch(ge.within(ge.get('SHM224_JRMode'), 0.5, 9.0), (mt[0], 'then'))
+    yb, nb = ge.branch(ge.within(ge.get('SHM224_RevIntent'), 1.5, 2.5), on)
+    tb = ge.set('SHM_RedirectDB_JR', ge.get('SHM224_DB_JRBwd'), yb)
+    yl, nl = ge.branch(ge.within(ge.get('SHM224_RevIntent'), 2.5, 3.5), nb)
+    tl = ge.set('SHM_RedirectDB_JR', ge.get('SHM224_DB_JRLat'), yl)
+    tf = ge.set('SHM_RedirectDB_JR', ge.get('SHM224_DB_JRFwd'), nl)
+    for x in nxt:
+        for t_ in (tb, tl, tf, off): connect(t_, (x, 'execute'))
+    out['eg'] = {'after': mt[0].rsplit('.', 1)[-1], 'next': [x.rsplit('.', 1)[-1] for x in nxt]}
+st, errs = compile_ok(bp); out['status'] = str(st); out['errs'] = errs[:6]
+cpb = u.load_asset(CP); out['child'] = str(compile_ok(cpb)[0])
+cdo = u.get_default_object(bp.generated_class()); out['mode'] = float(cdo.get_editor_property('SHM224_JRMode')); out['jr'] = str(cdo.get_editor_property('SHM_RedirectDB_JR').get_name())
+ok = 'UP_TO_DATE' in str(st) and not errs and 'UP_TO_DATE' in out['child'] and out['mode'] == 0.0
+out['ok'] = ok
+if ok and getattr(builtins, 'V224_SAVE', False): save(bp, cpb); out['saved'] = True
+print('JRR224 ' + json.dumps(out, default=str))

@@ -1,0 +1,49 @@
+"""lean224.py <run> --t0= --t1= [--step=0.1] : the trunk-pitch chain on ONE bone pair per column, every row in the ACTOR-yaw frame
+(+ = forward), minus the standing reference of the same chain (rows 0.3-1.0 s of the run), so the columns are comparable:
+  clip   : the selected clip's own pose at the selected time (clipscan224.json, root-heading frame)      pelvis->spine_05 and ->spine_03
+  mm     : the Motion Matching mesh at runtime (mh_pelvis -> mx_spine_05 / mx_spine_03)                   = clip + blend + warping + PBI/SHM
+  vis    : the visible body (vb_pelvis -> vb_chest5 = spine_05 / vb_chest = spine_03)                     = mm + retarget / post process
+  inputs : SHM_LeanFwd (deg, SHME -> PBI /0.6), PBI_ForwardTarget, acc (CMC input accel cm/s2), speed, selected clip / time
+The delta columns are differences of the SAME pair measured in the SAME frame (actor yaw): clip->mm = runtime layers inside the
+MM ABP, mm->vis = retarget + MetaHuman post process. Standing reference removes the constant offsets of each chain."""
+import json, sys, math, pathlib
+P = next(q for q in pathlib.Path(__file__).resolve().parents if (q / 'sphirus.uproject').exists()); E = P / 'Saved/Codex/SHME_V1_20260925/Evidence'
+args = [a for a in sys.argv[1:] if not a.startswith('--')]; opt = dict((a[2:].split('=', 1) + [''])[:2] for a in sys.argv[1:] if a.startswith('--'))
+t0 = float(opt.get('t0') or 2.0); t1 = float(opt.get('t1') or 4.0); stp = float(opt.get('step') or 0.1)
+CS = json.loads((P / 'Saved/Codex/SHME_V224_20261022/clipscan224.json').read_text())
+BYNAME = {v['path'].rsplit('/', 1)[-1]: v for v in CS.values() if isinstance(v, dict)}
+def V(r, k):
+    x = r.get(k); return x if isinstance(x, list) and len(x) == 3 else None
+def pit(r, a, b):
+    pa, pb = V(r, a), V(r, b)
+    if not pa or not pb: return None
+    yaw = math.radians(float(r.get('ay') or 0)); f = (math.cos(yaw), math.sin(yaw)); d = (pb[0] - pa[0], pb[1] - pa[1], pb[2] - pa[2])
+    return math.degrees(math.atan2(d[0] * f[0] + d[1] * f[1], d[2]))
+def clip_pitch(r, key):
+    nm = str(r.get('av_Phase27_SelectedObject')).rsplit('.', 1)[-1]; c = BYNAME.get(nm)
+    if not c or str(r.get('av_CP_StartOwned')) == 'True': return None
+    t = float(r.get('av_Phase27_SelectedTime') or 0); rows = c['rows']
+    i = min(range(len(rows)), key=lambda k: abs(rows[k]['t'] - t)); return rows[i][key]
+for lab in args:
+    R = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and V(r, 'vb_pelvis') and V(r, 'mh_pelvis')], key=lambda r: float(r['t']))
+    ref = [r for r in R if 0.3 <= float(r['t']) <= 1.0]
+    def mean(f):
+        a = [x for x in (f(r) for r in ref) if x is not None]; return sum(a) / len(a) if a else 0.0
+    r_mm5 = mean(lambda r: pit(r, 'mh_pelvis', 'mx_spine_05')); r_mm3 = mean(lambda r: pit(r, 'mh_pelvis', 'mx_spine_03'))
+    r_v5 = mean(lambda r: pit(r, 'vb_pelvis', 'vb_chest5')); r_v3 = mean(lambda r: pit(r, 'vb_pelvis', 'vb_chest'))
+    r_c5 = mean(lambda r: clip_pitch(r, 'p5')); r_c3 = mean(lambda r: clip_pitch(r, 'p3'))
+    print('LEAN224 %s  standing ref: clip p5 %.1f p3 %.1f | mm p5 %.1f p3 %.1f | vis p5 %.1f p3 %.1f   (columns below = value - ref)' % (lab, r_c5, r_c3, r_mm5, r_mm3, r_v5, r_v3))
+    print('   t    sp  acc | clip5  mm5  vis5 | clip3  mm3  vis3 | d(clip>mm)5 d(mm>vis)5 | LeanFwd PBIfwd | clip@time')
+    nxt = t0; peak = {}
+    for r in R:
+        t = float(r['t'])
+        if t < t0 or t > t1 or t + 1e-6 < nxt: continue
+        nxt = t + stp
+        c5, c3 = clip_pitch(r, 'p5'), clip_pitch(r, 'p3'); m5 = pit(r, 'mh_pelvis', 'mx_spine_05'); m3 = pit(r, 'mh_pelvis', 'mx_spine_03'); v5 = pit(r, 'vb_pelvis', 'vb_chest5'); v3 = pit(r, 'vb_pelvis', 'vb_chest')
+        def d(x, rf): return (x - rf) if x is not None else float('nan')
+        C5, M5, Vv5, C3, M3, Vv3 = d(c5, r_c5), d(m5, r_mm5), d(v5, r_v5), d(c3, r_c3), d(m3, r_mm3), d(v3, r_v3)
+        for k, v in (('clip5', C5), ('mm5', M5), ('vis5', Vv5), ('c>m', M5 - C5), ('m>v', Vv5 - M5)):
+            if v == v and abs(v) > abs(peak.get(k, (0, 0))[0]): peak[k] = (v, t)
+        sel = 'CPstart@%.2f' % float(r.get('av_CP_StartEvalTime') or 0) if str(r.get('av_CP_StartOwned')) == 'True' else str(r.get('av_Phase27_SelectedObject')).rsplit('.', 1)[-1][-22:] + '@%.2f' % float(r.get('av_Phase27_SelectedTime') or 0)
+        print('  %5.2f %4.0f %4.0f | %5.1f %5.1f %5.1f | %5.1f %5.1f %5.1f |   %+5.1f      %+5.1f    | %5s %6s | %s' % (t, float(r.get('Speed2D') or 0), float(r.get('acc') or 0), C5, M5, Vv5, C3, M3, Vv3, M5 - C5, Vv5 - M5, str(r.get('av_SHM_LeanFwd'))[:5], str(r.get('av_PBI_ForwardTarget'))[:6], sel))
+    print('  PEAKS (value, t): ' + '  '.join('%s %+.1f@%.2f' % (k, v[0], v[1]) for k, v in peak.items()))

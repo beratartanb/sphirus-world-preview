@@ -1,0 +1,34 @@
+"""clipscan224.py (read-only editor job): per-FRAME trunk pitch of the clips on the V2.24 jog paths, three bone pairs in the clip's own
+root-heading frame (pelvis->spine_03 'p3', pelvis->spine_05 'p5', pelvis->neck_01 'pn'; + = forward), pelvis height, ball heights.
+The same pairs are measured at runtime by lean224.py on the MM mesh (mx_*) and the visible body (vb_*) so that clip -> MM -> visible can be
+compared on one bone pair at the same clip time. Writes Saved/Codex/SHME_V224_20261022/clipscan224.json."""
+import unreal as u, json, math, pathlib, sys, importlib
+P = pathlib.Path(u.Paths.project_dir()).resolve(); sys.path.insert(0, str(P / 'Tools/SHME_V1_20260925'))
+import v137_animedit as ae; importlib.reload(ae)
+CL = {'bwd_pivot': '/Game/GraceRanger/SHME/Animations/Redirect/SHM_DPP_Jog_Bwd_Pivot', 'fwd_pivot': '/Game/GraceRanger/Animations/CorePerformance/A_CP2_Jog_Fwd_Pivot',
+      'right_pivot': '/Game/GraceRanger/Animations/CorePerformance/A_CP2_Jog_Right_Pivot', 'left_pivot': '/Game/GraceRanger/Animations/CorePerformance/A_CP2_Jog_Left_Pivot',
+      'jog_fwd': '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Fwd', 'jog_rear': '/Game/GraceRanger/Animations/LocomotionBehavior/RearRevision/A_RB_Jog_Rear',
+      'jog_right': '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Right', 'jog_left': '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Left',
+      'jogq_start': '/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM_JogQ_A_CP2_Jog_Fwd_Start', 'cp2_start': '/Game/GraceRanger/Animations/CorePerformance/A_CP2_Jog_Fwd_Start',
+      'jog_contact': '/Game/GraceRanger/Animations/GraceRanger/A_GR_Jog_Fwd_Contact', 'walk_rear': '/Game/GraceRanger/Animations/Continuity/A_CT_Walk_Rear',
+      'walk_fwd': '/Game/GraceRanger/Animations/LocomotionBehavior/A_LB_Walk_Fwd', 'sprint_fwd': '/Game/GraceRanger/Animations/LocomotionBehavior/A_LB_Sprint_Fwd',
+      'idle': '/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/Phase275Support/Idle/af_Stand_Idle_NaturalBaseline_Phase275'}
+ar = u.AssetRegistryHelpers.get_asset_registry(); out = {}
+for name, path in CL.items():
+    seq = u.load_asset(path)
+    if not seq:
+        nm = path.rsplit('/', 1)[-1]; hits = [a for a in ar.get_assets_by_class(u.TopLevelAssetPath('/Script/Engine', 'AnimSequence')) if str(a.asset_name) == nm]
+        seq = hits[0].get_asset() if hits else None; path = str(hits[0].package_name) if hits else path
+    if not seq: out[name] = 'MISSING ' + path; continue
+    n = ae.num_frames(seq); frames = list(range(n)) if name != 'idle' else list(range(int(66.0 * 30), int(70.0 * 30)))
+    clip = ae.Clip(seq, ['root', 'pelvis', 'spine_03', 'spine_05', 'neck_01', 'ball_l', 'ball_r'])
+    rows = []
+    for f in frames:
+        g = {b: clip.comp(b, f)[0] for b in ('root', 'pelvis', 'spine_03', 'spine_05', 'neck_01', 'ball_l', 'ball_r')}
+        rq = clip.comp('root', f)[1]; fwd = ae.qrot(rq, (0.0, 1.0, 0.0)); fwd = ae.vnorm((fwd[0], fwd[1], 0.0))
+        def pit(b):
+            d = ae.vsub(g[b], g['pelvis']); return round(math.degrees(math.atan2(ae.vdot(d, fwd), d[2])), 2)
+        rows.append({'t': round(f / 30.0, 4), 'p3': pit('spine_03'), 'p5': pit('spine_05'), 'pn': pit('neck_01'), 'pz': round(g['pelvis'][2] - g['root'][2], 1), 'bl': round(g['ball_l'][2] - g['root'][2], 1), 'br': round(g['ball_r'][2] - g['root'][2], 1)})
+    out[name] = {'path': path, 'len': round(n / 30.0, 3), 'rows': rows}
+    print('CS224 %-12s len %.2f p3 %5.1f..%5.1f p5 %5.1f..%5.1f pn %5.1f..%5.1f' % (name, n / 30.0, min(r['p3'] for r in rows), max(r['p3'] for r in rows), min(r['p5'] for r in rows), max(r['p5'] for r in rows), min(r['pn'] for r in rows), max(r['pn'] for r in rows)))
+(P / 'Saved/Codex/SHME_V224_20261022/clipscan224.json').write_text(json.dumps(out)); print('CS224_DONE')

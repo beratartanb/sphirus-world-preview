@@ -1,0 +1,20 @@
+# abrow224.ps1 -A <dirA> -B <dirB> -Frames "10,20,30" -Out <file.jpg> [-W 420] : row 1 = A frames, row 2 = B frames (same frame numbers), labelled
+param([string]$A, [string]$B, [string]$Frames, [string]$Out, [int]$W = 420, [string]$LA = "ONCE", [string]$LB = "SONRA")
+Add-Type -AssemblyName System.Drawing
+$fr = $Frames.Split(',') | ForEach-Object { [int]$_ }
+$first = [System.Drawing.Image]::FromFile((Join-Path $A ('f{0:D5}.jpg' -f $fr[0]))); $H = [int]($W * $first.Height / $first.Width); $first.Dispose()
+$bmp = New-Object System.Drawing.Bitmap ($W * $fr.Count), ($H * 2); $g = [System.Drawing.Graphics]::FromImage($bmp); $g.InterpolationMode = 'HighQualityBicubic'
+$font = New-Object System.Drawing.Font 'Arial', 11
+$row = 0
+foreach ($d in @($A, $B)) {
+  for ($i = 0; $i -lt $fr.Count; $i++) {
+    $f = Join-Path $d ('f{0:D5}.jpg' -f $fr[$i]); if (-not (Test-Path $f)) { continue }
+    $img = [System.Drawing.Image]::FromFile($f); $g.DrawImage($img, $i * $W, $row * $H, $W, $H); $img.Dispose()
+    $lab = $(if ($row -eq 0) { $LA } else { $LB }) + ' f' + $fr[$i]
+    $g.FillRectangle([System.Drawing.Brushes]::Black, $i * $W, $row * $H, 120, 18); $g.DrawString($lab, $font, [System.Drawing.Brushes]::White, $i * $W + 2, $row * $H + 1)
+  }
+  $row++
+}
+$enc = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq 'image/jpeg' }
+$p = New-Object System.Drawing.Imaging.EncoderParameters 1; $p.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter ([System.Drawing.Imaging.Encoder]::Quality), 85L
+$bmp.Save($Out, $enc, $p); $g.Dispose(); $bmp.Dispose(); "row $Out"

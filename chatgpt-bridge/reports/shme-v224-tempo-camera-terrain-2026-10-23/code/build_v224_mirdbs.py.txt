@@ -1,0 +1,45 @@
+"""build_v224_mirdbs.py (editor job) - V2.24 A3: the mirrored pivots get databases of their own, so the foot that is planted when the
+reversal is requested decides the variant explicitly (measured: motion matching picked the mirror in every phase at 20 FPS and the
+pose cost could not tell the phases apart; per-phase table in REPORT_V224 / phase224.py):
+  PSD_SHM224_JogRevBwdM : SHM224_Jog_Bwd_Pivot_M + the rear loops   (backpedal -> forward with the RIGHT foot planted)
+  PSD_SHM224_JogRevFwdM : SHM224_Jog_Fwd_Pivot_M + the rear loops   (forward run -> backward with the LEFT foot planted)
+The mirrored clips' BranchIn tracks move from JogRevBwd / JogRevFwd to the new databases (the originals keep only their own pivot).
+Schema / biases copied from PSD_SHM224_JogRevBwd. builtins.V224_DRY prints only. Prints MDB224 {...}."""
+import unreal as u, json, builtins
+L = u.AnimationLibrary; EAL = u.EditorAssetLibrary; AT = u.AssetToolsHelpers.get_asset_tools()
+DRY = bool(getattr(builtins, 'V224_DRY', True))
+V = '/Game/GraceRanger/SHME/Animations/V224/'
+CT = '/Game/GraceRanger/Animations/Continuity/'; RB = '/Game/GraceRanger/Animations/LocomotionBehavior/RearRevision/'
+REAR = [CT + 'A_CT_Jog_Bwd', RB + 'A_RB_Jog_Rear', RB + 'A_RB_Jog_RearLeft', RB + 'A_RB_Jog_RearRight']
+PLAN = {'PSD_SHM224_JogRevBwdM': ([V + 'SHM224_Jog_Bwd_Pivot_M'] + REAR, 'SHME_V224_JogRevBwd'), 'PSD_SHM224_JogRevFwdM': ([V + 'SHM224_Jog_Fwd_Pivot_M'] + REAR, 'SHME_V224_JogRevFwd')}
+seed = u.load_asset(V + 'PSD_SHM224_JogRevBwd'); assert seed
+out = {'dry': DRY}
+if not DRY:
+    res = {}
+    for n, (clips, old_track) in PLAN.items():
+        path = V + n
+        if not EAL.does_asset_exist(path):
+            f = u.DataAssetFactory(); f.set_editor_property('data_asset_class', u.PoseSearchDatabase)
+            db = AT.create_asset(n, V.rstrip('/'), u.PoseSearchDatabase, f); assert db, n
+            db.set_editor_property('schema', seed.get_editor_property('schema'))
+            for k in ('base_cost_bias', 'continuing_pose_cost_bias', 'looping_cost_bias', 'normalization_set'):
+                try: db.set_editor_property(k, seed.get_editor_property(k))
+                except Exception as e: out.setdefault('prop_err', []).append([n, k, str(e)[:80]])
+            assert EAL.save_asset(path, False)
+        db = u.load_asset(path); tr = 'SHME_V224_' + n.replace('PSD_SHM224_', '')
+        for c in clips:
+            s = u.load_asset(c); names = [str(t) for t in L.get_animation_notify_track_names(s)]
+            if '_M' in c.rsplit('/', 1)[-1] and old_track in names: L.remove_animation_notify_track(s, old_track)
+            if tr in names: L.remove_animation_notify_track(s, tr)
+            L.add_animation_notify_track(s, tr); ln = float(s.get_play_length())
+            st = L.add_animation_notify_state_event(s, tr, 0.0, ln if 'Pivot' not in c else max(0.01, ln - 0.001), u.AnimNotifyState_PoseSearchBranchIn)
+            st.set_editor_property('database', db); assert EAL.save_asset(c, False), c
+        assert EAL.save_asset(path, False)
+        res[n] = [db.get_animation_asset(i).get_name() for i in range(db.get_num_animation_assets())]
+    for o in ('PSD_SHM224_JogRevBwd', 'PSD_SHM224_JogRevFwd'):
+        d = u.load_asset(V + o); tags = list(d.get_editor_property('tags') or [])
+        if 'SHME_V224_SPLIT' not in [str(t) for t in tags]: tags.append('SHME_V224_SPLIT'); d.set_editor_property('tags', tags)
+        EAL.save_asset(V + o, False); res[o] = [d.get_animation_asset(i).get_name() for i in range(d.get_num_animation_assets())]
+    out['dbs'] = res
+out['dirty'] = [q.get_name() for q in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+print('MDB224 ' + json.dumps(out, default=str))
