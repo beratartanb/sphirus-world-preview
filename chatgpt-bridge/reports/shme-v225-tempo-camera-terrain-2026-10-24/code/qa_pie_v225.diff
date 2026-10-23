@@ -1,0 +1,46 @@
+--- Saved/Codex/SHME_V225_20261023/checkpoint/tools/qa_pie.py	2026-10-22 11:37:18.130979400 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-23 23:53:38.072790900 +0300
+@@ -49,9 +49,14 @@
+     return a
+ def box(world, name, x, y, z, sx, sy, sz, hidden=False, collide=True):
+     a = spawn(world, u.StaticMeshActor, u.Vector(x, y, z))
++    if name.startswith('INS_'):
++        try: a.rename(name)   # V2.25: object name = what GetDisplayName returns in a packaged build
++        except Exception as e_: u.log_warning('INS rename: ' + str(e_))
++        try: a.set_actor_label(name)   # V2.25 t7: in editor/PIE GetDisplayName returns the actor LABEL (a runtime-spawned actor's label defaults to 'StaticMeshActor')
++        except Exception as e_: u.log_warning('INS label: ' + str(e_))
+     c = a.static_mesh_component; c.set_static_mesh(CUBE)
+     a.set_actor_scale3d(u.Vector(sx / 100, sy / 100, sz / 100)); c.set_collision_profile_name('BlockAll')
+-    a.set_actor_hidden_in_game(hidden); a.set_actor_enable_collision(collide); a.tags = [u.Name('SHM_QA_' + name)]
++    a.set_actor_hidden_in_game(hidden); a.set_actor_enable_collision(collide); a.tags = [u.Name('SHM_QA_' + name)] + ([u.Name('GR_Inspect')] if name.startswith('INS_') else [])   # V2.25: inspectable test props
+     return a
+ 
+ def build(world):
+@@ -326,6 +331,11 @@
+     mcap_stop(ed.get_game_world())
+     for c_ in req.get('console_after', []): u.SystemLibrary.execute_console_command(ed.get_game_world() or ed.get_editor_world(), c_)
+     if ed.get_game_world(): les.editor_request_end_play()
++    if st.get('pw_prev'):   # V2.25: restore the play settings changed for a pie_window run
++        try:
++            lps = u.get_default_object(u.LevelEditorPlaySettings)
++            for k, v in st['pw_prev'].items(): lps.set_editor_property(k, v)
++        except Exception as e: u.log_error('SHM_PIEWIN restore failed: ' + str(e))
+     u.SystemLibrary.execute_console_command(ed.get_editor_world(), 't.MaxFPS 0')
+     if req.get('slomo'):
+         try: u.GameplayStatics.set_global_time_dilation(ed.get_game_world(), 1.0)
+@@ -542,4 +552,15 @@
+     except Exception: pass
+ builtins.LR_PIE_ALL = []
+ st['h'] = u.register_slate_post_tick_callback(tick); builtins.LR_PIE_ALL.append(st['h'])
++# V2.25: "pie_window": [w, h] plays in a NEW editor window of that client size (full-frame captures at a MediaIOCore-safe width,
++# e.g. 1728x972 = 16:9, instead of centre-cropping the docked viewport). The previous play settings are restored when PIE ends.
++PW = req.get('pie_window')
++if PW:
++    try:
++        lps = u.get_default_object(u.LevelEditorPlaySettings)
++        st['pw_prev'] = {k: lps.get_editor_property(k) for k in ('last_executed_play_mode_type', 'new_window_width', 'new_window_height', 'center_new_window')}
++        lps.set_editor_property('last_executed_play_mode_type', u.PlayModeType.PLAY_MODE_IN_EDITOR_FLOATING)
++        lps.set_editor_property('new_window_width', int(PW[0])); lps.set_editor_property('new_window_height', int(PW[1])); lps.set_editor_property('center_new_window', True)
++        u.log('SHM_PIEWIN %dx%d' % (int(PW[0]), int(PW[1])))
++    except Exception as e: u.log_error('SHM_PIEWIN failed: ' + str(e))
+ les.editor_request_begin_play(); print('PIE requested', label)
