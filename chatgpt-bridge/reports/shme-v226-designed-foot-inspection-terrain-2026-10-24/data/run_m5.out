@@ -1,0 +1,85 @@
+M5 start 07:29:55
+--- restart 07:30:38
+M5 start 07:30:38
+no editor to quit
+RUNNER_READY shmv226_pb5.log
+throttle off False
+RELAUNCH pb5 30 07:31:46
+PROBE226 {"save": false, "remove": false, "actors": {"R05_Workshop_Mask_Silent": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 0, "added": "Sphere", "probes": [{"name": "Sphere", "loc": [58.0, 315.0, 315.0], "r": 20.0, "vis": "ECR_BLOCK: 2>", "pawn": "ECR_IGNORE: 0>", "cam": "ECR_IGNORE: 0>"}]}, "R05_Workshop_Mask_Gilded": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 0, "added": "Sphere", "probes": [{"name": "Sphere", "loc": [58.0, 344.0, 377.0], "r": 20.0, "vis": "ECR_BLOCK: 2>", "pawn": "ECR_IGNORE: 0>", "cam": "ECR_IGNORE: 0>"}]}, "R05_Workshop_Mask_Cerulean": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 0, "added": "Sphere", "probes": [{"name": "Sphere", "loc": [58.0, 344.0, 317.0], "r": 20.0, "vis": "ECR_BLOCK: 2>", "pawn": "ECR_IGNORE: 0>", "cam": "ECR_IGNORE: 0>"}]}, "R05_Workshop_Mask_Cracked": {"level": "/Game/G
+PROBE226 {"save": true, "remove": false, "actors": {"R05_Workshop_Mask_Silent": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 1, "probes": [{"name": "Sphere", "loc": [58.0, 315.0, 315.0], "r": 20.0, "vis": "ECR_BLOCK: 2>", "pawn": "ECR_IGNORE: 0>", "cam": "ECR_IGNORE: 0>"}]}, "R05_Workshop_Mask_Gilded": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 1, "probes": [{"name": "Sphere", "loc": [58.0, 344.0, 377.0], "r": 20.0, "vis": "ECR_BLOCK: 2>", "pawn": "ECR_IGNORE: 0>", "cam": "ECR_IGNORE: 0>"}]}, "R05_Workshop_Mask_Cerulean": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 1, "probes": [{"name": "Sphere", "loc": [58.0, 344.0, 317.0], "r": 20.0, "vis": "ECR_BLOCK: 2>", "pawn": "ECR_IGNORE: 0>", "cam": "ECR_IGNORE: 0>"}]}, "R05_Workshop_Mask_Cracked": {"level": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent", "had": 1, "prob
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv226_t7.log
+throttle off False
+RELAUNCH t7 30 07:34:01
+v212_warm_073404 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v226t7_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+v226t7_ins_ws_insA_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+v226t7_ins_ws_insC_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+v226t7_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+v226t7_ins_qa_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+T7_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv226_b10.log
+throttle off False
+RELAUNCH b10 30 07:39:38
+ "problems": []
+SHM_ONLY ['SHM_UpdateBodyTargets']
+ "SHM_UpdateBodyTargets": 1331
+<BlueprintStatus.BS_UP_TO_DATE: 3> []
+saved <BlueprintStatus.BS_UP_TO_DATE: 3>
+BUILD_V226_DONE 07:45:29
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv226_t10.log
+throttle off False
+RELAUNCH t10 30 07:47:34
+v212_warm_074738 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v226t10_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v226t10_ter_drop_walk_m6_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED candidate
+v226t10_ter_drop_walk_te6_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED candidate
+v226t10_ter_drop_walkB_te6_r1 | rows 666 rate 30.0/s | pops >25 m/s2: 4 (worst 256) | by owner {'in-clip': 4} | FINISHED candidate
+v226t10_ter_drop_jog_te6_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED candidate
+v226t10_ter_step2_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED production
+v226t10_ter_step2_te6_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED candidate
+v226t10_ter_bump_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 39 GB 08:08:23
+v212_warm_081138 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v226t10_ter_bump_walk_m6_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t10_ter_bump_jog_m6_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v226t10_ter_hill15_walk_m6_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t10_d_walk_m6_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t10_d_jog_m6_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t10_map_r2_m6_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 6 (worst 56) | by owner {'montage': 3, 'in-clip': 3} | FINISHED candidate
+T10_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv226_fs3.log
+throttle off False
+RELAUNCH fs3 30 08:18:45
+FOOTSPEED226 {"dry": false, "clips": {"SHM226_JogRev_B_F_P0": {"frames": 54, "min_l": 0.0, "min_r": 0.0, "max_l": 744.4, "max_r": 812.0, "nolock": true, "saved": true, "curves_after": ["footspeed_l", "footspeed_r", "Disable_FootLock"]}, "SHM226_JogRev_B_F_P1": {"frames": 54, "min_l": 0.0, "min_r": 0
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv226_t11.log
+throttle off False
+RELAUNCH t11 30 08:21:47
+v212_warm_082151 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v226t11_j24_sw_ph0_rv32_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_sw_ph1_rv32_r1 | rows 361 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_sw_ph2_rv32_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_sw_ph3_rv32_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_sw_ph4_rv32_r1 | rows 368 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_ph0_rv32_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_ph1_rv32_r1 | rows 361 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_ph2_rv32_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_ph3_rv32_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_ph4_rv32_r1 | rows 368 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t11_j24_rel_rv32_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v226t11_j24_dbl_rv32_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 62) | by owner {'in-clip': 1} | FINISHED candidate
+v226t11_j24_ad_ph0_rv32_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED candidate
+MEM_RESTART editor 39 GB 08:28:34
+v212_warm_083214 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v226t11_j24_m180w_rv32_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 4 (worst 291) | by owner {'in-clip': 4} | FINISHED candidate
+T11_DONE
+M5_DONE

@@ -1,0 +1,51 @@
+--- Saved/Codex/SHME_V226_20261024/checkpoint/tools/gen225_rev.py	2026-10-24 03:37:13.517829500 +0300
++++ Tools/SHME_V226_20261024/gen226_rev.py	2026-10-24 05:07:00.689495700 +0300
+@@ -1,3 +1,4 @@
++# gen226_rev.py = gen225_rev.py (r3: measured capsule table + S-foot ball pin) written to V226 as SHM226_JogRev_* with NPH from cfg (32 bins: V2.26 diagnosis = the 8-bin phase quantisation left the clip foot 20-25 cm from the loop foot at the matched entry time)
+ """gen225_rev.py (editor job) - V2.25 A: AUTHORED jog reversal for this character: brake -> support -> measured push -> jog loop.
+ Two families, both strafe (the body keeps facing forward):
+   B_F  backpedal (A_RB_Jog_Rear, capsule 245 cm/s) -> forward request -> brake -> first forward step -> forward loop (A_CT_Jog_Fwd, 300)
+@@ -30,7 +31,7 @@
+ BRAKE_DEG = float(cfg.get('brake_deg', 4.0)); PUSH_DEG = float(cfg.get('push_deg', 3.0)); DIP_CM = float(cfg.get('dip_cm', 2.5)); TAIL = float(cfg.get('tail', 0.25))
+ SWING_H = float(cfg.get('swing_h', 9.0)); FADE_LEN = float(cfg.get('fade_len', 0.40)); T_FIRST = float(cfg.get('t_first', 0.40)); TAN_CAP = float(cfg.get('tan_cap', 30.0))
+ REDIR_LEAD = float(cfg.get('redir_lead', 0.08)); BRAKE_BEHIND = float(cfg.get('brake_behind', 10.0)); RATE_MIN = float(cfg.get('rate_min', 0.75)); TB_MIN = float(cfg.get('tb_min', 0.12)); TB_MAX = float(cfg.get('tb_max', 0.45))
+-OUTDIR = '/Game/GraceRanger/SHME/Animations/V225'; FPS = 30.0; DT = 1.0 / FPS
++OUTDIR = '/Game/GraceRanger/SHME/Animations/V226'; FPS = 30.0; DT = 1.0 / FPS
+ REAR = '/Game/GraceRanger/Animations/LocomotionBehavior/RearRevision/A_RB_Jog_Rear'; FWDL = '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Fwd'
+ PROF = {'B_F': {'v0': 245.0, 'brake': 720.0, 'push': 261.0, 'vexit': 300.0}, 'F_B': {'v0': 300.0, 'brake': 680.0, 'push': 198.0, 'vexit': 245.0}}
+ PROF.update(cfg.get('prof', {}))
+@@ -197,7 +198,7 @@
+             if t < tB: ft[B] = (swing(bPos0, bVel0, bTarget, 0.0, tB, t, SWING_H * 0.8, z0=bPos0[2]), slerp(qB0, qB, mj(t / max(tB, 1e-3))))
+             else: ft[B] = (bTarget, qB)
+             # ---- S: pinned / loop shape / redirected first step
+-            if s_planted0 and t < tS_lift:
++            if s_planted0 and t < max(tS_lift, tRedir):   # r4: stay pinned until the redirect (the loop-shaped toe-off between tS_lift and tRedir slid 8.9 cm in F_B_P4: braking root vs full-speed loop foot)
+                 qs = EL.rel(Le, 'foot_' + S)[1]; ft[S] = (foot_at_ball(S, ballS0_world, qs), qs)
+             elif t < tRedir:
+                 ls = EL.rel(Le, 'foot_' + S); ft[S] = (ae.vadd(rt, ls[0]), ls[1])
+@@ -205,7 +206,8 @@
+                 if tS_swing0 is None:
+                     tS_swing0 = t; ls = EL.rel(Le, 'foot_' + S); sLiftPos = ae.vadd(rt, ls[0]); qS_lift = ls[1]
+                     ls2 = EL.rel(EL.at(tauE(min(t + e, tB + 0.15))), 'foot_' + S); sLiftVel = tuple((ae.vadd(ae.vsc(FWD, df(t + e)), ls2[0])[i] - sLiftPos[i]) / e for i in range(3))
+-                    if s_planted0 and t <= tS_lift + DT: sLiftVel = (0.0, 0.0, 0.0)
++                    if s_planted0:   # r5: the swing starts FROM THE PINNED foot (r4 pinned until the redirect but started the swing from the loop-shaped foot: 20-40 cm jump)
++                        sLiftPos = foot_at_ball(S, ballS0_world, qS_lift); sLiftVel = (0.0, 0.0, 0.0)
+                 x = (t - tS_swing0) / max(tS - tS_swing0, 1e-3)
+                 ft[S] = (swing(sLiftPos, sLiftVel, landS, tS_swing0, tS, t, SWING_H, z0=sLiftPos[2]), slerp(qS_lift, qS_hs, mj(x)))
+             if f == N - 1 or (f + 1) * DT >= tS:
+@@ -296,7 +298,7 @@
+ out = {'dry': DRY, 'loops': {'rear': {'T': round(RL.T, 3), 'V': round(RL.V, 1), 'NK': RL.NK}, 'fwd': {'T': round(FL.T, 3), 'V': round(FL.V, 1), 'NK': FL.NK}}, 'prof': PROF, 'cfg': {k: v for k, v in cfg.items() if k != 'only'}, 'clips': {}}
+ for fam in FAMS:
+     for k in range(NPH):
+-        name = 'SHM225_JogRev_%s_P%d' % (fam, k)
++        name = 'SHM226_JogRev_%s_P%d' % (fam, k)
+         if ONLY and name not in ONLY: continue
+         try:
+             local, info = build(fam, k)
+@@ -304,5 +306,5 @@
+         except Exception:
+             import traceback; info = {'err': traceback.format_exc()[-900:]}
+         out['clips'][name] = info
+-(P / 'Saved/Codex/SHME_V225_20261023' / ('gen225_rev_%s.json' % ('dry' if DRY else 'write'))).write_text(json.dumps(out, indent=1))
++(P / 'Saved/Codex/SHME_V226_20261024' / ('gen226_rev_%s.json' % ('dry' if DRY else 'write'))).write_text(json.dumps(out, indent=1))
+ print('G225 ' + json.dumps(out, default=str))

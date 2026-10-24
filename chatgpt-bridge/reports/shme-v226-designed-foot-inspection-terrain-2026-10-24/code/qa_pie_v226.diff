@@ -1,0 +1,118 @@
+--- Saved/Codex/SHME_V226_20261024/checkpoint/tools/qa_pie.py	2026-10-24 03:37:13.509449200 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-24 07:39:51.644389800 +0300
+@@ -10,23 +10,76 @@
+ les = u.get_editor_subsystem(u.LevelEditorSubsystem); ed = u.get_editor_subsystem(u.UnrealEditorSubsystem)
+ assert ed.get_game_world() is None, 'PIE already running'
+ 
+-# profile flags requested for this run (in-memory CDO/data-asset values; never saved by QA)
+-for key, val in req.get('behavior_flags', {}).items(): u.load_asset('/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior').set_editor_property(key, val)
+-for key, val in req.get('pbi_flags', {}).items(): u.load_asset(F + '/DA_PBI_Prototype').set_editor_property(key, val)
+-# V2.17: pawn class-default flags (BP_GR_Player and the in-game child BP_PBI_Player; in-memory CDO values, never saved by QA -
+-# the A/B base passes every such flag explicitly so a previous variant's value never leaks)
+-for key, val in req.get('pawn_flags', {}).items():
+-    for _bp in ('/Game/GraceRanger/BP_GR_Player', F + '/BP_PBI_Player'):
+-        u.get_default_object(u.load_asset(_bp).generated_class()).set_editor_property(key, val)
+-# SHME: reset every response field to its schema default, then apply this run's overrides (deterministic A/B)
++# ---- V2.26 run state (replaces the schema-default reset): two modes.
++#   "state_mode": "production" - the SAVED production state runs unchanged (only TelemetryEnabled is forced on; no flag of any kind applied).
++#   "state_mode": "candidate" (default) - production + exactly this run's explicit overrides (behavior_flags / pbi_flags / pawn_flags /
++#   shme_flags / abp_flags). Overrides never carry into the next run: every key a run touches is restored to its production value
++#   (captured the first time the key is touched in this editor session, i.e. the value loaded from disk) before the next run applies its own.
++#   A schema default is NOT production. The effective state (every touched key + a fixed identity set: SHME DA fields, the ABP database
++#   references, the cvars) is recorded at run start and at run end into <label>_pie.json; a mismatch marks the run INVALID_STATE.
+ import sys, importlib; sys.path.insert(0, str(P / 'Tools/SHME_V1_20260925')); import shm_profiles; importlib.reload(shm_profiles)
++MODE = req.get('state_mode', 'candidate'); assert MODE in ('production', 'candidate'), MODE
+ _shm = u.load_asset('/Game/GraceRanger/SHME/DA_SHM_Response_Default')
+-for key, typ, dflt, cat in shm_profiles.RESPONSE: _shm.set_editor_property(key, dflt)
++_ABPS = ['/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching', '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase']
++_PAWNS = ['/Game/GraceRanger/BP_GR_Player', F + '/BP_PBI_Player']
++def _obj(cat, path):
++    if cat in ('abp', 'pawn'): return u.get_default_object(u.load_asset(path).generated_class())
++    return u.load_asset(path)
++_TARGETS = {'behavior': ['/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior'], 'pbi': [F + '/DA_PBI_Prototype'], 'shme': ['/Game/GraceRanger/SHME/DA_SHM_Response_Default'], 'abp': _ABPS, 'pawn': _PAWNS}
++def _norm(v):
++    if hasattr(v, 'get_path_name') and not isinstance(v, str): return v.get_path_name()
++    if hasattr(v, 'x') and hasattr(v, 'z'): return [round(v.x, 4), round(v.y, 4), round(v.z, 4)]
++    if hasattr(v, 'roll'): return [round(v.roll, 4), round(v.pitch, 4), round(v.yaw, 4)]
++    return round(v, 6) if isinstance(v, float) else v
++TOUCHED = getattr(builtins, 'SHM_PROD_TOUCHED', None)
++if TOUCHED is None:   # first run of this editor session: the loaded values ARE the saved production (a fresh editor); refuse a dirty base
++    _dirty = [p_.get_name() for p_ in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
++    _bad = [n_ for n_ in _dirty if any(n_ == t_ for ts in _TARGETS.values() for t_ in ts)]
++    if _bad: u.log_error('SHM_STATE: dirty base packages at first run ' + str(_bad))
++    TOUCHED = {c_: {} for c_ in _TARGETS}; builtins.SHM_PROD_TOUCHED = TOUCHED; builtins.SHM_PROD_DIRTY_BASE = _bad
++def _restore():
++    for cat, keys in TOUCHED.items():
++        for key, vals in keys.items():
++            for path, v0 in vals.items(): _obj(cat, path).set_editor_property(key, u.load_asset(v0) if isinstance(v0, str) and v0.startswith('/Game/') else v0)
++def _apply(cat, flags):
++    for key, val in (flags or {}).items():
++        for path in _TARGETS[cat]:
++            o_ = _obj(cat, path)
++            if key not in TOUCHED[cat]: TOUCHED[cat][key] = {}
++            if path not in TOUCHED[cat][key]: TOUCHED[cat][key][path] = _norm(o_.get_editor_property(key))
++            o_.set_editor_property(key, u.load_asset(val) if isinstance(val, str) and val.startswith('/Game/') else val)
++_restore()
++if MODE == 'candidate':
++    _apply('behavior', req.get('behavior_flags')); _apply('pbi', req.get('pbi_flags')); _apply('pawn', req.get('pawn_flags'))
++    _apply('shme', req.get('shme_flags')); _apply('abp', req.get('abp_flags'))
++else:
++    for k_ in ('behavior_flags', 'pbi_flags', 'pawn_flags', 'shme_flags', 'abp_flags'):
++        if req.get(k_): u.log_warning('SHM_STATE: production mode ignores ' + k_ + ' ' + str(list(req[k_])[:6]))
+ _shm.set_editor_property('TelemetryEnabled', True)
+-for key, val in req.get('shme_flags', {}).items(): _shm.set_editor_property(key, val)
+-for _ap in ['/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching', '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase']:
+-    _cdo = u.get_default_object(u.load_asset(_ap).generated_class())
+-    for key, val in req.get('abp_flags', {}).items(): _cdo.set_editor_property(key, u.load_asset(val) if isinstance(val, str) and val.startswith('/Game/') else val)
++_IDENT_ABP = ['SHM224_JRMode', 'SHM224_DB_JRFwd', 'SHM224_DB_JRBwd', 'SHM224_DB_JRLat', 'SHM224_DB_JRFwdM', 'SHM224_DB_JRBwdM', 'SHM_RedirectDB_JR', 'SHM223_RevRearGate', 'SHM28_StartMode', 'SHM28_StartL', 'SHM28_StartR', 'SHM225_SWAlpha', 'SHM225_OWAlpha', 'SHM220_RecHold', 'SHM221_RecThrottle']
++def state_record():
++    rec = {'mode': MODE, 'dirty_base': getattr(builtins, 'SHM_PROD_DIRTY_BASE', []), 'shme': {}, 'abp': {}, 'behavior': {}, 'pbi': {}, 'pawn': {}, 'console': list(req.get('console', [])), 'db': {}}
++    for key, typ, dflt, cat in shm_profiles.RESPONSE:
++        try: rec['shme'][key] = _norm(_shm.get_editor_property(key))
++        except Exception: rec['shme'][key] = 'err'
++    for cat in ('behavior', 'pbi', 'pawn', 'abp'):
++        keys = set(TOUCHED[cat]) | (set(_IDENT_ABP) if cat == 'abp' else set())
++        for key in sorted(keys):
++            for path in _TARGETS[cat]:
++                try: rec[cat][key + '@' + path.rsplit('/', 1)[-1]] = _norm(_obj(cat, path).get_editor_property(key))
++                except Exception: rec[cat][key + '@' + path.rsplit('/', 1)[-1]] = 'err'
++    try:   # database identity: asset path + package file time + entry count (a rebuilt or edited database changes these)
++        cdo_ = _obj('abp', _ABPS[1])
++        for key in ('SHM224_DB_JRFwd', 'SHM224_DB_JRBwd', 'SHM224_DB_JRLat', 'SHM224_DB_JRFwdM', 'SHM224_DB_JRBwdM', 'SHM_RedirectDB_JR'):
++            db_ = cdo_.get_editor_property(key)
++            if db_:
++                pk_ = db_.get_path_name().split('.')[0]; fn_ = P / ('Content' + pk_[len('/Game'):] + '.uasset')
++                try: n_ = len(db_.get_editor_property('animation_assets'))
++                except Exception: n_ = -1
++                rec['db'][key] = {'asset': pk_, 'mtime': int(fn_.stat().st_mtime) if fn_.exists() else None, 'entries': n_}
++    except Exception as e: rec['db']['err'] = str(e)[:120]
++    return rec
++STATE0 = state_record(); u.log('SHM_STATE %s touched %s' % (MODE, {c_: sorted(k) for c_, k in TOUCHED.items() if k}))
+ SHM_CLS = u.load_asset('/Game/GraceRanger/SHME/BP_SHM_HumanMotionComponent').generated_class()
+ 
+ # same as the previous harness: a background editor window is otherwise throttled to a few FPS during PIE
+@@ -340,7 +393,14 @@
+     if req.get('slomo'):
+         try: u.GameplayStatics.set_global_time_dilation(ed.get_game_world(), 1.0)
+         except Exception: pass
+-    (N / (label + '_pie.json')).write_text(json.dumps({'status': status, 'seconds': round(time.monotonic() - st['t'], 1), 'log_start': start_size, 'take': (st.get('take') or {}).get('rec'), 'take_seq': (st.get('take') or {}).get('seq'), 'mcap': {k_: v_ for k_, v_ in (st.get('mcap') or {}).items() if k_ not in ('cap', 'out')}}))
++    try:
++        STATE1 = state_record(); _diff = {k_: (STATE0[k_], STATE1[k_]) for k_ in ('shme', 'abp', 'behavior', 'pbi', 'pawn', 'db') if STATE0[k_] != STATE1[k_]}
++        _diffkeys = {k_: sorted(set(a_) ^ set(b_) | {x_ for x_ in a_ if x_ in b_ and a_[x_] != b_[x_]}) for k_, (a_, b_) in _diff.items()}
++        if _diffkeys or STATE0.get('dirty_base'):
++            u.log_error('SHM_STATE mismatch ' + str(_diffkeys) + ' dirty_base ' + str(STATE0.get('dirty_base'))); status = 'INVALID_STATE'
++    except Exception as e: STATE1 = {'err': str(e)[:200]}; _diffkeys = {'err': 1}
++    (N / (label + '_state.json')).write_text(json.dumps({'mode': MODE, 'start': STATE0, 'end': STATE1, 'diff': _diffkeys}, indent=1, default=str))
++    (N / (label + '_pie.json')).write_text(json.dumps({'status': status, 'state_mode': MODE, 'state_diff': _diffkeys, 'seconds': round(time.monotonic() - st['t'], 1), 'log_start': start_size, 'take': (st.get('take') or {}).get('rec'), 'take_seq': (st.get('take') or {}).get('seq'), 'mcap': {k_: v_ for k_, v_ in (st.get('mcap') or {}).items() if k_ not in ('cap', 'out')}}))
+     u.log('LR_PIE_DONE ' + label + ' ' + status)
+ def MW(ai_, mon):
+     """V2.16: montage position, slot local weight and blend-in time of the active montage (first-frame handoff record)"""
+@@ -402,6 +462,8 @@
+             for n_ in req['cvars']:
+                 try:
+                     x_ = cmp_.get_editor_property(n_) if cmp_ else None
++                    if hasattr(x_, 'x') and hasattr(x_, 'z'): x_ = 'X=%.2f Y=%.2f Z=%.2f' % (x_.x, x_.y, x_.z)   # V2.26: vectors readable (the struct repr was truncated)
++                    elif hasattr(x_, 'roll'): x_ = 'P=%.2f Y=%.2f R=%.2f' % (x_.pitch, x_.yaw, x_.roll)
+                     pvs += 'cv_%s=%s|' % (n_, ('%.3f' % x_) if isinstance(x_, float) else str(x_).replace('|', '/')[:40])
+                 except Exception: pvs += 'cv_%s=err|' % n_
+         if req.get('avars'):   # V2.3: anim-instance (ABP) variables per tick (zero-crossing diagnosis); vectors/rotators as x/y/z
