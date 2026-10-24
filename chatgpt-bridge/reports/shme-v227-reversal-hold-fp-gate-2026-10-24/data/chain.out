@@ -1,0 +1,354 @@
+no editor to quit
+RUNNER_READY shmv227_b1.log
+throttle off False
+RELAUNCH b1 30 17:19:23
+VERIFY 17:25:23
+VERIFY226 {"pie": false, "dirty": [], "abp": {"SHM28_StartMode": 1.0, "SHM222_TapGate": 0.0, "SHM220_RecHold": 1.0, "SHM221_RecThrottle": 1.0, "SHM221_PivHold": 0.0, "SHM220_PivotOn": 1.0, "SHM220_PivotT0": 0.0, "SHM220_PivotNoRd": 0.0, "SHM_SprintDBMinSpeed": 230.0, "SHM28_StartL": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_L.A_SHM222_WalkStart_L", "SHM28_StartR": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_R.A_SHM222_WalkStart_R", "SHM223_RevRearGate": 1.0, "SHM223_JrHold": 0.0, "JR": "/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ.PSD
+AB t1 start 17:25:27
+v226t1_j24_ph0_rv32_r1 | rows 359 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t1_j24_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v226t1_j24_ph0_rhH_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+AB t1 done 17:26:59
+VERIFY_FIN 17:28:19
+VERIFY226 {"pie": false, "dirty": ["/Game/GraceRan
+"bad": ["abp.SHM224_DB_JRFwd", "abp.SHM224_DB_JRBwd", "abp.SHM224_DB_JRFwdM", "abp.SHM224_DB_JRBwdM", "abp225.SHM224_DB_JRBwd", "abp225.SHM224_DB_JRBwdM", "abp225.SHM224_DB_JRFwd", "abp225.SHM224_DB_JRFwdM", "abp226.SHM224_DB_JRBwd", "abp226.SHM224_DB_JRFwd", "pie_or_dirty"]
+AB t1b start 17:28:23
+v227t1_j24_ph0_rhF_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_ph3_rv32_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_ph3_rh_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_ph3_rhH_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_ph3_rhF_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph0_rv32_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph0_rhH_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph0_rhF_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph2_rv32_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph2_rh_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM_RESTART editor 39 GB 17:33:25
+v212_warm_173735 | rows 397 rate 29.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227t1_j24_sw_ph2_rhH_r1 | rows 344 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_sw_ph2_rhF_r1 | rows 366 rate 31.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_rel_rv32_r1 | rows 360 rate 31.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t1_j24_rel_rh_r1 | rows 339 rate 29.4/s | pops >25 m/s2: 3 (worst 31) | by owner {'in-clip': 3} | FINISHED candidate
+v227t1_j24_dbl_rv32_r1 | rows 348 rate 29.4/s | pops >25 m/s2: 2 (worst 66) | by owner {'in-clip': 2} | FINISHED candidate
+v227t1_j24_dbl_rh_r1 | rows 353 rate 29.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+AB t1b done 17:40:33
+AB t2 start 17:47:44
+AB_SAFE_REFUSED: 2 A/B processes, 0 pending runner jobs
+AB t2 done 17:47:48
+AB t2 start2 17:49:17
+v227t2_j24_dbl_rh_r1 | rows 363 rate 30.2/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v227t2_j24_rel_rh_r1 | rows 329 rate 28.5/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
+v227t2_j24_ph0_rh_r1 | rows 336 rate 29.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t2_j24_ph3_rh_r1 | rows 335 rate 28.4/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v227t2_j24_sw_ph0_rh_r1 | rows 301 rate 26.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t2_j24_sw_ph2_rh_r1 | rows 321 rate 27.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t2_j24_ad_ph0_rh_r1 | rows 326 rate 28.3/s | pops >25 m/s2: 5 (worst 30) | by owner {'in-clip': 5} | FINISHED candidate
+v227t2_j24_ad_ph0_rv32_r1 | rows 314 rate 27.3/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED candidate
+MEM_RESTART editor 38 GB 17:52:30
+v212_warm_175557 | rows 392 rate 28.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227t2_j24_m180w_rh_r1 | rows 356 rate 27.9/s | pops >25 m/s2: 4 (worst 147) | by owner {'in-clip': 4} | FINISHED candidate
+v227t2_j24_m180w_rv32_r1 | rows 348 rate 27.0/s | pops >25 m/s2: 3 (worst 158) | by owner {'in-clip': 3} | FINISHED candidate
+v227t2_j24_sw_ph2_rhX1_r1 | rows 335 rate 28.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t2_j24_sw_ph2_rhX4_r1 | rows 330 rate 28.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t2_j24_ph0_rhX1_r1 | rows 343 rate 29.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t2_j24_ph0_rhX4_r1 | rows 337 rate 29.2/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+AB t2 done 17:59:16
+AB t3 start 18:02:05
+v227t3_j24_dbl_rh_r1 | rows 348 rate 28.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t3_j24_rel_rh_r1 | rows 328 rate 28.5/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v227t3_j24_ph0_rh_r1 | rows 333 rate 28.9/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v227t3_j24_ph3_rh_r1 | rows 336 rate 28.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t3_j24_sw_ph0_rh_r1 | rows 315 rate 27.3/s | pops >25 m/s2: 2 (worst 36) | by owner {'in-clip': 2} | FINISHED candidate
+v227t3_j24_sw_ph2_rh_r1 | rows 301 rate 25.8/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED candidate
+v227t3_j24_dbl_rv32_r1 | rows 351 rate 29.2/s | pops >25 m/s2: 1 (worst 64) | by owner {'in-clip': 1} | FINISHED candidate
+v227t3_j24_rel_rv32_r1 | rows 311 rate 27.0/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED candidate
+MEM_RESTART editor 38 GB 18:05:24
+v212_warm_180939 | rows 417 rate 30.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+AB t3 done 18:10:12
+SWEEP rh start 18:11:59
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_s20.log
+throttle off False
+RELAUNCH s20 20 18:14:06
+v212_warm_181410 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227s20_j24_ph0_rv32_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_ph0_rh_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_sw_ph2_rv32_r1 | rows 242 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_sw_ph2_rh_r1 | rows 242 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_ph3_rv32_r1 | rows 243 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_ph3_rh_r1 | rows 243 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_ovl120_rv32_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227s20_j24_ovl120_rh_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+SWEEP s20 done 18:17:37
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_s60.log
+throttle off False
+RELAUNCH s60 60 18:21:14
+v212_warm_182118 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v227s60_j24_ph0_rv32_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 15 (worst 49) | by owner {'in-clip': 15} | FINISHED candidate
+v227s60_j24_ph0_rh_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 14 (worst 48) | by owner {'in-clip': 14} | FINISHED candidate
+v227s60_j24_sw_ph2_rv32_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 14 (worst 39) | by owner {'in-clip': 14} | FINISHED candidate
+v227s60_j24_sw_ph2_rh_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 10 (worst 38) | by owner {'in-clip': 10} | FINISHED candidate
+v227s60_j24_ph3_rv32_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 16 (worst 35) | by owner {'in-clip': 16} | FINISHED candidate
+v227s60_j24_ph3_rh_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 18 (worst 35) | by owner {'in-clip': 18} | FINISHED candidate
+MEM_RESTART editor 38 GB 18:25:48
+v212_warm_182930 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v227s60_j24_ovl120_rv32_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 16 (worst 36) | by owner {'in-clip': 16} | FINISHED candidate
+v227s60_j24_ovl120_rh_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 16 (worst 40) | by owner {'in-clip': 16} | FINISHED candidate
+SWEEP s60 done 18:31:45
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_s120.log
+throttle off False
+RELAUNCH s120 120 18:34:40
+v212_warm_183445 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227s120_j24_ph0_rv32_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 65) | by owner {'in-clip': 11} | FINISHED candidate
+v227s120_j24_ph0_rh_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 14 (worst 87) | by owner {'in-clip': 14} | FINISHED candidate
+v227s120_j24_sw_ph2_rv32_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 11 (worst 71) | by owner {'in-clip': 11} | FINISHED candidate
+MEM_RESTART editor 41 GB 18:39:25
+v212_warm_184310 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227s120_j24_sw_ph2_rh_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 13 (worst 71) | by owner {'in-clip': 13} | FINISHED candidate
+v227s120_j24_ph3_rv32_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 11 (worst 74) | by owner {'in-clip': 11} | FINISHED candidate
+v227s120_j24_ph3_rh_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 13 (worst 75) | by owner {'in-clip': 13} | FINISHED candidate
+MEM_RESTART editor 41 GB 18:48:06
+v212_warm_185206 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227s120_j24_ovl120_rv32_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 8 (worst 67) | by owner {'in-clip': 8} | FINISHED candidate
+v227s120_j24_ovl120_rh_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 14 (worst 81) | by owner {'in-clip': 14} | FINISHED candidate
+SWEEP s120 done 18:56:24
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_rt.log
+throttle off False
+RELAUNCH rt real 18:59:37
+v227rt_j24_ph0_rh_r1 | rows 337 rate 29.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v212_warm_190026 | rows 404 rate 29.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227rt_j24_sw_ph2_rh_r1 | rows 291 rate 25.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+EDITOR_GONE after v227rt_j24_sw_ph2_rh_r1
+v212_warm_190324 | rows 392 rate 28.8/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227rt_j24_sw_ph2_rh_r1 | rows 320 rate 27.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227rt_j24_ph3_rh_r1 | rows 354 rate 30.1/s | pops >25 m/s2: 3 (worst 48) | by owner {'in-clip': 3} | FINISHED candidate
+v227rt_j24_rel_rh_r1 | rows 349 rate 30.3/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v227rt_j24_dbl_rh_r1 | rows 356 rate 29.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227rt_j24_ph0_rv32_r1 | rows 318 rate 28.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227rt_j24_sw_ph2_rv32_r1 | rows 308 rate 26.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+SWEEP_DONE rh 19:06:21
+T4 start 19:12:08
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_t4.log
+throttle off False
+RELAUNCH t4 30 19:15:00
+v212_warm_191503 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227t4_j24_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t4_j24_ph3_rh_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t4_j24_sw_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t4_j24_sw_ph2_rh_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t4_j24_rel_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v227t4_j24_dbl_rh_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v227t4_j24_ph0_rv32_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+T4 30 done 19:18:49
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_u60.log
+throttle off False
+RELAUNCH u60 60 19:22:07
+v212_warm_192212 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v227u60_j24_ph0_rh_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 14 (worst 48) | by owner {'in-clip': 14} | FINISHED candidate
+v227u60_j24_sw_ph2_rh_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 13 (worst 40) | by owner {'in-clip': 13} | FINISHED candidate
+v227u60_j24_ph3_rh_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 18 (worst 35) | by owner {'in-clip': 18} | FINISHED candidate
+v227u60_j24_ovl120_rh_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 37) | by owner {'in-clip': 18} | FINISHED candidate
+T4 60 done 19:41:29
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_u120.log
+throttle off False
+RELAUNCH u120 120 19:45:29
+v212_warm_194534 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227u120_j24_ph3_rh_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 15 (worst 75) | by owner {'in-clip': 15} | FINISHED candidate
+v227u120_j24_ph0_rh_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 13 (worst 87) | by owner {'in-clip': 13} | FINISHED candidate
+v227u120_j24_ovl120_rh_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 13 (worst 76) | by owner {'in-clip': 13} | FINISHED candidate
+MEM_RESTART editor 43 GB 20:06:14
+T4 120 done 20:30:50
+REFUSED: an UnrealEditor process is already running (another session may own it)
+RELAUNCH u20 20 20:41:17
+AB_SAFE_REFUSED: 0 A/B processes, 4 pending runner jobs
+T4 20 done 20:41:19
+T4_DONE 20:41:20
+T5 start 20:56:17
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_i5.log
+throttle off False
+RELAUNCH i5 30 20:58:40
+RH227E {"reloaded": [], "thr_pin": "A", "snapshot": "wired", "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knobs": {"SHM227_RevHold": 0.0, "SHM227_FPOff": 0.0, "SHM227_HoldExit": 0.25, "SHM227_FlatMax": 6.0, "SHM227_ThrottleT": 2.5}, "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_t5.log
+throttle off False
+RELAUNCH t5 30 21:00:30
+v212_warm_210045 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227t5_j24_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t5_j24_ph3_rh_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t5_j24_sw_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t5_j24_sw_ph2_rh_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227t5_j24_rel_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v227t5_j24_dbl_rh_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 65) | by owner {'in-clip': 1} | FINISHED candidate
+v227t5_j24_ad_ph0_rh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED candidate
+v227t5_j24_m180w_rh_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 4 (worst 291) | by owner {'in-clip': 4} | FINISHED candidate
+T5 30 done 21:05:18
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_w60.log
+throttle off False
+RELAUNCH w60 60 21:08:47
+v212_warm_210851 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v227w60_j24_ph0_rh_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 18 (worst 33) | by owner {'in-clip': 18} | FINISHED candidate
+v227w60_j24_sw_ph2_rh_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 11 (worst 38) | by owner {'in-clip': 11} | FINISHED candidate
+v227w60_j24_ph3_rh_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 18 (worst 37) | by owner {'in-clip': 18} | FINISHED candidate
+v227w60_j24_ovl120_rh_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 38) | by owner {'in-clip': 18} | FINISHED candidate
+v227w60_j24_dbl_rh_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 18 (worst 68) | by owner {'in-clip': 18} | FINISHED candidate
+T5 60 done 21:13:14
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_w120.log
+throttle off False
+RELAUNCH w120 120 21:16:29
+v212_warm_211636 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227w120_j24_ph3_rh_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 13 (worst 78) | by owner {'in-clip': 13} | FINISHED candidate
+v227w120_j24_ph0_rh_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 13 (worst 87) | by owner {'in-clip': 13} | FINISHED candidate
+v227w120_j24_sw_ph2_rh_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 15 (worst 71) | by owner {'in-clip': 15} | FINISHED candidate
+MEM_RESTART editor 41 GB 21:21:31
+v212_warm_212542 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227w120_j24_ovl120_rh_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 12 (worst 78) | by owner {'in-clip': 12} | FINISHED candidate
+T5 120 done 21:28:43
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_w20.log
+throttle off False
+RELAUNCH w20 20 21:32:07
+v212_warm_213211 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227w20_j24_ph0_rh_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227w20_j24_ph3_rh_r1 | rows 243 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227w20_j24_sw_ph2_rh_r1 | rows 242 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227w20_j24_ovl120_rh_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227w20_j24_dbl_rh_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 2 (worst 53) | by owner {'in-clip': 2} | FINISHED candidate
+T5 20 done 21:34:35
+T5_DONE 21:34:35
+T6 start 21:38:16
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_h30.log
+throttle off False
+RELAUNCH h30 30 21:41:35
+v212_warm_214139 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227h30_j24_ph0_rhH_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h30_j24_ph3_rhH_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h30_j24_sw_ph0_rhH_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h30_j24_sw_ph2_rhH_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h30_j24_rel_rhH_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v227h30_j24_dbl_rhH_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 65) | by owner {'in-clip': 1} | FINISHED candidate
+T6 30 done 21:44:58
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_h60.log
+throttle off False
+RELAUNCH h60 60 21:48:02
+v212_warm_214806 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v227h60_j24_ph0_rhH_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 18 (worst 33) | by owner {'in-clip': 18} | FINISHED candidate
+v227h60_j24_ph3_rhH_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 18 (worst 37) | by owner {'in-clip': 18} | FINISHED candidate
+v227h60_j24_sw_ph2_rhH_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 12 (worst 38) | by owner {'in-clip': 12} | FINISHED candidate
+v227h60_j24_ovl120_rhH_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 38) | by owner {'in-clip': 18} | FINISHED candidate
+v227h60_j24_dbl_rhH_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 18 (worst 68) | by owner {'in-clip': 18} | FINISHED candidate
+v227h60_j24_dbl_o_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 17 (worst 74) | by owner {'in-clip': 17} | FINISHED production
+MEM_RESTART editor 39 GB 21:53:07
+v212_warm_215702 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+T6 60 done 21:57:53
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_h120.log
+throttle off False
+RELAUNCH h120 120 21:59:43
+v212_warm_215947 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227h120_j24_ph3_rhH_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 13 (worst 78) | by owner {'in-clip': 13} | FINISHED candidate
+v227h120_j24_ph0_rhH_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 13 (worst 87) | by owner {'in-clip': 13} | FINISHED candidate
+v227h120_j24_sw_ph2_rhH_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 15 (worst 71) | by owner {'in-clip': 15} | FINISHED candidate
+MEM_RESTART editor 41 GB 22:04:49
+v212_warm_220837 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v227h120_j24_ovl120_rhH_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 13 (worst 78) | by owner {'in-clip': 13} | FINISHED candidate
+T6 120 done 22:11:45
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_h20.log
+throttle off False
+RELAUNCH h20 20 22:14:53
+v212_warm_221457 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227h20_j24_ph0_rhH_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h20_j24_ph3_rhH_r1 | rows 243 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h20_j24_sw_ph2_rhH_r1 | rows 242 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h20_j24_ovl120_rhH_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227h20_j24_dbl_rhH_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 2 (worst 53) | by owner {'in-clip': 2} | FINISHED candidate
+v227h20_j24_dbl_o_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 1 (worst 55) | by owner {'in-clip': 1} | FINISHED production
+T6 20 done 22:17:44
+T6_DONE 22:17:44
+FIN start PROMO=0 22:20:34
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_vf.log
+throttle off False
+RELAUNCH vf 30 22:23:25
+VERIFY226 {"pie": false, "dirty": [], "abp": {"SHM28_StartMode": 1.0, "SHM222_TapGate": 0.0, "SHM220_RecHold": 1.0, "SHM221_RecThrottle": 1.0, "SHM221_PivHold": 0.0, "SHM220_PivotOn": 1.0, "SHM220_PivotT0": 0.0, "SHM220_PivotNoRd": 0.0, "SHM_SprintDBMinSpeed": 230.0, "SHM28_StartL": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_L.A_SHM222_WalkStart_L", "SHM28_StartR": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_R.A_SHM222_WalkStart_R", "SHM223_RevRearGate": 1.0, "SHM223_JrHold": 0.0, "JR": "/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ.PSD
+VERIFY227 {"knobs": {"SHM227_RevHold": 0.0, "SHM227_FPOff": 0.0, "SHM227_HoldExit": 0.25, "SHM227_FlatMax": 6.0, "SHM227_ThrottleT": 2.5}, "knobs_bad": [], "curve_missing": [], "v226_bad": [], "ALL_OK": true}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_fin.log
+throttle off False
+RELAUNCH fin 30 22:25:30
+v212_warm_222535 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227fin_j24_sw_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 27) | by owner {'in-clip': 2} | FINISHED production
+v227fin_j24_sw_ph2_o_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227fin_j24_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v227fin_j24_ph3_o_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v227fin_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 4 (worst 34) | by owner {'in-clip': 4} | FINISHED production
+v227fin_j24_dbl_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 62) | by owner {'in-clip': 1} | FINISHED production
+v227fin_j24_ad_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED production
+v227fin_j24_m180w_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 4 (worst 291) | by owner {'in-clip': 4} | FINISHED production
+v227fin_j23_m180_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 6 (worst 292) | by owner {'in-clip': 6} | FINISHED production
+v227fin_r_cutrev_r_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 7 (worst 57) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v227fin_s23_jstart_o_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 38 GB 22:31:28
+v212_warm_223507 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227fin_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227fin_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+v227fin_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v227fin_ter_step2_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED production
+v227fin_map_r2_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 6 (worst 56) | by owner {'montage': 3, 'in-clip': 3} | FINISHED production
+FIN evidence done 22:38:59
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_finrt.log
+throttle off False
+RELAUNCH finrt real 22:42:13
+v227finrt_j24_ph0_o_r1 | rows 330 rate 28.5/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+v212_warm_224256 | rows 388 rate 28.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227finrt_j24_sw_ph2_o_r1 | rows 324 rate 28.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227finrt_j24_dbl_o_r1 | rows 333 rate 27.7/s | pops >25 m/s2: 1 (worst 34) | by owner {'in-clip': 1} | FINISHED production
+v227finrt_map_r2_o_r1 | rows 518 rate 19.8/s | pops >25 m/s2: 5 (worst 128) | by owner {'montage': 2, 'in-clip': 3} | FINISHED production
+FIN_EVIDENCE_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv227_cap.log
+throttle off False
+RELAUNCH cap 30 22:47:28
+v212_warm_224732 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v227capfin_j24_sw_ph2_oS_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+v227capfin_j24_sw_ph2_rhS_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227capfin_j24_ph0_oS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v227capfin_j24_ph0_rhS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v227capfin_j24_dbl_oS_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 62) | by owner {'in-clip': 1} | FINISHED production
+v227capfin_j24_dbl_rhS_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 65) | by owner {'in-clip': 1} | FINISHED candidate
+v227capfin_j24_sw_ph2_rhG_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+CAP_DONE
+FIN_DONE 22:51:56
