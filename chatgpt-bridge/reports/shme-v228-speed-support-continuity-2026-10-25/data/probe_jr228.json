@@ -1,0 +1,95 @@
+{
+ "K2Node_VariableSet_46 |SetSHM_RedirectDB_JR": {
+  "type": "|SetSHM_RedirectDB_JR",
+  "SHM_RedirectDB_JR": [
+   {
+    "type": "|GetSHM224_DB_JRBwd"
+   }
+  ]
+ },
+ "K2Node_VariableSet_47 |SetSHM_RedirectDB_JR": {
+  "type": "|SetSHM_RedirectDB_JR",
+  "SHM_RedirectDB_JR": [
+   {
+    "type": "|GetSHM224_DB_JRLat"
+   }
+  ]
+ },
+ "K2Node_VariableSet_48 |SetSHM_RedirectDB_JR": {
+  "type": "|SetSHM_RedirectDB_JR",
+  "SHM_RedirectDB_JR": [
+   {
+    "type": "|GetSHM224_DB_JRFwd"
+   }
+  ]
+ },
+ "K2Node_VariableSet_49 |SetSHM_RedirectDB_JR": {
+  "type": "|SetSHM_RedirectDB_JR",
+  "SHM_RedirectDB_JR": [
+   {
+    "type": "|GetSHM224_DB_JRBwdM"
+   }
+  ]
+ },
+ "K2Node_VariableSet_50 |SetSHM_RedirectDB_JR": {
+  "type": "|SetSHM_RedirectDB_JR",
+  "SHM_RedirectDB_JR": [
+   {
+    "type": "|GetSHM224_DB_JRFwdM"
+   }
+  ]
+ },
+ "UMM K2Node_CallFunction_322": [
+  {
+   "type": "|SetCurrentSelectedDatabase",
+   "CurrentSelectedDatabase": [
+    {
+     "type": "|GetSHM_RedirectDB_JR"
+    }
+   ]
+  },
+  {
+   "prev": [
+    {
+     "type": "\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal",
+     "Condition": [
+      {
+       "type": "Matematik|Kayd\u0131r|InRange(Float)",
+       "Value": [
+        {
+         "type": "|GetSHM_RedirectClass"
+        }
+       ],
+       "Min": "1.5",
+       "Max": "2.5",
+       "InclusiveMin": "true",
+       "InclusiveMax": "true"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "UMM K2Node_CallFunction_265": [
+  {
+   "type": "|SetCurrentSelectedDatabase",
+   "CurrentSelectedDatabase": [
+    {
+     "type": "|GetSHM_RedirectDB_JR"
+    }
+   ]
+  },
+  {
+   "prev": [
+    {
+     "type": "\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal",
+     "Condition": [
+      {
+       "type": "|GetSHM224_EarlyRev"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

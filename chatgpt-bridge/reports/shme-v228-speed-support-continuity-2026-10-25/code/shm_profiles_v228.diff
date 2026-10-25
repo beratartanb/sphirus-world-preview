@@ -1,0 +1,332 @@
+--- Saved/Codex/SHME_V228_20261025/checkpoint/tools/shm_profiles.pre_v228.py	2026-10-25 00:32:36.403698000 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-25 00:50:04.306852800 +0300
+@@ -1,163 +1,164 @@
+-"""SHME profile schema (single source of truth for build + docs).
+-Anthropometry: Dempster segment parameters as tabulated in Winter (2009) 'Biomechanics and Motor Control of
+-Human Movement', 4th ed., Table 4.1 (mass fraction of total body mass; COM location as a fraction of segment
+-length from the proximal end). Mapped to UE mannequin bones -> game approximation, not medical data."""
+-ANTHRO = [  # name, type, default, category
+-    ('BodyMassKg', 'float', 70.0, 'Mass'),
+-    ('Mass_HeadNeck', 'float', 0.081, 'Segments'), ('Com_HeadNeck', 'float', 1.0, 'Segments'),   # neck_01 -> head
+-    ('Mass_Trunk', 'float', 0.497, 'Segments'), ('Com_Trunk', 'float', 0.5, 'Segments'),          # pelvis -> neck_01
+-    ('Mass_UpperArm', 'float', 0.028, 'Segments'), ('Com_UpperArm', 'float', 0.436, 'Segments'),  # upperarm -> lowerarm
+-    ('Mass_ForearmHand', 'float', 0.022, 'Segments'), ('Com_ForearmHand', 'float', 0.682, 'Segments'),  # lowerarm -> hand
+-    ('Mass_Thigh', 'float', 0.100, 'Segments'), ('Com_Thigh', 'float', 0.433, 'Segments'),        # thigh -> calf
+-    ('Mass_Shank', 'float', 0.0465, 'Segments'), ('Com_Shank', 'float', 0.433, 'Segments'),       # calf -> foot
+-    ('Mass_Foot', 'float', 0.0145, 'Segments'), ('Com_Foot', 'float', 0.5, 'Segments'),           # foot -> ball
+-    ('FootHalfLength', 'float', 12.0, 'Support'), ('FootHalfWidth', 'float', 5.0, 'Support'),
+-    ('StanceWidth', 'float', 22.0, 'Support'), ('StepReach', 'float', 70.0, 'Reach'), ('StepMin', 'float', 12.0, 'Reach'),
+-    ('LegLength', 'float', 90.0, 'Reach'), ('MinComHeight', 'float', 55.0, 'Reach'),
+-    ('MaxPelvisCompression', 'float', 8.0, 'Limits'), ('MaxTorsoCounterYaw', 'float', 12.0, 'Limits'),
+-    # whole-body radius of gyration about the vertical axis (m): I_yaw ~ 1.0-1.5 kg m^2 for a 70 kg adult -> ~0.13-0.15 m
+-    ('RadiusOfGyrationYawM', 'float', 0.14, 'Inertia'),
+-    # V1.2 idle stance reference: ball_l/ball_r in the actor frame (x fwd, y right, cm) of the Ranger idle
+-    # (A_Ranger_Idle_Neutral_CWF) measured in game (QA 2026-09-26, mh_ball rel. capsule)
+-    ('IdleStanceLX', 'float', 8.0, 'Stance'), ('IdleStanceLY', 'float', -13.0, 'Stance'),
+-    ('IdleStanceRX', 'float', 7.0, 'Stance'), ('IdleStanceRY', 'float', 15.0, 'Stance'),
+-]
+-RESPONSE = [
+-    # feature flags (all default on except debug/telemetry; HumanStateEnabled is the master switch)
+-    ('HumanStateEnabled', 'bool', True, 'Flags'), ('SupportAnalysisEnabled', 'bool', True, 'Flags'),
+-    ('BalancePlanningEnabled', 'bool', True, 'Flags'), ('TurnPlanningEnabled', 'bool', True, 'Flags'),
+-    ('FootPlanningEnabled', 'bool', True, 'Flags'), ('LandingResponseEnabled', 'bool', True, 'Flags'),
+-    ('CameraPhysicalSignalsEnabled', 'bool', True, 'Flags'), ('AdaptiveCameraEnvironmentEnabled', 'bool', True, 'Flags'),
+-    ('DebugVisualizationEnabled', 'bool', False, 'Flags'), ('TelemetryEnabled', 'bool', False, 'Flags'),
+-    # V1.1 execution flags
+-    ('FootExecutionEnabled', 'bool', True, 'Flags'), ('LandingSupportEnabled', 'bool', True, 'Flags'),
+-    ('PostStopStabilizationEnabled', 'bool', True, 'Flags'), ('MotionMatchingPhysicalGuidanceEnabled', 'bool', False, 'Flags'),
+-    # V1.2: stance-aware idle entry (the Ranger idle takeover waits while the feet are far from the idle stance)
+-    ('StanceIdleGateEnabled', 'bool', True, 'Flags'), ('IdleStanceTolerance', 'float', 6.0, 'Stance'), ('IdleEntryFootSpeedMax', 'float', 8.0, 'Stance'),
+-    # execution state machine (dwell = minimum stable time before a state change; thresholds on 0..1 demands)
+-    ('ExecMinDwell', 'float', 0.08, 'Execution'), ('ExecMinorTurn', 'float', 0.03, 'Execution'), ('ExecTransfer', 'float', 0.12, 'Execution'),
+-    ('ExecCommit', 'float', 0.30, 'Execution'), ('ExecBrake', 'float', 0.30, 'Execution'), ('ExecReversal', 'float', 0.35, 'Execution'),
+-    ('ExecRecovery', 'float', 0.40, 'Execution'),
+-    # anatomical reach region around the support foot (facing frame, cm)
+-    ('ReachForward', 'float', 70.0, 'Reach'), ('ReachBackward', 'float', 40.0, 'Reach'), ('ReachLateral', 'float', 35.0, 'Reach'),
+-    ('GroundMaxSlopeCos', 'float', 0.82, 'Reach'), ('GroundMaxStep', 'float', 40.0, 'Reach'),
+-    # landing support: FootPlacement unplant radius used while the landing recovery window is active
+-    ('LandingPlantRadius', 'float', 150.0, 'Landing'),
+-    # post-stop stabilisation: keep the stop motion (MM database) until the braking stance has recovered
+-    ('PostStopBrakeMin', 'float', 0.2, 'PostStop'), ('SettleEnabled', 'bool', False, 'PostStop'), ('SettleTau', 'float', 0.25, 'PostStop'), ('SettleMaxOffset', 'float', 25.0, 'PostStop'), ('SettleMinOffset', 'float', 10.0, 'PostStop'), ('SettleMinEntrySpeed', 'float', 80.0, 'PostStop'), ('SettleMinMoveDist', 'float', 60.0, 'PostStop'), ('SettleMinDoubleSupport', 'float', 0.7, 'PostStop'), ('SettleMinIntentHold', 'float', 0.35, 'PostStop'), ('PostStopStaggerRelease', 'float', 12.0, 'PostStop'), ('PostStopMaxTime', 'float', 2.5, 'PostStop'),
+-    # state filters (time constants, seconds -> frame-rate independent alpha = 1 - exp(-dt/tau))
+-    ('AccelFilterTau', 'float', 0.08, 'State'), ('YawRateFilterTau', 'float', 0.06, 'State'), ('ComVelFilterTau', 'float', 0.05, 'State'),
+-    # support / contact hysteresis
+-    ('ContactSpeedOn', 'float', 55.0, 'Support'), ('ContactSpeedOff', 'float', 90.0, 'Support'),
+-    ('ContactHeightOn', 'float', 10.0, 'Support'), ('ContactHeightOff', 'float', 16.0, 'Support'),
+-    ('ContactConfTau', 'float', 0.04, 'Support'), ('SupportSwitchMargin', 'float', 0.15, 'Support'),
+-    ('StabilityScale', 'float', 20.0, 'Support'), ('CaptureScale', 'float', 30.0, 'Balance'), ('Gravity', 'float', 980.0, 'Balance'),
+-    # planner
+-    ('TractionMu', 'float', 0.8, 'Planner'), ('RedirectTime', 'float', 1.0, 'Planner'),
+-    ('DemandAttackTau', 'float', 0.05, 'Planner'), ('DemandReleaseTau', 'float', 0.25, 'Planner'),
+-    # landing
+-    ('LandingSoftSpeed', 'float', 250.0, 'Landing'), ('LandingHardSpeed', 'float', 900.0, 'Landing'),
+-    ('LandingRecoverMin', 'float', 0.15, 'Landing'), ('LandingRecoverMax', 'float', 0.6, 'Landing'),
+-    # environment perception (camera space)
+-    ('EnvProbeRadius', 'float', 12.0, 'Environment'), ('EnvSideLength', 'float', 300.0, 'Environment'),
+-    ('EnvUpLength', 'float', 600.0, 'Environment'), ('EnvRearLength', 'float', 400.0, 'Environment'),
+-    ('EnvShrinkTau', 'float', 0.08, 'Environment'), ('EnvGrowTau', 'float', 0.6, 'Environment'),
+-    ('NarrowWidth', 'float', 180.0, 'Environment'), ('OpenWidth', 'float', 350.0, 'Environment'),
+-    ('ConstrainEnter', 'float', 0.6, 'Environment'), ('ConstrainExit', 'float', 0.4, 'Environment'),
+-    ('ConstrainTau', 'float', 0.35, 'Environment'),
+-    # camera coupling (restrained)
+-    ('CamOpenBoomBonus', 'float', 0.38, 'Camera'), ('CamNarrowBoomReduction', 'float', 0.12, 'Camera'),
+-    ('CamNarrowShoulderScale', 'float', 0.55, 'Camera'), ('CamAirFollow', 'float', 0.7, 'Camera'), ('CamAirMaxHeightLag', 'float', 18.0, 'Camera'), ('CamAirHeightResponse', 'float', 20.0, 'Camera'), ('CamAirWeightHeight', 'float', 45.0, 'Camera'),
+-    ('CamLandingDip', 'float', 4.0, 'Camera'), ('CamBodyFollowEnabled', 'bool', True, 'Flags'), ('CamBodyRestOffset', 'float', 2.0, 'Camera'), ('CamBodyFreq', 'float', 5.0, 'Camera'), ('CamBodyMax', 'float', 35.0, 'Camera'), ('CamShoulderTravelEnabled', 'bool', True, 'Flags'), ('CamShoulderLatDead', 'float', 0.15, 'Camera'), ('CamShoulderLatFull', 'float', 0.6, 'Camera'), ('CamShoulderTau', 'float', 0.35, 'Camera'), ('CamIntensityTau', 'float', 0.3, 'Camera'), ('CamIntensityBoom', 'float', 0.06, 'Camera'), ('CamAccelCarry', 'float', 8.0, 'Camera'), ('CamTurnCarry', 'float', 6.0, 'Camera'), ('CamConstrainedRise', 'float', 0.0, 'Camera'), ('CamAnchorChest', 'bool', True, 'Flags'), ('CamChestRestOffset', 'float', 21.0, 'Camera'), ('CamSideShiftMax', 'float', 40.0, 'Camera'), ('CamSideShiftTau', 'float', 0.4, 'Camera'), ('CamOpenShoulderScale', 'float', 0.7, 'Camera'), ('CamOpenFOVDeltaWalk', 'float', -2.0, 'Camera'), ('CamOpenFOVDeltaSprint', 'float', 1.0, 'Camera'), ('ExertionEnabled', 'bool', True, 'Flags'), ('ExertionSpeedRef', 'float', 300.0, 'Exertion'), ('ExertionRiseTau', 'float', 25.0, 'Exertion'), ('ExertionFallTau', 'float', 40.0, 'Exertion'), ('ExertionRedirectGain', 'float', 0.6, 'Exertion'), ('ExertionBrakeGain', 'float', 0.4, 'Exertion'), ('ExertionClimbGain', 'float', 0.01, 'Exertion'), ('ExertionRecoveryGain', 'float', 0.8, 'Exertion'), ('CamTurnCompGain', 'float', 16.0, 'Camera'), ('CamTurnCompTau', 'float', 0.45, 'Camera'), ('SettleQuietSpeed', 'float', 12.0, 'Idle'), ('SettleQuietTime', 'float', 0.35, 'Idle'), ('CurveLeanGain', 'float', 0.5, 'Turn'), ('CurveLeanAccelRef', 'float', 400.0, 'Turn'), ('DCSeverityDeadband', 'float', 0.15, 'Turn'), ('CamBrakeCarry', 'float', 6.0, 'Camera'),
+-    # V1.2 landing phase model: descend lag tighter than apex lag; post-contact recovery = profile land response + a
+-    # severity-scaled boost, weighted by a critically damped recovery weight (1 at contact -> 0 over LandingRecoverTime)
+-    ('CameraLandingPhaseEnabled', 'bool', True, 'Flags'), ('CamAirDescendLag', 'float', 10.0, 'Camera'),
+-    ('CamLandingResponseBoost', 'float', 12.0, 'Camera'), ('CamRecoverFreq', 'float', 6.0, 'Camera'), ('CamApexSpeed', 'float', 30.0, 'Camera'),
+-    ('CamAirDescendFollow', 'float', 0.85, 'Camera'), ('CamDescendSpeed', 'float', 150.0, 'Camera'), ('CamAirDescendResponse', 'float', 40.0, 'Camera'),
+-    # units (UE: cm, s, kg) and gait/APA model
+-    # V1.3 physical motion routing (families: 0 normal, 1 minor recovery, 2 hard turn, 3 reversal, 4 start transfer,
+-    # 5 blocked/wall push, 6 strong recovery). Thresholds are exposed, not hard-coded.
+-    ('MotionRoutingEnabled', 'bool', True, 'Flags'), ('RouteForceRecovery', 'bool', False, 'Flags'), ('RouteRecoveryToDatabase', 'bool', True, 'Flags'), ('RouteRecoveryDemand', 'float', 0.45, 'Routing'), ('RouteRecoveryConfidence', 'float', 0.5, 'Routing'),
+-    ('RouteRecoveryMaxSpeed', 'float', 450.0, 'Routing'), ('RouteStrongRecoverySpeed', 'float', 140.0, 'Routing'), ('RouteSwingLoadMax', 'float', 0.45, 'Routing'),
+-    ('RouteMinHold', 'float', 0.35, 'Routing'), ('RouteCooldown', 'float', 0.6, 'Routing'),
+-    ('RouteHardTurnAngMom', 'float', 4.0, 'Routing'), ('RouteHardTurnAngle', 'float', 60.0, 'Routing'), ('RouteHardTurnMinSpeed', 'float', 250.0, 'Routing'),
+-    ('BlockedMaxSpeed', 'float', 25.0, 'Routing'), ('BlockedProbe', 'float', 55.0, 'Routing'), ('BlockedRadius', 'float', 22.0, 'Routing'),
+-    ('StanceWideWidth', 'float', 36.0, 'Routing'),
+-    # V1.3.1 velocity-redirection model: demand = |dV| / (mu g t_step) with mu from TractionMu; classes by demand
++"""SHME profile schema (single source of truth for build + docs).
++Anthropometry: Dempster segment parameters as tabulated in Winter (2009) 'Biomechanics and Motor Control of
++Human Movement', 4th ed., Table 4.1 (mass fraction of total body mass; COM location as a fraction of segment
++length from the proximal end). Mapped to UE mannequin bones -> game approximation, not medical data."""
++ANTHRO = [  # name, type, default, category
++    ('BodyMassKg', 'float', 70.0, 'Mass'),
++    ('Mass_HeadNeck', 'float', 0.081, 'Segments'), ('Com_HeadNeck', 'float', 1.0, 'Segments'),   # neck_01 -> head
++    ('Mass_Trunk', 'float', 0.497, 'Segments'), ('Com_Trunk', 'float', 0.5, 'Segments'),          # pelvis -> neck_01
++    ('Mass_UpperArm', 'float', 0.028, 'Segments'), ('Com_UpperArm', 'float', 0.436, 'Segments'),  # upperarm -> lowerarm
++    ('Mass_ForearmHand', 'float', 0.022, 'Segments'), ('Com_ForearmHand', 'float', 0.682, 'Segments'),  # lowerarm -> hand
++    ('Mass_Thigh', 'float', 0.100, 'Segments'), ('Com_Thigh', 'float', 0.433, 'Segments'),        # thigh -> calf
++    ('Mass_Shank', 'float', 0.0465, 'Segments'), ('Com_Shank', 'float', 0.433, 'Segments'),       # calf -> foot
++    ('Mass_Foot', 'float', 0.0145, 'Segments'), ('Com_Foot', 'float', 0.5, 'Segments'),           # foot -> ball
++    ('FootHalfLength', 'float', 12.0, 'Support'), ('FootHalfWidth', 'float', 5.0, 'Support'),
++    ('StanceWidth', 'float', 22.0, 'Support'), ('StepReach', 'float', 70.0, 'Reach'), ('StepMin', 'float', 12.0, 'Reach'),
++    ('LegLength', 'float', 90.0, 'Reach'), ('MinComHeight', 'float', 55.0, 'Reach'),
++    ('MaxPelvisCompression', 'float', 8.0, 'Limits'), ('MaxTorsoCounterYaw', 'float', 12.0, 'Limits'),
++    # whole-body radius of gyration about the vertical axis (m): I_yaw ~ 1.0-1.5 kg m^2 for a 70 kg adult -> ~0.13-0.15 m
++    ('RadiusOfGyrationYawM', 'float', 0.14, 'Inertia'),
++    # V1.2 idle stance reference: ball_l/ball_r in the actor frame (x fwd, y right, cm) of the Ranger idle
++    # (A_Ranger_Idle_Neutral_CWF) measured in game (QA 2026-09-26, mh_ball rel. capsule)
++    ('IdleStanceLX', 'float', 8.0, 'Stance'), ('IdleStanceLY', 'float', -13.0, 'Stance'),
++    ('IdleStanceRX', 'float', 7.0, 'Stance'), ('IdleStanceRY', 'float', 15.0, 'Stance'),
++]
++RESPONSE = [
++    # feature flags (all default on except debug/telemetry; HumanStateEnabled is the master switch)
++    ('HumanStateEnabled', 'bool', True, 'Flags'), ('SupportAnalysisEnabled', 'bool', True, 'Flags'),
++    ('BalancePlanningEnabled', 'bool', True, 'Flags'), ('TurnPlanningEnabled', 'bool', True, 'Flags'),
++    ('FootPlanningEnabled', 'bool', True, 'Flags'), ('LandingResponseEnabled', 'bool', True, 'Flags'),
++    ('CameraPhysicalSignalsEnabled', 'bool', True, 'Flags'), ('AdaptiveCameraEnvironmentEnabled', 'bool', True, 'Flags'),
++    ('DebugVisualizationEnabled', 'bool', False, 'Flags'), ('TelemetryEnabled', 'bool', False, 'Flags'),
++    # V1.1 execution flags
++    ('FootExecutionEnabled', 'bool', True, 'Flags'), ('LandingSupportEnabled', 'bool', True, 'Flags'),
++    ('PostStopStabilizationEnabled', 'bool', True, 'Flags'), ('MotionMatchingPhysicalGuidanceEnabled', 'bool', False, 'Flags'),
++    # V1.2: stance-aware idle entry (the Ranger idle takeover waits while the feet are far from the idle stance)
++    ('StanceIdleGateEnabled', 'bool', True, 'Flags'), ('IdleStanceTolerance', 'float', 6.0, 'Stance'), ('IdleEntryFootSpeedMax', 'float', 8.0, 'Stance'),
++    # execution state machine (dwell = minimum stable time before a state change; thresholds on 0..1 demands)
++    ('ExecMinDwell', 'float', 0.08, 'Execution'), ('ExecMinorTurn', 'float', 0.03, 'Execution'), ('ExecTransfer', 'float', 0.12, 'Execution'),
++    ('ExecCommit', 'float', 0.30, 'Execution'), ('ExecBrake', 'float', 0.30, 'Execution'), ('ExecReversal', 'float', 0.35, 'Execution'),
++    ('ExecRecovery', 'float', 0.40, 'Execution'),
++    # anatomical reach region around the support foot (facing frame, cm)
++    ('ReachForward', 'float', 70.0, 'Reach'), ('ReachBackward', 'float', 40.0, 'Reach'), ('ReachLateral', 'float', 35.0, 'Reach'),
++    ('GroundMaxSlopeCos', 'float', 0.82, 'Reach'), ('GroundMaxStep', 'float', 40.0, 'Reach'),
++    # landing support: FootPlacement unplant radius used while the landing recovery window is active
++    ('LandingPlantRadius', 'float', 150.0, 'Landing'),
++    # post-stop stabilisation: keep the stop motion (MM database) until the braking stance has recovered
++    ('PostStopBrakeMin', 'float', 0.2, 'PostStop'), ('SettleEnabled', 'bool', False, 'PostStop'), ('SettleTau', 'float', 0.25, 'PostStop'), ('SettleMaxOffset', 'float', 25.0, 'PostStop'), ('SettleMinOffset', 'float', 10.0, 'PostStop'), ('SettleMinEntrySpeed', 'float', 80.0, 'PostStop'), ('SettleMinMoveDist', 'float', 60.0, 'PostStop'), ('SettleMinDoubleSupport', 'float', 0.7, 'PostStop'), ('SettleMinIntentHold', 'float', 0.35, 'PostStop'), ('PostStopStaggerRelease', 'float', 12.0, 'PostStop'), ('PostStopMaxTime', 'float', 2.5, 'PostStop'),
++    # state filters (time constants, seconds -> frame-rate independent alpha = 1 - exp(-dt/tau))
++    ('AccelFilterTau', 'float', 0.08, 'State'), ('YawRateFilterTau', 'float', 0.06, 'State'), ('ComVelFilterTau', 'float', 0.05, 'State'),
++    # support / contact hysteresis
++    ('ContactSpeedOn', 'float', 55.0, 'Support'), ('ContactSpeedOff', 'float', 90.0, 'Support'),
++    ('ContactHeightOn', 'float', 10.0, 'Support'), ('ContactHeightOff', 'float', 16.0, 'Support'),
++    ('ContactConfTau', 'float', 0.04, 'Support'), ('SupportSwitchMargin', 'float', 0.15, 'Support'),
++    ('StabilityScale', 'float', 20.0, 'Support'), ('CaptureScale', 'float', 30.0, 'Balance'), ('Gravity', 'float', 980.0, 'Balance'),
++    # planner
++    ('TractionMu', 'float', 0.8, 'Planner'), ('RedirectTime', 'float', 1.0, 'Planner'),
++    ('DemandAttackTau', 'float', 0.05, 'Planner'), ('DemandReleaseTau', 'float', 0.25, 'Planner'),
++    # landing
++    ('LandingSoftSpeed', 'float', 250.0, 'Landing'), ('LandingHardSpeed', 'float', 900.0, 'Landing'),
++    ('LandingRecoverMin', 'float', 0.15, 'Landing'), ('LandingRecoverMax', 'float', 0.6, 'Landing'),
++    # environment perception (camera space)
++    ('EnvProbeRadius', 'float', 12.0, 'Environment'), ('EnvSideLength', 'float', 300.0, 'Environment'),
++    ('EnvUpLength', 'float', 600.0, 'Environment'), ('EnvRearLength', 'float', 400.0, 'Environment'),
++    ('EnvShrinkTau', 'float', 0.08, 'Environment'), ('EnvGrowTau', 'float', 0.6, 'Environment'),
++    ('NarrowWidth', 'float', 180.0, 'Environment'), ('OpenWidth', 'float', 350.0, 'Environment'),
++    ('ConstrainEnter', 'float', 0.6, 'Environment'), ('ConstrainExit', 'float', 0.4, 'Environment'),
++    ('ConstrainTau', 'float', 0.35, 'Environment'),
++    # camera coupling (restrained)
++    ('CamOpenBoomBonus', 'float', 0.38, 'Camera'), ('CamNarrowBoomReduction', 'float', 0.12, 'Camera'),
++    ('CamNarrowShoulderScale', 'float', 0.55, 'Camera'), ('CamAirFollow', 'float', 0.7, 'Camera'), ('CamAirMaxHeightLag', 'float', 18.0, 'Camera'), ('CamAirHeightResponse', 'float', 20.0, 'Camera'), ('CamAirWeightHeight', 'float', 45.0, 'Camera'),
++    ('CamLandingDip', 'float', 4.0, 'Camera'), ('CamBodyFollowEnabled', 'bool', True, 'Flags'), ('CamBodyRestOffset', 'float', 2.0, 'Camera'), ('CamBodyFreq', 'float', 5.0, 'Camera'), ('CamBodyMax', 'float', 35.0, 'Camera'), ('CamShoulderTravelEnabled', 'bool', True, 'Flags'), ('CamShoulderLatDead', 'float', 0.15, 'Camera'), ('CamShoulderLatFull', 'float', 0.6, 'Camera'), ('CamShoulderTau', 'float', 0.35, 'Camera'), ('CamIntensityTau', 'float', 0.3, 'Camera'), ('CamIntensityBoom', 'float', 0.06, 'Camera'), ('CamAccelCarry', 'float', 8.0, 'Camera'), ('CamTurnCarry', 'float', 6.0, 'Camera'), ('CamConstrainedRise', 'float', 0.0, 'Camera'), ('CamAnchorChest', 'bool', True, 'Flags'), ('CamChestRestOffset', 'float', 21.0, 'Camera'), ('CamSideShiftMax', 'float', 40.0, 'Camera'), ('CamSideShiftTau', 'float', 0.4, 'Camera'), ('CamOpenShoulderScale', 'float', 0.7, 'Camera'), ('CamOpenFOVDeltaWalk', 'float', -2.0, 'Camera'), ('CamOpenFOVDeltaSprint', 'float', 1.0, 'Camera'), ('ExertionEnabled', 'bool', True, 'Flags'), ('ExertionSpeedRef', 'float', 300.0, 'Exertion'), ('ExertionRiseTau', 'float', 25.0, 'Exertion'), ('ExertionFallTau', 'float', 40.0, 'Exertion'), ('ExertionRedirectGain', 'float', 0.6, 'Exertion'), ('ExertionBrakeGain', 'float', 0.4, 'Exertion'), ('ExertionClimbGain', 'float', 0.01, 'Exertion'), ('ExertionRecoveryGain', 'float', 0.8, 'Exertion'), ('CamTurnCompGain', 'float', 16.0, 'Camera'), ('CamTurnCompTau', 'float', 0.45, 'Camera'), ('SettleQuietSpeed', 'float', 12.0, 'Idle'), ('SettleQuietTime', 'float', 0.35, 'Idle'), ('CurveLeanGain', 'float', 0.5, 'Turn'), ('CurveLeanAccelRef', 'float', 400.0, 'Turn'), ('DCSeverityDeadband', 'float', 0.15, 'Turn'), ('CamBrakeCarry', 'float', 6.0, 'Camera'),
++    # V1.2 landing phase model: descend lag tighter than apex lag; post-contact recovery = profile land response + a
++    # severity-scaled boost, weighted by a critically damped recovery weight (1 at contact -> 0 over LandingRecoverTime)
++    ('CameraLandingPhaseEnabled', 'bool', True, 'Flags'), ('CamAirDescendLag', 'float', 10.0, 'Camera'),
++    ('CamLandingResponseBoost', 'float', 12.0, 'Camera'), ('CamRecoverFreq', 'float', 6.0, 'Camera'), ('CamApexSpeed', 'float', 30.0, 'Camera'),
++    ('CamAirDescendFollow', 'float', 0.85, 'Camera'), ('CamDescendSpeed', 'float', 150.0, 'Camera'), ('CamAirDescendResponse', 'float', 40.0, 'Camera'),
++    # units (UE: cm, s, kg) and gait/APA model
++    # V1.3 physical motion routing (families: 0 normal, 1 minor recovery, 2 hard turn, 3 reversal, 4 start transfer,
++    # 5 blocked/wall push, 6 strong recovery). Thresholds are exposed, not hard-coded.
++    ('MotionRoutingEnabled', 'bool', True, 'Flags'), ('RouteForceRecovery', 'bool', False, 'Flags'), ('RouteRecoveryToDatabase', 'bool', True, 'Flags'), ('RouteRecoveryDemand', 'float', 0.45, 'Routing'), ('RouteRecoveryConfidence', 'float', 0.5, 'Routing'),
++    ('RouteRecoveryMaxSpeed', 'float', 450.0, 'Routing'), ('RouteStrongRecoverySpeed', 'float', 140.0, 'Routing'), ('RouteSwingLoadMax', 'float', 0.45, 'Routing'),
++    ('RouteMinHold', 'float', 0.35, 'Routing'), ('RouteCooldown', 'float', 0.6, 'Routing'),
++    ('RouteHardTurnAngMom', 'float', 4.0, 'Routing'), ('RouteHardTurnAngle', 'float', 60.0, 'Routing'), ('RouteHardTurnMinSpeed', 'float', 250.0, 'Routing'),
++    ('BlockedMaxSpeed', 'float', 25.0, 'Routing'), ('BlockedProbe', 'float', 55.0, 'Routing'), ('BlockedRadius', 'float', 22.0, 'Routing'),
++    ('StanceWideWidth', 'float', 36.0, 'Routing'),
++    # V1.3.1 velocity-redirection model: demand = |dV| / (mu g t_step) with mu from TractionMu; classes by demand
+     ('TractionMu', 'float', 0.7, 'Routing'), ('RedirectStepTime', 'float', 0.4, 'Routing'), ('RedirectCommitted', 'float', 0.35, 'Routing'), ('RedirectHard', 'float', 0.8, 'Routing'), ('RedirectHoldEnabled', 'bool', True, 'Flags'), ('PerturbHoldError', 'float', 0.35, 'Routing'), ('PerturbMaxHold', 'float', 0.5, 'Routing'), ('RecoveryExitError', 'float', 0.5, 'Routing'), ('RecoveryExitContact', 'float', 0.5, 'Routing'), ('RecoveryMaxHold', 'float', 0.45, 'Routing'), ('RedirectEpisodeAngle', 'float', 50.0, 'Redirect'), ('RedirectEpisodeMinSpeed', 'float', 120.0, 'Redirect'), ('RedirectAlignAngle', 'float', 25.0, 'Redirect'), ('RedirectMinDwell', 'float', 0.2, 'Redirect'), ('RedirectMaxDwell', 'float', 0.7, 'Redirect'), ('RedirectNewIntentAngle', 'float', 45.0, 'Redirect'), ('RedirectBridgeEnabled', 'bool', True, 'Flags'), ('RedirectReversalClassAngle', 'float', 120.0, 'Redirect'), ('RedirectSpeedDecay', 'float', 0.0, 'V224'), ('SwingLiftEnabled', 'bool', False, 'V224'), ('SwingLiftMargin', 'float', 4.0, 'V224'),
+     ('SwingLiftMax', 'float', 25.0, 'V224'), ('SwingLiftAhead', 'float', 0.12, 'V224'), ('SwingLiftMinSpeed', 'float', 60.0, 'V224'),
+     ('SwingLiftTauUp', 'float', 0.04, 'V224'), ('SwingLiftTauDown', 'float', 0.12, 'V224'), ('SwingLiftTauContact', 'float', 0.03, 'V224'), ('SwingLiftRiseMin', 'float', 1.0, 'V224'), ('StepPrepEnabled', 'bool', False, 'V225'), ('StepPrepMin', 'float', 5.0, 'V225'), ('StepPrepMax', 'float', 16.0, 'V225'),
+-    ('StepPrepGain', 'float', 0.75, 'V225'), ('StepPrepTau', 'float', 0.22, 'V225'), ('StepPrepReleaseTau', 'float', 0.12, 'V225'), ('StepPrepHoldTau', 'float', 0.5, 'V225'), ('StepPrepHoldMax', 'float', 32.0, 'V225'), ('SwingLiftRiseRamp', 'float', 2.0, 'V224'), ('StepEdgeOn', 'bool', False, 'V226'), ('StepEdgeShift', 'float', 12.0, 'V226'), ('StepEdgeShiftFar', 'float', 18.0, 'V226'), ('StepEdgeMin', 'float', 6.0, 'V226'), ('StepEdgeStepTime', 'float', 0.45, 'V226'), ('StepEdgeStepMax', 'float', 120.0, 'V226'), ('StepEdgeProbe', 'float', 15.0, 'V226'), ('StepPenLiftMax', 'float', 36.0, 'V226'), ('RedirectBridgeMinSpeed', 'float', 200.0, 'Redirect'), ('RedirectSprintSpeed', 'float', 340.0, 'Redirect'), ('RedirectReversalAngle', 'float', 135.0, 'Routing'),
+-    # QA-only balance perturbation (LaunchCharacter once at QAPerturbTime with QAPerturbVelocity, cm/s, actor frame x fwd y right)
+-    ('QAPerturbEnabled', 'bool', False, 'Flags'), ('QAPerturbTime2', 'float', 0.0, 'Flags'), ('QAPerturbX2', 'float', 0.0, 'Flags'), ('QAPerturbY2', 'float', 0.0, 'Flags'), ('TurnInPlaceEnabled', 'bool', True, 'Flags'), ('TipEnterAngle', 'float', 35.0, 'TurnInPlace'), ('TipExitAngle', 'float', 8.0, 'TurnInPlace'), ('TipMinTime', 'float', 0.3, 'TurnInPlace'), ('RecoverySideConfidence', 'float', 0.3, 'Routing'), ('TipUnwindRate', 'float', 90.0, 'TurnInPlace'), ('TipMoveRelease', 'float', 12.0, 'TurnInPlace'), ('RouteHardTurnToDatabase', 'bool', False, 'Flags'), ('StartTransferEnabled', 'bool', True, 'Flags'), ('StartTransferMaxTime', 'float', 0.9, 'Routing'), ('PerturbAccel', 'float', 300.0, 'Routing'), ('PerturbTau', 'float', 0.6, 'Routing'), ('QAPerturbTime', 'float', 2.0, 'QA'), ('QAPerturbX', 'float', 0.0, 'QA'), ('QAPerturbY', 'float', 250.0, 'QA'), ('StanceStaggerDepth', 'float', 16.0, 'Routing'),
+-    ('CmPerMeter', 'float', 100.0, 'Units'), ('GaitMinDwell', 'float', 0.05, 'Gait'), ('ApaDuration', 'float', 0.15, 'Gait'), ('ApaShiftCm', 'float', 3.0, 'Gait'), ('ApaCouplingGain', 'float', 0.2, 'Gait'),
+-    ('CamSignalFreq', 'float', 9.0, 'Camera'),
+-    ('BodyCouplingBlend', 'float', 0.5, 'Body'),
+-    ('TelemetryInterval', 'float', 0.0333, 'Telemetry'),
+-    # ---- V2.0 "Momentum & Contact" (2026-10-14, Tools/SHME_V2_20261014). Targets are computed by SHM_UpdateBodyTargets
+-    # (BodyTargetsEnabled) and consumed through SHM_Snapshot -> PBI targets / Update_MotionMatching gates. Every consumer
+-    # flag defaults OFF (A/B one at a time); with a flag off its target is exactly 0 / the gate is exactly open.
+-    ('BodyTargetsEnabled', 'bool', True, 'V2'), ('BodyTargetFreq', 'float', 8.0, 'V2'), ('PelvisOffsetMaxCm', 'float', 4.0, 'V2'),
+-    # W3b curve lean: theta = atan(v * yaw_rate / g) into the turn (research A7), distributed by the PBI pelvis/spine chain
+-    ('CurveLeanDirectEnabled', 'bool', False, 'V2'), ('CurveLeanMaxDeg', 'float', 12.0, 'V2'), ('CurveLeanMinSpeed', 'float', 120.0, 'V2'),
+-    ('CurveLeanFreq', 'float', 6.0, 'V2'), ('PelvisInwardCm', 'float', 2.0, 'V2'), ('PelvisInwardAccelRef', 'float', 400.0, 'V2'),
+-    # W3d support-loaded lateral pelvis shift (research A3): toward the loaded foot, scaled by the load difference
+-    ('SupportShiftEnabled', 'bool', False, 'V2'), ('SupportShiftCm', 'float', 3.0, 'V2'), ('SupportShiftMinSpeed', 'float', 60.0, 'V2'),
+-    # W3c braking posture (research A4/A15 triple flexion): pelvis drop + forward lean proportional to the braking demand
+-    ('BrakePostureEnabled', 'bool', False, 'V2'), ('BrakeDropCm', 'float', 5.0, 'V2'), ('BrakeLeanDeg', 'float', 3.0, 'V2'),
+-    ('BrakeDropWalkScale', 'float', 0.5, 'V2'), ('BrakeDropJogScale', 'float', 0.8, 'V2'), ('BrakeRecoverSec', 'float', 0.5, 'V2'),
+-    # W3a visual APA (research A1): pelvis toward the loaded foot + slightly back, trunk toward the intent, no capsule delay
+-    ('ApaBodyEnabled', 'bool', False, 'V2'), ('ApaPelvisCm', 'float', 2.0, 'V2'), ('ApaBackCm', 'float', 1.0, 'V2'), ('ApaLeanDeg', 'float', 1.5, 'V2'),
+-    # W3g landing absorption (research A10): pelvis drop by severity, released by the landing recovery window
+-    ('LandingAbsorbEnabled', 'bool', False, 'V2'), ('LandingDropCm', 'float', 6.0, 'V2'),
+-    # W2a phase-gated database switches (Bollo foot-phase): a switch window opens after a heel strike, or after SwitchMaxWait
+-    ('PhaseGatedSwitchEnabled', 'bool', False, 'V2'), ('SwitchWindowSec', 'float', 0.03, 'V2'), ('SwitchMaxWait', 'float', 0.35, 'V2'),
+-    # V2.0 round 2 (2026-10-14 03:40): the gate acts only on SETTLED locomotion (GateSettleSec after any family route /
+-    # redirect episode / idle takeover: holding a one-shot redirect bridge database made its two near-identical clips alternate
+-    # every frame) and holds the Motion Matching SEARCH (SearchThrottleTime = SwitchMaxWait) while the window is closed
+-    ('GateSettleSec', 'float', 0.4, 'V2'),
+-    # W3b round 2: closed-loop residual lean (target = physics reference - measured trunk lateral lean from the bones);
+-    # the open-loop add overshot (slope 1.47 sprint / 1.84 jog vs reference 1.0, the clip already leans 0.36 / 0.11)
+-    ('CurveLeanClosedLoop', 'bool', True, 'V2'), ('CurveLeanResidualGain', 'float', 0.8, 'V2'),
+-    # W2b redirect / pivot handover needs a plant (research A5): RedirectPlants counts heel strikes inside the episode
+-    ('HandoverNeedsPlant', 'bool', False, 'V2'),
+-    # W6 tick split: intent / planner / routing tick PrePhysics after the CMC, the mesh waits for SHME (read at BeginPlay)
+-    ('IntentTickPrePhysics', 'bool', False, 'V2'),
+-    # ---- V2.1 (2026-10-14, Saved/Codex/SHME_V21_20261014/DESIGN_V21.md): transition continuity + cinematic camera
+-    # T3 diagonal vocabulary: redirect episodes that start below RedirectLateralMaxAngle (90 deg diagonal swaps FL<->FR, lateral
+-    # cuts) are not episodes (no hold, no pivot bridge) when RedirectLateralEpisodeOff; reversals (>= the max angle) keep them
+-    ('RedirectLateralEpisodeOff', 'bool', False, 'V21'), ('RedirectLateralMaxAngle', 'float', 110.0, 'V21'),
+-    # T5 cinematic shoulder swap: target side with dwell + hysteresis, critically damped second-order easing (no velocity step),
+-    # optional partial mirror (CamSwapAmount 1 = full mirror as V1.3.4, 0 = never swap)
+-    ('CamSwapV21Enabled', 'bool', False, 'V21'), ('CamSwapEnter', 'float', 0.45, 'V21'), ('CamSwapExit', 'float', 0.15, 'V21'),
+-    ('CamSwapDwell', 'float', 0.35, 'V21'), ('CamSwapReturnDwell', 'float', 0.6, 'V21'), ('CamSwapFreq', 'float', 3.5, 'V21'),
+-    ('CamSwapAmount', 'float', 1.0, 'V21'),
+-    # T8 start-onset upper body: fall time constant of the quiet-idle upper-body layer weight SHM_IdleUpperW at movement
+-    # onset. V1.3.7 used 0.05 s: the weight halves in one frame while the takeover still shows the idle branch -> the head
+-    # pops 2-3 cm at every start; the takeover crossfade (BlendListByBool_5) already removes the layer smoothly
+-    ('IdleUpperFallTau', 'float', 0.05, 'V21'),
+-    # ---- V2.4 (2026-10-14, Saved/Codex/SHME_V24_20261014): C1 body-anchored camera pivot (SHM_UpdateCameraV21)
+-    ('CamBodyHEnabled', 'bool', False, 'V24'), ('CamBodyHGain', 'float', 0.45, 'V24'), ('CamBodyHFreq', 'float', 3.5, 'V24'),
+-    ('CamBodyHRestTau', 'float', 1.5, 'V24'), ('CamBodyHMax', 'float', 10.0, 'V24'),
+-    # C2 camera roll with the body (SHM_UpdateCameraV21 -> GR_SHM_CamRoll -> GR_UpdateRig boom roll)
+-    ('CamRollEnabled', 'bool', False, 'V24'), ('CamRollGain', 'float', 0.15, 'V24'), ('CamRollFreq', 'float', 2.5, 'V24'),
+-    ('CamRollMax', 'float', 3.0, 'V24'),
+-    # ---- V2.5 (2026-10-15, Saved/Codex/SHME_V25_20261015): L2 curve-lean measurement low-pass (SHM_UpdateBodyTargets)
+-    ('CurveLeanMeasTau', 'float', 0.0, 'V25'),
+-    # ---- V2.6 (2026-10-15, Saved/Codex/SHME_V26_20261015): P1 relaxed walk posture (SHM_UpdateBodyTargets)
+-    ('WalkRelaxFwdDeg', 'float', 0.0, 'V26'),
+-    # ---- V2.21 (2026-10-21, Saved/Codex/SHME_V221_20261021): settle / terrain body / living camera (SHM_UpdateBodyTargets, SHM_UpdateCameraV21)
+-    ('SettleBodyEnabled', 'bool', False, 'V221'), ('SettleBodyDeg', 'float', 6.0, 'V221'), ('SettleBodyDipCm', 'float', 2.0, 'V221'),
+-    ('SettleBodyPeriod', 'float', 0.9, 'V221'), ('SettleBodyTau', 'float', 0.35, 'V221'), ('SettleBodyMinSpeed', 'float', 60.0, 'V221'),
+-    ('TerrainBodyEnabled', 'bool', False, 'V221'), ('TerrainAheadTime', 'float', 0.45, 'V221'), ('TerrainSlopeTau', 'float', 0.25, 'V221'),
+-    ('TerrainLeanUpGain', 'float', 0.15, 'V221'), ('TerrainLeanUpMax', 'float', 2.5, 'V221'), ('TerrainLeanDownGain', 'float', 0.1, 'V221'),
+-    ('TerrainLeanDownMax', 'float', 1.2, 'V221'), ('TerrainDownDipPerDeg', 'float', 0.1, 'V221'), ('TerrainDownDipMax', 'float', 2.0, 'V221'),
+-    ('TerrainCrossLeanGain', 'float', 0.25, 'V221'), ('TerrainCrossLeanMax', 'float', 3.0, 'V221'), ('TerrainDropAbsorbGain', 'float', 0.25, 'V221'),
+-    ('TerrainDropAbsorbMax', 'float', 4.0, 'V221'), ('TerrainDropTau', 'float', 0.25, 'V221'),
+-    ('CamV221Enabled', 'bool', False, 'V221'), ('CamFxScale', 'float', 1.0, 'V221'), ('CamStepGainWalk', 'float', 0.5, 'V221'),
+-    ('CamStepGainJog', 'float', 0.9, 'V221'), ('CamStepGainSprint', 'float', 1.3, 'V221'), ('CamStepFreq', 'float', 14.0, 'V221'),
+-    ('CamStepMinInterval', 'float', 0.18, 'V221'), ('CamLookAheadWalk', 'float', 4.0, 'V221'), ('CamLookAheadSprint', 'float', 18.0, 'V221'),
+-    ('CamLookAheadTau', 'float', 0.8, 'V221'), ('CamFOVSpeedMax', 'float', 0.0, 'V221'), ('CamFOVRiseTau', 'float', 0.7, 'V221'),
++    ('StepPrepGain', 'float', 0.75, 'V225'), ('StepPrepTau', 'float', 0.22, 'V225'), ('StepPrepReleaseTau', 'float', 0.12, 'V225'), ('StepPrepHoldTau', 'float', 0.5, 'V225'), ('StepPrepHoldMax', 'float', 32.0, 'V225'), ('SwingLiftRiseRamp', 'float', 2.0, 'V224'), ('StepEdgeOn', 'bool', False, 'V226'), ('StepEdgeShift', 'float', 12.0, 'V226'), ('StepEdgeShiftFar', 'float', 18.0, 'V226'), ('StepEdgeMin', 'float', 6.0, 'V226'), ('StepEdgeStepTime', 'float', 0.45, 'V226'), ('StepEdgeStepMax', 'float', 120.0, 'V226'), ('StepEdgeProbe', 'float', 15.0, 'V226'), ('StepPenLiftMax', 'float', 36.0, 'V226'),
++    ('StepEdgeShort', 'float', 12.0, 'V228'), ('InspectIdOn', 'float', 0.0, 'V228'), ('InspectSwitchOn', 'float', 0.25, 'V228'), ('InspectFocusMode', 'float', 0.0, 'V228'), ('RedirectBridgeMinSpeed', 'float', 200.0, 'Redirect'), ('RedirectSprintSpeed', 'float', 340.0, 'Redirect'), ('RedirectReversalAngle', 'float', 135.0, 'Routing'),
++    # QA-only balance perturbation (LaunchCharacter once at QAPerturbTime with QAPerturbVelocity, cm/s, actor frame x fwd y right)
++    ('QAPerturbEnabled', 'bool', False, 'Flags'), ('QAPerturbTime2', 'float', 0.0, 'Flags'), ('QAPerturbX2', 'float', 0.0, 'Flags'), ('QAPerturbY2', 'float', 0.0, 'Flags'), ('TurnInPlaceEnabled', 'bool', True, 'Flags'), ('TipEnterAngle', 'float', 35.0, 'TurnInPlace'), ('TipExitAngle', 'float', 8.0, 'TurnInPlace'), ('TipMinTime', 'float', 0.3, 'TurnInPlace'), ('RecoverySideConfidence', 'float', 0.3, 'Routing'), ('TipUnwindRate', 'float', 90.0, 'TurnInPlace'), ('TipMoveRelease', 'float', 12.0, 'TurnInPlace'), ('RouteHardTurnToDatabase', 'bool', False, 'Flags'), ('StartTransferEnabled', 'bool', True, 'Flags'), ('StartTransferMaxTime', 'float', 0.9, 'Routing'), ('PerturbAccel', 'float', 300.0, 'Routing'), ('PerturbTau', 'float', 0.6, 'Routing'), ('QAPerturbTime', 'float', 2.0, 'QA'), ('QAPerturbX', 'float', 0.0, 'QA'), ('QAPerturbY', 'float', 250.0, 'QA'), ('StanceStaggerDepth', 'float', 16.0, 'Routing'),
++    ('CmPerMeter', 'float', 100.0, 'Units'), ('GaitMinDwell', 'float', 0.05, 'Gait'), ('ApaDuration', 'float', 0.15, 'Gait'), ('ApaShiftCm', 'float', 3.0, 'Gait'), ('ApaCouplingGain', 'float', 0.2, 'Gait'),
++    ('CamSignalFreq', 'float', 9.0, 'Camera'),
++    ('BodyCouplingBlend', 'float', 0.5, 'Body'),
++    ('TelemetryInterval', 'float', 0.0333, 'Telemetry'),
++    # ---- V2.0 "Momentum & Contact" (2026-10-14, Tools/SHME_V2_20261014). Targets are computed by SHM_UpdateBodyTargets
++    # (BodyTargetsEnabled) and consumed through SHM_Snapshot -> PBI targets / Update_MotionMatching gates. Every consumer
++    # flag defaults OFF (A/B one at a time); with a flag off its target is exactly 0 / the gate is exactly open.
++    ('BodyTargetsEnabled', 'bool', True, 'V2'), ('BodyTargetFreq', 'float', 8.0, 'V2'), ('PelvisOffsetMaxCm', 'float', 4.0, 'V2'),
++    # W3b curve lean: theta = atan(v * yaw_rate / g) into the turn (research A7), distributed by the PBI pelvis/spine chain
++    ('CurveLeanDirectEnabled', 'bool', False, 'V2'), ('CurveLeanMaxDeg', 'float', 12.0, 'V2'), ('CurveLeanMinSpeed', 'float', 120.0, 'V2'),
++    ('CurveLeanFreq', 'float', 6.0, 'V2'), ('PelvisInwardCm', 'float', 2.0, 'V2'), ('PelvisInwardAccelRef', 'float', 400.0, 'V2'),
++    # W3d support-loaded lateral pelvis shift (research A3): toward the loaded foot, scaled by the load difference
++    ('SupportShiftEnabled', 'bool', False, 'V2'), ('SupportShiftCm', 'float', 3.0, 'V2'), ('SupportShiftMinSpeed', 'float', 60.0, 'V2'),
++    # W3c braking posture (research A4/A15 triple flexion): pelvis drop + forward lean proportional to the braking demand
++    ('BrakePostureEnabled', 'bool', False, 'V2'), ('BrakeDropCm', 'float', 5.0, 'V2'), ('BrakeLeanDeg', 'float', 3.0, 'V2'),
++    ('BrakeDropWalkScale', 'float', 0.5, 'V2'), ('BrakeDropJogScale', 'float', 0.8, 'V2'), ('BrakeRecoverSec', 'float', 0.5, 'V2'),
++    # W3a visual APA (research A1): pelvis toward the loaded foot + slightly back, trunk toward the intent, no capsule delay
++    ('ApaBodyEnabled', 'bool', False, 'V2'), ('ApaPelvisCm', 'float', 2.0, 'V2'), ('ApaBackCm', 'float', 1.0, 'V2'), ('ApaLeanDeg', 'float', 1.5, 'V2'),
++    # W3g landing absorption (research A10): pelvis drop by severity, released by the landing recovery window
++    ('LandingAbsorbEnabled', 'bool', False, 'V2'), ('LandingDropCm', 'float', 6.0, 'V2'),
++    # W2a phase-gated database switches (Bollo foot-phase): a switch window opens after a heel strike, or after SwitchMaxWait
++    ('PhaseGatedSwitchEnabled', 'bool', False, 'V2'), ('SwitchWindowSec', 'float', 0.03, 'V2'), ('SwitchMaxWait', 'float', 0.35, 'V2'),
++    # V2.0 round 2 (2026-10-14 03:40): the gate acts only on SETTLED locomotion (GateSettleSec after any family route /
++    # redirect episode / idle takeover: holding a one-shot redirect bridge database made its two near-identical clips alternate
++    # every frame) and holds the Motion Matching SEARCH (SearchThrottleTime = SwitchMaxWait) while the window is closed
++    ('GateSettleSec', 'float', 0.4, 'V2'),
++    # W3b round 2: closed-loop residual lean (target = physics reference - measured trunk lateral lean from the bones);
++    # the open-loop add overshot (slope 1.47 sprint / 1.84 jog vs reference 1.0, the clip already leans 0.36 / 0.11)
++    ('CurveLeanClosedLoop', 'bool', True, 'V2'), ('CurveLeanResidualGain', 'float', 0.8, 'V2'),
++    # W2b redirect / pivot handover needs a plant (research A5): RedirectPlants counts heel strikes inside the episode
++    ('HandoverNeedsPlant', 'bool', False, 'V2'),
++    # W6 tick split: intent / planner / routing tick PrePhysics after the CMC, the mesh waits for SHME (read at BeginPlay)
++    ('IntentTickPrePhysics', 'bool', False, 'V2'),
++    # ---- V2.1 (2026-10-14, Saved/Codex/SHME_V21_20261014/DESIGN_V21.md): transition continuity + cinematic camera
++    # T3 diagonal vocabulary: redirect episodes that start below RedirectLateralMaxAngle (90 deg diagonal swaps FL<->FR, lateral
++    # cuts) are not episodes (no hold, no pivot bridge) when RedirectLateralEpisodeOff; reversals (>= the max angle) keep them
++    ('RedirectLateralEpisodeOff', 'bool', False, 'V21'), ('RedirectLateralMaxAngle', 'float', 110.0, 'V21'),
++    # T5 cinematic shoulder swap: target side with dwell + hysteresis, critically damped second-order easing (no velocity step),
++    # optional partial mirror (CamSwapAmount 1 = full mirror as V1.3.4, 0 = never swap)
++    ('CamSwapV21Enabled', 'bool', False, 'V21'), ('CamSwapEnter', 'float', 0.45, 'V21'), ('CamSwapExit', 'float', 0.15, 'V21'),
++    ('CamSwapDwell', 'float', 0.35, 'V21'), ('CamSwapReturnDwell', 'float', 0.6, 'V21'), ('CamSwapFreq', 'float', 3.5, 'V21'),
++    ('CamSwapAmount', 'float', 1.0, 'V21'),
++    # T8 start-onset upper body: fall time constant of the quiet-idle upper-body layer weight SHM_IdleUpperW at movement
++    # onset. V1.3.7 used 0.05 s: the weight halves in one frame while the takeover still shows the idle branch -> the head
++    # pops 2-3 cm at every start; the takeover crossfade (BlendListByBool_5) already removes the layer smoothly
++    ('IdleUpperFallTau', 'float', 0.05, 'V21'),
++    # ---- V2.4 (2026-10-14, Saved/Codex/SHME_V24_20261014): C1 body-anchored camera pivot (SHM_UpdateCameraV21)
++    ('CamBodyHEnabled', 'bool', False, 'V24'), ('CamBodyHGain', 'float', 0.45, 'V24'), ('CamBodyHFreq', 'float', 3.5, 'V24'),
++    ('CamBodyHRestTau', 'float', 1.5, 'V24'), ('CamBodyHMax', 'float', 10.0, 'V24'),
++    # C2 camera roll with the body (SHM_UpdateCameraV21 -> GR_SHM_CamRoll -> GR_UpdateRig boom roll)
++    ('CamRollEnabled', 'bool', False, 'V24'), ('CamRollGain', 'float', 0.15, 'V24'), ('CamRollFreq', 'float', 2.5, 'V24'),
++    ('CamRollMax', 'float', 3.0, 'V24'),
++    # ---- V2.5 (2026-10-15, Saved/Codex/SHME_V25_20261015): L2 curve-lean measurement low-pass (SHM_UpdateBodyTargets)
++    ('CurveLeanMeasTau', 'float', 0.0, 'V25'),
++    # ---- V2.6 (2026-10-15, Saved/Codex/SHME_V26_20261015): P1 relaxed walk posture (SHM_UpdateBodyTargets)
++    ('WalkRelaxFwdDeg', 'float', 0.0, 'V26'),
++    # ---- V2.21 (2026-10-21, Saved/Codex/SHME_V221_20261021): settle / terrain body / living camera (SHM_UpdateBodyTargets, SHM_UpdateCameraV21)
++    ('SettleBodyEnabled', 'bool', False, 'V221'), ('SettleBodyDeg', 'float', 6.0, 'V221'), ('SettleBodyDipCm', 'float', 2.0, 'V221'),
++    ('SettleBodyPeriod', 'float', 0.9, 'V221'), ('SettleBodyTau', 'float', 0.35, 'V221'), ('SettleBodyMinSpeed', 'float', 60.0, 'V221'),
++    ('TerrainBodyEnabled', 'bool', False, 'V221'), ('TerrainAheadTime', 'float', 0.45, 'V221'), ('TerrainSlopeTau', 'float', 0.25, 'V221'),
++    ('TerrainLeanUpGain', 'float', 0.15, 'V221'), ('TerrainLeanUpMax', 'float', 2.5, 'V221'), ('TerrainLeanDownGain', 'float', 0.1, 'V221'),
++    ('TerrainLeanDownMax', 'float', 1.2, 'V221'), ('TerrainDownDipPerDeg', 'float', 0.1, 'V221'), ('TerrainDownDipMax', 'float', 2.0, 'V221'),
++    ('TerrainCrossLeanGain', 'float', 0.25, 'V221'), ('TerrainCrossLeanMax', 'float', 3.0, 'V221'), ('TerrainDropAbsorbGain', 'float', 0.25, 'V221'),
++    ('TerrainDropAbsorbMax', 'float', 4.0, 'V221'), ('TerrainDropTau', 'float', 0.25, 'V221'),
++    ('CamV221Enabled', 'bool', False, 'V221'), ('CamFxScale', 'float', 1.0, 'V221'), ('CamStepGainWalk', 'float', 0.5, 'V221'),
++    ('CamStepGainJog', 'float', 0.9, 'V221'), ('CamStepGainSprint', 'float', 1.3, 'V221'), ('CamStepFreq', 'float', 14.0, 'V221'),
++    ('CamStepMinInterval', 'float', 0.18, 'V221'), ('CamLookAheadWalk', 'float', 4.0, 'V221'), ('CamLookAheadSprint', 'float', 18.0, 'V221'),
++    ('CamLookAheadTau', 'float', 0.8, 'V221'), ('CamFOVSpeedMax', 'float', 0.0, 'V221'), ('CamFOVRiseTau', 'float', 0.7, 'V221'),
+     ('CamFOVFallTau', 'float', 1.2, 'V221'), ('CamComfortScale', 'float', 1.0, 'V221'),
+     # ---- V2.22 (2026-10-22, Saved/Codex/SHME_V222_20261022): camera closeness by speed (SHM_UpdateCameraV21)
+     ('CamCloseEnabled', 'bool', False, 'V222'), ('CamCloseStand', 'float', 0.90, 'V222'), ('CamCloseWalk', 'float', 0.88, 'V222'),
+@@ -169,5 +170,5 @@
+     ('InspectRadius', 'float', 22.0, 'V225'), ('InspectJump', 'float', 2.0, 'V225'), ('InspectZoomOn', 'bool', False, 'V226'), ('InspectTag', 'string', 'GR_Inspect', 'V226'), ('InspectDwellOn', 'float', 0.35, 'V225'), ('InspectMaxSpeed', 'float', 60.0, 'V225'),
+     ('InspectYawRateMax', 'float', 220.0, 'V225'), ('InspectTauOn', 'float', 0.35, 'V225'), ('InspectTauOff', 'float', 0.6, 'V225'), ('InspectShare', 'float', 0.35, 'V225'),
+     ('InspectOffsetMax', 'float', 140.0, 'V225'), ('InspectBoom', 'float', 0.94, 'V225'), ('InspectLookMaxYaw', 'float', 75.0, 'V225'),
+-    ('InspectKey1', 'string', 'INS_', 'V225'), ('InspectKey2', 'string', 'Mask', 'V225'), ('InspectKey3', 'string', 'Door', 'V225'), ('InspectKey4', 'string', 'Lamp', 'V225'), ('CamFolYawW', 'float', 9.0, 'V224'), ('CamLookSide', 'float', 0.5, 'V223'),
+-]
++    ('InspectKey1', 'string', 'INS_', 'V225'), ('InspectKey2', 'string', 'Mask', 'V225'), ('InspectKey3', 'string', 'Door', 'V225'), ('InspectKey4', 'string', 'Lamp', 'V225'), ('CamFolYawW', 'float', 9.0, 'V224'), ('CamLookSide', 'float', 0.5, 'V223'),
++]

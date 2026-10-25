@@ -1,0 +1,163 @@
+{
+ "ABP_GR_MotionMatchingBase": {
+  "vars": [
+   "LS_LookDriven",
+   "SHM_LookRate",
+   "SHM225_LookAlpha",
+   "SHM225_LookPoint"
+  ],
+  "hist_AnimGraph": {
+   "K2Node_VariableGet": 182,
+   "K2Node_CallFunction": 171,
+   "K2Node_CommutativeAssociativeBinaryOperator": 62,
+   "AnimGraphNode_BlendListByBool": 20,
+   "AnimGraphNode_SequenceEvaluator": 16,
+   "K2Node_PromotableOperator": 15,
+   "AnimGraphNode_UseCachedPose": 6,
+   "AnimGraphNode_LinkedAnimGraph": 5,
+   "K2Node_EnumEquality": 5,
+   "K2Node_Select": 5,
+   "AnimGraphNode_SaveCachedPose": 4,
+   "AnimGraphNode_LinkedAnimLayer": 4,
+   "AnimGraphNode_LayeredBoneBlend": 4,
+   "AnimGraphNode_SequencePlayer": 4
+  },
+  "hist_SHM_Snapshot": {
+   "K2Node_CallFunction": 329,
+   "K2Node_VariableGet": 300,
+   "K2Node_CommutativeAssociativeBinaryOperator": 204,
+   "K2Node_PromotableOperator": 183,
+   "K2Node_VariableSet": 103,
+   "K2Node_EnumEquality": 4,
+   "K2Node_FunctionEntry": 1
+  },
+  "hits": [
+   {
+    "graph": "AnimGraph",
+    "node": "AnimGraphNode_LinkedAnimLayer_1",
+    "class": "AnimGraphNode_LinkedAnimLayer",
+    "type": "yon|Ba\u011flant\u0131l\u0131AnimasyonGrafikleri|AAMS_AnimationLayers-LookAtAimOffset",
+    "pins": {
+     "LookAtIn": [
+      "AnimGraphNode_LinkedAnimLayer_2:Pose"
+     ]
+    }
+   },
+   {
+    "graph": "AnimGraph",
+    "node": "K2Node_VariableGet_178",
+    "class": "K2Node_VariableGet",
+    "type": "|GetSHM225_LookAlpha",
+    "pins": {}
+   },
+   {
+    "graph": "AnimGraph",
+    "node": "K2Node_VariableGet_179",
+    "class": "K2Node_VariableGet",
+    "type": "|GetSHM225_LookPoint",
+    "pins": {}
+   },
+   {
+    "graph": "AnimGraph",
+    "node": "AnimGraphNode_LookAt_0",
+    "class": "AnimGraphNode_LookAt",
+    "type": "Animation|SkeletalControls|LookAt-Bone:spine_03",
+    "pins": {
+     "ComponentPose": [
+      "AnimGraphNode_LocalToComponentSpace_1:ComponentPose"
+     ],
+     "Alpha": [
+      "K2Node_CallFunction_167:ReturnValue"
+     ],
+     "LookAtLocation": [
+      "K2Node_VariableGet_179:SHM225_LookPoint"
+     ]
+    }
+   },
+   {
+    "graph": "AnimGraph",
+    "node": "AnimGraphNode_LookAt_1",
+    "class": "AnimGraphNode_LookAt",
+    "type": "Animation|SkeletalControls|LookAt-Bone:neck_01",
+    "pins": {
+     "ComponentPose": [
+      "AnimGraphNode_LookAt_0:Pose"
+     ],
+     "Alpha": [
+      "K2Node_CallFunction_168:ReturnValue"
+     ],
+     "LookAtLocation": [
+      "K2Node_VariableGet_179:SHM225_LookPoint"
+     ]
+    }
+   },
+   {
+    "graph": "AnimGraph",
+    "node": "AnimGraphNode_LookAt_2",
+    "class": "AnimGraphNode_LookAt",
+    "type": "Animation|SkeletalControls|LookAt-Bone:head",
+    "pins": {
+     "ComponentPose": [
+      "AnimGraphNode_LookAt_1:Pose"
+     ],
+     "Alpha": [
+      "K2Node_CallFunction_169:ReturnValue"
+     ],
+     "LookAtLocation": [
+      "K2Node_VariableGet_179:SHM225_LookPoint"
+     ]
+    }
+   },
+   {
+    "graph": "SHM_Snapshot",
+    "node": "K2Node_VariableGet_8",
+    "class": "K2Node_VariableGet",
+    "type": "|GetInspectLookAlpha",
+    "pins": {
+     "self": [
+      "K2Node_CallFunction_1:ReturnValue"
+     ]
+    }
+   },
+   {
+    "graph": "SHM_Snapshot",
+    "node": "K2Node_VariableSet_3",
+    "class": "K2Node_VariableSet",
+    "type": "|SetSHM225_LookAlpha",
+    "pins": {
+     "execute": [
+      "K2Node_VariableSet_6:then"
+     ],
+     "SHM225_LookAlpha": [
+      "K2Node_CallFunction_8:ReturnValue"
+     ]
+    }
+   },
+   {
+    "graph": "SHM_Snapshot",
+    "node": "K2Node_VariableGet_9",
+    "class": "K2Node_VariableGet",
+    "type": "|GetInspectLookPoint",
+    "pins": {
+     "self": [
+      "K2Node_CallFunction_1:ReturnValue"
+     ]
+    }
+   },
+   {
+    "graph": "SHM_Snapshot",
+    "node": "K2Node_VariableSet_4",
+    "class": "K2Node_VariableSet",
+    "type": "|SetSHM225_LookPoint",
+    "pins": {
+     "execute": [
+      "K2Node_VariableSet_3:then"
+     ],
+     "SHM225_LookPoint": [
+      "K2Node_VariableGet_9:InspectLookPoint"
+     ]
+    }
+   }
+  ]
+ }
+}

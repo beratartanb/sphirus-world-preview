@@ -1,0 +1,76 @@
+FINAL PRODUCTION (v228fin, clean reopen, no flags) vs previous production (v227fin = V2.26 state). slip cm height|contact
+sw_ph0  before  16.7| 10.9  after   5.8|  5.8
+sw_ph2  before  26.1| 26.1  after   9.2|  9.2
+ph0     before  49.7| 49.7  after  13.0| 13.0
+ph3     before  16.6| 16.6  after  12.1|  7.7
+rel     before  30.4| 30.4  after  33.9| 35.0
+dbl     before  35.5|  5.2  after  16.7| 11.0
+ad_ph0  before  26.8| 26.8  after   0.0|  0.0
+m180w   before   0.0|  0.0  after   0.0|  0.0
+
+real time (after): 
+ph0       7.3|  7.3
+sw_ph2   30.5|  6.5
+dbl       0.0|  0.0
+rel      24.0| 30.1
+
+exits (fin)
+EXIT227 v228fin_j24_ph0_o_r1           clip F_B_P14 in 5.07..6.63 (1.57 s) ct 0.10->1.67 len ? rem ? rate 1.00 | episode 0.03..1.57 +after 12 fr | FPoff none | planted jump in-clip 3.5 cm (t 5.2 l) exit-win 1.8 cm (t 6.767 l) | next A_RB_Jog_Rear @0.
+EXIT227 v228fin_j24_ph0_o_r1           clip B_F_P3->B_F_P22 in 7.57..9.03 (1.47 s) ct 0.03->1.47 len ? rem ? rate 0.98 | episode 0.03..1.47 | FPoff none | planted jump in-clip 3.5 cm (t 7.733 r) exit-win 2.7 cm (t 9.2 l) | next A_CT_Jog_Fwd @0.53 PSD
+EXIT227 v228fin_j24_ph3_o_r1           clip F_B_P21 in 5.33..6.93 (1.60 s) ct 0.07->1.67 len ? rem ? rate 1.00 | episode 0.03..1.60 +after 13 fr | FPoff none | planted jump in-clip 6.4 cm (t 5.6 l) exit-win 2.0 cm (t 7.1 r) | next A_RB_Jog_Rear @0.27
+EXIT227 v228fin_j24_ph3_o_r1           clip B_F_P26->B_F_P29 in 7.83..9.27 (1.43 s) ct 0.07->1.47 len ? rem ? rate 0.98 | episode 0.03..1.43 | FPoff none | planted jump in-clip 0.9 cm (t 8.033 l) exit-win 1.8 cm (t 9.567 r) | next A_CT_Jog_Fwd @0.90 
+EXIT227 v228fin_j24_sw_ph2_o_r1        clip B_F_P23->B_F_P29 in 5.23..6.67 (1.43 s) ct 0.07->1.47 len ? rem ? rate 0.98 | episode 0.03..1.43 +after 7 fr | FPoff none | planted jump in-clip 3.5 cm (t 5.267 r) exit-win 1.8 cm (t 6.967 r) | next A_CT_Jo
+EXIT227 v228fin_j24_sw_ph2_o_r1        clip F_B_P9 in 7.73..9.30 (1.57 s) ct 0.10->1.67 len ? rem ? rate 1.00 | episode 0.03..1.57 +after 1 fr | FPoff none | planted jump in-clip 3.2 cm (t 7.733 r) exit-win 2.0 cm (t 9.467 r) | next A_RB_Jog_Rear @0.
+EXIT227 v228fin_j24_sw_ph0_o_r1        clip B_F_P3->B_F_P22 in 5.07..6.53 (1.47 s) ct 0.03->1.47 len ? rem ? rate 0.98 | episode 0.03..1.47 +after 8 fr | FPoff none | planted jump in-clip 1.0 cm (t 5.267 r) exit-win 2.7 cm (t 6.7 l) | next A_CT_Jog_F
+EXIT227 v228fin_j24_sw_ph0_o_r1        clip F_B_P16 in 7.57..9.13 (1.57 s) ct 0.10->1.67 len ? rem ? rate 1.00 | episode 0.03..1.57 +after 1 fr | FPoff none | planted jump in-clip 4.5 cm (t 7.733 r) exit-win 1.8 cm (t 9.267 l) | next A_RB_Jog_Rear @0
+EXIT227 v228fin_j24_dbl_o_r1           clip F_B_P14->B_F_P25 in 5.07..6.77 (1.70 s) ct 0.10->1.47 len ? rem ? rate 0.80 | episode 0.03..1.70 | FPoff none | planted jump in-clip 4.0 cm (t 5.233 l) exit-win 1.8 cm (t 7.067 r) | next A_CT_Jog_Fwd @0.90 
+EXIT227 v228fin_j24_dbl_o_r1           clip F_B_P14->B_F_P29 in 8.07..9.50 (1.43 s) ct 0.07->1.47 len ? rem ? rate 0.98 | episode 0.03..1.43 | FPoff none | planted jump in-clip 4.9 cm (t 8.467 r) exit-win 1.8 cm (t 9.8 r) | next A_CT_Jog_Fwd @0.90 PS
+EXIT227 v228fin_j24_rel_o_r1           clip F_B_P14 in 5.07..5.47 (0.40 s) ct 0.10->0.51 len ? rem ? rate 1.02 | episode 0.03..0.37 | FPoff none | planted jump in-clip 3.5 cm (t 5.2 l) exit-win 7.3 cm (t 5.833 r) | next oco_Jog_Bwd_Start_AAMS @0.00 P
+EXIT227 v228fin_j24_rel_o_r1           clip B_F_P3 in 7.57..7.77 (0.20 s) ct 0.03->0.23 len ? rem ? rate 1.01 | episode 0.03..0.20 | FPoff none | planted jump in-clip 2.2 cm (t 7.733 r) exit-win 2.2 cm (t 7.733 r) | next tral_Walk_Stop_B_Rfoot @1.37 
+
+rt ph0 cold: clip selected?
+EXIT227 v228finrt_j24_ph0_o_r1         clip F_B_P15 in 5.13..6.71 (1.58 s) ct 0.10->1.68 len ? rem ? rate 1.00 | episode 0.03..1.58 +after 13 fr | FPoff none | planted jump in-clip 3.3 cm (t 5.16 l) e
+EXIT227 v228finrt_j24_ph0_o_r1         clip B_F_P18->B_F_P22 in 7.59..9.01 (1.42 s) ct 0.07->1.47 len ? rem ? rate 0.98 | episode 0.03..1.42 | FPoff none | planted jump in-clip 0.8 cm (t 7.779 r) exit
+
+clipspeed fin ph0/ph3 summary
+CLIPSPEED v228fin_j24_ph0_o_r1 clip ev_F_B_P14 entry t 5.067 ct 0.100 (48 frames)
+   summary: max|v_act-desV| after frame 3 = 19 cm/s, integral(v_act-desV) = 2.0 cm
+CLIPSPEED v228fin_j24_ph3_o_r1 clip ev_F_B_P21 entry t 5.333 ct 0.067 (49 frames)
+   summary: max|v_act-desV| after frame 3 = 24 cm/s, integral(v_act-desV) = 1.3 cm
+CLIPSPEED v228fin_j24_sw_ph2_o_r1 clip ev_B_F_P23 entry t 5.233 ct 0.067 (44 frames)
+   summary: max|v_act-desV| after frame 3 = 25 cm/s, integral(v_act-desV) = -1.4 cm
+
+terrain fin
+    L plant t 6.87: 16.0 cm onto the step (heel +0.0), z err -1.3 (ball 28.2) | hover 0.00 s | lowest over platform before plant 25.0 (-4.5 vs expected) | lift 33.00
+    R plant t 7.27: 116.3 cm onto the step (heel +100.3), z err -0.1 (ball 29.3) | hover 0.00 s | lowest over platform before plant 27.4 (-2.0 vs expected) | lift 0.953
+    first plant -> next plant: 0.40 s, 100.3 cm apart (next foot lands 116.3 cm onto the step)
+    L plant t 12.67: 84.7 cm onto the step (heel +68.7), z err +2.2 (ball 28.8) | hover 0.13 s | lowest over platform before plant 22.5 (-4.1 vs expected) | lift 0.324
+    R plant t 12.47: 15.6 cm onto the step (heel -0.4 OVER THE VOID), z err +2.2 (ball 28.7) | hover 0.40 s | lowest over platform before plant 29.5 (+3.0 vs expected) | lift 0.295
+    first plant -> next plant: 0.20 s, 69.1 cm apart (next foot lands 84.7 cm onto the step)
+v228fin_map_r1_o_r1          shift frames   6 | lift max 35.9
+v228fin_map_r2_o_r1          shift frames   0 | lift max 24.7
+v228finrt_map_r2_o_r1        shift frames  14 | lift max 36.0
+v228fin_ter_bump_jog_o_r1    shift frames  40 | lift max 28.5
+v228fin_ter_step2_o_r1       shift frames  48 | lift max 23.2
+
+inspection fin
+INSPECT226 v228fin_ins_ws2_o_r1       cand 3.60 on 4.30..13.10 | cam-cap dist before 148 / inspecting 150 / after 145 | fov 62.0 / 62.0 | bone yaw TURN from before to inspecting: {'pelvis': 122.1, 'sp
+   summary: InspectOn>0.5 for 8.77 s | gaze err min 0.3 max 19.4 mean 6.0 deg | head-vs-body yaw -8.2..+9.3 | head-vs-chest yaw -14.8..+20.0 | pitch -11.9..+7.1 | within 10 deg after 0.93 s
+   summary: InspectOn>0.5 for 7.07 s | gaze err min 0.8 max 23.8 mean 10.7 deg | head-vs-body yaw -12.7..+5.2 | head-vs-chest yaw -35.4..+20.8 | pitch -11.0..+4.9 | within 10 deg after 5.67 s
+   summary: InspectOn>0.5 for 8.72 s | gaze err min 0.1 max 18.9 mean 5.9 deg | head-vs-body yaw -8.5..+9.4 | head-vs-chest yaw -15.2..+20.1 | pitch -11.2..+7.1 | within 10 deg after 0.89 s
+
+arms fin
+ARMS228 v228fin_j24_ph0_o_r1         gRev_F_B_P14 5.07..6.63 | hand jump entry 8.5 in-clip 10.5 exit-win 11.2 cm | L-hand swing reversals in exit-win 2 | head jump exit-win 1.8 cm | chest-pelvis yaw pre -9..+7 post -8..+6
+ARMS228 v228fin_j24_ph0_o_r1         gRev_B_F_P22 7.57..9.03 | hand jump entry 1.3 in-clip 10.1 exit-win 12.2 cm | L-hand swing reversals in exit-win 0 | head jump exit-win 1.5 cm | chest-pelvis yaw pre -10..+13 post -10..+13
+ARMS228 v228fin_j24_sw_ph2_o_r1      gRev_B_F_P29 5.23..6.67 | hand jump entry 8.6 in-clip 13.4 exit-win 10.7 cm | L-hand swing reversals in exit-win 0 | head jump exit-win 1.6 cm | chest-pelvis yaw pre -9..+13 post -10..+13
+ARMS228 v228fin_j24_sw_ph2_o_r1      ogRev_F_B_P9 7.73..9.30 | hand jump entry 5.2 in-clip 13.2 exit-win 11.4 cm | L-hand swing reversals in exit-win 0 | head jump exit-win 1.1 cm | chest-pelvis yaw pre -8..+8 post -6..+8
+
+pops before/after
+grep: Saved/Codex/SHME_V212_20261017/Reports/v228fin_m180w_o_r1.txt: No such file or directory
+m180w           | 
+j23_m180       pops >25 m/s2: 6 (worst 292) | pops >25 m/s2: 6 (worst 292)
+r_cutrev_r     pops >25 m/s2: 7 (worst 57) | pops >25 m/s2: 7 (worst 57)
+ins_ws         pops >25 m/s2: 3 (worst 43) | pops >25 m/s2: 3 (worst 43)
+ter_drop_walk  pops >25 m/s2: 4 (worst 260) | pops >25 m/s2: 4 (worst 260)
+ter_step2      pops >25 m/s2: 6 (worst 190) | pops >25 m/s2: 6 (worst 190)
+map_r2         pops >25 m/s2: 6 (worst 56) | pops >25 m/s2: 6 (worst 56)

@@ -1,0 +1,438 @@
+P228 start 23:44:45
+no editor to quit
+RUNNER_READY shmv228_p1.log
+throttle off False
+RELAUNCH p1 30 23:48:33
+no editor to quit
+RUNNER_READY shmv228_p2.log
+throttle off False
+RELAUNCH p2 30 00:08:05
+GR228 {"reloaded": [], "profile": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "redirect": {"branch": "K2Node_IfThenElse_6", "set": "K2Node_VariableSet_18", "friction_old": "K2Node_CallFunction_71"}, "accel": {"old": "K2Node_CallFunction_43"}, "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "child_profile": "<Object '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior", "da_knob": 0.0, "ok": true, "saved": true, "dirty": []}
+P2_INSTALL_DONE
+T1 start 00:09:13
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_t1.log
+throttle off False
+RELAUNCH t1 30 00:10:58
+v212_warm_001102 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228t1_j24_ph3_rhC_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 2 (worst 54) | by owner {'in-clip': 2} | FINISHED candidate
+v228t1_j24_ph3_rhC0_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 2 (worst 43) | by owner {'in-clip': 2} | FINISHED candidate
+v228t1_j24_ph3_rhCF_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 2 (worst 54) | by owner {'in-clip': 2} | FINISHED candidate
+v228t1_j24_ph0_rhC_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 50) | by owner {'in-clip': 2} | FINISHED candidate
+v228t1_j24_sw_ph2_rhC_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 4 (worst 37) | by owner {'in-clip': 4} | FINISHED candidate
+v228t1_j24_dbl_rhC_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 4 (worst 27) | by owner {'in-clip': 4} | FINISHED candidate
+v228t1_j24_rel_rhC_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED candidate
+v228t1_j24_sw_ph0_rhC_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 4 (worst 54) | by owner {'in-clip': 4} | FINISHED candidate
+v228t1_j24_ph0_rhCF_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 50) | by owner {'in-clip': 3} | FINISHED candidate
+v228t1_j24_sw_ph2_rhCF_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 4 (worst 37) | by owner {'in-clip': 4} | FINISHED candidate
+T1_DONE 00:16:11
+no editor to quit
+RUNNER_READY shmv228_p3.log
+throttle off False
+RELAUNCH p3 30 00:24:21
+GR228FIX step amax
+GR228FIX step dt
+Traceback (most recent call last):
+AssertionError
+ABPW228 scan {"reloaded": [], "inrange_curve_nodes": [], "cands": []}
+Traceback (most recent call last):
+AssertionError: []
+P3_FIX_DONE
+T2 start 00:26:24
+no editor to quit
+RUNNER_READY shmv228_p4.log
+throttle off False
+RELAUNCH p4 30 00:28:11
+GR228FIX step amax
+GR228FIX step dt
+GR228FIX step fwd
+GR228FIX step ddir
+GR228FIX step iF
+GR228FIX step adt
+GR228FIX step vset
+GR228FIX {"reloaded": [], "accel": "bypassed(deep) -> K2Node_CallFunction_43", "step": "vset", "velocity": "compensated", "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "child_profile": "<Object '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior", "ok": true, "saved": true, "dirty": []}
+ABPW228 {"reloaded": [], "inrange_curve_nodes": [["K2Node_CallFunction_34", "0.3", "SHM226_W"]], "cands": ["K2Node_CallFunction_34"], "min_set": 0.1, "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_t2.log
+throttle off False
+RELAUNCH t2 30 00:29:53
+v212_warm_002958 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228t2_j24_ph3_rhC_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t2_j24_ph0_rhC_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t2_j24_sw_ph2_rhC_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t2_j24_dbl_rhC_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 2 (worst 65) | by owner {'in-clip': 2} | FINISHED candidate
+v228t2_j24_rel_rhC_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v228t2_j24_sw_ph0_rhC_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t2_j24_ph3_rhCF_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t2_j24_ph0_rhCF_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t2_j24_ph3_rhC0_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+T2_DONE 00:34:50
+T3 start 00:36:33
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_w60.log
+throttle off False
+RELAUNCH w60 60 00:39:45
+v212_warm_003949 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v228w60_j24_ph0_rhC_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 15 (worst 32) | by owner {'in-clip': 15} | FINISHED candidate
+v228w60_j24_ph3_rhC_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 16 (worst 37) | by owner {'in-clip': 16} | FINISHED candidate
+v228w60_j24_sw_ph2_rhC_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 13 (worst 38) | by owner {'in-clip': 13} | FINISHED candidate
+v228w60_j24_ovl120_rhC_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 14 (worst 38) | by owner {'in-clip': 14} | FINISHED candidate
+v228w60_j24_dbl_rhC_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+v228w60_j24_rel_rhC_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 18 (worst 48) | by owner {'in-clip': 18} | FINISHED candidate
+MEM_RESTART editor 39 GB 00:44:54
+v212_warm_004834 | rows 839 rate 60.1/s | pops >25 m/s2: 2 (worst 85) | by owner {'in-clip': 2} | FINISHED production
+T3 60 done 00:49:29
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_w120.log
+throttle off False
+RELAUNCH w120 120 00:51:23
+v212_warm_005128 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v228w120_j24_ph3_rhC_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 12 (worst 78) | by owner {'in-clip': 12} | FINISHED candidate
+v228w120_j24_ph0_rhC_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 87) | by owner {'in-clip': 11} | FINISHED candidate
+v228w120_j24_sw_ph2_rhC_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 13 (worst 71) | by owner {'in-clip': 13} | FINISHED candidate
+MEM_RESTART editor 41 GB 00:56:31
+v212_warm_010022 | rows 1680 rate 120.1/s | pops >25 m/s2: 8 (worst 1380) | by owner {'in-clip': 8} | FINISHED production
+v228w120_j24_ovl120_rhC_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 13 (worst 78) | by owner {'in-clip': 13} | FINISHED candidate
+v228w120_j24_rel_rhC_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 10 (worst 82) | by owner {'in-clip': 10} | FINISHED candidate
+T3 120 done 01:04:31
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_w20.log
+throttle off False
+RELAUNCH w20 20 01:07:56
+v212_warm_010802 | rows 280 rate 20.1/s | pops >25 m/s2: 1 (worst 40) | by owner {'in-clip': 1} | FINISHED production
+v228w20_j24_ph0_rhC_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228w20_j24_ph3_rhC_r1 | rows 243 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228w20_j24_sw_ph2_rhC_r1 | rows 242 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228w20_j24_ovl120_rhC_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228w20_j24_dbl_rhC_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 3 (worst 53) | by owner {'in-clip': 3} | FINISHED candidate
+v228w20_j24_rel_rhC_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+T3 20 done 01:11:01
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_rt.log
+throttle off False
+RELAUNCH rt real 01:13:49
+v228rt_j24_ph0_rhC_r1 | rows 312 rate 26.9/s | pops >25 m/s2: 2 (worst 54) | by owner {'in-clip': 2} | FINISHED candidate
+v212_warm_011430 | rows 391 rate 29.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228rt_j24_sw_ph2_rhC_r1 | rows 270 rate 23.4/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228rt_j24_dbl_rhC_r1 | rows 337 rate 28.1/s | pops >25 m/s2: 3 (worst 59) | by owner {'in-clip': 3} | FINISHED candidate
+v228rt_j24_ph3_rhC_r1 | rows 296 rate 25.9/s | pops >25 m/s2: 2 (worst 52) | by owner {'in-clip': 2} | FINISHED candidate
+T3 rt done 01:16:07
+T3_DONE 01:16:07
+T4 start 01:16:11
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_i4.log
+throttle off False
+RELAUNCH i4 30 01:18:53
+Traceback (most recent call last):
+AssertionError: (('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:SHM_Snapshot.K2Node_CallFunction_69', 'ReturnValue'), ('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:SHM_Snapshot.K2Node_VariableSet_24', 'SHM_HoldDB'), [])
+T4 CANCEL_INSTALL_FAILED 01:18:59
+T4b start 01:20:48
+no editor to quit
+RUNNER_READY shmv228_i4b.log
+throttle off False
+RELAUNCH i4b 30 01:22:28
+CANCEL228 {"reloaded": [], "step": "umm", "hold_pin": "K2Node_CommutativeAssociativeBinaryOperator_3:B", "snapshot": "wired", "umm": {"branch": "K2Node_IfThenElse_64", "call": "K2Node_CallFunction_266"}, "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knobs": {"SHM227_RevHold": 0.0, "SHM228_ClipSpeed": 0.0, "SHM228_RelHold": 0.0, "SHM228_CancelOn": 0.0}, "ok": true, "saved": true, "dirty": []}
+Traceback (most recent call last):
+AttributeError: type object 'Axis' has no attribute 'Y'
+T4b LOOKAXIS_INSTALL_FAILED 01:22:40
+T4c start 01:23:55
+Traceback (most recent call last):
+AssertionError: ('enum members', ['BACKWARD', 'DOWN', 'FORWARD', 'LEFT', 'ONE', 'RIGHT', 'UP', 'ZERO', 'add', 'add_bounded', 'add_float', 'add_int'])
+T4c LOOKAXIS_INSTALL_FAILED 01:23:57
+T4d start 01:25:41
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_t4.log
+throttle off False
+RELAUNCH t4 30 01:27:25
+v212_warm_012729 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228t4_j24_rel_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v228t4_j24_dbl_rhCR_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+v228t4_j24_rel_rhCRr_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v228t4_j24_dbl_rhCRr_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 2 (worst 65) | by owner {'in-clip': 2} | FINISHED candidate
+v228t4_j24_ph0_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t4_j24_ph3_rhCR_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t4_j24_sw_ph2_rhCR_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t4_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+v228t4_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+v228t4_j24_sw_ph0_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+T4d_DONE 01:32:42
+BUILD228 start 01:32:44
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_bA.log
+throttle off False
+RELAUNCH bA 30 01:35:58
+BUILD228 vars+profiles saved 01:36:28
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_bB.log
+throttle off False
+RELAUNCH bB 30 01:38:26
+BUILD228_DONE 01:48:12
+T5 start 01:48:12
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_t5.log
+throttle off False
+RELAUNCH t5 30 01:50:02
+v212_warm_015005 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228t5_ter_drop_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED production
+v228t5_ter_drop_jog_tl36_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED candidate
+v228t5_ter_drop_jog_te4_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED candidate
+v228t5_ter_drop_walk_tl36_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED candidate
+v228t5_ter_drop_walk_te4_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED candidate
+v228t5_ter_step2_te4_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED candidate
+v228t5_ter_bump_jog_te4_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v228t5_ter_hill8_jog_te4_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228t5_map_r1_te4_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 10 (worst 57) | by owner {'montage': 2, 'in-clip': 8} | FINISHED candidate
+MEM_RESTART editor 41 GB 01:55:42
+v212_warm_015926 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228t5_ins_ws2_ins5_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED candidate
+v228t5_ins_ws_ins5_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+v228t5_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+T5_DONE 02:01:38
+GEN start 02:01:43
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_g1.log
+throttle off False
+RELAUNCH g1 30 02:04:21
+ORDER228 {"heads": ["OlayEkle|OlayBlueprintUpdateAnimation"], "chain": ["\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Sekans", "|SetIsSandboxCharacterValid", "\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal", "OlayGrafi\u011fi|Update_Logic", "|CP_UpdateTransitionClock", "|SetIC_LandingHoldRemaining", "asting|CastToBP_DT_Cpmt_HandSensingController", "|SetMotionIdentityInteractionOverrideAlpha"]}
+Traceback (most recent call last):
+AssertionError: (('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:AnimGraph.K2Node_VariableGet_180', 'B'), [])
+GEN CANCEL2_FAILED 02:04:36
+BUILD228b start 02:04:47
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_cB.log
+throttle off False
+RELAUNCH cB 30 02:07:23
+BUILD228b_DONE 02:13:02
+T6 start 02:13:02
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_t6.log
+throttle off False
+RELAUNCH t6 30 02:14:55
+v212_warm_021459 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228t6_ter_drop_jog_te4b_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED candidate
+v228t6_ter_drop_walk_te4b_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED candidate
+v228t6_map_r1_te4b_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 10 (worst 57) | by owner {'montage': 2, 'in-clip': 8} | FINISHED candidate
+v228t6_ter_bump_jog_te4b_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v228t6_ins_ws2_ins5_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED candidate
+v228t6_ins_ws_ins5_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+v228t6_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 10 (worst 57) | by owner {'montage': 2, 'in-clip': 8} | FINISHED production
+T6_DONE 02:20:08
+GEN2 start 02:20:12
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_h1.log
+throttle off False
+RELAUNCH h1 30 02:22:59
+Traceback (most recent call last):
+AssertionError: (('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:Update_MotionMatching.K2Node_VariableSet_9', 'Condition'), ['execute', 'SHM_HoldDB'])
+GEN2 CANCEL2_FAILED 02:23:06
+GEN3 start 02:23:56
+no editor to quit
+RUNNER_READY shmv228_k1.log
+throttle off False
+RELAUNCH k1 30 02:25:28
+Traceback (most recent call last):
+AssertionError: ('reroute call', 2)
+GEN3 CANCEL2_FAILED 02:25:35
+GEN4 start 02:26:15
+no editor to quit
+RUNNER_READY shmv228_m1.log
+throttle off False
+RELAUNCH m1 30 02:27:51
+CANCEL228B {"reloaded": [], "snapshot": "wired", "throttle": "wired", "reroute_interrupt": "set", "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knobs": {"SHM227_RevHold": 0.0, "SHM228_ClipSpeed": 0.0, "SHM228_RelHold": 0.0, "SHM228_CancelOn": 0.0, "SHM228_AgainstMax": 0.08}, "ok": true, "saved": true, "dirty": []}
+G228 {"dry": true, "clips": {"SHM226_JogRev_B_F_P6": {"B": "l", "S": "r", "tB": 0.395, "foot_err": 0.74, "planted_drift": 13.03, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_B_F_P14": {"B": "l", "S": "r", "tB": 0.12, "foot_err": 0.74, "planted_drift": 0.0, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P2": {"B": "r", "S": "l", "tB": 0.198, "foot_err": 9.06, "planted_drift": 0.0, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P6": {"B": "l", "S": "r", "tB": 0.396, "foot_err": 0.0, "planted_drift": 14.14, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P10": {"B": "l", "S": "r", "tB": 0.198, "foot_err": 7.4, "planted_drift": 0.22, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P13": {"B": "l", "S": "r", "tB": 0.12, "foot_err": 0.51, "planted_drift": 0.0, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P18": {"B": "l", "S": "r", "tB": 0.45, "foot_err": 2.35, "planted_drift": 35.27, "penetration": -0.07, "saved": null, "err": null}, "SHM226_JogRev_F_B_P26": {"B": "l", "S": "r", "tB": 0.198, "foot_err": 1.16, "planted_drift": 0.08, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P29": {"B": "l", "S": "r", "tB": 0.12, "foot_err": 3.01, "planted_drift": 0.1, "penetration": -0.0, "saved": null, "err": null}, "SHM226_JogRev_F_B_P30": {"B": "r", "S": "l", "tB": 0.396, "foot_err": 0.0, "planted_drift": 13.2, "penetration": -0.0, "saved": null, "err": null}}}
+G228 {"dry": false, "clips": {"SHM226_JogRev_B_F_P6": {"B": "l", "S": "r", "tB": 0.395, "foot_err": 0.74, "planted_drift": 13.03, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_B_F_P14": {"B": "l", "S": "r", "tB": 0.12, "foot_err": 0.74, "planted_drift": 0.0, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P2": {"B": "r", "S": "l", "tB": 0.198, "foot_err": 9.06, "planted_drift": 0.0, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P6": {"B": "l", "S": "r", "tB": 0.396, "foot_err": 0.0, "planted_drift": 14.14, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P10": {"B": "l", "S": "r", "tB": 0.198, "foot_err": 7.4, "planted_drift": 0.22, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P13": {"B": "l", "S": "r", "tB": 0.12, "foot_err": 0.51, "planted_drift": 0.0, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P18": {"B": "l", "S": "r", "tB": 0.45, "foot_err": 2.35, "planted_drift": 35.27, "penetration": -0.07, "saved": true, "err": null}, "SHM226_JogRev_F_B_P26": {"B": "l", "S": "r", "tB": 0.198, "foot_err": 1.16, "planted_drift": 0.08, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P29": {"B": "l", "S": "r", "tB": 0.12, "foot_err": 3.01, "planted_drift": 0.1, "penetration": -0.0, "saved": true, "err": null}, "SHM226_JogRev_F_B_P30": {"B": "r", "S": "l", "tB": 0.396, "foot_err": 0.0, "planted_drift": 13.2, "penetration": -0.0, "saved": true, "err": null}}}
+RDB226 {"dry": false, "missing": [], "dbs": {"PSD_SHM226_JogRevBwd": ["SHM226_JogRev_B_F_P0", "SHM226_JogRev_B_F_P1", "SHM226_JogRev_B_F_P2", "SHM226_JogRev_B_F_P3", "SHM226_JogRev_B_F_P4", "SHM226_JogRev_B_F_P5", "SHM226_JogRev_B_F_P6", "SHM226_JogRev_B_F_P7", "SHM226_JogRev_B_F_P8", "SHM226_JogRev_B_F_P9", "SHM226_JogRev_B_F_P10", "SHM226_JogRev_B_F_P11", "SHM226_JogRev_B_F_P12", "SHM226_JogRev_B_F_P13", "SHM226_JogRev_B_F_P14", "SHM226_JogRev_B_F_P15", "SHM226_JogRev_B_F_P16", "SHM226_JogRev_B_F_P17", "SHM226_JogRev_B_F_P18", "SHM226_JogRev_B_F_P19", "SHM226_JogRev_B_F_P20", "SHM226_JogRev_
+REVCURVE227 {"dry": false, "n": 64, "saved": 64, "lens": {"SHM226_JogRev_B_F_P0": 1.767, "SHM226_JogRev_B_F_P1": 1.767, "SHM226_JogRev_B_F_P2": 1.767, "SHM226_JogRev_B_F_P3": 1.767, "SHM226_JogRev_B_F_P4": 1.767, "SHM226_JogRev_B_F_P5": 1.767, "SHM226_JogRev_B_F_P6": 1.767, "SHM226_JogRev_B_F_P7": 1
+SPEEDCURVE228 {"dry": false, "n": 64, "saved": 64, "err": {}, "sample": {"SHM226_JogRev_B_F_P0": {"len": 1.767, "v0..5": [-223, -206, -176, -153, -128, -104], "v_mid": 119, "v_end": 299}, "SHM226_JogRev_B_F_P4": {"len": 1.767, "v0..5": [-223, -206, -176, -153, -128, -104], "v_mid": 119, "v_end": 299
+GEN4 assets done 02:29:09
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_m2.log
+throttle off False
+RELAUNCH m2 30 02:30:47
+v212_warm_023051 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228m2_j24_dbl_rhCR_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED candidate
+v228m2_j24_rel_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v228m2_j24_sw_ph2_rhCR_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228m2_j24_ph0_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228m2_j24_ph3_rhCR_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228m2_j24_sw_ph0_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228m2_j24_dbl_rhC_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 2 (worst 65) | by owner {'in-clip': 2} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_m120.log
+throttle off False
+RELAUNCH m120 120 02:37:51
+v212_warm_023755 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v228m120_j24_sw_ph2_rhCR_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 12 (worst 86) | by owner {'in-clip': 12} | FINISHED candidate
+v228m120_j24_ph3_rhCR_r1 | rows 1467 rate 120.1/s | pops >25 m/s2: 14 (worst 78) | by owner {'in-clip': 14} | FINISHED candidate
+v228m120_j24_ph0_rhCR_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 87) | by owner {'in-clip': 11} | FINISHED candidate
+MEM_RESTART editor 43 GB 02:42:23
+MEM_RESTART: editor did not quit
+GEN4_DONE 02:48:55
+C3 start 02:53:16
+no editor to quit
+RUNNER_READY shmv228_n1.log
+throttle off False
+RELAUNCH n1 30 02:55:21
+Traceback (most recent call last):
+AssertionError: (('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:SHM_Snapshot.K2Node_CommutativeAssociativeBinaryOperator_47', 'Value'), ['A', 'B'])
+C3 FIX_FAILED 02:55:23
+C4 start 02:56:54
+no editor to quit
+RUNNER_READY shmv228_q1.log
+throttle off False
+RELAUNCH q1 30 02:58:37
+Traceback (most recent call last):
+AssertionError: family gate consumers
+C4 FIX_FAILED 02:58:40
+C5 start 03:00:28
+no editor to quit
+RUNNER_READY shmv228_r1.log
+throttle off False
+RELAUNCH r1 30 03:02:13
+CANCEL228C {"reloaded": [], "safety": "push-phase only", "family": "not changed (consumer scan found none; open item: rerouted clip exit via the family route)", "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_r2.log
+throttle off False
+RELAUNCH r2 30 03:03:52
+v212_warm_030357 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228r2_j24_dbl_rhCR_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228r2_j24_rel_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v228r2_j24_ph0_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228r2_j24_ph3_rhCR_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228r2_j24_sw_ph2_rhCR_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v228r2_j24_sw_ph0_rhCR_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_r120.log
+throttle off False
+RELAUNCH r120 120 03:11:14
+v212_warm_031118 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v228r120_j24_dbl_rhCR_r1 | rows 1498 rate 120.1/s | pops >25 m/s2: 10 (worst 82) | by owner {'in-clip': 10} | FINISHED candidate
+v228r120_j24_sw_ph2_rhCR_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 12 (worst 87) | by owner {'in-clip': 12} | FINISHED candidate
+v228r120_j24_ph0_rhCR_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 87) | by owner {'in-clip': 11} | FINISHED candidate
+MEM_RESTART editor 43 GB 03:16:32
+v212_warm_032037 | rows 1679 rate 120.1/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_r60.log
+throttle off False
+RELAUNCH r60 60 03:24:29
+v212_warm_032433 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v228r60_j24_dbl_rhCR_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 18 (worst 48) | by owner {'in-clip': 18} | FINISHED candidate
+v228r60_j24_rel_rhCR_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 18 (worst 48) | by owner {'in-clip': 18} | FINISHED candidate
+v228r60_j24_ph3_rhCR_r1 | rows 733 rate 60.1/s | pops >25 m/s2: 16 (worst 37) | by owner {'in-clip': 16} | FINISHED candidate
+C5_DONE 03:27:31
+FIN start groups={'motion': True, 'cancel': True, 'terrain': True, 'stepedge': True, 'inspect': True} 03:28:48
+no editor to quit
+RUNNER_READY shmv228_pr.log
+throttle off False
+RELAUNCH pr 30 03:30:41
+PROMO228 {"promo226": {"before": {"SHM224_DB_JRBwd": "PSD_SHM224_JogRevBwdO", "SHM224_DB_JRBwdM": "PSD_SHM224_JogRevBwdM", "SHM224_DB_JRFwd": "PSD_SHM224_JogRevFwdO", "SHM224_DB_JRFwdM": "PSD_SHM224_JogRevFwdM", "StepPrepEnabled": false, "CamInspectEnabled": true, "SwingLiftEnabled": true, "CamFollowEnabled": true, "StepEdgeOn": false, "InspectZoomOn": false, "SwingLiftMargin": 6.0}, "decision": {"Reversal226": true}, "after": {"SHM224_DB_JRBwd": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRBwdM": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRFwd": "PSD_SHM226_JogRevFwd", "SHM224_DB_JRFwdM": "PSD_SHM226_JogRevFwd", "StepPrepEnabled": false, "CamInspectEnabled": true, "SwingLiftEnabled": true, "CamFollowEnabled": true, "StepEdgeOn": false, "InspectZoomOn": false, "SwingLiftMargin": 6.0}, "status": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "<BlueprintStatus.BS_UP_TO_DATE: 3>"], "ok": true}, "groups": {"motion": true, "cancel": true, "terrain": true, "stepedge": true, "inspect": true}, "abp_after": {"SHM227_RevHold": 1.0, "SHM227_FPOff": 0.0, "SHM228_ClipSpeed": 1.0, "SHM228_RelHold": 1.0, "SHM228_CancelOn": 1.0, "SHM228_LeadFrames": 1.0}, "db_after": {"SHM224_DB_JRBwd": "PSD_SHM226_JogRevB
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_vf.log
+throttle off False
+RELAUNCH vf 30 03:32:31
+VERIFY226 {"pie": false, "dirty": [], "abp": {"SHM28_StartMode": 1.0, "SHM222_TapGate": 0.0, "SHM220_RecHold": 1.0, "SHM221_RecThrottle": 1.0, "SHM221_PivHold": 0.0, "SHM220_PivotOn": 1.0, "SHM220_PivotT0": 0.0, "SHM220_PivotNoRd": 0.0, "SHM_SprintDBMinSpeed": 230.0, "SHM28_StartL": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_L.A_SHM222_WalkStart_L", "SHM28_StartR": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_R.A_SHM222_WalkStart_R", "SHM223_RevRearGate": 1.0, "SHM223_JrHold": 0.0, "JR": "/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ.PSD_SHM_Redirect_JogReversalQ", "SHM224_JRMode": 3.0, "SHM224_DB_JRFwd": "PSD_SHM226_JogRevFwd", "SHM224_DB_JRBwd": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRLat": "PSD_SHM224_JogRevLat", "SHM224_DB_JRFwdM": 
+VERIFY_FAILED
+FIN2 start groups={'motion': True, 'cancel': True, 'terrain': True, 'stepedge': True, 'inspect': True} 03:33:59
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_vf.log
+throttle off False
+RELAUNCH vf 30 03:36:09
+VERIFY226 {"pie": false, "dirty": [], "abp": {"SHM28_StartMode": 1.0, "SHM222_TapGate": 0.0, "SHM220_RecHold": 1.0, "SHM221_RecThrottle": 1.0, "SHM221_PivHold": 0.0, "SHM220_PivotOn": 1.0, "SHM220_PivotT0": 0.0, "SHM220_PivotNoRd": 0.0, "SHM_SprintDBMinSpeed": 230.0, "SHM28_StartL": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_L.A_SHM222_WalkStart_L", "SHM28_StartR": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_R.A_SHM222_WalkStart_R", "SHM223_RevRearGate": 1.0, "SHM223_JrHold": 0.0, "JR": "/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ.PSD_SHM_Redirect_JogReversalQ", "SHM224_JRMode": 3.0, "SHM224_DB_JRFwd": "PSD_SHM226_JogRevFwd", "SHM224_DB_JRBwd": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRLat": "PSD_SHM224_JogRevLat", "SHM224_DB_JRFwdM": 
+VERIFY228 {"abp": {"SHM227_RevHold": 1.0, "SHM227_FPOff": 0.0, "SHM227_HoldExit": 0.25, "SHM227_FlatMax": 6.0, "SHM227_ThrottleT": 2.5, "SHM228_ClipSpeed": 1.0, "SHM228_LeadFrames": 1.0, "SHM228_RelHold": 1.0, "SHM228_CancelOn": 1.0}, "gr228": 1.0, "shm": {"SwingLiftMax": "36.0", "StepEdgeOn": "True", "StepEdgeShift": "18.0", "InspectIdOn": "1.0", "InspectFocusMode": "1.0", "InspectJump": "45.0", "InspectRadius": "12.0", "InspectZoomOn": "False", "StepEdgeShort": "12.0", "InspectSwitchOn": "0.25"}, "bad": [], "curve_missing": [], "v226_bad": ["abp.SHM224_DB_JRFwd", "abp.SHM224_DB_JRBwd", "abp.SHM224_DB_JRFwdM", "abp.SHM224_DB_JRBwdM", "abp225.SHM224_DB_JRBwd", "abp225.SHM224_DB_JRBwdM", "abp225.SHM224_DB_JRFwd", "abp225.SHM224_DB_JRFwdM"], "ALL_OK": false}
+VERIFY_FAILED
+FIN3 start groups={'motion': True, 'cancel': True, 'terrain': True, 'stepedge': True, 'inspect': True} 05:37:53
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_vf.log
+throttle off False
+RELAUNCH vf 30 05:40:21
+VERIFY226 {"pie": false, "dirty": [], "abp": {"SHM28_StartMode": 1.0, "SHM222_TapGate": 0.0, "SHM220_RecHold": 1.0, "SHM221_RecThrottle": 1.0, "SHM221_PivHold": 0.0, "SHM220_PivotOn": 1.0, "SHM220_PivotT0": 0.0, "SHM220_PivotNoRd": 0.0, "SHM_SprintDBMinSpeed": 230.0, "SHM28_StartL": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_L.A_SHM222_WalkStart_L", "SHM28_StartR": "/Game/GraceRanger/SHME/Animations/V222/A_SHM222_WalkStart_R.A_SHM222_WalkStart_R", "SHM223_RevRearGate": 1.0, "SHM223_JrHold": 0.0, "JR": "/Game/GraceRanger/SHME/Animations/Redirect/PSD_SHM_Redirect_JogReversalQ.PSD_SHM_Redirect_JogReversalQ", "SHM224_JRMode": 3.0, "SHM224_DB_JRFwd": "PSD_SHM226_JogRevFwd", "SHM224_DB_JRBwd": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRLat": "PSD_SHM224_JogRevLat", "SHM224_DB_JRFwdM": 
+VERIFY228 {"abp": {"SHM227_RevHold": 1.0, "SHM227_FPOff": 0.0, "SHM227_HoldExit": 0.25, "SHM227_FlatMax": 6.0, "SHM227_ThrottleT": 2.5, "SHM228_ClipSpeed": 1.0, "SHM228_LeadFrames": 1.0, "SHM228_RelHold": 1.0, "SHM228_CancelOn": 1.0}, "gr228": 1.0, "shm": {"SwingLiftMax": "36.0", "StepEdgeOn": "True", "StepEdgeShift": "18.0", "InspectIdOn": "1.0", "InspectFocusMode": "1.0", "InspectJump": "45.0", "InspectRadius": "12.0", "InspectZoomOn": "False", "StepEdgeShort": "12.0", "InspectSwitchOn": "0.25"}, "dbs": {"SHM224_DB_JRBwd": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRBwdM": "PSD_SHM226_JogRevBwd", "SHM224_DB_JRFwd": "PSD_SHM226_JogRevFwd", "SHM224_DB_JRFwdM": "PSD_SHM226_JogRevFwd"}, "bad": [], "curve_missing": [], "v226_bad_rest": [], "ALL_OK": true}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_fin.log
+throttle off False
+RELAUNCH fin 30 05:42:17
+v212_warm_054220 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_j24_sw_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_j24_sw_ph2_o_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_j24_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_j24_ph3_o_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v228fin_j24_dbl_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_j24_ad_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED production
+v228fin_j24_m180w_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 4 (worst 305) | by owner {'in-clip': 4} | FINISHED production
+v228fin_j23_m180_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 6 (worst 292) | by owner {'in-clip': 6} | FINISHED production
+v228fin_r_cutrev_r_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 7 (worst 57) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v228fin_s23_jstart_o_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 40 GB 05:48:16
+v212_warm_055142 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+v228fin_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+v228fin_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v228fin_ter_drop_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED production
+v228fin_ter_step2_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED production
+v228fin_ter_bump_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v228fin_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 10 (worst 57) | by owner {'montage': 2, 'in-clip': 8} | FINISHED production
+MEM_RESTART editor 38 GB 05:56:42
+v212_warm_060003 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228fin_map_r2_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 6 (worst 56) | by owner {'montage': 3, 'in-clip': 3} | FINISHED production
+FIN evidence done 06:01:30
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_finrt.log
+throttle off False
+RELAUNCH finrt real 06:03:43
+v228finrt_j24_ph0_o_r1 | rows 337 rate 29.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_060424 | rows 416 rate 30.8/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228finrt_j24_sw_ph2_o_r1 | rows 337 rate 28.8/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228finrt_j24_dbl_o_r1 | rows 347 rate 28.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228finrt_j24_rel_o_r1 | rows 329 rate 29.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228finrt_ins_ws2_o_r1 | rows 436 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v228finrt_map_r2_o_r1 | rows 559 rate 21.4/s | pops >25 m/s2: 7 (worst 46) | by owner {'montage': 3, 'in-clip': 4} | FINISHED production
+FIN_EVIDENCE_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv228_cap.log
+throttle off False
+RELAUNCH cap 30 06:10:07
+v212_warm_061012 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capfin_j24_sw_ph2_oS_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capfin_j24_sw_ph2_oG_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capfin_j24_ph0_oS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capfin_j24_ph3_oS_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capfin_j24_dbl_oS_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capfin_j24_rel_oS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v212_warm_061400 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capter_ter_drop_jog_oS_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED production
+v228capter_ter_drop_walk_oS_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v212_warm_061535 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capins_ins_ws2_oG_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+MEM_RESTART editor 40 GB 06:16:30
+v212_warm_062007 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v228capins_ins_ws2_oS_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+CAP_DONE
+FIN_DONE 06:21:30

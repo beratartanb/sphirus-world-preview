@@ -1,0 +1,1205 @@
+{
+ "Update_MotionMatching": [
+  {
+   "node": "K2Node_CallFunction_30",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_14:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/Sphirus/Character/VisualMotionAcce",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_3",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_2:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/Sphirus/Character/Correction202609",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_4",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_2:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_26:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_7",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_3:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/Sphirus/Character/Correction/JumpA",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_10",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_5:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/ContactLoco",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_26",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_17:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/Locomotion/",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_33",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_7:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/Locomotion/",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_37",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_8:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/Locomotion/",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_40",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_9:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/CorePerform",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_42",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_45:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/CorePerform",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_44",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_11:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_14:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_46",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_12:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>",
+     "K2Node_IfThenElse_45:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_15:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_50",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_13:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/CorePerform",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_51",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_14:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_4:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_52",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_16:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_16:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_53",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_16:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_3:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_54",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_32:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_24:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_61",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_18:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Animations/LookStrafe/",
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_67",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_20:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_6:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_68",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_20:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_5:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_88",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_62:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_35:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_91",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_23:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_270:SHM211_RouteJog <|GetSHM211_RouteJog>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_97",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_33:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_Select_25:ReturnValue <\u0130\u015flevsellikler|Se\u00e7>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_196",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_28:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_149:PBI_DPP_Database <|GetPBI_DPP_Database>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_197",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_28:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_150:PBI_DPP_Database <|GetPBI_DPP_Database>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_205",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_30:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_160:CP_TC_TransitionDatabase <|GetCP_TC_TransitionDatabase>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_289",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_44:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": "/Game/GraceRanger/Experimental/BodyInert",
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_238",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_31:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_BreakStruct_1:SelectedDatabase <kler|Yap\u0131|BreakPoseSearchBlueprintResult>"
+    ],
+    "InterruptMode": "DoNotInterrupt"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_295",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_47:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_199:SHM_RecoveryDB <|GetSHM_RecoveryDB>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_298",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_41:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_201:SHM_StartTransferDB_L <|GetSHM_StartTransferDB_L>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_299",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_43:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_202:SHM_StartTransferDB_R <|GetSHM_StartTransferDB_R>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_302",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_50:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_204:SHM_SprintPivotDB <|GetSHM_SprintPivotDB>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_303",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_51:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_205:SHM_RunPivotDB <|GetSHM_RunPivotDB>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_304",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_52:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_207:SHM_TurnDB <|GetSHM_TurnDB>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CommutativeAssociativeBinaryOperator_172",
+   "type": "Matematik|Boolean|ORBoolean",
+   "pins": {
+    "A": [
+     "K2Node_CallFunction_305:ReturnValue <Matematik|Kayd\u0131r|InRange(Float)>"
+    ],
+    "B": [
+     "K2Node_CallFunction_306:ReturnValue <Matematik|Kayd\u0131r|InRange(Float)>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_308",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_53:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_211:SHM_RecoveryDB_L <|GetSHM_RecoveryDB_L>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_309",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_54:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_213:SHM_RecoveryDB_R <|GetSHM_RecoveryDB_R>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_215",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CallFunction_311",
+   "type": "Matematik|Kayd\u0131r|InRange(Float)",
+   "pins": {
+    "Value": [
+     "K2Node_VariableGet_216:SHM_Family <|GetSHM_Family>"
+    ],
+    "Min": "-1.0",
+    "Max": "0.5",
+    "InclusiveMin": "true",
+    "InclusiveMax": "true"
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_217",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CallFunction_312",
+   "type": "Matematik|Kayd\u0131r|InRange(Float)",
+   "pins": {
+    "Value": [
+     "K2Node_VariableGet_217:SHM_RedirectFrames <|GetSHM_RedirectFrames>"
+    ],
+    "Min": "1.5",
+    "Max": "2.5",
+    "InclusiveMin": "true",
+    "InclusiveMax": "true"
+   }
+  },
+  {
+   "node": "K2Node_VariableSet_9",
+   "type": "|SetSHM_HoldDB",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_56:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "SHM_HoldDB": [
+     "K2Node_VariableGet_218:CurrentSelectedDatabase <|GetCurrentSelectedDatabase>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_313",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_9:then <|SetSHM_HoldDB>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_219:SHM_HoldDB <|GetSHM_HoldDB>"
+    ],
+    "InterruptMode": "DoNotInterrupt"
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_219",
+   "type": "|GetSHM_HoldDB",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CallFunction_314",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_56:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_220:SHM_HoldDB <|GetSHM_HoldDB>"
+    ],
+    "InterruptMode": "DoNotInterrupt"
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_220",
+   "type": "|GetSHM_HoldDB",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_222",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CallFunction_320",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_10:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_228:SHM_RedirectDB_SR <|GetSHM_RedirectDB_SR>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_321",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_11:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_230:SHM_RedirectDB_SL <|GetSHM_RedirectDB_SL>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_322",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_12:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_232:SHM_RedirectDB_JR <|GetSHM_RedirectDB_JR>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_323",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_13:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_234:SHM_RedirectDB_JL <|GetSHM_RedirectDB_JL>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_325",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_14:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_276:SHM212_RouteSRL <|GetSHM212_RouteSRL>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_326",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_15:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_278:SHM212_RouteSRR <|GetSHM212_RouteSRR>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_182",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_183",
+   "type": "|GetSHM_HoldValid",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CallFunction_242",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_36:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_189:SHM_CurveDB_R12 <|GetSHM_CurveDB_R12>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_244",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_37:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_190:SHM_CurveDB_R25 <|GetSHM_CurveDB_R25>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_245",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_37:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_191:SHM_CurveDB_R40 <|GetSHM_CurveDB_R40>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_247",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_38:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_192:SHM_CurveDB_L12 <|GetSHM_CurveDB_L12>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_249",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_39:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_193:SHM_CurveDB_L25 <|GetSHM_CurveDB_L25>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_250",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_39:else <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_194:SHM_CurveDB_L40 <|GetSHM_CurveDB_L40>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_253",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_40:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_196:SHM_SprintStartDB_L <|GetSHM_SprintStartDB_L>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_254",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_41:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_197:SHM_JogStartDB_L <|GetSHM_JogStartDB_L>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_257",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_42:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_254:SHM_SprintStartDB_R <|GetSHM_SprintStartDB_R>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_258",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_43:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_255:SHM_JogStartDB_R <|GetSHM_JogStartDB_R>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_259",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_44:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_BreakStruct_1:SelectedDatabase <kler|Yap\u0131|BreakPoseSearchBlueprintResult>"
+    ],
+    "InterruptMode": "DoNotInterrupt"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_263",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_46:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_262:CurrentSelectedDatabase <|GetCurrentSelectedDatabase>"
+    ],
+    "InterruptMode": "DoNotInterrupt"
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_264",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_IfThenElse_62:then <\u0130\u015flevsellikler|Ak\u0131\u015fKontrol\u00fc|Dal>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_274:SHM211_DB_Push <|GetSHM211_DB_Push>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChangeAndInvalidateCo"
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_279",
+   "type": "|GetSHM224_EarlyRev",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CallFunction_265",
+   "type": "Animasyon|MotionMatching|SetDatabaseToSearch",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_16:then <|SetCurrentSelectedDatabase>"
+    ],
+    "MotionMatchingNode": [
+     "K2Node_CallFunction_1:MotionMatchingNode <tionMatching|ConverttoMotionMatchingNode>"
+    ],
+    "Database": [
+     "K2Node_VariableGet_281:SHM_RedirectDB_JR <|GetSHM_RedirectDB_JR>"
+    ],
+    "InterruptMode": "InterruptOnDatabaseChange"
+   }
+  }
+ ],
+ "SHM_Snapshot": [
+  {
+   "node": "K2Node_CommutativeAssociativeBinaryOperator_172",
+   "type": "Matematik|Boolean|ANDBoolean",
+   "pins": {
+    "A": [
+     "K2Node_CommutativeAssociativeBinaryOperator_171:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ],
+    "B": [
+     "K2Node_CommutativeAssociativeBinaryOperator_1:ReturnValue <Matematik|Boolean|ORBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_276",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_286",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_CommutativeAssociativeBinaryOperator_182",
+   "type": "Matematik|Boolean|ORBoolean",
+   "pins": {
+    "A": [
+     "K2Node_CommutativeAssociativeBinaryOperator_171:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ],
+    "B": [
+     "K2Node_CommutativeAssociativeBinaryOperator_181:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_311",
+   "type": "Matematik|Kayd\u0131r|SelectFloat",
+   "pins": {
+    "A": [
+     "K2Node_PromotableOperator_206:ReturnValue <Matematik|Kayd\u0131r|float+float>"
+    ],
+    "B": "0.0",
+    "bPickA": [
+     "K2Node_CommutativeAssociativeBinaryOperator_10:ReturnValue <Matematik|Boolean|ORBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_CallFunction_312",
+   "type": "Matematik|Kayd\u0131r|SelectFloat",
+   "pins": {
+    "A": "1.0",
+    "B": [
+     "K2Node_CallFunction_311:ReturnValue <Matematik|Kayd\u0131r|SelectFloat>"
+    ],
+    "bPickA": [
+     "K2Node_CommutativeAssociativeBinaryOperator_14:ReturnValue <Matematik|Boolean|ORBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableSet_104",
+   "type": "|SetSHM_RedirectFrames",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_103:then <|SetSHM_RdInt0>"
+    ],
+    "SHM_RedirectFrames": [
+     "K2Node_CallFunction_355:ReturnValue <Matematik|Kayd\u0131r|SelectFloat>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_313",
+   "type": "|GetSHM_HoldDB",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableSet_106",
+   "type": "|SetSHM_HoldValid",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_105:then <|SetSHM_RdLatSkip>"
+    ],
+    "SHM_HoldValid": [
+     "K2Node_CallFunction_356:ReturnValue <\u0130\u015flevsellikler|IsValid>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_CommutativeAssociativeBinaryOperator_206",
+   "type": "Matematik|Boolean|ORBoolean",
+   "pins": {
+    "A": [
+     "K2Node_CommutativeAssociativeBinaryOperator_205:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ],
+    "B": [
+     "K2Node_CommutativeAssociativeBinaryOperator_181:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_371",
+   "type": "|GetSHM_RedirectFrames",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_493",
+   "type": "|GetSHM_HoldValid",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_14",
+   "type": "|GetSHM227_HoldExit",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableSet_8",
+   "type": "|SetSHM227_Hold",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_11:then <|SetSHM227_Dead>"
+    ],
+    "SHM227_Hold": [
+     "K2Node_CommutativeAssociativeBinaryOperator_22:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_22",
+   "type": "|GetSHM227_Hold",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_23",
+   "type": "|GetSHM227_Hold",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableSet_9",
+   "type": "|SetSHM227_Restart",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_20:then <|SetClipSpeedOn>"
+    ],
+    "SHM227_Restart": [
+     "K2Node_CommutativeAssociativeBinaryOperator_13:ReturnValue <Matematik|Boolean|ANDBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_28",
+   "type": "|GetSHM227_Restart",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_34",
+   "type": "|GetSHM227_Dead",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableSet_11",
+   "type": "|SetSHM227_Dead",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_14:then <|SetSHM227_IntentEnd>"
+    ],
+    "SHM227_Dead": [
+     "K2Node_CommutativeAssociativeBinaryOperator_26:ReturnValue <Matematik|Boolean|ORBoolean>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_35",
+   "type": "|GetSHM227_Dead",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_40",
+   "type": "|GetSHM227_Dead",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableSet_14",
+   "type": "|SetSHM227_IntentEnd",
+   "pins": {
+    "execute": [
+     "K2Node_VariableSet_7:then <|SetSHM227_Rev>"
+    ],
+    "SHM227_IntentEnd": [
+     "K2Node_CallFunction_31:ReturnValue <Matematik|Kayd\u0131r|InRange(Float)>"
+    ]
+   }
+  },
+  {
+   "node": "K2Node_VariableGet_42",
+   "type": "|GetSHM227_IntentEnd",
+   "pins": {}
+  },
+  {
+   "node": "K2Node_VariableGet_49",
+   "type": "|GetSHM227_Dead",
+   "pins": {}
+  }
+ ]
+}

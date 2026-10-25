@@ -1,0 +1,172 @@
+{
+ "PSD_SHM226_JogRevFwd": {
+  "schema": {
+   "sample_rate": "30",
+   "data_preprocessor": "<PoseSearchDataPreprocessor.NORMALIZE_WITH_COMMON_SCHEMA: 3>",
+   "mirror_data_table": "ERR PoseSearchSchema: Failed to find property 'mirror_data_table",
+   "skeleton": "ERR PoseSearchSchema: Failed to find property 'skeleton' for att",
+   "continuing_pose_cost_bias": "ERR PoseSearchSchema: Failed to find property 'continuing_pose_c",
+   "base_cost_bias": "ERR PoseSearchSchema: Failed to find property 'base_cost_bias' f",
+   "looping_cost_bias": "ERR PoseSearchSchema: Failed to find property 'looping_cost_bias"
+  },
+  "exclude_from_database_parameters": "<Struct 'FloatInterval' (0x00000138361652CC) {min: 0.000000, max: -0.300000}>",
+  "continuing_pose_cost_bias": "-0.05000000074505806",
+  "base_cost_bias": "0.0",
+  "looping_cost_bias": "-0.004999999888241291",
+  "pose_jump_threshold_time": "ERR PoseSearchDatabase: Failed to find property 'pose_jump_thres",
+  "pose_reselect_history": "ERR PoseSearchDatabase: Failed to find property 'pose_reselect_h",
+  "search_index_derived_data_key": "ERR PoseSearchDatabase: Failed to find property 'search_index_de",
+  "normalization_set": "None",
+  "additional_cost_bias": "ERR PoseSearchDatabase: Failed to find property 'additional_cost",
+  "exclude_detail": "ERR FloatInterval: Failed to find property 'sequence_start_interval' for attribute '",
+  "schema_name": "PSS_Default",
+  "channels": [
+   {
+    "class": "PoseSearchFeatureChannel_Trajectory",
+    "samples": "[{}, {}, {}, {}, {}]",
+    "weight": "1.0"
+   },
+   {
+    "class": "PoseSearchFeatureChannel_Group"
+   }
+  ],
+  "num_poses": "n/a",
+  "assets_err": "PoseSearchDatabase: Failed to find property 'animation_assets' for attribute 'animation_assets' on 'PoseSearchDatabase'"
+ },
+ "PSD_SHM226_JogRevBwd": {
+  "schema": {
+   "sample_rate": "30",
+   "data_preprocessor": "<PoseSearchDataPreprocessor.NORMALIZE_WITH_COMMON_SCHEMA: 3>",
+   "mirror_data_table": "ERR PoseSearchSchema: Failed to find property 'mirror_data_table",
+   "skeleton": "ERR PoseSearchSchema: Failed to find property 'skeleton' for att",
+   "continuing_pose_cost_bias": "ERR PoseSearchSchema: Failed to find property 'continuing_pose_c",
+   "base_cost_bias": "ERR PoseSearchSchema: Failed to find property 'base_cost_bias' f",
+   "looping_cost_bias": "ERR PoseSearchSchema: Failed to find property 'looping_cost_bias"
+  },
+  "exclude_from_database_parameters": "<Struct 'FloatInterval' (0x0000013834FBF64C) {min: 0.000000, max: -0.300000}>",
+  "continuing_pose_cost_bias": "-0.05000000074505806",
+  "base_cost_bias": "0.0",
+  "looping_cost_bias": "-0.004999999888241291",
+  "pose_jump_threshold_time": "ERR PoseSearchDatabase: Failed to find property 'pose_jump_thres",
+  "pose_reselect_history": "ERR PoseSearchDatabase: Failed to find property 'pose_reselect_h",
+  "search_index_derived_data_key": "ERR PoseSearchDatabase: Failed to find property 'search_index_de",
+  "normalization_set": "None",
+  "additional_cost_bias": "ERR PoseSearchDatabase: Failed to find property 'additional_cost",
+  "exclude_detail": "ERR FloatInterval: Failed to find property 'sequence_start_interval' for attribute '",
+  "schema_name": "PSS_Default",
+  "channels": [
+   {
+    "class": "PoseSearchFeatureChannel_Trajectory",
+    "samples": "[{}, {}, {}, {}, {}]",
+    "weight": "1.0"
+   },
+   {
+    "class": "PoseSearchFeatureChannel_Group"
+   }
+  ],
+  "num_poses": "n/a",
+  "assets_err": "PoseSearchDatabase: Failed to find property 'animation_assets' for attribute 'animation_assets' on 'PoseSearchDatabase'"
+ },
+ "PSD_SHM224_JogRevFwdO": {
+  "schema": {
+   "sample_rate": "30",
+   "data_preprocessor": "<PoseSearchDataPreprocessor.NORMALIZE_WITH_COMMON_SCHEMA: 3>",
+   "mirror_data_table": "ERR PoseSearchSchema: Failed to find property 'mirror_data_table",
+   "skeleton": "ERR PoseSearchSchema: Failed to find property 'skeleton' for att",
+   "continuing_pose_cost_bias": "ERR PoseSearchSchema: Failed to find property 'continuing_pose_c",
+   "base_cost_bias": "ERR PoseSearchSchema: Failed to find property 'base_cost_bias' f",
+   "looping_cost_bias": "ERR PoseSearchSchema: Failed to find property 'looping_cost_bias"
+  },
+  "exclude_from_database_parameters": "<Struct 'FloatInterval' (0x0000013834FBA84C) {min: 0.000000, max: -0.300000}>",
+  "continuing_pose_cost_bias": "-0.05000000074505806",
+  "base_cost_bias": "0.0",
+  "looping_cost_bias": "-0.004999999888241291",
+  "pose_jump_threshold_time": "ERR PoseSearchDatabase: Failed to find property 'pose_jump_thres",
+  "pose_reselect_history": "ERR PoseSearchDatabase: Failed to find property 'pose_reselect_h",
+  "search_index_derived_data_key": "ERR PoseSearchDatabase: Failed to find property 'search_index_de",
+  "normalization_set": "None",
+  "additional_cost_bias": "ERR PoseSearchDatabase: Failed to find property 'additional_cost",
+  "exclude_detail": "ERR FloatInterval: Failed to find property 'sequence_start_interval' for attribute '",
+  "schema_name": "PSS_Default",
+  "channels": [
+   {
+    "class": "PoseSearchFeatureChannel_Trajectory",
+    "samples": "[{}, {}, {}, {}, {}]",
+    "weight": "1.0"
+   },
+   {
+    "class": "PoseSearchFeatureChannel_Group"
+   }
+  ],
+  "num_poses": "n/a",
+  "assets_err": "PoseSearchDatabase: Failed to find property 'animation_assets' for attribute 'animation_assets' on 'PoseSearchDatabase'"
+ },
+ "clip_P4": {
+  "enable_root_motion": "True",
+  "root_motion_root_lock": "<RootMotionRootLock.REF_POSE: 0>",
+  "force_root_lock": "True",
+  "use_normalized_root_motion_scale": "True",
+  "rate_scale": "1.0",
+  "sequence_length": "1.9666666984558105",
+  "number_of_sampled_keys": "60",
+  "additive_anim_type": "<AdditiveAnimationType.AAT_NONE: 0>",
+  "interpolation": "<AnimInterpolationType.LINEAR: 0>",
+  "root_motion_total": "ERR 'AnimSequence' object has no attribute 'extract_root_motion'",
+  "notifies": "ERR AnimSequence: Property 'Notifies' for attribute 'notifies' on 'AnimSequence' is ",
+  "curves": [
+   "footspeed_l",
+   "footspeed_r",
+   "disable_footlock",
+   "SHM226_Rev"
+  ],
+  "root_track_first_last": [
+   "<Struct 'Vector' (0x0000013710818740) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+   "<Struct 'Vector' (0x0000013710818740) {x: 0.000000, y: 55.049332, z: 0.000000}>",
+   "<Struct 'Vector' (0x0000013710818740) {x: 0.000000, y: -42.604000, z: 0.000000}>"
+  ]
+ },
+ "profile_cdo": {
+  "RedirectInputNow": "ERR PrimaryDataAsset: Failed to find property 'RedirectInputNow'",
+  "GR215_RevBrakeAccel": "0.0",
+  "GR215_RevBrakeFriction": "0.6",
+  "GR215_RevBrakeDot": "-0.34",
+  "GR215_RevBrakeMinSpeed": "60.0",
+  "StraightFriction": "0.0",
+  "RedirectFriction": "0.0",
+  "CutLatAccelMax": "0.0",
+  "TurnLatAccelMax": "0.0",
+  "TurnSoftK": "0.0",
+  "TurnRateFloor": "30.0",
+  "RedirectSpeedDecay": "ERR PrimaryDataAsset: Failed to find property 'RedirectSpeedDeca",
+  "GR223_PivotXY": "0.0",
+  "GR_TargetGait": "ERR PrimaryDataAsset: Failed to find property 'GR_TargetGait' fo"
+ },
+ "da_gr": {
+  "RedirectInputNow": "ERR PrimaryDataAsset: Failed to find property 'RedirectInputNow'",
+  "GR215_RevBrakeAccel": "0.0",
+  "GR215_RevBrakeFriction": "0.6",
+  "GR215_RevBrakeDot": "-0.34",
+  "GR215_RevBrakeMinSpeed": "60.0",
+  "StraightFriction": "2.3",
+  "RedirectFriction": "4.6",
+  "CutLatAccelMax": "450.0",
+  "TurnLatAccelMax": "1400.0",
+  "TurnSoftK": "6.0",
+  "TurnRateFloor": "40.0",
+  "RedirectSpeedDecay": "ERR PrimaryDataAsset: Failed to find property 'RedirectSpeedDeca",
+  "GR223_PivotXY": "1.0",
+  "GR_TargetGait": "ERR PrimaryDataAsset: Failed to find property 'GR_TargetGait' fo"
+ },
+ "da_shm": {
+  "RedirectSpeedDecay": "600.0",
+  "RedirectHoldEnabled": "True",
+  "JogReversalMode": "ERR PrimaryDataAsset: Failed to find property 'JogReversalMode' ",
+  "RedirectMaxDwell": "0.7",
+  "InspectRadius": "12.0",
+  "InspectJump": "45.0",
+  "InspectZoomOn": "False",
+  "StepEdgeOn": "False",
+  "SwingLiftMargin": "6.0",
+  "StepPrepEnabled": "False"
+ }
+}
