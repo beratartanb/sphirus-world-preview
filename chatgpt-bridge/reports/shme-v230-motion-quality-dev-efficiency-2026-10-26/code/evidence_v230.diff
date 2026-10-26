@@ -1,0 +1,90 @@
+--- Saved/Codex/SHME_V230_20261026/req/evidence.pre_ltp230.py	2026-09-25 19:14:14.053365500 +0300
++++ Tools/SHME_V1_20260925/evidence.py	2026-10-26 06:22:55.535175200 +0300
+@@ -1,42 +1,45 @@
+-"""evidence.py <label> : parse LTP telemetry for the run from sphirus.log, convert newest capture (no retime), stage summary."""
+-import pathlib,sys,json,subprocess,re,itertools,os,calendar,shutil
+-P=pathlib.Path(__file__).resolve().parents[2];N=P/'Saved/Codex/SHME_V1_20260925';E=N/'Evidence';E.mkdir(exist_ok=True)
+-sys.path.insert(0,str(P/'Saved/Codex/GraceRanger_QA_20260914/Dependencies'));import imageio_ffmpeg
+-label=sys.argv[1];pie=json.loads((N/(label+'_pie.json')).read_text())
+-rows=[]
+-with open(P/'Saved/Logs'/os.environ.get('LR_LOG','sphirus.log'),'rb') as f:
+-    f.seek(pie['log_start']);text=f.read().decode('utf8','replace')
+-for l in text.splitlines():
+-    if 'LTP|'+label+'|' not in l:continue
+-    r=dict(x.split('=',1) for x in l.split('LTP|'+label+'|')[1].split('|') if '=' in x)
+-    m=re.match(r'\[(\d+)\.(\d+)\.(\d+)-(\d+)\.(\d+)\.(\d+):(\d+)\]',l)
+-    if m:
+-        Y,M,D,h,mi,se,ms=map(int,m.groups());r['wall']=calendar.timegm((Y,M,D,h,mi,se))+ms/1000
+-    for k,v in list(r.items()):
+-        try:r[k]=float(v)
+-        except ValueError:
+-            m=re.fullmatch(r'X=([-\d.]+) Y=([-\d.]+) Z=([-\d.]+)',v)
+-            if m:r[k]=list(map(float,m.groups()))
+-    rows.append(r)
+-(E/(label+'.json')).write_text(json.dumps(rows),encoding='utf8')
+-man={'rows':len(rows)}
+-FD=N/'Frames'/label; FD.mkdir(parents=True,exist_ok=True)
+-SS=P/'Saved/Screenshots/WindowsEditor'
+-t0=rows[0]['wall']-2 if rows else 0; t1=rows[-1]['wall']+2 if rows else 0
+-for f in (SS.glob('ScreenShot*.png') if SS.exists() else []):
+-    mt=os.path.getmtime(f)
+-    if t0<=mt<=t1: shutil.move(str(f),str(FD/('%013d.png'%int(mt*1000))))
+-frames=sorted(FD.glob('*.png'))
+-fm=[]
+-walls=[r.get('wall',0) for r in rows]
+-import bisect
+-for f in frames:
+-    t=int(f.stem)/1000; i=min(max(bisect.bisect_left(walls,t),0),len(rows)-1)
+-    fm.append({'file':f.name,'wall':t,'stage':rows[i]['stage'],'t':rows[i]['t'],'speed':rows[i]['Speed2D']})
+-(E/(label+'_frames.json')).write_text(json.dumps(fm))
+-man['frames']=len(fm)
+-if rows:
+-    man.update(game_duration=rows[-1]['t'],fps=round(len(rows)/max(1e-6,sum(r['dt'] for r in rows)),1))
+-(E/(label+'_capture.json')).write_text(json.dumps(man,indent=1));print(json.dumps(man))
+-for k,g in itertools.groupby(rows,key=lambda r:r['stage']):
+-    rr=list(g);print(f"{k:28s} t={rr[0]['t']:6.2f} d={rr[-1]['t']-rr[0]['t']:5.2f} v={min(r['Speed2D'] for r in rr):5.0f}-{max(r['Speed2D'] for r in rr):5.0f} CPs={max(r['CP_StartOwned'] for r in rr):.0f} CPe={max(r['CP_StopOwned'] for r in rr):.0f} clips={list(dict.fromkeys(r['clip'] for r in rr))[:5]}")
++"""evidence.py <label> : parse LTP telemetry for the run from sphirus.log, convert newest capture (no retime), stage summary."""
++import pathlib,sys,json,subprocess,re,itertools,os,calendar,shutil
++P=pathlib.Path(__file__).resolve().parents[2];N=P/'Saved/Codex/SHME_V1_20260925';E=N/'Evidence';E.mkdir(exist_ok=True)
++sys.path.insert(0,str(P/'Saved/Codex/GraceRanger_QA_20260914/Dependencies'));import imageio_ffmpeg
++label=sys.argv[1];pie=json.loads((N/(label+'_pie.json')).read_text())
++rows=[]
++_ltp=N/'LTP'/(label+'.ltp')   # V2.30: per-frame LTP lines live in a side file (qa_pie _ltp); fall back to the editor log
++if _ltp.exists() and _ltp.stat().st_size>0: text=_ltp.read_text(encoding='utf8',errors='replace')
++else:
++    with open(P/'Saved/Logs'/os.environ.get('LR_LOG','sphirus.log'),'rb') as f:
++        f.seek(pie['log_start']);text=f.read().decode('utf8','replace')
++for l in text.splitlines():
++    if 'LTP|'+label+'|' not in l:continue
++    r=dict(x.split('=',1) for x in l.split('LTP|'+label+'|')[1].split('|') if '=' in x)
++    m=re.match(r'\[(\d+)\.(\d+)\.(\d+)-(\d+)\.(\d+)\.(\d+):(\d+)\]',l)
++    if m:
++        Y,M,D,h,mi,se,ms=map(int,m.groups());r['wall']=calendar.timegm((Y,M,D,h,mi,se))+ms/1000
++    for k,v in list(r.items()):
++        try:r[k]=float(v)
++        except ValueError:
++            m=re.fullmatch(r'X=([-\d.]+) Y=([-\d.]+) Z=([-\d.]+)',v)
++            if m:r[k]=list(map(float,m.groups()))
++    rows.append(r)
++(E/(label+'.json')).write_text(json.dumps(rows),encoding='utf8')
++man={'rows':len(rows)}
++FD=N/'Frames'/label; FD.mkdir(parents=True,exist_ok=True)
++SS=P/'Saved/Screenshots/WindowsEditor'
++t0=rows[0]['wall']-2 if rows else 0; t1=rows[-1]['wall']+2 if rows else 0
++for f in (SS.glob('ScreenShot*.png') if SS.exists() else []):
++    mt=os.path.getmtime(f)
++    if t0<=mt<=t1: shutil.move(str(f),str(FD/('%013d.png'%int(mt*1000))))
++frames=sorted(FD.glob('*.png'))
++fm=[]
++walls=[r.get('wall',0) for r in rows]
++import bisect
++for f in frames:
++    t=int(f.stem)/1000; i=min(max(bisect.bisect_left(walls,t),0),len(rows)-1)
++    fm.append({'file':f.name,'wall':t,'stage':rows[i]['stage'],'t':rows[i]['t'],'speed':rows[i]['Speed2D']})
++(E/(label+'_frames.json')).write_text(json.dumps(fm))
++man['frames']=len(fm)
++if rows:
++    man.update(game_duration=rows[-1]['t'],fps=round(len(rows)/max(1e-6,sum(r['dt'] for r in rows)),1))
++(E/(label+'_capture.json')).write_text(json.dumps(man,indent=1));print(json.dumps(man))
++for k,g in itertools.groupby(rows,key=lambda r:r['stage']):
++    rr=list(g);print(f"{k:28s} t={rr[0]['t']:6.2f} d={rr[-1]['t']-rr[0]['t']:5.2f} v={min(r['Speed2D'] for r in rr):5.0f}-{max(r['Speed2D'] for r in rr):5.0f} CPs={max(r['CP_StartOwned'] for r in rr):.0f} CPe={max(r['CP_StopOwned'] for r in rr):.0f} clips={list(dict.fromkeys(r['clip'] for r in rr))[:5]}")

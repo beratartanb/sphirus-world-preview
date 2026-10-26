@@ -1,0 +1,66 @@
+--- Saved/Codex/SHME_V230_20261026/checkpoint/pre_v230/tools/shm_src.py	2026-10-25 11:27:37.196921300 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-26 09:00:48.888020100 +0300
+@@ -95,9 +95,9 @@
+   (bind rq0 (* EffortReqLoad (exp (/ (- dt) (max (R EffortReqTau) 0.01)))))
+   (set EffortReqLoad (select efOn (select newReq (max rq0 (* EffortLoad (clamp (* 2.0 dch) 0.0 1.0))) rq0) 0.0))
+   (set EffortPrevDir (selv HasIntent DesiredDir EffortPrevDir))
+-  ; V2.29b: the scales read EffortEUse = EffortE low-passed (EffortUseTau): the PREVIOUS efforts limit the next maneuver, a maneuver's own
+-  ; exertion barely limits itself (v1 slowed a single rested sprint reversal 1.37 -> 2.2 s)
+-  (set EffortEUse (select efOn (+ EffortEUse (* (- EffortE EffortEUse) (- 1.0 (exp (/ (- dt) (max (R EffortUseTau) 0.01)))))) 0.0))
++  ; V2.29b: the scales read EffortEUse = EffortE low-passed (EffortUseTau): the PREVIOUS efforts limit the next maneuver, a maneuver's own
++  ; exertion barely limits itself (v1 slowed a single rested sprint reversal 1.37 -> 2.2 s)
++  (set EffortEUse (select efOn (+ EffortEUse (* (- EffortE EffortEUse) (- 1.0 (exp (/ (- dt) (max (R EffortUseTau) 0.01)))))) 0.0))
+   (set EffortAccScale (select efOn (max (R EffortScaleMin) (- 1.0 (* (R EffortAccK) EffortEUse))) 1.0))
+   (set EffortTurnScale (select efOn (max (R EffortScaleMin) (* (- 1.0 (* (R EffortTurnK) EffortEUse)) (- 1.0 (* (R EffortLoadK) EffortReqLoad)))) 1.0)))
+ ''')
+@@ -446,7 +446,9 @@
+   ; V1.3.4 committed redirection episode: latched at the onset of a real direction change while moving; ends only on
+   ; alignment (after a minimum dwell), timeout, a genuinely new intent, or loss of ground / intent / speed. The ABP holds
+   ; the Motion Matching database for the episode (no A -> B -> C reselection from trajectory noise).
+-  (bind rdCand (and (and Grounded HasIntent) (and (> Speed (R RedirectEpisodeMinSpeed)) (> RedirectionAngle (R RedirectEpisodeAngle)))))
++  ; V2.30 low-speed reversal: a recently running body (SpeedPeak above walk) reversing above RedirectLowRevSpeed is a reversal episode
++  (bind lowRev (and (and (> (R RedirectLowRevSpeed) 0.5) (< (dot vhat (normal (vec (.x Facing) (.y Facing) 0.0))) -0.7)) (and (> MaxSpeedNow (R RedirectLowRevPeak)) (> RedirectionAngle (R RedirectReversalClassAngle)))))   ; the REQUESTED gait is jog / sprint (CMC max speed above any walk; a walk right after a sprint stays out); a BACKPEDAL (moving against the facing) only: sprint faces its travel, so lateral / camera reversals keep the V2.29 rule
++  (bind rdCand (and (and Grounded HasIntent) (and (> Speed (select lowRev (min (R RedirectLowRevSpeed) (R RedirectEpisodeMinSpeed)) (R RedirectEpisodeMinSpeed))) (> RedirectionAngle (R RedirectEpisodeAngle)))))
+   (bind rdNewIntent (> (acosd (clamp (dot dhat RedirectDirLatched) -1.0 1.0)) (R RedirectNewIntentAngle)))
+   ; alignment needs real speed: the velocity direction of a near-stopped body is noise (ended episodes mid-pivot)
+   (bind rdAligned (and (> Speed 80.0) (< (acosd (clamp (dot vhat RedirectDirLatched) -1.0 1.0)) (R RedirectAlignAngle))))
+@@ -459,7 +461,7 @@
+   ; bridge class latched at the episode start: 0 none (walk / small), 1 lateral, 2 reversal; gait 0 jog, 1 sprint
+   ; V2.24 frame-rate-stable classing: the speed BEFORE the first braked frame (decays at RedirectSpeedDecay cm/s2; 0 = plain Speed)
+   (set SpeedOnset (select (> (R RedirectSpeedDecay) 0.5) (max Speed (- SpeedOnset (* (R RedirectSpeedDecay) dt))) Speed))
+-  (bind rdClassNow (select (and (R RedirectBridgeEnabled) (> SpeedOnset (R RedirectBridgeMinSpeed))) (select (> RedirectionAngle (R RedirectReversalClassAngle)) 2.0 1.0) 0.0))
++  (bind rdClassNow (select (and (R RedirectBridgeEnabled) (or (> SpeedOnset (R RedirectBridgeMinSpeed)) lowRev)) (select (> RedirectionAngle (R RedirectReversalClassAngle)) 2.0 1.0) 0.0))
+   (set RedirectClass (select rdStart rdClassNow RedirectClass))
+   (set RedirectGait (select rdStart (select (> SpeedOnset (R RedirectSprintSpeed)) 1.0 0.0) RedirectGait))
+   (set RedirectSide (select rdStart SupportSide RedirectSide))
+@@ -1198,9 +1200,10 @@
+   (bind (ibh iio itm idd iloc iip inrm iinrm ipm iact icomp) (Çarpışma|BreakHitResult :Hit ihh))
+   (bind iname (İşlevsellikler|GetDisplayName :Object iact))
+   ; V2.26 I4 contract: actor tag or component tag GR_Inspect; focus point = actor bounds origin
+-  (bind itag (or (Aktör|ActorHasTag :self iact :Tag (R InspectTag)) (Bileşenler|ComponentHasTag :self icomp :Tag (R InspectTag))))
+-  (bind (iorg iext) (Çarpışma|GetActorBounds :self iact :bOnlyCollidingComponents false :bIncludeFromChildActors false))
++  ; V2.30 null-safe inspection: no member call on the (possibly missing) hit actor / component
++  (bind (iorg iext irad) (Çarpışma|GetComponentBounds :Component icomp))
+   (bind imatch (or (İşlevsellikler|Dize|Contains :SearchIn iname :Substring (R InspectKey1)) (or (İşlevsellikler|Dize|Contains :SearchIn iname :Substring (R InspectKey2)) (or (İşlevsellikler|Dize|Contains :SearchIn iname :Substring (R InspectKey3)) (İşlevsellikler|Dize|Contains :SearchIn iname :Substring (R InspectKey4))))))
++  (bind itag (or (İşlevsellikler|Dize|Contains :SearchIn iname :Substring (R InspectKey1)) (İşlevsellikler|Dize|Contains :SearchIn iname :Substring (R InspectKey2))))   ; INS_ test props / Mask (the GR_Inspect-tagged set)
+   (bind idist (vlenxy (- iip Position)))
+   (bind iyd0 (- cy3 InspectPrevYaw))
+   (bind iydw (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A iyd0) :X (Matematik|Trig|Cos(Degrees) :A iyd0)))
+@@ -1215,7 +1218,7 @@
+   (bind isameD (< (dist iorg InspectPoint) (R InspectJump)))
+   (bind isame (selb (> (R InspectIdOn) 0.5) idsame isameD))
+   ; V2.28 I5 focus = the actor location (the mask pivot = the mask centre; the probe sphere shifts the bounds origin 15 cm into the room)
+-  (bind ifocus (selv (> (R InspectFocusMode) 0.5) (Dönüşüm|GetActorLocation :self iact) iorg))
++  (bind ifocus iorg)
+   (bind dwell1 (min (+ (R InspectDwellOn) 0.15) (select cand (select isame (+ InspectDwell dt) 0.0) (max 0.0 (- InspectDwell (* dt 2.0))))))   ; V2.25 I2 dwell cap
+   (bind acquire (and (> dwell1 (R InspectDwellOn)) (and islow icalm)))
+   ; V2.28 I5: a new candidate under the gaze keeps the latch (switch after InspectSwitchOn s of dwell on it); the latch is lost on speed /
+@@ -1265,7 +1268,7 @@
+   (bind eF0 (dot eW cfw))
+   (bind uL0 (dot uW crt))
+   (bind uF0 (dot uW cfw))
+-  (bind wz (clamp (/ (- Speed (R CamWalkSpeedLo)) (max (- (R CamWalkSpeedHi) (R CamWalkSpeedLo)) 1.0)) 0.0 1.0))   ; V2.29 walk -> run zone blend
++  (bind wz (clamp (/ (- Speed (R CamWalkSpeedLo)) (max (- (R CamWalkSpeedHi) (R CamWalkSpeedLo)) 1.0)) 0.0 1.0))   ; V2.29 walk -> run zone blend
+   (bind zL (lerp (R CamFolDZLatWalk) (R CamFolDZLat) wz))
+   (bind zF (lerp (R CamFolDZFwdWalk) (R CamFolDZFwd) wz))
+   (bind xL (- eL0 (clamp eL0 (- 0.0 zL) zL)))

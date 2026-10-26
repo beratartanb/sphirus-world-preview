@@ -1,0 +1,11 @@
+## FPS sweep (V2.30 production, fixed step 20/30/60/120; 30 = v230fin)
+s29_swl14 | h20 na | fin pop 32 slip 16.4 twistJ 4.0 | h60 pop 66 slip 1.1 twistJ 2.0 | h120 pop 145 slip 22.8 twistJ 1.0
+j30_slow | h20 pop 0 slip 4.3 twistJ 8.0 | fin pop 0 slip 9.2 twistJ 5.0 | h60 pop 40 slip 10.2 twistJ 3.0 | h120 pop 93 slip 14.7 twistJ 1.0
+e29_chain | h20 pop 56 slip 13.6 twistJ 17.0 | fin pop 55 slip 9.3 twistJ 9.0 | h60 pop 66 slip 12.9 twistJ 4.0 | h120 pop 145 slip 15.0 twistJ 3.0
+s29_cam | h20 pop 36 slip 0.0 twistJ 16.0 | fin pop 42 slip 0.0 twistJ 11.0 | h60 pop 66 slip 0.0 twistJ 5.0 | h120 pop 145 slip 0.0 twistJ 2.0
+j24_dbl | h20 pop 0 slip 35.4 twistJ 8.0 | fin pop 0 slip 16.1 twistJ 5.0 | h60 pop 48 slip 18.2 twistJ 3.0 | h120 pop 82 slip 13.8 twistJ 1.0
+e29_load | h20 pop 48 slip 20.7 twistJ 8.0 | fin pop 61 slip 8.2 twistJ 6.0 | h60 pop 79 slip 31.3 twistJ 3.0 | h120 pop 145 slip 36.5 twistJ 2.0
+V2.29 e29_load | h20 pop 83 slip 29.4 | fn3 pop 110 slip 24.6 | h60 pop 109 slip 18.3 | h120 pop 162 slip 7.5
+V2.29 e29_chain | h20 pop 56 slip 13.6 | fn3 pop 55 slip 9.3 | h60 pop 67 slip 4.6 | h120 pop 147 slip 3.9
+V2.29 j24_dbl | h20 pop 0 slip 35.4 | fn3 pop 29 slip 23.1 | h60 pop 48 slip 18.2 | h120 pop 82 slip 13.8
+V2.29 s29_swl14 | h20 pop 82 slip 0.0 | fn3 pop 110 slip 0.0 | h60 pop 131 slip 0.0 | h120 pop 162 slip 0.0
