@@ -1,0 +1,9 @@
+--- Saved/Codex/SHME_V231_20261026/checkpoint/pre_v231/tools/Tools/SHME_V1_20260925/shm_profiles.py	2026-10-26 05:04:49.645488000 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-26 15:31:51.643358400 +0300
+@@ -178,4 +178,6 @@
+     ('EffortAccK', 'float', 0.4, 'V229'), ('EffortTurnK', 'float', 0.45, 'V229'), ('EffortLoadK', 'float', 0.5, 'V229'), ('EffortScaleMin', 'float', 0.4, 'V229'), ('EffortUseTau', 'float', 1.2, 'V229'), ('EffortReqTau', 'float', 0.6, 'V229'),
+     ('CamSwapMinSpeed', 'float', 60.0, 'V229'), ('CamFolDZLatWalk', 'float', 12.0, 'V229'), ('CamFolDZFwdWalk', 'float', 10.0, 'V229'),
+     ('CamWalkSpeedLo', 'float', 150.0, 'V229'), ('CamWalkSpeedHi', 'float', 260.0, 'V229'),
++    # ---- V2.31 (2026-10-26, Saved/Codex/SHME_V231_20261026): step-up swing lift compensation (SHM_UpdateBodyTargets)
++    ('SwingLiftBaseComp', 'float', 0.0, 'V231'), ('RedirectLowRevFwdMax', 'float', 0.0, 'V231'),
+ ]

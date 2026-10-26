@@ -1,0 +1,15 @@
+--- Saved/Codex/SHME_V231_20261026/checkpoint/pre_v231/tools/Tools/SHME_V1_20260925/qa.sh	2026-10-26 16:29:30.637080900 +0300
++++ Tools/SHME_V1_20260925/qa.sh	2026-10-26 17:04:07.094740100 +0300
+@@ -6,8 +6,10 @@
+ export LR_LOG="${LR_LOG:-$(ls -t ../../Saved/Logs/*.log | grep -v -i "cef" | head -1 | xargs basename)}"
+ label=$("$PY" -c "import json;print(json.load(open('$N/run_request.json'))['label'])")
+ rm -f $N/${label}_pie.json
+-./run.sh qa_pie.py 60 | tail -1
+-for i in $(seq 1 300); do [ -f $N/${label}_pie.json ] && break; sleep 3; done
++# V2.31: a qa_pie job that FAILS before PIE (bad request key, Python exception) used to leave this loop waiting 900 s
++QOUT=$(./run.sh qa_pie.py 60); echo "$QOUT" | tail -1
++if echo "$QOUT" | grep -q -E "^Traceback|^Exception:|Error: "; then echo "QA_JOB_FAILED $label: $(echo "$QOUT" | grep -E 'Exception|Error' | tail -1 | cut -c1-200)"; else
++for i in $(seq 1 300); do [ -f $N/${label}_pie.json ] && break; sleep 3; done; fi
+ cat $N/${label}_pie.json; echo
+ sleep 2; ./run.sh post_check.py 30 | tail -1
+ "$PY" evidence.py $label >/dev/null 2>&1; "$PY" metrics.py $label >/dev/null 2>&1; "$PY" shm_evidence.py $label; "$PY" abp_evidence.py $label >/dev/null 2>&1; sed -e "s/SHMABP|/SHMMM|/; s/_abp.json/_mm.json/g" abp_evidence.py > mm_evidence.py; "$PY" mm_evidence.py $label >/dev/null 2>&1; echo "done $label"

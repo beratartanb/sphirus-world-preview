@@ -1,0 +1,11 @@
+--- Saved/Codex/SHME_V231_20261026/checkpoint/pre_v231/tools/Tools/SHME_V1_20260925/build_tick.py	2026-10-26 15:01:40.073489200 +0300
++++ Tools/SHME_V1_20260925/build_tick.py	2026-10-26 15:01:40.300561600 +0300
+@@ -86,6 +86,8 @@
+ # V2.1: cinematic shoulder swap post-processes the V1 camera signals (its own flag CamSwapV21Enabled inside the function)
+ if graph(bp, 'SHM_UpdateCameraV21') is not None:
+     cam_t = call('SHM_UpdateCameraV21', [cam_t], {'dt': dt})
++    # V2.31: inspection resolver (exec graph with IsValid branches, install_v231_inspect.py) right after the camera function
++    if graph(bp, 'SHM231_InspectResolve') is not None: cam_t = call('SHM231_InspectResolve', [cam_t])
+ else:
+     print('WARN: SHM_UpdateCameraV21 missing, tick built without the V2.1 camera')
+ tails = [call('SHM_PerfLapCam', [cam_t, be])]

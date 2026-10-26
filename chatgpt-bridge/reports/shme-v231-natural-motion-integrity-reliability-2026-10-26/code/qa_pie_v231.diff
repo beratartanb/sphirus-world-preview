@@ -1,0 +1,60 @@
+--- Saved/Codex/SHME_V231_20261026/checkpoint/pre_v231/tools/Tools/SHME_V1_20260925/qa_pie.py	2026-10-26 06:23:08.623798900 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-26 15:19:10.893941500 +0300
+@@ -38,17 +38,22 @@
+     _bad = [n_ for n_ in _dirty if any(n_ == t_ for ts in _TARGETS.values() for t_ in ts)]
+     if _bad: u.log_error('SHM_STATE: dirty base packages at first run ' + str(_bad))
+     TOUCHED = {c_: {} for c_ in _TARGETS}; builtins.SHM_PROD_TOUCHED = TOUCHED; builtins.SHM_PROD_DIRTY_BASE = _bad
++def _gp(o_, key):   # V2.31: 'cm.<prop>' = the CharacterMovement component template of a pawn class (CMC perch / step settings as candidates)
++    return o_.get_editor_property('character_movement').get_editor_property(key[3:]) if key.startswith('cm.') else o_.get_editor_property(key)
++def _sp(o_, key, v):
++    if key.startswith('cm.'): o_.get_editor_property('character_movement').set_editor_property(key[3:], v)
++    else: o_.set_editor_property(key, v)
+ def _restore():
+     for cat, keys in TOUCHED.items():
+         for key, vals in keys.items():
+-            for path, v0 in vals.items(): _obj(cat, path).set_editor_property(key, u.load_asset(v0) if isinstance(v0, str) and v0.startswith('/Game/') else v0)
++            for path, v0 in vals.items(): _sp(_obj(cat, path), key, u.load_asset(v0) if isinstance(v0, str) and v0.startswith('/Game/') else v0)
+ def _apply(cat, flags):
+     for key, val in (flags or {}).items():
+         for path in _TARGETS[cat]:
+             o_ = _obj(cat, path)
+             if key not in TOUCHED[cat]: TOUCHED[cat][key] = {}
+-            if path not in TOUCHED[cat][key]: TOUCHED[cat][key][path] = _norm(o_.get_editor_property(key))
+-            o_.set_editor_property(key, u.load_asset(val) if isinstance(val, str) and val.startswith('/Game/') else val)
++            if path not in TOUCHED[cat][key]: TOUCHED[cat][key][path] = _norm(_gp(o_, key))
++            _sp(o_, key, u.load_asset(val) if isinstance(val, str) and val.startswith('/Game/') else val)
+ _restore()
+ if MODE == 'candidate':
+     _apply('behavior', req.get('behavior_flags')); _apply('pbi', req.get('pbi_flags')); _apply('pawn', req.get('pawn_flags'))
+@@ -67,7 +72,7 @@
+         keys = set(TOUCHED[cat]) | (set(_IDENT_ABP) if cat == 'abp' else set())
+         for key in sorted(keys):
+             for path in _TARGETS[cat]:
+-                try: rec[cat][key + '@' + path.rsplit('/', 1)[-1]] = _norm(_obj(cat, path).get_editor_property(key))
++                try: rec[cat][key + '@' + path.rsplit('/', 1)[-1]] = _norm(_gp(_obj(cat, path), key))
+                 except Exception: rec[cat][key + '@' + path.rsplit('/', 1)[-1]] = 'err'
+     try:   # database identity: asset path + package file time + entry count (a rebuilt or edited database changes these)
+         cdo_ = _obj('abp', _ABPS[1])
+@@ -175,6 +180,22 @@
+     # NEVER notify: an edit notification on a pawn component re-runs the pawn construction script in PIE and
+     # TRASHes its camera/boom components (AAMS BP_Timeline then logs TRASH_ errors and camera data is invalid)
+     for c in pawn.get_components_by_class(SHM_CLS): c.set_editor_property('TelemetryLabel', label, u.PropertyAccessChangeNotifyMode.NEVER)
++    # V2.31: PIE-only CharacterMovement overrides on the SPAWNED pawn (BP_Player_MM; the class CDO / templates are never touched): request
++    # 'live_cm' {prop: value}, e.g. the perch settings for the step-down study; NEVER notify (no construction script in PIE)
++    # V2.31 determinism study: log the pawn meshes' visibility-based anim tick / update-rate optimisation settings; request 'live_anim'
++    # {'always_tick': true} forces AlwaysTickPoseAndRefreshBones + URO off on the SPAWNED pawn only (PIE world, NEVER notify)
++    try:
++        _la = req.get('live_anim') or {}
++        for c_ in pawn.get_components_by_class(u.SkeletalMeshComponent):
++            vb_ = c_.get_editor_property('visibility_based_anim_tick_option'); uro_ = c_.get_editor_property('enable_update_rate_optimizations')
++            u.log('SHM_QA_ANIMTICK %s vis=%s uro=%s' % (c_.get_name(), vb_, uro_))
++            if _la.get('always_tick'):
++                c_.set_editor_property('visibility_based_anim_tick_option', u.VisibilityBasedAnimTickOption.ALWAYS_TICK_POSE_AND_REFRESH_BONES, u.PropertyAccessChangeNotifyMode.NEVER)
++                c_.set_editor_property('enable_update_rate_optimizations', False, u.PropertyAccessChangeNotifyMode.NEVER)
++    except Exception as e_: u.log_warning('live_anim failed: ' + str(e_))
++    for k_, v_ in (req.get('live_cm') or {}).items():
++        try: pawn.get_editor_property('character_movement').set_editor_property(k_, v_, u.PropertyAccessChangeNotifyMode.NEVER); u.log('SHM_QA_LIVECM %s=%s' % (k_, v_))
++        except Exception as e_: u.log_warning('live_cm failed %s: %s' % (k_, e_))
+     # V2.9: neutral test light - point lights attached to the pawn [dx, dy, dz, intensity, radius] (no shadows, PIE only)
+     for l_ in req.get('fill_lights', []):
+         try:

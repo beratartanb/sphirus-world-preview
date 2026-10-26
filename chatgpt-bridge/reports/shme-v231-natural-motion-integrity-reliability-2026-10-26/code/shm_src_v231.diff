@@ -1,0 +1,84 @@
+--- Saved/Codex/SHME_V231_20261026/checkpoint/pre_v231/tools/Tools/SHME_V1_20260925/shm_src.py	2026-10-26 09:00:48.888020100 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-26 15:58:40.487505100 +0300
+@@ -447,7 +447,11 @@
+   ; alignment (after a minimum dwell), timeout, a genuinely new intent, or loss of ground / intent / speed. The ABP holds
+   ; the Motion Matching database for the episode (no A -> B -> C reselection from trajectory noise).
+   ; V2.30 low-speed reversal: a recently running body (SpeedPeak above walk) reversing above RedirectLowRevSpeed is a reversal episode
+-  (bind lowRev (and (and (> (R RedirectLowRevSpeed) 0.5) (< (dot vhat (normal (vec (.x Facing) (.y Facing) 0.0))) -0.7)) (and (> MaxSpeedNow (R RedirectLowRevPeak)) (> RedirectionAngle (R RedirectReversalClassAngle)))))   ; the REQUESTED gait is jog / sprint (CMC max speed above any walk; a walk right after a sprint stays out); a BACKPEDAL (moving against the facing) only: sprint faces its travel, so lateral / camera reversals keep the V2.29 rule
++  ; V2.31: the same low-speed reversal while moving FORWARD along the facing, only for a JOG-mode request (RedirectLowRevPeak < MaxSpeedNow <
++  ; RedirectLowRevFwdMax; sprint faces its travel and reverses with the RevTurn route): the release -> re-press inside a brake (j30_rel: forward
++  ; walk-stop at 45-64 cm/s) became an EarlyRev clip without an episode (no clip-bound capsule, no hold) -> AAMS jog start. FwdMax 0 = V2.30
++  (bind lrDot (dot vhat (normal (vec (.x Facing) (.y Facing) 0.0))))
++  (bind lowRev (and (and (> (R RedirectLowRevSpeed) 0.5) (or (< lrDot -0.7) (and (> lrDot 0.7) (< MaxSpeedNow (R RedirectLowRevFwdMax))))) (and (> MaxSpeedNow (R RedirectLowRevPeak)) (> RedirectionAngle (R RedirectReversalClassAngle)))))   ; the REQUESTED gait is jog / sprint (CMC max speed above any walk; a walk right after a sprint stays out); a BACKPEDAL (moving against the facing) only: sprint faces its travel, so lateral / camera reversals keep the V2.29 rule
+   (bind rdCand (and (and Grounded HasIntent) (and (> Speed (select lowRev (min (R RedirectLowRevSpeed) (R RedirectEpisodeMinSpeed)) (R RedirectEpisodeMinSpeed))) (> RedirectionAngle (R RedirectEpisodeAngle)))))
+   (bind rdNewIntent (> (acosd (clamp (dot dhat RedirectDirLatched) -1.0 1.0)) (R RedirectNewIntentAngle)))
+   ; alignment needs real speed: the velocity direction of a near-stopped body is noise (ended episodes mid-pivot)
+@@ -1018,6 +1022,12 @@
+   (bind wRL (clamp (/ (- (max (- gL guL) (- guL g0)) (R SwingLiftRiseMin)) (max (R SwingLiftRiseRamp) 0.1)) 0.0 1.0))
+   (bind wRR (clamp (/ (- (max (- gRt guR) (- guR g0)) (R SwingLiftRiseMin)) (max (R SwingLiftRiseRamp) 0.1)) 0.0 1.0))
+   ; V2.26 T3g: targets against the POSE foot (final foot minus the lift already applied) - the old form converged to half the deficit
++  ; V2.31 T5: the CAPSULE step-up (CMC step: baseZ +28 cm in 0.13 s) carries the pose foot up with it, but the lift (a capsule-relative offset)
++  ; only decayed with SwingLiftTauDown -> the swing foot rose to 21 cm above the step top and hovered 0.43 s. The lift loses the capsule's
++  ; rise of this frame at once (world foot height continuous); SwingLiftBaseComp 0 = V2.30
++  (bind dBase (select (and (> (R SwingLiftBaseComp) 0.5) (> SHM231_SwBaseZ -1.0e8)) (max 0.0 (- baseZ SHM231_SwBaseZ)) 0.0))
++  (bind sLLc (max 0.0 (- SwingLiftL dBase)))
++  (bind sLRc (max 0.0 (- SwingLiftR dBase)))
+   (bind fzL (- (.z FootCenterL) SwingLiftL))
+   (bind fzR (- (.z FootCenterR) SwingLiftR))
+   (bind tL (max (select swL (* wRL (clamp (- (+ gL (R SwingLiftMargin)) fzL) 0.0 (R SwingLiftMax))) 0.0) (select penL (clamp (- (+ guL 7.5) fzL) 0.0 (R StepPenLiftMax)) 0.0)))   ; V2.26 T3d/T3e/T3g
+@@ -1026,8 +1036,8 @@
+   (bind aDn (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauDown) 0.01)))))
+   (bind aCt (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauContact) 0.005)))))
+   ; V2.24 C3 release: in contact the lift goes fast (the stance foot belongs to FootPlacement)
+-  (set SwingLiftL (select slOn (+ SwingLiftL (* (- tL SwingLiftL) (select (> tL SwingLiftL) aUp (select (and ContactL (not penL)) aCt aDn)))) 0.0))   ; V2.26 T3d: no fast release while penetrating
+-  (set SwingLiftR (select slOn (+ SwingLiftR (* (- tR SwingLiftR) (select (> tR SwingLiftR) aUp (select (and ContactR (not penR)) aCt aDn)))) 0.0))
++  (set SwingLiftL (select slOn (+ sLLc (* (- tL sLLc) (select (> tL sLLc) aUp (select (and ContactL (not penL)) aCt aDn)))) 0.0))   ; V2.26 T3d: no fast release while penetrating
++  (set SwingLiftR (select slOn (+ sLRc (* (- tR sLRc) (select (> tR sLRc) aUp (select (and ContactR (not penR)) aCt aDn)))) 0.0))
+   ; V2.26 T3b landing shift onto a step (candidate: StepEdgeOn). Probes: mid 0.5x (siph), landing 1.0x (sip), far 1.5x (sipf)
+   (bind gmL (select sokh1 (.z siph1) baseZ))
+   (bind glL (select sok1 (.z sip1) baseZ))
+@@ -1077,6 +1087,7 @@
+   (set SwingShiftTR (select ContactR SwingShiftTR (+ SwingShiftTR (* (- seR SwingShiftTR) (select (> seR SwingShiftTR) aUp aDn)))))
+   (set SwingShiftL (selv (R StepEdgeOn) (vscale slDir SwingShiftTL) (vec 0.0 0.0 0.0)))
+   (set SwingShiftR (selv (R StepEdgeOn) (vscale slDir SwingShiftTR) (vec 0.0 0.0 0.0)))
++  (set SHM231_SwBaseZ baseZ)
+   (set SwingGroundL (- gL baseZ))
+   (set SwingGroundR (- gRt baseZ))
+   (set TerrainInit true))
+@@ -1210,15 +1221,20 @@
+   (bind iyawRate (abs (/ iydw (max h 0.001))))
+   (bind islow (< Speed (R InspectMaxSpeed)))
+   (bind icalm (< iyawRate (R InspectYawRateMax)))
+-  (bind cand (and insOn (and ihok (and itag (and (> idist (R InspectMinDist)) (< idist (R InspectMaxDist)))))))   ; V2.26 I4: tag, not name
++  ; V2.31 inspection: explicit tag contract resolved behind IsValid (SHM231_InspectResolve), identity = the same object path, focus = mask mesh
++  (bind m231 (> (R InspectFocusMode) 1.5))
++  (bind ipath (İşlevsellikler|GetObjectPathString :Object iact))   ; full object path (= KismetSystemLibrary GetPathName; static, None -> "None")
++  (bind itag231 (and SHM231_InsTag (and (İşlevsellikler|Dize|Contains :SearchIn ipath :Substring SHM231_InsId) (İşlevsellikler|Dize|Contains :SearchIn SHM231_InsId :Substring ipath))))
++  (bind itagU (selb m231 itag231 itag))
++  (bind cand (and insOn (and ihok (and itagU (and (> idist (R InspectMinDist)) (< idist (R InspectMaxDist)))))))   ; V2.26 I4: tag, not name (V2.31: resolved tag)
+   ; V2.28 I5 target identity: the SAME target = the same actor object under the gaze as last frame (object name equality, both-way
+   ; Contains), not a distance between two centres (InspectJump made two masks 29 cm apart one target). InspectIdOn 0 = V2.26 rule.
+   (bind inameo (İşlevsellikler|GetObjectName :Object iact))
+   (bind idsame (and (İşlevsellikler|Dize|Contains :SearchIn inameo :Substring InspectPrevHitName) (İşlevsellikler|Dize|Contains :SearchIn InspectPrevHitName :Substring inameo)))
+   (bind isameD (< (dist iorg InspectPoint) (R InspectJump)))
+-  (bind isame (selb (> (R InspectIdOn) 0.5) idsame isameD))
++  (bind isame (selb m231 (and (İşlevsellikler|Dize|Contains :SearchIn ipath :Substring SHM231_InsPrevId) (İşlevsellikler|Dize|Contains :SearchIn SHM231_InsPrevId :Substring ipath)) (selb (> (R InspectIdOn) 0.5) idsame isameD)))
+   ; V2.28 I5 focus = the actor location (the mask pivot = the mask centre; the probe sphere shifts the bounds origin 15 cm into the room)
+-  (bind ifocus iorg)
++  (bind ifocus (selv m231 SHM231_InsFocus iorg))
+   (bind dwell1 (min (+ (R InspectDwellOn) 0.15) (select cand (select isame (+ InspectDwell dt) 0.0) (max 0.0 (- InspectDwell (* dt 2.0))))))   ; V2.25 I2 dwell cap
+   (bind acquire (and (> dwell1 (R InspectDwellOn)) (and islow icalm)))
+   ; V2.28 I5: a new candidate under the gaze keeps the latch (switch after InspectSwitchOn s of dwell on it); the latch is lost on speed /
+@@ -1235,9 +1251,11 @@
+   (set InspectHitName iname)
+   (set InspectHitDist (select ihok idd 0.0))
+   (set InspectHitZ (select ihok (.z iip) 0.0))
+-  (set InspectMatch (select (and ihok itag) 1.0 0.0))
++  (set InspectMatch (select (and ihok itagU) 1.0 0.0))
+   (set InspectHitActorName inameo)
+   (set InspectPrevHitName inameo)
++  (set SHM231_InsPrevId ipath)
++  (set SHM231_InsHit icomp)
+   (bind aIns (- 1.0 (exp (/ (- 0.0 h) (max (select (> InspectLatch 0.5) (R InspectTauOn) (R InspectTauOff)) 0.02)))))
+   (set InspectOn (select tele 0.0 (+ InspectOn (* (- InspectLatch InspectOn) aIns))))
+   (bind toP (- InspectPoint Position))
