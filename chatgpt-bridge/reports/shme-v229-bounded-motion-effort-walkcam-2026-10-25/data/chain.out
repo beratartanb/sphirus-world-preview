@@ -1,0 +1,917 @@
+T1 START 07:35:45
+no editor to quit
+RUNNER_READY shmv229_t1.log
+throttle off False
+RELAUNCH t1 30 07:40:04
+v229t1_s29_ws_o_r1 | rows 329 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229t1_s29_ws_ph_o_r1 | rows 331 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229t1_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 290) | by owner {'in-clip': 5} | FINISHED production
+v229t1_s29_cam2_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 313) | by owner {'in-clip': 4} | FINISHED production
+v229t1_s29_sa_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 6 (worst 35) | by owner {'in-clip': 6} | FINISHED production
+v229t1_s29_dg_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 8 (worst 45) | by owner {'in-clip': 8} | FINISHED production
+v229t1_s29_dbl_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 5 (worst 81) | by owner {'in-clip': 5} | FINISHED production
+v229t1_s29_rel_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 5 (worst 40) | by owner {'in-clip': 5} | FINISHED production
+v229t1_b_s2back_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 1 (worst 29) | by owner {'in-clip': 1} | FINISHED production
+v229t1_b_cam180_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 303) | by owner {'in-clip': 4} | FINISHED production
+v229t1_chain_sprint_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 7 (worst 324) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t1_chain_sscut_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED production
+T1 SPRINT_DONE 07:46:16
+v229t1_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 294) | by owner {'in-clip': 8} | FINISHED production
+MEM_RESTART editor 39 GB 07:46:58
+v212_warm_075128 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t1_e29_recov_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t1_e29_house_o_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_c29_look_o_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED production
+v229t1_c29_ad_o_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_c29_wlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_c29_diag_o_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_c29_jlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_a29_ang_o_r1 | rows 766 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 40 GB 08:03:02
+v212_warm_080647 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_a29_angb_o_r1 | rows 694 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_a29_edge_o_r1 | rows 670 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_a29_mag_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_a29_kdg_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t1_a29_csweep_o_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+T1 DONE 08:10:56
+T2 START 08:11:01
+v229t2_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 290) | by owner {'in-clip': 5} | FINISHED production
+T2 DONE 09:44:46
+DIRDUMP 87 graphs 6572 nodes
+DIRDUMP 92 graphs 12417 nodes
+T2 DUMPS_DONE 09:44:59
+T3 START 09:45:12
+RB229 SHM216_RevTurn_L_Lfoot {"frames": 103, "len": 3.4, "speed": [106, 416], "before": {"pitch": [14.4, 32.4], "roll": [-13.8, 17.1], "hand_f": [-26.3, 63.8], "hand_u": [-9.0, 44.7]}, "after": {"pitch": [8.1, 24.9], "roll": [-7.9, 6.7], "hand_f": [-19.9, 62.9], "hand_u": [-1.4, 32.7]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 15.0, "twist_jump_new": 15.0, "spin_frames_current": [], "spin_frames_new": []}, "buggy": true}
+RB229 SHM216_RevTurn_L_Rfoot {"frames": 113, "len": 3.73, "speed": [106, 416], "before": {"pitch": [14.2, 29.5], "roll": [-8.3, 20.1], "hand_f": [-21.0, 63.1], "hand_u": [-6.7, 31.9]}, "after": {"pitch": [8.4, 24.9], "roll": [-5.4, 5.3], "hand_f": [-19.2, 58.9], "hand_u": [-3.1, 38.2]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 14.6, "twist_jump_new": 14.6, "spin_frames_current": [], "spin_frames_new": []}, "buggy": true}
+RB229 SHM216_RevTurn_R_Lfoot {"frames": 111, "len": 3.67, "speed": [144, 416], "before": {"pitch": [10.9, 32.2], "roll": [-5.5, 20.1], "hand_f": [-19.9, 62.6], "hand_u": [-6.4, 35.0]}, "after": {"pitch": [8.1, 24.2], "roll": [-4.1, 5.4], "hand_f": [-19.9, 62.6], "hand_u": [-1.4, 53.8]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 179.3, "twist_jump_new": 179.3, "spin_frames_current": [29, 33, 94, 97], "spin_frames_new": [29, 33, 94, 97]}, "buggy": true}
+RB229 SHM216_RevTurn_R_Rfoot {"frames": 104, "len": 3.43, "speed": [144, 416], "before": {"pitch": [16.5, 30.7], "roll": [-14.9, 7.0], "hand_f": [-21.3, 68.6], "hand_u": [-4.5, 41.0]}, "after": {"pitch": [7.6, 24.4], "roll": [-4.6, 5.0], "hand_f": [-19.1, 57.5], "hand_u": [-4.4, 36.3]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 173.1, "twist_jump_new": 173.1, "spin_frames_current": [31, 39], "spin_frames_new": [31, 39]}, "buggy": true}
+RB229_DONE
+RB229 SHM216_RevTurn_L_Lfoot {"frames": 103, "len": 3.4, "speed": [106, 416], "before": {"pitch": [14.4, 32.4], "roll": [-13.8, 17.1], "hand_f": [-26.3, 63.8], "hand_u": [-9.0, 44.7]}, "after": {"pitch": [8.1, 24.9], "roll": [-7.9, 6.7], "hand_f": [-19.9, 62.9], "hand_u": [-1.4, 32.7]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 15.0, "twist_jump_new": 15.0, "spin_frames_current": [], "spin_frames_new": []}, "buggy": false}
+RB229 SHM216_RevTurn_L_Rfoot {"frames": 113, "len": 3.73, "speed": [106, 416], "before": {"pitch": [14.2, 29.5], "roll": [-8.3, 20.1], "hand_f": [-21.0, 63.1], "hand_u": [-6.7, 31.9]}, "after": {"pitch": [8.4, 24.9], "roll": [-5.4, 5.3], "hand_f": [-19.2, 58.9], "hand_u": [-3.1, 38.2]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 14.6, "twist_jump_new": 14.6, "spin_frames_current": [], "spin_frames_new": []}, "buggy": false}
+RB229 SHM216_RevTurn_R_Lfoot {"frames": 111, "len": 3.67, "speed": [144, 416], "before": {"pitch": [10.9, 32.2], "roll": [-5.5, 20.1], "hand_f": [-19.9, 62.6], "hand_u": [-6.4, 35.0]}, "after": {"pitch": [8.1, 24.2], "roll": [-4.1, 5.4], "hand_f": [-19.9, 62.6], "hand_u": [-1.4, 34.7]}, "cmp": {"max_deg_new_vs_current_UB": 180.0, "twist_jump_current": 179.3, "twist_jump_new": 14.9, "spin_frames_current": [29, 33, 94, 97], "spin_frames_new": []}, "buggy": false}
+RB229 SHM216_RevTurn_R_Rfoot {"frames": 104, "len": 3.43, "speed": [144, 416], "before": {"pitch": [16.5, 30.7], "roll": [-14.9, 7.0], "hand_f": [-21.3, 68.6], "hand_u": [-4.5, 41.0]}, "after": {"pitch": [7.6, 24.4], "roll": [-4.6, 5.0], "hand_f": [-17.0, 57.5], "hand_u": [-4.4, 36.3]}, "cmp": {"max_deg_new_vs_current_UB": 180.0, "twist_jump_current": 173.1, "twist_jump_new": 14.8, "spin_frames_current": [31, 39], "spin_frames_new": []}, "buggy": false}
+RB229_DONE
+T3 DONE 09:45:27
+BUILD229 start 09:45:54
+APPLY229 {"profiles": "added", "vars": "added", "src": "added"}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bA.log
+throttle off False
+RELAUNCH bA 30 09:49:12
+RB229 SHM216_RevTurn_L_Lfoot {"frames": 103, "len": 3.4, "speed": [106, 416], "before": {"pitch": [14.4, 32.4], "roll": [-13.8, 17.1], "hand_f": [-26.3, 63.8], "hand_u": [-9.0, 44.7]}, "after": {"pitch": [8.1, 24.9], "roll": [-7.9, 6.7], "hand_f": [-19.9, 62.9], "hand_u": [-1.4, 32.7]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 15.0, "twist_jump_new": 15.0, "spin_frames_current": [], "spin_frames_new": []}, "buggy": false, "saved": true, "readback_leg_change_cm": 0.0}
+RB229 SHM216_RevTurn_L_Rfoot {"frames": 113, "len": 3.73, "speed": [106, 416], "before": {"pitch": [14.2, 29.5], "roll": [-8.3, 20.1], "hand_f": [-21.0, 63.1], "hand_u": [-6.7, 31.9]}, "after": {"pitch": [8.4, 24.9], "roll": [-5.4, 5.3], "hand_f": [-19.2, 58.9], "hand_u": [-3.1, 38.2]}, "cmp": {"max_deg_new_vs_current_UB": 0.0, "twist_jump_current": 14.6, "twist_jump_new": 14.6, "spin_frames_current": [], "spin_frames_new": []}, "buggy": false, "saved": true, "readback_leg_change_cm": 0.0}
+RB229 SHM216_RevTurn_R_Lfoot {"frames": 111, "len": 3.67, "speed": [144, 416], "before": {"pitch": [10.9, 32.2], "roll": [-5.5, 20.1], "hand_f": [-19.9, 62.6], "hand_u": [-6.4, 35.0]}, "after": {"pitch": [8.1, 24.2], "roll": [-4.1, 5.4], "hand_f": [-19.9, 62.6], "hand_u": [-1.4, 34.7]}, "cmp": {"max_deg_new_vs_current_UB": 180.0, "twist_jump_current": 179.3, "twist_jump_new": 14.9, "spin_frames_current": [29, 33, 94, 97], "spin_frames_new": []}, "buggy": false, "saved": true, "readback_leg_chang
+RB229 SHM216_RevTurn_R_Rfoot {"frames": 104, "len": 3.43, "speed": [144, 416], "before": {"pitch": [16.5, 30.7], "roll": [-14.9, 7.0], "hand_f": [-21.3, 68.6], "hand_u": [-4.5, 41.0]}, "after": {"pitch": [7.6, 24.4], "roll": [-4.6, 5.0], "hand_f": [-17.0, 57.5], "hand_u": [-4.4, 36.3]}, "cmp": {"max_deg_new_vs_current_UB": 180.0, "twist_jump_current": 173.1, "twist_jump_new": 14.8, "spin_frames_current": [31, 39], "spin_frames_new": []}, "buggy": false, "saved": true, "readback_leg_change_cm": 0
+RB229_DONE
+BUILD229 A done 09:50:09
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bB.log
+throttle off False
+RELAUNCH bB 30 09:52:20
+BUILD229 B done 09:57:50
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bC.log
+throttle off False
+RELAUNCH bC 30 09:59:54
+EFFORT229 {"reloaded": [], "accel": {"old": "K2Node_CallFunction_43"}, "friction": {"set": "K2Node_VariableSet_0", "select": "K2Node_CallFunction_295", "old": "K2Node_CallFunction_71"}, "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "child_profile": "<Object '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior", "ok": true, "saved": true, "dirty": []}
+RESUME229 {"reloaded": [], "step": "rewire", "targets": [["K2Node_CommutativeAssociativeBinaryOperator_39", "B"], ["K2Node_CommutativeAssociativeBinaryOperator_41", "B"]], "snapshot": "wired", "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knob": 0.0, "ok": true, "saved": true, "dirty": []}
+BUILD229_DONE 10:00:14
+T4 START 10:00:33
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_t4.log
+throttle off False
+RELAUNCH t4 30 10:03:16
+v212_warm_100319 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229t4_s29_cam2_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229t4_b_cam180_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 39) | by owner {'in-clip': 3} | FINISHED production
+v229t4_chain_sprint_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 7 (worst 69) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t4_j24_m180w_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 3 (worst 70) | by owner {'in-clip': 3} | FINISHED production
+v229t4_j23_m180_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 31) | by owner {'in-clip': 4} | FINISHED production
+v212_warm_100651 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t4_e29_rest_ef_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229t4_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229t4_e29_load_ef_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 5 (worst 109) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+MEM_RESTART editor 39 GB 10:09:08
+v212_warm_101250 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_e29_recov_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t4_e29_recov_ef_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 15 (worst 109) | by owner {'in-clip': 14, 'montage': 1} | FINISHED candidate
+v229t4_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED production
+v229t4_e29_chain_ef_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 7 (worst 80) | by owner {'in-clip': 7} | FINISHED candidate
+v229t4_chain_sscut_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED production
+v229t4_chain_sscut_ef_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 8 (worst 40) | by owner {'in-clip': 8} | FINISHED candidate
+v229t4_s29_ws_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229t4_s29_ws_ef_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 5 (worst 38) | by owner {'in-clip': 5} | FINISHED candidate
+v229t4_s29_dbl_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 5 (worst 81) | by owner {'in-clip': 5} | FINISHED production
+v229t4_s29_dbl_ef_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED candidate
+MEM_RESTART editor 38 GB 10:18:34
+v212_warm_102222 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_e29_house_o_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_e29_house_ef_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v212_warm_102431 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_c29_ad_o_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_c29_ad_cw_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t4_c29_wlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_c29_wlook_cw_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t4_c29_diag_o_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 38 GB 10:27:28
+v212_warm_103205 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_c29_diag_cw_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t4_c29_look_o_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED production
+v229t4_c29_look_cw_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED candidate
+v229t4_c29_jlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_c29_jlook_cw_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t4_d_sprint_o_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 6 (worst 41) | by owner {'in-clip': 6} | FINISHED production
+v229t4_d_sprint_cw_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 6 (worst 41) | by owner {'in-clip': 6} | FINISHED candidate
+v212_warm_103624 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v229t4_j24_rel_rs_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+MEM_RESTART editor 39 GB 10:37:48
+v212_warm_104204 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t4_s29_rel_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 5 (worst 40) | by owner {'in-clip': 5} | FINISHED production
+v229t4_s29_rel_rs_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 6 (worst 33) | by owner {'in-clip': 6} | FINISHED candidate
+v229t4_j24_ph0_rs_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t4_j24_dbl_rs_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t4_j24_sw_ph2_rs_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+T4 DONE 10:44:56
+BUILD229B start 10:47:58
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bA.log
+throttle off False
+RELAUNCH bA 30 10:51:43
+BUILD229B A done 10:52:31
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bB.log
+throttle off False
+RELAUNCH bB 30 10:54:52
+BUILD229B B done 11:00:48
+BUILD229B_DONE 11:00:48
+T5 START 11:01:05
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_t5.log
+throttle off False
+RELAUNCH t5 30 11:03:06
+v212_warm_110311 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t5_c29_ad_o_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t5_c29_ad_cw_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t5_c29_diag_o_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t5_c29_diag_cw_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t5_c29_wlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t5_c29_wlook_cw_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t5_c29_look_cw_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED candidate
+v229t5_c29_jlook_cw_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t5_d_sprint_cw_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 6 (worst 42) | by owner {'in-clip': 6} | FINISHED candidate
+MEM_RESTART editor 38 GB 11:08:34
+v212_warm_111238 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_111334 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t5_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229t5_e29_rest_ef_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229t5_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229t5_e29_load_ef_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 4 (worst 109) | by owner {'in-clip': 3, 'montage': 1} | FINISHED candidate
+v229t5_e29_recov_ef_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 11 (worst 108) | by owner {'in-clip': 10, 'montage': 1} | FINISHED candidate
+v229t5_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED production
+v229t5_e29_chain_ef_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 7 (worst 46) | by owner {'in-clip': 7} | FINISHED candidate
+v229t5_chain_sscut_ef_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 40) | by owner {'in-clip': 7} | FINISHED candidate
+v229t5_s29_ws_ef_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+MEM_RESTART editor 38 GB 11:18:21
+v212_warm_112148 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t5_s29_dbl_ef_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 5 (worst 81) | by owner {'in-clip': 5} | FINISHED candidate
+v229t5_e29_house_ef_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t5_j24_ph0_ef_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t5_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 174) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+v229t5_legs_slope_sprint_ef_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 173) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+T5 DONE 11:25:25
+BUILD229C start 11:27:46
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bA.log
+throttle off False
+RELAUNCH bA 30 11:30:51
+BUILD229C A done 11:31:29
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_bB.log
+throttle off False
+RELAUNCH bB 30 11:33:48
+BUILD229C B done 11:39:51
+BUILD229C_DONE 11:39:52
+T6 START 11:39:52
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_t6.log
+throttle off False
+RELAUNCH t6 30 11:42:15
+v212_warm_114219 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t6_e29_rest_ef_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229t6_e29_load_ef_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 5 (worst 109) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+v229t6_e29_recov_ef_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 11 (worst 109) | by owner {'in-clip': 10, 'montage': 1} | FINISHED candidate
+v229t6_e29_chain_ef_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 7 (worst 74) | by owner {'in-clip': 7} | FINISHED candidate
+v229t6_chain_sscut_ef_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 40) | by owner {'in-clip': 7} | FINISHED candidate
+v229t6_s29_ws_ef_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v229t6_s29_dbl_ef_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 5 (worst 81) | by owner {'in-clip': 5} | FINISHED candidate
+v229t6_s29_cam_ef_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v229t6_chain_sprint_ef_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 8 (worst 54) | by owner {'in-clip': 7, 'montage': 1} | FINISHED candidate
+v229t6_e29_house_ef_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM_RESTART editor 39 GB 11:47:57
+v212_warm_115150 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t6_j24_ph0_ef_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t6_j24_sw_ph2_ef_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t6_legs_slope_sprint_ef_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 173) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+v229t6_ter_hill8_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t6_ter_hill8_jog_ef_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+T6 DONE 11:54:59
+T7 START 11:56:16
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_NOT_READY shmv229_t7.log
+RELAUNCH t7 30 12:13:04
+T7 DONE 16:50:55
+T7B START 16:52:21
+no editor to quit
+RUNNER_READY shmv229_t7b.log
+throttle off False
+RELAUNCH t7b 30 16:54:21
+v212_warm_165425 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t7b_e29_chain_ef2_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED candidate
+v229t7b_e29_chain_ef3_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 11 (worst 89) | by owner {'in-clip': 11} | FINISHED candidate
+v229t7b_chain_sscut_ef2_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+v229t7b_chain_sscut_ef3_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 5 (worst 46) | by owner {'in-clip': 5} | FINISHED candidate
+v229t7b_e29_recov_ef2_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 89) | by owner {'in-clip': 15, 'montage': 1} | FINISHED candidate
+v229t7b_e29_recov_ef3_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 13 (worst 111) | by owner {'in-clip': 12, 'montage': 1} | FINISHED candidate
+v229t7b_e29_rest_ef2_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229t7b_e29_rest_ef3_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 9 (worst 54) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+v229t7b_s29_ws_ef2_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v229t7b_e29_house_ef3_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM_RESTART editor 39 GB 17:00:13
+v212_warm_170322 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t7b_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229t7b_c29_combo_all2_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t7b_j24_rel_all2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v229t7b_j24_ph0_all2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229t7b_s29_cam_all2_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED candidate
+T7B DONE 17:06:33
+FIN start groups={'camera': True, 'effort': True, 'resume': True} effort={'EffortGain': 1.6, 'EffortTurnK': 0.5, 'EffortAccK': 0.5, 'EffortLoadK': 0.6, 'EffortTauRec': 5.0} 17:07:22
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_pre.log
+throttle off False
+RELAUNCH pre 30 17:10:52
+v212_warm_171057 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229pre_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229pre_c29_combo_bn_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229pre_c29_combo_cn_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229pre_c29_combo_fin_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229pre_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED production
+v229pre_e29_chain_bn_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 11 (worst 98) | by owner {'in-clip': 11} | FINISHED candidate
+v229pre_e29_chain_cn_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 60) | by owner {'in-clip': 8} | FINISHED candidate
+v229pre_e29_chain_fin_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED candidate
+v229pre_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v212_warm_173214 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_e29_chain_oS_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED production
+MEM_RESTART editor 41 GB 17:33:22
+v212_warm_173805 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_e29_chain_finS_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED candidate
+v229cappre_e29_chain_oG_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED production
+v229cappre_e29_chain_finG_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED candidate
+v212_warm_174012 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_c29_combo_oG_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_c29_combo_finG_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229cappre_c29_combo_oS_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_c29_combo_finS_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v212_warm_174247 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_e29_rest_oS_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM_RESTART editor 39 GB 17:43:40
+v212_warm_174820 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cappre_e29_rest_finS_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+FIN pre done 17:49:26
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_pr.log
+throttle off False
+RELAUNCH pr 30 17:51:59
+PROMO229 {"groups": {"camera": true, "effort": true, "resume": true}, "abp_after": {"SHM229_ResumeWin": 0.2, "SHM227_RevHold": 1.0, "SHM228_ClipSpeed": 1.0, "SHM228_RelHold": 1.0, "SHM228_CancelOn": 1.0}, "shm_after": {"CamSwapMinSpeed": "230.0", "CamFolDZLatWalk": "3.0", "CamFolDZFwdWalk": "4.0", "EffortEnabled": "True", "EffortGain": "1.6", "EffortTurnK": "0.5", "EffortAccK": "0.5", "EffortLoadK": "0.6", "EffortTauRec": "5.0", "EffortUseTau": "1.2", "EffortReqTau": "0.6"}, "ok": true, "status": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "<BlueprintStatus.BS_UP_TO_DATE: 3>"], "saved": true, "dirty_after": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_vf.log
+throttle off False
+RELAUNCH vf 30 17:54:02
+VERIFY229 {"cam": {"CamSwapMinSpeed": 230.0, "CamFolDZLatWalk": 3.0, "CamFolDZFwdWalk": 4.0}, "effort": true, "resume": 0.2, "revturn_max_twist_jump": {"L_Lfoot": 15.0, "L_Rfoot": 14.6, "R_Lfoot": 14.9, "R_Rfoot": 14.8}, "bad": [], "ALL_OK": true}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_fin.log
+throttle off False
+RELAUNCH fin 30 17:56:20
+v212_warm_175624 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_s29_ws_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fin_s29_ws_ph_o_r1 | rows 331 rate 30.1/s | pops >25 m/s2: 4 (worst 36) | by owner {'in-clip': 4} | FINISHED production
+v229fin_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fin_s29_cam2_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fin_s29_sa_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 44) | by owner {'in-clip': 7} | FINISHED production
+v229fin_s29_dg_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 9 (worst 63) | by owner {'in-clip': 9} | FINISHED production
+v229fin_s29_dbl_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fin_s29_rel_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fin_b_s2back_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED production
+v229fin_b_cam180_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 38) | by owner {'in-clip': 4} | FINISHED production
+v229fin_chain_sprint_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 9 (worst 150) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM_RESTART editor 38 GB 18:02:14
+v212_warm_180549 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_chain_sscut_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED production
+v229fin_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED production
+v229fin_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED production
+v229fin_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 5, 'montage': 1} | FINISHED production
+v229fin_e29_recov_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 110) | by owner {'in-clip': 15, 'montage': 1} | FINISHED production
+v229fin_e29_house_o_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_c29_ad_o_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_c29_wlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_c29_diag_o_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 39 GB 18:11:27
+v212_warm_181507 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_c29_look_o_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED production
+v229fin_c29_jlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_d_sprint_o_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 8 (worst 53) | by owner {'in-clip': 8} | FINISHED production
+v229fin_a29_ang_o_r1 | rows 766 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_a29_angb_o_r1 | rows 694 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_181932 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_j24_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 38 GB 18:20:26
+v212_warm_182348 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_j24_ph3_o_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_j24_sw_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_j24_sw_ph2_o_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v229fin_j24_dbl_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_j24_ad_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED production
+v229fin_j24_m180w_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 2 (worst 46) | by owner {'in-clip': 2} | FINISHED production
+v229fin_j23_m180_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 30) | by owner {'in-clip': 4} | FINISHED production
+v229fin_r_cutrev_r_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 7 (worst 57) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229fin_s23_jstart_o_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+MEM_RESTART editor 39 GB 18:29:27
+v212_warm_183237 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+v229fin_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+v229fin_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v229fin_ter_drop_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED production
+v229fin_ter_step2_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED production
+v229fin_ter_bump_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229fin_ter_hill8_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 175) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM_RESTART editor 39 GB 18:38:05
+v212_warm_184105 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 9 (worst 58) | by owner {'montage': 2, 'in-clip': 7} | FINISHED production
+v229fin_map_r2_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 8 (worst 59) | by owner {'montage': 3, 'in-clip': 5} | FINISHED production
+v212_warm_184338 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fin_e29_chain_efoff_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED candidate
+v229fin_e29_recov_efoff_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229fin_chain_sscut_efoff_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED candidate
+v229fin_e29_rest_efoff_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+FIN evidence done 18:46:32
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_f20.log
+throttle off False
+RELAUNCH f20 20 18:49:45
+v212_warm_184949 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229f20_s29_cam_o_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 2 (worst 27) | by owner {'in-clip': 2} | FINISHED production
+v229f20_e29_chain_o_r1 | rows 256 rate 20.1/s | pops >25 m/s2: 9 (worst 85) | by owner {'in-clip': 9} | FINISHED production
+v229f20_chain_sscut_o_r1 | rows 214 rate 20.1/s | pops >25 m/s2: 5 (worst 40) | by owner {'in-clip': 5} | FINISHED production
+FIN aborted by operator (prod fix needed) 18:52:02
+PC229 start 18:54:05
+no editor to quit
+RUNNER_READY shmv229_pcA.log
+throttle off False
+RELAUNCH pcA 30 18:55:59
+PUSHCANCEL229 {"reloaded": [], "snapshot": "wired", "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knob": 0.0, "ok": true, "saved": true, "dirty": []}
+PC229 installed 18:56:12
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_pcB.log
+throttle off False
+RELAUNCH pcB 30 18:57:53
+v212_warm_185758 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 5, 'montage': 1} | FINISHED production
+v229v229pc_e29_load_pc_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 10 (worst 110) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229v229pc_s29_swl08_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 38) | by owner {'in-clip': 6} | FINISHED production
+v229v229pc_s29_swl08_pc_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 38) | by owner {'in-clip': 6} | FINISHED candidate
+v229v229pc_s29_swl10_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 6 (worst 33) | by owner {'in-clip': 6} | FINISHED production
+v229v229pc_s29_swl10_pc_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 6 (worst 33) | by owner {'in-clip': 6} | FINISHED candidate
+v229v229pc_s29_swl12_o_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 7 (worst 119) | by owner {'in-clip': 7} | FINISHED production
+v229v229pc_s29_swl12_pc_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 7 (worst 119) | by owner {'in-clip': 7} | FINISHED candidate
+v229v229pc_s29_swl14_o_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 109) | by owner {'in-clip': 6} | FINISHED production
+v229v229pc_s29_swl14_pc_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 6} | FINISHED candidate
+v229v229pc_s29_swl16_o_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 90) | by owner {'in-clip': 6} | FINISHED production
+MEM_RESTART editor 38 GB 19:04:08
+v212_warm_190814 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_s29_swl16_pc_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 90) | by owner {'in-clip': 6} | FINISHED candidate
+v229v229pc_s29_swl20_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 7 (worst 33) | by owner {'in-clip': 7} | FINISHED production
+v229v229pc_s29_swl20_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 7 (worst 33) | by owner {'in-clip': 7} | FINISHED candidate
+v229v229pc_j29_swl10_o_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j29_swl10_pc_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229v229pc_j29_swl14_o_r1 | rows 325 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j29_swl14_pc_r1 | rows 325 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v229v229pc_j29_swl20_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j29_swl20_pc_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v212_warm_191334 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_dbl_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_dbl_pc_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM_RESTART editor 39 GB 19:15:05
+v212_warm_191943 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v229v229pc_j24_rel_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v229v229pc_j24_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_ph0_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229v229pc_j24_ph3_o_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_ph3_pc_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229v229pc_j24_sw_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_sw_ph0_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229v229pc_j24_sw_ph2_o_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_sw_ph2_pc_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229v229pc_j24_ad_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED production
+MEM_RESTART editor 38 GB 19:25:58
+v212_warm_193002 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229v229pc_j24_ad_ph0_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED candidate
+v229v229pc_s29_dbl_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229v229pc_s29_dbl_pc_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v229v229pc_s29_ws_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229v229pc_s29_ws_pc_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v229v229pc_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED production
+v229v229pc_e29_chain_pc_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED candidate
+v229v229pc_chain_sscut_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED production
+v229v229pc_chain_sscut_pc_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+v229v229pc_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229v229pc_s29_cam_pc_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED candidate
+MEM_RESTART editor 38 GB 19:36:33
+v212_warm_194041 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+PC229_DONE 19:41:30
+EMS229 start 19:41:35
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_em.log
+throttle off False
+RELAUNCH em 30 19:43:54
+v212_warm_194400 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229em_e29_load_pc_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 10 (worst 110) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229em_e29_load_ems_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 9 (worst 89) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+v229em_e29_chain_pc_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED candidate
+v229em_e29_chain_ems_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 60) | by owner {'in-clip': 8} | FINISHED candidate
+v229em_e29_recov_pc_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 110) | by owner {'in-clip': 15, 'montage': 1} | FINISHED candidate
+v229em_e29_recov_ems_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 89) | by owner {'in-clip': 15, 'montage': 1} | FINISHED candidate
+v229em_s29_swl12_pc_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 7 (worst 111) | by owner {'in-clip': 7} | FINISHED candidate
+v229em_s29_swl12_ems_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 7 (worst 119) | by owner {'in-clip': 7} | FINISHED candidate
+v229em_s29_swl16_pc_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 90) | by owner {'in-clip': 6} | FINISHED candidate
+MEM_RESTART editor 38 GB 19:49:40
+v212_warm_195330 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229em_s29_swl16_ems_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 103) | by owner {'in-clip': 6} | FINISHED candidate
+v229em_j29_swl10_pc_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_j29_swl10_ems_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+v229em_c29_combo_pc_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_c29_combo_ems_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_c29_ad_pc_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_c29_ad_ems_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_c29_diag_pc_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_c29_diag_ems_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_taps_pc_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM_RESTART editor 39 GB 19:59:43
+v212_warm_200344 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229em_taps_ems_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_s23_jstart_pc_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+v229em_s23_jstart_ems_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+v229em_j24_ph0_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_j24_ph0_ems_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 30) | by owner {'in-clip': 1} | FINISHED candidate
+v229em_j24_dbl_pc_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_j24_dbl_ems_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229em_j24_rel_pc_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v229em_j24_rel_ems_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+MEM_RESTART editor 39 GB 20:10:10
+v212_warm_201520 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229em_e29_rest_pc_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229em_e29_rest_ems_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229em_chain_sscut_pc_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+v229em_chain_sscut_ems_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+v229em_ins_ws_pc_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+v229em_ins_ws_ems_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+v229em_map_r1_pc_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 9 (worst 58) | by owner {'montage': 2, 'in-clip': 7} | FINISHED candidate
+v229em_map_r1_ems_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 9 (worst 58) | by owner {'montage': 2, 'in-clip': 7} | FINISHED candidate
+v212_warm_202050 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229em_e29_load_pcoff_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 60) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+MEM_RESTART editor 40 GB 20:21:55
+v212_warm_202627 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229em_e29_chain_pcoff_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED candidate
+v229em_s29_swl12_pcoff_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 4 (worst 109) | by owner {'in-clip': 4} | FINISHED candidate
+v229em_s29_swl14_pcoff_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 35) | by owner {'in-clip': 6} | FINISHED candidate
+v229em_s29_swl12_ems40_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 6 (worst 72) | by owner {'in-clip': 6} | FINISHED candidate
+v229em_s29_swl14_ems40_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 98) | by owner {'in-clip': 6} | FINISHED candidate
+v229em_e29_chain_ems40_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 75) | by owner {'in-clip': 8} | FINISHED candidate
+v229em_e29_load_ems40_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 9 (worst 89) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+EMS229_DONE 20:31:01
+FIN2 start 20:32:10
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_p2.log
+throttle off False
+RELAUNCH p2 30 20:36:03
+v212_warm_203609 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capp2_e29_load_oS_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 5, 'montage': 1} | FINISHED production
+v229capp2_e29_load_pcS_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 10 (worst 110) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229capp2_e29_load_oG_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 5, 'montage': 1} | FINISHED production
+v229capp2_e29_load_pcG_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 10 (worst 110) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v212_warm_203922 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capp2_s29_swl14_oS_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 6} | FINISHED production
+v229capp2_s29_swl14_pcS_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 6} | FINISHED candidate
+FIN2 pre done 20:40:46
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_pr2.log
+throttle off False
+RELAUNCH pr2 30 20:44:31
+PROMO229 {"groups": {"pushcancel": true}, "abp_after": {"SHM229_ResumeWin": 0.2, "SHM229_PushCancel": 1.0, "SHM227_RevHold": 1.0, "SHM228_ClipSpeed": 1.0, "SHM228_RelHold": 1.0, "SHM228_CancelOn": 1.0}, "shm_after": {"CamSwapMinSpeed": "230.0", "CamFolDZLatWalk": "3.0", "CamFolDZFwdWalk": "4.0", "EffortEnabled": "True", "EffortGain": "1.6", "EffortTurnK": "0.5", "EffortAccK": "0.5", "EffortLoadK": "0.6", "EffortTauRec": "5.0", "EffortUseTau": "1.2", "EffortReqTau": "0.6"}, "ok": true, "status": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "<BlueprintStatus.BS_UP_TO_DATE: 3>"], "saved": true, "dirty_after": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_vf2.log
+throttle off False
+RELAUNCH vf2 30 20:46:48
+VERIFY229 {"cam": {"CamSwapMinSpeed": 230.0, "CamFolDZLatWalk": 3.0, "CamFolDZFwdWalk": 4.0}, "effort": true, "resume": 0.2, "pushcancel": 1.0, "revturn_max_twist_jump": {"L_Lfoot": 15.0, "L_Rfoot": 14.6, "R_Lfoot": 14.9, "R_Rfoot": 14.8}, "bad": [], "ALL_OK": true}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_fn2.log
+throttle off False
+RELAUNCH fn2 30 20:48:44
+v212_warm_204848 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_s29_ws_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_s29_ws_ph_o_r1 | rows 331 rate 30.1/s | pops >25 m/s2: 4 (worst 36) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v229fn2_s29_cam2_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_s29_sa_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 44) | by owner {'in-clip': 7} | FINISHED production
+v229fn2_s29_dg_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 9 (worst 63) | by owner {'in-clip': 9} | FINISHED production
+v229fn2_s29_dbl_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_s29_rel_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_b_s2back_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED production
+v229fn2_b_cam180_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 38) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_chain_sprint_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 9 (worst 150) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+v229fn2_chain_sscut_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED production
+MEM_RESTART editor 39 GB 20:55:36
+v212_warm_205948 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED production
+v229fn2_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED production
+v229fn2_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 10 (worst 110) | by owner {'in-clip': 9, 'montage': 1} | FINISHED production
+v229fn2_e29_recov_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 110) | by owner {'in-clip': 15, 'montage': 1} | FINISHED production
+v229fn2_e29_house_o_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_c29_ad_o_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_c29_wlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_c29_diag_o_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_c29_look_o_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED production
+MEM_RESTART editor 39 GB 21:05:51
+v212_warm_210918 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_c29_jlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_d_sprint_o_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 48) | by owner {'in-clip': 7} | FINISHED production
+v229fn2_a29_ang_o_r1 | rows 766 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_a29_angb_o_r1 | rows 694 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_211343 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_s29_swl08_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 5 (worst 54) | by owner {'in-clip': 5} | FINISHED production
+v229fn2_s29_swl10_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 6 (worst 33) | by owner {'in-clip': 6} | FINISHED production
+MEM_RESTART editor 38 GB 21:15:08
+v212_warm_211853 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_s29_swl12_o_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 7 (worst 119) | by owner {'in-clip': 7} | FINISHED production
+v229fn2_s29_swl14_o_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 6} | FINISHED production
+v229fn2_s29_swl16_o_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 90) | by owner {'in-clip': 6} | FINISHED production
+v229fn2_s29_swl20_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 7 (worst 33) | by owner {'in-clip': 7} | FINISHED production
+v229fn2_j29_swl10_o_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j29_swl14_o_r1 | rows 325 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v229fn2_j29_swl20_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_s29_wall_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_s29_wstop_o_r1 | rows 238 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229fn2_e29_hitch_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 88) | by owner {'in-clip': 10} | FINISHED production
+v229fn2_j29_hitch_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_212507 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j24_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 40 GB 21:26:09
+v212_warm_212954 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j24_ph3_o_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j24_sw_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j24_sw_ph2_o_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v229fn2_j24_dbl_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_j24_ad_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED production
+v229fn2_j24_m180w_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 3 (worst 46) | by owner {'in-clip': 3} | FINISHED production
+v229fn2_j23_m180_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 31) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_r_cutrev_r_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 7 (worst 57) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229fn2_s23_jstart_o_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+MEM_RESTART editor 39 GB 21:36:13
+v212_warm_214015 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 40) | by owner {'montage': 1} | FINISHED production
+v229fn2_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+v229fn2_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v229fn2_ter_drop_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED production
+v229fn2_ter_step2_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED production
+v229fn2_ter_hill8_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 175) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+v229fn2_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 9 (worst 58) | by owner {'montage': 2, 'in-clip': 7} | FINISHED production
+MEM_RESTART editor 41 GB 22:02:08
+v212_warm_220535 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_map_r2_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 11 (worst 59) | by owner {'montage': 5, 'in-clip': 6} | FINISHED production
+v212_warm_220732 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn2_e29_chain_efoff_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED candidate
+v229fn2_e29_recov_efoff_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229fn2_chain_sscut_efoff_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED candidate
+v229fn2_e29_rest_efoff_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229fn2_e29_load_efoff_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 60) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+FIN2 evidence done 22:10:47
+dirty after reload []
+QUIT_EDITOR requested
+FIN2 stopped after evidence (effort floor A/B) 22:11:11
+SM229 start 22:11:11
+no editor to quit
+RUNNER_READY shmv229_sm.log
+throttle off False
+RELAUNCH sm 30 22:13:16
+v212_warm_221320 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229sm_chain_sprint_sm70_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 9 (worst 59) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+v229sm_chain_sprint_sm80_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 10 (worst 59) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229sm_e29_load_sm70_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 11 (worst 110) | by owner {'in-clip': 10, 'montage': 1} | FINISHED candidate
+v229sm_e29_load_sm80_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 9 (worst 108) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+v229sm_e29_chain_sm70_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 55) | by owner {'in-clip': 10} | FINISHED candidate
+v229sm_e29_chain_sm80_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 83) | by owner {'in-clip': 10} | FINISHED candidate
+v229sm_e29_recov_sm70_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 110) | by owner {'in-clip': 15, 'montage': 1} | FINISHED candidate
+v229sm_e29_recov_sm80_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 110) | by owner {'in-clip': 15, 'montage': 1} | FINISHED candidate
+v229sm_e29_rest_sm70_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+MEM_RESTART editor 38 GB 22:19:01
+v212_warm_222218 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229sm_e29_rest_sm80_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 58) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+v229sm_chain_sscut_sm70_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 44) | by owner {'in-clip': 6} | FINISHED candidate
+v229sm_chain_sscut_sm80_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED candidate
+v229sm_s29_swl12_sm70_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 6 (worst 119) | by owner {'in-clip': 6} | FINISHED candidate
+v229sm_s29_swl12_sm80_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 7 (worst 119) | by owner {'in-clip': 7} | FINISHED candidate
+v229sm_s29_swl14_sm70_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 6} | FINISHED candidate
+v229sm_s29_swl14_sm80_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 7 (worst 111) | by owner {'in-clip': 7} | FINISHED candidate
+v229sm_s29_swl16_sm70_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 90) | by owner {'in-clip': 6} | FINISHED candidate
+v229sm_s29_swl16_sm80_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 8 (worst 89) | by owner {'in-clip': 8} | FINISHED candidate
+v229sm_d_sprint_sm70_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 31) | by owner {'in-clip': 7} | FINISHED candidate
+v229sm_d_sprint_sm80_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 36) | by owner {'in-clip': 7} | FINISHED candidate
+MEM_RESTART editor 39 GB 22:28:53
+v212_warm_223216 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229sm_s29_dg_sm70_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 9 (worst 63) | by owner {'in-clip': 9} | FINISHED candidate
+v229sm_s29_dg_sm80_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 9 (worst 64) | by owner {'in-clip': 9} | FINISHED candidate
+v229sm_s29_sa_sm80_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED candidate
+SM229_DONE 22:50:37
+FIN3 start 22:50:43
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_pr3.log
+throttle off False
+RELAUNCH pr3 30 22:53:56
+PROMO229 {"groups": {"effort": true}, "abp_after": {"SHM229_ResumeWin": 0.2, "SHM229_PushCancel": 1.0, "SHM227_RevHold": 1.0, "SHM228_ClipSpeed": 1.0, "SHM228_RelHold": 1.0, "SHM228_CancelOn": 1.0}, "shm_after": {"CamSwapMinSpeed": "230.0", "CamFolDZLatWalk": "3.0", "CamFolDZFwdWalk": "4.0", "EffortEnabled": "True", "EffortGain": "1.6", "EffortTurnK": "0.5", "EffortAccK": "0.5", "EffortLoadK": "0.6", "EffortTauRec": "5.0", "EffortUseTau": "1.2", "EffortReqTau": "0.6", "EffortScaleMin": "0.7"}, "ok": true, "status": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "<BlueprintStatus.BS_UP_TO_DATE: 3>"], "saved": true, "dirty_after": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_vf3.log
+throttle off False
+RELAUNCH vf3 30 22:55:47
+VERIFY229C_FAILED
+FIN3 resume at verify 22:56:31
+FIN3 start 22:56:32
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_vf3.log
+throttle off False
+RELAUNCH vf3 30 22:59:02
+VERIFY229 {"cam": {"CamSwapMinSpeed": 230.0, "CamFolDZLatWalk": 3.0, "CamFolDZFwdWalk": 4.0}, "effort": true, "effort_min": 0.7, "resume": 0.2, "pushcancel": 1.0, "revturn_max_twist_jump": {"L_Lfoot": 15.0, "L_Rfoot": 14.6, "R_Lfoot": 14.9, "R_Rfoot": 14.8}, "bad": [], "ALL_OK": true}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_fn3.log
+throttle off False
+RELAUNCH fn3 30 23:01:14
+v212_warm_230123 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_s29_ws_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_s29_ws_ph_o_r1 | rows 331 rate 30.1/s | pops >25 m/s2: 4 (worst 37) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_s29_cam_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v229fn3_s29_cam2_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_s29_sa_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 44) | by owner {'in-clip': 7} | FINISHED production
+v229fn3_s29_dg_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 9 (worst 63) | by owner {'in-clip': 9} | FINISHED production
+v229fn3_s29_dbl_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_s29_rel_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_b_s2back_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED production
+v229fn3_b_cam180_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 38) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_chain_sprint_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 9 (worst 59) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM_RESTART editor 38 GB 23:07:03
+v212_warm_231050 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_chain_sscut_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 6 (worst 44) | by owner {'in-clip': 6} | FINISHED production
+v229fn3_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 11 (worst 55) | by owner {'in-clip': 11} | FINISHED production
+v229fn3_e29_rest_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED production
+v229fn3_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 11 (worst 110) | by owner {'in-clip': 10, 'montage': 1} | FINISHED production
+v229fn3_e29_recov_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 16 (worst 110) | by owner {'in-clip': 15, 'montage': 1} | FINISHED production
+v229fn3_e29_house_o_r1 | rows 673 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_c29_ad_o_r1 | rows 424 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_c29_wlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_c29_diag_o_r1 | rows 523 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 38 GB 23:16:05
+v212_warm_231940 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_c29_look_o_r1 | rows 301 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED production
+v229fn3_c29_jlook_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_d_sprint_o_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 31) | by owner {'in-clip': 7} | FINISHED production
+v229fn3_a29_ang_o_r1 | rows 766 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_233858 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_s29_swl08_o_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 5 (worst 54) | by owner {'in-clip': 5} | FINISHED production
+v229fn3_s29_swl10_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 6 (worst 33) | by owner {'in-clip': 6} | FINISHED production
+v229fn3_s29_swl12_o_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 6 (worst 119) | by owner {'in-clip': 6} | FINISHED production
+MEM_RESTART editor 38 GB 23:40:44
+v212_warm_234417 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_s29_swl14_o_r1 | rows 340 rate 30.1/s | pops >25 m/s2: 6 (worst 110) | by owner {'in-clip': 6} | FINISHED production
+v229fn3_s29_swl16_o_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 6 (worst 90) | by owner {'in-clip': 6} | FINISHED production
+v229fn3_s29_swl20_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 7 (worst 33) | by owner {'in-clip': 7} | FINISHED production
+v229fn3_j29_swl10_o_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_j29_swl14_o_r1 | rows 325 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v229fn3_j29_swl20_o_r1 | rows 343 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_s29_wall_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_s29_wstop_o_r1 | rows 238 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229fn3_e29_hitch_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 11 (worst 55) | by owner {'in-clip': 11} | FINISHED production
+v229fn3_j29_hitch_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_235010 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_j24_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM_RESTART editor 38 GB 23:51:02
+v212_warm_235601 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_j24_ph3_o_r1 | rows 366 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_j24_sw_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_j24_sw_ph2_o_r1 | rows 363 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_j24_rel_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v229fn3_j24_dbl_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 29) | by owner {'in-clip': 1} | FINISHED production
+v229fn3_j24_ad_ph0_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED production
+v229fn3_j24_m180w_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 4 (worst 46) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_j23_m180_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 30) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_r_cutrev_r_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 7 (worst 57) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229fn3_s23_jstart_o_r1 | rows 742 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+MEM_RESTART editor 38 GB 00:01:44
+v212_warm_000842 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 40) | by owner {'montage': 1} | FINISHED production
+v229fn3_ins_ws2_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+v229fn3_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+v229fn3_ter_drop_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 251) | by owner {'in-clip': 3} | FINISHED production
+v229fn3_ter_step2_o_r1 | rows 568 rate 30.1/s | pops >25 m/s2: 6 (worst 190) | by owner {'in-clip': 6} | FINISHED production
+v229fn3_ter_bump_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v229fn3_ter_hill8_jog_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 175) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM_RESTART editor 39 GB 00:24:56
+v212_warm_002852 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 10 (worst 58) | by owner {'montage': 2, 'in-clip': 8} | FINISHED production
+v229fn3_map_r2_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 7 (worst 58) | by owner {'montage': 3, 'in-clip': 4} | FINISHED production
+v212_warm_003146 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229fn3_e29_chain_efoff_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED candidate
+v229fn3_e29_recov_efoff_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229fn3_chain_sscut_efoff_r1 | rows 322 rate 30.1/s | pops >25 m/s2: 7 (worst 41) | by owner {'in-clip': 7} | FINISHED candidate
+v229fn3_e29_rest_efoff_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v229fn3_e29_load_efoff_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 6 (worst 60) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+MEM_RESTART editor 39 GB 00:34:32
+v212_warm_003805 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+FIN3 evidence done 00:38:46
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_h20.log
+throttle off False
+RELAUNCH h20 20 00:40:57
+v212_warm_004103 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h20_s29_cam_o_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 2 (worst 27) | by owner {'in-clip': 2} | FINISHED production
+v229h20_e29_chain_o_r1 | rows 256 rate 20.1/s | pops >25 m/s2: 5 (worst 56) | by owner {'in-clip': 5} | FINISHED production
+v229h20_e29_load_o_r1 | rows 302 rate 20.1/s | pops >25 m/s2: 7 (worst 83) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+v229h20_s29_swl14_o_r1 | rows 226 rate 20.1/s | pops >25 m/s2: 3 (worst 82) | by owner {'in-clip': 3} | FINISHED production
+v229h20_chain_sscut_o_r1 | rows 214 rate 20.1/s | pops >25 m/s2: 5 (worst 40) | by owner {'in-clip': 5} | FINISHED production
+v229h20_c29_ad_o_r1 | rows 282 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h20_c29_combo_o_r1 | rows 298 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h20_j24_rel_o_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h20_j24_ph0_o_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h20_j24_sw_ph2_o_r1 | rows 242 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h20_j24_dbl_o_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+FIN3 fps 20 done 00:46:14
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_h60.log
+throttle off False
+RELAUNCH h60 60 00:49:20
+v212_warm_004925 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v229h60_s29_cam_o_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 17 (worst 67) | by owner {'in-clip': 17} | FINISHED production
+v229h60_e29_chain_o_r1 | rows 772 rate 60.1/s | pops >25 m/s2: 19 (worst 67) | by owner {'in-clip': 19} | FINISHED production
+v229h60_e29_load_o_r1 | rows 910 rate 60.1/s | pops >25 m/s2: 18 (worst 109) | by owner {'in-clip': 17, 'montage': 1} | FINISHED production
+v229h60_s29_swl14_o_r1 | rows 682 rate 60.1/s | pops >25 m/s2: 14 (worst 131) | by owner {'in-clip': 14} | FINISHED production
+v229h60_chain_sscut_o_r1 | rows 646 rate 60.1/s | pops >25 m/s2: 13 (worst 159) | by owner {'in-clip': 13} | FINISHED production
+MEM_RESTART editor 38 GB 00:54:48
+v212_warm_005840 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v229h60_c29_ad_o_r1 | rows 850 rate 60.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229h60_c29_combo_o_r1 | rows 898 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v229h60_j24_rel_o_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 12 (worst 39) | by owner {'in-clip': 12} | FINISHED production
+v229h60_j24_ph0_o_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 15 (worst 34) | by owner {'in-clip': 15} | FINISHED production
+v229h60_j24_sw_ph2_o_r1 | rows 728 rate 60.1/s | pops >25 m/s2: 13 (worst 38) | by owner {'in-clip': 13} | FINISHED production
+MEM_RESTART editor 39 GB 01:03:57
+v212_warm_010721 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v229h60_j24_dbl_o_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 18 (worst 48) | by owner {'in-clip': 18} | FINISHED production
+FIN3 fps 60 done 01:09:19
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_h120.log
+throttle off False
+RELAUNCH h120 120 01:11:50
+v212_warm_011154 | rows 1679 rate 120.1/s | pops >25 m/s2: 9 (worst 56) | by owner {'in-clip': 9} | FINISHED production
+v229h120_s29_cam_o_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 8 (worst 147) | by owner {'in-clip': 8} | FINISHED production
+v229h120_e29_chain_o_r1 | rows 1546 rate 120.1/s | pops >25 m/s2: 9 (worst 147) | by owner {'in-clip': 9} | FINISHED production
+MEM_RESTART editor 39 GB 01:17:14
+v212_warm_012056 | rows 1679 rate 120.1/s | pops >25 m/s2: 10 (worst 402) | by owner {'in-clip': 10} | FINISHED production
+v229h120_e29_load_o_r1 | rows 1822 rate 120.1/s | pops >25 m/s2: 13 (worst 162) | by owner {'in-clip': 11, 'montage': 2} | FINISHED production
+v229h120_s29_swl14_o_r1 | rows 1366 rate 120.1/s | pops >25 m/s2: 7 (worst 162) | by owner {'in-clip': 7} | FINISHED production
+MEM_RESTART editor 39 GB 01:26:25
+v212_warm_013003 | rows 1679 rate 120.1/s | pops >25 m/s2: 9 (worst 56) | by owner {'in-clip': 9} | FINISHED production
+v229h120_chain_sscut_o_r1 | rows 1294 rate 120.1/s | pops >25 m/s2: 5 (worst 207) | by owner {'in-clip': 5} | FINISHED production
+v229h120_c29_ad_o_r1 | rows 1702 rate 120.1/s | pops >25 m/s2: 10 (worst 34) | by owner {'in-clip': 10} | FINISHED production
+MEM_RESTART editor 38 GB 01:34:41
+v212_warm_013755 | rows 1679 rate 120.1/s | pops >25 m/s2: 9 (worst 56) | by owner {'in-clip': 9} | FINISHED production
+v229h120_c29_combo_o_r1 | rows 1798 rate 120.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 10} | FINISHED production
+v229h120_j24_rel_o_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 87) | by owner {'in-clip': 11} | FINISHED production
+MEM_RESTART editor 39 GB 01:42:03
+v212_warm_014545 | rows 1679 rate 120.1/s | pops >25 m/s2: 9 (worst 56) | by owner {'in-clip': 9} | FINISHED production
+v229h120_j24_ph0_o_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 87) | by owner {'in-clip': 11} | FINISHED production
+v229h120_j24_sw_ph2_o_r1 | rows 1458 rate 120.1/s | pops >25 m/s2: 12 (worst 87) | by owner {'in-clip': 12} | FINISHED production
+v229h120_j24_dbl_o_r1 | rows 1498 rate 120.1/s | pops >25 m/s2: 11 (worst 82) | by owner {'in-clip': 11} | FINISHED production
+MEM_RESTART editor 44 GB 01:51:43
+v212_warm_015849 | rows 1679 rate 120.1/s | pops >25 m/s2: 10 (worst 402) | by owner {'in-clip': 10} | FINISHED production
+FIN3 fps 120 done 02:13:27
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_hrt.log
+throttle off False
+RELAUNCH hrt real 02:16:46
+v229hrt_s29_cam_o_r1 | rows 278 rate 22.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v212_warm_021734 | rows 439 rate 32.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229hrt_e29_chain_o_r1 | rows 395 rate 32.2/s | pops >25 m/s2: 12 (worst 40) | by owner {'in-clip': 12} | FINISHED production
+v229hrt_e29_load_o_r1 | rows 475 rate 32.5/s | pops >25 m/s2: 13 (worst 130) | by owner {'in-clip': 12, 'montage': 1} | FINISHED production
+v229hrt_s29_swl14_o_r1 | rows 316 rate 29.2/s | pops >25 m/s2: 7 (worst 56) | by owner {'in-clip': 7} | FINISHED production
+v229hrt_c29_wlook_o_r1 | rows 391 rate 29.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229hrt_j24_rel_o_r1 | rows 323 rate 28.0/s | pops >25 m/s2: 3 (worst 57) | by owner {'in-clip': 3} | FINISHED production
+v229hrt_j24_sw_ph2_o_r1 | rows 296 rate 25.3/s | pops >25 m/s2: 1 (worst 76) | by owner {'in-clip': 1} | FINISHED production
+v229hrt_map_r2_o_r1 | rows 638 rate 24.3/s | pops >25 m/s2: 10 (worst 48) | by owner {'montage': 2, 'in-clip': 8} | FINISHED production
+FIN3_EVIDENCE_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_cap3.log
+throttle off False
+RELAUNCH cap3 30 02:24:30
+v212_warm_022434 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capfn3_e29_chain_oS_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 55) | by owner {'in-clip': 10} | FINISHED production
+v229capfn3_e29_chain_oG_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 11 (worst 55) | by owner {'in-clip': 11} | FINISHED production
+v229capfn3_s29_cam_oS_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v229capfn3_s29_cam_oG_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v212_warm_022721 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capfn3_c29_combo_oG_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_024357 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capfn3_j24_rel_oS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v212_warm_030030 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capfn3_e29_load_oS_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 11 (worst 110) | by owner {'in-clip': 10, 'montage': 1} | FINISHED production
+MEM_RESTART editor 39 GB 03:01:29
+v212_warm_030545 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229capfn3_e29_load_oG_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 11 (worst 110) | by owner {'in-clip': 10, 'montage': 1} | FINISHED production
+CAP3_DONE
+CAPTEST start 03:10:01
+no editor to quit
+RUNNER_READY shmv229_ct.log
+throttle off False
+RELAUNCH ct 30 03:11:38
+v229capt_j24_rel_oS_r1 | rows 359 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+CAPTEST_DONE 03:12:23
+CAP4 start 03:12:36
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv229_cap4.log
+throttle off False
+RELAUNCH cap4 30 03:14:53
+v212_warm_031456 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cap4_e29_chain_refS_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 8 (worst 56) | by owner {'in-clip': 8} | FINISHED candidate
+v229cap4_e29_chain_oS_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 11 (worst 55) | by owner {'in-clip': 11} | FINISHED production
+v229cap4_e29_chain_oG_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 10 (worst 55) | by owner {'in-clip': 10} | FINISHED production
+v229cap4_s29_cam_oS_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v229cap4_s29_cam_oG_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED production
+v212_warm_031817 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cap4_c29_combo_refG_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v229cap4_c29_combo_oG_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cap4_c29_combo_oS_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v212_warm_032028 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cap4_e29_rest_refS_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM_RESTART editor 40 GB 03:21:20
+v212_warm_032617 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cap4_e29_rest_oS_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 9, 'montage': 1} | FINISHED production
+v229cap4_j24_rel_refS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED candidate
+v229cap4_j24_rel_oS_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v229cap4_s29_cam2_oG_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v212_warm_032917 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v229cap4_e29_load_refS_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v229cap4_e29_load_oS_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 11 (worst 110) | by owner {'in-clip': 10, 'montage': 1} | FINISHED production
+v229cap4_e29_load_oG_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 11 (worst 110) | by owner {'in-clip': 10, 'montage': 1} | FINISHED production
+CAP4_DONE

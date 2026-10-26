@@ -1,0 +1,62 @@
+--- Saved/Codex/SHME_V229_20261025/checkpoint/pre_v229/tools/shm_src.py	2026-10-25 02:04:45.283557200 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-25 11:27:37.196921300 +0300
+@@ -69,7 +69,37 @@
+   (set FootZ (- (.z pos) (Bileşenler|Kapsül|GetScaledCapsuleHalfHeight :self Capsule)))
+   (set MomentumKgMs (* (A BodyMassKg) (/ (vlenxy v) (R CmPerMeter))))
+   (bind sp (vlenxy v))
+-  (set Gait (select (< sp 10.0) 0.0 (select (< sp 200.0) 1.0 (select (< sp 400.0) 2.0 3.0)))))
++  (set Gait (select (< sp 10.0) 0.0 (select (< sp 200.0) 1.0 (select (< sp 400.0) 2.0 3.0))))
++  ; V2.29 effort (HEURISTIC over measured CMC kinematics): EffortE = short-term exertion 0..1 from horizontal acceleration above walking
++  ; level (x speed fraction) + a small sustained-sprint term; recovers (tau EffortTauRec) only while the demand is ~0 (standing, looking
++  ; around or calm walking never build it). EffortLoad = low-pass |a_h| / EffortLoadA (the support is busy with the current impulse);
++  ; EffortLoadDir = EffortLoad x (1 - dot(acc dir, desired dir)) / 2 = load against a NEW direction only (a single brake / push along the
++  ; request costs nothing). GR consumes EffortAccScale (max acceleration) and EffortTurnScale (redirect friction): 1.0 = neutral.
++  (bind efOn (R EffortEnabled))
++  (bind ah (vlenxy Accel))
++  (bind wd (* (clamp (/ (- ah (R EffortA0)) (max (R EffortA1) 1.0)) 0.0 2.0) (clamp (/ sp (max (R EffortMinSpeed) 1.0)) 0.0 1.0)))
++  (bind ws (* (R EffortSprintGain) (clamp (/ (- sp (R EffortSprintV0)) 200.0) 0.0 1.0)))
++  (bind dem (+ wd ws))
++  (bind rec (select (> dem 0.05) 0.0 (/ EffortE (max (R EffortTauRec) 0.1))))
++  (set EffortE (select efOn (clamp (+ EffortE (* dt (- (* (R EffortGain) dem) rec))) 0.0 1.0) 0.0))
++  (bind la (- 1.0 (exp (/ (- dt) (max (R EffortLoadTau) 0.01)))))
++  (set EffortLoad (select efOn (+ EffortLoad (* (- (clamp (/ ah (max (R EffortLoadA) 1.0)) 0.0 1.0) EffortLoad) la)) 0.0))
++  (bind adir (Matematik|Vektör|Normalize2D(Vector) :A (vec (.x Accel) (.y Accel) 0.0) :Tolerance 0.0001))
++  (bind dd (+ (* (.x adir) (.x DesiredDir)) (* (.y adir) (.y DesiredDir))))
++  (set EffortLoadDir (select (and efOn HasIntent) (* EffortLoad (clamp (* 0.5 (- 1.0 dd)) 0.0 1.0)) 0.0))
++  ; V2.29c request load: latched at the moment the requested direction CHANGES (> ~45 deg in one frame = a new key / stick request):
++  ; the support's current load x how far the new request turns away (90 deg = full); decays with EffortReqTau. A steady sprint has no
++  ; load -> the first cut is free; a request that arrives while the previous brake / cut is still loading the support is limited.
++  (bind dch (* 0.5 (- 1.0 (+ (* (.x DesiredDir) (.x EffortPrevDir)) (* (.y DesiredDir) (.y EffortPrevDir))))))
++  (bind newReq (and (and efOn HasIntent) (> dch 0.15)))
++  (bind rq0 (* EffortReqLoad (exp (/ (- dt) (max (R EffortReqTau) 0.01)))))
++  (set EffortReqLoad (select efOn (select newReq (max rq0 (* EffortLoad (clamp (* 2.0 dch) 0.0 1.0))) rq0) 0.0))
++  (set EffortPrevDir (selv HasIntent DesiredDir EffortPrevDir))
++  ; V2.29b: the scales read EffortEUse = EffortE low-passed (EffortUseTau): the PREVIOUS efforts limit the next maneuver, a maneuver's own
++  ; exertion barely limits itself (v1 slowed a single rested sprint reversal 1.37 -> 2.2 s)
++  (set EffortEUse (select efOn (+ EffortEUse (* (- EffortE EffortEUse) (- 1.0 (exp (/ (- dt) (max (R EffortUseTau) 0.01)))))) 0.0))
++  (set EffortAccScale (select efOn (max (R EffortScaleMin) (- 1.0 (* (R EffortAccK) EffortEUse))) 1.0))
++  (set EffortTurnScale (select efOn (max (R EffortScaleMin) (* (- 1.0 (* (R EffortTurnK) EffortEUse)) (- 1.0 (* (R EffortLoadK) EffortReqLoad)))) 1.0)))
+ ''')
+ 
+ # ---------------------------------------------------------------- Phase B: COM + support + stability + capture point
+@@ -1061,7 +1091,7 @@
+   ; sustained lateral travel in the facing frame (+ right), the same signal the V1.3.4 swap uses
+   (bind rtv (vec (- 0.0 (.y Facing)) (.x Facing) 0.0))
+   (bind vh (Matematik|Vektör|Normalize2D(Vector) :A PlanarVelocity :Tolerance 0.0001))
+-  (bind lat (select (and Grounded (> Speed 60.0)) (dot vh rtv) 0.0))
++  (bind lat (select (and Grounded (> Speed (R CamSwapMinSpeed))) (dot vh rtv) 0.0))   ; V2.29: swap only above CamSwapMinSpeed
+   ; hysteresis: leave the profile side (+1) only for clear travel to the left, come back once that travel is gone
+   (bind onRight (> tgt0 0.0))
+   (bind wantFlip (select onRight (select (< lat (- 0.0 (R CamSwapEnter))) 1.0 0.0) (select (> lat (- 0.0 (R CamSwapExit))) 1.0 0.0)))
+@@ -1235,8 +1265,9 @@
+   (bind eF0 (dot eW cfw))
+   (bind uL0 (dot uW crt))
+   (bind uF0 (dot uW cfw))
+-  (bind zL (R CamFolDZLat))
+-  (bind zF (R CamFolDZFwd))
++  (bind wz (clamp (/ (- Speed (R CamWalkSpeedLo)) (max (- (R CamWalkSpeedHi) (R CamWalkSpeedLo)) 1.0)) 0.0 1.0))   ; V2.29 walk -> run zone blend
++  (bind zL (lerp (R CamFolDZLatWalk) (R CamFolDZLat) wz))
++  (bind zF (lerp (R CamFolDZFwdWalk) (R CamFolDZFwd) wz))
+   (bind xL (- eL0 (clamp eL0 (- 0.0 zL) zL)))
+   (bind xF (- eF0 (clamp eF0 (- 0.0 zF) zF)))
+   ; edge weight: 0 inside 60 % of the zone, 1 at the edge; push = the capsule moves away from the point on that axis

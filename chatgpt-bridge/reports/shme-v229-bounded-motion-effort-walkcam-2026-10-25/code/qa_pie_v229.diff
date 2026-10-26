@@ -1,0 +1,34 @@
+--- Saved/Codex/SHME_V229_20261025/req/qa_pie.pre_v229.py	2026-10-25 07:34:44.348405100 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-26 03:10:01.516611100 +0300
+@@ -330,7 +330,7 @@
+             if st.get('mseg') != key:
+                 st['mseg'] = key
+                 if ang is None: cmd('Input.-action ' + IA_MOVE)   # a null angle = release the stick (stop segment)
+-                else: cmd('Input.+action %s X=%.6f Y=%.6f' % (IA_MOVE, math.sin(math.radians(ang)), math.cos(math.radians(ang))))
++                else: mg_ = float(seg[2]) if len(seg) > 2 else 1.0; cmd('Input.+action %s X=%.6f Y=%.6f' % (IA_MOVE, mg_ * math.sin(math.radians(ang)), mg_ * math.cos(math.radians(ang))))   # V2.29: optional stick magnitude seg[2]
+             return key, False
+         t -= dur
+     if st.get('mseg') != 'mv_stop':
+@@ -512,6 +512,12 @@
+             fx_ += 'ax=X=%.3f Y=%.3f Z=%.3f|avx=%.2f|avy=%.2f|mwl=X=%.3f Y=%.3f Z=%.3f|mrl=X=%.3f Y=%.3f Z=%.3f|mry=%.2f|' % (al_.x, al_.y, al_.z, v_.x, v_.y, mw_.x, mw_.y, mw_.z, mr_.x, mr_.y, mr_.z, pw_.mesh.get_editor_property('relative_rotation').yaw)
+             if vb:
+                 vw_ = vb.get_world_location(); fx_ += 'vwl=X=%.3f Y=%.3f Z=%.3f|vwy=%.2f|' % (vw_.x, vw_.y, vw_.z, vb.get_world_rotation().yaw)
++            if vb:   # V2.29: visible-body render state (disappearance diagnosis): visible flag, hidden-in-game, owner-no-see, recently rendered, bounds radius / origin offset from the actor
++                try:
++                    bo_ = vb.bounds.origin if hasattr(vb, 'bounds') else None
++                    fx_ += 'vvis=%d|vhid=%d|vons=%d|vrr=%d|' % (1 if vb.is_visible() else 0, 1 if vb.get_editor_property('hidden_in_game') else 0, 1 if vb.get_editor_property('owner_no_see') else 0, 1 if vb.was_recently_rendered(0.1) else 0)
++                    b3_ = vb.get_local_bounds() if hasattr(vb, 'get_local_bounds') else None
++                except Exception as e4_: fx_ += 'vviserr=%s|' % str(e4_)[:30]
+             try: fx_ += 'rmp=%d|' % (1 if pw_.is_playing_root_motion() else 0)
+             except Exception: fx_ += 'rmp=err|'
+             arm2_ = st.get('arm')
+@@ -639,6 +645,9 @@
+     h_, r_ = _main_hwnd()
+     if not h_: u.log_warning('SHM_PIEWIN no main window'); pw_['ok'] = True; return
+     if 'pw_prev' not in st: st['pw_prev'] = (h_, r_.left, r_.top, r_.right - r_.left, r_.bottom - r_.top, bool(ctypes.windll.user32.IsZoomed(h_)))
++    if ctypes.windll.user32.IsZoomed(h_):   # V2.29: a maximized window ignores SetWindowPos -> restore first, keep the maximized rect
++        ctypes.windll.user32.ShowWindow(h_, 9); ctypes.windll.user32.SetWindowPos(h_, None, r_.left, r_.top, r_.right - r_.left, r_.bottom - r_.top, 0x0004 | 0x0010)
++        u.log('SHM_PIEWIN restored a maximized main window %dx%d' % (r_.right - r_.left, r_.bottom - r_.top)); pw_['n'] = pw_['n'] + 1; return
+     ratio = pw_.get('ratio', 1.0)
+     if pw_.get('last_vw') is not None and pw_.get('last_cut') and pw_['last_vw'] != vw_: ratio = pw_['last_cut'] / float(pw_['last_vw'] - vw_); pw_['ratio'] = ratio
+     cut = max(1, int(round(rem * ratio)))

@@ -1,0 +1,169 @@
+# V2.29 final tables (fn3 = final production fixed 30; h20/h60/h120 fixed step; hrt real time; efoff = production + EffortEnabled false)
+## lock229
+LOCK229 v229fn3_e29_load_o_r1 {"events": 4, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_e29_chain_o_r1 {"events": 3, "locks": 0, "worst_t_rev": 0.43}
+LOCK229 v229fn3_s29_dbl_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.6}
+LOCK229 v229fn3_s29_ws_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_s29_wall_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_e29_hitch_o_r1 {"events": 3, "locks": 0, "worst_t_rev": 0.43}
+LOCK229 v229fn3_j29_hitch_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.37}
+LOCK229 v229fn3_s29_swl08_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_s29_swl10_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_s29_swl12_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_s29_swl14_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_s29_swl16_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_s29_swl20_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229fn3_j29_swl10_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.37}
+LOCK229 v229fn3_j29_swl14_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.37}
+LOCK229 v229fn3_j29_swl20_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.37}
+LOCK229 v229fn3_j24_dbl_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.37}
+LOCK229 v229fn3_j24_rel_o_r1 {"events": 2, "locks": 0, "worst_t_rev": 0.27}
+LOCK229 v229fn3_chain_sprint_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.83}
+LOCK229 v229fn3_b_s2back_o_r1 {"events": 1, "locks": 0, "worst_t_rev": 0.77}
+LOCK229 v229cap4_e29_load_refS_r1 {"events": 4, "locks": 1, "worst_t_rev": 2.0}
+LOCK229 v229v229pc_e29_load_o_r1 {"events": 4, "locks": 1, "worst_t_rev": 2.0}
+## rev229
+REV229 v229t1_s29_cam_o_r1 {"frames": 388, "flags": {"BODYJ": 4, "SPIN": 4}, "worst_mesh_cm": 27.1, "min_cam_head_cm": 192.9, "max_yaw_jump": 13.4, "max_twist": 180.0, "max_twist_jump": 93.0, "spin_t": [6.23, 6.27, 6.37, 6.4]}
+REV229 v229fn3_s29_cam_o_r1 {"frames": 389, "flags": {}, "worst_mesh_cm": 26.8, "min_cam_head_cm": 191.3, "max_yaw_jump": 13.5, "max_twist": 34.0, "max_twist_jump": 10.0, "spin_t": []}
+REV229 v229t1_s29_cam2_o_r1 {"frames": 388, "flags": {"BODYJ": 3, "SPIN": 3}, "worst_mesh_cm": 27.3, "min_cam_head_cm": 192.9, "max_yaw_jump": 13.5, "max_twist": 178.0, "max_twist_jump": 159.0, "spin_t": [6.17, 6.43, 6.47]}
+REV229 v229fn3_s29_cam2_o_r1 {"frames": 388, "flags": {}, "worst_mesh_cm": 27.8, "min_cam_head_cm": 192.2, "max_yaw_jump": 13.6, "max_twist": 21.0, "max_twist_jump": 9.0, "spin_t": []}
+REV229 v229t1_b_cam180_o_r1 {"frames": 388, "flags": {"BODYJ": 3, "SPIN": 3}, "worst_mesh_cm": 28.3, "min_cam_head_cm": 192.3, "max_yaw_jump": 13.4, "max_twist": 173.0, "max_twist_jump": 150.0, "spin_t": [5.8, 5.83, 6.13]}
+REV229 v229fn3_b_cam180_o_r1 {"frames": 388, "flags": {}, "worst_mesh_cm": 28.1, "min_cam_head_cm": 190.8, "max_yaw_jump": 13.5, "max_twist": 30.0, "max_twist_jump": 11.0, "spin_t": []}
+REV229 v229t1_chain_sprint_o_r1 {"frames": 352, "flags": {"BODYJ": 4, "SPIN": 4}, "worst_mesh_cm": 26.4, "min_cam_head_cm": 192.9, "max_yaw_jump": 14.0, "max_twist": 176.0, "max_twist_jump": 91.0, "spin_t": [6.9, 6.93, 7.03, 7.07]}
+REV229 v229fn3_chain_sprint_o_r1 {"frames": 352, "flags": {}, "worst_mesh_cm": 27.5, "min_cam_head_cm": 192.0, "max_yaw_jump": 13.1, "max_twist": 23.0, "max_twist_jump": 16.0, "spin_t": []}
+REV229 v229t1_s29_ws_o_r1 {"frames": 377, "flags": {}, "worst_mesh_cm": 24.7, "min_cam_head_cm": 190.8, "max_yaw_jump": 0, "max_twist": 12.0, "max_twist_jump": 4.0, "spin_t": []}
+REV229 v229fn3_s29_ws_o_r1 {"frames": 331, "flags": {}, "worst_mesh_cm": 23.9, "min_cam_head_cm": 192.9, "max_yaw_jump": 0, "max_twist": 12.0, "max_twist_jump": 4.0, "spin_t": []}
+REV229 v229t1_s29_dbl_o_r1 {"frames": 343, "flags": {}, "worst_mesh_cm": 34.1, "min_cam_head_cm": 192.9, "max_yaw_jump": 0, "max_twist": 21.0, "max_twist_jump": 4.0, "spin_t": []}
+REV229 v229fn3_s29_dbl_o_r1 {"frames": 343, "flags": {}, "worst_mesh_cm": 25.5, "min_cam_head_cm": 190.8, "max_yaw_jump": 0, "max_twist": 14.0, "max_twist_jump": 5.0, "spin_t": []}
+REV229 v229t1_s29_sa_o_r1 {"frames": 328, "flags": {}, "worst_mesh_cm": 23.2, "min_cam_head_cm": 188.3, "max_yaw_jump": 0, "max_twist": 19.0, "max_twist_jump": 7.0, "spin_t": []}
+REV229 v229fn3_s29_sa_o_r1 {"frames": 328, "flags": {}, "worst_mesh_cm": 23.9, "min_cam_head_cm": 192.9, "max_yaw_jump": 0, "max_twist": 15.0, "max_twist_jump": 4.0, "spin_t": []}
+REV229 v229t1_s29_dg_o_r1 {"frames": 328, "flags": {}, "worst_mesh_cm": 31.1, "min_cam_head_cm": 192.9, "max_yaw_jump": 6.6, "max_twist": 23.0, "max_twist_jump": 4.0, "spin_t": []}
+REV229 v229fn3_s29_dg_o_r1 {"frames": 328, "flags": {}, "worst_mesh_cm": 31.1, "min_cam_head_cm": 190.9, "max_yaw_jump": 6.6, "max_twist": 23.0, "max_twist_jump": 5.0, "spin_t": []}
+REV229 v229t1_d_sprint_o_r1 MISSING
+REV229 v229fn3_d_sprint_o_r1 {"frames": 539, "flags": {}, "worst_mesh_cm": 26.0, "min_cam_head_cm": 192.9, "max_yaw_jump": 8.9, "max_twist": 16.0, "max_twist_jump": 4.0, "spin_t": []}
+## agil229 (prod vs efoff)
+  {"t": 5.07, "turn": -90, "v0": 490, "carry_cm": 164.1, "vmin": 294, "commit_s": 0.67, "steps": 3, "acc_max": 16.9, "chained": false, "t60": 0.47, "v60": 298}
+EVENTS229 v229fn3_e29_rest_efoff_r1 1 events
+  {"t": 5.07, "turn": -90, "v0": 490, "carry_cm": 184.0, "vmin": 292, "commit_s": 0.77, "steps": 3, "acc_max": 16.8, "chained": false, "t60": 0.53, "v60": 296}
+EVENTS229 v229fn3_e29_rest_o_r1 1 events
+  {"t": 5.07, "turn": -90, "v0": 490, "carry_cm": 200.0, "vmin": 59, "commit_s": 1.77, "steps": 5, "acc_max": 16.9, "chained": true, "t60": 0.47, "v60": 298}
+  {"t": 5.67, "turn": -180, "v0": 310, "carry_cm": 52.7, "vmin": 59, "commit_s": 1.17, "steps": 2, "acc_max": 12.0, "chained": true, "t60": 0.4, "v60": 60}
+  {"t": 6.27, "turn": 90, "v0": 86, "carry_cm": 9.1, "vmin": 59, "commit_s": 0.3, "steps": 1, "acc_max": 6.0, "chained": false, "t60": 0.17, "v60": 65}
+  {"t": 7.47, "turn": -180, "v0": 290, "carry_cm": 31.0, "vmin": 2, "commit_s": 0.97, "steps": 1, "acc_max": 15.4, "chained": false, "t60": 0.27, "v60": 7}
+EVENTS229 v229fn3_e29_chain_efoff_r1 4 events
+  {"t": 5.07, "turn": -90, "v0": 490, "carry_cm": 228.7, "vmin": 26, "commit_s": null, "steps": 10, "acc_max": 16.8, "chained": true, "t60": 0.53, "v60": 296}
+  {"t": 5.67, "turn": -180, "v0": 299, "carry_cm": 71.9, "vmin": 26, "commit_s": 1.67, "steps": 10, "acc_max": 9.6, "chained": true, "t60": 0.57, "v60": 78}
+  {"t": 6.27, "turn": 90, "v0": 78, "carry_cm": 6.7, "vmin": 26, "commit_s": 0.43, "steps": 5, "acc_max": 4.7, "chained": false, "t60": 0.23, "v60": 28}
+  {"t": 7.47, "turn": -180, "v0": 168, "carry_cm": 32.2, "vmin": 2, "commit_s": 0.8, "steps": 4, "acc_max": 11.0, "chained": false, "t60": 0.3, "v60": 9}
+EVENTS229 v229fn3_e29_chain_o_r1 4 events
+  {"t": 4.67, "turn": 90, "v0": 490, "carry_cm": 164.1, "vmin": 294, "commit_s": 0.67, "steps": 2, "acc_max": 16.9, "chained": false, "t60": 0.47, "v60": 298}
+  {"t": 5.37, "turn": -90, "v0": 328, "carry_cm": 123.9, "vmin": 308, "commit_s": 0.43, "steps": 2, "acc_max": 8.6, "chained": false, "t60": 0.33, "v60": 328}
+  {"t": 6.07, "turn": -90, "v0": 411, "carry_cm": 120.9, "vmin": 252, "commit_s": 0.63, "steps": 3, "acc_max": 17.7, "chained": false, "t60": 0.43, "v60": 254}
+  {"t": 6.77, "turn": 90, "v0": 290, "carry_cm": 100.7, "vmin": 272, "commit_s": 0.4, "steps": 1, "acc_max": 8.1, "chained": false, "t60": 0.3, "v60": 290}
+EVENTS229 v229fn3_chain_sscut_efoff_r1 4 events
+  {"t": 4.67, "turn": 90, "v0": 490, "carry_cm": 320.9, "vmin": 292, "commit_s": 1.27, "steps": 3, "acc_max": 16.8, "chained": true, "t60": 0.53, "v60": 297}
+  {"t": 5.37, "turn": -90, "v0": 311, "carry_cm": 162.4, "vmin": 301, "commit_s": 0.57, "steps": 1, "acc_max": 6.4, "chained": false, "t60": 0.43, "v60": 329}
+  {"t": 6.07, "turn": -90, "v0": 367, "carry_cm": 205.1, "vmin": 225, "commit_s": 1.07, "steps": 3, "acc_max": 11.7, "chained": true, "t60": 0.63, "v60": 226}
+  {"t": 6.77, "turn": 90, "v0": 228, "carry_cm": 89.0, "vmin": 227, "commit_s": 0.37, "steps": 2, "acc_max": 4.6, "chained": false, "t60": 0.33, "v60": 261}
+EVENTS229 v229fn3_chain_sscut_o_r1 4 events
+  {"t": 4.07, "turn": -180, "v0": 490, "carry_cm": 130.5, "vmin": 3, "commit_s": 1.37, "steps": 6, "acc_max": 14.2, "chained": false, "t60": 0.6, "v60": 10}
+  {"t": 5.47, "turn": -180, "v0": 151, "carry_cm": 15.8, "vmin": 1, "commit_s": 0.67, "steps": 2, "acc_max": 10.8, "chained": false, "t60": 0.2, "v60": 9}
+  {"t": 6.87, "turn": -180, "v0": 280, "carry_cm": 71.5, "vmin": 0, "commit_s": 1.3, "steps": 3, "acc_max": 14.0, "chained": false, "t60": 0.4, "v60": 13}
+  {"t": 15.07, "turn": -90, "v0": 490, "carry_cm": 164.1, "vmin": 294, "commit_s": 0.67, "steps": 4, "acc_max": 16.9, "chained": false, "t60": 0.47, "v60": 298}
+EVENTS229 v229fn3_e29_recov_efoff_r1 4 events
+  {"t": 4.07, "turn": -180, "v0": 490, "carry_cm": 199.7, "vmin": 1, "commit_s": 2.37, "steps": 12, "acc_max": 13.8, "chained": true, "t60": 0.7, "v60": 9}
+  {"t": 5.47, "turn": -180, "v0": 98, "carry_cm": 7.9, "vmin": 2, "commit_s": 0.57, "steps": 5, "acc_max": 5.6, "chained": false, "t60": 0.17, "v60": 8}
+  {"t": 6.87, "turn": -180, "v0": 239, "carry_cm": 26.0, "vmin": 1, "commit_s": 1.1, "steps": 4, "acc_max": 14.4, "chained": false, "t60": 0.23, "v60": 11}
+  {"t": 15.07, "turn": -90, "v0": 482, "carry_cm": 198.9, "vmin": 292, "commit_s": 0.83, "steps": 3, "acc_max": 15.6, "chained": false, "t60": 0.6, "v60": 299}
+EVENTS229 v229fn3_e29_recov_o_r1 4 events
+  {"t": 4.07, "turn": -180, "v0": 490, "carry_cm": 130.5, "vmin": 3, "commit_s": 1.37, "steps": 6, "acc_max": 14.2, "chained": false, "t60": 0.6, "v60": 10}
+  {"t": 5.47, "turn": -180, "v0": 151, "carry_cm": 15.8, "vmin": 1, "commit_s": 0.67, "steps": 2, "acc_max": 10.8, "chained": false, "t60": 0.2, "v60": 9}
+  {"t": 6.87, "turn": -180, "v0": 280, "carry_cm": 71.5, "vmin": 0, "commit_s": 1.3, "steps": 2, "acc_max": 14.0, "chained": false, "t60": 0.4, "v60": 13}
+  {"t": 8.27, "turn": -180, "v0": 166, "carry_cm": 86.4, "vmin": 1, "commit_s": 0.97, "steps": 5, "acc_max": 7.6, "chained": false, "t60": 0.53, "v60": 9}
+  {"t": 10.27, "turn": -90, "v0": 402, "carry_cm": 137.2, "vmin": 285, "commit_s": 0.6, "steps": 3, "acc_max": 15.0, "chained": false, "t60": 0.43, "v60": 291}
+EVENTS229 v229fn3_e29_load_efoff_r1 5 events
+  {"t": 4.07, "turn": -180, "v0": 490, "carry_cm": 199.7, "vmin": 1, "commit_s": 2.37, "steps": 16, "acc_max": 13.8, "chained": true, "t60": 0.7, "v60": 9}
+  {"t": 5.47, "turn": -180, "v0": 98, "carry_cm": 7.9, "vmin": 2, "commit_s": 0.57, "steps": 3, "acc_max": 5.6, "chained": false, "t60": 0.17, "v60": 8}
+  {"t": 6.87, "turn": -180, "v0": 239, "carry_cm": 26.0, "vmin": 1, "commit_s": 1.1, "steps": 3, "acc_max": 14.4, "chained": false, "t60": 0.23, "v60": 11}
+  {"t": 8.27, "turn": -180, "v0": 204, "carry_cm": 45.0, "vmin": 1, "commit_s": 0.9, "steps": 3, "acc_max": 15.5, "chained": false, "t60": 0.27, "v60": 8}
+  {"t": 10.27, "turn": -90, "v0": 395, "carry_cm": 185.8, "vmin": 281, "commit_s": 0.83, "steps": 3, "acc_max": 13.5, "chained": false, "t60": 0.6, "v60": 287}
+EVENTS229 v229fn3_e29_load_o_r1 5 events
+## cam229
+CAM229 v229t1_c29_ad_o_r1 {"x_rng": 0.317, "vmax": 0.761, "reb": 13, "lat_r": 28.148}
+CAM229 v229fn3_c29_ad_o_r1 {"x_rng": 0.161, "vmax": 0.777, "reb": 17, "lat_r": 4.803}
+CAM229 v229t1_c29_wlook_o_r1 {"x_rng": 0.204, "vmax": 0.3, "reb": 3, "lat_r": 25.037}
+CAM229 v229fn3_c29_wlook_o_r1 {"x_rng": 0.07, "vmax": 0.19, "reb": 4, "lat_r": 7.529}
+CAM229 v229t1_c29_diag_o_r1 {"x_rng": 0.156, "vmax": 0.626, "reb": 22, "lat_r": 22.903}
+CAM229 v229fn3_c29_diag_o_r1 {"x_rng": 0.149, "vmax": 0.561, "reb": 23, "lat_r": 6.645}
+CAM229 v229t1_c29_jlook_o_r1 {"x_rng": 0.205, "vmax": 0.453, "reb": 4, "lat_r": 25.549}
+CAM229 v229fn3_c29_jlook_o_r1 {"x_rng": 0.209, "vmax": 0.465, "reb": 4, "lat_r": 25.586}
+Traceback (most recent call last):
+  File "C:\Users\berat\OneDrive\Documents\Unreal Projects\ActionAdventureMovementS\Tools\SHME_V229_20261025\cam229.py", line 10, in <module>
+    R0 = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and isinstance(r.get('camera'), list) and isinstance(r.get('vb_chest'), list)], key=lambda r: f(r['t']))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\SHME_V1_20260925\\Evidence\\v229t1_c29_combo_o_r1.json'
+CAM229 v229pre_c29_combo_o_r1 {"x_rng": 0.199, "vmax": 0.623, "reb": 15, "lat_r": 19.25}
+CAM229 v229pre_c29_combo_bn_r1 {"x_rng": 0.199, "vmax": 0.622, "reb": 15, "lat_r": 19.26}
+CAM229 v229pre_c29_combo_cn_r1 {"x_rng": 0.098, "vmax": 0.549, "reb": 14, "lat_r": 5.703}
+CAM229 v229pre_c29_combo_fin_r1 {"x_rng": 0.098, "vmax": 0.55, "reb": 16, "lat_r": 5.693}
+## FPS
+fn3 s29_cam | rate 30.1/s worst 33  | "flags": {} "max_twist_jump": 10.0 
+fn3 e29_chain | rate 30.1/s worst 55  | "locks": 0, "worst_t_rev": 0.43
+fn3 e29_load | rate 30.1/s worst 110  | "locks": 0, "worst_t_rev": 0.77
+fn3 s29_swl14 | rate 30.1/s worst 110  | "locks": 0, "worst_t_rev": 0.77
+fn3 chain_sscut | rate 30.1/s worst 44  | 
+fn3 c29_ad | rate 30.1/s worst 0  | "lat_r": 4.803
+fn3 c29_combo | rate 30.1/s worst 0  | "lat_r": 5.693
+fn3 j24_rel | rate 30.1/s worst 26  |  worst net  11.1
+fn3 j24_ph0 | rate 30.1/s worst 0  |  worst net  13.2
+fn3 j24_sw_ph2 | rate 30.1/s worst 0  |  worst net   9.2
+fn3 j24_dbl | rate 30.1/s worst 29  | "locks": 0, "worst_t_rev": 0.37 worst net  23.1
+h20 s29_cam | rate 20.1/s worst 27  | "flags": {"REND": 95} "max_twist_jump": 15.0 
+h20 e29_chain | rate 20.1/s worst 56  | "locks": 0, "worst_t_rev": 0.45
+h20 e29_load | rate 20.1/s worst 83  | "locks": 0, "worst_t_rev": 0.7
+h20 s29_swl14 | rate 20.1/s worst 82  | "locks": 0, "worst_t_rev": 0.7
+h20 chain_sscut | rate 20.1/s worst 40  | 
+h20 c29_ad | rate 20.1/s worst 0  | "lat_r": 6.461
+h20 c29_combo | rate 20.1/s worst 0  | "lat_r": 6.792
+h20 j24_rel | rate 20.1/s worst 0  |  worst net  14.1
+h20 j24_ph0 | rate 20.1/s worst 0  |  worst net  15.2
+h20 j24_sw_ph2 | rate 20.1/s worst 0  |  worst net   7.4
+h20 j24_dbl | rate 20.1/s worst 0  | "locks": 0, "worst_t_rev": 0.3 worst net  35.4
+h60 s29_cam | rate 60.1/s worst 67  | "flags": {} "max_twist_jump": 5.0 
+h60 e29_chain | rate 60.1/s worst 67  | "locks": 0, "worst_t_rev": 0.48
+h60 e29_load | rate 60.1/s worst 109  | "locks": 0, "worst_t_rev": 0.82
+h60 s29_swl14 | rate 60.1/s worst 131  | "locks": 0, "worst_t_rev": 0.8
+h60 chain_sscut | rate 60.1/s worst 159  | 
+h60 c29_ad | rate 60.1/s worst 0  | "lat_r": 4.704
+h60 c29_combo | rate 60.1/s worst 32  | "lat_r": 6.669
+h60 j24_rel | rate 60.1/s worst 39  |  worst net   5.8
+h60 j24_ph0 | rate 60.1/s worst 34  |  worst net   5.8
+h60 j24_sw_ph2 | rate 60.1/s worst 38  |  worst net  11.7
+h60 j24_dbl | rate 60.1/s worst 48  | "locks": 0, "worst_t_rev": 0.37 worst net  18.2
+h120 s29_cam | rate 120.1/s worst 147  | "flags": {} "max_twist_jump": 3.0 
+h120 e29_chain | rate 120.1/s worst 147  | "locks": 0, "worst_t_rev": 0.5
+h120 e29_load | rate 120.1/s worst 162  | "locks": 0, "worst_t_rev": 0.83
+h120 s29_swl14 | rate 120.1/s worst 162  | "locks": 0, "worst_t_rev": 0.82
+h120 chain_sscut | rate 120.1/s worst 207  | 
+h120 c29_ad | rate 120.1/s worst 34  | "lat_r": 5.943
+h120 c29_combo | rate 120.1/s worst 56  | "lat_r": 8.185
+h120 j24_rel | rate 120.1/s worst 87  |  worst net  13.0
+h120 j24_ph0 | rate 120.1/s worst 87  |  worst net  13.0
+h120 j24_sw_ph2 | rate 120.1/s worst 87  |  worst net  15.0
+h120 j24_dbl | rate 120.1/s worst 82  | "locks": 0, "worst_t_rev": 0.4 worst net  13.8
+## directions
+stage                     req   trav    err  actor  chest   spd   stp  dmax  clips
+mv_walk_0_0                 0      0      0      0      3   132     0   0.0  A_LB_Walk_Fwd:26 Loop_F_PureForward_CWF:10 skate 3.1
+mv_walk_22.5_1             23     22     -0      0      2   130     0   2.7  A_LB_Walk_Fwd:36 skate 4.8
+mv_walk_45_2               45     45     -0      0     10   126     0   2.7  A_LB_Walk_FwdRight:36 
+mv_walk_67.5_3             67     67     -0      0     10   120     0   2.7  A_LB_Walk_FwdRight:36 
+mv_walk_90_4               90     90     -0      0     -7   112     0   2.7  A_LB_Walk_Right:36 skate 5.1
+mv_walk_112.5_5           113    112     -0      0    -20   117     0   2.7  A_CT_Walk_RearRight:36 skate 8.0
+mv_walk_135_6             135    135     -0      0    -21   122     0   2.6  A_CT_Walk_RearRight:36 skate 2.2
+mv_walk_157.5_7           157    157     -0      0    -22   124     0   2.6  A_CT_Walk_RearRight:36 
+mv_walk_180_8            -180    180     -0      0     -6   125     0   2.5  A_CT_Walk_Rear:36 skate 3.0
+Traceback (most recent call last):
+  File "C:\Users\berat\OneDrive\Documents\Unreal Projects\ActionAdventureMovementS\Tools\SHME_V229_20261025\dir229.py", line 14, in <module>
+    R0 = sorted([r for r in json.load(open(E / (lab + '.json'))) if isinstance(r, dict) and r.get('t') is not None and isinstance(r.get('ax'), list)], key=lambda r: f(r['t']))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Saved\\Codex\\SHME_V1_20260925\\Evidence\\v229fn3_a29_angb_o_r1.json'
