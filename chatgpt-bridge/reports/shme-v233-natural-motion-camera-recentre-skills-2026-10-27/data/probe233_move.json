@@ -1,0 +1,257 @@
+{
+ "scanned": [
+  "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_ExampleCharacter_MotionMatching",
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/BP_GM_CoreMotionAAMS_BlackEye",
+  "/Game/GraceRanger/BP_GR_Player",
+  "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Camera/BlackEye/BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Camera/BlackEye/BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/Phase3BeforeIntegration_20260829/BP_Player_MM_PreBlackEye",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_GR_Player",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Camera/BlackEye/BP_GM_CoreMotionAAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_ExampleCharacter_MotionMatching",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Camera/BlackEye/BP_GM_CoreMotionAAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_ExampleCharacter_MotionMatching",
+  "/Game/GraceRanger/QA/CorePerformance/BP_CP2_AAMSTurnsLab"
+ ],
+ "hits": {
+  "BP_ExampleCharacter_MotionMatching": [
+   {
+    "graph": "HasMovementInputVector",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CanSprint",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CR_UpdateBackwardIntent",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_74",
+    "type": "AddMovementInput",
+    "in": [
+     "execute<-K2Node_IfThenElse_3",
+     "WorldDirection<-K2Node_CallFunction_80",
+     "ScaleValue<-K2Node_CallFunction_80"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_90",
+    "type": "AddMovementInput",
+    "in": [
+     "execute<-K2Node_CallFunction_74",
+     "WorldDirection<-K2Node_CallFunction_88",
+     "ScaleValue<-K2Node_CallFunction_88"
+    ]
+   },
+   {
+    "graph": "HasMovementInputVector",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CanSprint",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_74",
+    "type": "AddMovementInput",
+    "in": [
+     "execute<-K2Node_IfThenElse_3",
+     "WorldDirection<-K2Node_CallFunction_80",
+     "ScaleValue<-K2Node_CallFunction_80"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_90",
+    "type": "AddMovementInput",
+    "in": [
+     "execute<-K2Node_CallFunction_74",
+     "WorldDirection<-K2Node_CallFunction_88",
+     "ScaleValue<-K2Node_CallFunction_88"
+    ]
+   },
+   {
+    "graph": "HasMovementInputVector",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CanSprint",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_74",
+    "type": "AddMovementInput",
+    "in": [
+     "execute<-K2Node_IfThenElse_3",
+     "WorldDirection<-K2Node_CallFunction_80",
+     "ScaleValue<-K2Node_CallFunction_80"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_90",
+    "type": "AddMovementInput",
+    "in": [
+     "execute<-K2Node_CallFunction_74",
+     "WorldDirection<-K2Node_CallFunction_88",
+     "ScaleValue<-K2Node_CallFunction_88"
+    ]
+   }
+  ],
+  "BP_GR_Player": [
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_22",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_47",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxAcceleration",
+    "node": "K2Node_CallFunction_11",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateGroundFriction",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CP_PhysicalRedirect",
+    "node": "K2Node_CallFunction_215",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CP_PhysicalRedirect",
+    "node": "K2Node_CallFunction_218",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CR_UpdateBackwardIntent",
+    "node": "K2Node_CallFunction_3",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GetDesiredGait",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateCoreContact",
+    "node": "K2Node_CallFunction_1",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateCoreContact",
+    "node": "K2Node_CallFunction_15",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CT_CaptureJumpTakeoff",
+    "node": "K2Node_CallFunction_1",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_22",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_47",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxAcceleration",
+    "node": "K2Node_CallFunction_11",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CalculateGroundFriction",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CR_UpdateBackwardIntent",
+    "node": "K2Node_CallFunction_3",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GetDesiredGait",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateCoreContact",
+    "node": "K2Node_CallFunction_1",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateCoreContact",
+    "node": "K2Node_CallFunction_15",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   },
+   {
+    "graph": "CT_CaptureJumpTakeoff",
+    "node": "K2Node_CallFunction_1",
+    "type": "GetPendingMovementInputVector",
+    "in": []
+   }
+  ],
+  "BP_PBI_Player": [
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_23",
+    "type": "GetLastMovementInputVector",
+    "in": []
+   }
+  ]
+ }
+}

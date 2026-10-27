@@ -1,0 +1,48 @@
+--- Saved/Codex/SHME_V233_20261027/checkpoint/tools/shm_evidence.py	2026-09-25 19:47:19.455691300 +0300
++++ Tools/SHME_V1_20260925/shm_evidence.py	2026-10-27 12:51:17.026075600 +0300
+@@ -1,21 +1,24 @@
+-"""shm_evidence.py <label>: parse SHM|<label>| telemetry lines of a run into Evidence/<label>_shm.json"""
+-import pathlib, sys, json, re, os
+-P = pathlib.Path(__file__).resolve().parents[2]; N = P / 'Saved/Codex/SHME_V1_20260925'
+-label = sys.argv[1]; pie = json.loads((N / (label + '_pie.json')).read_text())
+-rows = []
+-with open(P / 'Saved/Logs' / os.environ.get('LR_LOG', 'sphirus.log'), 'rb') as f:
+-    f.seek(pie['log_start']); text = f.read().decode('utf8', 'replace')
+-for l in text.splitlines():
+-    k = 'SHM|' + label + '|'
+-    if k not in l: continue
+-    r = {}
+-    for x in l.split(k, 1)[1].split('|'):
+-        if '=' not in x: continue
+-        a, b = x.split('=', 1)
+-        m = re.fullmatch(r'X=([-\d.e]+) Y=([-\d.e]+) Z=([-\d.e]+)', b.strip())
+-        if m: r[a] = list(map(float, m.groups())); continue
+-        try: r[a] = float(b)
+-        except ValueError: r[a] = b.strip()
+-    rows.append(r)
+-(N / 'Evidence' / (label + '_shm.json')).write_text(json.dumps(rows))
+-print(label, 'shm rows', len(rows))
++"""shm_evidence.py <label>: parse SHM|<label>| telemetry lines of a run into Evidence/<label>_shm.json"""
++import pathlib, sys, json, re, os
++P = pathlib.Path(__file__).resolve().parents[2]; N = P / 'Saved/Codex/SHME_V1_20260925'
++label = sys.argv[1]; pie = json.loads((N / (label + '_pie.json')).read_text())
++rows = []
++side = N / 'SHM' / (label + '.shm')   # V2.33: side file written by qa_pie from the component TelemetryLine (log fallback for older runs)
++if side.exists(): text = side.read_text(encoding='utf8', errors='replace')
++else:
++    with open(P / 'Saved/Logs' / os.environ.get('LR_LOG', 'sphirus.log'), 'rb') as f:
++        f.seek(pie['log_start']); text = f.read().decode('utf8', 'replace')
++for l in text.splitlines():
++    k = 'SHM|' + label + '|'
++    if k not in l: continue
++    r = {}
++    for x in l.split(k, 1)[1].split('|'):
++        if '=' not in x: continue
++        a, b = x.split('=', 1)
++        m = re.fullmatch(r'X=([-\d.e]+) Y=([-\d.e]+) Z=([-\d.e]+)', b.strip())
++        if m: r[a] = list(map(float, m.groups())); continue
++        try: r[a] = float(b)
++        except ValueError: r[a] = b.strip()
++    rows.append(r)
++(N / 'Evidence' / (label + '_shm.json')).write_text(json.dumps(rows))
++print(label, 'shm rows', len(rows))

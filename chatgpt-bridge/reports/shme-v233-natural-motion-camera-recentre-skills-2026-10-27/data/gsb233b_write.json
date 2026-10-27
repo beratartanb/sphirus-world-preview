@@ -1,0 +1,230 @@
+{
+ "dry": false,
+ "src": "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM_JogQ_af_Loco_Jog_Bwd_Start_AAMS",
+ "dst": "/Game/GraceRanger/SHME/Animations/V233/SHM233_StandBack2_Jog_Bwd",
+ "db": "/Game/GraceRanger/SHME/Animations/V233/PSD_SHM233_StandBackStart2",
+ "cfg": {
+  "dry": false
+ },
+ "analysis": {
+  "frames": 55,
+  "idle_frame": 2052,
+  "first_swing": "r",
+  "lift_t": {
+   "l": 0.37,
+   "r": 0.2
+  },
+  "stance_off_cm": {
+   "l": 15.8,
+   "r": 16.3
+  },
+  "ball_z": {
+   "idle": {
+    "l": -2.3,
+    "r": -1.5
+   },
+   "clip_planted": {
+    "l": -6.9,
+    "r": -6.9
+   }
+  },
+  "pelvis_dz": 4.98,
+  "root_dir": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "root_vs_capsule_cm": {
+   "0.00": [
+    0.0,
+    0.0
+   ],
+   "0.10": [
+    0.0,
+    1.8
+   ],
+   "0.20": [
+    0.0,
+    5.3
+   ],
+   "0.30": [
+    3.5,
+    10.6
+   ],
+   "0.40": [
+    11.7,
+    17.9
+   ],
+   "0.50": [
+    23.0,
+    27.3
+   ],
+   "0.60": [
+    37.2,
+    38.8
+   ],
+   "0.70": [
+    53.8,
+    52.5
+   ],
+   "0.80": [
+    72.5,
+    68.2
+   ],
+   "0.90": [
+    92.9,
+    86.1
+   ],
+   "1.00": [
+    114.7,
+    106.0
+   ],
+   "1.10": [
+    137.5,
+    128.1
+   ],
+   "1.20": [
+    160.9,
+    152.1
+   ],
+   "1.30": [
+    184.6,
+    176.6
+   ],
+   "1.40": [
+    208.2,
+    201.1
+   ],
+   "1.50": [
+    231.4,
+    225.6
+   ],
+   "1.60": [
+    253.8,
+    250.1
+   ],
+   "1.70": [
+    275.0,
+    274.6
+   ],
+   "1.80": [
+    294.7,
+    299.1
+   ]
+  },
+  "bone_diff_top": [
+   [
+    68.2,
+    0.0,
+    "foot_r"
+   ],
+   [
+    58.2,
+    0.0,
+    "foot_l"
+   ],
+   [
+    25.7,
+    0.0,
+    "calf_r"
+   ],
+   [
+    17.7,
+    0.0,
+    "head"
+   ],
+   [
+    15.3,
+    0.0,
+    "index_01_r"
+   ],
+   [
+    15.3,
+    0.0,
+    "index_01_l"
+   ],
+   [
+    15.1,
+    0.0,
+    "index_metacarpal_r"
+   ],
+   [
+    15.1,
+    0.0,
+    "index_metacarpal_l"
+   ],
+   [
+    14.0,
+    0.0,
+    "thigh_l"
+   ],
+   [
+    13.2,
+    0.0,
+    "thigh_r"
+   ],
+   [
+    7.1,
+    0.0,
+    "calf_l"
+   ],
+   [
+    6.9,
+    0.0,
+    "upperarm_r"
+   ]
+  ]
+ },
+ "plan": {
+  "l": {
+   "stances": [
+    [
+     0.0,
+     0.53
+    ],
+    [
+     1.13,
+     1.2
+    ]
+   ]
+  },
+  "r": {
+   "stances": [
+    [
+     0.0,
+     0.2
+    ],
+    [
+     0.73,
+     0.87
+    ],
+    [
+     1.5,
+     1.57
+    ]
+   ]
+  }
+ },
+ "saved_clips": {
+  "SHM233_StandBack2_Jog_Bwd": true,
+  "A_RB_Jog_Rear": true
+ },
+ "saved_db": true,
+ "db_entries": [
+  "SHM233_StandBack2_Jog_Bwd",
+  "A_RB_Jog_Rear"
+ ],
+ "ball_err": {
+  "l": 6.75,
+  "r": 0.0
+ },
+ "bridge_end_t": 0.47,
+ "check": {
+  "l": {
+   "f0_vs_idle_cm": 0.0
+  },
+  "r": {
+   "f0_vs_idle_cm": 0.0
+  }
+ }
+}

@@ -1,0 +1,210 @@
+"""SHME editor job runner, V2.33 gated (this session's scratchpad). One job at a time from ./jobs/*.py (sorted), stdout -> .out, job
+renamed .done; busy flag against re-entrancy (recompiles pump Slate). No startup asset edits or settings changes.
+
+V2.33 gates (applied HERE, where the job runs - not only in the chain scripts; reasons logged to Saved/Codex/SHME_V233_20261027/gate233.log):
+  G1 stale queue: every job file older than this runner's start is moved to ../stale (never executed in a new editor session).
+  G2 kind: '# SHME_KIND: measure|pie|control|write' (run_v2.sh writes it; no header = 'write'). pie / write jobs are REFUSED while a PIE
+     world exists (a DB rebuild / asset write inside a running PIE froze the game thread in V2.32).
+  G3 owner: when Saved/Codex/EDITOR_LOCK.txt says 'LOCKED owner=<id>', a job whose '# SHME_OWNER:' differs is REFUSED.
+  G4 write manifest: a write job needs '# SHME_MANIFEST: <json>' (manifest233.py): every listed existing asset has a verified backup
+     (sha1 of the backup = sha1 recorded before = the asset file now). During ANY job the save / delete / rename entry points of
+     EditorAssetLibrary and EditorLoadingAndSavingUtils refuse packages outside the manifest (measure / pie / control jobs: no saves at all).
+  G5 audit: after a write job, dirty packages outside the manifest fail the job (status GUARD_DIRTY)."""
+import unreal, pathlib, traceback, io, contextlib, time, builtins, json, re, hashlib, os
+_v2_jobs = pathlib.Path(__file__).resolve().with_name('jobs'); _v2_jobs.mkdir(exist_ok=True)
+_v2_stale = pathlib.Path(__file__).resolve().with_name('stale'); _v2_stale.mkdir(exist_ok=True)
+_v2_busy = False
+_T0 = time.time()
+_PROJ = pathlib.Path(unreal.Paths.project_dir()).resolve()
+_LOCK = _PROJ / 'Saved' / 'Codex' / 'EDITOR_LOCK.txt'
+_GLOG = _PROJ / 'Saved' / 'Codex' / 'SHME_V233_20261027' / 'gate233.log'
+_GLOG.parent.mkdir(parents=True, exist_ok=True)
+if hasattr(builtins, 'SPH_V2_RUNNER'):
+    try: unreal.unregister_slate_post_tick_callback(builtins.SPH_V2_RUNNER)
+    except Exception: pass
+def _glog(msg):
+    line = time.strftime('%H:%M:%S ') + msg
+    try:
+        with open(_GLOG, 'a', encoding='utf-8') as f: f.write(line + '\n')
+    except Exception: pass
+    unreal.log('GATE233 ' + msg)
+def _header(src):
+    h = {}
+    for ln in src.splitlines()[:40]:
+        m = re.match(r'#\s*SHME_([A-Z]+):\s*(.*)$', ln.strip())
+        if m: h[m.group(1)] = m.group(2).strip()
+    return h
+def _pie_running():
+    try: return unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_game_world() is not None
+    except Exception: return False
+def _lock_owner():
+    try: t = _LOCK.read_text(encoding='utf-8', errors='replace')
+    except Exception: return None
+    m = re.match(r'\s*LOCKED\b.*?\bowner=(\S+)', t)
+    return m.group(1) if m else None
+def _sha1(p):
+    h = hashlib.sha1()
+    with open(p, 'rb') as f:
+        for b in iter(lambda: f.read(1 << 20), b''): h.update(b)
+    return h.hexdigest()
+def _pkg(x):
+    """package name of an asset path / object / package"""
+    if not isinstance(x, str):
+        try: x = x.get_path_name()
+        except Exception: x = str(x)
+    x = x.split(':')[0]
+    return x.split('.')[0] if x.startswith('/') else x
+def _check_manifest(path):
+    m = json.load(open(path, encoding='utf-8'))
+    sp = path[:-5] + '.state.json' if path.endswith('.json') else path + '.state.json'
+    try: wst = json.load(open(sp, encoding='utf-8'))
+    except Exception: wst = {}
+    allow = set()
+    for e in m['assets']:
+        allow.add(e['package'])
+        if e.get('new'): continue
+        f = _PROJ / e['file']
+        if not f.exists(): raise RuntimeError('manifest asset file missing: %s' % e['file'])
+        b = _PROJ / e['backup']
+        if not b.exists() or _sha1(b) != e['backup_sha1']: raise RuntimeError('backup missing / unreadable / changed: %s' % e['backup'])
+        cur = _sha1(f)
+        if cur != e['sha1_before'] and cur != wst.get(e['package']):
+            raise RuntimeError('asset changed since its backup and not by a gated job of this manifest (re-run manifest233): %s' % e['file'])
+    return allow, m.get('name', os.path.basename(path))
+def _record_written(path, pkgs):
+    """after a successful write job: sha1 of every manifest package now on disk -> <manifest>.state.json (the next job of the same
+    manifest accepts exactly these states; any other change of a listed file is still refused)."""
+    sp = path[:-5] + '.state.json' if path.endswith('.json') else path + '.state.json'
+    try: wst = json.load(open(sp, encoding='utf-8'))
+    except Exception: wst = {}
+    m = json.load(open(path, encoding='utf-8'))
+    for e in m['assets']:
+        f = _PROJ / e['file']
+        if f.exists(): wst[e['package']] = _sha1(f)
+    json.dump(wst, open(sp, 'w', encoding='utf-8'), indent=1)
+# ---- G4 save guard. unreal types are immutable (class attributes cannot be replaced) -> during a job sys.modules['unreal'] is a proxy
+# module whose EditorAssetLibrary / EditorLoadingAndSavingUtils return guarded save / delete / rename entry points; every other name is
+# the real unreal object. Code that captured the real classes before the job bypasses the proxy -> G5 disk audit (write jobs).
+import sys, types
+_GUARD = {'kind': 'control', 'allow': set(), 'job': ''}
+_REAL = unreal
+def _one(a, k): return [_pkg(a[0] if a else list(k.values())[0])]
+def _many(a, k): return [_pkg(x) for x in (a[0] if a else list(k.values())[0])]
+def _dirty_pkgs(a, k): return [p.get_name() for p in _REAL.EditorLoadingAndSavingUtils.get_dirty_content_packages()] + [p.get_name() for p in _REAL.EditorLoadingAndSavingUtils.get_dirty_map_packages()]
+def _dir_pkgs(a, k):
+    d = a[0] if a else list(k.values())[0]
+    return [_pkg(x) for x in _REAL.EditorAssetLibrary.list_assets(d, recursive=True)]
+_GSPEC = {'EditorAssetLibrary': {'save_asset': _one, 'save_loaded_asset': _one, 'save_loaded_assets': _many, 'save_directory': _dir_pkgs,
+                                 'delete_asset': _one, 'delete_loaded_asset': _one, 'delete_loaded_assets': _many, 'delete_directory': _dir_pkgs,
+                                 'rename_asset': _one, 'rename_loaded_asset': _one,
+                                 'duplicate_asset': lambda a, k: [_pkg(a[1] if len(a) > 1 else k.get('destination_asset_path'))],
+                                 'duplicate_loaded_asset': lambda a, k: [_pkg(a[1] if len(a) > 1 else k.get('destination_asset_path'))]},
+          'EditorLoadingAndSavingUtils': {'save_packages': _many, 'save_packages_with_dialog': _many, 'save_dirty_packages': _dirty_pkgs,
+                                          'save_dirty_packages_with_dialog': _dirty_pkgs, 'save_current_level': lambda a, k: ['<current level>'],
+                                          'save_map': lambda a, k: ['<map>']}}
+def _wrap(cname, name, orig, pk_of):
+    def w(*a, **k):
+        pk = pk_of(a, k)
+        if _GUARD['kind'] != 'write':
+            _glog('REFUSED_SAVE %s.%s %s kind=%s job=%s' % (cname, name, pk[:3], _GUARD['kind'], _GUARD['job']))
+            raise RuntimeError('WRITE_GUARD: %s refused in a %s job (only manifest write jobs may save)' % (name, _GUARD['kind']))
+        bad = [p for p in pk if p not in _GUARD['allow']]
+        if bad:
+            _glog('REFUSED_SAVE %s.%s outside manifest %s job=%s' % (cname, name, bad[:5], _GUARD['job']))
+            raise RuntimeError('WRITE_GUARD: %s outside the write manifest: %s' % (name, bad[:5]))
+        if _pie_running(): raise RuntimeError('WRITE_GUARD: %s while PIE is running' % name)
+        return orig(*a, **k)
+    return w
+class _GuardedClass:
+    def __init__(self, cname): self._c = getattr(_REAL, cname); self._n = cname
+    def __getattr__(self, name):
+        v = getattr(self._c, name); f = _GSPEC[self._n].get(name)
+        return _wrap(self._n, name, v, f) if f else v
+class _UnrealProxy(types.ModuleType):
+    def __init__(self):
+        super().__init__('unreal'); self.__dict__['_g'] = {n: _GuardedClass(n) for n in _GSPEC}
+    def __getattr__(self, name):
+        g = self.__dict__['_g']
+        return g[name] if name in g else getattr(_REAL, name)
+_PROXY = _UnrealProxy()
+_installed = ['proxy:' + ','.join(_GSPEC)]
+BSL = chr(92); LP = BSL + BSL + '?' + BSL; NL = chr(10)   # long-path prefix
+def _scan_content():
+    """mtime of every Content package file (long-path safe)."""
+    res = {}; root = LP + str(_PROJ / 'Content')
+    def walk(p):
+        try:
+            with os.scandir(p) as it:
+                for e in it:
+                    try:
+                        if e.is_dir(follow_symlinks=False): walk(e.path)
+                        elif e.name.endswith(('.uasset', '.umap')): res[e.path] = e.stat().st_mtime
+                    except OSError: pass
+        except OSError: pass
+    walk(root); return res
+def _file_to_pkg(path):
+    r = path.replace(LP, '').replace(BSL, '/'); i = r.find('/Content/')
+    return '/Game/' + r[i + len('/Content/'):].rsplit('.', 1)[0] if i >= 0 else r
+# ---- G1 stale sweep ----
+for _j in sorted(_v2_jobs.glob('*.py')):
+    try:
+        if _j.stat().st_mtime < _T0:
+            _j.rename(_v2_stale / _j.name); _glog('STALE_JOB moved (queued before this runner start): %s' % _j.name)
+    except Exception: pass
+def _finish(job, status, text, start):
+    job.with_suffix('.out').write_text(status + ' ' + str(time.time() - start) + '\n' + text, encoding='utf-8')
+    done = job.with_suffix('.done')
+    if done.exists(): done.unlink()   # a repeated job name must never wedge the runner (2026-09-30 runner wedge)
+    job.rename(done)
+def _v2_tick(dt):
+    global _v2_busy
+    if _v2_busy: return
+    pending = sorted(_v2_jobs.glob('*.py'))
+    if not pending: return
+    _v2_busy = True; job = pending[0]; buf = io.StringIO(); start = time.time()
+    try:
+        src = job.read_text(encoding='utf-8-sig'); h = _header(src)
+        kind = h.get('KIND', 'write'); owner = h.get('OWNER', 'anon'); lo = _lock_owner()
+        _GUARD.update(kind=kind, allow=set(), job=job.name)
+        if lo and owner != lo:
+            _glog('REFUSED_OWNER job=%s owner=%s lock=%s' % (job.name, owner, lo)); _finish(job, 'REFUSED', 'REFUSED_OWNER lock owner %s, job owner %s\n' % (lo, owner), start); return
+        if kind in ('write', 'pie') and _pie_running():
+            _glog('REFUSED_PIE job=%s kind=%s (a PIE world exists)' % (job.name, kind)); _finish(job, 'REFUSED', 'REFUSED_PIE %s job while PIE is running\n' % kind, start); return
+        if kind == 'write':
+            mp = h.get('MANIFEST')
+            if not mp: _glog('REFUSED_NO_MANIFEST job=%s' % job.name); _finish(job, 'REFUSED', 'REFUSED_NO_MANIFEST write job without # SHME_MANIFEST\n', start); return
+            _GUARD['mpath'] = mp if os.path.isabs(mp) else str(_PROJ / mp)
+            try: allow, mname = _check_manifest(_GUARD['mpath'])
+            except Exception as e:
+                _glog('REFUSED_MANIFEST job=%s %s' % (job.name, e)); _finish(job, 'REFUSED', 'REFUSED_MANIFEST %s\n' % e, start); return
+            _GUARD['allow'] = allow; _glog('WRITE_START job=%s manifest=%s assets=%d' % (job.name, mname, len(allow)))
+        dirty0 = set(p.get_name() for p in _REAL.EditorLoadingAndSavingUtils.get_dirty_content_packages())
+        disk0 = _scan_content() if kind == 'write' else None
+        sys.modules['unreal'] = _PROXY
+        try:
+            with contextlib.redirect_stdout(buf):
+                exec(compile(src, str(job), 'exec'), {'__name__': '__job__', '__file__': str(job)})
+        finally:
+            sys.modules['unreal'] = _REAL
+        status = 'OK'
+        if kind == 'write':
+            disk1 = _scan_content()
+            written = sorted(_file_to_pkg(f) for f, m in disk1.items() if disk0.get(f) != m)
+            w_out = [p for p in written if p not in _GUARD['allow']]
+            if w_out:
+                status = 'GUARD_WRITTEN'; buf.write(NL + 'GUARD_WRITTEN files outside the manifest were written: %s' %  w_out[:10]); _glog('GUARD_WRITTEN job=%s %s' % (job.name, w_out[:10]))
+            dirty = [p.get_name() for p in _REAL.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+            out_of = [p for p in dirty if p not in _GUARD['allow'] and p not in dirty0]
+            if out_of:
+                status = 'GUARD_DIRTY'; buf.write('\nGUARD_DIRTY packages outside the manifest: %s\n' % out_of[:10]); _glog('GUARD_DIRTY job=%s %s' % (job.name, out_of[:10]))
+            elif status == 'OK':
+                _glog('WRITE_END job=%s ok written=%s' % (job.name, written[:10])); _record_written(_GUARD['mpath'], written)
+    except Exception:
+        buf.write(traceback.format_exc()); status = 'ERROR'
+    finally:
+        _GUARD.update(kind='control', allow=set(), job='')
+        if job.exists(): _finish(job, status, buf.getvalue(), start)
+        _v2_busy = False
+builtins.SPH_V2_RUNNER = unreal.register_slate_post_tick_callback(_v2_tick)
+_glog('RUNNER_START gates G1-G5, save guards %d: %s' % (len(_installed), ','.join(_installed)))
+unreal.log('SPH_V2_RUNNER_READY')

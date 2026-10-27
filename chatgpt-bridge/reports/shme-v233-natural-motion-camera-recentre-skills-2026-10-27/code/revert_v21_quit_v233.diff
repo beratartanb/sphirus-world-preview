@@ -1,0 +1,48 @@
+--- Saved/Codex/SHME_V233_20261027/checkpoint/tools/revert_v21_quit.py	2026-10-14 23:10:22.048115900 +0300
++++ Tools/SHME_V21_20261014/revert_v21_quit.py	2026-10-27 17:11:44.615496100 +0300
+@@ -1,22 +1,23 @@
+-"""Discard the QA harness's in-memory flag edits (qa_pie writes shme_flags / pbi_flags / abp_flags into the SHME DA, the PBI
+-DA and both ABP CDOs and never saves them): reload exactly those packages from disk. builtins.V21_QUIT (default True) then
+-quits the editor gracefully when nothing is dirty and no PIE runs. Refuses on any other dirty package (no external kill)."""
+-import unreal as u, builtins
+-ALLOWED = {'/Game/GraceRanger/SHME/DA_SHM_Response_Default',
+-           '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype',
+-           '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase',
+-           '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching',
+-           '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior'}   # V2.4: harness behavior_flags
+-pie = u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is not None
+-pkgs = list(u.EditorLoadingAndSavingUtils.get_dirty_content_packages())
+-names = [p.get_name() for p in pkgs]
+-if pie: print('REFUSED: PIE running')
+-elif any(n not in ALLOWED for n in names): print('REFUSED: unexpected dirty packages', names)
+-else:
+-    if pkgs:
+-        ok = u.EditorLoadingAndSavingUtils.reload_packages(pkgs, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE)
+-        print('reloaded from disk', names, ok)
+-    left = [p.get_name() for p in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+-    print('dirty after reload', left)
+-    if getattr(builtins, 'V21_QUIT', True) and not left:
+-        print('QUIT_EDITOR requested'); u.SystemLibrary.execute_console_command(None, 'QUIT_EDITOR')
++"""Discard the QA harness's in-memory flag edits (qa_pie writes shme_flags / pbi_flags / abp_flags into the SHME DA, the PBI
++DA and both ABP CDOs and never saves them): reload exactly those packages from disk. builtins.V21_QUIT (default True) then
++quits the editor gracefully when nothing is dirty and no PIE runs. Refuses on any other dirty package (no external kill)."""
++import unreal as u, builtins
++ALLOWED = {'/Game/GraceRanger/SHME/DA_SHM_Response_Default',
++           '/Game/GraceRanger/Experimental/BodyInertia/DA_PBI_Prototype',
++           '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase',
++           '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching',
++           '/Game/GraceRanger/Profiles/DA_GR_LocomotionBehavior',   # V2.4: harness behavior_flags
++           '/Game/GraceRanger/BP_GR_Player', '/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player'}   # V2.33: harness pawn_flags (gated writes are saved; an unsaved CDO change here is a harness restore)
++pie = u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is not None
++pkgs = list(u.EditorLoadingAndSavingUtils.get_dirty_content_packages())
++names = [p.get_name() for p in pkgs]
++if pie: print('REFUSED: PIE running')
++elif any(n not in ALLOWED for n in names): print('REFUSED: unexpected dirty packages', names)
++else:
++    if pkgs:
++        ok = u.EditorLoadingAndSavingUtils.reload_packages(pkgs, u.ReloadPackagesInteractionMode.ASSUME_POSITIVE)
++        print('reloaded from disk', names, ok)
++    left = [p.get_name() for p in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
++    print('dirty after reload', left)
++    if getattr(builtins, 'V21_QUIT', True) and not left:
++        print('QUIT_EDITOR requested'); u.SystemLibrary.execute_console_command(None, 'QUIT_EDITOR')

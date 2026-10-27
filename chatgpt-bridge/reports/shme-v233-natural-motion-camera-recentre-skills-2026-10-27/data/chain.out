@@ -1,0 +1,1399 @@
+GATES start 12:38:54 (reason: first launch of the gated runner)
+no editor to quit
+RUNNER_READY shmv233_gates.log
+throttle off False
+RELAUNCH gates 30 12:42:01
+-- T1 owner mismatch
+REFUSED 0.002247333526611328
+REFUSED_OWNER lock owner v233, job owner other
+-- T2 measure job saves
+OK 0.013153314590454102
+GATETEST {'DA_SHM_Response_Default': 'saved=True', 'A_CT_Ref_Walk_Stop_F_Lfoot': 'saved=True'}
+-- T3 write job without manifest
+REFUSED 0.0036966800689697266
+REFUSED_NO_MANIFEST write job without # SHME_MANIFEST
+-- T4 write job with manifest (DA outside, A_CT_Ref inside)
+OK 0.02481222152709961
+GATETEST {'DA_SHM_Response_Default': 'saved=True', 'A_CT_Ref_Walk_Stop_F_Lfoot': 'saved=True'}
+-- T5 DB write job queued during PIE
+REFUSED 0.0
+REFUSED_PIE write job while PIE is running
+-- T6 same DB write job after PIE ended
+GATETEST DB WRITE JOB EXECUTED (only acceptable without PIE)
+GATES_DONE 12:42:52
+GATES2 start 12:45:10 (reason: first launch of the gated runner)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_gates2.log
+throttle off False
+RELAUNCH gates2 30 12:47:59
+-- T1 owner mismatch
+REFUSED 0.00735783576965332
+REFUSED_OWNER lock owner v233, job owner other
+-- T2 measure job saves
+OK 0.0023953914642333984
+GATETEST {'DA_SHM_Response_Default': 'BLOCKED WRITE_GUARD: save_asset refused in a measure job (only manifest write jobs may save)', 'A_CT_Ref_Walk_Stop_F_Lfoot': 'BLOCKED WRITE_GUARD: save_asset refused in a measure job (only manifest write jobs may save)'}
+-- T3 write job without manifest
+REFUSED 0.015253543853759766
+REFUSED_NO_MANIFEST write job without # SHME_MANIFEST
+-- T4 write job with manifest (DA outside, A_CT_Ref inside)
+OK 5.773352384567261
+GATETEST {'DA_SHM_Response_Default': "BLOCKED WRITE_GUARD: save_asset outside the write manifest: ['/Game/GraceRanger/SHME/DA_SHM_Response_Default']", 'A_CT_Ref_Walk_Stop_F_Lfoot': 'saved=True'}
+-- T5 DB write job queued during PIE
+REFUSED 0.0011289119720458984
+REFUSED_PIE write job while PIE is running
+-- T6 same DB write job after PIE ended
+OK 2.8687539100646973
+GATETEST DB WRITE JOB EXECUTED (only acceptable without PIE)
+-- T7 generator creates + bypass-saves an UNLISTED asset
+GATETEST {'GT_Listed': True, 'GT_Unlisted': True, 'bypass_save_unlisted': True, 'proxy_save_unlisted': "BLOCKED WRITE_GUARD: save_asset outside the write manifest: ['/Game/_GateTest233/GT_Unlisted']", 'proxy_save_listed': True}
+-- cleanup manifest + delete scratch assets
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/gt_cleanup.json", "existing": 1, "new": 2}
+-- T8 cleanup (listed)
+OK 6.9477698802948
+GATETEST cleanup {'GT_Listed': True, 'GT_Unlisted': True, 'dir': True}
+GATES2_DONE 12:49:09
+TEL start 12:52:09 (reason: component variable + function build need fresh editors)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_telA.log
+throttle off False
+RELAUNCH telA 30 12:55:16
+== revert 12:55:16
+OK 0.006567239761352539
+== comp_vars 12:55:18
+OK 12.800437450408936
+<BlueprintStatus.BS_UP_TO_DATE: 3> [] 376
+== save_comp 12:55:36
+REFUSED 0.11958551406860352
+REFUSED 0.11958551406860352
+REFUSED_MANIFEST asset changed since its backup (re-run manifest233): Content/GraceRanger/SHME/BP_SHM_HumanMotionComponent.uasset
+TEL_FAILED save_comp 12:55:38
+TEL2 start 12:57:05 (reason: runner manifest-state fix; comp vars were saved by comp_vars at 12:55 under manifest telemetry_comp, original backup kept there)
+REFUSED: unexpected dirty packages ['/Game/GraceRanger/SHME/BP_SHM_HumanMotionComponent']
+TEL3 start 13:01:31 (reason: runner manifest-state fix; comp vars were saved by comp_vars at 12:55 under manifest telemetry_comp, original backup kept there)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_telB.log
+throttle off False
+RELAUNCH telB 30 13:04:11
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/telemetry_comp3.json", "existing": 1, "new": 0}
+== revert 13:04:12
+OK 0.006117105484008789
+== only 13:04:14
+OK 0.0014247894287109375
+== funcs 13:04:18
+OK 127.84374594688416
+ "_lasthitby_patched": {
+<BlueprintStatus.BS_UP_TO_DATE: 3> []
+== save_comp2 13:06:35
+OK 4.2817769050598145
+saved <BlueprintStatus.BS_UP_TO_DATE: 3>
+== only_all 13:06:41
+OK 0.001008749008178711
+TEL3_BUILT 13:06:42
+v233tel_c30_calm | rows 353 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+TEL3_SMOKE log_SHM_lines=0 side_rows=352 "bp_errors": 0
+TEL3_DONE 13:07:06
+C1 start 13:17:41
+v212_warm_131746 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 66) | by owner {'in-clip': 1} | FINISHED production
+v233c1_j30_slow_sbk_r0 | rows 283 rate 30.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233c1_j30_slow_sbk_r0", "t": "13:18:39", "gc": false, "gc_s": 0.0, "private_gb": 21.7, "ws_gb": 15.84, "peak_ws_gb": 17.19, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimS
+v233c1_j30_slow_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1_j30_slow_o_r1", "t": "13:19:08", "gc": false, "gc_s": 0.0, "private_gb": 21.74, "ws_gb": 16.06, "peak_ws_gb": 17.19, "counts": {"Object": 477963, "World": 6, "Level": 7, "AnimSe
+v233c1_j30_slow_sbk_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1_j30_slow_sbk_r1", "t": "13:19:36", "gc": false, "gc_s": 0.0, "private_gb": 21.84, "ws_gb": 15.92, "peak_ws_gb": 17.19, "counts": {"Object": 477926, "World": 6, "Level": 7, "Anim
+v233c1_j30_slow_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1_j30_slow_o_r2", "t": "13:20:06", "gc": false, "gc_s": 0.0, "private_gb": 21.92, "ws_gb": 16.28, "peak_ws_gb": 17.19, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimSe
+v233c1_j30_slow_sbk_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1_j30_slow_sbk_r2", "t": "13:20:35", "gc": false, "gc_s": 0.0, "private_gb": 21.93, "ws_gb": 16.4, "peak_ws_gb": 17.19, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimS
+v233c1_jback_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1_jback_o_r1", "t": "13:21:10", "gc": false, "gc_s": 0.0, "private_gb": 21.99, "ws_gb": 16.07, "peak_ws_gb": 17.19, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimSeque
+v233c1_jback_sbk_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1_jback_sbk_r1", "t": "13:21:45", "gc": false, "gc_s": 0.0, "private_gb": 21.99, "ws_gb": 16.81, "peak_ws_gb": 17.25, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimSeq
+v233c1_jback_o_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1_jback_o_r2", "t": "13:22:21", "gc": false, "gc_s": 0.0, "private_gb": 22.0, "ws_gb": 16.66, "peak_ws_gb": 17.25, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimSequen
+v233c1_jback_sbk_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1_jback_sbk_r2", "t": "13:22:58", "gc": false, "gc_s": 0.0, "private_gb": 22.01, "ws_gb": 16.08, "peak_ws_gb": 17.25, "counts": {"Object": 477926, "World": 6, "Level": 7, "AnimSeq
+C1B start 13:33:44
+v212_warm_133348 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 66) | by owner {'in-clip': 1} | FINISHED production
+v233c1b_j30_slow_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_j30_slow_o_r1", "t": "13:34:36", "gc": false, "gc_s": 0.0, "private_gb": 22.07, "ws_gb": 15.4, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSe
+v233c1b_j30_slow_sbk2_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_slow_sbk2_r1", "t": "13:35:05", "gc": false, "gc_s": 0.0, "private_gb": 22.08, "ws_gb": 16.18, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "An
+v233c1b_j30_slow_sb22_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_slow_sb22_r1", "t": "13:35:35", "gc": false, "gc_s": 0.0, "private_gb": 22.45, "ws_gb": 16.23, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "An
+v233c1b_j30_slow_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_j30_slow_o_r2", "t": "13:36:04", "gc": false, "gc_s": 0.0, "private_gb": 22.09, "ws_gb": 16.57, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+MEM230 {"tag": "v233c1b_j30_slow_sbk2_r2", "t": "13:36:32", "gc": false, "gc_s": 0.0, "private_gb": 22.1, "ws_gb": 16.36, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Ani
+v233c1b_j30_slow_sb22_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_slow_sb22_r2", "t": "13:37:01", "gc": false, "gc_s": 0.0, "private_gb": 22.11, "ws_gb": 16.36, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "An
+v233c1b_jback_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_jback_o_r1", "t": "13:37:36", "gc": false, "gc_s": 0.0, "private_gb": 22.14, "ws_gb": 16.07, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSequ
+v233c1b_jback_sbk2_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jback_sbk2_r1", "t": "13:38:11", "gc": false, "gc_s": 0.0, "private_gb": 22.14, "ws_gb": 15.47, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+v233c1b_jback_sb22_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jback_sb22_r1", "t": "13:38:46", "gc": false, "gc_s": 0.0, "private_gb": 22.15, "ws_gb": 15.72, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+v233c1b_jback_o_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_jback_o_r2", "t": "13:39:22", "gc": false, "gc_s": 0.0, "private_gb": 22.15, "ws_gb": 15.61, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSequ
+v233c1b_jback_sbk2_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jback_sbk2_r2", "t": "13:39:57", "gc": false, "gc_s": 0.0, "private_gb": 22.15, "ws_gb": 15.46, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+v233c1b_jback_sb22_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jback_sb22_r2", "t": "13:40:33", "gc": false, "gc_s": 0.0, "private_gb": 22.17, "ws_gb": 15.32, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+v233c1b_d_back_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_d_back_o_r1", "t": "13:41:15", "gc": false, "gc_s": 0.0, "private_gb": 22.55, "ws_gb": 16.12, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSeq
+v233c1b_d_back_sbk2_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_back_sbk2_r1", "t": "13:41:54", "gc": false, "gc_s": 0.0, "private_gb": 22.28, "ws_gb": 15.97, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Anim
+v233c1b_d_back_sb22_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_back_sb22_r1", "t": "13:42:33", "gc": false, "gc_s": 0.0, "private_gb": 22.14, "ws_gb": 16.09, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Anim
+v233c1b_d_back_o_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_d_back_o_r2", "t": "13:43:15", "gc": false, "gc_s": 0.0, "private_gb": 22.16, "ws_gb": 16.41, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSeq
+v233c1b_d_back_sbk2_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_back_sbk2_r2", "t": "13:43:53", "gc": false, "gc_s": 0.0, "private_gb": 22.2, "ws_gb": 16.18, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+v233c1b_d_back_sb22_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_back_sb22_r2", "t": "13:44:32", "gc": false, "gc_s": 0.0, "private_gb": 22.21, "ws_gb": 15.93, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Anim
+v233c1b_k_jogback_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_k_jogback_o_r1", "t": "13:45:02", "gc": false, "gc_s": 0.0, "private_gb": 22.22, "ws_gb": 15.64, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Anim
+v233c1b_k_jogback_sbk2_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_jogback_sbk2_r1", "t": "13:45:33", "gc": false, "gc_s": 0.0, "private_gb": 22.22, "ws_gb": 16.12, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_k_jogback_sb22_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_jogback_sb22_r1", "t": "13:46:03", "gc": false, "gc_s": 0.0, "private_gb": 22.48, "ws_gb": 16.04, "peak_ws_gb": 17.25, "counts": {"Object": 478396, "World": 6, "Level": 7, "A
+v233c1b_k_jogback_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_k_jogback_o_r2", "t": "13:46:36", "gc": false, "gc_s": 0.0, "private_gb": 22.21, "ws_gb": 16.21, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Anim
+v233c1b_k_jogback_sbk2_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_jogback_sbk2_r2", "t": "13:47:08", "gc": false, "gc_s": 0.0, "private_gb": 22.23, "ws_gb": 16.1, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "An
+v233c1b_k_jogback_sb22_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_jogback_sb22_r2", "t": "13:47:40", "gc": false, "gc_s": 0.0, "private_gb": 22.24, "ws_gb": 16.15, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_j30_rel_3200_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_j30_rel_3200_o_r1", "t": "13:48:16", "gc": false, "gc_s": 0.0, "private_gb": 22.23, "ws_gb": 16.11, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_j30_rel_3200_sbk2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3200_sbk2_r1", "t": "13:48:51", "gc": false, "gc_s": 0.0, "private_gb": 22.27, "ws_gb": 16.3, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, 
+v233c1b_j30_rel_3200_sb22_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3200_sb22_r1", "t": "13:49:25", "gc": false, "gc_s": 0.0, "private_gb": 22.27, "ws_gb": 16.1, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, 
+v233c1b_j30_rel_3200_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_j30_rel_3200_o_r2", "t": "13:49:54", "gc": false, "gc_s": 0.0, "private_gb": 22.28, "ws_gb": 16.61, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_j30_rel_3200_sbk2_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3200_sbk2_r2", "t": "13:50:23", "gc": false, "gc_s": 0.0, "private_gb": 22.27, "ws_gb": 16.29, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7,
+v233c1b_j30_rel_3200_sb22_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3200_sb22_r2", "t": "13:50:52", "gc": false, "gc_s": 0.0, "private_gb": 22.26, "ws_gb": 16.16, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7,
+v233c1b_j30_rel_3450_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_j30_rel_3450_o_r1", "t": "13:51:24", "gc": false, "gc_s": 0.0, "private_gb": 22.72, "ws_gb": 16.3, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "An
+v233c1b_j30_rel_3450_sbk2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3450_sbk2_r1", "t": "13:51:56", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.86, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, 
+v233c1b_j30_rel_3450_sb22_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3450_sb22_r1", "t": "13:52:26", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.85, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, 
+v233c1b_j30_rel_3450_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_j30_rel_3450_o_r2", "t": "13:52:56", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.98, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "An
+v233c1b_j30_rel_3450_sbk2_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3450_sbk2_r2", "t": "13:53:27", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.6, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "
+v233c1b_j30_rel_3450_sb22_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_j30_rel_3450_sb22_r2", "t": "13:54:01", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.82, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, 
+v233c1b_d_backw_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_d_backw_o_r1", "t": "13:54:37", "gc": false, "gc_s": 0.0, "private_gb": 22.25, "ws_gb": 16.04, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSe
+v233c1b_d_backw_sbk2_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_backw_sbk2_r1", "t": "13:55:12", "gc": false, "gc_s": 0.0, "private_gb": 22.52, "ws_gb": 15.54, "peak_ws_gb": 17.25, "counts": {"Object": 478396, "World": 6, "Level": 7, "Ani
+v233c1b_d_backw_sb22_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_backw_sb22_r1", "t": "13:55:48", "gc": false, "gc_s": 0.0, "private_gb": 22.32, "ws_gb": 16.23, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Ani
+v233c1b_d_backw_o_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_d_backw_o_r2", "t": "13:56:24", "gc": false, "gc_s": 0.0, "private_gb": 22.17, "ws_gb": 16.26, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimSe
+v233c1b_d_backw_sbk2_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_backw_sbk2_r2", "t": "13:56:59", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.6, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "AnimS
+v233c1b_d_backw_sb22_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_d_backw_sb22_r2", "t": "13:57:35", "gc": false, "gc_s": 0.0, "private_gb": 22.31, "ws_gb": 16.25, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Ani
+v233c1b_k_walkback_o_r1 | rows 268 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_k_walkback_o_r1", "t": "13:58:01", "gc": false, "gc_s": 0.0, "private_gb": 22.32, "ws_gb": 16.03, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Ani
+v233c1b_k_walkback_sbk2_r1 | rows 268 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_walkback_sbk2_r1", "t": "13:58:26", "gc": false, "gc_s": 0.0, "private_gb": 22.32, "ws_gb": 15.9, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_k_walkback_sb22_r1 | rows 268 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_walkback_sb22_r1", "t": "13:58:52", "gc": false, "gc_s": 0.0, "private_gb": 22.32, "ws_gb": 15.97, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "
+v233c1b_k_walkback_o_r2 | rows 268 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_k_walkback_o_r2", "t": "13:59:21", "gc": false, "gc_s": 0.0, "private_gb": 22.31, "ws_gb": 15.84, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "Ani
+v233c1b_k_walkback_sbk2_r2 | rows 268 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_walkback_sbk2_r2", "t": "13:59:50", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.93, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_k_walkback_sb22_r2 | rows 268 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_k_walkback_sb22_r2", "t": "14:00:19", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.56, "peak_ws_gb": 17.25, "counts": {"Object": 478380, "World": 6, "Level": 7, "A
+v233c1b_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED production
+MEM230 {"tag": "v233c1b_jstart_o_r1", "t": "14:01:04", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 15.96, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimSequ
+v233c1b_jstart_sbk2_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 5 (worst 98) | by owner {'in-clip': 5} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jstart_sbk2_r1", "t": "14:01:50", "gc": false, "gc_s": 0.0, "private_gb": 22.3, "ws_gb": 16.02, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimS
+v233c1b_jstart_sb22_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 29) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jstart_sb22_r1", "t": "14:02:40", "gc": false, "gc_s": 0.0, "private_gb": 22.65, "ws_gb": 14.1, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimS
+v233c1b_jstart_o_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233c1b_jstart_o_r2", "t": "14:03:33", "gc": false, "gc_s": 0.0, "private_gb": 22.31, "ws_gb": 12.77, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimSeq
+v233c1b_jstart_sbk2_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 5 (worst 99) | by owner {'in-clip': 5} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jstart_sbk2_r2", "t": "14:04:33", "gc": false, "gc_s": 0.0, "private_gb": 22.32, "ws_gb": 10.33, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "Anim
+v233c1b_jstart_sb22_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 29) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1b_jstart_sb22_r2", "t": "14:05:25", "gc": false, "gc_s": 0.0, "private_gb": 22.32, "ws_gb": 9.52, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimS
+v233c1b_wstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233c1b_wstart_o_r1", "t": "14:06:17", "gc": false, "gc_s": 0.0, "private_gb": 22.33, "ws_gb": 9.22, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimSequ
+v233c1b_wstart_sbk2_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_wstart_sbk2_r1", "t": "14:07:10", "gc": false, "gc_s": 0.0, "private_gb": 22.31, "ws_gb": 9.37, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimS
+v233c1b_wstart_sb22_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_wstart_sb22_r1", "t": "14:08:02", "gc": false, "gc_s": 0.0, "private_gb": 22.33, "ws_gb": 9.04, "peak_ws_gb": 17.25, "counts": {"Object": 478381, "World": 6, "Level": 7, "AnimS
+v233c1b_wstart_o_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1b_wstart_o_r2", "t": "14:08:53", "gc": false, "gc_s": 0.0, "private_gb": 21.21, "ws_gb": 9.11, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "AnimSequ
+v233c1b_wstart_sbk2_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_wstart_sbk2_r2", "t": "14:09:41", "gc": false, "gc_s": 0.0, "private_gb": 21.02, "ws_gb": 9.7, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "AnimSe
+v233c1b_wstart_sb22_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1b_wstart_sb22_r2", "t": "14:10:26", "gc": false, "gc_s": 0.0, "private_gb": 22.18, "ws_gb": 10.03, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "Anim
+v233c1b_c30_calm_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233c1b_c30_calm_o_r1", "t": "14:10:59", "gc": false, "gc_s": 0.0, "private_gb": 22.21, "ws_gb": 10.14, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "AnimS
+v233c1b_c30_calm_sbk2_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1b_c30_calm_sbk2_r1", "t": "14:11:33", "gc": false, "gc_s": 0.0, "private_gb": 22.23, "ws_gb": 10.08, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "An
+v233c1b_c30_calm_sb22_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1b_c30_calm_sb22_r1", "t": "14:12:06", "gc": false, "gc_s": 0.0, "private_gb": 22.23, "ws_gb": 5.92, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "Ani
+v233c1b_c30_calm_o_r2 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233c1b_c30_calm_o_r2", "t": "14:12:39", "gc": false, "gc_s": 0.0, "private_gb": 22.24, "ws_gb": 7.92, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "AnimSe
+v233c1b_c30_calm_sbk2_r2 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1b_c30_calm_sbk2_r2", "t": "14:13:13", "gc": false, "gc_s": 0.0, "private_gb": 22.23, "ws_gb": 7.81, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "Ani
+v233c1b_c30_calm_sb22_r2 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1b_c30_calm_sb22_r2", "t": "14:13:46", "gc": false, "gc_s": 0.0, "private_gb": 22.22, "ws_gb": 7.93, "peak_ws_gb": 17.25, "counts": {"Object": 478382, "World": 6, "Level": 7, "Ani
+C1B_DONE 14:13:51
+C1C start 14:17:12
+v212_warm_141717 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233c1c_j30_slow_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_j30_slow_o_r1", "t": "14:18:04", "gc": false, "gc_s": 0.0, "private_gb": 22.41, "ws_gb": 8.35, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSe
+v233c1c_j30_slow_sb22_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_j30_slow_sb22_r1", "t": "14:18:33", "gc": false, "gc_s": 0.0, "private_gb": 22.39, "ws_gb": 8.43, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "Ani
+v233c1c_j30_slow_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_j30_slow_o_r2", "t": "14:19:02", "gc": false, "gc_s": 0.0, "private_gb": 22.39, "ws_gb": 8.25, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSe
+v233c1c_j30_slow_sb22_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_j30_slow_sb22_r2", "t": "14:19:30", "gc": false, "gc_s": 0.0, "private_gb": 22.4, "ws_gb": 8.1, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimS
+v233c1c_jback_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_jback_o_r1", "t": "14:20:06", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.15, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSeque
+v233c1c_jback_sb22_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_jback_sb22_r1", "t": "14:20:42", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.5, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSeq
+v233c1c_jback_o_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_jback_o_r2", "t": "14:21:17", "gc": false, "gc_s": 0.0, "private_gb": 22.45, "ws_gb": 8.61, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSeque
+v233c1c_jback_sb22_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_jback_sb22_r2", "t": "14:21:52", "gc": false, "gc_s": 0.0, "private_gb": 22.42, "ws_gb": 8.5, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSeq
+v233c1c_d_back_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_d_back_o_r1", "t": "14:22:27", "gc": false, "gc_s": 0.0, "private_gb": 22.43, "ws_gb": 7.58, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSequ
+v233c1c_d_back_sb22_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_d_back_sb22_r1", "t": "14:23:03", "gc": false, "gc_s": 0.0, "private_gb": 22.43, "ws_gb": 8.0, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSe
+v233c1c_d_back_o_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_d_back_o_r2", "t": "14:23:39", "gc": false, "gc_s": 0.0, "private_gb": 22.47, "ws_gb": 8.32, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSequ
+v233c1c_d_back_sb22_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_d_back_sb22_r2", "t": "14:24:16", "gc": false, "gc_s": 0.0, "private_gb": 22.78, "ws_gb": 8.43, "peak_ws_gb": 17.25, "counts": {"Object": 478478, "World": 6, "Level": 7, "AnimS
+v233c1c_k_jogback_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_k_jogback_o_r1", "t": "14:24:45", "gc": false, "gc_s": 0.0, "private_gb": 22.47, "ws_gb": 8.1, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSe
+v233c1c_k_jogback_sb22_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_k_jogback_sb22_r1", "t": "14:25:15", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.44, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "An
+v233c1c_k_jogback_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_k_jogback_o_r2", "t": "14:25:44", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.34, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimS
+v233c1c_k_jogback_sb22_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_k_jogback_sb22_r2", "t": "14:26:13", "gc": false, "gc_s": 0.0, "private_gb": 22.48, "ws_gb": 8.67, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "An
+v233c1c_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233c1c_jstart_o_r1", "t": "14:26:58", "gc": false, "gc_s": 0.0, "private_gb": 22.47, "ws_gb": 9.1, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSeque
+v233c1c_jstart_sb22_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233c1c_jstart_sb22_r1", "t": "14:27:44", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.24, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimS
+v233c1c_jstart_o_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233c1c_jstart_o_r2", "t": "14:28:30", "gc": false, "gc_s": 0.0, "private_gb": 22.48, "ws_gb": 8.42, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimSequ
+v233c1c_jstart_sb22_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233c1c_jstart_sb22_r2", "t": "14:29:16", "gc": false, "gc_s": 0.0, "private_gb": 22.47, "ws_gb": 8.71, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "AnimS
+v233c1c_j30_rel_3200_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_j30_rel_3200_o_r1", "t": "14:29:45", "gc": false, "gc_s": 0.0, "private_gb": 22.48, "ws_gb": 8.71, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "An
+v233c1c_j30_rel_3200_sb22_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_j30_rel_3200_sb22_r1", "t": "14:30:15", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.32, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, 
+v233c1c_j30_rel_3200_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_j30_rel_3200_o_r2", "t": "14:30:44", "gc": false, "gc_s": 0.0, "private_gb": 22.5, "ws_gb": 8.54, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "Ani
+v233c1c_j30_rel_3200_sb22_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 30) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233c1c_j30_rel_3200_sb22_r2", "t": "14:31:14", "gc": false, "gc_s": 0.0, "private_gb": 22.49, "ws_gb": 8.44, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, 
+v233c1c_j30_rel_3450_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 78) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233c1c_j30_rel_3450_o_r1", "t": "14:31:44", "gc": false, "gc_s": 0.0, "private_gb": 22.5, "ws_gb": 8.62, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "Ani
+v233c1c_j30_rel_3450_sb22_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_j30_rel_3450_sb22_r1", "t": "14:32:14", "gc": false, "gc_s": 0.0, "private_gb": 22.5, "ws_gb": 7.49, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "
+v233c1c_j30_rel_3450_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233c1c_j30_rel_3450_o_r2", "t": "14:32:43", "gc": false, "gc_s": 0.0, "private_gb": 22.56, "ws_gb": 8.07, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "An
+v233c1c_j30_rel_3450_sb22_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233c1c_j30_rel_3450_sb22_r2", "t": "14:33:15", "gc": false, "gc_s": 0.0, "private_gb": 22.5, "ws_gb": 8.33, "peak_ws_gb": 17.25, "counts": {"Object": 478462, "World": 6, "Level": 7, "
+C1C_DONE 14:33:20
+CAM start 14:33:37 (reason: profile fields + component vars need a fresh editor)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camA.log
+throttle off False
+RELAUNCH camA 30 14:38:17
+== revert 14:38:18
+OK 0.007140636444091797
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/camA.json", "existing": 5, "new": 0}
+== profiles 14:38:19
+OK 8.323785543441772
+  "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+== comp_vars 14:38:35
+OK 19.93824052810669
+<BlueprintStatus.BS_UP_TO_DATE: 3> [] 385
+== save_comp 14:38:57
+OK 4.553865909576416
+saved <BlueprintStatus.BS_UP_TO_DATE: 3>
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camB.log
+throttle off False
+RELAUNCH camB 30 14:41:29
+== revert 14:41:29
+OK 0.005013942718505859
+== only 14:41:31
+OK 0.001993894577026367
+== funcs 14:41:32
+OK 334.63299322128296
+ "SHM_UpdateCameraV21": "FAIL DSL build failed for SHM_UpdateCameraV21 (1 nodes):\n[2026.10.27-11.47.07:933][ 28]LogScript: Warning: AssertionError: The node could not be created / Piyon|GetLastMovementInputVector does not exist\n  in: (bind miv (Piyon|GetLastMovementInputVector :self (Değişkenler|SHM|Refs|Owner...\n  in: (fn SHM_UpdateCameraV21)\n\tKismetSystemLibrary /Script/Engine.Default__Ki
+ "_lasthitby_patched": {}
+<BlueprintStatus.BS_UP_TO_DATE: 3> []
+== save_comp2 14:47:13
+OK 4.165483713150024
+saved <BlueprintStatus.BS_UP_TO_DATE: 3>
+== only_all 14:47:18
+OK 0.0
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/camB.json", "existing": 4, "new": 0}
+== camrec 14:47:20
+OK 13.060308456420898
+CAMREC233 {"parent": [["K2Node_CallFunction_55", "wired", "K2Node_CallFunction_28"], ["K2Node_CallFunction_39", "wired", "K2Node_CallFunction_78"]], "child": {"after": []}, "compile": {"BP_ExampleCharacter_MotionMatching": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "BP_Player_MM": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "BP_GR_Player": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "BP_PBI_Playe
+CAM_BUILT 14:47:35
+v233camsmoke_c30_calm | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+CAM_SMOKE "status": "FINISHED" "bp_errors": 0 "bp_error_first": null 
+CAM_DONE 14:48:05
+CAM2 start 14:49:24 (reason: repair of the emptied SHM_UpdateCameraV21, second funcs build = fresh editor)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camC.log
+throttle off False
+RELAUNCH camC 30 14:51:51
+== revert 14:51:51
+OK 0.007814407348632812
+== only 14:51:53
+OK 0.0012640953063964844
+== funcs 14:51:57
+OK 355.33188796043396
+ "_lasthitby_patched": {
+== census 14:57:54
+OK 0.24704623222351074
+CAMFN233 {"nodes": 1430, "CamOrbit": 32, "CamRec": 22, "MoveLatch": 10, "CamFol": 25, "CamClose": 12, "LastHitBy": 1}
+== save_comp 14:57:57
+OK 4.267159461975098
+== only_all 14:58:02
+OK 0.0012040138244628906
+v233camsmoke2_cam32_s90 | rows 329 rate 30.1/s | pops >25 m/s2: 7 (worst 66) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+CAM2_SMOKE "status": "FINISHED" "bp_errors": 0 
+CAM2_DONE 14:58:26
+K1 start 14:58:55
+v212_warm_145859 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233k1_cam33_wturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_wturn_o_r1", "t": "14:59:48", "gc": false, "gc_s": 0.0, "private_gb": 20.32, "ws_gb": 17.86, "peak_ws_gb": 18.35, "counts": {"Object": 442904, "World": 4, "Level": 5, "Ani
+v233k1_cam33_wturn_rec_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_wturn_rec_r1", "t": "15:00:16", "gc": false, "gc_s": 0.0, "private_gb": 20.29, "ws_gb": 17.97, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "A
+v233k1_cam33_wturn_w_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_wturn_w_o_r1", "t": "15:00:46", "gc": false, "gc_s": 0.0, "private_gb": 20.31, "ws_gb": 17.84, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "A
+v233k1_cam33_wturn_w_rec_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_wturn_w_rec_r1", "t": "15:01:18", "gc": false, "gc_s": 0.0, "private_gb": 20.33, "ws_gb": 17.15, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, 
+v233k1_cam33_jturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_jturn_o_r1", "t": "15:01:46", "gc": false, "gc_s": 0.0, "private_gb": 20.33, "ws_gb": 17.68, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "Ani
+v233k1_cam33_jturn_rec_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_jturn_rec_r1", "t": "15:02:15", "gc": false, "gc_s": 0.0, "private_gb": 20.33, "ws_gb": 17.56, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "A
+v233k1_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_sturn_o_r1", "t": "15:02:44", "gc": false, "gc_s": 0.0, "private_gb": 20.35, "ws_gb": 17.51, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "Ani
+v233k1_cam33_sturn_rec_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_sturn_rec_r1", "t": "15:03:12", "gc": false, "gc_s": 0.0, "private_gb": 20.22, "ws_gb": 17.31, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "A
+v233k1_cam33_back_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_back_o_r1", "t": "15:03:41", "gc": false, "gc_s": 0.0, "private_gb": 20.37, "ws_gb": 17.44, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "Anim
+v233k1_cam33_back_rec_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_back_rec_r1", "t": "15:04:10", "gc": false, "gc_s": 0.0, "private_gb": 20.37, "ws_gb": 17.54, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "An
+v233k1_cam33_look_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_look_o_r1", "t": "15:04:41", "gc": false, "gc_s": 0.0, "private_gb": 20.39, "ws_gb": 17.24, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "Anim
+v233k1_cam33_look_rec_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_look_rec_r1", "t": "15:05:14", "gc": false, "gc_s": 0.0, "private_gb": 20.39, "ws_gb": 17.62, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "An
+v233k1_cam33_idlelook_o_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_idlelook_o_r1", "t": "15:05:42", "gc": false, "gc_s": 0.0, "private_gb": 20.39, "ws_gb": 17.47, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "
+v233k1_cam33_idlelook_rec_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_idlelook_rec_r1", "t": "15:06:11", "gc": false, "gc_s": 0.0, "private_gb": 20.38, "ws_gb": 17.43, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5,
+v233k1_cam33_pad_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k1_cam33_pad_o_r1", "t": "15:06:43", "gc": false, "gc_s": 0.0, "private_gb": 20.39, "ws_gb": 17.6, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "AnimSe
+v233k1_cam33_pad_rec_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam33_pad_rec_r1", "t": "15:07:16", "gc": false, "gc_s": 0.0, "private_gb": 20.4, "ws_gb": 17.41, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "Anim
+v233k1_c30_calm_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233k1_c30_calm_o_r1", "t": "15:07:47", "gc": false, "gc_s": 0.0, "private_gb": 20.4, "ws_gb": 17.43, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "AnimSeq
+v233k1_c30_calm_rec_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233k1_c30_calm_rec_r1", "t": "15:08:17", "gc": false, "gc_s": 0.0, "private_gb": 20.5, "ws_gb": 17.31, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "AnimS
+v233k1_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 40) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k1_ins_ws_o_r1", "t": "15:08:54", "gc": false, "gc_s": 0.0, "private_gb": 20.96, "ws_gb": 16.66, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "AnimSequ
+v233k1_ins_ws_rec_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233k1_ins_ws_rec_r1", "t": "15:09:27", "gc": false, "gc_s": 0.0, "private_gb": 20.86, "ws_gb": 17.55, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "AnimSe
+v233k1_cam_corr_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 1, 'montage': 3} | FINISHED production
+MEM230 {"tag": "v233k1_cam_corr_o_r1", "t": "15:09:58", "gc": false, "gc_s": 0.0, "private_gb": 20.88, "ws_gb": 17.0, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "AnimSeq
+v233k1_cam_corr_rec_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 1, 'montage': 3} | FINISHED candidate
+MEM230 {"tag": "v233k1_cam_corr_rec_r1", "t": "15:10:31", "gc": false, "gc_s": 0.0, "private_gb": 20.85, "ws_gb": 17.13, "peak_ws_gb": 18.35, "counts": {"Object": 443118, "World": 4, "Level": 5, "Anim
+K1_DONE 15:10:35
+CAM3 start 15:12:15 (reason: recentre self-inhibition fix (look gate minus own delta), funcs build = fresh editor)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camD.log
+throttle off False
+RELAUNCH camD 30 15:17:41
+== revert 15:17:41
+OK 0.008574962615966797
+== only 15:17:43
+OK 0.0016148090362548828
+== funcs 15:17:49
+OK 380.5134119987488
+ "_lasthitby_patched": {
+== census 15:24:12
+OK 0.24144721031188965
+CAMFN233 {"nodes": 1432, "CamOrbit": 32, "CamRec": 23, "MoveLatch": 10, "CamFol": 25, "CamClose": 12, "LastHitBy": 1}
+== save_comp 15:24:15
+OK 4.296290159225464
+== only_all 15:24:21
+OK 0.002037525177001953
+v233camsmoke3_cam32_s90 | rows 329 rate 30.1/s | pops >25 m/s2: 7 (worst 66) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+CAM3_SMOKE "status": "FINISHED" "bp_errors": 0 
+CAM3_DONE 15:24:45
+CAM4 start 15:29:18 (reason: new component var MoveLatchStateN + function rebuild)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camE.log
+throttle off False
+RELAUNCH camE 30 15:32:00
+== revert 15:32:01
+OK 0.021158933639526367
+== comp_vars 15:32:03
+OK 18.029239416122437
+== save_comp 15:32:24
+OK 4.509030342102051
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camF.log
+throttle off False
+RELAUNCH camF 30 15:35:18
+== revert 15:35:18
+OK 0.012426376342773438
+== only 15:35:19
+OK 0.0
+== funcs 15:35:22
+OK 363.6376667022705
+== census 15:41:29
+OK 0.26473093032836914
+CAMFN233 {"nodes": 1442, "CamOrbit": 35, "CamRec": 23, "MoveLatch": 17, "CamFol": 25, "CamClose": 12, "LastHitBy": 1}
+== save_comp2 15:41:40
+OK 5.667831659317017
+== only_all 15:41:49
+OK 0.002374410629272461
+v233kdiag4_cam33_wturn | rows 359 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v233kdiag4_cam33_wturn_w | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+REC233 v233kdiag4_cam33_wturn       err start  85.6 end  11.3 settle 1.13 s | cam rate max  73.8 deg/s p95 acc    109 | travel drift while held  19.2 deg | ctl change   84.7
+REC233 v233kdiag4_cam33_wturn_w     err start  67.3 end   7.8 settle 2.5 s | cam rate max  73.7 deg/s p95 acc     65 | travel drift while held  35.0 deg | ctl change   62.0
+CAM4_DONE 15:42:42
+K2 start 15:43:23
+v212_warm_154328 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233k2_cam33_wturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_wturn_o_r1", "t": "15:44:16", "gc": false, "gc_s": 0.0, "private_gb": 20.44, "ws_gb": 17.81, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "Ani
+v233k2_cam33_wturn_rec_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_wturn_rec_r1", "t": "15:44:48", "gc": false, "gc_s": 0.0, "private_gb": 20.56, "ws_gb": 17.5, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "An
+v233k2_cam33_wturn_w_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_wturn_w_o_r1", "t": "15:45:20", "gc": false, "gc_s": 0.0, "private_gb": 20.63, "ws_gb": 18.36, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "A
+v233k2_cam33_wturn_w_rec_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_wturn_w_rec_r1", "t": "15:45:52", "gc": false, "gc_s": 0.0, "private_gb": 20.63, "ws_gb": 18.37, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, 
+v233k2_cam33_jturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_jturn_o_r1", "t": "15:46:21", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 18.4, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "Anim
+v233k2_cam33_jturn_rec_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_jturn_rec_r1", "t": "15:46:53", "gc": false, "gc_s": 0.0, "private_gb": 20.63, "ws_gb": 17.52, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "A
+v233k2_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_sturn_o_r1", "t": "15:47:27", "gc": false, "gc_s": 0.0, "private_gb": 20.91, "ws_gb": 17.57, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "Ani
+v233k2_cam33_sturn_rec_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_sturn_rec_r1", "t": "15:47:59", "gc": false, "gc_s": 0.0, "private_gb": 20.61, "ws_gb": 17.74, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "A
+v233k2_cam33_back_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_back_o_r1", "t": "15:48:28", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 17.79, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "Anim
+v233k2_cam33_back_rec_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_back_rec_r1", "t": "15:48:57", "gc": false, "gc_s": 0.0, "private_gb": 20.66, "ws_gb": 17.66, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "An
+v233k2_cam33_look_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_look_o_r1", "t": "15:49:29", "gc": false, "gc_s": 0.0, "private_gb": 20.62, "ws_gb": 17.74, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "Anim
+v233k2_cam33_look_rec_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_look_rec_r1", "t": "15:50:01", "gc": false, "gc_s": 0.0, "private_gb": 20.64, "ws_gb": 17.72, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "An
+v233k2_cam33_idlelook_o_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_idlelook_o_r1", "t": "15:50:29", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 17.96, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "
+v233k2_cam33_idlelook_rec_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_idlelook_rec_r1", "t": "15:50:57", "gc": false, "gc_s": 0.0, "private_gb": 20.62, "ws_gb": 18.11, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5,
+v233k2_cam33_pad_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233k2_cam33_pad_o_r1", "t": "15:51:29", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 18.02, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "AnimS
+v233k2_cam33_pad_rec_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam33_pad_rec_r1", "t": "15:52:01", "gc": false, "gc_s": 0.0, "private_gb": 20.62, "ws_gb": 17.45, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "Ani
+v233k2_cam32_wallturn_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 9 (worst 54) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k2_cam32_wallturn_o_r1", "t": "15:52:29", "gc": false, "gc_s": 0.0, "private_gb": 20.63, "ws_gb": 17.13, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, "
+v233k2_cam32_wallturn_rec_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 8 (worst 44) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam32_wallturn_rec_r1", "t": "15:52:58", "gc": false, "gc_s": 0.0, "private_gb": 20.67, "ws_gb": 17.1, "peak_ws_gb": 18.93, "counts": {"Object": 444563, "World": 4, "Level": 5, 
+v233k2_cam32_brk2_o_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 4 (worst 66) | by owner {'in-clip': 3, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k2_cam32_brk2_o_r1", "t": "15:53:27", "gc": false, "gc_s": 0.0, "private_gb": 20.68, "ws_gb": 17.13, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "Anim
+v233k2_cam32_brk2_rec_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam32_brk2_rec_r1", "t": "15:53:56", "gc": false, "gc_s": 0.0, "private_gb": 20.67, "ws_gb": 17.27, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "An
+v233k2_c30_calm_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233k2_c30_calm_o_r1", "t": "15:54:24", "gc": false, "gc_s": 0.0, "private_gb": 20.66, "ws_gb": 17.21, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "AnimSe
+v233k2_c30_calm_rec_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233k2_c30_calm_rec_r1", "t": "15:54:57", "gc": false, "gc_s": 0.0, "private_gb": 20.77, "ws_gb": 17.35, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "Anim
+v233k2_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233k2_ins_ws_o_r1", "t": "15:55:28", "gc": false, "gc_s": 0.0, "private_gb": 21.03, "ws_gb": 17.33, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "AnimSequ
+v233k2_ins_ws_rec_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233k2_ins_ws_rec_r1", "t": "15:56:01", "gc": false, "gc_s": 0.0, "private_gb": 21.06, "ws_gb": 16.93, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "AnimSe
+v233k2_cam_corr_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 1, 'montage': 3} | FINISHED production
+MEM230 {"tag": "v233k2_cam_corr_o_r1", "t": "15:56:33", "gc": false, "gc_s": 0.0, "private_gb": 21.13, "ws_gb": 17.12, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "AnimSe
+v233k2_cam_corr_rec_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 1, 'montage': 3} | FINISHED candidate
+MEM230 {"tag": "v233k2_cam_corr_rec_r1", "t": "15:57:05", "gc": false, "gc_s": 0.0, "private_gb": 21.09, "ws_gb": 16.98, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "Anim
+v233k2_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 13 (worst 63) | by owner {'montage': 3, 'in-clip': 10} | FINISHED production
+MEM230 {"tag": "v233k2_map_r1_o_r1", "t": "15:58:02", "gc": false, "gc_s": 0.0, "private_gb": 21.06, "ws_gb": 17.23, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "AnimSequ
+v233k2_map_r1_rec_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 14 (worst 63) | by owner {'montage': 2, 'in-clip': 12} | FINISHED candidate
+MEM230 {"tag": "v233k2_map_r1_rec_r1", "t": "15:58:59", "gc": false, "gc_s": 0.0, "private_gb": 21.07, "ws_gb": 16.93, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5, "AnimSe
+v233k2_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233k2_legs_slope_sprint_o_r1", "t": "15:59:35", "gc": false, "gc_s": 0.0, "private_gb": 21.12, "ws_gb": 16.67, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 5
+v233k2_legs_slope_sprint_rec_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233k2_legs_slope_sprint_rec_r1", "t": "16:00:10", "gc": false, "gc_s": 0.0, "private_gb": 21.35, "ws_gb": 16.6, "peak_ws_gb": 18.93, "counts": {"Object": 444564, "World": 4, "Level": 
+K2_DONE 16:00:14
+CAM5 start 16:07:03 (reason: new component var CamRecScale (device profile inside the component) + function rebuild)
+REFUSED: unexpected dirty packages ['/Game/GraceRanger/BP_GR_Player', '/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player', '/Game/GraceRanger/SHME/DA_SHM_Response_Default', '/Game/_GateTest233/BP_SubsysProbe']
+RELAUNCH_FAILED camG: the old editor did not quit (refused / dirty) - no second editor (V2.33 gate) 16:14:13
+CAM5 editor killed 16:15:44 (reason: quit refused on dirty BP_GR_Player/PBI (recompile after the camdev save), DA (harness) and the never-saved scratch BP_SubsysProbe; all intended changes are on disk)
+CAM5 start 16:15:45 (reason: new component var CamRecScale (device profile inside the component) + function rebuild)
+no editor to quit
+RUNNER_READY shmv233_camG.log
+throttle off False
+RELAUNCH camG 30 16:18:28
+== revert 16:18:28
+OK 0.006832122802734375
+== comp_vars 16:18:29
+GUARD_DIRTY 20.080535411834717
+GUARD_DIRTY 20.080535411834717
+GUARD_DIRTY packages outside the manifest: ['/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player']
+CAM5_FAILED comp_vars 16:18:53
+CAM5 editor killed 16:46:57 (reason: G5 GUARD_DIRTY - BP_PBI_Player dirtied by the component var build, outside manifest camA; unsaved partial state discarded; restart with manifest camA2 incl. the dependent player BPs)
+CAM5 start 16:46:57 (reason: new component var CamRecScale (device profile inside the component) + function rebuild)
+no editor to quit
+RUNNER_READY shmv233_camG.log
+TIMEOUT waiting for throttle-164708696647
+RELAUNCH camG 30 16:52:29
+== revert 16:52:29
+OK 0.014747142791748047
+== comp_vars 16:52:30
+OK 10.77183723449707
+== save_comp 16:52:43
+OK 4.142526865005493
+== smd 16:52:49
+OK 0.6296567916870117
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_camH.log
+throttle off False
+RELAUNCH camH 30 16:54:50
+== revert 16:54:50
+OK 0.007303476333618164
+== only 16:54:51
+OK 0.0012311935424804688
+== funcs 16:54:53
+OK 365.54197096824646
+== census 17:01:02
+OK 0.25899815559387207
+CAMFN233 {"nodes": 1445, "CamOrbit": 35, "CamRec": 24, "MoveLatch": 17, "CamFol": 25, "CamClose": 12, "LastHitBy": 1}
+== save_comp2 17:01:04
+OK 4.554922342300415
+== only_all 17:01:11
+OK 0.0010180473327636719
+== camdev 17:01:13
+OK 5.149209499359131
+CAMDEV233 {"v1_product_removed": true, "setter": {"after": ["K2Node_IfThenElse_0"]}, "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "errs": [], "child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true}
+v233kdev2_cam33_wturn_mouse | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v233kdev2_cam33_wturn_pad | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+REC233 v233kdev2_cam33_wturn_mouse  err start  80.8 end  10.0 settle 4.37 s | cam rate max  29.8 deg/s p95 acc     45 | travel drift while held  24.1 deg | ctl change   76.7
+REC233 v233kdev2_cam33_wturn_pad    err start  80.8 end  12.1 settle 1.2 s | cam rate max  73.8 deg/s p95 acc    111 | travel drift while held  25.3 deg | ctl change   86.0
+CAM5_DONE 17:02:08
+F start 30 17:03:50 (reason: frame-rate mode is an editor launch argument)
+REFUSED: unexpected dirty packages ['/Game/GraceRanger/BP_GR_Player', '/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player', '/Game/GraceRanger/SHME/DA_SHM_Response_Default']
+RELAUNCH_FAILED f30: the old editor did not quit (refused / dirty) - no second editor (V2.33 gate) 17:10:57
+F editor killed 17:11:51 (reason: quit refused on harness pawn_flags dirt in BP_GR_Player / PBI; revert list extended)
+F start 30 17:11:51 (reason: frame-rate mode is an editor launch argument)
+no editor to quit
+RUNNER_READY shmv233_f30.log
+throttle off False
+RELAUNCH f30 30 17:14:27
+v212_warm_171434 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233f30_j30_slow_Q_r0 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_j30_slow_Q_r0", "t": "17:15:52", "gc": false, "gc_s": 0.0, "private_gb": 20.37, "ws_gb": 16.66, "peak_ws_gb": 16.8, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f30_j30_slow_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_j30_slow_o_r1", "t": "17:16:23", "gc": false, "gc_s": 0.0, "private_gb": 20.34, "ws_gb": 16.47, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_j30_slow_Q_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_j30_slow_Q_r1", "t": "17:16:52", "gc": false, "gc_s": 0.0, "private_gb": 20.32, "ws_gb": 16.43, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_j30_slow_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_j30_slow_o_r2", "t": "17:17:21", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.53, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_j30_slow_Q_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_j30_slow_Q_r2", "t": "17:17:50", "gc": false, "gc_s": 0.0, "private_gb": 20.35, "ws_gb": 16.38, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_jback_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_jback_o_r1", "t": "17:18:25", "gc": false, "gc_s": 0.0, "private_gb": 20.43, "ws_gb": 15.94, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f30_jback_Q_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 2 (worst 42) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f30_jback_Q_r1", "t": "17:19:00", "gc": false, "gc_s": 0.0, "private_gb": 20.46, "ws_gb": 16.41, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f30_jback_o_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_jback_o_r2", "t": "17:19:35", "gc": false, "gc_s": 0.0, "private_gb": 20.43, "ws_gb": 16.56, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f30_jback_Q_r2 | rows 433 rate 30.1/s | pops >25 m/s2: 2 (worst 42) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f30_jback_Q_r2", "t": "17:20:09", "gc": false, "gc_s": 0.0, "private_gb": 20.26, "ws_gb": 16.18, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f30_d_back_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_d_back_o_r1", "t": "17:20:45", "gc": false, "gc_s": 0.0, "private_gb": 20.7, "ws_gb": 16.53, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f30_d_back_Q_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_d_back_Q_r1", "t": "17:21:21", "gc": false, "gc_s": 0.0, "private_gb": 20.45, "ws_gb": 16.54, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f30_d_back_o_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_d_back_o_r2", "t": "17:21:57", "gc": false, "gc_s": 0.0, "private_gb": 20.43, "ws_gb": 16.25, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f30_d_back_Q_r2 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_d_back_Q_r2", "t": "17:22:32", "gc": false, "gc_s": 0.0, "private_gb": 20.43, "ws_gb": 16.21, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f30_k_jogback_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_k_jogback_o_r1", "t": "17:23:00", "gc": false, "gc_s": 0.0, "private_gb": 20.43, "ws_gb": 16.2, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_k_jogback_Q_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_k_jogback_Q_r1", "t": "17:23:29", "gc": false, "gc_s": 0.0, "private_gb": 20.4, "ws_gb": 16.02, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_k_jogback_o_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_k_jogback_o_r2", "t": "17:23:58", "gc": false, "gc_s": 0.0, "private_gb": 20.4, "ws_gb": 16.17, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_k_jogback_Q_r2 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_k_jogback_Q_r2", "t": "17:24:26", "gc": false, "gc_s": 0.0, "private_gb": 20.4, "ws_gb": 16.02, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f30_j30_rel_3200_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 1 (worst 30) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f30_j30_rel_3200_o_r1", "t": "17:24:56", "gc": false, "gc_s": 0.0, "private_gb": 20.35, "ws_gb": 16.05, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "A
+v233f30_j30_rel_3200_Q_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_j30_rel_3200_Q_r1", "t": "17:25:25", "gc": false, "gc_s": 0.0, "private_gb": 20.36, "ws_gb": 15.76, "peak_ws_gb": 17.05, "counts": {"Object": 276823, "World": 4, "Level": 5, "A
+v233f30_j30_rel_3200_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_j30_rel_3200_o_r2", "t": "17:25:57", "gc": false, "gc_s": 0.0, "private_gb": 20.73, "ws_gb": 16.13, "peak_ws_gb": 17.05, "counts": {"Object": 276876, "World": 5, "Level": 6, "A
+v233f30_j30_rel_3200_Q_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_j30_rel_3200_Q_r2", "t": "17:26:26", "gc": false, "gc_s": 0.0, "private_gb": 20.44, "ws_gb": 16.39, "peak_ws_gb": 17.05, "counts": {"Object": 276876, "World": 5, "Level": 6, "A
+v233f30_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233f30_jstart_o_r1", "t": "17:27:12", "gc": false, "gc_s": 0.0, "private_gb": 20.31, "ws_gb": 16.18, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_jstart_Q_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 3 (worst 36) | by owner {'in-clip': 3} | FINISHED candidate
+MEM230 {"tag": "v233f30_jstart_Q_r1", "t": "17:27:57", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.15, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_jstart_o_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233f30_jstart_o_r2", "t": "17:28:42", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 15.5, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSequ
+v233f30_jstart_Q_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 3 (worst 36) | by owner {'in-clip': 3} | FINISHED candidate
+MEM230 {"tag": "v233f30_jstart_Q_r2", "t": "17:29:27", "gc": false, "gc_s": 0.0, "private_gb": 20.26, "ws_gb": 16.11, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_wstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_wstart_o_r1", "t": "17:30:12", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 15.79, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_wstart_Q_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_wstart_Q_r1", "t": "17:30:58", "gc": false, "gc_s": 0.0, "private_gb": 20.15, "ws_gb": 16.05, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_wstart_o_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_wstart_o_r2", "t": "17:31:43", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.07, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_wstart_Q_r2 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_wstart_Q_r2", "t": "17:32:29", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 16.06, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f30_c30_calm_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f30_c30_calm_o_r1", "t": "17:32:58", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.29, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimS
+v233f30_c30_calm_Q_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_c30_calm_Q_r1", "t": "17:33:27", "gc": false, "gc_s": 0.0, "private_gb": 20.21, "ws_gb": 16.07, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimS
+v233f30_c30_calm_o_r2 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f30_c30_calm_o_r2", "t": "17:33:55", "gc": false, "gc_s": 0.0, "private_gb": 20.19, "ws_gb": 15.94, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimS
+v233f30_c30_calm_Q_r2 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_c30_calm_Q_r2", "t": "17:34:27", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 15.94, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimS
+v233f30_cam33_wturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_wturn_o_r1", "t": "17:34:56", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 15.99, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f30_cam33_wturn_Q_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_wturn_Q_r1", "t": "17:35:28", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 15.5, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "Ani
+v233f30_cam33_wturn_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_wturn_o_r2", "t": "17:36:00", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 15.99, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f30_cam33_wturn_Q_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_wturn_Q_r2", "t": "17:36:31", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 16.13, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f30_cam33_wturn_Qp_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_wturn_Qp_r1", "t": "17:37:04", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 15.72, "peak_ws_gb": 17.05, "counts": {"Object": 276877, "World": 5, "Level": 6, "A
+v233f30_cam33_jturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_jturn_o_r1", "t": "17:37:40", "gc": false, "gc_s": 0.0, "private_gb": 21.0, "ws_gb": 13.59, "peak_ws_gb": 17.05, "counts": {"Object": 277103, "World": 6, "Level": 7, "Ani
+v233f30_cam33_jturn_Q_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_jturn_Q_r1", "t": "17:38:13", "gc": false, "gc_s": 0.0, "private_gb": 20.68, "ws_gb": 14.21, "peak_ws_gb": 17.05, "counts": {"Object": 277007, "World": 6, "Level": 7, "An
+v233f30_cam33_jturn_o_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_jturn_o_r2", "t": "17:38:45", "gc": false, "gc_s": 0.0, "private_gb": 20.72, "ws_gb": 14.01, "peak_ws_gb": 17.05, "counts": {"Object": 277007, "World": 6, "Level": 7, "An
+v233f30_cam33_jturn_Q_r2 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_jturn_Q_r2", "t": "17:39:17", "gc": false, "gc_s": 0.0, "private_gb": 20.82, "ws_gb": 14.18, "peak_ws_gb": 17.05, "counts": {"Object": 277007, "World": 6, "Level": 7, "An
+v233f30_cam33_jturn_Qp_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_jturn_Qp_r1", "t": "17:39:49", "gc": false, "gc_s": 0.0, "private_gb": 20.56, "ws_gb": 14.17, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "A
+v233f30_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_sturn_o_r1", "t": "17:40:21", "gc": false, "gc_s": 0.0, "private_gb": 20.71, "ws_gb": 14.6, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_sturn_Q_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_sturn_Q_r1", "t": "17:40:53", "gc": false, "gc_s": 0.0, "private_gb": 20.71, "ws_gb": 13.7, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_sturn_o_r2 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_sturn_o_r2", "t": "17:41:26", "gc": false, "gc_s": 0.0, "private_gb": 20.71, "ws_gb": 14.3, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_sturn_Q_r2 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_sturn_Q_r2", "t": "17:41:58", "gc": false, "gc_s": 0.0, "private_gb": 20.74, "ws_gb": 14.19, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "An
+v233f30_cam33_sturn_Qp_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_sturn_Qp_r1", "t": "17:42:30", "gc": false, "gc_s": 0.0, "private_gb": 20.58, "ws_gb": 14.12, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "A
+v233f30_cam33_look_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_look_o_r1", "t": "17:43:03", "gc": false, "gc_s": 0.0, "private_gb": 20.55, "ws_gb": 13.87, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_look_Q_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_look_Q_r1", "t": "17:43:35", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 14.4, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Anim
+v233f30_cam33_look_o_r2 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_look_o_r2", "t": "17:44:07", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 14.47, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_look_Q_r2 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_look_Q_r2", "t": "17:44:39", "gc": false, "gc_s": 0.0, "private_gb": 20.7, "ws_gb": 13.72, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Anim
+v233f30_cam33_look_Qp_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_look_Qp_r1", "t": "17:45:11", "gc": false, "gc_s": 0.0, "private_gb": 20.56, "ws_gb": 14.23, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "An
+v233f30_cam33_back_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_back_o_r1", "t": "17:45:42", "gc": false, "gc_s": 0.0, "private_gb": 20.67, "ws_gb": 14.27, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_back_Q_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_back_Q_r1", "t": "17:46:12", "gc": false, "gc_s": 0.0, "private_gb": 20.7, "ws_gb": 14.55, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Anim
+v233f30_cam33_back_o_r2 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_back_o_r2", "t": "17:46:40", "gc": false, "gc_s": 0.0, "private_gb": 20.72, "ws_gb": 13.62, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_back_Q_r2 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_back_Q_r2", "t": "17:47:09", "gc": false, "gc_s": 0.0, "private_gb": 20.71, "ws_gb": 13.96, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f30_cam33_back_Qp_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_back_Qp_r1", "t": "17:47:38", "gc": false, "gc_s": 0.0, "private_gb": 20.77, "ws_gb": 14.36, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "An
+v233f30_cam33_idlelook_o_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_idlelook_o_r1", "t": "17:48:08", "gc": false, "gc_s": 0.0, "private_gb": 20.6, "ws_gb": 14.4, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "A
+v233f30_cam33_idlelook_Q_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_idlelook_Q_r1", "t": "17:48:39", "gc": false, "gc_s": 0.0, "private_gb": 20.72, "ws_gb": 13.58, "peak_ws_gb": 17.05, "counts": {"Object": 277007, "World": 6, "Level": 7, 
+v233f30_cam33_idlelook_o_r2 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f30_cam33_idlelook_o_r2", "t": "17:49:08", "gc": false, "gc_s": 0.0, "private_gb": 20.7, "ws_gb": 14.24, "peak_ws_gb": 17.05, "counts": {"Object": 277007, "World": 6, "Level": 7, "
+v233f30_cam33_idlelook_Q_r2 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_idlelook_Q_r2", "t": "17:49:37", "gc": false, "gc_s": 0.0, "private_gb": 20.69, "ws_gb": 14.43, "peak_ws_gb": 17.05, "counts": {"Object": 277007, "World": 6, "Level": 7, 
+v233f30_cam33_idlelook_Qp_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam33_idlelook_Qp_r1", "t": "17:50:05", "gc": false, "gc_s": 0.0, "private_gb": 20.59, "ws_gb": 14.22, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7,
+v233f30_cam32_wallturn_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 9 (worst 54) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f30_cam32_wallturn_o_r1", "t": "17:50:33", "gc": false, "gc_s": 0.0, "private_gb": 20.6, "ws_gb": 13.22, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "
+v233f30_cam32_wallturn_Q_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 8 (worst 44) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam32_wallturn_Q_r1", "t": "17:51:02", "gc": false, "gc_s": 0.0, "private_gb": 20.61, "ws_gb": 13.9, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "
+v233f30_cam32_wallturn_o_r2 | rows 298 rate 30.1/s | pops >25 m/s2: 9 (worst 52) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f30_cam32_wallturn_o_r2", "t": "17:51:30", "gc": false, "gc_s": 0.0, "private_gb": 20.6, "ws_gb": 14.17, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "
+v233f30_cam32_wallturn_Q_r2 | rows 298 rate 30.1/s | pops >25 m/s2: 8 (worst 44) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233f30_cam32_wallturn_Q_r2", "t": "17:51:59", "gc": false, "gc_s": 0.0, "private_gb": 20.75, "ws_gb": 14.41, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, 
+v233f30_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f30_ins_ws_o_r1", "t": "17:52:31", "gc": false, "gc_s": 0.0, "private_gb": 21.01, "ws_gb": 13.56, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSeq
+v233f30_ins_ws_Q_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_ins_ws_Q_r1", "t": "17:53:03", "gc": false, "gc_s": 0.0, "private_gb": 21.08, "ws_gb": 14.46, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSeq
+v233f30_ins_ws_o_r2 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f30_ins_ws_o_r2", "t": "17:53:35", "gc": false, "gc_s": 0.0, "private_gb": 21.11, "ws_gb": 14.87, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSeq
+v233f30_ins_ws_Q_r2 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f30_ins_ws_Q_r2", "t": "17:54:07", "gc": false, "gc_s": 0.0, "private_gb": 21.1, "ws_gb": 14.41, "peak_ws_gb": 17.05, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSequ
+F_DONE 30 17:54:11
+F start 60 17:54:12 (reason: frame-rate mode is an editor launch argument)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_f60.log
+throttle off False
+RELAUNCH f60 60 17:58:39
+v212_warm_175850 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v233f60_j30_slow_Q_r0 | rows 568 rate 60.1/s | pops >25 m/s2: 10 (worst 43) | by owner {'in-clip': 10} | FINISHED candidate
+MEM230 {"tag": "v233f60_j30_slow_Q_r0", "t": "18:00:20", "gc": false, "gc_s": 0.0, "private_gb": 19.78, "ws_gb": 16.28, "peak_ws_gb": 17.0, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f60_j30_slow_o_r1 | rows 568 rate 60.1/s | pops >25 m/s2: 11 (worst 40) | by owner {'in-clip': 11} | FINISHED production
+MEM230 {"tag": "v233f60_j30_slow_o_r1", "t": "18:00:55", "gc": false, "gc_s": 0.0, "private_gb": 19.81, "ws_gb": 16.44, "peak_ws_gb": 17.0, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f60_j30_slow_Q_r1 | rows 568 rate 60.1/s | pops >25 m/s2: 10 (worst 43) | by owner {'in-clip': 10} | FINISHED candidate
+MEM230 {"tag": "v233f60_j30_slow_Q_r1", "t": "18:01:31", "gc": false, "gc_s": 0.0, "private_gb": 19.91, "ws_gb": 16.55, "peak_ws_gb": 17.0, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f60_jback_o_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 14 (worst 38) | by owner {'in-clip': 14} | FINISHED production
+MEM230 {"tag": "v233f60_jback_o_r1", "t": "18:02:20", "gc": false, "gc_s": 0.0, "private_gb": 19.98, "ws_gb": 16.33, "peak_ws_gb": 17.0, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeque
+v233f60_jback_Q_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 83) | by owner {'in-clip': 18} | FINISHED candidate
+MEM230 {"tag": "v233f60_jback_Q_r1", "t": "18:03:11", "gc": false, "gc_s": 0.0, "private_gb": 20.0, "ws_gb": 16.84, "peak_ws_gb": 17.07, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeque
+v233f60_d_back_o_r1 | rows 898 rate 60.1/s | pops >25 m/s2: 14 (worst 37) | by owner {'in-clip': 14} | FINISHED production
+MEM230 {"tag": "v233f60_d_back_o_r1", "t": "18:04:03", "gc": false, "gc_s": 0.0, "private_gb": 19.98, "ws_gb": 16.5, "peak_ws_gb": 17.14, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f60_d_back_Q_r1 | rows 898 rate 60.1/s | pops >25 m/s2: 18 (worst 35) | by owner {'in-clip': 18} | FINISHED candidate
+MEM230 {"tag": "v233f60_d_back_Q_r1", "t": "18:04:58", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 16.66, "peak_ws_gb": 17.14, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f60_k_jogback_o_r1 | rows 568 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED production
+MEM230 {"tag": "v233f60_k_jogback_o_r1", "t": "18:05:34", "gc": false, "gc_s": 0.0, "private_gb": 19.97, "ws_gb": 16.74, "peak_ws_gb": 17.14, "counts": {"Object": 276823, "World": 4, "Level": 5, "Anim
+v233f60_k_jogback_Q_r1 | rows 568 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+MEM230 {"tag": "v233f60_k_jogback_Q_r1", "t": "18:06:10", "gc": false, "gc_s": 0.0, "private_gb": 19.98, "ws_gb": 16.87, "peak_ws_gb": 17.14, "counts": {"Object": 276823, "World": 4, "Level": 5, "Anim
+v233f60_j30_rel_3200_o_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 19 (worst 33) | by owner {'in-clip': 19} | FINISHED production
+MEM230 {"tag": "v233f60_j30_rel_3200_o_r1", "t": "18:06:53", "gc": false, "gc_s": 0.0, "private_gb": 19.99, "ws_gb": 16.88, "peak_ws_gb": 17.15, "counts": {"Object": 276823, "World": 4, "Level": 5, "A
+v233f60_j30_rel_3200_Q_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 18 (worst 33) | by owner {'in-clip': 18} | FINISHED candidate
+MEM230 {"tag": "v233f60_j30_rel_3200_Q_r1", "t": "18:07:36", "gc": false, "gc_s": 0.0, "private_gb": 20.0, "ws_gb": 16.83, "peak_ws_gb": 17.15, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 24 (worst 45) | by owner {'in-clip': 24} | FINISHED production
+MEM230 {"tag": "v233f60_jstart_o_r1", "t": "18:08:49", "gc": false, "gc_s": 0.0, "private_gb": 20.01, "ws_gb": 16.29, "peak_ws_gb": 17.15, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f60_jstart_Q_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 49) | by owner {'in-clip': 21} | FINISHED candidate
+MEM230 {"tag": "v233f60_jstart_Q_r1", "t": "18:10:01", "gc": false, "gc_s": 0.0, "private_gb": 20.0, "ws_gb": 17.04, "peak_ws_gb": 17.36, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f60_wstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 3 (worst 38) | by owner {'in-clip': 3} | FINISHED production
+MEM230 {"tag": "v233f60_wstart_o_r1", "t": "18:11:15", "gc": false, "gc_s": 0.0, "private_gb": 20.29, "ws_gb": 16.68, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f60_wstart_Q_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 3 (worst 37) | by owner {'in-clip': 3} | FINISHED candidate
+MEM230 {"tag": "v233f60_wstart_Q_r1", "t": "18:12:46", "gc": false, "gc_s": 0.0, "private_gb": 20.03, "ws_gb": 16.59, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f60_c30_calm_o_r1 | rows 706 rate 60.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED production
+MEM230 {"tag": "v233f60_c30_calm_o_r1", "t": "18:13:29", "gc": false, "gc_s": 0.0, "private_gb": 20.01, "ws_gb": 16.76, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f60_c30_calm_Q_r1 | rows 706 rate 60.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED candidate
+MEM230 {"tag": "v233f60_c30_calm_Q_r1", "t": "18:14:11", "gc": false, "gc_s": 0.0, "private_gb": 20.02, "ws_gb": 16.4, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f60_cam33_wturn_o_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f60_cam33_wturn_o_r1", "t": "18:14:54", "gc": false, "gc_s": 0.0, "private_gb": 20.02, "ws_gb": 16.58, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_wturn_Q_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_wturn_Q_r1", "t": "18:15:39", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 16.77, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_wturn_Qp_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_wturn_Qp_r1", "t": "18:16:24", "gc": false, "gc_s": 0.0, "private_gb": 19.94, "ws_gb": 16.77, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "A
+v233f60_cam33_jturn_o_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f60_cam33_jturn_o_r1", "t": "18:17:07", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 16.66, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_jturn_Q_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_jturn_Q_r1", "t": "18:17:52", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.66, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_jturn_Qp_r1 | rows 718 rate 60.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_jturn_Qp_r1", "t": "18:18:38", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 16.42, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "A
+v233f60_cam33_sturn_o_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 18 (worst 98) | by owner {'in-clip': 17, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f60_cam33_sturn_o_r1", "t": "18:19:21", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 16.15, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_sturn_Q_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 16 (worst 66) | by owner {'in-clip': 16} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_sturn_Q_r1", "t": "18:20:07", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 16.61, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_sturn_Qp_r1 | rows 748 rate 60.1/s | pops >25 m/s2: 19 (worst 66) | by owner {'in-clip': 19} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_sturn_Qp_r1", "t": "18:20:52", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.44, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "A
+v233f60_cam33_look_o_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f60_cam33_look_o_r1", "t": "18:21:38", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.34, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233f60_cam33_look_Q_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 2 (worst 40) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_look_Q_r1", "t": "18:22:24", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.35, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233f60_cam33_look_Qp_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_look_Qp_r1", "t": "18:23:09", "gc": false, "gc_s": 0.0, "private_gb": 20.1, "ws_gb": 16.25, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233f60_cam33_back_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 4 (worst 35) | by owner {'in-clip': 4} | FINISHED production
+MEM230 {"tag": "v233f60_cam33_back_o_r1", "t": "18:23:51", "gc": false, "gc_s": 0.0, "private_gb": 20.39, "ws_gb": 16.28, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233f60_cam33_back_Q_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_back_Q_r1", "t": "18:24:33", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 16.11, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233f60_cam33_back_Qp_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 3 (worst 35) | by owner {'in-clip': 3} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_back_Qp_r1", "t": "18:25:15", "gc": false, "gc_s": 0.0, "private_gb": 20.13, "ws_gb": 16.72, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233f60_cam33_idlelook_o_r1 | rows 508 rate 60.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f60_cam33_idlelook_o_r1", "t": "18:25:50", "gc": false, "gc_s": 0.0, "private_gb": 20.13, "ws_gb": 16.81, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, 
+v233f60_cam33_idlelook_Q_r1 | rows 508 rate 60.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_idlelook_Q_r1", "t": "18:26:26", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 16.57, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, 
+v233f60_cam33_idlelook_Qp_r1 | rows 508 rate 60.1/s | pops >25 m/s2: 1 (worst 42) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam33_idlelook_Qp_r1", "t": "18:27:02", "gc": false, "gc_s": 0.0, "private_gb": 20.15, "ws_gb": 16.66, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5,
+v233f60_cam32_wallturn_o_r1 | rows 598 rate 60.1/s | pops >25 m/s2: 12 (worst 68) | by owner {'in-clip': 11, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f60_cam32_wallturn_o_r1", "t": "18:27:38", "gc": false, "gc_s": 0.0, "private_gb": 20.15, "ws_gb": 16.73, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, 
+v233f60_cam32_wallturn_Q_r1 | rows 598 rate 60.1/s | pops >25 m/s2: 11 (worst 86) | by owner {'in-clip': 10, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f60_cam32_wallturn_Q_r1", "t": "18:28:14", "gc": false, "gc_s": 0.0, "private_gb": 20.2, "ws_gb": 16.51, "peak_ws_gb": 17.53, "counts": {"Object": 276823, "World": 4, "Level": 5, "
+v233f60_ins_ws_o_r1 | rows 838 rate 60.1/s | pops >25 m/s2: 6 (worst 76) | by owner {'montage': 4, 'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233f60_ins_ws_o_r1", "t": "18:29:02", "gc": false, "gc_s": 0.0, "private_gb": 20.93, "ws_gb": 16.92, "peak_ws_gb": 17.53, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSeq
+v233f60_ins_ws_Q_r1 | rows 838 rate 60.1/s | pops >25 m/s2: 6 (worst 76) | by owner {'montage': 4, 'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233f60_ins_ws_Q_r1", "t": "18:29:52", "gc": false, "gc_s": 0.0, "private_gb": 20.99, "ws_gb": 16.62, "peak_ws_gb": 17.53, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSeq
+F_DONE 60 18:29:57
+F start 120 18:29:57 (reason: frame-rate mode is an editor launch argument)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_f120.log
+throttle off False
+RELAUNCH f120 120 18:34:37
+v212_warm_183442 | rows 1679 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+v233f120_j30_slow_Q_r0 | rows 1138 rate 120.1/s | pops >25 m/s2: 10 (worst 91) | by owner {'in-clip': 10} | FINISHED candidate
+MEM230 {"tag": "v233f120_j30_slow_Q_r0", "t": "18:36:49", "gc": false, "gc_s": 0.0, "private_gb": 19.75, "ws_gb": 16.22, "peak_ws_gb": 16.59, "counts": {"Object": 276823, "World": 4, "Level": 5, "Anim
+v233f120_j30_slow_o_r1 | rows 1138 rate 120.1/s | pops >25 m/s2: 9 (worst 93) | by owner {'in-clip': 9} | FINISHED production
+MEM230 {"tag": "v233f120_j30_slow_o_r1", "t": "18:37:43", "gc": false, "gc_s": 0.0, "private_gb": 19.82, "ws_gb": 16.67, "peak_ws_gb": 16.95, "counts": {"Object": 276823, "World": 4, "Level": 5, "Anim
+v233f120_j30_slow_Q_r1 | rows 1138 rate 120.1/s | pops >25 m/s2: 10 (worst 91) | by owner {'in-clip': 10} | FINISHED candidate
+MEM230 {"tag": "v233f120_j30_slow_Q_r1", "t": "18:38:39", "gc": false, "gc_s": 0.0, "private_gb": 19.88, "ws_gb": 16.6, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f120_jback_o_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 7 (worst 72) | by owner {'in-clip': 7} | FINISHED production
+MEM230 {"tag": "v233f120_jback_o_r1", "t": "18:39:58", "gc": false, "gc_s": 0.0, "private_gb": 19.93, "ws_gb": 16.19, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f120_jback_Q_r1 | rows 1738 rate 120.1/s | pops >25 m/s2: 11 (worst 125) | by owner {'in-clip': 11} | FINISHED candidate
+MEM230 {"tag": "v233f120_jback_Q_r1", "t": "18:41:20", "gc": false, "gc_s": 0.0, "private_gb": 20.03, "ws_gb": 16.48, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f120_d_back_o_r1 | rows 1798 rate 120.1/s | pops >25 m/s2: 6 (worst 73) | by owner {'in-clip': 6} | FINISHED production
+MEM230 {"tag": "v233f120_d_back_o_r1", "t": "18:42:46", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.27, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f120_d_back_Q_r1 | rows 1798 rate 120.1/s | pops >25 m/s2: 6 (worst 70) | by owner {'in-clip': 6} | FINISHED candidate
+MEM230 {"tag": "v233f120_d_back_Q_r1", "t": "18:44:13", "gc": false, "gc_s": 0.0, "private_gb": 20.04, "ws_gb": 16.51, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f120_k_jogback_o_r1 | rows 1138 rate 120.1/s | pops >25 m/s2: 8 (worst 78) | by owner {'in-clip': 8} | FINISHED production
+MEM230 {"tag": "v233f120_k_jogback_o_r1", "t": "18:45:09", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 16.74, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233f120_k_jogback_Q_r1 | rows 1138 rate 120.1/s | pops >25 m/s2: 8 (worst 78) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233f120_k_jogback_Q_r1", "t": "18:46:04", "gc": false, "gc_s": 0.0, "private_gb": 20.1, "ws_gb": 16.25, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "Anim
+v233f120_j30_rel_3200_o_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 9 (worst 73) | by owner {'in-clip': 9} | FINISHED production
+MEM230 {"tag": "v233f120_j30_rel_3200_o_r1", "t": "18:47:10", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 16.01, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "
+v233f120_j30_rel_3200_Q_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 9 (worst 73) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233f120_j30_rel_3200_Q_r1", "t": "18:48:16", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 16.04, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "
+v233f120_jstart_o_r1 | rows 3166 rate 120.0/s | pops >25 m/s2: 24 (worst 83) | by owner {'in-clip': 24} | FINISHED production
+MEM230 {"tag": "v233f120_jstart_o_r1", "t": "18:50:16", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 15.98, "peak_ws_gb": 17.01, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f120_jstart_Q_r1 | rows 3166 rate 120.0/s | pops >25 m/s2: 29 (worst 87) | by owner {'in-clip': 29} | FINISHED candidate
+MEM230 {"tag": "v233f120_jstart_Q_r1", "t": "18:52:19", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 15.92, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimSe
+v233f120_wstart_o_r1 | rows 3166 rate 120.0/s | pops >25 m/s2: 21 (worst 56) | by owner {'in-clip': 21} | FINISHED production
+MEM230 {"tag": "v233f120_wstart_o_r1", "t": "18:54:23", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 15.67, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimSe
+v233f120_wstart_Q_r1 | rows 3166 rate 120.0/s | pops >25 m/s2: 24 (worst 56) | by owner {'in-clip': 24} | FINISHED candidate
+MEM230 {"tag": "v233f120_wstart_Q_r1", "t": "18:56:26", "gc": false, "gc_s": 0.0, "private_gb": 20.4, "ws_gb": 15.67, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimSeq
+v233f120_c30_calm_o_r1 | rows 1414 rate 120.1/s | pops >25 m/s2: 9 (worst 75) | by owner {'in-clip': 9} | FINISHED production
+MEM230 {"tag": "v233f120_c30_calm_o_r1", "t": "18:57:32", "gc": false, "gc_s": 0.0, "private_gb": 19.98, "ws_gb": 16.03, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "Anim
+v233f120_c30_calm_Q_r1 | rows 1414 rate 120.1/s | pops >25 m/s2: 8 (worst 77) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233f120_c30_calm_Q_r1", "t": "18:58:38", "gc": false, "gc_s": 0.0, "private_gb": 20.02, "ws_gb": 15.9, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimS
+v233f120_cam33_wturn_o_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 56) | by owner {'in-clip': 11} | FINISHED production
+MEM230 {"tag": "v233f120_cam33_wturn_o_r1", "t": "18:59:44", "gc": false, "gc_s": 0.0, "private_gb": 19.98, "ws_gb": 15.8, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "An
+v233f120_cam33_wturn_Q_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 13 (worst 56) | by owner {'in-clip': 13} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_wturn_Q_r1", "t": "19:00:53", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 15.95, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_wturn_Qp_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 11 (worst 56) | by owner {'in-clip': 11} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_wturn_Qp_r1", "t": "19:02:06", "gc": false, "gc_s": 0.0, "private_gb": 20.03, "ws_gb": 15.9, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_jturn_o_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 4 (worst 56) | by owner {'in-clip': 4} | FINISHED production
+MEM230 {"tag": "v233f120_cam33_jturn_o_r1", "t": "19:03:11", "gc": false, "gc_s": 0.0, "private_gb": 20.0, "ws_gb": 15.86, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "An
+v233f120_cam33_jturn_Q_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 5 (worst 56) | by owner {'in-clip': 5} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_jturn_Q_r1", "t": "19:04:20", "gc": false, "gc_s": 0.0, "private_gb": 20.01, "ws_gb": 15.78, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_jturn_Qp_r1 | rows 1438 rate 120.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_jturn_Qp_r1", "t": "19:05:32", "gc": false, "gc_s": 0.0, "private_gb": 20.05, "ws_gb": 15.64, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233f120_cam33_sturn_o_r1 | rows 1498 rate 120.1/s | pops >25 m/s2: 3 (worst 146) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f120_cam33_sturn_o_r1", "t": "19:06:38", "gc": false, "gc_s": 0.0, "private_gb": 20.05, "ws_gb": 15.87, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_sturn_Q_r1 | rows 1498 rate 120.1/s | pops >25 m/s2: 4 (worst 145) | by owner {'in-clip': 4} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_sturn_Q_r1", "t": "19:07:47", "gc": false, "gc_s": 0.0, "private_gb": 20.06, "ws_gb": 15.55, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_sturn_Qp_r1 | rows 1498 rate 120.1/s | pops >25 m/s2: 4 (worst 146) | by owner {'in-clip': 4} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_sturn_Qp_r1", "t": "19:08:57", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 15.74, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233f120_cam33_look_o_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+MEM230 {"tag": "v233f120_cam33_look_o_r1", "t": "19:10:06", "gc": false, "gc_s": 0.0, "private_gb": 20.06, "ws_gb": 15.66, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "An
+v233f120_cam33_look_Q_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 13 (worst 67) | by owner {'in-clip': 13} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_look_Q_r1", "t": "19:11:16", "gc": false, "gc_s": 0.0, "private_gb": 20.36, "ws_gb": 16.14, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "An
+v233f120_cam33_look_Qp_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 9 (worst 56) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_look_Qp_r1", "t": "19:12:27", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 15.91, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_back_o_r1 | rows 1318 rate 120.1/s | pops >25 m/s2: 14 (worst 62) | by owner {'in-clip': 14} | FINISHED production
+MEM230 {"tag": "v233f120_cam33_back_o_r1", "t": "19:13:30", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 15.71, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "An
+v233f120_cam33_back_Q_r1 | rows 1318 rate 120.1/s | pops >25 m/s2: 14 (worst 62) | by owner {'in-clip': 14} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_back_Q_r1", "t": "19:14:32", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 15.84, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "An
+v233f120_cam33_back_Qp_r1 | rows 1318 rate 120.1/s | pops >25 m/s2: 14 (worst 62) | by owner {'in-clip': 14} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_back_Qp_r1", "t": "19:15:36", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.03, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f120_cam33_idlelook_o_r1 | rows 1018 rate 120.1/s | pops >25 m/s2: 4 (worst 65) | by owner {'montage': 4} | FINISHED production
+MEM230 {"tag": "v233f120_cam33_idlelook_o_r1", "t": "19:16:29", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 15.85, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5,
+v233f120_cam33_idlelook_Q_r1 | rows 1018 rate 120.1/s | pops >25 m/s2: 4 (worst 65) | by owner {'montage': 4} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_idlelook_Q_r1", "t": "19:17:24", "gc": false, "gc_s": 0.0, "private_gb": 20.08, "ws_gb": 15.79, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5,
+v233f120_cam33_idlelook_Qp_r1 | rows 1018 rate 120.1/s | pops >25 m/s2: 4 (worst 65) | by owner {'montage': 4} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam33_idlelook_Qp_r1", "t": "19:18:17", "gc": false, "gc_s": 0.0, "private_gb": 20.1, "ws_gb": 15.73, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5,
+v233f120_cam32_wallturn_o_r1 | rows 1198 rate 120.1/s | pops >25 m/s2: 5 (worst 146) | by owner {'in-clip': 3, 'montage': 2} | FINISHED production
+MEM230 {"tag": "v233f120_cam32_wallturn_o_r1", "t": "19:19:10", "gc": false, "gc_s": 0.0, "private_gb": 20.13, "ws_gb": 15.75, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5,
+v233f120_cam32_wallturn_Q_r1 | rows 1198 rate 120.1/s | pops >25 m/s2: 4 (worst 146) | by owner {'in-clip': 2, 'montage': 2} | FINISHED candidate
+MEM230 {"tag": "v233f120_cam32_wallturn_Q_r1", "t": "19:20:02", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 15.85, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5,
+v233f120_ins_ws_o_r1 | rows 1678 rate 120.1/s | pops >25 m/s2: 7 (worst 280) | by owner {'montage': 3, 'in-clip': 4} | FINISHED production
+MEM230 {"tag": "v233f120_ins_ws_o_r1", "t": "19:21:18", "gc": false, "gc_s": 0.0, "private_gb": 20.46, "ws_gb": 15.53, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimSe
+v233f120_ins_ws_Q_r1 | rows 1678 rate 120.1/s | pops >25 m/s2: 7 (worst 280) | by owner {'montage': 3, 'in-clip': 4} | FINISHED candidate
+MEM230 {"tag": "v233f120_ins_ws_Q_r1", "t": "19:22:35", "gc": false, "gc_s": 0.0, "private_gb": 20.61, "ws_gb": 15.21, "peak_ws_gb": 17.01, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimSe
+F_DONE 120 19:22:39
+F start 20 19:22:39 (reason: frame-rate mode is an editor launch argument)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_f20.log
+throttle off False
+RELAUNCH f20 20 19:27:22
+v212_warm_192731 | rows 280 rate 20.1/s | pops >25 m/s2: 1 (worst 38) | by owner {'in-clip': 1} | FINISHED production
+v233f20_j30_slow_Q_r0 | rows 188 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_j30_slow_Q_r0", "t": "19:28:32", "gc": false, "gc_s": 0.0, "private_gb": 19.97, "ws_gb": 16.21, "peak_ws_gb": 16.64, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f20_j30_slow_o_r1 | rows 188 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_j30_slow_o_r1", "t": "19:29:03", "gc": false, "gc_s": 0.0, "private_gb": 20.0, "ws_gb": 16.83, "peak_ws_gb": 16.85, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f20_j30_slow_Q_r1 | rows 188 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_j30_slow_Q_r1", "t": "19:29:29", "gc": false, "gc_s": 0.0, "private_gb": 20.06, "ws_gb": 16.85, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233f20_jback_o_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_jback_o_r1", "t": "19:29:58", "gc": false, "gc_s": 0.0, "private_gb": 20.06, "ws_gb": 17.01, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f20_jback_Q_r1 | rows 288 rate 20.1/s | pops >25 m/s2: 1 (worst 31) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233f20_jback_Q_r1", "t": "19:30:27", "gc": false, "gc_s": 0.0, "private_gb": 20.05, "ws_gb": 16.37, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSequ
+v233f20_d_back_o_r1 | rows 298 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_d_back_o_r1", "t": "19:30:57", "gc": false, "gc_s": 0.0, "private_gb": 20.02, "ws_gb": 16.96, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f20_d_back_Q_r1 | rows 298 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_d_back_Q_r1", "t": "19:31:25", "gc": false, "gc_s": 0.0, "private_gb": 19.99, "ws_gb": 16.93, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233f20_k_jogback_o_r1 | rows 188 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_k_jogback_o_r1", "t": "19:31:51", "gc": false, "gc_s": 0.0, "private_gb": 20.0, "ws_gb": 16.9, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSe
+v233f20_k_jogback_Q_r1 | rows 188 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_k_jogback_Q_r1", "t": "19:32:16", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.67, "peak_ws_gb": 17.33, "counts": {"Object": 276823, "World": 4, "Level": 5, "Anim
+v233f20_j30_rel_3200_o_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_j30_rel_3200_o_r1", "t": "19:32:42", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.73, "peak_ws_gb": 17.33, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233f20_j30_rel_3200_Q_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_j30_rel_3200_Q_r1", "t": "19:33:08", "gc": false, "gc_s": 0.0, "private_gb": 20.1, "ws_gb": 16.5, "peak_ws_gb": 17.33, "counts": {"Object": 276824, "World": 4, "Level": 5, "Ani
+v233f20_jstart_o_r1 | rows 526 rate 20.0/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233f20_jstart_o_r1", "t": "19:33:46", "gc": false, "gc_s": 0.0, "private_gb": 20.78, "ws_gb": 16.09, "peak_ws_gb": 17.33, "counts": {"Object": 276893, "World": 5, "Level": 6, "AnimSeq
+v233f20_jstart_Q_r1 | rows 526 rate 20.0/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED candidate
+MEM230 {"tag": "v233f20_jstart_Q_r1", "t": "19:34:22", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 16.43, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f20_wstart_o_r1 | rows 526 rate 20.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_wstart_o_r1", "t": "19:34:57", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.71, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f20_wstart_Q_r1 | rows 526 rate 20.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_wstart_Q_r1", "t": "19:35:36", "gc": false, "gc_s": 0.0, "private_gb": 20.29, "ws_gb": 16.29, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSeq
+v233f20_c30_calm_o_r1 | rows 234 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_c30_calm_o_r1", "t": "19:36:02", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.62, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimS
+v233f20_c30_calm_Q_r1 | rows 234 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_c30_calm_Q_r1", "t": "19:36:28", "gc": false, "gc_s": 0.0, "private_gb": 20.3, "ws_gb": 16.72, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "AnimSe
+v233f20_cam33_wturn_o_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_cam33_wturn_o_r1", "t": "19:36:54", "gc": false, "gc_s": 0.0, "private_gb": 20.3, "ws_gb": 16.89, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "Ani
+v233f20_cam33_wturn_Q_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_wturn_Q_r1", "t": "19:37:22", "gc": false, "gc_s": 0.0, "private_gb": 20.33, "ws_gb": 16.55, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f20_cam33_wturn_Qp_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_wturn_Qp_r1", "t": "19:37:51", "gc": false, "gc_s": 0.0, "private_gb": 20.36, "ws_gb": 16.66, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "A
+v233f20_cam33_jturn_o_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_cam33_jturn_o_r1", "t": "19:38:16", "gc": false, "gc_s": 0.0, "private_gb": 20.35, "ws_gb": 17.03, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f20_cam33_jturn_Q_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_jturn_Q_r1", "t": "19:38:44", "gc": false, "gc_s": 0.0, "private_gb": 20.35, "ws_gb": 16.91, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f20_cam33_jturn_Qp_r1 | rows 238 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_jturn_Qp_r1", "t": "19:39:13", "gc": false, "gc_s": 0.0, "private_gb": 20.68, "ws_gb": 16.8, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f20_cam33_sturn_o_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 7 (worst 54) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f20_cam33_sturn_o_r1", "t": "19:39:39", "gc": false, "gc_s": 0.0, "private_gb": 20.37, "ws_gb": 16.73, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "An
+v233f20_cam33_sturn_Q_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 6 (worst 31) | by owner {'in-clip': 6} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_sturn_Q_r1", "t": "19:40:05", "gc": false, "gc_s": 0.0, "private_gb": 20.38, "ws_gb": 17.0, "peak_ws_gb": 17.33, "counts": {"Object": 276877, "World": 5, "Level": 6, "Ani
+v233f20_cam33_sturn_Qp_r1 | rows 248 rate 20.1/s | pops >25 m/s2: 7 (worst 31) | by owner {'in-clip': 7} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_sturn_Qp_r1", "t": "19:40:32", "gc": false, "gc_s": 0.0, "private_gb": 21.45, "ws_gb": 16.55, "peak_ws_gb": 17.33, "counts": {"Object": 277103, "World": 6, "Level": 7, "A
+v233f20_cam33_look_o_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_cam33_look_o_r1", "t": "19:41:01", "gc": false, "gc_s": 0.0, "private_gb": 20.5, "ws_gb": 16.7, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimS
+v233f20_cam33_look_Q_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_look_Q_r1", "t": "19:41:29", "gc": false, "gc_s": 0.0, "private_gb": 20.49, "ws_gb": 16.74, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f20_cam33_look_Qp_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_look_Qp_r1", "t": "19:41:58", "gc": false, "gc_s": 0.0, "private_gb": 20.51, "ws_gb": 16.74, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "An
+v233f20_cam33_back_o_r1 | rows 218 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233f20_cam33_back_o_r1", "t": "19:42:23", "gc": false, "gc_s": 0.0, "private_gb": 20.5, "ws_gb": 16.56, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "Anim
+v233f20_cam33_back_Q_r1 | rows 218 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_back_Q_r1", "t": "19:42:49", "gc": false, "gc_s": 0.0, "private_gb": 20.52, "ws_gb": 16.72, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "Ani
+v233f20_cam33_back_Qp_r1 | rows 218 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_back_Qp_r1", "t": "19:43:14", "gc": false, "gc_s": 0.0, "private_gb": 20.53, "ws_gb": 16.82, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "An
+v233f20_cam33_idlelook_o_r1 | rows 168 rate 20.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f20_cam33_idlelook_o_r1", "t": "19:43:40", "gc": false, "gc_s": 0.0, "private_gb": 20.53, "ws_gb": 16.65, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, 
+v233f20_cam33_idlelook_Q_r1 | rows 168 rate 20.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_idlelook_Q_r1", "t": "19:44:06", "gc": false, "gc_s": 0.0, "private_gb": 20.53, "ws_gb": 16.39, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, 
+v233f20_cam33_idlelook_Qp_r1 | rows 168 rate 20.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam33_idlelook_Qp_r1", "t": "19:44:31", "gc": false, "gc_s": 0.0, "private_gb": 20.81, "ws_gb": 16.5, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, 
+v233f20_cam32_wallturn_o_r1 | rows 198 rate 20.1/s | pops >25 m/s2: 4 (worst 46) | by owner {'in-clip': 3, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f20_cam32_wallturn_o_r1", "t": "19:44:57", "gc": false, "gc_s": 0.0, "private_gb": 20.58, "ws_gb": 16.25, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, 
+v233f20_cam32_wallturn_Q_r1 | rows 198 rate 20.1/s | pops >25 m/s2: 4 (worst 50) | by owner {'in-clip': 3, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f20_cam32_wallturn_Q_r1", "t": "19:45:22", "gc": false, "gc_s": 0.0, "private_gb": 20.58, "ws_gb": 16.56, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, 
+v233f20_ins_ws_o_r1 | rows 278 rate 20.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233f20_ins_ws_o_r1", "t": "19:45:52", "gc": false, "gc_s": 0.0, "private_gb": 20.78, "ws_gb": 16.03, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSeq
+v233f20_ins_ws_Q_r1 | rows 278 rate 20.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233f20_ins_ws_Q_r1", "t": "19:46:21", "gc": false, "gc_s": 0.0, "private_gb": 20.87, "ws_gb": 16.2, "peak_ws_gb": 17.33, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimSequ
+F_DONE 20 19:46:26
+F start real 19:46:26 (reason: frame-rate mode is an editor launch argument)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_freal.log
+throttle off False
+RELAUNCH freal real 19:50:23
+v212_warm_195032 | rows 407 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233freal_j30_slow_Q_r0 | rows 262 rate 29.6/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233freal_j30_slow_Q_r0", "t": "19:51:33", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.28, "peak_ws_gb": 16.94, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233freal_j30_slow_o_r1 | rows 267 rate 29.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_j30_slow_o_r1", "t": "19:51:59", "gc": false, "gc_s": 0.0, "private_gb": 20.37, "ws_gb": 16.39, "peak_ws_gb": 16.94, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233freal_j30_slow_Q_r1 | rows 274 rate 30.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_j30_slow_Q_r1", "t": "19:52:25", "gc": false, "gc_s": 0.0, "private_gb": 20.33, "ws_gb": 16.24, "peak_ws_gb": 16.94, "counts": {"Object": 276823, "World": 4, "Level": 5, "Ani
+v233freal_jback_o_r1 | rows 392 rate 27.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_jback_o_r1", "t": "19:52:57", "gc": false, "gc_s": 0.0, "private_gb": 20.37, "ws_gb": 16.5, "peak_ws_gb": 16.94, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233freal_jback_Q_r1 | rows 361 rate 25.8/s | pops >25 m/s2: 2 (worst 46) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233freal_jback_Q_r1", "t": "19:53:28", "gc": false, "gc_s": 0.0, "private_gb": 20.36, "ws_gb": 17.3, "peak_ws_gb": 17.54, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimSeq
+v233freal_d_back_o_r1 | rows 372 rate 25.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_d_back_o_r1", "t": "19:54:01", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 17.46, "peak_ws_gb": 17.65, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233freal_d_back_Q_r1 | rows 356 rate 24.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_d_back_Q_r1", "t": "19:54:32", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.59, "peak_ws_gb": 17.71, "counts": {"Object": 276823, "World": 4, "Level": 5, "AnimS
+v233freal_k_jogback_o_r1 | rows 269 rate 29.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_k_jogback_o_r1", "t": "19:54:58", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 17.19, "peak_ws_gb": 17.71, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233freal_k_jogback_Q_r1 | rows 267 rate 29.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_k_jogback_Q_r1", "t": "19:55:23", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 17.27, "peak_ws_gb": 17.71, "counts": {"Object": 276823, "World": 4, "Level": 5, "An
+v233freal_j30_rel_3200_o_r1 | rows 352 rate 30.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_j30_rel_3200_o_r1", "t": "19:55:53", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.99, "peak_ws_gb": 17.71, "counts": {"Object": 276823, "World": 4, "Level": 5, 
+v233freal_j30_rel_3200_Q_r1 | rows 349 rate 30.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_j30_rel_3200_Q_r1", "t": "19:56:25", "gc": false, "gc_s": 0.0, "private_gb": 20.49, "ws_gb": 16.71, "peak_ws_gb": 17.71, "counts": {"Object": 276823, "World": 4, "Level": 5, 
+v233freal_jstart_o_r1 | rows 802 rate 30.9/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233freal_jstart_o_r1", "t": "19:57:10", "gc": false, "gc_s": 0.0, "private_gb": 20.21, "ws_gb": 17.15, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimS
+v233freal_jstart_Q_r1 | rows 780 rate 30.1/s | pops >25 m/s2: 5 (worst 37) | by owner {'in-clip': 5} | FINISHED candidate
+MEM230 {"tag": "v233freal_jstart_Q_r1", "t": "19:57:55", "gc": false, "gc_s": 0.0, "private_gb": 20.19, "ws_gb": 16.55, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimS
+v233freal_wstart_o_r1 | rows 785 rate 30.3/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233freal_wstart_o_r1", "t": "19:58:41", "gc": false, "gc_s": 0.0, "private_gb": 20.17, "ws_gb": 17.02, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimS
+v233freal_wstart_Q_r1 | rows 773 rate 29.8/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_wstart_Q_r1", "t": "19:59:26", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.03, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "AnimS
+v233freal_c30_calm_o_r1 | rows 336 rate 29.7/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233freal_c30_calm_o_r1", "t": "19:59:55", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 16.63, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "Ani
+v233freal_c30_calm_Q_r1 | rows 302 rate 26.7/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233freal_c30_calm_Q_r1", "t": "20:00:23", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 17.02, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "Ani
+v233freal_cam33_wturn_o_r1 | rows 330 rate 28.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_cam33_wturn_o_r1", "t": "20:00:52", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 17.1, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233freal_cam33_wturn_Q_r1 | rows 307 rate 26.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_wturn_Q_r1", "t": "20:01:20", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 17.02, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233freal_cam33_wturn_Qp_r1 | rows 290 rate 25.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_wturn_Qp_r1", "t": "20:01:50", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.87, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, 
+v233freal_cam33_jturn_o_r1 | rows 337 rate 29.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_cam33_jturn_o_r1", "t": "20:02:18", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.79, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233freal_cam33_jturn_Q_r1 | rows 287 rate 24.8/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_jturn_Q_r1", "t": "20:02:47", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 17.0, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233freal_cam33_jturn_Qp_r1 | rows 288 rate 25.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_jturn_Qp_r1", "t": "20:03:16", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.48, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, 
+v233freal_cam33_sturn_o_r1 | rows 356 rate 29.6/s | pops >25 m/s2: 7 (worst 54) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233freal_cam33_sturn_o_r1", "t": "20:03:44", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.98, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233freal_cam33_sturn_Q_r1 | rows 344 rate 28.6/s | pops >25 m/s2: 12 (worst 44) | by owner {'in-clip': 12} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_sturn_Q_r1", "t": "20:04:13", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 17.02, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233freal_cam33_sturn_Qp_r1 | rows 330 rate 27.4/s | pops >25 m/s2: 8 (worst 43) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_sturn_Qp_r1", "t": "20:04:41", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 16.99, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, 
+v233freal_cam33_look_o_r1 | rows 352 rate 28.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_cam33_look_o_r1", "t": "20:05:13", "gc": false, "gc_s": 0.0, "private_gb": 20.25, "ws_gb": 16.27, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233freal_cam33_look_Q_r1 | rows 351 rate 28.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_look_Q_r1", "t": "20:05:44", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.78, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233freal_cam33_look_Qp_r1 | rows 352 rate 28.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_look_Qp_r1", "t": "20:06:16", "gc": false, "gc_s": 0.0, "private_gb": 20.26, "ws_gb": 16.76, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233freal_cam33_back_o_r1 | rows 308 rate 29.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233freal_cam33_back_o_r1", "t": "20:06:45", "gc": false, "gc_s": 0.0, "private_gb": 20.52, "ws_gb": 16.66, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233freal_cam33_back_Q_r1 | rows 298 rate 28.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_back_Q_r1", "t": "20:07:13", "gc": false, "gc_s": 0.0, "private_gb": 20.28, "ws_gb": 16.77, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "A
+v233freal_cam33_back_Qp_r1 | rows 298 rate 28.3/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_back_Qp_r1", "t": "20:07:42", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.68, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5, "
+v233freal_cam33_idlelook_o_r1 | rows 212 rate 26.4/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233freal_cam33_idlelook_o_r1", "t": "20:08:08", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.95, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5
+v233freal_cam33_idlelook_Q_r1 | rows 200 rate 25.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_idlelook_Q_r1", "t": "20:08:33", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 16.42, "peak_ws_gb": 17.71, "counts": {"Object": 276824, "World": 4, "Level": 5
+v233freal_cam33_idlelook_Qp_r1 | rows 197 rate 24.9/s | pops >25 m/s2: 1 (worst 28) | by owner {'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam33_idlelook_Qp_r1", "t": "20:08:58", "gc": false, "gc_s": 0.0, "private_gb": 20.54, "ws_gb": 17.04, "peak_ws_gb": 17.71, "counts": {"Object": 277006, "World": 6, "Level": 
+v233freal_cam32_wallturn_o_r1 | rows 299 rate 31.7/s | pops >25 m/s2: 6 (worst 52) | by owner {'in-clip': 5, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233freal_cam32_wallturn_o_r1", "t": "20:09:27", "gc": false, "gc_s": 0.0, "private_gb": 20.52, "ws_gb": 16.69, "peak_ws_gb": 17.71, "counts": {"Object": 277006, "World": 6, "Level": 7
+v233freal_cam32_wallturn_Q_r1 | rows 301 rate 31.5/s | pops >25 m/s2: 6 (worst 57) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233freal_cam32_wallturn_Q_r1", "t": "20:09:56", "gc": false, "gc_s": 0.0, "private_gb": 20.52, "ws_gb": 17.02, "peak_ws_gb": 17.71, "counts": {"Object": 277006, "World": 6, "Level": 7
+v233freal_ins_ws_o_r1 | rows 364 rate 26.9/s | pops >25 m/s2: 4 (worst 40) | by owner {'montage': 2, 'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233freal_ins_ws_o_r1", "t": "20:10:30", "gc": false, "gc_s": 0.0, "private_gb": 20.82, "ws_gb": 16.79, "peak_ws_gb": 17.71, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimS
+v233freal_ins_ws_Q_r1 | rows 379 rate 28.0/s | pops >25 m/s2: 3 (worst 44) | by owner {'montage': 2, 'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233freal_ins_ws_Q_r1", "t": "20:11:04", "gc": false, "gc_s": 0.0, "private_gb": 20.85, "ws_gb": 16.76, "peak_ws_gb": 17.71, "counts": {"Object": 277006, "World": 6, "Level": 7, "AnimS
+F_DONE real 20:11:08
+FALL_DONE 20:11:08
+X start 20:11:25 (reason: fixed-30 editor after the real-time FPS mode)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_x.log
+throttle off False
+RELAUNCH x 30 20:16:08
+EX233 {"dry": true, "copies": ["/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_CP2_Jog_Fwd_Start", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_LS_Jog_Left_Start", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_LS_Jog_Right_Start", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_RR_M_Relaxed_Run_Start_F_Lfoot", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_RR_M_Relaxed_Run_Start_F_Rfoot", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Bwd_Start_AAMS", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Fwd_Start_AAMS", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Left_Start_AAMS", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Right_Start_AAMS"], "dbs_listing_them": {"/Game/GraceRanger/SHME/Animations/Starts/PSD_SHM_JogStartQ_L": ["SHM232_IS_A_RR_M_Rela
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/is_exclude.json", "existing": 9, "new": 0}
+EX233 {"dry": false, "copies": ["/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_CP2_Jog_Fwd_Start", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_LS_Jog_Left_Start", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_LS_Jog_Right_Start", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_RR_M_Relaxed_Run_Start_F_Lfoot", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_A_RR_M_Relaxed_Run_Start_F_Rfoot", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Bwd_Start_AAMS", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Fwd_Start_AAMS", "/Game/GraceRanger/SHME/Animations/Starts/Jog/SHM232_IS_af_Loco_Jog_Left_Start_AA
+SPRINTDB /Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_SprintLoops.PSD_LB_SprintLoops
+SC233 {"dry": true, "cfg": {"dry": true, "db": "/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_SprintLoops"}, "clips": {"A_LB_Sprint_Fwd": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}, "A_LB_Sprint_FwdLeft": {"before": {"lean_deg": 20.8, "head_lat_cm": 13.5, "hand_swing_cm": 80.4}, "after": {"lean_deg": 32.2, "head_lat_cm": 8.9, "hand_swing_cm": 59.3}}, "A_LB_Sprint_FwdRight": {"before": {"lean_deg": 20.4, "head_lat_cm": 14.0, "hand_swing_cm": 41.3}, "after": {"lean_deg": 31.8, "head_lat_cm": 7.6, "hand_swing_cm": 36.5}}, "A_SHM_Sprint_Curve_R12": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}, "A_SHM_Sprint_Curve_L12": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}, "A_SHM_Sprint_Curve_R25": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}, "A_SHM_Sprint_Curve_L25": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}, "A_SHM_Sprint_Curve_R40": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}, "A_SHM_Sprint_Curve_L40": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 35.4, "head_lat_cm": 7.1, "hand_swing_cm": 45.7}}}, "db_clips": ["A_LB_Sprint_Fwd", "A_LB_Sprint_FwdLeft", "A_LB_Sprint_FwdRight", "A_SHM_Sprint_Curve_R12", "A_SHM_Sprint_Curve_L12", "A_SHM_Sprint_Curve_R25", "A_SHM_Sprint_Curve_L25", "A_SHM_Sprint_Curve_R40", "A_SHM_Sprint_Curve_L40"]}
+v212_warm_201629 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233x_j30_slow_Q3_r0 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_j30_slow_Q3_r0", "t": "20:17:29", "gc": false, "gc_s": 0.0, "private_gb": 20.05, "ws_gb": 17.0, "peak_ws_gb": 17.52, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSeq
+v233x_jback_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_jback_o_r1", "t": "20:18:03", "gc": false, "gc_s": 0.0, "private_gb": 20.1, "ws_gb": 17.18, "peak_ws_gb": 17.52, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSequenc
+v233x_jback_Q2_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_jback_Q2_r1", "t": "20:18:35", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 17.97, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSeque
+v233x_jback_Q3_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_jback_Q3_r1", "t": "20:19:11", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 17.15, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSeque
+v233x_j30_rel_3200_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_j30_rel_3200_o_r1", "t": "20:19:40", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 17.32, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233x_j30_rel_3200_Q2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_j30_rel_3200_Q2_r1", "t": "20:20:11", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 17.51, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "An
+v233x_j30_rel_3200_Q3_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_j30_rel_3200_Q3_r1", "t": "20:20:44", "gc": false, "gc_s": 0.0, "private_gb": 20.19, "ws_gb": 16.94, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "An
+v233x_cam33_wturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_cam33_wturn_o_r1", "t": "20:21:14", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.06, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Anim
+v233x_cam33_wturn_Q2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_wturn_Q2_r1", "t": "20:21:46", "gc": false, "gc_s": 0.0, "private_gb": 20.19, "ws_gb": 16.99, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233x_cam33_wturn_Q3_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_wturn_Q3_r1", "t": "20:22:18", "gc": false, "gc_s": 0.0, "private_gb": 20.46, "ws_gb": 17.13, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233x_cam33_look_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_cam33_look_o_r1", "t": "20:22:50", "gc": false, "gc_s": 0.0, "private_gb": 20.15, "ws_gb": 17.39, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimS
+v233x_cam33_look_Q2_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_look_Q2_r1", "t": "20:23:22", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.38, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Anim
+v233x_cam33_look_Q3_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_look_Q3_r1", "t": "20:23:55", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 17.18, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Anim
+v233x_cam33_back_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_cam33_back_o_r1", "t": "20:24:23", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 16.93, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimS
+v233x_cam33_back_Q2_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_back_Q2_r1", "t": "20:24:52", "gc": false, "gc_s": 0.0, "private_gb": 20.13, "ws_gb": 16.9, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimS
+v233x_cam33_back_Q3_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_back_Q3_r1", "t": "20:25:21", "gc": false, "gc_s": 0.0, "private_gb": 20.14, "ws_gb": 16.92, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Anim
+v233x_cam33_jturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_cam33_jturn_o_r1", "t": "20:25:54", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 16.69, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Anim
+v233x_cam33_jturn_Q2_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_jturn_Q2_r1", "t": "20:26:26", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 17.2, "peak_ws_gb": 18.23, "counts": {"Object": 276832, "World": 4, "Level": 5, "Anim
+v233x_cam33_jturn_Q3_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_jturn_Q3_r1", "t": "20:26:57", "gc": false, "gc_s": 0.0, "private_gb": 20.3, "ws_gb": 17.05, "peak_ws_gb": 18.23, "counts": {"Object": 276901, "World": 5, "Level": 6, "Anim
+v233x_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+EDITOR_GONE after v233x_cam33_sturn_o_r1
+v212_warm_203024 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233x_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233x_cam33_sturn_o_r1", "t": "20:31:56", "gc": false, "gc_s": 0.0, "private_gb": 20.34, "ws_gb": 16.95, "peak_ws_gb": 17.55, "counts": {"Object": 276772, "World": 4, "Level": 5, "Anim
+v233x_cam33_sturn_Q2_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 8 (worst 42) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_sturn_Q2_r1", "t": "20:32:29", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.62, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233x_cam33_sturn_Q3_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 8 (worst 42) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233x_cam33_sturn_Q3_r1", "t": "20:32:59", "gc": false, "gc_s": 0.0, "private_gb": 20.22, "ws_gb": 16.58, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233x_d_back_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_d_back_o_r1", "t": "20:33:35", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.31, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSeque
+v233x_d_back_Q2_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_d_back_Q2_r1", "t": "20:34:12", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 16.25, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSequ
+v233x_d_back_Q3_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_d_back_Q3_r1", "t": "20:34:56", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 16.03, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSequ
+v233x_j30_slow_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233x_j30_slow_o_r1", "t": "20:35:27", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 16.23, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSeq
+v233x_j30_slow_Q2_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_j30_slow_Q2_r1", "t": "20:35:56", "gc": false, "gc_s": 0.0, "private_gb": 20.01, "ws_gb": 16.68, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSe
+v233x_j30_slow_Q3_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233x_j30_slow_Q3_r1", "t": "20:36:26", "gc": false, "gc_s": 0.0, "private_gb": 20.21, "ws_gb": 16.79, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSe
+v233x_c30_calm_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233x_c30_calm_o_r1", "t": "20:36:55", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 16.6, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSequ
+v233x_c30_calm_Q2_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233x_c30_calm_Q2_r1", "t": "20:37:25", "gc": false, "gc_s": 0.0, "private_gb": 20.18, "ws_gb": 16.41, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSe
+v233x_c30_calm_Q3_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED candidate
+MEM230 {"tag": "v233x_c30_calm_Q3_r1", "t": "20:37:54", "gc": false, "gc_s": 0.0, "private_gb": 20.22, "ws_gb": 16.78, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSe
+v233x_cam32_wallturn_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 9 (worst 54) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233x_cam32_wallturn_o_r1", "t": "20:38:20", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.78, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "A
+v233x_cam32_wallturn_Q2_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 60) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233x_cam32_wallturn_Q2_r1", "t": "20:38:46", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.45, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "
+v233x_cam32_wallturn_Q3_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 60) | by owner {'in-clip': 9, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233x_cam32_wallturn_Q3_r1", "t": "20:39:15", "gc": false, "gc_s": 0.0, "private_gb": 20.27, "ws_gb": 16.55, "peak_ws_gb": 17.55, "counts": {"Object": 276832, "World": 4, "Level": 5, "
+X_DONE 20:39:20
+S start 20:39:22
+SC233 {"dry": true, "cfg": {"dry": true, "db": "/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_SprintLoops"}, "clips": {"A_LB_Sprint_Fwd": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}}, "A_LB_Sprint_FwdLeft": {"before": {"lean_deg": 20.8, "head_lat_cm": 13.5, "hand_swing_cm": 80.4}, "after": {"lean_deg": 9.7, "head_lat_cm": 8.9, "hand_swing_cm": 55.2}}, "A_LB_Sprint_FwdRight": {"before": {"lean_deg": 20.4, "head_lat_cm": 14.0, "hand_swing_cm": 41.3}, "after": {"lean_deg": 9.3, "head_lat_cm": 7.6, "hand_swing_cm": 27.5}}, "A_SHM_Sprint_Curve_R12": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}}, "A_SHM_Sprint_Curve_L12": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}}, "A_SHM_Sprint_Curve_R25": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}}, "A_SHM_Sprint_Curve_L25": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}}, "A_SHM_Sprint_Curve_R40": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/sprintcalm.json", "existing": 0, "new": 10}
+SC233 {"dry": false, "cfg": {"dry": false, "db": "/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_SprintLoops"}, "clips": {"A_LB_Sprint_Fwd": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}, "A_LB_Sprint_FwdLeft": {"before": {"lean_deg": 20.8, "head_lat_cm": 13.5, "hand_swing_cm": 80.4}, "after": {"lean_deg": 9.7, "head_lat_cm": 8.9, "hand_swing_cm": 55.2}, "saved": true}, "A_LB_Sprint_FwdRight": {"before": {"lean_deg": 20.4, "head_lat_cm": 14.0, "hand_swing_cm": 41.3}, "after": {"lean_deg": 9.3, "head_lat_cm": 7.6, "hand_swing_cm": 27.5}, "saved": true}, "A_SHM_Sprint_Curve_R12": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}, "A_SHM_Sprint_Curve_L12": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}, "A_SHM_Sprint_Curve_R25": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}, "A_SHM_Sprint_Curve_L25": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}, "A_SHM_Sprint_Curve_R40": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}, "A_SHM_Sprint_Curve_L40": {"before": {"lean_deg": 24.1, "head_lat_cm": 13.6, "hand_swing_cm": 60.1}, "after": {"lean_deg": 12.9, "head_lat_cm": 7.1, "hand_swing_cm": 37.1}, "saved": true}}, "db_clips": ["A_LB_Sprint_Fwd", "A_LB_Sprint_FwdLeft", "A_LB_Sprint_FwdRight", "A_SHM_Sprint_Curve_R12", "A_SHM_Sprint_Curve_L12", "A_SHM_Sprint_Curve_R25", "A_SHM_Sprint_Curve_L25", "A_SHM_Sprint_Curve_R40", "A_SHM_Sprint_Curve_L40"], "saved_db": true, "db_entries": ["SHM233_Calm_A_LB_Sprint_Fwd", "SHM233_Calm_A_LB_Sprint_FwdLeft", "SHM233_Calm_A_LB_Sprint_FwdRight", "SHM233_Calm_A_SHM_Sprint_Curve_R12", "SHM233_Calm_A_SHM_Sprint_Curve_L12", "SHM233_Calm_A_SHM_Sprint_Curve_R25", "SHM233_Calm_A_SHM_Sprint_Curve_L25", "SHM233_Calm_A_SHM_Sprint_Curve_R40", "SHM233_Calm_A_SHM_Sprint_Curve_L40"]}
+v212_warm_203939 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 66) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233s_d_sprint_sc_r0", "t": "20:40:38", "gc": false, "gc_s": 0.0, "private_gb": 20.44, "ws_gb": 16.36, "peak_ws_gb": 17.55, "counts": {"Object": 277182, "World": 5, "Level": 6, "AnimSe
+v233s_d_sprint_o_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 17 (worst 37) | by owner {'in-clip': 17} | FINISHED production
+MEM230 {"tag": "v233s_d_sprint_o_r1", "t": "20:41:17", "gc": false, "gc_s": 0.0, "private_gb": 20.81, "ws_gb": 16.38, "peak_ws_gb": 17.55, "counts": {"Object": 277182, "World": 5, "Level": 6, "AnimSeq
+v233s_d_sprint_sc_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 40) | by owner {'in-clip': 7} | FINISHED candidate
+MEM230 {"tag": "v233s_d_sprint_sc_r1", "t": "20:41:55", "gc": false, "gc_s": 0.0, "private_gb": 20.6, "ws_gb": 16.66, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimSeq
+v233s_d_sprint_o_r2 | rows 538 rate 30.1/s | pops >25 m/s2: 15 (worst 42) | by owner {'in-clip': 15} | FINISHED production
+MEM230 {"tag": "v233s_d_sprint_o_r2", "t": "20:42:34", "gc": false, "gc_s": 0.0, "private_gb": 20.62, "ws_gb": 16.39, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimSeq
+v233s_d_sprint_sc_r2 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 40) | by owner {'in-clip': 7} | FINISHED candidate
+MEM230 {"tag": "v233s_d_sprint_sc_r2", "t": "20:43:13", "gc": false, "gc_s": 0.0, "private_gb": 20.62, "ws_gb": 15.92, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimSe
+v233s_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 112) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_cam33_sturn_o_r1", "t": "20:43:45", "gc": false, "gc_s": 0.0, "private_gb": 20.63, "ws_gb": 15.99, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Anim
+v233s_cam33_sturn_sc_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_cam33_sturn_sc_r1", "t": "20:44:19", "gc": false, "gc_s": 0.0, "private_gb": 20.59, "ws_gb": 15.64, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Ani
+v233s_cam33_sturn_o_r2 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_cam33_sturn_o_r2", "t": "20:44:53", "gc": false, "gc_s": 0.0, "private_gb": 20.59, "ws_gb": 15.7, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimS
+v233s_cam33_sturn_sc_r2 | rows 373 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_cam33_sturn_sc_r2", "t": "20:45:26", "gc": false, "gc_s": 0.0, "private_gb": 20.59, "ws_gb": 15.31, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Ani
+v233s_cam32_chain_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 8 (worst 66) | by owner {'in-clip': 7, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_cam32_chain_o_r1", "t": "20:45:59", "gc": false, "gc_s": 0.0, "private_gb": 20.59, "ws_gb": 15.66, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Anim
+v233s_cam32_chain_sc_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_cam32_chain_sc_r1", "t": "20:46:31", "gc": false, "gc_s": 0.0, "private_gb": 20.9, "ws_gb": 15.85, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Anim
+v233s_cam32_chain_o_r2 | rows 418 rate 30.1/s | pops >25 m/s2: 8 (worst 66) | by owner {'in-clip': 7, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_cam32_chain_o_r2", "t": "20:47:04", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 15.49, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Anim
+v233s_cam32_chain_sc_r2 | rows 418 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_cam32_chain_sc_r2", "t": "20:47:36", "gc": false, "gc_s": 0.0, "private_gb": 20.66, "ws_gb": 15.71, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "Ani
+v233s_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_legs_slope_sprint_o_r1", "t": "20:48:12", "gc": false, "gc_s": 0.0, "private_gb": 20.64, "ws_gb": 15.62, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7,
+v233s_legs_slope_sprint_sc_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_legs_slope_sprint_sc_r1", "t": "20:48:48", "gc": false, "gc_s": 0.0, "private_gb": 20.8, "ws_gb": 15.95, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7,
+v233s_legs_slope_sprint_o_r2 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_legs_slope_sprint_o_r2", "t": "20:49:23", "gc": false, "gc_s": 0.0, "private_gb": 20.7, "ws_gb": 15.68, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, 
+v233s_legs_slope_sprint_sc_r2 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_legs_slope_sprint_sc_r2", "t": "20:49:58", "gc": false, "gc_s": 0.0, "private_gb": 20.68, "ws_gb": 15.68, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7
+v233s_cam32_s90_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 66) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_cam32_s90_o_r1", "t": "20:50:27", "gc": false, "gc_s": 0.0, "private_gb": 20.69, "ws_gb": 15.59, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimSe
+v233s_cam32_s90_sc_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 66) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_cam32_s90_sc_r1", "t": "20:50:57", "gc": false, "gc_s": 0.0, "private_gb": 20.69, "ws_gb": 15.44, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimS
+v233s_cam32_s90_o_r2 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 66) | by owner {'in-clip': 6, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233s_cam32_s90_o_r2", "t": "20:51:26", "gc": false, "gc_s": 0.0, "private_gb": 20.69, "ws_gb": 15.3, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimSeq
+v233s_cam32_s90_sc_r2 | rows 328 rate 30.1/s | pops >25 m/s2: 7 (worst 66) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233s_cam32_s90_sc_r2", "t": "20:51:58", "gc": false, "gc_s": 0.0, "private_gb": 21.04, "ws_gb": 15.36, "peak_ws_gb": 17.55, "counts": {"Object": 277233, "World": 6, "Level": 7, "AnimS
+v233s_s29_swl12_o_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 5 (worst 38) | by owner {'in-clip': 5} | FINISHED production
+MEM230 {"tag": "v233s_s29_swl12_o_r1", "t": "20:52:29", "gc": false, "gc_s": 0.0, "private_gb": 20.67, "ws_gb": 15.74, "peak_ws_gb": 17.55, "counts": {"Object": 277234, "World": 6, "Level": 7, "AnimSe
+v233s_s29_swl12_sc_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233s_s29_swl12_sc_r1", "t": "20:52:58", "gc": false, "gc_s": 0.0, "private_gb": 21.02, "ws_gb": 15.31, "peak_ws_gb": 17.55, "counts": {"Object": 277250, "World": 6, "Level": 7, "AnimS
+v233s_s29_swl12_o_r2 | rows 334 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+MEM230 {"tag": "v233s_s29_swl12_o_r2", "t": "20:53:27", "gc": false, "gc_s": 0.0, "private_gb": 20.75, "ws_gb": 15.7, "peak_ws_gb": 17.55, "counts": {"Object": 277234, "World": 6, "Level": 7, "AnimSeq
+v233s_s29_swl12_sc_r2 | rows 334 rate 30.1/s | pops >25 m/s2: 5 (worst 32) | by owner {'in-clip': 5} | FINISHED candidate
+MEM230 {"tag": "v233s_s29_swl12_sc_r2", "t": "20:53:56", "gc": false, "gc_s": 0.0, "private_gb": 20.73, "ws_gb": 15.47, "peak_ws_gb": 17.55, "counts": {"Object": 277234, "World": 6, "Level": 7, "AnimS
+S_DONE 20:54:01
+PROMOTE_GO standback,camrec 20:55:04 (stand-back: true-stand back starts 38-44 -> 0 cm inside the start at 30/60/120/20/real, counters unchanged; camrec: recentre 1.1-2.3 s FPS-independent, no turn for back / idle look / inspect / corridor; walk excluded (MinSpeed 170) - walk recentre costs a planted-foot slide; sprintcalm stays a candidate pending the visual check)
+FIN start 20:55:29 groups 197609 (reason: promotion in a fresh fixed-30 editor)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_fin.log
+throttle off False
+RELAUNCH fin 30 20:59:03
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/promo233.json", "existing": 3, "new": 0}
+FIN_FAILED promotion not saved
+FIN abort 21:00:02 (reason: script bugs - GROUPS bash builtin, JSON true in python source; promotion job failed before any write)
+FIN start 21:00:03 groups standback,camrec (reason: promotion in a fresh fixed-30 editor)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_fin.log
+TIMEOUT waiting for throttle-210054998669
+RELAUNCH fin 30 21:06:16
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/promo233.json", "existing": 3, "new": 0}
+PROMO233 {"groups": {"standback": true, "camrec": true}, "set": {"standback": {"SHM233_StandBackOn": "2.0", "SHM233_DB_StandBack": "<Object '/Game/GraceRanger/SHME/Animations/V233/PSD_SHM233_StandBackStart2.PSD_S"}, "camrec": {"CamRecEnabled": true, "CamRecMaxErr": 110.0, "CamRecMinSpeed": 170.0}}, "abp_after": {"SHM233_StandBackOn": "2.0", "SHM233_DB_StandBack": "<Object '/Game/GraceRanger/SHME/Animations/V233/PSD_SHM233_StandBackStart2.PSD_S", "SHM211_DB_Sprint": "<Object '/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_SprintLoops.PSD_"}, "da_after": {"CamRecEnabled": "True", "CamOrbitEnabled": "True", "IntentTickPrePhysics": "False"}, "ok": true, "saved": true, "dirty_after": []}
+FINV start 21:06:23 (reason: clean reopen = verification on disk state)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_finv.log
+throttle off False
+RELAUNCH finv 30 21:08:46
+"bad": [], "ALL_OK": true
+v212_warm_210906 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v233fin_j30_slow_o_r0 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_j30_slow_o_r0", "t": "21:10:15", "gc": false, "gc_s": 0.0, "private_gb": 19.93, "ws_gb": 18.22, "peak_ws_gb": 19.14, "counts": {"Object": 276772, "World": 4, "Level": 5, "AnimS
+v233fin_j30_slow_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_j30_slow_o_r1", "t": "21:10:45", "gc": false, "gc_s": 0.0, "private_gb": 20.04, "ws_gb": 18.53, "peak_ws_gb": 19.14, "counts": {"Object": 276772, "World": 4, "Level": 5, "AnimS
+v233fin_jback_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_jback_o_r1", "t": "21:11:18", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 18.31, "peak_ws_gb": 19.14, "counts": {"Object": 276772, "World": 4, "Level": 5, "AnimSequ
+v233fin_d_back_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_d_back_o_r1", "t": "21:11:53", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 18.25, "peak_ws_gb": 19.14, "counts": {"Object": 276772, "World": 4, "Level": 5, "AnimSeq
+v233fin_k_jogback_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_k_jogback_o_r1", "t": "21:12:22", "gc": false, "gc_s": 0.0, "private_gb": 20.05, "ws_gb": 18.05, "peak_ws_gb": 19.14, "counts": {"Object": 276772, "World": 4, "Level": 5, "Anim
+v233fin_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233fin_jstart_o_r1", "t": "21:13:10", "gc": false, "gc_s": 0.0, "private_gb": 20.04, "ws_gb": 18.83, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimSeq
+v233fin_j30_rel_3200_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_j30_rel_3200_o_r1", "t": "21:13:40", "gc": false, "gc_s": 0.0, "private_gb": 20.05, "ws_gb": 18.16, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "A
+v233fin_j30_rel_3450_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_j30_rel_3450_o_r1", "t": "21:14:09", "gc": false, "gc_s": 0.0, "private_gb": 20.06, "ws_gb": 18.27, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "A
+v233fin_wstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_wstart_o_r1", "t": "21:14:55", "gc": false, "gc_s": 0.0, "private_gb": 20.03, "ws_gb": 18.3, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimSequ
+v233fin_c30_calm_o_r1 | rows 352 rate 30.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233fin_c30_calm_o_r1", "t": "21:15:24", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 18.08, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimS
+v233fin_wdiag_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_wdiag_o_r1", "t": "21:15:56", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 18.13, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimSequ
+v233fin_e29_load_o_r1 | rows 454 rate 30.1/s | pops >25 m/s2: 9 (worst 66) | by owner {'in-clip': 8, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233fin_e29_load_o_r1", "t": "21:16:29", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 18.07, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimS
+v233fin_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 9 (worst 76) | by owner {'in-clip': 9} | FINISHED production
+MEM230 {"tag": "v233fin_e29_chain_o_r1", "t": "21:17:01", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 17.99, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "Anim
+v233fin_s29_swl12_o_r1 | rows 334 rate 30.1/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+MEM230 {"tag": "v233fin_s29_swl12_o_r1", "t": "21:17:30", "gc": false, "gc_s": 0.0, "private_gb": 20.11, "ws_gb": 17.91, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "Anim
+v233fin_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_c29_combo_o_r1", "t": "21:18:02", "gc": false, "gc_s": 0.0, "private_gb": 20.1, "ws_gb": 18.02, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimS
+v233fin_d_sprint_o_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 16 (worst 37) | by owner {'in-clip': 16} | FINISHED production
+MEM230 {"tag": "v233fin_d_sprint_o_r1", "t": "21:18:41", "gc": false, "gc_s": 0.0, "private_gb": 20.2, "ws_gb": 17.81, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimSe
+v233fin_cam33_wturn_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_cam33_wturn_o_r1", "t": "21:19:13", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 17.32, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "An
+v233fin_cam33_jturnj_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+MEM230 {"tag": "v233fin_cam33_jturnj_o_r1", "t": "21:19:46", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.45, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "A
+v233fin_cam33_sturn_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 8 (worst 42) | by owner {'in-clip': 8} | FINISHED production
+MEM230 {"tag": "v233fin_cam33_sturn_o_r1", "t": "21:20:19", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.55, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "An
+v233fin_cam33_look_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_cam33_look_o_r1", "t": "21:20:51", "gc": false, "gc_s": 0.0, "private_gb": 20.13, "ws_gb": 17.31, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "Ani
+v233fin_cam33_back_o_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233fin_cam33_back_o_r1", "t": "21:21:20", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.44, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "Ani
+v233fin_cam33_idlelook_o_r1 | rows 253 rate 30.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'montage': 1} | FINISHED production
+MEM230 {"tag": "v233fin_cam33_idlelook_o_r1", "t": "21:21:49", "gc": false, "gc_s": 0.0, "private_gb": 20.17, "ws_gb": 17.57, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, 
+v233fin_cam32_wallturn_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 10 (worst 60) | by owner {'in-clip': 9, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233fin_cam32_wallturn_o_r1", "t": "21:22:17", "gc": false, "gc_s": 0.0, "private_gb": 20.16, "ws_gb": 17.37, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, 
+v233fin_cam_corr_o_r1 | rows 433 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 1, 'montage': 3} | FINISHED production
+MEM230 {"tag": "v233fin_cam_corr_o_r1", "t": "21:22:50", "gc": false, "gc_s": 0.0, "private_gb": 20.17, "ws_gb": 17.06, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimS
+v233fin_ins_ws_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 3 (worst 43) | by owner {'montage': 2, 'in-clip': 1} | FINISHED production
+MEM230 {"tag": "v233fin_ins_ws_o_r1", "t": "21:23:23", "gc": false, "gc_s": 0.0, "private_gb": 20.57, "ws_gb": 16.88, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimSeq
+v233fin_map_r1_o_r1 | rows 799 rate 30.0/s | pops >25 m/s2: 14 (worst 65) | by owner {'montage': 3, 'in-clip': 11} | FINISHED production
+MEM230 {"tag": "v233fin_map_r1_o_r1", "t": "21:24:24", "gc": false, "gc_s": 0.0, "private_gb": 20.6, "ws_gb": 17.08, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "AnimSequ
+v233fin_ter_drop_walk_o_r1 | rows 658 rate 30.0/s | pops >25 m/s2: 4 (worst 260) | by owner {'in-clip': 4} | FINISHED production
+MEM230 {"tag": "v233fin_ter_drop_walk_o_r1", "t": "21:25:04", "gc": false, "gc_s": 0.0, "private_gb": 20.61, "ws_gb": 17.07, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5, "
+v233fin_legs_slope_sprint_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+MEM230 {"tag": "v233fin_legs_slope_sprint_o_r1", "t": "21:25:40", "gc": false, "gc_s": 0.0, "private_gb": 20.92, "ws_gb": 17.46, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 
+v233fin_cam33_jturnj_pad233_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_jturnj_pad233_r1", "t": "21:26:12", "gc": false, "gc_s": 0.0, "private_gb": 20.63, "ws_gb": 17.03, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 
+v233fin_cam33_sturn_pad233_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_sturn_pad233_r1", "t": "21:26:44", "gc": false, "gc_s": 0.0, "private_gb": 20.67, "ws_gb": 17.22, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5
+v233fin_cam33_look_pad233_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_look_pad233_r1", "t": "21:27:17", "gc": false, "gc_s": 0.0, "private_gb": 20.66, "ws_gb": 17.22, "peak_ws_gb": 19.14, "counts": {"Object": 276773, "World": 4, "Level": 5,
+v233fin_j30_slow_pre233_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233fin_j30_slow_pre233_r1", "t": "21:27:46", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 17.2, "peak_ws_gb": 19.14, "counts": {"Object": 276833, "World": 4, "Level": 5, "A
+v233fin_j30_slow_body233_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233fin_j30_slow_body233_r1", "t": "21:28:15", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 17.22, "peak_ws_gb": 19.14, "counts": {"Object": 276833, "World": 4, "Level": 5, 
+v233fin_j30_slow_cam233_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233fin_j30_slow_cam233_r1", "t": "21:28:44", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 17.02, "peak_ws_gb": 19.14, "counts": {"Object": 276833, "World": 4, "Level": 5, "
+v233fin_cam33_jturnj_pre233_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 31) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_jturnj_pre233_r1", "t": "21:29:14", "gc": false, "gc_s": 0.0, "private_gb": 20.66, "ws_gb": 17.15, "peak_ws_gb": 19.14, "counts": {"Object": 276833, "World": 4, "Level": 
+v233fin_cam33_jturnj_body233_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_jturnj_body233_r1", "t": "21:29:47", "gc": false, "gc_s": 0.0, "private_gb": 20.65, "ws_gb": 16.75, "peak_ws_gb": 19.14, "counts": {"Object": 276833, "World": 4, "Level":
+v233fin_cam33_jturnj_cam233_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_jturnj_cam233_r1", "t": "21:30:19", "gc": false, "gc_s": 0.0, "private_gb": 20.67, "ws_gb": 16.17, "peak_ws_gb": 19.14, "counts": {"Object": 276833, "World": 4, "Level": 
+v233fin_cam33_sturn_pre233_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_sturn_pre233_r1", "t": "21:30:51", "gc": false, "gc_s": 0.0, "private_gb": 21.27, "ws_gb": 17.13, "peak_ws_gb": 19.14, "counts": {"Object": 277112, "World": 6, "Level": 7
+v233fin_cam33_sturn_body233_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_sturn_body233_r1", "t": "21:31:23", "gc": false, "gc_s": 0.0, "private_gb": 20.94, "ws_gb": 16.66, "peak_ws_gb": 19.14, "counts": {"Object": 277016, "World": 6, "Level": 
+v233fin_cam33_sturn_cam233_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 8 (worst 42) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233fin_cam33_sturn_cam233_r1", "t": "21:31:55", "gc": false, "gc_s": 0.0, "private_gb": 20.96, "ws_gb": 16.75, "peak_ws_gb": 19.14, "counts": {"Object": 277016, "World": 6, "Level": 7
+FIN_EVID_DONE 21:32:00
+v233cap_cam33_sturn_pre233G_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 7 (worst 53) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam33_sturn_pre233G_r1", "t": "21:32:36", "gc": false, "gc_s": 0.0, "private_gb": 20.99, "ws_gb": 16.58, "peak_ws_gb": 19.14, "counts": {"Object": 277021, "World": 6, "Level": 
+v233cap_cam33_sturn_oG_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 8 (worst 42) | by owner {'in-clip': 8} | FINISHED production
+MEM230 {"tag": "v233cap_cam33_sturn_oG_r1", "t": "21:33:10", "gc": false, "gc_s": 0.0, "private_gb": 20.98, "ws_gb": 16.29, "peak_ws_gb": 19.14, "counts": {"Object": 277021, "World": 6, "Level": 7, "A
+v233cap_cam33_sturn_pad233G_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam33_sturn_pad233G_r1", "t": "21:33:43", "gc": false, "gc_s": 0.0, "private_gb": 20.76, "ws_gb": 15.99, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 
+v233cap_cam33_jturnj_pad233G_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam33_jturnj_pad233G_r1", "t": "21:34:18", "gc": false, "gc_s": 0.0, "private_gb": 20.77, "ws_gb": 16.13, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level":
+v233cap_cam33_look_pad233G_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam33_look_pad233G_r1", "t": "21:34:54", "gc": false, "gc_s": 0.0, "private_gb": 20.86, "ws_gb": 16.2, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 7,
+v233cap_cam33_back_pad233G_r1 | rows 328 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam33_back_pad233G_r1", "t": "21:35:26", "gc": false, "gc_s": 0.0, "private_gb": 20.88, "ws_gb": 16.22, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 7
+v233cap_cam32_chain_pad233G_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 8 (worst 42) | by owner {'in-clip': 8} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam32_chain_pad233G_r1", "t": "21:36:02", "gc": false, "gc_s": 0.0, "private_gb": 20.96, "ws_gb": 16.04, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 
+v233cap_j30_slow_pre233S_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+MEM230 {"tag": "v233cap_j30_slow_pre233S_r1", "t": "21:36:37", "gc": false, "gc_s": 0.0, "private_gb": 20.72, "ws_gb": 16.12, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 7, 
+v233cap_j30_slow_oS_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+MEM230 {"tag": "v233cap_j30_slow_oS_r1", "t": "21:37:09", "gc": false, "gc_s": 0.0, "private_gb": 20.97, "ws_gb": 15.98, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 7, "Anim
+v233cap_d_sprint_oS_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 15 (worst 42) | by owner {'in-clip': 15} | FINISHED production
+MEM230 {"tag": "v233cap_d_sprint_oS_r1", "t": "21:37:52", "gc": false, "gc_s": 0.0, "private_gb": 21.02, "ws_gb": 15.91, "peak_ws_gb": 19.14, "counts": {"Object": 277020, "World": 6, "Level": 7, "Anim
+v233cap_d_sprint_scS_r1 | rows 538 rate 30.1/s | pops >25 m/s2: 7 (worst 40) | by owner {'in-clip': 7} | FINISHED candidate
+MEM230 {"tag": "v233cap_d_sprint_scS_r1", "t": "21:38:33", "gc": false, "gc_s": 0.0, "private_gb": 20.99, "ws_gb": 16.2, "peak_ws_gb": 19.14, "counts": {"Object": 277304, "World": 6, "Level": 7, "Anim
+v233cap_cam33_sturn_pad233S_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 9 (worst 42) | by owner {'in-clip': 9} | FINISHED candidate
+MEM230 {"tag": "v233cap_cam33_sturn_pad233S_r1", "t": "21:39:09", "gc": false, "gc_s": 0.0, "private_gb": 21.0, "ws_gb": 16.31, "peak_ws_gb": 19.14, "counts": {"Object": 277304, "World": 6, "Level": 7
+CAP_DONE 21:39:13
+D60 start 21:43:11 (reason: frame-rate mode is an editor launch argument)
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv233_d60.log
+throttle off False
+RELAUNCH d60 60 21:48:19
+v212_warm_214824 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v233d60_jback_o_r0 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 34) | by owner {'in-clip': 18} | FINISHED production
+MEM230 {"tag": "v233d60_jback_o_r0", "t": "21:50:06", "gc": false, "gc_s": 0.0, "private_gb": 20.24, "ws_gb": 16.61, "peak_ws_gb": 17.03, "counts": {"Object": 276772, "World": 4, "Level": 5, "AnimSequ
+v233d60_jback_o_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 34) | by owner {'in-clip': 18} | FINISHED production
+MEM230 {"tag": "v233d60_jback_o_r1", "t": "21:50:56", "gc": false, "gc_s": 0.0, "private_gb": 20.23, "ws_gb": 16.49, "peak_ws_gb": 17.03, "counts": {"Object": 276772, "World": 4, "Level": 5, "AnimSequ
+v233d60_jback_body233_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 19 (worst 34) | by owner {'in-clip': 19} | FINISHED candidate
+MEM230 {"tag": "v233d60_jback_body233_r1", "t": "21:51:45", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 16.64, "peak_ws_gb": 17.03, "counts": {"Object": 276772, "World": 4, "Level": 5, "An
+v233d60_jback_cam233_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 14 (worst 38) | by owner {'in-clip': 14} | FINISHED candidate
+MEM230 {"tag": "v233d60_jback_cam233_r1", "t": "21:52:35", "gc": false, "gc_s": 0.0, "private_gb": 20.09, "ws_gb": 16.34, "peak_ws_gb": 17.03, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233d60_jback_pre233_r1 | rows 868 rate 60.1/s | pops >25 m/s2: 14 (worst 38) | by owner {'in-clip': 14} | FINISHED candidate
+MEM230 {"tag": "v233d60_jback_pre233_r1", "t": "21:53:23", "gc": false, "gc_s": 0.0, "private_gb": 20.04, "ws_gb": 16.36, "peak_ws_gb": 17.03, "counts": {"Object": 276832, "World": 4, "Level": 5, "Ani
+v233d60_jback_o_r2 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 34) | by owner {'in-clip': 18} | FINISHED production
+MEM230 {"tag": "v233d60_jback_o_r2", "t": "21:54:11", "gc": false, "gc_s": 0.0, "private_gb": 20.06, "ws_gb": 16.42, "peak_ws_gb": 17.03, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimSequ
+v233d60_jback_body233_r2 | rows 868 rate 60.1/s | pops >25 m/s2: 18 (worst 34) | by owner {'in-clip': 18} | FINISHED candidate
+MEM230 {"tag": "v233d60_jback_body233_r2", "t": "21:55:00", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 16.46, "peak_ws_gb": 17.03, "counts": {"Object": 276832, "World": 4, "Level": 5, "An
+v233d60_j30_slow_o_r1 | rows 568 rate 60.1/s | pops >25 m/s2: 10 (worst 43) | by owner {'in-clip': 10} | FINISHED production
+MEM230 {"tag": "v233d60_j30_slow_o_r1", "t": "21:55:38", "gc": false, "gc_s": 0.0, "private_gb": 20.07, "ws_gb": 16.43, "peak_ws_gb": 17.03, "counts": {"Object": 276832, "World": 4, "Level": 5, "AnimS
+v233d60_j30_slow_body233_r1 | rows 568 rate 60.1/s | pops >25 m/s2: 10 (worst 43) | by owner {'in-clip': 10} | FINISHED candidate
+MEM230 {"tag": "v233d60_j30_slow_body233_r1", "t": "21:56:17", "gc": false, "gc_s": 0.0, "private_gb": 20.12, "ws_gb": 16.39, "peak_ws_gb": 17.03, "counts": {"Object": 276832, "World": 4, "Level": 5, 
+D60_DONE 21:56:22
+FINAL editor closed clean, lock released 21:58:41

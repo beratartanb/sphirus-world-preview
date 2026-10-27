@@ -1,0 +1,3235 @@
+{
+ "scanned": [
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/BP_PC_AAMS_BlackEye",
+  "/Game/GraceRanger/BP_GR_InputBase",
+  "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM",
+  "/Game/GraceRanger/BP_GR_Player",
+  "/Game/GraceRanger/BP_PCM_GR_Camera",
+  "/Game/GraceRanger/BP_PC_GR_GraceRanger",
+  "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Camera/BlackEye/BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Camera/BlackEye/BP_Camera_Ranger_Outdoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Camera/BlackEye/BP_Camera_Ranger_Indoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Rollbacks/RootCauseCharacterRebuild_Before_20260903/Snapshot/S096_2e0d777e31_BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/RootCauseCharacterRebuild_Before_20260903/Snapshot/S093_bf9da83dc0_BP_Camera_Ranger_Outdoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/RootCauseCharacterRebuild_Before_20260903/Snapshot/S092_f4d01f58b6_BP_Camera_Ranger_Indoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/RootCauseCharacterRebuild_Before_20260903/Snapshot/S027_f498d7da43_BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Camera/BlackEye/BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Camera/BlackEye/BP_Camera_Ranger_Outdoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Camera/BlackEye/BP_Camera_Ranger_Indoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/FinalStabilization_Before_20260901/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Rollbacks/CharacterWorldFinal_Before_20260904/Snapshot/S102_BP_PC_AAMS_BlackEye",
+  "/Game/ActionAdventureMovementS/Rollbacks/CharacterWorldFinal_Before_20260904/Snapshot/S099_BP_Camera_Ranger_Outdoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/CharacterWorldFinal_Before_20260904/Snapshot/S098_BP_Camera_Ranger_Indoor",
+  "/Game/ActionAdventureMovementS/Rollbacks/CharacterWorldFinal_Before_20260904/Snapshot/S029_BP_Player_MM",
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/Phase3BeforeIntegration_20260829/BP_Player_MM_PreBlackEye",
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/BP_Camera_Ranger_Outdoor",
+  "/Game/ActionAdventureMovementS/Camera/BlackEye/BP_Camera_Ranger_Indoor",
+  "/Game/ActionAdventureMovementS/Blueprints/Helpers/BP_TutorialPopup_Volume_NPC_ProjectOwned",
+  "/Game/GraceRanger/QA/LocomotionBehavior/BP_LB_CameraCorner_lb_house_camera",
+  "/Game/GraceRanger/QA/CorePerformance/BP_CP3_ReferenceCameraQA",
+  "/Game/GraceRanger/QA/CorePerformance/BP_CP3_CameraCollisionQA",
+  "/Game/GraceRanger/QA/Continuity/BP_CT_JumpCameraQA",
+  "/Game/GraceRanger/QA/Continuity/BP_CT_CameraCorner_30",
+  "/Game/GraceRanger/QA/BP_GR_CameraQA",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_PC_GR_GraceRanger",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_PCM_GR_Camera",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_GR_Player",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_GR_InputBase"
+ ],
+ "hits": {
+  "BP_PC_AAMS_BlackEye": [
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_CallFunction_17",
+     "Val<-K2Node_CallFunction_16"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_CallFunction_18",
+     "Val<-K2Node_CallFunction_31"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_3",
+     "Val<-K2Node_CallFunction_16"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_4",
+     "Val<-K2Node_CallFunction_31"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_3",
+     "Val<-K2Node_CallFunction_16"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_4",
+     "Val<-K2Node_CallFunction_31"
+    ]
+   }
+  ],
+  "BP_GR_InputBase": [
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_CallFunction_17",
+     "Val<-K2Node_CallFunction_39"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_CallFunction_18",
+     "Val<-K2Node_CallFunction_24"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_CallFunction_17",
+     "Val<-K2Node_CallFunction_39"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_CallFunction_18",
+     "Val<-K2Node_CallFunction_24"
+    ]
+   }
+  ],
+  "BP_Player_MM": [
+   {
+    "graph": "CP_UpdateCloseCamera",
+    "node": "K2Node_CallFunction_142",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_CallFunction_172"
+    ]
+   }
+  ],
+  "BP_GR_Player": [
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_40",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_232",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_329",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_383",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_466",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_30",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_54",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxAcceleration",
+    "node": "K2Node_CallFunction_19",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateGroundFriction",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateGroundFriction",
+    "node": "K2Node_CallFunction_36",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CP_PhysicalRedirect",
+    "node": "K2Node_CallFunction_14",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CP_PhysicalRedirect",
+    "node": "K2Node_CallFunction_36",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CR_UpdateBackwardIntent",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GetDesiredGait",
+    "node": "K2Node_CallFunction_17",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_SolveCameraOrbit",
+    "node": "K2Node_CallFunction_1",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateIdleTurn",
+    "node": "K2Node_CallFunction_7",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CT_UpdateCameraResponse",
+    "node": "K2Node_CallFunction_16",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CT_CaptureJumpTakeoff",
+    "node": "K2Node_CallFunction_14",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_51",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_55",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_IfThenElse_20",
+     "self<-K2Node_CallFunction_53",
+     "NewRotation<-K2Node_CallFunction_54"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_175",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_35",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_40",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_133",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_227",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_232",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_329",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_383",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateRig",
+    "node": "K2Node_CallFunction_466",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_30",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxSpeed",
+    "node": "K2Node_CallFunction_54",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateMaxAcceleration",
+    "node": "K2Node_CallFunction_19",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CalculateGroundFriction",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CP_PhysicalRedirect",
+    "node": "K2Node_CallFunction_14",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CP_PhysicalRedirect",
+    "node": "K2Node_CallFunction_36",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_Impl_CR_UpdateBackwardIntent",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GetDesiredGait",
+    "node": "K2Node_CallFunction_17",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_SolveCameraOrbit",
+    "node": "K2Node_CallFunction_1",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "GR_UpdateIdleTurn",
+    "node": "K2Node_CallFunction_7",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CT_UpdateCameraResponse",
+    "node": "K2Node_CallFunction_16",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "CT_CaptureJumpTakeoff",
+    "node": "K2Node_CallFunction_14",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_51",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_55",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_IfThenElse_20",
+     "self<-K2Node_CallFunction_53",
+     "NewRotation<-K2Node_CallFunction_54"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_175",
+    "type": "GetControlRotation",
+    "in": []
+   }
+  ],
+  "BP_PBI_Player": [
+   {
+    "graph": "CT_CaptureJumpTakeoff",
+    "node": "K2Node_CallFunction_3",
+    "type": "GetControlRotation",
+    "in": []
+   }
+  ],
+  "S096_2e0d777e31_BP_PC_AAMS_BlackEye": [
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_3",
+     "Val<-K2Node_CallFunction_16"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_4",
+     "Val<-K2Node_CallFunction_31"
+    ]
+   }
+  ],
+  "S102_BP_PC_AAMS_BlackEye": [
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_0",
+    "type": "GetControlRotation",
+    "in": []
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_9",
+     "NewRotation<-K2Node_VariableGet_3"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_26",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_0",
+     "NewRotation<-K2Node_CallFunction_25"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_30",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_3",
+     "Val<-K2Node_CallFunction_16"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_32",
+    "type": "AddYawInput",
+    "in": [
+     "execute<-K2Node_EnhancedInputAction_4",
+     "Val<-K2Node_CallFunction_31"
+    ]
+   }
+  ],
+  "BP_LB_CameraCorner_lb_house_camera": [
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   },
+   {
+    "graph": "LogRigMetrics",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_DynamicCast_0"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_208",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_206",
+     "self<-K2Node_VariableGet_100",
+     "NewRotation<-K2Node_CallFunction_207"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_231",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_229",
+     "self<-K2Node_VariableGet_116",
+     "NewRotation<-K2Node_CallFunction_230"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_254",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_252",
+     "self<-K2Node_VariableGet_132",
+     "NewRotation<-K2Node_CallFunction_253"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_289",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_287",
+     "self<-K2Node_VariableGet_154",
+     "NewRotation<-K2Node_CallFunction_288"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_312",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_310",
+     "self<-K2Node_VariableGet_169",
+     "NewRotation<-K2Node_CallFunction_311"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_339",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_337",
+     "self<-K2Node_VariableGet_187",
+     "NewRotation<-K2Node_CallFunction_338"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_361",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_125",
+     "self<-K2Node_VariableGet_198",
+     "NewRotation<-K2Node_CallFunction_360"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_364",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_127",
+     "self<-K2Node_VariableGet_200",
+     "NewRotation<-K2Node_CallFunction_363"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_367",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_129",
+     "self<-K2Node_VariableGet_202",
+     "NewRotation<-K2Node_CallFunction_366"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_370",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_131",
+     "self<-K2Node_VariableGet_204",
+     "NewRotation<-K2Node_CallFunction_369"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_373",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_133",
+     "self<-K2Node_VariableGet_206",
+     "NewRotation<-K2Node_CallFunction_372"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_376",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_135",
+     "self<-K2Node_VariableGet_208",
+     "NewRotation<-K2Node_CallFunction_375"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_379",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_137",
+     "self<-K2Node_VariableGet_210",
+     "NewRotation<-K2Node_CallFunction_378"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_388",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_386",
+     "self<-K2Node_VariableGet_216",
+     "NewRotation<-K2Node_CallFunction_387"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_397",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_139",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_396"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_400",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_141",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_399"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_403",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_143",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_402"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_406",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_145",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_405"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_409",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_147",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_408"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_412",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_149",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_411"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_425",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_423",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_424"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_442",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_440",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_441"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_525",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_523",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_524"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_537",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_535",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_536"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_552",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_550",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_551"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_726",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_724",
+     "self<-K2Node_VariableGet_336",
+     "NewRotation<-K2Node_CallFunction_725"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_744",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_742",
+     "self<-K2Node_VariableGet_347",
+     "NewRotation<-K2Node_CallFunction_743"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_762",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_760",
+     "self<-K2Node_VariableGet_358",
+     "NewRotation<-K2Node_CallFunction_761"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_780",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_778",
+     "self<-K2Node_VariableGet_369",
+     "NewRotation<-K2Node_CallFunction_779"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_798",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_796",
+     "self<-K2Node_VariableGet_380",
+     "NewRotation<-K2Node_CallFunction_797"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_816",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_814",
+     "self<-K2Node_VariableGet_391",
+     "NewRotation<-K2Node_CallFunction_815"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_834",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_832",
+     "self<-K2Node_VariableGet_402",
+     "NewRotation<-K2Node_CallFunction_833"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_852",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_850",
+     "self<-K2Node_VariableGet_413",
+     "NewRotation<-K2Node_CallFunction_851"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_870",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_868",
+     "self<-K2Node_VariableGet_424",
+     "NewRotation<-K2Node_CallFunction_869"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_888",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_886",
+     "self<-K2Node_VariableGet_435",
+     "NewRotation<-K2Node_CallFunction_887"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_982",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_363",
+     "self<-K2Node_VariableGet_482",
+     "NewRotation<-K2Node_CallFunction_981"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_985",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_364",
+     "self<-K2Node_VariableGet_483",
+     "NewRotation<-K2Node_CallFunction_984"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_988",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_365",
+     "self<-K2Node_VariableGet_484",
+     "NewRotation<-K2Node_CallFunction_987"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_991",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_366",
+     "self<-K2Node_VariableGet_485",
+     "NewRotation<-K2Node_CallFunction_990"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1093",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_403",
+     "self<-K2Node_VariableGet_520",
+     "NewRotation<-K2Node_CallFunction_1092"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1096",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_404",
+     "self<-K2Node_VariableGet_521",
+     "NewRotation<-K2Node_CallFunction_1095"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1101",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_406",
+     "self<-K2Node_VariableGet_523",
+     "NewRotation<-K2Node_CallFunction_1100"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1104",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_407",
+     "self<-K2Node_VariableGet_524",
+     "NewRotation<-K2Node_CallFunction_1103"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1111",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_410",
+     "self<-K2Node_VariableGet_527",
+     "NewRotation<-K2Node_CallFunction_1110"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1114",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_411",
+     "self<-K2Node_VariableGet_528",
+     "NewRotation<-K2Node_CallFunction_1113"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1127",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_417",
+     "self<-K2Node_VariableGet_532",
+     "NewRotation<-K2Node_CallFunction_1126"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1130",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_418",
+     "self<-K2Node_VariableGet_533",
+     "NewRotation<-K2Node_CallFunction_1129"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1133",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_419",
+     "self<-K2Node_VariableGet_534",
+     "NewRotation<-K2Node_CallFunction_1132"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1136",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_420",
+     "self<-K2Node_VariableGet_535",
+     "NewRotation<-K2Node_CallFunction_1135"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1216",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_457",
+     "self<-K2Node_VariableGet_575",
+     "NewRotation<-K2Node_CallFunction_1215"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1220",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_459",
+     "self<-K2Node_VariableGet_576",
+     "NewRotation<-K2Node_CallFunction_1219"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1223",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_460",
+     "self<-K2Node_VariableGet_577",
+     "NewRotation<-K2Node_CallFunction_1222"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1226",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_461",
+     "self<-K2Node_VariableGet_578",
+     "NewRotation<-K2Node_CallFunction_1225"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1293",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_476",
+     "self<-K2Node_VariableGet_599",
+     "NewRotation<-K2Node_CallFunction_1292"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1296",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_477",
+     "self<-K2Node_VariableGet_600",
+     "NewRotation<-K2Node_CallFunction_1295"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1299",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_478",
+     "self<-K2Node_VariableGet_601",
+     "NewRotation<-K2Node_CallFunction_1298"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1302",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_479",
+     "self<-K2Node_VariableGet_602",
+     "NewRotation<-K2Node_CallFunction_1301"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1305",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_480",
+     "self<-K2Node_VariableGet_603",
+     "NewRotation<-K2Node_CallFunction_1304"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1308",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_481",
+     "self<-K2Node_VariableGet_604",
+     "NewRotation<-K2Node_CallFunction_1307"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1311",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_482",
+     "self<-K2Node_VariableGet_605",
+     "NewRotation<-K2Node_CallFunction_1310"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1314",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_483",
+     "self<-K2Node_VariableGet_606",
+     "NewRotation<-K2Node_CallFunction_1313"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1317",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_484",
+     "self<-K2Node_VariableGet_607",
+     "NewRotation<-K2Node_CallFunction_1316"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1320",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_485",
+     "self<-K2Node_VariableGet_608",
+     "NewRotation<-K2Node_CallFunction_1319"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1323",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_486",
+     "self<-K2Node_VariableGet_609",
+     "NewRotation<-K2Node_CallFunction_1322"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1326",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_487",
+     "self<-K2Node_VariableGet_610",
+     "NewRotation<-K2Node_CallFunction_1325"
+    ]
+   }
+  ],
+  "BP_CP3_ReferenceCameraQA": [
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   },
+   {
+    "graph": "LogRigMetrics",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_DynamicCast_0"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_208",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_206",
+     "self<-K2Node_VariableGet_100",
+     "NewRotation<-K2Node_CallFunction_207"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_231",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_229",
+     "self<-K2Node_VariableGet_116",
+     "NewRotation<-K2Node_CallFunction_230"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_254",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_252",
+     "self<-K2Node_VariableGet_132",
+     "NewRotation<-K2Node_CallFunction_253"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_289",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_287",
+     "self<-K2Node_VariableGet_154",
+     "NewRotation<-K2Node_CallFunction_288"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_312",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_310",
+     "self<-K2Node_VariableGet_169",
+     "NewRotation<-K2Node_CallFunction_311"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_339",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_337",
+     "self<-K2Node_VariableGet_187",
+     "NewRotation<-K2Node_CallFunction_338"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_361",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_125",
+     "self<-K2Node_VariableGet_198",
+     "NewRotation<-K2Node_CallFunction_360"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_364",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_127",
+     "self<-K2Node_VariableGet_200",
+     "NewRotation<-K2Node_CallFunction_363"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_367",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_129",
+     "self<-K2Node_VariableGet_202",
+     "NewRotation<-K2Node_CallFunction_366"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_370",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_131",
+     "self<-K2Node_VariableGet_204",
+     "NewRotation<-K2Node_CallFunction_369"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_373",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_133",
+     "self<-K2Node_VariableGet_206",
+     "NewRotation<-K2Node_CallFunction_372"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_376",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_135",
+     "self<-K2Node_VariableGet_208",
+     "NewRotation<-K2Node_CallFunction_375"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_379",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_137",
+     "self<-K2Node_VariableGet_210",
+     "NewRotation<-K2Node_CallFunction_378"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_388",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_386",
+     "self<-K2Node_VariableGet_216",
+     "NewRotation<-K2Node_CallFunction_387"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_397",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_139",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_396"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_400",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_141",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_399"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_403",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_143",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_402"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_406",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_145",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_405"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_409",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_147",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_408"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_412",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_149",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_411"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_425",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_423",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_424"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_442",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_440",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_441"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_525",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_523",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_524"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_537",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_535",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_536"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_552",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_550",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_551"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_726",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_724",
+     "self<-K2Node_VariableGet_336",
+     "NewRotation<-K2Node_CallFunction_725"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_744",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_742",
+     "self<-K2Node_VariableGet_347",
+     "NewRotation<-K2Node_CallFunction_743"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_762",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_760",
+     "self<-K2Node_VariableGet_358",
+     "NewRotation<-K2Node_CallFunction_761"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_780",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_778",
+     "self<-K2Node_VariableGet_369",
+     "NewRotation<-K2Node_CallFunction_779"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_798",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_796",
+     "self<-K2Node_VariableGet_380",
+     "NewRotation<-K2Node_CallFunction_797"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_816",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_814",
+     "self<-K2Node_VariableGet_391",
+     "NewRotation<-K2Node_CallFunction_815"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_834",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_832",
+     "self<-K2Node_VariableGet_402",
+     "NewRotation<-K2Node_CallFunction_833"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_852",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_850",
+     "self<-K2Node_VariableGet_413",
+     "NewRotation<-K2Node_CallFunction_851"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_870",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_868",
+     "self<-K2Node_VariableGet_424",
+     "NewRotation<-K2Node_CallFunction_869"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_888",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_886",
+     "self<-K2Node_VariableGet_435",
+     "NewRotation<-K2Node_CallFunction_887"
+    ]
+   }
+  ],
+  "BP_CP3_CameraCollisionQA": [
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   },
+   {
+    "graph": "LogRigMetrics",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_DynamicCast_0"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_208",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_206",
+     "self<-K2Node_VariableGet_100",
+     "NewRotation<-K2Node_CallFunction_207"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_231",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_229",
+     "self<-K2Node_VariableGet_116",
+     "NewRotation<-K2Node_CallFunction_230"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_254",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_252",
+     "self<-K2Node_VariableGet_132",
+     "NewRotation<-K2Node_CallFunction_253"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_289",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_287",
+     "self<-K2Node_VariableGet_154",
+     "NewRotation<-K2Node_CallFunction_288"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_312",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_310",
+     "self<-K2Node_VariableGet_169",
+     "NewRotation<-K2Node_CallFunction_311"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_339",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_337",
+     "self<-K2Node_VariableGet_187",
+     "NewRotation<-K2Node_CallFunction_338"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_361",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_125",
+     "self<-K2Node_VariableGet_198",
+     "NewRotation<-K2Node_CallFunction_360"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_364",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_127",
+     "self<-K2Node_VariableGet_200",
+     "NewRotation<-K2Node_CallFunction_363"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_367",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_129",
+     "self<-K2Node_VariableGet_202",
+     "NewRotation<-K2Node_CallFunction_366"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_370",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_131",
+     "self<-K2Node_VariableGet_204",
+     "NewRotation<-K2Node_CallFunction_369"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_373",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_133",
+     "self<-K2Node_VariableGet_206",
+     "NewRotation<-K2Node_CallFunction_372"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_376",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_135",
+     "self<-K2Node_VariableGet_208",
+     "NewRotation<-K2Node_CallFunction_375"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_379",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_137",
+     "self<-K2Node_VariableGet_210",
+     "NewRotation<-K2Node_CallFunction_378"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_388",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_386",
+     "self<-K2Node_VariableGet_216",
+     "NewRotation<-K2Node_CallFunction_387"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_397",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_139",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_396"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_400",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_141",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_399"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_403",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_143",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_402"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_406",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_145",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_405"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_409",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_147",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_408"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_412",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_149",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_411"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_425",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_423",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_424"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_442",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_440",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_441"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_525",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_523",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_524"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_537",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_535",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_536"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_552",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_550",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_551"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_726",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_724",
+     "self<-K2Node_VariableGet_336",
+     "NewRotation<-K2Node_CallFunction_725"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_744",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_742",
+     "self<-K2Node_VariableGet_347",
+     "NewRotation<-K2Node_CallFunction_743"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_762",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_760",
+     "self<-K2Node_VariableGet_358",
+     "NewRotation<-K2Node_CallFunction_761"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_780",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_778",
+     "self<-K2Node_VariableGet_369",
+     "NewRotation<-K2Node_CallFunction_779"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_798",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_796",
+     "self<-K2Node_VariableGet_380",
+     "NewRotation<-K2Node_CallFunction_797"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_816",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_814",
+     "self<-K2Node_VariableGet_391",
+     "NewRotation<-K2Node_CallFunction_815"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_834",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_832",
+     "self<-K2Node_VariableGet_402",
+     "NewRotation<-K2Node_CallFunction_833"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_852",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_850",
+     "self<-K2Node_VariableGet_413",
+     "NewRotation<-K2Node_CallFunction_851"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_870",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_868",
+     "self<-K2Node_VariableGet_424",
+     "NewRotation<-K2Node_CallFunction_869"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_888",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_886",
+     "self<-K2Node_VariableGet_435",
+     "NewRotation<-K2Node_CallFunction_887"
+    ]
+   }
+  ],
+  "BP_CT_JumpCameraQA": [
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   },
+   {
+    "graph": "LogRigMetrics",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_DynamicCast_0"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_208",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_206",
+     "self<-K2Node_VariableGet_100",
+     "NewRotation<-K2Node_CallFunction_207"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_231",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_229",
+     "self<-K2Node_VariableGet_116",
+     "NewRotation<-K2Node_CallFunction_230"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_254",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_252",
+     "self<-K2Node_VariableGet_132",
+     "NewRotation<-K2Node_CallFunction_253"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_289",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_287",
+     "self<-K2Node_VariableGet_154",
+     "NewRotation<-K2Node_CallFunction_288"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_312",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_310",
+     "self<-K2Node_VariableGet_169",
+     "NewRotation<-K2Node_CallFunction_311"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_339",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_337",
+     "self<-K2Node_VariableGet_187",
+     "NewRotation<-K2Node_CallFunction_338"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_361",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_125",
+     "self<-K2Node_VariableGet_198",
+     "NewRotation<-K2Node_CallFunction_360"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_364",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_127",
+     "self<-K2Node_VariableGet_200",
+     "NewRotation<-K2Node_CallFunction_363"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_367",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_129",
+     "self<-K2Node_VariableGet_202",
+     "NewRotation<-K2Node_CallFunction_366"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_370",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_131",
+     "self<-K2Node_VariableGet_204",
+     "NewRotation<-K2Node_CallFunction_369"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_373",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_133",
+     "self<-K2Node_VariableGet_206",
+     "NewRotation<-K2Node_CallFunction_372"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_376",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_135",
+     "self<-K2Node_VariableGet_208",
+     "NewRotation<-K2Node_CallFunction_375"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_379",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_137",
+     "self<-K2Node_VariableGet_210",
+     "NewRotation<-K2Node_CallFunction_378"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_388",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_386",
+     "self<-K2Node_VariableGet_216",
+     "NewRotation<-K2Node_CallFunction_387"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_397",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_139",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_396"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_400",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_141",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_399"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_403",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_143",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_402"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_406",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_145",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_405"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_409",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_147",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_408"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_412",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_149",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_411"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_425",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_423",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_424"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_442",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_440",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_441"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_525",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_523",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_524"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_537",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_535",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_536"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_552",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_550",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_551"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_726",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_724",
+     "self<-K2Node_VariableGet_336",
+     "NewRotation<-K2Node_CallFunction_725"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_744",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_742",
+     "self<-K2Node_VariableGet_347",
+     "NewRotation<-K2Node_CallFunction_743"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_762",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_760",
+     "self<-K2Node_VariableGet_358",
+     "NewRotation<-K2Node_CallFunction_761"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_780",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_778",
+     "self<-K2Node_VariableGet_369",
+     "NewRotation<-K2Node_CallFunction_779"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_798",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_796",
+     "self<-K2Node_VariableGet_380",
+     "NewRotation<-K2Node_CallFunction_797"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_816",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_814",
+     "self<-K2Node_VariableGet_391",
+     "NewRotation<-K2Node_CallFunction_815"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_834",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_832",
+     "self<-K2Node_VariableGet_402",
+     "NewRotation<-K2Node_CallFunction_833"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_852",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_850",
+     "self<-K2Node_VariableGet_413",
+     "NewRotation<-K2Node_CallFunction_851"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_870",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_868",
+     "self<-K2Node_VariableGet_424",
+     "NewRotation<-K2Node_CallFunction_869"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_888",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_886",
+     "self<-K2Node_VariableGet_435",
+     "NewRotation<-K2Node_CallFunction_887"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_982",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_363",
+     "self<-K2Node_VariableGet_482",
+     "NewRotation<-K2Node_CallFunction_981"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_985",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_364",
+     "self<-K2Node_VariableGet_483",
+     "NewRotation<-K2Node_CallFunction_984"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_988",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_365",
+     "self<-K2Node_VariableGet_484",
+     "NewRotation<-K2Node_CallFunction_987"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_991",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_366",
+     "self<-K2Node_VariableGet_485",
+     "NewRotation<-K2Node_CallFunction_990"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1093",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_403",
+     "self<-K2Node_VariableGet_520",
+     "NewRotation<-K2Node_CallFunction_1092"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1096",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_404",
+     "self<-K2Node_VariableGet_521",
+     "NewRotation<-K2Node_CallFunction_1095"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1101",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_406",
+     "self<-K2Node_VariableGet_523",
+     "NewRotation<-K2Node_CallFunction_1100"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1104",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_407",
+     "self<-K2Node_VariableGet_524",
+     "NewRotation<-K2Node_CallFunction_1103"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1111",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_410",
+     "self<-K2Node_VariableGet_527",
+     "NewRotation<-K2Node_CallFunction_1110"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1114",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_411",
+     "self<-K2Node_VariableGet_528",
+     "NewRotation<-K2Node_CallFunction_1113"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1127",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_417",
+     "self<-K2Node_VariableGet_532",
+     "NewRotation<-K2Node_CallFunction_1126"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1130",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_418",
+     "self<-K2Node_VariableGet_533",
+     "NewRotation<-K2Node_CallFunction_1129"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1133",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_419",
+     "self<-K2Node_VariableGet_534",
+     "NewRotation<-K2Node_CallFunction_1132"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1136",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_420",
+     "self<-K2Node_VariableGet_535",
+     "NewRotation<-K2Node_CallFunction_1135"
+    ]
+   }
+  ],
+  "BP_CT_CameraCorner_30": [
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_10",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   },
+   {
+    "graph": "LogRigMetrics",
+    "node": "K2Node_CallFunction_8",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_DynamicCast_0"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_208",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_206",
+     "self<-K2Node_VariableGet_100",
+     "NewRotation<-K2Node_CallFunction_207"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_231",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_229",
+     "self<-K2Node_VariableGet_116",
+     "NewRotation<-K2Node_CallFunction_230"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_254",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_252",
+     "self<-K2Node_VariableGet_132",
+     "NewRotation<-K2Node_CallFunction_253"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_289",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_287",
+     "self<-K2Node_VariableGet_154",
+     "NewRotation<-K2Node_CallFunction_288"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_312",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_310",
+     "self<-K2Node_VariableGet_169",
+     "NewRotation<-K2Node_CallFunction_311"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_339",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_337",
+     "self<-K2Node_VariableGet_187",
+     "NewRotation<-K2Node_CallFunction_338"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_361",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_125",
+     "self<-K2Node_VariableGet_198",
+     "NewRotation<-K2Node_CallFunction_360"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_364",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_127",
+     "self<-K2Node_VariableGet_200",
+     "NewRotation<-K2Node_CallFunction_363"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_367",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_129",
+     "self<-K2Node_VariableGet_202",
+     "NewRotation<-K2Node_CallFunction_366"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_370",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_131",
+     "self<-K2Node_VariableGet_204",
+     "NewRotation<-K2Node_CallFunction_369"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_373",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_133",
+     "self<-K2Node_VariableGet_206",
+     "NewRotation<-K2Node_CallFunction_372"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_376",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_135",
+     "self<-K2Node_VariableGet_208",
+     "NewRotation<-K2Node_CallFunction_375"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_379",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_137",
+     "self<-K2Node_VariableGet_210",
+     "NewRotation<-K2Node_CallFunction_378"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_388",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_386",
+     "self<-K2Node_VariableGet_216",
+     "NewRotation<-K2Node_CallFunction_387"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_397",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_139",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_396"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_400",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_141",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_399"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_403",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_143",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_402"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_406",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_145",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_405"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_409",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_147",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_408"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_412",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_149",
+     "self<-K2Node_VariableGet_221",
+     "NewRotation<-K2Node_CallFunction_411"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_425",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_423",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_424"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_442",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_440",
+     "self<-K2Node_VariableGet_229",
+     "NewRotation<-K2Node_CallFunction_441"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_525",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_523",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_524"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_537",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_535",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_536"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_552",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_550",
+     "self<-K2Node_VariableGet_246",
+     "NewRotation<-K2Node_CallFunction_551"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_726",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_724",
+     "self<-K2Node_VariableGet_336",
+     "NewRotation<-K2Node_CallFunction_725"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_744",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_742",
+     "self<-K2Node_VariableGet_347",
+     "NewRotation<-K2Node_CallFunction_743"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_762",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_760",
+     "self<-K2Node_VariableGet_358",
+     "NewRotation<-K2Node_CallFunction_761"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_780",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_778",
+     "self<-K2Node_VariableGet_369",
+     "NewRotation<-K2Node_CallFunction_779"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_798",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_796",
+     "self<-K2Node_VariableGet_380",
+     "NewRotation<-K2Node_CallFunction_797"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_816",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_814",
+     "self<-K2Node_VariableGet_391",
+     "NewRotation<-K2Node_CallFunction_815"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_834",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_832",
+     "self<-K2Node_VariableGet_402",
+     "NewRotation<-K2Node_CallFunction_833"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_852",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_850",
+     "self<-K2Node_VariableGet_413",
+     "NewRotation<-K2Node_CallFunction_851"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_870",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_868",
+     "self<-K2Node_VariableGet_424",
+     "NewRotation<-K2Node_CallFunction_869"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_888",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_CallFunction_886",
+     "self<-K2Node_VariableGet_435",
+     "NewRotation<-K2Node_CallFunction_887"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_982",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_363",
+     "self<-K2Node_VariableGet_482",
+     "NewRotation<-K2Node_CallFunction_981"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_985",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_364",
+     "self<-K2Node_VariableGet_483",
+     "NewRotation<-K2Node_CallFunction_984"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_988",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_365",
+     "self<-K2Node_VariableGet_484",
+     "NewRotation<-K2Node_CallFunction_987"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_991",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_366",
+     "self<-K2Node_VariableGet_485",
+     "NewRotation<-K2Node_CallFunction_990"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1093",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_403",
+     "self<-K2Node_VariableGet_520",
+     "NewRotation<-K2Node_CallFunction_1092"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1096",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_404",
+     "self<-K2Node_VariableGet_521",
+     "NewRotation<-K2Node_CallFunction_1095"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1101",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_406",
+     "self<-K2Node_VariableGet_523",
+     "NewRotation<-K2Node_CallFunction_1100"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1104",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_407",
+     "self<-K2Node_VariableGet_524",
+     "NewRotation<-K2Node_CallFunction_1103"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1111",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_410",
+     "self<-K2Node_VariableGet_527",
+     "NewRotation<-K2Node_CallFunction_1110"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1114",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_411",
+     "self<-K2Node_VariableGet_528",
+     "NewRotation<-K2Node_CallFunction_1113"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1127",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_417",
+     "self<-K2Node_VariableGet_532",
+     "NewRotation<-K2Node_CallFunction_1126"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1130",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_418",
+     "self<-K2Node_VariableGet_533",
+     "NewRotation<-K2Node_CallFunction_1129"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1133",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_419",
+     "self<-K2Node_VariableGet_534",
+     "NewRotation<-K2Node_CallFunction_1132"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1136",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_420",
+     "self<-K2Node_VariableGet_535",
+     "NewRotation<-K2Node_CallFunction_1135"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1216",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_457",
+     "self<-K2Node_VariableGet_575",
+     "NewRotation<-K2Node_CallFunction_1215"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1220",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_459",
+     "self<-K2Node_VariableGet_576",
+     "NewRotation<-K2Node_CallFunction_1219"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1223",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_460",
+     "self<-K2Node_VariableGet_577",
+     "NewRotation<-K2Node_CallFunction_1222"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1226",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_461",
+     "self<-K2Node_VariableGet_578",
+     "NewRotation<-K2Node_CallFunction_1225"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1293",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_476",
+     "self<-K2Node_VariableGet_599",
+     "NewRotation<-K2Node_CallFunction_1292"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1296",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_477",
+     "self<-K2Node_VariableGet_600",
+     "NewRotation<-K2Node_CallFunction_1295"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1299",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_478",
+     "self<-K2Node_VariableGet_601",
+     "NewRotation<-K2Node_CallFunction_1298"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1302",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_479",
+     "self<-K2Node_VariableGet_602",
+     "NewRotation<-K2Node_CallFunction_1301"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1305",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_480",
+     "self<-K2Node_VariableGet_603",
+     "NewRotation<-K2Node_CallFunction_1304"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1308",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_481",
+     "self<-K2Node_VariableGet_604",
+     "NewRotation<-K2Node_CallFunction_1307"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1311",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_482",
+     "self<-K2Node_VariableGet_605",
+     "NewRotation<-K2Node_CallFunction_1310"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1314",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_483",
+     "self<-K2Node_VariableGet_606",
+     "NewRotation<-K2Node_CallFunction_1313"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1317",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_484",
+     "self<-K2Node_VariableGet_607",
+     "NewRotation<-K2Node_CallFunction_1316"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1320",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_485",
+     "self<-K2Node_VariableGet_608",
+     "NewRotation<-K2Node_CallFunction_1319"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1323",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_486",
+     "self<-K2Node_VariableGet_609",
+     "NewRotation<-K2Node_CallFunction_1322"
+    ]
+   },
+   {
+    "graph": "EventGraph",
+    "node": "K2Node_CallFunction_1326",
+    "type": "SetControlRotation",
+    "in": [
+     "execute<-K2Node_VariableSet_487",
+     "self<-K2Node_VariableGet_610",
+     "NewRotation<-K2Node_CallFunction_1325"
+    ]
+   }
+  ],
+  "BP_GR_CameraQA": [
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_7",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   },
+   {
+    "graph": "Sample",
+    "node": "K2Node_CallFunction_12",
+    "type": "GetControlRotation",
+    "in": [
+     "self<-K2Node_VariableGet_1"
+    ]
+   }
+  ]
+ }
+}

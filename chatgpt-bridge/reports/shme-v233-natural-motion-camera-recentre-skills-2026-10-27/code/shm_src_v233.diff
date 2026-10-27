@@ -1,0 +1,75 @@
+--- Saved/Codex/SHME_V233_20261027/checkpoint/tools/shm_src.py	2026-10-27 04:19:39.081604100 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-27 16:06:23.782539600 +0300
+@@ -780,7 +780,7 @@
+ fn('SHM_Telemetry', [], [], r'''
+ (fn SHM_Telemetry ()
+   (set TelemetryTimer 0.0)
+-  (Geliştirme|PrintString :bPrintToScreen false :bPrintToLog true :Duration 0.0 :InString
++  (set TelemetryLine   ; V2.33: no PrintString - qa_pie copies this line into the SHM side file (Output Log growth owner)
+     (str "SHM|" TelemetryLabel "|gt=" (fs (İşlevsellikler|Zaman|GetGameTimeinSeconds))
+          "|spd=" (fs Speed) "|acc=" (fs (vlenxy Accel)) "|yawr=" (fs YawRate) "|gr=" (bs Grounded)
+          "|turn=" (fs TurnAngle) "|tsev=" (fs TurnSeverity) "|brk=" (fs BrakingDemand) "|rev=" (fs ReversalDemand)
+@@ -1373,7 +1373,7 @@
+   ; the new follow place) through a critically damped smoother. Player look (control yaw rate) wins: target 0 during a look and for
+   ; CamOrbitLookHold s after it, with the faster CamOrbitLookTau settle. Teleport / PIE start resets it.
+   (bind (ocr ocp ocy) (Matematik|Döndürücü|BreakRotator :InRot (Piyon|GetControlRotation :self OwnerChar)))
+-  (bind od0 (- ocy CamOrbitPrevCtl))
++  (bind od0 (- (- ocy CamOrbitPrevCtl) CamRecDelta))   ; V2.33: minus the auto recentre's own last-frame turn (else it reads as a player look)
+   (bind odc (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A od0) :X (Matematik|Trig|Cos(Degrees) :A od0)))
+   (bind olook (and CamOrbitInit (> (abs (/ odc (max h 0.001))) (R CamOrbitLookRate))))
+   (bind olt (select (or olook tele) 0.0 (+ CamOrbitLookT dt)))
+@@ -1399,6 +1399,54 @@
+   (set CamOrbitLookT olt)
+   (set CamOrbitPrevCtl ocy)
+   (set CamOrbitInit true)
++  ; ---- V2.33 camera direction (sphirus-camera-direction): FOLLOW -> REACTION (the orbit above) -> SETTLE -> AUTO RECENTRE behind the
++  ; stable travel direction without the right stick (CamRecEnabled). Output CamRecDelta = deg added to the CONTROL yaw this frame by
++  ; BP_GR_Player (the only writer while LookDrivenLocomotion). Critically damped angular velocity CamRecVel (eases in and out, no overshoot,
++  ; no constant-rate sweep). Conditions are body states, not a timer: grounded, moving > CamRecMinSpeed, travel direction stable (turn rate
++  ; < CamRecTravelRate for CamRecStable s), no brake / reversal / redirect episode, no player look for CamRecLookHold s (a look this frame
++  ; stops it at once: the seen angle is kept, no jump to an old centre), no inspection, error between CamRecDead and CamRecMaxErr deg
++  ; (backward travel - error near 180 - never turns the view around). CamRecState: 0 follow, 1 reaction (orbit), 2 settle, 3 recentre.
++  (bind rty (Matematik|Trig|Atan2(Degrees) :Y (.y PlanarVelocity) :X (.x PlanarVelocity)))
++  (bind rtd0 (- rty CamRecPrevTravel))
++  (bind rtd (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A rtd0) :X (Matematik|Trig|Cos(Degrees) :A rtd0)))
++  (bind rmov (and Grounded (> Speed (R CamRecMinSpeed))))
++  (bind rstab (and rmov (< (abs (/ rtd (max h 0.001))) (R CamRecTravelRate))))
++  (bind rst (select (or tele (not rstab)) 0.0 (+ CamRecStableT dt)))
++  (bind re0 (- rty ocy))
++  (bind re (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A re0) :X (Matematik|Trig|Cos(Degrees) :A re0)))
++  (bind rcalm (and (< BrakingDemand 0.12) (and (< ReversalDemand 0.12) (not RedirectActive))))
++  ; pure-bind rule (V2.14 / V2.32 trap): a bind re-evaluates at every consumer - the look timer is read from the STORED CamOrbitLookT (set
++  ; above before CamOrbitPrevCtl; re-evaluating olt here would read this frame's own turn as a player look), and every state var is
++  ; written only after all outputs that depend on its OLD value (delta -> state -> latch -> velocity -> stable time -> previous travel)
++  (bind rok (and (R CamRecEnabled) (and (> rst (R CamRecStable)) (and rcalm (and (> CamOrbitLookT (R CamRecLookHold)) (and (< InspectOn 0.05) (and (> (abs re) (R CamRecDead)) (< (abs re) (R CamRecMaxErr)))))))))
++  (bind rw (R CamRecFreq))
++  (bind racc (select rok (- (* (* rw rw) re) (* (* 2.0 rw) CamRecVel)) (- 0.0 (* (* 2.0 rw) CamRecVel))))
++  (bind rv1 (clamp (+ CamRecVel (* racc h)) (- 0.0 (R CamRecMaxRate)) (R CamRecMaxRate)))
++  (bind rv (select (or tele (or (< CamOrbitLookT 0.05) (not (R CamRecEnabled)))) 0.0 rv1))
++  (set CamRecDelta (* (* rv h) (clamp CamRecScale 0.0 1.0)))   ; device profile scale written by BP_GR_Player (gamepad 1.0, mouse 0.35)
++  (set CamRecState (select rok 3.0 (select (> (abs rv) 0.5) 2.0 (select (> (abs CamOrbitYaw) 1.0) 1.0 0.0))))
++  ; ---- V2.33 movement input frame latch (no circles / zig-zag while the view turns): when the auto recentre starts turning the view while
++  ; a move input is held, the WORLD direction of that input is kept (MoveLatchYaw = the control yaw at that moment; the AAMS move handler
++  ; builds its frame from it). A deliberate new input (world input direction changes > 30 deg), a release or a player look hands the frame
++  ; back to the live control yaw in ~0.1 s (MoveLatchState 2) - a new deliberate input is camera-relative to the view the player sees.
++  (bind miv DesiredDir)   ; the held move input's world direction (CMC current acceleration, SHM_UpdateState)
++  (bind mheld HasIntent)
++  (bind miy (Matematik|Trig|Atan2(Degrees) :Y (.y miv) :X (.x miv)))
++  (bind mdy0 (- miy MoveLatchInYaw))
++  (bind mdy (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A mdy0) :X (Matematik|Trig|Cos(Degrees) :A mdy0)))
++  (bind mst0 MoveLatchState)
++  (bind mengage (and (R CamRecEnabled) (and mheld (and (> (abs rv) 2.0) (< mst0 0.5)))))
++  (bind mkeep (and mheld (and (< (abs mdy) 30.0) (> CamOrbitLookT 0.05))))
++  (bind mld0 (- ocy MoveLatchYaw))
++  (bind mld (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A mld0) :X (Matematik|Trig|Cos(Degrees) :A mld0)))
++  (set MoveLatchStateN (select (< mst0 0.5) (select mengage 1.0 0.0) (select (< mst0 1.5) (select mkeep 1.0 (select mheld 2.0 0.0)) (select (< (abs mld) 1.0) 0.0 2.0))))
++  (set MoveLatchYaw (select mengage ocy (select (> MoveLatchStateN 1.5) (+ MoveLatchYaw (* mld (- 1.0 (exp (/ (- 0.0 h) 0.06))))) (select (< MoveLatchStateN 0.5) ocy MoveLatchYaw))))
++  (set MoveLatchInYaw (select mengage miy (select (and (> MoveLatchStateN 0.5) (< MoveLatchStateN 1.5)) MoveLatchInYaw miy)))
++  (set MoveLatchState MoveLatchStateN)
++  (set MoveLatchOn (> MoveLatchStateN 0.5))
++  (set CamRecVel rv)
++  (set CamRecStableT rst)
++  (set CamRecPrevTravel rty)
+   ; comfort scale (CamComfortScale 1 = authored, ~0.3 = low-motion profile): the WHOLE SHME camera offset and FOV change
+   (bind cs (clamp (R CamComfortScale) 0.0 1.0))
+   (set CamOffset (vscale CamOffset cs))

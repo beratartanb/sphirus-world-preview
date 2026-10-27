@@ -1,0 +1,107 @@
+{
+ "asset": [
+  "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/BP_ExampleCharacter_MotionMatching"
+ ],
+ "trees": [
+  {
+   "AddMovementInput K2Node_CallFunction_74": {
+    "WorldDirection": [
+     {
+      "DetermineMovement K2Node_CallFunction_80": {
+       "self": [
+        {
+         "GetAC_State_AAMS K2Node_VariableGet_35": {}
+        }
+       ],
+       "Direction": [
+        {
+         "GetRightVector K2Node_CallFunction_55": {
+          "InRot_Roll": "0.0",
+          "InRot_Pitch": "0.0",
+          "InRot_Yaw": [
+           {
+            "GetControlRotation K2Node_CallFunction_28": {}
+           }
+          ]
+         }
+        }
+       ],
+       "Scale": [
+        {
+         "YenidenY\u00f6nlendirmeD\u00fc\u011f\u00fcm\u00fc K2Node_Knot_9": {
+          "InputPin": [
+           {
+            "GetMovementInputScaleValue K2Node_CallFunction_83": {
+             "Input": [
+              {
+               "EnhancedInputActionIA_Move K2Node_EnhancedInputAction_0": {}
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "bFront?": "false"
+      }
+     }
+    ],
+    "ScaleValue": [
+     "..."
+    ],
+    "bForce": "false"
+   }
+  },
+  {
+   "AddMovementInput K2Node_CallFunction_90": {
+    "WorldDirection": [
+     {
+      "DetermineMovement K2Node_CallFunction_88": {
+       "self": [
+        {
+         "GetAC_State_AAMS K2Node_VariableGet_42": {}
+        }
+       ],
+       "Direction": [
+        {
+         "GetForwardVector K2Node_CallFunction_39": {
+          "InRot_Roll": "0.0",
+          "InRot_Pitch": "0.0",
+          "InRot_Yaw": [
+           {
+            "GetControlRotation K2Node_CallFunction_78": {}
+           }
+          ]
+         }
+        }
+       ],
+       "Scale": [
+        {
+         "YenidenY\u00f6nlendirmeD\u00fc\u011f\u00fcm\u00fc K2Node_Knot_8": {
+          "InputPin": [
+           {
+            "GetMovementInputScaleValue K2Node_CallFunction_83": {
+             "Input": [
+              {
+               "EnhancedInputActionIA_Move K2Node_EnhancedInputAction_0": {}
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "bFront?": "true"
+      }
+     }
+    ],
+    "ScaleValue": [
+     "..."
+    ],
+    "bForce": "false"
+   }
+  }
+ ]
+}

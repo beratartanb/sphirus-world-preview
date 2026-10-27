@@ -1,0 +1,8 @@
+scenario             | o worst(r1,r2) blips   | sc worst(r1,r2) blips  | camera sc: orbit 3/4s jerk95 dBody
+cam32_chain          | 6.5,11.5 b2            | 11.5,11.5 b2           | 13.7 0.40 0.56 0.0
+cam32_s90            | 11.5,11.5 b2           | 11.5,11.5 b2           | 13.7 0.40 0.60 0.0
+cam33_sturn          | 7.1,11.0 b2            | 9.4,14.0 b2            | 13.8 0.40 0.62 0.0
+d_sprint             | 16.1,25.6 b0           | 17.2,16.1 b0           | 
+legs_slope_sprint    | 17.2,25.4 b0           | 25.4,25.4 b0           | 
+s29_swl12            | 27.8,6.5 b1            | 10.3,6.5 b0            | 
+TABLES233 o: median 14.3 cm, runs>20cm 3/12, blips 7 sc: median 11.6 cm, runs>20cm 2/12, blips 6

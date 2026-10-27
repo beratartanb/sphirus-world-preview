@@ -1,0 +1,42 @@
+{
+ "asset": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_GR_Player"
+ ],
+ "trees": [
+  {
+   "SetControlRotation K2Node_CallFunction_55": {
+    "self": [
+     {
+      "GetController K2Node_CallFunction_53": {}
+     }
+    ],
+    "NewRotation": [
+     {
+      "MakeRotator K2Node_CallFunction_54": {
+       "Roll": "0.0",
+       "Pitch": [
+        {
+         "BreakRotator K2Node_CallFunction_52": {
+          "InRot": [
+           {
+            "GetControlRotation K2Node_CallFunction_51": {}
+           }
+          ]
+         }
+        }
+       ],
+       "Yaw": [
+        {
+         "GetTW_CameraWorldYaw K2Node_VariableGet_24": {}
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "parents": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/BP_GR_Player.BP_GR_Player_C"
+ ]
+}

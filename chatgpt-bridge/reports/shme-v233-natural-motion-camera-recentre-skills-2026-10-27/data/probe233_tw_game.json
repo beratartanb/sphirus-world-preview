@@ -1,0 +1,324 @@
+{
+ "graphs": [
+  "UserConstructionScript",
+  "GR_Initialize",
+  "GR_UpdateRig",
+  "CalculateMaxSpeed",
+  "CalculateMaxCrouchSpeed",
+  "CalculateMaxAcceleration",
+  "CalculateBrakingDeceleration",
+  "CalculateBrakingFriction",
+  "CalculateGroundFriction",
+  "GetMovementInputScaleValue",
+  "GR_Impl_CP_PhysicalRedirect",
+  "GR_Impl_CP_UpdateCloseCamera",
+  "GR_Impl_CR_UpdateBackwardIntent",
+  "GetDesiredGait",
+  "GR_ReleaseGait",
+  "GR_SolveCameraOrbit",
+  "GR_UpdateIdleTurn",
+  "GR_SyncPhysicalStance",
+  "GR_UpdateActionContext",
+  "GR_ConfigureDoorAnchors",
+  "GR_CameraSafeOrigin",
+  "GR_LogCameraCollision",
+  "GR_UpdateCrouchTransitions",
+  "GR_UpdateLadderFraming",
+  "GR_UpdateCoreContact",
+  "GR_CheckContactStepSpace",
+  "CT_UpdateCameraResponse",
+  "CT_UpdateCameraHeight",
+  "CT_CaptureJumpTakeoff",
+  "GR_ResolveCollisionHistory",
+  "GR_UpdateSHMSignals",
+  "EventGraph"
+ ],
+ "sets": {
+  "GR_UpdateRig": [
+   "SetContinuityRevision",
+   "SetTW_CameraWorldYaw"
+  ],
+  "CT_UpdateCameraResponse": [
+   "SetCT_VisualCameraYaw"
+  ],
+  "EventGraph": [
+   "SetTW_LastBodyTurnTime",
+   "SetTW_LastLookTime"
+  ]
+ },
+ "gets": {
+  "GR_Initialize": [
+   "TW_EnsureCameraYaw"
+  ],
+  "GR_UpdateRig": [
+   "GetCT_VisualCameraYaw",
+   "GetCameraFollowRun",
+   "GetCameraFollowWalk",
+   "GetContinuityRevision",
+   "GetTW_CameraWorldYaw",
+   "GetTW_LastLookTime"
+  ],
+  "GetDesiredGait": [
+   "GetContinuityRevision"
+  ],
+  "GR_SolveCameraOrbit": [
+   "GetTW_CameraWorldYaw"
+  ],
+  "GR_UpdateIdleTurn": [
+   "GetTW_LastLookTime"
+  ],
+  "GR_UpdateLadderFraming": [
+   "GetTW_LastLookTime"
+  ],
+  "CT_UpdateCameraResponse": [
+   "GetContinuityRevision"
+  ],
+  "CT_UpdateCameraHeight": [
+   "GetContinuityRevision"
+  ],
+  "EventGraph": [
+   "GetContinuityRevision",
+   "GetTW_CameraWorldYaw",
+   "OlayTW_CameraLookPulse",
+   "OlayTW_RebaseCameraIntent",
+   "TW_EnsureCameraYaw"
+  ]
+ },
+ "branch20": {
+  "Dal K2Node_IfThenElse_20": {
+   "Condition": [
+    {
+     "GetLookDrivenLocomotion K2Node_VariableGet_58": {
+      "self": [
+       {
+        "GetGR_Profile K2Node_VariableGet_57": {}
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "tw_set_trees": [
+  {
+   "GR_UpdateRig": {
+    "SetTW_CameraWorldYaw K2Node_VariableSet_3": {
+     "TW_CameraWorldYaw": [
+      {
+       "SelectFloat K2Node_CallFunction_331": {
+        "A": [
+         {
+          "BreakRotator K2Node_CallFunction_330": {
+           "InRot": [
+            {
+             "GetControlRotation K2Node_CallFunction_329": {}
+            }
+           ]
+          }
+         }
+        ],
+        "B": [
+         {
+          "SelectFloat K2Node_CallFunction_284": {
+           "A": [
+            {
+             "BreakRotator K2Node_CallFunction_283": {
+              "InRot": [
+               {
+                "RInterpTo_Constant K2Node_CallFunction_282": {
+                 "Current": [
+                  {
+                   "MakeRotator K2Node_CallFunction_277": {
+                    "Roll": "0.0",
+                    "Pitch": "0.0",
+                    "Yaw": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ],
+                 "Target": [
+                  {
+                   "MakeRotator K2Node_CallFunction_280": {
+                    "Roll": "0.0",
+                    "Pitch": "0.0",
+                    "Yaw": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ],
+                 "DeltaTime": [
+                  {
+                   "GetWorldDeltaSeconds K2Node_CallFunction_281": {}
+                  }
+                 ],
+                 "InterpSpeed": "80"
+                }
+               }
+              ]
+             }
+            }
+           ],
+           "B": [
+            {
+             "SelectFloat K2Node_CallFunction_231": {
+              "A": [
+               {
+                "NormalizeAxis K2Node_CallFunction_240": {
+                 "Angle": [
+                  {
+                   "DotProduct K2Node_CallFunction_239": {
+                    "A": [
+                     "..."
+                    ],
+                    "B": "(X=1,Y=1,Z=0)"
+                   }
+                  }
+                 ]
+                }
+               }
+              ],
+              "B": [
+               {
+                "SelectFloat K2Node_CallFunction_230": {
+                 "A": [
+                  {
+                   "BreakRotator K2Node_CallFunction_229": {
+                    "InRot": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ],
+                 "B": [
+                  {
+                   "GetTW_CameraWorldYaw K2Node_VariableGet_166": {}
+                  }
+                 ],
+                 "bPickA": [
+                  {
+                   "ANDBoolean K2Node_CommutativeAssociativeBinaryOperator_24": {
+                    "A": [
+                     "..."
+                    ],
+                    "B": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ]
+                }
+               }
+              ],
+              "bPickA": [
+               {
+                "InRange(Float) K2Node_CallFunction_200": {
+                 "Value": [
+                  {
+                   "DotProduct K2Node_CallFunction_198": {
+                    "A": [
+                     "..."
+                    ],
+                    "B": "(X=1,Y=-1,Z=0)"
+                   }
+                  }
+                 ],
+                 "Min": "0.0",
+                 "Max": [
+                  {
+                   "GetManualLookHold K2Node_VariableGet_154": {
+                    "self": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ],
+                 "InclusiveMin": "true",
+                 "InclusiveMax": "true"
+                }
+               }
+              ]
+             }
+            }
+           ],
+           "bPickA": [
+            {
+             "ANDBoolean K2Node_CommutativeAssociativeBinaryOperator_23": {
+              "A": [
+               {
+                "GetOnLadder? K2Node_CallFunction_270": {
+                 "self": [
+                  {
+                   "GetAC_Adventure_AAMS K2Node_VariableGet_173": {}
+                  }
+                 ]
+                }
+               }
+              ],
+              "B": [
+               {
+                "ANDBoolean K2Node_CommutativeAssociativeBinaryOperator_22": {
+                 "A": [
+                  {
+                   "NOTBoolean K2Node_CallFunction_275": {
+                    "A": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ],
+                 "B": [
+                  {
+                   "IsFlying K2Node_CallFunction_276": {
+                    "self": [
+                     "..."
+                    ]
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ],
+        "bPickA": [
+         {
+          "ORBoolean K2Node_CommutativeAssociativeBinaryOperator_52": {
+           "A": [
+            {
+             "GetLookDrivenLocomotion K2Node_VariableGet_199": {
+              "self": [
+               {
+                "GetGR_Profile K2Node_VariableGet_198": {}
+               }
+              ]
+             }
+            }
+           ],
+           "B": [
+            {
+             "GetGR215_CamYawFromControl K2Node_VariableGet_20": {
+              "self": [
+               {
+                "GetGR_Profile K2Node_VariableGet_13": {}
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+scenario             | o worst(r1,r2) blips   | sb22 worst(r1,r2) blips | camera sb22: orbit 3/4s jerk95 dBody
+d_back               | 31.3,38.3 b2           | 9.3,9.3 b0             | 
+j30_rel_3200         | 35.0,30.8 b4           | 35.0,50.0 b4           | 
+j30_rel_3450         | 19.4,15.5 b2           | 26.8,19.4 b2           | 
+j30_slow             | 38.3,38.3 b2           | 22.1,22.1 b0           | 
+jback                | 31.3,38.3 b2           | 5.2,14.4 b0            | 
+jstart               | 55.5,46.0 b16          | 45.8,45.8 b16          | 
+k_jogback            | 13.2,10.7 b2           | 13.2,10.7 b2           | 
+TABLES233 o: median 34.8 cm, runs>20cm 10/14, blips 30 sb22: median 22.1 cm, runs>20cm 7/14, blips 24

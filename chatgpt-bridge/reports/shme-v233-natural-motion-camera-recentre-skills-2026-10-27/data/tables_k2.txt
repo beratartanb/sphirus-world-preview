@@ -1,0 +1,17 @@
+scenario             | o worst(r1,r2) blips   | rec worst(r1,r2) blips | camera rec: orbit 3/4s jerk95 dBody
+c30_calm             | 17.9 b0                | 6.5 b0                 | 
+cam32_brk2           | 11.5 b0                | 6.5 b0                 | 7.5 0.80 0.91 108.7
+cam32_wallturn       | 13.1 b1                | 6.6 b1                 | 5.2 1.00 1.33 108.8
+cam33_back           | 9.4 b0                 | 9.4 b0                 | 0.0 0.00 0.37 0.0
+cam33_idlelook       | 0.0 b0                 | 0.0 b0                 | 0.0 0.00 20.39 0.0
+cam33_jturn          | 7.6 b0                 | 6.5 b0                 | 0.6 0.00 0.32 85.5
+cam33_look           | 6.6 b0                 | 9.1 b0                 | 0.5 0.00 0.33 83.0
+cam33_pad            | 8.0 b0                 | 6.5 b0                 | 0.6 0.00 0.32 85.5
+cam33_sturn          | 6.5 b1                 | 6.5 b1                 | 11.6 1.00 0.67 296.7
+cam33_wturn          | 12.7 b0                | 12.6 b0                | 0.6 0.00 0.33 85.5
+cam33_wturn_w        | 15.3 b0                | 17.7 b0                | 0.6 0.00 0.35 555.9
+cam_corr             | 34.3 b1                | 34.3 b1                | 0.0 0.00 2.99 0.0
+ins_ws               | 10.4 b1                | 10.4 b1                | 0.0 0.00 1.13 0.0
+legs_slope_sprint    | 25.4 b0                | 25.4 b0                | 
+map_r1               | 249.3 b3               | 249.3 b3               | 10.2 0.67 1.66 37.9
+TABLES233 o: median 11.5 cm, runs>20cm 3/15, blips 7 rec: median 9.1 cm, runs>20cm 3/15, blips 7

@@ -1,0 +1,68 @@
+--- Saved/Codex/SHME_V233_20261027/checkpoint/tools/qa_pie.py	2026-10-27 03:28:37.674043400 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-27 17:55:48.785717000 +0300
+@@ -53,12 +53,15 @@
+         for key, vals in keys.items():
+             for path, v0 in vals.items(): _sp(_obj(cat, path), key, u.load_asset(v0) if isinstance(v0, str) and v0.startswith('/Game/') else v0)
+ def _apply(cat, flags):
++    # V2.33: record EVERY target's original first, then set (two passes): a child Blueprint CDO (BP_PBI_Player) inherits a parent CDO change
++    # (BP_GR_Player) at once, so a single pass recorded the child's 'original' AFTER the parent was set -> the restore kept the candidate
++    # value in the child = the pawn (GR233_RecMouseScale leaked from the Qp runs into the next Q runs, F30 2026-10-27)
+     for key, val in (flags or {}).items():
++        if key not in TOUCHED[cat]: TOUCHED[cat][key] = {}
+         for path in _TARGETS[cat]:
+-            o_ = _obj(cat, path)
+-            if key not in TOUCHED[cat]: TOUCHED[cat][key] = {}
+-            if path not in TOUCHED[cat][key]: TOUCHED[cat][key][path] = _norm(_gp(o_, key))
+-            _sp(o_, key, u.load_asset(val) if isinstance(val, str) and val.startswith('/Game/') else val)
++            if path not in TOUCHED[cat][key]: TOUCHED[cat][key][path] = _norm(_gp(_obj(cat, path), key))
++        for path in _TARGETS[cat]:
++            _sp(_obj(cat, path), key, u.load_asset(val) if isinstance(val, str) and val.startswith('/Game/') else val)
+ _restore()
+ if MODE == 'candidate':
+     _apply('behavior', req.get('behavior_flags')); _apply('pbi', req.get('pbi_flags')); _apply('pawn', req.get('pawn_flags'))
+@@ -453,7 +456,7 @@
+             u.log_error('SHM_STATE mismatch ' + str(_diffkeys) + ' dirty_base ' + str(STATE0.get('dirty_base'))); status = 'INVALID_STATE'
+     except Exception as e: STATE1 = {'err': str(e)[:200]}; _diffkeys = {'err': 1}
+     (N / (label + '_state.json')).write_text(json.dumps({'mode': MODE, 'start': STATE0, 'end': STATE1, 'diff': _diffkeys}, indent=1, default=str))
+-    (N / (label + '_pie.json')).write_text(json.dumps({'status': status, 'state_mode': MODE, 'state_diff': _diffkeys, 'seconds': round(time.monotonic() - st['t'], 1), 'log_start': start_size, 'take': (st.get('take') or {}).get('rec'), 'take_seq': (st.get('take') or {}).get('seq'), 'mcap': {k_: v_ for k_, v_ in (st.get('mcap') or {}).items() if k_ not in ('cap', 'out')}}))
++    (N / (label + '_pie.json')).write_text(json.dumps({'status': status, 'state_mode': MODE, 'state_diff': _diffkeys, 'seconds': round(time.monotonic() - st['t'], 1), 'log_start': start_size, 'take': (st.get('take') or {}).get('rec'), 'take_seq': (st.get('take') or {}).get('seq'), 'mcap': {k_: v_ for k_, v_ in (st.get('mcap') or {}).items() if k_ not in ('cap', 'out')}, 'bp_errors': st.get('errs', 0), 'bp_error_first': st.get('err_first'), 'shm_side': st.get('shm_path')}))
+     u.log('LR_PIE_DONE ' + label + ' ' + status)
+ def MW(ai_, mon):
+     """V2.16: montage position, slot local weight and blend-in time of the active montage (first-frame handoff record)"""
+@@ -659,6 +662,19 @@
+                 def V(n):
+                     l = m.get_socket_location(n); return 'X=%.3f Y=%.3f Z=%.3f' % (l.x, l.y, l.z)
+                 _ltp('LTP|%s|stage=%s|t=%.3f|dt=%.4f|Speed2D=%.1f|cy=%.1f|ay=%.1f|my=%.1f|py=%.1f|mh_ball_l=%s|mh_ball_r=%s|mh_pelvis=%s|mh_root=%s|mh_head=%s|camera=%s|camrot=%s|fov=%.1f|mh_chest=%s|mh_shoulder=%s|%s' % (label, stage, gt, dt, (v.x * v.x + v.y * v.y) ** 0.5, cur, pw.get_actor_rotation().yaw, m.get_world_rotation().yaw, m.get_socket_rotation('pelvis').yaw, V('ball_l'), V('ball_r'), V('pelvis'), V('root'), V('head'), CAM(pc)[0], CAM(pc)[1], CAM(pc)[2], V('spine_03'), V('clavicle_r'), MV(pw)))
++                # V2.33: SHM| telemetry goes to Saved/Codex/SHME_V1_20260925/SHM/<label>.shm (component TelemetryLine) instead of the editor log
++                c_ = st.get('shmc2')
++                if c_ is None:
++                    c_ = [c for c in pw.get_components_by_class(u.ActorComponent) if 'SHM_HumanMotion' in c.get_class().get_name()]; c_ = c_[0] if c_ else False; st['shmc2'] = c_
++                if c_:
++                    try: tl_ = c_.get_editor_property('TelemetryLine')
++                    except Exception: tl_ = None
++                    if tl_ and tl_ != st.get('shm_last'):
++                        st['shm_last'] = tl_
++                        if not st.get('shm_path'):
++                            d_ = os.path.join(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Saved/Codex/SHME_V1_20260925', 'SHM'); os.makedirs(d_, exist_ok=True)
++                            st['shm_path'] = os.path.join(d_, label + '.shm'); open(st['shm_path'], 'w', encoding='utf8').close()
++                        with open(st['shm_path'], 'a', encoding='utf8') as fh_: fh_.write(tl_ + chr(10))
+         if SH and st.get('rec') and now - st['shot'] >= SH:
+             st['shot'] = now; st['n'] += 1; u.SystemLibrary.execute_console_command(gw, req.get('shot_cmd', 'Shot'))   # V2.6: 'HighResShot 1' writes a PNG ('Shot' only traces in 5.8)
+         if now - st.get('chk', 0) < (0.25 if not st.get('rec') else 1): return
+@@ -666,6 +682,16 @@
+         with open(LOG, 'rb') as f:
+             f.seek(st['pos']); chunk = f.read(); st['pos'] = max(st['pos'], f.tell() - 200)
+         if b'PBI_CAPTURE_START|run=' + label.encode() in chunk: st['rec'] = True
++        # V2.33 early error stop: a repeated Blueprint runtime error flood (V2.32 LastHitBy: 3 per frame for hours) ends the run at once with
++        # the first cause kept (ERROR_FLOOD); single errors only count. ERR_MAX via request 'err_max' (default 200 per run).
++        _ek = (b'Accessed None', b'Blueprint Runtime Error', 'Blueprint Çalışma Zamanı Hatası'.encode('utf8'))
++        _en = sum(chunk.count(k_) for k_ in _ek)
++        if _en:
++            st['errs'] = st.get('errs', 0) + _en
++            if not st.get('err_first'):
++                for ln_ in chunk.split(chr(10).encode()):
++                    if any(k_ in ln_ for k_ in _ek): st['err_first'] = ln_.decode('utf8', 'replace')[-400:]; break
++            if st['errs'] > int(req.get('err_max', 200)): u.log_error('SHM_ERROR_FLOOD %s errors=%d first=%s' % (label, st['errs'], st.get('err_first'))); done('ERROR_FLOOD'); return
+         if ('LTP_FINISHED|' + label).encode() in chunk or ('PBI_FINISHED|run=' + label).encode() in chunk: done('FINISHED'); return
+         if now - st['t'] > timeout: done('TIMEOUT')
+     except Exception as e:

@@ -1,0 +1,26 @@
+scenario             | o worst(r1,r2) blips   | sbk2 worst(r1,r2) blips | camera sbk2: orbit 3/4s jerk95 dBody
+c30_calm             | 17.8,17.9 b0           | 17.9,33.3 b0           | 
+d_back               | 38.1,38.1 b2           | 10.1,10.1 b2           | 
+d_backw              | 10.7,8.4 b2            | 10.0,8.4 b2            | 
+j30_rel_3200         | 30.8,38.4 b4           | 39.6,35.0 b4           | 
+j30_rel_3450         | 28.6,19.4 b2           | 19.4,22.0 b2           | 
+j30_slow             | 41.1,38.3 b2           | 22.1,22.1 b2           | 
+jback                | 38.3,31.3 b2           | 10.1,10.1 b2           | 
+jstart               | 55.5,43.7 b16          | 79.0,87.9 b16          | 
+k_jogback            | 31.5,10.1 b2           | 8.2,11.8 b2            | 
+k_walkback           | 17.1,17.1 b0           | 17.1,14.1 b0           | 
+wstart               | 14.2,14.2 b14          | 15.1,15.1 b14          | 
+TABLES233 o: median 24.0 cm, runs>20cm 12/22, blips 46 sbk2: median 15.6 cm, runs>20cm 8/22, blips 46
+scenario             | o worst(r1,r2) blips   | sb22 worst(r1,r2) blips | camera sb22: orbit 3/4s jerk95 dBody
+c30_calm             | 17.8,17.9 b0           | 17.9,17.8 b0           | 
+d_back               | 38.1,38.1 b2           | 9.3,9.3 b0             | 
+d_backw              | 10.7,8.4 b2            | 8.4,8.6 b2             | 
+j30_rel_3200         | 30.8,38.4 b4           | 35.0,29.0 b3           | 
+j30_rel_3450         | 28.6,19.4 b2           | 21.6,22.3 b2           | 
+j30_slow             | 41.1,38.3 b2           | 22.1,22.1 b0           | 
+jback                | 38.3,31.3 b2           | 9.3,9.3 b0             | 
+jstart               | 55.5,43.7 b16          | 73.3,87.9 b10          | 
+k_jogback            | 31.5,10.1 b2           | 13.2,10.7 b2           | 
+k_walkback           | 17.1,17.1 b0           | 17.1,14.0 b0           | 
+wstart               | 14.2,14.2 b14          | 24.7,24.7 b14          | 
+TABLES233 o: median 24.0 cm, runs>20cm 12/22, blips 46 sb22: median 17.9 cm, runs>20cm 10/22, blips 33
