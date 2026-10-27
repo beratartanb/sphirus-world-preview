@@ -1,0 +1,12 @@
+scenario             | o worst(r1,r2) blips   | P worst(r1,r2) blips   | camera P: orbit 3/4s jerk95 dBody
+c30_calm             | 28.1 b0                | 20.8 b0                | 
+cam32_chain          | 69.8 b1                | 12.3 b1                | 13.7 0.43 0.02 0.0
+cam32_s90            | 74.0 b1                | 12.3 b1                | 13.7 0.43 0.03 0.0
+e29_chain            | 33.5 b1                | 17.3 b1                | 
+e29_load             | 29.8 b1                | 15.3 b1                | 
+e31_s2_4750          | 29.8 b0                | 17.9 b0                | 
+e31_s2_4900          | 29.8 b0                | 15.3 b0                | 
+j30_rel_3200         | 14.1 b1                | 34.8 b1                | 
+j30_rel_3450         | 37.0 b3                | 34.8 b3                | 
+s29_swl12            | 14.7 b1                | 11.2 b1                | 
+TABLES232 o: median 29.8 cm, runs>20cm 8/10, blips 9 P: median 16.3 cm, runs>20cm 3/10, blips 9

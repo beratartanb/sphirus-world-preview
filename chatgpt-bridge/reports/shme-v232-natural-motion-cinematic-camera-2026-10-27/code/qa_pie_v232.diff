@@ -1,0 +1,51 @@
+--- Saved/Codex/SHME_V232_20261027/checkpoint/pre_v232/tools/Tools/SHME_V1_20260925/qa_pie.py	2026-10-27 00:56:32.423666200 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-27 03:28:37.674043400 +0300
+@@ -39,9 +39,14 @@
+     if _bad: u.log_error('SHM_STATE: dirty base packages at first run ' + str(_bad))
+     TOUCHED = {c_: {} for c_ in _TARGETS}; builtins.SHM_PROD_TOUCHED = TOUCHED; builtins.SHM_PROD_DIRTY_BASE = _bad
+ def _gp(o_, key):   # V2.31: 'cm.<prop>' = the CharacterMovement component template of a pawn class (CMC perch / step settings as candidates)
+-    return o_.get_editor_property('character_movement').get_editor_property(key[3:]) if key.startswith('cm.') else o_.get_editor_property(key)
++    if key.startswith('cm.'): return o_.get_editor_property('character_movement').get_editor_property(key[3:])
++    if '.' in key:   # V2.32: '<struct var>.<field>' (e.g. PlantSettings_Walk.unplant_angle on the ABP CDO; restored per field)
++        s_, f_ = key.split('.', 1); return o_.get_editor_property(s_).get_editor_property(f_)
++    return o_.get_editor_property(key)
+ def _sp(o_, key, v):
+     if key.startswith('cm.'): o_.get_editor_property('character_movement').set_editor_property(key[3:], v)
++    elif '.' in key:
++        s_, f_ = key.split('.', 1); st_ = o_.get_editor_property(s_); st_.set_editor_property(f_, v); o_.set_editor_property(s_, st_)
+     else: o_.set_editor_property(key, v)
+ def _restore():
+     for cat, keys in TOUCHED.items():
+@@ -196,6 +201,32 @@
+     for k_, v_ in (req.get('live_cm') or {}).items():
+         try: pawn.get_editor_property('character_movement').set_editor_property(k_, v_, u.PropertyAccessChangeNotifyMode.NEVER); u.log('SHM_QA_LIVECM %s=%s' % (k_, v_))
+         except Exception as e_: u.log_warning('live_cm failed %s: %s' % (k_, e_))
++    # V2.32 tick-order study (request 'live_tick' {'shm_pre': true}, SPAWNED pawn only, assets untouched): the SHME component ticks in
++    # TG_PrePhysics after the CharacterMovement and the pawn's skeletal meshes tick after it -> the ABP reads THIS frame's SHME routing
++    # (production: SHME in TG_PostPhysics, the ABP one frame behind = the one-frame selection blips at authored-clip ends / starts)
++    _lt = req.get('live_tick') or {}
++    if _lt.get('shm_pre'):
++        try:
++            shc_ = [c_ for c_ in pawn.get_components_by_class(u.ActorComponent) if 'SHM_HumanMotion' in c_.get_class().get_name()][0]
++            cmv_ = pawn.get_editor_property('character_movement')
++            shc_.set_tick_group(u.TickingGroup.TG_PRE_PHYSICS); shc_.add_tick_prerequisite_component(cmv_)
++            for c_ in pawn.get_components_by_class(u.SkeletalMeshComponent): c_.add_tick_prerequisite_component(shc_)
++            u.log('SHM_QA_LIVETICK shm_pre ok (%d meshes)' % len(pawn.get_components_by_class(u.SkeletalMeshComponent)))
++        except Exception as e_: u.log_warning('live_tick failed: ' + str(e_))
++    # V2.32 plant-settings study (request 'live_plant' {'PlantSettings_Walk': {'unplant_angle': 120.0}, ...}, the SPAWNED pawn's anim
++    # instances only, assets untouched): FootPlacement reads these structs through the Get_FootPlacementPlantSettings binding every update
++    for sn_, fields_ in (req.get('live_plant') or {}).items():
++        try:
++            n_ok = 0
++            for c_ in pawn.get_components_by_class(u.SkeletalMeshComponent):
++                ai_ = c_.get_anim_instance()
++                if ai_ is None: continue
++                try: s_ = ai_.get_editor_property(sn_)
++                except Exception: continue
++                for fk_, fv_ in fields_.items(): s_.set_editor_property(fk_, fv_)
++                ai_.set_editor_property(sn_, s_, u.PropertyAccessChangeNotifyMode.NEVER); n_ok += 1
++            u.log('SHM_QA_LIVEPLANT %s %s on %d instances' % (sn_, fields_, n_ok))
++        except Exception as e_: u.log_warning('live_plant failed %s: %s' % (sn_, e_))
+     # V2.9: neutral test light - point lights attached to the pawn [dx, dy, dz, intensity, radius] (no shadows, PIE only)
+     for l_ in req.get('fill_lights', []):
+         try:

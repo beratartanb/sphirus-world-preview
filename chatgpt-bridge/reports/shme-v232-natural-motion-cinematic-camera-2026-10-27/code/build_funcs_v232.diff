@@ -1,0 +1,12 @@
+--- Saved/Codex/SHME_V232_20261027/checkpoint/pre_v232/tools/Tools/SHME_V1_20260925/build_funcs.py	2026-10-27 00:56:33.467026800 +0300
++++ Tools/SHME_V1_20260925/build_funcs.py	2026-10-27 07:13:36.285500800 +0300
+@@ -17,5 +17,9 @@
+     tr=shm_dsl.Translator(members,ids,{'R':('BPSHMResponseProfile','Response'),'A':('BPSHMAnthropometryProfile','Anthro')})
+     try: res[name]=rebuild_function(bp,name,params,returns,src,tr)
+     except Exception as e: res[name]='FAIL '+str(e)[:2500]; break
++# V2.32: the translator bridges (Piyon|GetControlRotation :self OwnerChar) through Pawn.LastHitBy (always None -> control yaw 0, 3 errors
++# per frame); re-apply the V2.21 repair (LastHitBy -> Pawn::GetController) to every rebuilt function, idempotent
++_lhb={'__name__':'lhb_lib'}; exec(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V221_20261021/fix_v221_lasthitby.py',encoding='utf8').read(),_lhb)
++res['_lasthitby_patched']=_lhb['patch'](bp,[n for n in res if not str(res[n]).startswith('FAIL')])
+ st,errs=compile_ok(bp)
+ print(json.dumps(res,indent=1,ensure_ascii=False));print(st,[e[:600] for e in errs[:4]])

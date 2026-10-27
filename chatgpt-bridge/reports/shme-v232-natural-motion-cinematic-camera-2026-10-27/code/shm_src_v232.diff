@@ -1,0 +1,105 @@
+--- Saved/Codex/SHME_V232_20261027/checkpoint/pre_v232/tools/Tools/SHME_V1_20260925/shm_src.py	2026-10-27 00:56:33.252950600 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-27 04:19:39.081604100 +0300
+@@ -1026,18 +1026,41 @@
+   ; only decayed with SwingLiftTauDown -> the swing foot rose to 21 cm above the step top and hovered 0.43 s. The lift loses the capsule's
+   ; rise of this frame at once (world foot height continuous); SwingLiftBaseComp 0 = V2.30
+   (bind dBase (select (and (> (R SwingLiftBaseComp) 0.5) (> SHM231_SwBaseZ -1.0e8)) (max 0.0 (- baseZ SHM231_SwBaseZ)) 0.0))
+-  (bind sLLc (max 0.0 (- SwingLiftL dBase)))
+-  (bind sLRc (max 0.0 (- SwingLiftR dBase)))
++  ; V2.32 T6 (SwingPelvisComp > 0): the lift may go NEGATIVE (the swing foot lowered toward the lagging pelvis), so the clamp is skipped
++  (bind pcOn (and slOn (> (R SwingPelvisComp) 0.0)))
++  (bind sLLc (select pcOn (- SwingLiftL dBase) (max 0.0 (- SwingLiftL dBase))))
++  (bind sLRc (select pcOn (- SwingLiftR dBase) (max 0.0 (- SwingLiftR dBase))))
+   (bind fzL (- (.z FootCenterL) SwingLiftL))
+   (bind fzR (- (.z FootCenterR) SwingLiftR))
+   (bind tL (max (select swL (* wRL (clamp (- (+ gL (R SwingLiftMargin)) fzL) 0.0 (R SwingLiftMax))) 0.0) (select penL (clamp (- (+ guL 7.5) fzL) 0.0 (R StepPenLiftMax)) 0.0)))   ; V2.26 T3d/T3e/T3g
+   (bind tR (max (select swR (* wRR (clamp (- (+ gRt (R SwingLiftMargin)) fzR) 0.0 (R SwingLiftMax))) 0.0) (select penR (clamp (- (+ guR 7.5) fzR) 0.0 (R StepPenLiftMax)) 0.0)))
++  ; ---- V2.32 T6: after a capsule step-up the visible pelvis needs ~0.9 s to follow (FootPlacement pelvis spring, SuddenMotionOnly
++  ; compensation) while the swing foot follows the capsule-relative pose -> the trailing foot swung 17 cm over the step top under a lowered
++  ; pelvis (raised-knee hover). The swing target is lowered by SwingPelvisComp x the pelvis lag (running pelvis height above the capsule
++  ; base minus now), never below the highest ground on its path + SwingLiftMargin; a penetrating foot keeps its platform lift.
++  (bind pzRel (- (.z (bone "pelvis")) baseZ))
++  (bind plag (max 0.0 (- SHM232_PelvMean pzRel)))
++  (bind lowL (max (- 0.0 (* (R SwingPelvisComp) plag)) (- (+ gL (R SwingLiftMargin)) fzL)))
++  (bind lowR (max (- 0.0 (* (R SwingPelvisComp) plag)) (- (+ gRt (R SwingLiftMargin)) fzR)))
++  (bind tLf0 (select (and pcOn (and swL (> plag 2.0))) (max lowL (select penL tL 0.0)) tL))
++  (bind tRf0 (select (and pcOn (and swR (> plag 2.0))) (max lowR (select penR tR 0.0)) tR))
++  ; ---- V2.32 T7 swing floor guard (SwingFloorGuard cm > 0): a swing foot (no contact) whose POSE foot centre (final minus the lift) is
++  ; under its own planted height above its ground (SHM232_FootH0, learned in contact) + SwingFloorGuard is lifted to it (max 6 cm). Walk
++  ; stops / starts: the stop-posture / body-inertia pelvis dip carried the closing swing foot 3 cm under its planted level while the planted
++  ; foot was IK-held (c30_calm: the ball skimmed 33 cm along the floor; the clip itself lifts it 5.6 cm)
++  (bind fhL (- (- (.z FootCenterL) SwingLiftL) guL))
++  (bind fhR (- (- (.z FootCenterR) SwingLiftR) guR))
++  (bind fgOn (and slOn (> (R SwingFloorGuard) 0.0)))
++  (bind tgL (select (and fgOn (and SHM232_FootH0Init (not ContactL))) (clamp (- (+ SHM232_FootH0L (R SwingFloorGuard)) fhL) 0.0 6.0) 0.0))
++  (bind tgR (select (and fgOn (and SHM232_FootH0Init (not ContactR))) (clamp (- (+ SHM232_FootH0R (R SwingFloorGuard)) fhR) 0.0 6.0) 0.0))
++  (bind tLf (max tLf0 tgL))
++  (bind tRf (max tRf0 tgR))
+   (bind aUp (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauUp) 0.01)))))
+   (bind aDn (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauDown) 0.01)))))
+   (bind aCt (- 1.0 (exp (/ (- 0.0 h) (max (R SwingLiftTauContact) 0.005)))))
+   ; V2.24 C3 release: in contact the lift goes fast (the stance foot belongs to FootPlacement)
+-  (set SwingLiftL (select slOn (+ sLLc (* (- tL sLLc) (select (> tL sLLc) aUp (select (and ContactL (not penL)) aCt aDn)))) 0.0))   ; V2.26 T3d: no fast release while penetrating
+-  (set SwingLiftR (select slOn (+ sLRc (* (- tR sLRc) (select (> tR sLRc) aUp (select (and ContactR (not penR)) aCt aDn)))) 0.0))
++  (set SwingLiftL (select slOn (+ sLLc (* (- tLf sLLc) (select (> tLf sLLc) aUp (select (and ContactL (not penL)) aCt aDn)))) 0.0))   ; V2.26 T3d: no fast release while penetrating
++  (set SwingLiftR (select slOn (+ sLRc (* (- tRf sLRc) (select (> tRf sLRc) aUp (select (and ContactR (not penR)) aCt aDn)))) 0.0))
+   ; V2.26 T3b landing shift onto a step (candidate: StepEdgeOn). Probes: mid 0.5x (siph), landing 1.0x (sip), far 1.5x (sipf)
+   (bind gmL (select sokh1 (.z siph1) baseZ))
+   (bind glL (select sok1 (.z sip1) baseZ))
+@@ -1088,6 +1111,15 @@
+   (set SwingShiftL (selv (R StepEdgeOn) (vscale slDir SwingShiftTL) (vec 0.0 0.0 0.0)))
+   (set SwingShiftR (selv (R StepEdgeOn) (vscale slDir SwingShiftTR) (vec 0.0 0.0 0.0)))
+   (set SHM231_SwBaseZ baseZ)
++  ; V2.32 T6 running pelvis height above the capsule base: follows only while the pelvis is near it (a step-up lag never pulls it down)
++  (bind aPm (- 1.0 (exp (/ (- 0.0 h) 1.0))))
++  (set SHM232_PelvMean (select (not SHM232_PelvInit) pzRel (select (and Grounded (< (abs (- pzRel SHM232_PelvMean)) 4.0)) (+ SHM232_PelvMean (* (- pzRel SHM232_PelvMean) aPm)) SHM232_PelvMean)))
++  (set SHM232_PelvInit true)
++  ; V2.32 T7 planted foot-centre height above its own ground (follows only in contact; first contact initialises)
++  (bind aH0 (- 1.0 (exp (/ (- 0.0 h) 0.3))))
++  (set SHM232_FootH0L (select ContactL (select SHM232_FootH0Init (+ SHM232_FootH0L (* (- fhL SHM232_FootH0L) aH0)) fhL) SHM232_FootH0L))
++  (set SHM232_FootH0R (select ContactR (select SHM232_FootH0Init (+ SHM232_FootH0R (* (- fhR SHM232_FootH0R) aH0)) fhR) SHM232_FootH0R))
++  (set SHM232_FootH0Init (or SHM232_FootH0Init (and ContactL ContactR)))
+   (set SwingGroundL (- gL baseZ))
+   (set SwingGroundR (- gRt baseZ))
+   (set TerrainInit true))
+@@ -1333,6 +1365,40 @@
+   (bind kt (* (select (R CamCloseEnabled) (lerp 1.0 kv CamOpenness) 1.0) (lerp 1.0 (select (R InspectZoomOn) (R InspectBoom) 1.0) InspectOn)))   ; V2.25 inspect boom, V2.26 gated by InspectZoomOn
+   (set CamCloseK (select tele kt (+ CamCloseK (* (- kt CamCloseK) (- 1.0 (exp (/ (- 0.0 h) (max (R CamCloseTau) 0.05))))))))
+   (set CamBoomScale (* CamBoomScale CamCloseK))
++  ; ---- V2.32 cinematic orbit (CamOrbitEnabled): a bounded VISUAL azimuth added to the boom yaw only (BP_GR_Player GR_UpdateRig <-
++  ; GR_SHM_CamOrbit), never the control rotation and never the movement input frame (input stays on the control yaw: no feedback loop).
++  ; Target = the body's own yaw (+ CamOrbitTravelW x the travel direction) relative to the player's view, sin-shaped (full at 90 deg, none along or against the view), x the
++  ; reached speed (walk almost nothing, jog some, sprint most), x the side room the camera swings into (+ orbit = camera moves to the view's
++  ; left) and the indoor scale. The camera reaches it with a lag (it keeps the old direction while the body brakes and turns, then settles in
++  ; the new follow place) through a critically damped smoother. Player look (control yaw rate) wins: target 0 during a look and for
++  ; CamOrbitLookHold s after it, with the faster CamOrbitLookTau settle. Teleport / PIE start resets it.
++  (bind (ocr ocp ocy) (Matematik|Döndürücü|BreakRotator :InRot (Piyon|GetControlRotation :self OwnerChar)))
++  (bind od0 (- ocy CamOrbitPrevCtl))
++  (bind odc (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A od0) :X (Matematik|Trig|Cos(Degrees) :A od0)))
++  (bind olook (and CamOrbitInit (> (abs (/ odc (max h 0.001))) (R CamOrbitLookRate))))
++  (bind olt (select (or olook tele) 0.0 (+ CamOrbitLookT dt)))
++  (bind orl0 (- Yaw ocy))
++  (bind orl (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A orl0) :X (Matematik|Trig|Cos(Degrees) :A orl0)))
++  (bind om1 (lerp (R CamOrbitMaxWalk) (R CamOrbitMaxJog) (clamp (/ (- Speed 150.0) 150.0) 0.0 1.0)))
++  (bind omS (lerp om1 (R CamOrbitMaxSprint) (clamp (/ (- Speed 320.0) 150.0) 0.0 1.0)))
++  ; + the real travel direction relative to the view (walk / jog are directional: the body keeps facing the view while it travels sideways)
++  (bind ovy (Matematik|Trig|Atan2(Degrees) :Y (.y PlanarVelocity) :X (.x PlanarVelocity)))
++  (bind ovr0 (- ovy ocy))
++  (bind otw (max (R CamOrbitTravelW) 0.0))
++  (bind osn (/ (+ (Matematik|Trig|Sin(Degrees) :A orl) (* otw (Matematik|Trig|Sin(Degrees) :A ovr0))) (+ 1.0 otw)))
++  (bind oroom (clamp (/ (- (select (> osn 0.0) EnvLeft EnvRight) (R CamOrbitRoomMin)) (max (R CamOrbitRoomSpan) 1.0)) 0.0 1.0))
++  (bind oin (lerp (R CamOrbitIndoorScale) 1.0 CamOpenness))
++  (bind oOn (and (R CamOrbitEnabled) (and Grounded (and (> Speed 40.0) (and (< InspectOn 0.05) (> olt (R CamOrbitLookHold)))))))
++  (bind otg (select oOn (* (* omS osn) (* (* oroom oin) (clamp (R CamComfortScale) 0.0 1.0))) 0.0))
++  (bind otau (select (< olt (R CamOrbitLookHold)) (R CamOrbitLookTau) (R CamOrbitLagTau)))
++  (set CamOrbitTarget (select tele 0.0 (+ CamOrbitTarget (* (- otg CamOrbitTarget) (- 1.0 (exp (/ (- 0.0 h) (max otau 0.05))))))))
++  (bind ow (R CamOrbitFreq))
++  (set CamOrbitVel (select tele 0.0 (+ CamOrbitVel (* (- (* ow ow (- CamOrbitTarget CamOrbitYaw)) (* ow CamOrbitVel 2.0)) h))))
++  (set CamOrbitYaw (select tele 0.0 (+ CamOrbitYaw (* CamOrbitVel h))))
++  ; pure binds re-evaluate at every consumer: CamOrbitLookT (reads the look edge from CamOrbitPrevCtl) is written BEFORE CamOrbitPrevCtl
++  (set CamOrbitLookT olt)
++  (set CamOrbitPrevCtl ocy)
++  (set CamOrbitInit true)
+   ; comfort scale (CamComfortScale 1 = authored, ~0.3 = low-motion profile): the WHOLE SHME camera offset and FOV change
+   (bind cs (clamp (R CamComfortScale) 0.0 1.0))
+   (set CamOffset (vscale CamOffset cs))

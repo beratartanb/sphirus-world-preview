@@ -1,0 +1,10 @@
+--- Saved/Codex/SHME_V232_20261027/checkpoint/pre_v232/tools/Tools/SHME_V1_20260925/shm_component_vars.py	2026-10-27 00:56:32.834446100 +0300
++++ Tools/SHME_V1_20260925/shm_component_vars.py	2026-10-27 04:19:39.085270100 +0300
+@@ -78,3 +78,7 @@
+ except Exception: _PRIM = 'PrimitiveComponent'
+ VARS += [('SHM231_InsHit', _PRIM, 'SHM|V231'), ('SHM231_InsTag', B_, 'SHM|V231'), ('SHM231_InsFocus', V, 'SHM|V231'), ('SHM231_InsId', 'string', 'SHM|V231'),
+          ('SHM231_InsPrevId', 'string', 'SHM|V231'), ('SHM231_SwBaseZ', F, 'SHM|V231')]
++# V2.32 (2026-10-27): cinematic orbit state (SHM_UpdateCameraV21); CamOrbitYaw = the boom yaw offset read by BP_GR_Player GR_UpdateSHMSignals
++VARS += [('CamOrbitYaw', F, 'SHM|V232'), ('CamOrbitTarget', F, 'SHM|V232'), ('CamOrbitVel', F, 'SHM|V232'), ('CamOrbitLookT', F, 'SHM|V232'),
++         ('CamOrbitPrevCtl', F, 'SHM|V232'), ('CamOrbitInit', B_, 'SHM|V232'), ('SHM232_PelvMean', F, 'SHM|V232'), ('SHM232_PelvInit', B_, 'SHM|V232'),
++         ('SHM232_FootH0L', F, 'SHM|V232'), ('SHM232_FootH0R', F, 'SHM|V232'), ('SHM232_FootH0Init', B_, 'SHM|V232')]

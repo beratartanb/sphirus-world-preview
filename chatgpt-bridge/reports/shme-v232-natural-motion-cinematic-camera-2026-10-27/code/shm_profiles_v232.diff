@@ -1,0 +1,14 @@
+--- Saved/Codex/SHME_V232_20261027/checkpoint/pre_v232/tools/Tools/SHME_V1_20260925/shm_profiles.py	2026-10-27 00:56:33.047035800 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-27 04:19:39.083096500 +0300
+@@ -180,4 +180,11 @@
+     ('CamWalkSpeedLo', 'float', 150.0, 'V229'), ('CamWalkSpeedHi', 'float', 260.0, 'V229'),
+     # ---- V2.31 (2026-10-26, Saved/Codex/SHME_V231_20261026): step-up swing lift compensation (SHM_UpdateBodyTargets)
+     ('SwingLiftBaseComp', 'float', 0.0, 'V231'), ('RedirectLowRevFwdMax', 'float', 0.0, 'V231'),
++    # ---- V2.32 (2026-10-27, Saved/Codex/SHME_V232_20261027): cinematic orbit (SHM_UpdateCameraV21 -> BP_GR_Player GR_SHM_CamOrbit, boom yaw only)
++    ('CamOrbitEnabled', 'bool', False, 'V232'), ('CamOrbitMaxWalk', 'float', 2.0, 'V232'), ('CamOrbitMaxJog', 'float', 8.0, 'V232'),
++    ('CamOrbitMaxSprint', 'float', 14.0, 'V232'), ('CamOrbitLagTau', 'float', 0.8, 'V232'), ('CamOrbitFreq', 'float', 4.0, 'V232'),
++    ('CamOrbitLookRate', 'float', 15.0, 'V232'), ('CamOrbitLookHold', 'float', 1.2, 'V232'), ('CamOrbitLookTau', 'float', 0.4, 'V232'),
++    ('CamOrbitIndoorScale', 'float', 0.35, 'V232'), ('CamOrbitRoomMin', 'float', 80.0, 'V232'), ('CamOrbitRoomSpan', 'float', 170.0, 'V232'),
++    ('CamOrbitTravelW', 'float', 0.5, 'V232'),
++    ('SwingPelvisComp', 'float', 0.0, 'V232'), ('SwingFloorGuard', 'float', 0.0, 'V232'),
+ ]
