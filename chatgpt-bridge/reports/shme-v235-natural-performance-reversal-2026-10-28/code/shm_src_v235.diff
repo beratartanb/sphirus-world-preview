@@ -1,0 +1,32 @@
+--- Saved/Codex/SHME_V235_20261028/checkpoint/shm_src.py.pre235	2026-10-28 14:03:05.865158400 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-28 16:00:35.404862300 +0300
+@@ -453,10 +453,15 @@
+   (bind lrDot (dot vhat (normal (vec (.x Facing) (.y Facing) 0.0))))
+   (bind lowRev (and (and (> (R RedirectLowRevSpeed) 0.5) (or (< lrDot -0.7) (and (> lrDot 0.7) (< MaxSpeedNow (R RedirectLowRevFwdMax))))) (and (> MaxSpeedNow (R RedirectLowRevPeak)) (> RedirectionAngle (R RedirectReversalClassAngle)))))   ; the REQUESTED gait is jog / sprint (CMC max speed above any walk; a walk right after a sprint stays out); a BACKPEDAL (moving against the facing) only: sprint faces its travel, so lateral / camera reversals keep the V2.29 rule
+   (bind rdCand (and (and Grounded HasIntent) (and (> Speed (select lowRev (min (R RedirectLowRevSpeed) (R RedirectEpisodeMinSpeed)) (R RedirectEpisodeMinSpeed))) (> RedirectionAngle (R RedirectEpisodeAngle)))))
+-  (bind rdNewIntent (> (acosd (clamp (dot dhat RedirectDirLatched) -1.0 1.0)) (R RedirectNewIntentAngle)))
++  (bind gapKeep (and (R RevGapKeep) (and (< (abs (- Family 3.0)) 0.5) (< SHM234_GapT (R RevGraceTime)))))
++  ; V2.35: with no input dhat is zero (acos 90 deg) = a 'new intent' that ended the episode in the gap; only a real input is a new intent there
++  (bind rdNewIntent (and (or HasIntent (not gapKeep)) (> (acosd (clamp (dot dhat RedirectDirLatched) -1.0 1.0)) (R RedirectNewIntentAngle))))
+   ; alignment needs real speed: the velocity direction of a near-stopped body is noise (ended episodes mid-pivot)
+   (bind rdAligned (and (> Speed 80.0) (< (acosd (clamp (dot vhat RedirectDirLatched) -1.0 1.0)) (R RedirectAlignAngle))))
+-  (bind rdLost (or (not Grounded) (or Blocked (not HasIntent))))
++  ; V2.35 release gap: inside a reversal (family 3) a release shorter than RevGraceTime does not end the episode - the authored clip keeps
++  ; playing (search throttle + clip-bound capsule stay on); ending it here let MM jump to a full-speed bin's frame 0 and the re-press
++  ; blended two clip speed curves (capsule 64 -> 198 cm/s, j30_rel_3200 46.5 cm)
++  (bind rdLost (or (not Grounded) (or Blocked (and (not HasIntent) (not gapKeep)))))
+   (bind rdEnd (and RedirectActive (or rdLost (or (and rdAligned (> RedirectTime (R RedirectMinDwell))) (or (> RedirectTime (R RedirectMaxDwell)) rdNewIntent)))))
+   (bind rdStart (and (R RedirectHoldEnabled) (and rdCand (or (not RedirectActive) rdEnd))))
+   (set RedirectEnd (select rdEnd (select rdLost 4.0 (select rdNewIntent 3.0 (select rdAligned 1.0 2.0))) 0.0))
+@@ -502,7 +507,10 @@
+   (set FamilyCooldown (+ FamilyCooldown dt))
+   (bind isRec (or (> Family 5.5) (and (> Family 0.5) (< Family 1.5))))
+   (bind candRec (or (> cand 5.5) (and (> cand 0.5) (< cand 1.5))))
+-  (bind allowed (or (or (> cand 4.5) (and (> cand 3.5) (< cand 4.5))) (or (< cand 0.5) (and (> FamilyTime (R RouteMinHold)) (or (not candRec) (> FamilyCooldown (R RouteCooldown)))))))
++  ; V2.35: a REAL reversal request (revCand: intent against the travel at speed) takes over a hard-turn episode at once - the hard-turn
++  ; minimum hold kept family 2 while the reversal clip was needed (60 FPS release-repress j30_rel_3200 51 cm); other holds stay
++  (bind revOver (and (R RevOverHard) (and revCand (and (> cand 2.5) (and (< cand 3.5) (< (abs (- Family 2.0)) 0.5))))))
++  (bind allowed (or revOver (or (or (> cand 4.5) (and (> cand 3.5) (< cand 4.5))) (or (< cand 0.5) (and (> FamilyTime (R RouteMinHold)) (or (not candRec) (> FamilyCooldown (R RouteCooldown))))))))
+   (bind leaving (and (> Family 0.5) (< FamilyTime (R RouteMinHold))))
+   (bind switch (and (> (abs (- cand Family)) 0.5) (and allowed (not (and leaving (< cand 0.5))))))
+   ; the switch decision is latched once (a bind re-evaluates at every consumer, and the Family / FamilyTime writes change it)

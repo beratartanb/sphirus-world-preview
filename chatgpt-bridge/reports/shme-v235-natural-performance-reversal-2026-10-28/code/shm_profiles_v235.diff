@@ -1,0 +1,10 @@
+--- Saved/Codex/SHME_V235_20261028/checkpoint/shm_profiles.py.pre235	2026-10-28 14:03:05.946859000 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-28 15:18:08.988895700 +0300
+@@ -199,6 +199,6 @@
+     ('CamEnvHold', 'float', 0.3, 'V234'), ('CamEnvTrig', 'float', 0.25, 'V234'), ('CamRecFaceMax', 'float', 0.0, 'V234'),
+     ('CamRecTurnSide', 'bool', False, 'V234'),
+     ('CamRecWalkRate', 'float', 0.0, 'V234'),
+-    ('RevGraceTime', 'float', 0.0, 'V234'), ('RevGraceDot', 'float', 0.7, 'V234'),
++    ('RevGraceTime', 'float', 0.0, 'V234'), ('RevGraceDot', 'float', 0.7, 'V234'), ('RevOverHard', 'bool', False, 'V235'), ('RevGapKeep', 'bool', False, 'V235'),
+     ('LocoExploreMaxSpeed', 'float', 0.0, 'V234'), ('LocoExploreStable', 'float', 0.0, 'V234'), ('LocoTurnRate', 'float', 0.0, 'V234'),
+ ]

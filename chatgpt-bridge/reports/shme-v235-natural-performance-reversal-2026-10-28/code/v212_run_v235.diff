@@ -1,0 +1,12 @@
+--- Saved/Codex/SHME_V235_20261028/checkpoint/v212_run.sh.pre235	2026-10-28 13:44:12.987393000 +0300
++++ Tools/SHME_V212_20261017/v212_run.sh	2026-10-28 15:18:33.781563500 +0300
+@@ -323,6 +323,9 @@
+   cam33_pad) REQ=$(mv '{"start":2.0,"gait":"walk","segments":[[2.5,0],[5.5,90],[1.0,null]],"stop":1.5}');;   # V2.33 camera: analog stick (gamepad-like segments): forward then right held
+   cam33_jturnj) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[2.8,"W",0],[2.8,"A",1],[8.0,"A",0]],"stop":2.0}');;   # V2.33 camera: REAL jog (shift tap) then hold LEFT
+   cam32_chain) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"W",1],[3.0,"LeftShift",1],[6.5,"W",0],[6.5,"D",1],[9.5,"D",0],[10.0,"LeftShift",0]],"stop":2.0}');;   # V2.32 media chain: walk -> sprint -> hard right (brake, body turn) -> push in the new direction -> stop
++  j35_rev) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.0,"S",1],[5.6,"S",0],[5.6,"W",1],[8.2,"W",0]],"stop":2.5}');;   # V2.35 representative chain: stand -> jog start -> forward jog -> hard opposite request (F_B) -> back-run -> opposite again (B_F) -> forward -> stop
++  j35_rev2) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"S",1],[3.0,"S",0],[3.0,"W",1],[5.6,"W",0],[5.6,"S",1],[8.2,"S",0]],"stop":2.5}');;   # V2.35 mirror chain: back-run start -> B_F -> forward -> F_B (other support entry) -> back-run -> stop
++  j35_relstop) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.0,"S",1],[3.25,"S",0]],"stop":3.0}');;   # V2.35: jog forward, S tapped 0.25 s and released for good (the reversal must settle into a stop, not run on)
+   *) echo "unknown scenario $SCN"; exit 2;;
+ esac
+ mkdir -p ../../Saved/Codex/SHME_V212_20261017/req; echo "$REQ" > "../../Saved/Codex/SHME_V212_20261017/req/$LBL.json"
