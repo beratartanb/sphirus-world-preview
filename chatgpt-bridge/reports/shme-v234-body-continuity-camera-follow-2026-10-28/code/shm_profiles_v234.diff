@@ -1,0 +1,17 @@
+--- Saved/Codex/SHME_V234_20261028/checkpoint/tools/shm_profiles.py	2026-10-28 04:09:58.091340400 +0300
++++ Tools/SHME_V1_20260925/shm_profiles.py	2026-10-28 05:20:11.640829100 +0300
+@@ -191,4 +191,14 @@
+     ('CamRecEnabled', 'bool', False, 'V233'), ('CamRecFreq', 'float', 2.2, 'V233'), ('CamRecMaxRate', 'float', 110.0, 'V233'),
+     ('CamRecDead', 'float', 6.0, 'V233'), ('CamRecMaxErr', 'float', 150.0, 'V233'), ('CamRecStable', 'float', 0.25, 'V233'),
+     ('CamRecTravelRate', 'float', 30.0, 'V233'), ('CamRecMinSpeed', 'float', 60.0, 'V233'), ('CamRecLookHold', 'float', 1.6, 'V233'),
++    # ---- V2.34 (2026-10-28, Saved/Codex/SHME_V234_20261028): locomotion frame (the camera never changes the body's direction / speed class)
++    ('LocoFrameEnabled', 'bool', False, 'V234'), ('LocoHandK', 'float', 90.0, 'V234'), ('LocoExploreEnabled', 'bool', False, 'V234'),
++    ('LocoExploreMin', 'float', 20.0, 'V234'), ('LocoExploreMax', 'float', 120.0, 'V234'), ('LocoExploreMinSpeed', 'float', 60.0, 'V234'),
++    ('LocoExploreKeep', 'float', 40.0, 'V234'),
++    ('CamEnvEnabled', 'bool', False, 'V234'), ('CamEnvRise', 'float', 0.12, 'V234'), ('CamEnvRelease', 'float', 0.6, 'V234'),
++    ('CamEnvHold', 'float', 0.3, 'V234'), ('CamEnvTrig', 'float', 0.25, 'V234'), ('CamRecFaceMax', 'float', 0.0, 'V234'),
++    ('CamRecTurnSide', 'bool', False, 'V234'),
++    ('CamRecWalkRate', 'float', 0.0, 'V234'),
++    ('RevGraceTime', 'float', 0.0, 'V234'), ('RevGraceDot', 'float', 0.7, 'V234'),
++    ('LocoExploreMaxSpeed', 'float', 0.0, 'V234'), ('LocoExploreStable', 'float', 0.0, 'V234'), ('LocoTurnRate', 'float', 0.0, 'V234'),
+ ]

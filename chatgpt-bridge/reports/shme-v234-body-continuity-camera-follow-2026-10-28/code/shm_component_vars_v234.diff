@@ -1,0 +1,13 @@
+--- Saved/Codex/SHME_V234_20261028/checkpoint/tools/shm_component_vars.py	2026-10-28 04:09:58.156854300 +0300
++++ Tools/SHME_V1_20260925/shm_component_vars.py	2026-10-28 07:44:49.174637400 +0300
+@@ -85,3 +85,10 @@
+ # V2.33 (2026-10-27): camera direction state (auto recentre) + movement input frame latch (SHM_UpdateCameraV21)
+ VARS += [('CamRecVel', F, 'SHM|V233'), ('CamRecDelta', F, 'SHM|V233'), ('CamRecStableT', F, 'SHM|V233'), ('CamRecPrevTravel', F, 'SHM|V233'),
+          ('CamRecState', F, 'SHM|V233'), ('MoveLatchYaw', F, 'SHM|V233'), ('MoveLatchInYaw', F, 'SHM|V233'), ('MoveLatchState', F, 'SHM|V233'), ('MoveLatchOn', B_, 'SHM|V233'), ('MoveLatchStateN', F, 'SHM|V233'), ('CamRecScale', F, 'SHM|V233')]
++# V2.34 (2026-10-28): locomotion frame (InFrameOff = un-handed auto recentre, LocoYaw = body / locomotion frame read by BP_GR_Player)
++VARS += [('InFrameOff', F, 'SHM|V234'), ('LocoYaw', F, 'SHM|V234'), ('LocoOn', B_, 'SHM|V234'), ('LocoIFY', F, 'SHM|V234'), ('LocoPrevStick', F, 'SHM|V234'),
++         ('LocoPrevHeld', B_, 'SHM|V234'), ('LocoLookD', F, 'SHM|V234'), ('LocoExplore', B_, 'SHM|V234'), ('LocoHold', B_, 'SHM|V234'), ('LocoState', F, 'SHM|V234')]
++VARS += [('CamEnv', F, 'SHM|V234'), ('CamEnvT', F, 'SHM|V234'), ('CamRecTurnSign', F, 'SHM|V234')]
++VARS += [('SHM234_RevAgo', F, 'SHM|V234'), ('SHM234_RevDir', V, 'SHM|V234')]
++VARS += [('LocoInT', F, 'SHM|V234'), ('LocoInYaw', F, 'SHM|V234')]
++VARS += [('SHM234_GapT', F, 'SHM|V234')]

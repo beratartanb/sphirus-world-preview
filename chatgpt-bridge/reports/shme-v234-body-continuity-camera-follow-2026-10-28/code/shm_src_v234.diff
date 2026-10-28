@@ -1,0 +1,138 @@
+--- Saved/Codex/SHME_V234_20261028/checkpoint/tools/shm_src.py	2026-10-28 04:09:58.005519000 +0300
++++ Tools/SHME_V1_20260925/shm_src.py	2026-10-28 08:35:28.711163100 +0300
+@@ -493,7 +493,11 @@
+   ; V1.3.4: a recovery episode ends only with trustworthy support (capture error and contact confidence), not on the minimum hold
+   (bind isRecPrev (or (> Family 5.5) (and (> Family 0.5) (< Family 1.5))))
+   (bind recStay (and (and isRecPrev Grounded) (and (< FamilyTime (R RecoveryMaxHold)) (or (> CaptureError (R RecoveryExitError)) (< (max ConfL ConfR) (R RecoveryExitContact))))))
+-  (bind cand (select Blocked 5.0 (select revCand 3.0 (select (and (R MotionRoutingEnabled) (or recCand (or forced recStay))) (select strong 6.0 1.0) (select startCand 4.0 (select (and (R MotionRoutingEnabled) hardCand) 2.0 0.0))))))
++  ; V2.34 release-repress: a re-press in the reversal's own direction within RevGraceTime continues the reversal (not a from-rest start)
++  ; B10: the release gap itself keeps the reversal family for at most RevGraceTime (no input -> cand 0 would end the family before the re-press)
++  (bind rgap (and (> (R RevGraceTime) 0.0) (and (not HasIntent) (and (< (abs (- Family 3.0)) 0.5) (< SHM234_GapT (R RevGraceTime))))))
++  (bind rkeep (and (> (R RevGraceTime) 0.0) (and HasIntent (and (< SHM234_RevAgo (R RevGraceTime)) (> (+ (* (.x DesiredDir) (.x SHM234_RevDir)) (* (.y DesiredDir) (.y SHM234_RevDir))) (R RevGraceDot))))))
++  (bind cand (select Blocked 5.0 (select (or revCand (or rkeep rgap)) 3.0 (select (and (R MotionRoutingEnabled) (or recCand (or forced recStay))) (select strong 6.0 1.0) (select startCand 4.0 (select (and (R MotionRoutingEnabled) hardCand) 2.0 0.0))))))
+   (set FamilyTime (+ FamilyTime dt))
+   (set FamilyCooldown (+ FamilyCooldown dt))
+   (bind isRec (or (> Family 5.5) (and (> Family 0.5) (< Family 1.5))))
+@@ -509,6 +513,9 @@
+   ; a shove while jogging with the input held stayed in family 6 for 4.5 s, re-latching every 0.43 s
+   (set Family (select RouteSwitch cand Family))
+   (set FamilyTime (select RouteSwitch 0.0 FamilyTime))
++  (set SHM234_RevAgo (select (< (abs (- Family 3.0)) 0.5) 0.0 (+ SHM234_RevAgo dt)))   ; V2.34 release-repress memory
++  (set SHM234_GapT (select HasIntent 0.0 (+ SHM234_GapT dt)))
++  (set SHM234_RevDir (selv (and HasIntent (< (abs (- Family 3.0)) 0.5)) DesiredDir SHM234_RevDir))
+   ; compact recovery vector (facing frame: x forward, y right) for selection and telemetry
+   (bind fwd2 (Matematik|Vektör|Normalize2D(Vector) :A (vec (.x Facing) (.y Facing) 0.0) :Tolerance 0.0001))
+   (bind rt2 (vec (- 0.0 (.y fwd2)) (.x fwd2) 0.0))
+@@ -1389,13 +1396,23 @@
+   (bind oroom (clamp (/ (- (select (> osn 0.0) EnvLeft EnvRight) (R CamOrbitRoomMin)) (max (R CamOrbitRoomSpan) 1.0)) 0.0 1.0))
+   (bind oin (lerp (R CamOrbitIndoorScale) 1.0 CamOpenness))
+   (bind oOn (and (R CamOrbitEnabled) (and Grounded (and (> Speed 40.0) (and (< InspectOn 0.05) (> olt (R CamOrbitLookHold)))))))
+-  (bind otg (select oOn (* (* omS osn) (* (* oroom oin) (clamp (R CamComfortScale) 0.0 1.0))) 0.0))
++  ; V2.34 phase envelope (CamEnvEnabled): brake / reversal / turn / redirect episode -> rise, hold, then decay CamEnvHold s after it ended
++  (bind etr (or RedirectActive (> (max (max BrakingDemand ReversalDemand) TurnSeverity) (R CamEnvTrig))))
++  (bind etT (select etr 0.0 (+ CamEnvT dt)))
++  (bind etg (select (< etT (R CamEnvHold)) 1.0 0.0))
++  (bind etau (select (> etg CamEnv) (R CamEnvRise) (R CamEnvRelease)))
++  (bind envN (select tele 0.0 (+ CamEnv (* (- etg CamEnv) (- 1.0 (exp (/ (- 0.0 h) (max etau 0.03))))))))
++  (bind envK (select (R CamEnvEnabled) envN 1.0))
++  (bind otg (select oOn (* (* (* omS osn) envK) (* (* oroom oin) (clamp (R CamComfortScale) 0.0 1.0))) 0.0))
+   (bind otau (select (< olt (R CamOrbitLookHold)) (R CamOrbitLookTau) (R CamOrbitLagTau)))
+   (set CamOrbitTarget (select tele 0.0 (+ CamOrbitTarget (* (- otg CamOrbitTarget) (- 1.0 (exp (/ (- 0.0 h) (max otau 0.05))))))))
+   (bind ow (R CamOrbitFreq))
+   (set CamOrbitVel (select tele 0.0 (+ CamOrbitVel (* (- (* ow ow (- CamOrbitTarget CamOrbitYaw)) (* ow CamOrbitVel 2.0)) h))))
+   (set CamOrbitYaw (select tele 0.0 (+ CamOrbitYaw (* CamOrbitVel h))))
+   ; pure binds re-evaluate at every consumer: CamOrbitLookT (reads the look edge from CamOrbitPrevCtl) is written BEFORE CamOrbitPrevCtl
++  (set LocoLookD (abs odc))   ; V2.34: the player's own look this frame (stored before CamOrbitPrevCtl / CamRecDelta change: pure-bind rule)
++  (set CamEnv envN)
++  (set CamEnvT etT)
+   (set CamOrbitLookT olt)
+   (set CamOrbitPrevCtl ocy)
+   (set CamOrbitInit true)
+@@ -1418,10 +1435,16 @@
+   ; pure-bind rule (V2.14 / V2.32 trap): a bind re-evaluates at every consumer - the look timer is read from the STORED CamOrbitLookT (set
+   ; above before CamOrbitPrevCtl; re-evaluating olt here would read this frame's own turn as a player look), and every state var is
+   ; written only after all outputs that depend on its OLD value (delta -> state -> latch -> velocity -> stable time -> previous travel)
+-  (bind rok (and (R CamRecEnabled) (and (> rst (R CamRecStable)) (and rcalm (and (> CamOrbitLookT (R CamRecLookHold)) (and (< InspectOn 0.05) (and (> (abs re) (R CamRecDead)) (< (abs re) (R CamRecMaxErr)))))))))
++  ; V2.34 (b) body faces the travel, (c) real turn side
++  (bind rfa (abs (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A (- Yaw rty)) :X (Matematik|Trig|Cos(Degrees) :A (- Yaw rty)))))
++  (bind rface (or (< (R CamRecFaceMax) 0.5) (< rfa (R CamRecFaceMax))))
++  (bind rbig (and (R CamRecTurnSide) (and rface (not (< (abs re) (R CamRecMaxErr))))))
++  (bind reE (select rbig (* (select (< CamRecTurnSign 0.0) -1.0 1.0) (abs re)) re))
++  (bind rok (and (R CamRecEnabled) (and (> rst (R CamRecStable)) (and rcalm (and (> CamOrbitLookT (R CamRecLookHold)) (and (< InspectOn 0.05) (and rface (and (> (abs re) (R CamRecDead)) (or rbig (< (abs re) (R CamRecMaxErr)))))))))))
+   (bind rw (R CamRecFreq))
+-  (bind racc (select rok (- (* (* rw rw) re) (* (* 2.0 rw) CamRecVel)) (- 0.0 (* (* 2.0 rw) CamRecVel))))
+-  (bind rv1 (clamp (+ CamRecVel (* racc h)) (- 0.0 (R CamRecMaxRate)) (R CamRecMaxRate)))
++  (bind racc (select rok (- (* (* rw rw) reE) (* (* 2.0 rw) CamRecVel)) (- 0.0 (* (* 2.0 rw) CamRecVel))))
++  (bind rmr (select (> (R CamRecWalkRate) 0.5) (lerp (R CamRecWalkRate) (R CamRecMaxRate) (clamp (/ (- Speed 140.0) 160.0) 0.0 1.0)) (R CamRecMaxRate)))   ; V2.34 B2: calmer walk follow
++  (bind rv1 (clamp (+ CamRecVel (* racc h)) (- 0.0 rmr) rmr))
+   (bind rv (select (or tele (or (< CamOrbitLookT 0.05) (not (R CamRecEnabled)))) 0.0 rv1))
+   (set CamRecDelta (* (* rv h) (clamp CamRecScale 0.0 1.0)))   ; device profile scale written by BP_GR_Player (gamepad 1.0, mouse 0.35)
+   (set CamRecState (select rok 3.0 (select (> (abs rv) 0.5) 2.0 (select (> (abs CamOrbitYaw) 1.0) 1.0 0.0))))
+@@ -1439,13 +1462,65 @@
+   (bind mkeep (and mheld (and (< (abs mdy) 30.0) (> CamOrbitLookT 0.05))))
+   (bind mld0 (- ocy MoveLatchYaw))
+   (bind mld (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A mld0) :X (Matematik|Trig|Cos(Degrees) :A mld0)))
++  ; ---- V2.34 locomotion frame (LocoFrameEnabled; sphirus-camera-direction + sphirus-natural-motion): the automatic camera never changes
++  ; the body's direction, speed class, gait or facing. InFrameOff = the part of the auto recentre the player has not taken over: every auto
++  ; turn (CamRecDelta) is subtracted while a move input is held, so the held input keeps its WORLD direction. The hand-over is continuous
++  ; (no angle threshold, no jump): the offset shrinks in proportion to the stick's own angular change plus the player's look (LocoHandK
++  ; deg = full hand-over) and is 0 on release. LocoIFY = next frame's input frame (control yaw after this frame's auto turn + offset).
++  ; LocoYaw = the body / locomotion frame that BP_GR_Player's locomotion functions read instead of the control yaw (speed class, gait,
++  ; backward intent, facing target, idle turn): the input frame, or - exploration (LocoExploreEnabled): a held lateral / forward-diagonal
++  ; input (LocoExploreMin..Max deg off the input frame, moving > LocoExploreMinSpeed) while the player is not looking - the input's own
++  ; world direction: the body decides to walk that way and the camera follows the body. A deliberate look ends it (look-driven again);
++  ; after a release the body frame is held until a look or a new input. LocoState 0 frame, 1 exploration, 2 hold.
++  (bind lon (R LocoFrameEnabled))
++  (bind lsl0 (- miy MoveLatchYaw))
++  (bind lsl (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A lsl0) :X (Matematik|Trig|Cos(Degrees) :A lsl0)))
++  ; B3: InFrameOff = the RAW un-handed auto turn (only a player look hands it over, LocoLookD / LocoHandK); the stick hands it over by its NET
++  ; deviation from the stick angle held when the auto turn began (LocoPrevStick = that reference while an offset is outstanding): small
++  ; corrections steer relative to the kept frame (never ignored, never re-interpreted), a deliberate re-aim of 10..70 deg hands the frame
++  ; over continuously (world direction changes smoothly, no jump), a release hands it over at once.
++  (bind lnet0 (- lsl LocoPrevStick))
++  (bind lnet (abs (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A lnet0) :X (Matematik|Trig|Cos(Degrees) :A lnet0))))
++  (bind lhs (clamp (/ (- (select (and mheld LocoPrevHeld) lnet 0.0) 10.0) 60.0) 0.0 1.0))
++  (bind lioff (select mheld (- (* InFrameOff (- 1.0 (clamp (/ LocoLookD (max (R LocoHandK) 1.0)) 0.0 1.0))) CamRecDelta) 0.0))
++  (set LocoIFY (+ (+ ocy CamRecDelta) (* lioff (- 1.0 lhs))))
++  (bind lrel0 (- miy LocoIFY))
++  (bind lrel (abs (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A lrel0) :X (Matematik|Trig|Cos(Degrees) :A lrel0))))
++  (bind lkp0 (- miy LocoInYaw))   ; B3: keep = the held input itself did not jump (LocoYaw is rate-limited and may lag)
++  (bind lkp (abs (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A lkp0) :X (Matematik|Trig|Cos(Degrees) :A lkp0))))
++  (bind lbase (and (R LocoExploreEnabled) (and mheld (and Grounded (and (> CamOrbitLookT (R CamRecLookHold)) (< InspectOn 0.05))))))
++  ; B3: exploration only below LocoExploreMaxSpeed (0 = any; sprint already faces the movement - a sprint cut is not exploration) and for an
++  ; input direction held LocoExploreStable s (a quick A / D cut is not a decision to walk that way)
++  (bind lin0 (- miy LocoInYaw))
++  (bind linT (select (and mheld (< (abs (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A lin0) :X (Matematik|Trig|Cos(Degrees) :A lin0))) 15.0)) (+ LocoInT dt) 0.0))
++  (bind lstart (and (and (> Speed (R LocoExploreMinSpeed)) (or (< (R LocoExploreMaxSpeed) 1.0) (< Speed (R LocoExploreMaxSpeed)))) (and (not (< linT (R LocoExploreStable))) (and (> lrel (R LocoExploreMin)) (< lrel (R LocoExploreMax))))))
++  ; B6/B12: an exploration only STARTS outside a reversal and outside a redirect that began at SPRINT speed (RedirectGait 1), in the normal
++  ; family >= 0.5 s after the last route switch (never inside / right after a start clip) or in the minor-turn family at once - a walk /
++  ; jog turn starts WITH the input change (braking demand is not a gate)
++  (bind lexp (and lbase (or (and LocoExplore (< lkp (R LocoExploreKeep))) (and (not LocoExplore) (and lstart (and (and (< ReversalDemand 0.12) (not (and RedirectActive (> RedirectGait 0.5)))) (and (< Family 1.5) (or (> Family 0.5) (> FamilyTime 0.5)))))))))
++  (bind lhold (and lon (and (not mheld) (and (or LocoPrevHeld (or LocoExplore LocoHold)) (> CamOrbitLookT 0.05)))))   ; V2.34 B2: any release holds the body frame (the camera never turns a standing body)
++  (set LocoState (select lexp 1.0 (select lhold 2.0 0.0)))
++  (bind ltg (select (< (abs (- LocoState 1.0)) 0.5) miy (select (> LocoState 1.5) LocoYaw LocoIFY)))
++  (bind ld0 (- ltg LocoYaw))
++  (bind ld (Matematik|Trig|Atan2(Degrees) :Y (Matematik|Trig|Sin(Degrees) :A ld0) :X (Matematik|Trig|Cos(Degrees) :A ld0)))
++  (bind lmax (select (> (R LocoTurnRate) 0.5) (* (R LocoTurnRate) h) 360.0))   ; B3: the body frame turns at most LocoTurnRate deg/s (0 = at once)
++  (set LocoYaw (select lon (+ LocoYaw (clamp ld (- 0.0 lmax) lmax)) ocy))
++  (set LocoInT linT)
++  (set LocoInYaw (select mheld miy LocoInYaw))
++  (set LocoExplore (< (abs (- LocoState 1.0)) 0.5))
++  (set LocoHold (> LocoState 1.5))
++  (set InFrameOff lioff)
++  (set LocoPrevStick (select (or (not LocoPrevHeld) (< (abs InFrameOff) 0.5)) lsl LocoPrevStick))   ; B3: the stick reference while an auto offset is outstanding
++  (set LocoPrevHeld mheld)
++  (set LocoOn lon)
+   (set MoveLatchStateN (select (< mst0 0.5) (select mengage 1.0 0.0) (select (< mst0 1.5) (select mkeep 1.0 (select mheld 2.0 0.0)) (select (< (abs mld) 1.0) 0.0 2.0))))
+-  (set MoveLatchYaw (select mengage ocy (select (> MoveLatchStateN 1.5) (+ MoveLatchYaw (* mld (- 1.0 (exp (/ (- 0.0 h) 0.06))))) (select (< MoveLatchStateN 0.5) ocy MoveLatchYaw))))
++  (set MoveLatchYaw (select lon LocoIFY (select mengage ocy (select (> MoveLatchStateN 1.5) (+ MoveLatchYaw (* mld (- 1.0 (exp (/ (- 0.0 h) 0.06))))) (select (< MoveLatchStateN 0.5) ocy MoveLatchYaw)))))   ; V2.34: the locomotion-frame input frame when LocoFrameEnabled
+   (set MoveLatchInYaw (select mengage miy (select (and (> MoveLatchStateN 0.5) (< MoveLatchStateN 1.5)) MoveLatchInYaw miy)))
+   (set MoveLatchState MoveLatchStateN)
+-  (set MoveLatchOn (> MoveLatchStateN 0.5))
++  (set MoveLatchOn (or lon (> MoveLatchStateN 0.5)))   ; V2.34: always on with the locomotion frame (the frame IS LocoIFY)
+   (set CamRecVel rv)
+   (set CamRecStableT rst)
++  (set CamRecTurnSign (select (> (abs YawRate) 60.0) (select (> YawRate 0.0) 1.0 -1.0) CamRecTurnSign))   ; V2.34 (c) the side the body last turned
+   (set CamRecPrevTravel rty)
+   ; comfort scale (CamComfortScale 1 = authored, ~0.3 = low-motion profile): the WHOLE SHME camera offset and FOV change
+   (bind cs (clamp (R CamComfortScale) 0.0 1.0))
