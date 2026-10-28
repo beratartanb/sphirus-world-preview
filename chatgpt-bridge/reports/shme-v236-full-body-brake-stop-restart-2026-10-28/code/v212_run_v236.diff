@@ -1,0 +1,19 @@
+--- Saved/Codex/SHME_V236_20261028/checkpoint/v212_run.sh.pre236	2026-10-28 19:44:03.744026200 +0300
++++ Tools/SHME_V212_20261017/v212_run.sh	2026-10-28 20:01:27.965952300 +0300
+@@ -326,6 +326,16 @@
+   j35_rev) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.0,"S",1],[5.6,"S",0],[5.6,"W",1],[8.2,"W",0]],"stop":2.5}');;   # V2.35 representative chain: stand -> jog start -> forward jog -> hard opposite request (F_B) -> back-run -> opposite again (B_F) -> forward -> stop
+   j35_rev2) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"S",1],[3.0,"S",0],[3.0,"W",1],[5.6,"W",0],[5.6,"S",1],[8.2,"S",0]],"stop":2.5}');;   # V2.35 mirror chain: back-run start -> B_F -> forward -> F_B (other support entry) -> back-run -> stop
+   j35_relstop) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.0,"S",1],[3.25,"S",0]],"stop":3.0}');;   # V2.35: jog forward, S tapped 0.25 s and released for good (the reversal must settle into a stop, not run on)
++  j36_stop) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0]],"stop":2.6}');;   # V2.36 jog forward -> release -> full stop (release phase A)
++  j36_stopb) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.19,"W",0]],"stop":2.6}');;  # same, release half a stride later (other brake foot)
++  j36_stopr) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[5.0,"W",1],[7.0,"W",0]],"stop":2.6}');;   # stop, settle, restart forward from the stopped support, stop again
++  j36_rse) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.25,"W",1],[5.0,"W",0]],"stop":2.6}');;   # re-press EARLY in the stop (brake step)
++  j36_rsm) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.5,"W",1],[5.2,"W",0]],"stop":2.6}');;    # re-press MID stop
++  j36_rsl) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.85,"W",1],[5.6,"W",0]],"stop":2.6}');;   # re-press LATE (closing step)
++  j36_rsx) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[3.4,"S",1],[5.0,"S",0]],"stop":2.6}');;    # counter request (S) during the stop
++  j36_wjs) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0.0,"W",1],[1.6,"LeftShift",1],[1.72,"LeftShift",0],[4.0,"W",0],[6.0,"W",1],[7.6,"W",0]],"stop":2.6}');;   # walk -> jog -> stop -> forward again -> stop
++  j36_wjsb) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0.0,"W",1],[1.6,"LeftShift",1],[1.72,"LeftShift",0],[4.19,"W",0],[6.19,"W",1],[7.8,"W",0]],"stop":2.6}');;  # same, other brake foot
++  j36_sside) REQ=$(mv '{"start":2.0,"gait":"walk","keys":[[0,"LeftShift",1],[0.12,"LeftShift",0],[0.3,"W",1],[3.0,"W",0],[5.0,"A",1],[6.6,"A",0],[7.6,"W",1],[7.6,"D",1],[9.0,"W",0],[9.0,"D",0]],"stop":2.6}');;   # stop -> side start (A) -> diagonal start (W+D)
+   *) echo "unknown scenario $SCN"; exit 2;;
+ esac
+ mkdir -p ../../Saved/Codex/SHME_V212_20261017/req; echo "$REQ" > "../../Saved/Codex/SHME_V212_20261017/req/$LBL.json"

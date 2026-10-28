@@ -1,0 +1,4850 @@
+{
+ "dry": false,
+ "loops": {
+  "rear": {
+   "T": 1.3,
+   "V": 265.3,
+   "NK": 39
+  },
+  "fwd": {
+   "T": 1.5,
+   "V": 297.9,
+   "NK": 45
+  }
+ },
+ "prof": {
+  "B_F": {
+   "v0": 246.0,
+   "brake": 720.0,
+   "push": 261.0,
+   "vexit": 301.0
+  },
+  "F_B": {
+   "v0": 301.0,
+   "brake": 680.0,
+   "push": 198.0,
+   "vexit": 246.0
+  }
+ },
+ "cfg": {
+  "dry_run": false,
+  "nph": 32,
+  "fam": [
+   "B_F",
+   "F_B"
+  ],
+  "t_first": -0.04,
+  "brake_deg": 4.0,
+  "push_deg": 3.0,
+  "tail": 0.2,
+  "brake_behind": 10.0,
+  "dip_cm": 2.5,
+  "arm_keep": 0.25,
+  "arm_fwd": 9.0,
+  "neck_k": 0.7,
+  "elbow": 18.0,
+  "prof_table": "C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Saved/Codex/SHME_V235_20261028/capsule_rev235.json"
+ },
+ "clips": {
+  "SHM236_JogRev_B_F_P0": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.0,
+   "tB": 0.288,
+   "tz": 0.324,
+   "tS": 0.408,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.144,
+   "ballB": [
+    -9.3,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -28.8,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.87,
+   "foot_err_at": {
+    "t": 0.77,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.6,
+     35.1,
+     -83.0
+    ]
+   },
+   "planted_drift": 0.76,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -1.9,
+   "entry_err": 0.47,
+   "exit_err": 1.2,
+   "p3_range": [
+    4.8,
+    15.7
+   ],
+   "pn_range": [
+    -0.4,
+    11.6
+   ],
+   "steps": [
+    [
+     0.27,
+     "r",
+     -51.1
+    ],
+    [
+     0.43,
+     "l",
+     -13.6
+    ],
+    [
+     0.87,
+     "r",
+     78.8
+    ],
+    [
+     1.33,
+     "l",
+     197.0
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.503,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P0"
+  },
+  "SHM236_JogRev_B_F_P1": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.041,
+   "tB": 0.252,
+   "tz": 0.324,
+   "tS": 0.372,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.108,
+   "ballB": [
+    -9.3,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.4,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.14,
+   "foot_err_at": {
+    "t": 0.73,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.6,
+     35.9,
+     -83.0
+    ]
+   },
+   "planted_drift": 0.68,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -3.3,
+   "entry_err": 0.71,
+   "exit_err": 1.33,
+   "p3_range": [
+    4.7,
+    15.7
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.23,
+     "r",
+     -51.2
+    ],
+    [
+     0.37,
+     "l",
+     -15.1
+    ],
+    [
+     0.83,
+     "r",
+     71.0
+    ],
+    [
+     1.3,
+     "l",
+     189.4
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.528,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P1"
+  },
+  "SHM236_JogRev_B_F_P2": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.081,
+   "tB": 0.216,
+   "tz": 0.324,
+   "tS": 0.336,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.072,
+   "ballB": [
+    -9.4,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -31.1,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 4.09,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "l",
+    "target_rel_pelvis": [
+     10.9,
+     35.1,
+     -85.1
+    ]
+   },
+   "planted_drift": 0.7,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -5.1,
+   "entry_err": 0.82,
+   "exit_err": 0.86,
+   "p3_range": [
+    4.7,
+    15.8
+   ],
+   "pn_range": [
+    -0.5,
+    11.7
+   ],
+   "steps": [
+    [
+     0.2,
+     "r",
+     -51.3
+    ],
+    [
+     0.33,
+     "l",
+     -15.9
+    ],
+    [
+     0.8,
+     "r",
+     63.2
+    ],
+    [
+     1.27,
+     "l",
+     181.8
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.553,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P2"
+  },
+  "SHM236_JogRev_B_F_P3": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.122,
+   "tB": 0.144,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -9.2,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.5,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.36,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.6,
+     36.4,
+     -82.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.0,
+   "exit_err": 1.9,
+   "p3_range": [
+    4.8,
+    16.7
+   ],
+   "pn_range": [
+    -0.3,
+    11.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     -51.3
+    ],
+    [
+     0.3,
+     "l",
+     -15.3
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P3"
+  },
+  "SHM236_JogRev_B_F_P4": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.162,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -9.2,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.5,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.36,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.6,
+     36.4,
+     -82.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.0,
+   "exit_err": 1.9,
+   "p3_range": [
+    4.7,
+    16.7
+   ],
+   "pn_range": [
+    -0.5,
+    11.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     -51.8
+    ],
+    [
+     0.3,
+     "l",
+     -15.3
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P4"
+  },
+  "SHM236_JogRev_B_F_P5": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.203,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -9.3,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.5,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.36,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.6,
+     36.4,
+     -82.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.0,
+   "exit_err": 1.9,
+   "p3_range": [
+    4.7,
+    16.7
+   ],
+   "pn_range": [
+    -0.4,
+    11.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     -51.8
+    ],
+    [
+     0.3,
+     "l",
+     -15.3
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P5"
+  },
+  "SHM236_JogRev_B_F_P6": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.244,
+   "tB": 0.395,
+   "tz": 0.324,
+   "tS": 0.515,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    8.7,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -17.9,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 0.9,
+   "foot_err_at": {
+    "t": 0.87,
+    "s": "l",
+    "target_rel_pelvis": [
+     6.8,
+     31.2,
+     -82.7
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -0.6,
+   "entry_err": 0.0,
+   "exit_err": 1.54,
+   "p3_range": [
+    3.0,
+    15.7
+   ],
+   "pn_range": [
+    -0.5,
+    10.8
+   ],
+   "steps": [
+    [
+     0.37,
+     "l",
+     -50.5
+    ],
+    [
+     0.53,
+     "r",
+     -2.6
+    ],
+    [
+     1.0,
+     "l",
+     101.6
+    ],
+    [
+     1.33,
+     "r",
+     211.4
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.061,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P6"
+  },
+  "SHM236_JogRev_B_F_P7": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.284,
+   "tB": 0.324,
+   "tz": 0.324,
+   "tS": 0.444,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.18,
+   "ballB": [
+    9.4,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -25.2,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.71,
+   "foot_err_at": {
+    "t": 0.8,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.1,
+     33.8,
+     -82.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -0.7,
+   "entry_err": 0.18,
+   "exit_err": 1.79,
+   "p3_range": [
+    3.0,
+    15.6
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.3,
+     "l",
+     -50.7
+    ],
+    [
+     0.47,
+     "r",
+     -10.0
+    ],
+    [
+     0.93,
+     "l",
+     86.4
+    ],
+    [
+     1.3,
+     "r",
+     196.8
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.111,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P7"
+  },
+  "SHM236_JogRev_B_F_P8": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.325,
+   "tB": 0.288,
+   "tz": 0.324,
+   "tS": 0.408,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.144,
+   "ballB": [
+    9.1,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -27.6,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.07,
+   "foot_err_at": {
+    "t": 0.77,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.1,
+     34.9,
+     -82.4
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -1.9,
+   "entry_err": 0.15,
+   "exit_err": 2.15,
+   "p3_range": [
+    3.1,
+    15.7
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.27,
+     "l",
+     -50.9
+    ],
+    [
+     0.43,
+     "r",
+     -12.4
+    ],
+    [
+     0.9,
+     "l",
+     78.8
+    ],
+    [
+     1.27,
+     "r",
+     189.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.136,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P8"
+  },
+  "SHM236_JogRev_B_F_P9": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.366,
+   "tB": 0.252,
+   "tz": 0.324,
+   "tS": 0.372,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.108,
+   "ballB": [
+    8.9,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.2,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.35,
+   "foot_err_at": {
+    "t": 0.73,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.0,
+     35.7,
+     -82.4
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -3.5,
+   "entry_err": 0.62,
+   "exit_err": 2.49,
+   "p3_range": [
+    3.0,
+    15.8
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.23,
+     "l",
+     -51.0
+    ],
+    [
+     0.4,
+     "r",
+     -14.0
+    ],
+    [
+     0.87,
+     "l",
+     71.2
+    ],
+    [
+     1.23,
+     "r",
+     181.5
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.161,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P9"
+  },
+  "SHM236_JogRev_B_F_P10": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.406,
+   "tB": 0.216,
+   "tz": 0.324,
+   "tS": 0.336,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.072,
+   "ballB": [
+    8.7,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -30.0,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 3.56,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.8,
+     33.0,
+     -85.5
+    ]
+   },
+   "planted_drift": 0.06,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -5.1,
+   "entry_err": 0.83,
+   "exit_err": 3.06,
+   "p3_range": [
+    3.0,
+    15.7
+   ],
+   "pn_range": [
+    -0.5,
+    11.5
+   ],
+   "steps": [
+    [
+     0.2,
+     "l",
+     -51.2
+    ],
+    [
+     0.37,
+     "r",
+     -14.7
+    ],
+    [
+     0.83,
+     "l",
+     64.1
+    ],
+    [
+     1.2,
+     "r",
+     173.4
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.186,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P10"
+  },
+  "SHM236_JogRev_B_F_P11": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.447,
+   "tB": 0.18,
+   "tz": 0.324,
+   "tS": 0.3,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.036,
+   "ballB": [
+    8.7,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.8,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 5.76,
+   "foot_err_at": {
+    "t": 0.07,
+    "s": "r",
+    "target_rel_pelvis": [
+     -9.2,
+     37.3,
+     -86.1
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.0,
+   "entry_err": 1.38,
+   "exit_err": 5.48,
+   "p3_range": [
+    3.2,
+    15.6
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.17,
+     "l",
+     -51.3
+    ],
+    [
+     0.3,
+     "r",
+     -14.5
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P11"
+  },
+  "SHM236_JogRev_B_F_P12": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.487,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    9.3,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.4,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.57,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.1,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.2,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    3.6,
+    15.6
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     -51.8
+    ],
+    [
+     0.3,
+     "r",
+     -14.1
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P12"
+  },
+  "SHM236_JogRev_B_F_P13": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.528,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    9.0,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.4,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.58,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.1,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.5,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    4.5,
+    15.6
+   ],
+   "pn_range": [
+    -0.1,
+    11.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     -51.8
+    ],
+    [
+     0.3,
+     "r",
+     -14.1
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P13"
+  },
+  "SHM236_JogRev_B_F_P14": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.569,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    8.8,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.4,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.58,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.0,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.3,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    4.5,
+    15.6
+   ],
+   "pn_range": [
+    0.6,
+    11.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     -51.8
+    ],
+    [
+     0.3,
+     "r",
+     -14.1
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P14"
+  },
+  "SHM236_JogRev_B_F_P15": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.609,
+   "tB": 0.359,
+   "tz": 0.324,
+   "tS": 0.479,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.216,
+   "ballB": [
+    -5.7,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -23.1,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.14,
+   "foot_err_at": {
+    "t": 0.83,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.6,
+     33.1,
+     -83.0
+    ]
+   },
+   "planted_drift": 1.19,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": 0.0,
+   "entry_err": 0.69,
+   "exit_err": 1.86,
+   "p3_range": [
+    2.0,
+    15.7
+   ],
+   "pn_range": [
+    -1.9,
+    11.6
+   ],
+   "steps": [
+    [
+     0.33,
+     "r",
+     -50.7
+    ],
+    [
+     0.5,
+     "l",
+     -7.9
+    ],
+    [
+     0.93,
+     "r",
+     94.3
+    ],
+    [
+     1.37,
+     "l",
+     211.7
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.453,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P15"
+  },
+  "SHM236_JogRev_B_F_P16": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.65,
+   "tB": 0.288,
+   "tz": 0.324,
+   "tS": 0.408,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.144,
+   "ballB": [
+    -5.5,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -28.8,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.89,
+   "foot_err_at": {
+    "t": 0.77,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.6,
+     35.1,
+     -83.0
+    ]
+   },
+   "planted_drift": 0.94,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -1.9,
+   "entry_err": 0.13,
+   "exit_err": 1.2,
+   "p3_range": [
+    2.0,
+    15.7
+   ],
+   "pn_range": [
+    -1.8,
+    11.6
+   ],
+   "steps": [
+    [
+     0.27,
+     "r",
+     -50.9
+    ],
+    [
+     0.43,
+     "l",
+     -13.6
+    ],
+    [
+     0.87,
+     "r",
+     78.8
+    ],
+    [
+     1.33,
+     "l",
+     197.0
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.503,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P16"
+  },
+  "SHM236_JogRev_B_F_P17": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.691,
+   "tB": 0.252,
+   "tz": 0.324,
+   "tS": 0.372,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.108,
+   "ballB": [
+    -5.5,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.4,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.16,
+   "foot_err_at": {
+    "t": 0.73,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.6,
+     35.9,
+     -83.0
+    ]
+   },
+   "planted_drift": 0.79,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -3.3,
+   "entry_err": 0.68,
+   "exit_err": 1.33,
+   "p3_range": [
+    2.1,
+    15.7
+   ],
+   "pn_range": [
+    -1.8,
+    11.6
+   ],
+   "steps": [
+    [
+     0.23,
+     "r",
+     -51.1
+    ],
+    [
+     0.37,
+     "l",
+     -15.1
+    ],
+    [
+     0.83,
+     "r",
+     71.0
+    ],
+    [
+     1.3,
+     "l",
+     189.4
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.528,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P17"
+  },
+  "SHM236_JogRev_B_F_P18": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.731,
+   "tB": 0.216,
+   "tz": 0.324,
+   "tS": 0.336,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.072,
+   "ballB": [
+    -5.5,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -31.1,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 3.83,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "l",
+    "target_rel_pelvis": [
+     6.6,
+     33.7,
+     -85.3
+    ]
+   },
+   "planted_drift": 0.75,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -5.1,
+   "entry_err": 1.07,
+   "exit_err": 0.86,
+   "p3_range": [
+    2.0,
+    15.8
+   ],
+   "pn_range": [
+    -1.9,
+    11.7
+   ],
+   "steps": [
+    [
+     0.2,
+     "r",
+     -51.3
+    ],
+    [
+     0.33,
+     "l",
+     -15.9
+    ],
+    [
+     0.8,
+     "r",
+     63.2
+    ],
+    [
+     1.27,
+     "l",
+     181.8
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.553,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P18"
+  },
+  "SHM236_JogRev_B_F_P19": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.772,
+   "tB": 0.18,
+   "tz": 0.324,
+   "tS": 0.3,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.036,
+   "ballB": [
+    -5.6,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.9,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 6.1,
+   "foot_err_at": {
+    "t": 0.07,
+    "s": "l",
+    "target_rel_pelvis": [
+     6.8,
+     39.3,
+     -85.3
+    ]
+   },
+   "planted_drift": 0.46,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 1.43,
+   "exit_err": 1.9,
+   "p3_range": [
+    2.0,
+    16.7
+   ],
+   "pn_range": [
+    -1.9,
+    11.5
+   ],
+   "steps": [
+    [
+     0.17,
+     "r",
+     -51.4
+    ],
+    [
+     0.3,
+     "l",
+     -15.7
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P19"
+  },
+  "SHM236_JogRev_B_F_P20": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.812,
+   "tB": 0.144,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.7,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.5,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.38,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.6,
+     36.4,
+     -82.9
+    ]
+   },
+   "planted_drift": 0.39,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.0,
+   "exit_err": 1.9,
+   "p3_range": [
+    2.1,
+    16.7
+   ],
+   "pn_range": [
+    -1.8,
+    11.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     -51.5
+    ],
+    [
+     0.3,
+     "l",
+     -15.3
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P20"
+  },
+  "SHM236_JogRev_B_F_P21": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.853,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.5,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.5,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.38,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.6,
+     36.4,
+     -82.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.0,
+   "exit_err": 1.9,
+   "p3_range": [
+    2.6,
+    16.7
+   ],
+   "pn_range": [
+    -1.7,
+    11.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     -51.8
+    ],
+    [
+     0.3,
+     "l",
+     -15.3
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P21"
+  },
+  "SHM236_JogRev_B_F_P22": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.894,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.5,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -30.5,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.38,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.6,
+     36.4,
+     -82.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.0,
+   "exit_err": 1.9,
+   "p3_range": [
+    2.8,
+    16.7
+   ],
+   "pn_range": [
+    -0.9,
+    11.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     -51.8
+    ],
+    [
+     0.3,
+     "l",
+     -15.3
+    ],
+    [
+     0.77,
+     "r",
+     49.7
+    ],
+    [
+     1.2,
+     "l",
+     166.6
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.603,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P22"
+  },
+  "SHM236_JogRev_B_F_P23": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.934,
+   "tB": 0.324,
+   "tz": 0.324,
+   "tS": 0.444,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.144,
+   "ballB": [
+    12.7,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -25.2,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.68,
+   "foot_err_at": {
+    "t": 0.8,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.9,
+     33.8,
+     -82.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -0.5,
+   "entry_err": 1.11,
+   "exit_err": 1.79,
+   "p3_range": [
+    2.7,
+    15.6
+   ],
+   "pn_range": [
+    0.1,
+    11.6
+   ],
+   "steps": [
+    [
+     0.3,
+     "l",
+     -50.6
+    ],
+    [
+     0.47,
+     "r",
+     -10.0
+    ],
+    [
+     0.93,
+     "l",
+     86.4
+    ],
+    [
+     1.3,
+     "r",
+     196.8
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.111,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P23"
+  },
+  "SHM236_JogRev_B_F_P24": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.975,
+   "tB": 0.288,
+   "tz": 0.324,
+   "tS": 0.408,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.108,
+   "ballB": [
+    12.4,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -27.6,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.04,
+   "foot_err_at": {
+    "t": 0.77,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.9,
+     34.9,
+     -82.4
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -1.4,
+   "entry_err": 0.51,
+   "exit_err": 2.15,
+   "p3_range": [
+    3.1,
+    15.7
+   ],
+   "pn_range": [
+    0.6,
+    11.6
+   ],
+   "steps": [
+    [
+     0.27,
+     "l",
+     -50.8
+    ],
+    [
+     0.43,
+     "r",
+     -12.4
+    ],
+    [
+     0.9,
+     "l",
+     78.8
+    ],
+    [
+     1.27,
+     "r",
+     189.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.136,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P24"
+  },
+  "SHM236_JogRev_B_F_P25": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.016,
+   "tB": 0.252,
+   "tz": 0.324,
+   "tS": 0.372,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": true,
+   "tS_lift": 0.072,
+   "ballB": [
+    12.1,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.2,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.33,
+   "foot_err_at": {
+    "t": 0.73,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.9,
+     35.7,
+     -82.4
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -3.3,
+   "entry_err": 1.06,
+   "exit_err": 2.49,
+   "p3_range": [
+    3.2,
+    15.8
+   ],
+   "pn_range": [
+    0.6,
+    11.6
+   ],
+   "steps": [
+    [
+     0.23,
+     "l",
+     -51.0
+    ],
+    [
+     0.4,
+     "r",
+     -14.0
+    ],
+    [
+     0.87,
+     "l",
+     71.2
+    ],
+    [
+     1.23,
+     "r",
+     181.5
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.161,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P25"
+  },
+  "SHM236_JogRev_B_F_P26": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.056,
+   "tB": 0.18,
+   "tz": 0.324,
+   "tS": 0.3,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    13.0,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.8,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.55,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     8.2,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.1,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    3.4,
+    15.6
+   ],
+   "pn_range": [
+    0.6,
+    11.6
+   ],
+   "steps": [
+    [
+     0.17,
+     "l",
+     -51.2
+    ],
+    [
+     0.3,
+     "r",
+     -14.5
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P26"
+  },
+  "SHM236_JogRev_B_F_P27": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.097,
+   "tB": 0.144,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    12.8,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.4,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.55,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     8.1,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -6.7,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    4.0,
+    15.6
+   ],
+   "pn_range": [
+    0.6,
+    11.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     -51.3
+    ],
+    [
+     0.3,
+     "r",
+     -14.1
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P27"
+  },
+  "SHM236_JogRev_B_F_P28": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.137,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    12.6,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.4,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.55,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     8.0,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.1,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    4.7,
+    15.6
+   ],
+   "pn_range": [
+    0.9,
+    11.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     -51.8
+    ],
+    [
+     0.3,
+     "r",
+     -14.1
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P28"
+  },
+  "SHM236_JogRev_B_F_P29": {
+   "fam": "B_F",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.178,
+   "tB": 0.12,
+   "tz": 0.324,
+   "tS": 0.284,
+   "tv": 1.183,
+   "tauHS": 0.287,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    12.3,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    -4.8,
+    -29.4,
+    6.1
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 2.55,
+   "foot_err_at": {
+    "t": 0.63,
+    "s": "l",
+    "target_rel_pelvis": [
+     8.0,
+     36.3,
+     -82.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.8,
+   "entry_err": 0.0,
+   "exit_err": 5.48,
+   "p3_range": [
+    6.2,
+    15.6
+   ],
+   "pn_range": [
+    1.9,
+    11.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     -51.8
+    ],
+    [
+     0.3,
+     "r",
+     -14.1
+    ],
+    [
+     0.8,
+     "l",
+     49.3
+    ],
+    [
+     1.17,
+     "r",
+     159.3
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.236,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P29"
+  },
+  "SHM236_JogRev_B_F_P30": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 1.219,
+   "tB": 0.359,
+   "tz": 0.324,
+   "tS": 0.479,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.216,
+   "ballB": [
+    -9.1,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -23.1,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.12,
+   "foot_err_at": {
+    "t": 0.83,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.4,
+     33.1,
+     -83.0
+    ]
+   },
+   "planted_drift": 1.17,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": 0.0,
+   "entry_err": 2.88,
+   "exit_err": 1.86,
+   "p3_range": [
+    4.7,
+    15.7
+   ],
+   "pn_range": [
+    -0.5,
+    11.6
+   ],
+   "steps": [
+    [
+     0.33,
+     "r",
+     -50.7
+    ],
+    [
+     0.5,
+     "l",
+     -7.9
+    ],
+    [
+     0.93,
+     "r",
+     94.3
+    ],
+    [
+     1.37,
+     "l",
+     211.7
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.453,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P30"
+  },
+  "SHM236_JogRev_B_F_P31": {
+   "fam": "B_F",
+   "B": "r",
+   "S": "l",
+   "tau0": 1.259,
+   "tB": 0.324,
+   "tz": 0.324,
+   "tS": 0.444,
+   "tv": 1.183,
+   "tauHS": 0.653,
+   "s_planted0": true,
+   "tS_lift": 0.18,
+   "ballB": [
+    -9.2,
+    -51.8,
+    -2.3
+   ],
+   "landS": [
+    3.2,
+    -26.4,
+    5.8
+   ],
+   "frames": 43,
+   "len": 1.4,
+   "foot_err": 1.52,
+   "foot_err_at": {
+    "t": 0.8,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.5,
+     34.2,
+     -83.0
+    ]
+   },
+   "planted_drift": 0.98,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -0.7,
+   "entry_err": 0.14,
+   "exit_err": 1.9,
+   "p3_range": [
+    4.8,
+    15.7
+   ],
+   "pn_range": [
+    -0.5,
+    11.5
+   ],
+   "steps": [
+    [
+     0.3,
+     "r",
+     -50.9
+    ],
+    [
+     0.47,
+     "l",
+     -11.2
+    ],
+    [
+     0.9,
+     "r",
+     86.6
+    ],
+    [
+     1.33,
+     "l",
+     204.2
+    ]
+   ],
+   "root_stop": -41.8,
+   "root_end": 197.6,
+   "tauX_end": 1.478,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_B_F_P31"
+  },
+  "SHM236_JogRev_F_B_P0": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.0,
+   "tB": 0.297,
+   "tz": 0.393,
+   "tS": 0.417,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.132,
+   "ballB": [
+    -5.1,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.5,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.43,
+    "s": "l",
+    "target_rel_pelvis": [
+     12.6,
+     28.6,
+     -81.4
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.7,
+   "entry_err": 0.72,
+   "exit_err": 3.15,
+   "p3_range": [
+    1.2,
+    16.8
+   ],
+   "pn_range": [
+    -2.3,
+    11.3
+   ],
+   "steps": [
+    [
+     0.27,
+     "r",
+     69.7
+    ],
+    [
+     0.43,
+     "l",
+     52.6
+    ],
+    [
+     0.87,
+     "r",
+     -9.0
+    ],
+    [
+     1.2,
+     "l",
+     -78.9
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.458,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P0"
+  },
+  "SHM236_JogRev_F_B_P1": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.047,
+   "tB": 0.264,
+   "tz": 0.393,
+   "tS": 0.384,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.099,
+   "ballB": [
+    -5.0,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.7,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 2.22,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "l",
+    "target_rel_pelvis": [
+     4.0,
+     -38.4,
+     -81.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.08,
+   "exit_err": 2.37,
+   "p3_range": [
+    1.1,
+    16.7
+   ],
+   "pn_range": [
+    -2.5,
+    11.3
+   ],
+   "steps": [
+    [
+     0.23,
+     "r",
+     69.8
+    ],
+    [
+     0.4,
+     "l",
+     52.8
+    ],
+    [
+     0.87,
+     "r",
+     -2.8
+    ],
+    [
+     1.17,
+     "l",
+     -72.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.483,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P1"
+  },
+  "SHM236_JogRev_F_B_P2": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.094,
+   "tB": 0.198,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.033,
+   "ballB": [
+    -5.0,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 3.53,
+   "foot_err_at": {
+    "t": 0.07,
+    "s": "l",
+    "target_rel_pelvis": [
+     4.3,
+     -46.6,
+     -78.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.1,
+   "entry_err": 0.84,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    16.8
+   ],
+   "pn_range": [
+    -2.8,
+    11.0
+   ],
+   "steps": [
+    [
+     0.2,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P2"
+  },
+  "SHM236_JogRev_F_B_P3": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.141,
+   "tB": 0.165,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.0,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.4,
+    "s": "r",
+    "target_rel_pelvis": [
+     -1.8,
+     -14.0,
+     -77.7
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.2,
+   "entry_err": 0.0,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    16.7
+   ],
+   "pn_range": [
+    -2.8,
+    10.3
+   ],
+   "steps": [
+    [
+     0.17,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P3"
+  },
+  "SHM236_JogRev_F_B_P4": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.188,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -4.8,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.43,
+    "s": "r",
+    "target_rel_pelvis": [
+     -10.1,
+     -28.2,
+     -75.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.6,
+   "entry_err": 0.0,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    15.5
+   ],
+   "pn_range": [
+    -2.8,
+    9.2
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P4"
+  },
+  "SHM236_JogRev_F_B_P5": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.234,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.1,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.5,
+    "s": "l",
+    "target_rel_pelvis": [
+     6.8,
+     -25.8,
+     -83.2
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.4,
+   "entry_err": 0.0,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    13.7
+   ],
+   "pn_range": [
+    -2.8,
+    8.2
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P5"
+  },
+  "SHM236_JogRev_F_B_P6": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.281,
+   "tB": 0.396,
+   "tz": 0.393,
+   "tS": 0.516,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    4.1,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    41.6,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.37,
+    "s": "l",
+    "target_rel_pelvis": [
+     4.8,
+     -4.9,
+     -83.3
+    ]
+   },
+   "planted_drift": 1.36,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -3.9,
+   "entry_err": 0.0,
+   "exit_err": 3.45,
+   "p3_range": [
+    1.9,
+    12.2
+   ],
+   "pn_range": [
+    -1.8,
+    8.1
+   ],
+   "steps": [
+    [
+     0.37,
+     "l",
+     70.2
+    ],
+    [
+     0.53,
+     "r",
+     48.4
+    ],
+    [
+     0.97,
+     "l",
+     -24.2
+    ],
+    [
+     1.3,
+     "r",
+     -108.9
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.049,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P6"
+  },
+  "SHM236_JogRev_F_B_P7": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.328,
+   "tB": 0.33,
+   "tz": 0.393,
+   "tS": 0.45,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.165,
+   "ballB": [
+    3.7,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.0,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.27,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.5,
+     -19.1,
+     -78.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -6.9,
+   "entry_err": 0.81,
+   "exit_err": 3.93,
+   "p3_range": [
+    1.7,
+    12.3
+   ],
+   "pn_range": [
+    -1.9,
+    8.1
+   ],
+   "steps": [
+    [
+     0.3,
+     "l",
+     69.8
+    ],
+    [
+     0.47,
+     "r",
+     51.8
+    ],
+    [
+     0.9,
+     "l",
+     -11.5
+    ],
+    [
+     1.27,
+     "r",
+     -96.9
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.099,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P7"
+  },
+  "SHM236_JogRev_F_B_P8": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.375,
+   "tB": 0.297,
+   "tz": 0.393,
+   "tS": 0.417,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.132,
+   "ballB": [
+    3.9,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.7,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.6,
+    "s": "r",
+    "target_rel_pelvis": [
+     -6.9,
+     -17.1,
+     -81.6
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.1,
+   "entry_err": 0.52,
+   "exit_err": 3.42,
+   "p3_range": [
+    1.5,
+    12.2
+   ],
+   "pn_range": [
+    -1.9,
+    8.1
+   ],
+   "steps": [
+    [
+     0.27,
+     "l",
+     69.6
+    ],
+    [
+     0.43,
+     "r",
+     52.6
+    ],
+    [
+     0.87,
+     "l",
+     -5.2
+    ],
+    [
+     1.23,
+     "r",
+     -90.7
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.124,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P8"
+  },
+  "SHM236_JogRev_F_B_P9": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.422,
+   "tB": 0.231,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.066,
+   "ballB": [
+    3.7,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.3,
+    "s": "l",
+    "target_rel_pelvis": [
+     12.3,
+     -3.6,
+     -68.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.8,
+   "entry_err": 0.16,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    12.2
+   ],
+   "pn_range": [
+    -1.8,
+    7.4
+   ],
+   "steps": [
+    [
+     0.23,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P9"
+  },
+  "SHM236_JogRev_F_B_P10": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.469,
+   "tB": 0.198,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.033,
+   "ballB": [
+    3.8,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 2.55,
+   "foot_err_at": {
+    "t": 0.07,
+    "s": "r",
+    "target_rel_pelvis": [
+     -3.9,
+     -44.9,
+     -77.8
+    ]
+   },
+   "planted_drift": 0.37,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.8,
+   "entry_err": 0.47,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    12.3
+   ],
+   "pn_range": [
+    -1.8,
+    6.6
+   ],
+   "steps": [
+    [
+     0.2,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P10"
+  },
+  "SHM236_JogRev_F_B_P11": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.516,
+   "tB": 0.165,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    4.1,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.43,
+    "s": "l",
+    "target_rel_pelvis": [
+     10.5,
+     -20.6,
+     -73.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.5,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    12.2
+   ],
+   "pn_range": [
+    -1.8,
+    6.1
+   ],
+   "steps": [
+    [
+     0.17,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P11"
+  },
+  "SHM236_JogRev_F_B_P12": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.562,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    3.7,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.3,
+    "s": "r",
+    "target_rel_pelvis": [
+     -11.1,
+     -20.1,
+     -72.8
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.4,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    11.9
+   ],
+   "pn_range": [
+    -1.8,
+    5.7
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P12"
+  },
+  "SHM236_JogRev_F_B_P13": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.609,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    4.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.5,
+    "s": "r",
+    "target_rel_pelvis": [
+     -7.1,
+     -25.6,
+     -81.4
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.0,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    10.9
+   ],
+   "pn_range": [
+    -1.8,
+    6.8
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P13"
+  },
+  "SHM236_JogRev_F_B_P14": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.656,
+   "tB": 0.33,
+   "tz": 0.393,
+   "tS": 0.45,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.198,
+   "ballB": [
+    -6.0,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    44.7,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.33,
+    "s": "r",
+    "target_rel_pelvis": [
+     -5.8,
+     -3.9,
+     -84.8
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.6,
+   "entry_err": 1.1,
+   "exit_err": 3.4,
+   "p3_range": [
+    1.4,
+    15.7
+   ],
+   "pn_range": [
+    -2.1,
+    9.3
+   ],
+   "steps": [
+    [
+     0.3,
+     "r",
+     69.5
+    ],
+    [
+     0.47,
+     "l",
+     51.8
+    ],
+    [
+     0.9,
+     "r",
+     -15.1
+    ],
+    [
+     1.23,
+     "l",
+     -85.5
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.433,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P14"
+  },
+  "SHM236_JogRev_F_B_P15": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.703,
+   "tB": 0.297,
+   "tz": 0.393,
+   "tS": 0.417,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.165,
+   "ballB": [
+    -5.7,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.5,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.2,
+     -27.0,
+     -57.7
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.9,
+   "entry_err": 0.9,
+   "exit_err": 3.15,
+   "p3_range": [
+    1.2,
+    15.7
+   ],
+   "pn_range": [
+    -2.3,
+    9.4
+   ],
+   "steps": [
+    [
+     0.27,
+     "r",
+     69.2
+    ],
+    [
+     0.43,
+     "l",
+     52.6
+    ],
+    [
+     0.87,
+     "r",
+     -9.0
+    ],
+    [
+     1.2,
+     "l",
+     -78.9
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.458,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P15"
+  },
+  "SHM236_JogRev_F_B_P16": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.75,
+   "tB": 0.231,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.099,
+   "ballB": [
+    -6.2,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.7,
+    "s": "r",
+    "target_rel_pelvis": [
+     -6.3,
+     -40.6,
+     -70.2
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.1,
+   "entry_err": 0.44,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    15.6
+   ],
+   "pn_range": [
+    -2.7,
+    9.3
+   ],
+   "steps": [
+    [
+     0.23,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P16"
+  },
+  "SHM236_JogRev_F_B_P17": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.797,
+   "tB": 0.198,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.066,
+   "ballB": [
+    -5.8,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.24,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "l",
+    "target_rel_pelvis": [
+     4.9,
+     -42.0,
+     -77.0
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.2,
+   "entry_err": 0.03,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    15.8
+   ],
+   "pn_range": [
+    -2.7,
+    9.4
+   ],
+   "steps": [
+    [
+     0.2,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P17"
+  },
+  "SHM236_JogRev_F_B_P18": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.844,
+   "tB": 0.45,
+   "tz": 0.393,
+   "tS": 0.57,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    37.0,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 3.24,
+   "foot_err_at": {
+    "t": 0.07,
+    "s": "l",
+    "target_rel_pelvis": [
+     5.3,
+     -47.3,
+     -77.3
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -2.2,
+   "entry_err": 0.0,
+   "exit_err": 3.4,
+   "p3_range": [
+    2.0,
+    15.6
+   ],
+   "pn_range": [
+    -1.9,
+    11.6
+   ],
+   "steps": [
+    [
+     0.47,
+     "l",
+     71.6
+    ],
+    [
+     0.6,
+     "r",
+     43.9
+    ],
+    [
+     1.03,
+     "l",
+     -36.0
+    ],
+    [
+     1.37,
+     "r",
+     -121.5
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 0.999,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P18"
+  },
+  "SHM236_JogRev_F_B_P19": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.891,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -6.0,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.2,
+    "s": "r",
+    "target_rel_pelvis": [
+     -5.0,
+     10.0,
+     -80.9
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.1,
+   "entry_err": 0.0,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    15.7
+   ],
+   "pn_range": [
+    -2.7,
+    9.4
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P19"
+  },
+  "SHM236_JogRev_F_B_P20": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.938,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.7,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.3,
+    "s": "l",
+    "target_rel_pelvis": [
+     10.0,
+     -22.1,
+     -72.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.6,
+   "entry_err": 0.0,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    15.2
+   ],
+   "pn_range": [
+    -2.7,
+    9.5
+   ],
+   "steps": [
+    [
+     0.13,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P20"
+  },
+  "SHM236_JogRev_F_B_P21": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 0.984,
+   "tB": 0.429,
+   "tz": 0.393,
+   "tS": 0.549,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.231,
+   "ballB": [
+    2.9,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    39.0,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.65,
+   "foot_err_at": {
+    "t": 0.0,
+    "s": "r",
+    "target_rel_pelvis": [
+     -5.8,
+     21.2,
+     -86.2
+    ]
+   },
+   "planted_drift": 1.37,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -4.0,
+   "entry_err": 1.78,
+   "exit_err": 2.86,
+   "p3_range": [
+    2.0,
+    14.9
+   ],
+   "pn_range": [
+    -1.9,
+    11.5
+   ],
+   "steps": [
+    [
+     0.4,
+     "l",
+     70.4
+    ],
+    [
+     0.57,
+     "r",
+     45.8
+    ],
+    [
+     1.0,
+     "l",
+     -30.2
+    ],
+    [
+     1.33,
+     "r",
+     -115.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.024,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P21"
+  },
+  "SHM236_JogRev_F_B_P22": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.031,
+   "tB": 0.396,
+   "tz": 0.393,
+   "tS": 0.516,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.198,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    41.6,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.93,
+    "s": "r",
+    "target_rel_pelvis": [
+     -9.5,
+     18.6,
+     -79.9
+    ]
+   },
+   "planted_drift": 1.35,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -4.5,
+   "entry_err": 0.99,
+   "exit_err": 3.45,
+   "p3_range": [
+    2.0,
+    15.0
+   ],
+   "pn_range": [
+    -1.8,
+    11.6
+   ],
+   "steps": [
+    [
+     0.37,
+     "l",
+     70.2
+    ],
+    [
+     0.53,
+     "r",
+     48.4
+    ],
+    [
+     0.97,
+     "l",
+     -24.2
+    ],
+    [
+     1.3,
+     "r",
+     -108.9
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.049,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P22"
+  },
+  "SHM236_JogRev_F_B_P23": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.078,
+   "tB": 0.363,
+   "tz": 0.393,
+   "tS": 0.483,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.165,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    43.6,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.8,
+    "s": "r",
+    "target_rel_pelvis": [
+     -8.7,
+     12.1,
+     -81.5
+    ]
+   },
+   "planted_drift": 1.43,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -5.5,
+   "entry_err": 0.62,
+   "exit_err": 3.89,
+   "p3_range": [
+    1.8,
+    14.9
+   ],
+   "pn_range": [
+    -1.8,
+    11.6
+   ],
+   "steps": [
+    [
+     0.33,
+     "l",
+     70.1
+    ],
+    [
+     0.5,
+     "r",
+     50.4
+    ],
+    [
+     0.93,
+     "l",
+     -17.8
+    ],
+    [
+     1.3,
+     "r",
+     -102.8
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.074,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P23"
+  },
+  "SHM236_JogRev_F_B_P24": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.125,
+   "tB": 0.297,
+   "tz": 0.393,
+   "tS": 0.417,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.099,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.7,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.1,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.1,
+     23.3,
+     -82.6
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -8.5,
+   "entry_err": 0.21,
+   "exit_err": 3.42,
+   "p3_range": [
+    1.5,
+    14.9
+   ],
+   "pn_range": [
+    -1.9,
+    11.5
+   ],
+   "steps": [
+    [
+     0.27,
+     "l",
+     69.7
+    ],
+    [
+     0.43,
+     "r",
+     52.6
+    ],
+    [
+     0.87,
+     "l",
+     -5.2
+    ],
+    [
+     1.23,
+     "r",
+     -90.7
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.124,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P24"
+  },
+  "SHM236_JogRev_F_B_P25": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.172,
+   "tB": 0.264,
+   "tz": 0.393,
+   "tS": 0.384,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": true,
+   "tS_lift": 0.066,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.9,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 1.45,
+   "foot_err_at": {
+    "t": 0.1,
+    "s": "r",
+    "target_rel_pelvis": [
+     -4.6,
+     -45.1,
+     -76.3
+    ]
+   },
+   "planted_drift": 0.19,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.4,
+   "entry_err": 0.04,
+   "exit_err": 4.03,
+   "p3_range": [
+    1.4,
+    15.0
+   ],
+   "pn_range": [
+    -1.9,
+    11.1
+   ],
+   "steps": [
+    [
+     0.23,
+     "l",
+     69.8
+    ],
+    [
+     0.4,
+     "r",
+     52.8
+    ],
+    [
+     0.87,
+     "l",
+     0.5
+    ],
+    [
+     1.2,
+     "r",
+     -84.4
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.149,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P25"
+  },
+  "SHM236_JogRev_F_B_P26": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.219,
+   "tB": 0.198,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    2.9,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 1.33,
+    "s": "l",
+    "target_rel_pelvis": [
+     12.5,
+     -11.0,
+     -68.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.5,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    14.9
+   ],
+   "pn_range": [
+    -1.8,
+    10.4
+   ],
+   "steps": [
+    [
+     0.2,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P26"
+  },
+  "SHM236_JogRev_F_B_P27": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.266,
+   "tB": 0.165,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.11,
+   "foot_err_at": {
+    "t": 0.33,
+    "s": "l",
+    "target_rel_pelvis": [
+     2.8,
+     -7.9,
+     -87.7
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.7,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    15.0
+   ],
+   "pn_range": [
+    -1.8,
+    10.0
+   ],
+   "steps": [
+    [
+     0.17,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P27"
+  },
+  "SHM236_JogRev_F_B_P28": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.312,
+   "tB": 0.132,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.41,
+   "foot_err_at": {
+    "t": 0.3,
+    "s": "l",
+    "target_rel_pelvis": [
+     2.2,
+     -5.7,
+     -88.1
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.6,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    14.5
+   ],
+   "pn_range": [
+    -1.8,
+    9.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P28"
+  },
+  "SHM236_JogRev_F_B_P29": {
+   "fam": "F_B",
+   "B": "l",
+   "S": "r",
+   "tau0": 1.359,
+   "tB": 0.12,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.253,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    3.0,
+    71.6,
+    -2.4
+   ],
+   "landS": [
+    -12.1,
+    45.3,
+    14.2
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 1.82,
+   "foot_err_at": {
+    "t": 0.3,
+    "s": "l",
+    "target_rel_pelvis": [
+     2.2,
+     -6.3,
+     -89.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.3,
+   "entry_err": 0.0,
+   "exit_err": 3.39,
+   "p3_range": [
+    1.1,
+    13.6
+   ],
+   "pn_range": [
+    -1.8,
+    10.6
+   ],
+   "steps": [
+    [
+     0.13,
+     "l",
+     71.6
+    ],
+    [
+     0.37,
+     "r",
+     52.1
+    ],
+    [
+     0.83,
+     "l",
+     6.4
+    ],
+    [
+     1.2,
+     "r",
+     -78.2
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.174,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P29"
+  },
+  "SHM236_JogRev_F_B_P30": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 1.406,
+   "tB": 0.396,
+   "tz": 0.393,
+   "tS": 0.516,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": false,
+   "tS_lift": 0.0,
+   "ballB": [
+    -5.0,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    41.4,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.33,
+    "s": "l",
+    "target_rel_pelvis": [
+     7.8,
+     -27.9,
+     -74.3
+    ]
+   },
+   "planted_drift": 1.4,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -4.6,
+   "entry_err": 0.0,
+   "exit_err": 2.43,
+   "p3_range": [
+    1.6,
+    16.7
+   ],
+   "pn_range": [
+    -1.9,
+    11.5
+   ],
+   "steps": [
+    [
+     0.37,
+     "r",
+     70.2
+    ],
+    [
+     0.53,
+     "l",
+     48.4
+    ],
+    [
+     0.97,
+     "r",
+     -27.5
+    ],
+    [
+     1.27,
+     "l",
+     -96.4
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.383,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P30"
+  },
+  "SHM236_JogRev_F_B_P31": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 1.453,
+   "tB": 0.33,
+   "tz": 0.393,
+   "tS": 0.45,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.165,
+   "ballB": [
+    -4.8,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    44.7,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.0,
+    "s": "l",
+    "target_rel_pelvis": [
+     2.0,
+     -1.1,
+     -81.5
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -7.7,
+   "entry_err": 1.08,
+   "exit_err": 3.4,
+   "p3_range": [
+    1.4,
+    16.8
+   ],
+   "pn_range": [
+    -2.1,
+    11.5
+   ],
+   "steps": [
+    [
+     0.3,
+     "r",
+     69.8
+    ],
+    [
+     0.47,
+     "l",
+     51.8
+    ],
+    [
+     0.9,
+     "r",
+     -15.1
+    ],
+    [
+     1.23,
+     "l",
+     -85.5
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.433,
+   "saved": true,
+   "path": "/Game/GraceRanger/SHME/Animations/V236/SHM236_JogRev_F_B_P31"
+  }
+ }
+}

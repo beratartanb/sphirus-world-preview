@@ -1,0 +1,123 @@
+{
+ "dry": true,
+ "loops": {
+  "rear": {
+   "T": 1.3,
+   "V": 265.3,
+   "NK": 39
+  },
+  "fwd": {
+   "T": 1.5,
+   "V": 297.9,
+   "NK": 45
+  }
+ },
+ "prof": {
+  "B_F": {
+   "v0": 246.0,
+   "brake": 720.0,
+   "push": 261.0,
+   "vexit": 301.0
+  },
+  "F_B": {
+   "v0": 301.0,
+   "brake": 680.0,
+   "push": 198.0,
+   "vexit": 246.0
+  }
+ },
+ "cfg": {
+  "dry_run": true,
+  "nph": 32,
+  "fam": [
+   "B_F",
+   "F_B"
+  ],
+  "t_first": -0.04,
+  "brake_deg": 4.0,
+  "push_deg": 3.0,
+  "tail": 0.2,
+  "brake_behind": 10.0,
+  "dip_cm": 2.5,
+  "arm_keep": 0.25,
+  "arm_fwd": 9.0,
+  "neck_k": 0.7,
+  "elbow": 18.0,
+  "prof_table": "C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Saved/Codex/SHME_V235_20261028/capsule_rev235.json"
+ },
+ "clips": {
+  "SHM236_JogRev_F_B_P16": {
+   "fam": "F_B",
+   "B": "r",
+   "S": "l",
+   "tau0": 0.75,
+   "tB": 0.231,
+   "tz": 0.393,
+   "tS": 0.353,
+   "tv": 1.233,
+   "tauHS": 0.587,
+   "s_planted0": true,
+   "tS_lift": 0.099,
+   "ballB": [
+    -6.2,
+    71.6,
+    -2.3
+   ],
+   "landS": [
+    9.1,
+    45.1,
+    14.9
+   ],
+   "frames": 44,
+   "len": 1.433,
+   "foot_err": 0.0,
+   "foot_err_at": {
+    "t": 0.7,
+    "s": "r",
+    "target_rel_pelvis": [
+     -6.3,
+     -40.6,
+     -70.2
+    ]
+   },
+   "planted_drift": 0.0,
+   "penetration": -0.0,
+   "pelvis_min_minus_final": -9.1,
+   "entry_err": 0.44,
+   "exit_err": 2.51,
+   "p3_range": [
+    0.9,
+    15.6
+   ],
+   "pn_range": [
+    -2.7,
+    9.3
+   ],
+   "steps": [
+    [
+     0.23,
+     "r",
+     71.6
+    ],
+    [
+     0.37,
+     "l",
+     52.2
+    ],
+    [
+     0.83,
+     "r",
+     3.1
+    ],
+    [
+     1.17,
+     "l",
+     -67.1
+    ]
+   ],
+   "root_stop": 61.6,
+   "root_end": -128.1,
+   "tauX_end": 1.508
+  }
+ }
+}

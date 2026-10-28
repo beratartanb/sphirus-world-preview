@@ -1,0 +1,20 @@
+--- Saved/Codex/SHME_V236_20261028/checkpoint/qa_pie.py.pre236	2026-10-28 19:44:03.816943600 +0300
++++ Tools/SHME_V1_20260925/qa_pie.py	2026-10-28 20:01:06.661368000 +0300
+@@ -70,7 +70,7 @@
+     for k_ in ('behavior_flags', 'pbi_flags', 'pawn_flags', 'shme_flags', 'abp_flags'):
+         if req.get(k_): u.log_warning('SHM_STATE: production mode ignores ' + k_ + ' ' + str(list(req[k_])[:6]))
+ _shm.set_editor_property('TelemetryEnabled', True)
+-_IDENT_ABP = ['SHM224_JRMode', 'SHM224_DB_JRFwd', 'SHM224_DB_JRBwd', 'SHM224_DB_JRLat', 'SHM224_DB_JRFwdM', 'SHM224_DB_JRBwdM', 'SHM_RedirectDB_JR', 'SHM223_RevRearGate', 'SHM28_StartMode', 'SHM28_StartL', 'SHM28_StartR', 'SHM225_SWAlpha', 'SHM225_OWAlpha', 'SHM220_RecHold', 'SHM221_RecThrottle']
++_IDENT_ABP = ['SHM236_DB_JogStop', 'SHM224_JRMode', 'SHM224_DB_JRFwd', 'SHM224_DB_JRBwd', 'SHM224_DB_JRLat', 'SHM224_DB_JRFwdM', 'SHM224_DB_JRBwdM', 'SHM_RedirectDB_JR', 'SHM223_RevRearGate', 'SHM28_StartMode', 'SHM28_StartL', 'SHM28_StartR', 'SHM225_SWAlpha', 'SHM225_OWAlpha', 'SHM220_RecHold', 'SHM221_RecThrottle']
+ def state_record():
+     rec = {'mode': MODE, 'dirty_base': getattr(builtins, 'SHM_PROD_DIRTY_BASE', []), 'shme': {}, 'abp': {}, 'behavior': {}, 'pbi': {}, 'pawn': {}, 'console': list(req.get('console', [])), 'db': {}}
+     for key, typ, dflt, cat in shm_profiles.RESPONSE:
+@@ -84,7 +84,7 @@
+                 except Exception: rec[cat][key + '@' + path.rsplit('/', 1)[-1]] = 'err'
+     try:   # database identity: asset path + package file time + entry count (a rebuilt or edited database changes these)
+         cdo_ = _obj('abp', _ABPS[1])
+-        for key in ('SHM224_DB_JRFwd', 'SHM224_DB_JRBwd', 'SHM224_DB_JRLat', 'SHM224_DB_JRFwdM', 'SHM224_DB_JRBwdM', 'SHM_RedirectDB_JR'):
++        for key in ('SHM224_DB_JRFwd', 'SHM224_DB_JRBwd', 'SHM224_DB_JRLat', 'SHM224_DB_JRFwdM', 'SHM224_DB_JRBwdM', 'SHM_RedirectDB_JR', 'SHM236_DB_JogStop'):
+             db_ = cdo_.get_editor_property(key)
+             if db_:
+                 pk_ = db_.get_path_name().split('.')[0]; fn_ = P / ('Content' + pk_[len('/Game'):] + '.uasset')
