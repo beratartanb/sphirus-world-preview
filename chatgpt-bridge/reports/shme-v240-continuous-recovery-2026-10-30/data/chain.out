@@ -1,0 +1,559 @@
+A start 19:48:23
+no editor to quit
+RUNNER_READY shmv240_a.log
+throttle off False
+RELAUNCH a 30 19:50:08
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/once1.json", "existing": 2, "new": 0}
+Traceback (most recent call last):
+AssertionError
+A_FAILED once
+A start 19:50:43
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/once1.json", "existing": 2, "new": 0}
+ONCE240 {"reloaded": ["/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching", "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"], "patch": "one-shot force, confirmed-entry done/play", "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_
+v212_warm_195130 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240a30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED candidate
+v240a30_j39_rw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240a30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 68) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+v240a30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 47) | by owner {'in-clip': 3} | FINISHED candidate
+v240a30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 63) | by owner {'in-clip': 3} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_a120.log
+throttle off False
+RELAUNCH a120 120 19:56:07
+v212_warm_195608 | rows 1679 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+v240a120_j39_rw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 5 (worst 70) | by owner {'in-clip': 5} | FINISHED candidate
+v240a120_j39_rw_o_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 88) | by owner {'in-clip': 6} | FINISHED production
+v240a120_j39_rl_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 12 (worst 140) | by owner {'in-clip': 10, 'montage': 2} | FINISHED candidate
+v240a120_j39_lr_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 152) | by owner {'in-clip': 6} | FINISHED candidate
+v240a120_j38_cc90_tk_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 8 (worst 114) | by owner {'in-clip': 8} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_aend.log
+throttle off False
+RELAUNCH aend 30 20:04:18
+A_DONE 20:04:18
+B start 20:04:39
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/src1.json", "existing": 48, "new": 0}
+SRC240 {"errors": [], "n": 48, "ok": true}
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/edb1.json", "existing": 362, "new": 96}
+EDB_N 96 
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/edbi1.json", "existing": 2, "new": 0}
+EDB240 {"reloaded": [], "patch": {"tree_leaves": 96, "umm_rewired": 4}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+v212_warm_200601 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240b30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 90) | by owner {'in-clip': 3} | FINISHED candidate
+v240b30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 64) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+v240b30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 54) | by owner {'in-clip': 2} | FINISHED candidate
+v240b30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED candidate
+v240b30_j39_rl_e_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 45) | by owner {'in-clip': 3} | FINISHED candidate
+v240b30_j39_rl_l_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 7 (worst 70) | by owner {'in-clip': 6, 'montage': 1} | FINISHED candidate
+v240b30_j39_lw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 59) | by owner {'in-clip': 3} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_b120.log
+throttle off False
+RELAUNCH b120 120 20:11:44
+v212_warm_201146 | rows 1679 rate 120.1/s | pops >25 m/s2: 11 (worst 56) | by owner {'in-clip': 11} | FINISHED production
+v240b120_j39_rw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 164) | by owner {'in-clip': 7} | FINISHED candidate
+v240b120_j39_rl_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 9 (worst 286) | by owner {'in-clip': 9} | FINISHED candidate
+v240b120_j39_lr_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 9 (worst 209) | by owner {'in-clip': 9} | FINISHED candidate
+v240b120_j38_cc90_tk_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 7 (worst 225) | by owner {'in-clip': 5, 'montage': 2} | FINISHED candidate
+v240b120_j39_rl_e_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 306) | by owner {'in-clip': 6} | FINISHED candidate
+v240b120_j39_rl_l_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 10 (worst 265) | by owner {'in-clip': 8, 'montage': 2} | FINISHED candidate
+v240b120_j39_lw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 246) | by owner {'in-clip': 7} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_bend.log
+throttle off False
+RELAUNCH bend 30 20:21:14
+B_DONE 20:21:14
+C start 20:21:28
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/done1.json", "existing": 2, "new": 0}
+DONE240 {"reloaded": [], "patch": "TkDone recognises PSD_SHM240_E", "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+v212_warm_202141 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240c30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 71) | by owner {'in-clip': 2} | FINISHED candidate
+v240c30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 64) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+v240c30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 4 (worst 54) | by owner {'in-clip': 4} | FINISHED candidate
+v240c30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 42) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+v240c30_j39_rl_e_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 45) | by owner {'in-clip': 2} | FINISHED candidate
+v240c30_j39_rl_l_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 5 (worst 34) | by owner {'in-clip': 5} | FINISHED candidate
+v240c30_j39_lw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_c120.log
+throttle off False
+RELAUNCH c120 120 20:27:00
+v212_warm_202702 | rows 1679 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+v240c120_j39_rw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 5 (worst 307) | by owner {'in-clip': 5} | FINISHED candidate
+v240c120_j39_rl_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 8 (worst 184) | by owner {'in-clip': 7, 'montage': 1} | FINISHED candidate
+v240c120_j39_lr_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 262) | by owner {'in-clip': 6} | FINISHED candidate
+v240c120_j38_cc90_tk_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 5 (worst 349) | by owner {'in-clip': 5} | FINISHED candidate
+v240c120_j39_rl_e_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 171) | by owner {'in-clip': 7} | FINISHED candidate
+v240c120_j39_rl_l_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 121) | by owner {'in-clip': 7} | FINISHED candidate
+v240c120_j39_lw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 288) | by owner {'in-clip': 7} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_cend.log
+throttle off False
+RELAUNCH cend 30 20:37:16
+C_DONE 20:37:17
+D start 20:37:58
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/exit1.json", "existing": 2, "new": 0}
+EXIT240 {"reloaded": [], "patch": "exit hand-off to the body frame", "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+v212_warm_203810 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240d30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240d30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 68) | by owner {'in-clip': 5, 'montage': 1} | FINISHED candidate
+v240d30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 5 (worst 54) | by owner {'in-clip': 5} | FINISHED candidate
+EDITOR_GONE after v240d30_j39_lr_tk_r1
+v212_warm_204533 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240d30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 5 (worst 53) | by owner {'in-clip': 5} | FINISHED candidate
+v240d30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 42) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+v240d30_j39_rl_e_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 46) | by owner {'in-clip': 2} | FINISHED candidate
+v240d30_j39_rl_l_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 5 (worst 36) | by owner {'in-clip': 5} | FINISHED candidate
+v240d30_j39_lw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_d120.log
+throttle off False
+RELAUNCH d120 120 20:50:19
+v212_warm_205021 | rows 1679 rate 120.1/s | pops >25 m/s2: 13 (worst 402) | by owner {'in-clip': 13} | FINISHED production
+v240d120_j39_rw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 5 (worst 307) | by owner {'in-clip': 5} | FINISHED candidate
+v240d120_j39_rl_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 9 (worst 184) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+v240d120_j39_lr_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 262) | by owner {'in-clip': 7} | FINISHED candidate
+v240d120_j38_cc90_tk_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 8 (worst 349) | by owner {'in-clip': 8} | FINISHED candidate
+v240d120_j39_rl_e_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 171) | by owner {'in-clip': 7} | FINISHED candidate
+v240d120_j39_rl_l_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 8 (worst 121) | by owner {'in-clip': 8} | FINISHED candidate
+v240d120_j39_lw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 288) | by owner {'in-clip': 7} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_dend.log
+throttle off False
+RELAUNCH dend 30 21:00:34
+D_DONE 21:00:35
+E start 21:00:54
+T233 {"manifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/exit2.json", "existing": 2, "new": 0}
+EXIT2_240 {"reloaded": [], "patch": "exit -> component exploration (LocoExplore, LocoInYaw)", "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+T233 {"manifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/sch1.json", "existing": 96, "new": 0}
+SCH240 {"traj_w": 0.15000000596046448, "set": 96, "errors": [], "ok": true}
+v212_warm_210114 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240e30w_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+v240e30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240e30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 71) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+v240e30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+v240e30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240e30_j39_rl_e_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 38) | by owner {'in-clip': 1} | FINISHED candidate
+v240e30_j39_rl_l_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240e30_j39_lw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240e30_j39_rw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240e30_j39_lr_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED production
+EDITOR_GONE after v240e30_j39_lr_o_r1
+v212_warm_211130 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240e30_j39_lr_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED production
+v240e30_j38_cc90_o_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_e120.log
+throttle off False
+RELAUNCH e120 120 21:14:34
+v212_warm_211436 | rows 1679 rate 120.1/s | pops >25 m/s2: 11 (worst 426) | by owner {'in-clip': 11} | FINISHED production
+F start 21:16:42
+nifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/fix1.json", "existing": 2, "new": 0}
+FIX240 {"reloaded": ["/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching", "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"], "before": [["K2Node_VariableSet_182", "then"]], "after": [["K2Node_VariableSet_182", "then"], ["K2No
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_f.log
+throttle off False
+RELAUNCH f 30 21:19:28
+v212_warm_211930 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240fgate_j38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+GATE_CUT_FRAMES 38
+v212_warm_212030 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240f30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 73) | by owner {'in-clip': 3} | FINISHED candidate
+v240f30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 63) | by owner {'in-clip': 3, 'montage': 1} | FINISHED candidate
+v240f30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 56) | by owner {'in-clip': 3} | FINISHED candidate
+v240f30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 37) | by owner {'in-clip': 3} | FINISHED candidate
+v240f30_j39_rl_e_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 43) | by owner {'in-clip': 2} | FINISHED candidate
+v240f30_j39_rl_l_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED candidate
+v240f30_j39_lw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 59) | by owner {'in-clip': 2} | FINISHED candidate
+v240f30_j40_rlw_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 45) | by owner {'in-clip': 4} | FINISHED candidate
+v240f30_j40_lrw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 58) | by owner {'in-clip': 2} | FINISHED candidate
+v240f30_j39_rw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240f30_j39_lr_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 37) | by owner {'in-clip': 3} | FINISHED production
+v240f30_j38_cc90_o_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 5 (worst 71) | by owner {'in-clip': 5} | FINISHED production
+v240f30_j40_rlw_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_f120.log
+throttle off False
+RELAUNCH f120 120 21:28:32
+v212_warm_212833 | rows 1679 rate 120.1/s | pops >25 m/s2: 13 (worst 56) | by owner {'in-clip': 13} | FINISHED production
+v240f120_j39_rw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 5 (worst 307) | by owner {'in-clip': 5} | FINISHED candidate
+v240f120_j39_rl_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 8 (worst 184) | by owner {'in-clip': 7, 'montage': 1} | FINISHED candidate
+v240f120_j39_lr_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 9 (worst 117) | by owner {'in-clip': 9} | FINISHED candidate
+v240f120_j38_cc90_tk_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 7 (worst 277) | by owner {'in-clip': 7} | FINISHED candidate
+v240f120_j39_rl_e_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 9 (worst 156) | by owner {'in-clip': 9} | FINISHED candidate
+v240f120_j39_rl_l_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 120) | by owner {'in-clip': 7} | FINISHED candidate
+v240f120_j39_lw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 288) | by owner {'in-clip': 7} | FINISHED candidate
+v240f120_j40_rlw_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 7 (worst 184) | by owner {'in-clip': 7} | FINISHED candidate
+v240f120_j40_lrw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 5 (worst 269) | by owner {'in-clip': 5} | FINISHED candidate
+v240f120_j39_rw_o_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 73) | by owner {'in-clip': 7} | FINISHED production
+v240f120_j39_lr_o_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 89) | by owner {'in-clip': 6} | FINISHED production
+v240f120_j38_cc90_o_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 7 (worst 228) | by owner {'in-clip': 7} | FINISHED production
+v240f120_j40_rlw_o_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 8 (worst 82) | by owner {'in-clip': 8} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_fend.log
+throttle off False
+RELAUNCH fend 30 21:43:58
+F_DONE 21:43:58
+G start 21:44:14
+fest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/yield1.json", "existing": 2, "new": 0}
+YIELD240 {"reloaded": [], "splice": {"K2Node_VariableSet_71": 1}, "patch": {"SetSHM239_OwnOn": 1, "SetSHM238_On": 1, "SetClipSpeedOn": 1}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/extk1.json", "existing": 2, "new": 0}
+EXTK240 {"reloaded": [], "patch": {"own_gates_widened": 1}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_g.log
+throttle off False
+RELAUNCH g 30 21:46:30
+v212_warm_214632 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240ggate_j38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+GATE_CUT_FRAMES 38
+v212_warm_214733 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240g30_j40_rlw_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 45) | by owner {'in-clip': 3} | FINISHED candidate
+v240g30_j40_lrw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 56) | by owner {'in-clip': 2} | FINISHED candidate
+v240g30_j39_rl_tk_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 63) | by owner {'in-clip': 3, 'montage': 1} | FINISHED candidate
+v240g30_j39_lr_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 56) | by owner {'in-clip': 2} | FINISHED candidate
+v240g30_j39_rw_tk_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 74) | by owner {'in-clip': 3} | FINISHED candidate
+v240g30_j38_cc90_tk_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 37) | by owner {'in-clip': 3} | FINISHED candidate
+v240g30_j39_push_plan_tk_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 60) | by owner {'in-clip': 2} | FINISHED candidate
+v240g30_j39_push_plan_ext_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 40) | by owner {'in-clip': 2} | FINISHED candidate
+v240g30_j39_push_plan_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v240g30_j39_push_jog_ext_r1 | rows 277 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240g30_j40_wall_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240g30_j40_wall_ext_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240g30_j40_wall_tk_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240g30_j38_c90r_ext_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
+v240g30_j40_lrw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_g120.log
+throttle off False
+RELAUNCH g120 120 21:55:54
+v212_warm_215556 | rows 1679 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+v240g120_j40_rlw_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 7 (worst 184) | by owner {'in-clip': 7} | FINISHED candidate
+v240g120_j40_lrw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 100) | by owner {'in-clip': 6} | FINISHED candidate
+v240g120_j39_rl_tk_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 9 (worst 184) | by owner {'in-clip': 8, 'montage': 1} | FINISHED candidate
+v240g120_j39_lr_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 9 (worst 117) | by owner {'in-clip': 9} | FINISHED candidate
+v240g120_j39_rw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 5 (worst 307) | by owner {'in-clip': 5} | FINISHED candidate
+v240g120_j38_cc90_tk_r1 | rows 1246 rate 120.1/s | pops >25 m/s2: 8 (worst 125) | by owner {'in-clip': 8} | FINISHED candidate
+v240g120_j39_lw_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 7 (worst 288) | by owner {'in-clip': 7} | FINISHED candidate
+v240g120_j39_rl_e_tk_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 9 (worst 157) | by owner {'in-clip': 9} | FINISHED candidate
+v240g120_j39_push_plan_ext_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 7 (worst 149) | by owner {'in-clip': 7} | FINISHED candidate
+v240g120_j40_wall_ext_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 7 (worst 61) | by owner {'in-clip': 7} | FINISHED candidate
+v240g120_j40_rlw_o_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 8 (worst 81) | by owner {'in-clip': 8} | FINISHED production
+v240g120_j40_lrw_o_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 89) | by owner {'in-clip': 6} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_gend.log
+throttle off False
+RELAUNCH gend 30 22:10:33
+G_DONE 22:10:33
+H start 22:12:26
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/wall1.json", "existing": 2, "new": 0}
+WALL240 {"reloaded": [], "patch": {"first": "K2Node_VariableSet_21", "kept_links": 0, "first_in_links": 1}, "abp": ["<BlueprintStatus.BS_ERROR: 2>", ["[2026.10.30-19.12.35:668][151]LogBlueprint: Error: [AssetLog] C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\Content\\GraceRanger\\Experimental\\BodyInertia\\Sandbox\\Animations\\ABP_GR_MotionMatchingBase.uasset: [
+H_FAILED wall
+H start 22:13:12
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/wall1.json", "existing": 2, "new": 0}
+WALL240 {"reloaded": ["/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching", "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"], "patch": {"first": "K2Node_VariableSet_21", "kept_links": 0, "first_in_links": 1}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", 
+ifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/head1.json", "existing": 2, "new": 0}
+HEAD240 {"reloaded": [], "splice": {"K2Node_VariableSet_184": 2}, "patch": {"ao_alpha_was": "K2Node_CallFunction_4:nimasyon|E\u011friler|GetCurveValue"}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_h.log
+throttle off False
+RELAUNCH h 30 22:16:43
+v212_warm_221645 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240hgate_j38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+GATE_CUT_FRAMES 38
+v212_warm_221747 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240h30_j40_wall_tk_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240h30_j40_wall_ext_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240h30_j40_wall_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240h30_j39_lr_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 60) | by owner {'in-clip': 2} | FINISHED candidate
+v240h30_j39_rl_tkh_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 63) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+v240h30_j39_rw_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 75) | by owner {'in-clip': 3} | FINISHED candidate
+v240h30_j40_rlw_tkh_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 45) | by owner {'in-clip': 4} | FINISHED candidate
+v240h30_j38_cc90_tkh_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 38) | by owner {'in-clip': 3} | FINISHED candidate
+v240h30_j38_c90r_hd_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240h30_j38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240h30_j39_lr_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 36) | by owner {'in-clip': 3} | FINISHED production
+v240h30_j39_push_plan_tk_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 41) | by owner {'in-clip': 2} | FINISHED candidate
+v240h30_j39_push_plan_ext_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 59) | by owner {'in-clip': 2} | FINISHED candidate
+v240h30_j38_c90l_hd_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 31) | by owner {'in-clip': 2} | FINISHED candidate
+v240h30_j38_c90l_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_h120.log
+throttle off False
+RELAUNCH h120 120 22:26:18
+v212_warm_222620 | rows 1679 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+v240h120_j40_wall_tk_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 6 (worst 77) | by owner {'in-clip': 6} | FINISHED candidate
+v240h120_j40_wall_ext_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 5 (worst 62) | by owner {'in-clip': 5} | FINISHED candidate
+v240h120_j39_rl_o_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 12 (worst 103) | by owner {'in-clip': 10, 'montage': 2} | FINISHED production
+v240h120_j39_rl_tkh_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 12 (worst 233) | by owner {'in-clip': 11, 'montage': 1} | FINISHED candidate
+v240h120_j39_push_plan_o_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 6 (worst 85) | by owner {'in-clip': 6} | FINISHED production
+v240h120_j39_push_plan_tk_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 7 (worst 149) | by owner {'in-clip': 7} | FINISHED candidate
+v240h120_j39_push_plan_ext_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 6 (worst 149) | by owner {'in-clip': 6} | FINISHED candidate
+v240h120_j39_lr_tkh_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 9 (worst 122) | by owner {'in-clip': 9} | FINISHED candidate
+v240h120_j40_rlw_tkh_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 7 (worst 186) | by owner {'in-clip': 7} | FINISHED candidate
+v240h120_j40_lrw_tkh_r1 | rows 1270 rate 120.1/s | pops >25 m/s2: 6 (worst 122) | by owner {'in-clip': 6} | FINISHED candidate
+v240h120_j38_c90r_hd_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 8 (worst 87) | by owner {'in-clip': 8} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_hend.log
+throttle off False
+RELAUNCH hend 30 22:42:16
+H_DONE 22:42:16
+I start 22:45:17
+nifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/blk2.json", "existing": 2, "new": 0}
+Traceback (most recent call last):
+AssertionError: (('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:AnimGraph.K2Node_CallFunction_176', 'PickA'), ['A', 'B', 'bPickA'])
+I_FAILED blk2
+I start 22:45:45
+nifest": "Saved/Codex/SHME_V240_20261030/checkpoint/manifests/blk2.json", "existing": 2, "new": 0}
+BLK2_240 {"reloaded": [], "throttle": "pick OR SHM240_Blk", "head": "fade * (1 - W)", "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_i.log
+throttle off False
+RELAUNCH i 30 22:48:08
+v212_warm_224810 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240igate_j38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+GATE_CUT_FRAMES 38
+v212_warm_224911 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240i30f_j40_wall_tk_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240i30f_j38_c90r_hd_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240i30f_j38_c90l_hd_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v240i30f_j38_c90r_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240i30f_j39_lr_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 56) | by owner {'in-clip': 3} | FINISHED candidate
+v240i30f_j39_rl_tkh_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 63) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+I_FOCUSED 22:51:39
+v212_warm_225141 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j39_rl_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 68) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+v240reg_j39_rl_tkh_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 72) | by owner {'in-clip': 4, 'montage': 1} | FINISHED candidate
+v240reg_j39_rw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j39_rw_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 73) | by owner {'in-clip': 3} | FINISHED candidate
+v240reg_j39_rl_e_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j39_rl_e_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 42) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j39_rl_l_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 5 (worst 43) | by owner {'in-clip': 5} | FINISHED production
+v240reg_j39_rl_l_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 35) | by owner {'in-clip': 3} | FINISHED candidate
+v240reg_j39_lr_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j39_lr_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 57) | by owner {'in-clip': 3} | FINISHED candidate
+v240reg_j39_lw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j39_lw_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 59) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j38_cc90_o_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 6 (worst 59) | by owner {'in-clip': 6} | FINISHED production
+v240reg_j38_cc90_tkh_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 38) | by owner {'in-clip': 3} | FINISHED candidate
+v240reg_mtf_jog_o_r1 | rows 553 rate 30.1/s | pops >25 m/s2: 5 (worst 43) | by owner {'in-clip': 5} | FINISHED production
+v240reg_mtf_jog_tkh_r1 | rows 553 rate 30.1/s | pops >25 m/s2: 5 (worst 43) | by owner {'in-clip': 5} | FINISHED candidate
+v240reg_jlean_o_r1 | rows 628 rate 30.0/s | pops >25 m/s2: 6 (worst 36) | by owner {'in-clip': 6} | FINISHED production
+v240reg_jlean_tkh_r1 | rows 628 rate 30.0/s | pops >25 m/s2: 5 (worst 34) | by owner {'in-clip': 5} | FINISHED candidate
+v240reg_j38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j38_c90r_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_j38_c90l_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED production
+v240reg_j38_c90l_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j38_c90rb_o_r1 | rows 285 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j38_c90rb_tkh_r1 | rows 285 rate 30.1/s | pops >25 m/s2: 1 (worst 31) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_j38_c90lb_o_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 2 (worst 27) | by owner {'in-clip': 2} | FINISHED production
+v240reg_j38_c90lb_tkh_r1 | rows 298 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j38_c45r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j38_c45r_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_j38_c135r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j38_c135r_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_w38_c90r_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_w38_c90r_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_s38_c90r_o_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 5 (worst 48) | by owner {'in-clip': 5} | FINISHED production
+v240reg_s38_c90r_tkh_r1 | rows 283 rate 30.1/s | pops >25 m/s2: 4 (worst 44) | by owner {'in-clip': 4} | FINISHED candidate
+v240reg_j36_rsm_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j36_rsm_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_j36_stop_o_r1 | rows 226 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j36_stop_tkh_r1 | rows 226 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_j36_stopr_o_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j36_stopr_tkh_r1 | rows 346 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_j34_chain1_o_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j34_chain1_tkh_r1 | rows 373 rate 30.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_j35_rev_o_r1 | rows 379 rate 30.1/s | pops >25 m/s2: 2 (worst 38) | by owner {'in-clip': 2} | FINISHED production
+v240reg_j35_rev_tkh_r1 | rows 379 rate 30.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j30_rel_3450_o_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v240reg_j30_rel_3450_tkh_r1 | rows 358 rate 30.1/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j36_sside_o_r1 | rows 406 rate 30.1/s | pops >25 m/s2: 1 (worst 37) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j36_sside_tkh_r1 | rows 406 rate 30.1/s | pops >25 m/s2: 1 (worst 37) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 4 (worst 42) | by owner {'in-clip': 4} | FINISHED production
+v240reg_jstart_tkh_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 3 (worst 36) | by owner {'in-clip': 3} | FINISHED candidate
+v240reg_e29_chain_o_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 7 (worst 76) | by owner {'in-clip': 7} | FINISHED production
+v240reg_e29_chain_tkh_r1 | rows 385 rate 30.1/s | pops >25 m/s2: 6 (worst 76) | by owner {'in-clip': 6} | FINISHED candidate
+v240reg_c29_combo_o_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_c29_combo_tkh_r1 | rows 448 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_jdiag_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_jdiag_tkh_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_wdiag_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_wdiag_tkh_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_wstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_wstart_tkh_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_cam32_j90_o_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_cam32_j90_tkh_r1 | rows 313 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_j39_push_plan_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j39_push_plan_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 63) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j39_push_jog_o_r1 | rows 277 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_j39_push_jog_tkh_r1 | rows 277 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_chain_jogcut_o_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_chain_jogcut_tkh_r1 | rows 403 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_ad_jog_o_r1 | rows 553 rate 30.1/s | pops >25 m/s2: 4 (worst 27) | by owner {'in-clip': 4} | FINISHED production
+v240reg_ad_jog_tkh_r1 | rows 553 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240reg_mt_jog_o_r1 | rows 553 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240reg_mt_jog_tkh_r1 | rows 553 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240reg_j40_rlw_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED production
+v240reg_j40_rlw_tkh_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 45) | by owner {'in-clip': 3} | FINISHED candidate
+v240reg_j40_lrw_o_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v240reg_j40_lrw_tkh_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 2 (worst 57) | by owner {'in-clip': 2} | FINISHED candidate
+v240reg_j40_wall_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240reg_j40_wall_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
+I_REG 23:22:28
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_i60.log
+throttle off False
+RELAUNCH i60 60 23:25:40
+v212_warm_232542 | rows 839 rate 60.1/s | pops >25 m/s2: 3 (worst 97) | by owner {'in-clip': 3} | FINISHED production
+v240i60_j39_rl_o_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 15 (worst 90) | by owner {'in-clip': 14, 'montage': 1} | FINISHED production
+v240i60_j39_rl_tkh_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 18 (worst 71) | by owner {'in-clip': 17, 'montage': 1} | FINISHED candidate
+v240i60_j39_rw_o_r1 | rows 634 rate 60.1/s | pops >25 m/s2: 10 (worst 42) | by owner {'in-clip': 10} | FINISHED production
+v240i60_j39_rw_tkh_r1 | rows 634 rate 60.1/s | pops >25 m/s2: 13 (worst 40) | by owner {'in-clip': 13} | FINISHED candidate
+v240i60_j39_lr_o_r1 | rows 634 rate 60.1/s | pops >25 m/s2: 12 (worst 103) | by owner {'in-clip': 12} | FINISHED production
+v240i60_j39_lr_tkh_r1 | rows 634 rate 60.1/s | pops >25 m/s2: 16 (worst 70) | by owner {'in-clip': 16} | FINISHED candidate
+v240i60_j38_cc90_o_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 14 (worst 124) | by owner {'in-clip': 14} | FINISHED production
+v240i60_j38_cc90_tkh_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 15 (worst 50) | by owner {'in-clip': 15} | FINISHED candidate
+v240i60_j40_rlw_o_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 14 (worst 40) | by owner {'in-clip': 14} | FINISHED production
+v240i60_j40_rlw_tkh_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 13 (worst 50) | by owner {'in-clip': 13} | FINISHED candidate
+v240i60_j40_lrw_o_r1 | rows 634 rate 60.1/s | pops >25 m/s2: 11 (worst 100) | by owner {'in-clip': 11} | FINISHED production
+v240i60_j40_lrw_tkh_r1 | rows 634 rate 60.1/s | pops >25 m/s2: 17 (worst 47) | by owner {'in-clip': 17} | FINISHED candidate
+v240i60_j39_push_plan_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 11 (worst 50) | by owner {'in-clip': 11} | FINISHED production
+v240i60_j39_push_plan_tkh_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 16 (worst 56) | by owner {'in-clip': 16} | FINISHED candidate
+v240i60_j40_wall_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 10 (worst 52) | by owner {'in-clip': 10} | FINISHED production
+v240i60_j40_wall_tkh_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 9 (worst 40) | by owner {'in-clip': 9} | FINISHED candidate
+v240i60_j38_c90r_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 10 (worst 51) | by owner {'in-clip': 10} | FINISHED production
+v240i60_j38_c90r_tkh_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 11 (worst 51) | by owner {'in-clip': 11} | FINISHED candidate
+v240i60_j38_c90l_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 11 (worst 47) | by owner {'in-clip': 11} | FINISHED production
+v240i60_j38_c90l_tkh_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 15 (worst 47) | by owner {'in-clip': 15} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_i20.log
+throttle off False
+RELAUNCH i20 20 23:39:26
+v212_warm_233928 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j39_rl_o_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 1 (worst 54) | by owner {'montage': 1} | FINISHED production
+v240i20_j39_rl_tkh_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 3 (worst 53) | by owner {'in-clip': 2, 'montage': 1} | FINISHED candidate
+v240i20_j39_rw_o_r1 | rows 210 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j39_rw_tkh_r1 | rows 210 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240i20_j39_lr_o_r1 | rows 210 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j39_lr_tkh_r1 | rows 210 rate 20.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED candidate
+v240i20_j38_cc90_o_r1 | rows 206 rate 20.1/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+v240i20_j38_cc90_tkh_r1 | rows 206 rate 20.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240i20_j40_rlw_o_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240i20_j40_rlw_tkh_r1 | rows 258 rate 20.1/s | pops >25 m/s2: 2 (worst 31) | by owner {'in-clip': 2} | FINISHED candidate
+v240i20_j40_lrw_o_r1 | rows 210 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j40_lrw_tkh_r1 | rows 210 rate 20.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED candidate
+v240i20_j39_push_plan_o_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j39_push_plan_tkh_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 4 (worst 31) | by owner {'in-clip': 4} | FINISHED candidate
+v240i20_j40_wall_o_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j40_wall_tkh_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240i20_j38_c90r_o_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j38_c90r_tkh_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240i20_j38_c90l_o_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240i20_j38_c90l_tkh_r1 | rows 194 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_ireal.log
+throttle off False
+RELAUNCH ireal real 23:48:42
+v212_warm_234846 | rows 401 rate 29.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240ireal_j39_rl_o_r1 | rows 383 rate 30.7/s | pops >25 m/s2: 2 (worst 60) | by owner {'in-clip': 1, 'montage': 1} | FINISHED production
+v240ireal_j39_rl_tkh_r1 | rows 386 rate 31.1/s | pops >25 m/s2: 2 (worst 60) | by owner {'in-clip': 1, 'montage': 1} | FINISHED candidate
+v240ireal_j39_rw_o_r1 | rows 340 rate 33.6/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v240ireal_j39_rw_tkh_r1 | rows 340 rate 33.6/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240ireal_j39_lr_o_r1 | rows 288 rate 28.5/s | pops >25 m/s2: 1 (worst 37) | by owner {'in-clip': 1} | FINISHED production
+v240ireal_j39_lr_tkh_r1 | rows 330 rate 32.6/s | pops >25 m/s2: 4 (worst 30) | by owner {'in-clip': 4} | FINISHED candidate
+v240ireal_j38_cc90_o_r1 | rows 331 rate 33.4/s | pops >25 m/s2: 8 (worst 137) | by owner {'in-clip': 8} | FINISHED production
+v240ireal_j38_cc90_tkh_r1 | rows 331 rate 33.3/s | pops >25 m/s2: 4 (worst 42) | by owner {'in-clip': 4} | FINISHED candidate
+v240ireal_j40_rlw_o_r1 | rows 412 rate 32.9/s | pops >25 m/s2: 3 (worst 34) | by owner {'in-clip': 3} | FINISHED production
+v240ireal_j40_rlw_tkh_r1 | rows 417 rate 33.3/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED candidate
+v240ireal_j40_lrw_o_r1 | rows 340 rate 33.6/s | pops >25 m/s2: 1 (worst 27) | by owner {'in-clip': 1} | FINISHED production
+v240ireal_j40_lrw_tkh_r1 | rows 336 rate 33.2/s | pops >25 m/s2: 4 (worst 45) | by owner {'in-clip': 4} | FINISHED candidate
+v240ireal_j39_push_plan_o_r1 | rows 303 rate 32.4/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v240ireal_j39_push_plan_tkh_r1 | rows 300 rate 32.1/s | pops >25 m/s2: 4 (worst 36) | by owner {'in-clip': 4} | FINISHED candidate
+v240ireal_j40_wall_o_r1 | rows 312 rate 33.4/s | pops >25 m/s2: 3 (worst 30) | by owner {'in-clip': 3} | FINISHED production
+v240ireal_j40_wall_tkh_r1 | rows 312 rate 33.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v240ireal_j38_c90r_o_r1 | rows 295 rate 31.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v240ireal_j38_c90r_tkh_r1 | rows 290 rate 31.0/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v240ireal_j38_c90l_o_r1 | rows 293 rate 31.4/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED production
+v240ireal_j38_c90l_tkh_r1 | rows 291 rate 31.2/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_iend.log
+throttle off False
+RELAUNCH iend 30 23:59:09
+I_DONE 23:59:09
+J start 23:59:17
+v212_warm_235919 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240j30_j40_wall_wst_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240j30_j40_wall_wof_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240j30_j40_wall_tkh_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240j30_j40_wall_o_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v240j30_j39_push_plan_wst_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 42) | by owner {'in-clip': 2} | FINISHED candidate
+v240j30_j38_c90r_wst_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_j120.log
+throttle off False
+RELAUNCH j120 120 00:04:37
+v212_warm_000438 | rows 1679 rate 120.1/s | pops >25 m/s2: 12 (worst 56) | by owner {'in-clip': 12} | FINISHED production
+v240j120_j40_wall_wst_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 6 (worst 76) | by owner {'in-clip': 6} | FINISHED candidate
+v240j120_j40_wall_wof_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 7} | FINISHED candidate
+v240j120_j40_wall_tkh_r1 | rows 1174 rate 120.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 7} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_jcap.log
+throttle off False
+RELAUNCH jcap 30 00:11:08
+v212_warm_001110 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240cap_j40_rlw_oS_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED production
+v240cap_j40_rlw_tkhS_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 36) | by owner {'in-clip': 4} | FINISHED candidate
+v240cap_j40_rlw_tkhD_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 45) | by owner {'in-clip': 3} | FINISHED candidate
+v240cap_j40_rlw_tkhG_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 45) | by owner {'in-clip': 3} | FINISHED candidate
+v240cap_j40_rlw_oG_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED production
+v240cap_j39_rl_oS_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 68) | by owner {'in-clip': 2, 'montage': 1} | FINISHED production
+v240cap_j39_rl_tkhS_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 4 (worst 63) | by owner {'in-clip': 3, 'montage': 1} | FINISHED candidate
+v240cap_j39_lr_oS_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 36) | by owner {'in-clip': 3} | FINISHED production
+v240cap_j39_lr_tkhS_r1 | rows 316 rate 30.1/s | pops >25 m/s2: 3 (worst 57) | by owner {'in-clip': 3} | FINISHED candidate
+v240cap_j38_cc90_oS_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 5 (worst 65) | by owner {'in-clip': 5} | FINISHED production
+v240cap_j38_cc90_tkhS_r1 | rows 310 rate 30.1/s | pops >25 m/s2: 3 (worst 38) | by owner {'in-clip': 3} | FINISHED candidate
+v240cap_j39_push_plan_oS_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v240cap_j39_push_plan_tkhS_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 40) | by owner {'in-clip': 2} | FINISHED candidate
+v240cap_j40_wall_oS_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240cap_j40_wall_tkhS_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v240cap_j40_wall_wstS_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
+v240cap_j40_wall_wofS_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240cap_j38_c90r_oG_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240cap_j38_c90r_tkhG_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv240_jend.log
+throttle off False
+RELAUNCH jend 30 00:22:09
+J_DONE 00:22:09
+K start 00:32:08
+v212_warm_003210 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v240capn_j40_wall_oN_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 2 (worst 27) | by owner {'in-clip': 2} | FINISHED production
+v240capn_j40_wall_tkhN_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240capn_j40_wall_wstN_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED candidate
+v240capn_j40_wall_wofN_r1 | rows 292 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
