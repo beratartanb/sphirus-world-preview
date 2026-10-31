@@ -1,0 +1,7 @@
+XR4 restore verification (2026-11-01 02:2x, fixed-step editor xr3_c)
+sequence: x8 apply -> dress -> x9 apply -> dress -> i4 apply -> (views) -> i4 restore(XR3 only: BUG, 114 XR4 actors left) -> i5 apply -> ... -> i5 restore (fixed: XR3_+XR4_) -> x9 restore -> recon_restored_xr4b
+heightmap sha1 == recon (byte-identical)        foliage 57 comps / 8305 instances, 0 differing
+level actors 768 == 768 (label/class/loc/hidden)  XR2_/XR3_/XR4_ actors left: 0
+i5 restore: 4 rocks unhidden, 42 actors destroyed, 127 material slots restored, 9 project MIs restored from mat_backup_i5.json
+look owners restored after LA / LB / NEUTRAL (look_variant restore)
+map on disk L_GR_SphirusHouse.umap sha1 70dd481a... unchanged; in-memory dirty with original content -> "Don't Save" on close
