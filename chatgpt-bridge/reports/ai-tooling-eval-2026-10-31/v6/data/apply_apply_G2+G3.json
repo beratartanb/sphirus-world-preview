@@ -1,0 +1,417 @@
+{
+ "mode": "apply",
+ "groups": [
+  "G2_compression",
+  "G3_tread_edge"
+ ],
+ "n_moves": 9,
+ "per_type": {
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Young_Black_Spruce_01.FT_EX_Young_Black_Spruce_01": {
+   "mesh": "SM_Young_Black_Spruce_01",
+   "count_before": 165,
+   "count_after": 165,
+   "equal": true
+  },
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Young_Black_Spruce_02.FT_EX_Young_Black_Spruce_02": {
+   "mesh": "SM_Young_Black_Spruce_02",
+   "count_before": 239,
+   "count_after": 239,
+   "equal": true
+  },
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_AP_DeadTrunk03.FT_EX_AP_DeadTrunk03": {
+   "mesh": "SM_PineDeadTrunk03",
+   "count_before": 18,
+   "count_after": 18,
+   "equal": true
+  },
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Fern02.FT_EX_Fern02": {
+   "mesh": "SM_Fern02",
+   "count_before": 132,
+   "count_after": 132,
+   "equal": true
+  },
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_FernWild01.FT_EX_FernWild01": {
+   "mesh": "SM_FernWild01",
+   "count_before": 201,
+   "count_after": 201,
+   "equal": true
+  },
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_FernLong01.FT_EX_FernLong01": {
+   "mesh": "SM_FernLong01",
+   "count_before": 197,
+   "count_after": 197,
+   "equal": true
+  }
+ },
+ "moves": [
+  {
+   "group": "G2_compression",
+   "mesh": "SM_Young_Black_Spruce_01",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Young_Black_Spruce_01.FT_EX_Young_Black_Spruce_01",
+   "from": {
+    "loc": [
+     3853.0,
+     -3581.0,
+     985.6010409736632
+    ],
+    "rot_pyr": [
+     0.0,
+     69.90000152587888,
+     -0.0
+    ],
+    "scale": [
+     0.8399999737739563,
+     0.8399999737739563,
+     0.8399999737739563
+    ]
+   },
+   "to": {
+    "loc": [
+     3320.8,
+     -2520.6,
+     542.55
+    ],
+    "rot_pyr": [
+     0.0,
+     69.9,
+     -0.0
+    ],
+    "scale": [
+     0.8399999737739563,
+     0.8399999737739563,
+     0.8399999737739563
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G2_compression",
+   "mesh": "SM_Young_Black_Spruce_02",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Young_Black_Spruce_02.FT_EX_Young_Black_Spruce_02",
+   "from": {
+    "loc": [
+     3711.0,
+     -2979.0,
+     680.0810403793334
+    ],
+    "rot_pyr": [
+     0.0,
+     78.69999694824216,
+     -0.0
+    ],
+    "scale": [
+     1.0520000457763672,
+     1.0520000457763672,
+     1.0520000457763672
+    ]
+   },
+   "to": {
+    "loc": [
+     3322.5,
+     -2731.6,
+     560.53
+    ],
+    "rot_pyr": [
+     0.0,
+     78.7,
+     -0.0
+    ],
+    "scale": [
+     1.0520000457763672,
+     1.0520000457763672,
+     1.0520000457763672
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G2_compression",
+   "mesh": "SM_PineDeadTrunk03",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_AP_DeadTrunk03.FT_EX_AP_DeadTrunk03",
+   "from": {
+    "loc": [
+     3424.0,
+     -3073.0,
+     621.1032060623169
+    ],
+    "rot_pyr": [
+     0.20283448347926847,
+     33.85586363040929,
+     15.398382592789938
+    ],
+    "scale": [
+     0.7300000190734864,
+     0.7300000190734863,
+     0.7300000190734863
+    ]
+   },
+   "to": {
+    "loc": [
+     3233.3,
+     -2549.8,
+     506.89
+    ],
+    "rot_pyr": [
+     0.20283448347926847,
+     -109.0,
+     15.398382592789938
+    ],
+    "scale": [
+     0.7300000190734864,
+     0.7300000190734863,
+     0.7300000190734863
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G3_tread_edge",
+   "mesh": "SM_Fern02",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Fern02.FT_EX_Fern02",
+   "from": {
+    "loc": [
+     3274.0,
+     -3564.0,
+     756.6277247428894
+    ],
+    "rot_pyr": [
+     0.0,
+     34.900001525878906,
+     -0.0
+    ],
+    "scale": [
+     1.0499999523162842,
+     1.0499999523162842,
+     1.0499999523162842
+    ]
+   },
+   "to": {
+    "loc": [
+     2894.6,
+     -2813.0,
+     401.69
+    ],
+    "rot_pyr": [
+     0.0,
+     34.9,
+     -0.0
+    ],
+    "scale": [
+     1.0499999523162842,
+     1.0499999523162842,
+     1.0499999523162842
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G3_tread_edge",
+   "mesh": "SM_Fern02",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_Fern02.FT_EX_Fern02",
+   "from": {
+    "loc": [
+     2165.0,
+     -2538.0,
+     383.9751623725891
+    ],
+    "rot_pyr": [
+     0.0,
+     72.69999694824217,
+     -0.0
+    ],
+    "scale": [
+     1.1299999952316286,
+     1.1299999952316286,
+     1.1299999952316284
+    ]
+   },
+   "to": {
+    "loc": [
+     2660.0,
+     -3167.4,
+     428.32
+    ],
+    "rot_pyr": [
+     0.0,
+     72.7,
+     -0.0
+    ],
+    "scale": [
+     1.1299999952316286,
+     1.1299999952316286,
+     1.1299999952316284
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G3_tread_edge",
+   "mesh": "SM_FernWild01",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_FernWild01.FT_EX_FernWild01",
+   "from": {
+    "loc": [
+     3315.0,
+     -3367.0,
+     700.8276889801025
+    ],
+    "rot_pyr": [
+     0.0,
+     44.20000076293952,
+     -0.0
+    ],
+    "scale": [
+     0.8999999761581421,
+     0.8999999761581421,
+     0.8999999761581421
+    ]
+   },
+   "to": {
+    "loc": [
+     2628.7,
+     -2797.4,
+     389.18
+    ],
+    "rot_pyr": [
+     0.0,
+     44.2,
+     -0.0
+    ],
+    "scale": [
+     0.8999999761581421,
+     0.8999999761581421,
+     0.8999999761581421
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G3_tread_edge",
+   "mesh": "SM_FernWild01",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_FernWild01.FT_EX_FernWild01",
+   "from": {
+    "loc": [
+     2175.000345831419,
+     -2500.669682962336,
+     374.27540731430054
+    ],
+    "rot_pyr": [
+     -0.0,
+     -97.47048950195324,
+     -0.0
+    ],
+    "scale": [
+     0.8563001155853273,
+     0.8563001155853273,
+     0.8563001155853271
+    ]
+   },
+   "to": {
+    "loc": [
+     2513.5,
+     -2974.1,
+     406.14
+    ],
+    "rot_pyr": [
+     -0.0,
+     -97.5,
+     -0.0
+    ],
+    "scale": [
+     0.8563001155853273,
+     0.8563001155853273,
+     0.8563001155853271
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G3_tread_edge",
+   "mesh": "SM_FernLong01",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_FernLong01.FT_EX_FernLong01",
+   "from": {
+    "loc": [
+     2008.065541869504,
+     -2633.117105305627,
+     388.9498920440674
+    ],
+    "rot_pyr": [
+     0.0,
+     40.02961730957046,
+     -0.0
+    ],
+    "scale": [
+     0.8205593824386598,
+     0.8205593824386598,
+     0.8205593824386597
+    ]
+   },
+   "to": {
+    "loc": [
+     2740.8,
+     -3001.7,
+     394.09
+    ],
+    "rot_pyr": [
+     0.0,
+     40.0,
+     -0.0
+    ],
+    "scale": [
+     0.8205593824386598,
+     0.8205593824386598,
+     0.8205593824386597
+    ]
+   },
+   "found_at_new_location": true
+  },
+  {
+   "group": "G3_tread_edge",
+   "mesh": "SM_FernLong01",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_FernLong01.FT_EX_FernLong01",
+   "from": {
+    "loc": [
+     3126.52467954882,
+     -3361.2797728136416,
+     642.4879404764373
+    ],
+    "rot_pyr": [
+     0.0,
+     24.283275604248203,
+     -0.0
+    ],
+    "scale": [
+     1.0262141227722168,
+     1.0262141227722168,
+     1.0262141227722168
+    ]
+   },
+   "to": {
+    "loc": [
+     2409.1,
+     -3057.1,
+     397.5
+    ],
+    "rot_pyr": [
+     0.0,
+     24.3,
+     -0.0
+    ],
+    "scale": [
+     1.0262141227722168,
+     1.0262141227722168,
+     1.0262141227722168
+    ]
+   },
+   "found_at_new_location": true
+  }
+ ],
+ "problems": [],
+ "dirty_before": [
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ],
+ "all_found": true,
+ "counts_equal": true,
+ "dirty_after": [
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ]
+}

@@ -1,0 +1,382 @@
+[
+ {
+  "group": "G1_nearfield",
+  "mesh": "SM_Pine_Juvenile_01",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -9.8,
+    -12.7,
+    -15.5,
+    -18.1,
+    -20.7,
+    -24.5,
+    -28.7,
+    -32.5,
+    -35.5
+   ],
+   "min_gap": -35.5,
+   "max_gap": -9.8,
+   "pivot_minus_ground_cm": -8.0,
+   "long_axis_len_cm": 227.7
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -9.6,
+    -12.6,
+    -15.4,
+    -17.7,
+    -20.6,
+    -23.7,
+    -26.8,
+    -29.8,
+    -33.8
+   ],
+   "min_gap": -33.8,
+   "max_gap": -9.6,
+   "pivot_minus_ground_cm": -8.0,
+   "long_axis_len_cm": 227.7
+  }
+ },
+ {
+  "group": "G2_compression",
+  "mesh": "SM_Young_Black_Spruce_01",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -27.8,
+    -21.8,
+    -16.5,
+    -11.2,
+    -5.9,
+    -0.6,
+    4.6,
+    9.8,
+    15.0
+   ],
+   "min_gap": -27.8,
+   "max_gap": 15.0,
+   "pivot_minus_ground_cm": -3.4,
+   "long_axis_len_cm": 123.7
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -9.2,
+    -8.1,
+    -7.1,
+    -6.1,
+    -5.3,
+    -5.4,
+    -5.5,
+    -5.6,
+    -5.8
+   ],
+   "min_gap": -9.2,
+   "max_gap": -5.3,
+   "pivot_minus_ground_cm": -3.4,
+   "long_axis_len_cm": 123.7
+  }
+ },
+ {
+  "group": "G2_compression",
+  "mesh": "SM_Young_Black_Spruce_02",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -40.7,
+    -32.5,
+    -23.5,
+    -13.3,
+    -3.2,
+    5.6,
+    14.5,
+    22.1,
+    28.6
+   ],
+   "min_gap": -40.7,
+   "max_gap": 28.6,
+   "pivot_minus_ground_cm": -4.3,
+   "long_axis_len_cm": 165.0
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -21.6,
+    -18.4,
+    -15.1,
+    -10.0,
+    -4.6,
+    0.8,
+    6.1,
+    11.2,
+    14.9
+   ],
+   "min_gap": -21.6,
+   "max_gap": 14.9,
+   "pivot_minus_ground_cm": -4.3,
+   "long_axis_len_cm": 165.0
+  }
+ },
+ {
+  "group": "G2_compression",
+  "mesh": "SM_PineDeadTrunk03",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -20.6,
+    -20.9,
+    -21.2,
+    -21.3,
+    -21.4,
+    -21.6,
+    -22.8,
+    -24.9,
+    -27.7
+   ],
+   "min_gap": -27.7,
+   "max_gap": -20.6,
+   "pivot_minus_ground_cm": -14.6,
+   "long_axis_len_cm": 348.9
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    5.7,
+    0.3,
+    -10.1,
+    -19.2,
+    -22.0,
+    -20.8,
+    -24.4,
+    -31.3,
+    -31.7
+   ],
+   "min_gap": -31.7,
+   "max_gap": 5.7,
+   "pivot_minus_ground_cm": -14.6,
+   "long_axis_len_cm": 348.9
+  }
+ },
+ {
+  "group": "G3_tread_edge",
+  "mesh": "SM_Fern02",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -30.5,
+    -24.5,
+    -18.8,
+    -13.9,
+    -8.9,
+    -4.0,
+    1.0,
+    6.1,
+    11.5
+   ],
+   "min_gap": -30.5,
+   "max_gap": 11.5,
+   "pivot_minus_ground_cm": -3.1,
+   "long_axis_len_cm": 85.0
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -39.3,
+    -32.3,
+    -25.4,
+    -18.4,
+    -11.3,
+    -3.1,
+    5.0,
+    12.0,
+    18.3
+   ],
+   "min_gap": -39.3,
+   "max_gap": 18.3,
+   "pivot_minus_ground_cm": -3.1,
+   "long_axis_len_cm": 85.0
+  }
+ },
+ {
+  "group": "G3_tread_edge",
+  "mesh": "SM_FernWild01",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -44.9,
+    -35.3,
+    -25.5,
+    -15.7,
+    -6.5,
+    1.9,
+    10.2,
+    18.6,
+    26.2
+   ],
+   "min_gap": -44.9,
+   "max_gap": 26.2,
+   "pivot_minus_ground_cm": -2.7,
+   "long_axis_len_cm": 150.6
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -0.3,
+    -7.4,
+    -10.4,
+    -9.3,
+    -8.2,
+    -7.0,
+    4.1,
+    19.8,
+    35.5
+   ],
+   "min_gap": -10.4,
+   "max_gap": 35.5,
+   "pivot_minus_ground_cm": -2.7,
+   "long_axis_len_cm": 150.6
+  }
+ },
+ {
+  "group": "G3_tread_edge",
+  "mesh": "SM_FernLong01",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -4.7,
+    -5.3,
+    -5.4,
+    -5.5,
+    -5.6,
+    -5.2,
+    -4.2,
+    -3.3,
+    -2.2
+   ],
+   "min_gap": -5.6,
+   "max_gap": -2.2,
+   "pivot_minus_ground_cm": -3.0,
+   "long_axis_len_cm": 149.3
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -5.1,
+    -5.2,
+    -5.2,
+    -5.1,
+    -5.0,
+    -4.8,
+    -6.1,
+    -8.5,
+    -10.8
+   ],
+   "min_gap": -10.8,
+   "max_gap": -4.8,
+   "pivot_minus_ground_cm": -3.0,
+   "long_axis_len_cm": 149.3
+  }
+ },
+ {
+  "group": "G3_tread_edge",
+  "mesh": "SM_FernWild01",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -3.1,
+    -4.4,
+    -5.6,
+    -7.0,
+    -8.9,
+    -13.6,
+    -19.2,
+    -24.7,
+    -30.3
+   ],
+   "min_gap": -30.3,
+   "max_gap": -3.1,
+   "pivot_minus_ground_cm": -3.0,
+   "long_axis_len_cm": 143.3
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    11.8,
+    4.6,
+    -0.6,
+    -5.8,
+    -7.4,
+    -2.6,
+    2.1,
+    8.1,
+    14.9
+   ],
+   "min_gap": -7.4,
+   "max_gap": 14.9,
+   "pivot_minus_ground_cm": -3.0,
+   "long_axis_len_cm": 143.3
+  }
+ },
+ {
+  "group": "G3_tread_edge",
+  "mesh": "SM_Fern02",
+  "original": {
+   "gap_cm_along_long_axis": [
+    -25.1,
+    -21.2,
+    -17.3,
+    -13.4,
+    -9.5,
+    -5.7,
+    -2.4,
+    -0.5,
+    0.5
+   ],
+   "min_gap": -25.1,
+   "max_gap": 0.5,
+   "pivot_minus_ground_cm": -3.4,
+   "long_axis_len_cm": 91.5
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    -34.3,
+    -29.4,
+    -23.6,
+    -17.7,
+    -11.7,
+    -6.1,
+    -2.7,
+    0.7,
+    4.1
+   ],
+   "min_gap": -34.3,
+   "max_gap": 4.1,
+   "pivot_minus_ground_cm": -3.4,
+   "long_axis_len_cm": 91.5
+  }
+ },
+ {
+  "group": "G3_tread_edge",
+  "mesh": "SM_FernLong01",
+  "original": {
+   "gap_cm_along_long_axis": [
+    10.6,
+    6.2,
+    2.2,
+    -1.7,
+    -5.6,
+    -9.7,
+    -13.5,
+    -16.6,
+    -19.7
+   ],
+   "min_gap": -19.7,
+   "max_gap": 10.6,
+   "pivot_minus_ground_cm": -3.1,
+   "long_axis_len_cm": 186.7
+  },
+  "target": {
+   "gap_cm_along_long_axis": [
+    21.6,
+    12.8,
+    5.0,
+    -0.2,
+    -5.3,
+    -10.4,
+    -14.8,
+    -12.4,
+    -9.6
+   ],
+   "min_gap": -14.8,
+   "max_gap": 21.6,
+   "pivot_minus_ground_cm": -3.1,
+   "long_axis_len_cm": 186.7
+  }
+ }
+]

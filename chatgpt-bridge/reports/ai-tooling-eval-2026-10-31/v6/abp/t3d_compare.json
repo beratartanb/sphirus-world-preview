@@ -1,0 +1,86 @@
+{
+ "ABP_GR_MotionMatching.cdo.t3d": {
+  "kind": "cdo",
+  "keys_memory": 1224,
+  "keys_disk": 1224,
+  "differing_keys": {
+   "SHM239_Own": {
+    "memory": "1.000000",
+    "disk": "0.000000"
+   },
+   "SHM240_BlkSpd": {
+    "memory": "-1.000000",
+    "disk": "60.000000"
+   },
+   "SHM240_HeadOn": {
+    "memory": "1.000000",
+    "disk": "0.000000"
+   }
+  },
+  "property_access_values_equal_as_multiset": true,
+  "property_access_count": [
+   26,
+   26
+  ]
+ },
+ "ABP_GR_MotionMatching.t3d": {
+  "kind": "blueprint",
+  "objects_memory": 5,
+  "objects_disk": 5,
+  "only_in_memory": [],
+  "only_on_disk": [],
+  "n_only_in_memory": 0,
+  "n_only_on_disk": 0,
+  "changed_objects": [],
+  "n_changed": 0,
+  "n_position_only": 0
+ },
+ "ABP_GR_MotionMatchingBase.cdo.t3d": {
+  "kind": "cdo",
+  "keys_memory": 1224,
+  "keys_disk": 1224,
+  "differing_keys": {
+   "SHM239_Own": {
+    "memory": "1.000000",
+    "disk": "0.000000"
+   },
+   "SHM240_BlkSpd": {
+    "memory": "-1.000000",
+    "disk": "60.000000"
+   },
+   "SHM240_HeadOn": {
+    "memory": "1.000000",
+    "disk": "0.000000"
+   }
+  },
+  "property_access_values_equal_as_multiset": true,
+  "property_access_count": [
+   26,
+   26
+  ]
+ },
+ "ABP_GR_MotionMatchingBase.t3d": {
+  "kind": "blueprint",
+  "objects_memory": 14633,
+  "objects_disk": 14633,
+  "only_in_memory": [],
+  "only_on_disk": [],
+  "n_only_in_memory": 0,
+  "n_only_on_disk": 0,
+  "changed_objects": [],
+  "n_changed": 0,
+  "n_position_only": 0
+ },
+ "summary.json": {
+  "kind": "blueprint",
+  "objects_memory": 0,
+  "objects_disk": 0,
+  "only_in_memory": [],
+  "only_on_disk": [],
+  "n_only_in_memory": 0,
+  "n_only_on_disk": 0,
+  "changed_objects": [],
+  "n_changed": 0,
+  "n_position_only": 0
+ }
+}

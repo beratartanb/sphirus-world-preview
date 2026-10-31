@@ -7,6 +7,7 @@ the trail, rate-limited to 90 deg/s (like a player steering with the mouse); pit
   pass B  same walk, no capture, stock 'csvprofile' (no cvar changed)
   stations s = 2 / 8 / 14 m (approach / compression / release): forward (trail tangent), left90, right90, lookback (tangent + 180) and,
            at 14 m, 'house' (yaw toward the house content bounds centre) - HighResShot 1920x1080 through the real player camera
+  pans     at 8 and 14 m: captured yaw sweep tangent-100 -> tangent+100 deg over 6 s (right/left camera turn in motion)
 Also records the live camera rig (spring arm / camera component / CMC walkability) once.
 Runtime only; nothing saved. PIE runs the in-memory state (2 dirty ABPs, see v4 report).
 Output: <OUT>/frames, <OUT>/stills, <OUT>/trailwalk_log.json, <OUT>/trailwalk_status.json
@@ -63,6 +64,8 @@ for name, s in STATIONS:
     dirs = [('forward', 0.0), ('left90', -90.0), ('right90', 90.0), ('lookback', 180.0)] + ([('house', 'house')] if name == 'release' else [])
     for dn, off in dirs:
         PLAN += [('rot', s, off), ('wait', 3.0), ('still', '%s_%s' % (name, dn))]
+    if name in ('compression', 'release'):   # right/left camera turn in motion: yaw sweep tangent-100 -> tangent+100 over 6 s, captured
+        PLAN += [('rot', s, -100.0), ('wait', 2.0), ('cap_on', 'frames_pan_' + name), ('pan', s, -100.0, 100.0, 6.0), ('cap_off',)]
 
 
 class TW:
@@ -157,14 +160,17 @@ class TW:
                     raise RuntimeError('HighResShot timeout')
             elif st[0] == 'cap_on':
                 vs = u.WidgetLayoutLibrary.get_viewport_size(gw); vw, vh = int(round(vs.x)), int(round(vs.y))
+                fd = os.path.join(OUT, st[1] if len(st) > 1 else 'frames'); os.makedirs(fd, exist_ok=True)
+                for f_ in os.listdir(fd):
+                    os.remove(os.path.join(fd, f_))
                 if vw >= CROP[0] and vh >= CROP[1]:
-                    out = u.FileMediaOutput(); out.set_editor_property('file_path', u.DirectoryPath(path=os.path.join(OUT, 'frames')))
+                    out = u.FileMediaOutput(); out.set_editor_property('file_path', u.DirectoryPath(path=fd))
                     out.set_editor_property('base_file_name', 'f')
                     wo = out.get_editor_property('write_options'); wo.set_editor_property('format', u.DesiredImageFormat.JPG)
                     wo.set_editor_property('compression_quality', 90); wo.set_editor_property('async_', True); out.set_editor_property('write_options', wo)
                     out.set_editor_property('override_desired_size', True); out.set_editor_property('desired_size', u.IntPoint(CROP[0], CROP[1]))
                     self.cap = out.create_media_capture(); opts = u.MediaCaptureOptions(); opts.set_editor_property('crop', u.MediaCaptureCroppingType.CENTER)
-                    LOG['capture'] = {'ok': bool(self.cap.capture_active_scene_viewport(opts)), 'viewport': [vw, vh]}
+                    LOG.setdefault('captures', []).append({'dir': os.path.basename(fd), 'ok': bool(self.cap.capture_active_scene_viewport(opts)), 'viewport': [vw, vh]})
                 else:
                     LOG['capture'] = {'refused': [vw, vh]}
                 self.i += 1; self.t = now
@@ -172,6 +178,14 @@ class TW:
                 if self.cap:
                     self.cap.stop_capture(True); self.cap = None
                 self.i += 1; self.t = now
+            elif st[0] == 'pan':
+                g = u.GameplayStatics.get_time_seconds(gw)
+                if not getattr(self, 'pan_g0', None):
+                    self.pan_g0 = g
+                f = min(1.0, (g - self.pan_g0) / st[4]); x, y, yaw = at(S0 + st[1])
+                self.pc.set_control_rotation(u.Rotator(pitch=-5.0, yaw=yaw + st[2] + f * (st[3] - st[2]), roll=0))
+                if f >= 1.0:
+                    self.pan_g0 = None; self.i += 1; self.t = now
             elif st[0] in ('csv_on', 'csv_off'):
                 self.cmd(gw, 'csvprofile start' if st[0] == 'csv_on' else 'csvprofile stop'); LOG[st[0]] = time.strftime('%H:%M:%S'); self.i += 1; self.t = now
             elif st[0] == 'walk':
@@ -205,7 +219,7 @@ class TW:
             LOG['errors'].append('cleanup ' + repr(ex))
         if gw is not None:
             L.editor_request_end_play()
-        LOG['frames_written'] = len([f for f in os.listdir(os.path.join(OUT, 'frames')) if f.endswith('.jpg')])
+        LOG['frames_written'] = {d: len([f for f in os.listdir(os.path.join(OUT, d)) if f.endswith('.jpg')]) for d in os.listdir(OUT) if d.startswith('frames') and os.path.isdir(os.path.join(OUT, d))}
         LOG['dirty_after'] = dirty(); LOG['finished'] = time.strftime('%Y-%m-%d %H:%M:%S')
         json.dump(LOG, open(os.path.join(OUT, 'trailwalk_log.json'), 'w'), indent=1, default=str)
         self.status('done' if not LOG['errors'] else 'error')

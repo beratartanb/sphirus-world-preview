@@ -1,0 +1,64 @@
+{
+ "mode": "apply",
+ "groups": [
+  "G1_nearfield"
+ ],
+ "n_moves": 1,
+ "per_type": {
+  "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_RefugeJuvenile.FT_EX_RefugeJuvenile": {
+   "mesh": "SM_Pine_Juvenile_01",
+   "count_before": 203,
+   "count_after": 203,
+   "equal": true
+  }
+ },
+ "moves": [
+  {
+   "group": "G1_nearfield",
+   "mesh": "SM_Pine_Juvenile_01",
+   "foliage_type": "/Game/GraceRanger/Environment/Exterior20260921/Foliage/FT_EX_RefugeJuvenile.FT_EX_RefugeJuvenile",
+   "from": {
+    "loc": [
+     3028.592144611397,
+     -2720.8295972950655,
+     442.8770704269409
+    ],
+    "rot_pyr": [
+     0.0,
+     155.26808166503906,
+     -0.0
+    ],
+    "scale": [
+     1.3454899787902834,
+     1.3454899787902834,
+     1.3454899787902832
+    ]
+   },
+   "to": {
+    "loc": [
+     3072.7,
+     -2747.3,
+     481.21
+    ],
+    "rot_pyr": [
+     0.0,
+     155.3,
+     -0.0
+    ],
+    "scale": [
+     1.3454899787902834,
+     1.3454899787902834,
+     1.3454899787902832
+    ]
+   },
+   "found_at_new_location": true
+  }
+ ],
+ "problems": [],
+ "dirty_before": [],
+ "all_found": true,
+ "counts_equal": true,
+ "dirty_after": [
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ]
+}
