@@ -1,0 +1,8 @@
+ERROR 1.2478125095367432
+Traceback (most recent call last):
+  File "C:/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/b2runner/runner.py", line 186, in _v2_tick
+    exec(compile(src, str(job), 'exec'), {'__name__': '__job__', '__file__': str(job)})
+  File "C:\Users\berat\AppData\Local\Temp\claude\C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS\5f49a232-b001-47ad-8881-1eb04d9cb1c5\scratchpad\b2runner\jobs\e21d_w-101033765159.py", line 6, in <module>
+    exec(open(r"C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V241_20261031/diag241_e21.py", encoding="utf8").read())
+  File "<string>", line 12, in <module>
+AttributeError: 'PoseSearchDatabase' object has no attribute 'remove_animation_asset_at'

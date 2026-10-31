@@ -1,0 +1,72 @@
+OK 0.11266660690307617
+SUB241 K2Node_CallFunction_316 [Dönüşüm|SetActorRotation] bTeleportPhysics=false
+SUB241   <NewRotation> from K2Node_CallFunction_315:ReturnValue
+SUB241     K2Node_CallFunction_315 [Matematik|Döndürücü|MakeRotator] Roll=0.0 Pitch=0.0
+SUB241       <Yaw> from K2Node_VariableGet_142:ClipYaw
+SUB241         K2Node_VariableGet_142 [|GetClipYaw] 
+SUB241           <self> from K2Node_CallFunction_314:ReturnValue
+SUB241             K2Node_CallFunction_314 [Aktör|GetComponentByClass] ComponentClass=/Game/GraceRanger/SH
+SUB241 K2Node_CallFunction_23 [Dönüşüm|SetActorRotation] bTeleportPhysics=false
+SUB241   <NewRotation> from K2Node_CallFunction_22:ReturnValue
+SUB241     K2Node_CallFunction_22 [Matematik|İnterpolasyon|RInterpTo_Constant] 
+SUB241       <Current> from K2Node_CallFunction_20:ReturnValue
+SUB241         K2Node_CallFunction_20 [Dönüşüm|GetActorRotation] 
+SUB241       <Target> from K2Node_CallFunction_18:ReturnValue
+SUB241         K2Node_CallFunction_18 [Matematik|Döndürücü|MakeRotator] Roll=0.0 Pitch=0.0
+SUB241           <Yaw> from K2Node_CallFunction_17:ReturnValue
+SUB241             K2Node_CallFunction_17 [Matematik|Kaydır|SelectFloat] 
+SUB241               <A> from K2Node_CallFunction_171:ReturnValue
+SUB241                 K2Node_CallFunction_171 [Matematik|Kaydır|SelectFloat] 
+SUB241                   <A> from K2Node_CallFunction_158:ReturnValue
+SUB241                     K2Node_CallFunction_158 [Matematik|Döndürücü|NormalizeAxis] 
+SUB241                   <B> from K2Node_CallFunction_15:Yaw
+SUB241                     K2Node_CallFunction_15 [Matematik|Döndürücü|BreakRotator] 
+SUB241                   <bPickA> from K2Node_CommutativeAssociativeBinaryOperator_45:ReturnValue
+SUB241                     K2Node_CommutativeAssociativeBinaryOperator_45 [Matematik|Boolean|ANDBoolean] 
+SUB241               <B> from K2Node_CallFunction_148:ReturnValue
+SUB241                 K2Node_CallFunction_148 [Matematik|Kaydır|SelectFloat] 
+SUB241                   <A> from K2Node_CallFunction_143:ReturnValue
+SUB241                     K2Node_CallFunction_143 [Matematik|Döndürücü|NormalizeAxis] 
+SUB241                   <B> from K2Node_CallFunction_91:ReturnValue
+SUB241                     K2Node_CallFunction_91 [Matematik|Kaydır|SelectFloat] 
+SUB241                   <bPickA> from K2Node_CommutativeAssociativeBinaryOperator_40:ReturnValue
+SUB241                     K2Node_CommutativeAssociativeBinaryOperator_40 [Matematik|Boolean|ANDBoolean] 
+SUB241               <bPickA> from K2Node_CommutativeAssociativeBinaryOperator_28:ReturnValue
+SUB241                 K2Node_CommutativeAssociativeBinaryOperator_28 [Matematik|Boolean|ORBoolean] 
+SUB241                   <A> from K2Node_CommutativeAssociativeBinaryOperator_27:ReturnValue
+SUB241                     K2Node_CommutativeAssociativeBinaryOperator_27 [Matematik|Boolean|ANDBoolean] 
+SUB241                   <B> from K2Node_CommutativeAssociativeBinaryOperator_1:ReturnValue
+SUB241                     K2Node_CommutativeAssociativeBinaryOperator_1 [Matematik|Boolean|ORBoolean] 
+SUB241       <DeltaTime> from K2Node_CallFunction_21:ReturnValue
+SUB241         K2Node_CallFunction_21 [İşlevsellikler|Zaman|GetWorldDeltaSeconds] 
+SUB241       <InterpSpeed> from K2Node_CallFunction_200:ReturnValue
+SUB241         K2Node_CallFunction_200 [Matematik|Kaydır|SelectFloat] A=0.01
+SUB241           <B> from K2Node_CallFunction_194:ReturnValue
+SUB241             K2Node_CallFunction_194 [Matematik|Kaydır|SelectFloat] A=0.0
+SUB241               <B> from K2Node_VariableGet_58:GR_V25TurnRate
+SUB241                 K2Node_VariableGet_58 [|GetGR_V25TurnRate] 
+SUB241               <bPickA> from K2Node_CommutativeAssociativeBinaryOperator_52:ReturnValue
+SUB241                 K2Node_CommutativeAssociativeBinaryOperator_52 [Matematik|Boolean|ANDBoolean] 
+SUB241                   <A> from K2Node_CallFunction_116:ReturnValue
+SUB241                     K2Node_CallFunction_116 [YapayZeka|Bileşenler|NavMovement|IsMovingOnGround] 
+SUB241                   <B> from K2Node_CommutativeAssociativeBinaryOperator_51:ReturnValue
+SUB241                     K2Node_CommutativeAssociativeBinaryOperator_51 [Matematik|Boolean|ANDBoolean] 
+SUB241           <bPickA> from K2Node_CommutativeAssociativeBinaryOperator_57:ReturnValue
+SUB241             K2Node_CommutativeAssociativeBinaryOperator_57 [Matematik|Boolean|ANDBoolean] 
+SUB241               <A> from K2Node_CommutativeAssociativeBinaryOperator_56:ReturnValue
+SUB241                 K2Node_CommutativeAssociativeBinaryOperator_56 [Matematik|Boolean|ANDBoolean] 
+SUB241                   <A> from K2Node_CommutativeAssociativeBinaryOperator_55:ReturnValue
+SUB241                     K2Node_CommutativeAssociativeBinaryOperator_55 [Matematik|Boolean|ANDBoolean] 
+SUB241                   <B> from K2Node_CallFunction_205:ReturnValue
+SUB241                     K2Node_CallFunction_205 [Matematik|Kaydır|InRange(Float)] Max=1000.0 InclusiveMin=false InclusiveMax=true
+SUB241               <B> from K2Node_CallFunction_214:ReturnValue
+SUB241                 K2Node_CallFunction_214 [Matematik|Kaydır|InRange(Float)] Max=1000000000.0 InclusiveMin=false InclusiveMax=true
+SUB241                   <Value> from K2Node_CallFunction_213:ReturnValue
+SUB241                     K2Node_CallFunction_213 [Matematik|Vektör|DotProduct] B=(X=1,Y=-1,Z=0)
+SUB241                   <Min> from K2Node_VariableGet_93:GR220_StopFaceDelay
+SUB241                     K2Node_VariableGet_93 [|GetGR220_StopFaceDelay] 
+SUB241 K2Node_IfThenElse_7 [İşlevsellikler|AkışKontrolü|Dal] 
+SUB241   <Condition> from K2Node_VariableGet_141:ClipYawOn
+SUB241     K2Node_VariableGet_141 [|GetClipYawOn] 
+SUB241       <self> from K2Node_CallFunction_314:ReturnValue
+SUB241         K2Node_CallFunction_314 [Aktör|GetComponentByClass] ComponentClass=/Game/GraceRanger/SH
