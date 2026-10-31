@@ -33,3 +33,22 @@
   - `.agents/skills/sphirus-editor-automation-mcp/SKILL.md`
   - `.agents/skills/sphirus-character-camera/references/epic-mcp.md` (plus the `epic/` upstream copy)
   - `.agents/skills/sphirus-level-art-direction/references/reference-authority.md`
+
+## Added in v2 (2026-10-31)
+- **Unreal Sensei video:** "How to Make Games in Unreal Engine 5 with AI", https://www.youtube.com/watch?v=R_HFCPd5eAw
+  - The metadata and the description (including chapters) were read. No transcript was available: the caption endpoints returned 404 or were refused, and in the built-in browser the player showed "subtitles unavailable".
+  - Companion asset page: https://www.unrealsensei.com/asset/ai-game-starter-assets
+  - PLAYBOARD: https://playboard.co/en/channel/UCue7TFlrt9FxXarpsl872Dg
+- **Engine source read (UE 5.8.1):**
+  - `Engine/Plugins/Experimental/ModelContextProtocol/Source/ModelContextProtocol/Private/ModelContextProtocolModule.cpp` (RefreshTools / StartServer / StopServer)
+  - `.../ModelContextProtocolEditor/Private/ModelContextProtocolEditor.cpp` (OnRefreshTools → adapter re-registration)
+  - `.../ModelContextProtocolToolsetRegistryAdapter.cpp`
+  - `Engine/Plugins/Experimental/ToolsetRegistry/Source/ToolsetRegistry/Public/ToolsetRegistry/UToolsetRegistry.h` (ExecuteTool)
+  - `Engine/Source/Developer/ScreenShotComparisonTools/Private/ImageComparer.cpp` (tolerances, AA rule, block errors, SSIM routine)
+  - `Engine/Source/Developer/ScreenShotComparisonTools/Private/ScreenShotManager.cpp` (SSIM call commented out)
+  - `Engine/Source/Developer/FunctionalTesting/Public/AutomationScreenshotOptions.h` (tolerance presets, noisy-feature and tonemapping defaults)
+  - `Engine/Source/Developer/FunctionalTesting/Private/AutomationBlueprintFunctionLibrary.cpp` (CompareImageAgainstReference requires GIsAutomationTesting)
+  - `Engine/Plugins/MovieScene/MovieRenderPipeline/MovieRenderPipeline.uplugin` (EnabledByDefault false; not in sphirus.uproject)
+- **Project skills used for the design:**
+  - `sphirus-aaa-environment-polish/references/{player-camera-validation,visual-acceptance,reference-comparison}.md`
+  - `sphirus-level-art-direction/references/validation-and-pilot.md` (P00–P11)

@@ -1,0 +1,444 @@
+{
+ "started": "2026-10-31 02:54:06",
+ "engine": "5.8.1-56057345+++UE5+Release-5.8",
+ "world": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "viewport_key": "FourPanes2x2.Viewport 1.Viewport1",
+ "viewport_size": [
+  1741,
+  922
+ ],
+ "pose0": [
+  [
+   7890.70337358613,
+   -415.0358955542689,
+   90.14999777322768
+  ],
+  [
+   -3.537365955708083e-10,
+   89.99993896484372,
+   0.0
+  ]
+ ],
+ "fov0": 90.0,
+ "game_view0": false,
+ "views": {
+  "house_front": [
+   [
+    -1550,
+    2460,
+    92.3320484161377
+   ],
+   [
+    4.045882564505467,
+    -36.830867829324454,
+    0
+   ],
+   68
+  ],
+  "pond": [
+   [
+    1500,
+    2810,
+    152.16795921325684
+   ],
+   [
+    -6.110206786658776,
+    130.80909247267473,
+    0
+   ],
+   75
+  ],
+  "forest": [
+   [
+    2200,
+    1580,
+    319.35779571533203
+   ],
+   [
+    3.696050782488103,
+    -77.14368743247138,
+    0
+   ],
+   70
+  ]
+ },
+ "sweep_s": [
+  0.5,
+  2.5,
+  6.0,
+  10.0,
+  12.0,
+  14.0
+ ],
+ "settle_b_s": 10.0,
+ "capture_call": "AutomationLibrary.take_high_res_screenshot(1920,1080,file,delay=0.2,force_game_view=True)",
+ "dirty_before": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "xform_before": "18109a9c4abb8067c99141ab1aaaf63b62228ab6",
+ "settings_before": {
+  "cvars": {
+   "r.AntiAliasingMethod": 4.0,
+   "r.DynamicGlobalIlluminationMethod": 1.0,
+   "r.ReflectionMethod": 1.0,
+   "r.Shadow.Virtual.Enable": 1.0,
+   "r.ScreenPercentage": 0.0,
+   "r.Lumen.HardwareRayTracing": 1.0,
+   "r.EyeAdaptationQuality": 2.0,
+   "r.MotionBlurQuality": 4.0,
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "t.MaxFPS": 0.0
+  },
+  "scene_actors": [
+   {
+    "class": "SkyAtmosphere",
+    "name": "EX_PostRain_Atmosphere",
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "class": "DirectionalLight",
+    "name": "EX_PostRain_Sun",
+    "rotation": [
+     -27.000000000000014,
+     -38.00000000000002,
+     -1.7848099846186507e-15
+    ]
+   },
+   {
+    "class": "SkyLight",
+    "name": "EX_PostRain_Sky",
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "class": "PostProcessVolume",
+    "name": "EX_PostRain_NeutralExposure",
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "unbound": true,
+    "auto_exposure_method": "<AutoExposureMethod.AEM_HISTOGRAM: 0>",
+    "exposure_bias": -0.6499999761581421,
+    "min_max_ev100": [
+     -2.0,
+     16.0
+    ]
+   },
+   {
+    "class": "PostProcessVolume",
+    "name": "ReviewOnly_R05_LocalExposure",
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "unbound": true,
+    "auto_exposure_method": "not overridden",
+    "exposure_bias": "not overridden",
+    "min_max_ev100": [
+     null,
+     null
+    ]
+   },
+   {
+    "class": "ExponentialHeightFog",
+    "name": "EX_PostRain_Humidity",
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  ]
+ },
+ "shots": [
+  {
+   "view": "house_front",
+   "tag": "A_t00.5",
+   "file": "house_front__A_t00.5.png",
+   "requested_after_move_s": 4.641,
+   "done_after_move_s": 8.235,
+   "session_s": 8.235,
+   "bytes": 4839374
+  },
+  {
+   "view": "house_front",
+   "tag": "A_t02.5",
+   "file": "house_front__A_t02.5.png",
+   "requested_after_move_s": 8.235,
+   "done_after_move_s": 9.063,
+   "session_s": 9.063,
+   "bytes": 4643120
+  },
+  {
+   "view": "house_front",
+   "tag": "A_t06.0",
+   "file": "house_front__A_t06.0.png",
+   "requested_after_move_s": 9.063,
+   "done_after_move_s": 9.875,
+   "session_s": 9.875,
+   "bytes": 4646814
+  },
+  {
+   "view": "house_front",
+   "tag": "A_t10.0",
+   "file": "house_front__A_t10.0.png",
+   "requested_after_move_s": 10.0,
+   "done_after_move_s": 10.875,
+   "session_s": 10.875,
+   "bytes": 4647009
+  },
+  {
+   "view": "house_front",
+   "tag": "A_t12.0",
+   "file": "house_front__A_t12.0.png",
+   "requested_after_move_s": 12.032,
+   "done_after_move_s": 13.266,
+   "session_s": 13.266,
+   "bytes": 4891225
+  },
+  {
+   "view": "house_front",
+   "tag": "A_t14.0",
+   "file": "house_front__A_t14.0.png",
+   "requested_after_move_s": 14.0,
+   "done_after_move_s": 15.219,
+   "session_s": 15.219,
+   "bytes": 4884995
+  },
+  {
+   "view": "pond",
+   "tag": "A_t00.5",
+   "file": "pond__A_t00.5.png",
+   "requested_after_move_s": 0.5,
+   "done_after_move_s": 1.516,
+   "session_s": 16.735,
+   "bytes": 3681996
+  },
+  {
+   "view": "pond",
+   "tag": "A_t02.5",
+   "file": "pond__A_t02.5.png",
+   "requested_after_move_s": 2.61,
+   "done_after_move_s": 3.531,
+   "session_s": 18.75,
+   "bytes": 3666496
+  },
+  {
+   "view": "pond",
+   "tag": "A_t06.0",
+   "file": "pond__A_t06.0.png",
+   "requested_after_move_s": 6.016,
+   "done_after_move_s": 7.25,
+   "session_s": 22.469,
+   "bytes": 3677748
+  },
+  {
+   "view": "pond",
+   "tag": "A_t10.0",
+   "file": "pond__A_t10.0.png",
+   "requested_after_move_s": 10.0,
+   "done_after_move_s": 10.985,
+   "session_s": 26.204,
+   "bytes": 3680195
+  },
+  {
+   "view": "pond",
+   "tag": "A_t12.0",
+   "file": "pond__A_t12.0.png",
+   "requested_after_move_s": 12.016,
+   "done_after_move_s": 12.985,
+   "session_s": 28.204,
+   "bytes": 3675138
+  },
+  {
+   "view": "pond",
+   "tag": "A_t14.0",
+   "file": "pond__A_t14.0.png",
+   "requested_after_move_s": 14.016,
+   "done_after_move_s": 15.0,
+   "session_s": 30.219,
+   "bytes": 3667354
+  },
+  {
+   "view": "forest",
+   "tag": "A_t00.5",
+   "file": "forest__A_t00.5.png",
+   "requested_after_move_s": 0.516,
+   "done_after_move_s": 1.578,
+   "session_s": 31.797,
+   "bytes": 5105398
+  },
+  {
+   "view": "forest",
+   "tag": "A_t02.5",
+   "file": "forest__A_t02.5.png",
+   "requested_after_move_s": 2.531,
+   "done_after_move_s": 3.625,
+   "session_s": 33.844,
+   "bytes": 5141295
+  },
+  {
+   "view": "forest",
+   "tag": "A_t06.0",
+   "file": "forest__A_t06.0.png",
+   "requested_after_move_s": 6.0,
+   "done_after_move_s": 7.11,
+   "session_s": 37.329,
+   "bytes": 5180979
+  },
+  {
+   "view": "forest",
+   "tag": "A_t10.0",
+   "file": "forest__A_t10.0.png",
+   "requested_after_move_s": 10.031,
+   "done_after_move_s": 11.125,
+   "session_s": 41.344,
+   "bytes": 5190126
+  },
+  {
+   "view": "forest",
+   "tag": "A_t12.0",
+   "file": "forest__A_t12.0.png",
+   "requested_after_move_s": 12.016,
+   "done_after_move_s": 13.094,
+   "session_s": 43.313,
+   "bytes": 5145064
+  },
+  {
+   "view": "forest",
+   "tag": "A_t14.0",
+   "file": "forest__A_t14.0.png",
+   "requested_after_move_s": 14.031,
+   "done_after_move_s": 15.125,
+   "session_s": 45.344,
+   "bytes": 5147262
+  },
+  {
+   "view": "house_front",
+   "tag": "B_round2",
+   "file": "house_front__B_round2.png",
+   "requested_after_move_s": 10.0,
+   "done_after_move_s": 11.25,
+   "session_s": 56.594,
+   "bytes": 4931364
+  },
+  {
+   "view": "house_front",
+   "tag": "B_round2_captureviewport",
+   "call": "ToolsetRegistry.execute_tool(EditorToolset.EditorAppToolset, CaptureViewport)",
+   "keys": [
+    "returnValue"
+   ],
+   "image_keys": [],
+   "done_s": 0.297
+  },
+  {
+   "view": "pond",
+   "tag": "B_round2",
+   "file": "pond__B_round2.png",
+   "requested_after_move_s": 10.016,
+   "done_after_move_s": 11.188,
+   "session_s": 68.11,
+   "bytes": 3681297
+  },
+  {
+   "view": "pond",
+   "tag": "B_round2_captureviewport",
+   "call": "ToolsetRegistry.execute_tool(EditorToolset.EditorAppToolset, CaptureViewport)",
+   "keys": [
+    "returnValue"
+   ],
+   "image_keys": [],
+   "done_s": 0.234
+  },
+  {
+   "view": "forest",
+   "tag": "B_round2",
+   "file": "forest__B_round2.png",
+   "requested_after_move_s": 10.015,
+   "done_after_move_s": 11.109,
+   "session_s": 79.469,
+   "bytes": 5191850
+  },
+  {
+   "view": "forest",
+   "tag": "B_round2_captureviewport",
+   "call": "ToolsetRegistry.execute_tool(EditorToolset.EditorAppToolset, CaptureViewport)",
+   "keys": [
+    "returnValue"
+   ],
+   "image_keys": [],
+   "done_s": 0.25
+  },
+  {
+   "view": "house_front",
+   "tag": "B_round3",
+   "file": "house_front__B_round3.png",
+   "requested_after_move_s": 10.016,
+   "done_after_move_s": 11.079,
+   "session_s": 90.829,
+   "bytes": 4927099
+  },
+  {
+   "view": "pond",
+   "tag": "B_round3",
+   "file": "pond__B_round3.png",
+   "requested_after_move_s": 10.015,
+   "done_after_move_s": 10.968,
+   "session_s": 101.797,
+   "bytes": 3676956
+  },
+  {
+   "view": "forest",
+   "tag": "B_round3",
+   "file": "forest__B_round3.png",
+   "requested_after_move_s": 10.016,
+   "done_after_move_s": 11.11,
+   "session_s": 112.907,
+   "bytes": 5188554
+  }
+ ],
+ "errors": [],
+ "restored": {
+  "pose": [
+   [
+    7890.70337358613,
+    -415.0358955542689,
+    90.14999777322768
+   ],
+   [
+    -3.537365955708083e-10,
+    89.99993896484372,
+    0.0
+   ]
+  ],
+  "fov": 90.0,
+  "game_view": false
+ },
+ "dirty_after": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "xform_after": "18109a9c4abb8067c99141ab1aaaf63b62228ab6",
+ "xform_unchanged": true,
+ "finished": "2026-10-31 02:55:59"
+}

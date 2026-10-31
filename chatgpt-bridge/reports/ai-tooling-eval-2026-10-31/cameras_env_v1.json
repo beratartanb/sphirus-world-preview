@@ -1,0 +1,29 @@
+{
+  "schema": "sphirus_env_cameras_v1 (design; data only, no level actors)",
+  "created": "2026-10-31",
+  "capture": {"resolution": [1920, 1080], "call": "AutomationLibrary.take_high_res_screenshot(1920,1080,file,delay=0.2,force_game_view=True)",
+              "settle_s_min": 12, "discard_first_shot_of_session": true, "shots_per_view": 3, "shot_interval_s": 2},
+  "regression_cameras": [
+    {"id": "R-HF-1", "scene": "house_front", "source": "Bridge camera_plan 2026-09-25 06_house_exterior", "measured_in_T1": true,
+     "location": [-1550, 2460, 92.3320484161377], "rotation_pyr": [4.045882564505467, -36.830867829324454, 0], "fov": 68,
+     "thresholds": {"global_luma_abs": 1.0, "tile_luma_max": 11.1, "ssim_d8_min": 0.94}},
+    {"id": "R-PD-1", "scene": "pond", "source": "Bridge camera_plan 2026-09-25 17_shoreline_gameplay", "measured_in_T1": true,
+     "note": "foreground young conifer and branches occlude the pond; reframe before adopting",
+     "location": [1500, 2810, 152.16795921325684], "rotation_pyr": [-6.110206786658776, 130.80909247267473, 0], "fov": 75,
+     "thresholds": {"global_luma_abs": 1.0, "tile_luma_max": 4.8, "ssim_d8_min": 0.985}},
+    {"id": "R-FO-1", "scene": "forest", "source": "Bridge camera_plan 2026-09-25 09_house_to_forest", "measured_in_T1": true,
+     "location": [2200, 1580, 319.35779571533203], "rotation_pyr": [3.696050782488103, -77.14368743247138, 0], "fov": 70,
+     "thresholds": {"global_luma_abs": 1.0, "tile_luma_max": 20.3, "ssim_d8_min": 0.93},
+     "note": "local 160-200 px changes NOT detectable at this noise floor; needs deterministic capture"},
+    {"id": "R-PD-2", "scene": "pond", "source": "Bridge camera_plan 2026-09-25 08_water_to_house", "measured_in_T1": false,
+     "location": [-260, 8070, 129.52296257019043], "rotation_pyr": [0.914829985924746, -81.92359564278658, 0], "fov": 65},
+    {"id": "R-FO-2", "scene": "forest", "source": "Bridge camera_plan 2026-09-25 11_forest_edge", "measured_in_T1": false,
+     "location": [2940, 3980, 120.49762725830078], "rotation_pyr": [0.9216080854410071, -7.621788115826474, 0], "fov": 75}
+  ],
+  "player_camera_stations": [
+    {"id": "P00", "scene": "house_front", "views": ["forward", "left90", "right90", "lookback"], "traversal_s": [5, 15], "pose": null, "status": "TO_RECORD in PIE with the real character + GraceRanger camera"},
+    {"id": "POND_REVEAL", "scene": "pond", "views": ["forward", "left90", "right90", "lookback"], "traversal_s": [5, 15], "pose": null, "status": "TO_RECORD"},
+    {"id": "P11", "scene": "forest", "views": ["forward", "left90", "right90", "lookback"], "traversal_s": [5, 15], "pose": null, "status": "TO_RECORD"},
+    {"id": "P04", "scene": "forest", "views": ["forward", "left90", "right90", "lookback"], "traversal_s": [5, 15], "pose": null, "status": "TO_RECORD"}
+  ]
+}

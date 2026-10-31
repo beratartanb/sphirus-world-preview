@@ -1,0 +1,146 @@
+{
+ "started": "2026-10-31 03:04:52",
+ "views": {
+  "house_front": [
+   [
+    -1550,
+    2460,
+    92.3320484161377
+   ],
+   [
+    4.045882564505467,
+    -36.830867829324454,
+    0
+   ],
+   68
+  ],
+  "pond": [
+   [
+    1500,
+    2810,
+    152.16795921325684
+   ],
+   [
+    -6.110206786658776,
+    130.80909247267473,
+    0
+   ],
+   75
+  ],
+  "forest": [
+   [
+    2200,
+    1580,
+    319.35779571533203
+   ],
+   [
+    3.696050782488103,
+    -77.14368743247138,
+    0
+   ],
+   70
+  ]
+ },
+ "settle_s": 10.0,
+ "rows": [
+  {
+   "view": "house_front",
+   "call_s": 0.39,
+   "layout": {
+    "returnValue": {
+     "image": {
+      "mimeType": "image/png",
+      "data": "<str len 5173648>"
+     },
+     "cameraLocation": {
+      "x": -1550,
+      "y": 2460,
+      "z": 92.3320484161377
+     },
+     "cameraRotation": {
+      "pitch": 4.045882701873779,
+      "yaw": -36.830867767333984,
+      "roll": 0
+     },
+     "cameraFOV": 68,
+     "grid": {
+      "spacingCm": 0,
+      "extentCm": 0,
+      "height": 0
+     },
+     "labeledActors": []
+    }
+   },
+   "file": "house_front__captureviewport.png",
+   "bytes": 3880234
+  },
+  {
+   "view": "pond",
+   "call_s": 0.359,
+   "layout": {
+    "returnValue": {
+     "image": {
+      "mimeType": "image/png",
+      "data": "<str len 3876948>"
+     },
+     "cameraLocation": {
+      "x": 1500,
+      "y": 2810,
+      "z": 152.16795921325684
+     },
+     "cameraRotation": {
+      "pitch": -6.110206604003906,
+      "yaw": 130.80909729003906,
+      "roll": 0
+     },
+     "cameraFOV": 75,
+     "grid": {
+      "spacingCm": 0,
+      "extentCm": 0,
+      "height": 0
+     },
+     "labeledActors": []
+    }
+   },
+   "file": "pond__captureviewport.png",
+   "bytes": 2907710
+  },
+  {
+   "view": "forest",
+   "call_s": 0.391,
+   "layout": {
+    "returnValue": {
+     "image": {
+      "mimeType": "image/png",
+      "data": "<str len 5467416>"
+     },
+     "cameraLocation": {
+      "x": 2200,
+      "y": 1580,
+      "z": 319.35779571533203
+     },
+     "cameraRotation": {
+      "pitch": 3.6960508823394775,
+      "yaw": -77.14368438720703,
+      "roll": 0
+     },
+     "cameraFOV": 70,
+     "grid": {
+      "spacingCm": 0,
+      "extentCm": 0,
+      "height": 0
+     },
+     "labeledActors": []
+    }
+   },
+   "file": "forest__captureviewport.png",
+   "bytes": 4100560
+  }
+ ],
+ "errors": [],
+ "dirty_after": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "finished": "2026-10-31 03:05:23"
+}
