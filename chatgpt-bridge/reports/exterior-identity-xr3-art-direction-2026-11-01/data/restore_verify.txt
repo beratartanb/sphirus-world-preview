@@ -1,0 +1,7 @@
+XR3 restore verification (2026-11-01 00:0x, fixed-step editor xr3_c)
+sequence: x8 apply -> dress -> i3 apply -> warm walk -> csv walk -> i3 restore -> x8 restore -> recon_restored_xr3b
+heightmap sha1 == recon (byte-identical)       foliage 57 comps / 8305 instances, 0 differing
+level actors 768 == 768 (label/class/loc/hidden) XR2_/XR3_ actors left: 0
+i3 restore: 6 rocks unhidden, 72 XR3 actors destroyed, 127 material slots restored, 9 project MIs restored from mat_backup_i3.json
+map on disk L_GR_SphirusHouse.umap sha1 70dd481a... unchanged; the 9 MI .uasset files unchanged on disk (2026-09-23)
+in-memory: map + 9 MIs dirty with original content -> choose "Don't Save" on editor close
