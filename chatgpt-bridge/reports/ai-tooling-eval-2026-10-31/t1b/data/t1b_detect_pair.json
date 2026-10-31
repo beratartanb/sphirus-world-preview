@@ -1,0 +1,920 @@
+{
+ "house_front": {
+  "median": {
+   "noise_model": "pair",
+   "noise_tile_p50": 0.57,
+   "noise_tile_p95": 5.52,
+   "false_alarm_S2_S5": {
+    "max_z": 13.18,
+    "max_tile": [
+     47,
+     5
+    ],
+    "detect_z3": true,
+    "false_tiles_z3": 66,
+    "detect_z5": true,
+    "false_tiles_z5": 18
+   },
+   "real_small_S5": {
+    "max_z": 22.39,
+    "max_tile": [
+     47,
+     5
+    ],
+    "z_in_change_tiles": 6.28,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 86,
+    "detect_z5": false,
+    "false_tiles_z5": 37
+   },
+   "real_small_S2": {
+    "max_z": 12.25,
+    "max_tile": [
+     33,
+     16
+    ],
+    "z_in_change_tiles": 5.24,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 85,
+    "detect_z5": false,
+    "false_tiles_z5": 28
+   },
+   "real_medium_S5": {
+    "max_z": 27.16,
+    "max_tile": [
+     19,
+     2
+    ],
+    "z_in_change_tiles": 9.73,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 80,
+    "detect_z5": false,
+    "false_tiles_z5": 35
+   },
+   "real_medium_S2": {
+    "max_z": 29.98,
+    "max_tile": [
+     19,
+     2
+    ],
+    "z_in_change_tiles": 8.62,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 73,
+    "detect_z5": false,
+    "false_tiles_z5": 34
+   },
+   "injected_patch_swap": {
+    "quiet_tile_24px": {
+     "max_z": 13.07,
+     "max_tile": [
+      10,
+      3
+     ],
+     "z_in_change_tiles": 13.07,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      10,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_48px": {
+     "max_z": 30.18,
+     "max_tile": [
+      10,
+      3
+     ],
+     "z_in_change_tiles": 30.18,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      10,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_96px": {
+     "max_z": 57.76,
+     "max_tile": [
+      10,
+      2
+     ],
+     "z_in_change_tiles": 57.76,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      10,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "busy_tile_24px": {
+     "max_z": 0.79,
+     "max_tile": [
+      18,
+      11
+     ],
+     "z_in_change_tiles": 0.79,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      18,
+      11
+     ],
+     "tile_noise": 24.88
+    },
+    "busy_tile_48px": {
+     "max_z": 2.33,
+     "max_tile": [
+      18,
+      10
+     ],
+     "z_in_change_tiles": 2.33,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      18,
+      11
+     ],
+     "tile_noise": 24.88
+    },
+    "busy_tile_96px": {
+     "max_z": 12.12,
+     "max_tile": [
+      18,
+      10
+     ],
+     "z_in_change_tiles": 12.12,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      18,
+      11
+     ],
+     "tile_noise": 24.88
+    }
+   }
+  },
+  "single": {
+   "noise_model": "pair",
+   "noise_tile_p50": 0.72,
+   "noise_tile_p95": 5.72,
+   "false_alarm_S2_S5": {
+    "max_z": 11.49,
+    "max_tile": [
+     31,
+     18
+    ],
+    "detect_z3": true,
+    "false_tiles_z3": 64,
+    "detect_z5": true,
+    "false_tiles_z5": 21
+   },
+   "real_small_S5": {
+    "max_z": 20.71,
+    "max_tile": [
+     32,
+     16
+    ],
+    "z_in_change_tiles": 5.1,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 104,
+    "detect_z5": false,
+    "false_tiles_z5": 46
+   },
+   "real_small_S2": {
+    "max_z": 14.94,
+    "max_tile": [
+     20,
+     4
+    ],
+    "z_in_change_tiles": 5.25,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 78,
+    "detect_z5": false,
+    "false_tiles_z5": 28
+   },
+   "real_medium_S5": {
+    "max_z": 17.86,
+    "max_tile": [
+     20,
+     4
+    ],
+    "z_in_change_tiles": 7.59,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 83,
+    "detect_z5": false,
+    "false_tiles_z5": 39
+   },
+   "real_medium_S2": {
+    "max_z": 19.79,
+    "max_tile": [
+     32,
+     16
+    ],
+    "z_in_change_tiles": 6.03,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 79,
+    "detect_z5": false,
+    "false_tiles_z5": 33
+   },
+   "injected_patch_swap": {
+    "quiet_tile_24px": {
+     "max_z": 12.92,
+     "max_tile": [
+      10,
+      3
+     ],
+     "z_in_change_tiles": 12.92,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      10,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_48px": {
+     "max_z": 29.69,
+     "max_tile": [
+      10,
+      3
+     ],
+     "z_in_change_tiles": 29.69,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      10,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_96px": {
+     "max_z": 57.9,
+     "max_tile": [
+      10,
+      2
+     ],
+     "z_in_change_tiles": 57.9,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      10,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "busy_tile_24px": {
+     "max_z": 0.77,
+     "max_tile": [
+      18,
+      11
+     ],
+     "z_in_change_tiles": 0.77,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      18,
+      11
+     ],
+     "tile_noise": 24.73
+    },
+    "busy_tile_48px": {
+     "max_z": 2.68,
+     "max_tile": [
+      18,
+      10
+     ],
+     "z_in_change_tiles": 2.68,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      18,
+      11
+     ],
+     "tile_noise": 24.73
+    },
+    "busy_tile_96px": {
+     "max_z": 13.96,
+     "max_tile": [
+      18,
+      10
+     ],
+     "z_in_change_tiles": 13.96,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      18,
+      11
+     ],
+     "tile_noise": 24.73
+    }
+   }
+  }
+ },
+ "pond": {
+  "median": {
+   "noise_model": "pair",
+   "noise_tile_p50": 0.5,
+   "noise_tile_p95": 0.89,
+   "false_alarm_S2_S5": {
+    "max_z": 11.52,
+    "max_tile": [
+     5,
+     23
+    ],
+    "detect_z3": true,
+    "false_tiles_z3": 22,
+    "detect_z5": true,
+    "false_tiles_z5": 4
+   },
+   "injected_patch_swap": {
+    "quiet_tile_24px": {
+     "max_z": 10.24,
+     "max_tile": [
+      8,
+      3
+     ],
+     "z_in_change_tiles": 10.24,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      8,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_48px": {
+     "max_z": 28.79,
+     "max_tile": [
+      8,
+      3
+     ],
+     "z_in_change_tiles": 28.79,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      8,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_96px": {
+     "max_z": 40.93,
+     "max_tile": [
+      8,
+      3
+     ],
+     "z_in_change_tiles": 40.93,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      8,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "busy_tile_24px": {
+     "max_z": 2.98,
+     "max_tile": [
+      30,
+      13
+     ],
+     "z_in_change_tiles": 2.98,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      13
+     ],
+     "tile_noise": 11.63
+    },
+    "busy_tile_48px": {
+     "max_z": 4.15,
+     "max_tile": [
+      30,
+      13
+     ],
+     "z_in_change_tiles": 4.15,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      13
+     ],
+     "tile_noise": 11.63
+    },
+    "busy_tile_96px": {
+     "max_z": 49.16,
+     "max_tile": [
+      30,
+      12
+     ],
+     "z_in_change_tiles": 49.16,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      13
+     ],
+     "tile_noise": 11.63
+    }
+   }
+  },
+  "single": {
+   "noise_model": "pair",
+   "noise_tile_p50": 0.5,
+   "noise_tile_p95": 0.98,
+   "false_alarm_S2_S5": {
+    "max_z": 11.35,
+    "max_tile": [
+     5,
+     23
+    ],
+    "detect_z3": true,
+    "false_tiles_z3": 32,
+    "detect_z5": true,
+    "false_tiles_z5": 6
+   },
+   "injected_patch_swap": {
+    "quiet_tile_24px": {
+     "max_z": 10.24,
+     "max_tile": [
+      8,
+      3
+     ],
+     "z_in_change_tiles": 10.24,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      8,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_48px": {
+     "max_z": 28.7,
+     "max_tile": [
+      8,
+      3
+     ],
+     "z_in_change_tiles": 28.7,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      8,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_96px": {
+     "max_z": 40.98,
+     "max_tile": [
+      8,
+      3
+     ],
+     "z_in_change_tiles": 40.98,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      8,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "busy_tile_24px": {
+     "max_z": 2.98,
+     "max_tile": [
+      30,
+      13
+     ],
+     "z_in_change_tiles": 2.98,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      13
+     ],
+     "tile_noise": 11.64
+    },
+    "busy_tile_48px": {
+     "max_z": 4.17,
+     "max_tile": [
+      30,
+      13
+     ],
+     "z_in_change_tiles": 4.17,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      13
+     ],
+     "tile_noise": 11.64
+    },
+    "busy_tile_96px": {
+     "max_z": 49.64,
+     "max_tile": [
+      31,
+      14
+     ],
+     "z_in_change_tiles": 49.64,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      13
+     ],
+     "tile_noise": 11.64
+    }
+   }
+  }
+ },
+ "forest": {
+  "median": {
+   "noise_model": "pair",
+   "noise_tile_p50": 2.2,
+   "noise_tile_p95": 9.33,
+   "false_alarm_S2_S5": {
+    "max_z": 19.04,
+    "max_tile": [
+     30,
+     8
+    ],
+    "detect_z3": true,
+    "false_tiles_z3": 54,
+    "detect_z5": true,
+    "false_tiles_z5": 17
+   },
+   "real_small_S5": {
+    "max_z": 20.07,
+    "max_tile": [
+     46,
+     4
+    ],
+    "z_in_change_tiles": 13.65,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 117,
+    "detect_z5": false,
+    "false_tiles_z5": 48
+   },
+   "real_small_S2": {
+    "max_z": 21.6,
+    "max_tile": [
+     23,
+     18
+    ],
+    "z_in_change_tiles": 21.6,
+    "localised": true,
+    "detect_z3": true,
+    "false_tiles_z3": 68,
+    "detect_z5": true,
+    "false_tiles_z5": 26
+   },
+   "injected_patch_swap": {
+    "quiet_tile_24px": {
+     "max_z": 14.37,
+     "max_tile": [
+      21,
+      3
+     ],
+     "z_in_change_tiles": 14.37,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      21,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_48px": {
+     "max_z": 34.23,
+     "max_tile": [
+      21,
+      3
+     ],
+     "z_in_change_tiles": 34.23,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      21,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_96px": {
+     "max_z": 42.96,
+     "max_tile": [
+      22,
+      3
+     ],
+     "z_in_change_tiles": 42.96,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      21,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "busy_tile_24px": {
+     "max_z": 0.45,
+     "max_tile": [
+      30,
+      19
+     ],
+     "z_in_change_tiles": 0.45,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      19
+     ],
+     "tile_noise": 20.26
+    },
+    "busy_tile_48px": {
+     "max_z": 3.31,
+     "max_tile": [
+      30,
+      20
+     ],
+     "z_in_change_tiles": 3.31,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      19
+     ],
+     "tile_noise": 20.26
+    },
+    "busy_tile_96px": {
+     "max_z": 28.56,
+     "max_tile": [
+      30,
+      20
+     ],
+     "z_in_change_tiles": 28.56,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      30,
+      19
+     ],
+     "tile_noise": 20.26
+    }
+   }
+  },
+  "single": {
+   "noise_model": "pair",
+   "noise_tile_p50": 2.47,
+   "noise_tile_p95": 9.52,
+   "false_alarm_S2_S5": {
+    "max_z": 27.71,
+    "max_tile": [
+     30,
+     8
+    ],
+    "detect_z3": true,
+    "false_tiles_z3": 61,
+    "detect_z5": true,
+    "false_tiles_z5": 24
+   },
+   "real_small_S5": {
+    "max_z": 17.53,
+    "max_tile": [
+     30,
+     8
+    ],
+    "z_in_change_tiles": 10.86,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 121,
+    "detect_z5": false,
+    "false_tiles_z5": 49
+   },
+   "real_small_S2": {
+    "max_z": 23.96,
+    "max_tile": [
+     30,
+     6
+    ],
+    "z_in_change_tiles": 17.15,
+    "localised": false,
+    "detect_z3": false,
+    "false_tiles_z3": 71,
+    "detect_z5": false,
+    "false_tiles_z5": 27
+   },
+   "injected_patch_swap": {
+    "quiet_tile_24px": {
+     "max_z": 24.52,
+     "max_tile": [
+      22,
+      3
+     ],
+     "z_in_change_tiles": 24.52,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      22,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_48px": {
+     "max_z": 56.47,
+     "max_tile": [
+      22,
+      3
+     ],
+     "z_in_change_tiles": 56.47,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      22,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "quiet_tile_96px": {
+     "max_z": 56.47,
+     "max_tile": [
+      22,
+      3
+     ],
+     "z_in_change_tiles": 56.47,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      22,
+      3
+     ],
+     "tile_noise": 0.5
+    },
+    "busy_tile_24px": {
+     "max_z": 0.45,
+     "max_tile": [
+      44,
+      15
+     ],
+     "z_in_change_tiles": 0.45,
+     "localised": true,
+     "detect_z3": false,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      44,
+      15
+     ],
+     "tile_noise": 19.2
+    },
+    "busy_tile_48px": {
+     "max_z": 4.5,
+     "max_tile": [
+      45,
+      15
+     ],
+     "z_in_change_tiles": 4.5,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": false,
+     "false_tiles_z5": 0,
+     "tile": [
+      44,
+      15
+     ],
+     "tile_noise": 19.2
+    },
+    "busy_tile_96px": {
+     "max_z": 38.62,
+     "max_tile": [
+      45,
+      15
+     ],
+     "z_in_change_tiles": 38.62,
+     "localised": true,
+     "detect_z3": true,
+     "false_tiles_z3": 0,
+     "detect_z5": true,
+     "false_tiles_z5": 0,
+     "tile": [
+      44,
+      15
+     ],
+     "tile_noise": 19.2
+    }
+   }
+  }
+ }
+}

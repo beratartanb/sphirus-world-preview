@@ -1,0 +1,367 @@
+{
+ "started": "2026-10-31 03:32:36",
+ "stations": {
+  "house_front": [
+   -1550,
+   2460,
+   -36.830867829324454
+  ],
+  "pond": [
+   1500,
+   2810,
+   130.80909247267473
+  ],
+  "forest": [
+   2200,
+   1580,
+   -77.14368743247138
+  ]
+ },
+ "dirs": [
+  [
+   "forward",
+   0
+  ],
+  [
+   "left90",
+   -90
+  ],
+  [
+   "right90",
+   90
+  ],
+  [
+   "lookback",
+   180
+  ]
+ ],
+ "dirty_before": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "shots": [
+  {
+   "station": "house_front",
+   "dir": "forward",
+   "file": "player_house_front__forward.png",
+   "session_s": 13.36,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    -1691.2,
+    2597.3,
+    175.4
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    -36.83,
+    -0.0
+   ],
+   "pawn_loc": [
+    -1550.0,
+    2460.0,
+    95.7
+   ],
+   "camera_to_pawn_cm": 212.4,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "house_front",
+   "dir": "left90",
+   "file": "player_house_front__left90.png",
+   "session_s": 18.06,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    -1411.6,
+    2597.1,
+    173.8
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    -126.83,
+    -0.0
+   ],
+   "pawn_loc": [
+    -1550.0,
+    2460.0,
+    95.7
+   ],
+   "camera_to_pawn_cm": 209.9,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "house_front",
+   "dir": "right90",
+   "file": "player_house_front__right90.png",
+   "session_s": 22.8,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    -1688.4,
+    2322.9,
+    172.4
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    53.17,
+    0.0
+   ],
+   "pawn_loc": [
+    -1550.0,
+    2460.0,
+    95.7
+   ],
+   "camera_to_pawn_cm": 209.4,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "house_front",
+   "dir": "lookback",
+   "file": "player_house_front__lookback.png",
+   "session_s": 27.5,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    -1412.9,
+    2321.6,
+    174.5
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    143.17,
+    0.0
+   ],
+   "pawn_loc": [
+    -1550.0,
+    2460.0,
+    95.7
+   ],
+   "camera_to_pawn_cm": 210.2,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "pond",
+   "dir": "forward",
+   "file": "player_pond__forward.png",
+   "session_s": 40.23,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    1604.7,
+    2646.4,
+    191.7
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    130.81,
+    -0.0
+   ],
+   "pawn_loc": [
+    1500.0,
+    2810.0,
+    111.2
+   ],
+   "camera_to_pawn_cm": 210.3,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "pond",
+   "dir": "left90",
+   "file": "player_pond__left90.png",
+   "session_s": 44.92,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    1336.4,
+    2705.3,
+    188.2
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    40.81,
+    -0.0
+   ],
+   "pawn_loc": [
+    1500.0,
+    2810.0,
+    111.2
+   ],
+   "camera_to_pawn_cm": 208.9,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "pond",
+   "dir": "right90",
+   "file": "player_pond__right90.png",
+   "session_s": 49.61,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    1663.6,
+    2914.7,
+    187.4
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    -139.19,
+    -0.0
+   ],
+   "pawn_loc": [
+    1500.0,
+    2810.0,
+    111.2
+   ],
+   "camera_to_pawn_cm": 208.7,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "pond",
+   "dir": "lookback",
+   "file": "player_pond__lookback.png",
+   "session_s": 54.3,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    1395.3,
+    2973.6,
+    189.9
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    -49.19,
+    -0.0
+   ],
+   "pawn_loc": [
+    1500.0,
+    2810.0,
+    111.2
+   ],
+   "camera_to_pawn_cm": 209.6,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "forest",
+   "dir": "forward",
+   "file": "player_forest__forward.png",
+   "session_s": 67.09,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    2181.7,
+    1774.4,
+    339.8
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    -77.14,
+    -0.0
+   ],
+   "pawn_loc": [
+    2200.0,
+    1580.0,
+    265.0
+   ],
+   "camera_to_pawn_cm": 209.1,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "forest",
+   "dir": "left90",
+   "file": "player_forest__left90.png",
+   "session_s": 71.72,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    2394.9,
+    1594.8,
+    340.0
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    -167.14,
+    0.0
+   ],
+   "pawn_loc": [
+    2200.0,
+    1580.0,
+    265.0
+   ],
+   "camera_to_pawn_cm": 209.3,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "forest",
+   "dir": "right90",
+   "file": "player_forest__right90.png",
+   "session_s": 76.38,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    2005.1,
+    1565.2,
+    338.2
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    12.86,
+    -0.0
+   ],
+   "pawn_loc": [
+    2200.0,
+    1580.0,
+    265.0
+   ],
+   "camera_to_pawn_cm": 208.7,
+   "pawn_speed": 0.0
+  },
+  {
+   "station": "forest",
+   "dir": "lookback",
+   "file": "player_forest__lookback.png",
+   "session_s": 81.09,
+   "camera_fov": 60.0,
+   "camera_loc": [
+    2214.8,
+    1385.1,
+    340.4
+   ],
+   "camera_rot_pyr": [
+    -5.0,
+    102.86,
+    -0.0
+   ],
+   "pawn_loc": [
+    2200.0,
+    1580.0,
+    265.0
+   ],
+   "camera_to_pawn_cm": 209.5,
+   "pawn_speed": 0.0
+  }
+ ],
+ "errors": [],
+ "events": [
+  {
+   "station": "house_front",
+   "ground_z": 5.7,
+   "ground_hit_actor": "EX_HouseValley_Landscape",
+   "capsule_half_height": 86.0,
+   "teleport_ok": true,
+   "session_s": 0.56
+  },
+  {
+   "station": "pond",
+   "ground_z": 21.2,
+   "ground_hit_actor": "EX_HouseValley_Landscape",
+   "capsule_half_height": 86.0,
+   "teleport_ok": true,
+   "session_s": 27.51
+  },
+  {
+   "station": "forest",
+   "ground_z": 171.7,
+   "ground_hit_actor": "EX_HouseValley_Landscape",
+   "capsule_half_height": 86.0,
+   "teleport_ok": true,
+   "session_s": 54.33
+  }
+ ],
+ "pawn_class": "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player.BP_PBI_Player_C",
+ "camera_manager": "/Game/GraceRanger/BP_PCM_GR_Camera.BP_PCM_GR_Camera_C",
+ "view_target": "/Game/GraceRanger/Experimental/BodyInertia/BP_PBI_Player.BP_PBI_Player_C",
+ "dirty_after_pie_request_end": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "finished": "2026-10-31 03:33:57"
+}

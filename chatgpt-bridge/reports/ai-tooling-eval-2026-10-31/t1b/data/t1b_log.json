@@ -1,0 +1,685 @@
+{
+ "started": "2026-10-31 03:25:22",
+ "world": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+ "views": {
+  "house_front": [
+   [
+    -1550,
+    2460,
+    92.3320484161377
+   ],
+   [
+    4.045882564505467,
+    -36.830867829324454,
+    0
+   ],
+   68
+  ],
+  "pond": [
+   [
+    1500,
+    2810,
+    152.16795921325684
+   ],
+   [
+    -6.110206786658776,
+    130.80909247267473,
+    0
+   ],
+   75
+  ],
+  "forest": [
+   [
+    2200,
+    1580,
+    319.35779571533203
+   ],
+   [
+    3.696050782488103,
+    -77.14368743247138,
+    0
+   ],
+   70
+  ]
+ },
+ "settle_s": 12.0,
+ "change_wait_s": 5.0,
+ "nshot": 5,
+ "dirty_before": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "xform_before": "2f22cabb499e3f211f04e8f1254628d928106185",
+ "picks": {
+  "house_front": {
+   "small": {
+    "label": "Architecture_Guard_0_3_0",
+    "path": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent:PersistentLevel.StaticMeshActor_380",
+    "class": "StaticMeshActor",
+    "max_half_extent_cm": 49.0,
+    "distance_cm": 2036.4,
+    "screen_box_1920x1080": [
+     877,
+     532,
+     884,
+     600
+    ],
+    "n_candidates": 7
+   },
+   "medium": {
+    "label": "Architecture_Guard_0_4_0",
+    "path": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent:PersistentLevel.StaticMeshActor_379",
+    "class": "StaticMeshActor",
+    "max_half_extent_cm": 118.5,
+    "distance_cm": 1967.8,
+    "screen_box_1920x1080": [
+     877,
+     521,
+     1017,
+     600
+    ],
+    "n_candidates": 13
+   }
+  },
+  "pond": {},
+  "forest": {
+   "small": {
+    "label": "CATALOG_48_01a0984f",
+    "path": "/Game/SphirusHouse/DoorInteraction_R01/Maps/L_SphirusHouse_ASSET_YARD.L_SphirusHouse_ASSET_YARD:PersistentLevel.StaticMeshActor_17",
+    "class": "StaticMeshActor",
+    "max_half_extent_cm": 27.5,
+    "distance_cm": 1452.5,
+    "screen_box_1920x1080": [
+     910,
+     680,
+     962,
+     735
+    ],
+    "n_candidates": 4
+   }
+  }
+ },
+ "shots": [
+  {
+   "view": "house_front",
+   "set": "warm",
+   "k": 0,
+   "file": "house_front__warm_f0.png",
+   "session_s": 13.141,
+   "took_s": 1.094
+  },
+  {
+   "view": "house_front",
+   "set": "S1",
+   "k": 0,
+   "file": "house_front__S1_f0.png",
+   "session_s": 13.641,
+   "took_s": 0.5
+  },
+  {
+   "view": "house_front",
+   "set": "S1",
+   "k": 1,
+   "file": "house_front__S1_f1.png",
+   "session_s": 14.672,
+   "took_s": 1.016
+  },
+  {
+   "view": "house_front",
+   "set": "S1",
+   "k": 2,
+   "file": "house_front__S1_f2.png",
+   "session_s": 15.672,
+   "took_s": 1.0
+  },
+  {
+   "view": "house_front",
+   "set": "S1",
+   "k": 3,
+   "file": "house_front__S1_f3.png",
+   "session_s": 16.531,
+   "took_s": 0.843
+  },
+  {
+   "view": "house_front",
+   "set": "S1",
+   "k": 4,
+   "file": "house_front__S1_f4.png",
+   "session_s": 17.359,
+   "took_s": 0.812
+  },
+  {
+   "view": "house_front",
+   "set": "S2",
+   "k": 0,
+   "file": "house_front__S2_f0.png",
+   "session_s": 32.516,
+   "took_s": 1.063
+  },
+  {
+   "view": "house_front",
+   "set": "S2",
+   "k": 1,
+   "file": "house_front__S2_f1.png",
+   "session_s": 33.484,
+   "took_s": 0.968
+  },
+  {
+   "view": "house_front",
+   "set": "S2",
+   "k": 2,
+   "file": "house_front__S2_f2.png",
+   "session_s": 34.469,
+   "took_s": 0.985
+  },
+  {
+   "view": "house_front",
+   "set": "S2",
+   "k": 3,
+   "file": "house_front__S2_f3.png",
+   "session_s": 35.453,
+   "took_s": 0.984
+  },
+  {
+   "view": "house_front",
+   "set": "S2",
+   "k": 4,
+   "file": "house_front__S2_f4.png",
+   "session_s": 36.469,
+   "took_s": 1.016
+  },
+  {
+   "view": "house_front",
+   "set": "S3small",
+   "k": 0,
+   "file": "house_front__S3small_f0.png",
+   "session_s": 42.844,
+   "took_s": 1.328
+  },
+  {
+   "view": "house_front",
+   "set": "S3small",
+   "k": 1,
+   "file": "house_front__S3small_f1.png",
+   "session_s": 43.875,
+   "took_s": 1.031
+  },
+  {
+   "view": "house_front",
+   "set": "S3small",
+   "k": 2,
+   "file": "house_front__S3small_f2.png",
+   "session_s": 44.734,
+   "took_s": 0.859
+  },
+  {
+   "view": "house_front",
+   "set": "S3small",
+   "k": 3,
+   "file": "house_front__S3small_f3.png",
+   "session_s": 45.578,
+   "took_s": 0.844
+  },
+  {
+   "view": "house_front",
+   "set": "S3small",
+   "k": 4,
+   "file": "house_front__S3small_f4.png",
+   "session_s": 46.625,
+   "took_s": 1.031
+  },
+  {
+   "view": "house_front",
+   "set": "S4medium",
+   "k": 0,
+   "file": "house_front__S4medium_f0.png",
+   "session_s": 52.984,
+   "took_s": 1.296
+  },
+  {
+   "view": "house_front",
+   "set": "S4medium",
+   "k": 1,
+   "file": "house_front__S4medium_f1.png",
+   "session_s": 54.016,
+   "took_s": 1.016
+  },
+  {
+   "view": "house_front",
+   "set": "S4medium",
+   "k": 2,
+   "file": "house_front__S4medium_f2.png",
+   "session_s": 54.844,
+   "took_s": 0.813
+  },
+  {
+   "view": "house_front",
+   "set": "S4medium",
+   "k": 3,
+   "file": "house_front__S4medium_f3.png",
+   "session_s": 55.672,
+   "took_s": 0.828
+  },
+  {
+   "view": "house_front",
+   "set": "S4medium",
+   "k": 4,
+   "file": "house_front__S4medium_f4.png",
+   "session_s": 56.5,
+   "took_s": 0.828
+  },
+  {
+   "view": "house_front",
+   "set": "S5",
+   "k": 0,
+   "file": "house_front__S5_f0.png",
+   "session_s": 62.875,
+   "took_s": 1.297
+  },
+  {
+   "view": "house_front",
+   "set": "S5",
+   "k": 1,
+   "file": "house_front__S5_f1.png",
+   "session_s": 63.906,
+   "took_s": 0.968
+  },
+  {
+   "view": "house_front",
+   "set": "S5",
+   "k": 2,
+   "file": "house_front__S5_f2.png",
+   "session_s": 64.891,
+   "took_s": 0.985
+  },
+  {
+   "view": "house_front",
+   "set": "S5",
+   "k": 3,
+   "file": "house_front__S5_f3.png",
+   "session_s": 65.703,
+   "took_s": 0.812
+  },
+  {
+   "view": "house_front",
+   "set": "S5",
+   "k": 4,
+   "file": "house_front__S5_f4.png",
+   "session_s": 66.531,
+   "took_s": 0.812
+  },
+  {
+   "view": "pond",
+   "set": "warm",
+   "k": 0,
+   "file": "pond__warm_f0.png",
+   "session_s": 79.734,
+   "took_s": 1.156
+  },
+  {
+   "view": "pond",
+   "set": "S1",
+   "k": 0,
+   "file": "pond__S1_f0.png",
+   "session_s": 80.656,
+   "took_s": 0.922
+  },
+  {
+   "view": "pond",
+   "set": "S1",
+   "k": 1,
+   "file": "pond__S1_f1.png",
+   "session_s": 81.625,
+   "took_s": 0.953
+  },
+  {
+   "view": "pond",
+   "set": "S1",
+   "k": 2,
+   "file": "pond__S1_f2.png",
+   "session_s": 82.125,
+   "took_s": 0.5
+  },
+  {
+   "view": "pond",
+   "set": "S1",
+   "k": 3,
+   "file": "pond__S1_f3.png",
+   "session_s": 83.141,
+   "took_s": 0.985
+  },
+  {
+   "view": "pond",
+   "set": "S1",
+   "k": 4,
+   "file": "pond__S1_f4.png",
+   "session_s": 84.125,
+   "took_s": 0.984
+  },
+  {
+   "view": "pond",
+   "set": "S2",
+   "k": 0,
+   "file": "pond__S2_f0.png",
+   "session_s": 99.328,
+   "took_s": 1.14
+  },
+  {
+   "view": "pond",
+   "set": "S2",
+   "k": 1,
+   "file": "pond__S2_f1.png",
+   "session_s": 100.25,
+   "took_s": 0.906
+  },
+  {
+   "view": "pond",
+   "set": "S2",
+   "k": 2,
+   "file": "pond__S2_f2.png",
+   "session_s": 100.734,
+   "took_s": 0.484
+  },
+  {
+   "view": "pond",
+   "set": "S2",
+   "k": 3,
+   "file": "pond__S2_f3.png",
+   "session_s": 101.266,
+   "took_s": 0.5
+  },
+  {
+   "view": "pond",
+   "set": "S2",
+   "k": 4,
+   "file": "pond__S2_f4.png",
+   "session_s": 102.094,
+   "took_s": 0.797
+  },
+  {
+   "view": "pond",
+   "set": "S5",
+   "k": 0,
+   "file": "pond__S5_f0.png",
+   "session_s": 108.094,
+   "took_s": 0.906
+  },
+  {
+   "view": "pond",
+   "set": "S5",
+   "k": 1,
+   "file": "pond__S5_f1.png",
+   "session_s": 108.578,
+   "took_s": 0.469
+  },
+  {
+   "view": "pond",
+   "set": "S5",
+   "k": 2,
+   "file": "pond__S5_f2.png",
+   "session_s": 109.375,
+   "took_s": 0.781
+  },
+  {
+   "view": "pond",
+   "set": "S5",
+   "k": 3,
+   "file": "pond__S5_f3.png",
+   "session_s": 110.328,
+   "took_s": 0.937
+  },
+  {
+   "view": "pond",
+   "set": "S5",
+   "k": 4,
+   "file": "pond__S5_f4.png",
+   "session_s": 111.281,
+   "took_s": 0.953
+  },
+  {
+   "view": "forest",
+   "set": "warm",
+   "k": 0,
+   "file": "forest__warm_f0.png",
+   "session_s": 124.609,
+   "took_s": 1.281
+  },
+  {
+   "view": "forest",
+   "set": "S1",
+   "k": 0,
+   "file": "forest__S1_f0.png",
+   "session_s": 125.594,
+   "took_s": 0.985
+  },
+  {
+   "view": "forest",
+   "set": "S1",
+   "k": 1,
+   "file": "forest__S1_f1.png",
+   "session_s": 126.75,
+   "took_s": 1.156
+  },
+  {
+   "view": "forest",
+   "set": "S1",
+   "k": 2,
+   "file": "forest__S1_f2.png",
+   "session_s": 127.922,
+   "took_s": 1.156
+  },
+  {
+   "view": "forest",
+   "set": "S1",
+   "k": 3,
+   "file": "forest__S1_f3.png",
+   "session_s": 128.922,
+   "took_s": 1.0
+  },
+  {
+   "view": "forest",
+   "set": "S1",
+   "k": 4,
+   "file": "forest__S1_f4.png",
+   "session_s": 129.922,
+   "took_s": 1.0
+  },
+  {
+   "view": "forest",
+   "set": "S2",
+   "k": 0,
+   "file": "forest__S2_f0.png",
+   "session_s": 145.094,
+   "took_s": 1.047
+  },
+  {
+   "view": "forest",
+   "set": "S2",
+   "k": 1,
+   "file": "forest__S2_f1.png",
+   "session_s": 145.594,
+   "took_s": 0.5
+  },
+  {
+   "view": "forest",
+   "set": "S2",
+   "k": 2,
+   "file": "forest__S2_f2.png",
+   "session_s": 146.594,
+   "took_s": 0.985
+  },
+  {
+   "view": "forest",
+   "set": "S2",
+   "k": 3,
+   "file": "forest__S2_f3.png",
+   "session_s": 147.094,
+   "took_s": 0.5
+  },
+  {
+   "view": "forest",
+   "set": "S2",
+   "k": 4,
+   "file": "forest__S2_f4.png",
+   "session_s": 147.969,
+   "took_s": 0.828
+  },
+  {
+   "view": "forest",
+   "set": "S3small",
+   "k": 0,
+   "file": "forest__S3small_f0.png",
+   "session_s": 154.297,
+   "took_s": 1.281
+  },
+  {
+   "view": "forest",
+   "set": "S3small",
+   "k": 1,
+   "file": "forest__S3small_f1.png",
+   "session_s": 155.266,
+   "took_s": 0.969
+  },
+  {
+   "view": "forest",
+   "set": "S3small",
+   "k": 2,
+   "file": "forest__S3small_f2.png",
+   "session_s": 156.422,
+   "took_s": 1.141
+  },
+  {
+   "view": "forest",
+   "set": "S3small",
+   "k": 3,
+   "file": "forest__S3small_f3.png",
+   "session_s": 157.578,
+   "took_s": 1.14
+  },
+  {
+   "view": "forest",
+   "set": "S3small",
+   "k": 4,
+   "file": "forest__S3small_f4.png",
+   "session_s": 158.609,
+   "took_s": 1.015
+  },
+  {
+   "view": "forest",
+   "set": "S5",
+   "k": 0,
+   "file": "forest__S5_f0.png",
+   "session_s": 164.781,
+   "took_s": 1.125
+  },
+  {
+   "view": "forest",
+   "set": "S5",
+   "k": 1,
+   "file": "forest__S5_f1.png",
+   "session_s": 165.625,
+   "took_s": 0.844
+  },
+  {
+   "view": "forest",
+   "set": "S5",
+   "k": 2,
+   "file": "forest__S5_f2.png",
+   "session_s": 166.141,
+   "took_s": 0.5
+  },
+  {
+   "view": "forest",
+   "set": "S5",
+   "k": 3,
+   "file": "forest__S5_f3.png",
+   "session_s": 167.0,
+   "took_s": 0.812
+  },
+  {
+   "view": "forest",
+   "set": "S5",
+   "k": 4,
+   "file": "forest__S5_f4.png",
+   "session_s": 167.516,
+   "took_s": 0.5
+  }
+ ],
+ "hide_events": [
+  {
+   "view": "house_front",
+   "size": "small",
+   "hidden": true,
+   "session_s": 36.47,
+   "is_temporarily_hidden": true,
+   "dirty": [
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+   ]
+  },
+  {
+   "view": "house_front",
+   "size": "small",
+   "hidden": false,
+   "session_s": 46.64,
+   "is_temporarily_hidden": false,
+   "dirty": [
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+   ]
+  },
+  {
+   "view": "house_front",
+   "size": "medium",
+   "hidden": true,
+   "session_s": 46.64,
+   "is_temporarily_hidden": true,
+   "dirty": [
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+   ]
+  },
+  {
+   "view": "house_front",
+   "size": "medium",
+   "hidden": false,
+   "session_s": 56.52,
+   "is_temporarily_hidden": false,
+   "dirty": [
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+   ]
+  },
+  {
+   "view": "forest",
+   "size": "small",
+   "hidden": true,
+   "session_s": 147.97,
+   "is_temporarily_hidden": true,
+   "dirty": [
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+   ]
+  },
+  {
+   "view": "forest",
+   "size": "small",
+   "hidden": false,
+   "session_s": 158.62,
+   "is_temporarily_hidden": false,
+   "dirty": [
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+    "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+   ]
+  }
+ ],
+ "errors": [],
+ "any_still_hidden": [],
+ "dirty_after": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "xform_after": "2f22cabb499e3f211f04e8f1254628d928106185",
+ "xform_unchanged": true,
+ "finished": "2026-10-31 03:28:10"
+}

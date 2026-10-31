@@ -1,0 +1,99 @@
+{
+ "dirty_content_packages": [
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching",
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase"
+ ],
+ "abps": {
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatching": {
+   "dirty": true,
+   "disk_sha1": "c1cdca7f57609d1f54f2368e3075686be777c2e7",
+   "manifest_blk2_sha1": "c1cdca7f57609d1f54f2368e3075686be777c2e7",
+   "disk_equals_last_v240_write": true,
+   "disk_mtime": 1793389552.0287197,
+   "bp_status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+   "harness_touched_keys": {
+    "SHM239_Own": {
+     "production": 0.0,
+     "current": 1.0,
+     "equal": false
+    },
+    "SHM240_HeadOn": {
+     "production": 0.0,
+     "current": 1.0,
+     "equal": false
+    },
+    "SHM240_BlkDB": {
+     "production": "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Idles.PSD_Dense_Stand_Idles",
+     "current": "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Idles.PSD_Dense_Stand_Idles",
+     "equal": true
+    },
+    "SHM240_BlkSpd": {
+     "production": 60.0,
+     "current": -1.0,
+     "equal": false
+    }
+   },
+   "harness_touched_all_equal": false,
+   "v240_knobs_current": {
+    "SHM239_Own": 1.0,
+    "SHM240_ExtOn": 0.0,
+    "SHM240_HeadOn": 1.0,
+    "SHM240_YSpd": 80.0,
+    "SHM240_BlkSpd": -1.0,
+    "SHM240_AOFadeRate": 4.0,
+    "SHM240_BlkDB": "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Idles.PSD_Dense_Stand_Idles"
+   }
+  },
+  "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase": {
+   "dirty": true,
+   "disk_sha1": "728b4f83b575d743f67dcb3fbbf18d82bc6e6153",
+   "manifest_blk2_sha1": "728b4f83b575d743f67dcb3fbbf18d82bc6e6153",
+   "disk_equals_last_v240_write": true,
+   "disk_mtime": 1793389551.9390016,
+   "bp_status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+   "harness_touched_keys": {
+    "SHM239_Own": {
+     "production": 0.0,
+     "current": 1.0,
+     "equal": false
+    },
+    "SHM240_HeadOn": {
+     "production": 0.0,
+     "current": 1.0,
+     "equal": false
+    },
+    "SHM240_BlkDB": {
+     "production": "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Idles.PSD_Dense_Stand_Idles",
+     "current": "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Idles.PSD_Dense_Stand_Idles",
+     "equal": true
+    },
+    "SHM240_BlkSpd": {
+     "production": 60.0,
+     "current": -1.0,
+     "equal": false
+    }
+   },
+   "harness_touched_all_equal": false,
+   "v240_knobs_current": {
+    "SHM239_Own": 1.0,
+    "SHM240_ExtOn": 0.0,
+    "SHM240_HeadOn": 1.0,
+    "SHM240_YSpd": 80.0,
+    "SHM240_BlkSpd": -1.0,
+    "SHM240_AOFadeRate": 4.0,
+    "SHM240_BlkDB": "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Idles.PSD_Dense_Stand_Idles"
+   }
+  }
+ },
+ "harness_session_state_present": true,
+ "harness_dirty_base_at_first_run": [],
+ "v240_knob_expected": {
+  "SHM239_Own": 0.0,
+  "SHM240_ExtOn": 0.0,
+  "SHM240_HeadOn": 0.0,
+  "SHM240_YSpd": 80.0,
+  "SHM240_BlkSpd": 60.0,
+  "SHM240_AOFadeRate": 4.0,
+  "SHM240_BlkDB": ".../Dense/PSD_Dense_Stand_Idles"
+ }
+}
