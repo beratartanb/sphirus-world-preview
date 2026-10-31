@@ -1,0 +1,165 @@
+{
+ "SM_Pine_Juvenile_01": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Refuge_Pine_Juvenile_TR.MI_EX_Refuge_Pine_Juvenile_TR",
+   "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Wind_Foliage.M_Object_Wind_Foliage",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 87,
+   "fade_like_params": [
+    "Distance Bias Specular",
+    "Distance Specular",
+    "Water Droplet Opacity",
+    "Separate Opacity Map?",
+    "Use Distance Based Specular"
+   ]
+  },
+  {
+   "slot": 1,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Refuge_Pine_Juvenile_FO.MI_EX_Refuge_Pine_Juvenile_FO",
+   "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Wind_Foliage.M_Object_Wind_Foliage",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 87,
+   "fade_like_params": [
+    "Distance Bias Specular",
+    "Distance Specular",
+    "Water Droplet Opacity",
+    "Separate Opacity Map?",
+    "Use Distance Based Specular"
+   ]
+  }
+ ],
+ "SM_FernWild01": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernWild01.MI_PR_FernWild01",
+   "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Wind_Foliage.M_Object_Wind_Foliage",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 87,
+   "fade_like_params": [
+    "Distance Bias Specular",
+    "Distance Specular",
+    "Water Droplet Opacity",
+    "Separate Opacity Map?",
+    "Use Distance Based Specular"
+   ]
+  }
+ ],
+ "SM_Bush_02": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_Bush_Leaves.MI_PR_Bush_Leaves",
+   "base": "/Game/Fishermans_Cabin/Materials/Material_Masters/M_Foliage.M_Foliage",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 45,
+   "fade_like_params": [
+    "Use Custom Opacity Channel?",
+    "Use Opacity From Diffuse?"
+   ]
+  },
+  {
+   "slot": 1,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_Bark.MI_PR_Bark",
+   "base": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RefugeShrubBark.M_EX_RefugeShrubBark",
+   "blend_mode": "BLEND_OPAQUE: 0>",
+   "dithered_lod_transition": false,
+   "n_params": 40,
+   "fade_like_params": [
+    "Mask R Opacity",
+    "Mask G Opacity",
+    "Mask B Opacity"
+   ]
+  }
+ ],
+ "SM_Bush_06": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_Bush_Leaves.MI_PR_Bush_Leaves",
+   "base": "/Game/Fishermans_Cabin/Materials/Material_Masters/M_Foliage.M_Foliage",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 45,
+   "fade_like_params": [
+    "Use Custom Opacity Channel?",
+    "Use Opacity From Diffuse?"
+   ]
+  },
+  {
+   "slot": 1,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_Bark.MI_PR_Bark",
+   "base": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RefugeShrubBark.M_EX_RefugeShrubBark",
+   "blend_mode": "BLEND_OPAQUE: 0>",
+   "dithered_lod_transition": false,
+   "n_params": 40,
+   "fade_like_params": [
+    "Mask R Opacity",
+    "Mask G Opacity",
+    "Mask B Opacity"
+   ]
+  }
+ ],
+ "SM_Young_Black_Spruce_01": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_YoungSpruce.MI_EX_YoungSpruce",
+   "base": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Tree_Foliage_01.MM_Tree_Foliage_01",
+   "blend_mode": "BLEND_OPAQUE: 0>",
+   "dithered_lod_transition": false,
+   "n_params": 18,
+   "fade_like_params": []
+  },
+  {
+   "slot": 1,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_Trunk_01.MI_PR_Trunk_01",
+   "base": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Trunks_01.MM_Trunks_01",
+   "blend_mode": "BLEND_OPAQUE: 0>",
+   "dithered_lod_transition": false,
+   "n_params": 42,
+   "fade_like_params": []
+  }
+ ],
+ "SM_Young_Black_Spruce_02": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_Trunk_01.MI_PR_Trunk_01",
+   "base": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Trunks_01.MM_Trunks_01",
+   "blend_mode": "BLEND_OPAQUE: 0>",
+   "dithered_lod_transition": false,
+   "n_params": 42,
+   "fade_like_params": []
+  },
+  {
+   "slot": 1,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_YoungSpruce.MI_EX_YoungSpruce",
+   "base": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Tree_Foliage_01.MM_Tree_Foliage_01",
+   "blend_mode": "BLEND_OPAQUE: 0>",
+   "dithered_lod_transition": false,
+   "n_params": 18,
+   "fade_like_params": []
+  }
+ ],
+ "Pine_08": [
+  {
+   "slot": 0,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Integration_YoungPine_0.MI_EX_Integration_YoungPine_0",
+   "base": "/Game/PN_coniferBushes_I/Materials/MA_Pine.MA_Pine",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 43,
+   "fade_like_params": []
+  },
+  {
+   "slot": 1,
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Integration_YoungPine_1.MI_EX_Integration_YoungPine_1",
+   "base": "/Game/PN_coniferBushes_I/Materials/MA_Pine.MA_Pine",
+   "blend_mode": "BLEND_MASKED: 1>",
+   "dithered_lod_transition": false,
+   "n_params": 43,
+   "fade_like_params": []
+  }
+ ]
+}
