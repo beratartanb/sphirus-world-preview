@@ -1,0 +1,184 @@
+{
+ "started": "2026-10-31 05:54:58",
+ "stations": [
+  [
+   "house_front",
+   -1550.0,
+   2460.0,
+   -36.83
+  ],
+  [
+   "pond_shore",
+   1500.0,
+   2810.0,
+   130.81
+  ],
+  [
+   "trail_house_side",
+   2540.0,
+   1000.0,
+   -94.2
+  ],
+  [
+   "trail_rear_entry",
+   2700.0,
+   -20.0,
+   -66.0
+  ],
+  [
+   "trail_compression",
+   2984.7,
+   -2458.9,
+   -121.0
+  ],
+  [
+   "trail_release",
+   2654.1,
+   -2958.1,
+   -128.5
+  ],
+  [
+   "uphill_lookback",
+   1600.0,
+   -4900.0,
+   97.0
+  ]
+ ],
+ "dirs": [
+  [
+   "forward",
+   0.0
+  ]
+ ],
+ "stills": [
+  {
+   "name": "house_front_forward",
+   "cam": [
+    -1686.7,
+    2597.4,
+    175.2
+   ],
+   "rot": [
+    -5.0,
+    -36.83
+   ]
+  },
+  {
+   "name": "pond_shore_forward",
+   "cam": [
+    1604.1,
+    2646.5,
+    190.1
+   ],
+   "rot": [
+    -5.0,
+    130.81
+   ]
+  },
+  {
+   "name": "trail_house_side_forward",
+   "cam": [
+    2582.0,
+    1189.2,
+    328.2
+   ],
+   "rot": [
+    -5.0,
+    -94.2
+   ]
+  },
+  {
+   "name": "trail_rear_entry_forward",
+   "cam": [
+    2653.2,
+    159.9,
+    335.1
+   ],
+   "rot": [
+    -5.0,
+    -66.0
+   ]
+  },
+  {
+   "name": "trail_compression_forward",
+   "cam": [
+    3102.8,
+    -2330.7,
+    510.0
+   ],
+   "rot": [
+    -5.0,
+    -121.0
+   ]
+  },
+  {
+   "name": "trail_release_forward",
+   "cam": [
+    2791.9,
+    -2833.0,
+    547.5
+   ],
+   "rot": [
+    -5.0,
+    -128.5
+   ]
+  },
+  {
+   "name": "uphill_lookback_forward",
+   "cam": [
+    1595.6,
+    -5093.7,
+    867.5
+   ],
+   "rot": [
+    -5.0,
+    97.0
+   ]
+  }
+ ],
+ "errors": [],
+ "events": [
+  {
+   "station": "house_front",
+   "ground_z": 5.7
+  },
+  {
+   "station": "pond_shore",
+   "ground_z": 21.2
+  },
+  {
+   "station": "trail_house_side",
+   "ground_z": 163.5
+  },
+  {
+   "station": "trail_rear_entry",
+   "ground_z": 165.2
+  },
+  {
+   "station": "trail_compression",
+   "ground_z": 342.8
+  },
+  {
+   "station": "trail_release",
+   "ground_z": 377.8
+  },
+  {
+   "station": "uphill_lookback",
+   "ground_z": 700.7
+  }
+ ],
+ "csv": [
+  [
+   "csvprofile start",
+   "05:55:49"
+  ],
+  [
+   "csvprofile stop",
+   "05:55:55"
+  ]
+ ],
+ "dirty_after": [
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ],
+ "finished": "2026-10-31 05:56:15"
+}

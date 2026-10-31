@@ -1,0 +1,38 @@
+{
+ "variant": "TRIAL",
+ "now": {
+  "sun_rot": [
+   -36.00000000000002,
+   -38.00000000000001
+  ],
+  "sun": {
+   "intensity": 2600.0,
+   "light_source_angle": 1.0,
+   "temperature": 6500.0,
+   "volumetric_scattering_intensity": 1.7999999523162842
+  },
+  "sky": {
+   "intensity": 1.399999976158142
+  },
+  "fog": {
+   "directional_inscattering_exponent": 4.0,
+   "directional_inscattering_luminance": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fog_density": 0.009999999776482582,
+   "fog_height_falloff": 0.15000000596046448,
+   "fog_inscattering_luminance": [
+    0.052000001072883606,
+    0.05999999865889549,
+    0.06800000369548798
+   ],
+   "fog_max_opacity": 0.44999998807907104,
+   "start_distance": 900.0
+  }
+ },
+ "dirty": [
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ]
+}

@@ -1,8 +1,9 @@
 # triptych.ps1 -Base <pilot dir> -Clip <frames folder name> -Out <dir> [-Scale 0.4] (sets: clean_before | after_g1 | after_g123) : frame-by-frame side-by-side JPGs (same frame number = same
 # game time in the fixed-step captures) for an MJPEG AVI via mjpeg_avi.py. Unedited frames, scaled only.
-param([string]$Base, [string]$Clip, [string]$Out, [double]$Scale = 0.4)
-$Dirs = @('clean_before', 'after_g1', 'after_g123') | ForEach-Object { Join-Path (Join-Path $Base $_) $Clip }
-$Labels = @('BEFORE', 'G1', 'G1+G2+G3')
+param([string]$Base, [string]$Clip, [string]$Out, [double]$Scale = 0.4, [string]$Sets = 'clean_before,after_g1,after_g123', [string]$Names = 'BEFORE,G1,G1+G2+G3')
+# -Sets / -Names (comma lists) generalise it, e.g. -Sets 'walk_vmp_before,walk_vmp_trial3' -Names 'BEFORE,TRIAL' (VMP pass)
+$Dirs = $Sets.Split(',') | ForEach-Object { Join-Path (Join-Path $Base $_) $Clip }
+$Labels = $Names.Split(',')
 Add-Type -AssemblyName System.Drawing
 New-Item -ItemType Directory -Force $Out | Out-Null
 $n = (Get-ChildItem $Dirs[0] -Filter *.jpg).Count

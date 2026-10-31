@@ -1,0 +1,115 @@
+{
+ "file": "Saved/Profiling/CSV/Profile(20261031_055934).csv",
+ "frames": 1000,
+ "stats": {
+  "FrameTime": {
+   "n": 1000,
+   "mean": 41.49,
+   "p50": 41.37,
+   "p95": 46.25,
+   "max": 80.92
+  },
+  "GameThreadTime": {
+   "n": 1000,
+   "mean": 15.41,
+   "p50": 14.99,
+   "p95": 18.62,
+   "max": 76.32
+  },
+  "RenderThreadTime": {
+   "n": 1000,
+   "mean": 41.42,
+   "p50": 41.36,
+   "p95": 46.12,
+   "max": 48.43
+  },
+  "RHIThreadTime": {
+   "n": 1000,
+   "mean": 5.36,
+   "p50": 5.33,
+   "p95": 6.38,
+   "max": 7.32
+  },
+  "GPUTime": {
+   "n": 1000,
+   "mean": 40.0,
+   "p50": 39.86,
+   "p95": 44.4,
+   "max": 47.4
+  },
+  "GPUMem/LocalUsedMB": {
+   "n": 1000,
+   "mean": 6414.38,
+   "p50": 6348.41,
+   "p95": 6499.0,
+   "max": 6499.63
+  },
+  "GPUMem/LocalBudgetMB": {
+   "n": 1000,
+   "mean": 7125.27,
+   "p50": 7125.82,
+   "p95": 7125.82,
+   "max": 7125.82
+  },
+  "PhysicalUsedMB": {
+   "n": 1000,
+   "mean": 14092.42,
+   "p50": 13917.13,
+   "p95": 14487.67,
+   "max": 14567.98
+  },
+  "GPUSceneInstanceCount": {
+   "n": 1000,
+   "mean": 7.0,
+   "p50": 7.0,
+   "p95": 7.0,
+   "max": 7.0
+  }
+ },
+ "metadata": {
+  "[HasHeaderRowAtEnd]": "1",
+  "[EventTimestamps]": "1",
+  "[platform]": "Windows",
+  "[config]": "Development",
+  "[buildversion]": "++UE5+Release-5.8-CL-56057345",
+  "[engineversion]": "5.8.1-56057345+++UE5+Release-5.8",
+  "[enginereleaseversion]": "5.8.1",
+  "[os]": "Windows 11 (26H2) [10.0.26300.9818] ",
+  "[cpu]": "GenuineIntel|13th Gen Intel(R) Core(TM) i7-13650HX",
+  "[pgoenabled]": "0",
+  "[pgoprofilingenabled]": "0",
+  "[ltoenabled]": "0",
+  "[asan]": "0",
+  "[mergedmodules]": "0",
+  "[compacttset]": "0",
+  "[loginid]": "b295226b562b47f5ad9700bd5b61a619",
+  "[llm]": "0",
+  "[zenstreaming]": "0",
+  "[systemresolution.resx]": "1536",
+  "[systemresolution.resy]": "960",
+  "[extradevelopmentmemorymb]": "0",
+  "[verbatimrhiname]": "D3D12",
+  "[rhiname]": "D3D12",
+  "[rhifeaturelevel]": "SM6",
+  "[shaderplatform]": "PCD3D_SM6",
+  "[gpu]": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "[gpudriver]": "616.56",
+  "[deviceprofile]": "WindowsEditor",
+  "[largeworldcoordinates]": "1",
+  "[raytracing]": "1",
+  "[streamingpoolsizemb]": "1000",
+  "[csvid]": "A5F03B484C88252AD3F0B588E41800A8",
+  "[targetframerate]": "165",
+  "[starttimestamp]": "1793415574",
+  "[namedevents]": "0",
+  "[hasgtstalls]": "0",
+  "[vsyncenabled]": "0",
+  "[csvbench_timingstat_ns]": "35.462500",
+  "[csvbench_customstat_ns]": "21.160000",
+  "[csvbench_duration_ms]": "2.264900",
+  "[endtimestamp]": "1793415616",
+  "[captureduration]": "41.454608",
+  "[csvmaxfilebytesreached]": "0",
+  "[commandline]": " C:\\Users\\berat\\OneDrive\\Documents\\Unreal Projects\\ActionAdventureMovementS\\sphirus.uproject\" -ExecCmds=\"py C:\\Users\\berat\\AppData\\Local\\Temp\\claude\\C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS\\5f49a232-b001-47ad-8881-1eb04d9cb1c5\\scratchpad\\b2runner\\runner.py\" -nosound -log=shmv240_jend.log -UseFixedTimeStep -FPS=30\""
+ }
+}
