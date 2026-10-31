@@ -1,0 +1,8 @@
+XR2 restore verification (2026-10-31 21:5x, editor session, nothing saved)
+recon (before any change, R1)            vs recon_restored_xr2 (after apply x7 -> restore -> apply x8 -> dress -> restore)
+heightmap sha1 207f04e42d4a              == 207f04e42d4a  (byte-identical, 1017x1017)
+foliage components 57 / instances 8305  == 57 / 8305, 0 differing components (transforms identical)
+level actors 768 (label, class, loc)     == 768 identical, XR2_ actors left: 0
+map file on disk L_GR_SphirusHouse.umap  sha1 70dd481a... (unchanged since 2026-09-25; never saved in this pass)
+look owners (EX_PostRain_Sun/Sky/Humidity) restored with look_variant.py 'restore' after NEUTRAL / TRIAL2
+in-memory state: the map package is dirty (transactions) with original content -> on editor close choose "Don't Save"
