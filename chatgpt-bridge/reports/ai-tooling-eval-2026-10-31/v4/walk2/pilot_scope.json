@@ -1,0 +1,44 @@
+{
+ "centre": [
+  2930.0,
+  -2560.0
+ ],
+ "foliage_actors": [
+  {
+   "label": "InstancedFoliageActor0",
+   "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+   "instances": 8305
+  }
+ ],
+ "landscapes": [
+  {
+   "label": "EX_HouseValley_Landscape",
+   "class": "Landscape",
+   "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse",
+   "material": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Integration_Valley.MI_EX_Integration_Valley",
+   "layers": "n/a Landscape: Failed to find property 'editor_layer_settings' for attribute 'editor_layer_settings' on 'Landscape'"
+  }
+ ],
+ "structural_instances_25m": {
+  "SM_PineDeadTrunk03": 10,
+  "SM_PineGroundRock03": 3,
+  "SM_PineDeadTrunk02": 1,
+  "SM_PineGroundRock01": 2,
+  "SM_Root_4": 3,
+  "SM_DeadBranch01": 19,
+  "SM_PineDeadTrunk01": 1,
+  "SM_TreeStump02": 4
+ },
+ "structural_actors_25m": [
+  {
+   "label": "AD_Life4_SeatRound",
+   "mesh": "SM_TreeStump01",
+   "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse"
+  },
+  {
+   "label": "AD_Life4_SeatRoundSmall",
+   "mesh": "SM_TreeStump01",
+   "level": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse"
+  }
+ ]
+}
