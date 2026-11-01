@@ -1,0 +1,142 @@
+[hipline] HIPLINE245 {"hip_line_p2p": 12.06, "clav_line_p2p": 15.63, "counter_p2p": 23.87, "hip_series": [0.0, -3.6, -1.9, -1.8, 3.5, 7.4, 5.6, 3.7, 0.7, -4.0, -2.5, -1.7, 2.1, 7.3, 6.0, 4.9, 2.4, -2.8, -2.4, -0.9, 1.0, 6.8, 6.7, 5.5, 2.8, -2.6, -3.5, -1.6, -1.0, 5.4, 6.8, 5.8, 3.1, -1.5, -3.5, -1.5, -1.3, 5.1, 7.8, 6.4, 3.9, -0.0]}
+[chooser2] CHOOSER245 {"K2Node_EvaluateChooser2_0": {"graph": "Update_MotionMatching", "node": "K2Node_EvaluateChooser2_0", "props": {"chooser": "<Object '/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/CHT_PBI_PlayerDense.CHT_PBI_PlayerDense' (0x00000250050B8980) Class 'ChooserTable'>", "chooser_table": "ERR K2Node_EvaluateChooser2: Failed to find ", "table": "ERR K2Node_EvaluateChooser2: Failed to find ", "chooser_asset": "ERR K2Node_EvaluateChooser2: Failed to find ", "result_type": "ERR K2Node_EvaluateChooser2: Failed to find ", "mode": "<EvaluateChooserMode.ALL_RESULTS: 1>"}, "export": "", "export_text": ""}, "chooser_assets": ["/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/CHT_PoseSearchDatabases_Sparse", "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/CHT_PoseSearchDatabases", "/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/CHT_PoseSearchDatabases_Dense", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/CHT_PoseSearchDatabases_Dense", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/CHT_PoseSearchDatabases", "/Game/GraceRanger/Animations/CHT_GR_PlayerDense", "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/CHT_PBI_PlayerDense", "/Game/AAMS/AAMS/Blueprints/Character/MotionMatching/Data/S_ChooserOutputs", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Candidate/MotionMatching/Choosers/CHT_PoseSearchDatabases", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Candidate/MotionMatching/Choosers/CHT_PoseSearchDatabases_Dense", "/Game/ActionAdventureMovementS/Rollbacks/CharacterWorldFinal_Before_20260904/Snapshot/S030_CHT_PoseSearchDatabases", "/Game/ActionAdventureMovementS/Rollbacks/CharacterWorldFinal_Before_20260904/Snapshot/S031_CHT_PoseSearchDatabases_Dense", "/Game/ActionAdventureMovementS/Rollbacks/RootCauseCharacterRebuild_Before_20260903/Snapshot/S028_714136b8da_CHT_PoseSearchDatabases", "/Game/ActionAdventureMovementS/Rollbacks/RootCauseCharacterRebuild_Before_20260903/Snapshot/S029_61cc592211_CHT_PoseSearchDatabases_Dense", "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/CHT_PoseSearchDatabases", "/Game/ActionAdventureMovementS/Rollbacks/UnifiedCharacterFramework_Before_20260902/Snapshot/Animations/Locomotion/CoreMotionAAMS/Integrated/CHT_PoseSearchDatabases_Dense", "/Game/Sphirus/Rollbacks/Chapter01_Pro
+v212_warm_204915 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_rl_r0_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_rl_r1_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_rl_r2_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_rl_r3_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_rl_r4_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_rl_r5_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_lr_r1_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_lr_r2_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_lr_r3_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_lr_r4_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v245sweep_j45_lr_r5_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+SWEEP245_DONE
+[walk245dry] "before": {"hip_line_p2p": 12.06, "clav_line_p2p": 15.63, "counter_p2p": 23.87}, "after": {"hip_line_p2p": 7.84, "clav_line_p2p": 8.6, "counter_p2p": 14.04, "foot_err_max": 0.007, "head_yaw_change_max": 0.0}, "leg": {"l": {"axis_jump_deg": 5.2, "hinge_min": 1.0, "backward": 0}, "r": {"axis_jump_deg": 7.9, "hinge_min": 1.0, "backward": 0}}, "mode": "dry"}
+[cht] CHT245 {"cls": "ChooserTable", "props": {"results_structs": "ERR ChooserTable: Failed to find property 'results_str", "columns_structs": "[{}, {}, {}, {}]", "output_object_type": "<Object '/Script/PoseSearch.PoseSearchDatabase' (0x0000024DCEC33700) Class 'Class'>", "result_type": "<ObjectChooserResultType.OBJECT_RESULT: 0>", "fallback_result": "ERR ChooserTable: Failed to find property 'fallback_re", "results": "ERR ChooserTable: Property 'Results' for attribute 're", "columns": "ERR ChooserTable: Property 'Columns' for attribute 'co"}, "export": "CHT_PBI_PlayerDense", "path": "/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/CHT_PBI_PlayerDense.CHT_PBI_PlayerDense", "cflib": ["acquire_editor_element_handle", "call_method", "cast", "get_chooser_object", "get_class", "get_default_object", "get_editor_property", "get_fname", "get_full_name", "get_name", "get_outer", "get_outermost", "get_package", "get_path_name", "get_typed_outer", "get_world", "is_editor_property_overridden", "is_package_external", "modify", "rename", "reset_editor_property", "set_editor_properties", "set_editor_property", "static_class"], "dir": []}
+v212_warm_205453 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sl_j45_sl_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED production
+v245sl_j45_sl_o_r2 | rows 418 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-205913564233
+RELAUNCH slreal real 21:04:32
+v212_warm_210434 | rows 332 rate 24.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245slreal_j45_sl_o_r1 | rows 404 rate 30.4/s | pops >25 m/s2: 2 (worst 35) | by owner {'in-clip': 2} | FINISHED production
+v245slreal_j45_sl_o_r2 | rows 443 rate 32.8/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED production
+v245slreal_j45_sl_o_r3 | rows 456 rate 33.7/s | pops >25 m/s2: 5 (worst 31) | by owner {'in-clip': 5} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-210903391649
+RELAUNCH slend 30 21:14:20
+SL245_DONE
+v212_warm_211424 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep2_j45_rl_r0_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep2_j45_rl_r1_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep2_j45_rl_r2_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep2_j45_rl_r3_o_r1 | rows 477 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v212_warm_211754 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_rl_r0_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_rl_r1_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_rl_r2_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_rl_r3_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_rl_r4_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_rl_r5_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_lr_r0_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_lr_r1_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_lr_r2_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_lr_r3_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_lr_r4_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep3_j45_lr_r5_o_r1 | rows 438 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+SWEEP3_DONE
+SWEEP2_DONE
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v245_walk.json", "existing": 2, "new": 1}
+v212_warm_212323 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245wb_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wb_gait_o_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wb_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+[walkgen] "after": {"hip_line_p2p": 7.84, "clav_line_p2p": 8.6, "counter_p2p": 14.04, "foot_err_max": 0.007, "head_yaw_change_max": 0.0}, "leg": {"l": {"axis_jump_deg": 5.2, "hinge_min": 1.0, "backward": 0}, "r": {"axis_jump_deg": 7.9, "hinge_min": 1.0, "backward": 0}}, "mode": "out", "saved": true, "out": "/Game/GraceRanger/SHME/Animations/V245/SHM245_Walk_Fwd"}
+[wentry] WENTRY245 {"clip": "/Game/GraceRanger/SHME/Animations/V245/SHM245_Walk_Fwd", "db": "/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_WalkLoops", "tracks_before": ["1"], "modify_cost": -1.0, "saved": true, "entries": ["A_LB_Walk_FwdLeft", "A_LB_Walk_Left", "A_LB_Walk_BwdLeft", "A_LB_Walk_Bwd", "A_LB_Walk_BwdRight", "A_LB_Walk_Right", "A_LB_Walk_FwdRight", "A_LB_Walk_Fwd", "SHM245_Walk_Fwd"], "dirty": ["/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_WalkLoops"]}
+REFUSED: unexpected dirty packages ['/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_WalkLoops']
+v212_warm_212651 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 62) | by owner {'in-clip': 1} | FINISHED production
+v245wa_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wa_gait_o_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wa_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wa_w42_id_o_r2 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+[savewdb] SAVEWDB245 {"saved": true, "entries": ["A_LB_Walk_FwdLeft", "A_LB_Walk_Left", "A_LB_Walk_BwdLeft", "A_LB_Walk_Bwd", "A_LB_Walk_BwdRight", "A_LB_Walk_Right", "A_LB_Walk_FwdRight", "A_LB_Walk_Fwd", "SHM245_Walk_Fwd"], "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-213133410036
+RELAUNCH wareal real 21:36:51
+v212_warm_213653 | rows 420 rate 30.9/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wareal_w42_id_o_r1 | rows 652 rate 32.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wareal_gait_o_r1 | rows 595 rate 31.3/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-214128803705
+RELAUNCH waend 30 21:46:46
+v245wacap_w42_id_oS_r1 | rows 617 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245wacap_w42_id_oD_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+WALK5_DONE
+v212_warm_214821 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245sweep4_j45_rl_r0_o_r1 | rows 408 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4_j45_rl_r1_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+v245sweep4_j45_rl_r2_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+v245sweep4_j45_rl_r3_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+v245sweep4_j45_rl_r4_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+v245sweep4_j45_rl_r5_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED production
+v245sweep4_j45_lr_r0_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4_j45_lr_r1_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4_j45_lr_r2_o_r1 | rows 404 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4_j45_lr_r3_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4_j45_lr_r4_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4_j45_lr_r5_o_r1 | rows 447 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-215623801025
+RELAUNCH s4real real 22:01:41
+v212_warm_220143 | rows 380 rate 28.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245sweep4real_j45_rl_r1_o_r1 | rows 451 rate 31.1/s | pops >25 m/s2: 5 (worst 34) | by owner {'in-clip': 5} | FINISHED production
+v245sweep4real_j45_rl_r3_o_r1 | rows 437 rate 32.8/s | pops >25 m/s2: 1 (worst 36) | by owner {'in-clip': 1} | FINISHED production
+v245sweep4real_j45_rl_r5_o_r1 | rows 463 rate 31.9/s | pops >25 m/s2: 4 (worst 35) | by owner {'in-clip': 4} | FINISHED production
+v245sweep4real_j45_lr_r2_o_r1 | rows 441 rate 31.7/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED production
+v245sweep4real_j45_lr_r4_o_r1 | rows 444 rate 30.3/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-220636446940
+RELAUNCH s4end 30 22:11:53
+SWEEP4_DONE
+v212_warm_221213 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245own_w42_id_oow_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v245own_w42_id_osw_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v245own_w42_id_ofp_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v245own_w42_id_oRAW_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v245own_w42_id_oSCR_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v245own_w42_id_oPBI_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+OWN_DONE
+[verify] "ALL_OK": false
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-221952607517
+RELAUNCH prod 30 22:25:09
+[probe] "dirty": []}
+v212_warm_222512 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245prod_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245prod_gait_o_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245prod_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245prod_j41_rl_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v245prod_j42_lr_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245prod_w43_idle_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v245prod_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 4 (worst 42) | by owner {'in-clip': 4} | FINISHED production
+v245prod_wdiag_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+PROD245_DONE
+[verify2] "ALL_OK": true
+VERIFY245_DONE
