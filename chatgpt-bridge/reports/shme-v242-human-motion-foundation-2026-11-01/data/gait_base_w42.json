@@ -1,0 +1,189 @@
+[
+ {
+  "label": "v242cap_w42_id_oS_r1",
+  "rows": 616,
+  "stages": {
+   "mv_walk_0_0": {
+    "t": [
+     2.33,
+     5.57
+    ],
+    "speed_mean": 125.6,
+    "n_steps": 4,
+    "step_len_mean": 72.9,
+    "step_len_sd": 0.6,
+    "cadence_steps_s": 1.67,
+    "step_time_mean": 0.4,
+    "double_support_frac": 0.021,
+    "step_from_speed": 50.2,
+    "pelvis_lat_p2p": 3.7,
+    "pelvis_vert_p2p": 5.5,
+    "head_vert_p2p": 5.6,
+    "counter_rot_p2p_deg": 23.0,
+    "pelvis_yaw_p2p_deg": 14.0,
+    "arm_swing_p2p": {
+     "l": 28.7,
+     "r": 34.6
+    },
+    "ball_lift_p2p": {
+     "l": 12.9,
+     "r": 11.1
+    },
+    "mm_rate_mean": 1.24,
+    "dbs": {
+     "PSD_Dense_Stand_Walk_Loops": 35,
+     "PSD_LB_WalkLoops": 62
+    }
+   },
+   "mv_walk_0_2": {
+    "t": [
+     8.33,
+     11.57
+    ],
+    "speed_mean": 125.6,
+    "n_steps": 4,
+    "step_len_mean": 72.9,
+    "step_len_sd": 0.6,
+    "cadence_steps_s": 1.69,
+    "step_time_mean": 0.408,
+    "double_support_frac": 0.02,
+    "step_from_speed": 51.2,
+    "pelvis_lat_p2p": 3.6,
+    "pelvis_vert_p2p": 5.5,
+    "head_vert_p2p": 5.5,
+    "counter_rot_p2p_deg": 23.0,
+    "pelvis_yaw_p2p_deg": 14.0,
+    "arm_swing_p2p": {
+     "l": 28.3,
+     "r": 35.1
+    },
+    "ball_lift_p2p": {
+     "l": 12.8,
+     "r": 11.4
+    },
+    "mm_rate_mean": 1.24,
+    "dbs": {
+     "PSD_Dense_Stand_Walk_Loops": 35,
+     "PSD_LB_WalkLoops": 62
+    }
+   },
+   "mv_walk_30_4": {
+    "t": [
+     14.33,
+     16.57
+    ],
+    "speed_mean": 121.7,
+    "n_steps": 3,
+    "step_len_mean": 79.8,
+    "step_len_sd": 22.0,
+    "cadence_steps_s": 2.5,
+    "step_time_mean": 0.4,
+    "double_support_frac": 0.056,
+    "step_from_speed": 48.7,
+    "pelvis_lat_p2p": 7.2,
+    "pelvis_vert_p2p": 7.8,
+    "head_vert_p2p": 8.1,
+    "counter_rot_p2p_deg": 22.9,
+    "pelvis_yaw_p2p_deg": 51.7,
+    "arm_swing_p2p": {
+     "l": 45.1,
+     "r": 38.1
+    },
+    "ball_lift_p2p": {
+     "l": 12.4,
+     "r": 11.1
+    },
+    "mm_rate_mean": 1.161,
+    "dbs": {
+     "PSD_SHM_StartTransfer_R": 11,
+     "PSD_LB_WalkLoops": 56
+    }
+   }
+  },
+  "stops": [
+   {
+    "stage": "mv_walk_rel_1",
+    "t_release": 5.6,
+    "v_release": 132.0,
+    "capsule_stop_s": 0.53,
+    "feet_still_s": 0.8,
+    "pelvis_settle_s": 0.9,
+    "stop_dist_cm": 33.7,
+    "n_plants_after_release": 1,
+    "dbs": {
+     "PSD_LB_WalkLoops": 2,
+     "PSD_Dense_Stand_Walk_Stops": 34,
+     "PSD_Dense_Stand_Idles": 36
+    }
+   },
+   {
+    "stage": "mv_walk_rel_3",
+    "t_release": 11.6,
+    "v_release": 132.0,
+    "capsule_stop_s": 0.53,
+    "feet_still_s": 0.8,
+    "pelvis_settle_s": 0.9,
+    "stop_dist_cm": 33.7,
+    "n_plants_after_release": 1,
+    "dbs": {
+     "PSD_LB_WalkLoops": 2,
+     "PSD_Dense_Stand_Walk_Stops": 34,
+     "PSD_Dense_Stand_Idles": 36
+    }
+   },
+   {
+    "stage": "mv_walk_rel_5",
+    "t_release": 16.6,
+    "v_release": 132.0,
+    "capsule_stop_s": 0.53,
+    "feet_still_s": 1.57,
+    "pelvis_settle_s": 0.87,
+    "stop_dist_cm": 33.7,
+    "n_plants_after_release": 2,
+    "dbs": {
+     "PSD_LB_WalkLoops": 2,
+     "PSD_Dense_Stand_Walk_Stops": 58
+    }
+   },
+   {
+    "stage": "mv_stop",
+    "t_release": 18.6,
+    "v_release": 0.0,
+    "capsule_stop_s": 0.0,
+    "feet_still_s": 0.0,
+    "pelvis_settle_s": 0.33,
+    "stop_dist_cm": 0.0,
+    "n_plants_after_release": 0,
+    "dbs": {
+     "PSD_Dense_Stand_Walk_Stops": 60
+    }
+   }
+  ],
+  "starts": [
+   {
+    "stage": "mv_walk_0_2",
+    "t_press": 8.0,
+    "first_lift_s": 0.37,
+    "t90_s": 0.73,
+    "first_step_cm": 72.1,
+    "dbs": {
+     "PSD_Dense_Stand_Idles": 2,
+     "PSD_Dense_Stand_Walk_Loops": 43
+    }
+   },
+   {
+    "stage": "mv_walk_30_4",
+    "t_press": 14.0,
+    "first_lift_s": 0.4,
+    "t90_s": 0.73,
+    "first_step_cm": 107.7,
+    "dbs": {
+     "PSD_Dense_Stand_Idles": 2,
+     "PSD_Dense_Stand_Walk_Loops": 1,
+     "PSD_SHM_StartTransfer_R": 19,
+     "PSD_LB_WalkLoops": 23
+    }
+   }
+  ]
+ }
+]
