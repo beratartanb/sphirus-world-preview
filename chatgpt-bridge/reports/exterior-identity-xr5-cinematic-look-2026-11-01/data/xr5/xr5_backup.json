@@ -1,0 +1,195 @@
+{
+ "sun_rot": [
+  -27.000000000000014,
+  -38.00000000000002,
+  -1.7848099846186507e-15
+ ],
+ "comp": {
+  "sun": {
+   "intensity": 1150.0,
+   "light_source_angle": 1.2999999523162842,
+   "temperature": 6500.0,
+   "volumetric_scattering_intensity": 2.200000047683716
+  },
+  "sky": {
+   "intensity": 2.200000047683716
+  },
+  "atm": {
+   "mie_anisotropy": 0.6499999761581421,
+   "mie_scattering_scale": 0.014000000432133675
+  },
+  "fog": {
+   "directional_inscattering_exponent": 4.0,
+   "directional_inscattering_luminance": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "fog_density": 0.012000000104308128,
+   "fog_height_falloff": 0.18000000715255737,
+   "fog_inscattering_luminance": [
+    0.054999999701976776,
+    0.06199999898672104,
+    0.06599999964237213,
+    1.0
+   ],
+   "fog_max_opacity": 0.5,
+   "start_distance": 700.0,
+   "volumetric_fog_albedo": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "volumetric_fog_extinction_scale": 1.7000000476837158
+  }
+ },
+ "pp": {
+  "auto_exposure_bias": [
+   -0.6499999761581421,
+   true
+  ],
+  "auto_exposure_max_brightness": [
+   16.0,
+   true
+  ],
+  "auto_exposure_min_brightness": [
+   -2.0,
+   true
+  ],
+  "bloom_intensity": [
+   0.0,
+   true
+  ],
+  "bloom_threshold": [
+   -1.0,
+   false
+  ],
+  "color_contrast": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_gain_highlights": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_gain_midtones": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_gain_shadows": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_gamma_midtones": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_offset_shadows": [
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   false
+  ],
+  "color_saturation": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_saturation_highlights": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "color_saturation_shadows": [
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   false
+  ],
+  "film_grain_intensity": [
+   0.0,
+   false
+  ],
+  "film_shoulder": [
+   0.25999999046325684,
+   false
+  ],
+  "film_slope": [
+   0.8799999952316284,
+   false
+  ],
+  "film_toe": [
+   0.550000011920929,
+   false
+  ],
+  "film_white_clip": [
+   0.03999999910593033,
+   false
+  ],
+  "local_exposure_highlight_contrast_scale": [
+   1.0,
+   false
+  ],
+  "local_exposure_shadow_contrast_scale": [
+   1.0,
+   false
+  ],
+  "scene_fringe_intensity": [
+   0.0,
+   false
+  ],
+  "vignette_intensity": [
+   0.0,
+   true
+  ],
+  "white_temp": [
+   6500.0,
+   true
+  ],
+  "white_tint": [
+   0.0,
+   false
+  ]
+ }
+}

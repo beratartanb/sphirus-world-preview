@@ -1,0 +1,9 @@
+XR5 restore verification (2026-11-01, fixed-step editor xr3_c): recon (production snapshot) vs recon_restored_xr5 (after look5:restore, id:restore:i5, apply:restore:x9)
+heightmap sha1 207f04e42d4a vs 207f04e42d4a -> IDENTICAL
+foliage components 57 vs 57, instances 8305 vs 8305, differing components: 6
+level actors 768 vs 768; only in production snapshot: 0; only after restore: 0
+XR2_/XR3_/XR4_/XR5_ actors left: 0
+landscape actor loc/scale same: True
+the 6 "differing" components: every instance position identical; no rotation or scale digit differs either (largest delta 0.000): the JSON differs only by -0.0 vs 0.0 sign-of-zero in rotation fields, same 6 components differ identically in the XR4 snapshot (recon_restored_xr4b)
+i5 restore: 4 rocks unhidden, 42 actors destroyed, 127 material slots restored, 9 project MIs restored from mat_backup_i5.json; look5 restore: 5 XR5_ volumes destroyed, owners from xr5_backup.json
+map on disk L_GR_SphirusHouse.umap sha1 70dd481aaab3 (2026-09-25) unchanged; no project MI .uasset newer than the XR5 backup; in-memory dirty with original content -> "Don't Save" on close

@@ -1,0 +1,69 @@
+{
+ "mode": "restore",
+ "variant": "i3",
+ "problems": [],
+ "foliage": [
+  {
+   "mesh": "/Game/PineForestPack/Meshes/Grass/SM_GrassMedium01",
+   "n_before": 243,
+   "n_after": 271,
+   "n_wanted": 271
+  },
+  {
+   "mesh": "/Game/PineForestPack/Meshes/Grass/SM_GrassSmall01",
+   "n_before": 221,
+   "n_after": 261,
+   "n_wanted": 261
+  },
+  {
+   "mesh": "/Game/Fishermans_Cabin/Meshes/Foliage/Tree/SM_Fir_Tree_03",
+   "n_before": 805,
+   "n_after": 808,
+   "n_wanted": 808
+  },
+  {
+   "mesh": "/Game/PineForestPack/Meshes/GroundCover/SM_GroundCover01",
+   "n_before": 287,
+   "n_after": 305,
+   "n_wanted": 305
+  },
+  {
+   "mesh": "/Game/PineForestPack/Meshes/GroundCover/SM_GroundCover03",
+   "n_before": 286,
+   "n_after": 314,
+   "n_wanted": 314
+  }
+ ],
+ "dirty_before": [
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Integration_Valley",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_RefugeFirLeaves",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_RefugeGroundRock03",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Refuge_Pine_Juvenile_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernLong01",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernWild01",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree01_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree03_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree05_FO",
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ],
+ "xr3_actors_before": 72,
+ "unhidden": 6,
+ "actors_destroyed": 72,
+ "mats": "restored 9",
+ "retint": "restored 127 slots",
+ "finished": "00:04:57",
+ "ok": true,
+ "dirty_after": [
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Integration_Valley",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_RefugeFirLeaves",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_RefugeGroundRock03",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Refuge_Pine_Juvenile_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernLong01",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernWild01",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree01_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree03_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree05_FO",
+  "/Game/GraceRanger/Maps/L_GR_SphirusHouse"
+ ],
+ "xr3_actors_after": 0
+}
