@@ -1,0 +1,7 @@
+XR5 promotion verification (2026-11-01 06:18, approved): production snapshot (recon) vs recon_saved_xr5 (after xr5_promote.py saved the map)
+heightmap sha1 IDENTICAL
+foliage components 57/57, instances 8305/8305, components with any position change: 0
+level actors 768 -> 774; removed: 0; added: ['EX_Look_Fog_Inlet', 'EX_Look_Fog_Pond', 'EX_Look_PPV_Glade', 'EX_Look_PPV_House', 'EX_Look_PPV_Shelf', 'EX_Look_Resonance']
+map on disk sha1 70dd481aaab3 -> 6d3efa3a0b5e (2026-11-01 06:18); backup of the previous map: Saved/Codex/SHME_V233_20261027/checkpoint/manifests/xr5_map/Content/GraceRanger/Maps/L_GR_SphirusHouse.umap (sha1 70dd481a..., verified)
+saved only the map package; the 9 project MIs (XR3 trial, original content) are still dirty in memory -> untick them / "Don't Save" for those on close
+24-station exposure after save: mean 72.5 / white 0.22 / black 0.99 / sat 0.258 vs FINAL trial 72.5 / 0.19 / 0.99 / 0.238; per-station deltas (max 8.4 at P3_glade_back) come from the world layer: the trial had x9+i5 geometry/retints applied, the saved map keeps the production world (XR2/XR4 world layers were not saved)

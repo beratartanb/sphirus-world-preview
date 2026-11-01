@@ -1,0 +1,1014 @@
+{
+ "pond": {
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond.MI_EX_Pond": {
+   "info": {
+    "path": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond.MI_EX_Pond",
+    "class": "MaterialInstanceConstant",
+    "parent": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_PR_CalystoPhysicalInland.M_PR_CalystoPhysicalInland",
+    "scalars": {
+     "Specular": 0.2,
+     "Roughness": 0.34,
+     "Murkiness": 3.8,
+     "Edge Distance": 145.0,
+     "Close UV Scale 1": 180.0,
+     "Close UV Scale 2": 310.0,
+     "Far UV Scale 1": 400.0,
+     "Far UV Scale 2": 700.0,
+     "Far Range": 5000.0,
+     "Far Offset": 1500.0,
+     "Calm Normal Amplitude": 0.025
+    },
+    "vectors": {
+     "Absorption": [
+      0.14,
+      0.125,
+      0.11,
+      1.0
+     ]
+    },
+    "textures": {},
+    "base": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_PR_CalystoPhysicalInland.M_PR_CalystoPhysicalInland",
+    "all_scalar_names": [
+     "Specular",
+     "Roughness",
+     "Murkiness",
+     "Far UV Scale 1",
+     "Close UV Scale 1",
+     "Close UV Scale 2",
+     "Far UV Scale 2",
+     "Far Range",
+     "Far Offset",
+     "Edge Distance",
+     "Calm Normal Amplitude"
+    ],
+    "all_vector_names": [
+     "Absorption"
+    ]
+   },
+   "users": [
+    [
+     "EX_Pond_CalmSurface",
+     "StaticMeshComponent0",
+     0,
+     "StaticMeshComponent"
+    ]
+   ]
+  }
+ },
+ "rocks": {
+  "/Game/PineForestPack/Meshes/Cliffs/SM_PineGroundRock03": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineGroundRock03.MI_PineGroundRock03"
+   ],
+   "users": 8,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineGroundRock03.MI_PineGroundRock03",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "WetLeak Tile Size": 200.0,
+      "WetLeak Value": 80.0,
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 0.5,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.5,
+      "Saturation": 1.3,
+      "Specular": 1.0,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       1.0,
+       0.966,
+       0.922,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Cliffs/T_PineGroundRock03_D.T_PineGroundRock03_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Cliffs/T_PineGroundRock03_N.T_PineGroundRock03_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Cliffs/SM_PineGroundRock01": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineGroundRock01.MI_PineGroundRock01"
+   ],
+   "users": 2,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineGroundRock01.MI_PineGroundRock01",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "WetLeak Tile Size": 200.0,
+      "WetLeak Value": 30.0,
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 0.4,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.5,
+      "Saturation": 1.3,
+      "Specular": 1.0,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       1.0,
+       0.966,
+       0.922,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Cliffs/T_PineGroundRock01_D.T_PineGroundRock01_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Cliffs/T_PineGroundRock01_N.T_PineGroundRock01_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Rocks/SM_SmallStones01": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_RockGroup01Small_A.MI_RockGroup01Small_A"
+   ],
+   "users": 21,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_RockGroup01Small_A.MI_RockGroup01Small_A",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Rock_Master.M_Rock_Master",
+     "scalars": {
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 1.4,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.5,
+      "Specular": 0.5,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       1.0,
+       0.779,
+       0.432,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Rocks/T_RockGroup01_1_D.T_RockGroup01_1_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Rocks/T_RockGroup01_1_N.T_RockGroup01_1_N",
+      "Surface": "/Game/PineForestPack/Textures/Rocks/T_RockGroup01_1_ORM.T_RockGroup01_1_ORM"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Rock_Master.M_Rock_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Rocks/SM_PineStone01": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone01.MI_PineStone01"
+   ],
+   "users": 12,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone01.MI_PineStone01",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 0.5,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.5,
+      "Saturation": 1.3,
+      "Specular": 0.5,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       0.658,
+       0.747,
+       0.742,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Rocks/T_PineStone01_D.T_PineStone01_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Rocks/T_PineStone01_N.T_PineStone01_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Rocks/SM_PineStone04": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone04.MI_PineStone04"
+   ],
+   "users": 7,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone04.MI_PineStone04",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 0.5,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Normal_Power": 2.0,
+      "Roughness": 1.5,
+      "Saturation": 1.3,
+      "Specular": 0.5,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       1.0,
+       1.0,
+       1.0,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Rocks/T_PineStone04_D.T_PineStone04_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Rocks/T_PineStone04_N.T_PineStone04_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Rocks/SM_PineStone03": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone03.MI_PineStone03"
+   ],
+   "users": 9,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone03.MI_PineStone03",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 0.8,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.5,
+      "Saturation": 1.3,
+      "Specular": 0.5,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       1.0,
+       0.899,
+       0.765,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Rocks/T_PineStone03_D.T_PineStone03_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Rocks/T_PineStone03_N.T_PineStone03_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Rocks/SM_PineStone02": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone02.MI_PineStone02"
+   ],
+   "users": 22,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineStone02.MI_PineStone02",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 1.0,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.5,
+      "Saturation": 1.3,
+      "Specular": 0.5,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       0.845,
+       0.973,
+       1.0,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Rocks/T_PineStone02_D.T_PineStone02_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Rocks/T_PineStone02_N.T_PineStone02_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/Cliffs/SM_PineGroundRock05": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineGroundRock05.MI_PineGroundRock05"
+   ],
+   "users": 1,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Rocks/MI_PineGroundRock05.MI_PineGroundRock05",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "scalars": {
+      "Moss_FuzzyDarkness": 0.5,
+      "Moss_FuzzyEdgeBrightness": 0.5,
+      "Moss_FuzzyPower": 1.0,
+      "Moss_Opacity": 0.85,
+      "Moss_Roughness": 3.0,
+      "Moss_Tiling": 0.65,
+      "WorldBlendMax": 0.85,
+      "Albedo_Brightness": 0.45,
+      "AO_power": 1.0,
+      "Blend_Normal": 1.0,
+      "Detail_Normal_Power": 0.5,
+      "Details_Scale": 10.0,
+      "Roughness": 1.4,
+      "Saturation": 1.4,
+      "Specular": 0.5,
+      "UV_Scale": 1.0,
+      "SideContrast": 20.0,
+      "VirtualBlendHeight": 0.998,
+      "VirtualFalloff": 10.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Moss_ColorTint": [
+       0.396,
+       0.535,
+       0.032,
+       1.0
+      ],
+      "Color_Tint": [
+       0.639,
+       0.648,
+       0.618,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Cliffs/T_PineGroundRock05_D.T_PineGroundRock05_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Rocks/T_Rock_Details_N_VT.T_Rock_Details_N_VT",
+      "Normal": "/Game/PineForestPack/Textures/Cliffs/T_PineGroundRock05_N.T_PineGroundRock05_N",
+      "Surface": "/Game/PineForestPack/Textures/Default/T_Default_S_VT.T_Default_S_VT"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "Blend_Normal",
+      "WorldBlendMax",
+      "Moss_Opacity",
+      "AO_power",
+      "Moss_FuzzyPower",
+      "Moss_FuzzyDarkness",
+      "Moss_FuzzyEdgeBrightness",
+      "Moss_Tiling",
+      "Moss_Roughness",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "VirtualBlendHeight",
+      "VirtualFalloff",
+      "SideContrast",
+      "Wetness Height",
+      "Wetness Divider",
+      "Saturation",
+      "Albedo Power",
+      "Roughness Contrast",
+      "WetLeak Tile Size",
+      "WetLeak Value"
+     ],
+     "all_vector_names": [
+      "Color_Tint",
+      "Moss_ColorTint"
+     ]
+    }
+   ]
+  }
+ },
+ "litter": {
+  "/Game/PineForestPack/Meshes/DeadLeaves/SM_DeadLeaves02.SM_DeadLeaves02": {
+   "mats": [
+    "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_DeadLeaves01.MI_PR_DeadLeaves01"
+   ],
+   "users": 1,
+   "mat_info": [
+    {
+     "path": "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_DeadLeaves01.MI_PR_DeadLeaves01",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+     "scalars": {
+      "Albedo_Brightness": 0.27,
+      "AO_power": 1.0,
+      "Detail_Normal_Power": 0.85,
+      "Details_Scale": 10.0,
+      "Normal_Power": 1.0,
+      "Roughness": 3.0,
+      "Specular": 0.07,
+      "UV_Scale": 1.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Color_Tint": [
+       0.4,
+       0.33,
+       0.235,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_D.T_DeadLeaves01_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Default/T_Default_N.T_Default_N",
+      "Normal": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_N.T_DeadLeaves01_N",
+      "Surface": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_ORM.T_DeadLeaves01_ORM"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "AO_power",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "Random"
+     ],
+     "all_vector_names": [
+      "Color_Tint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/DeadLeaves/SM_DeadBranch01": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_DeadLeaves01.MI_DeadLeaves01"
+   ],
+   "users": 43,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_DeadLeaves01.MI_DeadLeaves01",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+     "scalars": {
+      "Albedo_Brightness": 0.6,
+      "AO_power": 1.0,
+      "Detail_Normal_Power": 0.85,
+      "Details_Scale": 10.0,
+      "Normal_Power": 1.0,
+      "Roughness": 3.0,
+      "Specular": 0.22,
+      "UV_Scale": 1.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Color_Tint": [
+       0.682,
+       0.487,
+       0.21,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_D.T_DeadLeaves01_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Default/T_Default_N.T_Default_N",
+      "Normal": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_N.T_DeadLeaves01_N",
+      "Surface": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_ORM.T_DeadLeaves01_ORM"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "AO_power",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "Random"
+     ],
+     "all_vector_names": [
+      "Color_Tint"
+     ]
+    }
+   ]
+  },
+  "/Game/PineForestPack/Meshes/DeadLeaves/SM_DeadLeaves02": {
+   "mats": [
+    "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_DeadLeaves01.MI_DeadLeaves01"
+   ],
+   "users": 194,
+   "mat_info": [
+    {
+     "path": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_DeadLeaves01.MI_DeadLeaves01",
+     "class": "MaterialInstanceConstant",
+     "parent": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+     "scalars": {
+      "Albedo_Brightness": 0.6,
+      "AO_power": 1.0,
+      "Detail_Normal_Power": 0.85,
+      "Details_Scale": 10.0,
+      "Normal_Power": 1.0,
+      "Roughness": 3.0,
+      "Specular": 0.22,
+      "UV_Scale": 1.0,
+      "RefractionDepthBias": 0.0
+     },
+     "vectors": {
+      "Color_Tint": [
+       0.682,
+       0.487,
+       0.21,
+       1.0
+      ]
+     },
+     "textures": {
+      "Albedo": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_D.T_DeadLeaves01_D",
+      "Detail_Normal": "/Game/PineForestPack/Textures/Default/T_Default_N.T_Default_N",
+      "Normal": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_N.T_DeadLeaves01_N",
+      "Surface": "/Game/PineForestPack/Textures/Trees/T_DeadLeaves01_ORM.T_DeadLeaves01_ORM"
+     },
+     "base": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+     "all_scalar_names": [
+      "Specular",
+      "Roughness",
+      "Details_Scale",
+      "Albedo_Brightness",
+      "AO_power",
+      "UV_Scale",
+      "Detail_Normal_Power",
+      "Normal_Power",
+      "Random"
+     ],
+     "all_vector_names": [
+      "Color_Tint"
+     ]
+    }
+   ]
+  }
+ },
+ "project_mis": {
+  "MI_EX_Integration_Ivy_branches_0": "/Game/Real_Ivy_Pack/Materials/foliage/M_basic_mrao.M_basic_mrao",
+  "MI_EX_Integration_Ivy_leaves_0": "/Game/Real_Ivy_Pack/Materials/foliage/M_Foliage_Material.M_Foliage_Material",
+  "MI_EX_Integration_Ivy_leaves_1": "/Game/Real_Ivy_Pack/Materials/foliage/M_Foliage_Material.M_Foliage_Material",
+  "MI_EX_Integration_MossRoot_0": "/Game/Fab/Materials/Standard/M_MS_Base_Fuzz.M_MS_Base_Fuzz",
+  "MI_EX_Integration_RootPatch_0": "/Game/Fab/Materials/Standard/M_MS_Base_Fuzz.M_MS_Base_Fuzz",
+  "MI_EX_Integration_Valley": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_Integration_Floor.M_EX_Integration_Floor",
+  "MI_EX_Pond": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_PR_CalystoPhysicalInland.M_PR_CalystoPhysicalInland",
+  "MI_EX_RefugeFacadeDamp": "/Game/Fishermans_Cabin/Materials/Material_Masters/M_Leak_Decal.M_Leak_Decal",
+  "MI_EX_RefugeFacadeRunoff": "/Game/Fishermans_Cabin/Materials/Material_Masters/M_Leak_Decal.M_Leak_Decal",
+  "MI_EX_RefugeFirBark": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RefugeShrubBark.M_EX_RefugeShrubBark",
+  "MI_PR_Bark": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RefugeShrubBark.M_EX_RefugeShrubBark",
+  "MI_PR_Grass_Sedge_01": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Foliage_01.MM_Foliage_01",
+  "MI_EX_YoungSpruce": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Tree_Foliage_01.MM_Tree_Foliage_01",
+  "MI_PR_Branch_L_Spring_1": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_OakBranch.M_Master_OakBranch",
+  "MI_PR_Oak_1_L": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_Billboard.M_Master_Billboard",
+  "MI_PR_Oak_2_L": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_Billboard.M_Master_Billboard",
+  "MI_PR_Oak_4_L": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_Billboard.M_Master_Billboard",
+  "MI_PR_DeadLeaves01": "/Game/PineForestPack/Materials/MasterMaterials/M_SmallProp_Grass.M_SmallProp_Grass",
+  "MI_PR_Oak_2": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_Tileable.M_Master_Tileable",
+  "MI_PR_Oak_3": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_Tileable.M_Master_Tileable",
+  "MI_PR_Oak_4": "/Game/OakForestEnv/Materials/TreeMaterials/M_Master_Tileable.M_Master_Tileable",
+  "MI_PR_Root_1": "/Game/OakForestEnv/Materials/ScanMaterials/M_Master_Scans.M_Master_Scans",
+  "MI_PR_Tree_1": "/Game/OakForestEnv/Materials/ScanMaterials/M_Master_Scans.M_Master_Scans",
+  "MI_PR_Tree_2": "/Game/OakForestEnv/Materials/ScanMaterials/M_Master_Scans.M_Master_Scans",
+  "MI_PR_Tree_3_4": "/Game/OakForestEnv/Materials/ScanMaterials/M_Master_Scans.M_Master_Scans",
+  "MI_PR_Trunk_01": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Trunks_01.MM_Trunks_01",
+  "MI_EX_RefugeFirLeaves": "/Game/Fishermans_Cabin/Materials/Material_Masters/M_Foliage.M_Foliage",
+  "MI_PR_Bush_Leaves": "/Game/Fishermans_Cabin/Materials/Material_Masters/M_Foliage.M_Foliage",
+  "MI_PR_RockGroup01Small_A": "/Game/PineForestPack/Materials/MasterMaterials/M_Rock_Master.M_Rock_Master",
+  "MI_EX_RefugeGroundRock03": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineDeadTrunk01": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineDeadTrunk02": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineStone01": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineStone02": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineStone03": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineStone04": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_PR_PineStump01": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_EX_Integration_YoungPine_0": "/Game/PN_coniferBushes_I/Materials/Material_Instances/Pine/Pine_08_MAI.Pine_08_MAI",
+  "MI_EX_Integration_YoungPine_1": "/Game/PN_coniferBushes_I/Materials/Material_Instances/Pine/Pine_08_MAI.Pine_08_MAI",
+  "MI_EX_Refuge_Pine_Juvenile_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_EX_Refuge_Pine_Juvenile_TR": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_TR.MI_Plant_Level02_TR",
+  "MI_PR_Fern01_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_Fern_03_S_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_FernLong01": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_FernWild01": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_GrassMedium01": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_GrassShort01": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_GroundCover01_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_GroundCover03_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_PineIvy01_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_PineIvy02_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_PineTree01_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_PineTree03_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_PineTree05_FO": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_FO.MI_Plant_Level02_FO",
+  "MI_PR_PineTree05_TR": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_TR.MI_Plant_Level02_TR",
+  "MI_PR_PineIvy01_BR": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_TR.MI_Plant_Level02_TR",
+  "MI_PR_PineTree01_TR": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_TR.MI_Plant_Level02_TR",
+  "MI_PR_PineIvy02_BR": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_TR.MI_Plant_Level02_TR",
+  "MI_PR_PineTree03_TR": "/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_Plant_Level02_TR.MI_Plant_Level02_TR",
+  "MI_EX_Integration_YoungSpruce_0": "/Game/PN_coniferBushes_I/Materials/MA_Spruce.MA_Spruce",
+  "MI_EX_Integration_Grass": "/Game/GrassPackVol1/Materials/M_FoliageMaster.M_FoliageMaster",
+  "MI_PR_GroundMossPatch01": "/Game/PineForestPack/Materials/MasterMaterials/M_Object_Moss_Master.M_Object_Moss_Master",
+  "MI_EX_Integration_ForestFloor_0": "/Game/ForestFloor/Materials/M_ForestFloors_Master.M_ForestFloors_Master",
+  "MI_EX_PlinthStoneAged": "/Game/SphirusHouse/LivedIn_R05/Materials/M_HouseSurface.M_HouseSurface",
+  "MI_EX_RefugeGardenStone": "/Game/SphirusHouse/LivedIn_R05/Materials/M_HouseSurface.M_HouseSurface",
+  "MI_EX_VerandaBoards_Weathered": "/Game/SphirusHouse/LivedIn_R05/Materials/M_R05_NaturalWood.M_R05_NaturalWood",
+  "MI_EX_VerandaOak_Weathered": "/Game/SphirusHouse/LivedIn_R05/Materials/M_R05_NaturalWood.M_R05_NaturalWood",
+  "MI_EX_CanopyWeathered": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RoofWeathered.M_EX_RoofWeathered",
+  "MI_EX_RoofWeathered": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RoofWeathered.M_EX_RoofWeathered",
+  "MI_EX_SlabEdgeAged": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_Integration_ExposureLimeOak.M_EX_Integration_ExposureLimeOak",
+  "MI_EX_CladdingAged": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_Integration_ExposureLimeOak.M_EX_Integration_ExposureLimeOak",
+  "MI_EX_Integration_OuterLime": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_Integration_ExposureLime.M_EX_Integration_ExposureLime",
+  "MI_EX_Integration_OuterLimeOak": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_Integration_ExposureLimeOak.M_EX_Integration_ExposureLimeOak",
+  "MI_EX_KitchenFridge_0": "/Game/Thepackfolder/Materials/Mat_bottles_glass.Mat_bottles_glass",
+  "MI_EX_KitchenFridge_1": "/Game/Thepackfolder/Materials/Mat_pots_bottles_liquid.Mat_pots_bottles_liquid",
+  "MI_EX_KitchenFridge_2": "/Game/Thepackfolder/Materials/Mat_bottles_pots_decals.Mat_bottles_pots_decals",
+  "MI_EX_KitchenFridge_3": "/Game/Thepackfolder/Materials/Mat_fridge.Mat_fridge",
+  "MI_EX_KitchenFridge_4": "/Game/Thepackfolder/Materials/Mat_fridge_glass.Mat_fridge_glass",
+  "MI_EX_HouseValley": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_HouseValley.M_EX_HouseValley",
+  "MI_EX_Meadow": "/Game/Calysto/World/Vegetation/Materials/Master_Materials/MM_Foliage_01.MM_Foliage_01",
+  "MI_EX_RefugeCloud": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud",
+  "MI_EX_RefugeFoundation": "/Game/AutoEnvTools/Materials/Structure/MI_DC_Concrete.MI_DC_Concrete",
+  "MI_EX_RefugeOuterLime": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RefugeExposure_MI_R3_Surface_lime.M_EX_RefugeExposure_MI_R3_Surface_lime",
+  "MI_EX_RefugeOuterLimeOak": "/Game/GraceRanger/Environment/Exterior20260921/Materials/M_EX_RefugeExposure_MI_CR_LimeAndLowOak.M_EX_RefugeExposure_MI_CR_LimeAndLowOak",
+  "MI_EX_SmartTerrain_Candidate": "/Game/SmartTerrain/Materials/M_SmartTerrain_Master.M_SmartTerrain_Master",
+  "MI_EX_VerandaSkirt_Weathered": "/Game/AutoEnvTools/Materials/Structure/MI_DC_Concrete.MI_DC_Concrete"
+ },
+ "errors": []
+}

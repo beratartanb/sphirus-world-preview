@@ -148,3 +148,27 @@ Kayda hazır bir şey yok. Sorduğum, yön onayı: (1) FINAL v2 değerlerini (b�
 | `video/XR5_routeA_prod_vs_FINAL_part*.avi` | yürüyüş, üretim ve FINAL v2 yan yana |
 | `data/xr5/` | `xr5_backup.json`, `xr5_L1/L2/L3/FINAL/RES/restore.json`, `xr5_FINAL_v1_overmist.json`, pozlama JSON'ları + tablo, yürüyüş günlükleri, `restore_verify_xr5.txt` |
 | `tools/` | `xr5_look.py` (üç yön + FINAL/RES + yedek/geri alma), `xr5_final.py` (v2 ayarı), `exposure_stats.ps1`, `exposure_table.py` |
+
+---
+
+## 11. Onay sonrası: FINAL v2 haritaya kaydedildi (2026-11-01 06:18)
+
+Kullanıcı onayı ("Evet") ile `tools/xr5_promote.py` gated runner üzerinden (manifest `xr5_map`, doğrulanmış yedek `…/manifests/xr5_map/…/L_GR_SphirusHouse.umap` sha1 `70dd481a…`) çalıştı:
+
+- Işık sahipleri `EX_PostRain_Sun / Sky / Atmosphere / Humidity / NeutralExposure` = bölüm 1 değerleri (deneme ile aynı kod yolu, `xr5_backup.json`'dan).
+- Beş bölgesel hacim kalıcı: `EX_Look_PPV_House / PPV_Shelf / PPV_Glade / Fog_Pond / Fog_Inlet` (klasör `EX_PostRain_Look`; `XR5_` ön eki kaldırıldı ki deneme geri almaları bunları silmesin).
+- `EX_Look_Resonance`: sınırsız PPV, öncelik 3, **blend weight 0** (etkisiz); bölüm 6'nın deltası mutlak değer olarak hazır (WB 5900 K, doygunluk 0,81, gren 0,16, vinyet 0,40, kenar saçılması 0,35, gölge kazancı [0,98 0,96 1,04]). Oyun mantığı sahibi blend weight'i rezonans ilerlemesine bağlar. Not: deneme RES karelerinde doygunluk yanlışlıkla mutlak 0,94 uygulanmıştı (FINAL 0,86'dan yüksek); kalıcı PPV'de doğru çarpan (×0,94 → 0,81) kullanıldı, bu yüzden RES kareleri kalıcı deltadan biraz daha doygundur.
+- **Yalnız harita paketi kaydedildi** (`save_packages([map])`, `save_ok True`); harita sha1 `70dd481a…` → `6d3efa3a…`. XR3 denemesinden dirty kalan 9 proje MI'sı (içerik orijinal) kaydedilmedi; editörü kapatırken o 9 MI için **"Don't Save"**.
+- Doğrulama (`data/save_verify_xr5.txt`): yükseklik haritası aynı, foliage 57/8305 konum farkı 0, aktör 768 → 774 (yalnız 6 look aktörü eklendi, silinen 0). Kayıt sonrası aynı 24 istasyon (`stills_xr5/views_id_x8_saved`, `data/xr5/exposure_saved.json`): ortalama 72,5 / beyaz %0,22 / siyah %0,99 — deneme FINAL ile aynı (72,5 / 0,19 / 0,99). İstasyon başına farklar (en çok P3_glade_back, 8,4) dünya katmanından: deneme kareleri x9+i5 (XR4 raf, teras, retint) üzerindeydi, kaydedilen harita **üretim dünyasını** koruyor (XR2/XR4 dünya katmanları kaydedilmedi, ayrı onay bekliyor).
+- `xr5_backup.json` → `xr5_backup_preXR5_production.json` (eski üretim ışığı); sonraki `look5` koşusu yeni üretimden taze yedek alır.
+
+## 12. Materyal turu (bölüm 7, #1–3): izole deneme, kaydedilmedi
+
+Sahip probu (`data/xr5/xr5_mat_probe.json`, `tools/xr5_mat_probe.py`): su = proje sahipli `MI_EX_Pond` (ebeveyn `M_PR_CalystoPhysicalInland`, aktör `EX_Pond_CalmSurface`; Roughness 0,34, Specular 0,2, Murkiness 3,8, Absorption [0,14 0,125 0,11], Calm Normal Amplitude 0,025). Döküntü = foliage `SM_DeadLeaves02` (194 instance) satıcı `MI_DeadLeaves01` (Color_Tint [0,68 0,49 0,21], Albedo 0,6). **Big_Rock üretim haritasında yok** (XR4 raf katmanı kaydedilmedi) → kaya MI turu XR4 dünya terfisiyle birlikte.
+
+Deneme (`tools/xr5_mat_trial.py`, manifest `xr5_mat`, bellek içi, geri alındı; `compare_xr5/x10_*.jpg` ÖNCE = kaydedilmiş harita, SONRA = deneme):
+- **Su:** Roughness 0,45, Specular 0,16, Murkiness 5,5, Absorption [0,20 0,165 0,12], Calm Normal Amplitude 0,06. Sandal ve P2 R90 karelerinde yüzey artık cam değil: koyu, mikro dalgalı, kıyıda kırık parıltı; derinlik çay rengi. Eleştiri: parıltı noktaları biraz fazla (0,06 → 0,045 önerilir). Sonuç **PARTIAL (yön doğru, bir ayar daha)**.
+- **Döküntü:** 194 instance'a iğne-kahve dinamik MI (tint [0,38 0,30 0,19], albedo 0,45) uygulandı; ama 8 istasyonun hiçbirinde `SM_DeadLeaves02` kadrajda değil (mor döküntü kareleri XR4 dilimindeydi) → görsel kanıt yok, **NOT_TESTED**; sayısal olarak uygulandı ve geri alındı.
+- P3_glade_fwd SONRA karesinde karakter kameraya dönük: istasyon yerleştiricinin yaw'ı kontrol rotasyonundan önce oturmuş; ışık/materyal kanıtı değil, yerleştirici gürültüsü.
+
+Kayıt için onay sorusu: `MI_EX_Pond` için su değerleri (amplitude 0,045 ile) kaydedilsin mi? Döküntü için önce `SM_DeadLeaves02`'nin göründüğü bir istasyon tanımlanmalı.

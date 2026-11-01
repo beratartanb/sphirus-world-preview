@@ -1,0 +1,47 @@
+{
+ "mode": "apply",
+ "problems": [],
+ "started": "06:24:16",
+ "water": {
+  "scalars": {
+   "Roughness": 0.45,
+   "Specular": 0.16,
+   "Murkiness": 5.5,
+   "Calm Normal Amplitude": 0.06
+  },
+  "vectors": {
+   "Absorption": [
+    0.2,
+    0.165,
+    0.12,
+    1.0
+   ]
+  }
+ },
+ "litter": {
+  "mesh": "SM_DeadLeaves02",
+  "instances": 194,
+  "params": {
+   "Color_Tint": [
+    0.38,
+    0.3,
+    0.19,
+    1.0
+   ],
+   "Albedo_Brightness": 0.45
+  }
+ },
+ "dirty": [
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Integration_Valley",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_RefugeFirLeaves",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_RefugeGroundRock03",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Refuge_Pine_Juvenile_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernLong01",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_FernWild01",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree01_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree03_FO",
+  "/Game/GraceRanger/Environment/Exterior20260921/Materials/MI_PR_PineTree05_FO"
+ ],
+ "finished": "06:24:16"
+}
