@@ -1,0 +1,3 @@
+import builtins
+builtins.G244L = {'dry_run': False, 'loop': '/Game/GraceRanger/Animations/Continuity/A_CT_Jog_Right', 'side': 'R', 'v0': 200.0, 'acc': 410.0, 'nph': 24, 'reach': 10, 'loopfollow': 0.6, 'close': 3, 'close_apex': 8.0, 'apex_min': 6.0, 'final_src': '/Game/GraceRanger/SHME/Animations/Stops/SHM_A_CP2_Jog_Fwd_Stop', 'final_last': True, 'km_brake': 0.3, 'pel_dip': 1.0, 'extra_v': 60.0, 'qpart': 0.45}
+exec(compile(open(r'C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V244_20261101/gen244_latstop.py', encoding='utf-8').read(), 'gen244_latstop.py', 'exec'), {'__name__': '__job__'})

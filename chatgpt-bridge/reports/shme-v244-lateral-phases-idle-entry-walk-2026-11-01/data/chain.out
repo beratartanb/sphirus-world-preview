@@ -1,0 +1,131 @@
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v244_lat.json", "existing": 0, "new": 97}
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v244_idle.json", "existing": 0, "new": 2}
+[gen L] skipped 0 clamped 24 ok 1 
+[gen R] skipped 2 clamped 24 ok 1 
+[clips] keep 42 of 48 rejected ['SHM244_LatStop_L_Br_P17', 'SHM244_LatStop_R_Br_P02', 'SHM244_LatStop_R_Bl_P08', 'SHM244_LatStop_R_Bl_P16', 'SHM244_LatStop_R_Bl_P17', 'SHM244_LatStop_R_Bl_P18']
+[latdb] "entries": ["SHM244_LatStop_L_Br_P00", "SHM244_LatStop_L_Br_P01", "SHM244_LatStop_L_Br_P02", "SHM244_LatStop_L_Br_P03", "SHM244_LatStop_L_Br_P04", "SHM244_LatStop_L_Bl_P05", "SHM244_LatStop_L_Bl_P06", "SHM244_LatStop_L_Bl_P07", "SHM244_LatStop_L_Bl_P08", "SHM244_LatStop_L_Bl_P09", "SHM244_LatStop_L_Bl_P10", "SHM244_LatStop_L_Bl_P11", "SHM244_LatStop_L_Br_P12", "SHM244_LatStop_L_Br_P13", "SHM244_LatStop_L_Br_P14", "SHM244_LatStop_L_Br_P15", "SHM244_LatStop_L_Br_P16", "SHM244_LatStop_L_Bl_P18", "SHM244_LatStop_L_Bl_P19", "SHM244_LatStop_L_Bl_P20", "SHM244_LatStop_L_Bl_P21", "SHM244_LatStop_L_Bl_P22", "SHM244_LatStop_L_Br_P23", "SHM244_LatStop_R_Br_P00", "SHM244_LatStop_R_Br_P01", "SHM244_LatStop_R_Br_P03", "SHM244_LatStop_R_Br_P04", "SHM244_LatStop_R_Bl_P05", "SHM244_LatStop_R_Bl_P06", "SHM244_LatStop_R_Bl_P07", "SHM244_LatStop_R_Bl_P09", "SHM244_LatStop_R_Bl_P10", "SHM244_LatStop_R_Br_P11
+[idle] G244I {"src": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/Phase275Support/Idle/af_Stand_Idle_NaturalBaseline_Phase275", "out": "/Game/GraceRanger/SHME/Animations/V244/SHM244_Idle_Weighted", "frames": 367, "seconds": 12.2, "cfg": {"base_src": "/Game/GraceRanger/SHME/Animations/Stops/SHM_A_CP2_Jog_Fwd_Stop", "base_last": true, "onset": 1.0, "seconds": 12.0, "close
+[idledb] "entries": ["SHM244_Idle_Weighted"]
+GEN244_DONE
+C1_DONE
+[walkdb] WALKDB244 {"PSD_LB_WalkLoops": {"paths": ["/Game/GraceRanger/Animations/LocomotionBehavior/PSD_LB_WalkLoops"], "n": 8, "entries": ["A_LB_Walk_FwdLeft", "A_LB_Walk_Left", "A_LB_Walk_BwdLeft", "A_LB_Walk_Bwd", "A_LB_Walk_BwdRight", "A_LB_Walk_Right", "A_LB_Walk_FwdRight", "A_LB_Walk_Fwd"], "schema": "PSS_Default"}, "PSD_Dense_Stand_Walk_Loops": {"paths": ["/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Walk_Loops", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/PSD_Dense_Stand_Walk_Loops", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Candidate/MotionMatching/Databases/Dense/PSD_Dense_Stand_Walk_Loops"], "n": 18, "entries": ["M_Neutral_Walk_Loop_B", "M_Neutral_Walk_Loop_BL", "M_Neutral_Walk_Loop_BR", "M_Neutral_Walk_Loop_F", "M_Neutral_Walk_Loop_FL", "M_Neutral_Walk_Loop_FR", "M_Neutral_Walk_Loop_LL", "M_Neutral_Walk_Loop_RL", "M_Neutral_Transition_Run_to_Walk_Rfoot", "M_Neutral_Transition_Run_to_Walk_Lfoot", "M_Neutral_Walk_Shuffle_LR_to_LL_Lfoot", "M_Neutral_Walk_Shuffle_LR_to_LL_Rfoot", "M_Neutral_Walk_Shuffle_RR_to_RL_Lfoot", "M_Neutral_Walk_Shuffle_RR_to_RL_Rfoot", "M_Neutral_Walk_Loop_F_L_20", "M_Neutral_Walk_Loop_F_R_20", "M_Neutral_Walk_Loop_RR_offset", "M_Neutral_Walk_Loop_LR_offset"], "schema": "PSS_Default"}, "PSD_Dense_Stand_Walk_Stops": {"paths": ["/Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Walk_Stops", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/PSD_Dense_Stand_Walk_Stops", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Candidate/MotionMatching/Databases/Dense/PSD_Dense_Stand_Walk_Stops"], "n": 26, "entries": ["M_Neutral_Walk_Stop_RR_Rfoot", "M_Neutral_Walk_Stop_RR_Lfoot", "M_Neutral_Walk_Stop_RL_Rfoot", "M_Neutral_Walk_Stop_RL_Lfoot", "M_Neutral_Walk_Stop_LR_Rfoot", "M_Neutral_Walk_Stop_LR_Lfoot", "M_Neutral_Walk_Stop_LL_Rfoot", "M_Neutral_Walk_Stop_LL_Lfoot", "M_Neutral_Walk_Stop_FR_Rfoot", "M_Neutral_Walk_Stop_FR_Lfoot", "M_Neutral_Walk_Stop_FL_Rfoot", "M_Neutral_Walk_Stop_FL_Lfoot", "M_Neutral_Walk_Stop_F_Rfoot", "M_Neutral_Walk_Stop_F_Lfoot", "M_Neutral_Walk_Stop_BR_Rfoot", "M_Neutral_Walk_Stop_BR_Lfoot", "M_Neutral_Walk_Stop_BL_Rfoot", "M_Neutral_Walk_Stop_BL_Lfoot", "M_Neutral_Walk_Stop_B_Rfoot", "M_Neutral_Walk_Stop_B_Lfoot", "M_Neutral_Stand_Turn_180_R", "M_Neutral_Stand_Turn_180_L", "M_Neutral_Stand_Turn_090_R", "M_Neutral_Stand_Turn_090_L", "M_Neutral_Stand_Turn_135_L", "M_Neutral_Stand_Turn_135_R"], "schema": "PSS_Stop"}, "PSD_SHM216_WalkLink": {"paths": ["/Game/GraceRanger/SHME/Animations/V216/PSD_SHM216_WalkLink"], "n": 4, "entries": ["SHM216_W2S_Lfoot_a", "SHM216_W2S_Lfoot_b", "SHM216_W2S_Rfoot_a", "SHM216_W2S_Rfoot_b"], "schema": "PSS_SHM215_WalkPush"}, "PSD_SHM_StartTransfer_R": {"paths": ["/Game/GraceRanger/SHME/Animations/StartTransfer/PSD_SHM_StartTransfer_R"], "n": 7, "entries": ["SHM_StartTransfer_BL_Lfoot", "SHM_S
+v212_warm_180700 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v244c1_j41_rl_p04_lat4_r1 | rows 402 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED candidate
+v244c1_j41_rl_p10_lat4_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v244c1_j42_lr_p10_lat4_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244c1_w42_id_idl4_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244c1_w43_idle_idl4_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244c1_taps_idl4_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v244c1_jstart_idl4_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 6 (worst 42) | by owner {'in-clip': 6} | FINISHED candidate
+v244c1_j40_rlw_idl4_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED candidate
+v244c1_gait_idl4_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 4 (worst 30) | by owner {'in-clip': 4} | FINISHED candidate
+v244c1_j42_lr_p10_all4_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244c1_taps_all4_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+C1_DONE
+[chooser] CHOOSER244 {"choosers": [{"node": "K2Node_EvaluateChooser2_0", "pins": [["execute", ""], ["ABP_GR_MotionMatchingBase_C", ""]]}]}
+[walkmet] WALKMET244 {"A_LB_Walk_Fwd": {"path": "/Game/GraceRanger/Animations/LocomotionBehavior/A_LB_Walk_Fwd", "frames": 206, "len_s": 6.833, "root_speed": 106.4, "root_dir": [0.0, 1.0, 0.0], "pelvis_yaw_p2p": 74.27, "chest_yaw_p2p": 45.85, "counter_rot_p2p": 81.59, "pelvis_z_p2p": 4.62, "pelvis_lat_p2p": 1.68, "pelvis_fwd_p2p": 4.13, "ball_l_z_min_max": [-2.0, 12.6], "ball_r_z": [-1.7, 10.8]}, "M_Ranger_Walk_Loop_F_PureForward_CWF": {"path": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/CharacterWorldFinal/WalkLoops/M_Ranger_Walk_Loop_F_PureForward_CWF", "frames": 121, "len_s": 4.0, "root_speed": 206.0, "root_dir": [0.0, 1.0, 0.0], "pelvis_yaw_p2p": 87.69, "chest_yaw_p2p": 86.49, "counter_rot_p2p": 104.76, "pelvis_z_p2p": 11.06, "pelvis_lat_p2p": 7.33, "pelvis_fwd_p2p": 5.38, "ball_l_z_min_max": [0.0, 16.9], "ball_r_z": [0.1, 16.3]}}
+C2_DONE
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-181958927692
+RELAUNCH f60 60 18:25:16
+v212_warm_182518 | rows 839 rate 60.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED production
+v244f60_j41_rl_p04_lat4_r1 | rows 804 rate 60.1/s | pops >25 m/s2: 13 (worst 45) | by owner {'in-clip': 13} | FINISHED candidate
+v244f60_j41_rl_p10_lat4_r1 | rows 819 rate 60.1/s | pops >25 m/s2: 16 (worst 37) | by owner {'in-clip': 16} | FINISHED candidate
+v244f60_j42_lr_p10_lat4_r1 | rows 819 rate 60.1/s | pops >25 m/s2: 11 (worst 43) | by owner {'in-clip': 11} | FINISHED candidate
+v244f60_j41_rl_p10_o_r1 | rows 819 rate 60.1/s | pops >25 m/s2: 16 (worst 37) | by owner {'in-clip': 16} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-183124422952
+RELAUNCH f20 20 18:36:42
+v212_warm_183644 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244f20_j41_rl_p10_lat4_r1 | rows 273 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244f20_j41_rl_p04_lat4_r1 | rows 268 rate 20.1/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+v244f20_j41_rl_p10_o_r1 | rows 273 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-184228615579
+RELAUNCH f120 120 18:47:50
+v212_warm_184758 | rows 1679 rate 120.1/s | pops >25 m/s2: 13 (worst 56) | by owner {'in-clip': 13} | FINISHED production
+v244f120_j41_rl_p10_lat4_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 10 (worst 93) | by owner {'in-clip': 10} | FINISHED candidate
+v244f120_j41_rl_p10_o_r1 | rows 1558 rate 120.1/s | pops >25 m/s2: 10 (worst 93) | by owner {'in-clip': 10} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-185708366862
+RELAUNCH freal real 19:02:26
+v212_warm_190228 | rows 337 rate 24.8/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244freal_j41_rl_p04_lat4_r1 | rows 469 rate 34.9/s | pops >25 m/s2: 4 (worst 36) | by owner {'in-clip': 4} | FINISHED candidate
+v244freal_j41_rl_p10_lat4_r1 | rows 430 rate 34.2/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+v244freal_j42_lr_p10_lat4_r1 | rows 392 rate 29.5/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v244freal_j41_rl_p10_lat4_r2 | rows 419 rate 31.2/s | pops >25 m/s2: 3 (worst 34) | by owner {'in-clip': 3} | FINISHED candidate
+v244freal_w43_idle_idl4_r1 | rows 726 rate 37.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-190901382351
+RELAUNCH fend 30 19:14:19
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v244_walkbk.json", "existing": 1, "new": 0}
+[walkdry] G244W {"src": "/Game/GraceRanger/Animations/LocomotionBehavior/A_LB_Walk_Fwd", "frames": 206, "len_s": 6.833, "cfg": {"dry_run": true, "yaw_scale": 0.65}, "before": {"pelvis_yaw_p2p": 12.12, "chest_yaw_p2p": 16.26, "counter_p2p": 26.18}, "after": {"pelvis_yaw_p2p": 7.88, "chest_yaw_p2p": 16.26, "counter_p2p": 22.58, "foot_err_max": 0.0, "chest_yaw_change_max": 0.0}, "leg": {"l": {"axis_jump_deg": 5.2, "hinge_min": 1.0, "backward": 0}, "r": {"axis_jump_deg": 8.0, "hinge_min": 1.0, "backward": 0}}, "mode": "dry"}
+AB_SAFE_REFUSED: 2 A/B processes, 0 pending runner jobs
+AB_SAFE_REFUSED: 2 A/B processes, 0 pending runner jobs
+WALK244_DONE
+v212_warm_191421 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v244cap_j41_rl_p10_lat4S_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v244cap_j41_rl_p10_oS_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v244cap_j41_rl_p10_lat4D_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v244cap_j41_rl_p10_oD_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED production
+v244cap_j42_lr_p10_lat4D_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244cap_j42_lr_p10_oD_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244cap_j41_rl_p10_lat4G_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v244cap_j41_rl_p10_oG_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v212_warm_191925 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v244capi_w43_idle_idl4D_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244capi_w43_idle_idl4S_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+FPS244_DONE
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_p10_lat4S_dense.png 21 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_p10_lat4D_dense.png 21 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_p10_lat4G_dense.png 21 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_r10_lat4D_dense.png 23 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_p10_oS_dense.png 21 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_p10_oD_dense.png 21 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_p10_oG_dense.png 21 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\lat_r10_oD_dense.png 23 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\idle_w43_idl4D.png 40 tiles
+CROPSTRIP Saved\Codex\SHME_V244_20261101\sheets\idle_w43_idl4S.png 40 tiles
+13
+[walkdry2] "before": {"pelvis_yaw_p2p": 12.12, "chest_yaw_p2p": 16.26, "counter_p2p": 26.18}, "after": {"pelvis_yaw_p2p": 7.88, "chest_yaw_p2p": 8.94, "counter_p2p": 15.44, "foot_err_max": 0.0, "chest_yaw_change_max": 4.05, "head_yaw_change_max": 0.0}, "leg": {"l": {"axis_jump_deg": 5.2, "hinge_min": 1.0, "backward": 0}, "r": {"axis_jump_deg": 8.0, "hinge_min": 1.0, "backward": 0}}, "mode": "dry"}
+v212_warm_192140 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v244walk_w42_id_walk4_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244walk_gait_walk4_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 3 (worst 71) | by owner {'in-clip': 3} | FINISHED candidate
+v244walk_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 1 (worst 71) | by owner {'in-clip': 1} | FINISHED production
+v244walkcap_w42_id_walk4S_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244walkcap_w42_id_oS_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 1 (worst 81) | by owner {'in-clip': 1} | FINISHED production
+v244walkcap_w42_id_walk4D_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v244walkcap_w42_id_oD_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 1 (worst 66) | by owner {'in-clip': 1} | FINISHED production
+WALK2_DONE
+[promote lat4] 19:27:24
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v244_prom.json", "existing": 2, "new": 0}
+PROMOTE244 {"rollback": false, "idle_part": false, "reloaded": ["ABP_GR_MotionMatching", "ABP_GR_MotionMatchingBase", "DA_SHM_Response_Default"], "compile": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", [], "<BlueprintStatus.BS_UP_TO_DATE: 3>"], "ok": true, "saved": true, "now": {"base_LatStop": "PSD_SHM244_LatStop.PSD_S", "child_LatStop": "PSD_SHM244_LatStop.PSD_S", "IdleOn": 0.0}, "dirty": []}
+[verify] "ALL_OK": true
+dirty after reload []
+QUIT_EDITOR requested
+cat: /c/Users/berat/AppData/Local/Temp/claude/C--Users-berat-OneDrive-Documents-Unreal-Projects-ActionAdventureMovementS/5f49a232-b001-47ad-8881-1eb04d9cb1c5/scratchpad/throttle.py: No such file or directory
+TIMEOUT waiting for throttle-193310412553
+RELAUNCH fprod 30 19:38:39
+[probe] PROBE243 {"abp_base": {"SHM242_DB_LatStop": "PSD_SHM244_LatStop", "SHM242_IdleOn": "0.0", "SHM242_IdleDB": "None"}, "abp_child": {"SHM242_DB_LatStop": "PSD_SHM244_LatStop", "SHM242_IdleOn": "0.0", "SHM242_IdleDB": "None"}, "pawn_base": {"GR242_TurnSettleGate": true, "GR243_TurnNeedsLook": true, "anim_class": "ABP_GR_MotionMatching_C' (0x0000024FFA65"}, "pawn_child": {"GR242_TurnSettleGate": true, 
+v212_warm_193842 | rows 419 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v244prod_j41_rl_p04_o_r1 | rows 402 rate 30.1/s | pops >25 m/s2: 1 (worst 28) | by owner {'in-clip': 1} | FINISHED production
+v244prod_j41_rl_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v244prod_j42_lr_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244prod_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244prod_gait_o_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244prod_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v244prod_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 4 (worst 42) | by owner {'in-clip': 4} | FINISHED production
+v244prod_wdiag_o_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 1 (worst 26) | by owner {'in-clip': 1} | FINISHED production
+v244prod_j40_rlw_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED production
+v244prod_w43_idle_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+PROMOTE244_DONE
