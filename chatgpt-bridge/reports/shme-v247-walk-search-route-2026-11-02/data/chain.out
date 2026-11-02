@@ -1,0 +1,68 @@
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v247_rcrm.json", "existing": 1, "new": 0}
+[rcost remove] RCOST246 {"clip": "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/CharacterWorldFinal/WalkLoops/M_Ranger_Walk_Loop_F_PureForward_CWF", "tracks_before": ["Footstep Left", "Footstep Right", "CharacterWorldFinal_PureForwardWalk", "SHME_V246_Cost"], "remove": true, "saved
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v247_dcrm.json", "existing": 5, "new": 0}
+[dcost remove] DCOST246 {"dry": false, "cost_addend": 6.0, "clips": ["/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/Phase27Support/WalkLoops/M_Neutral_Walk_Loop_F_L_20_Phase27Support", "/Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/Phase275Support/W
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v247_abp.json", "existing": 2, "new": 0}
+[walkroute] WALKROUTE247 {"successor": "K2Node_IfThenElse_78", "kept_links": 0, "target_in_links": 2, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "defaults": {"WalkOn": 0.0, "WalkDB": "PSD_LB_WalkLoops.PSD_LB_WalkLo"}, "dirty": []}
+[verify] "ALL_OK": true
+v212_warm_023149 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v247wr_w42_id_wr_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v247wr_taps_wr_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr_gait_wr_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr_wdiag_wr_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr_wstart_wr_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr_w43_idle_wr_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr_w42_id_wr_r2 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv247_wrreal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH wrreal real 02:41:22
+v212_warm_024124 | rows 431 rate 31.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v247wrreal_w42_id_wr_r1 | rows 719 rate 36.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wrreal_w42_id_wr_r2 | rows 730 rate 36.4/s | pops >25 m/s2: 1 (worst 30) | by owner {'in-clip': 1} | FINISHED candidate
+v247wrreal_taps_wr_r1 | rows 583 rate 37.4/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+v247wrreal_wdiag_wr_r1 | rows 478 rate 35.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wrreal_gait_wr_r1 | rows 705 rate 37.0/s | pops >25 m/s2: 6 (worst 39) | by owner {'in-clip': 6} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv247_wr60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH wr60 60 02:49:10
+v212_warm_024913 | rows 839 rate 60.1/s | pops >25 m/s2: 2 (worst 85) | by owner {'in-clip': 2} | FINISHED production
+v247wr60_w42_id_wr_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v247wr60_taps_wr_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 4 (worst 46) | by owner {'in-clip': 4} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv247_wrend.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH wrend 30 02:57:17
+v247wrcap_w42_id_wrS_r1 | rows 617 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wrcap_w42_id_wrD_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wrcap_w42_id_oS_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v247wrcap_w42_id_oD_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+WR247_DONE
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v247_abp2.json", "existing": 2, "new": 0}
+[walkroute2] Traceback (most recent call last):
+AssertionError: hook branch not found
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v247_abp3.json", "existing": 2, "new": 0}
+[walkroute2] Traceback (most recent call last):
+AssertionError: ('condition', [('/Game/GraceRanger/Experimental/BodyInertia/Sandbox/Animations/ABP_GR_MotionMatchingBase.ABP_GR_MotionMatchingBase:Update_MotionMatching.K2Node_CommutativeAssociativeBinaryOperator_195', 'ReturnValue')])
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v247_abp4.json", "existing": 2, "new": 0}
+[walkroute2] WALKROUTE247B {"reloaded": ["ABP_GR_MotionMatchingBase", "ABP_GR_MotionMatching"], "branch": "K2Node_IfThenElse_79", "condition_after": ["K2Node_CommutativeAssociativeBinaryOperator_196"], "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": []}
+[verify] "ALL_OK": true
+v212_warm_030647 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v247wr2_w42_id_wr_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr2_w42_id_wr_r2 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr2_taps_wr_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr2_gait_wr_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr2_wdiag_wr_r1 | rows 418 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr2_w43_idle_wr_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v247wr2_wstart_wr_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv247_wr2real.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH wr2real real 03:14:13
+v212_warm_031414 | rows 397 rate 29.2/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
