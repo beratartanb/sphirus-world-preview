@@ -1,0 +1,504 @@
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_rm.json", "existing": 5, "new": 0}
+[rm] RM249 {"comp": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "hold": "K2Node_CommutativeAssociativeBinaryOperator_420", "snapshot": {"next": ["K2Node_VariableSet_31"], "fe_value": ["RootMotionFromEverything"], "mo_value": ["RootMotionFromMontagesOnly"]}, "entry": {"old_first": ["K2Node_VariableSet_27"], "mode": "InterruptOnDatabaseChangeAndInvalidateContinuingPose"}, "pawn": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "pawn_child": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "ok": true, "saved": true, "knobs": {"SHM249_RM": "0.0", "SHM248_On": "1.0"}, "dirty": []}
+[verify] "bad": [] "ALL_OK": true 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_a60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH a60 60 13:08:49
+v212_warm_130851 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249a60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 15 (worst 52) | by owner {'in-clip': 15} | FINISHED candidate
+v249a60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 22 (worst 52) | by owner {'in-clip': 22} | FINISHED production
+v249a60_j45_sl2_rmOW_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 50) | by owner {'in-clip': 18} | FINISHED candidate
+v249a60_j45_sl2_rmFP_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 17 (worst 48) | by owner {'in-clip': 17} | FINISHED candidate
+v249a60_j45_sl2_rmSW_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v249a60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 14 (worst 54) | by owner {'in-clip': 13, 'montage': 1} | FINISHED candidate
+v249acap_j45_sl2_rmS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_rc.json", "existing": 6, "new": 0}
+[rootcurves] ROOTCURVES249 {"dry": false, "clips": {"SHM248_Jog_Start_TurnL090_crop": {"n": 29, "fwd_end": 0.0, "right_end": -102.9, "fwd_mid": 0.0, "right_mid": -26.7, "curves": ["shm226_v", "shm226_vl", "shm226_w", "shm238_turn", "shm238_w", "shm241_syaw", "shm241_sw", "SHM249_RX", "SHM249_RY"]}, "SHM248_Jog_Start_TurnL135_crop": {"n": 31, "fwd_end": -82.2, "right_end": -82.2, "fwd_mid": -25.6, "right_mid": -22.2, "curves": ["shm226_v", "shm226_vl", "shm226_w", "shm238_turn", "shm238_w", "shm241_syaw", "shm241_sw", "SHM249_RX", "SHM249_RY"]}, "SHM248_Jog_Start_TurnL180_crop": {"n": 31, "fwd_end": -116.3, "right_end": -0.0, "fwd_mid": -33.9, "right_mid": -0.0, "curves": ["shm226_v", "shm226_vl", "shm226
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_servo.json", "existing": 2, "new": 0}
+[servo] SERVO249 {"reloaded": ["ABP_GR_MotionMatching", "ABP_GR_MotionMatchingBase"], "engine_gate": "K2Node_CallFunction_1837", "servo": {"after": "K2Node_VariableSet_44", "next": ["K2Node_IfThenElse_3"]}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knobs": {"SHM249_RM": "0.0", "SHM249_Lead": "2.0", "SHM248_On": "1.0"}, "ok": true, "saved": true, "dirty": []}
+[verify] "bad": [] "ALL_OK": true 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_b60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH b60 60 13:21:46
+AB_SAFE_REFUSED: 1 A/B processes, 0 pending runner jobs
+TB249_60
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_breal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH breal real 13:24:02
+v212_warm_132404 | rows 455 rate 33.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249breal_j45_sl2_rm_r1 | rows 587 rate 38.2/s | pops >25 m/s2: 7 (worst 50) | by owner {'in-clip': 7} | FINISHED candidate
+v249breal_j45_sl2_rm_r2 | rows 563 rate 36.2/s | pops >25 m/s2: 4 (worst 58) | by owner {'in-clip': 4} | FINISHED candidate
+v249breal_j45_sl2_rm_r3 | rows 596 rate 38.3/s | pops >25 m/s2: 3 (worst 36) | by owner {'in-clip': 3} | FINISHED candidate
+v249breal_j45_sl2_rm_r4 | rows 587 rate 37.8/s | pops >25 m/s2: 3 (worst 33) | by owner {'in-clip': 3} | FINISHED candidate
+v249breal_j45_sl2_o_r1 | rows 563 rate 36.2/s | pops >25 m/s2: 2 (worst 34) | by owner {'in-clip': 2} | FINISHED production
+v249breal_j45_sl2_o_r2 | rows 564 rate 36.2/s | pops >25 m/s2: 3 (worst 34) | by owner {'in-clip': 3} | FINISHED production
+TB249_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_c60.log
+TIMEOUT waiting for throttle-132901348301
+RELAUNCH c60 60 13:34:19
+v212_warm_133421 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249c60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 22 (worst 52) | by owner {'in-clip': 22} | FINISHED candidate
+v249c60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 50) | by owner {'in-clip': 18} | FINISHED production
+v249c60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 19 (worst 70) | by owner {'in-clip': 19} | FINISHED candidate
+TC249_DONE
+[footfix dry] FOOTFIX249 {"dry": true, "target": 27.0, "clips": {"SHM232_IS_af_Loco_Jog_Bwd_Start_AAMS": {"l": {"f0": [83.4, 27.0], "min": [25.0, -27.7], "mean": [62.4, 8.9], "max": [84.9, 28.5]}, "r": {"f0": [84.3
+TD249_DONE
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_foot.json", "existing": 22, "new": 0}
+[footfix] "saved": 22 
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_servo2.json", "existing": 2, "new": 0
+[servo2] Traceback (most recent call last):
+AssertionError: ('servo set nodes', None, None)
+SERVO2_ABORT
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_servo2b.json", "existing": 2, "new": 
+[servo2] SERVO249B {"reloaded": ["ABP_GR_MotionMatchingBase", "ABP_GR_MotionMatching"], "servo2": {"make_vector": "K2Node_CallFunction_1930", "x_old": "K2Node_CallFunction_1926"}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knobs": {"SHM249_RM": "0.0", "SHM249_Lead": "1.0", "SHM249_Kp": "0.35"}, "ok": true, "saved": true, "dirty": []}
+[verify] "bad": [] "ALL_OK": true 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_e60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH e60 60 13:46:52
+v212_warm_134655 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249e60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249e60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 51) | by owner {'in-clip': 16} | FINISHED production
+v249e60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 20 (worst 69) | by owner {'in-clip': 20} | FINISHED candidate
+v249e60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 19 (worst 48) | by owner {'in-clip': 19} | FINISHED production
+v249e60_j45_sl_rm_r1 | rows 838 rate 60.1/s | pops >25 m/s2: 15 (worst 50) | by owner {'in-clip': 15} | FINISHED candidate
+v249ecap_j45_sl2_rmS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249ecap_j45_sl2_rmD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249ecap_j45_sl2_oD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 52) | by owner {'in-clip': 16} | FINISHED production
+TE249_60
+dirty after reload []
+QUIT_EDITOR requested
+no editor to quit
+RUNNER_READY shmv249_f0.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH f0 60 14:19:43
+[footpivot dry] FOOTPIVOT249 {"dry": true, "zb": -0.86, "clips": {"SHM232_IS_af_Loco_Jog_Bwd_Start_AAMS": {"l": {"fixed": 27, "nf": 55, "f0": [83.4, 34.9], "mean": [62.4, 43.6], "min_ball_z": -0.9, "floor_ball_travel
+TF249_DONE
+[footpivot dry] FOOTPIVOT249 {"dry": true, "zb": -0.86, "clips": {"SHM232_IS_af_Loco_Jog_Bwd_Start_AAMS": {"l": {"fixed": 27, "nf": 55, "f0": [83.4, 34.9], "mean": [62.4, 43.6], "min_ball_z": -0.9, "floor_ball_travel
+TF249B_DONE
+dirty after reload []
+QUIT_EDITOR requested
+[restore] RESTORE249 {"apply": true, "ok": 22, "bad": []}
+no editor to quit
+RUNNER_READY shmv249_g0.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH g0 60 14:23:45
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_pivot.json", "existing": 22, "new": 0
+[footpivot] Traceback (most recent call last): Error('LEG_GUARD_FAIL %s %s: %s' % (label or seq.get_name(), json_safe(m), '; '.join(bad))) Error: LEG_GUARD_FAIL SHME V2.49 ball-pivot stance repair {"l": {"hinge_min": 0.963, "axis_min": 0.956, "backward_frames": 0, "twisted_frames": 0, "axis_jump_deg": 66.5, "ref_jump_deg": 0.0, "len_change": 0.0, "foot_err": 0.0}, "r": {"hinge_min": 0.948, "axis_min": 0.955, 
+PIVOT_ABORT
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_pivot3.json", "existing": 22, "new": 
+[footpivot] Traceback (most recent call last): Error('LEG_GUARD_FAIL %s %s: %s' % (label or seq.get_name(), json_safe(m), '; '.join(bad))) Error: LEG_GUARD_FAIL SHM_JogQ_af_Loco_Jog_Start_TurnL045_Lfoot_AAMS {"l": {"hinge_min": 1.0, "axis_min": 1.0, "backward_frames": 0, "twisted_frames": 0, "axis_jump_deg": 11.0, "ref_jump_deg": 17.1, "len_change": 0.0, "foot_err": 0.0}, "r": {"hinge_min": 1.0, "axis_min": 1
+PIVOT_ABORT
+TH249_DONE
+TH249B_DONE
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_pivot4.json", "existing": 22, "new": 
+[footpivot] "saved": 22 "skipped": [] 
+CLIPDUMP249 {"anim_instance_set_root_motion_mode": true, "anim_instance_methods_root": ["set_root_motion_mode"], "abp_ro
+[verify] "bad": [] "ALL_OK": true 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_g60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH g60 60 15:58:25
+v212_warm_155827 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249g60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 19 (worst 52) | by owner {'in-clip': 19} | FINISHED candidate
+v249g60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 20 (worst 52) | by owner {'in-clip': 20} | FINISHED production
+v249g60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 17 (worst 74) | by owner {'in-clip': 17} | FINISHED candidate
+v249g60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED production
+v249gcap_j45_sl2_rmS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 22 (worst 52) | by owner {'in-clip': 22} | FINISHED candidate
+v249gcap_j45_sl2_rmD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+[restore2] RESTORE249 {"apply": true, "ok": 22, "bad": []}
+no editor to quit
+RUNNER_READY shmv249_i0.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH i0 60 16:39:27
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_foot3.json", "existing": 22, "new": 0
+[footfix3] "saved": 22 
+CLIPDUMP249 {"anim_instance_set_root_motion_mode": true, "anim_instance_methods_
+[verify] "bad": [] "ALL_OK": true 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_i60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH i60 60 16:42:56
+v212_warm_164258 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249i60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v249i60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 52) | by owner {'in-clip': 16} | FINISHED production
+v249i60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 20 (worst 69) | by owner {'in-clip': 20} | FINISHED candidate
+v249i60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 19 (worst 48) | by owner {'in-clip': 19} | FINISHED production
+v249i60_j45_sl_rm_r1 | rows 838 rate 60.1/s | pops >25 m/s2: 15 (worst 52) | by owner {'in-clip': 15} | FINISHED candidate
+v249icap_j45_sl2_rmS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v249icap_j45_sl2_rmD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v249icap_j45_sl2_oD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED production
+TI249_60
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_ireal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH ireal real 16:55:12
+v212_warm_165514 | rows 386 rate 28.4/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249ireal_j45_sl2_rm_r1 | rows 508 rate 33.1/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED candidate
+v249ireal_j45_sl2_rm_r2 | rows 505 rate 32.6/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v249ireal_j45_sl2_rm_r3 | rows 513 rate 33.0/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+v249ireal_j45_sl2_rm_r4 | rows 566 rate 36.4/s | pops >25 m/s2: 5 (worst 32) | by owner {'in-clip': 5} | FINISHED candidate
+v249ireal_j45_sl2_rm_r5 | rows 567 rate 36.4/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED candidate
+v249ireal_j45_sl2_o_r1 | rows 560 rate 36.0/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED production
+v249ireal_j45_sl2_o_r2 | rows 560 rate 36.0/s | pops >25 m/s2: 5 (worst 34) | by owner {'in-clip': 5} | FINISHED production
+v249ireal_j45_sl_rm_r1 | rows 477 rate 35.2/s | pops >25 m/s2: 4 (worst 35) | by owner {'in-clip': 4} | FINISHED candidate
+v249ireal_jstart_rm_r1 | rows 952 rate 36.7/s | pops >25 m/s2: 5 (worst 35) | by owner {'in-clip': 5} | FINISHED candidate
+v249ireal_jstart_o_r1 | rows 918 rate 35.4/s | pops >25 m/s2: 8 (worst 32) | by owner {'in-clip': 8} | FINISHED production
+v249ireal_taps_rm_r1 | rows 553 rate 35.4/s | pops >25 m/s2: 2 (worst 27) | by owner {'in-clip': 2} | FINISHED candidate
+v249ireal_wstart_rm_r1 | rows 934 rate 36.0/s | pops >25 m/s2: 1 (worst 31) | by owner {'in-clip': 1} | FINISHED candidate
+v249ireal_w43_idle_rmi_r1 | rows 704 rate 36.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249ireal_taps_rmi_r1 | rows 536 rate 34.4/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249ireal_j40_rlw_rmi_r1 | rows 428 rate 34.1/s | pops >25 m/s2: 1 (worst 36) | by owner {'in-clip': 1} | FINISHED candidate
+v249ireal_j40_rlw_rm_r1 | rows 438 rate 34.9/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_i30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH i30 30 17:06:53
+v212_warm_170655 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249i30_j45_sl2_rm_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v249i30_j45_sl2_o_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED production
+v249i30_jstart_rm_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249i30_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v249i30_taps_rm_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_wstart_rm_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_w42_id_rm_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_gait_rm_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_j41_rl_p10_rm_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 5} | FINISHED candidate
+v249i30_j42_lr_p10_rm_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_w43_idle_rm_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_w43_idle_rmi_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i30_taps_rmi_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v249i30_jstart_rmi_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED candidate
+v249i30_j40_rlw_rmi_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 71) | by owner {'in-clip': 5} | FINISHED candidate
+v249i30_j40_rlw_rm_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 72) | by owner {'in-clip': 5} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_i20.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH i20 20 17:18:59
+v212_warm_171902 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249i20_j45_sl2_rm_r1 | rows 318 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249i20_j45_sl2_o_r1 | rows 318 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249i20_jstart_rm_r1 | rows 526 rate 20.0/s | pops >25 m/s2: 3 (worst 27) | by owner {'in-clip': 3} | FINISHED candidate
+v249i20_w43_idle_rmi_r1 | rows 398 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_i120.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH i120 120 17:24:42
+v212_warm_172445 | rows 1679 rate 120.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 10} | FINISHED production
+v249i120_j45_sl2_rm_r1 | rows 1918 rate 120.1/s | pops >25 m/s2: 14 (worst 85) | by owner {'in-clip': 14} | FINISHED candidate
+v249i120_j45_sl2_o_r1 | rows 1918 rate 120.1/s | pops >25 m/s2: 17 (worst 92) | by owner {'in-clip': 17} | FINISHED production
+v249i120_jstart_rm_r1 | rows 3166 rate 120.0/s | pops >25 m/s2: 28 (worst 100) | by owner {'in-clip': 28} | FINISHED candidate
+v249i120_w43_idle_rmi_r1 | rows 2398 rate 120.1/s | pops >25 m/s2: 8 (worst 86) | by owner {'in-clip': 8} | FINISHED candidate
+TI249_DONE
+dirty after reload []
+QUIT_EDITOR requested
+[restore10] RESTORE249 {"apply": true, "ok": 10, "bad": []}
+no editor to quit
+RUNNER_READY shmv249_j60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH j60 60 17:35:31
+[verify] "bad": [] "ALL_OK": true 
+v212_warm_173604 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249j60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 69) | by owner {'in-clip': 21} | FINISHED candidate
+v249j60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 19 (worst 48) | by owner {'in-clip': 19} | FINISHED production
+v249j60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_jreal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH jreal real 17:43:11
+v212_warm_174314 | rows 413 rate 30.4/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249jreal_jstart_rm_r1 | rows 847 rate 32.8/s | pops >25 m/s2: 7 (worst 39) | by owner {'in-clip': 7} | FINISHED candidate
+v249jreal_jstart_o_r1 | rows 876 rate 33.8/s | pops >25 m/s2: 6 (worst 28) | by owner {'in-clip': 6} | FINISHED production
+v249jreal_j45_sl2_rm_r1 | rows 518 rate 33.4/s | pops >25 m/s2: 4 (worst 29) | by owner {'in-clip': 4} | FINISHED candidate
+v249jreal_j45_sl2_rm_r2 | rows 513 rate 33.0/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED candidate
+v249jreal_j45_sl2_rm_r3 | rows 519 rate 33.4/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_j30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH j30 30 17:49:48
+v212_warm_174950 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249j30_jstart_rm_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249j30_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v249j30_taps_rm_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249j30_wstart_rm_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249j30_j41_rl_p10_rm_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 5} | FINISHED candidate
+v249j30_j41_rl_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 5 (worst 79) | by owner {'in-clip': 5} | FINISHED production
+v249j30_j40_rlw_rm_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 71) | by owner {'in-clip': 5} | FINISHED candidate
+v249j30_j40_rlw_rmi_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 8 (worst 35) | by owner {'in-clip': 8} | FINISHED candidate
+TJ249_DONE
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_turndone.json", "existing": 2, "new":
+[turndone] TURNDONE249 {"reloaded": ["ABP_GR_MotionMatching", "ABP_GR_MotionMatchingBase"], "hold_users": 1, "turndone": ["K2Node_VariableSet_202"], "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": ["DA_SHM_Response_Default"]}
+[verify] "bad": ["v226:pie_or_dirty"] "ALL_OK": false 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_k60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH k60 60 17:58:35
+v212_warm_175837 | rows 839 rate 60.1/s | pops >25 m/s2: 2 (worst 85) | by owner {'in-clip': 2} | FINISHED production
+v249k60_j45_sl2_rm_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249k60_jstart_rm_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 69) | by owner {'in-clip': 21} | FINISHED candidate
+v249k60_j40_rlw_rmi_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 14 (worst 40) | by owner {'in-clip': 14} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_kreal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH kreal real 18:05:06
+v212_warm_180508 | rows 412 rate 30.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249kreal_j45_sl2_rm_r1 | rows 498 rate 32.3/s | pops >25 m/s2: 3 (worst 29) | by owner {'in-clip': 3} | FINISHED candidate
+v249kreal_j45_sl2_rm_r2 | rows 520 rate 33.5/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v249kreal_j45_sl2_rm_r3 | rows 519 rate 33.5/s | pops >25 m/s2: 2 (worst 29) | by owner {'in-clip': 2} | FINISHED candidate
+v249kreal_jstart_rm_r1 | rows 864 rate 33.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249kreal_j40_rlw_rmi_r1 | rows 419 rate 33.4/s | pops >25 m/s2: 2 (worst 38) | by owner {'in-clip': 2} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_k30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH k30 30 18:11:07
+v212_warm_181109 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249k30_j45_sl2_rm_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v249k30_jstart_rm_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249k30_j40_rlw_rmi_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 71) | by owner {'in-clip': 5} | FINISHED candidate
+v249k30_j41_rl_p10_rm_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 5 (worst 66) | by owner {'in-clip': 5} | FINISHED candidate
+TK249_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_l60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH l60 60 18:17:18
+v212_warm_181721 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249l60_jstart_rmh_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 69) | by owner {'in-clip': 21} | FINISHED candidate
+v249l60_j45_sl2_rmh_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v249l60_jstart_rmhi_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 19 (worst 59) | by owner {'in-clip': 19} | FINISHED candidate
+v249l60_w43_idle_rmhi_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_l30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH l30 30 18:25:07
+v212_warm_182510 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249l30_jstart_rmh_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249l30_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED production
+v249l30_j41_rl_p10_rmh_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 6 (worst 47) | by owner {'in-clip': 6} | FINISHED candidate
+v249l30_j41_rl_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 5 (worst 79) | by owner {'in-clip': 5} | FINISHED production
+v249l30_j40_rlw_rmhi_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 5 (worst 71) | by owner {'in-clip': 5} | FINISHED candidate
+v249l30_j40_rlw_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 45) | by owner {'in-clip': 6} | FINISHED production
+v249l30_taps_rmhi_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v249l30_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249l30_w43_idle_rmhi_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249l30_w43_idle_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249l30_wstart_rmhi_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+v249l30_gait_rmhi_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 4 (worst 30) | by owner {'in-clip': 4} | FINISHED candidate
+v249l30_w42_id_rmhi_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249l30_j42_lr_p10_rmhi_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_lreal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH lreal real 18:36:04
+v212_warm_183605 | rows 390 rate 28.7/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249lreal_j45_sl2_rmhi_r1 | rows 523 rate 33.4/s | pops >25 m/s2: 3 (worst 37) | by owner {'in-clip': 3} | FINISHED candidate
+v249lreal_j45_sl2_rmhi_r2 | rows 501 rate 32.4/s | pops >25 m/s2: 3 (worst 32) | by owner {'in-clip': 3} | FINISHED candidate
+v249lreal_j45_sl2_rmhi_r3 | rows 514 rate 33.1/s | pops >25 m/s2: 4 (worst 31) | by owner {'in-clip': 4} | FINISHED candidate
+v249lreal_jstart_rmhi_r1 | rows 853 rate 32.9/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+v249lreal_taps_rmhi_r1 | rows 515 rate 33.1/s | pops >25 m/s2: 1 (worst 29) | by owner {'in-clip': 1} | FINISHED candidate
+v249lreal_j40_rlw_rmhi_r1 | rows 425 rate 33.9/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249lreal_w43_idle_rmhi_r1 | rows 657 rate 33.6/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+TL249_DONE
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_restgate.json", "existing": 2, "new":
+[restgate] RESTGATE249 {"reloaded": ["ABP_GR_MotionMatching", "ABP_GR_MotionMatchingBase"], "wired": {"turndone_next": ["K2Node_VariableSet_202"], "entry_branch": "K2Node_IfThenElse_84"}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "ok": true, "saved": true, "dirty": ["DA_SHM_Response_Default"]}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_n30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH n30 30 18:43:57
+[verify] "bad": [] "ALL_OK": true 
+v212_warm_184424 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249n30_j41_rl_p10_rmh_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249n30_j40_rlw_rmh_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+v249n30_j45_sl2_rmh_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v249n30_jstart_rmh_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249n30_taps_rmh_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_nreal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH nreal real 18:50:33
+v212_warm_185035 | rows 375 rate 27.6/s | pops >25 m/s2: 1 (worst 30) | by owner {'in-clip': 1} | FINISHED production
+v249nreal_j45_sl2_rmh_r1 | rows 497 rate 32.3/s | pops >25 m/s2: 3 (worst 28) | by owner {'in-clip': 3} | FINISHED candidate
+v249nreal_j45_sl2_rmh_r2 | rows 474 rate 30.6/s | pops >25 m/s2: 3 (worst 31) | by owner {'in-clip': 3} | FINISHED candidate
+v249nreal_j45_sl2_rmh_r3 | rows 495 rate 31.9/s | pops >25 m/s2: 1 (worst 34) | by owner {'in-clip': 1} | FINISHED candidate
+v249nreal_j41_rl_p10_rmh_r1 | rows 394 rate 31.4/s | pops >25 m/s2: 1 (worst 25) | by owner {'in-clip': 1} | FINISHED candidate
+v249nreal_jstart_rmh_r1 | rows 816 rate 31.5/s | pops >25 m/s2: 6 (worst 38) | by owner {'in-clip': 6} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_n60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH n60 60 18:57:10
+v212_warm_185712 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249n60_j45_sl2_rmh_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 19 (worst 52) | by owner {'in-clip': 19} | FINISHED candidate
+v249n60_jstart_rmh_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 69) | by owner {'in-clip': 21} | FINISHED candidate
+TN249_DONE
+v249precap_j45_sl2_oG_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v249precap_j45_sl2_oG_r1 INVALID_FPS fixed=0.000 n=929
+v249precap_j45_sl2_oS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v249precap_j45_sl2_oS_r1 INVALID_FPS fixed=0.000 n=929
+v249precap_j45_sl2_oD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 52) | by owner {'in-clip': 16} | FINISHED production
+FPSCHECK v249precap_j45_sl2_oD_r1 INVALID_FPS fixed=0.000 n=929
+TPRE249_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_m0.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH m0 60 20:04:32
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_t2bias.json", "existing": 2, "new": 0
+[t2bias] T2BIAS249 {"bias": -0.5, "L": [-2.0, -0.5], "R": [-2.0, -0.5], "dirty": []}
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_prom.json", "existing": 2, "new": 0}
+[promote] PROMOTE249 {"P": {"turn": true}, "reloaded": [], "compile": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", [], "<BlueprintStatus.BS_UP_TO_DATE: 3>"], "ok": true, "saved": true, "now": {"SHM249_RM": "1.0", "SHM248_HoldT": "0.0", "SHM242_IdleOn": "0.0", "SHM242_IdleDB": "None"}, "child_rm": 1.0, "dirty": []}
+[verify] "bad": [] "ALL_OK": true 
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_p60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH p60 60 20:07:05
+v212_warm_200707 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249p60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED production
+v249p60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 69) | by owner {'in-clip': 21} | FINISHED production
+v249p60_w43_idle_o_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED production
+v249p60_taps_o_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 5 (worst 61) | by owner {'in-clip': 5} | FINISHED production
+v249p60_j45_sl_o_r1 | rows 838 rate 60.1/s | pops >25 m/s2: 15 (worst 50) | by owner {'in-clip': 15} | FINISHED production
+v249pcap_j45_sl2_oS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED production
+v249pcap_j45_sl2_oD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED production
+v249pcap_j45_sl2_oG_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED production
+TM249_60
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_preal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH preal real 20:16:18
+v212_warm_201620 | rows 449 rate 33.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249preal_j45_sl2_o_r1 | rows 557 rate 35.8/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED production
+v249preal_j45_sl2_o_r2 | rows 547 rate 35.2/s | pops >25 m/s2: 2 (worst 31) | by owner {'in-clip': 2} | FINISHED production
+v249preal_j45_sl2_o_r3 | rows 554 rate 35.6/s | pops >25 m/s2: 3 (worst 35) | by owner {'in-clip': 3} | FINISHED production
+v249preal_j45_sl2_o_r4 | rows 536 rate 34.6/s | pops >25 m/s2: 5 (worst 32) | by owner {'in-clip': 5} | FINISHED production
+v249preal_jstart_o_r1 | rows 927 rate 35.7/s | pops >25 m/s2: 5 (worst 42) | by owner {'in-clip': 5} | FINISHED production
+v249preal_taps_o_r1 | rows 397 rate 25.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249preal_w43_idle_o_r1 | rows 713 rate 36.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249preal_j40_rlw_o_r1 | rows 447 rate 35.7/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249preal_wstart_o_r1 | rows 911 rate 35.1/s | pops >25 m/s2: 2 (worst 46) | by owner {'montage': 1, 'in-clip': 1} | FINISHED production
+v249preal_w42_id_o_r1 | rows 713 rate 35.4/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_p30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH p30 30 20:24:13
+v212_warm_202414 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_j45_sl2_o_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED production
+v249p30_jstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v249p30_taps_o_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_wstart_o_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_w42_id_o_r1 | rows 616 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_gait_o_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_j41_rl_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED production
+v249p30_j42_lr_p10_o_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_w43_idle_o_r1 | rows 598 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p30_j40_rlw_o_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_p20.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH p20 20 20:31:46
+v212_warm_203148 | rows 279 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249p20_j45_sl2_o_r1 | rows 318 rate 20.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249p20_jstart_o_r1 | rows 526 rate 20.0/s | pops >25 m/s2: 3 (worst 26) | by owner {'in-clip': 3} | FINISHED production
+v249p20_w43_idle_o_r1 | rows 398 rate 20.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_p120.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH p120 120 20:36:15
+v212_warm_203617 | rows 1679 rate 120.1/s | pops >25 m/s2: 10 (worst 56) | by owner {'in-clip': 10} | FINISHED production
+v249p120_j45_sl2_o_r1 | rows 1918 rate 120.1/s | pops >25 m/s2: 17 (worst 92) | by owner {'in-clip': 17} | FINISHED production
+v249p120_jstart_o_r1 | rows 3166 rate 120.0/s | pops >25 m/s2: 28 (worst 100) | by owner {'in-clip': 28} | FINISHED production
+v249p120_w43_idle_o_r1 | rows 2398 rate 120.1/s | pops >25 m/s2: 10 (worst 86) | by owner {'in-clip': 10} | FINISHED production
+TM249_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_q0.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH q0 60 20:44:38
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_t2bias2.json", "existing": 2, "new": 
+[t2bias2] T2BIAS249 {"bias": -2.0, "L": [-0.5, -2.0], "R": [-0.5, -2.0], "dirty": []}
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v249_fpoff.json", "existing": 2, "new": 0}
+[fpoff] FPOFF249 {"old_src": ["K2Node_CommutativeAssociativeBinaryOperator_15.ReturnValue"], "wired": "K2Node_VariableSet_96", "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knob": "0.0", "ok": true, "saved": true, "dirty": []}
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_q60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH q60 60 20:46:44
+v212_warm_204646 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249q60_j45_sl2_rmF_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 20 (worst 52) | by owner {'in-clip': 20} | FINISHED candidate
+v249q60_jstart_rmF_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 21 (worst 69) | by owner {'in-clip': 21} | FINISHED candidate
+v249q60_w43_idle_rmF_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED candidate
+v249q60_taps_rmF_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 5 (worst 61) | by owner {'in-clip': 5} | FINISHED candidate
+v249q60_j45_sl2_oFP_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 17 (worst 48) | by owner {'in-clip': 17} | FINISHED candidate
+v249qcap_j45_sl2_rmFG_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 19 (worst 52) | by owner {'in-clip': 19} | FINISHED candidate
+v249qcap_j45_sl2_rmFD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249qcap_j45_sl2_rmFS_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 19 (worst 51) | by owner {'in-clip': 19} | FINISHED candidate
+v249qcap_j45_sl2_oD_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED production
+v249qcap_j45_sl2_oG_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_q30.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH q30 30 20:58:38
+v212_warm_205840 | rows 419 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249q30_j45_sl2_rmF_r1 | rows 478 rate 30.1/s | pops >25 m/s2: 2 (worst 30) | by owner {'in-clip': 2} | FINISHED candidate
+v249q30_jstart_rmF_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 2 (worst 32) | by owner {'in-clip': 2} | FINISHED candidate
+v249q30_taps_rmF_r1 | rows 480 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249q30_wstart_rmF_r1 | rows 790 rate 30.0/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+v249q30_j41_rl_p10_rmF_r1 | rows 410 rate 30.1/s | pops >25 m/s2: 2 (worst 28) | by owner {'in-clip': 2} | FINISHED candidate
+v249q30_j40_rlw_rmF_r1 | rows 388 rate 30.1/s | pops >25 m/s2: 6 (worst 56) | by owner {'in-clip': 6} | FINISHED candidate
+v249q30_gait_rmF_r1 | rows 583 rate 30.1/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED candidate
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_qreal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH qreal real 21:05:38
+v212_warm_210539 | rows 453 rate 33.3/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v249qreal_j45_sl2_rmF_r1 | rows 559 rate 36.2/s | pops >25 m/s2: 5 (worst 31) | by owner {'in-clip': 5} | FINISHED candidate
+v249qreal_j45_sl2_rmF_r2 | rows 566 rate 36.5/s | pops >25 m/s2: 2 (worst 38) | by owner {'in-clip': 2} | FINISHED candidate
+v249qreal_j45_sl2_rmF_r3 | rows 558 rate 35.9/s | pops >25 m/s2: 6 (worst 35) | by owner {'in-clip': 6} | FINISHED candidate
+v249qreal_j45_sl2_rmF_r4 | rows 551 rate 35.5/s | pops >25 m/s2: 4 (worst 37) | by owner {'in-clip': 4} | FINISHED candidate
+v249qreal_jstart_rmF_r1 | rows 941 rate 36.3/s | pops >25 m/s2: 8 (worst 34) | by owner {'in-clip': 8} | FINISHED candidate
+TQ249_DONE
+[cmpprobe] CMPPROBE249 {"clips": {"SHM248_Jog_Start_TurnL090_crop": {"len": 0.933, "guid": "n/a", "RAW": [[0.0, -0.9, 8.7, 34.9, -0.9, 8.6, 34.5], [0.05, -0.9, 9.0, 36.3, -0.9, 8.5, 33.9], [0.1, -0.9, 9.6, 38.5, -0.9, 8.4, 33.6], [0.15, -1.0, 10.4, 43.1, -0.9, 8.4, 33.7], [0.2, -0.9, 11.5, 47.4, -0.9, 8.5, 34.
+TR249_DONE
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv249_s60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH s60 60 21:13:08
+v212_warm_211311 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v249s60_j45_sl2_oNI_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249s60_j45_sl2_oDB_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+v249s60_j45_sl2_oIV_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+TS249_DONE
