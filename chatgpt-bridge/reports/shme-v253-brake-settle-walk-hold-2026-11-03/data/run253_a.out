@@ -1,0 +1,24 @@
+no editor to quit
+RUNNER_NOT_READY shmv253_a60.log
+RELAUNCH a60 60 12:13:51
+RUNNER_NOT_READY_CAUSE  zen=1
+RELAUNCH_RETRY 1 12:13:52
+no editor to quit
+RUNNER_READY shmv253_a60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH a60 60 12:16:03
+v212_warm_121605 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v253a60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 79) | by owner {'in-clip': 16} | FINISHED production
+v253a60_jstart_oST_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 79) | by owner {'in-clip': 16} | FINISHED candidate
+v253a60_jstart_oSW_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 79) | by owner {'in-clip': 16} | FINISHED candidate
+v253a60_jstart_oORB_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 72) | by owner {'in-clip': 16} | FINISHED candidate
+v253a60_jstart_oNI_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 72) | by owner {'in-clip': 16} | FINISHED candidate
+v253a60_jstart_oDB_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 16 (worst 72) | by owner {'in-clip': 16} | FINISHED candidate
+v253a60_wstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 4 (worst 34) | by owner {'in-clip': 4} | FINISHED production
+v253a60_wstart_oSW_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 4 (worst 34) | by owner {'in-clip': 4} | FINISHED candidate
+v253a60_wstart_oFP0_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 3 (worst 35) | by owner {'in-clip': 3} | FINISHED candidate
+v253a60_wstart_oORB_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 4 (worst 34) | by owner {'in-clip': 4} | FINISHED candidate
+v253a60_w42_id_o_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 4 (worst 60) | by owner {'in-clip': 4} | FINISHED production
+v253a60_w42_id_oSW_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 4 (worst 60) | by owner {'in-clip': 4} | FINISHED candidate
+v253a60_w42_id_oFP0_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 4 (worst 60) | by owner {'in-clip': 4} | FINISHED candidate
+TA253_DONE

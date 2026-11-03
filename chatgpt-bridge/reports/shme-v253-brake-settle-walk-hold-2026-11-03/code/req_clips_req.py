@@ -1,0 +1,3 @@
+import builtins
+builtins.P253 = {"tag": "a", "jobs": [["SHM248_Jog_Start_TurnR180_crop", 0.55, 1.25], ["SHM237_JogStart_F_Lfoot", 0.80, 1.35], ["SHM_JogQ_A_LS_Jog_Left_Start", 0.95, 1.45], ["A_CT_Jog_FwdLeft", 0.0, 1.20], ["SHM252_StartTransfer_FR_Rfoot_APA", 0.0, 0.45], ["SHM_StartTransfer_FR_Rfoot", 0.0, 0.45], ["af_Stand_Idle_NaturalBaseline_Phase275", 57.6, 58.4], ["SHM245_Walk_Fwd", 0.0, 1.30], ["Walk_Loop_F_R_20_Phase275Support", 2.55, 3.15], ["HM_M_Neutral_Walk_Start_B_Rfoot", 0.0, 0.5]]}
+exec(compile(open(r"C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Tools/SHME_V253_20261104/probe253_clips.py", encoding="utf-8").read(), "probe253_clips.py", "exec"), {"__name__": "__job__"})

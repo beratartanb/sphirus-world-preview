@@ -1,0 +1,21 @@
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv253_d60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH d60 60 13:37:58
+v212_warm_133804 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v253d60_taps_o_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 7} | FINISHED production
+v253d60_taps_wh_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 47) | by owner {'in-clip': 7} | FINISHED candidate
+v253d60_taps_wh3_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 6 (worst 47) | by owner {'in-clip': 6} | FINISHED candidate
+v253d60_wstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 5 (worst 34) | by owner {'in-clip': 5} | FINISHED production
+v253d60_wstart_wh_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED candidate
+v253d60_wstart_wh3_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED candidate
+v253d60_w42_id_o_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+v253d60_w42_id_wh3_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+v253d60_j40_rlw_wh3_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 13 (worst 40) | by owner {'in-clip': 13} | FINISHED candidate
+v253d60_gait_fin_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED candidate
+v253d60_jstart_fin_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 14 (worst 47) | by owner {'in-clip': 14} | FINISHED candidate
+v253d60_j36_stop_fin_r1 | rows 454 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+v253d60_j45_sl2_fin_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 52) | by owner {'in-clip': 16} | FINISHED candidate
+v253d60_w43_idle_fin_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED candidate
+TD253_DONE

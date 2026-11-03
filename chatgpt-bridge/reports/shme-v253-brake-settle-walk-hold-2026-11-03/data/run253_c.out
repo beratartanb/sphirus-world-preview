@@ -1,0 +1,22 @@
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv253_c60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH c60 60 13:15:34
+v212_warm_131536 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 32) | by owner {'in-clip': 1} | FINISHED production
+v253c60_j36_stop_st_r1 | rows 454 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+v253c60_j36_stopb_st_r1 | rows 466 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+v253c60_j36_stopr_st_r1 | rows 694 rate 60.1/s | pops >25 m/s2: 9 (worst 32) | by owner {'in-clip': 9} | FINISHED candidate
+v253c60_jstart_st_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 14 (worst 47) | by owner {'in-clip': 14} | FINISHED candidate
+v253c60_j45_sl2_st_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 52) | by owner {'in-clip': 16} | FINISHED candidate
+v253c60_gait_st_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED candidate
+v253c60_taps_o_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 62) | by owner {'in-clip': 7} | FINISHED production
+v253c60_taps_weap3_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 6 (worst 88) | by owner {'in-clip': 6} | FINISHED candidate
+v253c60_taps_we_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 5 (worst 88) | by owner {'in-clip': 5} | FINISHED candidate
+v253c60_w43_idle_oi_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 3 (worst 39) | by owner {'in-clip': 3} | FINISHED candidate
+v253c60_w43_idle_wi3_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+v253c60_wstart_oi_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 2 (worst 34) | by owner {'in-clip': 2} | FINISHED candidate
+v253c60_wstart_wi3_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 1 (worst 31) | by owner {'in-clip': 1} | FINISHED candidate
+v253c60_gait_wi3_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 23 (worst 70) | by owner {'in-clip': 23} | FINISHED candidate
+v253c60_w42_id_wi3_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 2 (worst 26) | by owner {'in-clip': 2} | FINISHED candidate
+TC253_DONE
