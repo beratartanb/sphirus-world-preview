@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-03",
+  "verdict": "PARTIAL / REVIEW_REQUIRED",
+  "production_promoted": false,
+  "artist_grade": "NO",
+  "candidate": "/Game/Sphirus/CharacterLab/CostumeFit_20261103/Cloth/CA_C48_Henley_a4",
+  "reference": "Saved/Codex/CharacterRevision_20260930/reference/concept_guardian_approved.png",
+  "protected": {
+    "count": 51,
+    "changed": []
+  },
+  "findings": [
+    [
+      "Göğüs / kalıp",
+      "Göğüs altına fazla yapışan, her hacmi ayrı izleyen geçiş; koşu fazında bedenin kumaştan çıkması.",
+      "Sorun malzemeden önce geometride ve deformasyon payında. Simülasyon kapalı karşılaştırma da form sorununu koruyor.",
+      "Göğüs–kaburga geçişi yumuşatıldı; ön panele en fazla 1,45 cm ek hareket payı verildi. Örnek koşu pozundaki belirgin taşma kapandı.",
+      "PARTIAL: göğüs ortasındaki gerilim ve ayrı kalıp hissi sürüyor."
+    ],
+    [
+      "Bel / kalça üstü",
+      "Arka belde keskin çöküntüler, üst üste katlanmış sert bir etek bandı ve raf görünümü.",
+      "Eski idle pozunda yerleşmiş kalıp ve 7 mm dışa açılan etek ofseti. Görünüm, aktif kumaş hareketinin ürünü değil.",
+      "Gerçek oyuncu pozunda arka bel geçişi yeniden düzenlendi; küçük keskin katlar yumuşatıldı, etek bandının çıkıntısı azaltıldı. Anatomi değiştirilmedi.",
+      "PARTIAL: belirgin iyileşme; yakın planda etek ve yan dikiş işçiliği yeniden ele alınmalı."
+    ],
+    [
+      "Deformasyon",
+      "Koşu, kol hareketi ve koltuk altında aşırı sıkışan kıvrımlar.",
+      "Kıyafet kemik ağırlıkları ve geometrisi mevcut beden hareketini tam karşılamıyor. Eski düzeltici şekiller yeni kalıba yeniden uyarlanmış değil.",
+      "Mevcut ağırlıklar ve skeleton korundu; geometriye hareket payı eklendi. Yürüyüş, koşu, duruş, dönüş, eğilme, kol hareketi ve çömelme örnekleri incelendi.",
+      "PARTIAL: tam hareket aralığı ve düzeltici deformasyonlar tamamlanmadı."
+    ],
+    [
+      "Kumaş / materyal",
+      "Fazla iri, sert örgü ayrıntısı; gövdeye paralel tekrarlayan yapay izler.",
+      "Detay normalinin yüksek şiddeti, kaba normal ve mevcut UV/yüzey örüntüsü.",
+      "180 g/m² sınıfı pamuk–modal jersey hedeflendi. Ana detay normal şiddeti 0,85 → 0,28; yaklaşık ilmek aralığı 0,9 → 0,66 mm. Kaba normal 0,35 katsayısına indirildi, yansıma yumuşatıldı. Şorta da ayrı materyal adayları üretildi.",
+      "PARTIAL: yeni özgün tekstil bake’i, yaka/pat kalınlığı ve dikiş işçiliği eksik."
+    ],
+    [
+      "Chaos / teknik",
+      "Simülasyon açık görünmesine rağmen aç/kapa kıyaslarında bağımsız döküm oluşmuyor.",
+      "Mevcut StaticMeshImport bölüm yolunda Geometry Script ağırlık haritası taşınmıyor. MaxDistance alt değeri sıfır ve harita kayıp; kıyafet fiilen kemik deformasyonu izliyor.",
+      "Kaynak kodu ve runtime özellikleri denetlendi. Ayrı adaylarda fizik ayarı denendi; etkisiz sonuç kabul edilmedi.",
+      "FAIL: ağırlık haritası aktarımı ve gerçek kumaş simülasyonu onarılmadı. Python/Dataflow okuma denemesi editörü çökertti; üretim asset’i değiştirilmedi."
+    ]
+  ],
+  "art_gates": {
+    "HENLEY/TOP SILHOUETTE": "PARTIAL",
+    "TOP CONSTRUCTION": "FAIL",
+    "TOP MATERIAL": "PARTIAL",
+    "BOTTOM SILHOUETTE": "PARTIAL",
+    "BOTTOM CONSTRUCTION": "PARTIAL",
+    "BOTTOM MATERIAL": "PARTIAL",
+    "GARMENT DRAPE": "PARTIAL",
+    "CHARACTER MATERIAL COHERENCE": "PARTIAL",
+    "CONCEPT ART-DIRECTION MATCH": "PARTIAL",
+    "HERO CHARACTER QUALITY": "FAIL",
+    "ARTIST-GRADE": "NO"
+  },
+  "technical_gates": {
+    "Protected body/SHCB/skeleton/face/groom and production assets": "PASS: 51 file hashes unchanged",
+    "Matched still camera and body pose": "PASS: 10 pairs, numeric camera/FOV/pose equality",
+    "Garment source topology": "PASS: unchanged 8075 vertices / 14877 triangles; existing welded Chaos path reused",
+    "Staged motion review": "PARTIAL: six sequences plus selected crouch/deformation poses",
+    "Real gameplay camera": "PASS for matched static comparison only",
+    "Dynamic garment behavior": "FAIL: MaxDistance import unresolved",
+    "High-elevation shoulder and full-range extreme poses": "NOT_TESTED",
+    "Garment LOD 0/1/2 and sync": "NOT_TESTED",
+    "Measured GPU/RHI/streaming/performance": "NOT_TESTED",
+    "Keyboard/gamepad free gameplay": "NOT_TESTED",
+    "Saved final candidate": "PASS",
+    "Reopen after final save": "PASS: clean editor session; candidate, graph, mesh, collider and final materials loaded; no temporary stage actors"
+  },
+  "capture": {
+    "source": "actual BP_PBI_Player gameplay pawn; body retarget and postprocess retained",
+    "manual_exposure_bias": -1.2,
+    "white_balance_K": 6500,
+    "key_fill_rear_intensity": [
+      90,
+      28,
+      65
+    ],
+    "size": [
+      1600,
+      1600
+    ],
+    "fov_full": 31,
+    "fov_detail": 21,
+    "bloom": 0,
+    "motion_blur": 0,
+    "camera_and_pose_matched": true,
+    "gameplay_fov": 60,
+    "video": "six 3-second existing clips, time-dilated capture restored to game time; no device input"
+  },
+  "next_highest_value_correction": "Re-author chest/placket/neckline as a continuous sewn panel, then rebase garment-only deformation and repair Chaos weight transfer before promotion."
+}
