@@ -20,3 +20,4 @@ probe252_starttransfer.py, gen252_apa.py, apa252.py (in-game weight transfer at 
 
 ## Disk (closing)
 Retention dry run: free space 70.4 GB; nothing prunable outside the kept rounds (250-252) and the 2-day minimum age. Older V2.49 outputs leave the kept set and are pruned by the next --apply after they age.
+Retention fix: --min-age-days accepted only integers (int default); now float. Dry run with --min-age-days 0.3 lists ~13 GB of reproducible test output outside the kept rounds 250-252 (raw telemetry of rounds 245-249 and warm-up runs, old capture frames, already-published pub copies); reports, data/ and manifests/backups are never listed. Not applied in this round (permanent deletion is left to the user): python Tools/Retention/retention.py --apply --min-age-days 0.3

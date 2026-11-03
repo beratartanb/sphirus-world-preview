@@ -16,7 +16,7 @@ os.chdir(ROOT)
 APPLY = '--apply' in sys.argv
 def opt(name, d):
     return type(d)(sys.argv[sys.argv.index(name) + 1]) if name in sys.argv else d
-KEEP = opt('--keep-rounds', 3); AGE = opt('--min-age-days', 2) * 86400; NOW = time.time()
+KEEP = opt('--keep-rounds', 3); AGE = opt('--min-age-days', 2.0) * 86400; NOW = time.time()
 RX = re.compile(r'^v(\d{3})')
 def rnd(label):
     if label.startswith('v212_warm'): return None
