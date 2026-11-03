@@ -1,0 +1,29 @@
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv254_f60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH f60 60 19:21:43
+v212_warm_192145 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v254f60_s54_revR_rvc_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 54) | by owner {'in-clip': 19} | FINISHED candidate
+v254f60_s54_revL_rvc_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 26 (worst 50) | by owner {'in-clip': 26} | FINISHED candidate
+v254f60_s54_r90_rvc_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v254f60_s54_l90_rvc_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 52) | by owner {'in-clip': 19} | FINISHED candidate
+v254f60_s54_tap_rvc_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 20 (worst 52) | by owner {'in-clip': 20} | FINISHED candidate
+v254f60_s54_mid_rvc_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 48) | by owner {'in-clip': 19} | FINISHED candidate
+v254f60_s54_lr_rvc_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 20 (worst 57) | by owner {'in-clip': 20} | FINISHED candidate
+v254f60_s54_revR_rvc_r2 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 54) | by owner {'in-clip': 19} | FINISHED candidate
+v254f60_gait_o_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED production
+v254f60_gait_cam_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED candidate
+v254f60_taps_o_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 47) | by owner {'in-clip': 7} | FINISHED production
+v254f60_taps_cam_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 47) | by owner {'in-clip': 7} | FINISHED candidate
+v254f60_cam32_wallturn_o_r1 | rows 598 rate 60.1/s | pops >25 m/s2: 10 (worst 68) | by owner {'in-clip': 10} | FINISHED production
+v254f60_cam32_wallturn_cam_r1 | rows 598 rate 60.1/s | pops >25 m/s2: 10 (worst 68) | by owner {'in-clip': 10} | FINISHED candidate
+v254f60_s54_revR_rvcam_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 54) | by owner {'in-clip': 19} | FINISHED candidate
+v254f60_s54_revR_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 17 (worst 48) | by owner {'in-clip': 17} | FINISHED production
+v254fcap_s54_revR_prodS_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 17 (worst 48) | by owner {'in-clip': 17} | FINISHED candidate
+v254fcap_s54_revR_rvcS_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 54) | by owner {'in-clip': 19} | FINISHED candidate
+v254fcap_s54_r90_prodS_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 16 (worst 64) | by owner {'in-clip': 16} | FINISHED candidate
+v254fcap_s54_r90_rvcS_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED candidate
+v254fcap_s54_revR_rvcG_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 54) | by owner {'in-clip': 19} | FINISHED candidate
+v254fcap_s54_revR_rvcamG_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 54) | by owner {'in-clip': 19} | FINISHED candidate
+TF254_DONE

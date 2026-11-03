@@ -1,0 +1,26 @@
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv254_p60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH p60 60 21:09:34
+v212_warm_210936 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v254p60_s54_revR_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED production
+v254p60_s54_revL_o_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 18 (worst 48) | by owner {'in-clip': 18} | FINISHED production
+v254p60_s54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 17 (worst 51) | by owner {'in-clip': 17} | FINISHED production
+v254p60_s54_l90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED production
+v254p60_s54_tap_o_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 21 (worst 48) | by owner {'in-clip': 21} | FINISHED production
+v254p60_s54_mid_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 23 (worst 50) | by owner {'in-clip': 23} | FINISHED production
+v254p60_wstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED production
+v254p60_taps_o_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 47) | by owner {'in-clip': 7} | FINISHED production
+v254p60_gait_o_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 21 (worst 52) | by owner {'in-clip': 21} | FINISHED production
+v254p60_w43_idle_o_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED production
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv254_preal.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH preal real 21:19:55
+v212_warm_211957 | rows 469 rate 34.5/s | pops >25 m/s2: 0 (worst 0) | by owner {} | FINISHED production
+v254preal_s54_revR_o_r1 | rows 353 rate 33.5/s | pops >25 m/s2: 4 (worst 31) | by owner {'in-clip': 4} | FINISHED production
+v254preal_s54_r90_o_r1 | rows 345 rate 34.3/s | pops >25 m/s2: 6 (worst 34) | by owner {'in-clip': 6} | FINISHED production
+v254preal_s54_tap_o_r1 | rows 392 rate 38.1/s | pops >25 m/s2: 7 (worst 29) | by owner {'in-clip': 7} | FINISHED production
+TP254_DONE

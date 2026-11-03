@@ -1,0 +1,13 @@
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv254_b60.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH b60 60 16:11:05
+v212_warm_161108 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v254b60_s54_revR_o_r1 | rows 772 rate 60.1/s | pops >25 m/s2: 25 (worst 48) | by owner {'in-clip': 25} | FINISHED production
+v254b60_s54_revR_rv_r1 | rows 772 rate 60.1/s | pops >25 m/s2: 28 (worst 57) | by owner {'in-clip': 28} | FINISHED candidate
+v254b60_s54_revL_o_r1 | rows 772 rate 60.1/s | pops >25 m/s2: 25 (worst 48) | by owner {'in-clip': 25} | FINISHED production
+v254b60_s54_revL_rv_r1 | rows 772 rate 60.1/s | pops >25 m/s2: 28 (worst 57) | by owner {'in-clip': 28} | FINISHED candidate
+v254b60_s54_rev_rv_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 18 (worst 62) | by owner {'in-clip': 18} | FINISHED candidate
+v254b60_s54_revR_rvdb_r1 | rows 772 rate 60.1/s | pops >25 m/s2: 23 (worst 100) | by owner {'in-clip': 23} | FINISHED candidate
+TB254_DONE
