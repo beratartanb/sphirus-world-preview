@@ -72,21 +72,35 @@ Yöntem: her tur `Tools/PineForestRedesign_20261104/pfr_design.py <tur>` ile çe
 | Kıyı | Sandal iskelesi, kıyı kayaları, su kenarı döküntüsü; `MI_EX_Pond` koyu/mat değerler | P1_landing_boat, P1_landing_R90 |
 | Işık (p4 final) | Güneş −30/−60, 1500 lux, 5300 K, kaynak açısı 1.4, hacimsel 1.5; gök 1.3; sis 0.013 / düşüş 0.2 / başlangıç 200 / opaklık 0.6 / hacimsel sönüm 1.2 / albedo 235-226-212; Mie 0.035, anizotropi 0.4; PP: beyaz 6000 K, doygunluk 1.0, kontrast 1.06, filmic 0.8/0.55/0.26, bloom 0.35, vinyet 0.4, pozlama −0.45 EV | `design/p4/look_p4.json`, önceki değerler `design/look_backup_original.json` |
 
+### 4.1 Ayar turu p5 → p6 (kullanıcı "Tune further", 2026-11-05 02:07–02:50)
+
+Hedef: ev önünden suya bakışta beyaz güneş yansıması ve zemin doygunluğu (§7 #1, #4). p5 yalnız göl materyaliyle (pürüzlülük 0.6, spekülar 0.1) parlamayı azaltamadı ve 2.4 bin yapraklık yosun bandı görünmedi; **p6 kabul edildi:**
+
+| Değişiklik | p4 → p6 | Kanıt |
+|---|---|---|
+| Güneş spekülar ölçeği (`EX_PostRain_Sun.specular_scale`) | 1.0 → 0.55 — su yüzeyindeki beyaz leke kayboldu, difüz aydınlatma aynı | `cap/cmp_p6/cmp_P0_refuge_front_path.jpg`, `cmp_P1_landing_boat.jpg` |
+| `MI_EX_Pond` | pürüzlülük 0.45 → 0.7, spekülar 0.16 → 0.06, bulanıklık 5.5 → 7.0, dalga genliği 0.045 → 0.08, emilim 0.24/0.19/0.13 | aynı |
+| Yosun halısı bandı (rotalar boyunca 1,5–7,5 m, dışa doğru seyrelen, ölçek ×0.68) | +6.263 MossLeaf/MossClump instance (cepler 4.984 aynı) | `cap/cmp_p6/cmp_P3_glade_arrive.jpg`, `cmp_P1_landing_back.jpg`, `cap/walk_p5A_sheet.jpg` |
+| Landscape renk ofsetleri | Forest 0.62/0.58/0.48 → 0.52/0.62/0.42, Grass 0.66/0.62/0.52 → 0.55/0.68/0.44 (yosunlu yeşil döküm) | `cmp_P0_refuge_house_back.jpg` |
+| PP doygunluk | 1.0 → 1.06 | 24 yer ortalaması 0.234 → 0.249 (`perf/exposure_p6.json`) |
+
+Maliyet (rota A, aynı oturum içinde p4 ↔ p6): GPU p50 35.0 → 36.2 ms, p95 48.4 → 49.7; VRAM 6946 → 6985 MB (bütçe 7037, pay 52 MB). Diskten yeniden açılmış son ölçüm §6 "FINAL2".
+
 **Kapalı yol (dürüst):** PFP landscape materyaline geçip Forest/GroundPath/ForestField/WetPuddle katmanlarını boyamak UE 5.8 Python'da yapılamadı — `Landscape.target_layers` salt okunur, LayerInfo ataması yalnız Landscape modu arayüzünden; `land_trial.py` denemesi geri alındı, yeniden giydirme yolu seçildi. Kullanıcı bir kez Landscape modunda 6 PFP LayerInfo'sunu atarsa boya yolu (`paint_masks.py`) açılır.
 
 **Performans düzeltmesi (p2):** p1'de 12 satıcı 4K taraması doku havuzunu 77–323 MB aşırdı (her PIE karesinde kırmızı "texture pool exhausted" uyarısı); p2'de yalnız iki baskın set, 2K sahipli kopya olarak kaldı (§6).
 
 ## 5. Önce/sonra ve referans karşılaştırması
 
-Tüm FINAL kareleri kaydedilmiş haritanın **diskten yeniden açılmış** editör oturumundan (pfr_04, 2026-11-04 23:44–23:58), BEFORE ile aynı istasyon/poz/FOV/çözünürlük/kalite ayarlarında (PIE, HighResShot 1920×1080, gerçek GraceRanger kamerası, sabit adım 30). Işık ve pozlama bilinçli olarak değişti (§4 p4); karşılaştırmalar bunu içerir.
+İki final seti var: **FINAL** = p4 (2026-11-04 23:35 kaydı, pfr_04 temiz oturumu 23:44–23:58) ve **FINAL2** = p6 ayar turu (2026-11-05 02:26 kaydı, pfr_07 temiz oturumu 02:30–02:44, **geçerli üretim durumu**). Her ikisi de kaydedilmiş haritanın **diskten yeniden açılmış** editör oturumundan, BEFORE ile aynı istasyon/poz/FOV/çözünürlük/kalite ayarlarında (PIE, HighResShot 1920×1080, gerçek GraceRanger kamerası, sabit adım 30). Işık ve pozlama bilinçli olarak değişti (§4 p4, §4.1 p6); karşılaştırmalar bunu içerir.
 
-Kanıt: `cap/cmp_final_required/cmp_sheet.jpg` (zorunlu 7 bakış + 3 ek), `cap/cmp_final/sheet_P0P1.jpg`, `sheet_P2P3.jpg`, `sheet_D.jpg` (39 istasyon, ±90° ve geri bakışlar dahil), `cap/cmp_top/cmp_sheet.jpg` (üstten / eğik yerleşim), `cap/ref_vs_final/cmp_sheet.jpg` (referans ↔ final, 6 çift), ara turlar `cap/cmp_p2/`, `cap/cmp_p3/`, `cap/cmp_look_p3/`, `cap/cmp_look_p4/`; yürüyüş videoları `video/routeA_before_after_part*.avi`, `video/routeB_before_after_part*.avi` (BEFORE | FINAL yan yana, gerçek hız, aynı kare = aynı oyun zamanı).
+Kanıt (FINAL2): `cap/cmp_final2_required/cmp_sheet.jpg` (zorunlu 7 bakış + 3 ek), `cap/cmp_final2/sheet_P0P1.jpg`, `sheet_P2P3.jpg`, `sheet_D.jpg` (39 istasyon, ±90° ve geri bakışlar dahil), `cap/cmp_top2/cmp_sheet.jpg` (üstten / eğik yerleşim), `cap/ref_vs_final2/cmp_sheet.jpg` (referans ↔ final, 6 çift), p4 ↔ p6 `cap/cmp_p6/cmp_sheet.jpg`; FINAL (p4) setleri `cap/cmp_final*/`, `cap/cmp_top/`, `cap/ref_vs_final/`; ara turlar `cap/cmp_p2/`, `cap/cmp_p3/`, `cap/cmp_look_p3/`, `cap/cmp_look_p4/`, `cap/cmp_p5/`; yürüyüş videoları `video/routeA_before_after_final2_part*.avi`, `video/routeB_before_after_final2_part*.avi` (BEFORE | FINAL2 yan yana, gerçek hız, aynı kare = aynı oyun zamanı; p4 sürümü `video/route*_before_after_part*.avi`).
 
 | Zorunlu bakış | İstasyon | BEFORE → FINAL (görünen) | Durum |
 |---|---|---|---|
-| 1 Evden çıkış | P0_refuge_front_path | Kameranın önündeki köknar/fide duvarı gitti; su, sandal iskelesi ve iğne/döküntü zemin eğimle aşağıda okunuyor | PASS |
-| 2 Eve yaklaşma | P0_refuge_house_back | Veranda tam okunur; ön bahçe koyu toprak + koyu döküntü + basamak taşları (p1'deki genç çam perdesi p2'de temizlendi) | PASS |
-| 3 Evden suya iniş | P1_landing_from_veranda | Ortadaki genç çam kaldırıldı; su yüzeyi, sandal, kıyı kayaları ve kütük görünür | PASS |
+| 1 Evden çıkış | P0_refuge_front_path | Kameranın önündeki köknar/fide duvarı gitti; su, sandal iskelesi ve iğne/döküntü zemin eğimle aşağıda okunuyor; FINAL2'de su yüzeyindeki beyaz güneş lekesi yok | PASS |
+| 2 Eve yaklaşma | P0_refuge_house_back | Veranda tam okunur; ön bahçe koyu toprak + koyu döküntü + basamak taşları, FINAL2'de yosunlu yeşil döküm (p1'deki genç çam perdesi p2'de temizlendi) | PASS |
+| 3 Evden suya iniş | P1_landing_from_veranda | Ortadaki genç çam kaldırıldı; su yüzeyi, sandal, kıyı kayaları ve kütük görünür; FINAL2'de su koyu ve mat | PASS |
 | 4 Kıyıdan eve / ormana | P1_landing_back, P1_landing_fwd | Asit yeşili eğrelti duvarı yerine gövdeler, kaya dibi eğreltisi, döküntü; ileri bakışta köknar dalı yerine yosunlu kaya kütlesi | PASS |
 | 5 Ana orman patikası | P2_rockshelf_fwd, D08_narrows_fwd | Kameraya kapanan çalı yerine yosunlu uçurum kütlesi + iğne zemin; D08'de alt kat yeşillendi, sol önde fide kameraya yakın | PASS / PARTIAL (D08) |
 | 6 Ağaçlar arasından geri bakış | P3_glade_fwd, D11_saddle_fwd | Ortadaki genç çam gitti, ev gölün karşısında okunuyor; sırtta PFP çamları + yeşil alt kat | PASS |
@@ -97,10 +111,11 @@ Pozlama (ortalama parlaklık 0–255 / beyaz% / siyah% / doygunluk; `perf/exposu
 | Set | Ortalama | P0 | P1 | P2 | P3 |
 |---|---|---|---|---|---|
 | BEFORE (39) | 76 / 0.22 / 0.83 / 0.259 | 75 / 0.253 | 71 / 0.259 | 72 / 0.249 | 74 / 0.266 |
-| FINAL (39) | 80 / 0.30 / 0.11 / 0.263 | 75 / 0.244 | 76 / 0.285 | 75 / 0.233 | 79 / 0.175 |
+| FINAL p4 (39) | 80 / 0.30 / 0.11 / 0.263 | 75 / 0.244 | 76 / 0.285 | 75 / 0.233 | 79 / 0.175 |
+| **FINAL2 p6 (39)** | 80 / 0.28 / 0.15 / **0.281** | 74 / 0.263 | 74 / 0.310 | 75 / 0.243 | 79 / 0.179 |
 | Referans L_Showcase (26 kare) | 79 / 0.05 / 0.72 / 0.363 | — | — | — | — |
 
-Okuma: parlaklık referansla aynı banda geldi, ezik siyah oranı düştü; **doygunluk referansın altında kaldı** (0.26 ↔ 0.36). Fark içerik kaynaklı: referansın zemini yeşil sarmaşık/yosun halısı (~105 bin instance), bizimki kahverengi iğne/döküntü tabanı + 16 yosun cebi (bellek bütçesi, §6). Referans çiftlerinde (`cap/ref_vs_final`) kaya kütlesi, ışık yönü, döküntü zemini ve kaya grupları yakın; yeşil zemin halısı, berrak mavi-yeşil su ve referansın daha soğuk-nötr ışığı bizde yok (sıcak sabah hüzmesi tercih edildi, §2).
+Okuma: parlaklık referansla aynı banda geldi, ezik siyah oranı düştü; doygunluk p6 ayarıyla 0.26 → 0.28'e çıktı ama **referansın altında kaldı** (0.28 ↔ 0.36). Fark içerik kaynaklı: referansın zemini yeşil sarmaşık/yosun halısı (~105 bin instance), bizimki kahverengi iğne/döküntü tabanı + 16 yosun cebi (bellek bütçesi, §6). Referans çiftlerinde (`cap/ref_vs_final`) kaya kütlesi, ışık yönü, döküntü zemini ve kaya grupları yakın; yeşil zemin halısı, berrak mavi-yeşil su ve referansın daha soğuk-nötr ışığı bizde yok (sıcak sabah hüzmesi tercih edildi, §2).
 
 Üstten (`cap/cmp_top`): ev yeri ve göl yüzeyi aynı; kanopi tek aile; ev çevresinde SonoTree/fide kümeleri kuş bakışı açık yeşil lekeler olarak okunuyor (oyuncu kamerasından değil).
 
@@ -116,8 +131,10 @@ Okuma: parlaklık referansla aynı banda geldi, ezik siyah oranı düştü; **do
 | A | FINAL | 36.3 / 50.2 | 21.5 | 35.0 / 48.4 | 6946 / 7040 |
 | B (kapı→sırt) | BEFORE | 39.9 / 44.9 | 13.2 | 38.0 / 43.0 | 6610 / 7045 |
 | B | FINAL | 39.6 / 45.3 | 21.0 | 38.3 / 43.2 | 6933 / 7040 |
+| A | **FINAL2 (p6)** | 36.1 / 49.7 | 21.6 | 34.6 / 47.9 | 7017 / 7062 |
+| B | **FINAL2 (p6)** | 39.0 / 44.7 | 21.0 | 37.6 / 42.4 | 6999 / 7062 |
 
-Okuma: kare süresi GPU'ya bağlı ve pratikte değişmedi (A +0.6 ms p50 / +2.7 ms p95, B −0.3 / +0.4). Game thread istatistiğindeki artış bekleme kaynaklı: thread'in kendi işi (Exclusive/GameThread toplamı) 35.9 → 34.6 ms, en büyük tekil artış UI +1.7, TickActors +1.7, Animation +1.2 ms (`perf/final_A.json` kaynağı CSV). **VRAM +350 MB** (6946 / 7040 bütçe, 94 MB pay): yeni PFP foliage dokuları (pakette 325 doku, 567 MB yerleşik, 49'u 4K) — p1'deki 12 adet 4K landscape taraması p2'de 2K sahipli kopyaya indirildiği hâlde pay dar.
+FINAL2 = p6 ayar turu, pfr_07 temiz oturumu 02:37–02:44 (`perf/final2_A|B.json`). Okuma: kare süresi GPU'ya bağlı ve pratikte değişmedi (FINAL2 ↔ BEFORE: A +0.4 ms p50 / +2.2 ms p95, B −0.9 / −0.2); +6.3 bin yosun yaprağı ölçülebilir fark yaratmadı. VRAM FINAL2 7017 / 7062 MB (**pay 45 MB**, p4'te 94 MB); doku havuzu uyarısı FINAL2 A 5/16, B 14/16 kare (BEFORE 3/16, 12/16). Game thread istatistiğindeki artış bekleme kaynaklı: thread'in kendi işi (Exclusive/GameThread toplamı) 35.9 → 34.6 ms, en büyük tekil artış UI +1.7, TickActors +1.7, Animation +1.2 ms (`perf/final_A.json` kaynağı CSV). **VRAM +350 MB** (6946 / 7040 bütçe, 94 MB pay): yeni PFP foliage dokuları (pakette 325 doku, 567 MB yerleşik, 49'u 4K) — p1'deki 12 adet 4K landscape taraması p2'de 2K sahipli kopyaya indirildiği hâlde pay dar.
 
 Doku akış havuzu (`r.Streaming.PoolSize` 1000 MB, `ListTextures` yerleşik 1401 MB / diskte 4092 MB, 1267 doku; `perf/vram_probe_final.json`, `Saved/Profiling/MemReports/…23.57.17`): "texture pool exhausted" kırmızı uyarısı örneklenen yürüyüş karelerinde BEFORE A 3/16, B 12/16; FINAL A 0/16, B 14/16 — rota B'deki havuz taşması **bu geçişten önce de vardı**, rota A'da kayboldu. En büyük yerleşik dokular bu alanın dışında: `AAMS/Demo/UI/AAMS2_0_Logo` 6829×3076 sıkıştırmasız **3 × 83 MB**, Calysto `T_Black_Spruce_Leaves_01_B/ORD` 4K, `OakForestEnv/Landscape/T_Snow_N` 4K, Fishermans `T_Boat_DO` 4K. Ölçülen darboğazda yapılan düzeltme: landscape dokuları 2K sahipli kopya (p2). Önerilen, bu geçişin kapsamı dışında kalan düzeltme: AAMS demo logosunun referansını kaldırmak (~250 MB) ve OakForestEnv landscape dokularının yüklenme nedenini kapatmak; ardından havuz 1500 MB'a çıkarılabilir.
 
@@ -127,10 +144,10 @@ Donanım: RTX 4060 Laptop 8 GB, i7-13650HX, 32 GB (`hardware-quality-baseline-20
 
 Görsel onay kullanıcıya aittir; aşağıdakiler benim gördüğüm açıklar.
 
-1. **Zemin kimliği referansın gerisinde (en büyük açık):** referansın yeşil sarmaşık/yosun halısı ve boyalı patika katmanları bizde yok — PFP landscape materyali + boya yolu 5.8 Python'da kapalı (§4), yosun halısı bellek payı yüzünden 16 cep ile sınırlı. Doygunluk 0.26 ↔ 0.36. Kullanıcı Landscape modunda 6 PFP LayerInfo'sunu bir kez atarsa `paint_masks.py` boya yolu açılır; VRAM payı (94 MB) ek 4K içerik kaldırmaz, önce §6'daki dış tüketiciler alınmalı. REVIEW_REQUIRED.
+1. **Zemin kimliği referansın gerisinde (en büyük açık, p6 ile daraldı):** referansın yeşil sarmaşık/yosun halısı ve boyalı patika katmanları bizde yok — PFP landscape materyali + boya yolu 5.8 Python'da kapalı (§4); p6 rotalar boyunca 6,3 bin yapraklık yosun bandı + yeşil zemin dökümü ekledi, doygunluk 0.26 → 0.28 (referans 0.36). Kullanıcı Landscape modunda 6 PFP LayerInfo'sunu bir kez atarsa `paint_masks.py` boya yolu açılır; VRAM payı (45 MB) ek 4K içerik kaldırmaz, önce §6'daki dış tüketiciler alınmalı. REVIEW_REQUIRED.
 2. **Rota B doku havuzu taşması** geçiş öncesinden kalma; kırmızı uyarı editör PIE'de görünür, bazı dokular düşük mip'te kalabilir. Kapsam dışı düzeltme önerisi §6. PARTIAL.
 3. Yosun cepleri yakın mesafede yer yer "yapıştırılmış" okunuyor (P3_glade_back); ıslak çukurdaki basamak taşları fazla düzenli (rota A f02997). PARTIAL.
-4. Ev önünden suya bakışta su yüzeyinde parlak güneş yansıma lekesi (P0_refuge_front_path, P1_landing_from_veranda): güneş yaw'ı veya su pürüzlülüğü ile yumuşatılabilir; XR5 ışığında koyuydu (`cap/cmp_look_p4`). REVIEW_REQUIRED.
+4. ~~Ev önünden suya bakışta su yüzeyinde parlak güneş yansıma lekesi~~ — p6'da çözüldü (güneş spekülar ölçeği 0.55 + koyu/mat göl; `cap/cmp_p6/`, `cap/cmp_final2_required/`). PASS.
 5. D08_narrows_fwd'de sol önde fide kameraya yakın; D13_backyard'da yeni çalılar evin cephesine yakın. PARTIAL.
 6. Kuş bakışı SonoTree/fide kümeleri açık yeşil lekeler (`cap/cmp_top`); oyuncu kamerasında sorun değil. NOT: tasarım kararı, isteğe bağlı seyreltme.
 7. Göl çizgisi yeniden şekillendirilmedi (göl büyütme yasağı; yalnız kıyı giydirildi); ev yeri değişmedi. Bilinçli.
@@ -138,13 +155,13 @@ Görsel onay kullanıcıya aittir; aşağıdakiler benim gördüğüm açıklar.
 9. Kayıt adımında `MI_EX_PF_Landscape` (kullanılmayan deneme varlığı) bellekten silindi, kaydedilmedi; editör kapanışı bu kirli kayıt yüzünden 240 s sonra zorla kapatıldı (harita zaten kaydedilmişti). Diskten yeniden açılış iki kez doğrulandı: pfr_04 (39 istasyon + 2 yürüyüş) ve pfr_05 (yükleme sonrası kirli paket yok → Bridge dışa aktarımı); pfr_04'teki kirli harita bayrağı üst görünüm kamerasının spawn/destroy'undan geliyordu, yükleme kaynaklı değil.
 10. Fab galerisinin 9 görseli ve 3 videosu incelenmedi (§2).
 
-Kabul (kullanıcının 7 sorusuna benim cevabım, kanıtla): evden çıkış/yaklaşma/iniş/kıyı/patika/geri bakış/arka bağlantı — 7 bakışın 6'sı PASS, D08 PARTIAL (§5 tablo); oynanış rotaları gerçek karakterle PASS; performans değişmedi, bellek payı dar (PARTIAL); referansa görsel yakınlık kaya/ışık/döküntüde yakın, zemin halısında uzak (REVIEW_REQUIRED).
+Kabul (kullanıcının 7 sorusuna benim cevabım, kanıtla): evden çıkış/yaklaşma/iniş/kıyı/patika/geri bakış/arka bağlantı — 7 bakışın 6'sı PASS, D08 PARTIAL (§5 tablo); oynanış rotaları gerçek karakterle PASS (FINAL2'de de 10/10, hata yok); performans değişmedi, bellek payı dar (PARTIAL, 45 MB); referansa görsel yakınlık kaya/ışık/döküntüde yakın, zemin halısında p6 ile yaklaştı ama hâlâ uzak (REVIEW_REQUIRED).
 
 ## 9. Teslimat dosyaları (hepsi `Saved/Codex/PineForestRedesign_20261104/`)
 
 | Teslimat | Yol |
 |---|---|
-| Kaydedilmiş üretim haritası | `Content/GraceRanger/Maps/L_GR_SphirusHouse.umap` (2026-11-04 23:35, sha1 `0e550a00…`) + 52 sahipli paket (`Content/GraceRanger/Environment/Exterior20260921/{Materials,Foliage,Textures}/*_PF_*`, düzenlenen `MI_EX_Pond`, `MI_EX_Integration_Valley`, `MI_PR_*`) |
+| Kaydedilmiş üretim haritası | `Content/GraceRanger/Maps/L_GR_SphirusHouse.umap` (**2026-11-05 02:26, sha1 `4cb92457…`**, p6; önceki p4 kaydı 2026-11-04 23:35 `0e550a00…`) + 52 sahipli paket (`Content/GraceRanger/Environment/Exterior20260921/{Materials,Foliage,Textures}/*_PF_*`, düzenlenen `MI_EX_Pond`, `MI_EX_Integration_Valley`, `MI_PR_*`); p6 kaydı 6 paket (harita, `MI_EX_Pond`, `MI_EX_Integration_Valley`, `MI_EX_PF_Cliff`, `MI_EX_PF_DeadLeaves01/02`; `design/p6/promote.json`) |
 | Geri alma noktası | `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/pfr_world.json` + yedek kopyalar (§8) |
 | Referanslar, seçilen atmosfer | `ref/showcase/*.png`, `ref/showcase_sheet_A/B.jpg`, `ref/showcase_info.json`, `ref/fab_gallery_urls.txt`, `ref/board_sheet.jpg`; §2 tablosu |
 | Üstten yerleşim önce/sonra | `cap/cmp_top/cmp_sheet.jpg` (`cap/top_before`, `cap/top_final`) |
@@ -154,8 +171,10 @@ Kabul (kullanıcının 7 sorusuna benim cevabım, kanıtla): evden çıkış/yak
 | Performans | `perf/before_A|B.json`, `perf/final_A|B.json`, ara turlar `perf/after_p1_*`, `perf/after_p2_*`, pozlama `perf/exposure_*.json`, bellek `perf/vram_probe_final.json` |
 | Tasarım/uygulama kaydı | `design/p1..p4/*.json` (plan, foliage, yeni tipler, aktörler, materyaller, ışık, apply/promote çıktıları), `recon/*.json` |
 | Araçlar | `Tools/PineForestRedesign_20261104/` (`pfr_design.py`, `pfr_apply.py`, `promote_pfr.py`, `run_round.sh`, `run_p3.sh`, `run_final.sh`, `restart_editor.sh`, `export_bridge_pfr.py`, `make_videos.sh`, `ref_pairs.sh`, `compare_pairs.ps1`, `sheet.ps1`, probe'lar) |
-| ChatGPTBridge / GitHub | Bridge dışa aktarımı run `2026-11-05_001038_629813_e45c5f` (18 standart bakış, bu geçişin gerçek oyuncu-kamera pozlarından; temiz oturum pfr_05, kirli paket yok; `Saved/ChatGPTBridge/latest`, kontakt `cap/bridge_sheet.jpg`); GitHub `beratartanb/sphirus-world-preview` (**herkese açık** repo, AGENTS.md gereği): release `chatgpt-world-latest` (15 dosya) + connector aynası `chatgpt-bridge/latest/` (28 dosya) 2026-11-05 00:14; `LATEST.json` run_id doğrulaması aşağıda |
+| ChatGPTBridge / GitHub | Bridge dışa aktarımı (p6) run **`2026-11-05_022926_317220_e33187`** (18 standart bakış, bu geçişin gerçek oyuncu-kamera pozlarından; temiz oturum pfr_07, kirli paket yok; `Saved/ChatGPTBridge/latest`, kontakt `cap/bridge2_sheet.jpg`; p4 sürümü run `2026-11-05_001038_629813_e45c5f`, `cap/bridge_sheet.jpg`); GitHub `beratartanb/sphirus-world-preview` (**herkese açık** repo, AGENTS.md gereği): release `chatgpt-world-latest` (15 dosya) + connector aynası `chatgpt-bridge/latest/` (28 dosya) 2026-11-05 02:46; `LATEST.json` run_id doğrulaması aşağıda |
+
+Yayın doğrulaması: GitHub `chatgpt-bridge/latest/LATEST.json` → `run_id` = `2026-11-05_022926_317220_e33187`, `published_view_count` 18 (API ile okundu, 2026-11-05 02:47; p4 sürümü `2026-11-05_001038_629813_e45c5f` 00:15'te aynı şekilde doğrulanmıştı). Bu raporun yayın kopyası (README + `sheets/`, `reference/`, `perf/`, `tools/`, `video/`): `chatgpt-bridge/reports/exterior-pine-forest-redesign-2026-11-04/` (aynı herkese açık repo; `pub/` klasörünün kopyası, `publish_pfr_chunks.sh`; p6 güncellemesi aynı klasöre eklendi).
 
 ## 8. Geri alma
 
-Harita ve dokunulan 16 proje sahipli materyal örneği `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/pfr_world/` altında sha1 doğrulamalı yedekli (`pfr_world.json`); yeni oluşturulan paketler (`MI_EX_PF_*`, `FT_EX_PF_*`, `T_EX_PF_*`; manifestte "new") kayıt öncesi yoktu. Editör kapalıyken yedekleri aynı yollara kopyalamak ve "new" paketleri silmek üretim haritasını 2026-11-01 06:18 hâline (sha1 `6d3efa3a…`) döndürür. Satıcı paketlerine (PineForestPack, Environment_Set, Fishermans_Cabin, Calysto…) hiçbir yazma yapılmadı; bellekte kirlenen `MI_FallenNeedle` kayıt adımında diskten yeniden yüklendi (`design/p4/promote.json`).
+Harita ve dokunulan 16 proje sahipli materyal örneği `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/pfr_world/` altında sha1 doğrulamalı yedekli (`pfr_world.json`); yeni oluşturulan paketler (`MI_EX_PF_*`, `FT_EX_PF_*`, `T_EX_PF_*`; manifestte "new") kayıt öncesi yoktu. Editör kapalıyken yedekleri aynı yollara kopyalamak ve "new" paketleri silmek üretim haritasını 2026-11-01 06:18 hâline (sha1 `6d3efa3a…`) döndürür. p6 yerine p4 görünümüne dönmek için (harita `4cb92457…` → `0e550a00…`): editörde koşucuyla `pfr_apply.py` apply p4 `['newfol','mats','look']` + `promote_pfr.py` (tasarım dosyaları `design/p4/`). Satıcı paketlerine (PineForestPack, Environment_Set, Fishermans_Cabin, Calysto…) hiçbir yazma yapılmadı; bellekte kirlenen `MI_FallenNeedle` kayıt adımında diskten yeniden yüklendi (`design/p4/promote.json`).

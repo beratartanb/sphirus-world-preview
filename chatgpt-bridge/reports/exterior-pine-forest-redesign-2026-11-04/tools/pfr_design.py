@@ -227,6 +227,25 @@ for (cx, cy), r, dens, why in MOSS:
         sc = rng.uniform(lo, hi) * 0.72        # p2: the p1 moss read as neon fern-like clumps at x2-3; finer leaves
         add_new(ft, x, y, zf(x, y) + 0.5, yaw, sc, pr[0], pr[1]); moss_n += 1
 stats['moss_instances'] = moss_n
+# p5: continuous moss-leaf carpet band along the main routes (the reference floor is a green carpet, not pockets): 1.5-6.5 m off the
+# tread centre, density fading outward, finer scale; skips water, steep slopes, the house and the stone arc; capped
+band_n = 0; BAND_CAP = 7000
+for poly in MAIN:
+    for a, c in zip(poly, poly[1:]):
+        vx, vy = c[0] - a[0], c[1] - a[1]; L = math.hypot(vx, vy)
+        if L < 1: continue
+        ux, uy = vx / L, vy / L; nx, ny = -uy, ux
+        for s in range(0, int(L), 50):
+            for _ in range(24):   # p6: denser carpet (p5's 9 tries gave 2.4k leaves, barely visible)
+                if band_n >= BAND_CAP: break
+                d = rng.uniform(150, 750) * rng.choice((-1, 1)); fade = 1 - ((abs(d) - 150) / 600.0) ** 2
+                if rng.random() > 0.25 + 0.75 * fade: continue
+                x = a[0] + ux * s + nx * d + rng.uniform(-25, 25); y = a[1] + uy * s + ny * d + rng.uniform(-25, 25)
+                if rdist(x, y) < 130 or in_house(x, y, 60) or zf(x, y) < WATER + 8 or slope_deg(x, y) > 30 or not ring_inside(x, y): continue
+                mesh = rng.choice(['SM_MossLeaf_01', 'SM_MossLeaf_02', 'SM_MossLeaf_03', 'SM_MossLeaf_04', 'SM_MossLeaf_02', 'SM_MossClump01'])
+                ft = FT_OF_MESH[mesh]; lo, hi = PL.NEW_TYPES[ft][6]; yaw = rng.uniform(0, 360); pr = pitch_roll_for(x, y, yaw)
+                add_new(ft, x, y, zf(x, y) + 0.5, yaw, rng.uniform(lo, hi) * 0.68, pr[0], pr[1]); band_n += 1
+stats['moss_band_instances'] = band_n
 # needle litter + cones + branches + mushrooms + ground patches: causes = big trees near the viewed band (<= 28 m from a route)
 VIEW = lambda x, y: rdist_all(x, y) < 2800 and ring_inside(x, y) and zf(x, y) > WATER + 10 and not in_house(x, y, 40)
 needles = cones = branches = shrooms = 0
@@ -396,7 +415,8 @@ NEWTEX = {TXO + 'T_EX_PF_PineGround01_D': {'source': TX + 'T_PineGround01_D', 'm
           TXO + 'T_EX_PF_PineGround01_H': {'source': TX + 'T_PineGround01_H', 'max_size': 1024}, TXO + 'T_EX_PF_GroundForest01_D': {'source': TX + 'T_GroundForest01_D', 'max_size': 2048},
           TXO + 'T_EX_PF_GroundForest01_N': {'source': TX + 'T_GroundForest01_N', 'max_size': 2048}, TXO + 'T_EX_PF_GroundForest01_H': {'source': TX + 'T_GroundForest01_H', 'max_size': 1024}}
 MATS = {
-    MAT_DIR + 'MI_EX_Pond': {'scalar': {'Roughness': 0.45, 'Specular': 0.16, 'Murkiness': 5.5, 'Calm Normal Amplitude': 0.045}, 'vector': {'Absorption': [0.20, 0.165, 0.12, 1.0]}},
+    # p5: the sun highlight on the pond read as a white patch from the house (P0_refuge_front_path): rougher, less specular, more ripple
+    MAT_DIR + 'MI_EX_Pond': {'scalar': {'Roughness': 0.7, 'Specular': 0.06, 'Murkiness': 7.0, 'Calm Normal Amplitude': 0.08}, 'vector': {'Absorption': [0.24, 0.19, 0.13, 1.0]}},
     # the owned auto landscape instance re-skinned with the pack's ground scans (no painted layers are reachable from Python in 5.8):
     # Forest = needle floor under the canopy, Grass = forest soil with litter (replaces the lawn); matching height maps in the mask slots
     MAT_DIR + 'MI_EX_Integration_Valley': {
@@ -406,7 +426,8 @@ MATS = {
                     'Sand Color': VMA + 'T_VMA_BG_Sand_Color_2K', 'Sand Normal': VMA + 'T_VMA_BG_Sand_Normal_2K', 'Sand Mask': VMA + 'T_VMA_BG_Sand_Mask_2K',
                     'Cliff Color': VMA + 'T_VMA_BG_Cliff_Color_2K', 'Cliff Normal': VMA + 'T_VMA_BG_Cliff_Normal_2K', 'Cliff Mask': VMA + 'T_VMA_BG_Cliff_Mask_2K'},
         'scalar': {'Forest Tiling': 420.0, 'Grass Tiling': 440.0, 'Sand Tiling': 400.0, 'Cliff Tiling': 600.0, 'Macro Variation Contrast': 0.22, 'Forest Specular': 0.2},
-        'vector': {'Forest Color Offset': [0.62, 0.58, 0.48, 1.0], 'Grass Color Offset': [0.66, 0.62, 0.52, 1.0], 'Sand Color Offset': [0.5, 0.45, 0.38, 1.0], 'Cliff Color Offset': [0.5, 0.54, 0.53, 1.0]}},
+        # p5: floor chroma toward the reference (0.26 -> 0.36 measured gap): a mossy-green cast on the two floor sets instead of the neutral brown
+        'vector': {'Forest Color Offset': [0.52, 0.62, 0.42, 1.0], 'Grass Color Offset': [0.55, 0.68, 0.44, 1.0], 'Sand Color Offset': [0.5, 0.45, 0.38, 1.0], 'Cliff Color Offset': [0.5, 0.54, 0.53, 1.0]}},
 }
 LITTER_MI = {MAT_DIR + 'MI_EX_PF_DeadLeaves01': '/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_DeadLeaves01', MAT_DIR + 'MI_EX_PF_DeadLeaves02': '/Game/PineForestPack/Materials/MaterialInstances/Foliage/MI_DeadLeaves02'}
 NEWMATS = {   # owned instances created from vendor instances (never modified vendor assets)
@@ -418,11 +439,12 @@ NEWMATS = {   # owned instances created from vendor instances (never modified ve
 LOOK = {   # PF morning on the existing owners (XR5 FINAL v2 is the fallback); measured at the 24 stations before adoption
     # p4 (final): the p2/p3 haze muted everything (places mean 74 / sat 0.245 vs showcase 79 / 0.36; the restored XR5 light read crisper):
     # keep the PF sun direction / colour, bring the fog back to XR5's clarity, moderate god rays, full saturation, +0.15 EV
-    'sun': {'rot': [-30.0, -60.0], 'intensity': 1500.0, 'temperature': 5300.0, 'light_source_angle': 1.4, 'volumetric_scattering_intensity': 1.5},
+    # p6: the sun's specular highlight on the pond stayed a white patch after the water-material change -> the light's own specular scale
+    'sun': {'rot': [-30.0, -60.0], 'intensity': 1500.0, 'temperature': 5300.0, 'light_source_angle': 1.4, 'volumetric_scattering_intensity': 1.5, 'specular_scale': 0.55},
     'sky': {'intensity': 1.3},
     'fog': {'fog_density': 0.013, 'fog_height_falloff': 0.2, 'start_distance': 200.0, 'fog_max_opacity': 0.6, 'volumetric_fog_extinction_scale': 1.2, 'volumetric_fog_albedo': [235, 226, 212], 'volumetric_fog_scattering_distribution': 0.5},
     'atmos': {'mie_scattering_scale': 0.035, 'mie_anisotropy': 0.4},
-    'pp': {'white_temp': 6000.0, 'color_saturation': [1.0, 1.0, 1.0, 1.0], 'color_contrast': [1.06, 1.06, 1.06, 1.0], 'film_slope': 0.8, 'film_toe': 0.55, 'film_shoulder': 0.26, 'bloom_intensity': 0.35, 'vignette_intensity': 0.4, 'auto_exposure_bias': -0.45},
+    'pp': {'white_temp': 6000.0, 'color_saturation': [1.06, 1.06, 1.06, 1.0], 'color_contrast': [1.06, 1.06, 1.06, 1.0], 'film_slope': 0.8, 'film_toe': 0.55, 'film_shoulder': 0.26, 'bloom_intensity': 0.35, 'vignette_intensity': 0.4, 'auto_exposure_bias': -0.45},
 }
 
 # ---- p2: house-front sightline sweep (porch -> landing -> footpath, house_back / front_path stations): no sapling, juvenile, young
