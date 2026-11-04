@@ -1,0 +1,35 @@
+{
+  "components": {
+    "HairMain2": {
+      "owner": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Playable/BP_C49_Player",
+      "groom": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GR_C49_HairMain_h1.GR_C49_HairMain_h1",
+      "binding": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GB_C49_HairMain_h1.GB_C49_HairMain_h1"
+    },
+    "HairLoose": {
+      "owner": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Playable/BP_C49_Player",
+      "groom": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GR_C49_HairLoose_h1.GR_C49_HairLoose_h1",
+      "binding": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GB_C49_HairLoose_h1.GB_C49_HairLoose_h1"
+    },
+    "Face": {
+      "owner": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Playable/BP_C49_Player",
+      "anim_class": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Face/ABP_C49_Face_Rest2.ABP_C49_Face_Rest2_C"
+    },
+    "HenleyCloth": {
+      "owner": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Playable/BP_C49_Player",
+      "asset": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Cloth/CA_C49_Henley_b6",
+      "simulation": false
+    },
+    "ShortsCloth": {
+      "owner": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Playable/BP_C49_Player",
+      "asset": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Cloth/CA_C49_Shorts_s1",
+      "simulation": true
+    },
+    "Manny": {
+      "owner": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Playable/BP_C49_Player"
+    }
+  },
+  "errors": [],
+  "dirty_content": [],
+  "dirty_maps": [],
+  "world": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse"
+}

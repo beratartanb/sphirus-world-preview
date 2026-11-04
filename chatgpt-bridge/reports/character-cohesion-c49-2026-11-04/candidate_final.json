@@ -1,0 +1,52 @@
+{
+  "label": "final49",
+  "materials": false,
+  "disable_simulation": false,
+  "cloth_swap": {
+    "HenleyCloth": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Cloth/CA_C49_Henley_b6",
+    "ShortsCloth": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Cloth/CA_C49_Shorts_s1"
+  },
+  "face_anim_class": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Face/ABP_C49_Face_Rest2.ABP_C49_Face_Rest2_C",
+  "material_overrides": {
+    "Face": {
+      "0": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_0_l4",
+      "9": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_9_l4",
+      "10": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_10_l4",
+      "12": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_12_l4",
+      "13": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_13_l4",
+      "14": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_14_l4",
+      "3": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_3_l4",
+      "4": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Face_4_l4"
+    },
+    "Manny": {
+      "0": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_Manny_0_l4"
+    },
+    "HenleyCloth": {
+      "0": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_HenleyCloth_0_l4",
+      "1": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_HenleyCloth_1_l4",
+      "2": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_HenleyCloth_2_l4"
+    },
+    "ShortsCloth": {
+      "0": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_ShortsCloth_0_l4",
+      "1": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_ShortsCloth_1_l4",
+      "2": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Looks/MI_C49_ShortsCloth_2_l4"
+    }
+  },
+  "groom_swap": {
+    "HairMain2": {
+      "groom": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GR_C49_HairMain_h1.GR_C49_HairMain_h1",
+      "binding": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GB_C49_HairMain_h1.GB_C49_HairMain_h1",
+      "material": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/MI_C49_HairMain_h1"
+    },
+    "HairLoose": {
+      "groom": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GR_C49_HairLoose_h1.GR_C49_HairLoose_h1",
+      "binding": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/GB_C49_HairLoose_h1.GB_C49_HairLoose_h1",
+      "material": "/Game/Sphirus/CharacterLab/CharacterCohesion_C49_20261104/Hair/MI_C49_HairLoose_h1"
+    }
+  },
+  "simulation_overrides": {
+    "HenleyCloth": false,
+    "ShortsCloth": true
+  },
+  "use_candidate_game_mode": true
+}

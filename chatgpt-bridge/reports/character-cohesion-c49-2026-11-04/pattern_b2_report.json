@@ -1,0 +1,48 @@
+{
+  "repaired": [
+    {
+      "region": "side_-1",
+      "triangles": 27
+    },
+    {
+      "region": "side_1",
+      "triangles": 24
+    },
+    {
+      "region": "sleeve",
+      "triangles": 26
+    }
+  ],
+  "bindings": [
+    {
+      "kind": "hem",
+      "segments": 101,
+      "width_cm": 0.9,
+      "thickness_cm": 0.22
+    },
+    {
+      "kind": "cuff",
+      "segments": 21,
+      "width_cm": 1.5,
+      "thickness_cm": 0.22
+    },
+    {
+      "kind": "neck",
+      "segments": 101,
+      "width_cm": 1.15,
+      "thickness_cm": 0.22
+    },
+    {
+      "kind": "cuff",
+      "segments": 21,
+      "width_cm": 1.5,
+      "thickness_cm": 0.22
+    }
+  ],
+  "render_vertices": 8208,
+  "render_triangles": 15248,
+  "sim_vertices": 6414,
+  "sim_triangles": 12588,
+  "body_modified": false,
+  "weight_method": "8 closest garment samples, normalized up to 12 existing bones, shared across UV splits and bindings"
+}
