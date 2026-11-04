@@ -1,0 +1,441 @@
+{
+ "level": "/Game/PineForestPack/Levels/L_Showcase",
+ "load_ok": true,
+ "load_s": 0.0,
+ "world": "/Game/PineForestPack/Levels/L_Showcase.L_Showcase",
+ "sublevels": [
+  {
+   "package": "L_Showcase",
+   "visible": null
+  },
+  {
+   "package": "L_Lighting_Morning",
+   "visible": null
+  }
+ ],
+ "lights": {
+  "DirectionalLight": {
+   "class": "DirectionalLight",
+   "level": "L_Lighting_Morning",
+   "rot": [
+    18.98,
+    -33.85,
+    -55.0
+   ],
+   "intensity": 3.140000104904175,
+   "temp": 6500.0,
+   "use_temp": true,
+   "color": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "angle": 1.399999976158142,
+   "vol": 10.0,
+   "atmos_sun": true,
+   "mobility": "<ComponentMobility.MOVABLE: 2>"
+  },
+  "SkyAtmosphere": {
+   "class": "SkyAtmosphere",
+   "level": "L_Lighting_Morning",
+   "mie_scale": 0.1727380007505417,
+   "mie_aniso": 0.1385280042886734,
+   "rayleigh": 0.03310000151395798,
+   "aerial_scale": 1.0,
+   "height_fog_contrib": 1.0
+  },
+  "SkyLight": {
+   "class": "SkyLight",
+   "level": "L_Lighting_Morning",
+   "intensity": 1.0,
+   "real_time": true,
+   "source": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>",
+   "lower_hemi": true,
+   "vol": 1.0
+  }
+ },
+ "cameras": [
+  {
+   "label": "CineCameraActor0",
+   "class": "CineCameraActor",
+   "loc": [
+    10361,
+    -4326,
+    335
+   ],
+   "rot": [
+    0.0,
+    -8.6,
+    127.6
+   ],
+   "fov": 25.360763549804688
+  },
+  {
+   "label": "CineCameraActor1",
+   "class": "CineCameraActor",
+   "loc": [
+    7251,
+    -6387,
+    233
+   ],
+   "rot": [
+    0.0,
+    1.1,
+    91.8
+   ],
+   "fov": 27.979312896728516
+  }
+ ],
+ "player_starts": [
+  {
+   "label": "PlayerStart",
+   "loc": [
+    10024,
+    -3242,
+    322
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    -125.9
+   ]
+  }
+ ],
+ "pp": [
+  {
+   "PPV_Underwater": {
+    "class": "PostProcessVolume",
+    "level": "L_Showcase",
+    "unbound": false,
+    "priority": 1.0,
+    "blend": 1.0,
+    "auto_exposure_bias": -2.0,
+    "white_temp": 6500.0,
+    "white_tint": -0.309332013130188,
+    "bloom_intensity": 8.0,
+    "vignette_intensity": 1.0,
+    "lumen_scene_lighting_quality": 0.25,
+    "lumen_final_gather_quality": 0.25,
+    "scene_fringe_intensity": 3.25333309173584
+   }
+  },
+  {
+   "PPV_Underwater2": {
+    "class": "PostProcessVolume",
+    "level": "L_Showcase",
+    "unbound": false,
+    "priority": 1.0,
+    "blend": 1.0,
+    "auto_exposure_bias": -2.0,
+    "white_temp": 6500.0,
+    "white_tint": -0.309332013130188,
+    "bloom_intensity": 8.0,
+    "vignette_intensity": 1.0,
+    "lumen_scene_lighting_quality": 0.25,
+    "lumen_final_gather_quality": 0.25,
+    "scene_fringe_intensity": 3.25333309173584
+   }
+  },
+  {
+   "PPV_Underwater3": {
+    "class": "PostProcessVolume",
+    "level": "L_Showcase",
+    "unbound": false,
+    "priority": 1.0,
+    "blend": 1.0,
+    "auto_exposure_bias": -2.0,
+    "white_temp": 6500.0,
+    "white_tint": -0.309332013130188,
+    "bloom_intensity": 8.0,
+    "vignette_intensity": 1.0,
+    "lumen_scene_lighting_quality": 0.25,
+    "lumen_final_gather_quality": 0.25,
+    "scene_fringe_intensity": 3.25333309173584
+   }
+  },
+  {
+   "PostProcessVolume": {
+    "class": "PostProcessVolume",
+    "level": "L_Lighting_Morning",
+    "unbound": true,
+    "priority": 0.0,
+    "blend": 1.0,
+    "auto_exposure_method": "<AutoExposureMethod.AEM_HISTOGRAM: 0>",
+    "auto_exposure_bias": 0.0,
+    "auto_exposure_min_brightness": -10.0,
+    "auto_exposure_max_brightness": 20.0,
+    "color_saturation": [
+     0.9,
+     0.9,
+     1.0,
+     1.0
+    ],
+    "color_gamma": [
+     0.81,
+     0.81,
+     0.81,
+     1.0
+    ],
+    "color_gain": [
+     0.74,
+     0.74,
+     0.74,
+     1.0
+    ],
+    "film_slope": 0.75,
+    "film_toe": 0.550000011920929,
+    "film_shoulder": 0.25999999046325684,
+    "bloom_intensity": 1.0,
+    "vignette_intensity": 0.5,
+    "film_grain_intensity": 0.5,
+    "lumen_scene_lighting_quality": 0.25,
+    "lumen_final_gather_quality": 0.5,
+    "dynamic_global_illumination_method": "<DynamicGlobalIlluminationMethod.LUMEN: 1>",
+    "color_grading_lut": "/Engine/MapTemplates/lut/LUT_Daytime.LUT_Daytime",
+    "color_grading_intensity": 0.8026670217514038,
+    "scene_fringe_intensity": 0.30000001192092896
+   }
+  }
+ ],
+ "streaming": "n/a Exception(\"World: Failed to find property 'streaming_levels' for attribute 'streaming_levels' on 'World'\")",
+ "errors": [
+  "ExponentialHeightFog: Exception(\"ExponentialHeightFogComponent: Failed to find property 'volumetric_fog' for attribute 'volumetric_fog' on 'ExponentialHeightFogComponent'\")"
+ ],
+ "landscape": [
+  {
+   "label": "Landscape",
+   "material": "<Object '/Game/PineForestPack/Materials/Landscape/Instances/MI_LandscapePineForest.MI_LandscapePineForest' (0x00000275415C9800) Class 'MaterialInstanceConstant'>",
+   "bounds": [
+    [
+     0,
+     0,
+     2542
+    ],
+    [
+     25200,
+     25200,
+     2600
+    ]
+   ],
+   "target_layers": [
+    "Ground",
+    "GroundPath",
+    "Forest",
+    "ForestField",
+    "WetPuddle"
+   ]
+  }
+ ],
+ "actor_classes": [
+  [
+   "StaticMeshActor",
+   1119
+  ],
+  [
+   "BlockingVolume",
+   19
+  ],
+  [
+   "Emitter",
+   15
+  ],
+  [
+   "AmbientSound",
+   10
+  ],
+  [
+   "BP_Spline_Ants_C",
+   6
+  ],
+  [
+   "PostProcessVolume",
+   4
+  ],
+  [
+   "CineCameraActor",
+   2
+  ],
+  [
+   "Landscape",
+   1
+  ],
+  [
+   "InstancedFoliageActor",
+   1
+  ],
+  [
+   "BP_GlobalWeatherController_C",
+   1
+  ],
+  [
+   "PlayerStart",
+   1
+  ],
+  [
+   "LightmassImportanceVolume",
+   1
+  ],
+  [
+   "TextRenderActor",
+   1
+  ],
+  [
+   "DirectionalLight",
+   1
+  ],
+  [
+   "SkyAtmosphere",
+   1
+  ],
+  [
+   "SkyLight",
+   1
+  ],
+  [
+   "ExponentialHeightFog",
+   1
+  ]
+ ],
+ "n_actors": 1185,
+ "foliage_meshes": [
+  [
+   "SM_MossClump01",
+   28943
+  ],
+  [
+   "SM_MossLeaf_03",
+   19684
+  ],
+  [
+   "SM_MossLeaf_04",
+   19634
+  ],
+  [
+   "SM_MossLeaf_02",
+   18871
+  ],
+  [
+   "SM_MossLeaf_01",
+   18094
+  ],
+  [
+   "SM_GroundCover02",
+   2245
+  ],
+  [
+   "SM_WeedA_01",
+   1620
+  ],
+  [
+   "SM_FernWild01",
+   908
+  ],
+  [
+   "SM_Fern01",
+   891
+  ],
+  [
+   "SM_Fern02",
+   831
+  ],
+  [
+   "SM_GrassSmall01",
+   765
+  ],
+  [
+   "SM_SonoSapling03",
+   765
+  ],
+  [
+   "SM_SonoSapling04",
+   755
+  ],
+  [
+   "SM_GrassMedium01",
+   487
+  ],
+  [
+   "SM_FernWide_01",
+   414
+  ],
+  [
+   "SM_PineTree01",
+   345
+  ],
+  [
+   "SM_PineTree03",
+   336
+  ],
+  [
+   "SM_PineTree02",
+   330
+  ],
+  [
+   "SM_SonoTree01",
+   257
+  ],
+  [
+   "SM_Bush_SalixElag03",
+   163
+  ],
+  [
+   "SM_SonoSapling02",
+   134
+  ],
+  [
+   "SM_SonoSapling01",
+   131
+  ],
+  [
+   "SM_Bush_SalixElag02",
+   128
+  ],
+  [
+   "SM_FernLong02",
+   111
+  ],
+  [
+   "SM_IvyBed01",
+   107
+  ],
+  [
+   "SM_GrassLarge01",
+   106
+  ],
+  [
+   "SM_Bush_SalixElag01",
+   65
+  ],
+  [
+   "SM_PineTree05",
+   56
+  ],
+  [
+   "SM_PineTree07",
+   56
+  ],
+  [
+   "SM_Pine_Juvenile_01",
+   49
+  ],
+  [
+   "SM_PineTree06",
+   44
+  ],
+  [
+   "SM_FernLong03",
+   39
+  ],
+  [
+   "SM_SonoTreeTall01",
+   33
+  ],
+  [
+   "SM_PineTree04",
+   6
+  ]
+ ],
+ "rvt_volumes": [],
+ "world_settings_gamemode": "<Object '/Game/PineForestPack/DEMO/Blueprints/BP_PineForestPack_GameMode.BP_PineForestPack_GameMode_C' (0x0000027540813F00) Class 'BlueprintGeneratedClass'>"
+}

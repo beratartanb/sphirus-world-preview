@@ -1,0 +1,54 @@
+{
+ "sun": {
+  "rot": [
+   -24.0,
+   -61.999999999999986
+  ],
+  "intensity": 1300.0,
+  "temperature": 5600.0,
+  "light_source_angle": 1.600000023841858,
+  "volumetric_scattering_intensity": 0.800000011920929
+ },
+ "sky": {
+  "intensity": 1.4500000476837158
+ },
+ "fog": {
+  "fog_density": 0.014999999664723873,
+  "fog_height_falloff": 0.2199999988079071,
+  "start_distance": 300.0,
+  "fog_max_opacity": 0.550000011920929,
+  "volumetric_fog_extinction_scale": 1.5,
+  "volumetric_fog_albedo": [
+   220,
+   210,
+   200,
+   255
+  ],
+  "volumetric_fog_scattering_distribution": 0.550000011920929
+ },
+ "atmos": {
+  "mie_scattering_scale": 0.019999999552965164,
+  "mie_anisotropy": 0.699999988079071
+ },
+ "pp": {
+  "white_temp": 6200.0,
+  "color_saturation": [
+   0.86,
+   0.86,
+   0.86,
+   1.0
+  ],
+  "color_contrast": [
+   1.08,
+   1.08,
+   1.08,
+   1.0
+  ],
+  "film_slope": 0.8600000143051147,
+  "film_toe": 0.6000000238418579,
+  "film_shoulder": 0.25999999046325684,
+  "bloom_intensity": 0.25,
+  "vignette_intensity": 0.30000001192092896,
+  "auto_exposure_bias": -0.75
+ }
+}
