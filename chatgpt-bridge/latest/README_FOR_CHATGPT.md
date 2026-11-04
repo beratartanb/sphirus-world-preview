@@ -3,7 +3,7 @@
 Read bridge_status.json first, then scene_summary.json, then Screenshots/.
 For environment review read foliage_summary, landscape_summary, water_summary and lighting_summary. For specific objects read actors_index and asset_usage. camera_plan describes capture poses; verification records preservation checks.
 
-Run: 2026-11-05_001038_629813_e45c5f
+Run: 2026-11-05_022926_317220_e33187
 Map: /Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse
 Engine: 5.8.1-56057345+++UE5+Release-5.8
 
@@ -34,6 +34,7 @@ Warnings:
 - Null fields mean unavailable in the Python reflection API, not zero or absent.
 - Native FoliageType-to-component mapping is not exposed by this engine Python API; mesh/component identity is authoritative. No type guessed from mesh.
 - Texture dependency traversal is not performed; direct world material references are reported.
+- Instance scale and spatial grid statistics are sampled; counts and component bounds are exact.
 - Framing excludes sky/helpers and robust spatial/size outliers; full actor bounds remain in index.
 - Forest views use sampled tree-density cells; a walkable path/entrance is not inferred from actor names.
 - Automatically framed cameras are geometric candidates; visibility/occlusion and terrain height should be checked in screenshots.
