@@ -1,0 +1,199 @@
+== revert 07:29:40
+OK 138.30981397628784
+== g9a 07:32:01
+OK 13.539747953414917
+== g9b 07:32:15
+OK 14.395078420639038
+== db9 07:32:32
+OK 1.496471643447876
+DB255 {"PSD_SHM254_T255_SprintR": ["SHM255_Sprint_R180"], "PSD_SHM254_T255_SprintL": ["SHM255_Sprint_L180"], "PSD_SHM254_T255_JogR": ["SHM255_Jog_R180"], "PSD_SHM254_T255_JogL": ["SHM255_Jog_L180"], "PSD_SHM254_T255_CutR": ["SHM255_Sprint_R090"], "PSD_SHM254_T255_CutL": ["SHM255_Sprint_L090"], "PSD_SHM254_T255_JogCutR"
+M_BUILD_OK
+v212_warm_073237 | rows 838 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v255m60w_s54_revR_c5_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 15 (worst 59) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255m60w_s54_revR_c5_r1 INVALID_FPS fixed=0.000 n=629
+v255m60w_s54_revL_c5_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 22 (worst 57) | by owner {'in-clip': 22} | FINISHED candidate
+FPSCHECK v255m60w_s54_revL_c5_r1 INVALID_FPS fixed=0.000 n=647
+v255m60w_s54_r90_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 15 (worst 57) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255m60w_s54_r90_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60w_s54_l90_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 21 (worst 56) | by owner {'in-clip': 21} | FINISHED candidate
+FPSCHECK v255m60w_s54_l90_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60w_j54_rev_c5_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 13 (worst 58) | by owner {'in-clip': 13} | FINISHED candidate
+FPSCHECK v255m60w_j54_rev_c5_r1 INVALID_FPS fixed=0.000 n=629
+v255m60w_j54_r90_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 50) | by owner {'in-clip': 9} | FINISHED candidate
+FPSCHECK v255m60w_j54_r90_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60w_j38_c90l_c5_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 12 (worst 90) | by owner {'in-clip': 12} | FINISHED candidate
+FPSCHECK v255m60w_j38_c90l_c5_r1 INVALID_FPS fixed=0.000 n=557
+v255m60_s54_revR_c5_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255m60_s54_revR_c5_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_s54_revR_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v255m60_s54_revR_o_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_s54_revL_c5_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 20 (worst 65) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255m60_s54_revL_c5_r1 INVALID_FPS fixed=0.000 n=647
+v255m60_s54_revL_o_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 18 (worst 48) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v255m60_s54_revL_o_r1 INVALID_FPS fixed=0.000 n=647
+v255m60_s54_r90_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 66) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255m60_s54_r90_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_s54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 17 (worst 51) | by owner {'in-clip': 17} | FINISHED production
+FPSCHECK v255m60_s54_r90_o_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_s54_l90_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 48) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255m60_s54_l90_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_s54_l90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v255m60_s54_l90_o_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_s54_r135_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 61) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255m60_s54_r135_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_s54_r135_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 14 (worst 48) | by owner {'in-clip': 14} | FINISHED production
+FPSCHECK v255m60_s54_r135_o_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_j54_rev_c5_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED candidate
+FPSCHECK v255m60_j54_rev_c5_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_j54_rev_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 9 (worst 49) | by owner {'in-clip': 9} | FINISHED production
+FPSCHECK v255m60_j54_rev_o_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_j54_r90_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 11 (worst 61) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255m60_j54_r90_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_j54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 52) | by owner {'in-clip': 9} | FINISHED production
+FPSCHECK v255m60_j54_r90_o_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_j38_c90l_c5_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 12 (worst 61) | by owner {'in-clip': 12} | FINISHED candidate
+FPSCHECK v255m60_j38_c90l_c5_r1 INVALID_FPS fixed=0.000 n=557
+v255m60_j38_c90l_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 13 (worst 39) | by owner {'in-clip': 13} | FINISHED production
+FPSCHECK v255m60_j38_c90l_o_r1 INVALID_FPS fixed=0.000 n=557
+v255m60_j54_r135_c5_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 11 (worst 74) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255m60_j54_r135_c5_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_j54_r135_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 10 (worst 55) | by owner {'in-clip': 10} | FINISHED production
+FPSCHECK v255m60_j54_r135_o_r1 INVALID_FPS fixed=0.000 n=599
+v255m60_w54_rev_c5_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+FPSCHECK v255m60_w54_rev_c5_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_w54_rev_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED production
+FPSCHECK v255m60_w54_rev_o_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_s54_tap_c5_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 18 (worst 52) | by owner {'in-clip': 18} | FINISHED candidate
+FPSCHECK v255m60_s54_tap_c5_r1 INVALID_FPS fixed=0.000 n=614
+v255m60_s54_tap_o_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 21 (worst 48) | by owner {'in-clip': 21} | FINISHED production
+FPSCHECK v255m60_s54_tap_o_r1 INVALID_FPS fixed=0.000 n=614
+v255m60_s54_mid_c5_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 20 (worst 48) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255m60_s54_mid_c5_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_s54_mid_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 22 (worst 48) | by owner {'in-clip': 22} | FINISHED production
+FPSCHECK v255m60_s54_mid_o_r1 INVALID_FPS fixed=0.000 n=629
+v255m60_s54_lr_c5_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 15 (worst 70) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255m60_s54_lr_c5_r1 INVALID_FPS fixed=0.000 n=593
+v255m60_s54_lr_o_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 18 (worst 57) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v255m60_s54_lr_o_r1 INVALID_FPS fixed=0.000 n=593
+v255m60_fz_sprint_a_c5_r1 | rows 2794 rate 60.0/s | pops >25 m/s2: 90 (worst 98) | by owner {'in-clip': 90} | FINISHED candidate
+FPSCHECK v255m60_fz_sprint_a_c5_r1 INVALID_FPS fixed=0.000 n=2765
+v255m60_fz_sprint_a_o_r1 | rows 2794 rate 60.0/s | pops >25 m/s2: 89 (worst 174) | by owner {'in-clip': 88, 'montage': 1} | FINISHED production
+FPSCHECK v255m60_fz_sprint_a_o_r1 INVALID_FPS fixed=0.000 n=2765
+v255m60_fz_sprint_m_c5_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 77 (worst 132) | by owner {'in-clip': 77} | FINISHED candidate
+FPSCHECK v255m60_fz_sprint_m_c5_r1 INVALID_FPS fixed=0.000 n=2819
+v255m60_fz_sprint_m_o_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 81 (worst 78) | by owner {'in-clip': 81} | FINISHED production
+FPSCHECK v255m60_fz_sprint_m_o_r1 INVALID_FPS fixed=0.000 n=2819
+v255m60_fz_jog_a_c5_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 80 (worst 115) | by owner {'in-clip': 80} | FINISHED candidate
+FPSCHECK v255m60_fz_jog_a_c5_r1 INVALID_FPS fixed=0.000 n=2759
+v255m60_fz_jog_a_o_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 77 (worst 82) | by owner {'in-clip': 77} | FINISHED production
+FPSCHECK v255m60_fz_jog_a_o_r1 INVALID_FPS fixed=0.000 n=2759
+v255m60_fz_jog_m_c5_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 66 (worst 144) | by owner {'in-clip': 66} | FINISHED candidate
+FPSCHECK v255m60_fz_jog_m_c5_r1 INVALID_FPS fixed=0.000 n=2819
+v255m60_fz_jog_m_o_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 52 (worst 96) | by owner {'in-clip': 52} | FINISHED production
+FPSCHECK v255m60_fz_jog_m_o_r1 INVALID_FPS fixed=0.000 n=2819
+v255m60_fz_walk_a_c5_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 15 (worst 38) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255m60_fz_walk_a_c5_r1 INVALID_FPS fixed=0.000 n=2759
+v255m60_fz_walk_a_o_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 23 (worst 38) | by owner {'in-clip': 23} | FINISHED production
+FPSCHECK v255m60_fz_walk_a_o_r1 INVALID_FPS fixed=0.000 n=2759
+v255m60_fz_walk_m_c5_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 13 (worst 37) | by owner {'in-clip': 13} | FINISHED candidate
+FPSCHECK v255m60_fz_walk_m_c5_r1 INVALID_FPS fixed=0.000 n=2819
+v255m60_fz_walk_m_o_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 13 (worst 37) | by owner {'in-clip': 13} | FINISHED production
+FPSCHECK v255m60_fz_walk_m_o_r1 INVALID_FPS fixed=0.000 n=2819
+v255m60_fz_dm_walk_0_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 15 (worst 42) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_walk_0_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_walk_0_o_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 14 (worst 49) | by owner {'in-clip': 14} | FINISHED production
+FPSCHECK v255m60_fz_dm_walk_0_o_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_walk_60_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 16 (worst 42) | by owner {'montage': 1, 'in-clip': 15} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_walk_60_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_walk_60_o_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 12 (worst 49) | by owner {'montage': 1, 'in-clip': 11} | FINISHED production
+FPSCHECK v255m60_fz_dm_walk_60_o_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_walk_m120_c5_r1 | rows 8389 rate 60.0/s | pops >25 m/s2: 18 (worst 47) | by owner {'montage': 2, 'in-clip': 16} | TIMEOUT candidate
+FPSCHECK v255m60_fz_dm_walk_m120_c5_r1 INVALID_FPS fixed=0.000 n=8360
+v255m60_fz_dm_walk_m120_o_r1 | rows 8397 rate 60.0/s | pops >25 m/s2: 14 (worst 49) | by owner {'montage': 2, 'in-clip': 12} | TIMEOUT production
+FPSCHECK v255m60_fz_dm_walk_m120_o_r1 INVALID_FPS fixed=0.000 n=8368
+v255m60_fz_dm_jog_0_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 116 (worst 125) | by owner {'in-clip': 116} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_jog_0_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_jog_0_o_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 95 (worst 100) | by owner {'in-clip': 95} | FINISHED production
+FPSCHECK v255m60_fz_dm_jog_0_o_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_jog_60_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 115 (worst 126) | by owner {'montage': 1, 'in-clip': 114} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_jog_60_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_jog_60_o_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 95 (worst 94) | by owner {'montage': 1, 'in-clip': 94} | FINISHED production
+FPSCHECK v255m60_fz_dm_jog_60_o_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_jog_m120_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 119 (worst 102) | by owner {'montage': 2, 'in-clip': 117} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_jog_m120_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_jog_m120_o_r1 | rows 8592 rate 60.0/s | pops >25 m/s2: 96 (worst 98) | by owner {'montage': 2, 'in-clip': 94} | TIMEOUT production
+FPSCHECK v255m60_fz_dm_jog_m120_o_r1 INVALID_FPS fixed=0.000 n=8563
+v255m60_fz_dm_sprint_0_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 164 (worst 86) | by owner {'in-clip': 164} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_sprint_0_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_sprint_0_o_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 141 (worst 96) | by owner {'in-clip': 141} | FINISHED production
+FPSCHECK v255m60_fz_dm_sprint_0_o_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_sprint_60_c5_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 162 (worst 87) | by owner {'montage': 1, 'in-clip': 161} | FINISHED candidate
+FPSCHECK v255m60_fz_dm_sprint_60_c5_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_sprint_60_o_r1 | rows 12034 rate 60.0/s | pops >25 m/s2: 138 (worst 96) | by owner {'montage': 1, 'in-clip': 137} | FINISHED production
+FPSCHECK v255m60_fz_dm_sprint_60_o_r1 INVALID_FPS fixed=0.000 n=12005
+v255m60_fz_dm_sprint_m120_c5_r1 | rows 8941 rate 60.0/s | pops >25 m/s2: 160 (worst 94) | by owner {'montage': 2, 'in-clip': 158} | TIMEOUT candidate
+FPSCHECK v255m60_fz_dm_sprint_m120_c5_r1 INVALID_FPS fixed=0.000 n=8912
+v255m60_fz_dm_sprint_m120_o_r1 | rows 9076 rate 60.0/s | pops >25 m/s2: 142 (worst 96) | by owner {'montage': 2, 'in-clip': 140} | TIMEOUT production
+FPSCHECK v255m60_fz_dm_sprint_m120_o_r1 INVALID_FPS fixed=0.000 n=9047
+v255m60_wstart_c5_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED candidate
+FPSCHECK v255m60_wstart_c5_r1 INVALID_FPS fixed=0.000 n=1553
+v255m60_wstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 5 (worst 33) | by owner {'in-clip': 5} | FINISHED production
+FPSCHECK v255m60_wstart_o_r1 INVALID_FPS fixed=0.000 n=1553
+v255m60_w42_id_c5_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED candidate
+FPSCHECK v255m60_w42_id_c5_r1 INVALID_FPS fixed=0.000 n=1205
+v255m60_w42_id_o_r1 | rows 1234 rate 60.0/s | pops >25 m/s2: 2 (worst 33) | by owner {'in-clip': 2} | FINISHED production
+FPSCHECK v255m60_w42_id_o_r1 INVALID_FPS fixed=0.000 n=1205
+v255m60_taps_c5_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 47) | by owner {'in-clip': 7} | FINISHED candidate
+FPSCHECK v255m60_taps_c5_r1 INVALID_FPS fixed=0.000 n=933
+v255m60_taps_o_r1 | rows 962 rate 60.1/s | pops >25 m/s2: 7 (worst 47) | by owner {'in-clip': 7} | FINISHED production
+FPSCHECK v255m60_taps_o_r1 INVALID_FPS fixed=0.000 n=933
+v255m60_jstart_c5_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 14 (worst 47) | by owner {'in-clip': 14} | FINISHED candidate
+FPSCHECK v255m60_jstart_c5_r1 INVALID_FPS fixed=0.000 n=1553
+v255m60_jstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 14 (worst 47) | by owner {'in-clip': 14} | FINISHED production
+FPSCHECK v255m60_jstart_o_r1 INVALID_FPS fixed=0.000 n=1553
+v255m60_j36_stop_c5_r1 | rows 454 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED candidate
+FPSCHECK v255m60_j36_stop_c5_r1 INVALID_FPS fixed=0.000 n=425
+v255m60_j36_stop_o_r1 | rows 454 rate 60.1/s | pops >25 m/s2: 6 (worst 32) | by owner {'in-clip': 6} | FINISHED production
+FPSCHECK v255m60_j36_stop_o_r1 INVALID_FPS fixed=0.000 n=425
+v255m60_j45_sl2_c5_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 20 (worst 61) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255m60_j45_sl2_c5_r1 INVALID_FPS fixed=0.000 n=929
+v255m60_j45_sl2_o_r1 | rows 958 rate 60.1/s | pops >25 m/s2: 16 (worst 52) | by owner {'in-clip': 16} | FINISHED production
+FPSCHECK v255m60_j45_sl2_o_r1 INVALID_FPS fixed=0.000 n=929
+v255m60_gait_c5_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 25 (worst 49) | by owner {'in-clip': 25} | FINISHED candidate
+FPSCHECK v255m60_gait_c5_r1 INVALID_FPS fixed=0.000 n=1139
+v255m60_gait_o_r1 | rows 1168 rate 60.1/s | pops >25 m/s2: 25 (worst 49) | by owner {'in-clip': 25} | FINISHED production
+FPSCHECK v255m60_gait_o_r1 INVALID_FPS fixed=0.000 n=1139
+v255m60_w43_idle_c5_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED candidate
+FPSCHECK v255m60_w43_idle_c5_r1 INVALID_FPS fixed=0.000 n=1169
+v255m60_w43_idle_o_r1 | rows 1198 rate 60.1/s | pops >25 m/s2: 4 (worst 39) | by owner {'in-clip': 4} | FINISHED production
+FPSCHECK v255m60_w43_idle_o_r1 INVALID_FPS fixed=0.000 n=1169
+v255m60_j40_rlw_c5_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 12 (worst 93) | by owner {'in-clip': 12} | FINISHED candidate
+FPSCHECK v255m60_j40_rlw_c5_r1 INVALID_FPS fixed=0.000 n=749
+v255m60_j40_rlw_o_r1 | rows 778 rate 60.1/s | pops >25 m/s2: 13 (worst 40) | by owner {'in-clip': 13} | FINISHED production
+FPSCHECK v255m60_j40_rlw_o_r1 INVALID_FPS fixed=0.000 n=749
+M_AB_DONE
+v255mcap_s54_revR_oS_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v255mcap_s54_revR_oS_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_s54_revR_c5S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255mcap_s54_revR_c5S_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_s54_revR_oG_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED production
+FPSCHECK v255mcap_s54_revR_oG_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_s54_revR_c5G_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255mcap_s54_revR_c5G_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_s54_r90_oS_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 17 (worst 51) | by owner {'in-clip': 17} | FINISHED production
+FPSCHECK v255mcap_s54_r90_oS_r1 INVALID_FPS fixed=0.000 n=599
+v255mcap_s54_r90_c5S_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 66) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255mcap_s54_r90_c5S_r1 INVALID_FPS fixed=0.000 n=599
+v255mcap_j54_rev_oS_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 9 (worst 49) | by owner {'in-clip': 9} | FINISHED production
+FPSCHECK v255mcap_j54_rev_oS_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_j54_rev_c5S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED candidate
+FPSCHECK v255mcap_j54_rev_c5S_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_j54_rev_oG_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 9 (worst 49) | by owner {'in-clip': 9} | FINISHED production
+FPSCHECK v255mcap_j54_rev_oG_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_j54_rev_c5G_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED candidate
+FPSCHECK v255mcap_j54_rev_c5G_r1 INVALID_FPS fixed=0.000 n=629
+v255mcap_j54_r90_oS_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 51) | by owner {'in-clip': 9} | FINISHED production
+FPSCHECK v255mcap_j54_r90_oS_r1 INVALID_FPS fixed=0.000 n=599
+v255mcap_j54_r90_c5S_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 11 (worst 61) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255mcap_j54_r90_c5S_r1 INVALID_FPS fixed=0.000 n=599
+TM255_DONE

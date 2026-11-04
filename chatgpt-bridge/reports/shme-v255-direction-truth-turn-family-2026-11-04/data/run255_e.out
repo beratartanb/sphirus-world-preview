@@ -1,0 +1,39 @@
+E start 04:13:31
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv255_e1.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH e1 60 04:17:09
+== revert 04:17:09
+OK 0.06550860404968262
+== comp_vars 04:17:10
+OK 12.230531215667725
+== save_comp 04:17:24
+OK 4.843698740005493
+== smd 04:17:34
+OK 0.7865197658538818
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv255_e2.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH e2 60 04:20:03
+== revert2 04:20:03
+OK 0.010266542434692383
+== only 04:20:05
+OK 0.0010006427764892578
+== funcs 04:20:10
+OK 448.797283411026
+== census 04:27:40
+OK 0.2985496520996094
+CAMFN234 {"nodes": 1795, "CamOrbit": 37, "CamRec": 36, "MoveLatch": 18, "Loco": 56, "InFrameOff": 3, "setters": {"LocoYaw": 1, "LocoIFY": 1, "InFrameOff": 1, "LocoState": 1, "LocoLookD": 1, "MoveLatchYaw": 1, "CamRecDelta": 1, "CamEnv": 1, "CamEnvT": 1, "CamRecTurnSign": 1}, "LastHitBy": 1, "ok": true}
+== save_comp2 04:27:43
+OK 4.771392822265625
+== only_all 04:27:49
+OK 0.0010063648223876953
+== pawn 04:27:51
+OK 23.306448221206665
+PAWN255 {"raw": "wired", "pawn": {"sig_after": "K2Node_VariableSet_11", "vel_after": "K2Node_VariableSet_18"}, "par_c": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "mm_c": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "pawn_c": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "child_c": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "ok": true, "saved": true, "dirty": []}
+== abp 04:28:15
+ERROR 9.337963819503784
+Traceback (most recent call last):
+E_FAILED abp 04:28:26

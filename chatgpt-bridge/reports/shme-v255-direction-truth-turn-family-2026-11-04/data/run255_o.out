@@ -1,0 +1,54 @@
+O start 11:14:14
+RELAUNCH_FAILED o1: the old editor did not quit (refused / dirty) - no second editor (V2.33 gate) 11:23:29
+O start 11:23:58
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv255_o1.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH o1 60 11:26:18
+== revert 11:26:18
+OK 0.0070002079010009766
+== only 11:26:20
+OK 0.0010039806365966797
+== funcs 11:26:26
+OK 469.287966966629
+== census 11:34:17
+OK 0.28168392181396484
+CAMFN234 {"nodes": 1795, "CamOrbit": 37, "CamRec": 36, "MoveLatch": 18, "Loco": 56, "InFrameOff": 3, "setters": {"LocoYaw": 1, "LocoIFY": 1, "InFrameOff": 1, "LocoState": 1, "LocoLookD": 1, "MoveLatchYaw": 1, "CamRecDelta": 1, "CamEnv": 1, "CamEnvT": 1, "CamRecTurnSign": 1}, "LastHitBy": 1, "ok": true}
+== save_comp 11:34:19
+OK 4.662043333053589
+== only_all 11:34:26
+OK 0.0020101070404052734
+== frame 11:34:27
+OK 30.21674871444702
+FRAME255 {"nodes": 60, "frame": {"call_before": "K2Node_CallFunction_288", "lens": "K2Node_CallFunction_120"}, "pawn_c": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "child_c": ["<BlueprintStatus.BS_UP_TO_DATE: 3>", []], "ok": true, "saved": true, "dirty": []}
+== g10a 11:34:59
+OK 14.57225251197815
+== g10b 11:35:15
+OK 14.096609354019165
+== db10 11:35:31
+OK 1.3627352714538574
+DB255 {"PSD_SHM254_T255_SprintR": ["SHM255_Sprint_R180"], "PSD_SHM254_T255_SprintL": ["SHM255_Sprint_L180"], "PSD_SHM254_T255_JogR": ["SHM255_Jog_R180"], "PSD_SHM254_T255_JogL": ["SHM255_Jog_L180"], "PSD_SHM254_T255_CutR": ["SHM255_Sprint_R090"], "PSD_SHM254_T255_CutL": ["SHM255_Sprint_L090"], "PSD_SHM254_T255_JogCutR": ["SHM255_Jog_R090"], "PSD_SHM254_T255_
+O_BUILD_OK
+v212_warm_113536 | rows 838 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v255o60w_s54_revR_c7_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 15 (worst 59) | by owner {'in-clip': 15} | FINISHED candidate
+v255o60w_s54_revL_c7_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 22 (worst 57) | by owner {'in-clip': 22} | FINISHED candidate
+v255o60w_s54_r90_c7_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 16 (worst 58) | by owner {'in-clip': 16} | FINISHED candidate
+v255o60w_s54_l90_c7_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 21 (worst 56) | by owner {'in-clip': 21} | FINISHED candidate
+v255o60w_j54_rev_c7_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 13 (worst 58) | by owner {'in-clip': 13} | FINISHED candidate
+v255o60w_j54_r90_c7_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 50) | by owner {'in-clip': 9} | FINISHED candidate
+v255o60w_j38_c90l_c7_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 12 (worst 90) | by owner {'in-clip': 12} | FINISHED candidate
+v255o60_s54_revR_c7_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED candidate
+v255o60_s54_revL_c7_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 20 (worst 65) | by owner {'in-clip': 20} | FINISHED candidate
+v255o60_s54_r90_c7_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 67) | by owner {'in-clip': 19} | FINISHED candidate
+v255o60_j54_rev_c7_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED candidate
+v255o60_j54_r90_c7_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 11 (worst 61) | by owner {'in-clip': 11} | FINISHED candidate
+v255o60_fz_jog_m_c7_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 71 (worst 132) | by owner {'in-clip': 71} | FINISHED candidate
+v255o60_fz_sprint_m_c7_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 85 (worst 124) | by owner {'in-clip': 85} | FINISHED candidate
+v255ocap_s54_revR_c7S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED candidate
+v255ocap_s54_revR_c7G_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED candidate
+v255ocap_j54_rev_c7S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED candidate
+v255ocap_j54_rev_c7G_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED candidate
+v255ocap_s54_r90_c7S_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 67) | by owner {'in-clip': 19} | FINISHED candidate
+v255ocap_j54_r90_c7S_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 11 (worst 61) | by owner {'in-clip': 11} | FINISHED candidate
+TO255_DONE

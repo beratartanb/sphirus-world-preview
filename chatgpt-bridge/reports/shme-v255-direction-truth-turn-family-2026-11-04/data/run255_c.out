@@ -1,0 +1,8 @@
+v212_warm_040220 | rows 838 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v255c60_s54_revR_t1_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 17 (worst 48) | by owner {'in-clip': 17} | FINISHED candidate
+FPSCHECK v255c60_s54_revR_t1_r1 INVALID_FPS fixed=0.000 n=629
+v255c60_s54_revL_t1_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 20 (worst 48) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255c60_s54_revL_t1_r1 INVALID_FPS fixed=0.000 n=647
+v255c60_s54_revR_t1_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 17 (worst 68) | by owner {'in-clip': 17} | FINISHED candidate
+FPSCHECK v255c60_s54_revR_t1_r1 INVALID_FPS fixed=0.000 n=629
+TC255_DONE

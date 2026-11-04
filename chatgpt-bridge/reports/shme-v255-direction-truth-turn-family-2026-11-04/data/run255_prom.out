@@ -1,0 +1,34 @@
+== revert 18:24:29
+OK 0.003999948501586914
+== prom 18:24:30
+OK 12.015247583389282
+PROMOTE255 {"cfg": {"mode": "promote", "head": true, "frame": true}, "before_written": true, "compile": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", "<BlueprintStatus.BS_UP_TO_DATE: 3>", "<BlueprintStatus.BS_UP_TO_DATE: 3>", "<BlueprintStatus.BS_UP_TO_DATE: 3>", [], []], "after_keys": {"SHM254_Turn": "1.0", "SHM_RedirectDB_SR": "PSD_SHM254_T255_SprintR", "SHM_RedirectDB_SRL": "PSD_SHM254_T255_SprintL", "SHM_RedirectDB_SRR": "PSD_SHM254_T255_SprintR", "SHM212_RouteSRL": "PSD_SHM254_T255_SprintL", "SHM212_RouteSRR": "PSD_SHM254_T255_SprintR", "SHM255_Ctl": "1.0", "SHM255_DB_R": "PSD_SHM254_T255_SprintR", "SHM255_DB_L": "PSD_SHM254_T255_SprintL", "SHM255_DB_JogR": "PSD_SHM254_T255_JogR", "SHM255_DB_JogL": "PSD_SHM254_T255_JogL", "SHM254_CancelMinV": "400.0", "SHM224_DB_JRFwd": "PSD_SHM254_T255_JogB", "SHM224_DB_JRFwdM": "PSD_SHM254_T255_JogB", "SHM230_DB_JRFwdL": "PSD_SHM254_T255_JogB", "SHM231_DB_JRFwdS": "PSD_SHM254_T255_JogB", "SHM255_DB_CutR": "PSD_SHM254_T255_CutR", "SHM255_DB_CutL": "PSD_SHM254_T255_CutL", "SHM255_DB_JogCutR": "PSD_SHM254_T255_JogCutR", "SHM255_DB_JogCutL": "PSD_SHM254_T255_JogCutL", "SHM255_BackDeg": "45.0", "SHM_RedirectDB_JL": "PSD_CT_JogSteady", "SHM_RedirectDB_SL": "PSD_SHM233_SprintCalm", "SHM214_DB_RevPush": "PSD_CT_JogSteady", "SHM215_DB_RevPushLow": "PSD_CT_JogSteady", "SHM215_DB_RevL": "PSD_CT_JogSteady", "SHM215_DB_RevR": "PSD_CT_JogSteady", "SHM212_DB_CutRevL": "PSD_CT_JogSteady", "SHM212_DB_CutRevR": "PSD_CT_JogSteady", "SHM240_HeadOn"
+PROM_SAVED
+dirty after reload []
+QUIT_EDITOR requested
+RUNNER_READY shmv255_pv.log
+THROTTLE err module 'unreal' has no attribute 'EditorPerformanceSettings'
+RELAUNCH pv 60 18:26:54
+v212_warm_182656 | rows 839 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v255pvw_s54_revR_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED production
+v255pvw_s54_revL_o_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 20 (worst 65) | by owner {'in-clip': 20} | FINISHED production
+v255pvw_s54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 14 (worst 55) | by owner {'in-clip': 14} | FINISHED production
+v255pvw_s54_l90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 54) | by owner {'in-clip': 20} | FINISHED production
+v255pvw_j54_rev_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 12 (worst 64) | by owner {'in-clip': 12} | FINISHED production
+v255pvw_j54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 55) | by owner {'in-clip': 9} | FINISHED production
+v255pvw_j38_c90l_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED production
+v255pv_s54_revR_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 61) | by owner {'in-clip': 16} | FINISHED production
+v255pv_s54_revL_o_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 20 (worst 65) | by owner {'in-clip': 20} | FINISHED production
+v255pv_s54_r135_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 62) | by owner {'in-clip': 20} | FINISHED production
+v255pv_s54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 14 (worst 55) | by owner {'in-clip': 14} | FINISHED production
+v255pv_s54_l90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 54) | by owner {'in-clip': 20} | FINISHED production
+v255pv_j54_rev_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 12 (worst 64) | by owner {'in-clip': 12} | FINISHED production
+v255pv_j54_r135_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 11 (worst 74) | by owner {'in-clip': 11} | FINISHED production
+v255pv_j54_r90_o_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 55) | by owner {'in-clip': 9} | FINISHED production
+v255pv_j38_c90l_o_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 10 (worst 64) | by owner {'in-clip': 10} | FINISHED production
+v255pv_w54_rev_o_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED production
+v255pv_wstart_o_r1 | rows 1582 rate 60.0/s | pops >25 m/s2: 4 (worst 33) | by owner {'in-clip': 4} | FINISHED production
+v255pv_s54_tap_o_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 18 (worst 51) | by owner {'in-clip': 18} | FINISHED production
+v255pv_fz_sprint_m_o_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 86 (worst 154) | by owner {'in-clip': 86} | FINISHED production
+v255pv_fz_jog_m_o_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 70 (worst 98) | by owner {'in-clip': 70} | FINISHED production
+TP255_DONE

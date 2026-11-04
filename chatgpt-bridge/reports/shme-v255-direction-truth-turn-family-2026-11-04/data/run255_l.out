@@ -1,0 +1,75 @@
+== revert 06:55:03
+OK 136.63042545318604
+== v6 06:57:22
+OK 14.793524742126465
+V6255 {"wired": {"minv": "K2Node_CallFunction_2173", "thr": "K2Node_VariableSet_267"}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knob": "0.0", "ok": true, "saved": true, "dirty": []}
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/v255_v7.json", "existing": 2, "new": 0}
+== v7 06:57:38
+OK 13.567384719848633
+V7255 {"wired": {"sel": "K2Node_CallFunction_2242", "lat": "K2Node_VariableSet_203"}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knob": "0.0", "ok": true, "saved": true, "dirty": []}
+== g8w 06:57:53
+OK 6.425695896148682
+== db8 06:58:02
+OK 0.7667112350463867
+DB255 {"PSD_SHM254_T255_WalkR": ["SHM255_Walk_R180"], "PSD_SHM254_T255_WalkL": ["SHM255_Walk_L180"], "dirty": []}
+L_BUILD_OK
+v212_warm_065806 | rows 838 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v255l60w_s54_revR_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 63) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255l60w_s54_revR_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60w_s54_revL_c6_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255l60w_s54_revL_c6_r1 INVALID_FPS fixed=0.000 n=647
+v255l60w_w54_rev_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+FPSCHECK v255l60w_w54_rev_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60w_j54_rev_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 11 (worst 64) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255l60w_j54_rev_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60_s54_revR_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 63) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255l60_s54_revR_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60_s54_revL_c6_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255l60_s54_revL_c6_r1 INVALID_FPS fixed=0.000 n=647
+v255l60_s54_r90_c6_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255l60_s54_r90_c6_r1 INVALID_FPS fixed=0.000 n=599
+v255l60_s54_l90_c6_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 48) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255l60_s54_l90_c6_r1 INVALID_FPS fixed=0.000 n=599
+v255l60_j54_rev_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 11 (worst 64) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255l60_j54_rev_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60_j54_r90_c6_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 10 (worst 61) | by owner {'in-clip': 10} | FINISHED candidate
+FPSCHECK v255l60_j54_r90_c6_r1 INVALID_FPS fixed=0.000 n=599
+v255l60_j38_c90l_c6_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 12 (worst 61) | by owner {'in-clip': 12} | FINISHED candidate
+FPSCHECK v255l60_j38_c90l_c6_r1 INVALID_FPS fixed=0.000 n=557
+v255l60_w54_rev_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+FPSCHECK v255l60_w54_rev_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60_s54_tap_c6_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED candidate
+FPSCHECK v255l60_s54_tap_c6_r1 INVALID_FPS fixed=0.000 n=614
+v255l60_s54_mid_c6_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 48) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255l60_s54_mid_c6_r1 INVALID_FPS fixed=0.000 n=629
+v255l60_s54_lr_c6_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 15 (worst 70) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255l60_s54_lr_c6_r1 INVALID_FPS fixed=0.000 n=593
+v255l60_fz_sprint_a_c6_r1 | rows 2794 rate 60.0/s | pops >25 m/s2: 89 (worst 98) | by owner {'in-clip': 89} | FINISHED candidate
+FPSCHECK v255l60_fz_sprint_a_c6_r1 INVALID_FPS fixed=0.000 n=2765
+v255l60_fz_sprint_m_c6_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 77 (worst 132) | by owner {'in-clip': 77} | FINISHED candidate
+FPSCHECK v255l60_fz_sprint_m_c6_r1 INVALID_FPS fixed=0.000 n=2819
+v255l60_fz_jog_a_c6_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 81 (worst 116) | by owner {'in-clip': 81} | FINISHED candidate
+FPSCHECK v255l60_fz_jog_a_c6_r1 INVALID_FPS fixed=0.000 n=2759
+v255l60_fz_jog_m_c6_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 83 (worst 139) | by owner {'in-clip': 83} | FINISHED candidate
+FPSCHECK v255l60_fz_jog_m_c6_r1 INVALID_FPS fixed=0.000 n=2819
+v255l60_fz_walk_a_c6_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 17 (worst 85) | by owner {'in-clip': 17} | FINISHED candidate
+FPSCHECK v255l60_fz_walk_a_c6_r1 INVALID_FPS fixed=0.000 n=2759
+v255l60_fz_walk_m_c6_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 13 (worst 41) | by owner {'in-clip': 13} | FINISHED candidate
+FPSCHECK v255l60_fz_walk_m_c6_r1 INVALID_FPS fixed=0.000 n=2819
+v255lcap_s54_revR_c6S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 63) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255lcap_s54_revR_c6S_r1 INVALID_FPS fixed=0.000 n=629
+v255lcap_s54_revL_c6S_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255lcap_s54_revL_c6S_r1 INVALID_FPS fixed=0.000 n=647
+v255lcap_s54_r90_c6S_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255lcap_s54_r90_c6S_r1 INVALID_FPS fixed=0.000 n=599
+v255lcap_j54_rev_c6S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 11 (worst 64) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255lcap_j54_rev_c6S_r1 INVALID_FPS fixed=0.000 n=629
+v255lcap_j54_r90_c6S_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 10 (worst 61) | by owner {'in-clip': 10} | FINISHED candidate
+FPSCHECK v255lcap_j54_r90_c6S_r1 INVALID_FPS fixed=0.000 n=599
+v255lcap_w54_rev_c6S_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 2 (worst 37) | by owner {'in-clip': 2} | FINISHED candidate
+FPSCHECK v255lcap_w54_rev_c6S_r1 INVALID_FPS fixed=0.000 n=629
+v255lcap_s54_revR_c6G_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 63) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255lcap_s54_revR_c6G_r1 INVALID_FPS fixed=0.000 n=629
+v255lcap_j54_rev_c6G_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 11 (worst 64) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255lcap_j54_rev_c6G_r1 INVALID_FPS fixed=0.000 n=629
+TL255_DONE

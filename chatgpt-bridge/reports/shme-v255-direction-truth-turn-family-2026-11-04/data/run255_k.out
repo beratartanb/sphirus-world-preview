@@ -1,0 +1,67 @@
+== revert 06:22:38
+OK 135.2859592437744
+== v5 06:24:54
+OK 13.380971670150757
+V5255 {"wired": {"speed_after": "K2Node_VariableSet_276", "v4": "K2Node_IfThenElse_92", "slow": "K2Node_IfThenElse_93"}, "abp": ["<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>", []], "abp_child": "<BlueprintStatus.BS_UP_TO_DATE: 3>", "knob": "0.0", "ok": tr
+== g7a 06:25:10
+OK 13.721992492675781
+G255 {"loop": "/Game/GraceRanger/SHME/Animations/V233/SprintCalm/SHM233_Calm_A_LB_Sprint_Fwd", "clips": {"SHM255_Sprint_R180": {"len": 2.0, "frames": 61, "tJ": 0.767, "t_done": 1.2, "foot_err": 0.0, "overreach": 0.0, "drift": {"l": 0.0, "r": 0.0}, "pelvis": [7
+== g7b 06:25:24
+OK 14.206880331039429
+G255 {"loop": "/Game/GraceRanger/SHME/Animations/V233/SprintCalm/SHM233_Calm_A_LB_Sprint_Fwd", "clips": {"SHM255_Sprint_R090": {"len": 2.067, "frames": 63, "tJ": 0.796, "t_done": 1.167, "foot_err": 0.0, "overreach": 0.0, "drift": {"l": 0.0, "r": 0.0}, "pelvis"
+== db7 06:25:40
+OK 1.6662790775299072
+DB255 {"PSD_SHM254_T255_SprintR": ["SHM255_Sprint_R180"], "PSD_SHM254_T255_SprintL": ["SHM255_Sprint_L180"], "PSD_SHM254_T255_JogR": ["SHM255_Jog_R180"], "PSD_SHM254_T255_JogL": ["SHM255_Jog_L180"], "PSD_SHM254_T255_CutR": ["SHM255_Sprint_R090"], "PSD_SHM254_T
+K_BUILD_OK
+v212_warm_062545 | rows 838 rate 60.1/s | pops >25 m/s2: 1 (worst 33) | by owner {'in-clip': 1} | FINISHED production
+v255k60w_s54_revR_c4_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 16 (worst 62) | by owner {'in-clip': 16} | FINISHED candidate
+FPSCHECK v255k60w_s54_revR_c4_r1 INVALID_FPS fixed=0.000 n=629
+v255k60w_s54_revL_c4_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 17 (worst 60) | by owner {'in-clip': 17} | FINISHED candidate
+FPSCHECK v255k60w_s54_revL_c4_r1 INVALID_FPS fixed=0.000 n=647
+v255k60w_s54_r90_c4_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 15 (worst 59) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255k60w_s54_r90_c4_r1 INVALID_FPS fixed=0.000 n=599
+v255k60w_s54_l90_c4_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 22 (worst 57) | by owner {'in-clip': 22} | FINISHED candidate
+FPSCHECK v255k60w_s54_l90_c4_r1 INVALID_FPS fixed=0.000 n=599
+v255k60w_j54_rev_c4_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 11 (worst 58) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255k60w_j54_rev_c4_r1 INVALID_FPS fixed=0.000 n=629
+v255k60w_j54_r90_c4_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 9 (worst 52) | by owner {'in-clip': 9} | FINISHED candidate
+FPSCHECK v255k60w_j54_r90_c4_r1 INVALID_FPS fixed=0.000 n=599
+v255k60w_j38_c90l_c4_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 12 (worst 68) | by owner {'in-clip': 12} | FINISHED candidate
+FPSCHECK v255k60w_j38_c90l_c4_r1 INVALID_FPS fixed=0.000 n=557
+v255k60_s54_revR_c4_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 17 (worst 63) | by owner {'in-clip': 17} | FINISHED candidate
+FPSCHECK v255k60_s54_revR_c4_r1 INVALID_FPS fixed=0.000 n=629
+v255k60_s54_revL_c4_r1 | rows 676 rate 60.1/s | pops >25 m/s2: 17 (worst 68) | by owner {'in-clip': 17} | FINISHED candidate
+FPSCHECK v255k60_s54_revL_c4_r1 INVALID_FPS fixed=0.000 n=647
+v255k60_s54_r90_c4_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 19 (worst 68) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255k60_s54_r90_c4_r1 INVALID_FPS fixed=0.000 n=599
+v255k60_s54_l90_c4_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 20 (worst 48) | by owner {'in-clip': 20} | FINISHED candidate
+FPSCHECK v255k60_s54_l90_c4_r1 INVALID_FPS fixed=0.000 n=599
+v255k60_j54_rev_c4_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 11 (worst 64) | by owner {'in-clip': 11} | FINISHED candidate
+FPSCHECK v255k60_j54_rev_c4_r1 INVALID_FPS fixed=0.000 n=629
+v255k60_j54_r90_c4_r1 | rows 628 rate 60.1/s | pops >25 m/s2: 10 (worst 61) | by owner {'in-clip': 10} | FINISHED candidate
+FPSCHECK v255k60_j54_r90_c4_r1 INVALID_FPS fixed=0.000 n=599
+v255k60_j38_c90l_c4_r1 | rows 586 rate 60.1/s | pops >25 m/s2: 12 (worst 61) | by owner {'in-clip': 12} | FINISHED candidate
+FPSCHECK v255k60_j38_c90l_c4_r1 INVALID_FPS fixed=0.000 n=557
+v255k60_s54_tap_c4_r1 | rows 643 rate 60.1/s | pops >25 m/s2: 18 (worst 53) | by owner {'in-clip': 18} | FINISHED candidate
+FPSCHECK v255k60_s54_tap_c4_r1 INVALID_FPS fixed=0.000 n=614
+v255k60_s54_mid_c4_r1 | rows 658 rate 60.1/s | pops >25 m/s2: 19 (worst 48) | by owner {'in-clip': 19} | FINISHED candidate
+FPSCHECK v255k60_s54_mid_c4_r1 INVALID_FPS fixed=0.000 n=629
+v255k60_s54_lr_c4_r1 | rows 622 rate 60.1/s | pops >25 m/s2: 15 (worst 70) | by owner {'in-clip': 15} | FINISHED candidate
+FPSCHECK v255k60_s54_lr_c4_r1 INVALID_FPS fixed=0.000 n=593
+v255k60_fz_sprint_a_c4_r1 | rows 2794 rate 60.0/s | pops >25 m/s2: 96 (worst 198) | by owner {'in-clip': 96} | FINISHED candidate
+FPSCHECK v255k60_fz_sprint_a_c4_r1 INVALID_FPS fixed=0.000 n=2765
+v255k60_fz_sprint_m_c4_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 83 (worst 207) | by owner {'in-clip': 83} | FINISHED candidate
+FPSCHECK v255k60_fz_sprint_m_c4_r1 INVALID_FPS fixed=0.000 n=2819
+v255k60_fz_jog_a_c4_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 77 (worst 146) | by owner {'in-clip': 77} | FINISHED candidate
+FPSCHECK v255k60_fz_jog_a_c4_r1 INVALID_FPS fixed=0.000 n=2759
+v255k60_fz_jog_m_c4_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 61 (worst 141) | by owner {'in-clip': 61} | FINISHED candidate
+FPSCHECK v255k60_fz_jog_m_c4_r1 INVALID_FPS fixed=0.000 n=2819
+v255k60_fz_sprint_a_c5_r1 | rows 2794 rate 60.0/s | pops >25 m/s2: 94 (worst 85) | by owner {'in-clip': 94} | FINISHED candidate
+FPSCHECK v255k60_fz_sprint_a_c5_r1 INVALID_FPS fixed=0.000 n=2765
+v255k60_fz_sprint_m_c5_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 82 (worst 164) | by owner {'in-clip': 82} | FINISHED candidate
+FPSCHECK v255k60_fz_sprint_m_c5_r1 INVALID_FPS fixed=0.000 n=2819
+v255k60_fz_jog_a_c5_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 81 (worst 101) | by owner {'in-clip': 81} | FINISHED candidate
+FPSCHECK v255k60_fz_jog_a_c5_r1 INVALID_FPS fixed=0.000 n=2759
+v255k60_fz_jog_m_c5_r1 | rows 2848 rate 60.0/s | pops >25 m/s2: 64 (worst 118) | by owner {'in-clip': 64} | FINISHED candidate
+FPSCHECK v255k60_fz_jog_m_c5_r1 INVALID_FPS fixed=0.000 n=2819
+TK255_DONE
