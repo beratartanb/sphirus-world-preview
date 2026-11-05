@@ -1,0 +1,10 @@
+2025-11-25
+map /Game/GraceRanger/Maps/L_GR_SphirusHouse
+load {'refPath': '/Game/GraceRanger/ToolTest/W_ToolTest_HUD.W_ToolTest_HUD'}
+TextBlock_0 {"Text":"E_KALICILIK_20261105"}
+TextBlock_191 {"Text":"Controls:"}
+SizeBox_85 {"Visibility":"Collapsed"}
+load {'refPath': '/Game/GraceRanger/ToolTest/PCG_ToolTest_Forest.PCG_ToolTest_Forest'}
+schema {"treeDensity":{"type":"number","description":"Trees per square metre"}}
+nodes 19 edge [{'srcNode': 'GetTreeDensity', 'srcPin': 'Out', 'destNode': 'SurfaceSampler_3', 'destPin': 'PointsPerSquaredMeter'}]
+RESULT {"SM_GroundCover01": {"count": 171, "sampled": 86, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 283]}, "SM_GroundCover02": {"count": 156, "sampled": 78, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 283]}, "SM_PineStone01": {"count": 2, "sampled": 2, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 0]}, "SM_PineStone02": {"count": 3, "sampled": 3, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 0]}, "SM_PineTree01": {"count": 6, "sampled": 6, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 0]}, "SM_PineTree02": {"count": 13, "sampled": 13, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 134]}, "SM_PineTree03": {"count": 6, "sampled": 6, "no_ground": 0, "max_gap_cm": 0.0, "mean_gap_cm": 0.0, "z": [0, 161]}}
