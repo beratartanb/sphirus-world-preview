@@ -27,7 +27,7 @@ Tarih: 2026-11-06. Motor: UE 5.8.4-58902052. Harita: `/Game/GraceRanger/Maps/L_G
 | Pine Forest PCG | PARTIAL | "Sopa" görüntüsünün olası nedeni bulundu. Ana sahneye eklenmedi |
 | PBL | PARTIAL | Değer değiştirilmedi, gerekçesi aşağıda |
 | True Lens | Kapalı bırakıldı | Hafif profil denendi, fark çok küçük |
-| Bellek | PARTIAL | −117 MB. Video bellek uyarısı editörde görülebilir, kalan büyük yük aşağıda |
+| Bellek | PARTIAL | Yaklaşık 140 MB düştü. Ray tracing uyarısı duruyor |
 | Gamepad | NOT_TESTED | Bağlı gamepad yok |
 | Gerçek merdiven çıkışı | NOT_TESTED | Senaryo yok |
 | Paketlenmiş oyun | NOT_TESTED | Yalnız editör ve `-game` |
@@ -163,6 +163,8 @@ Editör PIE, aynı poz ve sıra, 8 s, tek koşu. Değerler yön gösterir, kesin
 
 GPU ve CPU ayrımını ölçemedim. Kare süresi tümü.
 
+Logo silindikten sonra aynı koşu: 6514, 6542, 6547, 6535 MB; kare 22.6, 34.7, 33.6, 33.4 ms. Bellekteki doku toplamı 1191 MB. Editörde video bellek aşımı bu koşunun günlüğünde yok.
+
 İki ayrı uyarı var:
 
 - **Ray tracing geometrisi:** 125 MiB, 400 MiB bütçenin %20'sini aşıyor. Bu bir oran uyarısı, `-game` çalışmasında da var. Çözmedim.
@@ -171,7 +173,7 @@ GPU ve CPU ayrımını ölçemedim. Kare süresi tümü.
 | Yük | Boyut | Durum |
 |---|---|---|
 | `approaching_storm_4k` | 192 MB | Editörün HDRI aracı yüklüyor. Oyun yükü değil. PBL'yi kapatmak fark etmedi, geri açıldı |
-| `AAMS2_0_Logo` | 83 MB | Sıkıştırmasız demo logosu. Satıcı dosyası olduğu için dokunmadım, senin kararın |
+| `AAMS2_0_Logo` | 83 MB | Senin kararınla silindi. Beş demo dosyası motorun beyaz karesine bağlandı, test haritalarında logo beyaz görünür |
 | Kıyafet dokuları | 9 doku, 118 MB | Akışa açıldı. −117 MB büyük ihtimalle buradan, tek ölçüm |
 
 Aynı Henley dokusunun iki kopyası bellekte. Kıyafet bekletildiği için bıraktım.
@@ -232,10 +234,10 @@ Yedekler `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/` altında.
 | Harita, ortam öncesi | `grip_map_e1_185037` |
 | Zemin ve yaprak | `grip_hab_184919` |
 | Dokular | `grip_stream_190953` |
+| AAMS logosu ve bağlı beş dosya | `grip_logo_211159` |
 
 ## Sonraki iş
 
 1. Oyunda tutuşa ve taşıma hissine bak.
-2. `AAMS2_0_Logo` kararı: küçültülsün mü?
-3. Baş sıçraması için ayrı çalışma.
-4. Ortam için büyük yerleşim turu.
+2. Baş sıçraması için ayrı çalışma.
+3. Ortam için büyük yerleşim turu.
