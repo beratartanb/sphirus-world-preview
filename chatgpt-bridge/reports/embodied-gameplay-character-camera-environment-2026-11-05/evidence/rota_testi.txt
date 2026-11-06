@@ -1,0 +1,46 @@
+GM production
+PIE requested
+False
+start stage 0 P 0 mode 0 T 0.0 held False items 0 journal 0 tasks 1 target None pawn [832, -220] yaw 0
+WALK f_bench 17 pts [(840.0, -210.0), (840.0, -120.0), (840.0, -30.0)] ... (397, 170)
+f_bench ok True secs 10.9 stuck 0 end [433, 153, 238] frames 280 avgFPS 25.7 maxV 132
+look_mask stage 0 P 0 mode 0 T 0.0 held False items 0 journal 0 tasks 1 target BP_GR_MaskBench_C_0 pawn [396, 157] yaw 109
+after_E_2s stage 0 P 3 mode 1 T 3.94 held True items 0 journal 0 tasks 1 target BP_GR_MaskBench_C_0 pawn [397, 195] yaw 87
+after_E_5s stage 0 P 3 mode 1 T 7.78 held True items 0 journal 0 tasks 1 target BP_GR_MaskBench_C_0 pawn [397, 195] yaw 87
+inspect_turned stage 0 P 3 mode 1 T 16.34 held True items 0 journal 0 tasks 1 target BP_GR_MaskBench_C_0 pawn [397, 195] yaw 87
+put_down stage 1 P 0 mode 1 T 1.93 held False items 0 journal 0 tasks 2 target None pawn [397, 195] yaw 87
+WALK f_strip 18 pts [(390.0, 180.0), (480.0, 150.0), (540.0, 240.0)] ... (1165, 1255)
+f_strip ok True secs 12.2 stuck 0 end [1150, 1288, 238] frames 399 avgFPS 32.7 maxV 132
+look_strip stage 1 P 0 mode 1 T 1.93 held False items 0 journal 0 tasks 2 target BP_GR_StripPickup_C_0 pawn [1161, 1270] yaw -20
+strip_taken stage 1 P 0 mode 1 T 1.93 held False items 1 journal 0 tasks 2 target None pawn [1161, 1270] yaw -20
+WALK f_back 18 pts [(1170.0, 1260.0), (1080.0, 1320.0), (990.0, 1260.0)] ... (397, 170)
+f_back ok True secs 12.2 stuck 0 end [433, 159, 238] frames 402 avgFPS 33.0 maxV 132
+look_mask2 stage 1 P 0 mode 1 T 1.93 held False items 1 journal 0 tasks 2 target BP_GR_MaskBench_C_0 pawn [400, 160] yaw 73
+tie_3s stage 3 P 0 mode 2 T 4.01 held False items 0 journal 0 tasks 2 target None pawn [397, 194] yaw 88
+tie_done stage 3 P 0 mode 2 T 4.01 held False items 0 journal 0 tasks 2 target None pawn [397, 194] yaw 88
+look_mask3 stage 3 P 0 mode 2 T 4.01 held False items 0 journal 0 tasks 2 target BP_GR_MaskBench_C_0 pawn [397, 194] yaw 88
+carry stage 3 P 5 mode 3 T 2.03 held True items 0 journal 0 tasks 2 target None pawn [397, 193] yaw 89
+WALK f_carry 5 pts [(390.0, 180.0), (300.0, 150.0), (270.0, 240.0)] ... (235, 340)
+f_carry ok True secs 3.1 stuck 0 end [251, 306, 240] frames 96 avgFPS 31.0 maxV 80
+at_hook stage 3 P 5 mode 3 T 4.95 held True items 0 journal 0 tasks 2 target None pawn [245, 318] yaw 89
+look_hook stage 3 P 5 mode 3 T 5.99 held True items 0 journal 0 tasks 2 target BP_GR_MaskHook_C_0 pawn [245, 318] yaw 89
+hang_mid stage 2 P 0 mode 5 T 2.51 held False items 0 journal 1 tasks 2 target None pawn [235, 369] yaw 89
+hang_done stage 2 P 0 mode 5 T 2.51 held False items 0 journal 1 tasks 2 target None pawn [235, 369] yaw 89
+WALK r_shore 54 pts [(240.0, 360.0), (330.0, 390.0), (420.0, 390.0)] ... (1500, 2810)
+r_shore ok True secs 36.7 stuck 0 end [1529, 2788, 105] frames 1107 avgFPS 30.2 maxV 132
+WALK r_pond 10 pts [(1500.0, 2820.0), (1590.0, 2880.0), (1680.0, 2910.0)] ... (2940, 3980)
+r_pond ok False secs 24.4 stuck 5 end [2819, 3996, 31] frames 737 avgFPS 30.2 maxV 132
+WALK r_trail 20 pts [(2280.0, 3390.0), (2190.0, 3300.0), (2100.0, 3210.0)] ... (2180, 1750)
+r_trail ok True secs 20.0 stuck 0 end [2152, 1777, 219] frames 601 avgFPS 30.1 maxV 132
+WALK r_up 29 pts [(2190.0, 1740.0), (2130.0, 1650.0), (2100.0, 1560.0)] ... (2690, -650)
+r_up ok False secs 28.9 stuck 5 end [2323, -609, 279] frames 843 avgFPS 29.2 maxV 132
+WALK r_ver 35 pts [(2280.0, -600.0), (2190.0, -600.0), (2100.0, -600.0)] ... (1165, 1255)
+r_ver ok True secs 25.1 stuck 0 end [1151, 1290, 238] frames 721 avgFPS 28.7 maxV 132
+WALK r_home 18 pts [(1170.0, 1260.0), (1080.0, 1320.0), (990.0, 1260.0)] ... (397, 170)
+r_home ok True secs 12.2 stuck 0 end [435, 159, 238] frames 349 avgFPS 28.6 maxV 132
+r_home stage 2 P 0 mode 5 T 2.51 held False items 0 journal 1 tasks 2 target None pawn [401, 160] yaw 164
+--- runtime errors
+stop
+PIE False
+Reset.sav 1
+FLOW_DONE

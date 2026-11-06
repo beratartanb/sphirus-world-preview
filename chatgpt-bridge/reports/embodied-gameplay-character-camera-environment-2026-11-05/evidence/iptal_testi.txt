@@ -1,0 +1,38 @@
+GM production
+=== S_A resume
+PIE requested
+False
+False
+a_load stage 0 P 0 mode 0 T 0.0 yawT 0.0 items 0 journal 0 tasks 0 benchVis True finHid True ragHid True loc 832 -220 185 v 0 slow False
+WALK a_bench 17 pts [(840.0, -210.0), (840.0, -120.0), (840.0, -30.0)] ... (397, 170)
+a_bench ok True secs 10.7 stuck 0 end [431, 154, 238] frames 340 avgFPS 31.8 maxV 132
+a_look stage 0 P 0 mode 0 T 0.0 yawT 0.0 items 0 journal 0 tasks 0 benchVis True finHid True ragHid True loc 398 157 238 v 0 slow False
+a_inspect stage 0 P 3 mode 1 T 6.66 yawT 0.0 items 0 journal 0 tasks 0 benchVis True finHid True ragHid True loc 397 194 238 v 0 slow False
+a_put stage 1 P 0 mode 1 T 1.93 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid True loc 397 194 238 v 0 slow False
+stop
+=== S_C tie cancel, jump, put back, hang
+PIE requested
+False
+False
+c_load stage 1 P 0 mode 0 T 0.0 yawT 0.0 items 1 journal 0 tasks 1 benchVis True finHid True ragHid True loc 832 -220 185 v 0 slow False
+WALK c_bench 17 pts [(840.0, -210.0), (840.0, -120.0), (840.0, -30.0)] ... (397, 170)
+c_bench ok True secs 10.7 stuck 0 end [432, 152, 238] frames 282 avgFPS 26.4 maxV 132
+c_look stage 1 P 0 mode 0 T 0.0 yawT 0.0 items 1 journal 0 tasks 1 benchVis True finHid True ragHid True loc 398 156 238 v 0 slow False
+c_tie_early stage 1 P 6 mode 2 T 0.39 yawT 0.0 items 1 journal 0 tasks 1 benchVis True finHid True ragHid True loc 397 197 238 v 0 slow False
+c_tie_F stage 1 P 0 mode 2 T 0.56 yawT 0.0 items 1 journal 0 tasks 1 benchVis True finHid True ragHid True loc 397 197 238 v 0 slow False
+c_tie_cancelled stage 1 P 0 mode 2 T 0.56 yawT 0.0 items 1 journal 0 tasks 1 benchVis True finHid True ragHid True loc 397 197 238 v 0 slow False
+c_tie_done stage 3 P 0 mode 2 T 4.0 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 397 195 238 v 0 slow False
+c_carry stage 3 P 5 mode 3 T 2.18 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 397 194 238 v 0 slow True
+c_jump_air stage 3 P 5 mode 3 T 4.36 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 397 194 238 v 0 slow True
+c_jump_after stage 3 P 5 mode 3 T 1.18 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 397 194 238 v 0 slow True
+c_putback stage 3 P 0 mode 4 T 1.91 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 397 193 238 v 0 slow False
+c_carry2 stage 3 P 5 mode 3 T 2.05 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 397 193 238 v 0 slow True
+WALK c_carry 5 pts [(390.0, 180.0), (300.0, 150.0), (270.0, 240.0)] ... (235, 340)
+c_carry ok True secs 3.1 stuck 0 end [251, 306, 240] frames 98 avgFPS 31.6 maxV 80
+c_hook stage 3 P 5 mode 3 T 0.46 yawT 0.0 items 0 journal 0 tasks 1 benchVis True finHid True ragHid False loc 245 319 240 v 0 slow True
+c_hung stage 2 P 0 mode 5 T 2.52 yawT 0.0 items 0 journal 1 tasks 1 benchVis False finHid False ragHid True loc 235 369 238 v 0 slow False
+FIN <Struct 'Vector' (0x000001EF2A21DC10) {x: 234.315920, y: 422.804608, z: 275.877294}> <Struct 'Rotator' (0x000001EF2A261A50) {pitch: 1.003445, yaw: 178.134920, roll: 90.439206}> <Struct 'Vector' (0x000001EF2A21DC30) {x: 1.000000, y: 1.000000, z: 1.000000}>
+stop
+--- runtime errors
+Reset.sav 1
+CANCEL_DONE

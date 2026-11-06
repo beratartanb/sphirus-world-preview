@@ -1,0 +1,28 @@
+GM production
+PIE requested
+False
+S_D_done_fresh stage 0 P 0 items 0 journal 0 tasks 1 benchVis True finHidden True ragHidden True strip True
+S_D_done_load1 stage 2 P 0 items 0 journal 1 tasks 1 benchVis False finHidden False ragHidden True strip False
+S_D_done_load2 stage 2 P 0 items 0 journal 1 tasks 1 benchVis False finHidden False ragHidden True strip False
+stop
+PIE requested
+False
+S_B_bound_fresh stage 0 P 0 items 0 journal 0 tasks 1 benchVis True finHidden True ragHidden True strip True
+S_B_bound_load1 stage 3 P 0 items 0 journal 0 tasks 1 benchVis True finHidden True ragHidden False strip False
+S_B_bound_load2 stage 3 P 0 items 0 journal 0 tasks 1 benchVis True finHidden True ragHidden False strip False
+stop
+PIE requested
+False
+S_C_strip_fresh stage 0 P 0 items 0 journal 0 tasks 1 benchVis True finHidden True ragHidden True strip True
+S_C_strip_load1 stage 1 P 0 items 1 journal 0 tasks 1 benchVis True finHidden True ragHidden True strip False
+S_C_strip_load2 stage 1 P 0 items 1 journal 0 tasks 1 benchVis True finHidden True ragHidden True strip False
+stop
+PIE requested
+False
+S_A_stage0_bench_fresh stage 0 P 0 items 0 journal 0 tasks 1 benchVis True finHidden True ragHidden True strip True
+S_A_stage0_bench_load1 stage 0 P 0 items 0 journal 0 tasks 0 benchVis True finHidden True ragHidden True strip True
+S_A_stage0_bench_load2 stage 0 P 0 items 0 journal 0 tasks 0 benchVis True finHidden True ragHidden True strip True
+stop
+--- runtime errors
+Reset.sav 1
+SAVE_DONE
