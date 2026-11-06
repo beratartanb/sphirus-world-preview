@@ -146,7 +146,7 @@ Yeni yöne gidiş 0.09 s uzadı. Bu beklenen fark: önce geri geri gidiyordu, ş
 
 Açık kusurlar:
 
-- Rastgele yürüyüş testinin bir tohumunda (`fz_walk_a`) tuş bırakıp hemen başka tuşa basınca tek karelik baş sıçraması kaldı: 193 m/s², 4 cm. Üretimde bu tohumun en kötüsü 38'di. Düzeltmeyi denedim, kalktı değil.
+- Rastgele yürüyüş testinin bir tohumunda (`fz_walk_a`) tuş bırakıp hemen başka tuşa basınca tek karelik baş sıçraması kaldı: 193 m/s², 4 cm. Üretimde bu tohumun en kötüsü 38'di. Çıkış yaması bunu kaldırmadı, yani bu bir gerileme.
 - Sıra 3–6'ya (sert sağ-sol, ters istek, düşük hız sprint pivotu, çapraz salınım) bu turda yeni iş yapmadım. V2.55 kazanımları korundu.
 - Animated Female Locomotion Set ve Grounded alınmadığı için kaynaklar projede olanlar.
 
@@ -159,7 +159,7 @@ Gerçek hız videosu: `evidence/20_yuruyus_sprint_gercek_hiz.avi` (60 fps, 3.2 s
 | Deneme | Sonuç | Karar |
 |---|---|---|
 | Büyük bitki katmanı, göl kıyısı | 6.711 örnek, +53 MB. İnce sopa gövdeler, canlı yeşil, gölü kapatıyor | Reddedildi (`17_...png`) |
-| Zemin örtüsü, yükselen orman | 6.092 örnek, +130 MB. Yine sopa gövdeler ve sarkan perde | Reddedildi (`18_...png`) |
+| Zemin örtüsü, yükselen orman | 6.092 örnek, yaklaşık +130 MB (taban farklı noktadan). Yine sopa gövdeler ve sarkan perde | Reddedildi (`18_...png`) |
 | Seçilmiş zemin parçaları | 108 örnek, çarpışmasız, 45 m'de kesilir | Üretime alındı |
 
 Son karar çift ormanı da önledi. Mevcut 22.302 örneklik ormana dokunmadım. Yalnız iğne yaprak, kabuk ve dal yığınları ev–göl ve arka patika kenarlarına, patikadan 1.3–4.2 m uzağa eklendi. Eğimli yerlere ve zemin dışına konmadı. Ev, iskele ve görev alanları dışarıda kaldı. Araziye, gölete ve mevcut bitkilere dokunulmadı.
