@@ -1,0 +1,43 @@
+v255wo_w54_rev_w5_r1 | rows 660 rate 60.1/s | pops >25 m/s2: 3 (worst 172) | by owner {'in-clip': 3} | FINISHED candidate
+      t  peak stage                         +s    v bone      exc_cm    dt | owner / switch / flags
+   0.02   171 yaw_hold                    0.02    0 pelvis      0.00 0.033 | in-clip / layer
+   5.50    45 mv_walk_180_1               0.50    2 head        0.75 0.034 | in-clip / layer
+   2.93    28 mv_walk_0_0                 0.93  132 sh_r        0.52 0.033 | in-clip / layer
+transition windows (max upper-body acc in [0, 1.2 s] after each input change):
+    2.00 yaw_hold                 -> mv_walk_0_0              max  27.7 | event  27.7 in-clip / layer
+    5.00 mv_walk_0_0              -> mv_walk_180_1            max  45.4 | event  45.4 in-clip / layer
+    8.00 mv_walk_180_1            -> mv_walk_rel_2            max  12.6 | event   0.0 
+   10.00 mv_walk_rel_2            -> mv_stop                  max   0.8 | event   0.0 
+
+v255wo_w54_rev_w5_r1 | frames 660
+stage                         n  x_mean  x_rng  y_mean  y_rng    fspd  excess    jerk  yawdr   dRng
+yaw_hold                    120  -0.412  0.134  -0.390  0.134   0.983 242072.4 7337165    0.0 6819.0
+mv_walk_0_0                 180  -0.378  0.047  -0.405  0.035   0.230     2.6     307    0.0   10.5
+mv_walk_180_1               180  -0.316  0.147  -0.429  0.143   0.636    19.0     636   32.5   21.6
+mv_walk_rel_2               120  -0.294  0.035  -0.400  0.050   0.249     8.5     374   32.3   13.2
+mv_stop                      60  -0.293  0.011  -0.406  0.004   0.024     6.2     188    0.0    0.4
+framing settle after input changes:
+    2.00 -> mv_walk_0_0              settle 6.73  x -0.409 -> -0.293 (peak -0.261)
+    5.00 -> mv_walk_180_1            settle 3.73  x -0.365 -> -0.293 (peak -0.261)
+    8.00 -> mv_walk_rel_2            settle 0.73  x -0.282 -> -0.293 (peak -0.293)
+   10.00 -> mv_stop                  settle 0.0   x -0.299 -> -0.288 (peak -0.288)
+
+v255wo_w54_rev_w5_r1 | plants 11 | skating mean 1.18 p90 2.06 max 2.6 cm
+  worst stages: mv_walk_0_0 2.6, mv_walk_180_1 1.7, mv_walk_rel_2 1.0
+
+window lines 3167..3186 (v255wo_w54_rev_w5_r1 .. v255wo_w54_rev_w5_r1)
+| count | entry | class |
+|---|---|---|
+| 1 | `LogMaterial: Error: MaterialInstance "MI_Fabric_White_Solid_01" parameter 'Normal VT' assigned texture "T_11" ` | NEW / TO CLASSIFY |
+| 1 | `LogMaterial: Error: MaterialInstance "MI_Fabric_White_Solid_01" parameter 'AO VT' assigned texture "T_11" requ` | NEW / TO CLASSIFY |
+| 1 | `LogMaterial: Error: MaterialInstance "MI_Ground_MossyNeedles_01" parameter 'Normal VT' assigned texture "T_Gro` | NEW / TO CLASSIFY |
+| 1 | `LogMaterial: Error: MaterialInstance "MI_Ground_MossyNeedles_01" parameter 'AO VT' assigned texture "T_Ground0` | NEW / TO CLASSIFY |
+| 1 | `LogUtils: Error: The Editor is currently in a play mode.` | QA TOOLING (job issued during PIE) |
+Accessed None (SHME): 0 | index skips: 0
+
+v255wo_w54_rev_w5_r1 | turns 0 | cuts 1 | stops 1 | starts 1
+  cut   -180 @ 130 cm/s | heading 90% 0.48 s | lat 0.00 g | speed loss 99 %
+  stop @ 132 cm/s | 0.48 s | 32.6 cm | decel 0.32 g
+  start ->  131 cm/s | t90 0.68 s | acc 0.23 g
+  lean mv_walk_0_0      roll  -0.9 deg | head-pelvis  -1.8 cm
+  lean mv_walk_180_1    roll  -0.0 deg | head-pelvis  -0.4 cm

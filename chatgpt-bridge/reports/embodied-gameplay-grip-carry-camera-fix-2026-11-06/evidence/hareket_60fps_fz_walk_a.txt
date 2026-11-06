@@ -1,0 +1,261 @@
+v255wo_fz_walk_a_w5_r1 | rows 2788 rate 60.0/s | pops >25 m/s2: 19 (worst 175) | by owner {'in-clip': 19} | FINISHED candidate
+      t  peak stage                         +s    v bone      exc_cm    dt | owner / switch / flags
+  27.38   175 mv_kb_-90_51_A              0.08   30 head        3.64 0.033 | in-clip / layer
+   8.62    51 mv_kb_-90_9_A               0.32    2 sh_l        1.10 0.033 | in-clip / layer
+  41.48    42 mv_kb_-90_89_A              0.08   53 pelvis      0.31 0.033 | in-clip / layer
+  44.58    41 mv_kb_rel_104_0             0.08   17 sh_l        0.19 0.033 | in-clip / layer
+  44.32    37 mv_kb_135_102_SD            0.42    8 chest       0.49 0.033 | in-clip / layer
+  37.53    35 mv_kb_90_77_D               0.58   44 sh_l        0.83 0.033 | in-clip / layer
+  32.32    33 mv_kb_-135_66_AS            0.32   23 head        0.51 0.033 | in-clip / layer
+  28.80    32 mv_kb_rel_58_0              0.25    0 sh_r        0.47 0.034 | in-clip / layer
+  29.78    31 mv_kb_45_62_WD              0.23   36 head        0.34 0.033 | in-clip / layer
+   6.50    31 mv_kb_-135_4_AS             1.60  132 sh_r        0.45 0.034 | in-clip / layer
+  37.00    30 mv_kb_90_77_D               0.05   46 sh_l        0.34 0.034 | in-clip / layer
+  17.75    28 mv_kb_135_32_SD             1.60  132 sh_r        0.27 0.034 | in-clip / layer
+  37.25    27 mv_kb_90_77_D               0.30    8 pelvis      0.38 0.034 | in-clip / layer
+  41.78    27 mv_kb_0_91_W                0.08   35 sh_l        0.30 0.033 | in-clip / layer
+   8.32    27 mv_kb_-90_9_A               0.02   69 sh_r        0.38 0.033 | in-clip / layer
+  29.62    27 mv_kb_45_62_WD              0.07   61 head        0.44 0.033 | in-clip / layer
+  28.48    25 mv_kb_45_56_WD              0.23   35 head        0.17 0.033 | in-clip / layer
+   9.73    25 mv_kb_180_11_S              0.43  111 sh_l        0.18 0.033 | in-clip / layer
+   2.32    25 mv_kb_0_1_W                 0.02    0 sh_l        0.51 0.033 | in-clip / layer
+transition windows (max upper-body acc in [0, 1.2 s] after each input change):
+    2.00 yaw_hold                 -> mv_kb_rel_0_0            max  25.1 | event  25.1 in-clip / layer
+    2.30 mv_kb_rel_0_0            -> mv_kb_0_1_W              max  25.1 | event  25.1 in-clip / layer
+    4.90 mv_kb_0_1_W              -> mv_kb_-135_4_AS          max  20.3 | event   0.0 
+    7.30 mv_kb_-135_4_AS          -> mv_kb_90_7_D             max  26.8 | event  26.8 in-clip / layer
+    8.30 mv_kb_90_7_D             -> mv_kb_-90_9_A            max  51.0 | event  51.0 in-clip / layer
+    9.30 mv_kb_-90_9_A            -> mv_kb_180_11_S           max  25.2 | event  25.2 in-clip / layer
+    9.90 mv_kb_180_11_S           -> mv_kb_rel_12_WS          max  22.5 | event   0.0 
+    9.95 mv_kb_rel_12_WS          -> mv_kb_0_13_W             max  22.5 | event   0.0 
+   10.95 mv_kb_0_13_W             -> mv_kb_rel_14_0           max  13.8 | event   0.0 
+   12.05 mv_kb_rel_14_0           -> mv_kb_180_15_S           max  22.4 | event   0.0 
+   13.05 mv_kb_180_15_S           -> mv_kb_-90_17_A           max  23.4 | event   0.0 
+   13.20 mv_kb_-90_17_A           -> mv_kb_135_20_SD          max  23.4 | event   0.0 
+   13.50 mv_kb_135_20_SD          -> mv_kb_-45_24_WA          max  23.4 | event   0.0 
+   14.10 mv_kb_-45_24_WA          -> mv_kb_-90_25_WAS         max  15.7 | event   0.0 
+   14.15 mv_kb_-90_25_WAS         -> mv_kb_180_27_S           max  15.7 | event   0.0 
+   15.15 mv_kb_180_27_S           -> mv_kb_-90_29_A           max  18.0 | event   0.0 
+   16.15 mv_kb_-90_29_A           -> mv_kb_135_32_SD          max  18.2 | event   0.0 
+   18.60 mv_kb_135_32_SD          -> mv_kb_90_33_D            max  16.7 | event   0.0 
+   19.60 mv_kb_90_33_D            -> mv_kb_-135_36_AS         max  20.8 | event   0.0 
+   20.20 mv_kb_-135_36_AS         -> mv_kb_rel_38_WASD        max  20.8 | event   0.0 
+   20.25 mv_kb_rel_38_WASD        -> mv_kb_45_40_WD           max  20.8 | event   0.0 
+   20.85 mv_kb_45_40_WD           -> mv_kb_90_41_D            max  11.4 | event   0.0 
+   23.25 mv_kb_90_41_D            -> mv_kb_135_42_SD          max  10.0 | event   0.0 
+   23.55 mv_kb_135_42_SD          -> mv_kb_90_43_D            max  10.0 | event   0.0 
+   25.95 mv_kb_90_43_D            -> mv_kb_-135_46_AS         max  23.3 | event   0.0 
+   26.95 mv_kb_-135_46_AS         -> mv_kb_135_48_SD          max 175.2 | event 175.2 in-clip / layer
+   27.10 mv_kb_135_48_SD          -> mv_kb_rel_50_0           max 175.2 | event 175.2 in-clip / layer
+   27.30 mv_kb_rel_50_0           -> mv_kb_-90_51_A           max 175.2 | event 175.2 in-clip / layer
+   27.60 mv_kb_-90_51_A           -> mv_kb_180_53_S           max  31.8 | event  31.8 in-clip / layer
+   28.20 mv_kb_180_53_S           -> mv_kb_rel_54_0           max  31.8 | event  31.8 in-clip / layer
+   28.25 mv_kb_rel_54_0           -> mv_kb_45_56_WD           max  31.8 | event  31.8 in-clip / layer
+   28.55 mv_kb_45_56_WD           -> mv_kb_rel_58_0           max  31.8 | event  31.8 in-clip / layer
+   28.95 mv_kb_rel_58_0           -> mv_kb_-90_59_A           max  31.0 | event  31.0 in-clip / layer
+   29.55 mv_kb_-90_59_A           -> mv_kb_45_62_WD           max  31.0 | event  31.0 in-clip / layer
+   31.95 mv_kb_45_62_WD           -> mv_kb_rel_64_WASD        max  33.1 | event  33.1 in-clip / layer
+   32.00 mv_kb_rel_64_WASD        -> mv_kb_-135_66_AS         max  33.1 | event  33.1 in-clip / layer
+   34.40 mv_kb_-135_66_AS         -> mv_kb_rel_68_0           max  24.5 | event   0.0 
+   34.60 mv_kb_rel_68_0           -> mv_kb_-45_70_WA          max  24.5 | event   0.0 
+   34.90 mv_kb_-45_70_WA          -> mv_kb_0_71_WAD           max  15.9 | event   0.0 
+   34.95 mv_kb_0_71_WAD           -> mv_kb_90_73_D            max  15.9 | event   0.0 
+   35.95 mv_kb_90_73_D            -> mv_kb_rel_74_0           max  29.9 | event  29.9 in-clip / layer
+   36.35 mv_kb_rel_74_0           -> mv_kb_-90_75_A           max  35.5 | event  35.5 in-clip / layer
+   36.95 mv_kb_-90_75_A           -> mv_kb_90_77_D            max  35.5 | event  35.5 in-clip / layer
+   38.55 mv_kb_90_77_D            -> mv_kb_-135_80_AS         max  20.3 | event   0.0 
+   38.85 mv_kb_-135_80_AS         -> mv_kb_-45_82_WA          max  20.3 | event   0.0 
+   39.45 mv_kb_-45_82_WA          -> mv_kb_45_84_WD           max   9.0 | event   0.0 
+   40.45 mv_kb_45_84_WD           -> mv_kb_90_85_D            max  41.8 | event  41.8 in-clip / layer
+   41.05 mv_kb_90_85_D            -> mv_kb_180_87_S           max  41.8 | event  41.8 in-clip / layer
+   41.35 mv_kb_180_87_S           -> mv_kb_rel_88_0           max  41.8 | event  41.8 in-clip / layer
+   41.40 mv_kb_rel_88_0           -> mv_kb_-90_89_A           max  41.8 | event  41.8 in-clip / layer
+   41.70 mv_kb_-90_89_A           -> mv_kb_0_91_W             max  26.8 | event  26.8 in-clip / layer
+   42.70 mv_kb_0_91_W             -> mv_kb_135_94_SD          max  17.0 | event   0.0 
+   42.85 mv_kb_135_94_SD          -> mv_kb_-45_98_WA          max  19.1 | event   0.0 
+   43.85 mv_kb_-45_98_WA          -> mv_kb_rel_100_0          max  40.9 | event  40.9 in-clip / layer
+   43.90 mv_kb_rel_100_0          -> mv_kb_135_102_SD         max  40.9 | event  40.9 in-clip / layer
+   44.50 mv_kb_135_102_SD         -> mv_kb_rel_104_0          max  40.9 | event  40.9 in-clip / layer
+
+v255wo_fz_walk_a_w5_r1 | frames 2788
+stage                         n  x_mean  x_rng  y_mean  y_rng    fspd  excess    jerk  yawdr   dRng
+yaw_hold                    118  -0.415  0.097  -0.410  0.078   0.535     8.2     426    0.0   29.1
+mv_kb_rel_0_0                18  -0.402  0.014  -0.405  0.003   0.097     0.0       3    0.0    0.8
+mv_kb_0_1_W                 156  -0.380  0.047  -0.406  0.043   0.280     2.6     308    0.0    9.1
+mv_kb_-135_4_AS             144  -0.382  0.117  -0.424  0.062   0.470    14.4     686   32.7   19.3
+mv_kb_90_7_D                 60  -0.349  0.165  -0.433  0.043   0.977    13.8     381   32.1    7.5
+mv_kb_-90_9_A                60  -0.364  0.223  -0.428  0.034   1.199     9.8     364   20.6   10.6
+mv_kb_180_11_S               36  -0.413  0.085  -0.444  0.034   0.534    10.9     371   29.1    7.5
+mv_kb_0_13_W                 60  -0.380  0.068  -0.409  0.077   0.376     9.0     407    1.8   14.6
+mv_kb_rel_14_0               66  -0.399  0.048  -0.383  0.036   0.224    11.5     383    0.3    7.7
+mv_kb_180_15_S               60  -0.345  0.090  -0.462  0.146   0.720     6.9     273    0.0   16.9
+mv_kb_-90_17_A                9  -0.382  0.008  -0.436  0.022   0.248     6.0     344    0.6    2.5
+mv_kb_135_20_SD              18  -0.357  0.045  -0.437  0.028   0.300     7.7     275    0.7    3.9
+mv_kb_-45_24_WA              36  -0.370  0.113  -0.439  0.059   0.586    10.4     308    0.4    8.9
+mv_kb_180_27_S               60  -0.398  0.053  -0.416  0.059   0.403     7.2     247    0.6    7.5
+mv_kb_-90_29_A               60  -0.426  0.075  -0.440  0.051   0.413     9.7     448   27.9   12.1
+mv_kb_135_32_SD             147  -0.312  0.135  -0.423  0.060   0.571    22.9     724   32.5   18.4
+mv_kb_90_33_D                60  -0.272  0.048  -0.429  0.037   0.385    12.5     483   32.5   11.3
+mv_kb_-135_36_AS             36  -0.344  0.067  -0.411  0.023   0.464    23.3     871   31.8    5.8
+mv_kb_45_40_WD               36  -0.297  0.035  -0.390  0.017   0.222     7.5     405   15.5   10.3
+mv_kb_90_41_D               144  -0.303  0.062  -0.391  0.056   0.341     9.1     376   31.6    9.5
+mv_kb_135_42_SD              18  -0.328  0.020  -0.399  0.031   0.247     7.6     244   30.3    2.1
+mv_kb_90_43_D               144  -0.311  0.059  -0.391  0.069   0.329     9.9     384   33.7    5.3
+mv_kb_-135_46_AS             60  -0.362  0.090  -0.417  0.050   0.313     8.6     234   26.4   13.3
+mv_kb_135_48_SD               9  -0.399  0.015  -0.430  0.011   0.223     3.5     193    0.5    0.6
+mv_kb_rel_50_0               12  -0.380  0.020  -0.449  0.013   0.285     4.9     185    0.2    0.8
+mv_kb_-90_51_A               18  -0.352  0.026  -0.436  0.017   0.284     8.4     234    0.1    3.6
+mv_kb_180_53_S               36  -0.417  0.114  -0.432  0.024   0.758     7.0     302    0.1    8.2
+mv_kb_45_56_WD               18  -0.369  0.031  -0.386  0.019   0.405     4.9     228    0.2    2.1
+mv_kb_rel_58_0               24  -0.367  0.048  -0.412  0.026   0.419     9.9     307    0.1    9.6
+mv_kb_-90_59_A               36  -0.360  0.036  -0.437  0.103   0.465     6.9     384    0.0    6.7
+mv_kb_45_62_WD              144  -0.327  0.110  -0.396  0.112   0.678     6.9     302   26.9   11.3
+mv_kb_-135_66_AS            144  -0.385  0.077  -0.433  0.072   0.358    14.3     519   32.8   20.7
+mv_kb_rel_68_0               12  -0.398  0.001  -0.426  0.005   0.071     9.4     211   32.2    3.8
+mv_kb_-45_70_WA              18  -0.409  0.022  -0.415  0.011   0.160    13.9     416   17.1    8.3
+mv_kb_90_73_D                60  -0.322  0.166  -0.407  0.033   0.375     9.1     397   19.8    5.7
+mv_kb_rel_74_0               24  -0.309  0.047  -0.398  0.006   0.432    10.2     214   32.2    3.2
+mv_kb_-90_75_A               36  -0.335  0.067  -0.389  0.040   0.469     6.5     218    7.0   11.1
+mv_kb_90_77_D                96  -0.287  0.136  -0.406  0.071   0.474    10.0     407   32.0   19.0
+mv_kb_-135_80_AS             18  -0.324  0.053  -0.383  0.015   0.374    12.9     880   32.4    2.6
+mv_kb_-45_82_WA              36  -0.355  0.031  -0.391  0.028   0.324    20.7     828    9.9    1.5
+mv_kb_45_84_WD               60  -0.343  0.079  -0.397  0.034   0.295     7.7     409   12.2    4.7
+mv_kb_90_85_D                36  -0.293  0.041  -0.390  0.024   0.280     5.3     285   15.1    2.3
+mv_kb_180_87_S               18  -0.302  0.010  -0.399  0.037   0.316     7.5     337    1.5    7.3
+mv_kb_-90_89_A               18  -0.372  0.099  -0.427  0.008   0.568     4.4     139    0.8    5.3
+mv_kb_0_91_W                 60  -0.434  0.054  -0.415  0.077   0.410    11.2     617    1.6   25.4
+mv_kb_135_94_SD               9  -0.406  0.003  -0.370  0.009   0.126    13.6     530    0.6    2.4
+mv_kb_-45_98_WA              60  -0.425  0.039  -0.397  0.039   0.223     4.4     360   20.4    7.7
+mv_kb_135_102_SD             36  -0.307  0.158  -0.403  0.028   0.608     8.7     316   24.2   10.9
+mv_kb_rel_104_0             120  -0.193  0.096  -0.400  0.045   0.668     7.1     351    1.1   11.7
+framing settle after input changes:
+    2.00 -> mv_kb_rel_0_0            settle 0.83  x -0.41 -> -0.383 (peak -0.383)
+    2.30 -> mv_kb_0_1_W              settle 0.53  x -0.396 -> -0.383 (peak -0.383)
+    4.90 -> mv_kb_-135_4_AS          settle 29.38 x -0.382 -> -0.407 (peak -0.221)
+    7.30 -> mv_kb_90_7_D             settle 26.98 x -0.399 -> -0.407 (peak -0.221)
+    8.30 -> mv_kb_-90_9_A            settle 25.98 x -0.234 -> -0.407 (peak -0.462)
+    9.30 -> mv_kb_180_11_S           settle 24.98 x -0.444 -> -0.407 (peak -0.251)
+    9.90 -> mv_kb_rel_12_WS          settle 24.38 x -0.373 -> -0.407 (peak -0.251)
+    9.95 -> mv_kb_0_13_W             settle 24.33 x -0.378 -> -0.407 (peak -0.251)
+   10.95 -> mv_kb_rel_14_0           settle 23.33 x -0.419 -> -0.407 (peak -0.251)
+   12.05 -> mv_kb_180_15_S           settle 22.23 x -0.374 -> -0.407 (peak -0.251)
+   13.05 -> mv_kb_-90_17_A           settle 21.23 x -0.386 -> -0.407 (peak -0.251)
+   13.20 -> mv_kb_135_20_SD          settle 21.08 x -0.377 -> -0.407 (peak -0.251)
+   13.50 -> mv_kb_-45_24_WA          settle 20.78 x -0.331 -> -0.407 (peak -0.462)
+   14.10 -> mv_kb_-90_25_WAS         settle 20.18 x -0.436 -> -0.407 (peak -0.251)
+   14.15 -> mv_kb_180_27_S           settle 20.13 x -0.435 -> -0.407 (peak -0.251)
+   15.15 -> mv_kb_-90_29_A           settle 19.13 x -0.382 -> -0.407 (peak -0.251)
+   16.15 -> mv_kb_135_32_SD          settle 18.13 x -0.409 -> -0.407 (peak -0.251)
+   18.60 -> mv_kb_90_33_D            settle 15.68 x -0.273 -> -0.407 (peak -0.462)
+   19.60 -> mv_kb_-135_36_AS         settle 14.68 x -0.299 -> -0.407 (peak -0.462)
+   20.20 -> mv_kb_rel_38_WASD        settle 14.08 x -0.328 -> -0.407 (peak -0.462)
+   20.25 -> mv_kb_45_40_WD           settle 14.03 x -0.319 -> -0.407 (peak -0.462)
+   20.85 -> mv_kb_90_41_D            settle 13.43 x -0.285 -> -0.407 (peak -0.462)
+   23.25 -> mv_kb_135_42_SD          settle 11.03 x -0.334 -> -0.407 (peak -0.462)
+   23.55 -> mv_kb_90_43_D            settle 10.73 x -0.314 -> -0.407 (peak -0.462)
+   25.95 -> mv_kb_-135_46_AS         settle 8.33  x -0.32 -> -0.407 (peak -0.462)
+   26.95 -> mv_kb_135_48_SD          settle 7.33  x -0.408 -> -0.407 (peak -0.276)
+   27.10 -> mv_kb_rel_50_0           settle 7.18  x -0.393 -> -0.407 (peak -0.276)
+   27.30 -> mv_kb_-90_51_A           settle 6.98  x -0.37 -> -0.407 (peak -0.276)
+   27.60 -> mv_kb_180_53_S           settle 6.68  x -0.343 -> -0.407 (peak -0.462)
+   28.20 -> mv_kb_rel_54_0           settle 6.08  x -0.39 -> -0.407 (peak -0.276)
+   28.25 -> mv_kb_45_56_WD           settle 6.03  x -0.378 -> -0.407 (peak -0.276)
+   28.55 -> mv_kb_rel_58_0           settle 5.73  x -0.346 -> -0.407 (peak -0.276)
+   28.95 -> mv_kb_-90_59_A           settle 5.33  x -0.385 -> -0.407 (peak -0.276)
+   29.55 -> mv_kb_45_62_WD           settle 4.73  x -0.384 -> -0.407 (peak -0.276)
+   31.95 -> mv_kb_rel_64_WASD        settle 2.33  x -0.348 -> -0.407 (peak -0.415)
+   32.00 -> mv_kb_-135_66_AS         settle 2.28  x -0.351 -> -0.407 (peak -0.415)
+   34.40 -> mv_kb_rel_68_0           settle 10.55 x -0.399 -> -0.18 (peak -0.18)
+   34.60 -> mv_kb_-45_70_WA          settle 10.35 x -0.399 -> -0.18 (peak -0.18)
+   34.90 -> mv_kb_0_71_WAD           settle 10.05 x -0.421 -> -0.18 (peak -0.18)
+   34.95 -> mv_kb_90_73_D            settle 10.0  x -0.42 -> -0.18 (peak -0.18)
+   35.95 -> mv_kb_rel_74_0           settle 9.0   x -0.272 -> -0.18 (peak -0.461)
+   36.35 -> mv_kb_-90_75_A           settle 8.6   x -0.311 -> -0.18 (peak -0.461)
+   36.95 -> mv_kb_90_77_D            settle 8.0   x -0.372 -> -0.18 (peak -0.18)
+   38.55 -> mv_kb_-135_80_AS         settle 6.4   x -0.3 -> -0.181 (peak -0.461)
+   38.85 -> mv_kb_-45_82_WA          settle 6.1   x -0.352 -> -0.18 (peak -0.18)
+   39.45 -> mv_kb_45_84_WD           settle 5.5   x -0.376 -> -0.18 (peak -0.18)
+   40.45 -> mv_kb_90_85_D            settle 4.5   x -0.318 -> -0.18 (peak -0.461)
+   41.05 -> mv_kb_180_87_S           settle 3.9   x -0.3 -> -0.181 (peak -0.461)
+   41.35 -> mv_kb_rel_88_0           settle 3.6   x -0.31 -> -0.18 (peak -0.461)
+   41.40 -> mv_kb_-90_89_A           settle 3.55  x -0.323 -> -0.181 (peak -0.181)
+   41.70 -> mv_kb_0_91_W             settle 3.25  x -0.425 -> -0.18 (peak -0.18)
+   42.70 -> mv_kb_135_94_SD          settle 2.25  x -0.409 -> -0.18 (peak -0.18)
+   42.85 -> mv_kb_-45_98_WA          settle 2.1   x -0.405 -> -0.18 (peak -0.18)
+   43.85 -> mv_kb_rel_100_0          settle 1.1   x -0.414 -> -0.18 (peak -0.18)
+   43.90 -> mv_kb_135_102_SD         settle 1.05  x -0.405 -> -0.181 (peak -0.181)
+   44.50 -> mv_kb_rel_104_0          settle 0.45  x -0.261 -> -0.18 (peak -0.18)
+
+v255wo_fz_walk_a_w5_r1 | plants 100 | skating mean 1.89 p90 3.85 max 6.2 cm
+  worst stages: mv_kb_135_32_SD 6.2, mv_kb_0_13_W 6.2, mv_kb_90_43_D 5.8, mv_kb_-135_36_AS 5.2, mv_kb_-45_24_WA 4.8, mv_kb_90_41_D 4.8
+
+window lines 2034..2169 (v255wo_fz_walk_a_w5_r1 .. v255wo_fz_walk_a_w5_r1)
+| count | entry | class |
+|---|---|---|
+| 1 | `LogUtils: Error: The Editor is currently in a play mode.` | QA TOOLING (job issued during PIE) |
+Accessed None (SHME): 0 | index skips: 0
+
+v255wo_fz_walk_a_w5_r1 | turns 0 | cuts 30 | stops 10 | starts 3
+  cut   -135 @ 131 cm/s | heading 90% 1.17 s | lat 0.27 g | speed loss 97 %
+  cut   -135 @ 131 cm/s | heading 90% 0.8 s | lat 0.21 g | speed loss 100 %
+  cut   -180 @  67 cm/s | heading 90% 0.3 s | lat 0.09 g | speed loss 98 %
+  cut    -90 @ 124 cm/s | heading 90% None s | lat 0.44 g | speed loss 23 %
+  cut    +90 @ 125 cm/s | heading 90% None s | lat 0.45 g | speed loss 21 %
+  cut   -135 @  99 cm/s | heading 90% None s | lat 0.37 g | speed loss 9 %
+  cut   -180 @ 103 cm/s | heading 90% None s | lat 0.29 g | speed loss 78 %
+  cut    -45 @  72 cm/s | heading 90% None s | lat 0.27 g | speed loss 2 %
+  cut    -90 @  69 cm/s | heading 90% 0.28 s | lat 0.35 g | speed loss 36 %
+  cut    +90 @ 112 cm/s | heading 90% 0.72 s | lat 0.49 g | speed loss 17 %
+  cut   -135 @ 131 cm/s | heading 90% 1.18 s | lat 0.51 g | speed loss 97 %
+  cut    -45 @ 133 cm/s | heading 90% 0.27 s | lat 0.45 g | speed loss 16 %
+  cut   +135 @ 131 cm/s | heading 90% None s | lat 0.48 g | speed loss 40 %
+  cut    +45 @ 133 cm/s | heading 90% 0.65 s | lat 0.28 g | speed loss 7 %
+  cut    +45 @ 133 cm/s | heading 90% 0.22 s | lat 0.49 g | speed loss 33 %
+  cut    -45 @  94 cm/s | heading 90% None s | lat 0.17 g | speed loss 0 %
+  cut   +135 @ 131 cm/s | heading 90% 0.4 s | lat 0.13 g | speed loss 93 %
+  cut    -90 @  94 cm/s | heading 90% None s | lat 0.40 g | speed loss 14 %
+  cut    -90 @  53 cm/s | heading 90% None s | lat 0.25 g | speed loss 0 %
+  cut   +135 @  81 cm/s | heading 90% 0.5 s | lat 0.36 g | speed loss 57 %
+  cut    +45 @ 120 cm/s | heading 90% None s | lat 0.28 g | speed loss 5 %
+  cut    +90 @ 110 cm/s | heading 90% 0.25 s | lat 0.40 g | speed loss 59 %
+  cut   -180 @  60 cm/s | heading 90% 0.23 s | lat 0.06 g | speed loss 98 %
+  cut   +135 @ 131 cm/s | heading 90% None s | lat 0.41 g | speed loss 28 %
+  cut    +90 @ 117 cm/s | heading 90% 0.57 s | lat 0.50 g | speed loss 26 %
+  cut    +90 @ 131 cm/s | heading 90% None s | lat 0.41 g | speed loss 10 %
+  cut    +45 @ 133 cm/s | heading 90% 0.55 s | lat 0.30 g | speed loss 8 %
+  cut    +90 @ 132 cm/s | heading 90% None s | lat 0.46 g | speed loss 31 %
+  cut   +135 @ 131 cm/s | heading 90% None s | lat 0.25 g | speed loss 24 %
+  cut   -180 @ 122 cm/s | heading 90% None s | lat 0.29 g | speed loss 0 %
+  stop @ 127 cm/s | None s | None cm | decel 0.15 g
+  stop @ 132 cm/s | 0.48 s | 32.6 cm | decel 0.32 g
+  stop @  75 cm/s | None s | None cm | decel 0.37 g
+  stop @  81 cm/s | None s | None cm | decel 0.28 g
+  stop @ 117 cm/s | None s | None cm | decel 0.29 g
+  stop @ 132 cm/s | None s | None cm | decel 0.33 g
+  stop @ 132 cm/s | None s | None cm | decel 0.32 g
+  stop @ 132 cm/s | None s | None cm | decel 0.32 g
+  stop @  93 cm/s | None s | None cm | decel 0.27 g
+  stop @ 132 cm/s | None s | None cm | decel 0.34 g
+  start ->  131 cm/s | t90 0.68 s | acc 0.23 g
+  start ->   97 cm/s | t90 0.68 s | acc 0.18 g
+  start ->   57 cm/s | t90 0.42 s | acc 0.18 g
+  lean mv_kb_0_1_W      roll  -0.2 deg | head-pelvis  -1.3 cm
+  lean mv_kb_-135_4_AS  roll  -0.6 deg | head-pelvis  +0.5 cm
+  lean mv_kb_90_7_D     roll  +7.6 deg | head-pelvis  +4.1 cm
+  lean mv_kb_-90_9_A    roll  -3.8 deg | head-pelvis  -2.8 cm
+  lean mv_kb_0_13_W     roll  -2.9 deg | head-pelvis  -0.9 cm
+  lean mv_kb_180_15_S   roll  +0.1 deg | head-pelvis  +0.2 cm
+  lean mv_kb_180_27_S   roll  +0.4 deg | head-pelvis  +0.4 cm
+  lean mv_kb_-90_29_A   roll  -6.7 deg | head-pelvis  -4.3 cm
+  lean mv_kb_135_32_SD  roll  -1.0 deg | head-pelvis  -0.8 cm
+  lean mv_kb_90_33_D    roll  -4.7 deg | head-pelvis  -5.1 cm
+  lean mv_kb_90_41_D    roll  -1.0 deg | head-pelvis  -1.8 cm
+  lean mv_kb_90_43_D    roll  +0.5 deg | head-pelvis  -1.2 cm
+  lean mv_kb_-135_46_AS roll  -5.5 deg | head-pelvis  -1.2 cm
+  lean mv_kb_45_62_WD   roll  +0.2 deg | head-pelvis  -0.1 cm
+  lean mv_kb_-135_66_AS roll  +0.8 deg | head-pelvis  -1.5 cm
+  lean mv_kb_90_73_D    roll  -1.6 deg | head-pelvis  -0.0 cm
+  lean mv_kb_90_77_D    roll  +2.0 deg | head-pelvis  +0.5 cm
+  lean mv_kb_45_84_WD   roll  +6.8 deg | head-pelvis  +2.9 cm
+  lean mv_kb_0_91_W     roll  +3.6 deg | head-pelvis  -1.0 cm
+  lean mv_kb_-45_98_WA  roll  -5.0 deg | head-pelvis  -5.2 cm

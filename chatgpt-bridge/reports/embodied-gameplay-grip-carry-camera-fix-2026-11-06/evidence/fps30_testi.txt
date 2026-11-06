@@ -1,0 +1,25 @@
+stop
+PIE requested
+False
+False
+WALK c_bench 17 pts [(840.0, -210.0), (840.0, -120.0), (840.0, -30.0)] ... (397, 170)
+c_bench ok True secs 9.1 stuck 0 end [432, 152, 238] frames 320 avgFPS 35.2 maxV 132
+carry30 stage 3 P 5 mode 3 held True target None pawn [397.0, 195.0, 238.0] yaw 88 v 0 benchW [387.0, 219.0, 268.0] op 0.0 hookOp 0.0 smParent Manny hand_r tags ['SoftLocked'] []
+REC carry30 8.8 s
+WALK c_carry 3 pts [(180.0, 180.0), (240.0, 270.0), (235, 340)] ... (235, 340)
+c_carry ok True secs 1.6 stuck 0 end [231, 304, 238] frames 48 avgFPS 30.0 maxV 115
+hook30 stage 3 P 5 mode 3 held True target BP_GR_MaskHook_C_0 pawn [236.0, 329.0, 238.0] yaw 84 v 0 benchW [234.0, 352.0, 265.0] op 0.0 hookOp 1.0 smParent Manny hand_r tags ['SoftLocked'] []
+hung30 stage 2 P 0 mode 5 held False target None pawn [235.0, 370.0, 238.0] yaw 87 v 0 benchW [397.0, 248.0, 259.0] op 0.0 hookOp 0.0 smParent Root None tags ['SoftLocked'] ['SoftLocked']
+arm 126 vt BP_HybridA_Player_ ign False False
+frames 340 dt mean 0.0262 montages ['_GR_Mask_Carry']
+'' yaw 87.7 -> 87.7 vmax 0
+'W' yaw 87.7 -> 180.0 vmax 115
+'' yaw 180.0 -> 180.0 vmax 115
+'W' yaw 180.0 -> 107.4 vmax 115
+'' yaw 105.5 -> 94.7 vmax 115
+'A' yaw 94.7 -> 94.7 vmax 98
+'' yaw 92.1 -> 76.1 vmax 104
+'D' yaw 76.1 -> 94.7 vmax 98
+'' yaw 97.4 -> 113.4 vmax 104
+'S' yaw 113.4 -> 94.7 vmax 98
+'' yaw 94.7 -> 94.7 vmax 98
