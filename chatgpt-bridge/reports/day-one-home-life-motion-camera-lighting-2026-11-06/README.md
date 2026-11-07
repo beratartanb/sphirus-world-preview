@@ -1,144 +1,171 @@
 # SPHIRUS: ilk gün, karakter, kamera ve ışık
 
-Tarih: 2026-11-07. Motor: UE 5.8.4-58902052. Harita: `/Game/GraceRanger/Maps/L_GR_SphirusHouse`. Oyuncu: `BP_HybridA_Player`.
+Tarih: 2026-11-07, ikinci tur. Motor: UE 5.8.4-58902052. Harita: `/Game/GraceRanger/Maps/L_GR_SphirusHouse`. Oyuncu: `BP_HybridA_Player`.
 
 ## Sonuç
 
-**İlk günün oyun zinciri ana haritada çalışıyor, ama brifin tamamı bitmedi.** Yeni oyundan uyanma, dolap, kıyafet, bitki, odun, kesme, şömine ve çay aynı koşuda E tuşuyla tamamlandı. Görevler ve kayıt doğru ilerledi.
+**İlk gün artık satın alınan animasyonlarla ve yanan bir şömineyle baştan sona oynanıyor, ama brifin tamamı bitmedi.** Yeni oyundan uyanma, dolap, kıyafet, bitki, odun, kesme, şömine ve çay aynı koşuda tamamlandı. Görev sırası değiştirilmiş ikinci rota, yanlış sırada E basma, iş sürerken E tekrarı ve kayıt yükleme de geçti.
 
-**Görsel kalite birçok yerde taslak düzeyinde.** Şöminede alev görünmüyor. İstasyonlarda karakter duruş noktasına anında taşınıyor. Üretilen animasyonlar kısa ve geçici.
+**Bu turda kapanan eski hatalar:** şömine alevi, istasyona anında ışınlanma, görünmeyen balta, tezgâhın içinden geçme, kol kasılması, fincan ve sıvı eksikliği.
 
-**Başlanmayan işler:** genel hareket, tezgâh çarpışması ve parmak teması, evin dış ve iç düzeni. Tam liste aşağıda.
+**Kalan büyük işler:** keskin dönüş ve pivotlar, `fz_walk_a`, evin büyük yerleşim değişikliği, PBL verisi, gerçek merdiven, gamepad, paketlenmiş oyun. Tam liste aşağıda.
+
+E tuşu test otomasyonuyla basıldı. Test karakteri istasyonun yakınına koydu, son metreyi istasyon yürüttü. Elle oynanmadı. Ses dinlenmedi.
 
 | Başlık | Durum |
 |---|---|
-| Karakter gövdesi | PASS (teknik). Body Female reddedildi, tam yüzeyli Hazel kullanılıyor |
-| Yüz | PARTIAL. MetaHuman içinde yeniden kuruldu, referans benzerliği kabulü sende |
-| Baş ve gövde birleşimi | PASS (görüntü). Aynı karakterden kuruldu, ten tonu eşlendi |
-| Ten ve doku | PARTIAL. Çil, ton ve lekelenme eklendi. Yüz ana dokusu 2048 px |
-| Kıyafetler | PARTIAL. 5 set ve 18 kemer bağlı. Kumaş simülasyonu yok |
-| Yakın koşu kamerası | PARTIAL. Koşuda uzaklaşma kaldırıldı, açık alanda tam koşu ölçülmedi |
-| Yatak ve uyanma | PARTIAL. Yeni oyunda oynuyor, ara pozlar kaba |
-| Fiziksel dolap | PARTIAL. Kapak açılıyor, askılar seçiliyor, giyinme animasyonlu |
-| Odun, kesme, istif | PARTIAL. Sayılar ve görünüm çalışıyor, balta görüntüde doğrulanmadı |
-| Şömine | FAIL (alev). Işık ve durum çalışıyor, alev görünmüyor |
-| Bitki ve çay | PARTIAL. Zincir çalışıyor, sıvı ve fincan yok |
-| Kayıt | PASS. Yeni kayıt ve eski kayıt yüklendi, çoğalma yok |
-| PBL ve True Lens | PARTIAL. Sabah ışığı ve hafif profil uygulandı, PBL verisi kullanılmadı |
-| Genel hareket | NOT_DONE |
-| Tezgâh çarpışması, parmak teması | NOT_DONE |
-| Ev içi ve dışı düzen | NOT_DONE |
+| Karakter gövdesi | PASS (teknik). Tam yüzeyli Hazel |
+| Yüz | PARTIAL. MetaHuman içinde kuruldu, referans kabulü sende |
+| Baş ve gövde birleşimi | PASS (görüntü) |
+| Ten ve doku | PARTIAL |
+| Kıyafetler | PARTIAL. 5 set, 18 kemer, kumaş simülasyonu yok |
+| Yataktan kalkma | PASS (görüntü). Village Life klibi, gerçek hızda video var |
+| Dolap | PARTIAL. Kapak Interaction klibiyle açılıyor, kapatma da aynı klibi kullanıyor |
+| Odun toplama | PARTIAL. Village Life eğilme klibi, elde odun görünmüyor |
+| Odun kesme | PARTIAL. Fix & Build vuruşu, iki elde balta, yonga ve yarılan odun var. Parmak teması her karede oturmuyor |
+| Şömine | PASS (görüntü). Alev, duman, ışık titremesi var. Ses bağlı, dinlenmedi |
+| Bitki ve çay | PARTIAL. Demlik, fincan ve sıvı var. Pour ve Drink hâlâ üretilmiş klip |
+| Tezgâh | PARTIAL. Çarpışma ve duruş düzeldi, parmak teması ölçülmedi |
+| Kayıt | PASS. Oyun içi kayıt çağrısıyla. Menüden denenmedi |
+| Yakın koşu kamerası | PARTIAL. Açık alanda temiz koşu ölçülmedi |
+| Genel hareket | PARTIAL. Kol rahatladı, dönüş ve pivotlara dokunulmadı |
+| Ev ve çevre | PARTIAL. Kesim alanına kullanım izi eklendi, büyük yerleşim yok |
+| PBL ve True Lens | PARTIAL. PBL verisi kullanılmadı, lens A/B alındı |
 
-## Doğrulanan paketler
+## Kullanılan animasyon paketleri
 
-| Paket | Tür | Kullanım |
+| Paket | Nerede bulundu | Nerede kullanıldı |
 |---|---|---|
-| Body Female (09sats) | 6,4 milyon yüzlü heykel, rig ve UV yok | Denendi, kullanıcı bacak ve bilek yüzünden reddetti |
-| Messy Bob | MetaHuman groom | Oyuncuda |
-| Pants 70 | MetaHuman outfit | Oyuncuda |
-| Relaxed Cuffed Shorts | MetaHuman outfit | Oyuncuda |
-| Cargo pants | Downloads klasöründeki mhpkg | Oyuncuda |
-| Male Tank Top | Projede kurulu | Oyuncuda. Ad "male", kadın gövdesine uyarlandı |
-| Retro top blue | Projede kurulu | Oyuncuda |
-| Female belt pack | 18 durağan kemer, doku dosyası yok | 18'i de projede. Proje deri malzemesi kullanıldı |
+| MC Village Life | Bu projede yoktu. `GameAnimationSample/Content/MC_VillageLife` içindeydi, `Content/MC_VillageLife` altına kopyalandı | Uyku ve yataktan kalkış, yerden alma |
+| MC Fix & Build | `Content/MC_FixBuild_Pack` | Balta çekme, dikey vuruş, diz çökme ve vurma |
+| Interaction | Bu adla ayrı paket bulunamadı. `AAMS/Animations/Interactions` kullanıldı | Dolap kapağı |
+| MC Sample | Kardeş projeden kopyalandı, içki kliplerine bakmak için | Şu an kullanılmıyor |
 
-## Karakter
+Village Life ve Fix & Build iskeletleri `SK_Mannequin` ile aynı 91 kemik izine ve aynı kemik ofsetlerine sahip. Pozlar doğrudan oyuncu iskeletine yazıldı. Klipler eski `A_GR_Day_*` adlarını koruyor, istasyonlar değişmedi.
 
-- **Gövde:** `SKM_MHC_SphFace_BodyMesh`, Hazel'in kıyafetsiz kurulumu. Outfit seçiliyken MetaHuman altındaki yüzeyi siliyordu; pelvis boşluğunun nedeni buydu. Eklemler önceki Hazel ile aynı.
-- **Yüz:** Blender'da yapılmış GD38 yüzü kaldırıldı. Yeni yüz Hazel'in MetaHuman yüzünden başladı, `translate_face_landmarks` ile çalışıldı, Epic otomatik rig servisiyle rig'lendi. Alt yüz kısaldı, çene ve yanak inceldi, burun ve dudak yeniden şekillendi. Mesh farkı küçük: önceki denemelerde en çok 0,34 cm ölçüldü.
-- **Fotoğraf:** MetaHuman yüz takipçisi Messy Bob fotoğrafında yüz bulamadı. Oranları gözle çalıştım, bindirme ölçümü yok.
-- **Rig testi:** Göz kırpma, ağız ve ifade bozulması ayrıca test edilmedi. Yüz `ABP_Face` yerine gövdeyle oynuyor mu kontrolü yapılmadı.
-- **Saç:** Messy Bob yüze yeniden bağlandı, ton koyulaştırıldı. LOD ve hareket maliyeti ölçülmedi.
-
-## Kıyafetler
-
-Beş set `GR_OutfitTop`, `GR_OutfitLow`, `GR_OutfitBody`, `GR_OutfitBelt` dizilerinde. Yeni kıyafet için yeni satır yeterli.
-
-| No | Set | İçerik |
+| Klip | Kaynak | Süre |
 |---|---|---|
-| 0 | Gece | Atlet ve şort. Kullanıcının gece seti gelene kadar geçici |
-| 1 | Ev | Retro üst ve şort |
-| 2 | Gezi | Retro üst, pantolon, kemer |
-| 3 | Ev B | Atlet ve şort |
-| 4 | Gezi B | Atlet ve kargo |
+| Wake | `am_BedSingleB_Idle_01_Sleep` + `am_BedSingleB_Trans_GetOutLeft_Stand` | 10,3 s |
+| Chop | `am_Stand_Trans_Axe` + `am_Axe_05_ChopVertical` + `am_Axe_Trans_Stand` | 6,9 s |
+| Pick | `am_Stand_Trans_CarryInArms_PickUpFloor` en alçak noktaya kadar, sonra geri | 3,0 s |
+| Kneel | `am_Stand_Trans_KneelHammerFloor` + `am_KneelHammerFloor_01_Hit` + `Trans_Stand` | 6,2 s |
+| Kapak | `AM_Interact_Door_OpenPull_RightHand` | 2,7 s |
 
-`GR_SetBelt` 18 kemerden birini seçer. Dolapta kemer seçimi yok. Kıyafetler gövdeyle aynı iskelette, kumaş simülasyonu kapalı. Eğilme ve oturma pozlarında kumaş batması taranmadı.
+Üretilmiş olarak kalanlar: Pour, Drink, Dress. Village Life `CookPot` klipleri bel hizasında bir tencere bekliyor, demlik şömine basamağında alçakta.
 
-## Kamera
+**Çözülmemiş ayrıntı:** yatarken vücut klipten 97 cm yukarıda duruyordu. Nedeni bulunmadı. Yatış süresince kök 81 cm indirilerek düzeltildi, kalkarken sıfıra iniyor.
 
-`DA_GR_LocomotionBehavior`: yürüyüş kolu 128, koşu 124, sprint 120, omuz 44, FOV 60/63/66. V2.55 koşu açılması sıfırlandı.
+## Bu turda düzeltilenler
 
-Ölçüm: durağan 175 cm, yürüyüş 159 cm, koşu anı 153 cm, FOV 66. Koşu ölçümü sırasında karakter bir ağaca takıldı, yani temiz bir açık alan koşusu değil. Gerçek kol uzunluğu profil değerinin üstünde kaldı. Bunun sahibi bulunmadı.
+### Şömine
 
-## İlk gün
+Alev iki ayrı nedenle görünmüyordu.
 
-Yeni parçalar `/Game/GraceRanger/SF/Day/` altında: `BP_GR_DayHub`, `BP_GR_DayStation`, `BP_GR_DayBoot`, 8 klip, dolap ve askı modelleri.
+1. `N_CampFire` seyrek, tek tek alev parçaları üretiyor. Çoğu kütüklerin arkasında kalıyordu.
+2. Alev dokusu 15×12 karelik bir atlas. Doku akışı düşük çözünürlükte bırakınca alev siliniyordu.
 
-Son rota, yeni oyun, gerçek E girdisi (action injection). Karakteri istasyona test komutu götürdü, yürüyüş test edilmedi.
+Düzeltme: ocağa beş alev kaynağı dizildi. `BP_GR_DayBoot` alev malzemesini açılışta bellekte tam tutuyor. Işık yanarken hafifçe titriyor. `SC_Campfire` sesi ateşle başlıyor. İlk denediğim kart alevi kaldırıldı, gizli duruyor.
 
-| Adım | Sonuç |
+### İstasyonlara geçiş
+
+Karakter artık ışınlanmıyor. `BP_GR_DayBoot` zorlanmış hareket girdisiyle gerçek yürüyüş animasyonunu çalıştırıyor, sonra yöne dönüyor. 90 cm'den yaklaşım ölçüldü. Yol 3,5 saniyede biterse karakter olduğu yerde işe başlıyor, ışınlanma yok.
+
+### Odun kesme
+
+- Balta iki elde ve ağzı aşağıda. Dinlenirken kütüğe saplı duruyor, iş sırasında ele geçiyor.
+- Kütükte kesilecek odun görünüyor. Vuruş anında kayboluyor.
+- Aynı anda 8 yonga ve 2 yarım odun fizikle dağılıyor.
+- Duruş noktası 18 cm geri alındı, çünkü vuruş kütüğü geçiyordu. Son konumda vuruş anı ayrıca çekilmedi.
+
+### Çay
+
+Demlik şömine basamağına taşındı. Şöminenin çarpışma kutusu etkileşimi kesiyordu, istasyon demliğin önüne görünmez bir noktaya alındı. İlk kullanımda sağ elde demlik, sol elde fincan, vuruş anında akan çay. İkinci kullanımda fincan sağ elde. Fincanda çay yüzeyi yalnız çay hazırken görünüyor. Demliğin kulpu yok, el gövdesinden tutuyor. Demlik ele anında geçiyor.
+
+### Tezgâh
+
+`GR_Day_BenchBlock` yalnız karakteri durduruyor. Etkileşim ve kamera içinden geçiyor. Duruş noktası 192'den 170'e alındı. Maske ve tezgâh etkileşimi aynı 22 cm kadar öne alındı, böylece el hedefleri bozulmadı.
+
+Test: karakter masaya yürüdü, y=171'de durdu. Maskeyi masanın dışından aldı. Evdeki alt seviyede duran `Furniture_CR_MaskWorkInProgress` kaydı dosyaya yazılmadı. Oyunda görülen maske etkilenmedi.
+
+### Kol rahatlığı
+
+Yürürken dirsek neredeyse tam düzdü. `ABP_GR_MetaHuman` sonuna dört kemik ofseti eklendi. Etkisi hızla geliyor, montaj sırasında ve koşuda sıfıra iniyor.
+
+| Ölçüm, yürüyüş | Önce | Sonra (dirsek değişikliği) |
+|---|---|---|
+| Sağ dirsek | 151–178° | 137–174° |
+| Sol dirsek | 155–178° | 135–171° |
+
+Son değerler: dirsek 13°, üst kol 6° geri, 4° dışarı. Son değerlerin tek koşusu yok, sayılar 14° dirsek denemesinden. Taşıma sırasında etkisi kapalı.
+
+### Kullanım izleri ve ses
+
+Kesim alanına 22'ye kadar yonga, 3 kesilmiş parça, el arabası, arka kapıya kova eklendi. Bu küçük bir iş, brifin istediği ev yerleşimi değil. Dolaba kapı sesi, toplamaya el sesi bağlandı. Hiçbir ses dinlenmedi.
+
+## Testler
+
+| Test | Sonuç |
 |---|---|
-| Uyan | Görev "Güne hazırlan" eklendi |
-| Dolabı aç, Gezi setini seç | Kıyafet değişti, görevler eklendi |
-| Dolabı kapat | Kapak kapandı |
-| Bitki topla | Herb 1 |
-| Odun topla | Wood 1 |
-| Kes | Wood 0, Split 2 |
-| Şömine: odun koy, yak | Split 0, Fire 2 |
-| Çay: demle, iç | Herb 0, Tea 2 |
+| Yeni oyun rotası | PASS. Herb 1, Wood 1, Split 2, Fire 2, Tea 2 |
+| Odunsuz şömine, bitkisiz çay | PASS. Sayılar değişmedi |
+| Önce bitki, sonra odun | PASS |
+| İş sürerken üç kez E | PASS. Çift sonuç yok |
+| Kayıt ve yeniden açma | PASS. Fire 2 ve Tea 1 geri geldi |
+| Tezgâh çarpışması | PASS. y=171'de durdu |
+| Yüklemeden sonra alev görüntüsü | NOT_TESTED. Son alev düzeninden önce çekildi |
+| Pause, menü kaydı, iptal | NOT_TESTED |
+| Eski maske kaydı | Önceki turda PASS, bu turda tekrar edilmedi |
 
-Kayıt: yarım ilerlemeli kayıt sayıları geri getirdi, toplanan nesneler geri gelmedi. Eski maske kaydında maske aşaması 2 korundu, oyuncu yatağa dönmedi.
+Görülen uyarı: `BP_TrueLens` içinde `TrueLensDynmaicMat` dizisinde 6 öğelik dizide 7. indeks hatası. Lens paketinden geliyor, düzeltilmedi.
 
-Bilinen sorunlar:
+## Performans
 
-- İstasyona geçişte karakter duruş noktasına anında taşınıyor. Brifte istenmeyen bir şey.
-- Kapıya uzanma klibi elle kulp temasını doğrulamadı.
-- Balta `hand_r` bağlı, ama çekimde görünmedi. Kesme anında yonga yok, ses geçici.
-- Odun kesilince parçalanma nesnesi yok; sadece istif artıyor.
-- Şömine: Niagara etkin görünüyor, ama iki farklı alev sistemiyle de görüntüde alev çıkmadı. Duman ve buhar sistemi çalışıyor.
-- Çayda bardak, sıvı ve su adımı yok. Tek bitki türü olarak çiçek modeli kullanıldı.
-- Yeni oyun uyanması yalnızca kayıt dosyası yoksa başlıyor. Menüden "yeni oyun" yolu test edilmedi.
+Aynı koşu, tek ölçüm. Ek dört alev kaynağından önce alındı.
 
-## Işık ve performans
-
-Sabah ışığı: güneş açısı -24, sıcaklık 4700 K, şiddet 1450, gökyüzü 1,15. Değerleri gözle seçtim, PBL veritabanından sayı almadım.
-
-True Lens: yalnız vignette ve hafif grain açık. Ayrı lens A/B görüntüsü yok; karşılaştırma ışık ve lensi birlikte gösteriyor.
-
-**Önemli bulgu:** True Lens'in Tick'i `t.MaxFPS 24` yazıyor ve oyunu 24 FPS'e kilitliyordu. Tick açılışta kapatıldı. Bu, zamana bağlı lens etkilerini durdurabilir.
-
-| Nokta | Kare süresi | VRAM |
+| Nokta | Ortalama | p95 |
 |---|---|---|
-| Oda | 23,8 ms | 6837 MB |
-| Ön | 36,0 ms | 6802 MB |
-| Kıyı | 35,4 ms | 6775 MB |
-| Arka | 34,0 ms | 6775 MB |
+| Oda | 24,5 ms | 29,3 ms |
+| Arka kapı | 28,2 ms | 30,6 ms |
+| Kesim alanı | 29,0 ms | 31,3 ms |
+| Orman | 29,7 ms | 32,0 ms |
 
-Önceki ölçüm 22,6-34,7 ms ve yaklaşık 6530 MB idi. Tek koşu; sonraki küçük ışık ve kütük değişikliklerinden önce alındı. Disk boşluğu 48 GB'a düştü.
+Video belleği 6712 MB. Noktalar önceki turdakilerle aynı değil, doğrudan karşılaştırılamaz. Disk boşluğu yaklaşık 45 GB.
 
 ## Yapılmayanlar
 
-- Genel hareket: kol salınımı, ağırlık, pivotlar, `fz_walk_a`.
-- Tezgâh çarpışması, duruş noktası, başparmak teması.
-- Ev dış ve iç düzeni, patikalar, kullanım izleri, PCG dışlama.
-- İç ve dış ses, kıyafet sesleri.
-- Gamepad, gerçek merdiven, tepe rotası, 30/60 FPS taşıma testi, paketlenmiş oyun.
-- Görev sırası değiştirilmiş ikinci rota, menüden kayıt, iptal ve hızlı tuş testleri.
-- Video kanıtı ve Bridge siyah kameraları.
+- Keskin dönüş, 45–180° pivot, sprint dönüşü, fren ve yeniden hızlanma.
+- `fz_walk_a` baş sıçraması.
+- Taşıma demeti ve sepet. Village Life `CarryInArms` ve `CarryBasket` klipleri hazır, bağlanmadı.
+- Village Life yürüyüşleri (`am_Loco_WalkA/B`) denenmedi. Genel yürüyüş için aday.
+- Kapatma klibi (`AM_Interact_Door_ShutPull`), oturma, dinlenme.
+- Evin dış ve iç büyük yerleşimi, patikalar, PCG dışlama.
+- PBL verisiyle ışık.
+- İç ve dış ses geçişi, kıyafet sesi.
+- Gamepad, gerçek merdiven, tepe rotası, 30/60 FPS, paketlenmiş oyun.
+- Yüz rig'i ifade testi.
+- Bridge siyah kameraları.
 
 ## Satın alma ihtiyacı
 
-Şimdilik yok. Gece seti için kullanıcının eklemesi beklenen kıyafet hâlâ geçici atletle gidiyor.
+Yok. Eksik animasyonlar projedeki paketlerde var.
 
 ## Geri alma
 
-- Oyuncu: `day_*` manifestleri, `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/`.
-- Harita ve ev alt seviyesi: `grip_maps_084604` ve `grip_map_*`.
-- Kamera profili: `day_cam3_070627`.
-- Kullanıcı kaydı: `Saved/Codex/Day_20261107/SFSaveSlot_user.sav`. Çalışma sonunda aynı dosya yerine kondu.
-- Eski dolap ve `HearthGlow` silinmedi, gizlendi.
-- `Content/Sphirus/CharacterLab/Day_20261107` içinde kullanılmayan denemeler var (Body Female kurulumları). Silinmedi.
+- Blueprint ve klipler: `day_*` manifestleri, `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/`.
+- Harita: `grip_map_*` manifestleri.
+- Kullanıcı kaydı: `Saved/Codex/Day_20261107/SFSaveSlot_user.sav`. Testlerden sonra aynı dosya yerine kondu.
+- Kopyalanan paketler yeni klasörlerde: `Content/MC_VillageLife`, `Content/MC_Sample`.
+- `ABP_MH_Ranger_Retarget_V2` yanlışlıkla değişti, yedekten geri kondu. Oyunda çalışan ABP `ABP_GR_MetaHuman`.
 
 ## Kanıt
 
-`evidence/`: yüz, oyuncu kamerası, dolap, rota, ışık öncesi ve sonrası, kıyafetler, yatak.
+`evidence/` içinde:
+
+- `wake.mp4`, `chop.mp4`: gerçek hızda pencere kaydı, 12 FPS. Şömine videosu yok.
+- `wake.jpg`: yataktan kalkış kareleri.
+- `chop.jpg`: balta vuruşu kareleri, ağır çekimle alındı.
+- `fire_lit.jpg`: istasyonlardan yakılmış ateş.
+- `bench.jpg`: tezgâh ve maske.
+- `tea.jpg`: demlik ve fincan.
+- `lens_on.jpg`, `lens_off.jpg`: aynı kamera, lens açık ve kapalı.
+- Önceki turun görüntüleri: yüz, kıyafetler, dolap, ışık öncesi ve sonrası.
