@@ -1,6 +1,6 @@
 # SPHIRUS: ilk gün, karakter, kamera ve ışık
 
-Tarih: 2026-11-07, ikinci tur. Motor: UE 5.8.4-58902052. Harita: `/Game/GraceRanger/Maps/L_GR_SphirusHouse`. Oyuncu: `BP_HybridA_Player`.
+Tarih: 2026-11-07, üçüncü tur. Motor: UE 5.8.4-58902052. Harita: `/Game/GraceRanger/Maps/L_GR_SphirusHouse`. Oyuncu: `BP_HybridA_Player`.
 
 ## Sonuç
 
@@ -8,7 +8,9 @@ Tarih: 2026-11-07, ikinci tur. Motor: UE 5.8.4-58902052. Harita: `/Game/GraceRan
 
 **Bu turda kapanan eski hatalar:** şömine alevi, istasyona anında ışınlanma, görünmeyen balta, tezgâhın içinden geçme, kol kasılması, fincan ve sıvı eksikliği.
 
-**Kalan büyük işler:** keskin dönüş ve pivotlar, `fz_walk_a`, evin büyük yerleşim değişikliği, PBL verisi, gerçek merdiven, gamepad, paketlenmiş oyun. Tam liste aşağıda.
+**Üçüncü turda eklenenler:** omuz arkası yakın aksiyon kamerası, kollarda odun taşıma, PBL oranına göre ışık, odun deposu çatısı, arka duvar sarmaşığı.
+
+**Kalan büyük işler:** keskin dönüş ve pivotlar, `fz_walk_a`, evin büyük yerleşim değişikliği, gerçek merdiven, gamepad, paketlenmiş oyun. Üç paket projede olmadığı için kullanılamadı, aşağıda.
 
 E tuşu test otomasyonuyla basıldı. Test karakteri istasyonun yakınına koydu, son metreyi istasyon yürüttü. Elle oynanmadı. Ses dinlenmedi.
 
@@ -21,16 +23,17 @@ E tuşu test otomasyonuyla basıldı. Test karakteri istasyonun yakınına koydu
 | Kıyafetler | PARTIAL. 5 set, 18 kemer, kumaş simülasyonu yok |
 | Yataktan kalkma | PASS (görüntü). Village Life klibi, gerçek hızda video var |
 | Dolap | PARTIAL. Kapak Interaction klibiyle açılıyor, kapatma da aynı klibi kullanıyor |
-| Odun toplama | PARTIAL. Village Life eğilme klibi, elde odun görünmüyor |
+| Odun toplama ve taşıma | PARTIAL. Village Life eğilme ve kol klipleri, kollarda odun demeti, taşırken yürüyor. Kayıt yüklenince demet ancak sonraki işten sonra geri geliyor |
 | Odun kesme | PARTIAL. Fix & Build vuruşu, iki elde balta, yonga ve yarılan odun var. Parmak teması her karede oturmuyor |
 | Şömine | PASS (görüntü). Alev, duman, ışık titremesi var. Ses bağlı, dinlenmedi |
 | Bitki ve çay | PARTIAL. Demlik, fincan ve sıvı var. Pour ve Drink hâlâ üretilmiş klip |
 | Tezgâh | PARTIAL. Çarpışma ve duruş düzeldi, parmak teması ölçülmedi |
 | Kayıt | PASS. Oyun içi kayıt çağrısıyla. Menüden denenmedi |
 | Yakın koşu kamerası | PARTIAL. Açık alanda temiz koşu ölçülmedi |
+| Yakın aksiyon kamerası | PARTIAL. Dolap, kesme, şömine, çay omuz arkasında. Yerden toplamada iş başlarken baş kadrajın dışında |
 | Genel hareket | PARTIAL. Kol rahatladı, dönüş ve pivotlara dokunulmadı |
-| Ev ve çevre | PARTIAL. Kesim alanına kullanım izi eklendi, büyük yerleşim yok |
-| PBL ve True Lens | PARTIAL. PBL verisi kullanılmadı, lens A/B alındı |
+| Ev ve çevre | PARTIAL. Kesim alanı, odun deposu çatısı, sarmaşık eklendi. Büyük yerleşim yok, üç paket eksik |
+| PBL ve True Lens | PARTIAL. PBL oranı gökyüzü dolgusuna uygulandı, oran sonradan yeniden ölçülmedi. Lens A/B alındı |
 
 ## Kullanılan animasyon paketleri
 
@@ -102,6 +105,59 @@ Son değerler: dirsek 13°, üst kol 6° geri, 4° dışarı. Son değerlerin te
 
 Kesim alanına 22'ye kadar yonga, 3 kesilmiş parça, el arabası, arka kapıya kova eklendi. Bu küçük bir iş, brifin istediği ev yerleşimi değil. Dolaba kapı sesi, toplamaya el sesi bağlandı. Hiçbir ses dinlenmedi.
 
+## Üçüncü tur
+
+### Yakın aksiyon kamerası
+
+Maskedeki yöntem bütün istasyonlara ve yataktan kalkışa yayıldı. Tek bir kamera var, her istasyon kendi konumunu ve hedefini veriyor. E'ye basınca 0,7 saniyede geçiyor, iş bitince oyuncu kamerasına dönüyor.
+
+Kullanıcı geri bildirimiyle üç kez kuruldu. Son kural, oda ve dolap kareleri referans alınarak: kamera omuz yüksekliğinde arkada, baş ve omuz kadrajda, iş önde. `evidence/camera.jpg` son halini gösteriyor.
+
+Küçük hedeflerin etkileşim küreleri büyütüldü: odun 58, bitki 52, kapak 42, çay 40, askı 22 cm.
+
+Kalan sorunlar: yerden toplamada iş başlarken baş kadrajın üstünde kalıyor, eğilince giriyor. Kapak açarken sırt kadrajı kaplıyor, kapak ve el kısmen görünüyor.
+
+### Odun taşıma
+
+Odun ya da yarılmış odun varken kollar Village Life `am_CarryInArms_Idle_01` pozunu tutuyor, Village Life `SM_LogBundle` kollarda duruyor. Mevcut `UpperBody` katmanı ve `GR_CarryActive` kullanıldı, bacaklar yürümeye devam ediyor. Her iş başında bırakılıyor, iş bitince sayılara göre geri alınıyor. Kollar ile demet arasındaki temas yakından incelenmedi.
+
+### Genel hareket
+
+Bu turda yalnız kol değerleri doğrulandı. Kalıcı değerlerle yürüyüş 132 cm/s, dirsek 138–169°. Dönüşlere dokunulmadı.
+
+### PBL
+
+`DT_PhysData`, açık gök, erken sabah: güneşte 37.938 lux, gölgede 4.484 lux, EV100 12 ve 10. Oran yaklaşık 8,5:1.
+
+PBL gri malzemeli küreyle sahnede ölçüm yapıldı: yaklaşık 5,5:1. Gökyüzü dolgusu 1,15'ten 0,8'e indirildi. Ölçüm tek noktadan alındı, ayardan sonra tekrarlanmadı, hesaplanan yeni oran yaklaşık 7,5:1. Karşılaştırma `evidence/light_sky_ab.jpg`: üst sıra 1,15, alt sıra 0,8. Güneş gerçek lux değerine çekilmedi, sahnenin göreli ölçeği korundu.
+
+Bir süre görüntüler solgun çıktı. Neden ışık değil, ölçüm için kapatılan otomatik pozlama ayarının editörde açık kalmasıydı. Temiz editörde tekrar alındı.
+
+### Ev
+
+Eklenenler: odun istifinin üstüne `Side_Shed`, yanına kütük yığını, arka duvara iki sarmaşık. Hepsi `GameplaySF/DayLife` klasöründe. Yeni çatı kesme kamerasında sağ kenarda görünüyor.
+
+Denenip kaldırılanlar:
+
+- Real Ivy hazır Blueprint'leri içinde koyu demo geometrisi taşıyor, kesim alanını kapattı. Silindi, evde zaten kullanılan sarmaşık modeli yerleştirildi. Yerleştirilen model Real Ivy değil, Modular Rural Cabin `Ivy_1`.
+- DustBox `NS_Motes` odada parlak beyaz noktalar gibi göründü, kaldırıldı. DustBox yüzey tozu fırçası denenmedi.
+
+### Eksik paketler
+
+Bunlar projede, kardeş projelerde ve indirilmiş Fab kütüphanesinde yok:
+
+| Paket | Durum |
+|---|---|
+| Interaction System (Darthdd) | Fab kütüphanesine kaydedilmiş, indirilmemiş |
+| 120 Grunge, Damage, Leak Decal Pack | Bulunamadı |
+| Sharur's Normandy Village + PCG Plants | Bulunamadı |
+
+Epic Launcher veya Fab üzerinden projeye eklenmeleri gerekiyor.
+
+### Üçüncü tur testleri
+
+Yeni oyun rotası yürüyüş, kamera ve taşımayla geçti: Herb 1, Wood 1, Split 2, Fire 2, Tea 2. Son ışık ayarından sonra rota oyuncu kamerasıyla bir kez daha geçti. Oyuncu kamerası işten sonra geri döndü. Performans bu turda yeniden ölçülmedi.
+
 ## Testler
 
 | Test | Sonuç |
@@ -135,11 +191,10 @@ Video belleği 6712 MB. Noktalar önceki turdakilerle aynı değil, doğrudan ka
 
 - Keskin dönüş, 45–180° pivot, sprint dönüşü, fren ve yeniden hızlanma.
 - `fz_walk_a` baş sıçraması.
-- Taşıma demeti ve sepet. Village Life `CarryInArms` ve `CarryBasket` klipleri hazır, bağlanmadı.
+- Sepet taşıma ve taşırken dururken dönüş klipleri (`CarryBasket`, `Idle_Turn`).
 - Village Life yürüyüşleri (`am_Loco_WalkA/B`) denenmedi. Genel yürüyüş için aday.
 - Kapatma klibi (`AM_Interact_Door_ShutPull`), oturma, dinlenme.
 - Evin dış ve iç büyük yerleşimi, patikalar, PCG dışlama.
-- PBL verisiyle ışık.
 - İç ve dış ses geçişi, kıyafet sesi.
 - Gamepad, gerçek merdiven, tepe rotası, 30/60 FPS, paketlenmiş oyun.
 - Yüz rig'i ifade testi.
@@ -167,5 +222,7 @@ Yok. Eksik animasyonlar projedeki paketlerde var.
 - `fire_lit.jpg`: istasyonlardan yakılmış ateş.
 - `bench.jpg`: tezgâh ve maske.
 - `tea.jpg`: demlik ve fincan.
+- `camera.jpg`: oyuncunun iş sırasında gördüğü kareler.
+- `light_sky_ab.jpg`: gökyüzü dolgusu karşılaştırması.
 - `lens_on.jpg`, `lens_off.jpg`: aynı kamera, lens açık ve kapalı.
 - Önceki turun görüntüleri: yüz, kıyafetler, dolap, ışık öncesi ve sonrası.
