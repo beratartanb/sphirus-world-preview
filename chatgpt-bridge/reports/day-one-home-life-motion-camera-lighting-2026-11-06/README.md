@@ -129,7 +129,7 @@ Aynı koşu, tek ölçüm. Ek dört alev kaynağından önce alındı.
 | Kesim alanı | 29,0 ms | 31,3 ms |
 | Orman | 29,7 ms | 32,0 ms |
 
-Video belleği 6712 MB. Noktalar önceki turdakilerle aynı değil, doğrudan karşılaştırılamaz. Disk boşluğu yaklaşık 45 GB.
+Video belleği 6712 MB. Noktalar önceki turdakilerle aynı değil, doğrudan karşılaştırılamaz. Disk boşluğu 42 GB.
 
 ## Yapılmayanlar
 
