@@ -1,5 +1,31 @@
 # Sphirus: yeni baş, AAMS'ten bağımsız Core Motion oyuncusu, adaptif yakın kamera
 
+## Güncelleme 2 (2026-11-08 sabahı, kullanıcının elle testinden sonra)
+
+Kullanıcı şunları bildirdi: hareket edince karakter kameradan fırlıyor ve köşede koşu animasyonunda takılıyor, fare ile karakter ekranda kayıyor, eller arkada, baş–gövde renk geçişi var. Ayrıca iki set referans kare gönderdi (Plague Tale ve Alone in the Dark tarzı yakın omuz kamerası). Bu turda yapılanlar:
+
+| Konu | Sonuç | Kanıt |
+|---|---|---|
+| Gövde kapsülden kopuyordu (Motion Matching kliplerinin kök hareketi) | PASS: sürücü animasyonunda kök hareketi yok sayılıyor, kemik kilitli. Fareyle dönerken yürüme, koşu ve geri gitmede 513 karede gövde–kapsül sapması 0 cm | `evidence/walk_turn_camera_body_attached.jpg` |
+| Eller arkada | PASS (görsel): Core Motion IK rig'inden MetaHuman eklentisinin kendi `IK_MH_IKRig`'ine sıfırdan retargeter (`RTG_Sph_Core_to_MH2`), varsayılan işlemler, otomatik zincir eşleme, otomatik hizalanmış hedef poz. Eller iki yanda | `evidence/arms_natural_retarget.jpg` |
+| Kamera | PARTIAL: referanslara göre baş hizasında, karakter sol üçte birde. Ev içinde 0,85–1,25 m, dışarıda 1,20–1,65 m. Omuz ofseti 45–62 cm, FOV 62/66. Sağ duvar yakınsa omuz, arka duvar yakınsa mesafe kısalıyor, kamera yükseliyor. Dar koridorda hâlâ kesin doğrulanmadı | `evidence/camera_alone_style_views.jpg` |
+| Baş–gövde renk geçişi | PASS (görsel): gövdedeki iri çiller inceltildi, boyunda 24 cm'lik ton geçişi. Gövde malzemesindeki fazladan mikro normal, roughness ve specular ayarları kaldırıldı, başla aynı | `evidence/neck_seam_before.jpg`, `evidence/neck_seam_after.jpg` |
+| AAMS bağımlılığı | PASS: harita + oyuncu + oyun modu kapanışında 0 AAMS paketi (önce 2.366) | aşağıda |
+| Paketleme kuralları | `MapsToCook` = `L_GR_SphirusHouse`; `DirectoriesToNeverCook` = `/Game/AAMS`, `/Game/CoreMotion_Retargeted` | `Config/DefaultGame.ini` |
+| Kapılar | PASS (otomasyon): AAMS etkileşim tabanından türeyen 6 kapı (balkon, mutfak arka, veranda, üst banyo, alt WC, kiler) Story Framework `GenericDoor_BP`'ye çevrildi; E ile açılıyor. Sandık kapağı, çatı penceresi ve çekme kolu artık statik | `evidence/door_sf_open.jpg` |
+| Tavan arası merdiveni | AAMS'e bağlı Blueprint kaldırıldı, yerinde projenin kendi merdiven mesh'i (statik). Tırmanma yok | — |
+| Maske işi klipleri | 6 klip (Carry, Hang, Inspect, Put, Take, Tie) Core Motion iskeletine taşındı, tezgâh yeni klipleri kullanıyor | — |
+| Maske ipucu katmanı | AAMS HUD kopyası olduğu için tezgâhın açtığı sağ üst ipucu kaldırıldı; görev metni Story Framework görev listesinde (T) | — |
+| Dolap kapağı klibi | AAMS kapı klibi yerine Core Motion iskeletindeki `AM_GR_Day_Reach` | — |
+| İstasyon sesleri | AAMS sesleri yerine proje foley'i ve Story Framework kapı sesi. Odun vuruşu için uygun ses yok, geçici olarak `foley_punch_02` | — |
+| Çay | PASS (otomasyon + görsel): çay istasyonu, çaydanlık, buhar ve fincan mutfaktaki dökme demir ocağa taşındı; evdeki eski çaydanlık kaldırıldı | `evidence/chore_route_tea_kitchen.jpg` |
+| Ev işi rotası (yeni oyun) | PASS (otomasyon): uyanma, giyinme, odun, kesme (2 parça), şömine (2), çay (2) | aynı |
+
+Hâlâ yapılmayanlar: mouse ile vuruşla odun kesme ve fiziksel düşen parçalar, çayın kapak, bitki ve su adımları, yatak ve battaniye, EnviroSense, zıplama/engel aşma/merdiven tırmanma, ayak IK'sı, ev ve bahçe yerleşimi, kıyafet düzeltmesi, cook denemesi, performans, kayıt/yükleme testi.
+
+---
+
+
 Tarih: 2026-11-08 (görev 7 Kasım akşamı başladı). Proje: UE 5.8.4, harita `/Game/GraceRanger/Maps/L_GR_SphirusHouse`.
 Bu rapor genişletilmiş görev promptunun yapılan kısmını ve yapılmayan kısmını ayrı yazar. Teslim **kısmidir**.
 
