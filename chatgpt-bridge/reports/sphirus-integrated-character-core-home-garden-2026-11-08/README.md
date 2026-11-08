@@ -22,11 +22,11 @@ Kullanıcı şunları bildirdi: hareket edince karakter kameradan fırlıyor ve 
 | Ev işi rotası (yeni oyun) | PASS (otomasyon): uyanma, giyinme, odun, kesme (2 parça), şömine (2), çay (2) | aynı |
 | Mouse ile odun kesme | PASS (otomasyon): E ile kütüğe gelinir, kesme klibi hazır duruşta (3,05 sn) durur ve bekler. Sol tık (`IA_Sph_Use`) tek vuruşu sürdürür, gerçek vuruş anında parçalanma olur. Bekleme yokken tık hiçbir şey yapmaz; basılı tutma ve hızlı tık kuyruk biriktirmez, ikinci tık çoğaltmaz. Bekleme süresi istasyon başına ayarlı (`GR_AwaitAt`). Kusurlar: taşınan odun demeti kesme sırasında kollarda görünmeye devam ediyor; parçalar fizikle düşmüyor, eski betikli yarılma görseli kullanılıyor; parçalar tek tek toplanamıyor | `evidence/chop_click_ready_swing.jpg` |
 | Zıplama, düşme, iniş | PASS (otomasyon): zıplamada Core Motion kalkış montajı, havada düşme döngüsü (Motion Matching'den 0,2 sn geçiş), yere değince toparlanma montajı. Yürürken ve dururken denendi. Not: Core Motion zıplama klipleri erkek seti | `evidence/jump_fall_land.jpg` |
-| Çömelme | FAIL: kapsül çömeliyor ama veritabanında çömelme klibi yok, gövde ayakta kalıyor | — |
+| Çömelme | PASS (otomasyon + görsel): C ile çömelme. 18 Core Motion çömelme klibiyle ikinci veritabanı (`PSD_Sph_Crouch`); sürücü her karede çömelme durumuna göre veritabanını seçiyor. Çömelik yürüme 110 cm/s, C ile kalkış. Klipler erkek setinden, poz derin. Alçak tavan altında kalkışın engellenmesi motorun varsayılanı, ayrıca test edilmedi | `evidence/crouch_idle_walk_stand.jpg` |
 | Yatak ve battaniye | NOT_DONE: Village Life yatağa girme/kalkma klipleri kök hareketiyle yatağa giriyor. Kök hareketi gövdenin kopmaması için kapalı; yatakta güvenle açmak ve kapsül–yatak çarpışmasını çözmek bu turda yapılmadı. Battaniye için bez simülasyonu veya rig yok | — |
 
 
-Hâlâ yapılmayanlar: fizikle düşen ve toplanan odun parçaları, çayın kapak, bitki ve su adımları, yatak ve battaniye, çömelme animasyonu, vault/mantle, EnviroSense, zıplama/engel aşma/merdiven tırmanma, ayak IK'sı, ev ve bahçe yerleşimi, kıyafet düzeltmesi, cook denemesi, performans, kayıt/yükleme testi.
+Hâlâ yapılmayanlar: fizikle düşen ve toplanan odun parçaları, çayın kapak, bitki ve su adımları, yatak ve battaniye, vault/mantle, EnviroSense, zıplama/engel aşma/merdiven tırmanma, ayak IK'sı, ev ve bahçe yerleşimi, kıyafet düzeltmesi, cook denemesi, performans, kayıt/yükleme testi.
 
 ---
 
