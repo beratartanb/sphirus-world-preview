@@ -20,8 +20,13 @@ Kullanıcı şunları bildirdi: hareket edince karakter kameradan fırlıyor ve 
 | İstasyon sesleri | AAMS sesleri yerine proje foley'i ve Story Framework kapı sesi. Odun vuruşu için uygun ses yok, geçici olarak `foley_punch_02` | — |
 | Çay | PASS (otomasyon + görsel): çay istasyonu, çaydanlık, buhar ve fincan mutfaktaki dökme demir ocağa taşındı; evdeki eski çaydanlık kaldırıldı | `evidence/chore_route_tea_kitchen.jpg` |
 | Ev işi rotası (yeni oyun) | PASS (otomasyon): uyanma, giyinme, odun, kesme (2 parça), şömine (2), çay (2) | aynı |
+| Mouse ile odun kesme | PASS (otomasyon): E ile kütüğe gelinir, kesme klibi hazır duruşta (3,05 sn) durur ve bekler. Sol tık (`IA_Sph_Use`) tek vuruşu sürdürür, gerçek vuruş anında parçalanma olur. Bekleme yokken tık hiçbir şey yapmaz; basılı tutma ve hızlı tık kuyruk biriktirmez, ikinci tık çoğaltmaz. Bekleme süresi istasyon başına ayarlı (`GR_AwaitAt`). Kusurlar: taşınan odun demeti kesme sırasında kollarda görünmeye devam ediyor; parçalar fizikle düşmüyor, eski betikli yarılma görseli kullanılıyor; parçalar tek tek toplanamıyor | `evidence/chop_click_ready_swing.jpg` |
+| Zıplama, düşme, iniş | PASS (otomasyon): zıplamada Core Motion kalkış montajı, havada düşme döngüsü (Motion Matching'den 0,2 sn geçiş), yere değince toparlanma montajı. Yürürken ve dururken denendi. Not: Core Motion zıplama klipleri erkek seti | `evidence/jump_fall_land.jpg` |
+| Çömelme | FAIL: kapsül çömeliyor ama veritabanında çömelme klibi yok, gövde ayakta kalıyor | — |
+| Yatak ve battaniye | NOT_DONE: Village Life yatağa girme/kalkma klipleri kök hareketiyle yatağa giriyor. Kök hareketi gövdenin kopmaması için kapalı; yatakta güvenle açmak ve kapsül–yatak çarpışmasını çözmek bu turda yapılmadı. Battaniye için bez simülasyonu veya rig yok | — |
 
-Hâlâ yapılmayanlar: mouse ile vuruşla odun kesme ve fiziksel düşen parçalar, çayın kapak, bitki ve su adımları, yatak ve battaniye, EnviroSense, zıplama/engel aşma/merdiven tırmanma, ayak IK'sı, ev ve bahçe yerleşimi, kıyafet düzeltmesi, cook denemesi, performans, kayıt/yükleme testi.
+
+Hâlâ yapılmayanlar: fizikle düşen ve toplanan odun parçaları, çayın kapak, bitki ve su adımları, yatak ve battaniye, çömelme animasyonu, vault/mantle, EnviroSense, zıplama/engel aşma/merdiven tırmanma, ayak IK'sı, ev ve bahçe yerleşimi, kıyafet düzeltmesi, cook denemesi, performans, kayıt/yükleme testi.
 
 ---
 
