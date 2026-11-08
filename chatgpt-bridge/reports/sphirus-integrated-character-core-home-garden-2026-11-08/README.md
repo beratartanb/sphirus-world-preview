@@ -1,5 +1,22 @@
 # Sphirus: yeni baş, AAMS'ten bağımsız Core Motion oyuncusu, adaptif yakın kamera
 
+## Güncelleme 5 (2026-11-08 gece, kare kare inceleme)
+
+Kullanıcı: karakter hiçbir yöne dönmüyor, düz yürüyüşte takılma, alan derinliği göz gibi olsun, tüm hareket ve aksiyonlar kare kare kontrol edilsin.
+
+| Bulgu | Neden | Düzeltme | Doğrulama |
+|---|---|---|---|
+| Karakter hareket yönüne dönmüyor, yan yan kayıyor | Akşamki ayarda dönüş hızı `Rotator(0,300,0)` yazılmıştı; Python'da sıra (roll, pitch, yaw) olduğu için yaw hızı 0 oldu. Kayıtta gövde açısı bütün tur boyunca 30° sabitti. | Yaw 300°/s geri verildi. | PASS: W/S/A/D/çapraz altı yönde hız yönü kamera eksenine göre 0/180/−90/90/−135; gövde 0,13–0,6 sn'de hıza hizalanıyor; kamera dönerken tuşsuz dururken gövde dönmüyor. |
+| Düz yürüyüşte takılma | Test rotası kesme kütüğünün köşesine sürtüyordu (hız 165→28). Ayrıca bitki istasyonu çiçekleri ve 1211 genç çam fidanı oyuncuyu ve kamerayı engelliyordu. | Çiçekler ve fidanlar Pawn ve Camera kanallarını yok sayıyor. Açık rotada hız 165 sabit, kamera mesafesi kare kare düzgün. | PASS (kayıt). Hareket klip hızı uyumu (0,75–1,2) bir önceki turdan. |
+| Alan derinliği karakteri netleyip arkayı bulanıklaştırıyordu | — | DOF kaldırıldı. Göz gibi: merkez net, kenarlar hafif yumuşak (radyal 9 örnekli post-process malzemesi `M_Sph_EdgeSoft`). | PASS (ölçüm): merkez keskinlik değişmedi (126/129), köşeler %10–30 yumuşadı. İlk sürüm 3 kat yumuşatıyordu, yarıya indirildi. |
+| Zıplayıp inince yerde kayma | Yerinde zıplamada iniş toparlanma klibi karakteri yere kadar çökertiyordu (baş yerden 86 cm). Yürürken inişte ise dönüş hatası yüzünden yan kayma vardı. | Toparlanma klibi yalnız gerçek düşüşte (iniş hızı < −700 cm/s) oynuyor; sıradan zıplama doğrudan yürüyüş/boşta hareketine iniyor. | PASS: yürürken zıplama boyunca hız 165 sabit, yerinde zıplamada klip oynamıyor, baş en az 57 cm kapsül merkezinin üstünde. |
+| Eylemde kamera | — | Akşamki yakın omuz kamerası yeni ayarlarla rota testinden geçti (kes, topla, şömine). | PASS (`action_camera_route_v2.jpg`) |
+| Çömelme | — | C ile aç/kapa: kapsül alçalıyor, hız 110. | PASS (kayıt) |
+
+Kare kare çekimler: `frames_walk_turn.jpg` (W basılıyken kamera 60°/s dönüyor, her 4. kare), `frames_camera_orbit.jpg` (tuşsuz, kamera 90°/s). Düz yürüyüş kareleri de alındı; karakter ve kamera kare kare sürekli, sıçrama yok.
+
+Not: önceki turun "yürüyüş hâlâ sekiyor" şikayetinin ana nedeni yaw hatasıydı; Motion Matching tarafında ek bir değişiklik yapılmadı.
+
 ## Güncelleme 4 (2026-11-08 akşam, kullanıcı geri bildirimi)
 
 | İstek | Yapılan | Durum |
