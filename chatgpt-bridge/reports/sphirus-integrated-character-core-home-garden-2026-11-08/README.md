@@ -1,5 +1,21 @@
 # Sphirus: yeni baş, AAMS'ten bağımsız Core Motion oyuncusu, adaptif yakın kamera
 
+## Güncelleme 4 (2026-11-08 akşam, kullanıcı geri bildirimi)
+
+| İstek | Yapılan | Durum |
+|---|---|---|
+| Baş ile gövde arasında renk farkı | Kıyafete göre takılan gövde malzemelerinde baştan farklı bir ana cilt malzemesi ve (0,78; 0,67; 0,57) kahverengi çarpan vardı. Çarpan, dikişin iki yanında ölçülerek (1,30; 1,50; 1,58) yapıldı. Gövde dokusunda omuz yanığı ve çil yumuşatıldı. | PASS (görüntü: `skin_seam_before.jpg` → `skin_seam_after.jpg`) |
+| Giysi altında siyah boşluklar | Ten gizleme maskeleri eski giysilere göre çizilmişti. Kapalı delikler dolduruldu, kenarlar 16 texel geri çekildi. Göğüsten ten taşması da giderildi. | PASS (yakın çekim) |
+| Kukla gibi seken, hızlandırılmış yürüyüş | Klipler 197 cm/s hızında, karakter 150–165 cm/s; Motion Matching oynatma hızı 1,0'a kilitliydi. Oynatma hızı aralığı 0,75–1,2 yapıldı. Karışım 0,45'ten 0,25 sn'ye indi, aynı klipte atlama eşiği 0,25 sn, arama aralığı 0,05 sn. Dönüş hızı 300°/s, ivme 700. | PARTIAL: kayıtta ayak yerdeyken ~1 cm sabit kalıyor. Görsel his kullanıcı tarafından denenmeli. Inertialization düğümü bu editörün paletinden eklenemedi. |
+| Bekleme hareketleri çok sık | Boşta döngüsü 6 sn'lik ağırlık aktarma klibinden sakin `af_Stand_Idle_01`'e alındı. | PARTIAL (görsel kontrol yok) |
+| Zıpladıktan sonra yerde kayma | Hareket halinde inişte tam gövde iniş klibi artık oynamıyor; yalnızca 60 cm/s altında. | NOT_TESTED |
+| Karakter kadrajda fazla solda | Omuz ofseti 45–62'den 30–44 cm'ye indi. | PASS (görüntü) |
+| Eylemde çapraz üst uzak kamera | Kesme ve şömine istasyonlarında hâlâ sabit kameraya geçiş vardı, kaldırıldı. Eylem sırasında kol 90 cm, omuz 38 cm, bakış −22°, karakterin yönüne yumuşak dönüş. | PASS (`action_camera_chop_fire.jpg`) |
+| Alan derinliği, lens hissi | Oyuncu kamerasında f/5,6, odak 125 cm, hafif vinyet, renk sapması, film greni. Lens bükülmesi eklenmedi. | PARTIAL |
+| Balta beklerken donma | Duraklatılan her montajda boşta klibinden türetilen nefes ve salınım katmanı devreye giriyor (baş saniyede 3–6 cm hareket ediyor). | PASS (ölçüm) |
+| Odun şömineye konmuyor | Akış çalışıyor: iki parça toplanınca şömine önce odunla dolduruluyor, sonra yanıyor. Parçalar E ile tek tek toplanmazsa yığın 0 kalıyordu. Parçalar artık 80 cm yakına gelince kendiliğinden de toplanıyor. | PASS (otomatik rota: Fire 2) |
+| Hafif yaşlanma | MetaHuman yüz ayrıntı ayarı (`HighFrequencyDelta` = 0) bu motor sürümünde betikten salt okunur. | FAIL (yapılamadı) |
+
 ## Güncelleme 3 (2026-11-08 öğleden sonra)
 
 Bu turda gece kalan işler ile kullanıcının uyanınca bildirdiği titreme, ayak ve atlet sorunları ele alındı.
