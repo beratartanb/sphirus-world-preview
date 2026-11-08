@@ -1,5 +1,48 @@
 # Sphirus: yeni baş, AAMS'ten bağımsız Core Motion oyuncusu, adaptif yakın kamera
 
+## Güncelleme 3 (2026-11-08 öğleden sonra)
+
+Bu turda gece kalan işler ile kullanıcının uyanınca bildirdiği titreme, ayak ve atlet sorunları ele alındı.
+
+### Karakter gövdesi: atlet, ayaklar, titreme
+
+| Sorun | Neden | Düzeltme | Durum |
+|---|---|---|---|
+| Atlet dize kadar uzuyor, şort taşıyor | Retarget'taki Root Motion işleminde `TargetRoot = pelvis` ayarlıydı. Kaynağın kök kemiği (0,0,0) her karede MetaHuman leğenine yazılıyor, leğen yere iniyordu. Leğene bağlı giysi kenarları aşağı çekiliyordu. | `TargetRoot = root`. Leğen 0'dan 94 cm'ye çıktı (sürücü 95). | PASS (ölçüm ve görüntü) |
+| Ayak parmak ucunda, parmak zeminin içinde | Kaynak rig'de bacak uyluk→bilek ve ayrı parmak zinciri, hedefte uyluk→parmak. IK hedefleri de farklı kemiklerdeydi. | Kaynak rig'in proje kopyası `IK_Sph_CoreSrc`: bacak uyluk→parmak, IK hedefi parmakta. Hedef poz yeniden hizalandı. Parmak artık bileğin 10 cm önünde. | PASS (ölçüm ve görüntü) |
+| Dururken yerinde yürüme ve titreme | Dönerek yürüyüp durunca Motion Matching adım döngüsünde kalıyordu: hız 0, ayaklar ±50 cm. | Sürücü animasyonuna boşta kapısı: 0,35 sn hareketsiz kalınca 0,3 sn'de Core boşta döngüsüne geçiyor. | PASS (kayıt: ayaklar 0,6 sn'de sabitleniyor) |
+| Mesaj günlüğünde binlerce hata | `BP_GR_AtticContext` eski AAMS merdivenine bağlıydı, bağ kopunca her karede hata yazıyordu (oturum başına ~6.500). | Yeni `SPH_AtticLadder`'a dünya konumu korunarak bağlandı. | PASS (sonraki oturumda 0 hata) |
+| Kamera konumunda küçük sarsıntı | Yay kolunun sondası çalılara değince kol boyu anında kısalıyor. Editördeki kare süreleri 11–125 ms arasında dalgalanıyor. | Düzeltilmedi. Bitkilerin kamera kanalı tüm ormanı etkilediği için ayrı karar gerekiyor. | PARTIAL |
+
+Atlet ayrıca Sph8 gövdesiyle MetaHuman gardırobundan yeniden derlendi (`Out_S8Tank`). Asıl uzama nedeni leğen hatasıydı.
+
+Kanıt: `evidence/body_before_retarget_fix.jpg`, `evidence/body_after_retarget_fix.jpg`.
+
+### Kamera ışınları hiç çalışmıyordu
+
+UE 5.8'de `Multiply_VectorFloat` düğümü "vector*vector" olarak oluşuyor ve sayı değeri kayboluyor (B = 0). Kameranın beş açıklık ışını bu yüzden sıfır uzunluktaydı: açıklık ve duvar mesafesi hep "açık alan" çıkıyordu. 48 düğüm `MakeVector(k,k,k)` ile düzeltildi. Kesme istasyonu ve maske tezgâhında kalan altı görüş hedefi değişimi (`CameraActor` (0,0,3000)) kaldırıldı. Kamera artık iş sırasında da oyuncuda kalıyor.
+
+### Yatak ve uyanış
+
+- Uzanma ve kalkma: karakter yatağın doğu yarısında boylu boyunca, başı yastıkta yatıyor. Tıklayınca kalkıp yatağın yanında ayağa kalkıyor. PASS. `evidence/bed_lie_rise.jpg`
+- Yeni oyun uyanışı artık aynı yatak montajının uyku ve kalkış kısmını kullanıyor: yatakta yatarak başlıyor, root motion ile dışarı çıkıyor. PASS. `evidence/new_game_wake.jpg`
+- Yorgan yok. Karakter yorganın üstünde uzanıyor.
+
+### Odun kesme
+
+- Tıklayınca vuruşta kütükten iki yarık parça fizikle iki yana düşüyor: biri ileri, biri oyuncuya doğru. Parçalar oyuncu kapsülünü yok sayıyor ve CCD açık.
+- Her parça E ile toplanıyor: oyuncu eğiliyor, parça yığına ekleniyor, kucağa dokulu bir odun demeti geliyor.
+- Yerde duran parçalar kayıtta yığına sayılıyor, yükleyince kaybolmuyor.
+- Kesim sesi projede yoktu. Sentezlenmiş bir balta vuruşu (`SW_Sph_ChopHit`) bağlandı. Ses kulakla dinlenmedi.
+- Test: odun al, kes, iki parçayı topla, yığın 2. PASS. `evidence/chop_pieces_carry.jpg`
+- Bir denemede geriye savrulan parça zeminin altına düştü. Düzeltmeden sonraki denemede iki parça da zeminde kaldı. Tek deneme, tekrar sayısı az.
+
+### Bilinen eksikler (bu tur)
+
+- Çay alt adımları (kapak, ot, su), EnviroSense, vault/mantle, ayak IK (eğimli zemin), yorgan, ev ve bahçe yerleşimi yapılmadı.
+- Paketleme, performans ve kaydet/yükle testi yapılmadı.
+- Editör her derleme veya harita işinden sonra yeniden başlatılmazsa çöküyor. Bu yüzden tüm testler taze editörde koşuldu.
+
 ## Güncelleme 2 (2026-11-08 sabahı, kullanıcının elle testinden sonra)
 
 Kullanıcı şunları bildirdi: hareket edince karakter kameradan fırlıyor ve köşede koşu animasyonunda takılıyor, fare ile karakter ekranda kayıyor, eller arkada, baş–gövde renk geçişi var. Ayrıca iki set referans kare gönderdi (Plague Tale ve Alone in the Dark tarzı yakın omuz kamerası). Bu turda yapılanlar:
