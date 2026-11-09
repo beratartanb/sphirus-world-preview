@@ -1,0 +1,44 @@
+RUNNER_READY emb_381.log
+02:04:48 TRAJ2
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/day_traj2_020448.json", "existing": 6, "new": 0}
+OK 8.193835020065308
+TYPE PoseSearchTrajectorySample 5
+  offset -0.05000000074505806
+  weight 0.30000001192092896
+  flags 32
+  normalization_group None
+  debug_color <Struct 'LinearColor' (0x0000018055B5BB38) {r: 1.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+NEW {"Samples":[{"offset":-0.60000002384185791,"flags":32,"weight":0.80000001192092896,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":-0.30000001192092896,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":-0.05000000074505806,"flags":32,"weight":0.30000001192092896,"normalizationGroup":"None","debugColor":{"r":1,"g":0,"b":0,"a":1}},{"offset":0,"flags":144,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.34999999403953552,"flags":160,"weight":1,"normalizationGroup":"None",
+STEP schema saved
+DONE
+02:04:57 WRITE_END job=day_traj2-020448866832.py ok written=['/Game/Sphirus/Player/MM/PSD_Sph_Crouch', '/Game/Sphirus/Player/MM/PSD_Sph_Jog', '/Game/Sphirus/Player/MM/PSD_Sph_Loco2', '/Game/Sphirus/Pl
+MANIFEST day_traj2_020448
+TYPE PoseSearchTrajectorySample 5
+  offset -0.05000000074505806
+  weight 0.30000001192092896
+  flags 32
+  normalization_group None
+  debug_color <Struct 'LinearColor' (0x0000018055B5BB38) {r: 1.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+NEW {"Samples":[{"offset":-0.60000002384185791,"flags":32,"weight":0.80000001192092896,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":-0.30000001192092896,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":-0.05000000074505806,"flags":32,"weight":0.30000001192092896,"normalizationGroup":"None","debugColor":{"r":1,"g":0,"b":0,"a":1}},{"offset":0,"flags":144,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.34999999403953552,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.69999998807907104,"flags":176,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":1,"flags":4,"weight":1.5,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}}],"Weight":1.2999999523162842}
+STEP schema saved
+DONE
+RUNNER_READY emb_382.log
+02:06:59 PROBE2
+VIDREC P_traj2 7.7 s
+FRAMES 231
+VIDEO C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Saved/Codex/Day_20261107/videos/P_traj2.mp4 231 frames 1510 x 922
+8330382 Saved/Codex/Day_20261107/videos/P_traj2.mp4
+== P_traj2.json frames 231 mean gdt 0.0333
+ SEG 0 '' spd 0 | body clips {'Idle_01': 15}
+     body times [(('Idle_01', 5.3), 2), (('Idle_01', 5.5), 2), (('Idle_01', 5.6), 2), (('Idle_01', 5.7), 2), (('Idle_01', 6.0), 2), (('Idle_01', 5.4), 1), (('Idle_01', 5.8), 1), (('Idle_01', 5.9), 1)]
+     probe [(('Idle_02_WeightShift', 0.0), 9), (('Idle_TurnR180', 3.0), 5), (('Idle_02_WeightShift', 0.1), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001BC79C7BE00) Class \'PoseSearchDatabase", 0, False, 0]': 15}
+ SEG 1 'W' spd 165 | body clips {'Walk_Fwd_Start': 59, 'Walk_Start_TurnR045_Rfoot': 8, 'Walk_Start_TurnL045_Lfoot': 7}
+     body times [(('Walk_Fwd_Start', 0.8), 10), (('Walk_Fwd_Start', 0.7), 8), (('Walk_Fwd_Start', 0.9), 8), (('Walk_Fwd_Start', 1.0), 8), (('Walk_Fwd_Start', 1.1), 8), (('Walk_Fwd_Start', 1.2), 6), (('Walk_Fwd_Pivot', 0.1), 4), (('Walk_Start_TurnR045_Rfoot', 1.1), 3)]
+     probe [(('Walk_Fwd_Start', 0.6), 24), (('Walk_Fwd_Start', 0.4), 16), (('Walk_Start_TurnL045_Lfoot', 0.5), 14), (('Walk_Fwd_Start', 0.3), 12), (('Walk_Fwd_Start', 0.7), 11), (('Walk_Fwd_Start', 0.0), 6)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001BC79C7BE00) Class \'PoseSearchDatabase", 0, False, 0]': 90}
+ SEG 2 'W LeftShift' spd 399 | body clips {'Run_Fwd_Start': 50, 'Jog_Fwd_Start': 34, 'Walk_Fwd_Start': 2}
+     body times [(('Run_Fwd_Start', 0.8), 10), (('Run_Fwd_Start', 1.1), 8), (('Run_Fwd_Start', 1.0), 7), (('Run_Fwd_Start', 1.2), 7), (('Run_Fwd_Start', 0.9), 6), (('Jog_Fwd_Start', 0.7), 4), (('Jog_Fwd_Start', 0.8), 4), (('Jog_Fwd_Start', 1.0), 4)]
+     probe [(('Run_Fwd_Start', 0.6), 13), (('Run_Fwd_Start', 0.9), 10), (('Run_Fwd_Start', 0.7), 9), (('Run_Fwd_Start', 0.8), 9), (('Jog_Fwd_Start', 0.3), 8), (('Run_Fwd_Start', 0.3), 8)] | db {'["PSD_Sph_Run.PSD_Sph_Run\' (0x000001BC7C440C00) Class \'PoseSearchDatabase", 2, False, 2]': 60, '["PSD_Sph_Jog.PSD_Sph_Jog\' (0x000001BC79C7F500) Class \'PoseSearchDatabase", 1, False, 1]': 26}
+ SEG 3 '' spd 41 | body clips {'Idle_01': 17, 'Run_Fwd_Stop': 14, 'Run_Fwd_Start': 4}
+     body times [(('Run_Fwd_Stop', 1.1), 2), (('Run_Fwd_Stop', 1.3), 2), (('Run_Fwd_Stop', 1.4), 2), (('Run_Fwd_Stop', 1.6), 2), (('Idle_01', 6.8), 2), (('Idle_01', 7.0), 2), (('Idle_01', 7.2), 2), (('Idle_01', 7.4), 2)]
+     probe [(('Walk_Start_TurnR180_Rfoot', 1.2), 12), (('Idle_TurnR180', 3.0), 9), (('Idle_02_WeightShift', 0.0), 4), (('Run_Fwd_Start', 0.9), 3), (('Idle_TurnL090', 2.3), 2), (('Run_Fwd_Stop', 1.2), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001BC79C7BE00) Class \'PoseSearchDatabase", 0, False, 0]': 32, '["PSD_Sph_Run.PSD_Sph_Run\' (0x000001BC7C440C00) Class \'PoseSearchDatabase", 2, False, 2
+02:09:28 P5_DONE
