@@ -1,0 +1,40 @@
+RUNNER_READY emb_394.log
+03:39:44 STEADY4
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/day_steady4_033945.json", "existing": 12, "new": 0}
+OK 9.128613471984863
+DB PSD_Sph_WalkLoop 3
+DB PSD_Sph_JogLoop 3
+DB PSD_Sph_RunLoop 1
+STEP pawn vars
+TICKS ['OlayEkle|OlayTick']
+PAWN wired 1
+ERR []
+SAVED BP_HybridA_Player
+STEP pawn saved
+DRV steady wired 1
+DRV loop branch Run 1
+DRV loop branch Jog 1
+DRV loop branch Walk 1
+ERR []
+SAVED ABP_Sph_Driver
+DONE
+03:39:55 WRITE_END job=day_steady4-033945637687.py ok written=['/Game/Sphirus/CharacterLab/Hazel_20261106/Playable/BP_HybridA_Player', '/Game/Sphirus/Player/Anim/ABP_Sph_Driver', '/Game/Sphirus/Player
+MANIFEST day_steady4_033945
+RUNNER_READY emb_395.log
+03:41:49 PROBE
+VIDREC P_steady4 7.7 s
+FRAMES 231
+== P_steady4.json frames 231 mean gdt 0.0331
+ SEG 0 '' spd 0 | body clips {'Idle_01': 14, 'Jog_Fwd_Start': 1}
+     body times [(('Idle_01', 0.2), 2), (('Idle_01', 0.3), 2), (('Idle_01', 0.6), 2), (('Idle_01', 0.7), 2), (('Idle_01', 11.4), 1), (('Jog_Fwd_Start', 0.0), 1), (('Idle_01', 0.1), 1), (('Idle_01', 0.4), 1)]
+     probe [(('Idle_02_WeightShift', 0.0), 6), (('Idle_TurnL135', 2.8), 4), (('Idle_02_WeightShift', 0.1), 2), (('Idle_TurnL090', 2.3), 2), (('Idle_02_WeightShift', 0.2), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001B77A586680) Class \'PoseSearchDatabase", 0, False, 0]': 15}
+ SEG 1 'W' spd 165 | body clips {'Walk_Fwd': 47, 'Walk_Fwd_Start': 20, 'Walk_Start_TurnR045_Rfoot': 5}
+     body times [(('Walk_Fwd', 0.7), 6), (('Walk_Fwd', 0.3), 5), (('Walk_Fwd', 0.5), 5), (('Walk_Fwd', 0.8), 5), (('Walk_Fwd', 0.4), 4), (('Walk_Fwd', 1.1), 4), (('Walk_Fwd', 1.3), 4), (('Walk_Fwd_Start', 1.1), 3)]
+     probe [(('Walk_Fwd', 0.0), 52), (('Walk_Fwd', 0.2), 12), (('Walk_Fwd_Start', 0.0), 6), (('Walk_Fwd_Start', 0.3), 4), (('Walk_Fwd_Start', 0.7), 4), (('Walk_Fwd_Start', 0.6), 3)] | db {'["PSD_Sph_WalkLoop.PSD_Sph_WalkLoop\' (0x000001B77A586180) Class \'PoseSearchDatabase", 0, False, 0]': 68, '["PSD_Sph_Walk.PSD_Sph_Walk\' (0x
+ SEG 2 'W LeftShift' spd 396 | body clips {'Jog_Fwd': 17, 'Jog_Fwd_Start': 16, 'Run_Start_TurnL090_Lfoot': 12}
+     body times [(('Run_Start_TurnL090_Lfoot', 1.6), 12), (('Jog_Fwd_Start', 1.1), 8), (('Jog_Fwd_Start', 1.5), 4), (('Jog_Fwd', 0.0), 3), (('Run_Start_TurnL180_Lfoot', 2.3), 3), (('Jog_Fwd_Start', 1.0), 3), (('Run_Fwd_Start', 1.9), 3), (('Run_Fwd', 0.3), 3)]
+     probe [(('Run_Fwd', 0.3), 24), (('Run_Fwd', 0.2), 23), (('Jog_Fwd', 0.0), 22), (('Run_Fwd', 0.0), 10), (('Walk_Fwd', 0.0), 4), (('Jog_Fwd', 0.2), 3)] | db {'["PSD_Sph_RunLoop.PSD_Sph_RunLoop\' (0x000001B7792B7200) Class \'PoseSearchDatabase", 2, False, 2]': 59, '["PSD_Sph_JogLoop.PSD_Sph_JogLoop\' (0x000001B7792B6C00) Class
+ SEG 3 '' spd 43 | body clips {'Idle_01': 17, 'Run_Fwd_Stop': 9, 'Jog_Fwd_Start': 2}
+     body times [(('Run_Fwd_Stop', 1.6), 3), (('Jog_Fwd_Start', 1.0), 2), (('Run_Fwd_Stop', 1.7), 2), (('Run_Fwd_Stop', 2.0), 2), (('Idle_01', 1.5), 2), (('Idle_01', 1.6), 2), (('Idle_01', 1.8), 2), (('Idle_01', 2.0), 2)]
+     probe [(('Idle_TurnR180', 3.0), 14), (('Walk_Start_TurnR180_Rfoot', 1.2), 6), (('Run_Fwd', 0.3), 2), (('Walk_Fwd_Stop', 2.7), 2), (('Idle_TurnR045', 2.6), 2), (('Idle_02_WeightShift', 0.0), 2)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001B77A586680) Class \'PoseSearchDatabase", 0, False, 0]': 32, '["PSD_Sph_RunLoop.PSD_Sp
+03:45:14 P13_DONE
