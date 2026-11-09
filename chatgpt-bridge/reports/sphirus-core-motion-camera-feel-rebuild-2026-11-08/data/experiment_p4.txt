@@ -1,0 +1,40 @@
+RUNNER_READY emb_379.log
+01:55:49 TRAJ
+MANIFEST233 {"manifest": "Saved/Codex/SHME_V233_20261027/checkpoint/manifests/day_traj1_015549.json", "existing": 7, "new": 0}
+OK 4.600935697555542
+CUR {"Samples":[{"offset":-0.05000000074505806,"flags":32,"weight":0.30000001192092896,"normalizationGroup":"None","debugColor":{"r":1,"g":0,"b":0,"a":1}},{"offset":0,"flags":144,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.34999999403953552,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.69999998807907104,"flags":176,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":1,"flags":4,"weight":1.5,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1
+SET False
+NEW {"Samples":[{"offset":-0.05000000074505806,"flags":32,"weight":0.30000001192092896,"normalizationGroup":"None","debugColor":{"r":1,"g":0,"b":0,"a":1}},{"offset":0,"flags":144,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.34999999403953552,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.69999998807907104,"flags":176,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":1,"flags":4,"weight":1.5,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1
+STEP schema saved
+ERR_D []
+STEP driver saved
+DONE
+01:55:55 WRITE_END job=day_traj1-015549904507.py ok written=['/Game/Sphirus/Player/Anim/ABP_Sph_Driver', '/Game/Sphirus/Player/MM/PSD_Sph_Crouch', '/Game/Sphirus/Player/MM/PSD_Sph_Jog', '/Game/Sphirus
+MANIFEST day_traj1_015549
+CUR {"Samples":[{"offset":-0.05000000074505806,"flags":32,"weight":0.30000001192092896,"normalizationGroup":"None","debugColor":{"r":1,"g":0,"b":0,"a":1}},{"offset":0,"flags":144,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.34999999403953552,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.69999998807907104,"flags":176,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":1,"flags":4,"weight":1.5,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}}],"Weight":1}
+SET False
+NEW {"Samples":[{"offset":-0.05000000074505806,"flags":32,"weight":0.30000001192092896,"normalizationGroup":"None","debugColor":{"r":1,"g":0,"b":0,"a":1}},{"offset":0,"flags":144,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.34999999403953552,"flags":160,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":0.69999998807907104,"flags":176,"weight":1,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}},{"offset":1,"flags":4,"weight":1.5,"normalizationGroup":"None","debugColor":{"r":0,"g":0,"b":1,"a":1}}],"Weight":1.2999999523162842}
+STEP schema saved
+ERR_D []
+STEP driver saved
+DONE
+RUNNER_READY emb_380.log
+01:58:16 PROBE
+VIDREC P_traj 7.7 s
+FRAMES 231
+VIDEO C:/Users/berat/OneDrive/Documents/Unreal Projects/ActionAdventureMovementS/Saved/Codex/Day_20261107/videos/P_traj.mp4 231 frames 1510 x 922
+8282300 Saved/Codex/Day_20261107/videos/P_traj.mp4
+== P_traj.json frames 231 mean gdt 0.0331
+ SEG 0 '' spd 0 | body clips {'Idle_01': 14, 'Jog_Fwd_Start': 1}
+     body times [(('Idle_01', 0.1), 2), (('Idle_01', 0.2), 2), (('Idle_01', 0.3), 2), (('Idle_01', 0.6), 2), (('Idle_01', 0.7), 2), (('Idle_01', 11.3), 1), (('Jog_Fwd_Start', 0.0), 1), (('Idle_01', 0.0), 1)]
+     probe [(('Idle_02_WeightShift', 0.0), 8), (('Idle_TurnL090', 2.3), 5), (('Idle_02_WeightShift', 0.1), 1), (('Idle_TurnL180', 2.8), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x0000027CFD995F00) Class \'PoseSearchDatabase", 0, False, 0]': 15}
+ SEG 1 'W' spd 165 | body clips {'Walk_Fwd_Start': 64, 'Walk_Start_TurnR090_Rfoot': 12, 'Walk_Start_TurnL135_Lfoot': 5}
+     body times [(('Walk_Fwd_Start', 0.8), 13), (('Walk_Fwd_Start', 0.7), 11), (('Walk_Fwd_Start', 1.0), 9), (('Walk_Fwd_Start', 0.4), 7), (('Walk_Fwd_Start', 0.5), 7), (('Walk_Fwd_Start', 0.6), 7), (('Walk_Fwd_Start', 0.9), 6), (('Walk_Start_TurnR090_Rfoot', 0.7), 6)]
+     probe [(('Walk_Start_TurnR090_Rfoot', 0.5), 39), (('Walk_Fwd_Start', 0.3), 31), (('Walk_Fwd_Start', 0.6), 10), (('Walk_Fwd_Start', 0.0), 6), (('Idle_TurnL090', 2.2), 2), (('Idle_TurnL090', 2.3), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x0000027CFD995F00) Class \'PoseSearchDatabase", 0, False, 0]': 90}
+ SEG 2 'W LeftShift' spd 396 | body clips {'Run_Fwd_Start': 49, 'Jog_Start_TurnL045_Lfoot': 24, 'Jog_Start_TurnL090_Lfoot': 5}
+     body times [(('Run_Fwd_Start', 0.7), 8), (('Run_Fwd_Start', 0.9), 8), (('Run_Fwd_Start', 0.6), 7), (('Run_Fwd_Start', 1.0), 7), (('Run_Fwd_Start', 1.1), 6), (('Run_Fwd_Start', 1.2), 6), (('Run_Fwd_Start', 0.8), 5), (('Jog_Start_TurnL045_Lfoot', 1.4), 4)]
+     probe [(('Run_Fwd_Start', 0.3), 23), (('Run_Fwd_Start', 0.5), 14), (('Jog_Fwd_Start', 0.2), 9), (('Jog_Start_TurnL045_Lfoot', 0.6), 8), (('Run_Fwd_Start', 0.2), 8), (('Run_Fwd_Start', 0.4), 8)] | db {'["PSD_Sph_Run.PSD_Sph_Run\' (0x0000027CFD997300) Class \'PoseSearchDatabase", 2, False, 2]': 59, '["PSD_Sph_Jog.PSD_Sph_Jog\' (0x0000027CFD999880) Class \'PoseSearchDatabase", 1, False, 1]': 27}
+ SEG 3 '' spd 42 | body clips {'Idle_01': 17, 'Run_Start_TurnL180_Lfoot': 12, 'Run_Fwd_Start': 5}
+     body times [(('Run_Fwd_Start', 0.8), 2), (('Run_Fwd_Start', 0.9), 2), (('Run_Start_TurnL180_Lfoot', 1.1), 2), (('Run_Start_TurnL180_Lfoot', 1.2), 2), (('Run_Start_TurnL180_Lfoot', 1.4), 2), (('Run_Start_TurnL180_Lfoot', 1.6), 2), (('Walk_Start_TurnR045_Rfoot', 2.0), 2), (('Idle_01', 1.5), 2)]
+     probe [(('Idle_TurnR180', 3.0), 7), (('Idle_TurnR135', 3.0), 4), (('Walk_Start_TurnR180_Rfoot', 1.2), 3), (('Idle_TurnR180', 2.9), 3), (('Run_Fwd_Start', 0.3), 2), (('Walk_Start_TurnL180_Lfoot', 0.9), 2)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x0000027CFD995F00) Class \'PoseSearchDatabase", 0, False, 0]': 32, '["PSD_Sph_Run.PSD_Sph_Run\' (0x0000027CFD997300) Class \'PoseSearchDatabase", 2, Fa
+02:01:27 P4_DONE
