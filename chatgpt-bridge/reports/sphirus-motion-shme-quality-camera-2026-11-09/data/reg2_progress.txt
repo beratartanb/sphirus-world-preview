@@ -1,0 +1,32 @@
+1
+RUNNER_READY emb_421.log
+stop
+387652 Saved/Codex/Grip_20261106/rec/CJ_test.json
+== CJ_test.json frames 402 game s 12.7 mean gdt 0.0316
+ SEG 0 '' yr 0 | 0.8s spd mean 0 p95 0 | body {'Idle_01': 24} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=16 | yaw 180->180
+ SEG 1 'C' yr 0 | 0.2s spd mean 0 p95 0 | body {'Idle_01': 6} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=3 | yaw 180->180
+ SEG 2 '' yr 0 | 1.2s spd mean 0 p95 0 | body {'Idle_01': 30} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=15 | yaw 180->180
+ SEG 3 'W' yr 0 | 2.6s spd mean 103 p95 110 | body {'Run_Start_TurnR180_Rfoot': 16, 'Run_Start_TurnR090_Rfoot': 16, 'Run_Start_TurnL090_Lfoot': 15} | sw/s 6.2 restarts/s 0.0 cont(Run_Start_TurnR180_Rfoot) 0.00 n=5 | yaw 180->180
+ SEG 4 '' yr 0 | 0.8s spd mean 11 p95 110 | body {'Run_Start_TurnR180_Rfoot': 12, 'Run_Start_TurnR090_Rfoot': 6, 'Run_Start_TurnL090_Lfoot': 2} | sw/s 7.9 restarts/s 0.0 cont(Run_Start_TurnR180_Rfoot) 0.00 n=5 | yaw 180->180
+ SEG 5 'C' yr 0 | 0.2s spd mean 0 p95 0 | body {'Idle_01': 6} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=2 | yaw 180->180
+ SEG 6 '' yr 0 | 0.9s spd mean 0 p95 0 | body {'Idle_01': 30} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=14 | yaw 180->180
+ SEG 7 'W' yr 0 | 1.4s spd mean 147 p95 180 | body {'Walk_Fwd_Start': 33, 'Idle_01': 5, 'Walk_Fwd': 3} | sw/s 3.7 restarts/s 0.0 cont(Walk_Fwd_Start) 1.00 n=16 | yaw 180->180
+ SEG 8 'SpaceBar' yr 0 | 0.2s spd mean 180 p95 180 | body {'Walk_Fwd': 2, 'Jog_Fwd_Pivot': 2, 'Walk_Start_TurnL090_Lfoot': 1} | sw/s 16.6 restarts/s 0.0 cont(Walk_Fwd) 0.00 n=0 | yaw 180->180
+ SEG 9 'W' yr 0 | 1.3s spd mean 180 p95 180 | body {'Jog_Fwd_Pivot': 17, 'Walk_Fwd_Start': 16, 'Jog_FwdRight': 8} | sw/s 4.5 restarts/s 0.0 cont(Jog_Fwd_Pivot) 0.00 n=7 | yaw 180->180
+ SEG 10 '' yr 0 | 1.3s spd mean 10 p95 90 | body {'Idle_01': 25, 'Walk_Fwd_Stop': 8, 'Walk_Fwd_Start': 5} | sw/s 4.7 restarts/s 0.0 cont(Idle_01) 0.75 n=12 | yaw 180->180
+ SEG 11 'SpaceBar' yr 0 | 0.2s spd mean 0 p95 0 | body {'Idle_01': 3, 'Jog_Fwd_Pivot': 2, 'Idle_TurnR135': 1} | sw/s 11.7 restarts/s 0.0 cont(Idle_01) 0.00 n=1 | yaw 180->180
+ SEG 12 '' yr 0 | 1.7s spd mean 0 p95 0 | body {'Idle_01': 29, 'Jog_Fwd_Pivot': 16, 'Jog_FwdRight': 10} | sw/s 3.5 restarts/s 0.0 cont(Idle_01) 0.93 n=14 | yaw 180->180
+CJ seg 0 '' z min/max 264 264 vz max 0 spd 0 db PSD_Sph_Walk.PSD_S
+CJ seg 1 'C' z min/max 216 264 vz max 0 spd 0 db PSD_Sph_Crouch.PSD
+CJ seg 2 '' z min/max 216 216 vz max 0 spd 0 db PSD_Sph_Crouch.PSD
+CJ seg 3 'W' z min/max 175 216 vz max 0 spd 104 db PSD_Sph_Crouch.PSD
+CJ seg 4 '' z min/max 174 175 vz max 0 spd 11 db PSD_Sph_Crouch.PSD
+CJ seg 5 'C' z min/max 174 222 vz max 0 spd 0 db PSD_Sph_Walk.PSD_S
+CJ seg 6 '' z min/max 222 222 vz max 0 spd 0 db PSD_Sph_Walk.PSD_S
+CJ seg 7 'W' z min/max 197 222 vz max 0 spd 147 db PSD_Sph_WalkLoop.P
+CJ seg 8 'SpaceBar' z min/max 196 240 vz max 388 spd 180 db PSD_Sph_Walk.PSD_S
+CJ seg 9 'W' z min/max 156 286 vz max 272 spd 180 db PSD_Sph_WalkLoop.P
+CJ seg 10 '' z min/max 156 156 vz max 0 spd 11 db PSD_Sph_Walk.PSD_S
+CJ seg 11 'SpaceBar' z min/max 156 196 vz max 398 spd 0 db PSD_Sph_Walk.PSD_S
+CJ seg 12 '' z min/max 155 246 vz max 280 spd 0 db PSD_Sph_Walk.PSD_S
+REG2_DONE
