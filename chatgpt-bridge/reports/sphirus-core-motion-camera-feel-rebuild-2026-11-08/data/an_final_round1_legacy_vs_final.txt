@@ -1,0 +1,105 @@
+== A_loco_legacy.json frames 330 mean gdt 0.1007
+ SEG 0 '' yr 0 | spd 0 | gdt 0.117 | plant p20 0 | yaw 0 | cam 124 jit 0.01 | fov 66.0 | {'idle': 21}
+ SEG 1 'W' yr 0 | spd 170 | gdt 0.101 | plant p20 62 | yaw 0 | cam 173 jit 0.37 | fov 66.0 | {'walk_start': 42, 'walk_stop': 16, 'idle': 2}
+ SEG 2 'W LeftShift' yr 0 | spd 398 | gdt 0.099 | plant p20 60 | yaw 0 | cam 195 jit 0.32 | fov 67.5 | {'run_start': 14, 'walk_start': 10, 'jog_start': 7, 'walk_stop': 1}
+ SEG 3 'W LeftShift' yr 150 | spd 303 | gdt 0.096 | plant p20 113 | yaw 175 | cam 172 jit 1.3 | fov 67.6 | {'jog_start': 18, 'run_start': 17, 'walk_start': 1}
+ SEG 4 'W LeftShift' yr 0 | spd 248 | gdt 0.1 | plant p20 57 | yaw 0 | cam 155 jit 2.08 | fov 67.3 | {'jog_start': 24, 'run_start': 13, 'walk_start': 1, 'jog': 1}
+ SEG 5 'W' yr 0 | spd 228 | gdt 0.1 | plant p20 87 | yaw 0 | cam 171 jit 0.32 | fov 66.9 | {'walk_start': 21, 'walk_stop': 11, 'run_start': 4}
+ SEG 6 '' yr 0 | spd 9 | gdt 0.104 | plant p20 0 | yaw 0 | cam 149 jit 0.5 | fov 66.0 | {'idle': 33, 'walk_start': 2, 'walk_stop': 2, 'walk_pivot': 1}
+ SEG 7 'W' yr 0 | spd 162 | gdt 0.098 | plant p20 73 | yaw 0 | cam 174 jit 0.41 | fov 66.0 | {'walk_start': 26, 'walk_stop': 8, 'idle': 2}
+ SEG 8 '' yr 0 | spd 12 | gdt 0.094 | plant p20 0 | yaw 0 | cam 151 jit 0.6 | fov 66.0 | {'idle': 24, 'walk_start': 5, 'walk_stop': 1}
+== A_loco_final.json frames 330 mean gdt 0.0982
+ SEG 0 '' yr 0 | spd 0 | gdt 0.121 | plant p20 0 | yaw 0 | cam 124 jit 0.01 | fov 66.0 | {'idle': 21}
+ SEG 1 'W' yr 0 | spd 170 | gdt 0.099 | plant p20 81 | yaw 0 | cam 173 jit 0.38 | fov 66.0 | {'walk_start': 42, 'walk_stop': 16, 'idle': 2}
+ SEG 2 'W LeftShift' yr 0 | spd 392 | gdt 0.097 | plant p20 61 | yaw 0 | cam 195 jit 0.31 | fov 67.4 | {'run_start': 12, 'walk_start': 11, 'jog_start': 9, 'walk_stop': 1}
+ SEG 3 'W LeftShift' yr 150 | spd 322 | gdt 0.094 | plant p20 114 | yaw 175 | cam 174 jit 1.52 | fov 67.7 | {'jog_start': 20, 'run_start': 15, 'jog': 1}
+ SEG 4 'W LeftShift' yr 0 | spd 347 | gdt 0.095 | plant p20 54 | yaw 0 | cam 169 jit 3.17 | fov 67.8 | {'run_start': 23, 'jog_start': 14, 'walk_start': 2}
+ SEG 5 'W' yr 0 | spd 229 | gdt 0.096 | plant p20 76 | yaw 0 | cam 178 jit 0.19 | fov 67.0 | {'walk_start': 23, 'walk_stop': 8, 'run_start': 4, 'jog_start': 1}
+ SEG 6 '' yr 0 | spd 9 | gdt 0.099 | plant p20 0 | yaw 0 | cam 146 jit 0.56 | fov 66.0 | {'idle': 33, 'walk_start': 5, 'idleturn': 1}
+ SEG 7 'W' yr 0 | spd 163 | gdt 0.097 | plant p20 76 | yaw 0 | cam 172 jit 0.63 | fov 66.0 | {'walk_start': 25, 'walk_stop': 9, 'idle': 2}
+ SEG 8 '' yr 0 | spd 12 | gdt 0.095 | plant p20 1 | yaw 0 | cam 151 jit 0.67 | fov 66.0 | {'idle': 24, 'walk_start': 6}
+== B_turns_legacy.json frames 459 mean gdt 0.0997
+ SEG 0 '' yr 0 | spd 0 | gdt 0.128 | plant p20 0 | yaw 0 | cam 147 jit 0.08 | fov 66.0 | {'idle': 15}
+ SEG 1 'W' yr 0 | spd 166 | gdt 0.098 | plant p20 79 | yaw 0 | cam 175 jit 0.46 | fov 66.0 | {'walk_start': 33, 'walk_stop': 10, 'idle': 2}
+ SEG 2 'W' yr 360 | spd 180 | gdt 0.099 | plant p20 79 | yaw 168 | cam 178 jit 0.78 | fov 66.0 | {'walk_start': 12, 'walk': 2, 'walk_stop': 1}
+ SEG 3 'W' yr 0 | spd 180 | gdt 0.101 | plant p20 75 | yaw 0 | cam 178 jit 0.37 | fov 66.0 | {'walk_start': 32, 'walk_stop': 13}
+ SEG 4 'W' yr -360 | spd 180 | gdt 0.099 | plant p20 112 | yaw -168 | cam 174 jit 0.19 | fov 66.0 | {'walk_start': 12, 'walk_stop': 3}
+ SEG 5 'W' yr 0 | spd 135 | gdt 0.099 | plant p20 93 | yaw 0 | cam 170 jit 1.04 | fov 66.0 | {'walk_start': 29, 'walk_stop': 7}
+ SEG 6 'W' yr 150 | spd 51 | gdt 0.098 | plant p20 53 | yaw 40 | cam 137 jit 0.81 | fov 66.0 | {'walk_start': 9}
+ SEG 7 'W' yr 0 | spd 92 | gdt 0.101 | plant p20 13 | yaw 0 | cam 151 jit 1.63 | fov 66.0 | {'walk_start': 16, 'walk_stop': 2}
+ SEG 8 'W' yr -150 | spd 91 | gdt 0.099 | plant p20 36 | yaw -40 | cam 161 jit 1.63 | fov 66.0 | {'walk_start': 9}
+ SEG 9 'W' yr 0 | spd 136 | gdt 0.099 | plant p20 63 | yaw 0 | cam 172 jit 0.98 | fov 66.0 | {'walk_start': 19, 'walk_stop': 5}
+ SEG 10 '' yr 0 | spd 4 | gdt 0.095 | plant p20 0 | yaw 0 | cam 147 jit 0.14 | fov 66.0 | {'idle': 31, 'walk_start': 2, 'walk_stop': 2, 'run_start': 1}
+ SEG 11 '' yr 180 | spd 0 | gdt 0.099 | plant p20 0 | yaw 0 | cam 147 jit 0.01 | fov 66.0 | {'idle': 24}
+ SEG 12 'W' yr 0 | spd 125 | gdt 0.099 | plant p20 11 | yaw 144 | cam 164 jit 1.13 | fov 66.0 | {'walk_start': 8, 'idle': 2, 'walk_stop': 2}
+ SEG 13 '' yr 0 | spd 12 | gdt 0.1 | plant p20 0 | yaw 0 | cam 151 jit 0.73 | fov 66.0 | {'idle': 25, 'walk_start': 2, 'walk_stop': 2, 'walk_pivot': 1}
+ SEG 14 'W LeftShift' yr 0 | spd 293 | gdt 0.097 | plant p20 29 | yaw 0 | cam 183 jit 1.04 | fov 67.0 | {'walk_start': 13, 'run_start': 12, 'jog_start': 3, 'idle': 2}
+ SEG 15 'W LeftShift' yr 360 | spd 118 | gdt 0.1 | plant p20 109 | yaw 168 | cam 136 jit 1.98 | fov 66.5 | {'jog_start': 11, 'run_start': 4}
+ SEG 16 'W LeftShift' yr 0 | spd 482 | gdt 0.098 | plant p20 57 | yaw 0 | cam 187 jit 0.56 | fov 68.4 | {'run_start': 28, 'jog_start': 7, 'jog': 1}
+ SEG 17 '' yr 0 | spd 24 | gdt 0.099 | plant p20 0 | yaw 0 | cam 152 jit 0.58 | fov 66.6 | {'idle': 38, 'run_start': 6, 'walk_stop': 1}
+== B_turns_final.json frames 459 mean gdt 0.0874
+ SEG 0 '' yr 0 | spd 0 | gdt 0.097 | plant p20 0 | yaw 0 | cam 147 jit 0.09 | fov 66.0 | {'idle': 15}
+ SEG 1 'W' yr 0 | spd 164 | gdt 0.073 | plant p20 58 | yaw 0 | cam 174 jit 0.42 | fov 66.0 | {'walk_start': 29, 'walk_stop': 11, 'idle': 3, 'walk_pivot': 2}
+ SEG 2 'W' yr 360 | spd 180 | gdt 0.073 | plant p20 52 | yaw 168 | cam 178 jit 0.18 | fov 66.0 | {'walk_start': 14, 'walk_stop': 1}
+ SEG 3 'W' yr 0 | spd 57 | gdt 0.073 | plant p20 1 | yaw 0 | cam 156 jit 0.38 | fov 66.0 | {'idle': 24, 'walk_start': 15, 'walk_stop': 4, 'walk': 1}
+ SEG 4 'W' yr -360 | spd 111 | gdt 0.07 | plant p20 59 | yaw -168 | cam 154 jit 0.98 | fov 66.0 | {'walk_start': 14, 'idle': 1}
+ SEG 5 'W' yr 0 | spd 180 | gdt 0.075 | plant p20 72 | yaw 0 | cam 176 jit 0.24 | fov 66.0 | {'walk_start': 26, 'walk_stop': 9, 'walk_pivot': 1}
+ SEG 6 'W' yr 150 | spd 180 | gdt 0.07 | plant p20 106 | yaw 40 | cam 179 jit 0.06 | fov 66.0 | {'walk_start': 9}
+ SEG 7 'W' yr 0 | spd 180 | gdt 0.074 | plant p20 73 | yaw 0 | cam 179 jit 0.08 | fov 66.0 | {'walk_start': 12, 'walk_stop': 4, 'walk_pivot': 2}
+ SEG 8 'W' yr -150 | spd 180 | gdt 0.069 | plant p20 92 | yaw -40 | cam 178 jit 0.11 | fov 66.0 | {'walk_start': 9}
+ SEG 9 'W' yr 0 | spd 163 | gdt 0.09 | plant p20 88 | yaw 0 | cam 176 jit 0.64 | fov 66.0 | {'walk_start': 20, 'walk_stop': 4}
+ SEG 10 '' yr 0 | spd 2 | gdt 0.101 | plant p20 0 | yaw 0 | cam 147 jit 0.06 | fov 66.0 | {'idle': 30, 'walk_start': 5, 'jog_start': 1}
+ SEG 11 '' yr 180 | spd 0 | gdt 0.102 | plant p20 0 | yaw 0 | cam 147 jit 0.02 | fov 66.0 | {'idle': 24}
+ SEG 12 'W' yr 0 | spd 127 | gdt 0.098 | plant p20 29 | yaw 144 | cam 167 jit 1.48 | fov 66.0 | {'walk_start': 8, 'idle': 2, 'walk_stop': 2}
+ SEG 13 '' yr 0 | spd 12 | gdt 0.101 | plant p20 0 | yaw 0 | cam 148 jit 0.73 | fov 66.0 | {'idle': 25, 'walk_start': 2, 'walk_stop': 2, 'walk_pivot': 1}
+ SEG 14 'W LeftShift' yr 0 | spd 353 | gdt 0.098 | plant p20 49 | yaw 0 | cam 185 jit 1.01 | fov 67.2 | {'run_start': 15, 'walk_start': 13, 'idle': 2}
+ SEG 15 'W LeftShift' yr 360 | spd 500 | gdt 0.102 | plant p20 428 | yaw 168 | cam 199 jit 0.3 | fov 68.9 | {'run_start': 15}
+ SEG 16 'W LeftShift' yr 0 | spd 484 | gdt 0.096 | plant p20 128 | yaw 0 | cam 195 jit 0.54 | fov 68.9 | {'run_start': 36}
+ SEG 17 '' yr 0 | spd 24 | gdt 0.096 | plant p20 0 | yaw 0 | cam 152 jit 0.57 | fov 66.6 | {'idle': 38, 'run_stop': 4, 'run_start': 2, 'walk_start': 1}
+== D_chop_legacy.json frames 328 mean gdt 0.1
+ SEG 0 '' yr 0 | spd 0 | gdt 0.12 | plant p20 0 | yaw 0 | cam 147 jit 0.04 | fov 66.0 | {'idle': 15}
+ SEG 1 'W' yr 0 | spd 66 | gdt 0.099 | plant p20 2 | yaw 0 | cam 150 jit 1.64 | fov 66.0 | {'walk_start': 12, 'idle': 9, 'walk_stop': 2, 'jog_stop': 1}
+ SEG 2 '' yr 0 | spd 0 | gdt 0.094 | plant p20 0 | yaw 0 | cam 116 jit 0.06 | fov 66.0 | {'idle': 18}
+ SEG 3 'E' yr 0 | spd 0 | gdt 0.102 | plant p20 0 | yaw 0 | cam 113 jit 0.01 | fov 66.0 | {'idle': 5}
+ SEG 4 '' yr 0 | spd 0 | gdt 0.099 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 96}
+ SEG 5 'LeftMouseButton' yr 0 | spd 0 | gdt 0.097 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 5}
+ SEG 6 '' yr 0 | spd 0 | gdt 0.1 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 120}
+ SEG 7 '' yr 0 | spd 0 | gdt 0.099 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 45}
+== D_chop_final.json frames 328 mean gdt 0.1012
+ SEG 0 '' yr 0 | spd 0 | gdt 0.13 | plant p20 0 | yaw 0 | cam 147 jit 0.06 | fov 66.0 | {'idle': 15}
+ SEG 1 'W' yr 0 | spd 71 | gdt 0.1 | plant p20 2 | yaw 0 | cam 151 jit 1.53 | fov 66.0 | {'walk_start': 12, 'idle': 10, 'walk_stop': 2}
+ SEG 2 '' yr 0 | spd 0 | gdt 0.103 | plant p20 0 | yaw 0 | cam 115 jit 0.06 | fov 66.0 | {'idle': 18}
+ SEG 3 'E' yr 0 | spd 0 | gdt 0.099 | plant p20 0 | yaw 0 | cam 113 jit 0.01 | fov 66.0 | {'idle': 5}
+ SEG 4 '' yr 0 | spd 0 | gdt 0.1 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 95, 'jog_start': 1}
+ SEG 5 'LeftMouseButton' yr 0 | spd 0 | gdt 0.096 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 5}
+ SEG 6 '' yr 0 | spd 0 | gdt 0.1 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 119, 'jog_start': 1}
+ SEG 7 '' yr 0 | spd 0 | gdt 0.099 | plant p20 0 | yaw 0 | cam 113 jit 0.0 | fov 66.0 | {'idle': 44, 'jog_start': 1}
+== CA_loco_final.json frames 402 mean gdt 0.0343
+ SEG 0 '' yr 0 | spd 0 | gdt 0.051 | plant p20 0 | yaw 0 | cam 147 jit 0.0 | fov 66.0 | {'idle': 21}
+ SEG 1 'W' yr 0 | spd 165 | gdt 0.033 | plant p20 49 | yaw 0 | cam 171 jit 0.14 | fov 66.0 | {'walk_start': 59, 'walk_stop': 24, 'walk_pivot': 4, 'idle': 3}
+ SEG 2 'W LeftShift' yr 0 | spd 413 | gdt 0.033 | plant p20 83 | yaw 0 | cam 193 jit 0.67 | fov 67.6 | {'run_start': 54, 'walk_start': 28, 'jog_start': 21, 'jog': 2}
+ SEG 3 'W' yr 0 | spd 245 | gdt 0.033 | plant p20 68 | yaw 0 | cam 182 jit 0.11 | fov 67.6 | {'walk_start': 29, 'walk_stop': 23, 'run_start': 7, 'walk_pivot': 1}
+ SEG 4 '' yr 0 | spd 11 | gdt 0.033 | plant p20 1 | yaw 0 | cam 151 jit 0.17 | fov 66.2 | {'idle': 29, 'walk_stop': 11, 'walk_start': 4, 'run_start': 1}
+ SEG 5 'W' yr 0 | spd 150 | gdt 0.033 | plant p20 24 | yaw 0 | cam 167 jit 0.16 | fov 66.0 | {'walk_start': 32, 'walk_stop': 9, 'idle': 3, 'walk_pivot': 1}
+ SEG 6 '' yr 0 | spd 13 | gdt 0.033 | plant p20 0 | yaw 0 | cam 153 jit 0.21 | fov 66.0 | {'idle': 20, 'walk_start': 11, 'walk_stop': 5}
+== CB_turns_final.json frames 450 mean gdt 0.0343
+ SEG 0 '' yr 0 | spd 0 | gdt 0.058 | plant p20 1 | yaw 0 | cam 147 jit 0.0 | fov 66.0 | {'idle': 15}
+ SEG 1 'W' yr 0 | spd 151 | gdt 0.034 | plant p20 24 | yaw 0 | cam 167 jit 0.18 | fov 66.0 | {'walk_start': 32, 'walk_stop': 9, 'idle': 3, 'walk_pivot': 1}
+ SEG 2 'W' yr 150 | spd 180 | gdt 0.034 | plant p20 124 | yaw 40 | cam 176 jit 0.23 | fov 66.0 | {'walk_start': 6, 'walk_stop': 3}
+ SEG 3 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 66 | yaw 0 | cam 175 jit 0.09 | fov 66.0 | {'walk_start': 33, 'walk_stop': 10, 'walk_pivot': 2}
+ SEG 4 'W' yr 300 | spd 180 | gdt 0.034 | plant p20 122 | yaw 71 | cam 175 jit 0.2 | fov 66.0 | {'walk_stop': 5, 'walk_start': 3, 'walk_pivot': 1}
+ SEG 5 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 79 | yaw 11 | cam 174 jit 0.07 | fov 66.0 | {'walk_start': 35, 'walk_stop': 8, 'walk': 1, 'walk_pivot': 1}
+ SEG 6 'W' yr 360 | spd 180 | gdt 0.033 | plant p20 107 | yaw 122 | cam 172 jit 0.21 | fov 66.0 | {'walk_start': 9, 'walk_stop': 5, 'walk_pivot': 1}
+ SEG 7 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 71 | yaw 49 | cam 173 jit 0.1 | fov 66.0 | {'walk_start': 36, 'walk_stop': 16, 'walk_pivot': 2}
+ SEG 8 'W LeftShift' yr 0 | spd 272 | gdt 0.033 | plant p20 47 | yaw 0 | cam 187 jit 0.15 | fov 66.3 | {'walk_start': 31, 'jog_start': 4, 'jog': 1}
+ SEG 9 'W LeftShift' yr 360 | spd 407 | gdt 0.033 | plant p20 136 | yaw 121 | cam 196 jit 0.17 | fov 67.3 | {'jog_start': 9, 'run_start': 5, 'jog': 1}
+ SEG 10 'W LeftShift' yr 0 | spd 474 | gdt 0.033 | plant p20 88 | yaw 50 | cam 199 jit 0.11 | fov 68.2 | {'run_start': 45}
+ SEG 11 '' yr 0 | spd 33 | gdt 0.033 | plant p20 1 | yaw 0 | cam 159 jit 0.27 | fov 67.4 | {'idle': 26, 'walk_start': 13, 'run_start': 4, 'run_stop': 2}
+ SEG 12 '' yr 180 | spd 0 | gdt 0.035 | plant p20 1 | yaw 0 | cam 147 jit 0.01 | fov 66.3 | {'idle': 24}
+ SEG 13 'W' yr 0 | spd 67 | gdt 0.031 | plant p20 28 | yaw 83 | cam 152 jit 0.26 | fov 66.1 | {'walk_start': 9, 'idle': 3}
+ SEG 14 '' yr 0 | spd 12 | gdt 0.034 | plant p20 0 | yaw 8 | cam 151 jit 0.2 | fov 66.1 | {'idle': 19, 'walk_start': 15, 'walk_pivot': 1, 'run_start': 1}
+== CC_door_final.json frames 300 mean gdt 0.0428
+ SEG 0 '' yr 0 | spd 0 | gdt 0.066 | plant p20 1 | yaw 0 | cam 147 jit 0.0 | fov 66.0 | {'idle': 15}
+ SEG 1 'W' yr 0 | spd 171 | gdt 0.042 | plant p20 81 | yaw 0 | cam 169 jit 0.4 | fov 66.0 | {'walk_start': 79, 'walk_stop': 32, 'walk_pivot': 6, 'idle': 3}
+ SEG 2 'W LeftShift' yr 0 | spd 434 | gdt 0.04 | plant p20 81 | yaw 0 | cam 196 jit 0.11 | fov 67.9 | {'run_start': 79, 'walk_start': 22, 'jog_start': 19}
+ SEG 3 '' yr 0 | spd 28 | gdt 0.043 | plant p20 0 | yaw 0 | cam 157 jit 0.4 | fov 67.2 | {'idle': 32, 'run_stop': 9, 'run_start': 3, 'jog_start': 1}
