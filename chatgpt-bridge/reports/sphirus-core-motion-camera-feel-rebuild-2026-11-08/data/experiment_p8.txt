@@ -1,0 +1,24 @@
+RUNNER_READY emb_386.log
+02:59:45 TRAJ4
+HC ['PoseCount=24', 'SamplingInterval=0.040000', 'bGenerateTrajectory=True', 'TrajectoryHistoryCount=26', 'TrajectoryPredictionCount=6', 'PredictionSamplingInterval=0.250000']
+ERR_D []
+DONE
+02:59:51 WRITE_END job=day_traj4-025945715698.py ok written=['/Game/Sphirus/Player/Anim/ABP_Sph_Driver']
+RUNNER_READY emb_387.log
+03:01:59 PROBE4
+VIDREC P_traj4 7.7 s
+FRAMES 231
+== P_traj4.json frames 231 mean gdt 0.0348
+ SEG 0 '' spd 0 | body clips {'Idle_01': 15}
+     body times [(('Idle_01', 6.5), 2), (('Idle_01', 6.7), 2), (('Idle_01', 6.8), 2), (('Idle_01', 7.0), 2), (('Idle_01', 7.2), 2), (('Idle_01', 6.2), 1), (('Idle_01', 6.4), 1), (('Idle_01', 6.6), 1)]
+     probe [(('Idle_TurnR180', 3.0), 14), (('Idle_02_WeightShift', 0.0), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001EF7BA52800) Class \'PoseSearchDatabase", 0, False, 0]': 15}
+ SEG 1 'W' spd 165 | body clips {'Walk_Fwd_Start': 59, 'Walk_Start_TurnL045_Lfoot': 9, 'Walk_Start_TurnR045_Rfoot': 7}
+     body times [(('Walk_Fwd_Start', 0.9), 10), (('Walk_Fwd_Start', 0.8), 9), (('Walk_Fwd_Start', 1.1), 9), (('Walk_Fwd_Start', 0.7), 7), (('Walk_Fwd_Start', 1.0), 6), (('Walk_Fwd_Start', 1.2), 6), (('Walk_Start_TurnL045_Lfoot', 0.7), 4), (('Walk_Start_TurnL045_Lfoot', 0.8), 4)]
+     probe [(('Walk_Fwd_Start', 0.6), 29), (('Walk_Fwd_Start', 0.4), 15), (('Walk_Start_TurnL045_Lfoot', 0.5), 15), (('Walk_Fwd_Start', 0.3), 13), (('Walk_Fwd_Start', 0.7), 9), (('Walk_Fwd_Start', 0.1), 5)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001EF7BA52800) Class \'PoseSearchDatabase", 0, False, 0]': 90}
+ SEG 2 'W LeftShift' spd 396 | body clips {'Run_Fwd_Start': 49, 'Jog_Fwd_Start': 34, 'Walk_Fwd_Start': 3}
+     body times [(('Run_Fwd_Start', 0.8), 9), (('Run_Fwd_Start', 1.1), 8), (('Run_Fwd_Start', 0.7), 7), (('Run_Fwd_Start', 1.2), 7), (('Run_Fwd_Start', 0.9), 6), (('Run_Fwd_Start', 1.0), 6), (('Jog_Fwd_Start', 0.6), 4), (('Jog_Fwd_Start', 0.8), 4)]
+     probe [(('Run_Fwd_Start', 0.6), 13), (('Run_Fwd_Start', 0.9), 11), (('Jog_Fwd_Start', 0.3), 8), (('Run_Fwd_Start', 0.3), 8), (('Run_Fwd_Start', 0.7), 8), (('Run_Fwd_Start', 0.8), 8)] | db {'["PSD_Sph_Run.PSD_Sph_Run\' (0x000001EF7934E400) Class \'PoseSearchDatabase", 2, False, 2]': 59, '["PSD_Sph_Jog.PSD_Sph_Jog\' (0x000001
+ SEG 3 '' spd 43 | body clips {'Idle_01': 17, 'Run_Fwd_Stop': 13, 'Run_Fwd_Start': 4}
+     body times [(('Run_Fwd_Start', 0.9), 2), (('Run_Fwd_Stop', 1.2), 2), (('Run_Fwd_Stop', 1.4), 2), (('Run_Fwd_Stop', 1.5), 2), (('Idle_01', 7.9), 2), (('Idle_01', 8.0), 2), (('Idle_01', 8.1), 2), (('Idle_01', 8.3), 2)]
+     probe [(('Idle_TurnR045', 2.6), 14), (('Walk_Start_TurnR180_Rfoot', 1.2), 11), (('Run_Fwd_Start', 0.9), 2), (('Walk_Fwd_Stop', 2.7), 2), (('Run_Fwd_Start', 0.8), 1), (('Run_Fwd_Stop', 0.9), 1)] | db {'["PSD_Sph_Walk.PSD_Sph_Walk\' (0x000001EF7BA52800) Class \'PoseSearchDatabase", 0, False, 0]': 32, '["PSD_Sph_Run.PSD_Sph_Ru
+03:05:03 P8_DONE
