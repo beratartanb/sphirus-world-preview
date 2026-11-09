@@ -1,0 +1,32 @@
+RUNNER_READY emb_416.log
+08:27:30 STEADY3
+DEFAULT steadyEnable True
+DONE
+08:27:38 WRITE_END job=day_steady3-082731234801.py ok written=['/Game/Sphirus/CharacterLab/Hazel_20261106/Playable/BP_HybridA_Player']
+RUNNER_READY emb_417.log
+08:29:51 GAITS6
+717825 Saved/Codex/Grip_20261106/rec/G_gaits6.json
+08:30:59 REV3
+610422 Saved/Codex/Grip_20261106/rec/R_rev3.json
+== G_gaits6.json frames 780 game s 32.5 mean gdt 0.0417
+ SEG 0 '' yr 0 | 1.3s spd mean 0 p95 0 | body {'Idle_01': 30} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=29 | yaw 0->0
+ SEG 1 'W' yr 0 | 12.5s spd mean 176 p95 180 | body {'Walk_Fwd': 164, 'Walk_Fwd_Start': 29, 'Walk_Start_TurnL135_Lfoot': 24} | sw/s 11.3 restarts/s 0.6 cont(Walk_Fwd) 0.95 n=119 | yaw 0->0
+ SEG 2 'W LeftShift' yr 0 | 10.0s spd mean 468 p95 500 | body {'Run_Start_TurnL090_Lfoot': 45, 'Jog_Fwd_Start': 45, 'Run_Fwd': 26} | sw/s 20.3 restarts/s 0.0 cont(Run_Start_TurnL090_Lfoot) 1.00 n=22 | yaw 0->0
+ SEG 3 '' yr 0 | 2.5s spd mean 22 p95 227 | body {'Idle_01': 43, 'Walk_Fwd_Stop': 6, 'Run_Start_TurnL090_Lfoot': 2} | sw/s 3.6 restarts/s 0.4 cont(Idle_01) 0.93 n=42 | yaw 0->0
+ SEG 4 'W' yr 0 | 3.8s spd mean 167 p95 180 | body {'Walk_Fwd': 39, 'Walk_Fwd_Start': 26, 'Walk_Start_TurnR045_Rfoot': 4} | sw/s 8.3 restarts/s 0.3 cont(Walk_Fwd) 0.97 n=29 | yaw 0->0
+ SEG 5 '' yr 0 | 2.5s spd mean 7 p95 67 | body {'Idle_01': 44, 'Walk_Fwd_Stop': 6, 'Walk_Fwd': 3} | sw/s 3.2 restarts/s 0.8 cont(Idle_01) 0.95 n=43 | yaw 0->0
+== R_rev3.json frames 654 game s 27.3 mean gdt 0.0417
+ SEG 0 '' yr 0 | 1.0s spd mean 0 p95 0 | body {'Idle_01': 24} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=23 | yaw 0->0
+ SEG 1 'W' yr 0 | 2.5s spd mean 161 p95 180 | body {'Walk_Fwd_Start': 24, 'Walk_Fwd': 22, 'Idle_01': 4} | sw/s 6.4 restarts/s 0.8 cont(Walk_Fwd_Start) 0.96 n=23 | yaw 0->0
+ SEG 2 'S' yr 0 | 2.5s spd mean 148 p95 179 | body {'Walk_Fwd': 16, 'Walk_Start_TurnL090_Lfoot': 14, 'Walk_Fwd_Start': 14} | sw/s 6.8 restarts/s 0.0 cont(Walk_Fwd) 0.92 n=12 | yaw 0->180
+ SEG 3 'W' yr 0 | 2.5s spd mean 148 p95 179 | body {'Walk_Fwd': 26, 'Walk_Start_TurnR090_Rfoot': 19, 'Walk_Start_TurnR045_Rfoot': 4} | sw/s 10.0 restarts/s 0.4 cont(Walk_Fwd) 1.00 n=20 | yaw 180->0
+ SEG 4 '' yr 0 | 1.3s spd mean 14 p95 179 | body {'Idle_01': 11, 'Walk_Start_TurnR090_Rfoot': 5, 'Walk_Start_TurnL045_Lfoot': 2} | sw/s 11.2 restarts/s 0.0 cont(Idle_01) 1.00 n=9 | yaw 0->0
+ SEG 5 'A' yr 0 | 1.9s spd mean 152 p95 179 | body {'Walk_Start_TurnL045_Lfoot': 19, 'Walk_Fwd': 16, 'Idle_01': 3} | sw/s 6.4 restarts/s 0.0 cont(Walk_Start_TurnL045_Lfoot) 1.00 n=17 | yaw 0->-90
+ SEG 6 'D' yr 0 | 1.9s spd mean 138 p95 178 | body {'Walk_Start_TurnR090_Rfoot': 16, 'Walk_Fwd': 13, 'Walk_Start_TurnR045_Rfoot': 4} | sw/s 10.7 restarts/s 0.5 cont(Walk_Start_TurnR090_Rfoot) 0.92 n=12 | yaw -90->90
+ SEG 7 'A' yr 0 | 1.9s spd mean 138 p95 178 | body {'Walk_Start_TurnL090_Lfoot': 16, 'Walk_Fwd': 15, 'Walk_Start_TurnR045_Rfoot': 4} | sw/s 8.0 restarts/s 0.0 cont(Walk_Start_TurnL090_Lfoot) 0.93 n=14 | yaw 90->-90
+ SEG 8 'D' yr 0 | 1.9s spd mean 138 p95 178 | body {'Walk_Start_TurnR090_Rfoot': 18, 'Walk_Fwd': 13, 'Walk_Start_TurnR045_Rfoot': 3} | sw/s 9.1 restarts/s 0.0 cont(Walk_Start_TurnR090_Rfoot) 0.94 n=16 | yaw -90->90
+ SEG 9 '' yr 0 | 1.3s spd mean 14 p95 178 | body {'Idle_01': 12, 'Walk_Start_TurnR135_Rfoot': 5, 'Walk_Fwd': 4} | sw/s 7.2 restarts/s 0.0 cont(Idle_01) 1.00 n=11 | yaw 90->90
+ SEG 10 'W LeftShift' yr 0 | 3.1s spd mean 173 p95 487 | body {'Jog_Fwd_Start': 56, 'Walk_Start_TurnL045_Lfoot': 14, 'Idle_01': 3} | sw/s 1.6 restarts/s 0.3 cont(Jog_Fwd_Start) 0.83 n=54 | yaw 90->0
+ SEG 11 'S LeftShift' yr 0 | 3.1s spd mean 386 p95 499 | body {'Jog_Start_TurnL045_Lfoot': 24, 'Jog_Start_TurnL090_Lfoot': 17, 'Jog_Fwd_Start': 8} | sw/s 10.6 restarts/s 0.0 cont(Jog_Start_TurnL045_Lfoot) 1.00 n=20 | yaw 0->180
+ SEG 12 '' yr 0 | 2.5s spd mean 22 p95 227 | body {'Idle_01': 43, 'Walk_Fwd_Stop': 8, 'Jog_Fwd_Start': 2} | sw/s 3.6 restarts/s 0.0 cont(Idle_01) 0.95 n=42 | yaw 180->180
+08:32:17 LAB10_DONE
