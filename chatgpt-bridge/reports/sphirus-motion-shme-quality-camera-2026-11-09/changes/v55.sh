@@ -2,6 +2,7 @@
 # v55.sh <label> <x> <y> <z> <yaw> <plan-python-list> [prelude-python]: fresh game at the given spot, gameplay video recorded by
 # vid.py at a fixed 30 fps game step, encoded to Saved/Codex/Day_20261107/videos/<label>.mp4, PNGs removed.
 . Tools/Grip_20261106/g.sh
+W(){ sleep $1; }   # flow.sh's `timeout N cat /dev/zero` hung once for 3.5 h on Windows (B_turns_shme3, 2026-11-09)
 SV=Saved/SaveGames/SFSaveSlot.sav; O=Saved/Codex/Day_20261107/videos; mkdir -p $O/$1; [ -f $SV ] && mv $SV $O/$1/slot_before.sav
 AA(){ powershell.exe -NoProfile -Command "(New-Object -ComObject WScript.Shell).AppActivate('sphirus') | Out-Null"; }
 SD=Saved/Screenshots/WindowsEditor; rm -f $SD/ScreenShot*.png
