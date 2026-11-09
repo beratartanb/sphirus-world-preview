@@ -1,0 +1,92 @@
+== A_loco_legacy3.json frames 330 mean gdt 0.033
+ SEG 0 '' yr 0 | spd 0 | gdt 0.034 | plant p20 0 | yaw 0 | cam 121 jit 0.01 | fov 65.9 | {'idle': 21} | mm sw/s 4.2 {'Idle_TurnR045': 9, 'Idle_TurnL090': 5, 'Idle_02_WeightShift': 4}
+ SEG 1 'W' yr 0 | spd 158 | gdt 0.033 | plant p20 27 | yaw 0 | cam 153 jit 0.24 | fov 66.0 | {'other': 60} | mm sw/s 1.5 {'Walk_Fwd': 37, 'Walk_Fwd_Start': 19, 'Idle_TurnR045': 3}
+ SEG 2 'W LeftShift' yr 0 | spd 260 | gdt 0.033 | plant p20 90 | yaw 0 | cam 182 jit 0.16 | fov 66.3 | {'other': 21, 'walk_start': 8, 'walk': 4} | mm sw/s 1.8 {'Jog_Fwd': 28, 'Walk_Fwd': 4, 'Run_Fwd': 1}
+ SEG 3 'W LeftShift' yr 150 | spd 459 | gdt 0.031 | plant p20 177 | yaw 175 | cam 195 jit 0.43 | fov 67.6 | {'other': 35, 'walk': 1} | mm sw/s 0.9 {'Run_Fwd_Start': 27, 'Run_Fwd': 9}
+ SEG 4 'W LeftShift' yr 0 | spd 499 | gdt 0.034 | plant p20 139 | yaw 0 | cam 196 jit 0.05 | fov 68.7 | {'other': 39} | mm sw/s 0.8 {'Run_Fwd': 27, 'Run_Fwd_Start': 12}
+ SEG 5 'W' yr 0 | spd 285 | gdt 0.033 | plant p20 77 | yaw 0 | cam 190 jit 0.13 | fov 68.1 | {'other': 36} | mm sw/s 0.8 {'Walk_Fwd': 31, 'Run_Fwd': 5}
+ SEG 6 '' yr 0 | spd 12 | gdt 0.034 | plant p20 0 | yaw 0 | cam 149 jit 0.23 | fov 66.5 | {'other': 39} | mm sw/s 9.9 {'Idle_02_WeightShift': 15, 'Idle_TurnR045': 8, 'Walk_Fwd_Stop': 7}
+ SEG 7 'W' yr 0 | spd 142 | gdt 0.033 | plant p20 18 | yaw 0 | cam 161 jit 0.36 | fov 66.1 | {'other': 36} | mm sw/s 2.5 {'Walk_Fwd_Start': 19, 'Walk_Fwd': 13, 'Idle_02_WeightShift': 3}
+ SEG 8 '' yr 0 | spd 16 | gdt 0.033 | plant p20 0 | yaw 0 | cam 151 jit 0.25 | fov 66.0 | {'other': 30} | mm sw/s 6.0 {'Idle_02_WeightShift': 16, 'Walk_Fwd_Stop': 8, 'Walk_Fwd': 4}
+== A_loco_final3.json frames 330 mean gdt 0.0331
+ SEG 0 '' yr 0 | spd 0 | gdt 0.035 | plant p20 1 | yaw 0 | cam 121 jit 0.01 | fov 65.9 | {'other': 21} | mm sw/s 1.4 {'Idle_TurnR180': 20, 'Idle_02_WeightShift': 1}
+ SEG 1 'W' yr 0 | spd 158 | gdt 0.033 | plant p20 28 | yaw 0 | cam 153 jit 0.21 | fov 66.0 | {'other': 60} | mm sw/s 1.5 {'Walk_Fwd': 37, 'Walk_Fwd_Start': 19, 'Idle_TurnR180': 3}
+ SEG 2 'W LeftShift' yr 0 | spd 260 | gdt 0.033 | plant p20 87 | yaw 0 | cam 182 jit 0.22 | fov 66.3 | {'other': 21, 'walk_start': 8, 'walk': 4} | mm sw/s 1.8 {'Jog_Fwd': 28, 'Walk_Fwd': 4, 'Run_Fwd': 1}
+ SEG 3 'W LeftShift' yr 150 | spd 458 | gdt 0.031 | plant p20 173 | yaw 175 | cam 195 jit 0.49 | fov 67.6 | {'other': 34, 'jog': 1, 'walk': 1} | mm sw/s 0.9 {'Run_Fwd_Start': 28, 'Run_Fwd': 8}
+ SEG 4 'W LeftShift' yr 0 | spd 499 | gdt 0.033 | plant p20 106 | yaw 0 | cam 196 jit 0.05 | fov 68.7 | {'other': 38, 'run': 1} | mm sw/s 0.8 {'Run_Fwd': 27, 'Run_Fwd_Start': 12}
+ SEG 5 'W' yr 0 | spd 284 | gdt 0.033 | plant p20 75 | yaw 0 | cam 190 jit 0.1 | fov 68.1 | {'other': 36} | mm sw/s 0.8 {'Walk_Fwd': 31, 'Run_Fwd': 5}
+ SEG 6 '' yr 0 | spd 13 | gdt 0.033 | plant p20 0 | yaw 0 | cam 150 jit 0.22 | fov 66.6 | {'other': 39} | mm sw/s 7.7 {'Idle_TurnR045': 18, 'Walk_Fwd': 4, 'Walk_Start_TurnR180_Rfoot': 4}
+ SEG 7 'W' yr 0 | spd 142 | gdt 0.033 | plant p20 34 | yaw 0 | cam 162 jit 0.24 | fov 66.1 | {'other': 36} | mm sw/s 2.5 {'Walk_Fwd_Start': 19, 'Walk_Fwd': 12, 'Idle_TurnR045': 3}
+ SEG 8 '' yr 0 | spd 16 | gdt 0.033 | plant p20 0 | yaw 0 | cam 151 jit 0.28 | fov 66.0 | {'other': 30} | mm sw/s 9.0 {'Idle_02_WeightShift': 11, 'Walk_Fwd_Stop': 8, 'Walk_Fwd': 4}
+== B_turns_legacy3.json frames 459 mean gdt 0.0322
+ SEG 0 '' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.01 | fov 66.0 | {'other': 15} | mm sw/s 0.0 {'Idle_TurnR045': 15}
+ SEG 1 'W' yr 0 | spd 150 | gdt 0.025 | plant p20 24 | yaw 0 | cam 161 jit 0.23 | fov 66.0 | {'other': 45} | mm sw/s 7.1 {'Walk_Fwd_Start': 22, 'Walk_Fwd': 12, 'Walk_Start_TurnR045_Rfoot': 4}
+ SEG 2 'W' yr 360 | spd 180 | gdt 0.032 | plant p20 135 | yaw 115 | cam 168 jit 0.26 | fov 66.0 | {'other': 15} | mm sw/s 2.1 {'Walk_Fwd': 13, 'Walk_FwdRight': 2}
+ SEG 3 'W' yr 0 | spd 42 | gdt 0.033 | plant p20 37 | yaw 58 | cam 149 jit 0.12 | fov 66.0 | {'other': 45} | mm sw/s 1.3 {'Walk_Fwd_Start': 38, 'Walk_Start_TurnR045_Rfoot': 6, 'Walk_Start_TurnR090_Rfoot': 1}
+ SEG 4 'W' yr -360 | spd 99 | gdt 0.034 | plant p20 62 | yaw -122 | cam 153 jit 0.35 | fov 66.0 | {'other': 15} | mm sw/s 2.0 {'Walk_Start_TurnL045_Lfoot': 9, 'Walk_Fwd_Start': 6}
+ SEG 5 'W' yr 0 | spd 162 | gdt 0.033 | plant p20 62 | yaw -49 | cam 166 jit 0.34 | fov 66.0 | {'other': 36} | mm sw/s 1.7 {'Walk_Fwd_Start': 21, 'Walk_Start_TurnL045_Lfoot': 11, 'Walk_Fwd': 4}
+ SEG 6 'W' yr 150 | spd 180 | gdt 0.034 | plant p20 140 | yaw 40 | cam 172 jit 0.12 | fov 66.0 | {'other': 9} | mm sw/s 0.0 {'Walk_Fwd': 9}
+ SEG 7 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 132 | yaw 0 | cam 172 jit 0.2 | fov 66.0 | {'other': 18} | mm sw/s 0.0 {'Walk_Fwd': 18}
+ SEG 8 'W' yr -150 | spd 180 | gdt 0.034 | plant p20 90 | yaw -40 | cam 171 jit 0.15 | fov 66.0 | {'other': 9} | mm sw/s 0.0 {'Walk_Fwd': 9}
+ SEG 9 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 117 | yaw 0 | cam 171 jit 0.22 | fov 66.0 | {'other': 24} | mm sw/s 0.0 {'Walk_Fwd': 24}
+ SEG 10 '' yr 0 | spd 14 | gdt 0.031 | plant p20 0 | yaw 0 | cam 151 jit 0.27 | fov 66.0 | {'other': 36} | mm sw/s 8.2 {'Idle_02_WeightShift': 18, 'Walk_Fwd_Stop': 10, 'Walk_Fwd': 4}
+ SEG 11 '' yr 180 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.01 | fov 66.0 | {'other': 24} | mm sw/s 5.0 {'Idle_02_WeightShift': 12, 'Idle_TurnL135': 7, 'Idle_TurnL090': 4}
+ SEG 12 'W' yr 0 | spd 69 | gdt 0.033 | plant p20 21 | yaw 86 | cam 149 jit 0.28 | fov 66.0 | {'other': 12} | mm sw/s 7.6 {'Walk_Start_TurnR090_Rfoot': 6, 'Walk_Start_TurnR045_Rfoot': 3, 'Idle_TurnL090': 2}
+ SEG 13 '' yr 0 | spd 15 | gdt 0.033 | plant p20 1 | yaw 9 | cam 149 jit 0.28 | fov 66.0 | {'other': 30} | mm sw/s 5.0 {'Idle_TurnR180': 13, 'Walk_Fwd_Stop': 7, 'Idle_02_WeightShift': 5}
+ SEG 14 'W LeftShift' yr 0 | spd 182 | gdt 0.033 | plant p20 50 | yaw 40 | cam 167 jit 0.31 | fov 66.1 | {'other': 30} | mm sw/s 3.0 {'Jog_Fwd_Start': 24, 'Idle_TurnR180': 3, 'Jog_Fwd': 2}
+ SEG 15 'W LeftShift' yr 360 | spd 261 | gdt 0.033 | plant p20 79 | yaw 118 | cam 177 jit 1.8 | fov 66.6 | {'other': 15} | mm sw/s 6.1 {'Run_Fwd': 8, 'Jog_Start_TurnR045_Rfoot': 5, 'Jog_Fwd': 1}
+ SEG 16 'W LeftShift' yr 0 | spd 368 | gdt 0.033 | plant p20 89 | yaw 53 | cam 188 jit 0.54 | fov 67.0 | {'other': 36} | mm sw/s 1.7 {'Run_Fwd_Start': 27, 'Jog_Start_TurnR045_Rfoot': 5, 'Run_Fwd': 4}
+ SEG 17 '' yr 0 | spd 33 | gdt 0.033 | plant p20 1 | yaw 0 | cam 154 jit 0.3 | fov 67.0 | {'other': 45} | mm sw/s 8.0 {'Idle_02_WeightShift': 22, 'Walk_Fwd_Stop': 6, 'Idle_TurnR180': 6}
+== B_turns_final3.json frames 459 mean gdt 0.0332
+ SEG 0 '' yr 0 | spd 0 | gdt 0.034 | plant p20 0 | yaw 0 | cam 144 jit 0.01 | fov 65.9 | {'other': 15} | mm sw/s 3.9 {'Idle_02_WeightShift': 13, 'Idle_TurnL135': 1, 'Idle_TurnL180': 1}
+ SEG 1 'W' yr 0 | spd 150 | gdt 0.033 | plant p20 22 | yaw 0 | cam 164 jit 0.21 | fov 66.0 | {'other': 45} | mm sw/s 1.3 {'Walk_Fwd': 23, 'Walk_Fwd_Start': 19, 'Idle_02_WeightShift': 3}
+ SEG 2 'W' yr 360 | spd 180 | gdt 0.033 | plant p20 175 | yaw 120 | cam 169 jit 0.23 | fov 66.0 | {'other': 15} | mm sw/s 2.0 {'Walk_Fwd': 13, 'Walk_FwdRight': 2}
+ SEG 3 'W' yr 0 | spd 77 | gdt 0.033 | plant p20 43 | yaw 51 | cam 156 jit 0.22 | fov 66.0 | {'other': 45} | mm sw/s 3.3 {'Walk_Fwd_Start': 32, 'Walk_Start_TurnR045_Rfoot': 8, 'Walk_Start_TurnL045_Lfoot': 4}
+ SEG 4 'W' yr -360 | spd 96 | gdt 0.033 | plant p20 62 | yaw -122 | cam 153 jit 0.31 | fov 66.0 | {'other': 15} | mm sw/s 2.0 {'Walk_Start_TurnL045_Lfoot': 8, 'Walk_Fwd_Start': 7}
+ SEG 5 'W' yr 0 | spd 178 | gdt 0.033 | plant p20 66 | yaw -50 | cam 169 jit 0.24 | fov 66.0 | {'other': 36} | mm sw/s 3.3 {'Walk_Start_TurnL045_Lfoot': 14, 'Walk_Fwd_Start': 14, 'Walk_Fwd': 8}
+ SEG 6 'W' yr 150 | spd 180 | gdt 0.033 | plant p20 94 | yaw 40 | cam 172 jit 0.11 | fov 66.0 | {'other': 9} | mm sw/s 0.0 {'Walk_Fwd': 9}
+ SEG 7 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 120 | yaw 0 | cam 172 jit 0.12 | fov 66.0 | {'other': 18} | mm sw/s 0.0 {'Walk_Fwd': 18}
+ SEG 8 'W' yr -150 | spd 180 | gdt 0.034 | plant p20 128 | yaw -40 | cam 171 jit 0.13 | fov 66.0 | {'other': 9} | mm sw/s 0.0 {'Walk_Fwd': 9}
+ SEG 9 'W' yr 0 | spd 180 | gdt 0.033 | plant p20 127 | yaw 0 | cam 171 jit 0.19 | fov 66.0 | {'other': 24} | mm sw/s 0.0 {'Walk_Fwd': 24}
+ SEG 10 '' yr 0 | spd 13 | gdt 0.033 | plant p20 0 | yaw 0 | cam 150 jit 0.22 | fov 66.0 | {'other': 36} | mm sw/s 10.0 {'Idle_TurnL135': 11, 'Idle_02_WeightShift': 9, 'Walk_Fwd_Stop': 6}
+ SEG 11 '' yr 180 | spd 0 | gdt 0.033 | plant p20 1 | yaw 0 | cam 144 jit 0.01 | fov 66.0 | {'other': 24} | mm sw/s 2.5 {'Idle_TurnR180': 17, 'Idle_02_WeightShift': 4, 'Idle_TurnL090': 3}
+ SEG 12 'W' yr 0 | spd 70 | gdt 0.034 | plant p20 30 | yaw 87 | cam 149 jit 0.4 | fov 66.0 | {'other': 12} | mm sw/s 5.0 {'Walk_Start_TurnR090_Rfoot': 5, 'Walk_Start_TurnR045_Rfoot': 4, 'Idle_TurnR180': 3}
+ SEG 13 '' yr 0 | spd 16 | gdt 0.033 | plant p20 1 | yaw 9 | cam 149 jit 0.28 | fov 66.0 | {'other': 30} | mm sw/s 8.0 {'Idle_02_WeightShift': 12, 'Walk_Fwd_Stop': 9, 'Idle_TurnR180': 4}
+ SEG 14 'W LeftShift' yr 0 | spd 183 | gdt 0.033 | plant p20 46 | yaw 39 | cam 167 jit 0.31 | fov 66.1 | {'other': 30} | mm sw/s 4.0 {'Jog_Fwd_Start': 24, 'Idle_02_WeightShift': 2, 'Jog_Fwd': 2}
+ SEG 15 'W LeftShift' yr 360 | spd 327 | gdt 0.033 | plant p20 173 | yaw 120 | cam 184 jit 1.49 | fov 66.8 | {'other': 15} | mm sw/s 6.1 {'Run_Fwd': 8, 'Run_Start_TurnR090_Rfoot': 5, 'Jog_Fwd': 1}
+ SEG 16 'W LeftShift' yr 0 | spd 457 | gdt 0.033 | plant p20 139 | yaw 50 | cam 193 jit 1.07 | fov 67.7 | {'other': 36} | mm sw/s 2.5 {'Run_Fwd': 17, 'Run_Fwd_Start': 15, 'Run_Start_TurnR090_Rfoot': 2}
+ SEG 17 '' yr 0 | spd 21 | gdt 0.031 | plant p20 1 | yaw 0 | cam 155 jit 0.39 | fov 67.3 | {'other': 45} | mm sw/s 8.5 {'Idle_02_WeightShift': 17, 'Walk_Fwd_Stop': 7, 'Idle_TurnR180': 7}
+== D_chop_legacy3.json frames 328 mean gdt 0.0329
+ SEG 0 '' yr 0 | spd 0 | gdt 0.056 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 15} | mm sw/s 5.9 {'Idle_02_WeightShift': 8, 'Idle_TurnR180': 4, 'Idle_TurnL090': 3}
+ SEG 1 'W' yr 0 | spd 123 | gdt 0.033 | plant p20 12 | yaw 0 | cam 157 jit 0.16 | fov 66.0 | {'other': 24} | mm sw/s 3.8 {'Walk_Fwd_Start': 19, 'Idle_02_WeightShift': 3, 'Walk_Start_TurnL045_Lfoot': 1}
+ SEG 2 '' yr 0 | spd 27 | gdt 0.033 | plant p20 229 | yaw 0 | cam 154 jit 0.43 | fov 66.0 | {'other': 18} | mm sw/s 11.8 {'Walk_Fwd_Stop': 6, 'Walk_Fwd': 4, 'Walk_Start_TurnL180_Lfoot': 3}
+ SEG 3 'E' yr 0 | spd 0 | gdt 0.034 | plant p20 0 | yaw 0 | cam 145 jit 0.03 | fov 66.0 | {'other': 5} | mm sw/s 0.0 {'Idle_02_WeightShift': 5}
+ SEG 4 '' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 96} | mm sw/s 2.2 {'Idle_02_WeightShift': 41, 'Idle_TurnR045': 25, 'Idle_TurnR180': 23}
+ SEG 5 'LeftMouseButton' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 5} | mm sw/s 0.0 {'Idle_02_WeightShift': 5}
+ SEG 6 '' yr 0 | spd 0 | gdt 0.03 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 120} | mm sw/s 3.3 {'Idle_TurnR180': 58, 'Idle_02_WeightShift': 45, 'Idle_TurnL090': 11}
+ SEG 7 '' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 45} | mm sw/s 4.8 {'Idle_TurnR045': 25, 'Idle_02_WeightShift': 13, 'Idle_TurnL090': 4}
+== D_chop_final3.json frames 328 mean gdt 0.0337
+ SEG 0 '' yr 0 | spd 0 | gdt 0.047 | plant p20 0 | yaw 0 | cam 144 jit 0.01 | fov 66.0 | {'other': 15} | mm sw/s 7.1 {'Idle_02_WeightShift': 11, 'Idle_TurnR180': 2, 'Idle_TurnL090': 2}
+ SEG 1 'W' yr 0 | spd 122 | gdt 0.033 | plant p20 13 | yaw 0 | cam 157 jit 0.18 | fov 66.0 | {'other': 24} | mm sw/s 3.8 {'Walk_Fwd_Start': 19, 'Idle_02_WeightShift': 3, 'Walk_Start_TurnL045_Lfoot': 1}
+ SEG 2 '' yr 0 | spd 27 | gdt 0.033 | plant p20 3 | yaw 0 | cam 154 jit 0.43 | fov 66.0 | {'other': 18} | mm sw/s 15.1 {'Walk_Fwd_Stop': 6, 'Idle_02_WeightShift': 5, 'Walk_Fwd': 4}
+ SEG 3 'E' yr 0 | spd 0 | gdt 0.032 | plant p20 0 | yaw 0 | cam 145 jit 0.03 | fov 66.0 | {'other': 5} | mm sw/s 0.0 {'Idle_02_WeightShift': 5}
+ SEG 4 '' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 96} | mm sw/s 2.8 {'Idle_02_WeightShift': 40, 'Idle_TurnR045': 25, 'Idle_TurnR180': 23}
+ SEG 5 'LeftMouseButton' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 5} | mm sw/s 12.2 {'Idle_02_WeightShift': 3, 'Idle_TurnL180': 1, 'Idle_TurnL090': 1}
+ SEG 6 '' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 120} | mm sw/s 3.3 {'Idle_TurnR180': 52, 'Idle_02_WeightShift': 42, 'Idle_TurnL090': 12}
+ SEG 7 '' yr 0 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 144 jit 0.0 | fov 66.0 | {'other': 45} | mm sw/s 2.0 {'Idle_02_WeightShift': 27, 'Idle_TurnR045': 17, 'Idle_TurnL135': 1}
+== H_hall_legacy3.json frames 297 mean gdt 0.0326
+ SEG 0 '' yr 0 | spd 0 | gdt 0.032 | plant p20 0 | yaw 0 | cam 0 jit 0.0 | fov 62.0 | {'other': 18} | mm sw/s 5.2 {'Idle_TurnL135': 7, 'Idle_02_WeightShift': 6, 'Idle_TurnL090': 5}
+ SEG 1 'W' yr 0 | spd 137 | gdt 0.033 | plant p20 47 | yaw 0 | cam 111 jit 1.76 | fov 62.0 | {'other': 75} | mm sw/s 1.2 {'Walk_Fwd': 54, 'Walk_Fwd_Start': 18, 'Idle_02_WeightShift': 2}
+ SEG 2 'W LeftShift' yr 0 | spd 150 | gdt 0.033 | plant p20 131 | yaw 0 | cam 126 jit 0.06 | fov 62.0 | {'other': 34, 'walk_start': 11} | mm sw/s 0.7 {'Jog_Fwd': 41, 'Walk_Fwd': 4}
+ SEG 3 '' yr 0 | spd 11 | gdt 0.033 | plant p20 1 | yaw 0 | cam 99 jit 0.18 | fov 62.0 | {'other': 32, 'jog': 4} | mm sw/s 6.7 {'Idle_TurnR180': 18, 'Walk_Fwd_Stop': 5, 'Jog_Fwd': 3}
+ SEG 4 '' yr 300 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 93 jit 0.13 | fov 62.0 | {'other': 18} | mm sw/s 8.5 {'Idle_02_WeightShift': 9, 'Idle_TurnR180': 7, 'Idle_TurnL090': 2}
+ SEG 5 'W' yr 0 | spd 137 | gdt 0.033 | plant p20 90 | yaw -180 | cam 110 jit 0.37 | fov 62.0 | {'other': 75} | mm sw/s 3.6 {'Walk_Fwd': 43, 'Walk_Start_TurnL045_Lfoot': 10, 'Walk_Start_TurnL090_Lfoot': 9}
+ SEG 6 '' yr 0 | spd 13 | gdt 0.03 | plant p20 1 | yaw 0 | cam 114 jit 0.25 | fov 62.0 | {'other': 30} | mm sw/s 9.9 {'Idle_02_WeightShift': 13, 'Walk_Fwd_Stop': 10, 'Walk_Fwd': 3}
+== H_hall_final3.json frames 297 mean gdt 0.0332
+ SEG 0 '' yr 0 | spd 0 | gdt 0.034 | plant p20 0 | yaw 0 | cam 0 jit 0.0 | fov 62.0 | {'other': 18} | mm sw/s 0.0 {'Idle_TurnR045': 18}
+ SEG 1 'W' yr 0 | spd 136 | gdt 0.033 | plant p20 36 | yaw 0 | cam 111 jit 1.9 | fov 62.0 | {'other': 75} | mm sw/s 0.8 {'Walk_Fwd': 52, 'Walk_Fwd_Start': 20, 'Idle_TurnR045': 3}
+ SEG 2 'W LeftShift' yr 0 | spd 150 | gdt 0.033 | plant p20 161 | yaw 0 | cam 126 jit 0.13 | fov 62.0 | {'other': 33, 'walk_start': 11, 'walk': 1} | mm sw/s 0.7 {'Jog_Fwd': 41, 'Walk_Fwd': 4}
+ SEG 3 '' yr 0 | spd 11 | gdt 0.033 | plant p20 0 | yaw 0 | cam 99 jit 0.2 | fov 62.0 | {'other': 32, 'jog': 4} | mm sw/s 9.1 {'Idle_02_WeightShift': 18, 'Walk_Start_TurnL180_Lfoot': 5, 'Jog_Fwd': 3}
+ SEG 4 '' yr 300 | spd 0 | gdt 0.033 | plant p20 0 | yaw 0 | cam 93 jit 0.15 | fov 62.0 | {'other': 18} | mm sw/s 3.3 {'Idle_02_WeightShift': 12, 'Idle_TurnL135': 4, 'Idle_TurnL090': 2}
+ SEG 5 'W' yr 0 | spd 137 | gdt 0.033 | plant p20 71 | yaw -180 | cam 110 jit 0.49 | fov 62.0 | {'other': 75} | mm sw/s 4.0 {'Walk_Fwd': 43, 'Walk_Start_TurnL045_Lfoot': 12, 'Walk_Start_TurnL090_Lfoot': 7}
+ SEG 6 '' yr 0 | spd 13 | gdt 0.033 | plant p20 2 | yaw 0 | cam 114 jit 0.22 | fov 62.0 | {'other': 30} | mm sw/s 7.0 {'Idle_02_WeightShift': 11, 'Idle_TurnR180': 9, 'Walk_Fwd': 3}
