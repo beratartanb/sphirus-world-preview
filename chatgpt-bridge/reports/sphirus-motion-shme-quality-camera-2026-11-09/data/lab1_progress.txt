@@ -1,0 +1,99 @@
+05:15:31 QCAM
+Q_DONE
+NODE Piyon|GetControlRotation {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamFocus {}
+NODE |GetSpringArm {}
+NODE |GetTargetArmLength {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |GetSpringArm {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |GetGR_CamFov {}
+NODE |GetCamera {}
+NODE |GetGR_CamFov {}
+NODE Piyon|GetControlRotation {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamFocus {}
+NODE |GetSpringArm {}
+NODE |GetTargetArmLength {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |GetSpringArm {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |GetGR_CamFov {}
+NODE |GetCamera {}
+NODE |GetGR_CamFov {}
+NODE Piyon|GetControlRotation {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamFocus {}
+NODE |GetSpringArm {}
+NODE |GetTargetArmLength {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |GetSpringArm {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |GetGR_CamFov {}
+NODE |GetCamera {}
+NODE |GetGR_CamFov {}
+NODE Piyon|GetControlRotation {}
+NODE |GetGR_CamOpen {}
+NODE |SetGR_CamOpen {}
+NODE |GetGR_CamOpen {}
+NODE |GetGR_CamFocus {}
+NODE |GetSpringArm {}
+NODE |GetTargetArmLength {}
+NODE |SetTargetArmLength {}
+NODE |GetGR_CamShoulder {}
+NODE |SetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |SetGR_CamZ {}
+NODE |GetSpringArm {}
+NODE |GetGR_CamShoulder {}
+NODE |GetGR_CamZ {}
+NODE |SetSocketOffset {'SocketOffset': '0, 0, 0'}
+NODE |GetGR_CamFov {}
+NODE |SetGR_CamFov {}
+NODE |GetCamera {}
+NODE |GetGR_CamFov {}
+NODE Kamera|SetFieldOfView {}
+NODE Girdi|IsLookInputIgnored {}
+NODE Girdi|IsLookInputIgnored {}
+NODE Girdi|IsLookInputIgnored {}
+NODE Girdi|IsLookInputIgnored {}
+NODE Piyon|GetControlRotation {}
+NODE Piyon|SetControlRotation {'NewRotation': '0, 0, 0'}
+NODE |GetCine {}
+NODE |GetGR_CamFov {}
+NODE Kamera|SetFieldOfView {}
+NODE Girdi|IsLookInputIgnored {}
+NODE |GetCine {}
+NODE |GetCine {}
+NODE İşlevsellikler|Yapı|MakeCameraFocusSettings {'FocusMethod': 'Manual', 'ManualFocusDistance': '100000.000000', 'bSmoothFocusChanges': 'true', 'FocusSmoothingInterpSpeed': '5.0', 'FocusOffset': '0.000000'}
+NODE |GetCine {}
+NODE |GetCine {}
+VARS ['GR_Gait', 'GR_CamArm', 'GR_CamFov', 'GR_CamShoulder', 'GR_CamFocus', 'GR_CamOpen', 'GR_CamZ', 'GR_GaitSel', 'GR_SteadyT', 'GR_Steady']
+Q_DONE
+05:15:34 QIDLE
+TIMEOUT waiting for ed_q_idle-051534491306
+05:18:45 LAB_IDLE
+TIMEOUT waiting for 
+TIMEOUT waiting for sf52_stop-
+05:28:09 LAB_GAITS
+TIMEOUT waiting for 
+TIMEOUT waiting for sf52_stop-
+05:41:39 LAB_CAM
+TIMEOUT waiting for 
+TIMEOUT waiting for sf52_stop-
+Traceback (most recent call last):
+  File "C:\Users\berat\OneDrive\Documents\Unreal Projects\ActionAdventureMovementS\Tools\Day_20261107\an_lab.py", line 22, in <module>
+    d=json.load(open(fn)); R=d['rows']; T=sum(r.get('gdt',1/30) for r in R)
+                ^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Saved/Codex/Grip_20261106/rec/I_idle.json'
+05:55:10 LAB1_DONE
