@@ -1,0 +1,36 @@
+RUNNER_READY emb_419.log
+09:15:11 TURN3
+CHANGED 2
+DONE
+09:15:22 WRITE_END job=day_turn3-091512630561.py ok written=['/Game/Sphirus/CharacterLab/Hazel_20261106/Playable/BP_HybridA_Player']
+RUNNER_READY emb_420.log
+09:17:35 WAKE
+6.81 [1309, 767, 580] 0 False 0
+8.4 [1309, 767, 580] 0 False 1
+9.81 [1309, 767, 580] 0 False 1
+11.4 [1309, 767, 580] 0 False 1
+18.73 [1309, 767, 580] 0 False 1
+0
+0.33 [832, -220, 186] 0 False 0
+0.6 [1229, 767, 580] 90 True 0
+1.55 [1229, 767, 580] 90 True 0
+3.48 [1229, 767, 580] 90 True 0
+5.15 [1284, 767, 580] 28 True 0
+6.81 [1309, 767, 580] 0 False 0
+8.4 [1309, 767, 580] 0 False 1
+9.81 [1309, 767, 580] 0 False 1
+11.4 [1309, 767, 580] 0 False 1
+18.73 [1309, 767, 580] 0 False 1
+09:19:13 CROUCHJUMP
+LOADED True /Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse
+Traceback (most recent call last):
+  File "C:\Users\berat\OneDrive\Documents\Unreal Projects\ActionAdventureMovementS\Tools\Day_20261107\an_lab.py", line 22, in <module>
+    d=json.load(open(fn)); R=d['rows']; T=sum(r.get('gdt',1/30) for r in R)
+                ^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Saved/Codex/Grip_20261106/rec/CJ_test.json'
+09:25:01 REV4
+410465 Saved/Codex/Grip_20261106/rec/R_rev4.json
+R_rev4 seg 2 'S' every 0.25s: [(0, 180, 0), (0.25, 54, -54), (0.5, 98, -119), (0.75, 129, 180), (1.0, 157, 180), (1.25, 170, 180), (1.5, 175, 180), (1.75, 178, 180), (2.0, 179, 180), (2.25, 180, 180)]
+R_rev4 seg 6 'S LeftShift' every 0.25s: [(0, 500, 0), (0.25, 35, -54), (0.5, 147, -119), (0.75, 238, 180), (1.0, 329, 180), (1.25, 436, 180), (1.5, 471, 180), (1.76, 487, 180), (2.01, 494, 180), (2.26, 497, 180)]
+09:25:52 SAVE_OK
+09:25:52 REG1_DONE
