@@ -1,0 +1,65 @@
+RUNNER_READY emb_402.log
+06:59:13 CACHE
+ERROR 5.147263765335083
+CONSUMERS [('AnimGraphNode_Slot', 'Source'), ('AnimGraphNode_LayeredBoneBlend', 'BasePose')]
+SAVE node AnimGraphNode_SaveCachedPose
+SAVE name LocoCache
+STEP save wired, compiled
+USE types []
+    types=[t for t in B.find_node_types(ag,'LocoCache')]; P('USE types',types); assert types,'no use-cached-pose type'
+AssertionError: no use-cached-pose type
+CONSUMERS [('AnimGraphNode_Slot', 'Source'), ('AnimGraphNode_LayeredBoneBlend', 'BasePose')]
+SAVE node AnimGraphNode_SaveCachedPose
+SAVE name LocoCache
+STEP save wired, compiled
+USE types []
+RUNNER_READY emb_403.log
+07:01:35 LAB_IDLE2
+860194 Saved/Codex/Grip_20261106/rec/I_idle2.json
+07:02:50 LAB_GAITS2
+1045376 Saved/Codex/Grip_20261106/rec/G_gaits2.json
+07:03:42 LAB_CAM2
+856609 Saved/Codex/Grip_20261106/rec/CL_cam2.json
+== I_idle2.json frames 900 game s 29.4 mean gdt 0.0326
+ SEG 0 '' yr 0 | 29.4s spd mean 0 p95 0 | body {'Idle_01': 897, 'Jog_Fwd_Start': 3} | sw/s 0.2 restarts/s 0.1 cont(Idle_01) 0.95 n=893 | yaw 180->180
+      head v p50 5 p95 14 | headX min/mean/max 0.23/0.28/0.30 headY mean 0.46 pelvisX mean 0.30 | arm 118 coll 0/900 cam-head 121 | db {'PSD_Sph_Walk.PSD': 900} | flags {'[False, True, ': 900}
+      idle trace (t, clip, cliptime): [(0, 'Idle_01', 7.6), (2.5, 'Idle_01', 1.2), (4.4, 'Idle_01', 5.0), (6.4, 'Idle_01', 8.9), (8.3, 'Idle_01', 1.3), (10.2, 'Idle_01', 5.1), (12.1, 'Idle_01', 8.9), (14.0, 'Idle_01', 1.3), (15.9, 'Idle_01', 5.1), (17.9, 'Idle_01', 8.9), (19.8, 'Idle_01', 1.3), (21.7, 'Idle_01', 5.1), (23.6, 'Idle_01', 9.0), (25.5, 'Idle_01', 1.3), (27.5, 'Idle_01', 5.2)]
+== G_gaits2.json frames 1140 game s 19.1 mean gdt 0.0168
+ SEG 0 '' yr 0 | 0.5s spd mean 0 p95 0 | body {'Idle_01': 30} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 0.45 n=29 | yaw 0->0
+      head v p50 4 p95 5 | headX min/mean/max 0.29/0.30/0.30 headY mean 0.51 pelvisX mean 0.31 | arm 140 coll 0/30 cam-head 143 | db {'PSD_Sph_Walk.PSD': 30} | flags {'[False, True, ': 30}
+ SEG 1 'W' yr 0 | 7.5s spd mean 174 p95 180 | body {'Walk_Fwd': 277, 'Walk_Fwd_Start': 42, 'Walk_Start_TurnR090_Rfoot': 40} | sw/s 17.6 restarts/s 0.1 cont(Walk_Fwd) 0.93 n=239 | yaw 0->0
+      head v p50 186 p95 227 | headX min/mean/max 0.30/0.34/0.35 headY mean 0.48 pelvisX mean 0.34 | arm 140 coll 0/450 cam-head 164 | db {'PSD_Sph_WalkLoop': 408, 'PSD_Sph_Walk.PSD': 42} | flags {'[True, False, ': 409, '[False, False,': 39}
+ SEG 2 'W LeftShift' yr 0 | 7.6s spd mean 460 p95 500 | body {'Jog_Fwd': 91, 'Jog_Fwd_Start': 88, 'Run_Fwd': 88} | sw/s 42.9 restarts/s 0.1 cont(Jog_Fwd) 0.93 n=56 | yaw 0->0
+      head v p50 483 p95 582 | headX min/mean/max 0.34/0.38/0.40 headY mean 0.47 pelvisX mean 0.37 | arm 148 coll 0/450 cam-head 193 | db {'PSD_Sph_RunLoop.': 393, 'PSD_Sph_JogLoop.': 54} | flags {'[True, False, ': 450}
+ SEG 3 '' yr 0 | 1.0s spd mean 36 p95 372 | body {'Idle_01': 23, 'Walk_Fwd_Stop': 21, 'Idle_TurnR045': 3} | sw/s 11.8 restarts/s 0.0 cont(Idle_01) 0.91 n=22 | yaw 0->0
+      head v p50 16 p95 246 | headX min/mean/max 0.31/0.33/0.39 headY mean 0.49 pelvisX mean 0.34 | arm 145 coll 0/60 cam-head 158 | db {'PSD_Sph_Walk.PSD': 56, 'PSD_Sph_RunLoop.': 3} | flags {'[False, True, ': 30, '[False, False,': 28}
+ SEG 4 'W' yr 0 | 1.5s spd mean 153 p95 183 | body {'Walk_Fwd_Start': 38, 'Walk_Fwd': 32, 'Idle_01': 4} | sw/s 10.6 restarts/s 0.0 cont(Walk_Fwd_Start) 0.86 n=37 | yaw 0->0
+      head v p50 177 p95 219 | headX min/mean/max 0.31/0.34/0.35 headY mean 0.48 pelvisX mean 0.34 | arm 140 coll 0/90 cam-head 161 | db {'PSD_Sph_WalkLoop': 48, 'PSD_Sph_Walk.PSD': 42} | flags {'[True, False, ': 49, '[False, False,': 39}
+ SEG 5 '' yr 0 | 1.0s spd mean 11 p95 127 | body {'Idle_01': 25, 'Walk_Fwd_Stop': 15, 'Idle_TurnL045': 7} | sw/s 12.0 restarts/s 1.0 cont(Idle_01) 0.83 n=23 | yaw 0->0
+      head v p50 10 p95 141 | headX min/mean/max 0.30/0.31/0.34 headY mean 0.49 pelvisX mean 0.33 | arm 140 coll 0/60 cam-head 148 | db {'PSD_Sph_Walk.PSD': 57, 'PSD_Sph_WalkLoop': 3} | flags {'[False, True, ': 33, '[False, False,': 25}
+== CL_cam2.json frames 915 game s 38.2 mean gdt 0.0417
+ SEG 0 '' yr 0 | 1.3s spd mean 0 p95 0 | body {'Idle_01': 30} | sw/s 0.0 restarts/s 0.0 cont(Idle_01) 1.00 n=29 | yaw 0->0
+      head v p50 4 p95 7 | headX min/mean/max 0.28/0.30/0.30 headY mean 0.51 pelvisX mean 0.31 | arm 140 coll 0/30 cam-head 143 | db {'PSD_Sph_Walk.PSD': 30} | flags {'[False, True, ': 30}
+ SEG 1 'A' yr 0 | 5.0s spd mean 170 p95 180 | body {'Walk_Fwd': 51, 'Walk_Start_TurnL045_Lfoot': 18, 'Walk_Start_TurnL090_Lfoot': 10} | sw/s 14.0 restarts/s 0.0 cont(Walk_Fwd) 0.96 n=28 | yaw 0->-90
+      head v p50 188 p95 235 | headX min/mean/max -0.06/0.05/0.31 headY mean 0.54 pelvisX mean 0.14 | arm 140 coll 0/120 cam-head 153 | db {'PSD_Sph_WalkLoop': 102, 'PSD_Sph_Walk.PSD': 18} | flags {'[True, False, ': 103, '[False, False,': 15}
+ SEG 2 '' yr 0 | 1.9s spd mean 9 p95 67 | body {'Idle_01': 31, 'Walk_Start_TurnL180_Lfoot': 4, 'Walk_Fwd': 3} | sw/s 5.3 restarts/s 0.0 cont(Idle_01) 0.93 n=29 | yaw -90->-90
+      head v p50 5 p95 83 | headX min/mean/max 0.02/0.26/0.30 headY mean 0.50 pelvisX mean 0.29 | arm 140 coll 0/45 cam-head 145 | db {'PSD_Sph_Walk.PSD': 42, 'PSD_Sph_WalkLoop': 3} | flags {'[False, True, ': 33, '[False, False,': 10}
+ SEG 3 'D' yr 0 | 5.0s spd mean 170 p95 180 | body {'Walk_Fwd': 47, 'Walk_Start_TurnR090_Rfoot': 18, 'Walk_Start_TurnR045_Rfoot': 16} | sw/s 14.2 restarts/s 0.0 cont(Walk_Fwd) 1.00 n=26 | yaw -90->90
+      head v p50 188 p95 223 | headX min/mean/max 0.28/0.54/0.58 headY mean 0.54 pelvisX mean 0.49 | arm 140 coll 0/120 cam-head 140 | db {'PSD_Sph_WalkLoop': 95, 'PSD_Sph_Walk.PSD': 25} | flags {'[True, False, ': 96, '[False, False,': 22}
+ SEG 4 '' yr 0 | 1.9s spd mean 9 p95 67 | body {'Idle_01': 31, 'Walk_Start_TurnR135_Rfoot': 3, 'Walk_Fwd': 2} | sw/s 4.8 restarts/s 0.0 cont(Idle_01) 0.97 n=30 | yaw 90->90
+      head v p50 6 p95 100 | headX min/mean/max 0.29/0.35/0.57 headY mean 0.51 pelvisX mean 0.35 | arm 140 coll 0/45 cam-head 143 | db {'PSD_Sph_Walk.PSD': 42, 'PSD_Sph_WalkLoop': 3} | flags {'[False, True, ': 33, '[False, False,': 10}
+ SEG 5 'W A' yr 0 | 5.0s spd mean 170 p95 180 | body {'Walk_Fwd': 49, 'Walk_Start_TurnL045_Lfoot': 15, 'Walk_Start_TurnL090_Lfoot': 13} | sw/s 14.0 restarts/s 0.2 cont(Walk_Fwd) 0.96 n=27 | yaw 90->-45
+      head v p50 189 p95 233 | headX min/mean/max 0.14/0.19/0.30 headY mean 0.48 pelvisX mean 0.23 | arm 139 coll 0/120 cam-head 168 | db {'PSD_Sph_WalkLoop': 99, 'PSD_Sph_Walk.PSD': 21} | flags {'[True, False, ': 100, '[False, False,': 18}
+ SEG 6 '' yr 0 | 1.9s spd mean 9 p95 67 | body {'Idle_01': 31, 'Walk_Fwd_Stop': 4, 'Walk_Fwd': 2} | sw/s 4.8 restarts/s 0.5 cont(Idle_01) 0.97 n=30 | yaw -45->-45
+      head v p50 11 p95 92 | headX min/mean/max 0.17/0.27/0.32 headY mean 0.51 pelvisX mean 0.28 | arm 138 coll 0/45 cam-head 145 | db {'PSD_Sph_Walk.PSD': 42, 'PSD_Sph_WalkLoop': 3} | flags {'[False, True, ': 33, '[False, False,': 10}
+ SEG 7 'W D' yr 0 | 5.0s spd mean 170 p95 180 | body {'Walk_Fwd': 52, 'Walk_Start_TurnR045_Rfoot': 16, 'Walk_Start_TurnR090_Rfoot': 11} | sw/s 14.4 restarts/s 0.2 cont(Walk_Fwd) 1.00 n=30 | yaw -45->45
+      head v p50 188 p95 219 | headX min/mean/max 0.30/0.48/0.50 headY mean 0.48 pelvisX mean 0.45 | arm 140 coll 0/120 cam-head 161 | db {'PSD_Sph_WalkLoop': 102, 'PSD_Sph_Walk.PSD': 18} | flags {'[True, False, ': 103, '[False, False,': 15}
+ SEG 8 '' yr 0 | 1.9s spd mean 9 p95 67 | body {'Idle_01': 31, 'Walk_Fwd': 3, 'Walk_Start_TurnL180_Lfoot': 2} | sw/s 6.4 restarts/s 0.0 cont(Idle_01) 0.97 n=30 | yaw 45->45
+      head v p50 5 p95 71 | headX min/mean/max 0.30/0.33/0.50 headY mean 0.50 pelvisX mean 0.34 | arm 140 coll 0/45 cam-head 146 | db {'PSD_Sph_Walk.PSD': 42, 'PSD_Sph_WalkLoop': 3} | flags {'[False, True, ': 33, '[False, False,': 10}
+ SEG 9 'W' yr 0 | 3.8s spd mean 167 p95 180 | body {'Walk_Fwd': 36, 'Walk_Start_TurnL045_Lfoot': 12, 'Walk_Fwd_Start': 8} | sw/s 13.3 restarts/s 0.0 cont(Walk_Fwd) 0.95 n=21 | yaw 45->0
+      head v p50 188 p95 222 | headX min/mean/max 0.31/0.34/0.35 headY mean 0.47 pelvisX mean 0.35 | arm 140 coll 0/90 cam-head 171 | db {'PSD_Sph_WalkLoop': 72, 'PSD_Sph_Walk.PSD': 18} | flags {'[True, False, ': 73, '[False, False,': 15}
+ SEG 10 'S' yr 0 | 3.8s spd mean 167 p95 180 | body {'Walk_Fwd': 35, 'Walk_Start_TurnL045_Lfoot': 16, 'Walk_Start_TurnL090_Lfoot': 11} | sw/s 13.3 restarts/s 0.0 cont(Walk_Fwd) 0.95 n=20 | yaw 0->180
+      head v p50 188 p95 234 | headX min/mean/max 0.18/0.23/0.34 headY mean 0.67 pelvisX mean 0.28 | arm 140 coll 0/90 cam-head 120 | db {'PSD_Sph_WalkLoop': 68, 'PSD_Sph_Walk.PSD': 22} | flags {'[True, False, ': 68, '[False, False,': 22}
+ SEG 11 '' yr 0 | 1.9s spd mean 9 p95 67 | body {'Idle_01': 31, 'Walk_Start_TurnR135_Rfoot': 3, 'Walk_Start_TurnR090_Rfoot': 2} | sw/s 5.3 restarts/s 0.0 cont(Idle_01) 0.97 n=30 | yaw 180->180
+      head v p50 5 p95 86 | headX min/mean/max 0.22/0.30/0.33 headY mean 0.53 pelvisX mean 0.32 | arm 140 coll 0/45 cam-head 139 | db {'PSD_Sph_Walk.PSD': 42, 'PSD_Sph_WalkLoop': 3} | flags {'[False, True, ': 33, '[False, False,': 10}
+07:04:57 LAB4_DONE
