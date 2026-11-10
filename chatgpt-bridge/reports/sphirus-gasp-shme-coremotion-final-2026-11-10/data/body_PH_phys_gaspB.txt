@@ -1,0 +1,17 @@
+== PH_phys_gaspB.json 369 rows
+  seg  0 release         0.8s spd   0/  0 | shoulderDrop 7.4 clavSwing 0.4 twist nan armSwing 1 headBob 0.0 | headX 0.30/0.30/0.30
+      sel 0 sw (0.0/s): Stand_Idle_Loop 0.82
+  seg  1 W LeftShift     1.7s spd 453/700 | shoulderDrop 3.4 clavSwing 11.1 twist nan armSwing 110 headBob 43.6 | headX 0.30/0.37/0.44
+      sel 3 sw (1.8/s): Stand_Idle_Loop 0.07 > Walk_Start_F_Lfoot 0.03 > Run_Start_F_Lfoot 0.90 > Transition_Run_to_Sprint_Rfoot 0.70
+  seg  2 release         1.8s spd  88/700 | stop 0.40 s 158 cm | shoulderDrop 4.4 clavSwing 7.1 twist nan armSwing 87 headBob 48.8 | headX 0.26/0.34/0.43
+      sel 1 sw (0.6/s): Transition_Run_to_Sprint_Rfoot 0.07 > Sprint_Stop_F_Lfoot 1.73
+  seg  3 S               2.0s spd 182/200 | shoulderDrop 6.8 clavSwing 4.7 twist nan armSwing 89 headBob 12.2 | headX 0.23/0.26/0.33
+      sel 1 sw (0.5/s): Sprint_Stop_F_Lfoot 0.07 > Walk_Reface_Start_F_L_180 1.94
+  seg  4 release         1.5s spd  13/200 | stop 0.13 s 20 cm | shoulderDrop 7.0 clavSwing 2.1 twist nan armSwing 72 headBob 5.6 | headX 0.25/0.29/0.31
+      sel 1 sw (0.7/s): Walk_Reface_Start_F_L_180 0.06 > Walk_Stop_F_Lfoot 1.43
+  seg  5 W               1.5s spd 177/200 | shoulderDrop 7.1 clavSwing 4.7 twist nan armSwing 95 headBob 14.2 | headX 0.31/0.34/0.35
+      sel 1 sw (0.7/s): Stand_Idle_Loop 0.07 > Walk_Reface_Start_F_L_180 1.43
+  seg  6 S               1.5s spd 175/200 | shoulderDrop 6.6 clavSwing 4.8 twist nan armSwing 91 headBob 18.8 | headX 0.23/0.27/0.33
+      sel 1 sw (0.7/s): Walk_Reface_Start_F_L_180 0.07 > Walk_Turn_L_180_Rfoot 1.44
+  seg  7 release         1.5s spd  14/200 | stop 0.13 s 21 cm | shoulderDrop 6.6 clavSwing 4.0 twist nan armSwing 55 headBob 7.0 | headX 0.25/0.27/0.30
+      sel 1 sw (0.7/s): Walk_Turn_L_180_Rfoot 0.07 > Walk_Stop_F_Rfoot 1.43
