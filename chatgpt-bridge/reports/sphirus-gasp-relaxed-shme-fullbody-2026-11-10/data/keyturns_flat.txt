@@ -3,27 +3,27 @@
         R:Stand_Idle_Loop
   seg  1 W             2.0s in   0 min   0 out 165
         R:Stand_Idle_Loop > R:Walk_Start_F_Rfoot
-  seg  2 W D           1.2s in 165 min 165 out 165 | turn   45° reach 0.13s
+  seg  2 W D           1.2s in 165 min 165 out 165 | turn   45Â° reach 0.13s
         R:Walk_Start_F_Rfoot > R:Walk_Loop_F
-  seg  3 D             1.5s in 165 min 165 out 165 | turn   45° reach 0.13s
+  seg  3 D             1.5s in 165 min 165 out 165 | turn   45Â° reach 0.13s
         R:Walk_Loop_F
-  seg  4 S A           1.5s in 165 min  81 out 165 | turn  135° reach 0.23s
+  seg  4 S A           1.5s in 165 min  81 out 165 | turn  135Â° reach 0.23s
         R:Walk_Loop_F > R:Walk_Turn_180_R_Lfoot
-  seg  5 W             1.5s in 165 min  80 out 165 | turn  135° reach 0.23s
+  seg  5 W             1.5s in 165 min  80 out 165 | turn  135Â° reach 0.23s
         R:Walk_Turn_180_R_Lfoot > R:Walk_Turn_180_R_Rfoot > R:Walk_Spin_B_F_R_Rfoot > R:Walk_Spin_B_F_R_Lfoot > R:Walk_Loop_F
   seg  6 release       1.2s in 165 min   0 out   0 | stop 0.47s
         R:Walk_Loop_F > R:Walk_Stop_F_Lfoot
   seg  7 W LeftShift   2.2s in   0 min   0 out 585
         R:Walk_Stop_F_Lfoot > R:Walk_Start_F_Rfoot > R:Run_Start_F_Rfoot > R:Transition_Run_to_Sprint_Rfoot
-  seg  8 W D LeftShift  1.2s in 585 min 578 out 585 | turn   45° reach 0.27s
+  seg  8 W D LeftShift  1.2s in 585 min 578 out 585 | turn   45Â° reach 0.27s
         R:Transition_Run_to_Sprint_Rfoot
-  seg  9 D LeftShift   1.5s in 585 min 576 out 585 | turn   46° reach 0.27s
+  seg  9 D LeftShift   1.5s in 585 min 576 out 585 | turn   46Â° reach 0.27s
         R:Transition_Run_to_Sprint_Rfoot > R:Sprint_Loop_F
-  seg 10 S A LeftShift  1.5s in 585 min 169 out 571 | turn  135° reach 0.67s
+  seg 10 S A LeftShift  1.5s in 585 min 169 out 571 | turn  135Â° reach 0.67s
         R:Sprint_Loop_F > R:Sprint_Turn_180_R_Rfoot > R:Run_Turn_R_180_Lfoot > R:Transition_Walk_to_Sprint_Lfoot > R:Sprint_Reface_Start_090_R
-  seg 11 W LeftShift   1.5s in 573 min 163 out 572 | turn  135° reach 0.67s
+  seg 11 W LeftShift   1.5s in 573 min 163 out 572 | turn  135Â° reach 0.67s
         R:Sprint_Reface_Start_090_R > R:Sprint_Turn_180_R_Rfoot > R:Run_Turn_R_180_Lfoot > R:Transition_Walk_to_Sprint_Lfoot > R:Sprint_Reface_Start_090_R
-  seg 12 S LeftShift   1.5s in 573 min   3 out 550 | turn  180° reach 0.53s
+  seg 12 S LeftShift   1.5s in 573 min   3 out 550 | turn  180Â° reach 0.53s
         R:Sprint_Reface_Start_090_R > R:Sprint_Turn_180_R_Rfoot > R:Run_Turn_L_180_Rfoot > R:Transition_Walk_to_Sprint_Lfoot
   seg 13 release       1.8s in 561 min   0 out   0 | stop 0.90s
         R:Transition_Walk_to_Sprint_Lfoot > R:Sprint_Stop_F_Lfoot
