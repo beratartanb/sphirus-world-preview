@@ -166,7 +166,7 @@ Tümü PIE, 30 kare/s, gerçek zamanlı (her karede oyun adımı kaydı `data/*.
 | `EF_on_c2` | bahçede efor açık (nefes ve fren) |
 | `H_hall_i1` | ev içi kural, 150 cm/s (§11) |
 | `A_loco_n1` | seçim tablosu kopyalarıyla aynı yürüme→sprint→duruş protokolü (§11) |
-| `I_idle50_n1` | 50 s bekleme, iki idle break (§11) |
+| `I_idle50_n1` | 50 s bekleme, iki idle break (§11); GitHub boyut sınırı için %75 çözünürlükte yeniden kodlandı |
 | `IO_idlecut_n1` | idle break başladıktan 3,3 s sonra W: kırılma anında kesiliyor (§11) |
 
 Yan/3-4 kamera gövdeye yakın; baş üstten kısmen kesik (omuz–omurga–pelvis net). Tüm videolarda oyun adımı ortalaması 0,033 s (`data/*.json` `gdt`).
