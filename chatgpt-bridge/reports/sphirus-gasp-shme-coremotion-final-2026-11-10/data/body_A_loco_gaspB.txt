@@ -1,0 +1,19 @@
+== A_loco_gaspB.json 330 rows
+  seg  0 release         0.7s spd   0/  0 | shoulderDrop 7.3 clavSwing 0.4 twist 1.6 armSwing 1 headBob 0.1 | headX 0.30/0.31/0.31
+      sel 0 sw (0.0/s): Stand_Idle_Loop 0.71
+  seg  1 W               2.0s spd 182/200 | shoulderDrop 6.7 clavSwing 5.0 twist 28.4 armSwing 74 headBob 14.5 | headX 0.30/0.34/0.36
+      sel 1 sw (0.5/s): Stand_Idle_Loop 0.07 > Walk_Start_F_Lfoot 1.92
+  seg  2 W LeftShift     1.1s spd 429/555 | shoulderDrop 4.5 clavSwing 8.3 twist 40.8 armSwing 122 headBob 19.4 | headX 0.34/0.37/0.41
+      sel 2 sw (1.8/s): Walk_Start_F_Lfoot 0.10 > Transition_Walk_to_Run_Lfoot 0.90 > Sprint_Reface_Start_F_R_180 0.10
+  seg  3 W LeftShift     1.2s spd 622/657 | shoulderDrop 3.9 clavSwing 11.1 twist 49.7 armSwing 99 headBob 19.5 | headX 0.37/0.42/0.44
+      sel 1 sw (0.8/s): Sprint_Reface_Start_F_R_180 0.33 > Sprint_Loop_FR 0.87
+  seg  4 W LeftShift     1.3s spd 550/700 | shoulderDrop 4.6 clavSwing 12.9 twist 69.8 armSwing 117 headBob 10.7 | headX 0.34/0.39/0.48
+      sel 4 sw (3.1/s): Sprint_Loop_FR 0.63 > Sprint_Loop_F 0.03 > Transition_Run_to_Sprint_Rfoot 0.03 > Sprint_Diamond_FL_FR_Rfoot 0.40 > Transition_Run_to_Sprint_Rfoot 0.20
+  seg  5 W               1.2s spd 404/642 | shoulderDrop 5.4 clavSwing 5.5 twist 46.6 armSwing 107 headBob 41.6 | headX 0.32/0.37/0.41
+      sel 1 sw (0.8/s): Transition_Run_to_Sprint_Rfoot 0.13 > Transition_Run_to_Walk_Lfoot 1.07
+  seg  6 release         1.3s spd  15/200 | stop 0.13 s 20 cm | shoulderDrop 6.7 clavSwing 2.7 twist 16.2 armSwing 61 headBob 4.9 | headX 0.31/0.32/0.34
+      sel 1 sw (0.8/s): Transition_Run_to_Walk_Lfoot 0.07 > Walk_Stop_F_Rfoot 1.23
+  seg  7 W               1.2s spd 171/200 | shoulderDrop 6.8 clavSwing 4.7 twist 19.9 armSwing 60 headBob 10.8 | headX 0.32/0.34/0.36
+      sel 1 sw (0.8/s): Walk_Stop_F_Rfoot 0.07 > Walk_Start_F_Lfoot 1.13
+  seg  8 release         1.0s spd  19/200 | stop 0.13 s 19 cm | shoulderDrop 6.9 clavSwing 2.6 twist 26.4 armSwing 81 headBob 7.1 | headX 0.30/0.32/0.34
+      sel 1 sw (1.0/s): Walk_Start_F_Lfoot 0.06 > Walk_Stop_F_Lfoot 0.94
