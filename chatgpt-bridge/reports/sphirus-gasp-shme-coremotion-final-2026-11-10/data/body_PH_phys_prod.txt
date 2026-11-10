@@ -1,0 +1,17 @@
+== PH_phys_prod.json 369 rows
+  seg  0 release         1.0s spd   0/  0 | shoulderDrop 7.0 clavSwing 0.2 twist 0.7 armSwing 1 headBob 0.2 | DRV drop 8.3 clav 0.2 twist 0.7 | headX 0.30/0.30/0.30
+      sel 0 sw (0.0/s): Stand_Idle_Loop 0.97
+  seg  1 W LeftShift     1.7s spd 443/700 | shoulderDrop 3.3 clavSwing 10.2 twist 51.3 armSwing 110 headBob 40.9 | DRV drop 3.5 clav 12.8 twist 50.9 | headX 0.30/0.37/0.44
+      sel 3 sw (1.8/s): Stand_Idle_Loop 0.08 > Walk_Start_F_Rfoot 0.02 > Run_Start_F_Lfoot 0.93 > Transition_Run_to_Sprint_Rfoot 0.67
+  seg  2 release         1.8s spd  87/700 | stop 0.40 s 156 cm | shoulderDrop 4.2 clavSwing 7.3 twist 36.3 armSwing 87 headBob 51.0 | DRV drop 4.3 clav 8.9 twist 35.5 | headX 0.26/0.34/0.43
+      sel 1 sw (0.6/s): Transition_Run_to_Sprint_Rfoot 0.06 > Sprint_Stop_F_Lfoot 1.73
+  seg  3 S               2.0s spd 181/200 | shoulderDrop 6.8 clavSwing 4.7 twist 44.1 armSwing 91 headBob 16.1 | DRV drop 8.0 clav 5.8 twist 43.1 | headX 0.23/0.26/0.32
+      sel 1 sw (0.5/s): Sprint_Stop_F_Lfoot 0.07 > Walk_Reface_Start_F_L_180 1.93
+  seg  4 release         1.5s spd  13/200 | stop 0.13 s 20 cm | shoulderDrop 7.1 clavSwing 1.9 twist 24.3 armSwing 72 headBob 5.6 | DRV drop 8.2 clav 2.5 twist 23.7 | headX 0.25/0.29/0.31
+      sel 1 sw (0.7/s): Walk_Reface_Start_F_L_180 0.07 > Walk_Stop_F_Lfoot 1.44
+  seg  5 W               1.5s spd 174/200 | shoulderDrop 6.9 clavSwing 4.6 twist 45.8 armSwing 97 headBob 14.3 | DRV drop 8.3 clav 5.7 twist 45.1 | headX 0.31/0.34/0.35
+      sel 1 sw (0.7/s): Stand_Idle_Loop 0.07 > Walk_Reface_Start_F_L_180 1.43
+  seg  6 S               1.5s spd 169/200 | shoulderDrop 6.7 clavSwing 4.7 twist 41.1 armSwing 86 headBob 14.1 | DRV drop 7.8 clav 6.0 twist 40.0 | headX 0.23/0.27/0.33
+      sel 1 sw (0.7/s): Walk_Reface_Start_F_L_180 0.07 > Walk_Turn_L_180_Rfoot 1.43
+  seg  7 release         1.5s spd  13/200 | stop 0.13 s 20 cm | shoulderDrop 6.7 clavSwing 3.6 twist 14.8 armSwing 53 headBob 6.1 | DRV drop 7.7 clav 4.4 twist 14.6 | headX 0.24/0.27/0.30
+      sel 1 sw (0.7/s): Walk_Turn_L_180_Rfoot 0.07 > Walk_Stop_F_Rfoot 1.43
