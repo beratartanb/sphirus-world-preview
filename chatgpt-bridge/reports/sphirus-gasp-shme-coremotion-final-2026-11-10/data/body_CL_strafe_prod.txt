@@ -1,0 +1,25 @@
+== CL_strafe_prod.json 543 rows
+  seg  0 release         0.9s spd   0/  0 | shoulderDrop 7.1 clavSwing 0.3 twist 0.4 armSwing 0 headBob 0.1 | DRV drop 8.3 clav 0.3 twist 0.6 | headX 0.30/0.30/0.30
+      sel 0 sw (0.0/s): Stand_Idle_Loop 0.85
+  seg  1 A               2.5s spd 186/200 | shoulderDrop 6.6 clavSwing 4.9 twist 31.9 armSwing 86 headBob 23.9 | DRV drop 7.9 clav 6.0 twist 31.4 | headX 0.27/0.30/0.33
+      sel 1 sw (0.4/s): Stand_Idle_Loop 0.07 > Walk_Reface_Start_F_L_090 2.43
+  seg  2 release         1.0s spd  20/200 | stop 0.13 s 20 cm | shoulderDrop 6.7 clavSwing 3.8 twist 16.6 armSwing 56 headBob 6.7 | DRV drop 7.5 clav 4.7 twist 16.1 | headX 0.23/0.28/0.32
+      sel 1 sw (1.0/s): Walk_Reface_Start_F_L_090 0.07 > Walk_Stop_F_Rfoot 0.93
+  seg  3 D               2.5s spd 186/200 | shoulderDrop 6.7 clavSwing 5.2 twist 31.1 armSwing 94 headBob 29.0 | DRV drop 8.0 clav 6.5 twist 30.3 | headX 0.29/0.32/0.37
+      sel 1 sw (0.4/s): Walk_Stop_F_Rfoot 0.07 > Walk_Reface_Start_F_R_180 2.44
+  seg  4 release         1.0s spd  20/200 | stop 0.13 s 20 cm | shoulderDrop 7.1 clavSwing 2.0 twist 24.5 armSwing 72 headBob 8.9 | DRV drop 7.9 clav 2.6 twist 23.8 | headX 0.25/0.29/0.33
+      sel 1 sw (1.0/s): Walk_Reface_Start_F_R_180 0.07 > Walk_Stop_F_Lfoot 0.93
+  seg  5 W A             2.0s spd 182/200 | shoulderDrop 6.6 clavSwing 4.7 twist 42.3 armSwing 89 headBob 16.7 | DRV drop 7.9 clav 5.8 twist 42.4 | headX 0.26/0.32/0.35
+      sel 1 sw (0.5/s): Walk_Stop_F_Lfoot 0.07 > Walk_Reface_Start_F_L_180 1.93
+  seg  6 release         0.8s spd  25/200 | stop 0.14 s 20 cm | shoulderDrop 7.1 clavSwing 2.0 twist 21.7 armSwing 76 headBob 8.1 | DRV drop 7.8 clav 2.5 twist 22.2 | headX 0.29/0.31/0.34
+      sel 1 sw (1.2/s): Walk_Reface_Start_F_L_180 0.07 > Walk_Stop_F_Lfoot 0.73
+  seg  7 W D             2.0s spd 181/200 | shoulderDrop 6.9 clavSwing 4.4 twist 28.3 armSwing 75 headBob 8.6 | DRV drop 8.2 clav 5.4 twist 28.1 | headX 0.32/0.33/0.35
+      sel 1 sw (0.5/s): Walk_Stop_F_Lfoot 0.07 > Walk_Reface_Start_F_R_090 1.93
+  seg  8 release         0.8s spd  25/200 | stop 0.14 s 20 cm | shoulderDrop 6.7 clavSwing 2.1 twist 14.6 armSwing 55 headBob 7.9 | DRV drop 7.4 clav 2.6 twist 14.3 | headX 0.31/0.33/0.36
+      sel 1 sw (1.2/s): Walk_Reface_Start_F_R_090 0.07 > Walk_Stop_F_Rfoot 0.73
+  seg  9 W               1.5s spd 175/200 | shoulderDrop 6.5 clavSwing 3.8 twist 36.7 armSwing 72 headBob 15.9 | DRV drop 7.9 clav 4.6 twist 35.9 | headX 0.31/0.33/0.34
+      sel 2 sw (1.3/s): Walk_Stop_F_Rfoot 0.07 > Walk_Start_FL_Rfoot 0.50 > Walk_Loop_F_L_20 0.93
+  seg 10 S               2.0s spd 177/200 | shoulderDrop 7.2 clavSwing 4.2 twist 27.5 armSwing 78 headBob 19.1 | DRV drop 8.4 clav 5.4 twist 27.1 | headX 0.23/0.27/0.36
+      sel 1 sw (0.5/s): Walk_Loop_F_L_20 0.07 > Walk_Turn_R_180_Rfoot 1.93
+  seg 11 release         1.2s spd  17/200 | stop 0.13 s 20 cm | shoulderDrop 7.2 clavSwing 3.0 twist 23.6 armSwing 64 headBob 7.3 | DRV drop 8.5 clav 4.0 twist 22.9 | headX 0.27/0.29/0.31
+      sel 1 sw (0.8/s): Walk_Turn_R_180_Rfoot 0.07 > Walk_Stop_B_Rfoot 1.13
