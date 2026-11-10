@@ -1,0 +1,43 @@
+== A_loco_n1
+  idle   n  86 | DRV clavElev  -5.2° drop/w 0.233 twist 14.3° lean  2.7° | VIS clavElev  -9.6° drop/w 0.287 twist 14.7° lean  3.2° handGap 16.1 cm
+  walk   n 104 | DRV clavElev  -3.4° drop/w 0.217 twist 29.9° lean  3.7° | VIS clavElev  -7.6° drop/w 0.267 twist 29.9° lean  4.1° handGap 15.8 cm
+  run    n  53 | DRV clavElev   2.4° drop/w 0.123 twist 44.7° lean 27.2° | VIS clavElev  -1.5° drop/w 0.169 twist 46.7° lean 27.6° handGap 14.3 cm
+  sprint n  66 | DRV clavElev   3.5° drop/w 0.115 twist 49.9° lean 33.6° | VIS clavElev  -0.6° drop/w 0.162 twist 50.9° lean 34.4° handGap 15.2 cm
+== A_loco_rx1
+  idle   n  86 | DRV clavElev  -8.3° drop/w 0.250 twist 17.3° lean  3.6° | VIS clavElev -12.6° drop/w 0.310 twist 18.3° lean  4.0° handGap 16.3 cm
+  walk   n 108 | DRV clavElev  -2.3° drop/w 0.204 twist 34.4° lean  5.9° | VIS clavElev  -6.3° drop/w 0.252 twist 35.8° lean  6.6° handGap 16.2 cm
+  run    n  62 | DRV clavElev  -3.9° drop/w 0.188 twist 37.4° lean 24.5° | VIS clavElev  -8.2° drop/w 0.245 twist 39.4° lean 25.1° handGap 13.1 cm
+  sprint n  40 | DRV clavElev   1.4° drop/w 0.123 twist 58.0° lean 30.1° | VIS clavElev  -3.0° drop/w 0.177 twist 58.4° lean 31.2° handGap 17.6 cm
+== A_loco_pr1
+  idle   n  63 | DRV clavElev  -8.7° drop/w 0.252 twist  3.8° lean  3.0° | VIS clavElev  -8.2° drop/w 0.266 twist  3.7° lean  3.5° handGap 16.6 cm
+  walk   n 118 | DRV clavElev  -2.3° drop/w 0.206 twist 33.4° lean  4.2° | VIS clavElev  -1.9° drop/w 0.213 twist 33.4° lean  5.0° handGap 16.1 cm
+  run    n  66 | DRV clavElev  -1.8° drop/w 0.174 twist 45.5° lean 22.3° | VIS clavElev  -1.8° drop/w 0.190 twist 43.5° lean 23.4° handGap 12.7 cm
+  sprint n  44 | DRV clavElev   1.7° drop/w 0.125 twist 58.6° lean 29.2° | VIS clavElev   2.2° drop/w 0.133 twist 61.6° lean 30.6° handGap 19.0 cm
+== TS_side_rx1
+  idle   n 214 | DRV clavElev  -7.6° drop/w 0.242 twist 18.1° lean  4.3° | VIS clavElev -12.2° drop/w 0.303 twist 18.4° lean  4.8° handGap 15.8 cm
+  walk   n 218 | DRV clavElev  -3.9° drop/w 0.219 twist 34.3° lean  5.6° | VIS clavElev  -8.3° drop/w 0.272 twist 35.1° lean  6.2° handGap 16.0 cm
+  run    n  28 | DRV clavElev  -6.2° drop/w 0.203 twist 36.7° lean 29.6° | VIS clavElev -10.0° drop/w 0.257 twist 37.7° lean 30.5° handGap 12.5 cm
+  sprint n  54 | DRV clavElev   2.0° drop/w 0.110 twist 52.9° lean 35.1° | VIS clavElev  -1.8° drop/w 0.158 twist 54.7° lean 35.6° handGap 15.0 cm
+== TS_side_pr1
+  idle   n 178 | DRV clavElev  -7.8° drop/w 0.244 twist 12.5° lean  2.3° | VIS clavElev  -7.1° drop/w 0.255 twist 13.3° lean  3.1° handGap 15.7 cm
+  walk   n 231 | DRV clavElev  -3.3° drop/w 0.213 twist 34.8° lean  5.4° | VIS clavElev  -2.7° drop/w 0.220 twist 35.2° lean  6.1° handGap 16.1 cm
+  run    n  34 | DRV clavElev  -3.0° drop/w 0.179 twist 39.4° lean 28.0° | VIS clavElev  -4.3° drop/w 0.210 twist 40.6° lean 28.9° handGap 13.1 cm
+  sprint n  54 | DRV clavElev   1.8° drop/w 0.112 twist 52.8° lean 34.8° | VIS clavElev   1.7° drop/w 0.126 twist 52.8° lean 35.7° handGap 15.1 cm
+== TQ_q34_pr1
+  idle   n 177 | DRV clavElev  -8.2° drop/w 0.247 twist 10.5° lean  2.2° | VIS clavElev  -8.2° drop/w 0.266 twist 11.2° lean  2.7° handGap 15.5 cm
+  walk   n 230 | DRV clavElev  -3.3° drop/w 0.212 twist 34.9° lean  5.4° | VIS clavElev  -3.0° drop/w 0.222 twist 35.8° lean  6.0° handGap 15.8 cm
+  run    n  34 | DRV clavElev  -3.2° drop/w 0.181 twist 39.8° lean 28.1° | VIS clavElev  -2.4° drop/w 0.189 twist 39.4° lean 29.5° handGap 14.4 cm
+  sprint n  54 | DRV clavElev   2.0° drop/w 0.110 twist 52.9° lean 35.0° | VIS clavElev   1.1° drop/w 0.132 twist 53.3° lean 35.7° handGap 14.8 cm
+== TF_front_pr1
+  idle   n 178 | DRV clavElev  -7.5° drop/w 0.242 twist 11.2° lean  2.4° | VIS clavElev  -7.5° drop/w 0.259 twist 12.2° lean  3.0° handGap 15.4 cm
+  walk   n 231 | DRV clavElev  -3.3° drop/w 0.213 twist 35.1° lean  5.4° | VIS clavElev  -3.0° drop/w 0.222 twist 35.7° lean  6.0° handGap 15.7 cm
+  run    n  33 | DRV clavElev  -2.9° drop/w 0.179 twist 39.8° lean 28.1° | VIS clavElev  -2.1° drop/w 0.186 twist 41.5° lean 29.5° handGap 14.6 cm
+  sprint n  55 | DRV clavElev   1.8° drop/w 0.112 twist 52.9° lean 34.9° | VIS clavElev   0.9° drop/w 0.134 twist 53.6° lean 35.6° handGap 14.7 cm
+== A_loco_gaspA
+  idle   n  62 | DRV clavElev  -8.2° drop/w 0.237 twist 12.5° lean -3.2° | VIS clavElev  -7.2° drop/w 0.263 twist 12.9° lean -1.3° handGap 13.2 cm
+  walk   n  92 | DRV clavElev  -6.7° drop/w 0.217 twist 28.4° lean  8.5° | VIS clavElev  -5.9° drop/w 0.248 twist 29.0° lean 10.4° handGap 12.2 cm
+  run    n 100 | DRV clavElev  -4.7° drop/w 0.186 twist 34.2° lean 17.0° | VIS clavElev  -4.1° drop/w 0.219 twist 34.2° lean 18.9° handGap  6.7 cm
+== TS_side_A_t2
+  idle   n 157 | DRV clavElev  -8.2° drop/w 0.237 twist 10.8° lean -4.8° | VIS clavElev  -7.3° drop/w 0.263 twist 11.0° lean -2.9° handGap 13.7 cm
+  walk   n 217 | DRV clavElev  -6.8° drop/w 0.217 twist 28.2° lean  7.9° | VIS clavElev  -6.0° drop/w 0.249 twist 28.8° lean  9.8° handGap 11.7 cm
+  run    n  74 | DRV clavElev  -4.5° drop/w 0.185 twist 20.9° lean 17.9° | VIS clavElev  -4.0° drop/w 0.220 twist 20.9° lean 19.7° handGap  9.1 cm
