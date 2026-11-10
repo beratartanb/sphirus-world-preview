@@ -1,0 +1,15 @@
+== H_hall_gaspB.json 297 rows
+  seg  0 release         0.6s spd   0/  0 | shoulderDrop 7.4 clavSwing 0.3 twist 0.8 armSwing 1 headBob 0.1 | DRV drop 8.8 clav 0.6 twist 0.9
+      sel 0 sw (0.0/s): Stand_Idle_Loop 0.65
+  seg  1 W               2.5s spd 186/200 | shoulderDrop 6.6 clavSwing 5.0 twist 28.6 armSwing 71 headBob 59.7 | DRV drop 7.7 clav 6.2 twist 28.1 | headX 0.32/0.36/0.42
+      sel 1 sw (0.4/s): Stand_Idle_Loop 0.07 > Walk_Start_F_Lfoot 2.44
+  seg  2 W LeftShift     1.5s spd 165/499 | shoulderDrop 5.0 clavSwing 8.2 twist 66.4 armSwing 115 headBob 29.3 | DRV drop 5.4 clav 10.5 twist 65.2 | headX 0.33/0.36/0.41
+      sel 6 sw (4.0/s): Walk_Start_F_Lfoot 0.10 > Transition_Walk_to_Run_Rfoot 0.60 > Run_Pivot_B_F_Lfoot 0.27 > Transition_Walk_to_Run_Lfoot 0.03 > Run_Pivot_B_F_Lfoot 0.37 > Transition_Walk_to_Run_Lfoot 0.03 > Run_Pivot_B_F_Lfoot 0.10
+  seg  3 release         1.2s spd   0/  1 | shoulderDrop 6.7 clavSwing 1.6 twist 37.8 armSwing 44 headBob 16.1 | DRV drop 7.9 clav 2.3 twist 37.9 | headX 0.38/0.40/0.42
+      sel 1 sw (0.8/s): Run_Pivot_B_F_Lfoot 0.07 > Stand_Idle_Loop 1.14
+  seg  4 release         0.6s spd   0/  0 | shoulderDrop 7.5 clavSwing 0.2 twist 0.4 armSwing 0 headBob 0.1 | DRV drop 8.9 clav 0.1 twist 0.5 | headX 0.29/0.35/0.41
+      sel 0 sw (0.0/s): Stand_Idle_Loop 0.60
+  seg  5 W               2.5s spd 163/200 | shoulderDrop 7.0 clavSwing 4.1 twist 45.2 armSwing 83 headBob 8.4 | DRV drop 8.3 clav 4.9 twist 44.8 | headX 0.29/0.33/0.38
+      sel 3 sw (1.2/s): Stand_Idle_Loop 0.07 > Walk_Reface_Start_F_L_180 0.67 > Walk_Pivot_B_F_Lfoot 0.30 > Transition_Run_to_Walk_Rfoot 1.47
+  seg  6 release         1.0s spd  20/200 | stop 0.13 s 20 cm | shoulderDrop 6.5 clavSwing 3.8 twist 14.1 armSwing 50 headBob 7.5 | DRV drop 7.6 clav 4.6 twist 14.3 | headX 0.30/0.32/0.33
+      sel 1 sw (1.0/s): Transition_Run_to_Walk_Rfoot 0.07 > Walk_Stop_F_Rfoot 0.93
