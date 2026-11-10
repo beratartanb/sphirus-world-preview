@@ -15,11 +15,11 @@ Motor UE 5.8.4 · harita `/Game/GraceRanger/Maps/L_GR_SphirusHouse` · aktif oyu
 | Görünür nefes / efor tepkisi | **PASS (ölçüm)**: dinlenmede omuz nefesi 2,05 cm (nefes katmanı olmadan 0,85 cm) | §4.4 |
 | Omuz/köprücük "kilitli" | Ölçümle kilitli değil (omuz kuşağı salınımı yürüyüşte 4–5 cm, koşuda 8–12 cm; retarget kaynağın ~%80'ini taşıyor); düşük omuz algısı sayıyla doğrulanamadı → **REVIEW_REQUIRED** | §3 |
 | Yürüyüş/koşu klip tutarlılığı (start'a geri dönme yok) | **PASS (ölçüm)**: 30 s yürüyüşte 1 start + 26,8 s tek döngü | §2.3 |
-| Bekleme (50 s) | **PARTIAL**: tek uzun döngü + nefes, hızlı tekrar yok; seyrek idle break kapalı | §5 |
+| Bekleme (50 s) | **PASS (ölçüm)**: tek uzun döngü + nefes + seyrek GASP idle break (14–26 s arayla), girdiyle anında kesiliyor; görsel REVIEW_REQUIRED | §5, §11 |
 | Etkileşim montajları (18 adet, MCPaul iskeleti) GASP sürücüsünde | **PASS (teknik)**: tam beden ve UpperBody oynuyor | §6 |
 | Aktif oyuncuya geçiş (tek piyon, tek AnimBP zinciri) | **PASS (teknik)**: `BP_HybridA_Player` GASP karakterine yeniden ebeveynlendi; ikinci piyon runtime'da yok | §7 |
-| Story Framework / istasyon / kayıt regresyonu | **PARTIAL**: istasyon/ev kuralı/kamera/kayıt yazma çalışıyor; oyun içi `LoadGame` konum geri yüklemiyor (öncekiyle aynı açık risk); ev içi yürüme 150 → 200 cm/s | §7 |
-| Relaxed GASP seti | **BLOCKED (araç)** | §2.4 |
+| Story Framework / istasyon / kayıt regresyonu | **PASS (teknik)**: istasyon/ev kuralı/kamera/kayıt yazma/yükleme çalışıyor; ev içi yürüme yeniden 150 cm/s; `LoadGame(IgnorePlayerLocation=False)` konumu ve yönü birebir geri yüklüyor (önceki "yüklemiyor" bulgusu test hatasıydı, §11) | §7, §11 |
+| Relaxed GASP seti | Araç engeli kalktı (§11), **uygulanmadı** | §2.4 |
 | Core Motion klipleri | Bu turda locomotion için **reddedildi** (gerekçe §2.5) | §2.5 |
 | Cook/paket, 60 FPS, eğim/merdiven, traversal | **NOT_TESTED** | §8 |
 
@@ -67,7 +67,7 @@ Tablolar `data/ac_*.md`, `data/bc_*.md`, gövde metrikleri `data/body_*.txt`. Ö
 - Bekleme 50 s: §5.
 
 ### 2.4 Relaxed set — BLOCKED
-GASP'ta tam bir Relaxed set var (122 yürüme, 118 koşu, 17 bekleme). Seçim tablosu yalnız Mover AnimBP bağlamı için yazılmış; bağlam sınıfı Python'dan değiştirilemedi (`InstancedStruct.import_text` etkisiz). Kopya AnimBP `ABP_Sph_GASP_Rx` derleniyor ama bağlamsız tablo kullanılamaz; üretimde kullanılmıyor.
+GASP'ta tam bir Relaxed set var (122 yürüme, 118 koşu, 17 bekleme). Seçim tablosu yalnız Mover AnimBP bağlamı için yazılmış; bağlam sınıfı ilk denemede Python'dan değiştirilemedi. Güncelleme: doğru metin biçimiyle `InstancedStruct.import_text` çalışıyor (§11.2); Relaxed set yine de bu turda bağlanmadı. Kopya AnimBP `ABP_Sph_GASP_Rx` derleniyor ama bağlamsız tablo kullanılamaz; üretimde kullanılmıyor.
 
 ### 2.5 Core Motion — bu turda locomotion'da reddedildi
 Gerekçe: aynı protokolde Core Motion veritabanları saniyede 12–21 blend kimliği değişimi ve terslemede blend zinciri üretti; GASP aynı girdide tek, amaçlı klipler (start/stop/turn/pivot/reface) seçti. Core Motion pivot kliplerinde kök yaw 0 (önceki rapor). Core Motion içeriği projede duruyor; etkileşim montajları (MCPaul) GASP sürücüsünde oynamaya devam ediyor (§6). Kadın yürüyüşünün GASP'a karşı görsel A/B'si: `videos/TS_side_A_*` ve `TS_side_C_*` (yan), kullanıcı kararı.
@@ -122,7 +122,7 @@ Okuma: ilk sert manevrada iki koşum neredeyse aynı (efor henüz düşük; mane
 `ABP_Sph_Body_GASP`: retarget'tan sonra göğüs (`spine_05`, Z ekseni, 3°) ve iki köprücük (Y ekseni, 4°) additive; genlik `0,3 + 0,7·EUse`, hız `13 → 43 nefes/dk`. Eksenler PIE'de ölçülerek kalibre edildi (`data/cal_breath_result.json`: köprücük Y ekseni iki omzu birlikte +4,8/+5,8 cm/birim kaldırıyor). Sonuç: üç ardışık sert manevradan sonra durunca omuz nefesi 2,05 cm (nefes katmanı olmayan B beklemesinde 0,85 cm); dinlenik beklemede 1,5 cm.
 
 ## 5. Bekleme
-50 s: tek `M_Neutral_Stand_Idle_Loop`, klip değişimi 0, pelvis kayması ≤1,5 cm, baş hızı medyan 2,9 / p95 4,3 cm/s, nefes 1,5 cm. Eski sistemdeki 2× hızlı tekrar yok. GASP'ın seyrek idle break klipleri (6 adet) yalnız deneysel durum makinesi yolunda; o yol kapalı → **PARTIAL**.
+50 s: tek `M_Neutral_Stand_Idle_Loop`, klip değişimi 0, pelvis kayması ≤1,5 cm, baş hızı medyan 2,9 / p95 4,3 cm/s, nefes 1,5 cm. Eski sistemdeki 2× hızlı tekrar yok. GASP'ın seyrek idle break klipleri (6 adet) yalnız deneysel durum makinesi yolunda; o yol kapalı. Güncelleme: idle break'ler artık `AC_Sph_Motion` üzerinden oynuyor (§11.3).
 
 ## 6. Etkileşim montajları
 Oyunun 18 montajı (zıplama, yatak, kesme, taşıma, giyinme, içme, diz çökme, alma, dökme, uzanma, uyanma, 6 maske işi) `SK_MCPaul_Skeleton` üzerinde; 16'sı `DefaultSlot`, 2'si `UpperBody`. Çözüm: (a) UEFN iskeletine MCPaul uyumluluğu (meta veri; aynı UE5 kemik adları), (b) `ABP_Sph_GASP`'a önbellekli tek değerlendirmeli `UpperBody` katmanı (spine_01, mesh-uzayı dönüş). PIE testi: `AM_GR_Day_Chop` aktif ve eller kesme pozunda; `AM_GR_Day_CarryArms` yürürken aktif, eller öne/yukarı, bacaklar yürüyor.
@@ -134,16 +134,16 @@ Oyunun 18 montajı (zıplama, yatak, kesme, taşıma, giyinme, içme, diz çökm
 | Regresyon (gerçek oyuncu, ev haritası) | Sonuç | Kanıt |
 |---|---|---|
 | Sola/sağa yürüme kadrajı (kamera sabit) | A: baş X 0,27–0,33 (ort. 0,30), D: 0,29–0,37 | `videos/CL_strafe_prod.mp4` |
-| Ev içi kuralı (koridorda Shift) | Koşu yok: en fazla 200 cm/s. Fark: eskiden ev içi 150, şimdi GASP yürüyüşü 200 → PARTIAL | `videos/H_hall_prod.mp4` |
+| Ev içi kuralı (koridorda Shift) | Koşu yok; ev içi yürüme 150 cm/s (eski tempo; §11), basan ayak kayması medyan 11 → 9 cm/s | `videos/H_hall_i1.mp4` (önce: `H_hall_prod.mp4`) |
 | Kesme istasyonu (yaklaş, E, sol tık) | A ile aynı: istasyon etkileşimi ve aksiyon kamerası (kol 106 cm); bu protokolde iki sistemde de kesme montajı tetiklenmiyor; montajın GASP sürücüsünde oynadığı ayrı PIE testinde doğrulandı (§6) | `videos/D_chop_prod.mp4`, `evidence/D_chop_prod_raw_f210.png` |
 | Kıyafet / yüz / saç | Doğru (gri atlet, yeşil şort) | üretim kareleri |
 | Bekleme 20 s | tek `Stand_Idle_Loop`, baş X 0,30 sabit | `videos/I_idle_prod.mp4` |
 | Kayıt/yükleme | Oyun içi kayıt yazıyor (5804 B); aynı oturumda `LoadGame` piyonu taşımıyor (önceden de); önyüklemeyle yükleme oyuncuyu (832, −220)'ye koyuyor, yürüyüş 200 cm/s. Kullanıcı kaydı her testten sonra bayt bayt geri yazıldı (cmp eşit) | `data/reg_save_prod.txt` |
-| Seçim tablosu bağlam hatası | Her karede `LogChooser: Error ... expects SandboxCharacter_CMC_ABP_C` — seçim çalışıyor ama günlük doluyor. Python'dan düzeltilemiyor (bağlam yapısı API'ye açık değil); editörde tablonun Context Data sınıfı `ABP_Sph_GASP_C` yapılmalı → **AÇIK** | editör günlüğü |
+| Seçim tablosu bağlam hatası | **Düzeltildi (§11)**: Sphirus kopyası tablolar, bağlam `ABP_Sph_GASP_C`; aynı girdide günlükte 2359 → 0 hata, klip/veritabanı seçimi birebir aynı | `data/chooser_fix.txt` |
 
 ## 8. Açık kalanlar
 1. Kamera süpürmesiyle yüksek hız dönüşlerinde kök ofseti 20–27 cm (sınır 30) — ayak kayması riski.
-2. Relaxed set (BLOCKED), seyrek idle break (deneysel durum makinesi kapalı).
+2. Relaxed set: bağlam aracı artık çalışıyor (§11) ama set bağlanmadı; seçim tablosu Mover AnimBP özelliklerine bağlı, ayrı iş.
 3. GASP traversal / çarpışma kanalı uyumsuzluğu; vault/mantle bu turda bağlanmadı.
 4. Kamera çalı/ağaç yapraklarından geçebiliyor (bahçe kayıtlarında görüldü).
 5. Ev içi kuralının ve istasyonların gerçek oyuncuyla doğrulanması §7'de; menüden kayıt/yükleme, cook/paket, 60 FPS, eğim/merdiven, taşıma sırasında beden: NOT_TESTED (aksi §7'de belirtilmedikçe).
@@ -164,6 +164,10 @@ Tümü PIE, 30 kare/s, gerçek zamanlı (her karede oyun adımı kaydı `data/*.
 | `TI_idle50_C_t2` | 50 s bekleme |
 | `EP_on_p1 / EP_off_p1` | efor açık/kapalı, aynı girdi, gerçek oyuncu |
 | `EF_on_c2` | bahçede efor açık (nefes ve fren) |
+| `H_hall_i1` | ev içi kural, 150 cm/s (§11) |
+| `A_loco_n1` | seçim tablosu kopyalarıyla aynı yürüme→sprint→duruş protokolü (§11) |
+| `I_idle50_n1` | 50 s bekleme, iki idle break (§11) |
+| `IO_idlecut_n1` | idle break başladıktan 3,3 s sonra W: kırılma anında kesiliyor (§11) |
 
 Yan/3-4 kamera gövdeye yakın; baş üstten kısmen kesik (omuz–omurga–pelvis net). Tüm videolarda oyun adımı ortalaması 0,033 s (`data/*.json` `gdt`).
 
@@ -171,3 +175,18 @@ Yan/3-4 kamera gövdeye yakın; baş üstten kısmen kesik (omuz–omurga–pelv
 - Oyuncu öncesi: `C:\Users\berat\SphirusCheckpoints\GASP_PrePromote_20261110_0614\Content\Sphirus\CharacterLab\Hazel_20261106\Playable\BP_HybridA_Player.uasset` (Core Motion oyuncusu A). Editör kapalıyken geri kopyalanır.
 - GASP içe aktarma öncesi: `C:\Users\berat\SphirusCheckpoints\GASP_P0A_20261109_2325` (uproject, Config, kayıtlar). Eklenen GASP dosyaları `data/gasp_import_manifest.json` listesinden silinebilir.
 - Her yazma işinin manifest yedeği: `Saved/Codex/SHME_V233_20261027/checkpoint/manifests/day_*`.
+
+## 11. Devam (2026-11-10 öğleden sonra): açık maddeler
+Her adım manifest yedekli tek yazma işi + editör yeniden açılışı; sonra gerçek oyuncuyla PIE testi.
+
+**11.1 Ev içi tempo 150 cm/s.** `BP_Sph_GASPCharacter`'a `SphContextSpeedScale` (varsayılan 1) eklendi; `CalculateMaxSpeed` sonucu `SphMotion.SpeedScale` ile birlikte bununla da çarpılıyor (`changes/i1_ctxspeed.py`). Oyuncu, `CharacterInputState`'i yazdığı yerde `GR_HomeContext > 0,5 ? 0,75 : 1` yazıyor (`changes/i2_indoor_speed.py`). Koridor testi: en yüksek 150 cm/s, Shift koşturmuyor; dışarıda yürüme 200 / koşu 500 / sprint 700 değişmedi (`A_loco_i1`). Basan ayağın yatay hızı (sabit yürüyüş, iki ayaktan küçüğü) medyan 11,3 → 9,2 cm/s: yavaşlatma kayma eklemedi.
+
+**11.2 Seçim tablosu bağlam hatası.** Kök neden: kopyalanan AnimBP'nin sınıfı (`ABP_Sph_GASP_C`) satıcı tablolarının bağlam sınıfıyla eşleşmiyor (doğrulama yalnız editörde çalışıyor; paketlenmiş oyunda bu günlük yok). Önceki "Python'dan yapılamaz" sonucu yanlıştı: `InstancedStruct.import_text`, `ContextObjectTypeClass(...)` biçimindeki metni kabul ediyor. Çözüm (`changes/n1_choosers.py`): `CHT_PoseSearchDatabases_Dense` ve `CHT_CMCCharacterAnimations`, `/Game/Sphirus/Player/GASP/Choosers/` altına kopyalandı; kopyaların bağlamı `ABP_Sph_GASP_C` yapıldı (CMC tablosunun ikinci, struct bağlamı korunarak); `ABP_Sph_GASP`'taki iki `Evaluate Chooser` düğümü kopyalara bağlandı ve bağlam pini `self`'e yeniden bağlandı. Satıcının kök tablosu `CHT_PoseSearchDatabases` yalnız `MMDatabaseLOD` değerine göre Dense/Sparse/ExtremeSparse seçiyor; Sphirus'ta bu değer 0, yani her zaman Dense. Bu yüzden ABP artık Dense kopyasını doğrudan değerlendiriyor (LOD geçişi bilerek bırakıldı). Satıcı dosyalarına dokunulmadı. Sonuç: aynı girdide `LogChooser: Error` 2359 → 0; klip ve veritabanı dizisi (`A_loco_i1` ile `A_loco_n1`) birebir aynı, hız profili ±5 cm/s.
+
+**11.3 Seyrek bekleme hareketleri (idle break).** GASP bunları yalnız deneysel durum makinesinde oynatıyor; o yol tüm hareketi değiştirdiği için açılmadı. Sahip `AC_Sph_Motion` (`changes/k1_idle.py`). Hız < 3 cm/s, girdi yok, yerde, başka montaj yok ve `IdleEnabled` koşullarında süre birikiyor. Süre `IdleNext`'i (rastgele 14–26 s) geçince 5 GASP `M_Neutral_Stand_Idle_Break` klibinden biri `DefaultSlot`'ta dinamik montaj olarak oynuyor (giriş 0,5 s, çıkış 0,6 s). Girdi gelirse yalnız kendi klibi hâlâ oynuyorsa 0,3 s'de kesiliyor; etkileşim montajı başlarsa onun yerine geçiyor. Ölçüm: 50 s beklemede iki kırılma (5,3 s ve 6,3 s), arada 24,8 s; kapsül kayması 0 cm. Kırılmanın 3,3. saniyesinde W'ye basınca 0,07 s içinde yürüme başladı ve montaj kesildi. Risk: montajsız etkileşim beklemelerinde (ör. istasyonda 15 s+ beklerken) de bir kırılma oynayabilir → REVIEW_REQUIRED.
+
+**11.4 Kayıt yükleme.** Önceki regresyon testi `LoadGame`'i `IgnorePlayerLocation=True` ile çağırmıştı; Story Framework (`SFSaveManager_AC.LoadPlayerData`) bu durumda konumu bilerek uygulamıyor. Bu yüzden "konum geri yüklenmiyor" bir test hatasıydı. `False` ile: kayıt (1225, −696, yön 180°) → 7 m uzağa ışınla → yükle → (1225, −696, 180°) birebir; ardından yürüyüş 200 cm/s (`data/reg_save_pos.txt`). Kullanıcı kaydı test sonunda bayt bayt aynı (cmp).
+
+**11.5 Derleme.** `BP_HybridA_Player`, ona başvuran 9 Blueprint, `ABP_Sph_GASP`, `ABP_Sph_Body_GASP`, `AC_Sph_Motion`: hatasız, güncel. Editör temiz yeniden açıldı.
+
+Hâlâ açık: kamera süpürmesinde kök ofseti 20–27 cm; Relaxed set bağlanmadı; traversal/çarpışma kanalları; kamera yapraklardan geçiyor; cook/paket, 60 FPS, eğim/merdiven NOT_TESTED; görsel/his kabulü kullanıcıda.
