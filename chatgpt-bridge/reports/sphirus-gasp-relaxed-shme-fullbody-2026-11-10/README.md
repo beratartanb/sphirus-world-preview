@@ -9,10 +9,10 @@ Başlangıç: `sphirus-gasp-shme-coremotion-final-2026-11-10` raporu (GASP Norma
 | GASP Relaxed ailesi gerçekten çalışıyor (seçilen klipler `M_Relaxed_*`, Sphirus chooser kopyası, bağlam `ABP_Sph_GASP_C`) ve aktif oyuncuda | **TECH_PASS**; görünüm VISUAL_REVIEW_REQUIRED | §1, §2 |
 | Hız–kadans sözleşmesi: yürüme 165 / koşu 375 / sprint 585 cm/s = Relaxed kliplerin kendi kök hızları | **TECH_PASS** | §3 |
 | Duruş artık klibin fren süresinde: sprint 0,33 → 0,83 s; yürüme 0,13 → 0,47 s | **TECH_PASS** | §4 |
-| "Omuzlar düşük": kök neden retarget (köprücük her hızda ~4,3° aşağı); retarget pozunda düzeltildi, görünür = sürücü ±1,4° | **TECH_PASS**; görünüm VISUAL_REVIEW_REQUIRED | §5 |
+| "Omuzlar düşük": kök neden retarget (köprücük her hızda ~4,3° aşağı); retarget pozunda düzeltildi, görünür = sürücü ±1,3° | **TECH_PASS**; görünüm VISUAL_REVIEW_REQUIRED | §5 |
 | SHME beden katmanı: fren sonrası sönümlü yerleşme, dönüşte göğüs ön hazırlığı, efor duruşu | **PARTIAL** (çalışıyor, genlik küçük ve görsel kabul bekliyor) | §6 |
 | Efor açık/kapalı (aynı girdi) | **TECH_PASS** (hız/fren/toparlanma farkı); görünür beden farkı küçük → VISUAL_REVIEW_REQUIRED | §7 |
-| Klavye 45/90/135/180 | **TECH_PASS** yürüme 45/135, sprint 45/180; **PARTIAL** sprint 135 (1,5 s içinde 4–5 klip değişimi) | §8 |
+| Klavye 45/135/180 (90° yalnız fare testinde: `Sprint_Turn_090`) | **TECH_PASS** yürüme 45/135, sprint 45/180; **PARTIAL** sprint 135 (1,5 s içinde 4–5 klip değişimi) | §8 |
 | Fareyle hızlı dönüş: Relaxed tablosu yerdeyken zıplama klibi seçebiliyordu | Gerçek olay: yürürken küçük basamaktan 0,1 s düşüş → "boşluğa basma + hafif iniş" klibi (0,9 s); Normal set aynı yerde iniş seçmiyordu → VISUAL_REVIEW_REQUIRED. Yerdeyken zıplama-başlangıç veritabanları ayrıca filtrelendi (gerçek zıplama çalışıyor) | §8 |
 | Core Motion (C) | Ölçüldü, **eklenmedi** (ayak kayması 5–20 kat) | §2.3 |
 | Ev içi 150 cm/s, Shift koşmuyor | **TECH_PASS** | §9 |
@@ -82,7 +82,7 @@ Omurga: göğüs–pelvis karşı dönüşü (twist p95−p5) yürüyüşte 33°
 - Fren sonrası yerleşme (V2.53 karşılığı): `SetX` sönümlü yay (ω 9, ζ 0,45), giriş = boyuna yavaşlama; göğüs frenin sonunda öne taşınıp küçük aşımla yerleşiyor (spine_03 %40, spine_05 %60). Eksen PIE'de ölçülerek çevrildi (ilk denemede göğüs geriye gidiyordu: −1,5°).
 - Dönüşte göğüs ön hazırlığı: giriş–hız açısının %12'si, ±9° ile sınırlı, hız > 80 cm/s.
 - Efor duruşu: 250 cm/s üstünde EUse × 2° öne eğilme; nefes katmanı (önceki tur) korunuyor.
-Genlikler bilerek küçük (aşırı sallanma/kamera sarsıntısı yok). Ölçülen gövde eğimi farkı frende +1,1–1,3°. **PARTIAL**: mekanik çalışıyor; bunun gözle okunup okunmadığı kullanıcı kararı.
+Genlikler bilerek küçük (aşırı sallanma/kamera sarsıntısı yok). Üretim sprint freninde (görünür − sürücü gövde eğimi, beklemedeki fark çıkarılmış): fren sırasında +1,7°'ye kadar öne, durduktan sonra −0,8° geri sekme, ~0,9 s'de oturma (`PH_phys_pr1`, 2,5–4,2 s). **PARTIAL**: mekanik çalışıyor; bunun gözle okunup okunmadığı kullanıcı kararı.
 Destek ayağı / ağırlık aktarımı: Relaxed başlangıç, duruş, 90/180 dönüş ve pivot klipleri sol/sağ ayak varyantlı; MM basan ayağa göre seçiyor (ör. `Walk_Turn_180_R_Lfoot`). Önceki SHME'deki proje-sahipli fren/itiş klip üretimi bu turda yeniden kurulmadı; Relaxed set bu açıları kendi klipleriyle kapsıyor.
 
 ## 7. Efor açık/kapalı (gerçek oyuncu, düz sahne, aynı girdi; `TE_on_pr1` / `TE_off_pr1`)
