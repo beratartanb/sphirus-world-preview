@@ -1,0 +1,25 @@
+== CL_strafe_gaspA.json 543 rows
+  seg  0 release         0.8s spd   0/  0 | shoulderDrop 6.6 clavSwing 0.2 twist 0.6 armSwing 1 headBob 0.2 | DRV drop 9.1 clav 0.3 twist 0.5 | headX 0.28/0.29/0.29
+      sel 0 sw (0.0/s): clip0.0 0.82
+  seg  1 A               2.5s spd 147/180 | shoulderDrop 6.3 clavSwing 5.1 twist 28.9 armSwing 121 headBob 10.7 | DRV drop 8.5 clav 7.3 twist 28.6 | headX 0.22/0.29/0.37
+      sel 25 sw (10.0/s): clip0.0 0.07 > clip2.01 0.03 > clip8.67 0.04 > clip14.47 0.03 > clip20.71 0.03 > clip26.59 0.04 > clip28.0 0.53 > clip27.77 0.03 > clip27.55 0.03 > clip27.34 0.03 > clip27.11 0.03 > clip26.89 0.03 > clip26.66 0.03 > clip26.43 0.03
+  seg  2 release         1.0s spd  63/180 | stop 0.63 s 63 cm | shoulderDrop 6.4 clavSwing 1.5 twist 21.9 armSwing 113 headBob 5.9 | DRV drop 8.7 clav 2.2 twist 21.9 | headX 0.29/0.32/0.35
+      sel 11 sw (11.0/s): clip22.0 0.17 > clip22.56 0.03 > clip23.12 0.03 > clip23.67 0.03 > clip24.26 0.04 > clip24.85 0.04 > clip25.32 0.03 > clip25.9 0.04 > clip26.43 0.03 > clip26.96 0.03 > clip27.0 0.50 > clip26.12 0.03
+  seg  3 D               2.5s spd 147/180 | shoulderDrop 6.3 clavSwing 5.3 twist 29.4 armSwing 126 headBob 6.7 | DRV drop 8.6 clav 7.5 twist 29.0 | headX 0.28/0.31/0.34
+      sel 33 sw (13.2/s): clip23.61 0.03 > clip19.95 0.03 > clip25.34 0.03 > clip27.67 0.03 > clip28.01 0.03 > clip28.42 0.03 > clip28.78 0.04 > clip29.03 0.03 > clip29.18 0.03 > clip29.29 0.03 > clip29.33 0.04 > clip29.23 0.03 > clip29.12 0.03 > clip29.01 0.03
+  seg  4 release         1.0s spd  62/180 | stop 0.60 s 63 cm | shoulderDrop 6.4 clavSwing 1.0 twist 18.7 armSwing 109 headBob 5.8 | DRV drop 8.8 clav 1.5 twist 18.8 | headX 0.24/0.27/0.29
+      sel 11 sw (10.9/s): clip22.0 0.17 > clip22.56 0.03 > clip23.11 0.03 > clip23.67 0.03 > clip24.24 0.03 > clip24.79 0.03 > clip25.34 0.03 > clip25.9 0.03 > clip26.45 0.03 > clip27.0 0.50 > clip27.63 0.04 > clip26.78 0.03
+  seg  5 W A             2.0s spd 139/180 | shoulderDrop 6.4 clavSwing 5.3 twist 30.0 armSwing 126 headBob 6.8 | DRV drop 8.7 clav 7.9 twist 29.9 | headX 0.26/0.31/0.35
+      sel 29 sw (14.5/s): clip24.62 0.03 > clip20.56 0.03 > clip26.44 0.03 > clip33.76 0.03 > clip34.74 0.03 > clip33.91 0.03 > clip32.91 0.03 > clip31.75 0.03 > clip30.79 0.03 > clip29.88 0.03 > clip29.0 0.43 > clip28.89 0.03 > clip28.78 0.03 > clip28.67 0.03
+  seg  6 release         0.8s spd  78/180 | stop 0.60 s 61 cm | shoulderDrop 6.4 clavSwing 1.5 twist 22.1 armSwing 105 headBob 5.3 | DRV drop 8.7 clav 2.3 twist 21.9 | headX 0.31/0.34/0.36
+      sel 9 sw (11.3/s): clip22.0 0.16 > clip22.56 0.03 > clip23.13 0.03 > clip23.7 0.03 > clip24.25 0.03 > clip24.81 0.03 > clip25.39 0.03 > clip25.93 0.03 > clip26.49 0.03 > clip27.0 0.37
+  seg  7 W D             2.0s spd 139/180 | shoulderDrop 6.3 clavSwing 3.8 twist 19.5 armSwing 87 headBob 11.0 | DRV drop 8.6 clav 5.6 twist 18.7 | headX 0.30/0.33/0.37
+      sel 37 sw (18.5/s): clip27.0 0.06 > clip27.57 0.03 > clip28.12 0.03 > clip28.76 0.04 > clip29.27 0.03 > clip29.82 0.03 > clip30.4 0.03 > clip30.94 0.03 > clip31.51 0.03 > clip32.0 0.03 > clip32.11 0.03 > clip32.23 0.04 > clip32.33 0.03 > clip32.43 0.03
+  seg  8 release         0.8s spd  80/180 | stop 0.63 s 64 cm | shoulderDrop 6.3 clavSwing 2.0 twist 28.8 armSwing 129 headBob 5.2 | DRV drop 8.5 clav 2.9 twist 28.2 | headX 0.30/0.32/0.33
+      sel 13 sw (16.3/s): clip22.0 0.16 > clip23.44 0.03 > clip24.88 0.03 > clip26.33 0.03 > clip27.78 0.03 > clip29.27 0.03 > clip30.8 0.04 > clip32.2 0.03 > clip33.63 0.03 > clip35.0 0.23 > clip34.54 0.03 > clip34.1 0.03 > clip33.65 0.03 > clip33.2 0.03
+  seg  9 W               1.5s spd 125/180 | shoulderDrop 6.3 clavSwing 2.5 twist 22.0 armSwing 90 headBob 10.3 | DRV drop 8.5 clav 3.7 twist 21.6 | headX 0.28/0.33/0.36
+      sel 23 sw (15.3/s): clip32.75 0.03 > clip32.3 0.03 > clip31.42 0.03 > clip30.64 0.03 > clip29.99 0.03 > clip29.25 0.03 > clip28.58 0.03 > clip27.99 0.03 > clip27.48 0.03 > clip26.98 0.04 > clip26.64 0.03 > clip26.46 0.03 > clip26.24 0.03 > clip26.0 0.73
+  seg 10 S               2.0s spd 128/180 | shoulderDrop 6.4 clavSwing 4.5 twist 18.5 armSwing 79 headBob 10.5 | DRV drop 8.6 clav 6.7 twist 17.9 | headX 0.20/0.26/0.35
+      sel 30 sw (15.0/s): clip22.0 0.17 > clip24.76 0.04 > clip27.31 0.03 > clip29.87 0.03 > clip32.77 0.04 > clip34.76 0.03 > clip35.94 0.03 > clip36.88 0.03 > clip37.28 0.03 > clip37.09 0.03 > clip35.8 0.03 > clip34.46 0.03 > clip33.17 0.03 > clip33.0 0.50
+  seg 11 release         1.2s spd  52/180 | stop 0.63 s 63 cm | shoulderDrop 6.4 clavSwing 1.4 twist 19.8 armSwing 105 headBob 7.1 | DRV drop 8.8 clav 1.8 twist 19.6 | headX 0.23/0.28/0.34
+      sel 19 sw (15.8/s): clip22.46 0.03 > clip22.02 0.03 > clip22.0 0.10 > clip22.55 0.03 > clip23.09 0.03 > clip23.65 0.03 > clip24.22 0.03 > clip24.81 0.04 > clip25.3 0.03 > clip25.84 0.03 > clip26.41 0.03 > clip26.97 0.03 > clip27.0 0.50 > clip26.0 0.03
