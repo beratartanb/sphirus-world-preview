@@ -1,0 +1,109 @@
+== CM_kturn_C1
+  seg  0 release       0.6s in   0 min   0 out   0
+        CM_af_Stand_Idle_02_WeightShift
+  seg  1 W             2.0s in   0 min   0 out 160
+        CM_af_Stand_Idle_02_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Walk_Fwd
+  seg  2 W D           1.2s in 160 min 160 out 160 | turn   45° reach 0.17s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  3 D             1.5s in 160 min 160 out 160 | turn   45° reach 0.17s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  4 S A           1.5s in 160 min  63 out 160 | turn  135° reach 0.30s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  5 W             1.5s in 160 min  62 out 160 | turn  135° reach 0.30s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  6 release       1.2s in 160 min   0 out   0 | stop 0.67s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop
+  seg  7 W LeftShift   2.2s in   0 min   0 out 500
+        CM_af_Loco_Walk_Fwd_Stop > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Jog_Fwd_Start > CM_af_Loco_Run_Start_TurnR135_Rfoot > CM_af_Loco_Run_Fwd
+  seg  8 W D LeftShift  1.2s in 500 min 495 out 500 | turn   45° reach 0.27s
+        CM_af_Loco_Run_Fwd
+  seg  9 D LeftShift   1.5s in 500 min 494 out 500 | turn   46° reach 0.27s
+        CM_af_Loco_Run_Fwd
+  seg 10 S A LeftShift  1.5s in 500 min 107 out 397 | turn  135° reach 0.70s
+        CM_af_Loco_Run_Fwd > CM_af_Loco_Run_Start_TurnR135_Rfoot > CM_af_Loco_Jog_FwdRight > CM_af_Loco_Run_Start_TurnR090_Rfoot
+  seg 11 W LeftShift   1.5s in 409 min 121 out 487 | turn  135° reach 0.43s
+        CM_af_Loco_Run_Start_TurnR090_Rfoot > CM_af_Loco_Run_Start_TurnR135_Rfoot > CM_af_Loco_Jog_FwdRight > CM_af_Loco_Run_Start_TurnR090_Rfoot
+  seg 12 S LeftShift   1.5s in 497 min   4 out 320 | turn  180° reach 0.63s
+        CM_af_Loco_Run_Start_TurnR090_Rfoot > CM_af_Loco_Run_Start_TurnL180_Lfoot > CM_af_Loco_Jog_FwdRight > CM_af_Loco_Jog_FwdLeft > CM_af_Loco_Jog_Start_TurnL135_Lfoot > CM_af_Loco_Run_Fwd_Start
+  seg 13 release       1.8s in 332 min   0 out   0 | stop 1.10s
+        CM_af_Loco_Run_Fwd_Start > CM_af_Loco_Jog_Fwd_Stop > CM_af_Stand_Idle_05_WeightShift
+== CM_kturnS_C1
+  seg  0 release       0.6s in   0 min   0 out   0
+        CM_af_Stand_Idle_05_WeightShift
+  seg  1 W             2.0s in   0 min   0 out 160
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Walk_Fwd
+  seg  2 W D           1.2s in 160 min 160 out 160 | turn   45° reach 0.17s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  3 D             1.5s in 160 min 160 out 160 | turn   45° reach 0.17s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  4 S A           1.5s in 160 min  63 out 160 | turn  135° reach 0.30s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  5 W             1.5s in 160 min  62 out 160 | turn  135° reach 0.30s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Fwd
+  seg  6 release       1.2s in 160 min   0 out   0 | stop 0.67s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop
+  seg  7 W LeftShift   2.2s in   0 min   0 out 500
+        CM_af_Loco_Walk_Fwd_Stop > CM_af_Loco_Walk_Start_TurnR180_Rfoot > CM_af_Loco_Jog_Fwd_Start > CM_af_Loco_Run_Start_TurnR135_Rfoot > CM_af_Loco_Run_Fwd
+  seg  8 W D LeftShift  1.2s in 500 min 495 out 500 | turn   45° reach 0.27s
+        CM_af_Loco_Run_Fwd
+  seg  9 D LeftShift   1.5s in 500 min 494 out 500 | turn   46° reach 0.27s
+        CM_af_Loco_Run_Fwd
+  seg 10 S A LeftShift  1.5s in 500 min 107 out 398 | turn  135° reach 0.70s
+        CM_af_Loco_Run_Fwd > CM_af_Loco_Run_Start_TurnR135_Rfoot > CM_af_Loco_Jog_FwdRight > CM_af_Loco_Run_Start_TurnR090_Rfoot
+  seg 11 W LeftShift   1.5s in 410 min 120 out 488 | turn  135° reach 0.43s
+        CM_af_Loco_Run_Start_TurnR090_Rfoot > CM_af_Loco_Run_Start_TurnR135_Rfoot > CM_af_Loco_Jog_FwdRight > CM_af_Loco_Run_Start_TurnR090_Rfoot
+  seg 12 S LeftShift   1.5s in 497 min   1 out 323 | turn  180° reach 0.63s
+        CM_af_Loco_Run_Start_TurnR090_Rfoot > CM_af_Loco_Run_Start_TurnL180_Lfoot > CM_af_Loco_Jog_FwdRight > CM_af_Loco_Jog_FwdLeft > CM_af_Loco_Jog_Start_TurnL135_Lfoot > CM_af_Loco_Run_Fwd_Start
+  seg 13 release       1.8s in 335 min   0 out   0 | stop 1.10s
+        CM_af_Loco_Run_Fwd_Start > CM_af_Loco_Jog_Fwd_Stop > CM_af_Stand_Idle_05_WeightShift
+== CM_phys_C1
+  seg  0 release       0.8s in   0 min   0 out   0
+        CM_af_Stand_Idle_05_WeightShift
+  seg  1 W LeftShift   1.7s in   0 min   0 out 500
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Jog_Fwd_Start > CM_af_Loco_Run_Start_TurnR180_Rfoot > CM_af_Loco_Run_Fwd
+  seg  2 release       1.8s in 500 min   0 out   0 | stop 1.13s
+        CM_af_Loco_Run_Fwd > CM_af_Loco_Run_Fwd_Stop
+  seg  3 S             2.0s in   0 min   0 out 160
+        CM_af_Loco_Run_Fwd_Stop > CM_af_Loco_Walk_Start_TurnL180_Lfoot > CM_af_Loco_Walk_Fwd
+  seg  4 release       1.5s in 160 min   0 out   0 | stop 0.67s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop
+  seg  5 W             1.5s in   0 min   0 out 160
+        CM_af_Loco_Walk_Fwd_Stop > CM_af_Loco_Walk_Start_TurnL180_Lfoot > CM_af_Loco_Walk_Fwd
+  seg  6 S             1.5s in 160 min   3 out 159 | turn  180° reach 0.30s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Start_TurnL180_Lfoot > CM_af_Loco_Walk_Fwd
+  seg  7 release       1.5s in 159 min   0 out   0 | stop 0.67s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop
+== CM_game_C1
+  seg  0 release       1.0s in   0 min   0 out   0
+        CM_af_Stand_Idle_05_WeightShift
+  seg  1 W             4.0s in   0 min   0 out 160
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Walk_Fwd
+  seg  2 release       2.0s in 160 min   0 out   0 | stop 0.63s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop > CM_af_Stand_Idle_05_WeightShift
+  seg  3 W LeftShift   3.0s in   0 min   0 out 500
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Jog_Fwd_Start > CM_af_Loco_Run_Start_TurnR180_Rfoot > CM_af_Loco_Run_Fwd
+  seg  4 release       2.5s in 500 min   0 out   0 | stop 1.17s
+        CM_af_Loco_Run_Fwd > CM_af_Loco_Run_Fwd_Stop > CM_af_Stand_Idle_05_WeightShift
+  seg  5 W             1.5s in   0 min   0 out 160
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Walk_Fwd
+  seg  6 S             2.0s in 160 min   5 out 160 | turn  180° reach 0.33s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Start_TurnR180_Rfoot > CM_af_Loco_Walk_Fwd
+  seg  7 release       2.0s in 160 min   0 out   0 | stop 0.67s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop > CM_af_Stand_Idle_01
+== CM_fps60_C1
+  seg  0 release       1.0s in   0 min   0 out   0
+        CM_af_Stand_Idle_05_WeightShift
+  seg  1 W             4.0s in   0 min   0 out 160
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Walk_Fwd
+  seg  2 release       2.0s in 160 min   0 out   0 | stop 0.60s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop > CM_af_Stand_Idle_05_WeightShift
+  seg  3 W LeftShift   3.0s in   0 min   0 out 500
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Jog_Fwd_Start > CM_af_Loco_Run_Start_TurnR180_Rfoot > CM_af_Loco_Run_Fwd
+  seg  4 release       2.5s in 500 min   0 out   0 | stop 1.15s
+        CM_af_Loco_Run_Fwd > CM_af_Loco_Run_Fwd_Stop > CM_af_Loco_Jog_Fwd_Stop > CM_af_Stand_Idle_05_WeightShift
+  seg  5 W             1.5s in   0 min   0 out 160
+        CM_af_Stand_Idle_05_WeightShift > CM_af_Loco_Walk_Fwd_Start > CM_af_Loco_Walk_Fwd
+  seg  6 S             2.0s in 160 min   0 out 160 | turn  180° reach 0.32s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_FwdRight > CM_af_Loco_Walk_Start_TurnR180_Rfoot > CM_af_Loco_Walk_Fwd
+  seg  7 release       2.0s in 160 min   0 out   0 | stop 0.65s
+        CM_af_Loco_Walk_Fwd > CM_af_Loco_Walk_Fwd_Stop > CM_af_Stand_Idle_01
