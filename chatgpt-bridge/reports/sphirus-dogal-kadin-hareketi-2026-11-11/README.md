@@ -1,6 +1,6 @@
 # Sphirus: doğal kadın hareketi — karşılaştır, seç, düzelt, aktif oyuncuya uygula (2026-11-10/11)
 
-Uygulama tarihi: 2026-11-10 22:40 – 2026-11-11 09:05 (UE 5.8.4, `sphirus.uproject`, harita `/Game/GraceRanger/Maps/L_GR_SphirusHouse`).
+Uygulama tarihi: 2026-11-10 22:40 – 2026-11-11 09:05; gece devamı 09:05 – 10:50 (§14) (UE 5.8.4, `sphirus.uproject`, harita `/Game/GraceRanger/Maps/L_GR_SphirusHouse`).
 Başlangıç: [GASP Relaxed + SHME raporu](../sphirus-gasp-relaxed-shme-fullbody-2026-11-10/README.md) (A = o raporun üretim durumu).
 
 Durum etiketleri: **IMPLEMENTED** (projede, kayıtlı) · **TECH_TESTED** (oyunda ölçüldü) · **VISUALLY_INSPECTED** (benim kare/video incelemem) · **USER_ACCEPTED** (yok — kullanıcı henüz oynamadı) · **PARTIAL** · **NOT_TESTED**.
@@ -21,7 +21,8 @@ Durum etiketleri: **IMPLEMENTED** (projede, kayıtlı) · **TECH_TESTED** (oyund
 | Gerçek akışlar: üst kat kapısı E, mutfaktan çıkış–basamak–koşu–dönüş–eve dönüş, odun toplama + kesme (E + sol tık), ev içi Shift | TECH_TESTED |
 | Oyun içi kayıt/yükleme, tek piyon, temiz yeniden açılış, derleme | TECH_TESTED |
 | Sprint 135°/180° dönüşlerinde klip değişimi | PARTIAL |
-| Gerçek GPU/CPU maliyeti, paket, menüden kayıt, eğim/merdiven, yatak/çay/maske akışları | NOT_TESTED |
+| Yatağa giriş/kalkış, fare dönüşleri, gerçek zıplama (gece devamı, §14) | TECH_TESTED (fare dönüşünde ayak kayması PARTIAL) |
+| Gerçek GPU/CPU maliyeti, paket, menüden kayıt, eğim/merdiven, çay/maske akışları | NOT_TESTED |
 
 Kullanıcı kaydı (`SFSaveSlot.sav`, SHA1 `8622025b…`) başta ve sonda aynı. Geri alma noktası: `C:\Users\berat\SphirusCheckpoints\WomanMotion_Pre_20261110_2255`.
 
@@ -209,10 +210,10 @@ NOT_TESTED: yatağa giriş/kalkış, çay/kapak tutuşu, maske taşıma (bu turd
 
 1. **Kullanıcı oynayarak kabul etmedi.** Koşu/fren/duruş görsel kararı, yürümede ~%14 düşük kadansın ağır çekim izlenimi verip vermediği, kol salınımının genişliği ve omuz konumu senin kararın.
 2. **Sprint 135°/180°:** 1,5 s'de 3–5 klip değişimi (PARTIAL). Core Motion'da hareket hâlinde kadın sprint dönüşü yok; duruş + dönüşlü kalkış klipleri kullanılıyor. İki iyileştirme yolu: proje-sahipli bir "fren–bas–dön–it" klibi (SHME V2.25/V2.54 üretecinin bu ailede yeniden kurulması) ve aşağıdaki seçim tablosu hatası.
-3. **Önceden var olan seçim tablosu hatası:** `CHT_Sph_PoseSearchDatabases_Relaxed` bir iç sütunda `MovementDirection_Recent` değişkenini arıyor; `ABP_Sph_GASP`'ta bu değişken yok (10 Kasım'dan beri, A ve C'yi aynı şekilde etkiliyor). Yön geçmişine bağlı veritabanı seçimi bu yüzden eksik çalışıyor olabilir.
+3. ~~Önceden var olan seçim tablosu hatası (`MovementDirection_Recent`)~~ → **gece devamında düzeltildi** (§14).
 4. **Stride Warping yok:** yürümede adım uzunluğu kaynakta kaldı, yalnız kadans düştü.
-5. Fare ile hızlı dönüş, küçük basamaktan düşüş/iniş, gerçek merdiven ve eğim bu turda yeniden ölçülmedi.
-6. Yatak, çay/kapak, maske taşıma tam akışları; menüden kayıt/yükleme; cook/paket; gerçek GPU/CPU maliyeti: NOT_TESTED.
+5. Fareyle hızlı yürüme dönüşünde basan ayak kayıyor (Core Motion'da Relaxed'daki "spin" klipleri yok; §14). Gerçek merdiven ve eğim ölçülmedi.
+6. Çay/kapak (bitki + ateş zinciri gerekiyor), maske taşıma tam akışları; menüden kayıt/yükleme; cook/paket; gerçek GPU/CPU maliyeti: NOT_TESTED. Yatak akışı test edildi (§14).
 7. Ev işi montajları Relaxed/UEFN bedeniyle yazılmış; Core Motion bekleme duruşuyla montaj giriş/çıkışında tavır farkı görsel olarak denetlenmedi.
 
 ## 13. Videolar ve veri
@@ -231,3 +232,18 @@ Hepsi PIE, sabit oyun adımı (30 kare/s; `C_final_fps60` 60), gerçek hızda ko
 | `C_house_door_E`, `C_house_exit_steps_return`, `C_wood_pick_chop`, `C_house_hall_shift150` | gerçek ev akışları |
 
 Veri: `data/summary_A_B_C.md` (+ `.json`: aday, klip değişimi, temas başına kayma, görünür beden duruşu), `data/turns_stops_C1.txt`, `data/effort_ab_C1.md`, `data/gameplay_flows_C.txt`, `data/save_load_C.txt`, `data/cm_inventory.json`, `data/posture_clips.json`, `data/cm_map2.json` (Relaxed → CM eşlemesi), `data/w9_windows.json` (arama pencereleri), `data/w11_curves.json` (temas oranları). Değişiklik listesi: `changes/changes.md`. Karşılaştırma tabloları: `evidence/` (ayrıca `sheet_door_exit_C.png`: üst sıra kapı, alt sıra mutfak çıkışı).
+
+## 14. Gece devamı (2026-11-11 09:05 – 10:50, kullanıcı uyurken)
+
+Kontrol noktası: `C:\Users\berat\SphirusCheckpoints\WomanMotion_Night_20261111_0906` (+ `_sha1.txt`). Aynı kurallar: yazma kapısı, tek kayıt dizisi, kullanıcı kaydı korumalı (sonda `8622025b…`).
+
+| İş | Ne yapıldı | Sonuç | Durum |
+|---|---|---|---|
+| Seçim tablosu girdisi `MovementDirection_Recent` | `ABP_Sph_GASP`'a gerçek `E_MovementDirection` tipinde değişken + vendor Mover AnimBP'deki `UpdateStateValues` kuralının aynısı (yön ≥ 0,1 s değişmeden kalınca "recent" olur), `Update_MotionMatching` başında, seçim tablosu okunmadan önce | Açılış günlüğündeki `LogChooser ... MovementDirection_Recent not Found` hatası 2 → 0; yürüme/fren/oyun kamerası kayıtlarında gerileme yok (`CM_walk30_D1`: 54 temas, kayma 2,4 / 4,6 cm; duruşlar 0,63 / 1,13 / 0,67 s aynı) | IMPLEMENTED, TECH_TESTED |
+| Sprint 135°/180° klip karmaşası | (1) yukarıdaki düzeltmeyle yeniden ölçüldü — değişmedi; (2) aday: dönüş/kalkış veritabanlarında devam önceliği −0,375 / −0,5 / −0,3 → −0,9 / −0,8 / −0,6 | (2) aynı 5 klip dizisi, fayda yok → **geri alındı** (eski değerler geri yazıldı). Kalan gerçek çözüm: bu aileye özel bir "koşarken fren–bas–dön–it" klibi | PARTIAL (açık) |
+| Fare dönüşleri (yürürken ve sprintte 360°/s) | `C_mouse_turns.mp4` | Çapraz döngülerle akıyor; görünür pelvis–kapsül p95 10,8 cm (A: 23,7). Hızlı yürüme dönüşünde basan ayak temas başına ~25 cm kayıyor (Relaxed'daki spin klipleri Core Motion'da yok) | PARTIAL |
+| Gerçek zıplama (yürürken, sprintte) | `C_jump.mp4` | Relaxed zıplama + hafif iniş klipleri, inişten sonra Core Motion döngüsüne dönüş; zıplama anında beden dili Relaxed (kadın karşılığı kurulu değil) | TECH_TESTED; görsel uyum VISUAL_REVIEW_REQUIRED |
+| Yatağa giriş / kalkış | İmleç yatakta → E → `AM_Sph_Bed` ile uzanma → uyku pozunda bekleme → **sol tık** → kalkış → Core Motion beklemesi → W ile yürüme (`C_bed_in_out.mp4`, `evidence/sheet_bed_C.png`) | Çalışıyor. Not: ekrandaki istem "E: Uzan / Kalk" diyor, kalkış istasyonun "kullan" girdisiyle (sol tık) oluyor — arayüz metni/girdi tutarsızlığı (hareket sistemi dışında, değiştirilmedi). Yatarken omuz kamerası yüze çok yakın | TECH_TESTED |
+| Temiz açılış | Editör kapatılıp açıldı; 5 BP `UP_TO_DATE`; `SphCM=True`, 160/290/500, fren 260/520; açılışta yalnız motorun kendi 17 `LogAutomationTest` satırı | — | TECH_TESTED |
+
+Ek video: `C_keyturns_after_recentfix.mp4` (düzeltme sonrası klavye dönüşleri).
