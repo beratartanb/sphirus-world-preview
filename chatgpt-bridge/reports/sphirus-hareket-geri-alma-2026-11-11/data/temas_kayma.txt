@@ -1,0 +1,396 @@
+== CM_kturnS_R1
+l s0  t  0.00 dur 1.07 slip   4.3  v   0->165  Stand_Idle_Loop > Walk_Start_F_Rfoot
+l s1  t  1.50 dur 0.57 slip  10.4  v 165->165  Walk_Start_F_Rfoot
+l s1  t  2.57 dur 0.47 slip   5.7  v 165->164  Walk_Start_F_Rfoot > Walk_Loop_F
+l s2  t  3.57 dur 0.50 slip   3.2  v 165->164  Walk_Loop_F
+l s3  t  4.57 dur 0.50 slip   3.1  v 165->165  Walk_Loop_F
+l s4  t  5.43 dur 0.20 slip  32.6  v  81->157  Walk_Turn_180_R_Lfoot
+l s4  t  5.97 dur 0.53 slip  12.1  v 162->164  Walk_Turn_180_R_Lfoot
+l s5  t  6.90 dur 0.40 slip  92.8  v  81->160  Walk_Turn_180_R_Rfoot
+l s5  t  7.53 dur 0.30 slip  32.5  v 162->164  Walk_Turn_180_R_Rfoot
+l s6  t  8.37 dur 1.87 slip 109.3  v 152->375  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+l s7  t 10.63 dur 0.17 slip   9.2  v 474->553  Transition_Run_to_Sprint_Lfoot
+l s7  t 11.17 dur 0.13 slip   4.3  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s8  t 11.77 dur 0.10 slip   3.4  v 579->582  Transition_Run_to_Sprint_Lfoot
+l s8  t 12.30 dur 0.13 slip   1.9  v 585->584  Transition_Run_to_Sprint_Lfoot
+l s9  t 14.00 dur 0.13 slip   3.7  v 584->585  Sprint_Loop_F
+l s10 t 14.93 dur 0.23 slip  50.9  v 168->281  Run_Turn_R_180_Lfoot > Transition_Walk_to_Sprint_Lfoot
+l s11 t 16.40 dur 0.23 slip  52.4  v 166->251  Run_Turn_R_180_Lfoot
+l s12 t 18.17 dur 0.30 slip  37.8  v 187->367  Run_Turn_L_180_Rfoot > Transition_Walk_to_Sprint_Lfoot
+l s13 t 19.40 dur 1.27 slip  35.3  v 268->  0  Sprint_Stop_F_Lfoot
+r s0  t  0.00 dur 0.77 slip  11.7  v   0->108  Stand_Idle_Loop > Walk_Start_F_Rfoot
+r s1  t  1.00 dur 0.53 slip   3.7  v 165->165  Walk_Start_F_Rfoot
+r s1  t  2.03 dur 0.53 slip   3.7  v 165->165  Walk_Start_F_Rfoot
+r s2  t  3.03 dur 0.53 slip   3.7  v 164->165  Walk_Loop_F
+r s3  t  4.10 dur 0.47 slip   2.8  v 164->165  Walk_Loop_F
+r s3  t  5.07 dur 0.93 slip  57.1  v 165->162  Walk_Loop_F > Walk_Turn_180_R_Lfoot
+r s4  t  6.40 dur 0.53 slip  20.4  v 164-> 80  Walk_Turn_180_R_Lfoot > Walk_Turn_180_R_Rfoot
+r s5  t  7.30 dur 0.10 slip  10.6  v 160->161  Walk_Turn_180_R_Rfoot
+r s5  t  7.50 dur 0.20 slip  56.1  v 162->163  Walk_Turn_180_R_Rfoot
+r s5  t  7.93 dur 0.47 slip   2.1  v 164->140  Walk_Turn_180_R_Rfoot > Walk_Stop_F_Lfoot
+r s6  t  8.97 dur 0.87 slip  21.9  v   0->221  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+r s7  t 10.30 dur 0.20 slip   7.3  v 375->398  Run_Start_F_Lfoot > Transition_Run_to_Sprint_Lfoot
+r s7  t 10.93 dur 0.13 slip   4.6  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s7  t 11.47 dur 0.13 slip   3.1  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s8  t 12.03 dur 0.13 slip   7.6  v 584->584  Transition_Run_to_Sprint_Lfoot
+r s8  t 12.60 dur 0.13 slip   6.5  v 584->585  Transition_Run_to_Sprint_Lfoot
+r s9  t 13.20 dur 0.13 slip   5.3  v 585->585  Sprint_Loop_F
+r s9  t 13.77 dur 0.10 slip   1.6  v 584->584  Sprint_Loop_F
+r s10 t 14.73 dur 0.23 slip  63.3  v 272->176  Sprint_Turn_180_R_Rfoot > Run_Turn_R_180_Lfoot
+r s10 t 15.23 dur 0.13 slip  56.0  v 321->399  Sprint_Reface_Start_090_R
+r s10 t 15.53 dur 0.17 slip   7.1  v 483->551  Sprint_Reface_Start_090_R
+r s11 t 16.23 dur 0.23 slip  70.6  v 268->168  Sprint_Turn_180_R_Rfoot > Run_Turn_R_180_Lfoot
+r s11 t 16.73 dur 0.13 slip  46.9  v 312->388  Sprint_Reface_Start_090_R
+r s11 t 17.03 dur 0.17 slip   6.8  v 473->540  Sprint_Reface_Start_090_R
+r s12 t 17.60 dur 0.53 slip  72.0  v 310->167  Sprint_Turn_180_R_Rfoot > Run_Turn_L_180_Rfoot
+r s13 t 19.23 dur 1.43 slip  57.9  v 378->  0  Sprint_Stop_F_Lfoot
+== CM_kturnS_G0
+l s0  t  0.00 dur 1.07 slip   4.0  v   0->165  Stand_Idle_Loop > Walk_Start_F_Rfoot
+l s1  t  1.53 dur 0.53 slip   7.0  v 165->165  Walk_Start_F_Rfoot
+l s1  t  2.57 dur 0.47 slip   5.4  v 165->164  Walk_Start_F_Rfoot > Walk_Loop_F
+l s2  t  3.57 dur 0.50 slip   3.7  v 165->165  Walk_Loop_F
+l s3  t  4.57 dur 0.50 slip   3.4  v 165->165  Walk_Loop_F
+l s4  t  5.43 dur 0.20 slip  32.9  v  81->157  Walk_Turn_180_R_Lfoot
+l s4  t  5.97 dur 0.53 slip  12.8  v 162->164  Walk_Turn_180_R_Lfoot
+l s5  t  6.90 dur 0.40 slip  93.4  v  81->160  Walk_Turn_180_R_Rfoot
+l s5  t  7.50 dur 0.33 slip  31.8  v 162->164  Walk_Turn_180_R_Rfoot
+l s6  t  8.37 dur 1.87 slip 108.8  v 152->375  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+l s7  t 10.63 dur 0.17 slip  17.9  v 458->541  Transition_Run_to_Sprint_Lfoot
+l s7  t 11.20 dur 0.13 slip   4.2  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s8  t 12.33 dur 0.13 slip   1.9  v 584->584  Transition_Run_to_Sprint_Lfoot
+l s9  t 14.03 dur 0.13 slip   4.4  v 585->585  Sprint_Loop_F
+l s10 t 15.13 dur 0.30 slip  47.0  v 284->450  Sprint_Turn_180_R_Rfoot
+l s10 t 15.77 dur 0.10 slip   1.1  v 567->571  Sprint_Turn_180_R_Rfoot
+l s11 t 16.23 dur 0.13 slip  24.4  v 266->176  Sprint_Turn_180_R_Lfoot
+l s11 t 16.43 dur 0.40 slip  97.7  v 188->406  Sprint_Turn_180_R_Lfoot
+l s11 t 17.13 dur 0.13 slip   4.4  v 542->568  Sprint_Turn_180_R_Lfoot
+l s12 t 17.63 dur 0.43 slip  37.0  v 285->132  Sprint_Turn_180_L_Lfoot
+l s13 t 19.07 dur 0.37 slip  66.8  v 485->244  Sprint_Stop_F_Rfoot
+l s13 t 19.77 dur 0.90 slip   2.1  v  24->  0  Sprint_Stop_F_Rfoot
+r s0  t  0.00 dur 0.77 slip  11.3  v   0->106  Stand_Idle_Loop > Walk_Start_F_Rfoot
+r s1  t  1.00 dur 0.53 slip   3.9  v 165->165  Walk_Start_F_Rfoot
+r s1  t  2.03 dur 0.53 slip   3.8  v 165->165  Walk_Start_F_Rfoot
+r s2  t  3.03 dur 0.53 slip   4.3  v 164->165  Walk_Loop_F
+r s3  t  4.10 dur 0.50 slip   3.1  v 164->165  Walk_Loop_F
+r s3  t  5.07 dur 0.93 slip  57.2  v 165->162  Walk_Loop_F > Walk_Turn_180_R_Lfoot
+r s4  t  6.37 dur 0.57 slip  34.9  v 164-> 80  Walk_Turn_180_R_Lfoot > Walk_Turn_180_R_Rfoot
+r s5  t  7.30 dur 0.10 slip  11.1  v 160->161  Walk_Turn_180_R_Rfoot
+r s5  t  7.47 dur 0.27 slip  75.3  v 162->163  Walk_Turn_180_R_Rfoot
+r s5  t  7.93 dur 0.47 slip   1.4  v 164->140  Walk_Turn_180_R_Rfoot > Walk_Stop_F_Lfoot
+r s6  t  8.97 dur 0.87 slip  21.1  v   0->217  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+r s7  t 10.30 dur 0.23 slip  13.0  v 375->396  Run_Start_F_Lfoot > Transition_Run_to_Sprint_Lfoot
+r s7  t 10.93 dur 0.13 slip   6.8  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s8  t 12.63 dur 0.13 slip   6.6  v 584->584  Transition_Run_to_Sprint_Lfoot
+r s9  t 13.23 dur 0.13 slip   6.1  v 585->584  Sprint_Loop_F
+r s9  t 13.77 dur 0.10 slip   1.8  v 584->584  Sprint_Loop_F
+r s10 t 14.77 dur 0.50 slip 111.8  v 256->362  Sprint_Turn_180_R_Rfoot
+r s10 t 15.47 dur 0.13 slip   3.0  v 466->526  Sprint_Turn_180_R_Rfoot
+r s11 t 16.00 dur 0.13 slip   9.9  v 443->340  Sprint_Turn_180_R_Lfoot
+r s12 t 17.43 dur 0.10 slip  14.3  v 575->388  Sprint_Turn_180_R_Lfoot > Sprint_Turn_180_L_Lfoot
+r s12 t 18.10 dur 0.33 slip   6.5  v 151->354  Sprint_Turn_180_L_Lfoot
+r s12 t 18.77 dur 0.13 slip   6.0  v 514->565  Sprint_Turn_180_L_Lfoot
+r s13 t 19.33 dur 0.60 slip  52.6  v 309->  0  Sprint_Stop_F_Rfoot
+r s13 t 20.13 dur 0.53 slip   4.4  v   0->  0  Sprint_Stop_F_Rfoot
+== CM_kturnS_G1
+l s0  t  0.00 dur 1.07 slip   4.3  v   0->165  Stand_Idle_Loop > Walk_Start_F_Rfoot
+l s1  t  1.50 dur 0.57 slip   9.9  v 165->165  Walk_Start_F_Rfoot
+l s1  t  2.57 dur 0.47 slip   6.4  v 165->164  Walk_Start_F_Rfoot > Walk_Loop_F
+l s2  t  3.57 dur 0.50 slip   2.9  v 165->164  Walk_Loop_F
+l s3  t  4.53 dur 0.53 slip   7.6  v 165->165  Walk_Loop_F
+l s4  t  5.43 dur 0.20 slip  33.2  v  82->155  Walk_Turn_180_R_Lfoot
+l s4  t  5.97 dur 0.53 slip  13.5  v 161->164  Walk_Turn_180_R_Lfoot
+l s5  t  6.90 dur 0.40 slip  94.5  v  89->159  Walk_Turn_180_R_Rfoot
+l s5  t  7.53 dur 0.30 slip  32.4  v 162->164  Walk_Turn_180_R_Rfoot
+l s6  t  8.37 dur 1.87 slip 109.2  v 151->375  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+l s7  t 10.63 dur 0.17 slip  20.2  v 472->557  Transition_Run_to_Sprint_Lfoot
+l s7  t 11.20 dur 0.13 slip   4.1  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s8  t 11.77 dur 0.13 slip   9.6  v 579->584  Transition_Run_to_Sprint_Lfoot
+l s8  t 12.33 dur 0.13 slip   2.2  v 584->585  Transition_Run_to_Sprint_Lfoot
+l s9  t 14.03 dur 0.13 slip   4.7  v 585->585  Sprint_Loop_F
+l s10 t 15.13 dur 0.27 slip  44.2  v 344->485  Sprint_Turn_180_R_Rfoot
+l s10 t 15.70 dur 0.13 slip   2.6  v 570->576  Sprint_Turn_180_R_Rfoot
+l s11 t 16.20 dur 0.10 slip  15.0  v 169->153  Sprint_Turn_180_R_Lfoot
+l s11 t 16.40 dur 0.40 slip 101.8  v 197->426  Sprint_Turn_180_R_Lfoot
+l s11 t 17.10 dur 0.13 slip   2.3  v 555->572  Sprint_Turn_180_R_Lfoot
+l s12 t 17.60 dur 0.47 slip  52.5  v 203->109  Sprint_Turn_180_L_Lfoot
+l s12 t 18.47 dur 0.13 slip   2.2  v 351->421  Sprint_Turn_180_L_Lfoot
+l s13 t 19.07 dur 0.37 slip  70.9  v 475->239  Sprint_Stop_F_Rfoot
+l s13 t 19.77 dur 0.90 slip   2.2  v  21->  0  Sprint_Stop_F_Rfoot
+r s0  t  0.00 dur 0.77 slip  11.2  v   0->106  Stand_Idle_Loop > Walk_Start_F_Rfoot
+r s1  t  1.00 dur 0.53 slip   3.8  v 165->165  Walk_Start_F_Rfoot
+r s1  t  2.03 dur 0.53 slip   3.9  v 165->165  Walk_Start_F_Rfoot
+r s2  t  3.03 dur 0.53 slip   3.7  v 164->165  Walk_Loop_F
+r s3  t  4.07 dur 0.50 slip   4.5  v 164->165  Walk_Loop_F
+r s3  t  5.07 dur 0.93 slip  53.8  v 165->161  Walk_Loop_F > Walk_Turn_180_R_Lfoot
+r s4  t  6.40 dur 0.53 slip  23.3  v 164-> 81  Walk_Turn_180_R_Lfoot > Walk_Turn_180_R_Rfoot
+r s5  t  7.30 dur 0.10 slip  10.5  v 159->161  Walk_Turn_180_R_Rfoot
+r s5  t  7.47 dur 0.27 slip  76.3  v 161->163  Walk_Turn_180_R_Rfoot
+r s5  t  7.93 dur 0.47 slip   2.1  v 164->139  Walk_Turn_180_R_Rfoot > Walk_Stop_F_Lfoot
+r s6  t  8.97 dur 0.83 slip  16.6  v   0->197  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+r s7  t 10.30 dur 0.20 slip   7.5  v 375->395  Run_Start_F_Lfoot > Transition_Run_to_Sprint_Lfoot
+r s7  t 10.93 dur 0.13 slip   4.9  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s8  t 12.63 dur 0.13 slip   6.1  v 584->584  Transition_Run_to_Sprint_Lfoot
+r s9  t 13.23 dur 0.13 slip   5.3  v 585->585  Sprint_Loop_F
+r s9  t 13.77 dur 0.13 slip   2.9  v 584->585  Sprint_Loop_F
+r s10 t 14.73 dur 0.50 slip 130.5  v 155->400  Sprint_Turn_180_R_Rfoot
+r s10 t 15.43 dur 0.13 slip   2.7  v 498->552  Sprint_Turn_180_R_Rfoot
+r s11 t 15.93 dur 0.17 slip  19.1  v 578->274  Sprint_Turn_180_R_Rfoot > Sprint_Turn_180_R_Lfoot
+r s11 t 17.37 dur 0.13 slip   8.1  v 576->385  Sprint_Turn_180_R_Lfoot > Sprint_Turn_180_L_Lfoot
+r s12 t 18.10 dur 0.30 slip   9.0  v 128->311  Sprint_Turn_180_L_Lfoot
+r s13 t 19.33 dur 0.60 slip  50.6  v 304->  0  Sprint_Stop_F_Rfoot
+r s13 t 20.13 dur 0.53 slip   4.4  v   0->  0  Sprint_Stop_F_Rfoot
+== CM_kturn_R1
+l s0  t  0.00 dur 1.07 slip   4.0  v   0->165  Stand_Idle_Loop > Walk_Start_F_Rfoot
+l s1  t  1.53 dur 0.53 slip   7.2  v 165->165  Walk_Start_F_Rfoot
+l s1  t  2.57 dur 0.47 slip   5.9  v 165->164  Walk_Start_F_Rfoot > Walk_Loop_F
+l s2  t  3.57 dur 0.50 slip   3.5  v 165->164  Walk_Loop_F
+l s3  t  4.57 dur 0.50 slip   3.5  v 165->165  Walk_Loop_F
+l s4  t  5.43 dur 0.20 slip  33.0  v  81->157  Walk_Turn_180_R_Lfoot
+l s4  t  5.97 dur 0.53 slip  12.2  v 162->164  Walk_Turn_180_R_Lfoot
+l s5  t  6.90 dur 0.40 slip  93.3  v  80->160  Walk_Turn_180_R_Rfoot
+l s5  t  7.50 dur 0.33 slip  32.3  v 162->164  Walk_Turn_180_R_Rfoot
+l s6  t  8.37 dur 1.87 slip 108.7  v 152->375  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+l s7  t 10.63 dur 0.17 slip  19.8  v 455->540  Transition_Run_to_Sprint_Lfoot
+l s7  t 11.20 dur 0.13 slip   4.1  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s8  t 12.33 dur 0.13 slip   1.8  v 584->585  Transition_Run_to_Sprint_Lfoot
+l s9  t 14.03 dur 0.13 slip   4.4  v 585->585  Sprint_Loop_F
+l s10 t 14.90 dur 0.23 slip  55.5  v 173->259  Run_Turn_R_180_Lfoot
+l s11 t 16.37 dur 0.37 slip  70.9  v 180->247  Run_Turn_R_180_Lfoot
+l s11 t 17.33 dur 0.13 slip  22.9  v 533->419  Transition_Walk_to_Sprint_Lfoot > Sprint_Turn_180_L_Rfoot
+l s12 t 17.97 dur 0.17 slip  28.5  v  30->115  Run_Turn_L_090_Lfoot
+l s13 t 18.93 dur 0.10 slip   2.1  v 534->472  Transition_Walk_to_Sprint_Rfoot > Sprint_Stop_F_Lfoot
+l s13 t 19.33 dur 1.33 slip  52.4  v 284->  0  Sprint_Stop_F_Lfoot
+r s0  t  0.00 dur 0.77 slip  11.4  v   0->107  Stand_Idle_Loop > Walk_Start_F_Rfoot
+r s1  t  1.00 dur 0.53 slip   3.8  v 165->165  Walk_Start_F_Rfoot
+r s1  t  2.03 dur 0.53 slip   4.0  v 165->165  Walk_Start_F_Rfoot
+r s2  t  3.03 dur 0.53 slip   4.2  v 164->165  Walk_Loop_F
+r s3  t  4.10 dur 0.50 slip   3.4  v 164->165  Walk_Loop_F
+r s3  t  5.07 dur 0.97 slip  57.8  v 165->162  Walk_Loop_F > Walk_Turn_180_R_Lfoot
+r s4  t  6.40 dur 0.53 slip  20.5  v 164-> 80  Walk_Turn_180_R_Lfoot > Walk_Turn_180_R_Rfoot
+r s5  t  7.30 dur 0.10 slip  11.2  v 160->161  Walk_Turn_180_R_Rfoot
+r s5  t  7.47 dur 0.23 slip  62.9  v 162->163  Walk_Turn_180_R_Rfoot
+r s5  t  7.93 dur 0.47 slip   1.3  v 164->140  Walk_Turn_180_R_Rfoot > Walk_Stop_F_Lfoot
+r s6  t  8.97 dur 0.87 slip  21.8  v   0->223  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+r s7  t 10.30 dur 0.20 slip   8.7  v 375->375  Run_Start_F_Lfoot
+r s8  t 12.63 dur 0.13 slip   6.3  v 584->584  Transition_Run_to_Sprint_Lfoot
+r s9  t 13.23 dur 0.13 slip   6.0  v 584->585  Sprint_Loop_F
+r s10 t 14.73 dur 0.23 slip  67.7  v 269->174  Sprint_Turn_180_R_Rfoot > Run_Turn_R_180_Lfoot
+r s10 t 15.23 dur 0.13 slip  49.4  v 320->398  Sprint_Reface_Start_090_R
+r s10 t 15.53 dur 0.17 slip   8.1  v 480->549  Sprint_Reface_Start_090_R
+r s11 t 16.23 dur 0.20 slip  57.8  v 264->161  Sprint_Turn_180_R_Rfoot > Run_Turn_R_180_Lfoot
+r s11 t 16.87 dur 0.47 slip 147.7  v 311->533  Transition_Walk_to_Sprint_Lfoot
+r s12 t 17.63 dur 0.20 slip  14.0  v 257-> 59  Sprint_Turn_180_L_Rfoot > Run_Turn_L_090_Lfoot
+r s12 t 18.20 dur 0.23 slip  11.4  v 162->297  Run_Turn_L_090_Lfoot > Transition_Walk_to_Sprint_Rfoot
+r s12 t 18.70 dur 0.10 slip   1.9  v 433->479  Transition_Walk_to_Sprint_Rfoot
+r s13 t 19.17 dur 1.50 slip  70.1  v 387->  0  Sprint_Stop_F_Lfoot
+== CM_kturn_G0
+l s0  t  0.00 dur 1.07 slip   4.0  v   0->165  Stand_Idle_Loop > Walk_Start_F_Rfoot
+l s1  t  1.53 dur 0.53 slip   6.5  v 165->165  Walk_Start_F_Rfoot
+l s1  t  2.57 dur 0.47 slip   5.3  v 165->164  Walk_Start_F_Rfoot > Walk_Loop_F
+l s2  t  3.57 dur 0.50 slip   3.8  v 165->164  Walk_Loop_F
+l s3  t  4.57 dur 0.50 slip   4.2  v 165->165  Walk_Loop_F
+l s4  t  5.43 dur 0.17 slip  30.1  v  81->156  Walk_Turn_180_R_Lfoot
+l s4  t  5.97 dur 0.53 slip  11.7  v 162->164  Walk_Turn_180_R_Lfoot
+l s5  t  6.87 dur 0.43 slip 101.0  v 104->160  Walk_Turn_180_R_Rfoot
+l s5  t  7.53 dur 0.30 slip  32.0  v 162->164  Walk_Turn_180_R_Rfoot
+l s6  t  8.37 dur 1.87 slip 108.9  v 152->375  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+l s7  t 10.63 dur 0.17 slip  18.2  v 475->556  Transition_Run_to_Sprint_Lfoot
+l s7  t 11.20 dur 0.13 slip   4.1  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s8  t 11.77 dur 0.10 slip   5.2  v 579->582  Transition_Run_to_Sprint_Lfoot
+l s8  t 12.33 dur 0.13 slip   2.3  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s9  t 14.00 dur 0.13 slip   4.7  v 584->585  Sprint_Loop_F
+l s10 t 15.13 dur 0.27 slip  42.7  v 301->448  Sprint_Turn_180_R_Rfoot
+l s10 t 15.73 dur 0.13 slip   2.0  v 566->572  Sprint_Turn_180_R_Rfoot
+l s11 t 16.23 dur 0.13 slip  22.1  v 262->176  Sprint_Turn_180_R_Lfoot
+l s11 t 16.43 dur 0.40 slip  98.8  v 189->406  Sprint_Turn_180_R_Lfoot
+l s11 t 17.13 dur 0.13 slip   5.8  v 540->568  Sprint_Turn_180_R_Lfoot
+l s12 t 17.63 dur 0.43 slip  36.8  v 281->133  Sprint_Turn_180_L_Lfoot
+l s13 t 19.07 dur 0.37 slip  67.8  v 486->246  Sprint_Stop_F_Rfoot
+l s13 t 19.77 dur 0.90 slip   1.9  v  27->  0  Sprint_Stop_F_Rfoot
+r s0  t  0.00 dur 0.77 slip  11.4  v   0->107  Stand_Idle_Loop > Walk_Start_F_Rfoot
+r s1  t  1.00 dur 0.53 slip   4.0  v 165->165  Walk_Start_F_Rfoot
+r s1  t  2.03 dur 0.53 slip   4.0  v 165->165  Walk_Start_F_Rfoot
+r s2  t  3.03 dur 0.53 slip   4.4  v 164->165  Walk_Loop_F
+r s3  t  4.10 dur 0.50 slip   4.2  v 164->165  Walk_Loop_F
+r s3  t  5.07 dur 0.97 slip  58.3  v 165->162  Walk_Loop_F > Walk_Turn_180_R_Lfoot
+r s4  t  6.37 dur 0.57 slip  33.2  v 164-> 80  Walk_Turn_180_R_Lfoot > Walk_Turn_180_R_Rfoot
+r s5  t  7.30 dur 0.10 slip  11.0  v 160->161  Walk_Turn_180_R_Rfoot
+r s5  t  7.47 dur 0.27 slip  75.8  v 162->163  Walk_Turn_180_R_Rfoot
+r s5  t  7.93 dur 0.47 slip   1.4  v 164->139  Walk_Turn_180_R_Rfoot > Walk_Stop_F_Lfoot
+r s6  t  8.97 dur 0.87 slip  21.4  v   0->220  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+r s7  t 10.30 dur 0.20 slip   6.6  v 375->397  Run_Start_F_Lfoot > Transition_Run_to_Sprint_Lfoot
+r s7  t 10.93 dur 0.13 slip   4.8  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s7  t 11.47 dur 0.13 slip   5.6  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s8  t 12.63 dur 0.13 slip   5.4  v 584->584  Transition_Run_to_Sprint_Lfoot
+r s9  t 13.20 dur 0.13 slip   5.2  v 585->584  Sprint_Loop_F
+r s10 t 14.73 dur 0.53 slip 128.6  v 267->378  Sprint_Turn_180_R_Rfoot
+r s10 t 15.47 dur 0.13 slip   1.3  v 479->537  Sprint_Turn_180_R_Rfoot
+r s11 t 15.97 dur 0.13 slip  10.4  v 467->362  Sprint_Turn_180_R_Lfoot
+r s12 t 17.43 dur 0.10 slip  14.3  v 575->388  Sprint_Turn_180_R_Lfoot > Sprint_Turn_180_L_Lfoot
+r s12 t 18.10 dur 0.33 slip   6.8  v 153->353  Sprint_Turn_180_L_Lfoot
+r s12 t 18.77 dur 0.10 slip   2.7  v 515->553  Sprint_Turn_180_L_Lfoot
+r s13 t 19.33 dur 0.63 slip  57.4  v 311->  0  Sprint_Stop_F_Rfoot
+r s13 t 20.17 dur 0.50 slip   0.7  v   0->  0  Sprint_Stop_F_Rfoot
+== CM_kturn_G1
+l s0  t  0.00 dur 1.07 slip   3.9  v   0->165  Stand_Idle_Loop > Walk_Start_F_Rfoot
+l s1  t  1.50 dur 0.57 slip  10.8  v 165->165  Walk_Start_F_Rfoot
+l s1  t  2.53 dur 0.50 slip   7.1  v 165->164  Walk_Start_F_Rfoot > Walk_Loop_F
+l s2  t  3.57 dur 0.50 slip   3.8  v 165->165  Walk_Loop_F
+l s3  t  4.57 dur 0.50 slip   4.1  v 165->165  Walk_Loop_F
+l s4  t  5.43 dur 0.20 slip  32.1  v  82->155  Walk_Turn_180_R_Lfoot
+l s4  t  5.97 dur 0.53 slip  12.3  v 161->164  Walk_Turn_180_R_Lfoot
+l s5  t  6.90 dur 0.40 slip  93.0  v  83->160  Walk_Turn_180_R_Rfoot
+l s5  t  7.50 dur 0.33 slip  32.5  v 162->164  Walk_Turn_180_R_Rfoot
+l s6  t  8.37 dur 1.87 slip 110.1  v 152->375  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+l s7  t 10.63 dur 0.17 slip  19.2  v 473->556  Transition_Run_to_Sprint_Lfoot
+l s7  t 11.20 dur 0.13 slip   3.8  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s8  t 11.77 dur 0.13 slip   9.9  v 578->584  Transition_Run_to_Sprint_Lfoot
+l s8  t 12.33 dur 0.13 slip   2.2  v 585->585  Transition_Run_to_Sprint_Lfoot
+l s9  t 14.00 dur 0.13 slip   4.2  v 584->585  Sprint_Loop_F
+l s10 t 15.10 dur 0.30 slip  49.9  v 323->482  Sprint_Turn_180_R_Rfoot
+l s10 t 15.70 dur 0.13 slip   2.0  v 570->575  Sprint_Turn_180_R_Rfoot
+l s11 t 16.20 dur 0.10 slip  16.3  v 168->155  Sprint_Turn_180_R_Lfoot
+l s11 t 16.37 dur 0.43 slip 107.4  v 182->426  Sprint_Turn_180_R_Lfoot
+l s11 t 17.10 dur 0.13 slip   2.4  v 555->572  Sprint_Turn_180_R_Lfoot
+l s12 t 17.60 dur 0.47 slip  54.8  v 202->111  Sprint_Turn_180_L_Lfoot
+l s12 t 18.50 dur 0.10 slip   0.6  v 370->422  Sprint_Turn_180_L_Lfoot
+l s13 t 19.07 dur 0.37 slip  72.5  v 480->241  Sprint_Stop_F_Rfoot
+l s13 t 19.77 dur 0.90 slip   2.3  v  25->  0  Sprint_Stop_F_Rfoot
+r s0  t  0.00 dur 0.77 slip  11.1  v   0->105  Stand_Idle_Loop > Walk_Start_F_Rfoot
+r s1  t  1.00 dur 0.53 slip   4.1  v 165->165  Walk_Start_F_Rfoot
+r s1  t  2.03 dur 0.53 slip   3.8  v 165->165  Walk_Start_F_Rfoot
+r s2  t  3.07 dur 0.50 slip   2.5  v 165->165  Walk_Loop_F
+r s3  t  4.10 dur 0.50 slip   3.1  v 164->165  Walk_Loop_F
+r s3  t  5.07 dur 0.93 slip  55.0  v 165->162  Walk_Loop_F > Walk_Turn_180_R_Lfoot
+r s4  t  6.37 dur 0.57 slip  34.9  v 164-> 81  Walk_Turn_180_R_Lfoot > Walk_Turn_180_R_Rfoot
+r s5  t  7.30 dur 0.43 slip  96.9  v 160->163  Walk_Turn_180_R_Rfoot
+r s5  t  7.93 dur 0.47 slip   1.3  v 164->140  Walk_Turn_180_R_Rfoot > Walk_Stop_F_Lfoot
+r s6  t  8.97 dur 0.87 slip  21.3  v   0->220  Walk_Stop_F_Lfoot > Walk_Start_F_Rfoot > Run_Start_F_Lfoot
+r s7  t 10.30 dur 0.20 slip   9.2  v 375->396  Run_Start_F_Lfoot > Transition_Run_to_Sprint_Lfoot
+r s7  t 10.93 dur 0.13 slip   5.4  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s7  t 11.47 dur 0.13 slip   5.8  v 585->585  Transition_Run_to_Sprint_Lfoot
+r s8  t 12.63 dur 0.13 slip   5.8  v 585->584  Transition_Run_to_Sprint_Lfoot
+r s9  t 13.20 dur 0.13 slip   5.5  v 585->584  Sprint_Loop_F
+r s9  t 13.73 dur 0.13 slip   2.9  v 584->584  Sprint_Loop_F
+r s10 t 14.73 dur 0.50 slip 129.2  v 153->398  Sprint_Turn_180_R_Rfoot
+r s10 t 15.43 dur 0.13 slip   2.8  v 496->551  Sprint_Turn_180_R_Rfoot
+r s11 t 15.93 dur 0.17 slip  20.1  v 578->271  Sprint_Turn_180_R_Rfoot > Sprint_Turn_180_R_Lfoot
+r s11 t 17.37 dur 0.13 slip   7.9  v 576->389  Sprint_Turn_180_R_Lfoot > Sprint_Turn_180_L_Lfoot
+r s12 t 18.10 dur 0.33 slip  11.4  v 129->331  Sprint_Turn_180_L_Lfoot
+r s12 t 18.77 dur 0.13 slip   4.4  v 501->552  Sprint_Turn_180_L_Lfoot
+r s13 t 19.33 dur 0.63 slip  55.2  v 304->  0  Sprint_Stop_F_Rfoot
+r s13 t 20.17 dur 0.50 slip   0.8  v   0->  0  Sprint_Stop_F_Rfoot
+== CM_efon_M0
+l s0  t  0.00 dur 1.13 slip   0.7  v   0->241  Stand_Idle_Loop > Walk_Start_F_Rfoot > Run_Start_F_Rfoot
+l s1  t  1.60 dur 0.20 slip   4.0  v 375->375  Run_Start_F_Rfoot
+l s1  t  2.17 dur 0.10 slip   4.7  v 584->585  Transition_Run_to_Sprint_Rfoot
+l s2  t  2.63 dur 0.53 slip 103.9  v 275->250  Sprint_Turn_180_R_Lfoot > Run_Turn_L_180_Lfoot
+l s2  t  3.53 dur 0.17 slip  11.1  v 486->563  Sprint_Reface_Start_090_L
+l s3  t  4.57 dur 0.43 slip 107.0  v 228-> 11  Run_Turn_L_180_Rfoot > Transition_Walk_to_Sprint_Rfoot > Sprint_Turn_180_R_Rfoot > Run_Turn_R_180_Rfoot
+l s4  t  5.37 dur 0.37 slip  84.1  v 233->448  Run_Turn_R_180_Rfoot > Transition_Walk_to_Sprint_Rfoot > Sprint_Reface_Start_090_R
+l s5  t  6.47 dur 0.27 slip  24.6  v 185->354  Run_Turn_L_180_Rfoot > Transition_Walk_to_Sprint_Lfoot
+l s6  t  7.70 dur 1.53 slip  36.2  v   0->253  Run_Stop_F_Rfoot > Walk_Reface_Start_180_R_Lfoot > Run_Reface_Start_180_R_Rfoot
+l s7  t  9.57 dur 0.23 slip  16.9  v 375->394  Run_Reface_Start_180_R_Rfoot > Transition_Run_to_Sprint_Rfoot
+l s8  t 10.60 dur 4.90 slip 109.2  v 333->189  Sprint_Stop_F_Lfoot > Stand_Idle_Loop > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+l s9  t 15.77 dur 0.17 slip   2.6  v 373->375  Run_Reface_Start_180_L_Rfoot
+l s9  t 16.33 dur 0.17 slip  13.6  v 454->535  Transition_Run_to_Sprint_Lfoot
+l s10 t 16.83 dur 0.53 slip  88.4  v 266->230  Sprint_Turn_180_R_Lfoot > Run_Turn_L_180_Lfoot
+l s10 t 17.73 dur 0.20 slip  10.0  v 454->544  Sprint_Reface_Start_090_L
+l s11 t 18.33 dur 1.63 slip  94.2  v 363->  0  Sprint_Stop_F_Lfoot
+r s0  t  0.00 dur 1.00 slip  13.0  v   0->132  Stand_Idle_Loop > Walk_Start_F_Rfoot > Run_Start_F_Rfoot
+r s1  t  1.13 dur 0.37 slip  41.7  v 241->375  Run_Start_F_Rfoot
+r s1  t  1.90 dur 0.13 slip  17.6  v 442->518  Transition_Run_to_Sprint_Rfoot
+r s1  t  2.37 dur 0.13 slip  10.8  v 585->431  Transition_Run_to_Sprint_Rfoot > Sprint_Turn_180_R_Lfoot
+r s2  t  3.00 dur 0.47 slip 105.5  v 129->450  Run_Turn_L_180_Lfoot > Transition_Walk_to_Sprint_Lfoot > Sprint_Reface_Start_090_L
+r s3  t  3.83 dur 0.13 slip  25.5  v 571->341  Sprint_Reface_Start_090_L > Sprint_Turn_180_R_Rfoot
+r s3  t  4.13 dur 0.40 slip  33.1  v 142->204  Run_Turn_L_180_Rfoot
+r s4  t  5.00 dur 0.50 slip  92.1  v  11->317  Run_Turn_R_180_Rfoot > Transition_Walk_to_Sprint_Rfoot > Sprint_Reface_Start_090_R
+r s5  t  5.80 dur 0.63 slip 150.9  v 480->165  Sprint_Reface_Start_090_R > Sprint_Turn_180_L_Rfoot > Run_Turn_L_180_Rfoot
+r s6  t  7.20 dur 0.93 slip  14.5  v 215->  0  Run_Stop_F_Rfoot
+r s6  t  8.23 dur 0.80 slip  20.2  v   0->126  Run_Stop_F_Rfoot > Walk_Reface_Start_180_R_Lfoot > Run_Reface_Start_180_R_Rfoot
+r s7  t  9.23 dur 0.23 slip   2.7  v 253->375  Run_Reface_Start_180_R_Rfoot
+r s7  t  9.90 dur 0.13 slip  15.5  v 446->509  Transition_Run_to_Sprint_Rfoot
+r s8  t 10.40 dur 5.27 slip 140.2  v 471->308  Sprint_Stop_F_Lfoot > Stand_Idle_Loop > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+r s9  t 16.03 dur 0.20 slip  10.8  v 375->394  Run_Reface_Start_180_L_Rfoot > Transition_Run_to_Sprint_Lfoot
+r s10 t 16.63 dur 0.13 slip   8.8  v 585->347  Transition_Run_to_Sprint_Lfoot > Sprint_Turn_180_R_Lfoot
+r s10 t 17.20 dur 0.47 slip 109.0  v 117->423  Run_Turn_L_180_Lfoot > Transition_Walk_to_Sprint_Lfoot > Sprint_Reface_Start_090_L
+r s11 t 18.07 dur 0.13 slip  52.2  v 544->456  Sprint_Stop_F_Lfoot
+r s11 t 18.33 dur 1.63 slip  82.0  v 363->  0  Sprint_Stop_F_Lfoot
+== CM_efon_G0
+l s0  t  0.00 dur 1.13 slip   0.4  v   0->236  Stand_Idle_Loop > Walk_Start_F_Rfoot > Run_Start_F_Rfoot
+l s1  t  1.60 dur 0.20 slip   4.1  v 375->375  Run_Start_F_Rfoot
+l s1  t  2.17 dur 0.10 slip   6.1  v 581->585  Transition_Run_to_Sprint_Rfoot
+l s2  t  2.67 dur 0.57 slip  29.3  v 220->315  Sprint_Turn_180_R_Lfoot
+l s2  t  3.57 dur 0.13 slip   2.6  v 511->564  Sprint_Turn_180_R_Lfoot
+l s3  t  4.03 dur 0.43 slip  31.6  v 264->163  Sprint_Turn_180_L_Lfoot
+l s4  t  5.53 dur 0.27 slip  40.8  v 331->476  Sprint_Turn_180_R_Rfoot
+l s5  t  6.43 dur 0.33 slip   1.5  v 185->388  Sprint_Turn_180_L_Rfoot
+l s6  t  7.17 dur 1.93 slip  79.0  v 241->168  Sprint_Stop_F_Lfoot > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+l s7  t  9.37 dur 0.20 slip   5.3  v 336->375  Run_Reface_Start_180_L_Rfoot
+l s7  t  9.97 dur 0.13 slip   7.9  v 480->537  Transition_Run_to_Sprint_Lfoot
+l s8  t 10.50 dur 0.40 slip  34.3  v 400->129  Sprint_Stop_F_Rfoot
+l s8  t 11.23 dur 4.27 slip  29.9  v   0->186  Sprint_Stop_F_Rfoot > Stand_Idle_Loop > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+l s9  t 15.77 dur 0.17 slip   2.3  v 375->375  Run_Reface_Start_180_L_Rfoot
+l s9  t 16.33 dur 0.13 slip  10.1  v 472->537  Transition_Run_to_Sprint_Lfoot
+l s10 t 16.83 dur 0.53 slip  15.0  v 265->241  Sprint_Turn_180_R_Lfoot
+l s10 t 17.70 dur 0.17 slip   4.4  v 449->529  Sprint_Turn_180_R_Lfoot
+l s11 t 18.27 dur 0.37 slip  25.7  v 409->160  Sprint_Stop_F_Rfoot
+l s11 t 18.97 dur 1.00 slip   2.1  v   0->  0  Sprint_Stop_F_Rfoot
+r s0  t  0.00 dur 1.50 slip 101.0  v   0->375  Stand_Idle_Loop > Walk_Start_F_Rfoot > Run_Start_F_Rfoot
+r s1  t  1.90 dur 0.13 slip  14.5  v 439->515  Transition_Run_to_Sprint_Rfoot
+r s2  t  2.40 dur 0.10 slip   8.2  v 585->418  Transition_Run_to_Sprint_Rfoot > Sprint_Turn_180_R_Lfoot
+r s3  t  3.83 dur 0.13 slip  19.1  v 571->338  Sprint_Turn_180_R_Lfoot > Sprint_Turn_180_L_Lfoot
+r s3  t  4.50 dur 0.30 slip   1.8  v 185->385  Sprint_Turn_180_L_Lfoot
+r s4  t  5.17 dur 0.50 slip 138.8  v  94->408  Sprint_Turn_180_R_Rfoot
+r s5  t  5.87 dur 0.63 slip  75.9  v 382->226  Sprint_Turn_180_L_Rfoot
+r s6  t  6.90 dur 2.40 slip 130.8  v 387->296  Sprint_Stop_F_Lfoot > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+r s7  t  9.67 dur 0.17 slip   6.2  v 375->412  Run_Reface_Start_180_L_Rfoot > Transition_Run_to_Sprint_Lfoot
+r s8  t 10.23 dur 0.13 slip   6.6  v 585->493  Transition_Run_to_Sprint_Lfoot > Sprint_Stop_F_Rfoot
+r s8  t 10.80 dur 0.60 slip   9.7  v 196->  0  Sprint_Stop_F_Rfoot
+r s8  t 11.60 dur 4.10 slip  27.5  v   0->328  Sprint_Stop_F_Rfoot > Stand_Idle_Loop > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+r s9  t 16.03 dur 0.20 slip  11.4  v 375->416  Run_Reface_Start_180_L_Rfoot > Transition_Run_to_Sprint_Lfoot
+r s10 t 16.60 dur 0.13 slip  10.7  v 585->385  Transition_Run_to_Sprint_Lfoot > Sprint_Turn_180_R_Lfoot
+r s11 t 18.00 dur 0.10 slip   0.8  v 570->525  Sprint_Turn_180_R_Lfoot > Sprint_Stop_F_Rfoot
+r s11 t 18.53 dur 0.60 slip   9.5  v 227->  0  Sprint_Stop_F_Rfoot
+r s11 t 19.37 dur 0.60 slip   0.7  v   0->  0  Sprint_Stop_F_Rfoot
+== CM_efon_G1
+l s0  t  0.00 dur 1.13 slip   0.4  v   0->240  Stand_Idle_Loop > Walk_Start_F_Rfoot > Run_Start_F_Rfoot
+l s1  t  1.60 dur 0.20 slip   4.1  v 375->375  Run_Start_F_Rfoot
+l s1  t  2.17 dur 0.10 slip   6.0  v 583->585  Transition_Run_to_Sprint_Rfoot
+l s2  t  2.63 dur 0.60 slip  29.2  v 153->301  Sprint_Turn_180_R_Lfoot
+l s2  t  3.57 dur 0.13 slip   2.6  v 503->565  Sprint_Turn_180_R_Lfoot
+l s3  t  4.03 dur 0.43 slip  23.0  v 168->139  Sprint_Turn_180_L_Lfoot
+l s4  t  4.87 dur 0.13 slip  35.6  v 287->173  Sprint_Turn_180_R_Rfoot
+l s4  t  5.60 dur 0.33 slip  71.8  v 236->206  Sprint_Turn_180_R_Rfoot > Sprint_Turn_180_L_Rfoot
+l s5  t  6.30 dur 0.40 slip  18.2  v  53->304  Sprint_Turn_180_L_Rfoot
+l s6  t  7.17 dur 0.47 slip  16.0  v 218->  0  Run_Stop_F_Lfoot
+l s6  t  8.03 dur 1.07 slip  28.3  v   0->169  Run_Stop_F_Lfoot > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+l s7  t  9.37 dur 0.20 slip   4.8  v 341->375  Run_Reface_Start_180_L_Rfoot
+l s7  t  9.97 dur 0.13 slip   8.2  v 479->538  Transition_Run_to_Sprint_Lfoot
+l s8  t 10.53 dur 0.37 slip  20.5  v 380->128  Sprint_Stop_F_Rfoot
+l s8  t 11.23 dur 4.27 slip  29.4  v   0->192  Sprint_Stop_F_Rfoot > Stand_Idle_Loop > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+l s9  t 15.77 dur 0.17 slip   2.6  v 375->375  Run_Reface_Start_180_L_Rfoot
+l s9  t 16.33 dur 0.17 slip  15.6  v 451->535  Transition_Run_to_Sprint_Lfoot
+l s10 t 16.83 dur 0.53 slip  15.1  v 169->217  Sprint_Turn_180_R_Lfoot
+l s10 t 17.70 dur 0.17 slip   4.3  v 432->515  Sprint_Turn_180_R_Lfoot
+l s11 t 18.27 dur 0.37 slip  24.6  v 410->161  Sprint_Stop_F_Rfoot
+l s11 t 18.97 dur 1.00 slip   2.1  v   0->  0  Sprint_Stop_F_Rfoot
+r s0  t  0.00 dur 1.00 slip  13.4  v   0->133  Stand_Idle_Loop > Walk_Start_F_Rfoot > Run_Start_F_Rfoot
+r s1  t  1.17 dur 0.33 slip  30.7  v 267->375  Run_Start_F_Rfoot
+r s1  t  1.90 dur 0.13 slip  14.0  v 441->517  Transition_Run_to_Sprint_Rfoot
+r s2  t  2.40 dur 0.10 slip   9.4  v 585->387  Transition_Run_to_Sprint_Rfoot > Sprint_Turn_180_R_Lfoot
+r s3  t  3.83 dur 0.13 slip  21.9  v 574->258  Sprint_Turn_180_R_Lfoot > Sprint_Turn_180_L_Lfoot
+r s3  t  4.50 dur 0.30 slip   4.0  v 164->363  Sprint_Turn_180_L_Lfoot
+r s4  t  5.20 dur 0.53 slip  88.0  v  23->323  Sprint_Turn_180_R_Rfoot
+r s5  t  5.97 dur 0.40 slip  50.0  v 179-> 98  Sprint_Turn_180_L_Rfoot
+r s6  t  6.83 dur 0.13 slip   5.7  v 386->319  Sprint_Turn_180_L_Rfoot > Run_Stop_F_Lfoot
+r s6  t  7.50 dur 1.80 slip  21.9  v  47->297  Run_Stop_F_Lfoot > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+r s7  t  9.67 dur 0.17 slip   6.1  v 375->412  Run_Reface_Start_180_L_Rfoot > Transition_Run_to_Sprint_Lfoot
+r s8  t 10.23 dur 0.13 slip   5.9  v 585->494  Transition_Run_to_Sprint_Lfoot > Sprint_Stop_F_Rfoot
+r s8  t 10.80 dur 0.60 slip  10.1  v 195->  0  Sprint_Stop_F_Rfoot
+r s8  t 11.60 dur 4.10 slip  27.9  v   0->327  Sprint_Stop_F_Rfoot > Stand_Idle_Loop > Walk_Reface_Start_180_L_Lfoot > Run_Reface_Start_180_L_Rfoot
+r s9  t 16.03 dur 0.20 slip   9.9  v 375->395  Run_Reface_Start_180_L_Rfoot > Transition_Run_to_Sprint_Lfoot
+r s10 t 16.63 dur 0.13 slip  12.3  v 585->268  Transition_Run_to_Sprint_Lfoot > Sprint_Turn_180_R_Lfoot
+r s11 t 18.00 dur 0.13 slip   6.0  v 570->502  Sprint_Turn_180_R_Lfoot > Sprint_Stop_F_Rfoot
+r s11 t 18.53 dur 0.60 slip   9.8  v 229->  0  Sprint_Stop_F_Rfoot
+r s11 t 19.37 dur 0.60 slip   0.7  v   0->  0  Sprint_Stop_F_Rfoot
