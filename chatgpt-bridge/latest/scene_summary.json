@@ -32,29 +32,29 @@
   },
   "framing_bounds": {
     "min": [
-      -5006.4,
-      -7287.5,
-      -705.0
+      -5224.9,
+      -6678.7,
+      -2512.8538055157137
     ],
     "max": [
-      5617.0,
-      9035.9,
-      1865.3
+      5605.9,
+      10301.0,
+      4010.0
     ],
     "center": [
-      305.3000000000002,
-      874.1999999999998,
-      580.15
+      190.5,
+      1811.15,
+      748.5730972421431
     ],
     "extent": [
-      5311.7,
-      8161.7,
-      1285.15
+      5415.4,
+      8489.85,
+      3261.4269027578566
     ],
     "dimensions_cm": [
-      10623.4,
-      16323.4,
-      2570.3
+      10830.8,
+      16979.7,
+      6522.853805515713
     ]
   },
   "world_partition": false,
@@ -64,15 +64,15 @@
     0.0
   ],
   "units": "centimeters; 100 Unreal units = 1 meter",
-  "actor_count": 1050,
-  "indexed_actor_count": 1050,
-  "static_mesh_actor_count": 934,
-  "instanced_component_count": 97,
-  "hism_component_count": 97,
-  "foliage_instance_count": 21624,
-  "all_ism_instance_count": 21624,
+  "actor_count": 1185,
+  "indexed_actor_count": 1185,
+  "static_mesh_actor_count": 1025,
+  "instanced_component_count": 128,
+  "hism_component_count": 128,
+  "foliage_instance_count": 38835,
+  "all_ism_instance_count": 38835,
   "landscape_proxy_count": 1,
-  "light_count": 29,
+  "light_count": 31,
   "lighting_types": {
     "SkyAtmosphere": 1,
     "RectLightComponent": 12,
@@ -80,19 +80,19 @@
     "SkyLightComponent": 1,
     "PostProcessVolume": 6,
     "ExponentialHeightFog": 1,
-    "PointLightComponent": 15
+    "PointLightComponent": 17
   },
   "water_actor_count": 1,
-  "vfx_actor_count": 11,
+  "vfx_actor_count": 18,
   "decal_count": 13,
   "camera_actor_count": 4,
   "volume_count": 6,
   "asset_categories": {
-    "StaticMesh": 772,
-    "Material": 331,
+    "StaticMesh": 814,
+    "Material": 360,
     "LandscapeMaterial": 1,
     "Water": 2,
     "DecalMaterial": 4,
-    "Niagara": 2
+    "Niagara": 4
   }
 }

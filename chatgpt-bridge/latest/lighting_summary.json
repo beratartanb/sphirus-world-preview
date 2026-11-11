@@ -361,7 +361,7 @@
         1300.0
       ],
       "rotation": [
-        -30.000000000000004,
+        -24.000000000000004,
         -59.99999999999999,
         -0.0
       ],
@@ -370,8 +370,8 @@
         2.5,
         2.5
       ],
-      "intensity": 1500.0,
-      "temperature": 5300.0,
+      "intensity": 1450.0,
+      "temperature": 4700.0,
       "use_temperature": true,
       "light_color": {
         "b": 255,
@@ -405,7 +405,7 @@
         1.0,
         1.0
       ],
-      "intensity": 1.2999999523162842,
+      "intensity": 0.800000011920929,
       "temperature": null,
       "use_temperature": null,
       "light_color": {
@@ -966,6 +966,76 @@
       ],
       "unbound": true,
       "priority": 3.0
+    },
+    {
+      "actor": "GR_Day_WardLight",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.PointLight_0.LightComponent0",
+      "type": "PointLightComponent",
+      "location": [
+        1468.0,
+        756.0,
+        676.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 18.0,
+      "temperature": 6500.0,
+      "use_temperature": false,
+      "light_color": {
+        "b": 190,
+        "g": 226,
+        "r": 255,
+        "a": 255
+      },
+      "mobility": "<ComponentMobility.STATIONARY: 1>",
+      "cast_shadows": false,
+      "cast_dynamic_shadows": true,
+      "cast_static_shadows": true,
+      "attenuation_radius": 110.0,
+      "indirect_lighting_intensity": 1.0
+    },
+    {
+      "actor": "GR_Day_FireLight",
+      "component": "/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse:PersistentLevel.PointLight_2.LightComponent0",
+      "type": "PointLightComponent",
+      "location": [
+        1395.0,
+        905.0,
+        215.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 60.0,
+      "temperature": 6500.0,
+      "use_temperature": false,
+      "light_color": {
+        "b": 70,
+        "g": 150,
+        "r": 255,
+        "a": 255
+      },
+      "mobility": "<ComponentMobility.MOVABLE: 2>",
+      "cast_shadows": true,
+      "cast_dynamic_shadows": true,
+      "cast_static_shadows": true,
+      "attenuation_radius": 520.0,
+      "indirect_lighting_intensity": 1.0
     },
     {
       "actor": "LivingLamp",
