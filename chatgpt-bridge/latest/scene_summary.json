@@ -32,28 +32,28 @@
   },
   "framing_bounds": {
     "min": [
-      -5224.9,
+      -5224.7,
       -6678.7,
       -2512.8538055157137
     ],
     "max": [
       5605.9,
-      10301.0,
+      10299.2,
       4010.0
     ],
     "center": [
-      190.5,
-      1811.15,
+      190.5999999999999,
+      1810.2500000000005,
       748.5730972421431
     ],
     "extent": [
-      5415.4,
-      8489.85,
+      5415.299999999999,
+      8488.95,
       3261.4269027578566
     ],
     "dimensions_cm": [
-      10830.8,
-      16979.7,
+      10830.599999999999,
+      16977.9,
       6522.853805515713
     ]
   },
@@ -64,13 +64,13 @@
     0.0
   ],
   "units": "centimeters; 100 Unreal units = 1 meter",
-  "actor_count": 1185,
-  "indexed_actor_count": 1185,
-  "static_mesh_actor_count": 1025,
+  "actor_count": 1437,
+  "indexed_actor_count": 1437,
+  "static_mesh_actor_count": 1251,
   "instanced_component_count": 128,
   "hism_component_count": 128,
-  "foliage_instance_count": 38835,
-  "all_ism_instance_count": 38835,
+  "foliage_instance_count": 38474,
+  "all_ism_instance_count": 38474,
   "landscape_proxy_count": 1,
   "light_count": 31,
   "lighting_types": {
@@ -84,15 +84,15 @@
   },
   "water_actor_count": 1,
   "vfx_actor_count": 18,
-  "decal_count": 13,
+  "decal_count": 39,
   "camera_actor_count": 4,
   "volume_count": 6,
   "asset_categories": {
-    "StaticMesh": 814,
-    "Material": 360,
+    "StaticMesh": 887,
+    "Material": 380,
     "LandscapeMaterial": 1,
     "Water": 2,
-    "DecalMaterial": 4,
+    "DecalMaterial": 27,
     "Niagara": 4
   }
 }
