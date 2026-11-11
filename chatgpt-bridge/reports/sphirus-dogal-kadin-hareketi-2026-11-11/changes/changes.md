@@ -12,7 +12,7 @@ Hepsi gated runner ile, yazma manifesti + doğrulanmış yedekle (`Saved/Codex/S
 ## Değişen
 | Varlık | Değişiklik | Önce → sonra |
 |---|---|---|
-| `ABP_Sph_GASP` | `SphCM` (bool, varsayılan **True**), `CM_Keys/CM_Vals/CM_Out`; `Update_MotionMatching` içinde ValidDatabases eşlemesi; MM düğümü `PlayRate` | PlayRate 0,85–1,15 → 0,80–1,05 |
+| `ABP_Sph_GASP` | `SphCM` (bool, varsayılan **True**), `CM_Keys/CM_Vals/CM_Out`; gece: `MovementDirection_Recent` (E_MovementDirection) + `MovementDirection_Time` ve 0,1 s kuralı (`w13_mdr.py`); `Update_MotionMatching` içinde ValidDatabases eşlemesi; MM düğümü `PlayRate` | PlayRate 0,85–1,15 → 0,80–1,05 |
 | `BP_Sph_GASPCharacter` | `CalculateMaxAcceleration` sabitleri; hız CDO | ivme 800/800/800→300 → 350/420/450→350; hız 165/375/585 → 160/290/500 |
 | `BP_HybridA_Player` | hız CDO; ev içi `SphContextSpeedScale` sabiti; `SphMotion` şablonu | 150/165 → 150/160 (=0,9375) |
 | `AC_Sph_Motion` (CDO + iki şablon) | `BrakeDecelLow/High`; bekleme kırılmaları | 380/780 → 260/520; Relaxed v01..v07 → CM af_Stand_Idle 03/04/06/02/05 |
@@ -22,3 +22,6 @@ Vendor `MC_Core_Motion`, GASP/Relaxed klipleri, şemaları, seçim tabloları; `
 
 ## Araçlar
 `Tools/WomanMotion_20261110/`: `w1_rtg.py` (retarget), `w2_dbs.py`/`w9_dbdir.py` (veritabanları), `w3_abp.py`/`w10_abpmap.py` (sürücü eşlemesi), `w4_rm.py` (kök hareketi), `w5_ikbones.py` (IK kemikleri), `w6_mmrate.py`, `w7_accel.py`, `w8_dbbias.py`, `w11_curves.py`, `w12_loop.py`, `p_cm_promote.py` (terfi), `cm_cfg.py` (aday ayarları), `vids_cm.sh`/`cmrun.sh` (kayıt, meşgul koruması), `an_cm.py`/`an_summary.py` (analiz), `mksheet.sh`/`sheet.py` (karşılaştırma tabloları), `reg_save_C.sh` (kayıt/yükleme + tek piyon). Kaydedici `Tools/Day_20261107/vid.py`: aday anahtarı (`VID_ABP`), aranan veritabanları, IK hedefleri, Story Framework etkileşim hedefi ve fareyle nişan segmenti eklendi (yedek `vid.py.bak_20261110b`).
+
+## Gece devamı
+Kontrol noktası `C:\Users\berat\SphirusCheckpoints\WomanMotion_Night_20261111_0906`. Kalıcı değişiklik yalnız `ABP_Sph_GASP` (`w13_mdr.py`). Denenip geri alınan: `w14_turnbias.py` (CM dönüş/kalkış veritabanlarında devam önceliği; `w14_restore.py` ile eski değerler geri yazıldı).
