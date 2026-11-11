@@ -1,5 +1,8 @@
 # Sphirus: doğal kadın hareketi — karşılaştır, seç, düzelt, aktif oyuncuya uygula (2026-11-10/11)
 
+> **2026-11-11 — REJECTED_REGRESSION (kullanıcı kararı).** Bu rapordaki Core Motion adayı C oyunda reddedildi: daha katı, sırık/kalas gibi ve tepkisiz yürüyor; koşu ve bedenin fiziksel tepkileri geriledi. Aktif oyuncu yeniden GASP Relaxed'a (kendi uyumlu ayarlarıyla) döndürüldü. Teknik düzeltmeler (ör. `MovementDirection_Recent`) korunuyor, ama bu rapor hareket kalitesi başarısı olarak okunmamalı. Ayrıntı: [hareket gerilemesini geri al raporu](../sphirus-hareket-geri-alma-2026-11-11/README.md).
+
+
 Uygulama tarihi: 2026-11-10 22:40 – 2026-11-11 09:05; gece devamı 09:05 – 10:50 (§14) (UE 5.8.4, `sphirus.uproject`, harita `/Game/GraceRanger/Maps/L_GR_SphirusHouse`).
 Başlangıç: [GASP Relaxed + SHME raporu](../sphirus-gasp-relaxed-shme-fullbody-2026-11-10/README.md) (A = o raporun üretim durumu).
 
