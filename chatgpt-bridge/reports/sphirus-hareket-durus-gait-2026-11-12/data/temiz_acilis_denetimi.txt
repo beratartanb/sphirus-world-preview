@@ -1,0 +1,21 @@
+BP BP_HybridA_Player BS_UP_TO_DATE errors []
+BP ABP_Sph_Body_GASP BS_UP_TO_DATE errors []
+BP AC_Sph_Motion BS_UP_TO_DATE errors []
+BP AC_Sph_Camera BS_UP_TO_DATE errors []
+BP BP_Sph_GASPCharacter BS_UP_TO_DATE errors []
+BP ABP_Sph_GASP BS_UP_TO_DATE errors []
+BP BP_GR_DayStation BS_UP_TO_DATE errors []
+BP BP_GR_DayHub BS_UP_TO_DATE errors []
+BP BP_GR_MaskBench BS_UP_TO_DATE errors []
+PAWN {'GR_JzStand': 400.0, 'GR_JzWalk': 385.0, 'GR_JzJog': 400.0, 'GR_JzRun': 380.0, 'GR_JbWalk': 255.0, 'GR_JbJog': 45.0, 'GR_JbRun': 25.0, 'GR_KHomeTempo': 1.18, 'GR_KTempo': 1.3, 'GR_KLoad': 0.9, 'GR_KLoadTempo': 1.04, 'GR_KCarryJog': 0.9}
+TPL SphMotion {'Enabled': True, 'BodyOn': True, 'FatUp': 0.06, 'FatDown': 0.075, 'FatAcc': 0.15, 'LandKick': 70.0, 'GaitUpAcc': 0.55, 'GaitUpMin': 120.0}
+CMC tpl gravity 1.25 jz 500.0
+TPL SphCamera Enabled True
+BODY nonzero {'VR_Spine3': [-7.0, 0.0, 0.0], 'VA_Spine3': [-6.0, 0.0, 0.0], 'VE_Spine3': [8.0, 0.0, 0.0], 'VI_Spine5': [-9.0, 0.0, 0.0], 'VR_Spine5': [-5.0, 0.0, 0.0], 'VA_Spine5': [-5.0, 0.0, 0.0], 'VE_Spine5': [7.0, 0.0, 0.0], 'VI_Head': [8.0, 0.0, 0.0], 'VE_Head': [6.0, 0.0, 0.0], 'VE_ClavL': [0.0, 0.0, 7.0], 'VE_ClavR': [0.0, 0.0, -7.0], 'VI_ArmL': [9.0, -3.0, 0.0], 'VR_ArmL': [6.0, -7.0, 0.0], 'VI_ArmR': [9.0, 3.0, 0.0], 'VR_ArmR': [6.0, 7.0, 0.0], 'VJ_LeadThigh': [-12.0, 0.0, 0.0], 'VJ_LeadCalf': [-46.0, 0.0, 0.0], 'VJ_TrailThigh': [38.0, 0.0, 0.0], 'VJ_TrailCalf': [18.0, 0.0, 0.0], 'VJ_Spine3': [5.0, 0.0, 0.0], 'VJ_Spine5': [5.0, 0.0, 0.0]}
+BODY scalars {'HeadIdle': 0.2, 'HeadWalk': 0.35, 'HeadRun': 0.65, 'FatBreath': 1.0, 'FatRate': 0.3, 'AirFull': 420.0, 'AirIn': 7.0, 'AirOut': 10.0, 'LandDur': 0.9, 'LeanMax': 30.0, 'LeanMaxAll': 40.0, 'LeanCorrMax': 40.0, 'LeanOut': 6.0, 'HLevelK': 1.2, 'HLevelMax': 8.0, 'HLevelSign': 1.0, 'ChestDeg': 3.0, 'ClavDeg': 4.0}
+CAM {'Enabled': True, 'JumpPivK': 25.0, 'JumpHeadK': 8.0}
+ABP SphCM False
+SPEEDS 165.0 375.0 585.0
+IMC pace/gait/jump [('IA_Sph_Gait', 'LeftShift'), ('IA_Sph_Jump', 'SpaceBar'), ('IA_Sph_Jump', 'Gamepad_FaceButton_Bottom'), ('IA_Sph_Gait', 'Gamepad_LeftThumbstick'), ('IA_Sph_Pace', 'LeftControl'), ('IA_Sph_Pace', 'Gamepad_LeftShoulder')]
+DIRTY [] []
+Q_DONE
