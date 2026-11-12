@@ -1,0 +1,21 @@
+BP BP_HybridA_Player BS_UP_TO_DATE errors []
+BP ABP_Sph_Body_GASP BS_UP_TO_DATE errors []
+BP AC_Sph_Motion BS_UP_TO_DATE errors []
+BP AC_Sph_Camera BS_UP_TO_DATE errors []
+BP WBP_Sph_Comfort BS_UP_TO_DATE errors []
+BP SG_Sph_Comfort BS_UP_TO_DATE errors []
+BP BP_Sph_GASPCharacter BS_UP_TO_DATE errors []
+BP BP_GR_DayStation BS_UP_TO_DATE errors []
+BP BP_GR_DayHub BS_UP_TO_DATE errors []
+CAM {'Enabled': True, 'JumpPivK': 25.0, 'JumpHeadK': 8.0, 'BackRaise': 10.0, 'ZLead': 0.2, 'ReduceMotion': False, 'UserFov': 0.0, 'Side': 1.0}
+MOT {'ReachOn': True, 'ReachDur': 1.0, 'ReachIn': 0.28, 'ReachHold': 0.6, 'ReachMaxD': 120.0, 'GaitUpAcc': 0.55, 'FatUp': 0.06}
+MAT M_EX_WindFoliage_NearFade loaded True parent -
+MAT MI_EX_Plant_Level02_FO_NearFade loaded True parent M_EX_WindFoliage_NearFade
+MAT MI_PR_Fern01_FO loaded True parent MI_EX_Plant_Level02_FO_NearFade
+MAT MI_PR_PineTree03_FO loaded True parent MI_EX_Plant_Level02_FO_NearFade
+MAT MI_GL_Bush01_FO loaded True parent MI_EX_Bush01_FO_NearFade
+MAT MI_EX_Bush01_FO_NearFade loaded True parent MI_EX_Plant_Level02_FO_NearFade
+VENDOR master expr 124 (124 = untouched)
+IMC keys [('IA_Sph_Pace', 'LeftControl'), ('IA_Sph_Pace', 'Gamepad_LeftShoulder'), ('IA_Sph_Comfort', 'F10'), ('IA_Sph_Comfort', 'Gamepad_Special_Left')]
+DIRTY [] []
+Q_DONE
