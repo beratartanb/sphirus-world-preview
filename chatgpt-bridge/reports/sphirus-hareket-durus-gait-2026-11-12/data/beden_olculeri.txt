@@ -1,0 +1,9 @@
+# an_body.py
+M_side_A seg 1 n96 spd 165 | armOut L 10.4 (2.5..15.0) R 12.0 (8.7..17.8) | swing L 48.5 R 35.2 | shW 24.6 | pelvis sway 8.3 bob 10.2 | footW 13.4
+    neck: head fwd of neck_01 4.2, of chest 5.1, of pelvis 7.3 | head lateral of pelvis 1.9 | head yaw-pelvis 7.6 roll 97.5 pitch 81.9 | shoulder joint z above chest 5.9, clav 6.5 | chest counter-yaw -177.5..177.9 (range 355.4)
+M_side_D seg 1 n96 spd 165 | armOut L 7.8 (1.6..14.0) R 9.3 (5.0..15.8) | swing L 48.2 R 34.1 | shW 24.6 | pelvis sway 8.3 bob 10.3 | footW 13.3
+    neck: head fwd of neck_01 2.5, of chest 1.6, of pelvis 3.8 | head lateral of pelvis 1.9 | head yaw-pelvis -6.3 roll 98.5 pitch 84.7 | shoulder joint z above chest 6.0, clav 6.5 | chest counter-yaw -173.3..157.8 (range 331.1)
+M_side_A seg 3 n72 spd 585 | armOut L 10.2 (-6.6..40.6) R 9.9 (-4.4..34.3) | swing L 62.3 R 58.3 | shW 23.2 | pelvis sway 12.3 bob 17.3 | footW 18.4
+    neck: head fwd of neck_01 8.0, of chest 15.0, of pelvis 36.8 | head lateral of pelvis 0.9 | head yaw-pelvis -7.8 roll 86.2 pitch 63.9 | shoulder joint z above chest 4.9, clav 5.0 | chest counter-yaw -56.1..47.6 (range 103.7)
+M_side_D seg 4 n72 spd 585 | armOut L 4.6 (-6.9..17.0) R 5.1 (-7.8..21.4) | swing L 64.5 R 63.1 | shW 23.6 | pelvis sway 6.4 bob 15.2 | footW 12.7
+    neck: head fwd of neck_01 4.9, of chest 7.3, of pelvis 23.2 | head lateral of pelvis 0.2 | head yaw-pelvis -0.5 roll 91.4 pitch 84.0 | shoulder joint z above chest 6.8, clav 6.4 | chest counter-yaw -95.3..89.3 (range 184.6)
