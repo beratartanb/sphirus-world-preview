@@ -1,0 +1,25 @@
+# an_post.py: posture metrics (A = before, D/E = after; seg 0 idle, 1 walk, 3/4 run)
+M_side_A seg 0 n34 spd 0 | head fwd chest 4.8 pelvis 3.8, neck base fwd chest 1.7 | lean chest -1.4 upper 12.4 | face pitch 25.0 | eye roll -3.9 (-4.3..-2.8) yaw 2.2 (1.2..2.8)
+      shoulders width 24.5 height 4.7 | elbow out L 8.4 R 6.8 | hand out L 11.2 (max 11.6) R 11.1 (max 11.8) | hand swing L 4 R 3 | hands fwd of pelvis 5.6
+M_side_D seg 0 n34 spd 0 | head fwd chest 1.6 pelvis 1.2, neck base fwd chest 0.3 | lean chest -0.7 upper 4.2 | face pitch 28.6 | eye roll -0.9 (-1.1..-0.4) yaw 1.0 (0.6..1.6)
+      shoulders width 24.5 height 4.8 | elbow out L 6.3 R 5.4 | hand out L 6.9 (max 7.5) R 8.4 (max 9.8) | hand swing L 3 R 2 | hands fwd of pelvis 7.5
+M_side_E seg 0 n34 spd 0 | head fwd chest 0.7 pelvis 1.0, neck base fwd chest -0.3 | lean chest 0.5 upper 1.7 | face pitch 30.3 | eye roll 1.7 (0.8..2.3) yaw -0.4 (-0.9..0.6)
+      shoulders width 24.6 height 4.8 | elbow out L 5.6 R 4.5 | hand out L 6.3 (max 6.7) R 6.3 (max 7.0) | hand swing L 3 R 2 | hands fwd of pelvis 5.1
+M_back_A seg 0 n34 spd 0 | head fwd chest 3.6 pelvis 4.0, neck base fwd chest 1.2 | lean chest 0.6 upper 9.3 | face pitch 28.5 | eye roll -2.3 (-4.0..-0.4) yaw 0.8 (-0.7..1.6)
+      shoulders width 24.6 height 5.1 | elbow out L 7.6 R 6.2 | hand out L 9.7 (max 10.4) R 9.9 (max 10.7) | hand swing L 2 R 2 | hands fwd of pelvis 5.6
+M_back_D seg 0 n34 spd 0 | head fwd chest 0.4 pelvis 0.8, neck base fwd chest -0.5 | lean chest 0.6 upper 1.0 | face pitch 29.6 | eye roll -2.2 (-4.1..-0.3) yaw 0.5 (-0.8..1.2)
+      shoulders width 24.7 height 5.3 | elbow out L 6.6 R 5.1 | hand out L 7.7 (max 8.2) R 7.7 (max 8.4) | hand swing L 2 R 2 | hands fwd of pelvis 4.5
+M_back_E seg 0 n34 spd 0 | head fwd chest 1.4 pelvis 1.0, neck base fwd chest 0.1 | lean chest -0.5 upper 3.5 | face pitch 29.4 | eye roll 0.4 (0.1..0.9) yaw 0.9 (0.2..1.7)
+      shoulders width 24.5 height 4.7 | elbow out L 6.0 R 5.1 | hand out L 6.4 (max 6.9) R 7.9 (max 9.3) | hand swing L 4 R 2 | hands fwd of pelvis 7.4
+M_side_A seg 1 n90 spd 165 | head fwd chest 5.1 pelvis 7.0, neck base fwd chest 0.9 | lean chest 2.7 upper 13.3 | face pitch 26.1 | eye roll -1.3 (-5.8..3.0) yaw 0.1 (-1.3..1.2)
+      shoulders width 24.6 height 5.9 | elbow out L 8.0 R 8.2 | hand out L 10.1 (max 14.8) R 12.2 (max 17.8) | hand swing L 49 R 33 | hands fwd of pelvis 8.5
+M_side_D seg 1 n90 spd 165 | head fwd chest 1.5 pelvis 3.4, neck base fwd chest -0.9 | lean chest 2.7 upper 4.0 | face pitch 29.1 | eye roll -1.4 (-5.9..2.9) yaw 0.1 (-0.8..0.9)
+      shoulders width 24.6 height 5.9 | elbow out L 6.5 R 6.7 | hand out L 7.5 (max 13.1) R 9.3 (max 15.8) | hand swing L 48 R 32 | hands fwd of pelvis 7.7
+M_side_E seg 1 n90 spd 165 | head fwd chest 1.7 pelvis 3.6, neck base fwd chest -0.9 | lean chest 2.7 upper 4.4 | face pitch 28.9 | eye roll 0.3 (-4.2..4.3) yaw 0.1 (-0.8..1.0)
+      shoulders width 24.6 height 6.0 | elbow out L 6.7 R 7.0 | hand out L 7.8 (max 14.3) R 9.7 (max 17.0) | hand swing L 47 R 31 | hands fwd of pelvis 7.5
+M_side_A seg 3 n68 spd 546 | head fwd chest 15.0 pelvis 36.6, neck base fwd chest 7.0 | lean chest 32.6 upper 45.6 | face pitch 7.1 | eye roll 3.0 (-5.9..14.2) yaw 1.8 (-21.1..25.8)
+      shoulders width 23.1 height 4.9 | elbow out L 14.0 R 14.0 | hand out L 9.9 (max 40.6) R 10.4 (max 34.3) | hand swing L 62 R 58 | hands fwd of pelvis 24.0
+M_side_D seg 4 n68 spd 581 | head fwd chest 7.2 pelvis 22.8, neck base fwd chest 2.3 | lean chest 22.9 upper 19.2 | face pitch 28.9 | eye roll -0.1 (-8.9..7.6) yaw 0.5 (-1.0..3.7)
+      shoulders width 23.6 height 6.9 | elbow out L 9.9 R 11.3 | hand out L 4.1 (max 17.0) R 5.3 (max 21.4) | hand swing L 64 R 63 | hands fwd of pelvis 21.2
+M_side_E seg 4 n68 spd 549 | head fwd chest 7.8 pelvis 25.3, neck base fwd chest 2.8 | lean chest 25.9 upper 21.4 | face pitch 28.2 | eye roll 0.4 (-13.0..10.6) yaw 1.4 (-6.4..16.1)
+      shoulders width 23.1 height 7.6 | elbow out L 13.0 R 11.3 | hand out L 5.9 (max 27.6) R 5.2 (max 20.8) | hand swing L 64 R 62 | hands fwd of pelvis 21.8
