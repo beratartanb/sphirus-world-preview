@@ -1,0 +1,32 @@
+DRIVER /Game/Characters/UEFN_Mannequin/Meshes/SKM_UEFN_Mannequin.SKM_UEFN_Mannequin
+BODY /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Body/SKM_MHC_Sph8_BodyMesh.SKM_MHC_Sph8_BodyMesh animclass ABP_Sph_Body_GASP_C
+CMC {'jump_z_velocity': 500.0, 'air_control': 0.25, 'gravity_scale': 1.0, 'braking_deceleration_falling': 0.0, 'max_walk_speed': 180.0, 'max_walk_speed_crouched': 110.0}
+JUMP {'jump_max_hold_time': 0.0, 'jump_max_count': 1}
+REF_ERR TypeError("AnimPoseExtensions: Failed to convert parameter 'skeleton' when calling function 'AnimPoseExtensions.GetReferencePose' on 'Default__AnimPoseExtensions'\n  TypeError: NativizeProperty: Canno
+RTG pose Default Pose
+RTG off pelvis [0.0, 0.0, 0.0, 1.0]
+RTG off spine_01 [0.0, 0.0, 0.0, 1.0]
+RTG off spine_03 [0.0, 0.0, 0.0, 1.0]
+RTG off spine_05 [0.0, 0.0, 0.0, 1.0]
+RTG off neck_01 [0.0, 0.0, 0.0, 1.0]
+RTG off neck_02 [0.0, 0.0, 0.0, 1.0]
+RTG off head [0.0, 0.0, 0.0, 1.0]
+RTG off clavicle_l [0.0, -0.04362, 0.0, 0.99905]
+RTG off clavicle_r [0.0, -0.04362, 0.0, 0.99905]
+RTG off upperarm_l [-0.12333, -0.12344, -0.04687, 0.98354]
+RTG off upperarm_r [-0.12333, -0.12344, -0.04687, 0.98354]
+RTG off lowerarm_l [-0.0, 0.0, -0.08279, 0.99657]
+RTG off hand_l [0.2337, -0.0066, -0.06963, 0.96979]
+RTG off thigh_l [0.0, 0.0, 0.0, 1.0]
+RTG off thigh_r [0.0, 0.0, 0.0, 1.0]
+RTG api ['acquire_editor_element_handle', 'add_default_ops', 'add_new_retarget_override_set', 'add_retarget_op', 'assign_ik_rig_to_all_ops', 'auto_align_all_bones', 'auto_align_bones', 'auto_map_chains', 'call_method', 'cast', 'create_retarget_pose', 'duplicate_retarget_override_set', 'duplicate_retarget_pose', 'get_all_chain_settings', 'get_all_target_ik_rigs', 'get_class', 'get_controller', 'get_current_retarget_pose', 'get_current_retarget_pose_name', 'get_default_object', 'get_editor_property', 'get_fname', 'get_full_name', 'get_global_settings', 'get_ik_rig', 'get_index_of_op_by_name', 'get_name', 'get_num_retarget_ops', 'get_op_controller', 'get_op_name', 'get_outer', 'get_outermost', 'get_package', 'get_parent_op_by_name', 'get_parent_override_set', 'get_path_name', 'get_preview_mesh', 'get_retarget_chain_settings', 'get_retarget_op_enabled', 'get_retarget_poses', 'get_root_offset_in_retarget_pose', 'get_root_settings', 'get_rotation_offset_for_retarget_pose_bone', 'get_source_chain', 'get_target_ik_rig_for_op', 'get_typed_outer', 'get_world', 'is_editor_property_overridden', 'is_package_external', 'modify', 'move_retarget_op_in_stack', 'remove_all_ops', 'remove_retarget_op', 'remove_retarget_override_set', 'remove_retarget_pose', 'rename', 'rename_retarget_override_set', 'rename_retarget_pose', 'reset_chain_settings_in_all_ops', 'reset_chain_settings_to_default', 'reset_editor_property', 'reset_retarget_pose', 'run_op_initial_setup', 'set_current_retarget_pose', 'set_editor_properties', 'set_editor_property', 'set_global_settings', 'set_ik_rig', 'set_op_name', 'set_parent_op_by_name', 'set_parent_override_set', 'set_preview_mesh', 'set_retarget_chain_settings', 'set_retarget_op_enabled', 'set_root_offset_in_retarget_pose', 'set_root_settings', 'set_rotation_offset_for_retarget_pose_bone', 'set_source_chain', 'snap_bone_to_ground', 'static_class']
+OPS 8
+INPUT asset IA_Sph_Crouch InputAction
+INPUT asset IA_Sph_Gait InputAction
+INPUT asset IA_Sph_Jump InputAction
+INPUT asset IA_Sph_Look InputAction
+INPUT asset IA_Sph_Move InputAction
+INPUT asset IA_Sph_Use InputAction
+IMC /Game/GraceRanger/Input/IMC_GR_SFGameplay []
+IMC /Game/GraceRanger/Input/IMC_BC_Player []
+Q_DONE
