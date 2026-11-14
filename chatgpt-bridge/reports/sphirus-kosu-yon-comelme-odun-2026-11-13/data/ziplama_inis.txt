@@ -1,0 +1,77 @@
+== P_jump_A plan [['', 1.0, 0], ['W', 1.5, 0], ['W SpaceBar', 0.2, 0], ['W', 2.0, 0], ['', 1.0, 0], ['', 0.5, 120], ['W', 1.2, 0], ['W SpaceBar', 0.2, 0], ['W', 2.0, 0], ['', 1.0, 0], ['SpaceBar', 0.2, 0], ['', 1.5, 0], ['W', 2.0, 0], ['S', 1.5, 0], ['', 1.0, 0]]
+ s0  t   0.0-  1.0 spd mean    0 max    0 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    nan | hip-yaw  19.5 sh-yaw  22.1 | gt [0, False, 0, 1.0, 0.0, 165.0, 500.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 30)] clips [('M_Relaxed_Stand_Idle_Loop', 30)] mont [('AnimMontage_0', 30)] g4 None
+ s1  t   1.0-  2.5 spd mean  148 max  165 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw   3.3 sh-yaw   3.4 | gt [0, False, 0, 1.0, 0.0, 165.0, 500.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 43), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Walk_Start_F_Rfoot', 43), ('M_Relaxed_Stand_Idle_Loop', 2)] mont [('None', 43), ('AnimMontage_0', 2)] g4 None
+ s2  t   2.5-  2.7 spd mean  210 max  255 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  -4.6 sh-yaw   6.9 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('WALK', 'MOVING'), 6)] clips [('M_Relaxed_Jump_F_Off_Walk_Lfoot', 4), ('M_Relaxed_Walk_Start_F_Rfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 None
+ s3  t   2.7-  4.7 spd mean  194 max  255 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  -3.5 sh-yaw   7.2 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 60)] clips [('M_Relaxed_Walk_Loop_F', 34), ('M_Relaxed_Jump_F_Off_Walk_Lfoot', 15), ('M_Relaxed_Jump_RL_Land_Walk_Light', 9)] mont [('None', 46), ('AM_Sph_Jump', 14)] g4 None
+ s4  t   4.7-  5.7 spd mean   45 max  165 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  11.2 sh-yaw   2.7 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_F_Lfoot', 28), ('M_Relaxed_Walk_Loop_F', 2)] mont [('None', 30)] g4 None
+ s5  t   5.7-  6.2 spd mean    0 max    0 | yaw  180.0-> 180.0 cy  240.0 | vel-yaw    nan | hip-yaw   9.7 sh-yaw   5.2 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 15)] clips [('M_Relaxed_Stand_Idle_Loop', 14), ('M_Relaxed_Walk_Stop_F_Lfoot', 1)] mont [('None', 15)] g4 None
+ s6  t   6.2-  7.4 spd mean  143 max  165 | yaw  180.0->-120.0 cy  240.0 | vel-yaw    0.0 | hip-yaw -19.5 sh-yaw -23.2 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 34), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Walk_Reface_Start_090_R_Lfoot', 34), ('M_Relaxed_Stand_Idle_Loop', 2)] mont [('None', 36)] g4 None
+ s7  t   7.4-  7.6 spd mean  210 max  255 | yaw -120.0->-120.0 cy  240.0 | vel-yaw   -0.0 | hip-yaw   1.8 sh-yaw  -4.5 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('WALK', 'MOVING'), 6)] clips [('M_Relaxed_Jump_F_Off_Walk_Rfoot', 4), ('M_Relaxed_Walk_Reface_Start_090_R_Lfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 None
+ s8  t   7.6-  9.6 spd mean  186 max  255 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    0.0 | hip-yaw  -7.6 sh-yaw  17.5 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 60)] clips [('M_Relaxed_Jump_RL_Land_Walk_Light', 38), ('M_Relaxed_Jump_F_Off_Walk_Rfoot', 22)] mont [('None', 46), ('AM_Sph_Jump', 14)] g4 None
+ s9  t   9.6- 10.6 spd mean   45 max  165 | yaw -120.0->-120.0 cy  240.0 | vel-yaw   -0.0 | hip-yaw  13.8 sh-yaw  13.2 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_F_Lfoot', 28), ('M_Relaxed_Jump_RL_Land_Walk_Light', 2)] mont [('None', 30)] g4 None
+ s10 t  10.6- 10.8 spd mean    0 max    0 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    nan | hip-yaw   9.5 sh-yaw  11.0 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('WALK', 'IDLE'), 6)] clips [('M_Relaxed_Jump_F_Start_Stand_Lfoot', 4), ('M_Relaxed_Walk_Stop_F_Lfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 None
+ s11 t  10.8- 12.3 spd mean    0 max    0 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    nan | hip-yaw  -3.0 sh-yaw   7.1 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 45)] clips [('M_Relaxed_Jump_LR_Land_Stand_Light_Rfoot', 29), ('M_Relaxed_Jump_F_Start_Stand_Lfoot', 15), ('M_Relaxed_Jump_Loop_Fall', 1)] mont [('None', 31), ('AM_Sph_Jump', 14)] g4 None
+ s12 t  12.3- 14.3 spd mean  152 max  165 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    0.0 | hip-yaw   1.7 sh-yaw   3.6 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 58), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Walk_Start_F_Rfoot', 58), ('M_Relaxed_Jump_LR_Land_Stand_Light_Rfoot', 2)] mont [('None', 60)] g4 None
+ s13 t  14.3- 15.8 spd mean  143 max  165 | yaw -120.0->  60.0 cy  240.0 | vel-yaw    4.3 | hip-yaw  30.0 sh-yaw  43.6 | gt [0, False, 0, 1.0, 0.0, 159.2, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 45)] clips [('M_Relaxed_Walk_Turn_180_L_Rfoot', 43), ('M_Relaxed_Walk_Start_F_Rfoot', 2)] mont [('None', 45)] g4 None
+ s14 t  15.8- 16.8 spd mean   45 max  165 | yaw   60.0->  60.0 cy  240.0 | vel-yaw    0.0 | hip-yaw   9.8 sh-yaw   7.1 | gt [0, False, 0, 1.0, 0.0, 164.9, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_F_Lfoot', 28), ('M_Relaxed_Walk_Turn_180_L_Rfoot', 2)] mont [('None', 30)] g4 None
+== Q_jump_A plan [['', 1.0, 0], ['W', 1.5, 0], ['W SpaceBar', 0.2, 0], ['W', 2.0, 0], ['', 1.0, 0], ['', 0.5, 120], ['W', 1.2, 0], ['W SpaceBar', 0.2, 0], ['W', 2.0, 0], ['', 1.0, 0], ['SpaceBar', 0.2, 0], ['', 1.5, 0], ['', 0.5, -120], ['W LeftShift', 1.5, 0], ['W LeftShift SpaceBar', 0.2, 0], ['W LeftShift', 1.5, 0], ['W', 1.5, 0], ['', 1.0, 0], ['S', 1.5, 0], ['', 1.0, 0]]
+ s0  t   0.0-  1.0 spd mean    0 max    0 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    nan | hip-yaw   8.4 sh-yaw   4.8 | gt [0, False, 0, 1.0, 0.0, 165.0, 500.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 30)] clips [('M_Relaxed_Stand_Idle_Loop', 30)] mont [('None', 30)] g4 [0, False, 0, -1.0]
+ s1  t   1.0-  2.5 spd mean  147 max  165 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw   3.5 sh-yaw   4.8 | gt [0, False, 0, 1.0, 0.0, 165.0, 500.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 43), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Walk_Start_F_Rfoot', 43), ('M_Relaxed_Stand_Idle_Loop', 2)] mont [('None', 45)] g4 [0, False, 0, -1.0]
+ s2  t   2.5-  2.7 spd mean  210 max  255 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  -4.5 sh-yaw   7.1 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('WALK', 'MOVING'), 6)] clips [('M_Relaxed_Jump_F_Off_Walk_Lfoot', 4), ('M_Relaxed_Walk_Start_F_Rfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 [0, False, 0, 200.0]
+ s3  t   2.7-  4.7 spd mean  194 max  255 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  -2.0 sh-yaw   0.0 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 60)] clips [('M_Relaxed_Walk_Loop_F', 34), ('M_Relaxed_Jump_F_Off_Walk_Lfoot', 15), ('M_Relaxed_Jump_F_Land_Walk_Light_Lfoot', 9)] mont [('None', 46), ('AM_Sph_Jump', 14)] g4 [0, False, 0, -1.0]
+ s4  t   4.7-  5.7 spd mean   45 max  165 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw   3.6 sh-yaw  -2.6 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_F_Rfoot', 28), ('M_Relaxed_Walk_Loop_F', 2)] mont [('None', 30)] g4 [0, False, 0, -1.0]
+ s5  t   5.7-  6.2 spd mean    0 max    0 | yaw  180.0-> 180.0 cy  240.0 | vel-yaw    nan | hip-yaw   6.5 sh-yaw   4.0 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 15)] clips [('M_Relaxed_Stand_Idle_Loop', 14), ('M_Relaxed_Walk_Stop_F_Rfoot', 1)] mont [('None', 15)] g4 [0, False, 0, -1.0]
+ s6  t   6.2-  7.4 spd mean  143 max  165 | yaw  180.0->-120.0 cy  240.0 | vel-yaw   -0.0 | hip-yaw -19.8 sh-yaw -23.3 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 34), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Walk_Reface_Start_090_R_Lfoot', 34), ('M_Relaxed_Stand_Idle_Loop', 2)] mont [('None', 36)] g4 [0, False, 0, -1.0]
+ s7  t   7.4-  7.6 spd mean  210 max  255 | yaw -120.0->-120.0 cy  240.0 | vel-yaw   -0.0 | hip-yaw   1.8 sh-yaw  -4.4 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('WALK', 'MOVING'), 6)] clips [('M_Relaxed_Jump_F_Off_Walk_Rfoot', 4), ('M_Relaxed_Walk_Reface_Start_090_R_Lfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 [0, False, 0, 200.0]
+ s8  t   7.6-  9.6 spd mean  186 max  255 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    0.0 | hip-yaw  -7.7 sh-yaw  -4.6 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 60)] clips [('M_Relaxed_Jump_F_Land_Walk_Light_Lfoot', 38), ('M_Relaxed_Jump_F_Off_Walk_Rfoot', 22)] mont [('None', 46), ('AM_Sph_Jump', 14)] g4 [0, False, 0, -1.0]
+ s9  t   9.6- 10.6 spd mean   45 max  165 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    0.0 | hip-yaw   9.0 sh-yaw   2.2 | gt [0, False, 0, 1.0, 0.0, 165.0, 385.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_F_Lfoot', 28), ('M_Relaxed_Jump_F_Land_Walk_Light_Lfoot', 2)] mont [('None', 30)] g4 [0, False, 0, -1.0]
+ s10 t  10.6- 10.8 spd mean    0 max    0 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    nan | hip-yaw   9.6 sh-yaw  11.1 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('WALK', 'IDLE'), 6)] clips [('M_Relaxed_Jump_F_Start_Stand_Lfoot', 4), ('M_Relaxed_Walk_Stop_F_Lfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 [0, False, 0, 200.0]
+ s11 t  10.8- 12.3 spd mean    0 max    0 | yaw -120.0->-120.0 cy  240.0 | vel-yaw    nan | hip-yaw  12.4 sh-yaw  17.2 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 45)] clips [('M_Relaxed_Jump_F_Land_Stand_Light_Rfoot', 29), ('M_Relaxed_Jump_F_Start_Stand_Lfoot', 15), ('M_Relaxed_Jump_Loop_Fall', 1)] mont [('None', 31), ('AM_Sph_Jump', 14)] g4 [0, False, 0, -1.0]
+ s12 t  12.3- 12.8 spd mean    0 max    0 | yaw -120.0->-120.0 cy  180.0 | vel-yaw    nan | hip-yaw  10.3 sh-yaw   9.7 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 15)] clips [('M_Relaxed_Jump_F_Land_Stand_Light_Rfoot', 15)] mont [('None', 15)] g4 [0, False, 0, -1.0]
+ s13 t  12.8- 14.3 spd mean  280 max  375 | yaw -120.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  19.4 sh-yaw  28.6 | gt [0, False, 1, 1.0, 0.0, 375.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('RUN', 'MOVING'), 42), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Run_Reface_Start_090_L_Rfoot', 42), ('M_Relaxed_Jump_F_Land_Stand_Light_Rfoot', 2), ('M_Relaxed_Walk_Reface_Start_090_L_Lfoot', 1)] mont [('None', 45)] g4 [0, False, 1, -1.0]
+ s14 t  14.3- 14.5 spd mean  398 max  420 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  -6.1 sh-yaw   6.8 | gt [0, False, 1, 1.0, 0.0, 375.0, 400.0, False] st [False, False, False, 0.0, False, True]
+      gait [(('RUN', 'MOVING'), 6)] clips [('M_Relaxed_Jump_F_Start_Run_Lfoot', 4), ('M_Relaxed_Run_Reface_Start_090_L_Rfoot', 2)] mont [('AM_Sph_Jump', 4), ('None', 2)] g4 [0, False, 1, 200.0]
+ s15 t  14.5- 16.0 spd mean  391 max  420 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  -5.3 sh-yaw   2.4 | gt [0, False, 1, 1.0, 0.0, 375.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('RUN', 'MOVING'), 45)] clips [('M_Relaxed_Jump_F_Land_Run_Light_Lfoot', 30), ('M_Relaxed_Jump_F_Start_Run_Lfoot', 15)] mont [('None', 31), ('AM_Sph_Jump', 14)] g4 [0, False, 1, -1.0]
+ s16 t  16.0- 17.5 spd mean  206 max  375 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw   1.6 sh-yaw  -6.6 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 42), (('RUN', 'MOVING'), 3)] clips [('M_Relaxed_Walk_Loop_F', 29), ('M_Relaxed_Transition_Run_to_Walk_Lfoot', 13), ('M_Relaxed_Jump_F_Land_Run_Light_Lfoot', 3)] mont [('None', 45)] g4 [0, False, 0, -1.0]
+ s17 t  17.5- 18.5 spd mean   46 max  165 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw    0.0 | hip-yaw  11.0 sh-yaw   6.0 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_F_Lfoot', 28), ('M_Relaxed_Walk_Loop_F', 2)] mont [('None', 30)] g4 [0, False, 0, -1.0]
+ s18 t  18.5- 20.0 spd mean  134 max  150 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw -180.0 | hip-yaw   2.6 sh-yaw  -2.6 | gt [0, False, 0, 0.85, 0.0, 140.2, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'MOVING'), 43), (('WALK', 'IDLE'), 2)] clips [('M_Relaxed_Walk_Loop_F', 42), ('M_Relaxed_Walk_Stop_F_Lfoot', 2), ('M_Relaxed_Walk_Reface_Start_180_R_Rfoot', 1)] mont [('None', 45)] g4 [0, True, 0, 150.0]
+ s19 t  20.0- 21.0 spd mean   39 max  150 | yaw  180.0-> 180.0 cy  180.0 | vel-yaw -180.0 | hip-yaw   5.1 sh-yaw   0.9 | gt [0, False, 0, 1.0, 0.0, 165.0, 400.0, False] st [False, False, False, 0.0, False, False]
+      gait [(('WALK', 'IDLE'), 28), (('WALK', 'MOVING'), 2)] clips [('M_Relaxed_Walk_Stop_B_Lfoot', 28), ('M_Relaxed_Walk_Loop_F', 2)] mont [('None', 30)] g4 [0, False, 0, -1.0]
+Traceback (most recent call last):
+  File "C:\Users\berat\OneDrive\Documents\Unreal Projects\ActionAdventureMovementS\Tools\Motion_20261112\an_p0.py", line 10, in <module>
+    d=json.load(open('Saved/Codex/Grip_20261106/rec/%s.json'%lab)); R=d['rows']; print('==',lab,'plan',d.get('plan'))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Saved/Codex/Grip_20261106/rec/Q_jump_B.json'
