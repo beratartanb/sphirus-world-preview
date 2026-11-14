@@ -1,0 +1,38 @@
+Gercek zamanli kare maliyeti (PIE, editor UI dahil, 60 Hz PIE tick siniri). Rota: patika (2640,420) yuru 4 s -> jog 6 s -> sprint 4 s -> dur 3 s.
+Sira: 1. tur A (aday KAPALI) sonra B (ACIK); 2. tur ters sira B2 sonra A2. Her olcum oncesi editor yeniden acildi.
+== Saved/Codex/Motion_20261112/perf/atmoA_H.csv
+  FrameTime         n908 p50 21.4 p90 33.1 p95 35.1 p99 50.5 max 197.3
+  GameThreadTime    n908 p50 20.5 p90 25.7 p95 28.4 p99 36.6 max 194.4
+  RenderThreadTime  n908 p50 13.9 p90 32.7 p95 34.6 p99 38.9 max 93.3
+  GPUTime           n908 p50 18.9 p90 31.8 p95 33.0 p99 34.2 max 90.9
+  RHIThreadTime     n908 p50 6.3 p90 7.6 p95 8.4 p99 10.8 max 45.7
+   avg fps 41.2; histogram ms: 0-16.7 27, 16.7-25 580, 25-33.4 215, 33.4-50 76, 50-100 9, 100-inf 1
+  top Exclusive/GameThread/ UI 7.72; EventWait/PostPhysics 3.30; EventWait 2.68; TickActors 1.20; Animation 0.98; TimerManager 0.80; FlushLatentActions 0.55; Tickables 0.42; CharacterMovement 0.37; DeferredTickTime 0.32; PlayerControllerTick 0.29; Effects 0.25; EndOfFrameUpdates 0.25; Landscape 0.25
+  top GPU/ Unaccounted 1974263.78; ShadowDepths 4.66; HairStrandsVisibility 1.91; HairStrandsIndVoxelPageClear 1.73; PostProcessing 1.67; TemporalSuperResolution 1.53; Lights 1.19; Distortion 1.10; HairStrandsDensityMipGen 1.10; RenderDeferredLighting 0.94; SingleLayerWater 0.81; NaniteVisBuffer 0.79
+== Saved/Codex/Motion_20261112/perf/atmoB_H.csv
+  FrameTime         n501 p50 45.0 p90 52.9 p95 55.6 p99 76.6 max 103.2
+  GameThreadTime    n501 p50 19.4 p90 23.1 p95 25.4 p99 37.1 max 54.8
+  RenderThreadTime  n501 p50 44.9 p90 52.4 p95 54.7 p99 73.8 max 103.2
+  GPUTime           n501 p50 43.9 p90 49.9 p95 51.6 p99 64.0 max 106.5
+  RHIThreadTime     n501 p50 6.8 p90 8.3 p95 9.0 p99 14.6 max 63.2
+   avg fps 22.3; histogram ms: 0-16.7 0, 16.7-25 3, 25-33.4 40, 33.4-50 358, 50-100 98, 100-inf 2
+  top Exclusive/GameThread/ EventWait 24.78; UI 6.31; EventWait/PostPhysics 3.27; TickActors 1.26; TimerManager 1.25; Animation 1.00; DeferredTickTime 0.50; Tickables 0.45; CharacterMovement 0.31; Landscape 0.27; Effects 0.26; EndOfFrameUpdates 0.24; PlayerControllerTick 0.24; RenderAssetStreaming 0.22
+  top GPU/ ShadowDepths 24.47; ShadowProjection 2.36; NaniteVisBuffer 2.29; HairStrandsVisibility 1.79; TemporalSuperResolution 1.70; PostProcessing 1.65; NaniteBasePass 1.07; Unaccounted 1.01; LumenScreenProbeGather 0.73; RayTracingDynamicGeometry 0.56; VolumetricFog 0.54; Basepass 0.52
+== Saved/Codex/Motion_20261112/perf/atmoB2_H.csv
+  FrameTime         n479 p50 39.2 p90 89.4 p95 93.8 p99 115.0 max 177.6
+  GameThreadTime    n479 p50 21.0 p90 25.4 p95 29.1 p99 61.2 max 176.0
+  RenderThreadTime  n479 p50 38.8 p90 89.6 p95 93.7 p99 111.0 max 178.2
+  GPUTime           n479 p50 36.8 p90 87.3 p95 92.0 p99 100.6 max 133.1
+  RHIThreadTime     n479 p50 7.1 p90 8.9 p95 10.1 p99 82.6 max 201.9
+   avg fps 20.6; histogram ms: 0-16.7 0, 16.7-25 7, 25-33.4 61, 33.4-50 293, 50-100 110, 100-inf 8
+  top Exclusive/GameThread/ EventWait 26.42; UI 7.27; EventWait/PostPhysics 3.69; TimerManager 1.46; TickActors 1.30; Animation 1.08; Tickables 0.48; CharacterMovement 0.45; DeferredTickTime 0.36; PlayerControllerTick 0.33; Landscape 0.27; Effects 0.27; RenderAssetStreaming 0.27; EndOfFrameUpdates 0.25
+  top GPU/ ShadowDepths 24.60; HairStrandsVisibility 3.79; HairStrandsVoxelize 3.42; NaniteVisBuffer 3.37; DepthOfField 2.32; ShadowProjection 2.07; PostProcessing 1.66; TemporalSuperResolution 1.61; Unaccounted 1.48; SkyAtmosphere 1.29; NaniteBasePass 1.20; RayTracingDynamicGeometry 0.77
+== Saved/Codex/Motion_20261112/perf/atmoA2_H.csv
+  FrameTime         n426 p50 41.1 p90 93.1 p95 97.9 p99 118.9 max 291.1
+  GameThreadTime    n426 p50 21.9 p90 32.2 p95 38.9 p99 80.7 max 142.4
+  RenderThreadTime  n426 p50 40.2 p90 92.9 p95 96.5 p99 103.1 max 265.8
+  GPUTime           n426 p50 38.1 p90 90.8 p95 93.9 p99 99.7 max 137.6
+  RHIThreadTime     n426 p50 7.2 p90 9.5 p95 13.4 p99 76.1 max 82.7
+   avg fps 19.9; histogram ms: 0-16.7 0, 16.7-25 17, 25-33.4 54, 33.4-50 239, 50-100 100, 100-inf 16
+  top Exclusive/GameThread/ EventWait 25.46; UI 7.63; EventWait/PostPhysics 3.74; DeferredTickTime 2.47; TimerManager 1.47; TickActors 1.30; Animation 1.10; Tickables 0.48; RenderAssetStreaming 0.36; CharacterMovement 0.36; PlayerControllerTick 0.30; Landscape 0.27; Effects 0.27; EndOfFrameUpdates 0.26
+  top GPU/ ShadowDepths 25.65; NaniteVisBuffer 3.52; ShadowProjection 2.16; HairStrandsVisibility 1.83; TemporalSuperResolution 1.67; PostProcessing 1.67; NaniteBasePass 1.34; Unaccounted 1.20; LumenScreenProbeGather 0.85; RayTracingDynamicGeometry 0.81; VolumetricFog 0.69; VirtualTextureUpdate 0.65
