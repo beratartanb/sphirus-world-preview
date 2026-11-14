@@ -1,0 +1,438 @@
+{
+ "C1_A_off": {
+  "P0_refuge_L90": {
+   "mean": 79.9,
+   "white_pct": 0.32,
+   "black_pct": 0.22,
+   "sat": 0.326,
+   "r": 86.3,
+   "g": 79.4,
+   "b": 66.5
+  },
+  "P0_refuge_R90": {
+   "mean": 76.0,
+   "white_pct": 0.0,
+   "black_pct": 0.02,
+   "sat": 0.306,
+   "r": 78.1,
+   "g": 75.9,
+   "b": 71.4
+  },
+  "P0_refuge_back": {
+   "mean": 79.1,
+   "white_pct": 0.03,
+   "black_pct": 0.0,
+   "sat": 0.238,
+   "r": 79.5,
+   "g": 78.5,
+   "b": 84.0
+  },
+  "P0_refuge_front_path": {
+   "mean": 76.6,
+   "white_pct": 0.61,
+   "black_pct": 0.01,
+   "sat": 0.298,
+   "r": 81.9,
+   "g": 76.5,
+   "b": 62.0
+  },
+  "P0_refuge_fwd": {
+   "mean": 75.6,
+   "white_pct": 1.4,
+   "black_pct": 1.02,
+   "sat": 0.269,
+   "r": 78.2,
+   "g": 75.4,
+   "b": 70.4
+  },
+  "P0_refuge_house_back": {
+   "mean": 81.6,
+   "white_pct": 0.0,
+   "black_pct": 2.17,
+   "sat": 0.426,
+   "r": 91.5,
+   "g": 81.3,
+   "b": 55.4
+  },
+  "P1_landing_L90": {
+   "mean": 84.4,
+   "white_pct": 0.0,
+   "black_pct": 1.39,
+   "sat": 0.454,
+   "r": 93.9,
+   "g": 84.7,
+   "b": 53.9
+  },
+  "P1_landing_R90": {
+   "mean": 74.9,
+   "white_pct": 1.04,
+   "black_pct": 0.02,
+   "sat": 0.237,
+   "r": 80.2,
+   "g": 74.1,
+   "b": 67.6
+  },
+  "P1_landing_back": {
+   "mean": 80.8,
+   "white_pct": 0.0,
+   "black_pct": 0.05,
+   "sat": 0.402,
+   "r": 85.5,
+   "g": 82.2,
+   "b": 53.4
+  },
+  "P1_landing_boat": {
+   "mean": 78.5,
+   "white_pct": 1.0,
+   "black_pct": 0.27,
+   "sat": 0.225,
+   "r": 83.4,
+   "g": 77.8,
+   "b": 70.5
+  },
+  "P1_landing_from_veranda": {
+   "mean": 76.5,
+   "white_pct": 0.54,
+   "black_pct": 0.0,
+   "sat": 0.31,
+   "r": 81.8,
+   "g": 76.6,
+   "b": 60.0
+  },
+  "P1_landing_fwd": {
+   "mean": 88.3,
+   "white_pct": 0.14,
+   "black_pct": 0.0,
+   "sat": 0.342,
+   "r": 95.6,
+   "g": 88.5,
+   "b": 64.6
+  },
+  "P2_rockshelf_L90": {
+   "mean": 87.6,
+   "white_pct": 0.87,
+   "black_pct": 0.01,
+   "sat": 0.271,
+   "r": 90.5,
+   "g": 88.2,
+   "b": 73.5
+  },
+  "P2_rockshelf_R90": {
+   "mean": 70.4,
+   "white_pct": 0.01,
+   "black_pct": 0.03,
+   "sat": 0.231,
+   "r": 71.9,
+   "g": 70.5,
+   "b": 64.5
+  },
+  "P2_rockshelf_back": {
+   "mean": 78.2,
+   "white_pct": 0.0,
+   "black_pct": 0.26,
+   "sat": 0.364,
+   "r": 85.6,
+   "g": 78.1,
+   "b": 58.0
+  },
+  "P2_rockshelf_entry": {
+   "mean": 75.7,
+   "white_pct": 0.26,
+   "black_pct": 0.09,
+   "sat": 0.302,
+   "r": 81.3,
+   "g": 75.7,
+   "b": 59.1
+  },
+  "P2_rockshelf_exit_back": {
+   "mean": 79.8,
+   "white_pct": 0.01,
+   "black_pct": 2.08,
+   "sat": 0.318,
+   "r": 84.7,
+   "g": 79.9,
+   "b": 64.8
+  },
+  "P2_rockshelf_fwd": {
+   "mean": 74.6,
+   "white_pct": 0.0,
+   "black_pct": 0.82,
+   "sat": 0.272,
+   "r": 77.1,
+   "g": 74.8,
+   "b": 65.3
+  },
+  "P3_glade_L90": {
+   "mean": 77.1,
+   "white_pct": 0.0,
+   "black_pct": 0.01,
+   "sat": 0.254,
+   "r": 73.3,
+   "g": 78.7,
+   "b": 73.1
+  },
+  "P3_glade_R90": {
+   "mean": 79.8,
+   "white_pct": 0.0,
+   "black_pct": 0.25,
+   "sat": 0.233,
+   "r": 76.4,
+   "g": 81.2,
+   "b": 76.0
+  },
+  "P3_glade_arrive": {
+   "mean": 80.1,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.228,
+   "r": 74.6,
+   "g": 82.4,
+   "b": 74.1
+  },
+  "P3_glade_back": {
+   "mean": 85.6,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.213,
+   "r": 80.4,
+   "g": 88.0,
+   "b": 77.3
+  },
+  "P3_glade_fwd": {
+   "mean": 79.9,
+   "white_pct": 0.06,
+   "black_pct": 1.6,
+   "sat": 0.27,
+   "r": 80.1,
+   "g": 80.6,
+   "b": 73.1
+  },
+  "P3_glade_seat": {
+   "mean": 84.2,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.186,
+   "r": 79.9,
+   "g": 86.0,
+   "b": 78.6
+  }
+ },
+ "C1_B_on": {
+  "P0_refuge_L90": {
+   "mean": 77.6,
+   "white_pct": 0.06,
+   "black_pct": 0.24,
+   "sat": 0.288,
+   "r": 83.9,
+   "g": 76.9,
+   "b": 66.6
+  },
+  "P0_refuge_R90": {
+   "mean": 74.4,
+   "white_pct": 0.0,
+   "black_pct": 0.07,
+   "sat": 0.293,
+   "r": 77.0,
+   "g": 74.0,
+   "b": 70.8
+  },
+  "P0_refuge_back": {
+   "mean": 79.0,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.235,
+   "r": 80.9,
+   "g": 78.1,
+   "b": 81.6
+  },
+  "P0_refuge_front_path": {
+   "mean": 76.1,
+   "white_pct": 0.01,
+   "black_pct": 0.0,
+   "sat": 0.256,
+   "r": 80.6,
+   "g": 75.9,
+   "b": 64.8
+  },
+  "P0_refuge_fwd": {
+   "mean": 76.5,
+   "white_pct": 0.63,
+   "black_pct": 1.83,
+   "sat": 0.254,
+   "r": 78.4,
+   "g": 76.3,
+   "b": 72.6
+  },
+  "P0_refuge_house_back": {
+   "mean": 82.3,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.393,
+   "r": 92.1,
+   "g": 81.9,
+   "b": 56.6
+  },
+  "P1_landing_L90": {
+   "mean": 83.3,
+   "white_pct": 0.0,
+   "black_pct": 0.08,
+   "sat": 0.435,
+   "r": 93.2,
+   "g": 83.4,
+   "b": 52.6
+  },
+  "P1_landing_R90": {
+   "mean": 75.7,
+   "white_pct": 0.27,
+   "black_pct": 0.0,
+   "sat": 0.2,
+   "r": 79.7,
+   "g": 75.1,
+   "b": 69.9
+  },
+  "P1_landing_back": {
+   "mean": 79.0,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.355,
+   "r": 83.3,
+   "g": 80.1,
+   "b": 55.2
+  },
+  "P1_landing_boat": {
+   "mean": 78.0,
+   "white_pct": 0.13,
+   "black_pct": 0.0,
+   "sat": 0.194,
+   "r": 82.2,
+   "g": 77.4,
+   "b": 71.4
+  },
+  "P1_landing_from_veranda": {
+   "mean": 76.4,
+   "white_pct": 0.02,
+   "black_pct": 0.0,
+   "sat": 0.26,
+   "r": 80.8,
+   "g": 76.3,
+   "b": 64.0
+  },
+  "P1_landing_fwd": {
+   "mean": 85.9,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.293,
+   "r": 92.7,
+   "g": 85.8,
+   "b": 66.6
+  },
+  "P2_rockshelf_L90": {
+   "mean": 86.7,
+   "white_pct": 0.43,
+   "black_pct": 0.0,
+   "sat": 0.231,
+   "r": 89.5,
+   "g": 87.1,
+   "b": 74.7
+  },
+  "P2_rockshelf_R90": {
+   "mean": 70.0,
+   "white_pct": 0.0,
+   "black_pct": 0.04,
+   "sat": 0.197,
+   "r": 71.9,
+   "g": 69.9,
+   "b": 65.5
+  },
+  "P2_rockshelf_back": {
+   "mean": 76.8,
+   "white_pct": 0.0,
+   "black_pct": 0.1,
+   "sat": 0.341,
+   "r": 85.0,
+   "g": 76.2,
+   "b": 57.7
+  },
+  "P2_rockshelf_entry": {
+   "mean": 74.0,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.257,
+   "r": 79.6,
+   "g": 73.7,
+   "b": 60.7
+  },
+  "P2_rockshelf_exit_back": {
+   "mean": 78.2,
+   "white_pct": 0.0,
+   "black_pct": 1.5,
+   "sat": 0.304,
+   "r": 83.7,
+   "g": 78.0,
+   "b": 64.3
+  },
+  "P2_rockshelf_fwd": {
+   "mean": 72.5,
+   "white_pct": 0.0,
+   "black_pct": 0.04,
+   "sat": 0.255,
+   "r": 74.2,
+   "g": 72.5,
+   "b": 67.2
+  },
+  "P3_glade_L90": {
+   "mean": 77.7,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.227,
+   "r": 73.6,
+   "g": 79.0,
+   "b": 77.4
+  },
+  "P3_glade_R90": {
+   "mean": 79.2,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.221,
+   "r": 75.0,
+   "g": 80.4,
+   "b": 78.6
+  },
+  "P3_glade_arrive": {
+   "mean": 78.5,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.224,
+   "r": 72.7,
+   "g": 80.4,
+   "b": 76.6
+  },
+  "P3_glade_back": {
+   "mean": 86.5,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.176,
+   "r": 80.5,
+   "g": 88.6,
+   "b": 84.2
+  },
+  "P3_glade_fwd": {
+   "mean": 77.3,
+   "white_pct": 0.01,
+   "black_pct": 0.82,
+   "sat": 0.229,
+   "r": 76.1,
+   "g": 77.7,
+   "b": 76.4
+  },
+  "P3_glade_seat": {
+   "mean": 84.6,
+   "white_pct": 0.0,
+   "black_pct": 0.0,
+   "sat": 0.164,
+   "r": 80.1,
+   "g": 86.2,
+   "b": 82.5
+  }
+ }
+}
