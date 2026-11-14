@@ -1,0 +1,85 @@
+pose T Default Pose S Default Pose
+has get_chain_mapping False
+has get_all_chain_settings True
+has get_retarget_chain_settings True
+TOFF pelvis [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247B70) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF spine_01 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247BC0) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF spine_02 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247B70) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF spine_03 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247BC0) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF spine_04 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247B70) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF spine_05 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247BC0) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF neck_01 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247B70) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF neck_02 [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247BC0) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF head [0.0, 0.0, 0.0, 1.0] <Struct 'Rotator' (0x000002294B247B70) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF clavicle_l [0.0, -0.04362, 0.0, 0.99905] <Struct 'Rotator' (0x000002294B247BC0) {pitch: 5.000000, yaw: 0.000000, roll: -0.000000}>
+TOFF clavicle_r [0.0, -0.04362, 0.0, 0.99905] <Struct 'Rotator' (0x000002294B247B70) {pitch: 5.000000, yaw: 0.000000, roll: -0.000000}>
+IKRIG SRC /Game/Characters/UEFN_Mannequin/Rigs/IK_UEFN_Mannequin.IK_UEFN_Mannequin
+  CH Root Root -> Root
+  CH Spine spine_01 -> spine_05
+  CH Neck neck_01 -> neck_02
+  CH Head Head -> Head
+  CH LeftLeg thigh_l -> foot_l
+  CH LeftClavicle clavicle_l -> clavicle_l
+  CH LeftArm upperarm_l -> hand_l
+  CH LeftThumb thumb_01_l -> thumb_03_l
+  CH LeftIndex index_01_l -> index_03_l
+  CH LeftMiddle middle_01_l -> middle_03_l
+  CH LeftRing ring_01_l -> ring_03_l
+  CH LeftPinky pinky_01_l -> pinky_03_l
+  CH LeftIndexMetacarpal index_metacarpal_l -> index_metacarpal_l
+  CH LeftMiddleMetacarpal middle_metacarpal_l -> middle_metacarpal_l
+  CH LeftRingMetacarpal ring_metacarpal_l -> ring_metacarpal_l
+  CH LeftPinkyMetacarpal pinky_metacarpal_l -> pinky_metacarpal_l
+  CH RightLeg thigh_r -> foot_r
+  CH RightClavicle clavicle_r -> clavicle_r
+  CH RightArm upperarm_r -> hand_r
+  CH RightThumb thumb_01_r -> thumb_03_r
+  CH RightIndex index_01_r -> index_03_r
+  CH RightMiddle middle_01_r -> middle_03_r
+  CH RightRing ring_01_r -> ring_03_r
+  CH RightPinky pinky_01_r -> pinky_03_r
+  CH RightIndexMetacarpal index_metacarpal_r -> index_metacarpal_r
+  CH RightMiddleMetacarpal middle_metacarpal_r -> middle_metacarpal_r
+  CH RightRingMetacarpal ring_metacarpal_r -> ring_metacarpal_r
+  CH RightPinkyMetacarpal pinky_metacarpal_r -> pinky_metacarpal_r
+  CH RightToe ball_r -> ball_r
+  CH LeftToe ball_l -> ball_l
+IKRIG TGT /Game/MetaHumans/Common/Common/Rigs/IK_Metahuman_Retarget.IK_Metahuman_Retarget
+  CH root root -> root
+  CH Spine spine_01 -> spine_05
+  CH Neck neck_01 -> neck_02
+  CH head head -> head
+  CH LeftLeg thigh_l -> foot_l
+  CH LeftClavicle clavicle_l -> clavicle_l
+  CH LeftArm upperarm_l -> hand_l
+  CH LeftThumb thumb_01_l -> thumb_03_l
+  CH LeftIndex index_01_l -> index_03_l
+  CH LeftMiddle middle_01_l -> middle_03_l
+  CH LeftRing ring_01_l -> ring_03_l
+  CH LeftPinky pinky_01_l -> pinky_03_l
+  CH LeftIndexMetacarpal index_metacarpal_l -> index_metacarpal_l
+  CH LeftMiddleMetacarpal middle_metacarpal_l -> middle_metacarpal_l
+  CH LeftRingMetacarpal ring_metacarpal_l -> ring_metacarpal_l
+  CH LeftPinkyMetacarpal pinky_metacarpal_l -> pinky_metacarpal_l
+  CH RightLeg thigh_r -> foot_r
+  CH RightClavicle clavicle_r -> clavicle_r
+  CH RightArm upperarm_r -> hand_r
+  CH RightThumb thumb_01_r -> thumb_03_r
+  CH RightIndex index_01_r -> index_03_r
+  CH RightMiddle middle_01_r -> middle_03_r
+  CH RightRing ring_01_r -> ring_03_r
+  CH RightPinky pinky_01_r -> pinky_03_r
+  CH RightIndexMetacarpal index_metacarpal_r -> index_metacarpal_r
+  CH RightMiddleMetacarpal middle_metacarpal_r -> middle_metacarpal_r
+  CH RightRingMetacarpal ring_metacarpal_r -> ring_metacarpal_r
+  CH RightPinkyMetacarpal pinky_metacarpal_r -> pinky_metacarpal_r
+  CH LeftToe ball_l -> ball_l
+  CH RightToe ball_r -> ball_r
+METHODS ['auto_map_chains', 'get_all_chain_settings', 'get_global_settings', 'get_retarget_chain_settings', 'get_root_settings', 'get_source_chain', 'reset_chain_settings_in_all_ops', 'reset_chain_settings_to_default', 'set_global_settings', 'set_retarget_chain_settings', 'set_root_settings', 'set_source_chain']
+MAP Spine <- Spine
+  FK Spine (EnableFK=True,RotationMode=Interpolated,RotationAlpha=1.000000,TranslationMode=None,TranslationAlpha=1.000000,PoleVectorMatching=0.000000,PoleVectorMaintainOffset=False,PoleVectorOffset=0.000000)
+MAP Neck <- Neck
+  FK Neck (EnableFK=True,RotationMode=Interpolated,RotationAlpha=1.000000,TranslationMode=None,TranslationAlpha=1.000000,PoleVectorMatching=0.000000,PoleVectorMaintainOffset=False,PoleVectorOffset=0.000000)
+MAP Head <- Head
+  FK Head (EnableFK=True,RotationMode=Interpolated,RotationAlpha=1.000000,TranslationMode=None,TranslationAlpha=1.000000,PoleVectorMatching=0.000000,PoleVectorMaintainOffset=False,PoleVectorOffset=0.000000)
+Q_DONE
