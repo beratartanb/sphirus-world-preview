@@ -1,0 +1,22 @@
+BP BP_HybridA_Player BS_UP_TO_DATE errors []
+BP ABP_Sph_GASP BS_UP_TO_DATE errors []
+BP ABP_Sph_Body_GASP BS_UP_TO_DATE errors []
+BP AC_Sph_Camera BS_UP_TO_DATE errors []
+BP BP_Sph_GASPCharacter BS_UP_TO_DATE errors []
+BP BP_GR_DayStation BS_UP_TO_DATE errors []
+BP BP_GR_DayHub BS_UP_TO_DATE errors []
+BP BP_GR_SplitPiece BS_UP_TO_DATE errors []
+PLAYER {'GR_BackCos': -0.45, 'GR_BackOff': -0.15, 'GR_BackTurn': 150.0, 'GR_BackK': 0.85, 'GR_RunBlock': 0, 'GR_Pace': 0, 'GR_Gait': 0}
+IMC keys [('IA_Sph_Move', 'W'), ('IA_Sph_Move', 'S'), ('IA_Sph_Move', 'A'), ('IA_Sph_Move', 'D'), ('IA_Sph_Move', 'Gamepad_Left2D'), ('IA_Sph_Look', 'Mouse2D'), ('IA_Sph_Look', 'Gamepad_Right2D'), ('IA_Sph_Gait', 'LeftShift'), ('IA_Sph_Jump', 'SpaceBar'), ('IA_Sph_Jump', 'Gamepad_FaceButton_Bottom'), ('IA_Sph_Crouch', 'C'), ('IA_Sph_Crouch', 'Gamepad_RightThumbstick'), ('IA_Sph_Gait', 'Gamepad_LeftThumbstick'), ('InteractKey_IA', 'E'), ('InteractKey_IA', 'Gamepad_FaceButton_Right'), ('SubInteractKey_IA', 'F'), ('SubInteractKey_IA', 'Gamepad_DPad_Right'), ('UnifiedMenuContainer_IA', 'J'), ('UnifiedMenuContainer_IA', 'Gamepad_DPad_Up'), ('QuickInventory_IA', 'I'), ('QuickInventory_IA', 'Gamepad_DPad_Down'), ('ToggleTask_IA', 'T'), ('ToggleTask_IA', 'Gamepad_DPad_Left'), ('Pause_IA', 'P'), ('Pause_IA', 'Escape'), ('Pause_IA', 'Gamepad_Special_Right'), ('QuickInventory_IA', 'G'), ('IA_Sph_Use', 'LeftMouseButton'), ('IA_Sph_Sprint', 'LeftControl'), ('IA_Sph_Sprint', 'Gamepad_LeftShoulder'), ('IA_Sph_Comfort', 'F10'), ('IA_Sph_Comfort', 'Gamepad_Special_Left')]
+LANDS owned ['PSD_Sph_Stand_Idle_Lands_Heavy_F', 'PSD_Sph_Stand_Idle_Lands_Light_F', 'PSD_Sph_Stand_Run_Lands_Heavy_F', 'PSD_Sph_Stand_Run_Lands_Light_F', 'PSD_Sph_Stand_Walk_Lands_Heavy_F', 'PSD_Sph_Stand_Walk_Lands_Light_F']
+FOG2 EX_PostRain_Humidity density 0.0
+BLOCKLOG z 165.2
+ATMO EX_Atmo_C1_Mist_EdgeE hidden_game True visible False z 207
+ATMO EX_Atmo_C1_Mist_EdgeS hidden_game True visible False z 187
+ATMO EX_Atmo_C1_Mist_EdgeW hidden_game True visible False z 42
+ATMO EX_Atmo_C1_Mist_Pond hidden_game True visible False z -110
+ATMO EX_Atmo_C1_PPV blend 0.0 prio 1.5
+DIRTY [] []
+Q_DONE
+
+Editor log emb_Fa1: 17 x 'LogAutomationTest: Error: Condition failed' at frame 0 - same count in logs of 2026-11-12 before this pass (engine/plugin startup, not from these changes).
