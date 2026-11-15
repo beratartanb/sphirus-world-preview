@@ -1,0 +1,9 @@
+== Saved/Codex/Motion_20261112/perf/bio_after.csv
+  FrameTime         n418 p50 52.1 p90 67.6 p95 107.4 p99 224.3 max 242.2
+  GameThreadTime    n418 p50 15.7 p90 18.5 p95 19.5 p99 22.1 max 30.8
+  RenderThreadTime  n418 p50 52.4 p90 79.1 p95 110.5 p99 124.1 max 142.3
+  GPUTime           n418 p50 51.0 p90 79.2 p95 108.2 p99 120.4 max 140.0
+  RHIThreadTime     n418 p50 5.9 p90 7.2 p95 10.6 p99 123.9 max 146.3
+   avg fps 17.9; histogram ms: 0-16.7 0, 16.7-25 7, 25-33.4 13, 33.4-50 127, 50-100 245, 100-inf 26
+  top Exclusive/GameThread/ EventWait 40.02; UI 4.44; EventWait/PostPhysics 2.83; TimerManager 1.09; TickActors 1.00; Animation 0.83; Tickables 0.35; CharacterMovement 0.30; DeferredTickTime 0.24; Effects 0.22; Landscape 0.21; PlayerControllerTick 0.20; ViewportMisc 0.19; EndOfFrameUpdates 0.18
+  top GPU/ ShadowDepths 36.21; NaniteVisBuffer 1.83; TemporalSuperResolution 1.73; ShadowProjection 1.62; HairStrandsVisibility 1.59; PostProcessing 1.52; NaniteBasePass 1.26; Unaccounted 1.00; RenderDeferredLighting 0.77; LumenScreenProbeGather 0.73; LumenReflections 0.65; RayTracingDynamicGeometry 0.62
