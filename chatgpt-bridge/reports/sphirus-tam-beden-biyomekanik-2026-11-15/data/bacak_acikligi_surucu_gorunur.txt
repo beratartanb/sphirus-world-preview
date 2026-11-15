@@ -1,0 +1,17 @@
+# an_leg.py — sürücü (gizli UEFN iskeleti) ve görünür bedenin bacak açıklığı. A = önce, B = sonra
+visible thigh 44.4 calf 43.2 leg 87.6 | driver thigh 39.0 calf 42.6 leg 81.6 | ratio 1.073
+ s0  v   0 | visible ext mean 0.979 max 0.981 knee mean 156 max 158 hip h  92.4 ankle h  7.3 | driver ext mean 0.988 max 0.991 knee mean 162 max 164 hip h  87.3 ankle h  7.3
+ s1  v 160 | visible ext mean 0.930 max 0.983 knee mean 140 max 159 hip h  89.4 ankle h 12.4 | driver ext mean 0.941 max 0.995 knee mean 145 max 168 hip h  84.4 ankle h 12.4
+ s2  v 361 | visible ext mean 0.841 max 0.967 knee mean 118 max 151 hip h  86.8 ankle h 22.8 | driver ext mean 0.851 max 0.984 knee mean 121 max 160 hip h  82.0 ankle h 22.8
+ s3  v 563 | visible ext mean 0.736 max 0.955 knee mean 101 max 146 hip h  83.9 ankle h 31.3 | driver ext mean 0.742 max 0.974 knee mean 104 max 154 hip h  79.1 ankle h 31.3
+ s4  v  91 | visible ext mean 0.913 max 0.984 knee mean 139 max 160 hip h  85.3 ankle h  9.9 | driver ext mean 0.923 max 0.994 knee mean 144 max 168 hip h  80.4 ankle h  9.9
+ s5  v 155 | visible ext mean 0.933 max 0.982 knee mean 141 max 158 hip h  89.4 ankle h 11.9 | driver ext mean 0.944 max 0.994 knee mean 146 max 168 hip h  84.4 ankle h 11.9
+ s6  v  23 | visible ext mean 0.946 max 0.983 knee mean 145 max 159 hip h  90.9 ankle h 10.0 | driver ext mean 0.955 max 0.994 knee mean 150 max 167 hip h  85.9 ankle h 10.0
+visible thigh 44.4 calf 43.2 leg 87.6 | driver thigh 39.0 calf 42.6 leg 81.6 | ratio 1.073
+ s0  v   0 | visible ext mean 0.993 max 0.995 knee mean 167 max 168 hip h  93.9 ankle h  7.4 | driver ext mean 0.988 max 0.990 knee mean 162 max 164 hip h  87.4 ankle h  7.3
+ s1  v 158 | visible ext mean 0.945 max 0.996 knee mean 147 max 170 hip h  90.8 ankle h 12.4 | driver ext mean 0.941 max 0.994 knee mean 145 max 168 hip h  84.4 ankle h 12.4
+ s2  v 361 | visible ext mean 0.855 max 0.982 knee mean 122 max 158 hip h  88.2 ankle h 22.7 | driver ext mean 0.851 max 0.984 knee mean 121 max 159 hip h  82.0 ankle h 22.7
+ s3  v 563 | visible ext mean 0.746 max 0.965 knee mean 104 max 149 hip h  85.3 ankle h 31.4 | driver ext mean 0.740 max 0.968 knee mean 103 max 151 hip h  79.1 ankle h 31.4
+ s4  v  91 | visible ext mean 0.928 max 0.997 knee mean 147 max 172 hip h  86.7 ankle h 10.0 | driver ext mean 0.923 max 0.994 knee mean 144 max 168 hip h  80.4 ankle h  9.9
+ s5  v 151 | visible ext mean 0.948 max 0.996 knee mean 147 max 170 hip h  90.9 ankle h 11.9 | driver ext mean 0.943 max 0.994 knee mean 146 max 167 hip h  84.5 ankle h 11.9
+ s6  v  23 | visible ext mean 0.972 max 0.993 knee mean 156 max 167 hip h  93.3 ankle h  9.7 | driver ext mean 0.965 max 0.988 knee mean 152 max 162 hip h  86.8 ankle h  9.6
