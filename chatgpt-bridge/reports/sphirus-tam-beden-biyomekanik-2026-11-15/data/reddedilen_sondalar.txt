@@ -1,0 +1,26 @@
+# Reddedilen sondalar (çalışma anı, varlık yazılmadı)
+## sürücü ölçeği 0.944 + hızlar x0.944: kadans düştü, adım aynı kaldı
+== B_base_A
+ s1    5.5-  7.0 v 165 M_Relaxed_Walk_Loop_F             | cad 116 step  84.2+- 0.1 w 13.2 duty 0.54 dbl 0.09 fl 0.00 | slide  4.0 p90  9.0 drift  1.6 | pel bob  9.8 tow +1.4 yaw 17.5 roll 11.8 | chest 15.1 rel 28.3 c -0.52 | arm 44.9/24.0 al +0.96 +0.98 | trunk  +0.2 r 3.4 | knee mid 155 land 151
+ s2    9.9- 12.0 v 375 M_Relaxed_Run_Loop_F              | cad 167 step 137.9+- 6.2 w  7.6 duty 0.20 dbl 0.00 fl 0.59 | slide 11.2 p90 30.6 drift  1.2 | pel bob 11.9 tow -1.5 yaw 17.4 roll 15.0 | chest 38.0 rel 24.4 c +0.92 | arm 36.3/36.3 al +0.80 +0.59 | trunk +11.1 r 8.2 | knee mid 125 land 124
+== B_drv_A
+ s1    5.6-  7.0 v 156 M_Relaxed_Walk_Loop_F             | cad 106 step  85.2+- 0.2 w 12.0 duty 0.52 dbl 0.05 fl 0.00 | slide  3.3 p90  6.0 drift  1.2 | pel bob  9.2 tow +1.8 yaw 15.6 roll 11.7 | chest 15.5 rel 28.1 c -0.48 | arm 43.0/22.1 al +0.97 +0.97 | trunk  +0.4 r 3.3 | knee mid 149 land 148
+ s2   10.0- 12.0 v 354 M_Relaxed_Run_Loop_F              | cad 156 step 137.9+- 6.6 w  6.4 duty 0.18 dbl 0.00 fl 0.63 | slide  8.7 p90 15.3 drift  0.9 | pel bob 11.2 tow -1.3 yaw 16.8 roll 14.2 | chest 38.0 rel 23.6 c +0.92 | arm 33.7/29.3 al +0.82 +0.56 | trunk +11.1 r 7.9 | knee mid 126 land 124
+## çömelme hızı 165 / 140: klip ailesi aynı (Neutral), gövde eğimi aynı
+== B_crb_A
+ s3    3.7-  8.2 v 215 M_Neutral_Crouch_Start_F_Rfoot    | cad 140 step  90.0+-45.7 w 20.3 duty 0.49 dbl 0.04 fl 0.05 | slide  5.4 p90 12.0 drift  1.8 | pel bob 31.5 tow +1.9 yaw 31.4 roll 10.6 | chest 22.6 rel 32.0 c +0.33 | arm 47.2/45.0 al +0.67 +0.64 | trunk +51.3 r42.7 | knee mid  85 land  93
+== B_cr165_A
+ s3    6.7-  8.2 v 165 M_Neutral_Crouch_Loop_F           | cad 146 step  91.4+- 1.4 w 19.1 duty 0.52 dbl 0.04 fl 0.00 | slide  4.2 p90  9.5 drift  0.8 | pel bob  9.5 tow +0.6 yaw 11.6 roll  9.0 | chest 17.9 rel 15.7 c +0.16 | arm 21.2/29.0 al +0.53 +0.65 | trunk +51.3 r 7.3 | knee mid  94 land 106
+== B_cr140_A
+ s3    6.7-  8.2 v 150 M_Neutral_Crouch_Loop_F           | cad 150 step  82.7+- 0.9 w 19.1 duty 0.53 dbl 0.07 fl 0.00 | slide  5.8 p90 15.0 drift  1.0 | pel bob  9.1 tow +0.6 yaw 11.6 roll  9.0 | chest 18.3 rel 15.6 c +0.18 | arm 21.1/29.3 al +0.50 +0.63 | trunk +51.3 r 7.5 | knee mid  94 land 106
+M_Relaxed_Crouch_Loop_F len 4.13 trunk pitch 46.1 pelvis z 68.5 head z 102.0 head fwd of pelvis 43.7 loop ? rootmotion True
+M_Neutral_Crouch_Loop_F len 3.7 trunk pitch 46.2 pelvis z 68.5 head z 101.8 head fwd of pelvis 43.3 loop ? rootmotion True
+M_Relaxed_Crouch_Loop_B len 4.07 trunk pitch 48.5 pelvis z 70.6 head z 102.0 head fwd of pelvis 46.6 loop ? rootmotion True
+M_Neutral_Crouch_Loop_B len 3.83 trunk pitch 47.4 pelvis z 70.6 head z 101.8 head fwd of pelvis 45.0 loop ? rootmotion True
+M_Relaxed_Crouch_Loop_LL len 4.13 trunk pitch 44.0 pelvis z 69.1 head z 103.9 head fwd of pelvis 43.7 loop ? rootmotion True
+M_Neutral_Crouch_Loop_LL len 3.83 trunk pitch 44.0 pelvis z 69.1 head z 103.9 head fwd of pelvis 43.7 loop ? rootmotion True
+M_Neutral_Crouch_Idle_Loop len 10.0 trunk pitch 13.5 pelvis z 43.4 head z 98.3 head fwd of pelvis 19.6 loop ? rootmotion True
+M_Relaxed_Crouch_Start_F_Lfoot len 4.07 trunk pitch 41.4 pelvis z 67.2 head z 102.3 head fwd of pelvis 40.8 loop ? rootmotion True
+M_Relaxed_Crouch_Stop_F_Lfoot len 5.83 trunk pitch 28.3 pelvis z 55.7 head z 101.0 head fwd of pelvis 30.4 loop ? rootmotion True
+M_Relaxed_Walk_Loop_F len 4.1 trunk pitch -0.4 pelvis z 89.2 head z 147.2 head fwd of pelvis 5.9 loop ? rootmotion True
+DONE
