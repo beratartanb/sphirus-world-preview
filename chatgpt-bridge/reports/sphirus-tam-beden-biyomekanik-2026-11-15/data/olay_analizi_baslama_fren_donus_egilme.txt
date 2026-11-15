@@ -1,0 +1,91 @@
+# an_events.py — başlama / fren / dönüş / eğilme olayları. N_sideb_D = önce, N_sideb_E = sonra, N_side60b_D = 60 Hz önce
+== N_sideb_D
+  START s1: first foot off = r at 0.23 s (other 0.53 s); clip M_Relaxed_Walk_Start_F_Rfoot
+    t+0.0 v   0.0 pelvis lat toward stance  +1.6 cm (stance foot at 16.8) fwd  +0.5 z  95.1 | chest lat  +1.8 | trunk  -3.3 | knee st 157 sw 156 | ball z st  3.9 sw  3.9
+    t+0.1 v  54.4 pelvis lat toward stance  +1.8 cm (stance foot at 16.8) fwd  +0.5 z  95.1 | chest lat  +1.9 | trunk  -3.6 | knee st 158 sw 153 | ball z st  3.9 sw  4.1
+    t+0.2 v 130.2 pelvis lat toward stance  +2.6 cm (stance foot at 16.8) fwd  -0.1 z  94.7 | chest lat  +2.8 | trunk  -2.9 | knee st 159 sw 135 | ball z st  4.1 sw  6.4
+    t+0.3 v 165.0 pelvis lat toward stance  +3.6 cm (stance foot at 16.8) fwd  -2.1 z  93.8 | chest lat  +4.0 | trunk  +0.4 | knee st 157 sw 142 | ball z st  4.6 sw 10.6
+    t+0.4 v 165.0 pelvis lat toward stance  +3.7 cm (stance foot at 16.8) fwd  -4.2 z  90.0 | chest lat  +4.0 | trunk  +6.0 | knee st 155 sw 156 | ball z st  4.6 sw 11.9
+    t+0.5 v 165.0 pelvis lat toward stance  +3.4 cm (stance foot at 16.8) fwd  -3.9 z  87.4 | chest lat  +2.4 | trunk  +9.3 | knee st 144 sw 140 | ball z st  6.5 sw  4.3
+    t+0.7 v 165.0 pelvis lat toward stance  +0.9 cm (stance foot at 16.8) fwd  -5.8 z  93.3 | chest lat  -0.9 | trunk  +9.9 | knee st 113 sw 147 | ball z st  9.8 sw  3.7
+    t+1.0 v 165.0 pelvis lat toward stance  +1.0 cm (stance foot at 16.8) fwd  -1.7 z  89.4 | chest lat  -0.0 | trunk  +2.1 | knee st 149 sw 136 | ball z st  5.5 sw  7.7
+  BRAKE s4: release speed 585, clip M_Relaxed_Sprint_Stop_F_Lfoot
+    +0.37 s land r  v 350.2  reach ahead of pelvis  +9.9 cm  pelvis z  70.6  trunk +16.1  knee  90 (other 153)  hip  99
+    +0.47 s land l  v 280.5  reach ahead of pelvis +64.5 cm  pelvis z  63.5  trunk +16.1  knee 116 (other  87)  hip 100
+    +0.83 s land l  v  24.2  reach ahead of pelvis +52.0 cm  pelvis z  76.5  trunk +17.2  knee 125 (other  95)  hip 117
+    +0.87 s land r  v   0.0  reach ahead of pelvis  -1.8 cm  pelvis z  78.4  trunk +15.2  knee 100 (other 129)  hip 116
+    +1.17 s land l  v   0.0  reach ahead of pelvis +29.2 cm  pelvis z  91.3  trunk  +4.9  knee 133 (other 141)  hip 142
+    stop in 0.8670000000000009 s, dist 270 cm, decel mean 682 max 733 cm/s2 | pelvis z min 61.8 (end 94.7) | trunk max +22.2 min -1.7 end -1.4 | knee min L 64 R 37
+  BRAKE s7: release speed 165, clip M_Relaxed_Walk_Stop_F_Lfoot
+    +0.20 s land l  v 106.3  reach ahead of pelvis +27.0 cm  pelvis z  91.7  trunk  +2.0  knee 146 (other 108)  hip 139
+    +0.83 s land r  v   0.0  reach ahead of pelvis  +4.8 cm  pelvis z  96.4  trunk  -0.9  knee 146 (other 154)  hip 156
+    +1.40 s land l  v   0.0  reach ahead of pelvis  +2.8 cm  pelvis z  95.4  trunk  -0.7  knee 150 (other 152)  hip 157
+    stop in 0.5 s, dist 46 cm, decel mean 334 max 381 cm/s2 | pelvis z min 88.4 (end 95.3) | trunk max +3.0 min -1.7 end -1.7 | knee min L 132 R 104
+  TURN s5: actor yaw change -148 deg in 2.5 s, speed 153
+    t 19.00 stance l: ball drift  1.8 cm, planted foot yaw change  -1.7 deg while the actor turned -28.0 deg
+    t 20.03 stance l: ball drift  1.4 cm, planted foot yaw change -13.9 deg while the actor turned -28.0 deg
+    t 21.03 stance l: ball drift  1.4 cm, planted foot yaw change -16.4 deg while the actor turned -26.0 deg
+    t 19.50 stance r: ball drift  0.9 cm, planted foot yaw change -14.0 deg while the actor turned -26.0 deg
+    t 20.57 stance r: ball drift  1.3 cm, planted foot yaw change -20.3 deg while the actor turned -26.0 deg
+  TURN s6: actor yaw change +148 deg in 2.5 s, speed 165
+    t 22.07 stance l: ball drift  1.0 cm, planted foot yaw change +20.2 deg while the actor turned +26.0 deg
+    t 23.10 stance l: ball drift  1.6 cm, planted foot yaw change +32.3 deg while the actor turned +28.0 deg
+    t 21.53 stance r: ball drift  1.4 cm, planted foot yaw change  +0.9 deg while the actor turned +30.0 deg
+    t 22.57 stance r: ball drift  1.9 cm, planted foot yaw change +30.3 deg while the actor turned +30.0 deg
+    t 23.60 stance r: ball drift  1.4 cm, planted foot yaw change +24.7 deg while the actor turned +22.0 deg
+  BEND s9 start          head z 180.9 pelvis z 118.3 | trunk  -0.6 spine fold  9.7 | hip L 154 R 157 | knee L 142 R 136 | ankle L 102 R  92 | hands z  119/ 119 | feet fwd apart  -2.5 lat 39.2 | pelvis behind feet-mid  +7.1
+  BEND s9 deepest t+0.40 head z 128.2 pelvis z  69.5 | trunk +14.8 spine fold  4.3 | hip L  95 R 117 | knee L  52 R  40 | ankle L  77 R  57 | hands z   72/  76 | feet fwd apart +15.2 lat 43.1 | pelvis behind feet-mid +10.6
+  BEND s9 end            head z 130.1 pelvis z  71.8 | trunk +19.3 spine fold  4.6 | hip L  91 R 111 | knee L  54 R  42 | ankle L  76 R  67 | hands z   77/  80 | feet fwd apart +15.0 lat 42.9 | pelvis behind feet-mid +10.0
+  BEND s10 start          head z 130.1 pelvis z  71.8 | trunk +19.3 spine fold  4.8 | hip L  91 R 111 | knee L  54 R  42 | ankle L  76 R  67 | hands z   77/  80 | feet fwd apart +15.0 lat 42.9 | pelvis behind feet-mid +10.0
+  BEND s10 deepest t+0.47 head z 125.1 pelvis z  88.8 | trunk +50.6 spine fold 12.8 | hip L  69 R 108 | knee L  94 R  69 | ankle L  85 R  74 | hands z   81/  78 | feet fwd apart +74.7 lat 19.8 | pelvis behind feet-mid +14.9
+  BEND s10 end            head z 134.2 pelvis z  98.9 | trunk +51.7 spine fold  9.5 | hip L  95 R  88 | knee L  77 R  91 | ankle L  85 R  80 | hands z   89/  83 | feet fwd apart  -8.0 lat 30.4 | pelvis behind feet-mid  +3.9
+== N_sideb_E
+  START s1: first foot off = r at 0.23 s (other 0.57 s); clip M_Relaxed_Walk_Start_F_Rfoot
+    t+0.0 v   0.0 pelvis lat toward stance  +1.1 cm (stance foot at 16.8) fwd  +0.4 z  96.5 | chest lat  +1.5 | trunk  -3.1 | knee st 168 sw 166 | ball z st  4.1 sw  4.0
+    t+0.1 v  32.1 pelvis lat toward stance  +1.2 cm (stance foot at 16.8) fwd  +0.4 z  96.4 | chest lat  +1.6 | trunk  -3.3 | knee st 168 sw 165 | ball z st  4.1 sw  4.1
+    t+0.2 v  81.6 pelvis lat toward stance  +2.2 cm (stance foot at 16.8) fwd  -0.2 z  96.1 | chest lat  +2.5 | trunk  -2.4 | knee st 169 sw 140 | ball z st  4.1 sw  5.9
+    t+0.3 v 131.5 pelvis lat toward stance  +3.6 cm (stance foot at 16.8) fwd  -1.8 z  95.5 | chest lat  +4.0 | trunk  +0.6 | knee st 169 sw 142 | ball z st  4.2 sw  9.7
+    t+0.4 v 159.6 pelvis lat toward stance  +3.9 cm (stance foot at 16.8) fwd  -3.9 z  92.4 | chest lat  +4.2 | trunk  +5.7 | knee st 165 sw 165 | ball z st  4.0 sw 14.1
+    t+0.5 v 165.0 pelvis lat toward stance  +3.6 cm (stance foot at 16.8) fwd  -3.6 z  89.2 | chest lat  +2.8 | trunk  +9.2 | knee st 149 sw 151 | ball z st  5.5 sw  5.0
+    t+0.7 v 165.0 pelvis lat toward stance  +1.2 cm (stance foot at 16.8) fwd  -5.1 z  94.2 | chest lat  -0.8 | trunk +10.2 | knee st 113 sw 153 | ball z st 11.0 sw  3.7
+    t+1.0 v 165.0 pelvis lat toward stance  +1.0 cm (stance foot at 16.8) fwd  -2.8 z  91.0 | chest lat  -0.2 | trunk  +3.6 | knee st 161 sw 146 | ball z st  9.1 sw  6.5
+  BRAKE s4: release speed 585, clip M_Relaxed_Sprint_Stop_F_Lfoot
+    +0.37 s land r  v 350.4  reach ahead of pelvis  -1.9 cm  pelvis z  71.7  trunk +16.4  knee  92 (other 162)  hip 107
+    +0.43 s land l  v 303.5  reach ahead of pelvis +64.2 cm  pelvis z  66.5  trunk +16.7  knee 121 (other  92)  hip 103
+    +0.80 s land l  v  46.2  reach ahead of pelvis +51.5 cm  pelvis z  77.2  trunk +17.0  knee 126 (other  97)  hip 118
+    +0.83 s land r  v  23.4  reach ahead of pelvis  -3.2 cm  pelvis z  79.3  trunk +15.1  knee 102 (other 129)  hip 119
+    +1.13 s land l  v   0.0  reach ahead of pelvis +28.2 cm  pelvis z  92.7  trunk  +4.9  knee 138 (other 147)  hip 144
+    stop in 0.8670000000000009 s, dist 270 cm, decel mean 682 max 745 cm/s2 | pelvis z min 63.3 (end 96.0) | trunk max +22.2 min -1.6 end -1.3 | knee min L 60 R 47
+  BRAKE s7: release speed 165, clip M_Relaxed_Walk_Stop_F_Lfoot
+    +0.30 s land l  v  70.0  reach ahead of pelvis  +3.8 cm  pelvis z  97.1  trunk  +1.6  knee 156 (other 120)  hip 156
+    +0.63 s land l  v   0.0  reach ahead of pelvis  +5.8 cm  pelvis z  97.0  trunk  +0.6  knee 153 (other 134)  hip 155
+    +0.83 s land r  v   0.0  reach ahead of pelvis  +5.5 cm  pelvis z  97.8  trunk  -0.7  knee 153 (other 163)  hip 157
+    +1.40 s land l  v   0.0  reach ahead of pelvis  +2.9 cm  pelvis z  96.7  trunk  -0.6  knee 158 (other 161)  hip 161
+    stop in 0.5 s, dist 46 cm, decel mean 335 max 381 cm/s2 | pelvis z min 87.3 (end 96.6) | trunk max +3.4 min -1.7 end -1.7 | knee min L 109 R 117
+  TURN s5: actor yaw change -148 deg in 2.5 s, speed 148
+    t 19.00 stance l: ball drift  3.2 cm, planted foot yaw change  +0.5 deg while the actor turned  -8.0 deg
+    t 19.47 stance l: ball drift  1.6 cm, planted foot yaw change -20.6 deg while the actor turned -26.0 deg
+    t 20.47 stance l: ball drift  1.4 cm, planted foot yaw change -11.7 deg while the actor turned -28.0 deg
+    t 19.00 stance r: ball drift  0.2 cm, planted foot yaw change  +4.1 deg while the actor turned -26.0 deg
+    t 19.93 stance r: ball drift  1.1 cm, planted foot yaw change -15.4 deg while the actor turned -28.0 deg
+    t 21.00 stance r: ball drift  1.1 cm, planted foot yaw change -18.6 deg while the actor turned -26.0 deg
+  TURN s6: actor yaw change +148 deg in 2.5 s, speed 165
+    t 21.50 stance l: ball drift  0.9 cm, planted foot yaw change  +6.5 deg while the actor turned +26.0 deg
+    t 22.50 stance l: ball drift  1.1 cm, planted foot yaw change +21.3 deg while the actor turned +26.0 deg
+    t 23.53 stance l: ball drift  1.3 cm, planted foot yaw change +26.2 deg while the actor turned +26.0 deg
+    t 21.97 stance r: ball drift  1.8 cm, planted foot yaw change +18.0 deg while the actor turned +30.0 deg
+    t 23.03 stance r: ball drift  1.9 cm, planted foot yaw change +26.8 deg while the actor turned +28.0 deg
+  BEND s9 start          head z 182.4 pelvis z 119.8 | trunk  -0.4 spine fold 10.4 | hip L 157 R 158 | knee L 148 R 143 | ankle L 105 R  95 | hands z  119/ 120 | feet fwd apart  -2.9 lat 39.3 | pelvis behind feet-mid  +7.1
+  BEND s9 deepest t+0.40 head z 129.2 pelvis z  70.8 | trunk +15.0 spine fold  4.1 | hip L  97 R 117 | knee L  54 R  42 | ankle L  77 R  58 | hands z   72/  77 | feet fwd apart +15.2 lat 43.4 | pelvis behind feet-mid +10.6
+  BEND s9 end            head z 131.8 pelvis z  73.2 | trunk +19.5 spine fold  4.7 | hip L  92 R 111 | knee L  56 R  44 | ankle L  76 R  68 | hands z   75/  79 | feet fwd apart +15.0 lat 43.2 | pelvis behind feet-mid +10.0
+  BEND s10 start          head z 131.8 pelvis z  73.2 | trunk +19.3 spine fold  4.6 | hip L  92 R 111 | knee L  56 R  44 | ankle L  76 R  68 | hands z   76/  79 | feet fwd apart +15.0 lat 43.2 | pelvis behind feet-mid  +9.9
+  BEND s10 deepest t+0.50 head z 125.8 pelvis z  90.8 | trunk +52.3 spine fold 13.3 | hip L  72 R 109 | knee L  97 R  72 | ankle L  89 R  83 | hands z   80/  77 | feet fwd apart +76.7 lat 20.5 | pelvis behind feet-mid +12.7
+  BEND s10 end            head z 133.6 pelvis z 101.7 | trunk +56.6 spine fold 10.0 | hip L  94 R  66 | knee L  91 R 116 | ankle L  89 R  97 | hands z   93/  82 | feet fwd apart -50.8 lat 20.1 | pelvis behind feet-mid +22.9
+== K_pick_a2_B
+  BEND s5 start          head z 154.8 pelvis z  92.6 | trunk  -1.7 spine fold 18.5 | hip L 156 R 148 | knee L 144 R 143 | ankle L 100 R  93 | hands z   90/  88 | feet fwd apart  -9.4 lat 29.3 | pelvis behind feet-mid +11.5
+  BEND s5 deepest t+5.03 head z  91.9 pelvis z  47.9 | trunk +39.4 spine fold 12.5 | hip L  71 R  67 | knee L  61 R  65 | ankle L  87 R  95 | hands z   59/  59 | feet fwd apart  -1.4 lat 49.7 | pelvis behind feet-mid +28.7
+  BEND s5 end            head z 154.7 pelvis z  93.3 | trunk  -7.0 spine fold 13.2 | hip L 164 R 165 | knee L 151 R 159 | ankle L 101 R 100 | hands z  118/ 119 | feet fwd apart +10.4 lat 33.7 | pelvis behind feet-mid  +6.0
+== K_pick_a2_C
+  BEND s5 start          head z 156.9 pelvis z  94.8 | trunk  -1.9 spine fold 19.4 | hip L 158 R 153 | knee L 155 R 148 | ankle L 105 R 102 | hands z   91/  90 | feet fwd apart  +1.6 lat 28.6 | pelvis behind feet-mid  +7.9
+  BEND s5 deepest t+5.07 head z  93.5 pelvis z  49.2 | trunk +39.4 spine fold 12.8 | hip L  72 R  68 | knee L  63 R  67 | ankle L  87 R  95 | hands z   62/  62 | feet fwd apart  -1.4 lat 49.7 | pelvis behind feet-mid +28.7
+  BEND s5 end            head z 156.1 pelvis z  94.7 | trunk  -6.9 spine fold 12.9 | hip L 166 R 166 | knee L 159 R 170 | ankle L 106 R 106 | hands z  118/ 119 | feet fwd apart +10.5 lat 33.8 | pelvis behind feet-mid  +6.0
