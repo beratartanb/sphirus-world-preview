@@ -1,0 +1,106 @@
+===== W_flow_v5 rows 2422 top ['label', 'plan', 'fps']
+   label W_flow_v5
+   plan [['', 1.0, 0, -20], ['W', 0.6, 0, -20], ['', 0.7, 0, -20], ['', 1.0, 0, -20, [1700, -520, 96]], ['E', 0.15, 0, -20, [1700, -520, 96]], ['', 7.5, 0, -20, [1700, -520, 96]], ['', 0.8, 0, -15, [1756, -380, 200]], ['W', 1.0, 0, -15, [1756, -380, 200]], ['', 0.8, 0, -15, [1756, -380, 200]], ['', 1.2, 0, 
+   fps 30.0
+  t   0.00 st    [false, false, false, 0.0, false, false]
+  t   0.00 flags "ABP_Sph_GASP_C: Failed to find property 'Idle' for"
+  t   0.00 mont  null
+  t   0.00 hub   [0, 0, 0, 0, false]
+  t   3.37 st    [true, true, false, 0.0, false, false]
+  t   3.37 hub   [0, 0, 0, 0, true]
+  t   6.83 mont  "AM_GR_Day_Pick"
+  t   8.40 hub   [1, 0, 0, 0, true]
+  t   9.60 mont  null
+  t   9.83 st    [false, false, false, 0.0, false, false]
+  t   9.83 mont  "AM_GR_Day_CarryArms"
+  t   9.83 hub   [1, 0, 0, 0, false]
+  t  14.83 st    [true, true, false, 0.0, false, false]
+  t  14.83 hub   [1, 0, 0, 0, true]
+  t  15.50 mont  "AM_GR_Day_Chop"
+  t  20.60 hub   [0, 0, 2, 0, true]
+  t  23.00 mont  null
+  t  23.23 st    [false, false, false, 0.0, false, false]
+  t  23.23 hub   [0, 0, 2, 0, false]
+  t  23.33 st    [true, true, false, 0.0, false, false]
+  t  23.33 mont  "AM_GR_Day_Pick"
+  t  23.33 hub   [0, 0, 2, 0, true]
+  t  24.90 hub   [0, 1, 1, 0, true]
+  t  26.10 mont  null
+  t  26.30 st    [false, false, false, 0.0, false, false]
+  t  26.30 mont  "AM_GR_Day_CarryArms"
+  t  26.30 hub   [0, 1, 1, 0, false]
+  t  37.00 st    [true, true, false, 0.0, false, false]
+  t  37.00 mont  "AM_GR_Day_Pick"
+  t  37.00 hub   [0, 1, 1, 0, true]
+  t  38.60 hub   [0, 2, 0, 0, true]
+  t  39.77 mont  null
+  t  40.00 st    [false, false, false, 0.0, false, false]
+  t  40.00 mont  "AM_GR_Day_CarryArms"
+  t  40.00 hub   [0, 2, 0, 0, false]
+  t  53.23 st    [false, false, false, 1.0, false, false]
+  t  61.47 st    [true, true, false, 1.0, false, false]
+  t  61.47 hub   [0, 2, 0, 0, true]
+  t  61.93 mont  "AM_GR_Day_Kneel"
+  t  64.63 hub   [0, 0, 0, 1, true]
+  t  67.90 mont  null
+  t  68.13 st    [false, false, false, 1.0, false, false]
+  t  68.13 hub   [0, 0, 0, 1, false]
+  t  70.63 st    [true, true, false, 1.0, false, false]
+  t  70.63 mont  "AM_GR_Day_Kneel"
+  t  70.63 hub   [0, 0, 0, 1, true]
+  t  73.33 hub   [0, 0, 0, 2, true]
+  t  77.77 mont  null
+  t  78.00 st    [false, false, false, 1.0, false, false]
+  t  78.00 hub   [0, 0, 0, 2, false]
+===== W_pieces_v5 rows 1444 top ['label', 'plan', 'fps']
+   label W_pieces_v5
+   plan [['', 1.0, 0, -20], ['W', 0.6, 0, -20], ['', 0.7, 0, -20], ['', 1.0, 0, -20, [1700, -520, 96]], ['E', 0.15, 0, -20, [1700, -520, 96]], ['', 7.5, 0, -20, [1700, -520, 96]], ['', 0.8, 0, -15, [1756, -380, 200]], ['W', 1.0, 0, -15, [1756, -380, 200]], ['', 0.8, 0, -15, [1756, -380, 200]], ['', 1.2, 0, 
+   fps 30.0
+  t   0.00 st    [false, false, false, 0.0, false, false]
+  t   0.00 flags "ABP_Sph_GASP_C: Failed to find property 'Idle' for"
+  t   0.00 mont  null
+  t   0.00 hub   [0, 0, 0, 0, false]
+  t   3.37 st    [true, true, false, 0.0, false, false]
+  t   3.37 hub   [0, 0, 0, 0, true]
+  t   6.83 mont  "AM_GR_Day_Pick"
+  t   8.43 hub   [1, 0, 0, 0, true]
+  t   9.60 mont  null
+  t   9.83 st    [false, false, false, 0.0, false, false]
+  t   9.83 mont  "AM_GR_Day_CarryArms"
+  t   9.83 hub   [1, 0, 0, 0, false]
+  t  14.83 st    [true, true, false, 0.0, false, false]
+  t  14.83 hub   [1, 0, 0, 0, true]
+  t  15.50 mont  "AM_GR_Day_Chop"
+  t  20.60 hub   [0, 0, 2, 0, true]
+  t  23.00 mont  null
+  t  23.23 st    [false, false, false, 0.0, false, false]
+  t  23.23 hub   [0, 0, 2, 0, false]
+  t  23.30 st    [true, true, false, 0.0, false, false]
+  t  23.30 mont  "AM_GR_Day_Pick"
+  t  23.30 hub   [0, 0, 2, 0, true]
+  t  24.90 hub   [0, 1, 1, 0, true]
+  t  26.07 mont  null
+  t  26.30 st    [false, false, false, 0.0, false, false]
+  t  26.30 mont  "AM_GR_Day_CarryArms"
+  t  26.30 hub   [0, 1, 1, 0, false]
+  t  37.03 st    [true, true, false, 0.0, false, false]
+  t  37.03 mont  "AM_GR_Day_Pick"
+  t  37.03 hub   [0, 1, 1, 0, true]
+  t  37.10 st    [true, true, false, 0.0, false, true]
+  t  37.40 st    [true, true, false, 0.0, false, false]
+  t  38.60 hub   [0, 2, 0, 0, true]
+  t  39.80 mont  null
+  t  40.03 st    [false, false, false, 0.0, false, false]
+  t  40.03 mont  "AM_GR_Day_CarryArms"
+  t  40.03 hub   [0, 2, 0, 0, false]
+  t  40.67 st    [false, false, false, 0.0, false, true]
+  t  40.77 st    [false, false, false, 0.0, false, false]
+===== W_emptyfire_v5 rows 697 top ['label', 'plan', 'fps']
+   label W_emptyfire_v5
+   plan [['', 1.5, 0, -12], ['W', 0.4, 0, -12], ['', 0.8, 0, -12], ['', 1.2, 0, -14, [1405, 905, 205]], ['E', 0.15, 0, -14, [1405, 905, 205]], ['', 9.0, 0, -14, [1405, 905, 205]], ['E', 0.15, 0, -14, [1405, 905, 205]], ['', 9.0, 0, -14, [1405, 905, 205]], ['', 1.0, 0, -12]]
+   fps 30.0
+  t   0.00 st    [false, false, false, 1.0, false, false]
+  t   0.00 flags "ABP_Sph_GASP_C: Failed to find property 'Idle' for"
+  t   0.00 mont  null
+  t   0.00 hub   [0, 0, 0, 0, false]
+  t  20.87 mont  "AnimMontage_1"

@@ -1,0 +1,30 @@
+keys ['arm', 'br', 'bsig', 'cam', 'cc', 'cine', 'cy', 'db', 'drv', 'eyes', 'f', 'flags', 'fov', 'g4', 'g4d', 'gasp', 'gdt', 'gt', 'hub', 'ik', 'mo', 'mont', 'nk', 'occ', 'pcs', 'pp', 'rdt', 'reach', 's', 's_foot_l', 's_foot_r', 'sc', 'sc2', 'scr', 'st', 't', 'tgt', 'ub', 'ub2', 'ud']
+ub ['ball_l', 'ball_r', 'clavicle_l', 'clavicle_r', 'head', 'neck_01', 'pelvis', 'spine_01', 'spine_03', 'spine_05', 'thigh_l', 'thigh_r', 'upperarm_l', 'upperarm_r']
+ t  0.0 v   0 grade  +0.0 deg dz   +0.0 | pelvis h  85.4 (85.4.. 85.5) | low foot  -1.9.. -1.6 | trunk  -2.1 | straighter knee mean 170 | M_Relaxed_Stand_Idle_Loop
+ t  1.0 v   0 grade  +0.0 deg dz   +0.0 | pelvis h  85.4 (85.4.. 85.4) | low foot  -1.9.. -1.8 | trunk  -2.1 | straighter knee mean 171 | M_Relaxed_Stand_Idle_Loop
+ t  2.0 v 137 grade  +5.8 deg dz  +13.8 | pelvis h  81.2 (74.4.. 85.4) | low foot  -2.2.. +2.5 | trunk  -0.0 | straighter knee mean 154 | M_Neutral_Walk_Start_F_Rfoot
+ t  3.0 v 180 grade  -3.5 deg dz  -10.5 | pelvis h  78.5 (74.6.. 83.9) | low foot  -6.6.. +1.3 | trunk  +0.7 | straighter knee mean 154 | M_Neutral_Walk_Start_F_Rfoot
+ t  4.0 v 180 grade  -3.4 deg dz  -10.4 | pelvis h  80.1 (73.9.. 85.2) | low foot  -4.4.. +4.1 | trunk  +2.3 | straighter knee mean 152 | M_Neutral_Walk_Start_F_Rfoot
+ t  5.0 v 180 grade  -0.7 deg dz   -2.2 | pelvis h  86.6 (79.8.. 92.6) | low foot  +3.1..+10.6 | trunk  +1.6 | straighter knee mean 151 | M_Neutral_Walk_Loop_F
+ t  6.0 v 180 grade  +1.8 deg dz   +5.4 | pelvis h  89.1 (82.9.. 93.8) | low foot  +5.3.. +9.7 | trunk  +1.3 | straighter knee mean 158 | M_Neutral_Walk_Loop_F
+ t  7.0 v 180 grade  +4.2 deg dz  +12.8 | pelvis h  85.2 (79.8.. 90.2) | low foot  +1.8.. +8.1 | trunk  +1.1 | straighter knee mean 156 | M_Neutral_Walk_Loop_F
+ t  8.0 v 180 grade  +3.1 deg dz   +9.5 | pelvis h  84.7 (79.9.. 90.5) | low foot  +3.4.. +7.2 | trunk  +1.4 | straighter knee mean 150 | M_Neutral_Walk_Loop_F
+ t  9.0 v 180 grade  +6.5 deg dz  +19.8 | pelvis h  84.3 (78.7.. 91.1) | low foot  -0.9.. +8.1 | trunk  +2.3 | straighter knee mean 155 | M_Neutral_Walk_Loop_F
+ t 10.0 v 180 grade  +8.9 deg dz  +26.8 | pelvis h  78.0 (71.1.. 86.3) | low foot  -3.5.. +3.3 | trunk  +0.7 | straighter knee mean 152 | M_Neutral_Walk_Loop_F
+ t 11.0 v 180 grade +25.4 deg dz  +80.7 | pelvis h  67.2 (56.1.. 78.2) | low foot -20.8.. +1.9 | trunk  +1.0 | straighter knee mean 144 | M_Neutral_Walk_Loop_F
+ t 12.0 v 180 grade +18.5 deg dz  +56.6 | pelvis h  63.2 (50.9.. 81.0) | low foot -21.0.. +1.4 | trunk  +0.6 | straighter knee mean 133 | M_Neutral_Walk_Loop_F
+ t 13.0 v 180 grade  +0.5 deg dz   +1.6 | pelvis h  81.3 (75.4.. 87.9) | low foot  -0.2..+10.5 | trunk  +2.4 | straighter knee mean 142 | M_Neutral_Walk_Loop_F
+ t 14.0 v 180 grade  -0.3 deg dz   -1.0 | pelvis h  81.2 (73.5.. 89.6) | low foot  -8.8.. +7.8 | trunk  +1.4 | straighter knee mean 149 | M_Neutral_Walk_Loop_F
+ t 15.0 v 301 grade -25.0 deg dz -117.2 | pelvis h  75.1 (66.2.. 84.0) | low foot -10.7..+19.9 | trunk +14.9 | straighter knee mean 127 | M_Relaxed_Transition_Walk_to_Run_Lfoot
+ t 16.0 v 413 grade -12.9 deg dz  -91.6 | pelvis h  80.6 (72.0.. 90.0) | low foot  -5.9..+18.4 | trunk +13.4 | straighter knee mean 126 | M_Relaxed_Transition_Walk_to_Run_Lfoot
+ t 17.0 v 415 grade  -5.1 deg dz  -36.1 | pelvis h  88.7 (83.5.. 93.7) | low foot  +4.2..+20.7 | trunk +13.0 | straighter knee mean 141 | M_Relaxed_Transition_Walk_to_Run_Lfoot
+ t 18.0 v 415 grade  -6.0 deg dz  -41.6 | pelvis h  88.1 (83.9.. 91.9) | low foot  +3.1..+23.2 | trunk +20.8 | straighter knee mean 143 | M_Neutral_Run_Loop_F
+ t 19.0 v 415 grade  -1.3 deg dz   -9.4 | pelvis h  88.8 (84.8.. 92.9) | low foot  +5.0..+21.1 | trunk +19.3 | straighter knee mean 144 | M_Neutral_Run_Loop_F
+ t 20.0 v 202 grade  +4.2 deg dz  +13.2 | pelvis h  81.4 (75.3.. 93.0) | low foot  -0.1..+22.7 | trunk +22.3 | straighter knee mean 134 | M_Neutral_Run_Loop_F
+ t 21.0 v   0 grade  +0.0 deg dz   +0.0 | pelvis h  85.2 (81.2.. 86.2) | low foot  -0.6.. +0.5 | trunk  +4.1 | straighter knee mean 155 | M_Relaxed_Transition_Crouch_to_Stand
+ t 22.0 v  62 grade  +0.0 deg dz   +0.0 | pelvis h  81.8 (78.4.. 85.8) | low foot  -4.7.. +9.1 | trunk  +5.0 | straighter knee mean 154 | M_Neutral_Walk_Reface_Start_F_L_090
+ t 23.0 v 176 grade  -5.7 deg dz  -16.6 | pelvis h  87.4 (81.6.. 95.4) | low foot  -4.4..+10.9 | trunk  +0.3 | straighter knee mean 154 | M_Neutral_Transition_Run_to_Walk_Lfoot
+ t 24.0 v 180 grade  +1.9 deg dz   +5.5 | pelvis h  86.8 (81.2.. 92.1) | low foot  +5.4..+11.0 | trunk  +2.8 | straighter knee mean 153 | M_Neutral_Transition_Run_to_Walk_Lfoot
+ t 25.0 v  54 grade  -1.0 deg dz   -0.9 | pelvis h  88.6 (82.2.. 91.0) | low foot  +3.5.. +7.2 | trunk  +0.9 | straighter knee mean 151 | M_Neutral_Walk_Stop_FL_Rfoot
+ t 26.0 v   0 grade  +0.0 deg dz   +0.0 | pelvis h  89.4 (89.3.. 89.5) | low foot  +3.5.. +3.5 | trunk  +0.9 | straighter knee mean 165 | M_Neutral_Walk_Stop_FL_Rfoot
+ t 27.0 v   0 grade  +0.0 deg dz   +0.0 | pelvis h  89.5 (89.5.. 89.6) | low foot  +3.3.. +3.5 | trunk  +1.5 | straighter knee mean 167 | M_Neutral_Walk_Stop_FL_Rfoot
