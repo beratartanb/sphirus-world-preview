@@ -1,0 +1,45 @@
+== T10_JSTOP_B40
+  seg  2 after "W LeftShift" 3.00s      v0 415 | stop 0.73s dist  149 cm | pelvis drop 11.8 cm at 0.40s, settle 1.05s | foot slide 15.8 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift" 3.30s      v0 415 | stop 0.73s dist  153 cm | pelvis drop 13.4 cm at 0.43s, settle 0.87s | foot slide 11.7 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 3.65s      v0 415 | stop 0.73s dist  154 cm | pelvis drop  5.6 cm at 0.18s, settle 0.63s | foot slide 141.7 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W LeftShift" 1.00s      v0 332 | stop 0.73s dist  154 cm | pelvis drop -2.7 cm at 0.30s, settle 0.97s | foot slide 57.2 cm | M_Neutral_Run_Start_F_Lfoot > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 10 after "W LeftShift" 3.00s      v0 415 | stop nans dist  119 cm | pelvis drop 10.8 cm at 0.38s, settle nans | foot slide  9.0 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 12 after "W LeftShift" 2.50s      v0 415 | stop 0.73s dist  156 cm | pelvis drop  4.7 cm at 0.15s, settle 0.68s | foot slide 107.6 cm | M_Relaxed_Transition_Walk_to_R > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg 15 after "W LeftShift" 0.50s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  6.3 cm at 0.30s, settle 0.68s | foot slide 73.2 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg 17 after "W LeftShift" 3.00s      v0 415 | stop nans dist  148 cm | pelvis drop 11.9 cm at 0.40s, settle 0.55s | foot slide  9.9 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 19 after "W" 2.00s                v0 180 | stop 0.50s dist   46 cm | pelvis drop  5.1 cm at 0.33s, settle 0.83s | foot slide 27.5 cm | M_Neutral_Transition_Run_to_Wa > M_Relaxed_Run_Stop_F_Lfoot
+== T10_STOP_B40
+  seg  2 after "W LeftShift LeftControl" 7.00s v0 585 | stop 0.85s dist  252 cm | pelvis drop 25.6 cm at 0.43s, settle 0.98s | foot slide 45.6 cm | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v0 585 | stop 0.87s dist  253 cm | pelvis drop 25.6 cm at 0.43s, settle 0.97s | foot slide 82.0 cm | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 5.00s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  3.9 cm at 0.27s, settle 0.63s | foot slide 86.4 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                v0 180 | stop 0.47s dist   44 cm | pelvis drop  5.1 cm at 0.00s, settle 0.53s | foot slide  8.7 cm | M_Neutral_Walk_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+== T10_JSTOP_B15
+  seg  2 after "W LeftShift" 3.00s      v0 415 | stop 0.75s dist  149 cm | pelvis drop 11.2 cm at 0.40s, settle 1.05s | foot slide 11.6 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift" 3.30s      v0 415 | stop 0.73s dist  153 cm | pelvis drop 13.4 cm at 0.43s, settle 0.87s | foot slide 11.4 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 3.65s      v0 415 | stop 0.73s dist  154 cm | pelvis drop  6.0 cm at 0.27s, settle 0.68s | foot slide 120.1 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W LeftShift" 1.00s      v0 332 | stop 0.73s dist  154 cm | pelvis drop -2.7 cm at 0.30s, settle 0.95s | foot slide 57.2 cm | M_Neutral_Run_Start_F_Lfoot > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 10 after "W LeftShift" 3.00s      v0 415 | stop nans dist  119 cm | pelvis drop 10.8 cm at 0.38s, settle nans | foot slide  9.0 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 12 after "W LeftShift" 2.50s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  5.1 cm at 0.15s, settle 0.62s | foot slide 126.7 cm | M_Relaxed_Transition_Walk_to_R > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg 15 after "W LeftShift" 0.50s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  6.3 cm at 0.30s, settle 0.70s | foot slide 73.4 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg 17 after "W LeftShift" 3.00s      v0 415 | stop nans dist  148 cm | pelvis drop 12.0 cm at 0.40s, settle 0.55s | foot slide 10.1 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 19 after "W" 2.00s                v0 180 | stop 0.50s dist   46 cm | pelvis drop  5.2 cm at 0.33s, settle 0.83s | foot slide 27.5 cm | M_Neutral_Transition_Run_to_Wa > M_Relaxed_Run_Stop_F_Lfoot
+== T10_STOP_B15
+  seg  2 after "W LeftShift LeftControl" 7.00s v0 585 | stop 0.85s dist  252 cm | pelvis drop 25.6 cm at 0.43s, settle 0.98s | foot slide 45.5 cm | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v0 585 | stop 0.87s dist  253 cm | pelvis drop 25.6 cm at 0.43s, settle 0.97s | foot slide 82.4 cm | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 5.00s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  6.0 cm at 0.28s, settle 0.68s | foot slide 72.7 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                v0 180 | stop 0.47s dist   44 cm | pelvis drop  5.1 cm at 0.00s, settle 0.53s | foot slide  8.5 cm | M_Neutral_Walk_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+== T10_JSTOP_B05
+  seg  2 after "W LeftShift" 3.00s      v0 415 | stop 0.75s dist  149 cm | pelvis drop 11.1 cm at 0.40s, settle 1.05s | foot slide 11.8 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift" 3.30s      v0 415 | stop 0.73s dist  153 cm | pelvis drop 13.4 cm at 0.43s, settle 0.87s | foot slide 11.7 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 3.65s      v0 415 | stop 0.73s dist  154 cm | pelvis drop  6.0 cm at 0.27s, settle 0.68s | foot slide 119.4 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W LeftShift" 1.00s      v0 332 | stop 0.73s dist  154 cm | pelvis drop -2.7 cm at 0.30s, settle 0.97s | foot slide 57.0 cm | M_Neutral_Run_Start_F_Lfoot > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 10 after "W LeftShift" 3.00s      v0 415 | stop nans dist  119 cm | pelvis drop 10.8 cm at 0.38s, settle nans | foot slide  8.9 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 12 after "W LeftShift" 2.50s      v0 415 | stop 0.75s dist  156 cm | pelvis drop  5.0 cm at 0.15s, settle 0.63s | foot slide 128.1 cm | M_Relaxed_Transition_Walk_to_R > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg 15 after "W LeftShift" 0.50s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  6.3 cm at 0.30s, settle 0.70s | foot slide 73.3 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg 17 after "W LeftShift" 3.00s      v0 415 | stop nans dist  148 cm | pelvis drop 12.0 cm at 0.40s, settle 0.55s | foot slide 10.1 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Lfoot
+  seg 19 after "W" 2.00s                v0 180 | stop 0.48s dist   46 cm | pelvis drop  5.1 cm at 0.33s, settle 0.83s | foot slide 27.6 cm | M_Neutral_Transition_Run_to_Wa > M_Relaxed_Run_Stop_F_Lfoot
+== T10_STOP_B05
+  seg  2 after "W LeftShift LeftControl" 7.00s v0 585 | stop 0.85s dist  252 cm | pelvis drop 25.6 cm at 0.43s, settle 0.98s | foot slide 45.4 cm | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v0 585 | stop 0.87s dist  254 cm | pelvis drop 25.6 cm at 0.43s, settle 0.97s | foot slide 81.8 cm | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 5.00s      v0 415 | stop 0.73s dist  155 cm | pelvis drop  6.1 cm at 0.30s, settle 0.68s | foot slide 72.2 cm | M_Neutral_Run_Loop_F > M_Relaxed_Sprint_Stop_F_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                v0 180 | stop 0.47s dist   44 cm | pelvis drop  5.1 cm at 0.00s, settle 0.53s | foot slide  8.6 cm | M_Neutral_Walk_Loop_F > M_Relaxed_Run_Stop_F_Rfoot

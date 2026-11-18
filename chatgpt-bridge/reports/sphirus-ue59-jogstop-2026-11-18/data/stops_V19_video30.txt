@@ -1,0 +1,20 @@
+== V19_jstop_before
+  seg  2 jog 3.00s      v0 415 | stop 0.73s dist  152 cm | pelvis drop 16.7 cm at 0.40s, settle 0.83s | foot slide 12.0 cm | M_Neutral_Run_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+  seg  4 jog 3.30s      v0 415 | stop 0.77s dist  157 cm | pelvis drop 13.6 cm at 0.43s, settle 0.93s | foot slide 81.4 cm | M_Neutral_Run_Loop_F > M_Neutral_Run_Stop_F_Rfoot
+  seg  7 jog 0.50s      v0 415 | stop 0.77s dist  159 cm | pelvis drop  9.9 cm at 0.53s, settle 0.87s | foot slide 20.0 cm | M_Neutral_Run_Loop_F > M_Neutral_Run_Stop_FR_Lfoot
+  seg  9 after "W" 3.00s                v0 180 | stop 0.50s dist   46 cm | pelvis drop  2.3 cm at 0.30s, settle 0.87s | foot slide 14.6 cm | M_Neutral_Walk_Start_F_Rfoot > M_Neutral_Walk_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+== V19_jstop_after
+  seg  2 jog 3.00s      v0 415 | stop 0.73s dist  152 cm | pelvis drop 13.3 cm at 0.43s, settle 1.07s | foot slide  9.7 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 jog 3.30s      v0 415 | stop 0.77s dist  157 cm | pelvis drop 11.9 cm at 0.43s, settle 0.87s | foot slide  7.3 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  7 jog 0.50s      v0 415 | stop 0.77s dist  160 cm | pelvis drop  8.0 cm at 0.33s, settle 0.77s | foot slide 49.9 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  9 after "W" 3.00s                v0 180 | stop 0.50s dist   47 cm | pelvis drop  3.2 cm at 0.33s, settle 0.50s | foot slide  5.3 cm | M_Neutral_Walk_Start_F_Rfoot > M_Relaxed_Walk_Stop_F_Lfoot
+== V19_jstop_pc_before
+  seg  2 jog 3.00s      v0 415 | stop 0.73s dist  152 cm | pelvis drop 16.0 cm at 0.40s, settle 0.80s | foot slide 16.5 cm | M_Neutral_Run_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+  seg  4 jog 3.30s      v0 415 | stop 0.77s dist  157 cm | pelvis drop 13.6 cm at 0.43s, settle 0.93s | foot slide 81.6 cm | M_Neutral_Run_Loop_F > M_Neutral_Run_Stop_F_Rfoot
+  seg  7 jog 0.50s      v0 415 | stop 0.77s dist  160 cm | pelvis drop  9.8 cm at 0.57s, settle 0.87s | foot slide 23.3 cm | M_Neutral_Run_Loop_F > M_Neutral_Run_Stop_FR_Lfoot
+  seg  9 after "W" 3.00s                v0 180 | stop 0.50s dist   47 cm | pelvis drop  2.4 cm at 0.33s, settle 0.87s | foot slide 14.8 cm | M_Neutral_Walk_Start_F_Rfoot > M_Neutral_Walk_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+== V19_jstop_pc_after
+  seg  2 jog 3.00s      v0 415 | stop 0.73s dist  153 cm | pelvis drop 13.5 cm at 0.40s, settle 1.07s | foot slide  9.8 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 jog 3.30s      v0 415 | stop 0.77s dist  156 cm | pelvis drop 12.8 cm at 0.47s, settle 0.90s | foot slide 10.6 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  7 jog 0.50s      v0 415 | stop 0.77s dist  158 cm | pelvis drop  6.6 cm at 0.30s, settle 0.73s | foot slide 60.1 cm | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  9 after "W" 3.00s                v0 180 | stop 0.50s dist   46 cm | pelvis drop  3.1 cm at 0.33s, settle 0.47s | foot slide  5.4 cm | M_Neutral_Walk_Start_F_Rfoot > M_Relaxed_Walk_Stop_F_Lfoot
