@@ -1038,6 +1038,63 @@
       "indirect_lighting_intensity": 1.0
     },
     {
+      "actor": "EX_Atmo_C1_PPV",
+      "type": "PostProcessVolume",
+      "location": [
+        1300.0,
+        -300.0,
+        390.2014374732971
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": {
+        "center": [
+          1300.0,
+          -300.0,
+          390.2014374732971
+        ],
+        "extent": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "min": [
+          1200.0,
+          -400.0,
+          290.2014374732971
+        ],
+        "max": [
+          1400.0,
+          -200.0,
+          490.2014374732971
+        ],
+        "dimensions_cm": [
+          200.0,
+          200.0,
+          200.0
+        ]
+      },
+      "components": [
+        {
+          "class": "BrushComponent",
+          "fog_density": null,
+          "fog_height_falloff": null,
+          "volumetric_fog": null,
+          "mobility": "<ComponentMobility.MOVABLE: 2>"
+        }
+      ],
+      "unbound": true,
+      "priority": 1.5
+    },
+    {
       "actor": "LivingLamp",
       "component": "/Game/GraceRanger/Maps/L_GR_CurrentHouseContent.L_GR_CurrentHouseContent:PersistentLevel.PointLight_0.LightComponent0",
       "type": "PointLightComponent",
