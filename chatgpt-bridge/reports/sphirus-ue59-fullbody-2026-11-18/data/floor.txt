@@ -1,0 +1,68 @@
+== start9deg at <Struct 'Vector' (0x0000019AD319C518) {x: 2640.000000, y: 420.000000, z: 298.327463}> r 30.0 hh 86.0 bottom 212.3
+CMC floor (bBlockingHit=True,bWalkableFloor=True,bLineTrace=False,FloorDist=2.149990,LineDist=0.000000,HitResult=(FaceIndex=-1,Time=0.537320,Distance=52.549988,Location=(X=2640.000000,Y=420.000000,Z=245.777474),ImpactPoint=(X=2669.845337,Y=420.000000,Z=210.177460),Normal=(X=-0.428767,Y=0.077035,Z=0.900125),ImpactNormal=(X=-0.428767,Y=0.077035,Z=0.900125),TraceStart=(X=2640.000000,Y=420.000000,Z=298.327463),TraceEnd=(X=2640.000000,Y=420.000000,Z=200.527369),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=None,HitObjectHandle=(ReferenceObje
+CMC max_step_height=45.0
+CMC walkable_floor_angle=44.76508331298828
+CMC perch_radius_threshold=20.0
+CMC perch_additional_height=40.0
+CMC use_flat_base_for_floor_checks=True
+LINE vis centre z 202.8 nz 0.988 Landscape_0.LandscapeHeightfieldCollisionComponent_28
+LINE cam centre z 202.8 nz 0.988 Landscape_0.LandscapeHeightfieldCollisionComponent_28
+SWEEP vis r30.0: impact z 203.6 at (3.9,-2.5) nz 0.988 Landscape_0.LandscapeHeightfieldCollisionComponent_28 sphere-bottom 203.2
+MESH CharacterMesh0 z 212.3 rel <Struct 'Vector' (0x0000019B6498B580) {x: 0.000000, y: 0.000000, z: -86.000000}>
+MESH Manny z 212.3 rel <Struct 'Vector' (0x0000019B6498DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Face z 212.3 rel <Struct 'Vector' (0x0000019B7EB97980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Henley z 212.3 rel <Struct 'Vector' (0x0000019B7EB9C980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Shorts z 212.3 rel <Struct 'Vector' (0x0000019B7EB9DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_Under z 212.3 rel <Struct 'Vector' (0x0000019B7EDB0180) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_BeltSk z 212.3 rel <Struct 'Vector' (0x0000019B7EDB1580) {x: 0.000000, y: 0.000000, z: 0.000000}>
+== steep29 at <Struct 'Vector' (0x0000019AD319DB98) {x: 3047.000000, y: -1197.000000, z: 448.696169}> r 30.0 hh 86.0 bottom 362.7
+CMC floor (bBlockingHit=True,bWalkableFloor=True,bLineTrace=False,FloorDist=2.149998,LineDist=0.000000,HitResult=(FaceIndex=-1,Time=0.537320,Distance=52.549995,Location=(X=3047.000000,Y=-1197.000000,Z=396.146174),ImpactPoint=(X=3076.845459,Y=-1197.000000,Z=360.546173),Normal=(X=-0.440302,Y=0.076931,Z=0.894548),ImpactNormal=(X=-0.440302,Y=0.076931,Z=0.894548),TraceStart=(X=3047.000000,Y=-1197.000000,Z=448.696169),TraceEnd=(X=3047.000000,Y=-1197.000000,Z=350.896074),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=None,HitObjectHandle=(Refer
+CMC max_step_height=45.0
+CMC walkable_floor_angle=44.76508331298828
+CMC perch_radius_threshold=20.0
+CMC perch_additional_height=40.0
+CMC use_flat_base_for_floor_checks=True
+LINE vis centre z 345.0 nz 0.872 Landscape_0.LandscapeHeightfieldCollisionComponent_28
+LINE cam centre z 345.0 nz 0.872 Landscape_0.LandscapeHeightfieldCollisionComponent_28
+SWEEP vis r30.0: impact z 352.4 at (13.0,-2.3) nz 0.895 Landscape_0.LandscapeHeightfieldCollisionComponent_28 sphere-bottom 349.3
+MESH CharacterMesh0 z 362.7 rel <Struct 'Vector' (0x0000019B6498B580) {x: 0.000000, y: 0.000000, z: -86.000000}>
+MESH Manny z 362.7 rel <Struct 'Vector' (0x0000019B6498DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Face z 362.7 rel <Struct 'Vector' (0x0000019B7EB97980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Henley z 362.7 rel <Struct 'Vector' (0x0000019B7EB9C980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Shorts z 362.7 rel <Struct 'Vector' (0x0000019B7EB9DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_Under z 362.7 rel <Struct 'Vector' (0x0000019B7EDB0180) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_BeltSk z 362.7 rel <Struct 'Vector' (0x0000019B7EDB1580) {x: 0.000000, y: 0.000000, z: 0.000000}>
+== flat_t21 at <Struct 'Vector' (0x0000019AD31CC3D8) {x: 1550.125031, y: 479.000000, z: 216.624629}> r 30.0 hh 86.0 bottom 130.6
+CMC floor (bBlockingHit=True,bWalkableFloor=True,bLineTrace=True,FloorDist=-16.394814,LineDist=11.126816,HitResult=(FaceIndex=-1,Time=0.347701,Distance=97.126816,Location=(X=1550.125031,Y=479.000000,Z=182.619446),ImpactPoint=(X=1550.125032,Y=508.845390,Z=147.019440),Normal=(X=0.000000,Y=0.000000,Z=1.000000),ImpactNormal=(X=0.000000,Y=0.000000,Z=1.000000),TraceStart=(X=1550.125031,Y=479.000000,Z=216.624629),TraceEnd=(X=1550.125031,Y=479.000000,Z=118.824534),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=None,HitObjectHandle=(ReferenceObje
+CMC max_step_height=45.0
+CMC walkable_floor_angle=44.76508331298828
+CMC perch_radius_threshold=20.0
+CMC perch_additional_height=40.0
+CMC use_flat_base_for_floor_checks=True
+LINE vis centre z 119.5 nz 1.000 Landscape_0.LandscapeHeightfieldCollisionComponent_28
+LINE cam centre z 119.5 nz 1.000 Landscape_0.LandscapeHeightfieldCollisionComponent_28
+SWEEP vis r30.0: impact z 138.8 at (0.0,21.6) nz 0.707 StaticMeshActor_1045.StaticMeshComponent0 sphere-bottom 129.4
+MESH CharacterMesh0 z 130.6 rel <Struct 'Vector' (0x0000019B6498B580) {x: 0.000000, y: 0.000000, z: -86.000000}>
+MESH Manny z 130.6 rel <Struct 'Vector' (0x0000019B6498DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Face z 130.6 rel <Struct 'Vector' (0x0000019B7EB97980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Henley z 130.6 rel <Struct 'Vector' (0x0000019B7EB9C980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Shorts z 130.6 rel <Struct 'Vector' (0x0000019B7EB9DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_Under z 130.6 rel <Struct 'Vector' (0x0000019B7EDB0180) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_BeltSk z 130.6 rel <Struct 'Vector' (0x0000019B7EDB1580) {x: 0.000000, y: 0.000000, z: 0.000000}>
+== indoor at <Struct 'Vector' (0x0000019AD31CD788) {x: 397.000000, y: 100.000000, z: 241.000000}> r 30.0 hh 86.0 bottom 155.0
+CMC floor (bBlockingHit=True,bWalkableFloor=True,bLineTrace=True,FloorDist=-30.000000,LineDist=5.000000,HitResult=(FaceIndex=-1,Time=0.000000,Distance=91.000000,Location=(X=397.000000,Y=100.000000,Z=241.000000),ImpactPoint=(X=395.561802,Y=78.311032,Z=244.270705),Normal=(X=0.000000,Y=0.000000,Z=1.000000),ImpactNormal=(X=0.000000,Y=0.000000,Z=1.000000),TraceStart=(X=397.000000,Y=100.000000,Z=241.000000),TraceEnd=(X=397.000000,Y=100.000000,Z=143.199905),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=None,HitObjectHandle=(ReferenceObject="/S
+CMC max_step_height=45.0
+CMC walkable_floor_angle=44.76508331298828
+CMC perch_radius_threshold=20.0
+CMC perch_additional_height=40.0
+CMC use_flat_base_for_floor_checks=True
+LINE vis centre z 150.0 nz 1.000 StaticMeshActor_7.StaticMeshComponent0
+LINE cam centre z 150.0 nz 1.000 StaticMeshActor_7.StaticMeshComponent0
+SWEEP vis r30.0: impact z 150.0 at (-0.0,0.0) nz 1.000 StaticMeshActor_7.StaticMeshComponent0 sphere-bottom 150.0
+MESH CharacterMesh0 z 155.0 rel <Struct 'Vector' (0x0000019B6498B580) {x: 0.000000, y: 0.000000, z: -86.000000}>
+MESH Manny z 155.0 rel <Struct 'Vector' (0x0000019B6498DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Face z 155.0 rel <Struct 'Vector' (0x0000019B7EB97980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Henley z 155.0 rel <Struct 'Vector' (0x0000019B7EB9C980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH Shorts z 155.0 rel <Struct 'Vector' (0x0000019B7EB9DD80) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_Under z 155.0 rel <Struct 'Vector' (0x0000019B7EDB0180) {x: 0.000000, y: 0.000000, z: 0.000000}>
+MESH GR_BeltSk z 155.0 rel <Struct 'Vector' (0x0000019B7EDB1580) {x: 0.000000, y: 0.000000, z: 0.000000}>

@@ -1,0 +1,17 @@
+hub = (GR_Wood, GR_Split, GR_Loose, GR_Fire, GR_Busy)
+t   0.0 ( 1080,  200) hub (0, 0, 0, 0, False) mont None
+t  12.8 ( 1641, -533) hub (0, 0, 0, 0, True) mont None
+t  17.9 ( 1641, -520) hub (1, 0, 0, 0, True) mont AM_GR_Day_Pick
+t  19.3 ( 1641, -520) hub (1, 0, 0, 0, False) mont AM_GR_Day_CarryArms
+t  24.2 ( 1769, -409) hub (1, 0, 0, 0, True) mont AM_GR_Day_CarryArms
+t  29.9 ( 1755, -378) hub (0, 0, 2, 0, True) mont AM_GR_Day_Chop
+t  32.6 ( 1755, -378) hub (0, 0, 2, 0, False) mont None
+t  32.7 ( 1746, -374) hub (0, 0, 2, 0, True) mont AM_GR_Day_Pick
+t  34.2 ( 1746, -374) hub (0, 1, 1, 0, True) mont AM_GR_Day_Pick
+t  35.6 ( 1746, -374) hub (0, 1, 1, 0, False) mont AM_GR_Day_CarryArms
+t  69.1 ( 1346,  918) hub (0, 1, 1, 0, True) mont AM_GR_Day_CarryArms
+t  72.3 ( 1368,  906) hub (0, 0, 1, 1, True) mont AM_GR_Day_Kneel
+t  75.8 ( 1368,  906) hub (0, 0, 1, 1, False) mont None
+t  78.2 ( 1368,  906) hub (0, 0, 1, 1, True) mont AM_GR_Day_Kneel
+t  80.9 ( 1368,  906) hub (0, 0, 1, 2, True) mont AM_GR_Day_Kneel
+t  84.4 ( 1368,  906) hub (0, 0, 1, 2, False) mont None

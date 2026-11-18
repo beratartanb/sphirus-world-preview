@@ -1,0 +1,2 @@
+import builtins; builtins.LS={'reset':True,'ppvname':'PostProcessVolume_15','ppv':{'local_exposure_highlight_contrast_scale':0.25,'local_exposure_blurred_luminance_kernel_size_percent':12.0,'local_exposure_blurred_luminance_blend':0.2,'auto_exposure_bias':-0.9,'local_exposure_shadow_contrast_scale':0.75,'film_white_clip':0.0,'film_shoulder':0.2}}
+exec(open(__import__('unreal').Paths.project_dir()+'Tools/UE59_20261118/lit_set.py',encoding='utf8').read())

@@ -1,0 +1,25 @@
+===== H_PW_v5 frames 984 note {'f60.offset_root_translation_radius': '0.0', 'f60.offset_root_bone_enabled': 'True', 'f200.offset_root_translation_radius': '0.0', 'f200.offset_root_bone_enabled': 'True'} err None
+BASE straight speed 180 | driver lat +-3.5 cm hipyaw +-10.1 roll +-6.9 slip 3.1 | visible lat +-3.6 hipyaw +-10.1 roll +-6.9 slip 3.9 cm/s
+req = requested control yaw of the flick, app = capsule yaw change 2.8 s later, vel = travel-heading change
+turn  req / app / vel | t_cap90 | sk  | latExc cm (x base) | latSpd cm/s | hipLead deg | hipOver deg | chest-hip deg | roll pk | settle s | pz drop | slip cm/s | spdMin
+  +48   +48   +48 |   0.26 | drv |   4.1 (1.2x) |     26 |  11.1 |   5.3 |  29.0 |  7.8 |   nan |   6.5 |  10.7 |  180
+  +48   +48   +48 |   0.26 | vis |   4.2 (1.2x) |     26 |  11.1 |   5.3 |  29.4 |  7.8 |   nan |   6.6 |   4.4 |  180
+  -48   -48   -48 |   0.27 | drv |   4.0 (1.1x) |     27 |   6.7 |  -7.7 |  18.2 | 12.3 |   nan |   6.6 |   3.2 |  180
+  -48   -48   -48 |   0.27 | vis |   4.1 (1.1x) |     27 |   6.7 |  -7.7 |  17.1 | 12.3 |   nan |   6.8 |   4.0 |  180
+  +96   +96   +96 |   0.27 | drv |   4.6 (1.3x) |     31 |   8.0 |   2.1 |  48.4 | 10.0 |   nan |   5.0 |  18.5 |  176
+  +96   +96   +96 |   0.27 | vis |   4.8 (1.3x) |     32 |   8.0 |   2.1 |  50.0 | 10.0 |   nan |   5.1 |  11.3 |  176
+  -96   -96   -96 |   0.27 | drv |   3.5 (1.0x) |     34 |   7.3 |  -7.1 |  32.3 | 11.1 |   nan |   5.4 |  14.9 |  175
+  -96   -96   -96 |   0.27 | vis |   3.6 (1.0x) |     34 |   7.3 |  -7.0 |  32.2 | 11.1 |   nan |   5.5 |  10.8 |  175
+ +144  +144  +144 |   0.26 | drv |   5.4 (1.5x) |     34 |   6.6 |   0.8 |  41.2 |  7.6 |   nan |   4.8 |  37.5 |  126
+ +144  +144  +144 |   0.26 | vis |   5.5 (1.5x) |     35 |   6.6 |   0.8 |  47.5 |  7.6 |   nan |   4.9 |  18.2 |  126
+ -144  -144  -144 |   0.26 | drv |   4.7 (1.3x) |     23 |   7.9 |  -6.5 |  27.7 |  7.7 |   nan |   4.8 |  25.4 |  123
+ -144  -144  -144 |   0.26 | vis |   4.8 (1.3x) |     24 |   7.9 |  -6.5 |  31.4 |  7.7 |   nan |   4.9 |  17.9 |  123
+ +192  +192  -168 |   0.26 | drv |   8.4 (2.4x) |     44 |   6.6 |   0.7 |  39.7 |  7.4 |  0.83 |   4.8 |   9.3 |   73
+ +192  +192  -168 |   0.26 | vis |   8.6 (2.4x) |     46 |   6.5 |   0.7 |  44.0 |  7.4 |  0.83 |   4.9 |   6.7 |   73
+ -192  -192  +168 |   0.27 | drv |   6.2 (1.8x) |     44 |   9.2 |  -5.2 |  18.4 |  9.0 |  0.86 |   9.3 |  77.5 |   72
+ -192  -192  +168 |   0.27 | vis |   6.3 (1.8x) |     45 |   9.2 |  -5.1 |  14.1 |  9.0 |  0.86 |   9.5 |  85.1 |   72
+SIG lean_c min 0.00 max 0.00
+SIG h_level min -7.89 max 1.83
+SIG h_tilt min -9.17 max 6.85
+SIG turn_sev min 0.00 max 0.08
+SIG turn_w min 0.00 max 579.58

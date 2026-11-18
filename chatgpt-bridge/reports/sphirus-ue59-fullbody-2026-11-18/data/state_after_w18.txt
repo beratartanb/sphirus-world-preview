@@ -1,0 +1,173 @@
+PAWN WalkSpeeds = <Struct 'Vector' (0x0000023B2970F6E8) {x: 180.000000, y: 170.000000, z: 150.000000}>
+PAWN RunSpeeds = <Struct 'Vector' (0x0000023B2970F700) {x: 415.000000, y: 350.000000, z: 300.000000}>
+PAWN SprintSpeeds = <Struct 'Vector' (0x0000023B2970F718) {x: 585.000000, y: 585.000000, z: 585.000000}>
+PAWN CrouchSpeeds = <Struct 'Vector' (0x0000023B2970F778) {x: 165.000000, y: 150.000000, z: 140.000000}>
+CMC max_walk_speed = 180.0
+CMC max_acceleration = 450.0
+CMC braking_deceleration_walking = 650.0
+CMC ground_friction = 3.0
+CMC braking_friction = 0.0
+CMC use_separate_braking_friction = True
+CMC walkable_floor_angle = 44.76508331298828
+CMC max_step_height = 45.0
+CMC perch_radius_threshold = 20.0
+CMC rotation_rate = <Struct 'Rotator' (0x0000023A98315310) {pitch: 0.000000, yaw: 260.000000, roll: 0.000000}>
+CMC orient_rotation_to_movement = True
+CMC maintain_horizontal_ground_velocity = True
+ABP SphRelaxed = True
+ABP SphCM = True
+ABP PlantSettings_Default = <Struct 'FootPlacementPlantSettings' (0x0000023AF3CBE588) {}>
+ABP PlantSettings_Stops = <Struct 'FootPlacementPlantSettings' (0x0000023AF3CBE5BC) {}>
+ABP plant_settings_default = <Struct 'FootPlacementPlantSettings' (0x0000023AF3CBE588) {}>
+ABP plant_settings_stops = <Struct 'FootPlacementPlantSettings' (0x0000023AF3CBE5BC) {}>
+ABP Gait = <E_Gait.WALK: 0>
+ABP CM_Keys (34)
+    PSD_Relaxed_Stand_Walk_F_Loops
+    PSD_Relaxed_Stand_Walk_F_Pivots
+    PSD_Relaxed_Stand_Walk_F_Starts
+    PSD_Relaxed_Stand_Walk_F_Spins
+    PSD_Relaxed_Stand_Walk_B_Loops
+    PSD_Relaxed_Stand_Walk_B_Pivots
+    PSD_Relaxed_Stand_Walk_B_Starts
+    PSD_Relaxed_Stand_Walk_B_Spins
+    PSD_Relaxed_Stand_Walk_LL_Loops
+    PSD_Relaxed_Stand_Walk_LL_Pivots
+    PSD_Relaxed_Stand_Walk_LL_Starts
+    PSD_Relaxed_Stand_Walk_LL_Spins
+    PSD_Relaxed_Stand_Walk_RL_Loops
+    PSD_Relaxed_Stand_Walk_RL_Pivots
+    PSD_Relaxed_Stand_Walk_RL_Starts
+    PSD_Relaxed_Stand_Walk_RL_Spins
+    PSD_Relaxed_Stand_Walk_F_Turns
+    PSD_Relaxed_Stand_Walk_Stops
+    PSD_Relaxed_Stand_Run_F_Loops
+    PSD_Relaxed_Stand_Run_F_Starts
+    PSD_Relaxed_Stand_Run_F_Spins
+    PSD_Relaxed_Stand_Run_B_Loops
+    PSD_Relaxed_Stand_Run_B_Pivots
+    PSD_Relaxed_Stand_Run_B_Starts
+    PSD_Relaxed_Stand_Run_B_Spins
+    PSD_Relaxed_Stand_Run_LL_Loops
+    PSD_Relaxed_Stand_Run_LL_Pivots
+    PSD_Relaxed_Stand_Run_LL_Starts
+    PSD_Relaxed_Stand_Run_LL_Spins
+    PSD_Relaxed_Stand_Run_RL_Loops
+    PSD_Relaxed_Stand_Run_RL_Pivots
+    PSD_Relaxed_Stand_Run_RL_Starts
+    PSD_Relaxed_Stand_Run_RL_Spins
+    PSD_Relaxed_Stand_Run_Stops
+ABP CM_Vals (34)
+    PSD_Sph_N_Walk_F_Loops
+    PSD_Sph_N_Walk_F_Pivots
+    PSD_Sph_N_Walk_F_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Dense_Stand_Walk_Loops
+    PSD_Dense_Stand_Walk_Pivots
+    PSD_Dense_Stand_Walk_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Dense_Stand_Walk_Loops
+    PSD_Dense_Stand_Walk_Pivots
+    PSD_Dense_Stand_Walk_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Dense_Stand_Walk_Loops
+    PSD_Dense_Stand_Walk_Pivots
+    PSD_Dense_Stand_Walk_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Sph_N_Walk_F_Turns
+    PSD_Dense_Stand_Walk_Stops
+    PSD_Sph_N_Run_F_Loops
+    PSD_Sph_N_Run_F_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Loops
+    PSD_Dense_Stand_Run_Pivots
+    PSD_Dense_Stand_Run_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Loops
+    PSD_Dense_Stand_Run_Pivots
+    PSD_Dense_Stand_Run_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Loops
+    PSD_Dense_Stand_Run_Pivots
+    PSD_Dense_Stand_Run_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Stops
+ABP cm_keys (34)
+    PSD_Relaxed_Stand_Walk_F_Loops
+    PSD_Relaxed_Stand_Walk_F_Pivots
+    PSD_Relaxed_Stand_Walk_F_Starts
+    PSD_Relaxed_Stand_Walk_F_Spins
+    PSD_Relaxed_Stand_Walk_B_Loops
+    PSD_Relaxed_Stand_Walk_B_Pivots
+    PSD_Relaxed_Stand_Walk_B_Starts
+    PSD_Relaxed_Stand_Walk_B_Spins
+    PSD_Relaxed_Stand_Walk_LL_Loops
+    PSD_Relaxed_Stand_Walk_LL_Pivots
+    PSD_Relaxed_Stand_Walk_LL_Starts
+    PSD_Relaxed_Stand_Walk_LL_Spins
+    PSD_Relaxed_Stand_Walk_RL_Loops
+    PSD_Relaxed_Stand_Walk_RL_Pivots
+    PSD_Relaxed_Stand_Walk_RL_Starts
+    PSD_Relaxed_Stand_Walk_RL_Spins
+    PSD_Relaxed_Stand_Walk_F_Turns
+    PSD_Relaxed_Stand_Walk_Stops
+    PSD_Relaxed_Stand_Run_F_Loops
+    PSD_Relaxed_Stand_Run_F_Starts
+    PSD_Relaxed_Stand_Run_F_Spins
+    PSD_Relaxed_Stand_Run_B_Loops
+    PSD_Relaxed_Stand_Run_B_Pivots
+    PSD_Relaxed_Stand_Run_B_Starts
+    PSD_Relaxed_Stand_Run_B_Spins
+    PSD_Relaxed_Stand_Run_LL_Loops
+    PSD_Relaxed_Stand_Run_LL_Pivots
+    PSD_Relaxed_Stand_Run_LL_Starts
+    PSD_Relaxed_Stand_Run_LL_Spins
+    PSD_Relaxed_Stand_Run_RL_Loops
+    PSD_Relaxed_Stand_Run_RL_Pivots
+    PSD_Relaxed_Stand_Run_RL_Starts
+    PSD_Relaxed_Stand_Run_RL_Spins
+    PSD_Relaxed_Stand_Run_Stops
+ABP cm_vals (34)
+    PSD_Sph_N_Walk_F_Loops
+    PSD_Sph_N_Walk_F_Pivots
+    PSD_Sph_N_Walk_F_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Dense_Stand_Walk_Loops
+    PSD_Dense_Stand_Walk_Pivots
+    PSD_Dense_Stand_Walk_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Dense_Stand_Walk_Loops
+    PSD_Dense_Stand_Walk_Pivots
+    PSD_Dense_Stand_Walk_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Dense_Stand_Walk_Loops
+    PSD_Dense_Stand_Walk_Pivots
+    PSD_Dense_Stand_Walk_Starts
+    PSD_Dense_Stand_Walk_SpinTransition
+    PSD_Sph_N_Walk_F_Turns
+    PSD_Dense_Stand_Walk_Stops
+    PSD_Sph_N_Run_F_Loops
+    PSD_Sph_N_Run_F_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Loops
+    PSD_Dense_Stand_Run_Pivots
+    PSD_Dense_Stand_Run_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Loops
+    PSD_Dense_Stand_Run_Pivots
+    PSD_Dense_Stand_Run_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Loops
+    PSD_Dense_Stand_Run_Pivots
+    PSD_Dense_Stand_Run_Starts
+    PSD_Dense_Stand_Run_SpinTransition
+    PSD_Dense_Stand_Run_Stops
+MOTION Enabled = True
+MOTION EffortEnabled = True
+MOTION BodyOn = True
+MOTION TurnCapOn = False
+MOTION PhysBrake = True
+MOTION BrakeDecelLow = 380.0
+MOTION BrakeDecelHigh = 780.0
+MOTION RevOn = False
+MOTION IdleEnabled = True
+PROFILE_REQ {"profile":"C","plant":"PivotAroundBall","fwd":3,"run_speed":415}

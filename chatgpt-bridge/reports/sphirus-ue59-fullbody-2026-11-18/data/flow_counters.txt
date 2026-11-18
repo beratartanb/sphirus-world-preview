@@ -1,0 +1,25 @@
+hub = (GR_Wood, GR_Split, GR_Loose, GR_Fire, GR_Busy); st = (look ignored, move ignored, carry)
+t   0.0 ( 1080,  200) v   0 hub (0, 0, 0, 0, False) mont None st (False, False, False) tgt None
+t  12.4 ( 1642, -535) v   3 hub (0, 0, 0, 0, True) mont None st (True, True, False) tgt GR_Day_Wood0
+t  15.9 ( 1641, -520) v   0 hub (0, 0, 0, 0, True) mont AM_GR_Day_Pick st (True, True, False) tgt None
+t  17.5 ( 1641, -520) v   0 hub (1, 0, 0, 0, True) mont AM_GR_Day_Pick st (True, True, False) tgt None
+t  18.7 ( 1641, -520) v   0 hub (1, 0, 0, 0, True) mont None st (True, True, False) tgt GR_Day_Herb1
+t  18.9 ( 1641, -520) v   0 hub (1, 0, 0, 0, False) mont AM_GR_Day_CarryArms st (False, False, False) tgt GR_Day_Herb1
+t  23.9 ( 1770, -409) v   4 hub (1, 0, 0, 0, True) mont AM_GR_Day_CarryArms st (True, True, False) tgt GR_Day_Chop
+t  24.6 ( 1755, -378) v   0 hub (1, 0, 0, 0, True) mont AM_GR_Day_Chop st (True, True, False) tgt None
+t  29.6 ( 1755, -378) v   0 hub (0, 0, 2, 0, True) mont AM_GR_Day_Chop st (True, True, False) tgt GR_Day_Piece1
+t  32.0 ( 1755, -378) v   0 hub (0, 0, 2, 0, True) mont None st (True, True, False) tgt None
+t  32.3 ( 1755, -378) v   0 hub (0, 0, 2, 0, False) mont None st (False, False, False) tgt None
+t  32.3 ( 1771, -356) v   0 hub (0, 0, 2, 0, True) mont AM_GR_Day_Pick st (True, True, False) tgt None
+t  33.9 ( 1771, -356) v   0 hub (0, 1, 1, 0, True) mont AM_GR_Day_Pick st (True, True, False) tgt None
+t  35.1 ( 1771, -356) v   0 hub (0, 1, 1, 0, True) mont None st (True, True, False) tgt None
+t  35.3 ( 1771, -356) v   0 hub (0, 1, 1, 0, False) mont AM_GR_Day_CarryArms st (False, False, False) tgt None
+t  68.7 ( 1345,  910) v   2 hub (0, 1, 1, 0, True) mont AM_GR_Day_CarryArms st (True, True, False) tgt GR_Day_Fire
+t  69.2 ( 1366,  906) v  30 hub (0, 1, 1, 0, True) mont AM_GR_Day_Kneel st (True, True, False) tgt None
+t  71.9 ( 1367,  905) v   0 hub (0, 0, 1, 1, True) mont AM_GR_Day_Kneel st (True, True, False) tgt GR_Day_Fire
+t  75.1 ( 1367,  905) v   0 hub (0, 0, 1, 1, True) mont None st (True, True, False) tgt None
+t  75.3 ( 1367,  905) v   0 hub (0, 0, 1, 1, False) mont None st (False, False, False) tgt None
+t  77.8 ( 1367,  905) v   0 hub (0, 0, 1, 1, True) mont AM_GR_Day_Kneel st (True, True, False) tgt GR_Day_Fire
+t  80.6 ( 1367,  905) v   0 hub (0, 0, 1, 2, True) mont AM_GR_Day_Kneel st (True, True, False) tgt GR_Day_Fire
+t  83.8 ( 1367,  905) v   0 hub (0, 0, 1, 2, True) mont None st (True, True, False) tgt None
+t  84.0 ( 1367,  905) v   0 hub (0, 0, 1, 2, False) mont None st (False, False, False) tgt None

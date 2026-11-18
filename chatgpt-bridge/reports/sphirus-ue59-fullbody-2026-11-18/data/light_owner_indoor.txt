@@ -1,0 +1,114 @@
+PAWN BP_HybridA_Player_C_0 <Struct 'Vector' (0x0000019A293D6548) {x: 397.000000, y: 100.000000, z: 241.000000}>  view_target=CameraActor_1
+CAMMGR BP_Sph_CameraManager_C loc <Struct 'Vector' (0x0000019A293D7C68) {x: 204.044370, y: 332.325941, z: 265.296908}> fov 38.0
+PPV PostProcessVolume_0 label=EX_PostRain_NeutralExposure unbound=True enabled=True prio=0.0 weight=1.0 blend_radius=100.0 inside_bounds=False
+    auto_exposure_apply_physical_camera_exposure=False
+    auto_exposure_bias=-0.44999998807907104
+    auto_exposure_high_percent=80.0
+    auto_exposure_low_percent=30.0
+    auto_exposure_max_brightness=10.0
+    auto_exposure_method=<AutoExposureMethod.AEM_HISTOGRAM: 0>
+    auto_exposure_min_brightness=-1.0
+    auto_exposure_speed_down=5.0
+    auto_exposure_speed_up=5.0
+    bloom_intensity=0.3499999940395355
+    bloom_threshold=0.5
+    color_contrast=<Struct 'Vector4' (0x0000019D01C6C930) {x: 1.060000, y: 1.060000, z: 1.060000, w: 1.000000}>
+    color_gain_highlights=<Struct 'Vector4' (0x0000019D01C6CB50) {x: 0.980000, y: 0.975000, z: 0.960000, w: 1.000000}>
+    color_gain_shadows=<Struct 'Vector4' (0x0000019D01C6CA10) {x: 0.960000, y: 1.000000, z: 1.060000, w: 1.000000}>
+    color_offset_shadows=<Struct 'Vector4' (0x0000019D01C6CA30) {x: 0.006000, y: 0.008000, z: 0.012000, w: 0.000000}>
+    color_saturation=<Struct 'Vector4' (0x0000019D01C6C910) {x: 1.060000, y: 1.060000, z: 1.060000, w: 1.000000}>
+    color_saturation_highlights=<Struct 'Vector4' (0x0000019D01C6CAF0) {x: 0.800000, y: 0.800000, z: 0.800000, w: 1.000000}>
+    dynamic_global_illumination_method=<DynamicGlobalIlluminationMethod.LUMEN: 1>
+    film_grain_intensity=0.07999999821186066
+    film_shoulder=0.25999999046325684
+    film_slope=0.800000011920929
+    film_toe=0.550000011920929
+    film_white_clip=0.029999999329447746
+    local_exposure_highlight_contrast_scale=0.7799999713897705
+    local_exposure_shadow_contrast_scale=0.8999999761581421
+    lumen_final_gather_quality=4.0
+    lumen_scene_lighting_quality=2.0
+    motion_blur_amount=0.0
+    reflection_method=<ReflectionMethod.LUMEN: 1>
+    vignette_intensity=0.4000000059604645
+    white_temp=6000.0
+    white_tint=0.0
+PPV PostProcessVolume_1 label=ReviewOnly_R05_LocalExposure unbound=True enabled=False prio=20.0 weight=1.0 blend_radius=100.0 inside_bounds=False
+    local_exposure_detail_strength=0.800000011920929
+    local_exposure_highlight_contrast_scale=0.8500000238418579
+    local_exposure_shadow_contrast_scale=0.699999988079071
+PPV PostProcessVolume_15 label=EX_Look_PPV_House unbound=False enabled=True prio=2.0 weight=1.0 blend_radius=900.0 inside_bounds=True
+    auto_exposure_bias=-0.30000001192092896
+    color_gain_midtones=<Struct 'Vector4' (0x0000019E2DE122B0) {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}>
+    white_temp=5950.0
+PPV PostProcessVolume_16 label=EX_Look_PPV_Shelf unbound=False enabled=True prio=2.0 weight=1.0 blend_radius=700.0 inside_bounds=False
+    auto_exposure_bias=-0.949999988079071
+    color_contrast=<Struct 'Vector4' (0x0000019E2DE14B30) {x: 1.050000, y: 1.050000, z: 1.050000, w: 1.000000}>
+    color_gain_shadows=<Struct 'Vector4' (0x0000019E2DE14C10) {x: 0.950000, y: 1.000000, z: 1.070000, w: 1.000000}>
+PPV PostProcessVolume_17 label=EX_Look_PPV_Glade unbound=False enabled=True prio=2.0 weight=1.0 blend_radius=900.0 inside_bounds=False
+    auto_exposure_bias=-0.8500000238418579
+    color_saturation=<Struct 'Vector4' (0x0000019E2DE1F310) {x: 0.900000, y: 0.900000, z: 0.900000, w: 1.000000}>
+    local_exposure_highlight_contrast_scale=0.75
+PPV PostProcessVolume_18 label=EX_Look_Resonance unbound=True enabled=True prio=3.0 weight=0.0 blend_radius=100.0 inside_bounds=False
+    color_gain_shadows=<Struct 'Vector4' (0x0000019E2DE1CA10) {x: 0.980000, y: 0.960000, z: 1.040000, w: 1.000000}>
+    color_saturation=<Struct 'Vector4' (0x0000019E2DE1C910) {x: 0.808400, y: 0.808400, z: 0.808400, w: 1.000000}>
+    film_grain_intensity=0.1599999964237213
+    scene_fringe_intensity=0.3499999940395355
+    vignette_intensity=0.4000000059604645
+    white_temp=5900.0
+PPV PostProcessVolume_2 label=EX_Atmo_C1_PPV unbound=True enabled=True prio=1.5 weight=0.0 blend_radius=100.0 inside_bounds=False
+    color_contrast=<Struct 'Vector4' (0x0000019AEB412F30) {x: 0.970000, y: 0.970000, z: 0.970000, w: 1.000000}>
+    color_gain_shadows=<Struct 'Vector4' (0x0000019AEB413010) {x: 0.970000, y: 0.990000, z: 1.030000, w: 1.000000}>
+    color_saturation_highlights=<Struct 'Vector4' (0x0000019AEB4130F0) {x: 0.920000, y: 0.920000, z: 0.920000, w: 1.000000}>
+CAMCOMP BP_HybridA_Player_C_0.Camera(NotUsedByDefault) active=False pp_weight=1.0
+CAMCOMP BP_HybridA_Player_C_0.Camera active=False pp_weight=1.0
+    film_grain_intensity=0.07999999821186066
+    scene_fringe_intensity=0.6000000238418579
+    vignette_intensity=0.3799999952316284
+CAMCOMP BP_HybridA_Player_C_0.Cine active=True pp_weight=1.0
+    film_grain_intensity=0.029999999329447746
+    scene_fringe_intensity=0.10000000149011612
+    vignette_intensity=0.2800000011920929
+CAMCOMP BP_HybridA_Player_C_0.OutputCameraComponent active=True pp_weight=1.0
+CAMCOMP CameraActor_1.CameraComponent active=True pp_weight=0.0
+    depth_of_field_focal_distance=96.0
+    depth_of_field_fstop=4.0
+    depth_of_field_sensor_width=24.0
+CAMCOMP CameraActor_0.CameraComponent active=True pp_weight=1.0
+    depth_of_field_focal_distance=84.0
+    depth_of_field_fstop=4.0
+    depth_of_field_sensor_width=24.0
+CAMCOMP CameraActor_1.CameraComponent active=True pp_weight=0.0
+    depth_of_field_focal_distance=96.0
+    depth_of_field_fstop=4.0
+    depth_of_field_sensor_width=24.0
+CAMCOMP CameraActor_2.CameraComponent active=True pp_weight=0.0
+LIGHT RectLight_2.LightComponent0 [RectLightComponent] d=801 vis=False rot= | intensity=7500.0 light_color=<Struct 'Color' (0x0000019CDA5720B8) {b: 255, g: 255, r: 255, a: 255}> temperature=5500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.5 specular_scale=1.0 attenuation_radius=450.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT RectLight_3.LightComponent0 [RectLightComponent] d=1099 vis=False rot= | intensity=6600.0 light_color=<Struct 'Color' (0x0000019CDA573EB8) {b: 255, g: 255, r: 255, a: 255}> temperature=5500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.5 specular_scale=1.0 attenuation_radius=450.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT RectLight_4.LightComponent0 [RectLightComponent] d=114 vis=False rot= | intensity=9000.0 light_color=<Struct 'Color' (0x0000019DE59BACB8) {b: 255, g: 255, r: 255, a: 255}> temperature=5500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.5 specular_scale=1.0 attenuation_radius=450.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT RectLight_5.LightComponent0 [RectLightComponent] d=1053 vis=False rot= | intensity=7500.0 light_color=<Struct 'Color' (0x0000019DE59B7AB8) {b: 255, g: 255, r: 255, a: 255}> temperature=5500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.5 specular_scale=1.0 attenuation_radius=450.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT RectLight_7.LightComponent0 [RectLightComponent] d=1029 vis=False rot= | intensity=4200.0 light_color=<Struct 'Color' (0x0000019DE59B34B8) {b: 255, g: 255, r: 255, a: 255}> temperature=5500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.5 specular_scale=1.0 attenuation_radius=450.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT DirectionalLight_0.LightComponent0 [DirectionalLightComponent] d=1135 vis=True rot=<Struct 'Rotator' (0x0000019A293D6D18) {pitch: -24.000000, yaw: -60.000000, roll: -0.000000}> | intensity=1250.0 light_color=<Struct 'Color' (0x0000019E551968B8) {b: 255, g: 255, r: 255, a: 255}> temperature=5600.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.0 specular_scale=0.550000011920929 light_source_angle=1.399999976158142 atmosphere_sun_light=True
+LIGHT SkyLight_0.SkyLightComponent0 [SkyLightComponent] d=475 vis=True rot=<Struct 'Rotator' (0x0000019A293D41F8) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}> | intensity=1.2999999523162842 light_color=<Struct 'Color' (0x0000019E55191AB8) {b: 255, g: 255, r: 255, a: 255}> cast_shadows=True indirect_lighting_intensity=1.0
+LIGHT PointLight_0.LightComponent0 [PointLightComponent] d=867 vis=True rot= | intensity=252.0 light_color=<Struct 'Color' (0x0000019D1C3043B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=550.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_2.LightComponent0 [PointLightComponent] d=886 vis=True rot= | intensity=275.0 light_color=<Struct 'Color' (0x0000019D1C30ACB8) {b: 255, g: 255, r: 255, a: 255}> temperature=3500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=500.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_3.LightComponent0 [PointLightComponent] d=200 vis=True rot= | intensity=237.5 light_color=<Struct 'Color' (0x0000019D1C3016B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=500.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_4.LightComponent0 [PointLightComponent] d=599 vis=True rot= | intensity=240.0 light_color=<Struct 'Color' (0x0000019D1C302AB8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=85.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_6.LightComponent0 [PointLightComponent] d=1075 vis=True rot= | intensity=107.5 light_color=<Struct 'Color' (0x0000019D1C304DB8) {b: 255, g: 255, r: 255, a: 255}> temperature=3500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=400.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_7.LightComponent0 [PointLightComponent] d=1001 vis=True rot= | intensity=300.0 light_color=<Struct 'Color' (0x0000019D1C3002B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=420.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_8.LightComponent0 [PointLightComponent] d=944 vis=True rot= | intensity=180.0 light_color=<Struct 'Color' (0x0000019D1C30C5B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=270.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_9.LightComponent0 [PointLightComponent] d=714 vis=True rot= | intensity=132.0 light_color=<Struct 'Color' (0x0000019C617D7FB8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=230.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_11.LightComponent0 [PointLightComponent] d=538 vis=True rot= | intensity=114.0 light_color=<Struct 'Color' (0x0000019A51B52FB8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=1.0 specular_scale=1.0 source_radius=5.0 attenuation_radius=280.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_14.LightComponent0 [PointLightComponent] d=1145 vis=True rot= | intensity=300.0 light_color=<Struct 'Color' (0x0000019D2113C0B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=10.0 attenuation_radius=500.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_15.LightComponent0 [PointLightComponent] d=1129 vis=True rot= | intensity=270.0 light_color=<Struct 'Color' (0x0000019A25CEF2B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=5.0 attenuation_radius=300.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_16.LightComponent0 [PointLightComponent] d=1125 vis=True rot= | intensity=187.5 light_color=<Struct 'Color' (0x0000019A25CE6BB8) {b: 255, g: 255, r: 255, a: 255}> temperature=3500.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=5.0 attenuation_radius=1000.0 intensity_units=<LightUnits.LUMENS: 2>
+LIGHT PointLight_17.LightComponent0 [PointLightComponent] d=634 vis=True rot= | intensity=330.0 light_color=<Struct 'Color' (0x0000019A2225B1B8) {b: 255, g: 255, r: 255, a: 255}> temperature=3200.0 use_temperature=True cast_shadows=True indirect_lighting_intensity=2.0 specular_scale=1.0 source_radius=6.0 attenuation_radius=1000.0 intensity_units=<LightUnits.LUMENS: 2>
+CVAR r.DefaultFeature.AutoExposure = 1.0
+CVAR r.DefaultFeature.AutoExposure.Method = 0.0
+CVAR r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange = 1.0
+CVAR r.EyeAdaptation.ExponentialTransitionDistance = 1.5
+CVAR r.LocalExposure = 1.0
+CVAR r.Tonemapper.Quality = 5.0
+CVAR r.TonemapperFilm = 0.0
+CVAR r.Lumen.DiffuseIndirect.Allow = 1.0
+CVAR r.DynamicGlobalIlluminationMethod = 1.0
