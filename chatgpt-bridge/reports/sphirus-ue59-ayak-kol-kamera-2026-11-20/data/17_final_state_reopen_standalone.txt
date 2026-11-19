@@ -1,0 +1,23 @@
+# Editör yeniden açıldıktan sonra (emb_1120a, 2026-11-20 ~01:05) kayıtlı değerlerin okunması
+MOTION {'ClipBrakeOn': True, 'ClipK': 1.0, 'ClipMin': 100.0, 'ClipMax': 3000.0, 'BrakeDecelLow': 380.0, 'BrakeDecelHigh': 1100.0}
+TEMPLATE {'ClipBrakeOn': True, 'ClipK': 1.0, 'ClipMin': 100.0, 'ClipMax': 3000.0, 'BrakeDecelLow': 380.0, 'BrakeDecelHigh': 1100.0}
+CAMERA {'TightRaise': 45.0, 'YKeep': 1.0}
+BODY {'VD_ArmL': "{x: 0.000000, y: 0.000000, z: 0.000000}>", 'VD_ArmR': "{x: 0.000000, y: 0.000000, z: 0.000000}>", 'VD_ClavL': "{x: 0.000000, y: -3.000000, z: 2.000000}>", 'VW_ArmL': "{x: 0.000000, y: -3.000000, z: 0.000000}>", 'VD_ForeL': "{x: 0.000000, y: 0.000000, z: 0.000000}>", 'RelDecel': '300.0', 'RelUp': '8.0', 'RelDown': '1.2'}
+CVARS {'r.Shadow.Virtual.ResolutionLodBiasDirectional': 0.0, 'r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving': -1.5, 'DDCvar.OffsetRootBone.TranslationRadius': 0.0}
+DIRTY []
+R2W BranchIn (SphN_Walk_F_Loops):
+Lfoot {'Duration': '0.600000', 'TriggerTimeOffset': '0.000100', 'LinkValue': '0.600000'}
+Lfoot {'Duration': '3.066667', 'TriggerTimeOffset': '0.000000', 'LinkValue': '4.466667'}
+Rfoot {'Duration': '0.600000', 'TriggerTimeOffset': '0.000100', 'LinkValue': '0.600000'}
+Rfoot {'Duration': '2.500000', 'TriggerTimeOffset': '0.000000', 'LinkValue': '4.400000'}
+Kayıt dosyaları: 5.9 SFSaveSlot.sav 3d81ab9dc70890c0b171a75ae65d3c9214a92ea6 | 5.8.4 SFSaveSlot.sav 4823d83a03259aafa78ad4ecbe56c14986ac8879
+L_GR_CurrentHouseContent.umap e033e798c957a626d457a5264ac0486f4c5443ef (= kapı denemesi öncesi yedek e033e798)
+
+# Bağımsız açılış (-game, pişirilmemiş, eklentiler oturum için kapalı): Saved/Logs/standalone_1120.log
+[2026.11.19-23.20.11:348][  0]LogHttpListener: Error: HttpListener unable to bind to 127.0.0.1:8000
+[2026.11.19-23.20.11:349][  0]LogModelContextProtocol: Error: MCP server listener could not start on port 8000. The preceding LogHttpListener error gives the reason. Set a different port in Editor Pre
+[2026.11.19-23.20.12:463][  0]LogLoad: LoadMap: /Game/GraceRanger/Maps/L_GR_SphirusHouse?Name=Player
+[2026.11.19-23.20.54:945][  0]LogLoad: Game class is 'BP_GM_GR_GraceRanger_C'
+[2026.11.19-23.21.00:877][  0]LogWorld: Bringing World /Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse up for play (max tick rate 24) at 2026.11.20-02.21.00
+[2026.11.19-23.21.01:160][  0]LogLoad: Took 48.696928 seconds to LoadMap(/Game/GraceRanger/Maps/L_GR_SphirusHouse)
+[2026.11.19-23.21.01:160][  0]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/GraceRanger/Maps/L_GR_SphirusHouse

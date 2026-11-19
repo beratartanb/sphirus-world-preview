@@ -1,0 +1,42 @@
+# Zaman tabanı referans koşuları (kayıtlı durum, 2026-11-19 22:00, recorder patch #8 sonrası)
+== T_F30 fps 30 rows 405 | sim t 13.468 s | sum gdt 13.468 | frame label 13.467 | wall 7.47 s | gdt med 0.0332 min 0.0116 max 0.0824 sd 0.0049 | dil 0.63..2.57
+   seg sim/requested: - 1.45/1.50 | W LeftShift 3.04/3.00 | - 2.50/2.50 | W LeftShift LeftControl 3.51/3.50 | - 3.00/3.00
+   f    0 t 0.0000 tf 0.000 tw 0.000 gdt 0.0289 dil 1.000 x -6000.0 v 0
+   f    1 t 0.0190 tf 0.033 tw 0.020 gdt 0.0190 dil 1.138 x -6000.0 v 0
+   f  135 t 4.4993 tf 4.500 tw 2.563 gdt 0.0383 dil 1.577 x -4899.1 v 415
+   f  202 t 6.7292 tf 6.733 tw 3.770 gdt 0.0356 dil 1.668 x -4782.0 v 0
+   f  404 t 13.4679 tf 13.467 tw 7.472 gdt 0.0335 dil 1.800 x -2936.0 v 0
+== T_F60 fps 60 rows 810 | sim t 13.519 s | sum gdt 13.518 | frame label 13.483 | wall 15.04 s | gdt med 0.0166 min 0.0066 max 0.0363 sd 0.0018 | dil 0.37..1.50
+   seg sim/requested: - 1.51/1.50 | W LeftShift 3.00/3.00 | - 2.51/2.50 | W LeftShift LeftControl 3.50/3.50 | - 3.01/3.00
+   f    0 t 0.0000 tf 0.000 tw 0.000 gdt 0.0335 dil 1.000 x -6000.0 v 0
+   f    1 t 0.0223 tf 0.017 tw 0.019 gdt 0.0223 dil 0.957 x -6000.0 v 0
+   f  270 t 4.5128 tf 4.500 tw 4.933 gdt 0.0152 dil 1.029 x -4910.6 v 415
+   f  405 t 6.7653 tf 6.750 tw 7.305 gdt 0.0172 dil 0.992 x -4795.6 v 0
+   f  809 t 13.5192 tf 13.483 tw 15.037 gdt 0.0156 dil 1.000 x -2947.6 v 0
+== T_VAR fps 60 rows 693 | sim t 13.475 s | sum gdt 13.475 | frame label 11.533 | wall 13.19 s | gdt med 0.0171 min 0.0096 max 0.0448 sd 0.0076 | dil 0.16..2.47
+   seg sim/requested: - 1.49/1.50 | W LeftShift 3.00/3.00 | - 2.50/2.50 | W LeftShift LeftControl 3.51/3.50 | - 3.01/3.00
+   f    0 t 0.0000 tf 0.000 tw 0.000 gdt 0.0338 dil 0.683 x -6000.0 v 0
+   f    1 t 0.0125 tf 0.017 tw 0.020 gdt 0.0125 dil 0.929 x -6000.0 v 0
+   f  231 t 4.6396 tf 3.850 tw 4.328 gdt 0.0201 dil 0.733 x -4860.6 v 309
+   f  346 t 6.7391 tf 5.767 tw 6.584 gdt 0.0115 dil 1.847 x -4802.1 v 0
+   f  692 t 13.4749 tf 11.533 tw 13.194 gdt 0.0236 dil 0.645 x -2965.0 v 0
+== T_RT fps 60 rows 753 | sim t 13.486 s | sum gdt 13.498 | frame label 12.533 | wall 13.49 s | gdt med 0.0170 min 0.0167 max 0.0265 sd 0.0017 | dil 1.00..1.00
+   seg sim/requested: - 1.50/1.50 | W LeftShift 3.01/3.00 | - 2.50/2.50 | W LeftShift LeftControl 3.50/3.50 | - 2.99/3.00
+   f    0 t 0.0000 tf 0.000 tw 0.000 gdt 0.0260 dil 1.000 x -6000.0 v 0
+   f    1 t 0.0168 tf 0.017 tw 0.016 gdt 0.0168 dil 1.000 x -6000.0 v 0
+   f  251 t 4.4174 tf 4.183 tw 4.418 gdt 0.0167 dil 1.000 x -4946.7 v 415
+   f  376 t 6.6072 tf 6.267 tw 6.607 gdt 0.0167 dil 1.000 x -4794.5 v 0
+   f  752 t 13.4856 tf 12.533 tw 13.488 gdt 0.0170 dil 1.000 x -2951.3 v 0
+
+== T_F30  (sim(t), rows 405, sim 13.47 s, label t 13.47 s)
+  seg  2 after "W LeftShift" 3.00s            v_in 415 v_win 415 | stop 0.56s path  117 cm held 0.56s | pelvis drop 10.6 @0.36 settle 1.03 | slide L   0.7 R   0.1 sum   0.8 | drift L  0.6(0.4, 0.67) R  0.1(0.7, 0.86) nC 1/1 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 3.50s v_in 585 v_win 585 | stop 0.63s path  184 cm held 0.63s | pelvis drop 10.8 @0.36 settle 0.96 | slide L   0.1 R   0.6 sum   0.8 | drift L  0.1(0.36, 0.5) R  0.6(0.5, 0.9) nC 1/1 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+== T_F60  (sim(t), rows 810, sim 13.52 s, label t 13.48 s)
+  seg  2 after "W LeftShift" 3.00s            v_in 415 v_win 415 | stop 0.55s path  115 cm held 0.55s | pelvis drop 11.8 @0.39 settle 1.05 | slide L   1.3 R   0.3 sum   1.6 | drift L  0.9(0.4, 0.7) R  0.2(0.72, 0.83) nC 1/1 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 3.50s v_in 585 v_win 585 | stop 0.60s path  177 cm held 0.60s | pelvis drop 10.9 @0.33 settle 0.81 | slide L   0.4 R   0.8 sum   1.2 | drift L  0.1(0.32, 0.48) R  0.7(0.47, 0.88) nC 1/1 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+== T_VAR  (sim(t), rows 693, sim 13.47 s, label t 11.53 s)
+  seg  2 after "W LeftShift" 3.00s            v_in 415 v_win 415 | stop 0.54s path  113 cm held 0.54s | pelvis drop 12.5 @0.40 settle 1.09 | slide L   0.7 R   0.0 sum   0.7 | drift L  0.6(0.43, 0.72) R  0.0 nC 1/0 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 3.50s v_in 585 v_win 585 | stop 0.61s path  175 cm held 0.61s | pelvis drop 11.0 @0.40 settle 0.91 | slide L   0.7 R  13.9 sum  14.6 | drift L  0.4(0.61, 0.87) R 13.8(0.33, 0.7) nC 1/1 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Rfoot
+== T_RT  (sim(t), rows 753, sim 13.49 s, label t 12.53 s)
+  seg  2 after "W LeftShift" 3.00s            v_in 415 v_win 415 | stop 0.55s path  115 cm held 0.55s | pelvis drop 11.8 @0.37 settle 1.06 | slide L   1.1 R   0.3 sum   1.4 | drift L  0.9(0.4, 0.7) R  0.2(0.71, 0.85) nC 1/1 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 3.50s v_in 585 v_win 585 | stop 0.61s path  177 cm held 0.61s | pelvis drop 11.0 @0.40 settle 0.90 | slide L   0.3 R  17.4 sum  17.7 | drift L  0.3(0.61, 0.9) R 17.4(0.34, 0.7) nC 1/1 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Rfoot

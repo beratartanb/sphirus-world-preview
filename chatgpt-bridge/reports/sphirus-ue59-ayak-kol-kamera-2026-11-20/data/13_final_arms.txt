@@ -1,0 +1,54 @@
+# SON KAYITLI DURUM kol taşıma (A_*_f, seqA) ve jog->yürüyüş (A_jw*_base, seqW). 19 Kas karşılaştırma: A_jw10_base (19 Kas sonu) aşağıda eski dosyadan.
+== A_walk_f
+  seg 1 walk (prev 2.0s)
+     0.0-0.5 up -29.7 fwd 33.9 elb 164 abd  9.6 Rel 0.00 Mv 0.31 v 101
+     0.5-1.0 up -28.8 fwd 34.2 elb 159 abd  9.4 Rel 0.00 Mv 0.88 v 180
+     1.0-1.5 up -35.6 fwd 27.0 elb 162 abd  9.2 Rel 0.00 Mv 0.99 v 180
+     1.5-2.5 up -33.2 fwd 29.7 elb 160 abd  9.1 Rel 0.00 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 29.9 elb 159 abd  9.6 Rel 0.00 Mv 1.00 v 180
+== A_jw2_f
+  seg 2 jog->walk (prev 2.0s)
+     0.0-0.5 up -11.3 fwd 23.3 elb 117 abd 12.5 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -34.7 fwd 29.1 elb 160 abd  5.1 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up -35.0 fwd 27.2 elb 159 abd  8.0 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -34.2 fwd 28.5 elb 159 abd 10.2 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 29.5 elb 160 abd  8.7 Rel 0.01 Mv 1.00 v 180
+== A_jw10_f
+  seg 2 jog->walk (prev 10.0s)
+     0.0-0.5 up -14.7 fwd 24.7 elb 116 abd 12.0 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -35.5 fwd 28.4 elb 159 abd  3.8 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up -35.8 fwd 27.2 elb 159 abd  7.5 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -33.3 fwd 30.2 elb 161 abd  8.9 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 30.2 elb 159 abd  8.9 Rel 0.01 Mv 1.00 v 180
+== A_jw2_base
+  seg 2 jog->walk (prev 2.0s)
+     0.0-0.5 up -11.3 fwd 23.2 elb 118 abd 14.2 Rel 0.70 Mv 1.00 v 306
+     0.5-1.0 up -34.8 fwd 28.7 elb 160 abd  6.3 Rel 0.73 Mv 1.00 v 180
+     1.0-1.5 up -35.0 fwd 27.5 elb 159 abd  7.1 Rel 0.40 Mv 1.00 v 180
+     1.5-2.5 up -34.2 fwd 28.7 elb 158 abd  8.8 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.2 fwd 30.1 elb 160 abd  8.7 Rel 0.01 Mv 1.00 v 180
+== A_jw10_base
+  seg 2 jog->walk (prev 10.0s)
+     0.0-0.5 up -15.5 fwd 25.4 elb 118 abd  9.8 Rel 0.70 Mv 1.00 v 306
+     0.5-1.0 up -36.9 fwd 26.1 elb 160 abd  6.5 Rel 0.73 Mv 1.00 v 180
+     1.0-1.5 up -33.7 fwd 29.1 elb 160 abd  9.2 Rel 0.40 Mv 1.00 v 180
+     1.5-2.5 up -33.5 fwd 29.8 elb 160 abd  7.7 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 29.5 elb 160 abd  8.7 Rel 0.01 Mv 1.00 v 180
+A_jw2_f seg 2 jog->walk | drift L 0.4 R 5.5 (contacts 2/2) | Neutral_Run_Start_F_Lfoot@0.0 > Neutral_Walk_Loop_F@0.05
+A_jw10_f seg 2 jog->walk | drift L 0.5 R 0.6 (contacts 2/2) | Neutral_Run_Loop_F@0.0 > Neutral_Walk_Loop_F@0.05
+
+# 19 Kas son durumu (Z_jw2/Z_jw10, sim zamanlı kopya)
+== Z_jw2_simt
+  seg 2 jog->walk (prev 2.0s)
+     0.0-0.5 up -10.1 fwd 24.3 elb  91 abd 17.5 Rel -1.00 Mv -1.00 v 306
+     0.5-1.0 up -10.6 fwd 37.7 elb 112 abd 15.9 Rel -1.00 Mv -1.00 v 180
+     1.0-1.5 up  -3.7 fwd 43.1 elb 146 abd  9.9 Rel -1.00 Mv -1.00 v 180
+     1.5-2.5 up -30.6 fwd 29.4 elb 155 abd  9.4 Rel -1.00 Mv -1.00 v 180
+     3.0-6.0 up -34.1 fwd 29.5 elb 159 abd  9.8 Rel -1.00 Mv -1.00 v 180
+== Z_jw10_simt
+  seg 2 jog->walk (prev 10.0s)
+     0.0-0.5 up  -8.5 fwd 24.8 elb  87 abd 14.3 Rel -1.00 Mv -1.00 v 310
+     0.5-1.0 up -10.3 fwd 29.3 elb 106 abd 14.8 Rel -1.00 Mv -1.00 v 180
+     1.0-1.5 up  -4.4 fwd 42.9 elb 143 abd 12.1 Rel -1.00 Mv -1.00 v 180
+     1.5-2.5 up -30.9 fwd 28.3 elb 154 abd 11.3 Rel -1.00 Mv -1.00 v 180
+     3.0-6.0 up -34.1 fwd 28.6 elb 159 abd  9.8 Rel -1.00 Mv -1.00 v 180

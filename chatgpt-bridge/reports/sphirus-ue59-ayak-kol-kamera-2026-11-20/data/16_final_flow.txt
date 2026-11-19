@@ -1,0 +1,87 @@
+# SON KAYITLI DURUM oyun akışı (fin19 F20, oyuncu kamerası 30 Hz video) + kayıt yükleme + boş şömine + parça görünürlüğü
+== F19_flow_F20 rows 2806 sim 93.3 s
+  t    0.0 ( 1080,  200) hub [0, 0, 0, 0, False] mont AnimMontage_16
+  t    0.9 ( 1080,  200) hub [0, 0, 0, 0, False] mont None
+  t   23.4 ( 1713, -556) hub [0, 0, 0, 0, True] mont None
+  t   25.0 ( 1645, -522) hub [0, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   26.5 ( 1645, -522) hub [1, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   27.7 ( 1645, -522) hub [1, 0, 0, 0, True] mont None
+  t   28.0 ( 1645, -522) hub [1, 0, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   34.8 ( 1771, -409) hub [1, 0, 0, 0, True] mont AM_GR_Day_CarryArms
+  t   35.5 ( 1755, -378) hub [1, 0, 0, 0, True] mont AM_GR_Day_Chop
+  t   40.6 ( 1755, -378) hub [0, 0, 2, 0, True] mont AM_GR_Day_Chop
+  t   43.0 ( 1755, -378) hub [0, 0, 2, 0, True] mont None
+  t   43.2 ( 1755, -378) hub [0, 0, 2, 0, False] mont None
+  t   43.3 ( 1738, -366) hub [0, 0, 2, 0, True] mont AM_GR_Day_Pick
+  t   44.8 ( 1738, -366) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   46.7 ( 1738, -366) hub [0, 1, 1, 0, True] mont None
+  t   47.0 ( 1738, -366) hub [0, 1, 1, 0, False] mont AM_GR_Day_CarryArms
+  t   48.4 ( 1896, -431) hub None mont AM_GR_Day_CarryArms
+  t   49.2 ( 1900, -325) hub None mont AM_GR_Day_Pick
+  t   49.5 ( 1883, -302) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   50.8 ( 1880, -299) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   51.5 ( 1880, -299) hub None mont AM_GR_Day_Pick
+  t   51.5 ( 1880, -299) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   52.0 ( 1880, -299) hub [0, 2, 0, 0, True] mont None
+  t   52.2 ( 1880, -299) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   53.5 ( 1880, -299) hub None mont AM_GR_Day_CarryArms
+  t   53.5 ( 1880, -299) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   74.3 ( 1347,  919) hub [0, 2, 0, 0, True] mont AM_GR_Day_CarryArms
+  t   74.8 ( 1368,  907) hub [0, 2, 0, 0, True] mont AM_GR_Day_Kneel
+  t   77.5 ( 1368,  907) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   81.2 ( 1368,  907) hub [0, 0, 0, 1, True] mont None
+  t   81.5 ( 1368,  907) hub [0, 0, 0, 1, False] mont None
+  t   83.4 ( 1368,  907) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   86.2 ( 1368,  907) hub [0, 0, 0, 2, True] mont AM_GR_Day_Kneel
+  t   89.4 ( 1368,  907) hub [0, 0, 0, 2, True] mont None
+  t   89.6 ( 1368,  907) hub [0, 0, 0, 2, False] mont None
+  CHECK wood picked True | split pieces collected max 2 (need 2) PASS | fire state max 2 (1 laid, 2 lit) PASS
+== F19_pieces_F20 rows 3430 sim 57.2 s
+  t    0.0 ( 1080,  200) hub [0, 0, 0, 0, False] mont None
+  t   23.2 ( 1730, -555) hub [0, 0, 0, 0, True] mont None
+  t   25.2 ( 1646, -511) hub [0, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   26.8 ( 1646, -511) hub [1, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   28.0 ( 1646, -511) hub [1, 0, 0, 0, True] mont None
+  t   28.2 ( 1646, -511) hub [1, 0, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   34.6 ( 1777, -404) hub [1, 0, 0, 0, True] mont AM_GR_Day_CarryArms
+  t   35.3 ( 1756, -381) hub [1, 0, 0, 0, True] mont AM_GR_Day_Chop
+  t   40.4 ( 1756, -381) hub [0, 0, 2, 0, True] mont AM_GR_Day_Chop
+  t   42.8 ( 1756, -381) hub [0, 0, 2, 0, True] mont None
+  t   43.0 ( 1756, -381) hub [0, 0, 2, 0, False] mont None
+  t   43.1 ( 1726, -372) hub [0, 0, 2, 0, True] mont AM_GR_Day_Pick
+  t   44.7 ( 1726, -372) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   45.9 ( 1726, -372) hub [0, 1, 1, 0, True] mont None
+  t   46.1 ( 1726, -372) hub [0, 1, 1, 0, False] mont AM_GR_Day_CarryArms
+  t   47.7 ( 1891, -430) hub None mont AM_GR_Day_CarryArms
+  t   48.5 ( 1918, -319) hub None mont AM_GR_Day_Pick
+  t   48.7 ( 1911, -297) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   50.1 ( 1907, -287) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   50.7 ( 1907, -287) hub None mont AM_GR_Day_Pick
+  t   50.7 ( 1907, -287) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   51.3 ( 1907, -287) hub [0, 2, 0, 0, True] mont None
+  t   51.5 ( 1907, -287) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   52.7 ( 1907, -287) hub None mont AM_GR_Day_CarryArms
+  t   52.7 ( 1907, -287) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  CHECK wood picked True | split pieces collected max 2 (need 2) PASS | fire state max 0 (1 laid, 2 lit) -
+== F19_loadfire_F20 rows 1392 sim 23.3 s
+  t    0.0 ( 1290,  905) hub [0, 2, 0, 0, False] mont None
+  t    4.0 ( 1295,  956) hub [0, 2, 0, 0, True] mont None
+  t    5.0 ( 1368,  901) hub [0, 2, 0, 0, True] mont AM_GR_Day_Kneel
+  t    7.7 ( 1368,  901) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   11.0 ( 1368,  901) hub [0, 0, 0, 1, True] mont None
+  t   11.2 ( 1368,  901) hub [0, 0, 0, 1, False] mont None
+  t   13.1 ( 1368,  901) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   15.9 ( 1368,  901) hub [0, 0, 0, 2, True] mont AM_GR_Day_Kneel
+  t   19.1 ( 1368,  901) hub [0, 0, 0, 2, True] mont None
+  t   19.3 ( 1368,  901) hub [0, 0, 0, 2, False] mont None
+  CHECK wood picked False | split pieces collected max 2 (need 2) PASS | fire state max 2 (1 laid, 2 lit) PASS
+== F19_emptyfire_F20 rows 1392 sim 23.3 s
+  t    0.0 ( 1290,  905) hub [0, 0, 0, 0, False] mont None
+  CHECK wood picked False | split pieces collected max 0 (need 2) FAIL | fire state max 0 (1 laid, 2 lit) -
+
+# Parça görünürlüğü (F19_pieces_PV, hk_pieces.py): [x,y,z, aktör gizli, kök görünür, [(mesh görünür, hiddenInGame)], bağlı]
+0.0 hub [0, 0, 0, 0, False] []
+40.6 hub [0, 0, 2, 0, True] [[1839, -325, 169, 0, 1, [[1, 0]], null], [1821, -338, 169, 0, 1, [[1, 0]], null]]
+42.8 hub [0, 0, 2, 0, True] [[1891, -282, 111, 0, 1, [[1, 0]], null], [1792, -369, 109, 0, 1, [[1, 0]], null]]
+44.8 hub [0, 1, 1, 0, True] [[1891, -282, 111, 0, 1, [[1, 0]], null], [1792, -369, 109, 1, 1, [[1, 0]], null]]
+50.1 hub [0, 2, 0, 0, True] [[1891, -282, 111, 1, 1, [[1, 0]], null], [1792, -369, 109, 1, 1, [[1, 0]], null]]

@@ -1,0 +1,57 @@
+# Jog->yürüyüş (ileri girdi sürerken). m21 = kayıtlı durum değişiklik öncesi (geçiş tam aralık); w06 = aralık [0,0.6]; base(w4) = son aralık L[0-0.6]+[1.4-son], R[0-0.6]+[1.9-son]; vd0 = üst kol yavaşlama terimi 0 (kaydedildi)
+== A_walk_m21
+  seg 1 walk (prev 2.0s)
+     0.0-0.5 up -32.8 fwd 30.8 elb 164 abd  9.8 Rel 0.00 Mv 0.32 v 100
+     0.5-1.0 up -31.6 fwd 31.4 elb 159 abd  9.0 Rel 0.00 Mv 0.89 v 170
+     1.0-1.5 up -36.3 fwd 26.1 elb 161 abd  9.3 Rel 0.00 Mv 0.99 v 178
+     1.5-2.5 up -33.4 fwd 29.7 elb 160 abd  9.0 Rel 0.00 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 29.8 elb 160 abd  9.6 Rel 0.00 Mv 1.00 v 180
+== A_jw2_m21
+  seg 2 jog->walk (prev 2.0s)
+     0.0-0.5 up -10.0 fwd 24.3 elb  91 abd 17.5 Rel 0.70 Mv 1.00 v 306
+     0.5-1.0 up -10.5 fwd 38.0 elb 112 abd 15.9 Rel 0.73 Mv 1.00 v 180
+     1.0-1.5 up  -3.6 fwd 43.1 elb 146 abd 10.0 Rel 0.40 Mv 1.00 v 180
+     1.5-2.5 up -30.7 fwd 29.4 elb 155 abd  9.3 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -34.1 fwd 29.5 elb 159 abd  9.8 Rel 0.01 Mv 1.00 v 180
+== A_jw10_m21
+  seg 2 jog->walk (prev 10.0s)
+     0.0-0.5 up  -9.0 fwd 24.5 elb  87 abd 15.9 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -10.3 fwd 27.2 elb 105 abd 15.0 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up  -4.4 fwd 43.0 elb 143 abd 11.7 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -30.9 fwd 28.3 elb 154 abd 11.3 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -34.1 fwd 28.5 elb 159 abd  9.8 Rel 0.01 Mv 1.00 v 180
+== A_jw2_w06
+  seg 2 jog->walk (prev 2.0s)
+     0.0-0.5 up -10.2 fwd 27.8 elb  88 abd 17.9 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -24.5 fwd 28.2 elb 152 abd  3.3 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up -34.8 fwd 27.6 elb 160 abd  5.1 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -34.2 fwd 28.5 elb 159 abd  9.0 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 29.7 elb 160 abd  8.8 Rel 0.01 Mv 1.00 v 180
+== A_jw10_w06
+  seg 2 jog->walk (prev 10.0s)
+     0.0-0.5 up -13.7 fwd 24.1 elb 117 abd  7.9 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -35.8 fwd 25.6 elb 158 abd  3.0 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up -34.6 fwd 28.3 elb 159 abd  8.0 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -34.7 fwd 28.4 elb 159 abd  6.2 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.3 fwd 29.1 elb 160 abd  9.1 Rel 0.01 Mv 1.00 v 180
+== A_jw2_vd0
+  seg 2 jog->walk (prev 2.0s)
+     0.0-0.5 up -11.4 fwd 23.3 elb 117 abd 14.8 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -34.9 fwd 28.5 elb 160 abd  6.7 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up -35.0 fwd 27.4 elb 159 abd  7.2 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -34.2 fwd 28.8 elb 159 abd  8.4 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.2 fwd 30.2 elb 160 abd  8.7 Rel 0.01 Mv 1.00 v 180
+== A_jw10_vd0
+  seg 2 jog->walk (prev 10.0s)
+     0.0-0.5 up -15.6 fwd 25.3 elb 117 abd 10.8 Rel 0.69 Mv 1.00 v 310
+     0.5-1.0 up -36.7 fwd 27.2 elb 160 abd  3.4 Rel 0.75 Mv 1.00 v 180
+     1.0-1.5 up -33.6 fwd 29.4 elb 160 abd  7.8 Rel 0.41 Mv 1.00 v 180
+     1.5-2.5 up -33.7 fwd 28.8 elb 160 abd 10.1 Rel 0.17 Mv 1.00 v 180
+     3.0-6.0 up -33.2 fwd 30.2 elb 160 abd  8.4 Rel 0.01 Mv 1.00 v 180
+
+A_jw2_m21 seg 2 jog->walk | drift L 0.9 R 0.2 (contacts 2/2) | Neutral_Run_Start_F_Lfoot@0.0 > Neutral_Transition_Run_to_Walk_Rfoot@0.05 > Neutral_Walk_Loop_F@3.78
+A_jw10_m21 seg 2 jog->walk | drift L 0.9 R 0.0 (contacts 2/1) | Neutral_Run_Loop_F@0.0 > Neutral_Transition_Run_to_Walk_Rfoot@0.05 > Neutral_Walk_Loop_F@3.87
+A_jw2_w06 seg 2 jog->walk | drift L 0.4 R 0.4 (contacts 2/2) | Neutral_Run_Start_F_Rfoot@0.0 > Neutral_Transition_Run_to_Walk_Lfoot@0.05 > Neutral_Walk_Loop_F@0.27
+A_jw10_w06 seg 2 jog->walk | drift L 0.4 R 0.6 (contacts 2/2) | Neutral_Run_Loop_F@0.0 > Neutral_Walk_Loop_F@0.05
+A_jw2_vd0 seg 2 jog->walk | drift L 0.4 R 5.5 (contacts 2/2) | Neutral_Run_Start_F_Lfoot@0.0 > Neutral_Walk_Loop_F@0.05
+A_jw10_vd0 seg 2 jog->walk | drift L 0.6 R 0.5 (contacts 2/2) | Neutral_Run_Loop_F@0.0 > Neutral_Walk_Loop_F@0.05

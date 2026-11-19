@@ -1,0 +1,12 @@
+# Dar geçiş kamerası, baş/saç görüş engeli (an_camocc.py). yk = YKeep (TightRaise 45). J_cam_tr* = 19 Kasım kayıtları.
+== J_cam_tr0 frames 309 | lowmid>25%: 0 frames (0.0%), max lowmid 15% | centre covered 0 frames | mean cov 5.4% max 12% | min head depth 67 cm | relstep p99 15.0 cm max 25.8 | rotstep max 8.0 deg
+== J_cam_tr45 frames 309 | lowmid>25%: 12 frames (3.9%), max lowmid 50% | centre covered 6 frames | mean cov 5.5% max 14% | min head depth 64 cm | relstep p99 14.9 cm max 27.3 | rotstep max 8.0 deg
+== C_cam_yk0 frames 615 | lowmid>25%: 32 frames (5.2%), max lowmid 38% | centre covered 17 frames | mean cov 5.2% max 13% | min head depth 66 cm | relstep p99 7.6 cm max 19.0 | rotstep max 4.0 deg
+== C_cam_yk0.6 frames 615 | lowmid>25%: 31 frames (5.0%), max lowmid 35% | centre covered 16 frames | mean cov 5.3% max 13% | min head depth 66 cm | relstep p99 7.6 cm max 19.1 | rotstep max 4.0 deg
+== C_cam_yk0.8 frames 615 | lowmid>25%: 14 frames (2.3%), max lowmid 31% | centre covered 6 frames | mean cov 5.3% max 12% | min head depth 66 cm | relstep p99 7.4 cm max 19.4 | rotstep max 4.0 deg
+== C_cam_yk1.0 frames 615 | lowmid>25%: 0 frames (0.0%), max lowmid 24% | centre covered 0 frames | mean cov 5.2% max 13% | min head depth 66 cm | relstep p99 7.5 cm max 18.7 | rotstep max 4.0 deg
+== F19_flow_Z frames 2783 | lowmid>25%: 65 frames (2.3%), max lowmid 53% | centre covered 130 frames | mean cov 4.4% max 16% | min head depth 30 cm | relstep p99 13.2 cm max 135.4 | rotstep max 20.0 deg
+# Kamera son durum (C_cam_video, kayıtlı durum, geçersiz kılma yok) vs 19 Kas (J_cam_tr45)
+== C_cam_video frames 309 | lowmid>25%: 0 frames (0.0%), max lowmid 24% | centre covered 1 frames | mean cov 5.4% max 12% | min head depth 67 cm | relstep p99 15.0 cm max 24.0 | rotstep max 8.0 deg
+== J_cam_tr45 frames 309 | lowmid>25%: 12 frames (3.9%), max lowmid 50% | centre covered 6 frames | mean cov 5.5% max 14% | min head depth 64 cm | relstep p99 14.9 cm max 27.3 | rotstep max 8.0 deg
+== F19_flow_F20 frames 2806 | lowmid>25%: 43 frames (1.5%), max lowmid 40% | centre covered 98 frames | mean cov 4.4% max 18% | min head depth 59 cm | relstep p99 12.4 cm max 166.7 | rotstep max 20.0 deg

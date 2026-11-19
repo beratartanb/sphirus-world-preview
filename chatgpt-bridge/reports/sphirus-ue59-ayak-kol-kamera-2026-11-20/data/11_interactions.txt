@@ -1,0 +1,69 @@
+# Etkileşim doğrulaması (ev haritası, kayıtlı durum, 30 Hz oyuncu kamerası videosu). hk_interact.py: SF hedefi (tgt), CanInteract, gün merkezi değişkenleri, kapı IsOpen?, montaj.
+== M_tea rows 512
+    0.0 s seg0 mont AnimMontage_51         {"Busy": false, "Herb": 1, "Tea": 0, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    0.2 s seg0 mont AnimMontage_51         {"Busy": false, "Herb": 1, "Tea": 0, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Tea"}
+    1.0 s seg0 mont None                   {"Busy": false, "Herb": 1, "Tea": 0, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Tea"}
+    3.0 s seg3 mont None                   {"Busy": true, "Herb": 1, "Tea": 0, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Tea"}
+    3.1 s seg4 mont None                   {"Busy": true, "Herb": 1, "Tea": 0, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    4.3 s seg4 mont AM_GR_Day_Pour         {"Busy": true, "Herb": 1, "Tea": 0, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    5.7 s seg4 mont AM_GR_Day_Pour         {"Busy": true, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    6.8 s seg4 mont None                   {"Busy": true, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    7.0 s seg4 mont None                   {"Busy": false, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    7.3 s seg4 mont None                   {"Busy": false, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Tea"}
+   11.1 s seg5 mont AM_GR_Day_Drink        {"Busy": true, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Tea"}
+   11.2 s seg6 mont AM_GR_Day_Drink        {"Busy": true, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   14.1 s seg6 mont None                   {"Busy": true, "Herb": 0, "Tea": 1, "Woke": 0, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+== M_mask rows 512
+    0.0 s seg0 mont None                   {}
+    6.5 s seg4 mont AM_GR_Mask_Take        {}
+    8.2 s seg4 mont None                   {}
+    8.5 s seg4 mont AM_GR_Mask_Inspect     {}
+   11.1 s seg5 mont AM_GR_Mask_Put         {}
+   12.7 s seg6 mont None                   {}
+== M_bed rows 512
+    0.0 s seg0 mont AnimMontage_52         {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    0.3 s seg0 mont AnimMontage_52         {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Bed"}
+    0.5 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Bed"}
+    2.9 s seg3 mont None                   {"Busy": true, "Herb": 0, "Tea": 0, "Woke": 1, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "GR_Day_Bed"}
+    3.1 s seg4 mont None                   {"Busy": true, "Herb": 0, "Tea": 0, "Woke": 1, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    6.8 s seg4 mont AM_Sph_Bed             {"Busy": true, "Herb": 0, "Tea": 0, "Woke": 1, "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+== M_door rows 512
+    0.0 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    0.4 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    1.8 s seg1 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    1.8 s seg1 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    1.9 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    1.9 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    2.0 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    2.0 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    2.1 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    2.1 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    2.1 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    2.2 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    3.0 s seg3 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    3.9 s seg4 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+   11.3 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   11.4 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+   11.4 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   11.4 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+   11.5 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   12.1 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [true, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+== M_doorc rows 512
+    0.0 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    0.4 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    0.4 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    0.5 s seg0 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    2.2 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    2.7 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    2.8 s seg2 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    2.9 s seg3 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerWCDoor"}
+    3.0 s seg3 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    3.3 s seg4 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+    3.6 s seg4 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [false, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+    3.9 s seg4 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+   11.3 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   11.4 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+   11.4 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   11.4 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "SPH_Door_LowerStoreDoor"}
+   11.5 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [false, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
+   12.1 s seg6 mont None                   {"Busy": false, "Herb": 0, "Tea": 0, "Woke": 1, "door_LowerStoreDoor": [true, 0.0], "door_LowerWCDoor": [true, 0.0], "mask": [0, 0, false, false, "GR_MaskFinished"], "tgt": "None"}
