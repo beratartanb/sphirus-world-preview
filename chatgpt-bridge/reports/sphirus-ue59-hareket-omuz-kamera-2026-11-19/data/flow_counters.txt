@@ -1,0 +1,78 @@
+== F19_flow_Z rows 2783 sim 92.7 s
+  t    0.0 ( 1080,  200) hub [0, 0, 0, 0, False] mont None
+  t   23.3 ( 1682, -562) hub [0, 0, 0, 0, True] mont None
+  t   24.8 ( 1643, -519) hub [0, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   26.4 ( 1643, -519) hub [1, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   27.6 ( 1643, -519) hub [1, 0, 0, 0, True] mont None
+  t   27.8 ( 1643, -519) hub [1, 0, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   34.7 ( 1772, -408) hub [1, 0, 0, 0, True] mont AM_GR_Day_CarryArms
+  t   35.4 ( 1755, -379) hub [1, 0, 0, 0, True] mont AM_GR_Day_Chop
+  t   40.5 ( 1755, -379) hub [0, 0, 2, 0, True] mont AM_GR_Day_Chop
+  t   42.9 ( 1755, -379) hub [0, 0, 2, 0, True] mont None
+  t   43.1 ( 1755, -379) hub [0, 0, 2, 0, False] mont None
+  t   43.2 ( 1730, -357) hub [0, 0, 2, 0, True] mont AM_GR_Day_Pick
+  t   44.8 ( 1730, -357) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   45.9 ( 1730, -357) hub [0, 1, 1, 0, True] mont None
+  t   46.2 ( 1730, -357) hub [0, 1, 1, 0, False] mont AM_GR_Day_CarryArms
+  t   47.8 ( 1897, -428) hub None mont AM_GR_Day_CarryArms
+  t   48.7 ( 1908, -323) hub None mont AM_GR_Day_Pick
+  t   48.8 ( 1896, -306) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   50.3 ( 1889, -296) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   50.8 ( 1889, -296) hub None mont AM_GR_Day_Pick
+  t   50.9 ( 1889, -296) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   51.4 ( 1889, -296) hub [0, 2, 0, 0, True] mont None
+  t   51.7 ( 1889, -296) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   52.9 ( 1889, -296) hub None mont AM_GR_Day_CarryArms
+  t   52.9 ( 1889, -296) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   73.6 ( 1346,  914) hub [0, 2, 0, 0, True] mont AM_GR_Day_CarryArms
+  t   74.1 ( 1368,  906) hub [0, 2, 0, 0, True] mont AM_GR_Day_Kneel
+  t   76.8 ( 1368,  906) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   80.0 ( 1368,  906) hub [0, 0, 0, 1, True] mont None
+  t   80.3 ( 1368,  906) hub [0, 0, 0, 1, False] mont None
+  t   82.7 ( 1368,  906) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   85.4 ( 1368,  906) hub [0, 0, 0, 2, True] mont AM_GR_Day_Kneel
+  t   88.7 ( 1368,  906) hub [0, 0, 0, 2, True] mont None
+  t   88.9 ( 1368,  906) hub [0, 0, 0, 2, False] mont None
+  CHECK wood picked True | split pieces collected max 2 (need 2) PASS | fire state max 2 (1 laid, 2 lit) PASS
+== F19_pieces_Z2 rows 3441 sim 57.3 s
+  t    0.0 ( 1080,  200) hub [0, 0, 0, 0, False] mont None
+  t   23.1 ( 1672, -560) hub [0, 0, 0, 0, True] mont None
+  t   24.5 ( 1643, -520) hub [0, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   26.1 ( 1643, -520) hub [1, 0, 0, 0, True] mont AM_GR_Day_Pick
+  t   27.2 ( 1643, -520) hub [1, 0, 0, 0, True] mont None
+  t   27.5 ( 1643, -520) hub [1, 0, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   34.6 ( 1769, -409) hub [1, 0, 0, 0, True] mont AM_GR_Day_CarryArms
+  t   35.3 ( 1756, -380) hub [1, 0, 0, 0, True] mont AM_GR_Day_Chop
+  t   40.4 ( 1756, -380) hub [0, 0, 2, 0, True] mont AM_GR_Day_Chop
+  t   42.8 ( 1756, -380) hub [0, 0, 2, 0, True] mont None
+  t   43.0 ( 1756, -380) hub [0, 0, 2, 0, False] mont None
+  t   43.0 ( 1774, -359) hub [0, 0, 2, 0, True] mont AM_GR_Day_Pick
+  t   44.6 ( 1774, -359) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   45.8 ( 1774, -359) hub [0, 1, 1, 0, True] mont None
+  t   46.0 ( 1774, -359) hub [0, 1, 1, 0, False] mont AM_GR_Day_CarryArms
+  t   47.8 ( 1891, -427) hub None mont AM_GR_Day_CarryArms
+  t   48.6 ( 1918, -324) hub None mont AM_GR_Day_Pick
+  t   48.8 ( 1908, -304) hub [0, 1, 1, 0, True] mont AM_GR_Day_Pick
+  t   50.2 ( 1902, -294) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   50.8 ( 1902, -294) hub None mont AM_GR_Day_Pick
+  t   50.8 ( 1902, -294) hub [0, 2, 0, 0, True] mont AM_GR_Day_Pick
+  t   51.4 ( 1902, -294) hub [0, 2, 0, 0, True] mont None
+  t   51.6 ( 1902, -294) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  t   52.8 ( 1902, -294) hub None mont AM_GR_Day_CarryArms
+  t   52.9 ( 1902, -294) hub [0, 2, 0, 0, False] mont AM_GR_Day_CarryArms
+  CHECK wood picked True | split pieces collected max 2 (need 2) PASS | fire state max 0 (1 laid, 2 lit) -
+== F19_loadfire_Z2 rows 1392 sim 23.2 s
+  t    0.0 ( 1290,  905) hub [0, 2, 0, 0, False] mont None
+  t    3.9 ( 1287,  956) hub [0, 2, 0, 0, True] mont None
+  t    5.0 ( 1368,  902) hub [0, 2, 0, 0, True] mont AM_GR_Day_Kneel
+  t    7.7 ( 1368,  902) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   11.0 ( 1368,  902) hub [0, 0, 0, 1, True] mont None
+  t   11.2 ( 1368,  902) hub [0, 0, 0, 1, False] mont None
+  t   13.1 ( 1368,  902) hub [0, 0, 0, 1, True] mont AM_GR_Day_Kneel
+  t   15.8 ( 1368,  902) hub [0, 0, 0, 2, True] mont AM_GR_Day_Kneel
+  t   19.1 ( 1368,  902) hub [0, 0, 0, 2, True] mont None
+  t   19.3 ( 1368,  902) hub [0, 0, 0, 2, False] mont None
+  CHECK wood picked False | split pieces collected max 2 (need 2) PASS | fire state max 2 (1 laid, 2 lit) PASS
+== F19_emptyfire_Z2 rows 1392 sim 23.2 s
+  t    0.0 ( 1290,  905) hub [0, 0, 0, 0, False] mont None
+  CHECK wood picked False | split pieces collected max 0 (need 2) FAIL | fire state max 0 (1 laid, 2 lit) -

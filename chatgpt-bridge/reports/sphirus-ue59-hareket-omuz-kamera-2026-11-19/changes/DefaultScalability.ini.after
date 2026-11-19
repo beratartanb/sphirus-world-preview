@@ -1,0 +1,9 @@
+; Chapter01 close-character dappled-shadow look-dev: Epic only.
+; Preserve lower scalability budgets and engine Cinematic settings.
+[ShadowQuality@3]
+r.Shadow.Virtual.SMRT.RayCountDirectional=12
+r.Shadow.Virtual.SMRT.SamplesPerRayDirectional=8
+; 2026-11-19 performance: static sun shadow pages at the engine's High-tier resolution (Epic sets -1.5 = ~2.8x per axis).
+; Measured on the uphill trail (RTX 4060 Laptop, editor PIE): ShadowDepths 25.5 -> 7.8 ms, frame 47.8 -> 30.5 ms. Moving
+; objects (the character) keep the Epic -1.5 bias, so her own shadow is unchanged. Backup: Saved/UE59Work/checkpoints/20261119_config/
+r.Shadow.Virtual.ResolutionLodBiasDirectional=0.0

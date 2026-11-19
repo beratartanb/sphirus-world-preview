@@ -1,0 +1,36 @@
+== H_W_base
+    +45 v 180 | slide L   2.5 R   2.7 sum   5.2 | drift L  0.9 R  1.2 | pelvis drop  3.1 @0.45s rec 0.58s | M_Neutral_Walk_Loop_F
+    -45 v 180 | slide L   2.2 R   2.1 sum   4.3 | drift L  0.6 R  1.1 | pelvis drop  3.5 @0.53s rec 0.68s | M_Neutral_Walk_Loop_F
+    +90 v 180 | slide L   2.2 R   2.8 sum   5.0 | drift L  1.0 R  1.3 | pelvis drop  2.8 @0.55s rec 0.73s | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa
+    -90 v 180 | slide L   2.2 R   2.9 sum   5.1 | drift L  1.0 R  1.3 | pelvis drop  2.5 @1.47s rec 1.55s | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa
+   +135 v 180 | slide L   4.5 R  12.1 sum  16.7 | drift L  3.9 R  9.0 | pelvis drop  2.5 @0.47s rec 0.55s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_R_090_Lfoo > M_Neutral_Walk_Turn_R_180_Rfoo
+   -135 v 180 | slide L   6.8 R   9.8 sum  16.6 | drift L  5.0 R  9.4 | pelvis drop  6.1 @0.58s rec 0.82s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_L_090_Lfoo > M_Neutral_Walk_Turn_L_180_Lfoo
+   +180 v 180 | slide L   0.6 R   6.1 sum   6.7 | drift L  0.4 R  4.3 | pelvis drop  2.7 @1.65s rec 1.77s | M_Neutral_Walk_Turn_L_180_Lfoo > M_Neutral_Walk_Turn_R_090_Rfoo > M_Neutral_Walk_Turn_R_180_Rfoo
+   -180 v 180 | slide L  11.5 R  30.7 sum  42.2 | drift L  5.2 R 25.7 | pelvis drop  9.0 @0.60s rec 0.90s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_L_090_Lfoo > M_Neutral_Walk_Turn_L_180_Lfoo
+== H_J_base
+    +45 v 415 | slide L   3.9 R   1.6 sum   5.5 | drift L  1.8 R  0.7 | pelvis drop  2.9 @0.28s rec 1.08s | M_Neutral_Run_Loop_F
+    -45 v 415 | slide L   2.5 R   3.5 sum   6.0 | drift L  1.1 R  1.6 | pelvis drop  2.2 @0.65s rec 0.78s | M_Neutral_Run_Loop_F
+    +90 v 415 | slide L   7.0 R   3.1 sum  10.1 | drift L  2.6 R  1.6 | pelvis drop  4.2 @0.40s rec 1.12s | M_Neutral_Run_Loop_F
+    -90 v 415 | slide L   2.7 R   4.2 sum   7.0 | drift L  1.4 R  2.0 | pelvis drop  3.3 @0.72s rec 0.98s | M_Neutral_Run_Loop_F
+   +135 v 415 | slide L   8.0 R   2.0 sum  10.0 | drift L  6.5 R  0.9 | pelvis drop 16.4 @0.75s rec nans | M_Neutral_Run_Loop_F > M_Relaxed_Run_Turn_R_090_Lfoot > M_Relaxed_Run_Turn_R_090_Rfoot
+   -135 v 415 | slide L   2.4 R   1.2 sum   3.5 | drift L  0.5 R  0.3 | pelvis drop 12.2 @0.50s rec 1.40s | M_Neutral_Run_Loop_F > M_Relaxed_Run_Turn_L_090_Rfoot > M_Relaxed_Run_Turn_L_090_Lfoot
+   +180 v 415 | slide L  18.8 R  15.9 sum  34.7 | drift L  7.6 R 12.9 | pelvis drop 18.7 @0.58s rec nans | M_Neutral_Run_Loop_F > M_Relaxed_Run_Turn_R_090_Lfoot > M_Relaxed_Run_Turn_R_090_Rfoot > M_Relaxed_Run_Turn_R_180_Rfoot
+   -180 v 415 | slide L   1.7 R   1.6 sum   3.3 | drift L  0.8 R  0.4 | pelvis drop 16.4 @0.53s rec nans | M_Neutral_Run_Loop_F > M_Relaxed_Run_Turn_L_090_Rfoot > M_Relaxed_Run_Turn_L_090_Lfoot > M_Relaxed_Run_Turn_L_180_Lfoot
+== H_W_tb035
+    +45 v 180 | slide L   2.3 R   2.7 sum   5.1 | drift L  0.8 R  1.4 | pelvis drop  3.3 @0.50s rec 0.63s | M_Neutral_Walk_Loop_F
+    -45 v 180 | slide L   2.0 R   1.8 sum   3.7 | drift L  0.6 R  1.0 | pelvis drop  3.8 @0.58s rec 0.72s | M_Neutral_Walk_Loop_F
+    +90 v 180 | slide L   1.7 R  16.9 sum  18.6 | drift L  0.9 R 14.0 | pelvis drop  2.5 @0.12s rec 0.22s | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa
+    -90 v 180 | slide L   2.1 R   2.3 sum   4.4 | drift L  0.9 R  1.1 | pelvis drop  2.5 @1.47s rec 1.60s | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa
+   +135 v 180 | slide L  24.6 R  16.7 sum  41.3 | drift L 19.3 R  7.6 | pelvis drop  5.3 @1.67s rec nans | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa > M_Neutral_Walk_Turn_R_090_Lfoo
+   -135 v 180 | slide L  11.7 R   6.1 sum  17.7 | drift L  5.2 R  5.1 | pelvis drop  2.8 @1.60s rec 1.73s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_L_090_Lfoo
+   +180 v 180 | slide L   7.1 R   2.6 sum   9.7 | drift L  5.8 R  0.7 | pelvis drop  2.5 @1.72s rec 1.80s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_R_090_Rfoo > M_Neutral_Walk_Turn_R_180_Rfoo
+   -180 v 180 | slide L  11.7 R  10.8 sum  22.4 | drift L  5.8 R 10.0 | pelvis drop  7.0 @0.67s rec nans | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_L_090_Lfoo > M_Neutral_Walk_Turn_L_180_Lfoo
+== H_W_tb015
+    +45 v 180 | slide L   2.4 R   2.7 sum   5.1 | drift L  0.8 R  1.4 | pelvis drop  3.3 @0.50s rec 0.63s | M_Neutral_Walk_Loop_F
+    -45 v 180 | slide L   2.0 R   2.0 sum   4.0 | drift L  0.6 R  1.0 | pelvis drop  3.8 @0.58s rec 0.72s | M_Neutral_Walk_Loop_F
+    +90 v 180 | slide L   1.7 R  16.7 sum  18.4 | drift L  0.9 R 14.0 | pelvis drop  2.5 @0.12s rec 0.22s | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa
+    -90 v 180 | slide L   2.2 R   2.4 sum   4.6 | drift L  0.9 R  1.0 | pelvis drop  2.5 @1.47s rec 1.60s | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa
+   +135 v 180 | slide L  23.5 R  15.9 sum  39.4 | drift L 19.9 R  6.6 | pelvis drop  5.3 @1.67s rec nans | M_Neutral_Walk_Loop_F > M_Neutral_Transition_Run_to_Wa > M_Neutral_Walk_Turn_R_090_Lfoo
+   -135 v 180 | slide L   8.2 R   6.9 sum  15.1 | drift L  3.8 R  5.9 | pelvis drop  6.1 @0.60s rec 0.85s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_L_090_Lfoo > M_Neutral_Walk_Turn_L_180_Lfoo
+   +180 v 180 | slide L   4.7 R   3.3 sum   8.0 | drift L  4.0 R  1.7 | pelvis drop  2.7 @0.22s rec 0.33s | M_Neutral_Walk_Turn_L_180_Lfoo > M_Neutral_Walk_Turn_R_090_Rfoo > M_Neutral_Walk_Turn_R_180_Rfoo
+   -180 v 180 | slide L  15.7 R  11.4 sum  27.1 | drift L 11.0 R 10.6 | pelvis drop  6.5 @0.60s rec 0.85s | M_Neutral_Walk_Loop_F > M_Neutral_Walk_Turn_L_090_Lfoo > M_Neutral_Walk_Turn_L_180_Lfoo

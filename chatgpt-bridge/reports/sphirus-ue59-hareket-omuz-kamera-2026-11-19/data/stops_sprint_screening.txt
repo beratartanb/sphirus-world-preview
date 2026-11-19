@@ -1,0 +1,25 @@
+== F_STOP_F1
+  seg  2 after "W LeftShift LeftControl" 7.00s v_in 585 v_win 585 | stop 0.62s  180 cm | pelvis ref  91.3 drop 31.0 @0.53s settle 1.30s | slide L   0.3 R   0.6 sum   0.9 | drift L  0.3 R  0.2 | M_Relaxed_Sprint_Loop_F > M_Neutral_Sprint_Stop_F_Rfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v_in 585 v_win 585 | stop 0.62s  181 cm | pelvis ref  91.4 drop 31.1 @0.52s settle 1.23s | slide L   0.3 R   1.2 sum   1.5 | drift L  0.3 R  0.9 | M_Relaxed_Sprint_Loop_F > M_Neutral_Sprint_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 5.00s        v_in 415 v_win 415 | stop 0.53s  113 cm | pelvis ref  92.0 drop  7.1 @0.30s settle 0.77s | slide L   0.2 R   8.3 sum   8.5 | drift L  0.1 R  7.9 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                  v_in 180 v_win 180 | stop 0.37s   34 cm | pelvis ref  93.2 drop  5.1 @0.00s settle 0.23s | slide L   0.3 R   1.4 sum   1.7 | drift L  0.2 R  1.2 | M_Neutral_Walk_Loop_F > M_Relaxed_Walk_Stop_F_Rfoot > M_Relaxed_Stand_Idle_Loop
+== F_STOP_F2
+  seg  2 after "W LeftShift LeftControl" 7.00s v_in 585 v_win 585 | stop 0.48s  142 cm | pelvis ref  91.3 drop 30.0 @0.48s settle 1.37s | slide L   9.4 R   2.6 sum  12.0 | drift L  8.4 R  2.5 | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v_in 585 v_win 585 | stop 0.48s  143 cm | pelvis ref  91.5 drop 27.8 @0.45s settle 1.23s | slide L  16.8 R   0.3 sum  17.1 | drift L 11.5 R  0.1 | M_Relaxed_Sprint_Loop_F > M_Relaxed_Sprint_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 5.00s        v_in 415 v_win 415 | stop 0.45s   94 cm | pelvis ref  92.0 drop  7.1 @0.30s settle 0.80s | slide L   0.0 R   6.1 sum   6.1 | drift L  0.0 R  5.9 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                  v_in 180 v_win 180 | stop 0.35s   33 cm | pelvis ref  93.2 drop  5.1 @0.00s settle 0.23s | slide L   0.3 R   1.4 sum   1.7 | drift L  0.2 R  1.2 | M_Neutral_Walk_Loop_F > M_Relaxed_Walk_Stop_F_Rfoot > M_Relaxed_Stand_Idle_Loop
+== F_STOP_F3
+  seg  2 after "W LeftShift LeftControl" 7.00s v_in 585 v_win 585 | stop 0.48s  143 cm | pelvis ref  91.3 drop 20.4 @0.47s settle 1.20s | slide L  48.5 R   0.4 sum  48.9 | drift L 47.5 R  0.4 | M_Relaxed_Sprint_Loop_F > M_Neutral_Sprint_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v_in 585 v_win 585 | stop 0.48s  143 cm | pelvis ref  91.5 drop 31.2 @0.52s settle 1.27s | slide L   0.3 R   1.8 sum   2.1 | drift L  0.3 R  1.4 | M_Relaxed_Sprint_Loop_F > M_Neutral_Sprint_Stop_F_Rfoot
+  seg  6 after "W LeftShift" 5.00s        v_in 415 v_win 415 | stop 0.45s   94 cm | pelvis ref  92.0 drop  7.1 @0.30s settle 0.80s | slide L   0.0 R   6.0 sum   6.0 | drift L  0.0 R  5.8 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                  v_in 180 v_win 180 | stop 0.35s   33 cm | pelvis ref  93.2 drop  5.1 @0.00s settle 0.23s | slide L   0.3 R   1.4 sum   1.7 | drift L  0.2 R  1.2 | M_Neutral_Walk_Loop_F > M_Relaxed_Walk_Stop_F_Rfoot > M_Relaxed_Stand_Idle_Loop
+== F_STOP_F4
+  seg  2 after "W LeftShift LeftControl" 7.00s v_in 585 v_win 585 | stop 0.62s  180 cm | pelvis ref  91.3 drop 11.8 @0.33s settle 0.77s | slide L  17.6 R   0.8 sum  18.5 | drift L 17.3 R  0.7 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v_in 585 v_win 585 | stop 0.62s  181 cm | pelvis ref  91.4 drop 11.3 @0.33s settle 0.73s | slide L  19.4 R   0.8 sum  20.2 | drift L 19.1 R  0.7 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+  seg  6 after "W LeftShift" 5.00s        v_in 415 v_win 415 | stop 0.53s  113 cm | pelvis ref  92.0 drop  7.1 @0.30s settle 0.77s | slide L   0.2 R   8.3 sum   8.5 | drift L  0.1 R  7.9 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                  v_in 180 v_win 180 | stop 0.37s   34 cm | pelvis ref  93.2 drop  5.1 @0.00s settle 0.23s | slide L   0.3 R   1.3 sum   1.6 | drift L  0.2 R  1.1 | M_Neutral_Walk_Loop_F > M_Relaxed_Walk_Stop_F_Rfoot > M_Relaxed_Stand_Idle_Loop
+== F_STOP_F5
+  seg  2 after "W LeftShift LeftControl" 7.00s v_in 585 v_win 585 | stop 0.48s  142 cm | pelvis ref  91.3 drop 11.8 @0.33s settle 1.05s | slide L  15.2 R   0.8 sum  16.1 | drift L 14.9 R  0.7 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+  seg  4 after "W LeftShift LeftControl" 5.00s v_in 585 v_win 585 | stop 0.48s  143 cm | pelvis ref  91.5 drop  9.9 @0.32s settle 1.00s | slide L  11.1 R   0.8 sum  11.9 | drift L 10.9 R  0.7 | M_Relaxed_Sprint_Loop_F > M_Neutral_Run_Stop_F_Lfoot
+  seg  6 after "W LeftShift" 5.00s        v_in 415 v_win 415 | stop 0.45s   94 cm | pelvis ref  92.0 drop  7.1 @0.30s settle 0.80s | slide L   0.0 R   6.2 sum   6.2 | drift L  0.0 R  5.9 | M_Neutral_Run_Loop_F > M_Relaxed_Run_Stop_F_Rfoot
+  seg  8 after "W" 5.00s                  v_in 180 v_win 180 | stop 0.35s   33 cm | pelvis ref  93.2 drop  5.1 @0.00s settle 0.23s | slide L   0.3 R   1.6 sum   1.9 | drift L  0.2 R  1.2 | M_Neutral_Walk_Loop_F > M_Relaxed_Walk_Stop_F_Rfoot > M_Relaxed_Stand_Idle_Loop
