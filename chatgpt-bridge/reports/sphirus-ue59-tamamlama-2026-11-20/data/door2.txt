@@ -1,0 +1,16 @@
+== SPH_Door_LowerWCDoor loc [302, 920, 152] rot 0 open False angle 90.0 radius 0.0
+   Root                       SceneComponent           world (302,920,152) ext (0,0,0) coll 
+   StaticMesh                 StaticMeshComponent      world (302,920,152) ext (9,50,100) coll Custom
+   SFInteractionWidget_SC     SFInteractionWidget_SC_C world (302,920,152) ext (0,0,0) coll UI
+   Sphere                     SphereComponent          world (240,920,264) ext (60,60,60) coll Custom
+   SkeletalMesh               SkeletalMeshComponent    world (302,920,152) ext (0,0,0) coll Custom
+   InteractionPromptLoc       BillboardComponent       world (307,835,277) ext (28,28,28) coll NoCollision
+   InteractionData=<Struct 'InteractableData_S' (0x00000238A86A64A8) {object_name: NSLOCTEXT("", "9AB618BB4AF6C8E848314DA9A1CBEFCB", "Door"), object_static_mesh: "/Script/Engine.StaticMesh'/Game/StoryFramework/Core/Exam
+== SPH_Door_LowerStoreDoor loc [302, 843, 152] rot 0 open False angle -90.0 radius 0.0
+   Root                       SceneComponent           world (302,843,152) ext (0,0,0) coll 
+   StaticMesh                 StaticMeshComponent      world (302,843,152) ext (9,50,100) coll Custom
+   SFInteractionWidget_SC     SFInteractionWidget_SC_C world (302,843,152) ext (0,0,0) coll UI
+   Sphere                     SphereComponent          world (241,843,264) ext (60,60,60) coll Custom
+   SkeletalMesh               SkeletalMeshComponent    world (302,843,152) ext (0,0,0) coll Custom
+   InteractionPromptLoc       BillboardComponent       world (307,758,277) ext (28,28,28) coll NoCollision
+   InteractionData=<Struct 'InteractableData_S' (0x00000238A86A6CA8) {object_name: NSLOCTEXT("", "9AB618BB4AF6C8E848314DA9A1CBEFCB", "Door"), object_static_mesh: "/Script/Engine.StaticMesh'/Game/StoryFramework/Core/Exam

@@ -1,0 +1,5 @@
+MOTION {'StKOn': True, 'StLatch': 0.1, 'StKMin': 0.5, 'StKMax': 1.8, 'RevOn': False, 'StartCapOn': False, 'GaitUpAcc': 0.8, 'ClipBrakeOn': True} idle ['v01', 'v02', 'v04', 'v06', 'v02']
+PLAYER {'GR_KTempoRun': 0.67, 'GR_KTempoBack': 0.78, 'GR_HoldMax': 0.9, 'GR_StopHoldMin': 470.0, 'GR_BackK': 1.0}
+MAP [('alk_F_Starts', 'Sph_N_Walk_F_Starts', 'Sph_N_Walk_F_Starts'), ('alk_B_Starts', 'Sph_N_Walk_S_Starts', 'Sph_N_Walk_S_Starts'), ('alk_LL_Starts', 'Sph_N_Walk_S_Starts', 'Sph_N_Walk_S_Starts'), ('alk_RL_Starts', 'Sph_N_Walk_S_Starts', 'Sph_N_Walk_S_Starts'), ('un_F_Starts', 'Sph_N_Run_F_Starts', 'Sph_N_Run_F_Starts'), ('un_B_Starts', 'Sph_N_Run_S_Starts', 'CM_Jog_B_Starts'), ('un_LL_Starts', 'Sph_N_Run_S_Starts', 'CM_Jog_L_Starts'), ('un_RL_Starts', 'Sph_N_Run_S_Starts', 'CM_Jog_R_Starts'), ('print_Stops', 'Relaxed_Stand_Run_Stops', 'Relaxed_Stand_Run_Stops'), ('un_Stops', 'Relaxed_Stand_Run_Stops', 'Relaxed_Stand_Run_Stops')]
+HUB vars ['GR_FireSt', 'GR_TeaSt', 'GR_Days']
+DIRTY []

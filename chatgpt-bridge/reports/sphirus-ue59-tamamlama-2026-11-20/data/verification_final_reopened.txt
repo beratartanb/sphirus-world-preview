@@ -1,0 +1,99 @@
+#### r3_A_60
+r3_A_60: 71 contacts
+  t  14.38 s6  [W+Sh]->[S] +0.43s foot R dur 0.48 drift  13.1 path  17.2 lift  7.6 speed 103 M_Neutral_Run_Pivot_F_B_Lfoot
+  t  23.48 s10 [A+Sh]->[D+Sh] +0.33s foot L dur 0.45 drift  11.6 path  14.2 lift 12.5 speed  85 M_Relaxed_Run_Turn_L_180_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh]:2  s2[S+Sh]:3  s3[W+Sh]:1  s4[-]:2  s5[W+Sh]:2  s6[S]:13  s7[-]:5  s8[W+Sh]:1  s9[A+Sh]:1  s10[D+Sh]:12  s11[A+Sh]:3  s12[-]:3  s13[W+Sh]:1  s15[W D+Sh]:2  s16[-]:3  s17[W+Sh]:2  s18[D+Sh]:2  s19[-]:1
+  TOTAL n 71 mean 1.6 p90 2.6 worst 13.1  | >=10 cm: 2  >=20 cm: 0
+r3_A_60 starts n 5 worst 3.0 mean 2.8
+415:0.62s/115  150:0.32s/25  414:0.63s/147  414:0.63s/147  415:0.60s/134  
+r3_A_60: 2586 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_A_30
+r3_A_30: 60 contacts
+  t   9.12 s4  [W+Sh]->[-] +0.20s foot R dur 0.53 drift  22.8 path  23.3 lift  4.4 speed 128 M_Relaxed_Run_Stop_F_Rfoot
+  t  23.45 s10 [A+Sh]->[D+Sh] +0.33s foot L dur 0.40 drift  10.4 path  12.0 lift 12.5 speed  87 M_Relaxed_Run_Turn_L_180_Rfoot
+  per segment worst: s0[-]:5  s1[W+Sh]:1  s2[S+Sh]:3  s3[W+Sh]:2  s4[-]:23  s5[W+Sh]:2  s6[S]:2  s7[-]:5  s8[W+Sh]:1  s9[A+Sh]:2  s10[D+Sh]:10  s11[A+Sh]:6  s12[-]:3  s13[W+Sh]:1  s15[W D+Sh]:0  s16[-]:5  s17[W+Sh]:2  s18[D+Sh]:3  s19[-]:1
+  TOTAL n 60 mean 1.9 p90 5.0 worst 22.8  | >=10 cm: 2  >=20 cm: 1
+r3_A_30 starts n 5 worst 5.7 mean 4.7
+415:0.40s/69  150:0.33s/28  415:0.63s/155  415:0.63s/155  415:0.60s/142  
+r3_A_30: 1293 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_A_var
+r3_A_var: 64 contacts
+  t   9.08 s4  [W+Sh]->[-] +0.19s foot R dur 0.55 drift  15.1 path  15.2 lift  4.5 speed 106 M_Relaxed_Run_Stop_F_Rfoot
+  t  23.43 s10 [A+Sh]->[D+Sh] +0.35s foot L dur 0.42 drift  12.7 path  14.7 lift 12.6 speed  98 M_Relaxed_Run_Turn_L_180_Rfoot
+  per segment worst: s0[-]:1  s1[W+Sh]:2  s2[S+Sh]:3  s3[W+Sh]:2  s4[-]:15  s5[W+Sh]:1  s6[S]:3  s7[-]:3  s8[W+Sh]:1  s9[A+Sh]:2  s10[D+Sh]:13  s11[A+Sh]:3  s12[-]:2  s13[W+Sh]:1  s15[W D+Sh]:3  s16[-]:5  s17[W+Sh]:2  s18[D+Sh]:3  s19[-]:1
+  TOTAL n 64 mean 1.8 p90 2.7 worst 15.1  | >=10 cm: 2  >=20 cm: 0
+r3_A_var starts n 5 worst 4.4 mean 2.8
+415:0.40s/56  150:0.27s/25  415:0.53s/142  415:0.67s/153  415:0.63s/155  
+r3_A_var: 1634 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_B_60
+r3_B_60: 75 contacts
+  t  15.57 s6  [D+Sh+Ct]->[A+Sh+Ct] +0.32s foot R dur 0.47 drift  16.7 path  18.2 lift  4.8 speed 239 elaxed_Sprint_Turn_180_L_Rfoot
+  t  25.08 s10 [S]->[W] +0.13s foot R dur 0.27 drift  15.1 path  17.6 lift  6.6 speed  13 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh+Ct]:4  s2[S+Sh+Ct]:2  s3[-]:2  s4[W+Sh+Ct]:2  s5[D+Sh+Ct]:3  s6[A+Sh+Ct]:17  s7[-]:2  s8[W]:2  s9[S]:2  s10[W]:15  s11[A]:5  s12[D]:3  s13[-]:2  s15[-]:2  s17[-]:2  s18[W+Sh]:3  s19[-]:2  s20[W+Sh]:2  s21[W]:3  s22[W+Sh]:2  s23[-]:0
+  TOTAL n 75 mean 1.9 p90 2.6 worst 16.7  | >=10 cm: 2  >=20 cm: 0
+  t  19.75 start [W] vmax 180 t50 0.28 t90 0.50 d(0.3s)  17 cm | first-step drift L  1.9 R  2.0 | eutral_Walk_Reface_Start_F_R_090
+234:0.55s/72  582:0.58s/137  180:0.55s/60  60:0.08s/4  130:0.35s/27  306:0.62s/111  415:0.55s/96  
+r3_B_60: 2841 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_B_30
+r3_B_30: 69 contacts
+  t  25.05 s10 [S]->[W] +0.13s foot R dur 0.27 drift  15.6 path  17.6 lift  6.1 speed  18 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:5  s1[W+Sh+Ct]:4  s2[S+Sh+Ct]:2  s3[-]:6  s4[W+Sh+Ct]:2  s5[D+Sh+Ct]:3  s6[A+Sh+Ct]:2  s7[-]:3  s8[W]:4  s9[S]:1  s10[W]:16  s11[A]:5  s12[D]:3  s13[-]:4  s15[-]:6  s17[-]:1  s18[W+Sh]:3  s19[-]:4  s20[W+Sh]:1  s21[W]:3  s22[W+Sh]:2  s23[-]:0
+  TOTAL n 69 mean 1.9 p90 4.1 worst 15.6  | >=10 cm: 1  >=20 cm: 0
+  t  19.72 start [W] vmax 180 t50 0.30 t90 0.53 d(0.3s)  18 cm | first-step drift L  3.3 R  2.2 | eutral_Walk_Reface_Start_F_R_090
+234:0.57s/78  582:0.63s/163  180:0.53s/60  114:0.37s/29  294:0.63s/116  415:0.57s/107  
+r3_B_30: 1420 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_S_60
+r3_S_60: 71 contacts
+  t   6.17 s3  [-]->[S] +1.42s foot R dur 2.15 drift  15.5 path  17.3 lift  5.5 speed 150 M_Neutral_Walk_Start_B_Rfoot
+  per segment worst: s0[-]:2  s1[W]:2  s2[-]:3  s3[S]:16  s4[-]:1  s5[A]:2  s6[-]:4  s7[D]:2  s8[-]:4  s9[A]:2  s10[-]:3  s11[W+Sh]:1  s12[-]:2  s15[W]:2  s16[-]:3  s17[D]:2  s18[-]:4  s19[A]:3  s20[-]:4  s21[D]:3  s22[-]:1  s23[S]:3  s24[-]:0
+  TOTAL n 71 mean 1.6 p90 2.9 worst 15.5  | >=10 cm: 1  >=20 cm: 0
+r3_S_60 starts n 11 worst 14.8 mean 4.1
+180:0.38s/34  150:0.28s/20  180:0.55s/55  180:0.38s/34  180:0.38s/34  415:0.55s/96  278:0.42s/59  278:0.55s/83  278:0.52s/76  278:0.52s/76  234:0.55s/72  
+r3_S_60: 2403 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_Q_60
+r3_Q_60: 111 contacts
+  t  31.33 s16 [S]->[-] +0.23s foot L dur 0.18 drift  14.0 path  14.2 lift 11.5 speed 163 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:9  s3[W]:2  s4[-]:3  s5[W]:2  s6[-]:2  s7[W]:2  s8[-]:3  s9[W]:2  s10[-]:3  s11[S]:1  s12[-]:3  s13[S]:1  s14[-]:3  s15[S]:1  s16[-]:14  s17[D]:2  s18[-]:3  s19[A]:3  s20[D]:3  s21[-]:3  s22[W D]:3  s23[-]:3  s24[S A]:4  s25[-]:1
+  TOTAL n 111 mean 1.7 p90 2.8 worst 14.0  | >=10 cm: 1  >=20 cm: 0
+r3_Q_60 starts n 11 worst 8.9 mean 3.4
+278:0.52s/76  278:0.62s/98  278:0.62s/98  278:0.38s/51  234:0.55s/72  234:0.40s/47  234:0.55s/72  278:0.52s/76  278:0.55s/81  278:0.42s/59  234:0.50s/64  
+r3_Q_60: 3129 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_Q_30
+r3_Q_30: 105 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot R dur 2.55 drift  14.2 path  15.2 lift  6.1 speed   0 M_Relaxed_Stand_Idle_Loop
+  per segment worst: s0[-]:14  s3[W]:2  s4[-]:9  s5[W]:2  s6[-]:4  s7[W]:2  s8[-]:4  s9[W]:2  s10[-]:2  s11[S]:2  s12[-]:4  s13[S]:2  s14[-]:2  s15[S]:2  s16[-]:4  s17[D]:2  s18[-]:4  s19[A]:2  s20[D]:3  s21[-]:3  s22[W D]:2  s23[-]:3  s24[S A]:3  s25[-]:1
+  TOTAL n 105 mean 1.5 p90 2.8 worst 14.2  | >=10 cm: 1  >=20 cm: 0
+r3_Q_30 starts n 11 worst 14.2 mean 4.7
+278:0.57s/90  278:0.63s/106  278:0.43s/64  278:0.40s/57  234:0.50s/67  234:0.57s/79  234:0.50s/67  278:0.57s/90  278:0.57s/87  278:0.43s/64  234:0.53s/70  
+r3_Q_30: 1564 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### r3_X_60
+r3_X_60: 79 contacts
+  t  10.32 s6  [W]->[-] +0.12s foot R dur 0.58 drift  16.5 path  17.1 lift  4.5 speed 171 M_Relaxed_Run_Stop_F_Rfoot
+  per segment worst: s0[-]:9  s3[W]:2  s4[W+Sh]:2  s5[W]:2  s6[-]:16  s7[W]:2  s8[-]:3  s9[S]:1  s10[-]:0  s11[A]:2  s12[-]:3  s13[W D]:5  s14[-]:4  s15[S A]:1  s16[-]:2  s19[W]:2  s20[-]:3  s21[S]:1  s22[-]:0
+  TOTAL n 79 mean 1.9 p90 2.8 worst 16.5  | >=10 cm: 1  >=20 cm: 0
+r3_X_60 starts n 8 worst 8.9 mean 3.7
+278:0.35s/43  278:0.45s/64  234:0.58s/79  278:0.45s/64  278:0.62s/98  234:0.50s/64  180:0.55s/55  150:0.25s/16  
+r3_X_60: 2418 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+s0                         speed    0 | TempoOn False Act False Back False Hold False Sel 0 scale 1.0 | WALK   M_Relaxed_Stand_Idle_Loop
+s1  X                      speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Stand_Idle_Loop
+s2                         speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Stand_Idle_Loop
+s3  W                      speed  278 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    CM_af_Loco_Jog_Fwd
+s4  W LeftShift            speed  415 | TempoOn True  Act False Back False Hold False Sel 1 scale 1.0 | RUN    M_Neutral_Run_Loop_F
+s5  W                      speed  278 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    CM_af_Loco_Jog_Fwd
+s6                         speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Run_Stop_F_Rfoot
+s7  W                      speed  278 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    CM_af_Loco_Jog_Fwd
+s8                         speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Run_Stop_F_Lfoot
+s9  S                      speed  234 | TempoOn True  Act True  Back True  Hold False Sel 1 scale 0.78 | RUN    CM_af_Loco_Jog_Bwd
+s10                        speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Run_Stop_B_Lfoot
+s11 A                      speed  278 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    CM_af_Loco_Jog_Fwd
+s12                        speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Run_Stop_F_Lfoot
+s13 W D                    speed  278 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    CM_af_Loco_Jog_Fwd
+s14                        speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Run_Stop_F_Rfoot
+s15 S A                    speed  234 | TempoOn True  Act True  Back True  Hold False Sel 1 scale 0.78 | RUN    CM_af_Loco_Jog_BwdLeft
+s16                        speed    0 | TempoOn True  Act True  Back False Hold False Sel 1 scale 0.67 | RUN    M_Relaxed_Run_Stop_LL_Lfoot
+s17 X                      speed    0 | TempoOn False Act False Back False Hold False Sel 0 scale 1.0 | WALK   M_Relaxed_Stand_Idle_Loop
+s18                        speed    0 | TempoOn False Act False Back False Hold False Sel 0 scale 1.0 | WALK   M_Relaxed_Stand_Idle_Loop
+s19 W                      speed  180 | TempoOn False Act False Back False Hold False Sel 0 scale 1.0 | WALK   M_Neutral_Walk_Start_F_Rfoot
+s20                        speed    0 | TempoOn False Act False Back False Hold False Sel 0 scale 1.0 | WALK   M_Relaxed_Walk_Stop_F_Rfoot
+s21 S                      speed  150 | TempoOn False Act False Back True  Hold False Sel 0 scale 1.0 | WALK   M_Neutral_Walk_Start_B_Rfoot
+s22                        speed    0 | TempoOn False Act False Back False Hold False Sel 0 scale 1.0 | WALK   M_Relaxed_Walk_Stop_B_Lfoot
