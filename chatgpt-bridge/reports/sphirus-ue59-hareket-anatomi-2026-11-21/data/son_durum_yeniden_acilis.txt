@@ -1,0 +1,10 @@
+FINALSTATE
+FireLight I 9.0 R 12.0 S 30.0 loc (1404,905,222)
+Hub aim (1222,770,572)
+Mask In B/S/H/W [50.0, -38.0, 60.0, 0.9]
+FP disable curves 5 alpha float True
+body nodes parent-space 9/9
+bed curve True
+map L_GR_SphirusHouse dirty []
+PCDO {'GR_StopHoldMin': 470.0, 'GR_BackK': 1.0, 'GR_KTempoRun': 0.67, 'GR_KTempoBack': 0.78, 'GR_HoldMax': 0.9, 'GR_BackCos': -0.45, 'PS_On': True, 'PS_K': 2.5, 'PS_RH': 21.0, 'PS_KAR': 0.85, 'PS_RF': 3.0, 'PS_B1': 7.1}
+MCDO {'StKOn': True, 'StLatch': 0.1, 'StKMin': 0.5, 'StKMax': 1.8, 'ClipBrakeOn': True, 'RevOn': False, 'RcOn': True, 'RcTz': 0.5, 'RcMin': 150.0, 'RcAnalogMin': 150.0, 'GaitUpAcc': 0.8, 'ClipHiRef': 375.0, 'ClipHiMin': 470.0}

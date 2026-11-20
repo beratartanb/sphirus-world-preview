@@ -1,0 +1,77 @@
+/Game/GraceRanger/Maps/L_GR_SphirusHouse.L_GR_SphirusHouse
+GR_Day_WardBody                    StaticMeshActor            loc (1472,756,490) yaw 0 bounds x 1441..1502 y 675..837 z 490..698
+GR_Day_WardRail                    StaticMeshActor            loc (1472,756,490) yaw 0 bounds x 1469..1471 y 678..834 z 657..659
+GR_Day_WardDoorR                   StaticMeshActor            loc (1441,835,494) yaw 0 bounds x 1437..1441 y 756..835 z 494..690
+GR_Day_WardDoorL                   StaticMeshActor            loc (1441,677,494) yaw 0 bounds x 1437..1441 y 677..756 z 494..690
+GR_Day_WardLight                   PointLight                 loc (1468,756,676) yaw 0 bounds x 1340..1596 y 628..884 z 548..804
+GR_Day_Hanger0                     StaticMeshActor            loc (1470,700,662) yaw -14 bounds x 1450..1490 y 695..705 z 650..662
+GR_Day_Hanger1                     StaticMeshActor            loc (1470,735,662) yaw -14 bounds x 1450..1490 y 730..740 z 650..662
+GR_Day_SetLow1                     StaticMeshActor            loc (1474,739,646) yaw -14 bounds x 1452..1496 y 727..751 z 610..646
+GR_Day_Hanger2                     StaticMeshActor            loc (1470,778,662) yaw -14 bounds x 1450..1490 y 773..783 z 650..662
+GR_Day_SetLow2                     StaticMeshActor            loc (1474,782,646) yaw -14 bounds x 1454..1494 y 771..794 z 557..646
+GR_Day_Hanger3                     StaticMeshActor            loc (1470,804,662) yaw -14 bounds x 1450..1490 y 799..809 z 650..662
+GR_Day_SetLow3                     StaticMeshActor            loc (1474,808,646) yaw -14 bounds x 1452..1496 y 796..820 z 610..646
+GR_Day_Hanger4                     StaticMeshActor            loc (1470,828,662) yaw -14 bounds x 1450..1490 y 823..833 z 650..662
+GR_Day_SetLow4                     StaticMeshActor            loc (1474,832,646) yaw -14 bounds x 1454..1494 y 821..844 z 556..646
+LIV_bedroom_106_Mug                StaticMeshActor            loc (1286,684,550) yaw 20 bounds x 1282..1290 y 679..688 z 550..557
+LIV_bedroom_107_Books_13           StaticMeshActor            loc (1289,675,550) yaw 62 bounds x 1277..1294 y 675..690 z 550..553
+LIV_bedroom_108_Books_10           StaticMeshActor            loc (1072,742,491) yaw 70 bounds x 1053..1077 y 742..761 z 491..493
+LIV_bedroom_109_Books_04           StaticMeshActor            loc (1072,743,493) yaw 90 bounds x 1052..1072 y 743..756 z 493..495
+LIV_bedroom_110_Books_01           StaticMeshActor            loc (1072,744,496) yaw 110 bounds x 1052..1072 y 738..755 z 495..498
+LIV_bedroom_111_Rag_02             StaticMeshActor            loc (1296,792,491) yaw 40 bounds x 1285..1307 y 780..803 z 491..493
+LIV_hm_bedroom_202_HM_Clogs        StaticMeshActor            loc (1090,905,491) yaw -160 bounds x 1067..1103 y 895..929 z 491..499
+DWR_G_SootHearth                   DecalActor                 loc (1430,905,466) yaw 0 bounds x 1302..1558 y 777..1033 z 338..706
+GR_Day_WardDoor                    BP_GR_DayStation_C         loc (1436,756,585) yaw 0 bounds x 1408..1464 y 728..784 z 561..643
+GR_Day_Set0                        BP_GR_DayStation_C         loc (1470,700,651) yaw -14 bounds x 1442..1498 y 672..728 z 615..709
+GR_Day_Bed                         BP_GR_DayStation_C         loc (1205,767,570) yaw 0 bounds x 1150..1260 y 712..822 z 515..628
+   GR_Kind = 9
+   GR_UseStand = True
+   GR_Stand = <Struct 'Vector' (0x000001D1D07E7EF0) {x: 1290.000000, y: 767.000000, z: 590.000000}>
+   GR_StandYaw = 180.0
+   GR_Clip = <Object '/Game/Sphirus/Player/Anim/Bed/AM_Sph_Bed.AM_Sph_Bed' (0x000001CE9ED01880) Class 'AnimMontage'>
+   GR_Clip2 = None
+   GR_ContactT = 6.3
+   GR_AwaitAt = 6.1
+   GR_CamFov = 0.0
+   GR_Prompt ? BP_GR_DayStation_C: Failed to find prope
+   GR_Title ? BP_GR_DayStation_C: Failed to find prope
+GR_Day_Set1                        BP_GR_DayStation_C         loc (1470,735,651) yaw -14 bounds x 1442..1498 y 707..763 z 609..709
+GR_Day_Set2                        BP_GR_DayStation_C         loc (1470,778,651) yaw -14 bounds x 1442..1498 y 750..806 z 609..709
+GR_Day_Set3                        BP_GR_DayStation_C         loc (1470,804,651) yaw -14 bounds x 1442..1498 y 776..832 z 593..709
+GR_Day_Set4                        BP_GR_DayStation_C         loc (1470,828,651) yaw -14 bounds x 1442..1498 y 800..856 z 593..709
+Architecture_03_ROOF_DormerCheek_L StaticMeshActor            loc (1170,1008,596) yaw 0 bounds x 1043..1296 y 897..1120 z 596..770
+Architecture_AtticLadder           StaticMeshActor            loc (1200,590,491) yaw 0 bounds x 1151..1249 y 541..640 z 491..848
+Architecture_BR_UPPER_REVISION_BR_ StaticMeshActor            loc (1140,1008,593) yaw 0 bounds x 780..1500 y 897..1120 z 593..777
+Architecture_BR_UPPER_REVISION_BR_ StaticMeshActor            loc (1150,646,490) yaw 0 bounds x 800..1500 y 636..656 z 490..765
+Architecture_FR_ARCHITECTURE_FR_Ha StaticMeshActor            loc (1203,565,747) yaw 0 bounds x 1103..1303 y 484..646 z 747..785
+Architecture_FR_ARCHITECTURE_FR_Ha StaticMeshActor            loc (1205,565,747) yaw 0 bounds x 1108..1303 y 484..646 z 747..785
+Architecture_FR_ARCHITECTURE_FR_Lo StaticMeshActor            loc (1225,540,751) yaw 0 bounds x 1003..1447 y 447..634 z 751..765
+Architecture_Roof_3_3              StaticMeshActor            loc (1130,998,537) yaw 0 bounds x 1050..1210 y 800..1195 z 537..870
+Architecture_Roof_4_3              StaticMeshActor            loc (1365,998,537) yaw 0 bounds x 1210..1520 y 800..1195 z 537..866
+Architecture_Scene_Collection_Land StaticMeshActor            loc (1075,682,370) yaw 0 bounds x 658..1493 y 242..1122 z 370..470
+Architecture_Scene_Collection_REF_ StaticMeshActor            loc (1180,778,450) yaw 0 bounds x 863..1498 y 429..1127 z 450..470
+Furniture_CR_LivingPendantBulb_6_4 StaticMeshActor            loc (1240,860,390) yaw 0 bounds x 1237..1243 y 857..863 z 390..400
+Furniture_CR_LivingPendantCable_6_ StaticMeshActor            loc (1240,860,416) yaw 0 bounds x 1240..1240 y 860..860 z 416..456
+Furniture_CR_LivingPendantShade_6_ StaticMeshActor            loc (1240,860,389) yaw 0 bounds x 1215..1265 y 835..885 z 389..416
+Furniture_R3_BedsideDrawer         StaticMeshActor            loc (1048,677,490) yaw 0 bounds x 1025..1071 y 658..696 z 490..551
+Furniture_R3_PatchworkBed          StaticMeshActor            loc (1183,770,490) yaw 0 bounds x 1091..1275 y 661..879 z 490..597
+SecondBedsideDrawer                StaticMeshActor            loc (1304,680,521) yaw 0 bounds x 1278..1330 y 659..701 z 490..551
+BedsideReadingBooks                StaticMeshActor            loc (1048,673,551) yaw -5 bounds x 1048..1060 y 672..688 z 551..554
+LivingPendantLight                 PointLight                 loc (1240,860,393) yaw 0 bounds x 1112..1368 y 732..988 z 265..521
+R05_Rug_Bedroom                    StaticMeshActor            loc (1052,810,491) yaw 90 bounds x 995..1108 y 725..894 z 490..491
+R05_BedsideLampRight               StaticMeshActor            loc (1308,676,550) yaw 0 bounds x 1295..1322 y 662..689 z 550..595
+R05_BedroomKeepsakeTin             StaticMeshActor            loc (1035,688,551) yaw 7 bounds x 1031..1039 y 684..692 z 551..558
+R05_BedroomKeepsakeLid             StaticMeshActor            loc (1035,688,552) yaw 7 bounds x 1031..1039 y 684..692 z 558..559
+SPH_AtticLadder                    StaticMeshActor            loc (1200,545,491) yaw 0 bounds x 1157..1243 y 495..595 z 491..848
+HouseAtticInspectionView           BP_GR_AtticContext_C       loc (1200,545,491) yaw 0 bounds x 190..2210 y -465..1555 z -519..1501
+R05_BedsideLampRightLight          PointLight                 loc (1308,675,578) yaw 0 bounds x 1180..1436 y 547..803 z 450..706
+montage len 10.57 seq len 10.57 rootmotion True lock <RootMotionRootLock.REF_POSE: 0>
+  t 0.0 root (0,0,0) pelvis (-0,-0,96) head (-0,-2,163)
+  t 1.0 root (0,38,0) pelvis (10,18,95) head (10,1,158)
+  t 2.0 root (0,78,0) pelvis (-1,72,71) head (-62,80,96)
+  t 3.0 root (0,80,0) pelvis (-0,77,67) head (-67,78,71)
+  t 4.0 root (0,80,0) pelvis (0,79,65) head (-67,79,71)
+  t 5.0 root (0,80,0) pelvis (0,79,65) head (-67,79,71)
+  t 6.0 root (0,80,0) pelvis (0,79,65) head (-67,79,71)
+  t 8.0 root (0,71,0) pelvis (0,65,69) head (-44,75,117)
+  t 10.5 root (0,0,0) pelvis (0,0,96) head (0,2,163)

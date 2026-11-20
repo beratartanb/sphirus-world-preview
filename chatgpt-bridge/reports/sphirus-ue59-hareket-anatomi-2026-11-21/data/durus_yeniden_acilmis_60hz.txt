@@ -1,0 +1,28 @@
+#### f4_L_60
+s0 [] v 0 n 50 ['_Relaxed_Stand_Idle_Loop']
+  vis lean L1  -0.2 L2  -0.7 L3  -0.9 L4   0.8 | twist p2p  1.2 | sh lift  4.8 | elbow lat 20.0 flex 167.0 [165..169] | wrist lat hip 23.7 front 23.7 back 23.7 min  20.8 | swing +2..+7 | hip-zone frames 0/100
+  drv lean L1  -1.2 L2   2.8 L3  15.6 L4   4.5 | twist p2p  0.9 | sh lift  1.8 | elbow lat 23.7 flex 157.5 [156..159] | wrist lat hip 26.6 front 26.6 back 26.6 min  24.9 | swing -0..+4 | hip-zone frames 0/100
+s1 [W] v 180 n 288 ['M_Neutral_Walk_Loop_F', 'utral_Walk_Start_F_Rfoot']
+  vis lean L1   1.4 L2   1.2 L3   0.9 L4   1.0 | twist p2p 29.9 | sh lift  5.2 | elbow lat 20.1 flex 159.7 [141..171] | wrist lat hip 22.1 front 21.0 back 22.4 min  18.9 | swing -12..+29 | hip-zone frames 0/576
+  drv lean L1   2.7 L2   9.4 L3  13.5 L4  10.1 | twist p2p 31.3 | sh lift  3.7 | elbow lat 25.5 flex 148.5 [130..164] | wrist lat hip 29.0 front 24.7 back 30.3 min  23.7 | swing -13..+29 | hip-zone frames 0/576
+s5 [W] v 278 n 287 ['CM_af_Loco_Jog_Fwd']
+  vis lean L1  16.9 L2  11.5 L3   9.4 L4   5.6 | twist p2p 41.7 | sh lift  5.2 | elbow lat 22.6 flex 101.4 [ 71..126] | wrist lat hip 23.1 front  4.2 back 23.6 min  -0.3 | swing -5..+39 | hip-zone frames 21/574
+  drv lean L1  15.2 L2  13.9 L3  11.4 L4   6.3 | twist p2p 40.5 | sh lift  4.3 | elbow lat 24.8 flex  93.6 [ 66..116] | wrist lat hip 24.5 front  8.0 back 24.9 min   5.4 | swing -8..+35 | hip-zone frames 0/574
+s9 [W LeftShift] v 415 n 288 ['M_Neutral_Run_Loop_F', 'eutral_Run_Start_F_Lfoot']
+  vis lean L1  21.6 L2  14.7 L3  11.9 L4   7.1 | twist p2p 54.3 | sh lift  5.7 | elbow lat 24.4 flex  85.3 [ 56..114] | wrist lat hip 21.6 front 14.2 back 21.8 min   5.3 | swing -7..+45 | hip-zone frames 18/576
+  drv lean L1  21.1 L2  32.7 L3  39.0 L4  31.3 | twist p2p 53.3 | sh lift  4.0 | elbow lat 26.9 flex  78.5 [ 52..105] | wrist lat hip 27.6 front 13.8 back 28.4 min   7.8 | swing -9..+45 | hip-zone frames 4/576
+s10 [] v 0 n 77 ['Relaxed_Run_Stop_F_Lfoot']
+  vis lean L1  -1.5 L2  -2.8 L3  -2.3 L4   0.9 | twist p2p  1.8 | sh lift  3.3 | elbow lat 19.3 flex 162.4 [134..172] | wrist lat hip 22.9 front 20.2 back 23.4 min  18.9 | swing -2..+19 | hip-zone frames 0/154
+  drv lean L1  -2.0 L2   5.0 L3  18.9 L4   7.5 | twist p2p  3.7 | sh lift  1.2 | elbow lat 23.8 flex 152.2 [123..164] | wrist lat hip 27.4 front 24.2 back 28.4 min  23.2 | swing -7..+18 | hip-zone frames 0/154
+s11 [W LeftShift LeftControl] v 585 n 227 ['M_Relaxed_Sprint_Loop_F', 'ion_Walk_to_Sprint_Lfoot']
+  vis lean L1  21.3 L2  14.6 L3  11.4 L4   6.5 | twist p2p 58.5 | sh lift  6.2 | elbow lat 25.2 flex 100.0 [ 57..155] | wrist lat hip 23.9 front 18.1 back 23.1 min  10.4 | swing -23..+56 | hip-zone frames 16/454
+  drv lean L1  20.8 L2  33.2 L3  38.8 L4  32.3 | twist p2p 53.4 | sh lift  4.1 | elbow lat 28.6 flex  93.2 [ 53..151] | wrist lat hip 31.3 front 12.4 back 32.0 min   9.3 | swing -18..+54 | hip-zone frames 0/454
+s12 [] v 0 n 77 ['Relaxed_Run_Stop_F_Rfoot']
+  vis lean L1  -0.3 L2  -2.5 L3  -1.4 L4   1.0 | twist p2p  7.0 | sh lift  3.6 | elbow lat 21.1 flex 163.1 [131..171] | wrist lat hip 26.2 front 25.4 back 28.0 min  16.7 | swing -7..+10 | hip-zone frames 18/154
+  drv lean L1  -0.8 L2   7.1 L3  20.9 L4   9.5 | twist p2p  7.0 | sh lift  2.0 | elbow lat 24.1 flex 152.8 [120..163] | wrist lat hip 27.5 front 25.7 back 28.6 min  24.1 | swing -4..+14 | hip-zone frames 0/154
+s13 [A] v 180 n 167 ['alk_Reface_Start_F_L_090']
+  vis lean L1   3.4 L2   2.3 L3   1.7 L4   1.5 | twist p2p 31.6 | sh lift  5.4 | elbow lat 21.0 flex 159.2 [141..171] | wrist lat hip 23.1 front 23.5 back 25.7 min  19.2 | swing -14..+27 | hip-zone frames 6/334
+  drv lean L1   2.7 L2   9.8 L3  13.8 L4  10.4 | twist p2p 32.9 | sh lift  3.7 | elbow lat 25.5 flex 147.7 [130..164] | wrist lat hip 29.0 front 24.8 back 30.3 min  23.8 | swing -13..+29 | hip-zone frames 0/334
+s15 [S] v 150 n 168 ['M_Neutral_Walk_Loop_B', 'M_Neutral_Walk_Loop_BL']
+  vis lean L1   2.0 L2   1.2 L3   0.3 L4   1.1 | twist p2p 29.2 | sh lift  4.7 | elbow lat 21.7 flex 154.1 [122..169] | wrist lat hip 25.8 front 20.5 back 28.8 min  15.1 | swing -17..+37 | hip-zone frames 0/336
+  drv lean L1   1.9 L2   9.9 L3  14.6 L4  17.7 | twist p2p 29.0 | sh lift  2.6 | elbow lat 26.9 flex 143.9 [114..163] | wrist lat hip 32.2 front 23.6 back 33.4 min  17.4 | swing -17..+36 | hip-zone frames 0/336

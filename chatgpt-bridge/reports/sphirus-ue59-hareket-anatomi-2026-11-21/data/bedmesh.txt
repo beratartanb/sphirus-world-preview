@@ -1,0 +1,17 @@
+mesh /Game/SphirusHouse/Playable_R04/Meshes/Blender/SM_Furniture_R3_PatchworkBed_837b25.SM_Furniture_R3_PatchworkBed_837b25 sections 1 loc <Struct 'Vector' (0x000001CE6395F628) {x: 1182.999992, y: 769.999981, z: 490.000010}> rot <Struct 'Rotator' (0x000001CE62B02728) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}> scale <Struct 'Vector' (0x000001CDDEF37A88) {x: 1.000000, y: 1.000000, z: 1.000000}>
+sec 0 verts 13796 z 490..597 mat MI_R3_bed_OriginalAtlas
+y876:  541  541    0    0    0    0  541  541    0
+y849:  544  553  554  557  556  555  554  546    0
+y822:  546  556  556  560  560  557  558  552    0
+y795:  549  557  561  562  559  558  557  552    0
+y768:  549  559  560  562  561  561  560  553  519
+y741:  550  558  561  561  559  559  559  552    0
+y714:  548  556  557  558  558  556  554  547    0
+y687:  540  563  567  565  566  565  566  545    0
+y660:  597  597  593  593  593  593  597  597    0
+cols x: 1090 1113 1136 1159 1182 1205 1228 1251 1274
+station comp StaticMesh StaticMeshComponent col <CollisionEnabled.QUERY_AND_PHYSICS: 3> vis-resp <CollisionResponseType.ECR_BLOCK: 2> ext 
+station comp SFInteractionWidget_SC SFInteractionWidget_SC_C col <CollisionEnabled.QUERY_ONLY: 1> vis-resp <CollisionResponseType.ECR_BLOCK: 2> ext 
+station comp Sphere SphereComponent col <CollisionEnabled.QUERY_ONLY: 1> vis-resp <CollisionResponseType.ECR_BLOCK: 2> ext 
+station comp SkeletalMesh SkeletalMeshComponent col <CollisionEnabled.QUERY_AND_PHYSICS: 3> vis-resp <CollisionResponseType.ECR_BLOCK: 2> ext 
+station comp InteractionPromptLoc BillboardComponent col <CollisionEnabled.NO_COLLISION: 0> vis-resp <CollisionResponseType.ECR_IGNORE: 0> ext 

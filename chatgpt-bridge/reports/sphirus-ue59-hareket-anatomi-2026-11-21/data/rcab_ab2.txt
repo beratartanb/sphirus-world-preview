@@ -1,0 +1,30 @@
+#### ab2_off_R {'RcOn':False}
+ab2_off_R: 73 contacts
+  t   3.83 s2  [A+Sh]->[D+Sh] +0.29s foot L dur 0.44 drift  13.9 path  16.2 lift 12.5 speed  82 M_Relaxed_Run_Turn_L_180_Rfoot
+  t   8.02 s5  [D+Sh]->[A+Sh] +0.13s foot R dur 0.10 drift  11.3 path  12.1 lift  3.5 speed  71 M_Relaxed_Run_Turn_L_180_Rfoot
+  t   8.19 s5  [D+Sh]->[A+Sh] +0.30s foot L dur 0.47 drift  10.7 path  13.9 lift 12.5 speed  60 M_Relaxed_Run_Turn_L_180_Rfoot
+  t   9.94 s6  [A+Sh]->[D+Sh] +0.30s foot R dur 0.25 drift  10.9 path  11.6 lift  7.4 speed  59 M_Relaxed_Run_Turn_R_180_Rfoot
+  t  11.89 s7  [D+Sh]->[A+Sh] +0.33s foot L dur 0.47 drift   9.4 path  13.1 lift 12.7 speed  74 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  22.69 s13 [S]->[W] +0.10s foot R dur 0.30 drift   9.8 path  12.2 lift  6.3 speed  39 M_Neutral_Walk_Pivot_B_F_Rfoot
+  t  26.41 s14 [W]->[S] +1.87s foot R dur 0.47 drift  11.7 path  12.9 lift  4.3 speed 150 M_Neutral_Walk_Pivot_F_B_Rfoot
+  per segment worst: s0[-]:2  s1[A+Sh]:2  s2[D+Sh]:14  s3[A+Sh]:5  s4[D+Sh]:2  s5[A+Sh]:11  s6[D+Sh]:11  s7[A+Sh]:9  s8[-]:3  s9[W]:2  s10[S]:2  s11[W]:4  s12[S]:1  s13[W]:10  s14[S]:12  s15[W]:5  s16[-]:1
+  TOTAL n 73 mean 2.4 p90 4.7 worst 13.9  | >=10 cm: 5  >=20 cm: 0
+#### ab2_t5_R {'RcOn':True,'RcTz':0.5}
+ab2_t5_R: 71 contacts
+  t   3.81 s2  [A+Sh]->[D+Sh] +0.30s foot L dur 0.52 drift   7.7 path  10.2 lift 12.5 speed  32 M_Relaxed_Run_Turn_L_180_Rfoot
+  t   6.57 s4  [A+Sh]->[D+Sh] +0.30s foot R dur 0.17 drift   7.4 path   8.0 lift  4.2 speed   8 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  26.48 s14 [W]->[S] +1.96s foot R dur 0.53 drift  11.3 path  12.4 lift  4.3 speed 150 M_Neutral_Walk_Pivot_F_B_Rfoot
+  t  28.95 s16 [W]->[-] +0.07s foot L dur 0.25 drift  25.2 path  25.5 lift  6.4 speed 149 M_Relaxed_Walk_Stop_F_Rfoot
+  per segment worst: s0[-]:2  s1[A+Sh]:3  s2[D+Sh]:8  s3[A+Sh]:2  s4[D+Sh]:7  s5[A+Sh]:2  s6[D+Sh]:2  s7[A+Sh]:2  s8[-]:2  s9[W]:2  s10[S]:5  s11[W]:2  s12[S]:1  s13[W]:2  s14[S]:11  s15[W]:2  s16[-]:25
+  TOTAL n 71 mean 2.1 p90 3.3 worst 25.2  | >=10 cm: 2  >=20 cm: 1
+#### ab2_t9_R {'RcOn':True,'RcTz':0.9}
+ab2_t9_R: 69 contacts
+  t   3.82 s2  [A+Sh]->[D+Sh] +0.30s foot L dur 0.52 drift   7.3 path   9.8 lift 12.5 speed  32 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  20.87 s12 [W]->[S] +0.12s foot R dur 0.35 drift  26.8 path  27.6 lift  4.4 speed 128 _Neutral_Walk_Turn_L_180_Rfoot
+  t  21.37 s12 [W]->[S] +0.62s foot L dur 0.40 drift  29.2 path  30.7 lift  5.0 speed  51 M_Neutral_Walk_Start_BL_Rfoot
+  t  22.83 s13 [S]->[W] +0.27s foot R dur 0.26 drift  17.8 path  19.6 lift  5.5 speed   2 M_Neutral_Walk_Pivot_B_F_Rfoot
+  t  24.69 s14 [W]->[S] +0.18s foot R dur 0.29 drift  19.7 path  20.7 lift  4.4 speed 119 _Neutral_Walk_Turn_L_180_Rfoot
+  t  28.88 s16 [W]->[-] +0.00s foot L dur 0.32 drift   6.4 path   7.2 lift  6.5 speed 180 M_Neutral_Walk_Loop_F
+  per segment worst: s0[-]:2  s1[A+Sh]:3  s2[D+Sh]:7  s3[A+Sh]:2  s4[D+Sh]:2  s5[A+Sh]:2  s6[D+Sh]:2  s7[A+Sh]:2  s8[-]:2  s9[W]:2  s10[S]:6  s11[W]:2  s12[S]:29  s13[W]:18  s14[S]:20  s15[W]:3  s16[-]:6
+  TOTAL n 69 mean 2.9 p90 4.6 worst 29.2  | >=10 cm: 4  >=20 cm: 2
+RCAB_DONE

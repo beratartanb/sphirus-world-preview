@@ -1,0 +1,32 @@
+#### f4b_S_var
+f4b_S_var: 72 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 2.09 drift  16.3 path  17.3 lift  6.8 speed   0 M_Relaxed_Stand_Idle_Loop
+  per segment worst: s0[-]:16  s1[W]:1  s2[-]:2  s3[S]:4  s4[-]:1  s5[A]:2  s6[-]:3  s7[D]:2  s8[-]:3  s9[A]:1  s10[-]:3  s11[W+Sh]:1  s12[-]:2  s15[W]:3  s16[-]:2  s17[D]:2  s18[-]:4  s19[A]:2  s20[-]:3  s21[D]:2  s22[-]:1  s23[S]:2  s24[-]:0
+  TOTAL n 72 mean 1.6 p90 2.5 worst 16.3  | >=10 cm: 1  >=20 cm: 0
+f4b_S_var starts n 11 worst 16.3 mean 4.2
+f4b_S_var: 1518 frames, 10 pop frames (k 6, floor 120 cm/s)
+#### f4b_Q_var
+f4b_Q_var: 105 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot R dur 2.55 drift  12.0 path  12.7 lift  6.2 speed   0 M_Relaxed_Stand_Idle_Loop
+  t  31.32 s16 [S]->[-] +0.24s foot L dur 0.18 drift  15.2 path  15.3 lift 11.5 speed 161 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:12  s3[W]:2  s4[-]:3  s5[W]:2  s6[-]:4  s7[W]:2  s8[-]:7  s9[W]:2  s10[-]:3  s11[S]:2  s12[-]:1  s13[S]:4  s14[-]:2  s15[S]:1  s16[-]:15  s17[D]:2  s18[-]:1  s19[A]:2  s20[D]:5  s21[-]:3  s22[W D]:3  s23[-]:2  s24[S A]:4  s25[-]:1
+  TOTAL n 105 mean 1.7 p90 2.8 worst 15.2  | >=10 cm: 2  >=20 cm: 0
+f4b_Q_var starts n 11 worst 12.0 mean 4.5
+f4b_Q_var: 1991 frames, 14 pop frames (k 6, floor 120 cm/s)
+#### f4b_R_var
+f4b_R_var: 69 contacts
+  t   6.43 s4  [A+Sh]->[D+Sh] +0.17s foot R dur 0.30 drift  22.7 path  24.7 lift  3.6 speed 140 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  22.67 s13 [S]->[W] +0.13s foot R dur 0.25 drift  14.4 path  16.3 lift  6.1 speed  19 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:2  s1[A+Sh]:2  s2[D+Sh]:7  s3[A+Sh]:5  s4[D+Sh]:23  s5[A+Sh]:1  s6[D+Sh]:4  s7[A+Sh]:2  s8[-]:4  s9[W]:2  s10[S]:3  s11[W]:3  s12[S]:1  s13[W]:14  s14[S]:1  s15[W]:7  s16[-]:0
+  TOTAL n 69 mean 2.0 p90 3.7 worst 22.7  | >=10 cm: 2  >=20 cm: 1
+f4b_R_var starts n 2 worst 3.6 mean 3.0
+f4b_R_var: 1175 frames, 6 pop frames (k 6, floor 120 cm/s)
+#### f4b_K_var
+f4b_K_var: 66 contacts
+  t   8.78 s3  [S+Sh]->[-] +0.29s foot L dur 0.17 drift  12.5 path  12.6 lift 11.3 speed 150 M_Relaxed_Run_Stop_B_Rfoot
+  t  35.26 s15 [W+Sh+Ct]->[S+Sh+Ct] +0.54s foot R dur 0.50 drift  38.1 path  39.7 lift  4.2 speed 199 M_Relaxed_Run_Stop_F_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh]:2  s2[S+Sh]:2  s3[-]:13  s4[W+Sh]:2  s6[W+Sh]:2  s7[-]:2  s8[W+Sh]:1  s9[S A+Sh]:3  s10[-]:2  s11[W+Sh]:2  s12[S D+Sh]:1  s13[-]:5  s14[W+Sh+Ct]:1  s15[S+Sh+Ct]:38  s16[-]:4  s17[W+Sh+Ct]:1  s19[D+Sh]:4  s20[-]:0
+  TOTAL n 66 mean 2.0 p90 2.9 worst 38.1  | >=10 cm: 2  >=20 cm: 1
+f4b_K_var starts n 6 worst 3.3 mean 2.6
+f4b_K_var: 1812 frames, 10 pop frames (k 6, floor 120 cm/s)
+REG_DONE_f4b

@@ -1,0 +1,190 @@
+LOADED True /Game/Sphirus/Test/L_Sph_MoveTest.L_Sph_MoveTest
+VIDREC f4_warm 16.4 s
+VIDREC f4_L_60 47.1 s
+#### carriage f4_L_60
+s0 [] v 0 n 50 ['_Relaxed_Stand_Idle_Loop']
+  vis lean L1  -0.2 L2  -0.7 L3  -0.9 L4   0.8 | twist p2p  1.2 | sh lift  4.8 | elbow lat 20.0 flex 167.0 [165..169] | wrist lat hip 23.7 front 23.7 back 23.7 min  20.8 | swing +2..+7 | hip-zone frames 0/100
+s1 [W] v 180 n 288 ['M_Neutral_Walk_Loop_F', 'utral_Walk_Start_F_Rfoot']
+  vis lean L1   1.4 L2   1.2 L3   0.9 L4   1.0 | twist p2p 29.9 | sh lift  5.2 | elbow lat 20.1 flex 159.7 [141..171] | wrist lat hip 22.1 front 21.0 back 22.4 min  18.9 | swing -12..+29 | hip-zone frames 0/576
+s5 [W] v 278 n 287 ['CM_af_Loco_Jog_Fwd']
+  vis lean L1  16.9 L2  11.5 L3   9.4 L4   5.6 | twist p2p 41.7 | sh lift  5.2 | elbow lat 22.6 flex 101.4 [ 71..126] | wrist lat hip 23.1 front  4.2 back 23.6 min  -0.3 | swing -5..+39 | hip-zone frames 21/574
+s9 [W LeftShift] v 415 n 288 ['M_Neutral_Run_Loop_F', 'eutral_Run_Start_F_Lfoot']
+  vis lean L1  21.6 L2  14.7 L3  11.9 L4   7.1 | twist p2p 54.3 | sh lift  5.7 | elbow lat 24.4 flex  85.3 [ 56..114] | wrist lat hip 21.6 front 14.2 back 21.8 min   5.3 | swing -7..+45 | hip-zone frames 18/576
+s10 [] v 0 n 77 ['Relaxed_Run_Stop_F_Lfoot']
+  vis lean L1  -1.5 L2  -2.8 L3  -2.3 L4   0.9 | twist p2p  1.8 | sh lift  3.3 | elbow lat 19.3 flex 162.4 [134..172] | wrist lat hip 22.9 front 20.2 back 23.4 min  18.9 | swing -2..+19 | hip-zone frames 0/154
+s11 [W LeftShift LeftControl] v 585 n 227 ['M_Relaxed_Sprint_Loop_F', 'ion_Walk_to_Sprint_Lfoot']
+  vis lean L1  21.3 L2  14.6 L3  11.4 L4   6.5 | twist p2p 58.5 | sh lift  6.2 | elbow lat 25.2 flex 100.0 [ 57..155] | wrist lat hip 23.9 front 18.1 back 23.1 min  10.4 | swing -23..+56 | hip-zone frames 16/454
+s12 [] v 0 n 77 ['Relaxed_Run_Stop_F_Rfoot']
+  vis lean L1  -0.3 L2  -2.5 L3  -1.4 L4   1.0 | twist p2p  7.0 | sh lift  3.6 | elbow lat 21.1 flex 163.1 [131..171] | wrist lat hip 26.2 front 25.4 back 28.0 min  16.7 | swing -7..+10 | hip-zone frames 18/154
+s13 [A] v 180 n 167 ['alk_Reface_Start_F_L_090']
+  vis lean L1   3.4 L2   2.3 L3   1.7 L4   1.5 | twist p2p 31.6 | sh lift  5.4 | elbow lat 21.0 flex 159.2 [141..171] | wrist lat hip 23.1 front 23.5 back 25.7 min  19.2 | swing -14..+27 | hip-zone frames 6/334
+s15 [S] v 150 n 168 ['M_Neutral_Walk_Loop_B', 'M_Neutral_Walk_Loop_BL']
+  vis lean L1   2.0 L2   1.2 L3   0.3 L4   1.1 | twist p2p 29.2 | sh lift  4.7 | elbow lat 21.7 flex 154.1 [122..169] | wrist lat hip 25.8 front 20.5 back 28.8 min  15.1 | swing -17..+37 | hip-zone frames 0/336
+LOADED True /Game/Sphirus/Test/L_Sph_MoveTest.L_Sph_MoveTest
+#### f4_A_60
+f4_A_60: 74 contacts
+  t  23.35 s10 [A+Sh]->[D+Sh] +0.20s foot R dur 0.32 drift  17.6 path  19.7 lift  4.5 speed 152 M_Relaxed_Run_Turn_L_180_Rfoot
+  per segment worst: s0[-]:2  s1[W+Sh]:1  s2[S+Sh]:2  s3[W+Sh]:1  s4[-]:2  s5[W+Sh]:1  s6[S]:2  s7[-]:2  s8[W+Sh]:1  s9[A+Sh]:1  s10[D+Sh]:18  s11[A+Sh]:3  s12[-]:2  s13[W+Sh]:1  s15[W D+Sh]:2  s16[-]:2  s17[W+Sh]:2  s18[D+Sh]:2  s19[-]:1
+  TOTAL n 74 mean 1.4 p90 2.1 worst 17.6  | >=10 cm: 1  >=20 cm: 0
+f4_A_60 starts n 5 worst 2.8 mean 2.4
+f4_A_60: 2586 frames, 27 pop frames (k 6, floor 120 cm/s)
+#### f4_B_60
+f4_B_60: 72 contacts
+  t  25.13 s10 [S]->[W] +0.18s foot R dur 0.22 drift  17.6 path  20.1 lift  6.7 speed  10 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh+Ct]:4  s2[S+Sh+Ct]:3  s3[-]:3  s4[W+Sh+Ct]:2  s5[D+Sh+Ct]:3  s6[A+Sh+Ct]:2  s7[-]:3  s8[W]:2  s9[S]:5  s10[W]:18  s11[A]:5  s12[D]:3  s13[-]:2  s15[-]:2  s17[-]:2  s18[W+Sh]:3  s19[-]:3  s20[W+Sh]:2  s21[W]:2  s22[W+Sh]:2  s23[-]:1
+  TOTAL n 72 mean 1.8 p90 3.0 worst 17.6  | >=10 cm: 1  >=20 cm: 0
+StopIteration
+f4_B_60: 2841 frames, 76 pop frames (k 6, floor 120 cm/s)
+#### f4_S_60
+f4_S_60: 74 contacts
+  t  38.57 s24 [S]->[-] +0.27s foot L dur 0.18 drift  15.1 path  15.2 lift 11.5 speed 158 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:2  s1[W]:2  s2[-]:3  s3[S]:2  s4[-]:1  s5[A]:2  s6[-]:4  s7[D]:2  s8[-]:4  s9[A]:2  s10[-]:3  s11[W+Sh]:1  s12[-]:4  s15[W]:2  s16[-]:3  s17[D]:2  s18[-]:4  s19[A]:3  s20[-]:4  s21[D]:3  s22[-]:1  s23[S]:3  s24[-]:15
+  TOTAL n 74 mean 1.7 p90 2.8 worst 15.1  | >=10 cm: 1  >=20 cm: 0
+f4_S_60 starts n 11 worst 4.3 mean 3.0
+f4_S_60: 2403 frames, 43 pop frames (k 6, floor 120 cm/s)
+#### f4_Q_60
+f4_Q_60: 111 contacts
+  t  31.34 s16 [S]->[-] +0.23s foot L dur 0.18 drift  12.9 path  13.1 lift 11.5 speed 160 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:7  s3[W]:2  s4[-]:3  s5[W]:2  s6[-]:2  s7[W]:2  s8[-]:3  s9[W]:2  s10[-]:3  s11[S]:1  s12[-]:3  s13[S]:1  s14[-]:3  s15[S]:1  s16[-]:13  s17[D]:2  s18[-]:3  s19[A]:3  s20[D]:2  s21[-]:3  s22[W D]:3  s23[-]:2  s24[S A]:5  s25[-]:1
+  TOTAL n 111 mean 1.6 p90 2.7 worst 12.9  | >=10 cm: 1  >=20 cm: 0
+f4_Q_60 starts n 11 worst 6.5 mean 3.1
+f4_Q_60: 3129 frames, 54 pop frames (k 6, floor 120 cm/s)
+#### f4_R_60
+f4_R_60: 71 contacts
+  t  11.70 s7  [D+Sh]->[A+Sh] +0.15s foot L dur 0.30 drift  37.6 path  39.5 lift  4.5 speed 187 M_Relaxed_Run_Turn_R_180_Lfoot
+  t  22.65 s13 [S]->[W] +0.10s foot R dur 0.30 drift  11.9 path  14.2 lift  6.2 speed  38 M_Neutral_Walk_Pivot_B_F_Rfoot
+  t  26.37 s14 [W]->[S] +1.87s foot R dur 0.47 drift   8.9 path  10.2 lift  4.3 speed 150 M_Neutral_Walk_Pivot_F_B_Rfoot
+  per segment worst: s0[-]:2  s1[A+Sh]:3  s2[D+Sh]:7  s3[A+Sh]:2  s4[D+Sh]:3  s5[A+Sh]:6  s6[D+Sh]:3  s7[A+Sh]:38  s8[-]:2  s9[W]:2  s10[S]:2  s11[W]:2  s12[S]:2  s13[W]:12  s14[S]:9  s15[W]:5  s16[-]:1
+  TOTAL n 71 mean 2.4 p90 3.2 worst 37.6  | >=10 cm: 2  >=20 cm: 1
+f4_R_60 starts n 2 worst 3.2 mean 2.6
+f4_R_60: 1848 frames, 30 pop frames (k 6, floor 120 cm/s)
+#### f4_K_60
+f4_K_60: 68 contacts
+  t   8.82 s3  [S+Sh]->[-] +0.27s foot L dur 0.18 drift  15.4 path  15.6 lift 11.5 speed 158 M_Relaxed_Run_Stop_B_Rfoot
+  t  13.28 s5  [W+Sh]->[S] +0.23s foot L dur 0.18 drift  33.3 path  34.3 lift  4.3 speed   4 M_Neutral_Walk_Pivot_F_B_Lfoot
+  per segment worst: s0[-]:2  s1[W+Sh]:2  s2[S+Sh]:3  s3[-]:15  s4[W+Sh]:2  s5[S]:33  s6[W+Sh]:2  s7[-]:2  s8[W+Sh]:2  s9[S A+Sh]:2  s10[-]:2  s11[W+Sh]:1  s12[S D+Sh]:1  s13[-]:2  s14[W+Sh+Ct]:1  s15[S+Sh+Ct]:2  s16[-]:3  s17[W+Sh+Ct]:1  s19[D+Sh]:1  s20[-]:1
+  TOTAL n 68 mean 1.9 p90 2.4 worst 33.3  | >=10 cm: 2  >=20 cm: 1
+f4_K_60 starts n 6 worst 2.4 mean 2.2
+f4_K_60: 2853 frames, 83 pop frames (k 6, floor 120 cm/s)
+#### f4_A_30
+f4_A_30: 57 contacts
+  t   9.12 s4  [W+Sh]->[-] +0.20s foot R dur 0.53 drift  22.2 path  22.5 lift  4.4 speed 166 M_Relaxed_Run_Stop_F_Rfoot
+  per segment worst: s0[-]:4  s1[W+Sh]:1  s2[S+Sh]:2  s3[W+Sh]:1  s4[-]:22  s5[W+Sh]:2  s6[S]:1  s7[-]:4  s8[W+Sh]:2  s9[A+Sh]:2  s10[D+Sh]:5  s11[A+Sh]:2  s12[-]:2  s13[W+Sh]:1  s15[W D+Sh]:0  s16[-]:4  s17[W+Sh]:3  s18[D+Sh]:3  s19[-]:1
+  TOTAL n 57 mean 1.7 p90 2.7 worst 22.2  | >=10 cm: 1  >=20 cm: 1
+f4_A_30 starts n 5 worst 4.2 mean 3.5
+f4_A_30: 1293 frames, 5 pop frames (k 6, floor 120 cm/s)
+#### f4_B_30
+f4_B_30: 64 contacts
+  t  25.12 s10 [S]->[W] +0.20s foot R dur 0.20 drift  13.9 path  16.0 lift  6.9 speed  15 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:4  s1[W+Sh+Ct]:4  s2[S+Sh+Ct]:1  s3[-]:4  s4[W+Sh+Ct]:2  s5[D+Sh+Ct]:3  s6[A+Sh+Ct]:1  s7[-]:3  s8[W]:2  s9[S]:1  s10[W]:14  s11[A]:5  s12[D]:3  s13[-]:4  s15[-]:4  s17[-]:2  s18[W+Sh]:3  s19[-]:3  s20[W+Sh]:3  s21[W]:2  s22[W+Sh]:2  s23[-]:1
+  TOTAL n 64 mean 1.9 p90 3.6 worst 13.9  | >=10 cm: 1  >=20 cm: 0
+StopIteration
+f4_B_30: 1420 frames, 1 pop frames (k 6, floor 120 cm/s)
+#### f4_S_30
+f4_S_30: 71 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 2.09 drift  17.6 path  18.4 lift  6.6 speed   0 M_Relaxed_Stand_Idle_Loop
+  per segment worst: s0[-]:18  s1[W]:1  s2[-]:3  s3[S]:1  s4[-]:1  s5[A]:1  s6[-]:4  s7[D]:2  s8[-]:4  s9[A]:2  s10[-]:3  s11[W+Sh]:2  s12[-]:4  s15[W]:2  s16[-]:3  s17[D]:2  s18[-]:1  s19[A]:2  s20[-]:4  s21[D]:2  s22[-]:1  s23[S]:2  s24[-]:0
+  TOTAL n 71 mean 1.4 p90 2.7 worst 17.6  | >=10 cm: 1  >=20 cm: 0
+f4_S_30 starts n 11 worst 17.6 mean 4.3
+f4_S_30: 1201 frames, 8 pop frames (k 6, floor 120 cm/s)
+#### f4_Q_30
+f4_Q_30: 102 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot R dur 2.55 drift  14.2 path  14.9 lift  6.1 speed   0 M_Relaxed_Stand_Idle_Loop
+  t  31.36 s16 [S]->[-] +0.30s foot L dur 0.17 drift  14.2 path  14.3 lift 11.5 speed 148 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:14  s3[W]:2  s4[-]:4  s5[W]:2  s6[-]:4  s7[W]:2  s8[-]:4  s9[W]:2  s10[-]:3  s11[S]:1  s12[-]:3  s13[S]:1  s14[-]:4  s15[S]:1  s16[-]:14  s17[D]:2  s18[-]:1  s19[A]:2  s20[D]:3  s21[-]:3  s22[W D]:2  s23[-]:2  s24[S A]:2  s25[-]:1
+  TOTAL n 102 mean 1.6 p90 2.7 worst 14.2  | >=10 cm: 2  >=20 cm: 0
+f4_Q_30 starts n 11 worst 14.2 mean 4.3
+f4_Q_30: 1564 frames, 9 pop frames (k 6, floor 120 cm/s)
+#### f4_R_30
+f4_R_30: 69 contacts
+  t   6.45 s4  [A+Sh]->[D+Sh] +0.17s foot R dur 0.10 drift  10.2 path  10.4 lift  3.5 speed 123 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  22.66 s13 [S]->[W] +0.13s foot R dur 0.27 drift  17.4 path  18.9 lift  5.8 speed  18 M_Neutral_Walk_Pivot_B_F_Rfoot
+  t  26.32 s14 [W]->[S] +1.87s foot R dur 0.47 drift  14.4 path  15.9 lift  4.1 speed 150 M_Neutral_Walk_Pivot_F_B_Rfoot
+  t  26.82 s15 [S]->[W] +0.27s foot L dur 0.13 drift   9.0 path   9.5 lift  7.0 speed  44 l_Transition_Run_to_Walk_Lfoot
+  per segment worst: s0[-]:4  s1[A+Sh]:4  s2[D+Sh]:5  s3[A+Sh]:7  s4[D+Sh]:10  s5[A+Sh]:2  s6[D+Sh]:2  s7[A+Sh]:4  s8[-]:6  s9[W]:2  s10[S]:2  s11[W]:2  s12[S]:2  s13[W]:17  s14[S]:14  s15[W]:9  s16[-]:0
+  TOTAL n 69 mean 2.2 p90 4.9 worst 17.4  | >=10 cm: 3  >=20 cm: 0
+f4_R_30 starts n 2 worst 4.4 mean 3.8
+f4_R_30: 924 frames, 2 pop frames (k 6, floor 120 cm/s)
+#### f4_K_30
+f4_K_30: 66 contacts
+  t  13.29 s5  [W+Sh]->[S] +0.27s foot L dur 0.17 drift  23.1 path  23.4 lift  4.3 speed   3 M_Neutral_Walk_Pivot_F_B_Lfoot
+  per segment worst: s0[-]:4  s1[W+Sh]:1  s2[S+Sh]:2  s3[-]:4  s4[W+Sh]:3  s5[S]:23  s6[W+Sh]:5  s7[-]:3  s8[W+Sh]:2  s9[S A+Sh]:1  s10[-]:4  s11[W+Sh]:2  s12[S D+Sh]:2  s13[-]:4  s14[W+Sh+Ct]:2  s15[S+Sh+Ct]:1  s16[-]:4  s17[W+Sh+Ct]:2  s19[D+Sh]:2  s20[-]:0
+  TOTAL n 66 mean 1.8 p90 3.8 worst 23.1  | >=10 cm: 1  >=20 cm: 1
+f4_K_30 starts n 7 worst 23.1 mean 6.6
+f4_K_30: 1426 frames, 3 pop frames (k 6, floor 120 cm/s)
+#### f4_A_var
+f4_A_var: 63 contacts
+  t   9.08 s4  [W+Sh]->[-] +0.19s foot R dur 0.55 drift  18.1 path  18.4 lift  4.4 speed 129 M_Relaxed_Run_Stop_F_Rfoot
+  t  23.46 s10 [A+Sh]->[D+Sh] +0.35s foot L dur 0.42 drift  12.3 path  14.5 lift 12.7 speed  97 M_Relaxed_Run_Turn_L_180_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh]:2  s2[S+Sh]:2  s3[W+Sh]:1  s4[-]:18  s5[W+Sh]:2  s6[S]:2  s7[-]:3  s8[W+Sh]:2  s9[A+Sh]:2  s10[D+Sh]:12  s11[A+Sh]:3  s12[-]:2  s13[W+Sh]:0  s15[W D+Sh]:3  s16[-]:4  s17[W+Sh]:2  s18[D+Sh]:2  s19[-]:1
+  TOTAL n 63 mean 1.8 p90 2.5 worst 18.1  | >=10 cm: 2  >=20 cm: 0
+f4_A_var starts n 5 worst 3.5 mean 2.8
+f4_A_var: 1636 frames, 12 pop frames (k 6, floor 120 cm/s)
+#### f4_B_var
+f4_B_var: 71 contacts
+  t  31.14 s13 [D]->[-] +0.03s foot R dur 0.31 drift  19.7 path  20.1 lift  7.3 speed 180 _Neutral_Walk_Turn_L_180_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh+Ct]:1  s2[S+Sh+Ct]:3  s3[-]:4  s4[W+Sh+Ct]:1  s5[D+Sh+Ct]:1  s6[A+Sh+Ct]:6  s7[-]:3  s8[W]:2  s9[S]:2  s10[W]:3  s11[A]:1  s12[D]:4  s13[-]:20  s15[-]:3  s17[-]:2  s18[W+Sh]:4  s19[-]:2  s20[W+Sh]:2  s21[W]:2  s22[W+Sh]:4  s23[-]:1
+  TOTAL n 71 mean 1.7 p90 3.1 worst 19.7  | >=10 cm: 1  >=20 cm: 0
+StopIteration
+f4_B_var: 1801 frames, 13 pop frames (k 6, floor 120 cm/s)
+#### f4b_S_var
+f4b_S_var: 72 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 2.09 drift  16.3 path  17.3 lift  6.8 speed   0 M_Relaxed_Stand_Idle_Loop
+  per segment worst: s0[-]:16  s1[W]:1  s2[-]:2  s3[S]:4  s4[-]:1  s5[A]:2  s6[-]:3  s7[D]:2  s8[-]:3  s9[A]:1  s10[-]:3  s11[W+Sh]:1  s12[-]:2  s15[W]:3  s16[-]:2  s17[D]:2  s18[-]:4  s19[A]:2  s20[-]:3  s21[D]:2  s22[-]:1  s23[S]:2  s24[-]:0
+  TOTAL n 72 mean 1.6 p90 2.5 worst 16.3  | >=10 cm: 1  >=20 cm: 0
+f4b_S_var starts n 11 worst 16.3 mean 4.2
+f4b_S_var: 1518 frames, 10 pop frames (k 6, floor 120 cm/s)
+#### f4b_Q_var
+f4b_Q_var: 105 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot R dur 2.55 drift  12.0 path  12.7 lift  6.2 speed   0 M_Relaxed_Stand_Idle_Loop
+  t  31.32 s16 [S]->[-] +0.24s foot L dur 0.18 drift  15.2 path  15.3 lift 11.5 speed 161 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:12  s3[W]:2  s4[-]:3  s5[W]:2  s6[-]:4  s7[W]:2  s8[-]:7  s9[W]:2  s10[-]:3  s11[S]:2  s12[-]:1  s13[S]:4  s14[-]:2  s15[S]:1  s16[-]:15  s17[D]:2  s18[-]:1  s19[A]:2  s20[D]:5  s21[-]:3  s22[W D]:3  s23[-]:2  s24[S A]:4  s25[-]:1
+  TOTAL n 105 mean 1.7 p90 2.8 worst 15.2  | >=10 cm: 2  >=20 cm: 0
+f4b_Q_var starts n 11 worst 12.0 mean 4.5
+f4b_Q_var: 1991 frames, 14 pop frames (k 6, floor 120 cm/s)
+#### f4b_R_var
+f4b_R_var: 69 contacts
+  t   6.43 s4  [A+Sh]->[D+Sh] +0.17s foot R dur 0.30 drift  22.7 path  24.7 lift  3.6 speed 140 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  22.67 s13 [S]->[W] +0.13s foot R dur 0.25 drift  14.4 path  16.3 lift  6.1 speed  19 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:2  s1[A+Sh]:2  s2[D+Sh]:7  s3[A+Sh]:5  s4[D+Sh]:23  s5[A+Sh]:1  s6[D+Sh]:4  s7[A+Sh]:2  s8[-]:4  s9[W]:2  s10[S]:3  s11[W]:3  s12[S]:1  s13[W]:14  s14[S]:1  s15[W]:7  s16[-]:0
+  TOTAL n 69 mean 2.0 p90 3.7 worst 22.7  | >=10 cm: 2  >=20 cm: 1
+f4b_R_var starts n 2 worst 3.6 mean 3.0
+f4b_R_var: 1175 frames, 6 pop frames (k 6, floor 120 cm/s)
+#### f4b_K_var
+f4b_K_var: 66 contacts
+  t   8.78 s3  [S+Sh]->[-] +0.29s foot L dur 0.17 drift  12.5 path  12.6 lift 11.3 speed 150 M_Relaxed_Run_Stop_B_Rfoot
+  t  35.26 s15 [W+Sh+Ct]->[S+Sh+Ct] +0.54s foot R dur 0.50 drift  38.1 path  39.7 lift  4.2 speed 199 M_Relaxed_Run_Stop_F_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh]:2  s2[S+Sh]:2  s3[-]:13  s4[W+Sh]:2  s6[W+Sh]:2  s7[-]:2  s8[W+Sh]:1  s9[S A+Sh]:3  s10[-]:2  s11[W+Sh]:2  s12[S D+Sh]:1  s13[-]:5  s14[W+Sh+Ct]:1  s15[S+Sh+Ct]:38  s16[-]:4  s17[W+Sh+Ct]:1  s19[D+Sh]:4  s20[-]:0
+  TOTAL n 66 mean 2.0 p90 2.9 worst 38.1  | >=10 cm: 2  >=20 cm: 1
+f4b_K_var starts n 6 worst 3.3 mean 2.6
+f4b_K_var: 1812 frames, 10 pop frames (k 6, floor 120 cm/s)
+REG_DONE_f4b
+STAGE_A_DONE
+VIDREC f4v_gaits 16.4 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4v_gaits.mp4 7495240
+7495240 Saved/Codex/Day_20261107/videos/f4v_gaits.mp4
+VIDREC f4v_turns 43.1 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4v_turns.mp4 23224397
+23224397 Saved/Codex/Day_20261107/videos/f4v_turns.mp4
+VIDREC f4v_back 47.6 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4v_back.mp4 22976272
+22976272 Saved/Codex/Day_20261107/videos/f4v_back.mp4
+VIDREC f4v_side 16.4 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4v_side.mp4 1853436
+1853436 Saved/Codex/Day_20261107/videos/f4v_side.mp4
+VIDREC f4v_back 16.4 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4v_back.mp4 2020908
+2020908 Saved/Codex/Day_20261107/videos/f4v_back.mp4
+STAGE_B_DONE
+VIDREC f4h_bed 28.8 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4h_bed.mp4 7139593
+7139593 Saved/Codex/Day_20261107/videos/f4h_bed.mp4
+VIDREC f4h_mask 18.1 s
+BL_OK /c/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/Codex/Day_20261107/videos/f4h_mask.mp4 8980103
+8980103 Saved/Codex/Day_20261107/videos/f4h_mask.mp4
+SLOT_OK 3d81ab9dc70890c0b171a75ae65d3c9214a92ea6
+13820833 Saved/Codex/Grip_20261106/rec/F19_flow_R4.json
+FIN19_DONE
+== F19_flow_R4 rows 2809 sim 93.5 s
+  CHECK wood picked True | split pieces collected max 4 (need 2) PASS | fire state max 2 (1 laid, 2 lit) PASS
+FINAL4_DONE

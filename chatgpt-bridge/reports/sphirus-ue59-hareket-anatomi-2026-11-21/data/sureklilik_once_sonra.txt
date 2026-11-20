@@ -1,0 +1,236 @@
+b4_A_60: 2586 frames, 49 pop frames (k 6, floor 120 cm/s)
+ s0  [                      ] 1.5s clip sw 0 db sw 0 pops 0
+ s1  [W LeftShift           ] 3.0s clip sw 3 db sw 3 pops 2
+     t 1.683 (+0.13) dt 0.016 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:132 ball_l:126
+     t 2.650 (+1.10) dt 0.016 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:265
+ s2  [S LeftShift           ] 2.2s clip sw 2 db sw 2 pops 3
+     t 4.583 (+0.03) dt 0.017 M_Neutral_Run_Loop_F -> laxed_Run_Turn_L_180_Lfoot | head:1404 neck_02:1215 neck_01:1023 ua_l:824 middle_01_r:808 clavicle_l:795
+     t 4.600 (+0.05) dt 0.017 laxed_Run_Turn_L_180_Lfoot -> eutral_Run_Pivot_F_B_Lfoot | head:2748 neck_02:2369 neck_01:2001 middle_01_r:1748 ua_l:1622 clavicle_l:1549
+     t 4.617 (+0.07) dt 0.016 eutral_Run_Pivot_F_B_Lfoot -> eutral_Run_Pivot_F_B_Lfoot | head:1354 neck_02:1158 neck_01:987 middle_01_r:833 ua_l:795 clavicle_r:766
+ s3  [W LeftShift           ] 2.2s clip sw 2 db sw 2 pops 1
+     t 8.617 (+1.87) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:341
+ s4  [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 9.618 (+0.67) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:130
+ s5  [W LeftShift           ] 3.0s clip sw 3 db sw 3 pops 3
+     t 11.084 (+0.13) dt 0.016 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:124
+     t 13.485 (+2.53) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:376
+     t 13.685 (+2.73) dt 0.017 M_Neutral_Run_Loop_F -> M_Neutral_Run_Loop_F | foot_l:153
+ s6  [S                     ] 2.2s clip sw 3 db sw 3 pops 4
+     t 13.985 (+0.03) dt 0.017 M_Neutral_Run_Loop_F -> laxed_Run_Turn_L_180_Lfoot | head:1371 neck_02:1182 neck_01:998 clavicle_l:774 clavicle_r:768 ua_l:733
+     t 14.002 (+0.05) dt 0.017 laxed_Run_Turn_L_180_Lfoot -> eutral_Run_Pivot_F_B_Lfoot | head:2761 neck_02:2380 neck_01:2013 clavicle_l:1552 clavicle_r:1548 ua_l:1483
+     t 14.018 (+0.07) dt 0.016 eutral_Run_Pivot_F_B_Lfoot -> eutral_Run_Pivot_F_B_Lfoot | head:1369 neck_02:1182 neck_01:1000 clavicle_r:772 clavicle_l:766 ua_l:737
+ s7  [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 16.419 (+0.27) dt 0.017 _Relaxed_Walk_Stop_B_Rfoot -> _Relaxed_Walk_Stop_B_Rfoot | ball_r:141 foot_r:133
+ s8  [W LeftShift           ] 3.0s clip sw 3 db sw 3 pops 4
+     t 18.702 (+0.55) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_r:170
+     t 18.885 (+0.73) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:133
+     t 19.002 (+0.85) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | ball_r:334 foot_r:314
+ s9  [A LeftShift           ] 2.0s clip sw 1 db sw 1 pops 2
+     t 21.186 (+0.03) dt 0.016 M_Neutral_Run_Loop_F -> laxed_Run_Turn_L_090_Lfoot | head:986 neck_02:854 neck_01:735 middle_01_r:650 ua_r:619 clavicle_l:582
+     t 21.203 (+0.05) dt 0.017 laxed_Run_Turn_L_090_Lfoot -> laxed_Run_Turn_L_090_Lfoot | head:1037 neck_02:908 neck_01:779 middle_01_r:775 ua_r:682 hand_r:673
+ s10 [D LeftShift           ] 2.0s clip sw 1 db sw 0 pops 7
+     t 23.186 (+0.03) dt 0.017 laxed_Run_Turn_L_090_Lfoot -> laxed_Run_Turn_L_180_Rfoot | head:1425 neck_02:1215 neck_01:1032 middle_01_l:909 clavicle_r:800 clavicle_l:795
+     t 23.203 (+0.05) dt 0.017 laxed_Run_Turn_L_180_Rfoot -> laxed_Run_Turn_L_180_Rfoot | head:1427 neck_02:1222 neck_01:1046 clavicle_l:813 clavicle_r:807 middle_01_l:766
+     t 23.636 (+0.48) dt 0.017 laxed_Run_Turn_L_180_Rfoot -> laxed_Run_Turn_L_180_Rfoot | ball_l:144
+ s11 [A LeftShift           ] 2.0s clip sw 1 db sw 0 pops 3
+     t 25.186 (+0.03) dt 0.017 laxed_Run_Turn_L_180_Rfoot -> laxed_Run_Turn_R_180_Rfoot | head:1419 neck_02:1218 neck_01:1037 middle_01_l:1010 hand_l:862 ua_l:820
+     t 25.206 (+0.05) dt 0.020 laxed_Run_Turn_R_180_Rfoot -> laxed_Run_Turn_R_180_Rfoot | head:1431 neck_02:1233 neck_01:1049 middle_01_l:893 clavicle_l:809 clavicle_r:806
+     t 26.253 (+1.10) dt 0.017 laxed_Run_Turn_R_180_Rfoot -> laxed_Run_Turn_R_180_Rfoot | ball_l:425 foot_l:385
+ s12 [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 27.820 (+0.67) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:145
+ s13 [W LeftShift           ] 2.5s clip sw 2 db sw 2 pops 3
+     t 29.187 (+0.03) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> _Walk_Reface_Start_F_R_090 | middle_01_r:387 middle_01_l:346 hand_r:338 hand_l:311 la_l:199
+     t 29.203 (+0.05) dt 0.017 _Walk_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | middle_01_r:378 middle_01_l:359 hand_r:332 hand_l:317 la_l:200
+     t 30.221 (+1.07) dt 0.017 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | ball_r:265
+ s14 [W A LeftShift         ] 1.5s clip sw 1 db sw 1 pops 3
+     t 31.687 (+0.03) dt 0.016 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | head:561 neck_02:489 neck_01:420 ua_l:340 ua_r:336 clavicle_r:325
+     t 31.704 (+0.05) dt 0.017 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | head:585 neck_02:511 neck_01:445 ua_r:386 clavicle_r:347 clavicle_l:344
+     t 31.987 (+0.33) dt 0.017 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | foot_l:259
+ s15 [W D LeftShift         ] 1.5s clip sw 1 db sw 1 pops 2
+     t 33.187 (+0.03) dt 0.017 M_Neutral_Run_Loop_F -> laxed_Run_Turn_R_090_Lfoot | head:936 neck_02:809 neck_01:696 ua_l:625 clavicle_l:546 clavicle_r:544
+     t 33.204 (+0.05) dt 0.017 laxed_Run_Turn_R_090_Lfoot -> laxed_Run_Turn_R_090_Lfoot | head:981 neck_02:843 neck_01:723 ua_l:688 middle_01_l:686 hand_l:615
+ s16 [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 35.322 (+0.67) dt 0.016 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:129 ball_r:123
+ s17 [W LeftShift           ] 2.5s clip sw 2 db sw 2 pops 4
+     t 36.688 (+0.03) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> _Walk_Reface_Start_F_L_090 | middle_01_r:323 middle_01_l:315 hand_r:282 hand_l:257 head:128
+     t 36.705 (+0.05) dt 0.017 _Walk_Reface_Start_F_L_090 -> l_Run_Reface_Start_F_L_090 | middle_01_r:340 middle_01_l:309 hand_r:292 hand_l:257 head:135
+     t 36.888 (+0.23) dt 0.017 l_Run_Reface_Start_F_L_090 -> l_Run_Reface_Start_F_L_090 | ball_r:210 foot_r:194
+ s18 [D LeftShift           ] 2.0s clip sw 1 db sw 1 pops 3
+     t 39.189 (+0.03) dt 0.017 l_Run_Reface_Start_F_L_090 -> laxed_Run_Turn_R_090_Rfoot | head:974 neck_02:844 neck_01:731 ua_r:609 ua_l:583 clavicle_l:570
+     t 39.206 (+0.05) dt 0.017 laxed_Run_Turn_R_090_Rfoot -> laxed_Run_Turn_R_090_Rfoot | head:1024 neck_02:883 neck_01:765 ua_l:607 ua_r:604 clavicle_l:589
+     t 41.105 (+1.95) dt 0.017 laxed_Run_Turn_R_090_Rfoot -> laxed_Run_Turn_R_090_Rfoot | foot_r:430
+ s19 [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 41.789 (+0.63) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:139 ball_r:124
+c7_A_60: 2586 frames, 35 pop frames (k 6, floor 120 cm/s)
+ s0  [                      ] 1.5s clip sw 0 db sw 0 pops 0
+ s1  [W LeftShift           ] 3.0s clip sw 2 db sw 2 pops 3
+     t 1.625 (+0.12) dt 0.018 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | ball_l:121
+     t 2.210 (+0.70) dt 0.018 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | calf_l:210 foot_l:201
+     t 3.261 (+1.75) dt 0.016 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:323
+ s2  [S LeftShift           ] 2.2s clip sw 2 db sw 2 pops 1
+     t 5.705 (+1.19) dt 0.019 eutral_Run_Pivot_F_B_Lfoot -> eutral_Run_Pivot_F_B_Lfoot | foot_l:251 ball_l:232
+ s3  [W LeftShift           ] 2.2s clip sw 2 db sw 2 pops 0
+ s4  [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 9.590 (+0.67) dt 0.019 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:139 ball_r:125
+ s5  [W LeftShift           ] 3.0s clip sw 2 db sw 2 pops 1
+     t 13.055 (+2.13) dt 0.015 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_r:308
+ s6  [S                     ] 2.2s clip sw 1 db sw 1 pops 2
+     t 15.056 (+1.12) dt 0.016 utral_Walk_Pivot_F_B_Lfoot -> utral_Walk_Pivot_F_B_Lfoot | calf_l:138
+     t 16.025 (+2.09) dt 0.015 utral_Walk_Pivot_F_B_Lfoot -> utral_Walk_Pivot_F_B_Lfoot | ball_l:122
+ s7  [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 16.163 (+0.04) dt 0.017 utral_Walk_Pivot_F_B_Lfoot -> _Relaxed_Walk_Stop_B_Lfoot | ball_r:154
+ s8  [W LeftShift           ] 3.0s clip sw 2 db sw 2 pops 2
+     t 18.968 (+0.84) dt 0.018 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_r:332
+     t 20.262 (+2.13) dt 0.018 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_r:338
+ s9  [A LeftShift           ] 2.0s clip sw 1 db sw 1 pops 2
+     t 21.566 (+0.42) dt 0.021 laxed_Run_Turn_L_090_Lfoot -> laxed_Run_Turn_L_090_Lfoot | ball_r:167
+     t 21.838 (+0.69) dt 0.021 laxed_Run_Turn_L_090_Lfoot -> laxed_Run_Turn_L_090_Lfoot | ball_l:153
+ s10 [D LeftShift           ] 2.0s clip sw 1 db sw 0 pops 4
+     t 23.475 (+0.32) dt 0.020 laxed_Run_Turn_L_180_Rfoot -> laxed_Run_Turn_L_180_Rfoot | ball_r:160 foot_r:153
+     t 23.491 (+0.34) dt 0.016 laxed_Run_Turn_L_180_Rfoot -> laxed_Run_Turn_L_180_Rfoot | foot_r:140 ball_r:136
+     t 24.376 (+1.22) dt 0.013 laxed_Run_Turn_L_180_Rfoot -> laxed_Run_Turn_L_180_Rfoot | foot_l:189
+ s11 [A LeftShift           ] 2.0s clip sw 1 db sw 0 pops 2
+     t 26.043 (+0.88) dt 0.015 laxed_Run_Turn_R_180_Rfoot -> laxed_Run_Turn_R_180_Rfoot | ball_r:236
+     t 26.629 (+1.47) dt 0.016 laxed_Run_Turn_R_180_Rfoot -> laxed_Run_Turn_R_180_Rfoot | ball_r:461 foot_r:425
+ s12 [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 27.448 (+0.29) dt 0.021 M_Relaxed_Run_Stop_F_Rfoot -> M_Relaxed_Run_Stop_F_Rfoot | foot_r:185 ball_r:178
+ s13 [W LeftShift           ] 2.5s clip sw 1 db sw 1 pops 5
+     t 29.962 (+0.79) dt 0.016 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | ball_l:179 foot_l:174
+     t 30.694 (+1.52) dt 0.017 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | foot_l:175
+     t 30.897 (+1.72) dt 0.020 l_Run_Reface_Start_F_R_090 -> l_Run_Reface_Start_F_R_090 | ball_r:194 foot_r:162
+ s14 [W A LeftShift         ] 1.5s clip sw 1 db sw 1 pops 2
+     t 32.414 (+0.73) dt 0.015 M_Neutral_Run_Loop_F -> M_Neutral_Run_Loop_F | ball_r:156
+     t 33.082 (+1.40) dt 0.015 M_Neutral_Run_Loop_F -> M_Neutral_Run_Loop_F | ball_r:409 foot_r:361
+ s15 [W D LeftShift         ] 1.5s clip sw 1 db sw 1 pops 1
+     t 33.851 (+0.67) dt 0.016 laxed_Run_Turn_R_090_Lfoot -> laxed_Run_Turn_R_090_Lfoot | foot_l:315
+ s16 [                      ] 2.0s clip sw 1 db sw 1 pops 0
+ s17 [W LeftShift           ] 2.5s clip sw 1 db sw 1 pops 4
+     t 36.910 (+0.22) dt 0.017 l_Run_Reface_Start_F_L_090 -> l_Run_Reface_Start_F_L_090 | ball_r:223 foot_r:209
+     t 37.627 (+0.94) dt 0.017 l_Run_Reface_Start_F_L_090 -> l_Run_Reface_Start_F_L_090 | ball_l:405 foot_l:373
+     t 38.723 (+2.03) dt 0.015 l_Run_Reface_Start_F_L_090 -> l_Run_Reface_Start_F_L_090 | calf_l:232
+ s18 [D LeftShift           ] 2.0s clip sw 1 db sw 1 pops 3
+     t 39.959 (+0.73) dt 0.015 laxed_Run_Turn_R_090_Rfoot -> laxed_Run_Turn_R_090_Rfoot | ball_r:397
+     t 39.994 (+0.77) dt 0.017 laxed_Run_Turn_R_090_Rfoot -> laxed_Run_Turn_R_090_Rfoot | ball_r:286 foot_r:273
+     t 40.511 (+1.28) dt 0.017 laxed_Run_Turn_R_090_Rfoot -> laxed_Run_Turn_R_090_Rfoot | foot_r:318
+ s19 [                      ] 2.0s clip sw 1 db sw 1 pops 0
+b4_B_60: 2841 frames, 80 pop frames (k 6, floor 120 cm/s)
+ s0  [                      ] 1.5s clip sw 0 db sw 0 pops 0
+ s1  [W LeftShift LeftControl] 3.5s clip sw 4 db sw 3 pops 14
+     t 1.683 (+0.13) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:131
+     t 4.616 (+3.07) dt 0.017 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | foot_l:332 foot_r:284
+     t 4.649 (+3.10) dt 0.017 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | ball_l:455 foot_l:428 ball_r:337 foot_r:296
+ s2  [S LeftShift LeftControl] 2.2s clip sw 3 db sw 3 pops 4
+     t 5.083 (+0.03) dt 0.017 M_Relaxed_Sprint_Loop_F -> ed_Sprint_Turn_180_R_Lfoot | head:1376 neck_02:1176 middle_01_r:1105 neck_01:1003 hand_r:941 ua_l:874
+     t 5.100 (+0.05) dt 0.016 ed_Sprint_Turn_180_R_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | head:2789 neck_02:2394 neck_01:2026 middle_01_r:2000 ua_l:1764 hand_r:1742
+     t 5.116 (+0.07) dt 0.016 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | head:1439 neck_02:1236 middle_01_r:1202 neck_01:1042 hand_r:1029 ua_l:933
+ s3  [                      ] 2.5s clip sw 2 db sw 2 pops 1
+     t 7.383 (+0.13) dt 0.017 M_Relaxed_Run_Stop_B_Lfoot -> M_Relaxed_Run_Stop_B_Lfoot | ball_r:181
+ s4  [W LeftShift LeftControl] 3.5s clip sw 4 db sw 3 pops 12
+     t 10.483 (+0.73) dt 0.017 ition_Walk_to_Sprint_Lfoot -> ition_Walk_to_Sprint_Lfoot | ball_l:218 foot_l:210
+     t 10.550 (+0.80) dt 0.016 ition_Walk_to_Sprint_Lfoot -> ition_Walk_to_Sprint_Lfoot | ball_r:313 foot_r:263 foot_l:252
+     t 12.884 (+3.13) dt 0.017 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | ball_l:460 foot_l:421
+ s5  [D LeftShift LeftControl] 2.0s clip sw 1 db sw 1 pops 20
+     t 13.284 (+0.03) dt 0.017 M_Relaxed_Sprint_Loop_F -> ed_Sprint_Turn_090_R_Lfoot | head:974 neck_02:836 neck_01:714 ua_l:662 ua_r:586 clavicle_l:550
+     t 13.300 (+0.05) dt 0.017 ed_Sprint_Turn_090_R_Lfoot -> ed_Sprint_Turn_090_R_Lfoot | head:998 neck_02:856 neck_01:732 ua_l:699 ua_r:577 clavicle_l:569
+     t 14.201 (+0.95) dt 0.016 ed_Sprint_Turn_090_R_Lfoot -> ed_Sprint_Turn_090_R_Lfoot | foot_r:211
+ s6  [A LeftShift LeftControl] 2.0s clip sw 1 db sw 0 pops 6
+     t 15.284 (+0.03) dt 0.017 ed_Sprint_Turn_090_R_Lfoot -> ed_Sprint_Turn_180_L_Rfoot | head:1429 middle_01_l:1256 neck_02:1237 hand_l:1095 neck_01:1055 ua_l:1047
+     t 15.301 (+0.05) dt 0.017 ed_Sprint_Turn_180_L_Rfoot -> ed_Sprint_Turn_180_L_Rfoot | head:1400 middle_01_l:1235 neck_02:1212 hand_l:1100 ua_l:1038 neck_01:1037
+     t 15.584 (+0.33) dt 0.017 ed_Sprint_Turn_180_L_Rfoot -> ed_Sprint_Turn_180_L_Rfoot | ball_r:300 foot_r:284
+ s7  [                      ] 2.5s clip sw 1 db sw 1 pops 1
+     t 17.886 (+0.64) dt 0.019 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:138 ball_r:125
+ s8  [W                     ] 3.0s clip sw 1 db sw 1 pops 2
+     t 19.785 (+0.03) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> _Walk_Reface_Start_F_R_090 | middle_01_r:416 middle_01_l:378 hand_r:356 hand_l:338 la_l:182
+     t 19.801 (+0.05) dt 0.017 _Walk_Reface_Start_F_R_090 -> _Walk_Reface_Start_F_R_090 | middle_01_r:427 middle_01_l:383 hand_r:372 hand_l:343 la_l:190
+ s9  [S                     ] 2.2s clip sw 3 db sw 3 pops 5
+     t 22.785 (+0.03) dt 0.016 _Walk_Reface_Start_F_R_090 -> tral_Walk_Turn_L_180_Lfoot | middle_01_r:1258 middle_01_l:1234 hand_r:1128 hand_l:1064 la_r:705 la_l:440
+     t 22.802 (+0.05) dt 0.017 tral_Walk_Turn_L_180_Lfoot -> utral_Walk_Pivot_F_B_Lfoot | middle_01_r:2529 middle_01_l:2472 hand_r:2262 hand_l:2123 la_r:1393 la_l:886
+     t 22.819 (+0.07) dt 0.017 utral_Walk_Pivot_F_B_Lfoot -> utral_Walk_Pivot_F_B_Lfoot | middle_01_r:1260 middle_01_l:1256 hand_r:1124 hand_l:1073 la_r:696 la_l:462
+ s10 [W                     ] 2.2s clip sw 2 db sw 2 pops 1
+     t 25.285 (+0.33) dt 0.017 Neutral_Walk_Start_F_Rfoot -> Neutral_Walk_Start_F_Rfoot | ball_r:189 foot_r:146
+ s11 [A                     ] 2.0s clip sw 1 db sw 1 pops 5
+     t 27.185 (+0.03) dt 0.017 Neutral_Walk_Start_F_Rfoot -> tral_Walk_Turn_L_090_Lfoot | middle_01_l:849 middle_01_r:817 hand_l:748 hand_r:718 la_r:393 la_l:265
+     t 27.202 (+0.05) dt 0.017 tral_Walk_Turn_L_090_Lfoot -> tral_Walk_Turn_L_090_Lfoot | middle_01_l:829 middle_01_r:802 hand_l:737 hand_r:706 la_r:388 la_l:259
+     t 27.402 (+0.25) dt 0.016 tral_Walk_Turn_L_090_Lfoot -> tral_Walk_Turn_L_090_Lfoot | ball_r:218 foot_r:216
+ s12 [D                     ] 2.0s clip sw 1 db sw 0 pops 3
+     t 29.186 (+0.03) dt 0.017 tral_Walk_Turn_L_090_Lfoot -> tral_Walk_Turn_L_180_Lfoot | middle_01_r:1144 middle_01_l:1080 hand_r:1023 hand_l:962 la_l:553 la_r:549
+     t 29.202 (+0.05) dt 0.017 tral_Walk_Turn_L_180_Lfoot -> tral_Walk_Turn_L_180_Lfoot | middle_01_r:1101 middle_01_l:1076 hand_r:977 hand_l:966 la_l:567 la_r:515
+     t 29.369 (+0.22) dt 0.017 tral_Walk_Turn_L_180_Lfoot -> tral_Walk_Turn_L_180_Lfoot | ball_l:143
+ s13 [                      ] 2.0s clip sw 1 db sw 1 pops 0
+ s14 [W                     ] 0.1s clip sw 1 db sw 1 pops 2
+     t 33.187 (+0.03) dt 0.017 _Relaxed_Walk_Stop_F_Rfoot -> _Walk_Reface_Start_F_L_090 | middle_01_r:494 middle_01_l:482 head:439 hand_l:423 hand_r:418 neck_02:413
+     t 33.203 (+0.05) dt 0.017 _Walk_Reface_Start_F_L_090 -> _Walk_Reface_Start_F_L_090 | middle_01_r:500 middle_01_l:474 head:430 hand_r:419 hand_l:414 neck_02:405
+ s15 [                      ] 1.2s clip sw 1 db sw 1 pops 0
+ s16 [W LeftShift           ] 0.2s clip sw 2 db sw 2 pops 0
+ s17 [                      ] 1.2s clip sw 1 db sw 1 pops 0
+ s18 [W LeftShift           ] 0.5s clip sw 2 db sw 2 pops 0
+ s19 [                      ] 1.5s clip sw 1 db sw 1 pops 0
+ s20 [W LeftShift           ] 3.0s clip sw 3 db sw 3 pops 2
+     t 38.270 (+0.37) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | ball_l:124
+     t 39.020 (+1.12) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:285
+ s21 [W                     ] 2.5s clip sw 2 db sw 1 pops 0
+ s22 [W LeftShift           ] 2.0s clip sw 1 db sw 1 pops 1
+     t 44.221 (+0.82) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | foot_l:273
+ s23 [                      ] 2.0s clip sw 1 db sw 1 pops 1
+     t 46.004 (+0.60) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:141 ball_r:134
+c7_B_60: 2841 frames, 46 pop frames (k 6, floor 120 cm/s)
+ s0  [                      ] 1.5s clip sw 0 db sw 0 pops 0
+ s1  [W LeftShift LeftControl] 3.5s clip sw 3 db sw 2 pops 4
+     t 4.601 (+3.09) dt 0.014 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | ball_l:437 foot_l:403 foot_r:283
+     t 4.772 (+3.26) dt 0.016 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | foot_l:195
+     t 4.871 (+3.36) dt 0.020 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | ball_r:378 foot_r:376 foot_l:314
+ s2  [S LeftShift LeftControl] 2.2s clip sw 3 db sw 3 pops 3
+     t 5.689 (+0.67) dt 0.016 _Neutral_Run_Start_B_Lfoot -> _Neutral_Run_Start_B_Lfoot | ball_r:124
+     t 6.327 (+1.31) dt 0.019 _Neutral_Run_Start_B_Lfoot -> _Neutral_Run_Start_B_Lfoot | ball_l:242
+     t 6.988 (+1.97) dt 0.014 _Neutral_Run_Start_B_Lfoot -> _Neutral_Run_Start_B_Lfoot | foot_l:183 ball_l:166
+ s3  [                      ] 2.5s clip sw 2 db sw 2 pops 0
+ s4  [W LeftShift LeftControl] 3.5s clip sw 3 db sw 2 pops 3
+     t 12.850 (+3.12) dt 0.015 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | ball_l:461 foot_l:438
+     t 12.882 (+3.16) dt 0.017 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | foot_l:201
+     t 13.015 (+3.29) dt 0.014 M_Relaxed_Sprint_Loop_F -> M_Relaxed_Sprint_Loop_F | foot_l:204
+ s5  [D LeftShift LeftControl] 2.0s clip sw 1 db sw 1 pops 8
+     t 13.484 (+0.25) dt 0.019 ed_Sprint_Turn_090_R_Lfoot -> ed_Sprint_Turn_090_R_Lfoot | ball_l:290 foot_l:287
+     t 13.549 (+0.31) dt 0.017 ed_Sprint_Turn_090_R_Lfoot -> ed_Sprint_Turn_090_R_Lfoot | ball_l:275
+     t 13.983 (+0.75) dt 0.018 ed_Sprint_Turn_090_R_Lfoot -> ed_Sprint_Turn_090_R_Lfoot | ball_l:339 foot_l:313
+ s6  [A LeftShift LeftControl] 2.0s clip sw 1 db sw 0 pops 1
+     t 16.015 (+0.77) dt 0.016 ed_Sprint_Turn_180_L_Rfoot -> ed_Sprint_Turn_180_L_Rfoot | calf_r:177 foot_r:128
+ s7  [                      ] 2.5s clip sw 1 db sw 1 pops 1
+     t 17.853 (+0.60) dt 0.018 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:132
+ s8  [W                     ] 3.0s clip sw 1 db sw 1 pops 4
+     t 19.798 (+0.04) dt 0.019 M_Relaxed_Run_Stop_F_Lfoot -> _Walk_Reface_Start_F_R_090 | la_l:129
+     t 19.813 (+0.05) dt 0.015 _Walk_Reface_Start_F_R_090 -> _Walk_Reface_Start_F_R_090 | la_l:146
+     t 20.247 (+0.49) dt 0.017 _Walk_Reface_Start_F_R_090 -> _Walk_Reface_Start_F_R_090 | ball_l:215
+ s9  [S                     ] 2.2s clip sw 2 db sw 2 pops 2
+     t 22.912 (+0.13) dt 0.018 utral_Walk_Pivot_F_B_Lfoot -> utral_Walk_Pivot_F_B_Lfoot | ball_l:129 foot_l:122
+     t 23.262 (+0.48) dt 0.014 utral_Walk_Pivot_F_B_Lfoot -> utral_Walk_Pivot_F_B_Lfoot | foot_l:189
+ s10 [W                     ] 2.2s clip sw 2 db sw 2 pops 2
+     t 25.117 (+0.13) dt 0.015 utral_Walk_Pivot_B_F_Rfoot -> utral_Walk_Pivot_B_F_Rfoot | ball_l:151 foot_l:150
+     t 25.315 (+0.33) dt 0.015 Neutral_Walk_Start_F_Rfoot -> Neutral_Walk_Start_F_Rfoot | ball_r:222 foot_r:163
+ s11 [A                     ] 2.0s clip sw 1 db sw 1 pops 5
+     t 27.218 (+0.03) dt 0.015 Neutral_Walk_Start_F_Rfoot -> tral_Walk_Turn_L_090_Lfoot | la_r:181 la_l:137
+     t 27.237 (+0.05) dt 0.018 tral_Walk_Turn_L_090_Lfoot -> tral_Walk_Turn_L_090_Lfoot | la_r:159 la_l:158
+     t 27.436 (+0.25) dt 0.018 tral_Walk_Turn_L_090_Lfoot -> tral_Walk_Turn_L_090_Lfoot | foot_r:226 ball_r:221
+ s12 [D                     ] 2.0s clip sw 1 db sw 0 pops 4
+     t 29.223 (+0.03) dt 0.017 tral_Walk_Turn_L_090_Lfoot -> tral_Walk_Turn_L_180_Lfoot | la_l:144
+     t 29.400 (+0.21) dt 0.027 tral_Walk_Turn_L_180_Lfoot -> tral_Walk_Turn_L_180_Lfoot | foot_l:258 ball_l:206
+     t 29.413 (+0.22) dt 0.013 tral_Walk_Turn_L_180_Lfoot -> tral_Walk_Turn_L_180_Lfoot | foot_l:193 ball_l:153
+ s13 [                      ] 2.0s clip sw 1 db sw 1 pops 0
+ s14 [W                     ] 0.1s clip sw 1 db sw 1 pops 2
+     t 33.245 (+0.03) dt 0.016 _Relaxed_Walk_Stop_F_Rfoot -> _Walk_Reface_Start_F_L_090 | la_l:136
+     t 33.260 (+0.05) dt 0.015 _Walk_Reface_Start_F_L_090 -> _Walk_Reface_Start_F_L_090 | la_l:131
+ s15 [                      ] 1.2s clip sw 1 db sw 1 pops 1
+     t 33.596 (+0.24) dt 0.015 M_Relaxed_Stand_Turn_090_L -> M_Relaxed_Stand_Turn_090_L | ball_r:121
+ s16 [W LeftShift           ] 0.2s clip sw 1 db sw 1 pops 0
+ s17 [                      ] 1.2s clip sw 1 db sw 1 pops 0
+ s18 [W LeftShift           ] 0.5s clip sw 1 db sw 1 pops 1
+     t 36.316 (+0.35) dt 0.014 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | ball_l:129
+ s19 [                      ] 1.5s clip sw 1 db sw 1 pops 0
+ s20 [W LeftShift           ] 3.0s clip sw 2 db sw 2 pops 2
+     t 39.707 (+1.74) dt 0.020 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | la_r:120
+     t 39.741 (+1.77) dt 0.017 _Neutral_Run_Start_F_Lfoot -> _Neutral_Run_Start_F_Lfoot | ball_l:372 foot_l:343
+ s21 [W                     ] 2.5s clip sw 2 db sw 1 pops 1
+     t 42.276 (+1.30) dt 0.014 M_Neutral_Walk_Loop_F -> M_Neutral_Walk_Loop_F | ball_l:152 foot_l:126
+ s22 [W LeftShift           ] 2.0s clip sw 1 db sw 1 pops 0
+ s23 [                      ] 2.0s clip sw 1 db sw 1 pops 2
+     t 45.834 (+0.33) dt 0.017 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_l:203 ball_l:196
+     t 46.033 (+0.53) dt 0.016 M_Relaxed_Run_Stop_F_Lfoot -> M_Relaxed_Run_Stop_F_Lfoot | foot_r:148

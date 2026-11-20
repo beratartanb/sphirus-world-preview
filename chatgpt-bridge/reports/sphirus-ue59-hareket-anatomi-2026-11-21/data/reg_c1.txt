@@ -1,0 +1,30 @@
+#### c1_A_60
+c1_A_60: 70 contacts
+  t  23.49 s10 [A+Sh]->[D+Sh] +0.33s foot L dur 0.45 drift  11.5 path  14.4 lift 12.6 speed  83 M_Relaxed_Run_Turn_L_180_Rfoot
+  per segment worst: s0[-]:2  s1[W+Sh]:2  s2[S+Sh]:2  s3[W+Sh]:1  s4[-]:2  s5[W+Sh]:1  s6[S]:7  s7[-]:2  s8[W+Sh]:1  s9[A+Sh]:1  s10[D+Sh]:11  s11[A+Sh]:3  s12[-]:3  s13[W+Sh]:1  s15[W D+Sh]:2  s16[-]:2  s17[W+Sh]:2  s18[D+Sh]:2  s19[-]:1
+  TOTAL n 70 mean 1.5 p90 2.5 worst 11.5  | >=10 cm: 1  >=20 cm: 0
+c1_A_60 starts n 5 worst 2.8 mean 2.4
+c1_A_60: 2586 frames, 17 pop frames (k 6, floor 120 cm/s)
+#### c1_B_60
+c1_B_60: 75 contacts
+  t  15.57 s6  [D+Sh+Ct]->[A+Sh+Ct] +0.32s foot R dur 0.47 drift  16.5 path  18.1 lift  4.8 speed 237 elaxed_Sprint_Turn_180_L_Rfoot
+  t  25.13 s10 [S]->[W] +0.18s foot R dur 0.22 drift  17.0 path  19.6 lift  6.8 speed  10 M_Neutral_Walk_Pivot_B_F_Rfoot
+  per segment worst: s0[-]:3  s1[W+Sh+Ct]:1  s2[S+Sh+Ct]:4  s3[-]:2  s4[W+Sh+Ct]:2  s5[D+Sh+Ct]:3  s6[A+Sh+Ct]:16  s7[-]:2  s8[W]:2  s9[S]:2  s10[W]:17  s11[A]:5  s12[D]:3  s13[-]:2  s15[-]:2  s17[-]:2  s18[W+Sh]:3  s19[-]:3  s20[W+Sh]:2  s21[W]:3  s22[W+Sh]:2  s23[-]:0
+  TOTAL n 75 mean 1.9 p90 2.7 worst 17.0  | >=10 cm: 2  >=20 cm: 0
+StopIteration
+c1_B_60: 2841 frames, 93 pop frames (k 6, floor 120 cm/s)
+#### c1_S_60
+c1_S_60: 74 contacts
+  t  38.57 s24 [S]->[-] +0.27s foot L dur 0.18 drift  15.2 path  15.4 lift 11.5 speed 158 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:2  s1[W]:2  s2[-]:3  s3[S]:2  s4[-]:1  s5[A]:2  s6[-]:4  s7[D]:2  s8[-]:4  s9[A]:2  s10[-]:3  s11[W+Sh]:1  s12[-]:2  s15[W]:2  s16[-]:3  s17[D]:2  s18[-]:4  s19[A]:3  s20[-]:2  s21[D]:3  s22[-]:1  s23[S]:3  s24[-]:15
+  TOTAL n 74 mean 1.6 p90 2.7 worst 15.2  | >=10 cm: 1  >=20 cm: 0
+c1_S_60 starts n 11 worst 3.9 mean 2.7
+c1_S_60: 2403 frames, 39 pop frames (k 6, floor 120 cm/s)
+#### c1_Q_60
+c1_Q_60: 111 contacts
+  t  31.34 s16 [S]->[-] +0.23s foot L dur 0.18 drift  12.9 path  13.1 lift 11.5 speed 160 M_Relaxed_Run_Stop_B_Rfoot
+  per segment worst: s0[-]:7  s3[W]:2  s4[-]:3  s5[W]:2  s6[-]:2  s7[W]:2  s8[-]:3  s9[W]:2  s10[-]:3  s11[S]:1  s12[-]:3  s13[S]:1  s14[-]:3  s15[S]:1  s16[-]:13  s17[D]:2  s18[-]:3  s19[A]:3  s20[D]:2  s21[-]:3  s22[W D]:3  s23[-]:2  s24[S A]:5  s25[-]:0
+  TOTAL n 111 mean 1.6 p90 2.7 worst 12.9  | >=10 cm: 1  >=20 cm: 0
+c1_Q_60 starts n 11 worst 6.5 mean 3.1
+c1_Q_60: 3129 frames, 63 pop frames (k 6, floor 120 cm/s)
+REG_DONE_c1
