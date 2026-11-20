@@ -1,0 +1,15 @@
+t   1.50 []->[W LeftShift LeftControl]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 16.0 R  1.6 | pelvis drop 21.4 | dur 1.28
+t   5.00 [W LeftShift LeftControl]->[S LeftShift LeftControl] 180 deg v_in 585 | t_rev 0.58 vmin   2 @0.57 | drift L 49.7 R 21.9 | pelvis drop  5.5 | dur 1.28
+t   9.70 []->[W LeftShift LeftControl]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 14.4 R  1.6 | pelvis drop 21.5 | dur 1.30
+t  13.20 [W LeftShift LeftControl]->[D LeftShift LeftControl]  90 deg v_in 585 | t_rev 0.03 vmin 379 @0.43 | drift L  0.0 R  0.0 | pelvis drop 21.2 | dur 1.28
+t  15.20 [D LeftShift LeftControl]->[A LeftShift LeftControl] 180 deg v_in 584 | t_rev 0.52 vmin   4 @0.52 | drift L  2.2 R  0.0 | pelvis drop 19.6 | dur 1.28
+t  19.71 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  0.7 R  2.6 | pelvis drop  5.0 | dur 1.30
+t  22.72 [W]->[S] 180 deg v_in 180 | t_rev 0.18 vmin   3 @0.18 | drift L  0.8 R  0.5 | pelvis drop 10.1 | dur 1.30
+t  24.92 [S]->[W] 180 deg v_in 150 | t_rev 0.17 vmin   3 @0.17 | drift L  6.2 R  0.4 | pelvis drop  4.2 | dur 1.30
+t  27.12 [W]->[A]  90 deg v_in 180 | t_rev 0.03 vmin 132 @0.15 | drift L  0.2 R  0.7 | pelvis drop  3.5 | dur 1.28
+t  29.12 [A]->[D] 180 deg v_in 180 | t_rev 0.18 vmin   1 @0.17 | drift L  9.0 R  1.1 | pelvis drop  6.0 | dur 1.30
+t  33.13 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  9.2 R  0.1 | pelvis drop  0.2 | dur 0.13
+t  34.48 []->[W LeftShift]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 11.2 R  0.6 | pelvis drop  1.2 | dur 0.18
+t  35.88 []->[W LeftShift]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 11.6 R  1.5 | pelvis drop 21.2 | dur 0.48
+t  37.88 []->[W LeftShift]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 12.7 R  1.4 | pelvis drop 20.5 | dur 1.30
+WORST 49.7  MEAN 10.5  n 14

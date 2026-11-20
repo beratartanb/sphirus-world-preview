@@ -1,0 +1,64 @@
+PSD_Relaxed_Stand_Walk_F_Loops -> PSD_Sph_N_Walk_F_Loops
+PSD_Relaxed_Stand_Walk_F_Pivots -> PSD_Sph_N_Walk_F_Pivots
+PSD_Relaxed_Stand_Walk_F_Starts -> PSD_Sph_N_Walk_F_Starts
+PSD_Relaxed_Stand_Walk_F_Spins -> PSD_Dense_Stand_Walk_SpinTransition
+PSD_Relaxed_Stand_Walk_B_Loops -> PSD_Dense_Stand_Walk_Loops
+PSD_Relaxed_Stand_Walk_B_Pivots -> PSD_Dense_Stand_Walk_Pivots
+PSD_Relaxed_Stand_Walk_B_Starts -> PSD_Dense_Stand_Walk_Starts
+PSD_Relaxed_Stand_Walk_B_Spins -> PSD_Dense_Stand_Walk_SpinTransition
+PSD_Relaxed_Stand_Walk_LL_Loops -> PSD_Dense_Stand_Walk_Loops
+PSD_Relaxed_Stand_Walk_LL_Pivots -> PSD_Dense_Stand_Walk_Pivots
+PSD_Relaxed_Stand_Walk_LL_Starts -> PSD_Dense_Stand_Walk_Starts
+PSD_Relaxed_Stand_Walk_LL_Spins -> PSD_Dense_Stand_Walk_SpinTransition
+PSD_Relaxed_Stand_Walk_RL_Loops -> PSD_Dense_Stand_Walk_Loops
+PSD_Relaxed_Stand_Walk_RL_Pivots -> PSD_Dense_Stand_Walk_Pivots
+PSD_Relaxed_Stand_Walk_RL_Starts -> PSD_Dense_Stand_Walk_Starts
+PSD_Relaxed_Stand_Walk_RL_Spins -> PSD_Dense_Stand_Walk_SpinTransition
+PSD_Relaxed_Stand_Walk_F_Turns -> PSD_Sph_N_Walk_F_Turns
+PSD_Relaxed_Stand_Run_F_Loops -> PSD_Sph_N_Run_F_Loops
+PSD_Relaxed_Stand_Run_F_Starts -> PSD_Sph_N_Run_F_Starts
+PSD_Relaxed_Stand_Run_F_Spins -> PSD_Dense_Stand_Run_SpinTransition
+PSD_Relaxed_Stand_Run_B_Loops -> PSD_Dense_Stand_Run_Loops
+PSD_Relaxed_Stand_Run_B_Pivots -> PSD_Dense_Stand_Run_Pivots
+PSD_Relaxed_Stand_Run_B_Starts -> PSD_Dense_Stand_Run_Starts
+PSD_Relaxed_Stand_Run_B_Spins -> PSD_Dense_Stand_Run_SpinTransition
+PSD_Relaxed_Stand_Run_LL_Loops -> PSD_Dense_Stand_Run_Loops
+PSD_Relaxed_Stand_Run_LL_Pivots -> PSD_Dense_Stand_Run_Pivots
+PSD_Relaxed_Stand_Run_LL_Starts -> PSD_Dense_Stand_Run_Starts
+PSD_Relaxed_Stand_Run_LL_Spins -> PSD_Dense_Stand_Run_SpinTransition
+PSD_Relaxed_Stand_Run_RL_Loops -> PSD_Dense_Stand_Run_Loops
+PSD_Relaxed_Stand_Run_RL_Pivots -> PSD_Dense_Stand_Run_Pivots
+PSD_Relaxed_Stand_Run_RL_Starts -> PSD_Dense_Stand_Run_Starts
+PSD_Relaxed_Stand_Run_RL_Spins -> PSD_Dense_Stand_Run_SpinTransition
+PSD_Relaxed_Stand_Sprint_Stops -> PSD_Dense_Stand_Run_Stops
+SphCM True SphRelaxed True
+/Game/Sphirus/Player/GASP/BP_Sph_GASPCharacter
+/Game/Sphirus/CharacterLab/Hazel_20261106/Playable/BP_HybridA_Player
+CM_af_Loco_Jog_Left len 1.30 speed 266 loop True
+CM_af_Loco_Jog_Right len 1.50 speed 278 loop True
+CM_af_Loco_Jog_BwdRight len 1.30 speed 266 loop True
+CM_af_Loco_Jog_FwdRight len 1.50 speed 278 loop True
+CM_af_Loco_Jog_Fwd len 1.50 speed 278 loop True
+CM_af_Loco_Jog_FwdLeft len 1.50 speed 278 loop True
+CM_af_Loco_Jog_BwdLeft len 1.30 speed 266 loop True
+CM_af_Loco_Jog_Bwd len 1.30 speed 266 loop True
+CM_af_Loco_Jog_Bwd_Pivot len 3.07 speed 67 loop False
+CM_af_Loco_Jog_Bwd_Start len 1.80 speed 154 loop False
+CM_af_Loco_Jog_Bwd_Stop len 3.40 speed 103 loop False
+CM_af_Loco_Jog_Fwd_Pivot len 2.60 speed 24 loop False
+CM_af_Loco_Jog_Fwd_Start len 1.93 speed 208 loop False
+CM_af_Loco_Jog_Fwd_Stop len 2.37 speed 128 loop False
+CM_af_Loco_Jog_Left_Pivot len 3.07 speed 67 loop False
+CM_af_Loco_Jog_Left_Start len 1.80 speed 154 loop False
+CM_af_Loco_Jog_Left_Stop len 3.40 speed 103 loop False
+CM_af_Loco_Jog_Right_Pivot len 2.60 speed 24 loop False
+CM_af_Loco_Jog_Right_Start len 1.93 speed 208 loop False
+CM_af_Loco_Jog_Right_Stop len 2.37 speed 128 loop False
+CM_af_Loco_Jog_Start_TurnL045_Lfoot len 2.33 speed 197 loop False
+CM_af_Loco_Jog_Start_TurnL090_Lfoot len 2.33 speed 197 loop False
+CM_af_Loco_Jog_Start_TurnL135_Lfoot len 2.30 speed 192 loop False
+CM_af_Loco_Jog_Start_TurnL180_Lfoot len 2.30 speed 192 loop False
+CM_af_Loco_Jog_Start_TurnR045_Rfoot len 2.57 speed 218 loop False
+CM_af_Loco_Jog_Start_TurnR090_Rfoot len 2.57 speed 218 loop False
+CM_af_Loco_Jog_Start_TurnR135_Rfoot len 2.07 speed 175 loop False
+CM_af_Loco_Jog_Start_TurnR180_Rfoot len 2.07 speed 175 loop False

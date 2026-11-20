@@ -1,0 +1,8 @@
+Video timing check 2026-11-20 (frame count = PNG frames captured, encoded at 30 fps; simulated time from the recorder json)
+G_before_cam   frames 712 -> 23.73 s at 30 fps | sim 23.96 s, median step 0.0333 s (30.0 Hz) | ratio 0.991 REAL_SPEED
+G_before_side  frames 715 -> 23.83 s at 30 fps | sim 23.98 s, median step 0.0332 s (30.1 Hz) | ratio 0.994 REAL_SPEED
+G_after_cam    frames 717 -> 23.90 s at 30 fps | sim 23.92 s, median step 0.0333 s (30.0 Hz) | ratio 0.999 REAL_SPEED
+G_after_side   frames 691 -> 23.03 s at 30 fps | sim 23.98 s, median step 0.0332 s (30.1 Hz) | ratio 0.960 CHECK
+G_after_tempo  frames 717 -> 23.90 s at 30 fps | sim 23.97 s, median step 0.0333 s (30.0 Hz) | ratio 0.997 REAL_SPEED
+F19_flow_F21   frames 2721 -> 90.70 s at 30 fps | sim 95.42 s | ratio 0.951
+Side-by-side files are encoded by sbs.py at the source fps (30); their frame count was not re-read (Blender check timed out).

@@ -1,0 +1,6 @@
+PLAYER {'GR_KTempoRun': 0.67, 'GR_KTempoBack': 0.78, 'GR_HoldMax': 0.9, 'GR_TempoOn': False} maps 35/35
+TEMPO MAP [('un_F_Loops', 'CM_Jog_F_Loops'), ('un_F_Starts', 'CM_Jog_F_Starts'), ('un_B_Loops', 'CM_Jog_B_Loops'), ('un_B_Pivots', 'CM_Jog_B_Pivots'), ('un_B_Starts', 'CM_Jog_B_Starts'), ('un_LL_Loops', 'CM_Jog_L_Loops'), ('un_LL_Pivots', 'CM_Jog_L_Pivots'), ('un_LL_Starts', 'CM_Jog_L_Starts'), ('un_RL_Loops', 'CM_Jog_R_Loops'), ('un_RL_Pivots', 'CM_Jog_R_Pivots'), ('un_RL_Starts', 'CM_Jog_R_Starts'), ('un_F_Pivots', 'CM_Jog_F_Pivots')]
+STOP MAP [('print_Stops', 'Relaxed_Stand_Run_Stops'), ('un_Stops', 'Relaxed_Stand_Run_Stops')]
+MOTION {'ClipBrakeOn': True, 'ClipK': 1.0, 'ClipHiRef': 375.0, 'ClipHiMin': 470.0, 'RevOn': True, 'RevFricMin': 0.25, 'RevSpLo': 250.0, 'RevSpHi': 470.0, 'GaitUpAcc': 0.8, 'BodyOn': True, 'EffortEnabled': True, 'IdleEnabled': True} idle ['v01', 'v02', 'v04', 'v06', 'v02']
+BODY {'RunLo': 200.0, 'RunFull': 415.0, 'VR_ArmL': (6.0, 5.0, 0.0), 'VR_ArmR': (6.0, -5.0, 0.0), 'VW_ArmL': (0.0, -1.5, 0.0), 'VW_ArmR': (0.0, 1.5, 0.0), 'VW_Neck1': (-6.0, 0.0, 0.0), 'VW_Head': (0.0, 0.0, 0.0), 'VW_Spine5': (4.0, 0.0, 0.0)}
+DIRTY []

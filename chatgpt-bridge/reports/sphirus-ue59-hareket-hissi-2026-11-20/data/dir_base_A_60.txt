@@ -1,0 +1,379 @@
+
+== t 1.50  [] -> [W LeftShift]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by     0 tw   24 | WALK   sel 0 back False max  180 | M_Relaxed_Stand_Idle_Loop                  Relaxed_Stand_Idles
+  +0.10 sp   62 vo   nan vn    62 by     0 tw   26 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.20 sp  136 vo   nan vn   136 by     0 tw   75 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.30 sp  179 vo   nan vn   179 by     0 tw   38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.40 sp  223 vo   nan vn   223 by     0 tw   15 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.50 sp  267 vo   nan vn   267 by     0 tw  -14 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.60 sp  311 vo   nan vn   311 by     0 tw  -38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.70 sp  355 vo   nan vn   355 by     0 tw  -35 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.80 sp  398 vo   nan vn   398 by     0 tw   -2 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.90 sp  415 vo   nan vn   415 by     0 tw   15 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.00 sp  415 vo   nan vn   415 by     0 tw  -11 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.10 sp  415 vo   nan vn   415 by     0 tw  -40 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.20 sp  415 vo   nan vn   415 by     0 tw  -49 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.32 sp  415 vo   nan vn   415 by     0 tw   18 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.40 sp  415 vo   nan vn   415 by     0 tw   39 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.50 sp  415 vo   nan vn   415 by     0 tw   46 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  SUM t_rev -  clips 3: Stand_Idle_Loop@-0.02 > N_Walk_Start_F_Rfoot@0.03 > N_Run_Start_F_Lfoot@0.05
+  SUM max pelvis-vs-capsule speed 111 cm/s, max chest yaw rate 1500 deg/s
+
+== t 4.50  [W LeftShift] -> [S LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn  -415 by     0 tw   38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.12 sp  262 vo   262 vn  -262 by     0 tw  -11 | WALK   sel 0 back True  max   80 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.20 sp  182 vo   182 vn  -182 by     0 tw  -15 | WALK   sel 0 back True  max   78 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.30 sp   48 vo    48 vn   -48 by     0 tw  -54 | WALK   sel 0 back True  max   86 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.42 sp   24 vo   -24 vn    24 by     0 tw -150 | WALK   sel 0 back True  max   84 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.50 sp   62 vo   -62 vn    62 by     0 tw  -57 | WALK   sel 0 back True  max   94 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.60 sp  108 vo  -108 vn   108 by     0 tw  -44 | WALK   sel 0 back True  max  103 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.70 sp  140 vo  -140 vn   140 by     0 tw  -44 | WALK   sel 0 back True  max  109 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.80 sp  150 vo  -150 vn   150 by     0 tw  -37 | WALK   sel 0 back True  max  114 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.90 sp  150 vo  -150 vn   150 by     0 tw  -35 | WALK   sel 0 back True  max  118 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.00 sp  150 vo  -150 vn   150 by     0 tw  -39 | WALK   sel 0 back True  max  120 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.10 sp  150 vo  -150 vn   150 by     0 tw  -26 | WALK   sel 0 back True  max  122 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.20 sp  150 vo  -150 vn   150 by     0 tw  -29 | WALK   sel 0 back True  max  124 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.32 sp  150 vo  -150 vn   150 by     0 tw  -40 | WALK   sel 0 back True  max  125 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.40 sp  150 vo  -150 vn   150 by     0 tw  -20 | WALK   sel 0 back True  max  125 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.50 sp  150 vo  -150 vn   150 by     0 tw  -15 | WALK   sel 0 back True  max  126 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  SUM t_rev 0.37  clips 3: N_Run_Loop_F@-0.02 > Run_Turn_L_180_Lfoot@0.03 > N_Walk_Pivot_F_B_Lfoot@0.05
+  SUM max pelvis-vs-capsule speed 76 cm/s, max chest yaw rate 2120 deg/s
+
+== t 6.70  [S LeftShift] -> [W LeftShift]   v_in 150
+  +0.00 sp  150 vo   150 vn  -150 by     0 tw   43 | WALK   sel 0 back True  max  127 | M_Neutral_Walk_Loop_B                      Dense_Stand_Walk_Loops
+  +0.12 sp    9 vo     9 vn    -9 by     0 tw  -69 | RUN    sel 1 back False max  340 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.20 sp   52 vo   -52 vn    52 by     0 tw  121 | RUN    sel 1 back False max  349 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.30 sp  124 vo  -124 vn   124 by     0 tw  -35 | RUN    sel 1 back False max  366 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.40 sp  163 vo  -163 vn   163 by     0 tw    5 | RUN    sel 1 back False max  379 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.50 sp  202 vo  -202 vn   202 by     0 tw    3 | RUN    sel 1 back False max  389 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.60 sp  241 vo  -241 vn   241 by     0 tw  -38 | RUN    sel 1 back False max  396 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.70 sp  280 vo  -280 vn   280 by     0 tw  -83 | RUN    sel 1 back False max  401 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.80 sp  319 vo  -319 vn   319 by     0 tw  -62 | RUN    sel 1 back False max  405 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.90 sp  358 vo  -358 vn   358 by     0 tw   -2 | RUN    sel 1 back False max  407 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +1.00 sp  396 vo  -396 vn   396 by     0 tw   56 | RUN    sel 1 back False max  409 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +1.10 sp  411 vo  -411 vn   411 by     0 tw   -3 | RUN    sel 1 back False max  411 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +1.20 sp  412 vo  -412 vn   412 by     0 tw  -80 | RUN    sel 1 back False max  412 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +1.30 sp  413 vo  -413 vn   413 by     0 tw  -80 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +1.40 sp  413 vo  -413 vn   413 by     0 tw  -45 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +1.50 sp  414 vo  -414 vn   414 by     0 tw   16 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  SUM t_rev 0.13  clips 3: N_Walk_Loop_B@-0.02 > N_Walk_Pivot_B_F_Lfoot@0.03 > Run_Pivot_B_F_Rfoot@0.05
+  SUM max pelvis-vs-capsule speed 150 cm/s, max chest yaw rate 3958 deg/s
+
+== t 8.90  [W LeftShift] -> []   v_in 415
+  +0.00 sp  415 vo   415 vn     - by     0 tw   70 | RUN    sel 1 back False max  415 | M_Relaxed_Run_Pivot_B_F_Rfoot              Relaxed_Stand_Run_F_Pivots
+  +0.12 sp  368 vo   368 vn     - by     0 tw   16 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.22 sp  303 vo   303 vn     - by     0 tw -125 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.32 sp  207 vo   207 vn     - by     0 tw -104 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.42 sp  108 vo   108 vn     - by     0 tw -113 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.52 sp   28 vo    28 vn     - by     0 tw -126 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.60 sp    0 vo     0 vn     - by     0 tw -130 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.70 sp    0 vo     0 vn     - by     0 tw -131 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.80 sp    0 vo     0 vn     - by     0 tw -119 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.90 sp    0 vo     0 vn     - by     0 tw  -96 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.00 sp    0 vo     0 vn     - by     0 tw  -78 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.10 sp    0 vo     0 vn     - by     0 tw  -67 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.20 sp    0 vo     0 vn     - by     0 tw  -58 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.30 sp    0 vo     0 vn     - by     0 tw  -54 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.40 sp    0 vo     0 vn     - by     0 tw  -56 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.50 sp    0 vo     0 vn     - by     0 tw  -54 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  SUM t_rev -  clips 2: Run_Pivot_B_F_Rfoot@-0.02 > Run_Stop_F_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 44 cm/s, max chest yaw rate 10192 deg/s
+
+== t 10.90  [] -> [W LeftShift]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by     0 tw  -19 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.12 sp   64 vo   nan vn    64 by     0 tw   -4 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.22 sp  127 vo   nan vn   127 by     0 tw   50 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.32 sp  164 vo   nan vn   164 by     0 tw   32 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.42 sp  202 vo   nan vn   202 by     0 tw   15 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.52 sp  239 vo   nan vn   239 by     0 tw  -12 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.62 sp  277 vo   nan vn   277 by     0 tw  -36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.72 sp  314 vo   nan vn   314 by     0 tw  -36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.82 sp  352 vo   nan vn   352 by     0 tw   -6 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.92 sp  390 vo   nan vn   390 by     0 tw   16 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.02 sp  415 vo   nan vn   415 by     0 tw   -8 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.12 sp  415 vo   nan vn   415 by     0 tw  -38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.20 sp  415 vo   nan vn   415 by     0 tw  -49 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.30 sp  415 vo   nan vn   415 by     0 tw   -5 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.42 sp  415 vo   nan vn   415 by     0 tw   36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.50 sp  415 vo   nan vn   415 by     0 tw   30 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  SUM t_rev -  clips 3: Run_Stop_F_Lfoot@-0.02 > N_Walk_Start_F_Rfoot@0.03 > N_Run_Start_F_Lfoot@0.05
+  SUM max pelvis-vs-capsule speed 111 cm/s, max chest yaw rate 1152 deg/s
+
+== t 13.90  [W LeftShift] -> [S]   v_in 415
+  +0.00 sp  415 vo   415 vn  -415 by     0 tw   30 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.12 sp  266 vo   266 vn  -266 by     0 tw   -6 | WALK   sel 0 back True  max   79 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.20 sp  189 vo   189 vn  -189 by     0 tw  -18 | WALK   sel 0 back True  max   77 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.30 sp   65 vo    65 vn   -65 by     0 tw  -41 | WALK   sel 0 back True  max   85 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.40 sp    6 vo    -6 vn     6 by     0 tw -158 | WALK   sel 0 back True  max   93 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.52 sp   55 vo   -55 vn    55 by     0 tw -114 | WALK   sel 0 back True  max   93 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.60 sp   90 vo   -90 vn    90 by     0 tw  -69 | WALK   sel 0 back True  max  101 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.71 sp  132 vo  -132 vn   132 by     0 tw  -54 | WALK   sel 0 back True  max  108 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.81 sp  150 vo  -150 vn   150 by     0 tw  -45 | WALK   sel 0 back True  max  113 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +0.91 sp  150 vo  -150 vn   150 by     0 tw  -38 | WALK   sel 0 back True  max  117 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.01 sp  150 vo  -150 vn   150 by     0 tw  -41 | WALK   sel 0 back True  max  120 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.11 sp  150 vo  -150 vn   150 by     0 tw  -29 | WALK   sel 0 back True  max  122 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.21 sp  150 vo  -150 vn   150 by     0 tw  -22 | WALK   sel 0 back True  max  123 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.31 sp  150 vo  -150 vn   150 by     0 tw  -34 | WALK   sel 0 back True  max  124 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.41 sp  150 vo  -150 vn   150 by     0 tw  -17 | WALK   sel 0 back True  max  125 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  +1.51 sp  150 vo  -150 vn   150 by     0 tw  -10 | WALK   sel 0 back True  max  126 | M_Neutral_Walk_Pivot_F_B_Lfoot             Dense_Stand_Walk_Pivots
+  SUM t_rev 0.40  clips 3: N_Run_Loop_F@-0.02 > Run_Turn_L_180_Lfoot@0.03 > N_Walk_Pivot_F_B_Lfoot@0.05
+  SUM max pelvis-vs-capsule speed 85 cm/s, max chest yaw rate 1024 deg/s
+
+== t 16.11  [S] -> []   v_in 150
+  +0.00 sp  150 vo   150 vn     - by     0 tw  128 | WALK   sel 0 back True  max  127 | M_Neutral_Walk_Loop_B                      Dense_Stand_Walk_Loops
+  +0.12 sp   61 vo    61 vn     - by     0 tw   73 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.20 sp   20 vo    20 vn     - by     0 tw   61 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.30 sp    0 vo     0 vn     - by     0 tw   70 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.42 sp    0 vo     0 vn     - by     0 tw   76 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.52 sp    0 vo     0 vn     - by     0 tw  -36 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.60 sp    0 vo     0 vn     - by     0 tw  -91 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.70 sp    0 vo     0 vn     - by     0 tw  -71 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.80 sp    0 vo     0 vn     - by     0 tw  -46 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.90 sp    0 vo     0 vn     - by     0 tw  -46 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +1.00 sp    0 vo     0 vn     - by     0 tw  -38 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +1.10 sp    0 vo     0 vn     - by     0 tw  -32 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +1.20 sp    0 vo     0 vn     - by     0 tw  -25 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +1.30 sp    0 vo     0 vn     - by     0 tw  -17 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +1.40 sp    0 vo     0 vn     - by     0 tw  -13 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +1.52 sp    0 vo     0 vn     - by     0 tw  -14 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  SUM t_rev -  clips 3: N_Walk_Pivot_F_B_Lfoot@-0.02 > N_Walk_Loop_B@0.00 > Walk_Stop_B_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 46 cm/s, max chest yaw rate 2323 deg/s
+
+== t 18.11  [] -> [W LeftShift]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by     0 tw   -7 | WALK   sel 0 back False max  180 | M_Relaxed_Walk_Stop_B_Lfoot                Relaxed_Stand_Walk_Stops
+  +0.12 sp   64 vo   nan vn    64 by     0 tw   11 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.22 sp  128 vo   nan vn   128 by     0 tw   69 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.32 sp  166 vo   nan vn   166 by     0 tw   30 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.42 sp  204 vo   nan vn   204 by     0 tw   14 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.52 sp  242 vo   nan vn   242 by     0 tw  -13 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.62 sp  280 vo   nan vn   280 by     0 tw  -36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.72 sp  318 vo   nan vn   318 by     0 tw  -36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.82 sp  357 vo   nan vn   357 by     0 tw   -5 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.92 sp  395 vo   nan vn   395 by     0 tw   16 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.02 sp  415 vo   nan vn   415 by     0 tw   -8 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.12 sp  415 vo   nan vn   415 by     0 tw  -38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.22 sp  415 vo   nan vn   415 by     0 tw  -49 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.32 sp  415 vo   nan vn   415 by     0 tw    5 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.42 sp  415 vo   nan vn   415 by     0 tw   36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.52 sp  415 vo   nan vn   415 by     0 tw   38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  SUM t_rev -  clips 4: Walk_Stop_B_Lfoot@-0.02 > Stand_Idle_Loop@0.02 > N_Walk_Start_F_Rfoot@0.03 > N_Run_Start_F_Lfoot@0.05
+  SUM max pelvis-vs-capsule speed 108 cm/s, max chest yaw rate 1188 deg/s
+
+== t 21.11  [W LeftShift] -> [A LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn     0 by     0 tw   32 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.12 sp  306 vo   246 vn   182 by   -90 tw   34 | RUN    sel 1 back False max  369 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.22 sp  324 vo   146 vn   289 by   -90 tw   66 | RUN    sel 1 back False max  381 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.32 sp  379 vo    87 vn   369 by   -90 tw  107 | RUN    sel 1 back False max  390 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.40 sp  396 vo    51 vn   392 by   -90 tw  129 | RUN    sel 1 back False max  396 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.52 sp  402 vo    23 vn   401 by   -90 tw   80 | RUN    sel 1 back False max  402 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.62 sp  405 vo    12 vn   405 by   -90 tw   51 | RUN    sel 1 back False max  405 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.70 sp  407 vo     7 vn   407 by   -90 tw   -2 | RUN    sel 1 back False max  407 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.80 sp  409 vo     4 vn   409 by   -90 tw    6 | RUN    sel 1 back False max  409 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.92 sp  411 vo     2 vn   411 by   -90 tw  109 | RUN    sel 1 back False max  411 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.00 sp  412 vo     1 vn   412 by   -90 tw   74 | RUN    sel 1 back False max  412 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.10 sp  413 vo     1 vn   413 by   -90 tw   87 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.20 sp  413 vo     0 vn   413 by   -90 tw -175 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.30 sp  414 vo     0 vn   414 by   -90 tw -172 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.40 sp  414 vo     0 vn   414 by   -90 tw  154 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.50 sp  414 vo     0 vn   414 by   -90 tw  134 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.03  clips 2: N_Run_Loop_F@-0.02 > Run_Turn_L_090_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 101 cm/s, max chest yaw rate 2703 deg/s
+
+== t 23.11  [A LeftShift] -> [D LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn  -415 by   -90 tw   88 | RUN    sel 1 back False max  415 | M_Relaxed_Run_Turn_L_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.12 sp  100 vo   100 vn  -100 by    90 tw   27 | RUN    sel 1 back False max  280 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.22 sp   10 vo   -10 vn    10 by    90 tw   41 | RUN    sel 1 back False max  290 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.32 sp   74 vo   -74 vn    74 by    90 tw   31 | RUN    sel 1 back False max  323 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.42 sp  134 vo  -134 vn   134 by    90 tw   33 | RUN    sel 1 back False max  347 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.52 sp  170 vo  -170 vn   170 by    90 tw   24 | RUN    sel 1 back False max  365 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.62 sp  205 vo  -205 vn   205 by    90 tw   20 | RUN    sel 1 back False max  378 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.72 sp  240 vo  -240 vn   240 by    90 tw   31 | RUN    sel 1 back False max  388 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.80 sp  270 vo  -270 vn   270 by    90 tw   58 | RUN    sel 1 back False max  394 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.92 sp  310 vo  -310 vn   310 by    90 tw   64 | RUN    sel 1 back False max  400 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.00 sp  340 vo  -340 vn   340 by    90 tw   44 | RUN    sel 1 back False max  404 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.12 sp  380 vo  -380 vn   380 by    90 tw   19 | RUN    sel 1 back False max  407 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.22 sp  409 vo  -409 vn   409 by    90 tw   31 | RUN    sel 1 back False max  409 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.30 sp  410 vo  -410 vn   410 by    90 tw   -5 | RUN    sel 1 back False max  410 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.40 sp  412 vo  -412 vn   412 by    90 tw   94 | RUN    sel 1 back False max  412 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.52 sp  413 vo  -413 vn   413 by    90 tw   76 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.22  clips 2: Run_Turn_L_090_Lfoot@-0.02 > Run_Turn_L_180_Rfoot@0.03
+  SUM max pelvis-vs-capsule speed 130 cm/s, max chest yaw rate 5192 deg/s
+
+== t 25.11  [D LeftShift] -> [A LeftShift]   v_in 414
+  +0.00 sp  414 vo   414 vn  -414 by    90 tw   77 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.12 sp  101 vo   101 vn  -101 by   -90 tw   19 | RUN    sel 1 back False max  279 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.22 sp    8 vo    -8 vn     8 by   -90 tw   16 | RUN    sel 1 back False max  289 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.32 sp   70 vo   -70 vn    70 by   -90 tw  -16 | RUN    sel 1 back False max  322 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.40 sp  122 vo  -122 vn   122 by   -90 tw  -76 | RUN    sel 1 back False max  344 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.50 sp  156 vo  -156 vn   156 by   -90 tw  135 | RUN    sel 1 back False max  362 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.60 sp  190 vo  -190 vn   190 by   -90 tw  171 | RUN    sel 1 back False max  376 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.70 sp  224 vo  -224 vn   224 by   -90 tw -109 | RUN    sel 1 back False max  387 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.82 sp  263 vo  -263 vn   263 by   -90 tw    3 | RUN    sel 1 back False max  395 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.92 sp  297 vo  -297 vn   297 by   -90 tw   -5 | RUN    sel 1 back False max  400 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.00 sp  325 vo  -325 vn   325 by   -90 tw  -26 | RUN    sel 1 back False max  404 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.10 sp  358 vo  -358 vn   358 by   -90 tw  -30 | RUN    sel 1 back False max  407 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.20 sp  392 vo  -392 vn   392 by   -90 tw  -30 | RUN    sel 1 back False max  409 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.30 sp  410 vo  -410 vn   410 by   -90 tw   -2 | RUN    sel 1 back False max  410 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.42 sp  412 vo  -412 vn   412 by   -90 tw   58 | RUN    sel 1 back False max  412 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.52 sp  413 vo  -413 vn   413 by   -90 tw   58 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.60 sp  413 vo  -413 vn   413 by   -90 tw   15 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.22  clips 2: Run_Turn_L_180_Rfoot@-0.02 > Run_Turn_R_180_Rfoot@0.03
+  SUM max pelvis-vs-capsule speed 139 cm/s, max chest yaw rate 3738 deg/s
+
+== t 27.11  [A LeftShift] -> []   v_in 414
+  +0.00 sp  414 vo   414 vn     - by   -90 tw  133 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.10 sp  268 vo   268 vn     - by   -90 tw  106 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.20 sp  188 vo   188 vn     - by   -90 tw   42 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.30 sp   92 vo    92 vn     - by   -90 tw   26 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.40 sp   24 vo    24 vn     - by   -90 tw   40 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.50 sp    0 vo     0 vn     - by   -90 tw   58 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.60 sp    0 vo     0 vn     - by   -90 tw  160 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.70 sp    0 vo     0 vn     - by   -90 tw  169 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.81 sp    0 vo     0 vn     - by   -90 tw  170 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.91 sp    0 vo     0 vn     - by   -90 tw  174 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +1.01 sp    0 vo     0 vn     - by   -90 tw -178 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +1.11 sp    0 vo     0 vn     - by   -90 tw -166 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +1.21 sp    0 vo     0 vn     - by   -90 tw -146 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +1.31 sp    0 vo     0 vn     - by   -90 tw -116 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +1.41 sp    0 vo     0 vn     - by   -90 tw -106 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +1.51 sp    0 vo     0 vn     - by   -90 tw  -96 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  SUM t_rev -  clips 2: Run_Turn_R_180_Rfoot@-0.02 > Run_Stop_F_Rfoot@0.03
+  SUM max pelvis-vs-capsule speed 56 cm/s, max chest yaw rate 768 deg/s
+
+== t 29.12  [] -> [W LeftShift]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by   -90 tw  -83 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Rfoot                 Relaxed_Stand_Run_Stops
+  +0.12 sp   57 vo   nan vn    57 by     0 tw -146 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.22 sp  117 vo   nan vn   117 by     0 tw -127 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.32 sp  155 vo   nan vn   155 by     0 tw  -90 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.42 sp  189 vo   nan vn   189 by     0 tw  -74 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.52 sp  222 vo   nan vn   222 by     0 tw  -58 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.62 sp  256 vo   nan vn   256 by     0 tw  -54 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.72 sp  289 vo   nan vn   289 by     0 tw  -46 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.82 sp  323 vo   nan vn   323 by     0 tw  -29 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.92 sp  356 vo   nan vn   356 by     0 tw   -2 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +1.02 sp  390 vo   nan vn   390 by     0 tw   22 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +1.12 sp  415 vo   nan vn   415 by     0 tw   31 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +1.22 sp  415 vo   nan vn   415 by     0 tw   -9 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +1.30 sp  415 vo   nan vn   415 by     0 tw  -32 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +1.40 sp  415 vo   nan vn   415 by     0 tw  -45 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +1.52 sp  415 vo   nan vn   415 by     0 tw  -45 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  SUM t_rev -  clips 3: Run_Stop_F_Rfoot@-0.02 > N_Walk_Reface_Start_F_R_090@0.03 > N_Run_Reface_Start_F_R_090@0.05
+  SUM max pelvis-vs-capsule speed 125 cm/s, max chest yaw rate 3457 deg/s
+
+== t 31.62  [W LeftShift] -> [W A LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn   293 by     0 tw   38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.12 sp  406 vo   383 vn   367 by   -45 tw   44 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.22 sp  415 vo   353 vn   404 by   -45 tw   31 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.30 sp  415 vo   330 vn   411 by   -45 tw   23 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_R_090         Sph_N_Run_F_Starts
+  +0.40 sp  415 vo   313 vn   414 by   -45 tw   -9 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.50 sp  415 vo   304 vn   415 by   -45 tw   43 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.62 sp  415 vo   298 vn   415 by   -45 tw   84 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.71 sp  415 vo   296 vn   415 by   -45 tw   63 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.80 sp  415 vo   295 vn   415 by   -45 tw   71 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.92 sp  415 vo   294 vn   415 by   -45 tw   28 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.02 sp  415 vo   294 vn   415 by   -45 tw   11 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.12 sp  415 vo   294 vn   415 by   -45 tw  -44 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.22 sp  415 vo   294 vn   415 by   -45 tw   -0 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.32 sp  415 vo   294 vn   415 by   -45 tw   31 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.42 sp  415 vo   294 vn   415 by   -45 tw   13 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  SUM t_rev -  clips 2: N_Run_Reface_Start_F_R_090@-0.02 > N_Run_Loop_F@0.40
+  SUM max pelvis-vs-capsule speed 66 cm/s, max chest yaw rate 747 deg/s
+
+== t 33.12  [W A LeftShift] -> [W D LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn     0 by   -45 tw   30 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.12 sp  303 vo   247 vn   177 by    45 tw  -44 | RUN    sel 1 back False max  369 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.22 sp  313 vo   146 vn   276 by    45 tw  -47 | RUN    sel 1 back False max  381 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.30 sp  350 vo    95 vn   337 by    45 tw  -35 | RUN    sel 1 back False max  388 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.42 sp  397 vo    49 vn   393 by    45 tw    4 | RUN    sel 1 back False max  396 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.50 sp  401 vo    29 vn   400 by    45 tw   22 | RUN    sel 1 back False max  401 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.60 sp  405 vo    15 vn   404 by    45 tw  -18 | RUN    sel 1 back False max  404 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.70 sp  407 vo     8 vn   407 by    45 tw  -40 | RUN    sel 1 back False max  407 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.80 sp  409 vo     4 vn   409 by    45 tw   -2 | RUN    sel 1 back False max  409 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.92 sp  411 vo     2 vn   411 by    45 tw   32 | RUN    sel 1 back False max  411 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.00 sp  412 vo     1 vn   412 by    45 tw   30 | RUN    sel 1 back False max  412 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.12 sp  413 vo     1 vn   413 by    45 tw  -34 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.22 sp  413 vo     0 vn   413 by    45 tw  -48 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.32 sp  414 vo     0 vn   414 by    45 tw   10 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +1.42 sp  414 vo     0 vn   414 by    45 tw   88 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.02  clips 2: N_Run_Loop_F@-0.02 > Run_Turn_R_090_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 113 cm/s, max chest yaw rate 1228 deg/s
+
+== t 34.62  [W D LeftShift] -> []   v_in 414
+  +0.00 sp  414 vo   414 vn     - by    45 tw   80 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_090_Lfoot             Relaxed_Stand_Run_F_Turns
+  +0.10 sp  370 vo   370 vn     - by    45 tw   53 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.20 sp  336 vo   336 vn     - by    45 tw   13 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.30 sp  253 vo   253 vn     - by    45 tw  -63 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.40 sp  157 vo   157 vn     - by    45 tw -112 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.50 sp   61 vo    61 vn     - by    45 tw -122 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.60 sp   14 vo    14 vn     - by    45 tw -129 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.70 sp    0 vo     0 vn     - by    45 tw -137 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.80 sp    0 vo     0 vn     - by    45 tw -138 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.90 sp    0 vo     0 vn     - by    45 tw -126 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.00 sp    0 vo     0 vn     - by    45 tw -115 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.10 sp    0 vo     0 vn     - by    45 tw -108 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.20 sp    0 vo     0 vn     - by    45 tw -101 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.30 sp    0 vo     0 vn     - by    45 tw  -92 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.40 sp    0 vo     0 vn     - by    45 tw  -86 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.50 sp    0 vo     0 vn     - by    45 tw  -82 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  SUM t_rev -  clips 2: Run_Turn_R_090_Lfoot@-0.02 > Run_Stop_F_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 67 cm/s, max chest yaw rate 964 deg/s
+
+== t 36.62  [] -> [W LeftShift]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by    45 tw -113 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.10 sp   44 vo   nan vn    44 by     0 tw -111 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.20 sp  101 vo   nan vn   101 by     0 tw -167 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.32 sp  147 vo   nan vn   147 by     0 tw   31 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.40 sp  173 vo   nan vn   173 by     0 tw   20 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.50 sp  205 vo   nan vn   205 by     0 tw   26 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.60 sp  236 vo   nan vn   236 by     0 tw   23 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.72 sp  273 vo   nan vn   273 by     0 tw   23 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.80 sp  300 vo   nan vn   300 by     0 tw    4 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.90 sp  332 vo   nan vn   332 by     0 tw  -23 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +1.00 sp  363 vo   nan vn   363 by     0 tw  -43 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +1.10 sp  395 vo   nan vn   395 by     0 tw  -32 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +1.20 sp  415 vo   nan vn   415 by     0 tw    1 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +1.32 sp  415 vo   nan vn   415 by     0 tw   23 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +1.40 sp  415 vo   nan vn   415 by     0 tw   44 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +1.50 sp  415 vo   nan vn   415 by     0 tw   -5 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  SUM t_rev -  clips 3: Run_Stop_F_Lfoot@-0.02 > N_Walk_Reface_Start_F_L_090@0.03 > N_Run_Reface_Start_F_L_090@0.05
+  SUM max pelvis-vs-capsule speed 110 cm/s, max chest yaw rate 257 deg/s
+
+== t 39.12  [W LeftShift] -> [D LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn     0 by     0 tw  -48 | RUN    sel 1 back False max  415 | M_Neutral_Run_Reface_Start_F_L_090         Sph_N_Run_F_Starts
+  +0.12 sp  302 vo   246 vn   176 by    90 tw  -22 | RUN    sel 1 back False max  368 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.22 sp  310 vo   146 vn   273 by    90 tw  -38 | RUN    sel 1 back False max  381 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.32 sp  353 vo    87 vn   342 by    90 tw  -51 | RUN    sel 1 back False max  390 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.42 sp  396 vo    50 vn   393 by    90 tw  -55 | RUN    sel 1 back False max  396 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.50 sp  401 vo    29 vn   400 by    90 tw  -57 | RUN    sel 1 back False max  401 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.60 sp  404 vo    15 vn   404 by    90 tw  -64 | RUN    sel 1 back False max  404 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.70 sp  407 vo     8 vn   407 by    90 tw  -19 | RUN    sel 1 back False max  407 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.82 sp  410 vo     4 vn   410 by    90 tw    8 | RUN    sel 1 back False max  410 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.92 sp  411 vo     2 vn   411 by    90 tw    5 | RUN    sel 1 back False max  411 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.02 sp  412 vo     1 vn   412 by    90 tw   -6 | RUN    sel 1 back False max  412 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.10 sp  413 vo     1 vn   413 by    90 tw  -34 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.20 sp  413 vo     0 vn   413 by    90 tw  -18 | RUN    sel 1 back False max  413 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.30 sp  414 vo     0 vn   414 by    90 tw    5 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.40 sp  414 vo     0 vn   414 by    90 tw   30 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.50 sp  414 vo     0 vn   414 by    90 tw   -4 | RUN    sel 1 back False max  414 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.03  clips 2: N_Run_Reface_Start_F_L_090@-0.02 > Run_Turn_R_090_Rfoot@0.03
+  SUM max pelvis-vs-capsule speed 99 cm/s, max chest yaw rate 563 deg/s
+
+== t 41.12  [D LeftShift] -> []   v_in 415
+  +0.00 sp  415 vo   415 vn     - by    90 tw   98 | RUN    sel 1 back False max  415 | M_Relaxed_Run_Turn_R_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.10 sp  370 vo   370 vn     - by    90 tw   38 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.22 sp  326 vo   326 vn     - by    90 tw   -9 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.30 sp  253 vo   253 vn     - by    90 tw  -60 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.42 sp  142 vo   142 vn     - by    90 tw -109 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.50 sp   61 vo    61 vn     - by    90 tw -119 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.62 sp    0 vo     0 vn     - by    90 tw -130 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.70 sp    0 vo     0 vn     - by    90 tw -138 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.80 sp    0 vo     0 vn     - by    90 tw -139 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +0.90 sp    0 vo     0 vn     - by    90 tw -125 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.00 sp    0 vo     0 vn     - by    90 tw -108 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.10 sp    0 vo     0 vn     - by    90 tw  -95 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.20 sp    0 vo     0 vn     - by    90 tw  -89 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.30 sp    0 vo     0 vn     - by    90 tw  -89 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.40 sp    0 vo     0 vn     - by    90 tw  -99 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  +1.50 sp    0 vo     0 vn     - by    90 tw -110 | WALK   sel 0 back False max  180 | M_Relaxed_Run_Stop_F_Lfoot                 Relaxed_Stand_Run_Stops
+  SUM t_rev -  clips 2: Run_Turn_R_090_Rfoot@-0.02 > Run_Stop_F_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 57 cm/s, max chest yaw rate 590 deg/s

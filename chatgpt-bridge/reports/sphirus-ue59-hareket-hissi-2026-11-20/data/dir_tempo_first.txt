@@ -1,0 +1,165 @@
+
+== t 1.50  [] -> [W]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by     0 tw   22 | RUN    sel 1 back False max  278 | M_Relaxed_Stand_Idle_Loop                  Relaxed_Stand_Idles
+  +0.20 sp  135 vo   nan vn   135 by     0 tw  106 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.42 sp  230 vo   nan vn   230 by     0 tw  156 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.60 sp  278 vo   nan vn   278 by     0 tw  100 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.80 sp  278 vo   nan vn   278 by     0 tw  180 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +1.00 sp  278 vo   nan vn   278 by     0 tw -175 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +1.20 sp  278 vo   nan vn   278 by     0 tw  174 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  SUM t_rev -  clips 3: Stand_Idle_Loop@-0.02 > CM_af_Loco_Jog_Fwd_Start@0.03 > CM_af_Loco_Jog_Fwd@1.02
+  SUM max pelvis-vs-capsule speed 50 cm/s, max chest yaw rate 596 deg/s
+
+== t 5.50  [W] -> [W LeftShift]   v_in 278
+  +0.00 sp  278 vo   278 vn   278 by     0 tw -175 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.20 sp  350 vo   350 vn   350 by     0 tw -153 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.42 sp  415 vo   415 vn   415 by     0 tw -154 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.60 sp  415 vo   415 vn   415 by     0 tw  -24 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.80 sp  415 vo   415 vn   415 by     0 tw   33 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.02 sp  415 vo   415 vn   415 by     0 tw   13 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +1.20 sp  415 vo   415 vn   415 by     0 tw  -34 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  SUM t_rev -  clips 2: CM_af_Loco_Jog_Fwd@-0.02 > N_Run_Loop_F@0.15
+  SUM max pelvis-vs-capsule speed 59 cm/s, max chest yaw rate 1412 deg/s
+
+== t 8.50  [W LeftShift] -> [W]   v_in 415
+  +0.00 sp  415 vo   415 vn   415 by     0 tw   11 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.22 sp  324 vo   324 vn   324 by     0 tw  -19 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.42 sp  278 vo   278 vn   278 by     0 tw  -52 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.62 sp  278 vo   278 vn   278 by     0 tw -167 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.82 sp  278 vo   278 vn   278 by     0 tw -173 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +1.02 sp  278 vo   278 vn   278 by     0 tw -172 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +1.22 sp  278 vo   278 vn   278 by     0 tw -179 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  SUM t_rev -  clips 2: N_Run_Loop_F@-0.02 > CM_af_Loco_Jog_Fwd@0.18
+  SUM max pelvis-vs-capsule speed 71 cm/s, max chest yaw rate 1411 deg/s
+
+== t 11.50  [W] -> [S]   v_in 278
+  +0.00 sp  278 vo   278 vn  -278 by     0 tw  153 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.20 sp   28 vo   -28 vn    28 by     0 tw   79 | RUN    sel 1 back True  max  238 | M_Neutral_Run_Pivot_F_B_Rfoot              Dense_Stand_Run_Pivots
+  +0.40 sp  155 vo  -155 vn   155 by     0 tw  146 | RUN    sel 1 back True  max  208 | M_Neutral_Run_Pivot_F_B_Rfoot              Dense_Stand_Run_Pivots
+  +0.62 sp  221 vo  -221 vn   221 by     0 tw  106 | RUN    sel 1 back True  max  221 | M_Neutral_Run_Pivot_F_B_Rfoot              Dense_Stand_Run_Pivots
+  +0.82 sp  227 vo  -227 vn   227 by     0 tw  122 | RUN    sel 1 back True  max  227 | M_Neutral_Run_Pivot_F_B_Rfoot              Dense_Stand_Run_Pivots
+  +1.02 sp  230 vo  -230 vn   230 by     0 tw -161 | RUN    sel 1 back True  max  230 | M_Neutral_Run_Pivot_F_B_Rfoot              Dense_Stand_Run_Pivots
+  +1.20 sp  232 vo  -232 vn   232 by     0 tw  157 | RUN    sel 1 back True  max  232 | M_Neutral_Run_Pivot_F_B_Rfoot              Dense_Stand_Run_Pivots
+  SUM t_rev 0.17  clips 3: CM_af_Loco_Jog_Fwd@-0.02 > Run_Turn_L_180_Rfoot@0.03 > N_Run_Pivot_F_B_Rfoot@0.05
+  SUM max pelvis-vs-capsule speed 70 cm/s, max chest yaw rate 10443 deg/s
+
+== t 14.00  [S] -> [W]   v_in 234
+  +0.00 sp  234 vo   234 vn  -234 by     0 tw  147 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_Bwd                         CM_Jog_B_Loops
+  +0.20 sp   34 vo   -34 vn    34 by     0 tw  106 | RUN    sel 1 back False max  222 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.40 sp  158 vo  -158 vn   158 by     0 tw  164 | RUN    sel 1 back False max  248 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.60 sp  238 vo  -238 vn   238 by     0 tw  124 | RUN    sel 1 back False max  262 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.80 sp  269 vo  -269 vn   269 by     0 tw  116 | RUN    sel 1 back False max  269 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +1.00 sp  273 vo  -273 vn   273 by     0 tw -164 | RUN    sel 1 back False max  273 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +1.20 sp  276 vo  -276 vn   276 by     0 tw  169 | RUN    sel 1 back False max  276 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  SUM t_rev 0.17  clips 4: CM_af_Loco_Jog_Bwd@-0.02 > CM_af_Loco_Jog_Fwd_Pivot@0.03 > CM_af_Loco_Jog_Fwd_Start@0.08 > CM_af_Loco_Jog_Fwd@1.13
+  SUM max pelvis-vs-capsule speed 54 cm/s, max chest yaw rate 743 deg/s
+
+== t 16.50  [W] -> [A]   v_in 278
+  +0.00 sp  278 vo   278 vn     0 by     0 tw -178 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.20 sp  241 vo   107 vn   216 by   -90 tw  121 | RUN    sel 1 back False max  263 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.40 sp  270 vo    26 vn   269 by   -90 tw   79 | RUN    sel 1 back False max  270 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.60 sp  274 vo     6 vn   274 by   -90 tw   22 | RUN    sel 1 back False max  274 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.80 sp  276 vo     2 vn   276 by   -90 tw   56 | RUN    sel 1 back False max  276 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.00 sp  277 vo     0 vn   277 by   -90 tw   21 | RUN    sel 1 back False max  277 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.20 sp  277 vo     0 vn   277 by   -90 tw  -20 | RUN    sel 1 back False max  277 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.03  clips 2: CM_af_Loco_Jog_Fwd@-0.02 > Run_Turn_L_090_Rfoot@0.03
+  SUM max pelvis-vs-capsule speed 97 cm/s, max chest yaw rate 6195 deg/s
+
+== t 18.50  [A] -> [D]   v_in 278
+  +0.00 sp  278 vo   278 vn  -278 by   -90 tw  -69 | RUN    sel 1 back False max  278 | M_Relaxed_Run_Turn_L_090_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.22 sp   36 vo   -36 vn    36 by    90 tw   44 | RUN    sel 1 back False max  223 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.42 sp  158 vo  -158 vn   158 by    90 tw   43 | RUN    sel 1 back False max  248 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.60 sp  230 vo  -230 vn   230 by    90 tw   28 | RUN    sel 1 back False max  261 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.82 sp  269 vo  -269 vn   269 by    90 tw   55 | RUN    sel 1 back False max  269 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.00 sp  273 vo  -273 vn   273 by    90 tw   59 | RUN    sel 1 back False max  273 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +1.21 sp  276 vo  -276 vn   276 by    90 tw    7 | RUN    sel 1 back False max  276 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  SUM t_rev 0.17  clips 2: Run_Turn_L_090_Rfoot@-0.02 > Run_Turn_L_180_Rfoot@0.03
+  SUM max pelvis-vs-capsule speed 97 cm/s, max chest yaw rate 3030 deg/s
+
+== t 20.52  [D] -> []   v_in 278
+  +0.00 sp  278 vo   278 vn     - by    90 tw  -18 | RUN    sel 1 back False max  278 | M_Relaxed_Run_Turn_L_180_Rfoot             Relaxed_Stand_Run_F_Turns
+  +0.20 sp  252 vo   252 vn     - by    90 tw  -72 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +0.42 sp  157 vo   157 vn     - by    90 tw  167 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +0.62 sp   18 vo    18 vn     - by    90 tw -139 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +0.80 sp    0 vo     0 vn     - by    90 tw  -48 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +1.00 sp    0 vo     0 vn     - by    90 tw   58 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +1.20 sp    0 vo     0 vn     - by    90 tw  143 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  SUM t_rev -  clips 2: Run_Turn_L_180_Rfoot@-0.02 > CM_af_Loco_Jog_Fwd_Stop@0.03
+  SUM max pelvis-vs-capsule speed 64 cm/s, max chest yaw rate 6210 deg/s
+
+== t 22.52  [] -> [S]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by    90 tw   20 | RUN    sel 1 back False max  278 | M_Relaxed_Stand_Idle_Loop                  Relaxed_Stand_Idles
+  +0.22 sp  137 vo   nan vn   137 by     0 tw  -33 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_BwdRight                    CM_Jog_B_Loops
+  +0.40 sp  209 vo   nan vn   209 by     0 tw  114 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_BwdRight                    CM_Jog_B_Loops
+  +0.60 sp  234 vo   nan vn   234 by     0 tw -156 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_BwdRight                    CM_Jog_B_Loops
+  +0.80 sp  234 vo   nan vn   234 by     0 tw  -12 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_BwdRight                    CM_Jog_B_Loops
+  +1.00 sp  234 vo   nan vn   234 by     0 tw   71 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_Bwd                         CM_Jog_B_Loops
+  +1.20 sp  234 vo   nan vn   234 by     0 tw  -30 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_Bwd                         CM_Jog_B_Loops
+  SUM t_rev -  clips 4: Stand_Idle_Loop@-0.02 > CM_af_Loco_Jog_Start_TurnR090_Rfoot@0.03 > CM_af_Loco_Jog_BwdRight@0.05 > CM_af_Loco_Jog_Bwd@0.85
+  SUM max pelvis-vs-capsule speed 35 cm/s, max chest yaw rate 9491 deg/s
+
+== t 25.52  [S] -> []   v_in 234
+  +0.00 sp  234 vo   234 vn     - by     0 tw  -42 | RUN    sel 1 back True  max  234 | CM_af_Loco_Jog_Bwd                         CM_Jog_B_Loops
+  +0.20 sp  153 vo   153 vn     - by     0 tw  168 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +0.40 sp   85 vo    85 vn     - by     0 tw  116 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +0.60 sp    0 vo     0 vn     - by     0 tw  123 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +0.80 sp    0 vo     0 vn     - by     0 tw -180 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +1.00 sp    0 vo     0 vn     - by     0 tw  169 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +1.20 sp    0 vo     0 vn     - by     0 tw  166 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  SUM t_rev -  clips 2: CM_af_Loco_Jog_Bwd@-0.02 > CM_af_Loco_Jog_Bwd_Stop@0.03
+  SUM max pelvis-vs-capsule speed 63 cm/s, max chest yaw rate 10679 deg/s
+
+== t 27.52  [] -> [W]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by     0 tw  137 | RUN    sel 1 back False max  278 | M_Relaxed_Stand_Idle_Loop                  Relaxed_Stand_Idles
+  +0.20 sp  130 vo   nan vn   130 by     0 tw  128 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.40 sp  211 vo   nan vn   211 by     0 tw  156 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.60 sp  278 vo   nan vn   278 by     0 tw   99 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +0.80 sp  278 vo   nan vn   278 by     0 tw  178 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +1.00 sp  278 vo   nan vn   278 by     0 tw -174 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Start                   CM_Jog_F_Starts
+  +1.20 sp  278 vo   nan vn   278 by     0 tw  174 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  SUM t_rev -  clips 3: Stand_Idle_Loop@-0.02 > CM_af_Loco_Jog_Fwd_Start@0.03 > CM_af_Loco_Jog_Fwd@1.02
+  SUM max pelvis-vs-capsule speed 51 cm/s, max chest yaw rate 602 deg/s
+
+== t 30.52  [W] -> []   v_in 278
+  +0.00 sp  278 vo   278 vn     - by     0 tw  176 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd                         CM_Jog_F_Loops
+  +0.20 sp  246 vo   246 vn     - by     0 tw  166 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +0.42 sp   58 vo    58 vn     - by     0 tw  -88 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +0.60 sp    0 vo     0 vn     - by     0 tw -116 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +0.80 sp    0 vo     0 vn     - by     0 tw  -27 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +1.00 sp    0 vo     0 vn     - by     0 tw  160 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  +1.20 sp    0 vo     0 vn     - by     0 tw  155 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Fwd_Stop                    CM_Jog_Stops
+  SUM t_rev -  clips 2: CM_af_Loco_Jog_Fwd@-0.02 > CM_af_Loco_Jog_Fwd_Stop@0.03
+  SUM max pelvis-vs-capsule speed 66 cm/s, max chest yaw rate 729 deg/s
+
+== t 32.52  [] -> [W LeftShift]   v_in 0
+  +0.00 sp    0 vo   nan vn     0 by     0 tw   20 | RUN    sel 1 back False max  278 | M_Relaxed_Stand_Idle_Loop                  Relaxed_Stand_Idles
+  +0.22 sp  138 vo   nan vn   138 by     0 tw   80 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.42 sp  222 vo   nan vn   222 by     0 tw    8 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.61 sp  299 vo   nan vn   299 by     0 tw  -38 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +0.81 sp  380 vo   nan vn   380 by     0 tw    2 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.01 sp  415 vo   nan vn   415 by     0 tw  -14 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  +1.21 sp  415 vo   nan vn   415 by     0 tw  -47 | RUN    sel 1 back False max  415 | M_Neutral_Run_Start_F_Lfoot                Sph_N_Run_F_Starts
+  SUM t_rev -  clips 2: Stand_Idle_Loop@-0.02 > N_Run_Start_F_Lfoot@0.03
+  SUM max pelvis-vs-capsule speed 108 cm/s, max chest yaw rate 1401 deg/s
+
+== t 35.53  [W LeftShift] -> [S LeftShift]   v_in 415
+  +0.00 sp  415 vo   415 vn  -415 by     0 tw   36 | RUN    sel 1 back False max  415 | M_Neutral_Run_Loop_F                       Sph_N_Run_F_Loops
+  +0.22 sp   60 vo    60 vn   -60 by     0 tw  -19 | RUN    sel 1 back True  max  232 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  +0.40 sp   91 vo   -91 vn    91 by     0 tw  -94 | RUN    sel 1 back True  max  216 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  +0.60 sp  185 vo  -185 vn   185 by     0 tw -111 | RUN    sel 1 back True  max  198 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  +0.80 sp  215 vo  -215 vn   215 by     0 tw -105 | RUN    sel 1 back True  max  215 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  +1.00 sp  224 vo  -224 vn   224 by     0 tw  -84 | RUN    sel 1 back True  max  224 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  +1.20 sp  228 vo  -228 vn   228 by     0 tw  -81 | RUN    sel 1 back True  max  228 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  SUM t_rev 0.28  clips 3: N_Run_Loop_F@-0.02 > Run_Turn_L_180_Lfoot@0.03 > N_Run_Pivot_F_B_Lfoot@0.05
+  SUM max pelvis-vs-capsule speed 83 cm/s, max chest yaw rate 751 deg/s
+
+== t 38.03  [S LeftShift] -> []   v_in 234
+  +0.00 sp  234 vo   234 vn     - by     0 tw   90 | RUN    sel 1 back True  max  234 | M_Neutral_Run_Pivot_F_B_Lfoot              Dense_Stand_Run_Pivots
+  +0.20 sp  121 vo   121 vn     - by     0 tw  153 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +0.42 sp   51 vo    51 vn     - by     0 tw  -24 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +0.60 sp    0 vo     0 vn     - by     0 tw  129 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +0.80 sp    0 vo     0 vn     - by     0 tw -174 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +1.00 sp    0 vo     0 vn     - by     0 tw  162 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  +1.20 sp    0 vo     0 vn     - by     0 tw  159 | RUN    sel 1 back False max  278 | CM_af_Loco_Jog_Bwd_Stop                    CM_Jog_Stops
+  SUM t_rev -  clips 2: N_Run_Pivot_F_B_Lfoot@-0.02 > CM_af_Loco_Jog_Bwd_Stop@0.03
+  SUM max pelvis-vs-capsule speed 61 cm/s, max chest yaw rate 2706 deg/s

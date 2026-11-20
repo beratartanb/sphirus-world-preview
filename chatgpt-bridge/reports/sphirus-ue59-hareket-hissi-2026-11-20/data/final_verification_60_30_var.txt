@@ -1,0 +1,223 @@
+#### fin_A_60
+t   1.55 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 16.0 R  1.5 | pelvis drop 21.3 | dur 1.30
+t   4.55 [W+Sh]->[S+Sh] 180 deg v_in 415 | t_rev 0.35 vmin   3 @0.35 | drift L  0.3 R  2.0 | pelvis drop 16.0 | dur 1.30
+t   6.75 [S+Sh]->[W+Sh] 180 deg v_in 234 | t_rev 0.17 vmin   3 @0.15 | drift L  0.9 R  2.7 | pelvis drop 20.3 | dur 1.30
+t  10.95 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 14.1 R  1.6 | pelvis drop 21.0 | dur 1.30
+t  13.95 [W+Sh]->[S] 180 deg v_in 415 | t_rev 0.38 vmin   4 @0.37 | drift L  1.1 R  0.8 | pelvis drop 15.6 | dur 1.28
+t  18.15 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 14.4 R  1.5 | pelvis drop 21.3 | dur 1.30
+t  21.15 [W+Sh]->[A+Sh]  90 deg v_in 415 | t_rev 0.03 vmin 310 @0.13 | drift L  0.0 R  0.1 | pelvis drop 12.1 | dur 1.30
+t  23.15 [A+Sh]->[D+Sh] 180 deg v_in 415 | t_rev 0.38 vmin   4 @0.38 | drift L  1.1 R 21.2 | pelvis drop 15.3 | dur 1.30
+t  25.15 [D+Sh]->[A+Sh] 180 deg v_in 414 | t_rev 0.40 vmin   2 @0.38 | drift L  3.5 R  0.5 | pelvis drop 16.2 | dur 1.30
+t  29.15 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  1.0 R 12.1 | pelvis drop 19.3 | dur 1.30
+t  31.65 [W+Sh]->[W A+Sh]  45 deg v_in 415 | t_rev 0.00 vmin 410 @0.05 | drift L  0.0 R  0.0 | pelvis drop  5.7 | dur 1.28
+t  33.15 [W A+Sh]->[W D+Sh]  90 deg v_in 415 | t_rev 0.00 vmin 303 @0.15 | drift L  0.0 R  0.0 | pelvis drop 14.2 | dur 1.30
+t  36.65 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  6.2 R  8.3 | pelvis drop 11.4 | dur 1.30
+t  39.15 [W+Sh]->[D+Sh]  90 deg v_in 415 | t_rev 0.03 vmin 303 @0.15 | drift L  0.0 R  0.0 | pelvis drop 19.8 | dur 1.30
+WORST 21.2  MEAN 6.8  n 14
+  seg  4 after "W+Sh" 2.20s            v_in 415 v_win 415 | stop 0.55s path  111 cm held 0.55s | pelvis drop  8.8 @0.30 settle 0.82 | drift L  0.0 R  4.7(0.28, 0.83) nC 0/1 | M_Relaxed_Run_Pivot_B_F_L
+  seg  7 after "S" 2.20s                      v_in 150 v_win 150 | stop 0.25s path   16 cm held 0.25s | pelvis drop -0.5 @0.27 settle 0.45 | drift L  0.8(0.0, 0.53) R  0.4(0.43, 0.53) nC 1/1 | M_Neutr
+  seg 12 after "A+Sh" 2.00s            v_in 414 v_win 412 | stop 0.48s path   87 cm held 0.48s | pelvis drop  3.3 @0.22 settle 0.72 | drift L  0.0 R  8.3(0.22, 0.77) nC 0/1 | M_Relaxed_Run_Turn_R_180_
+  seg 16 after "W D+Sh" 1.50s          v_in 414 v_win 414 | stop 0.62s path  136 cm held 0.62s | pelvis drop 11.3 @0.38 settle 1.07 | drift L  0.8(0.43, 0.73) R  0.2(0.73, 0.92) nC 1/1 | M_Relaxed_Run
+  seg 19 after "D+Sh" 2.00s            v_in 415 v_win 415 | stop 0.58s path  124 cm held 0.58s | pelvis drop  9.9 @0.35 settle 1.05 | drift L  0.8(0.4, 0.7) R  0.2(0.7, 0.87) nC 1/1 | M_Relaxed_Run_Tu
+fin_A_60: 2586 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_B_60
+t   1.55 []->[W+Sh+Ct]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 16.0 R  1.6 | pelvis drop 21.5 | dur 1.30
+t   5.05 [W+Sh+Ct]->[S+Sh+Ct] 180 deg v_in 585 | t_rev 0.48 vmin   4 @0.47 | drift L 49.6 R 26.5 | pelvis drop 12.3 | dur 1.30
+t   9.75 []->[W+Sh+Ct]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 14.1 R  1.6 | pelvis drop 21.4 | dur 1.30
+t  13.25 [W+Sh+Ct]->[D+Sh+Ct]  90 deg v_in 585 | t_rev 0.03 vmin 378 @0.42 | drift L  0.0 R  0.0 | pelvis drop 15.0 | dur 1.30
+t  15.25 [D+Sh+Ct]->[A+Sh+Ct] 180 deg v_in 584 | t_rev 0.53 vmin   3 @0.53 | drift L  0.4 R 24.3 | pelvis drop 11.5 | dur 1.30
+t  19.75 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  0.9 R  8.3 | pelvis drop  6.1 | dur 1.30
+t  22.75 [W]->[S] 180 deg v_in 180 | t_rev 0.18 vmin   3 @0.18 | drift L 20.1 R  0.5 | pelvis drop  9.3 | dur 1.30
+t  24.95 [S]->[W] 180 deg v_in 150 | t_rev 0.17 vmin   3 @0.17 | drift L  1.9 R  0.5 | pelvis drop  5.6 | dur 1.30
+t  27.15 [W]->[A]  90 deg v_in 180 | t_rev 0.03 vmin 139 @0.12 | drift L  0.1 R  0.7 | pelvis drop  3.2 | dur 1.30
+t  29.15 [A]->[D] 180 deg v_in 180 | t_rev 0.18 vmin   1 @0.17 | drift L  4.5 R  0.9 | pelvis drop  5.4 | dur 1.30
+t  33.15 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  9.1 R  0.1 | pelvis drop  0.2 | dur 0.13
+t  34.50 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 11.2 R  0.5 | pelvis drop  1.2 | dur 0.18
+t  35.90 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 11.6 R  1.5 | pelvis drop 21.2 | dur 0.48
+t  37.90 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 12.6 R  1.4 | pelvis drop 20.3 | dur 1.30
+WORST 49.6  MEAN 13.1  n 14
+  seg  3 after "S+Sh+Ct" 2.20s v_in 233 v_win 233 | stop 0.62s path   92 cm held 0.62s | pelvis drop 11.8 @0.43 settle 1.27 | drift L  2.9(0.58, 0.9) R  4.0(0.33, 0.73) nC 1/1 | M_Neutral_Run_Pivot_F_
+  seg  7 after "A+Sh+Ct" 2.00s v_in 582 v_win 525 | stop 0.62s path  183 cm held 0.62s | pelvis drop  6.1 @0.35 settle 1.05 | drift L  1.7(0.4, 0.7) R  0.3(0.7, 0.9) nC 1/1 | M_Relaxed_Sprint_Turn_180
+  seg 13 after "D" 2.00s                      v_in 180 v_win 180 | stop 0.55s path   48 cm held 0.55s | pelvis drop  1.8 @0.30 settle 0.50 | drift L  0.5(0.72, 0.83) R  0.1(0.32, 0.83) nC 2/1 | M_Neut
+  seg 15 after "W" 0.15s                      v_in  60 v_win  23 | stop 0.08s path    4 cm held 0.08s | pelvis drop  4.5 @0.23 settle 0.37 | drift L  0.0 R 10.7(0.0, 0.37) nC 0/1 | M_Neutral_Walk_Refa
+  seg 17 after "W+Sh" 0.20s            v_in 130 v_win  52 | stop 0.35s path   22 cm held 0.35s | pelvis drop 13.2 @0.20 settle 0.55 | drift L  0.1(0.22, 0.63) R  7.1(0.0, 0.12) nC 1/1 | M_Neutral_Run_
+  seg 19 after "W+Sh" 0.50s            v_in 306 v_win 149 | stop 0.62s path  119 cm held 0.62s | pelvis drop 14.0 @0.00 settle 0.80 | drift L  3.4(0.0, 0.17) R  0.8(0.35, 0.9) nC 1/1 | M_Neutral_Run_S
+  seg 23 after "W+Sh" 2.00s            v_in 415 v_win 415 | stop 0.55s path  110 cm held 0.55s | pelvis drop 12.1 @0.33 settle 1.02 | drift L  0.9(0.37, 0.67) R  0.2(0.67, 0.83) nC 1/1 | M_Neutral_Run
+fin_B_60: 2841 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_C_60
+t   3.05 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  0.9 R  0.5 | pelvis drop  9.8 | dur 1.30
+t  10.55 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  0.9 R  0.9 | pelvis drop  9.7 | dur 0.98
+t  19.05 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 14.8 R  1.6 | pelvis drop 21.0 | dur 0.98
+t  28.05 []->[S]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  3.7 R  6.9 | pelvis drop  7.8 | dur 1.30
+t  34.05 []->[A]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  8.9 R  1.2 | pelvis drop  9.3 | dur 1.28
+WORST 14.8  MEAN 6.5  n 5
+  seg  2 after "W" 5.00s                      v_in 180 v_win 180 | stop 0.62s path   69 cm held 0.62s | pelvis drop  4.6 @0.00 settle 0.88 | drift L  0.3(0.32, 0.92) R  2.5(0.07, 0.22) nC 1/1 | M_Neut
+  seg  5 after "W+Sh" 5.00s            v_in 415 v_win 415 | stop 0.55s path  110 cm held 0.55s | pelvis drop 10.9 @0.33 settle 1.02 | drift L  0.9(0.37, 0.67) R  0.2(0.67, 0.83) nC 1/1 | M_Neutral_Run
+  seg  8 after "W+Sh+Ct" 5.00s v_in 585 v_win 585 | stop 0.62s path  184 cm held 0.62s | pelvis drop 10.3 @0.35 settle 1.05 | drift L  1.7(0.4, 0.7) R  0.3(0.7, 0.9) nC 1/1 | M_Relaxed_Sprint_Loop_F >
+  seg 10 after "S" 4.00s                      v_in 150 v_win 150 | stop 0.35s path   29 cm held 0.35s | pelvis drop  3.6 @0.15 settle 0.62 | drift L  0.5(0.17, 0.63) R  0.3(0.53, 0.63) nC 1/1 | M_Neut
+  seg 12 after "A" 4.00s                      v_in 180 v_win 180 | stop 0.42s path   42 cm held 0.42s | pelvis drop  5.2 @0.12 settle 0.38 | drift L  0.2(0.58, 0.7) R  0.3(0.2, 0.7) nC 1/1 | M_Neutral
+fin_C_60: 2430 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_V_60
+t   1.55 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  0.5 R  7.5 | pelvis drop 11.9 | dur 1.28
+t  11.55 [W]->[S] 180 deg v_in 278 | t_rev 0.18 vmin   1 @0.18 | drift L  0.0 R  1.8 | pelvis drop 11.8 | dur 1.28
+t  14.05 [S]->[W] 180 deg v_in 234 | t_rev 0.17 vmin   1 @0.15 | drift L  7.7 R  0.2 | pelvis drop  9.7 | dur 1.30
+t  16.55 [W]->[A]  90 deg v_in 278 | t_rev 0.03 vmin 220 @0.10 | drift L  0.0 R  0.4 | pelvis drop 13.8 | dur 1.30
+t  18.55 [A]->[D] 180 deg v_in 278 | t_rev 0.20 vmin   2 @0.18 | drift L  0.9 R  0.3 | pelvis drop 16.0 | dur 1.30
+t  22.55 []->[S]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  2.6 R  8.8 | pelvis drop  7.2 | dur 1.30
+t  27.55 []->[W]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L  1.4 R  6.7 | pelvis drop 11.6 | dur 1.30
+t  32.55 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.03 vmin   0 @0.00 | drift L 14.2 R  1.6 | pelvis drop 20.9 | dur 1.30
+t  35.55 [W+Sh]->[S+Sh] 180 deg v_in 415 | t_rev 0.37 vmin   4 @0.35 | drift L  0.4 R  2.4 | pelvis drop 15.9 | dur 1.30
+WORST 14.2  MEAN 5.6  n 9
+  seg  8 after "D" 2.00s                      v_in 278 v_win 277 | stop 0.42s path   59 cm held 0.42s | pelvis drop  6.5 @0.17 settle 0.87 | drift L 51.0(0.1, 0.53) R  0.2(0.53, 0.72) nC 1/1 | M_Relax
+  seg 10 after "S" 3.00s                      v_in 234 v_win 234 | stop 0.42s path   51 cm held 0.42s | pelvis drop  7.4 @0.23 settle 1.05 | drift L  1.8(0.38, 0.7) R 23.1(0.15, 0.53) nC 1/1 | CM_af_L
+  seg 12 after "W" 3.00s                      v_in 278 v_win 278 | stop 0.58s path  102 cm held 0.58s | pelvis drop 10.3 @0.37 settle 0.85 | drift L  7.3(0.0, 0.17) R  0.9(0.32, 0.87) nC 1/1 | CM_af_L
+  seg 15 after "S+Sh" 2.50s            v_in 234 v_win 234 | stop 0.52s path   72 cm held 0.52s | pelvis drop  9.7 @0.35 settle 1.18 | drift L  1.6(0.48, 0.8) R  6.6(0.27, 0.63) nC 1/1 | M_Neutral_Run_
+fin_V_60: 2400 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_A_30
+t   1.52 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 18.2 R  6.7 | pelvis drop 20.2 | dur 1.30
+t   4.52 [W+Sh]->[S+Sh] 180 deg v_in 415 | t_rev 0.33 vmin   6 @0.30 | drift L 10.1 R  0.7 | pelvis drop 17.0 | dur 1.30
+t   6.72 [S+Sh]->[W+Sh] 180 deg v_in 234 | t_rev 0.17 vmin   7 @0.17 | drift L  0.0 R  0.5 | pelvis drop 18.8 | dur 1.30
+t  10.92 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 18.2 R  6.7 | pelvis drop 20.4 | dur 1.30
+t  13.92 [W+Sh]->[S] 180 deg v_in 415 | t_rev 0.33 vmin   1 @0.33 | drift L  8.3 R  0.6 | pelvis drop 16.3 | dur 1.30
+t  18.12 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 18.6 R  7.8 | pelvis drop 20.9 | dur 1.30
+t  21.12 [W+Sh]->[A+Sh]  90 deg v_in 415 | t_rev 0.07 vmin 314 @0.13 | drift L  0.0 R  0.0 | pelvis drop 11.7 | dur 1.30
+t  23.12 [A+Sh]->[D+Sh] 180 deg v_in 415 | t_rev 0.37 vmin   1 @0.33 | drift L  1.0 R 11.5 | pelvis drop 14.2 | dur 1.30
+t  25.12 [D+Sh]->[A+Sh] 180 deg v_in 414 | t_rev 0.37 vmin   6 @0.33 | drift L  1.9 R  9.6 | pelvis drop 15.9 | dur 1.30
+t  29.12 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  1.1 R  5.4 | pelvis drop 19.6 | dur 1.30
+t  31.62 [W+Sh]->[W A+Sh]  45 deg v_in 415 | t_rev 0.00 vmin 410 @0.07 | drift L  0.0 R  0.0 | pelvis drop  5.7 | dur 1.30
+t  33.12 [W A+Sh]->[W D+Sh]  90 deg v_in 415 | t_rev 0.00 vmin 308 @0.17 | drift L  0.0 R  0.0 | pelvis drop 14.9 | dur 1.30
+t  36.62 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 21.3 R  6.0 | pelvis drop 13.5 | dur 1.27
+t  39.12 [W+Sh]->[D+Sh]  90 deg v_in 415 | t_rev 0.07 vmin 306 @0.17 | drift L  0.0 R  0.0 | pelvis drop 18.6 | dur 1.27
+WORST 21.3  MEAN 8.7  n 14
+  seg  4 after "W+Sh" 2.20s            v_in 415 v_win 415 | stop 0.57s path  122 cm held 0.57s | pelvis drop  8.7 @0.30 settle 0.83 | drift L  0.0 R  3.8(0.3, 0.83) nC 0/1 | M_Relaxed_Run_Pivot_B_F_Lf
+  seg  7 after "S" 2.20s                      v_in 150 v_win 150 | stop 0.27s path   19 cm held 0.27s | pelvis drop  0.0 @0.23 settle 0.47 | drift L  2.3(0.0, 0.57) R  0.0 nC 1/0 | M_Neutral_Walk_Loop
+  seg 12 after "A+Sh" 2.00s            v_in 414 v_win 413 | stop 0.47s path   87 cm held 0.47s | pelvis drop  3.0 @0.20 settle 0.73 | drift L  0.0 R 23.4(0.17, 0.77) nC 0/1 | M_Relaxed_Run_Turn_R_180_
+  seg 16 after "W D+Sh" 1.50s          v_in 415 v_win 414 | stop 0.63s path  146 cm held 0.63s | pelvis drop 11.3 @0.40 settle 1.10 | drift L  0.5(0.47, 0.73) R  0.2(0.77, 0.93) nC 1/1 | M_Relaxed_Run
+  seg 19 after "D+Sh" 2.00s            v_in 415 v_win 415 | stop 0.60s path  134 cm held 0.60s | pelvis drop  9.9 @0.37 settle 1.07 | drift L  0.6(0.43, 0.7) R  0.2(0.73, 0.9) nC 1/1 | M_Relaxed_Run_T
+fin_A_30: 1293 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_B_30
+t   1.52 []->[W+Sh+Ct]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 18.2 R  6.7 | pelvis drop 20.4 | dur 1.27
+t   5.02 [W+Sh+Ct]->[S+Sh+Ct] 180 deg v_in 585 | t_rev 0.50 vmin   4 @0.50 | drift L 12.0 R 16.2 | pelvis drop 17.9 | dur 1.30
+t   9.72 []->[W+Sh+Ct]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 18.3 R  7.1 | pelvis drop 20.9 | dur 1.30
+t  13.22 [W+Sh+Ct]->[D+Sh+Ct]  90 deg v_in 585 | t_rev 0.07 vmin 389 @0.40 | drift L  0.0 R  0.0 | pelvis drop 12.2 | dur 1.27
+t  15.22 [D+Sh+Ct]->[A+Sh+Ct] 180 deg v_in 584 | t_rev 0.57 vmin   1 @0.57 | drift L 32.5 R  0.0 | pelvis drop 16.6 | dur 1.27
+t  19.72 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  3.2 R  8.2 | pelvis drop  6.3 | dur 1.30
+t  22.72 [W]->[S] 180 deg v_in 180 | t_rev 0.20 vmin   5 @0.17 | drift L 17.1 R  0.5 | pelvis drop  7.3 | dur 1.30
+t  24.92 [S]->[W] 180 deg v_in 150 | t_rev 0.17 vmin   2 @0.17 | drift L  0.3 R  0.3 | pelvis drop  5.5 | dur 1.27
+t  27.12 [W]->[A]  90 deg v_in 180 | t_rev 0.07 vmin 141 @0.13 | drift L  0.2 R  0.9 | pelvis drop  5.0 | dur 1.30
+t  29.12 [A]->[D] 180 deg v_in 180 | t_rev 0.20 vmin   2 @0.17 | drift L  5.1 R  0.1 | pelvis drop  7.3 | dur 1.30
+t  34.45 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  5.9 R  0.8 | pelvis drop  1.0 | dur 0.17
+t  35.85 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 18.8 R  9.0 | pelvis drop 19.4 | dur 0.47
+t  37.85 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 15.3 R  8.2 | pelvis drop 19.7 | dur 1.30
+WORST 32.5  MEAN 12.1  n 13
+  seg  3 after "S+Sh+Ct" 2.20s v_in 234 v_win 233 | stop 0.60s path   89 cm held 0.60s | pelvis drop  5.7 @0.33 settle 0.50 | drift L  0.0 R  0.8(0.63, 0.9) nC 0/1 | M_Neutral_Run_Pivot_F_B_Lfoot > M_
+  seg  7 after "A+Sh+Ct" 2.00s v_in 582 v_win 514 | stop 0.60s path  175 cm held 0.60s | pelvis drop  2.5 @0.33 settle 0.83 | drift L  0.0 R  0.1(0.37, 0.87) nC 0/1 | M_Relaxed_Sprint_Turn_180_R_Lfoot
+  seg 13 after "D" 2.00s                      v_in 180 v_win 180 | stop 0.53s path   59 cm held 0.53s | pelvis drop  2.2 @0.27 settle 0.50 | drift L  0.2(0.0, 0.17) R  0.2(0.3, 0.8) nC 1/1 | M_Neutral
+  seg 17 after "W+Sh" 0.20s            v_in 114 v_win  35 | stop 0.37s path   24 cm held 0.37s | pelvis drop 12.2 @0.23 settle 0.60 | drift L  0.1(0.27, 0.63) R  0.9(0.0, 0.1) nC 1/1 | M_Neutral_Run_S
+  seg 19 after "W+Sh" 0.50s            v_in 294 v_win 131 | stop 0.63s path  124 cm held 0.63s | pelvis drop 15.1 @0.03 settle 0.83 | drift L  2.5(0.0, 0.17) R  0.4(0.37, 0.93) nC 1/1 | M_Neutral_Run_
+  seg 23 after "W+Sh" 2.00s            v_in 415 v_win 415 | stop 0.60s path  129 cm held 0.60s | pelvis drop 13.3 @0.37 settle 1.07 | drift L  0.6(0.43, 0.7) R  0.1(0.73, 0.87) nC 1/1 | M_Neutral_Run_
+fin_B_30: 1420 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_C_30
+t   3.02 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  4.3 R  0.5 | pelvis drop  8.5 | dur 1.27
+t  10.52 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  3.9 R  0.6 | pelvis drop  8.4 | dur 0.97
+t  19.02 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 19.0 R  7.9 | pelvis drop 20.6 | dur 0.97
+t  28.02 []->[S]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  2.2 R  7.1 | pelvis drop  7.8 | dur 1.30
+t  34.02 []->[A]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  6.6 R  1.2 | pelvis drop  9.4 | dur 1.30
+WORST 19.0  MEAN 8.2  n 5
+  seg  2 after "W" 5.00s                      v_in 180 v_win 180 | stop 0.30s path   25 cm held 0.30s | pelvis drop  5.7 @0.00 settle 0.27 | drift L  0.2(0.47, 0.6) R  1.0(0.1, 0.6) nC 1/1 | M_Neutral
+  seg  5 after "W+Sh" 5.00s            v_in 415 v_win 415 | stop 0.53s path  106 cm held 0.53s | pelvis drop  9.5 @0.33 settle 1.00 | drift L  0.6(0.37, 0.63) R  0.1(0.67, 0.8) nC 1/1 | M_Neutral_Run_
+  seg  8 after "W+Sh+Ct" 5.00s v_in 585 v_win 585 | stop 0.63s path  190 cm held 0.63s | pelvis drop 10.5 @0.37 settle 1.07 | drift L  0.7(0.43, 0.7) R  0.1(0.73, 0.9) nC 1/1 | M_Relaxed_Sprint_Loop_F
+  seg 10 after "S" 4.00s                      v_in 150 v_win 150 | stop 0.37s path   32 cm held 0.37s | pelvis drop  3.3 @0.17 settle 0.63 | drift L  0.7(0.17, 0.63) R  0.0 nC 1/0 | M_Neutral_Walk_Loo
+  seg 12 after "A" 4.00s                      v_in 180 v_win 180 | stop 0.37s path   35 cm held 0.37s | pelvis drop  5.0 @0.13 settle 0.37 | drift L  0.1(0.53, 0.67) R  0.6(0.23, 0.67) nC 1/1 | M_Neut
+fin_C_30: 1215 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_V_30
+t   1.52 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  1.3 R  8.8 | pelvis drop 11.7 | dur 1.30
+t  11.52 [W]->[S] 180 deg v_in 278 | t_rev 0.20 vmin  13 @0.20 | drift L  0.0 R  0.0 | pelvis drop  7.9 | dur 1.30
+t  14.02 [S]->[W] 180 deg v_in 234 | t_rev 0.17 vmin   9 @0.17 | drift L  6.4 R  0.2 | pelvis drop  7.4 | dur 1.27
+t  16.52 [W]->[A]  90 deg v_in 278 | t_rev 0.07 vmin 221 @0.13 | drift L  0.0 R  0.3 | pelvis drop 14.3 | dur 1.30
+t  18.52 [A]->[D] 180 deg v_in 278 | t_rev 0.20 vmin  10 @0.20 | drift L  0.7 R  0.0 | pelvis drop 15.1 | dur 1.30
+t  22.52 []->[S]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  1.3 R  0.0 | pelvis drop  7.0 | dur 1.30
+t  27.52 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  1.3 R  7.5 | pelvis drop 11.7 | dur 1.30
+t  32.52 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 16.2 R  1.6 | pelvis drop 20.9 | dur 1.30
+t  35.52 [W+Sh]->[S+Sh] 180 deg v_in 415 | t_rev 0.33 vmin  12 @0.33 | drift L  8.6 R  0.7 | pelvis drop 16.9 | dur 1.27
+WORST 16.2  MEAN 5.5  n 9
+  seg  8 after "D" 2.00s                      v_in 278 v_win 278 | stop 0.43s path   64 cm held 0.43s | pelvis drop  6.0 @0.17 settle 0.90 | drift L 59.8(0.1, 0.53) R  0.2(0.57, 0.7) nC 1/1 | M_Relaxe
+  seg 10 after "S" 3.00s                      v_in 234 v_win 234 | stop 0.43s path   55 cm held 0.43s | pelvis drop  7.1 @0.27 settle 0.67 | drift L  1.5(0.4, 0.7) R 19.3(0.17, 0.53) nC 1/1 | CM_af_Lo
+  seg 12 after "W" 3.00s                      v_in 278 v_win 278 | stop 0.60s path  105 cm held 0.60s | pelvis drop 10.0 @0.37 settle 0.87 | drift L  8.1(0.03, 0.17) R  0.7(0.33, 0.9) nC 1/1 | CM_af_L
+  seg 15 after "S+Sh" 2.50s            v_in 234 v_win 234 | stop 0.53s path   76 cm held 0.53s | pelvis drop  9.7 @0.37 settle 1.20 | drift L  3.4(0.0, 0.1) R  8.3(0.27, 0.63) nC 2/1 | M_Neutral_Run_P
+fin_V_30: 1200 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_A_var
+t   1.49 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 15.1 R 10.9 | pelvis drop 20.6 | dur 1.30
+t   4.50 [W+Sh]->[S+Sh] 180 deg v_in 415 | t_rev 0.32 vmin   5 @0.32 | drift L  1.4 R  1.1 | pelvis drop 16.1 | dur 1.30
+t   6.71 [S+Sh]->[W+Sh] 180 deg v_in 234 | t_rev 0.16 vmin   1 @0.16 | drift L  0.0 R  0.7 | pelvis drop 18.8 | dur 1.28
+t  10.90 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L 17.5 R  1.5 | pelvis drop 20.9 | dur 1.27
+t  13.90 [W+Sh]->[S] 180 deg v_in 415 | t_rev 0.36 vmin   2 @0.34 | drift L  0.7 R  7.6 | pelvis drop 15.4 | dur 1.27
+t  18.09 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.06 vmin   0 @0.00 | drift L 15.8 R  1.5 | pelvis drop 21.7 | dur 1.30
+t  21.09 [W+Sh]->[A+Sh]  90 deg v_in 415 | t_rev 0.04 vmin 311 @0.12 | drift L  0.0 R  0.0 | pelvis drop 12.1 | dur 1.29
+t  23.10 [A+Sh]->[D+Sh] 180 deg v_in 415 | t_rev 0.37 vmin   1 @0.35 | drift L  1.0 R  9.1 | pelvis drop 14.3 | dur 1.27
+t  25.09 [D+Sh]->[A+Sh] 180 deg v_in 414 | t_rev 0.36 vmin   4 @0.36 | drift L  1.8 R  0.4 | pelvis drop 15.7 | dur 1.30
+t  29.07 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L  0.9 R 14.0 | pelvis drop 19.1 | dur 1.29
+t  31.58 [W+Sh]->[W A+Sh]  45 deg v_in 415 | t_rev 0.00 vmin 410 @0.07 | drift L  0.0 R  0.0 | pelvis drop  5.8 | dur 1.28
+t  33.07 [W A+Sh]->[W D+Sh]  90 deg v_in 415 | t_rev 0.00 vmin 305 @0.15 | drift L  0.0 R  0.0 | pelvis drop 14.8 | dur 1.28
+t  36.55 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L  5.7 R  9.4 | pelvis drop 11.2 | dur 1.28
+t  39.06 [W+Sh]->[D+Sh]  90 deg v_in 415 | t_rev 0.07 vmin 306 @0.16 | drift L  0.0 R  0.0 | pelvis drop 19.2 | dur 1.28
+WORST 17.5  MEAN 6.6  n 14
+  seg  4 after "W+Sh" 2.20s            v_in 415 v_win 415 | stop 0.51s path  109 cm held 0.51s | pelvis drop  8.9 @0.30 settle 0.84 | drift L  0.0 R  3.7(0.29, 0.79) nC 0/1 | M_Relaxed_Run_Pivot_B_F_L
+  seg  7 after "S" 2.20s                      v_in 150 v_win 150 | stop 0.33s path   25 cm held 0.33s | pelvis drop -0.1 @0.24 settle 0.40 | drift L  5.4(0.0, 0.14) R  2.2(0.27, 0.61) nC 1/1 | M_Neutr
+  seg 12 after "A+Sh" 2.00s            v_in 414 v_win 413 | stop 0.47s path   88 cm held 0.47s | pelvis drop  3.1 @0.21 settle 0.78 | drift L  0.0 R 20.4(0.21, 0.75) nC 0/1 | M_Relaxed_Run_Turn_R_180_
+  seg 16 after "W D+Sh" 1.50s          v_in 415 v_win 414 | stop 0.63s path  144 cm held 0.63s | pelvis drop 11.2 @0.40 settle 1.10 | drift L  0.7(0.45, 0.74) R  0.3(0.74, 0.92) nC 1/1 | M_Relaxed_Run
+  seg 19 after "D+Sh" 2.00s            v_in 415 v_win 415 | stop 0.54s path  131 cm held 0.54s | pelvis drop 10.6 @0.37 settle 1.08 | drift L  1.3(0.43, 0.73) R  0.2(0.73, 0.84) nC 1/1 | M_Relaxed_Run
+fin_A_var: 1638 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_B_var
+t   1.50 []->[W+Sh+Ct]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 15.1 R 11.1 | pelvis drop 20.7 | dur 1.30
+t   5.00 [W+Sh+Ct]->[S+Sh+Ct] 180 deg v_in 585 | t_rev 0.49 vmin   2 @0.46 | drift L 27.4 R 16.8 | pelvis drop 12.6 | dur 1.27
+t   9.70 []->[W+Sh+Ct]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L 16.8 R  1.5 | pelvis drop 21.4 | dur 1.28
+t  13.21 [W+Sh+Ct]->[D+Sh+Ct]  90 deg v_in 585 | t_rev 0.04 vmin 387 @0.43 | drift L  0.0 R  0.0 | pelvis drop 14.3 | dur 1.28
+t  15.20 [D+Sh+Ct]->[A+Sh+Ct] 180 deg v_in 584 | t_rev 0.52 vmin   3 @0.52 | drift L  5.3 R  0.1 | pelvis drop 21.1 | dur 1.29
+t  19.70 []->[W]  -1 deg v_in   0 | t_rev 0.04 vmin   0 @0.00 | drift L  0.9 R  8.2 | pelvis drop  6.2 | dur 1.29
+t  22.69 [W]->[S] 180 deg v_in 180 | t_rev 0.21 vmin   4 @0.17 | drift L 15.5 R  0.4 | pelvis drop  7.3 | dur 1.29
+t  24.90 [S]->[W] 180 deg v_in 150 | t_rev 0.18 vmin   5 @0.18 | drift L  0.3 R  0.4 | pelvis drop  5.7 | dur 1.30
+t  27.11 [W]->[A]  90 deg v_in 180 | t_rev 0.05 vmin 140 @0.12 | drift L  0.1 R  0.9 | pelvis drop  4.5 | dur 1.30
+t  29.10 [A]->[D] 180 deg v_in 180 | t_rev 0.18 vmin   2 @0.18 | drift L  2.4 R  0.1 | pelvis drop  7.3 | dur 1.29
+t  33.12 []->[W]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L  0.0 R  0.0 | pelvis drop  0.2 | dur 0.11
+t  34.48 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L  3.4 R  0.2 | pelvis drop  0.1 | dur 0.15
+t  35.86 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L 14.5 R  7.8 | pelvis drop 19.7 | dur 0.48
+t  37.84 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.06 vmin   0 @0.00 | drift L 11.3 R  1.4 | pelvis drop 20.4 | dur 1.30
+WORST 27.4  MEAN 8.7  n 14
+  seg  3 after "S+Sh+Ct" 2.20s v_in 233 v_win 233 | stop 0.56s path   88 cm held 0.56s | pelvis drop  5.9 @0.31 settle 0.47 | drift L  0.0 R  0.8(0.63, 0.86) nC 0/1 | M_Neutral_Run_Pivot_F_B_Lfoot > M
+  seg  7 after "A+Sh+Ct" 2.00s v_in 582 v_win 527 | stop 0.54s path  189 cm held 0.54s | pelvis drop  2.8 @0.33 settle 0.87 | drift L  0.0 R  7.5(0.33, 0.84) nC 0/1 | M_Relaxed_Sprint_Turn_180_R_Rfoot
+  seg 13 after "D" 2.00s                      v_in 180 v_win 180 | stop 0.55s path   56 cm held 0.55s | pelvis drop  1.9 @0.30 settle 0.51 | drift L  0.4(0.72, 0.83) R  0.1(0.34, 0.83) nC 2/1 | M_Neut
+  seg 15 after "W" 0.15s                      v_in  57 v_win  15 | stop 0.13s path    6 cm held 0.13s | pelvis drop  4.6 @0.24 settle 0.40 | drift L  4.1(0.3, 0.42) R  9.6(0.0, 0.36) nC 1/1 | M_Neutra
+  seg 17 after "W+Sh" 0.20s            v_in 115 v_win  37 | stop 0.38s path   29 cm held 0.38s | pelvis drop 13.3 @0.24 settle 0.43 | drift L  0.2(0.26, 0.68) R  3.8(0.0, 0.12) nC 1/1 | M_Neutral_Run_
+  seg 19 after "W+Sh" 0.50s            v_in 289 v_win 135 | stop 0.60s path  122 cm held 0.60s | pelvis drop 14.6 @0.03 settle 0.82 | drift L  2.9(0.0, 0.18) R  0.9(0.38, 0.88) nC 1/1 | M_Neutral_Run_
+  seg 23 after "W+Sh" 2.00s            v_in 415 v_win 415 | stop 0.58s path  121 cm held 0.58s | pelvis drop 13.1 @0.38 settle 1.05 | drift L  0.5(0.41, 0.67) R  0.2(0.71, 0.88) nC 1/1 | M_Neutral_Run
+fin_B_var: 1806 frames, 1 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_C_var
+t   2.99 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  0.8 R  0.8 | pelvis drop  9.9 | dur 1.28
+t  10.48 []->[W]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L  0.9 R  0.4 | pelvis drop  9.9 | dur 0.98
+t  19.00 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L 11.0 R  1.6 | pelvis drop 21.1 | dur 0.98
+t  28.00 []->[S]  -1 deg v_in   0 | t_rev 0.05 vmin   0 @0.00 | drift L  3.6 R  3.5 | pelvis drop  7.8 | dur 1.30
+t  33.99 []->[A]  -1 deg v_in   0 | t_rev 0.06 vmin   0 @0.00 | drift L  9.6 R  1.3 | pelvis drop  9.4 | dur 1.28
+WORST 11.0  MEAN 5.2  n 5
+  seg  2 after "W" 5.00s                      v_in 180 v_win 180 | stop 0.28s path   29 cm held 0.28s | pelvis drop  4.8 @0.00 settle 0.23 | drift L  0.0 R  0.4(0.1, 0.57) nC 0/1 | M_Neutral_Walk_Loop
+  seg  5 after "W+Sh" 5.00s            v_in 415 v_win 415 | stop 0.54s path  104 cm held 0.54s | pelvis drop  9.4 @0.35 settle 1.00 | drift L  1.7(0.35, 0.62) R  0.2(0.66, 0.81) nC 1/1 | M_Neutral_Run
+  seg  8 after "W+Sh+Ct" 5.00s v_in 585 v_win 585 | stop 0.61s path  192 cm held 0.61s | pelvis drop 10.1 @0.37 settle 1.09 | drift L  0.8(0.43, 0.71) R  0.2(0.73, 0.89) nC 1/1 | M_Relaxed_Sprint_Loop
+  seg 10 after "S" 4.00s                      v_in 150 v_win 150 | stop 0.29s path   27 cm held 0.29s | pelvis drop  3.2 @0.16 settle 0.60 | drift L 14.2(0.16, 0.58) R  0.0 nC 1/0 | M_Neutral_Walk_Loo
+  seg 12 after "A" 4.00s                      v_in 180 v_win 180 | stop 0.40s path   45 cm held 0.40s | pelvis drop  5.4 @0.12 settle 0.40 | drift L  0.1(0.59, 0.69) R  0.2(0.22, 0.69) nC 1/1 | M_Neut
+fin_C_var: 1541 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)
+#### fin_V_var
+t   1.50 []->[W]  -1 deg v_in   0 | t_rev 0.07 vmin   0 @0.00 | drift L  1.1 R  8.7 | pelvis drop 12.0 | dur 1.26
+t  11.50 [W]->[S] 180 deg v_in 278 | t_rev 0.20 vmin   6 @0.17 | drift L  0.4 R  0.0 | pelvis drop  7.6 | dur 1.29
+t  14.01 [S]->[W] 180 deg v_in 234 | t_rev 0.19 vmin   1 @0.17 | drift L  1.4 R  0.2 | pelvis drop  7.3 | dur 1.26
+t  16.50 [W]->[A]  90 deg v_in 278 | t_rev 0.05 vmin 221 @0.11 | drift L  0.0 R  0.3 | pelvis drop 14.1 | dur 1.30
+t  18.50 [A]->[D] 180 deg v_in 278 | t_rev 0.19 vmin   1 @0.19 | drift L 11.0 R  0.0 | pelvis drop 15.6 | dur 1.29
+t  22.50 []->[S]  -1 deg v_in   0 | t_rev 0.06 vmin   0 @0.00 | drift L  2.4 R  9.7 | pelvis drop  7.2 | dur 1.28
+t  27.52 []->[W]  -1 deg v_in   0 | t_rev 0.06 vmin   0 @0.00 | drift L  1.2 R  6.8 | pelvis drop 11.7 | dur 1.26
+t  32.55 []->[W+Sh]  -1 deg v_in   0 | t_rev 0.04 vmin   0 @0.00 | drift L 15.3 R  1.6 | pelvis drop 20.5 | dur 1.29
+t  35.55 [W+Sh]->[S+Sh] 180 deg v_in 415 | t_rev 0.39 vmin   2 @0.36 | drift L  0.6 R  1.4 | pelvis drop 14.8 | dur 1.29
+WORST 15.3  MEAN 6.1  n 9
+  seg  8 after "D" 2.00s                      v_in 278 v_win 278 | stop 0.43s path   59 cm held 0.43s | pelvis drop  6.6 @0.16 settle 0.88 | drift L 53.4(0.09, 0.54) R  0.2(0.54, 0.72) nC 1/1 | M_Rela
+  seg 10 after "S" 3.00s                      v_in 234 v_win 234 | stop 0.38s path   53 cm held 0.38s | pelvis drop  7.0 @0.26 settle 1.07 | drift L  1.6(0.4, 0.67) R 24.5(0.16, 0.55) nC 1/1 | CM_af_L
+  seg 12 after "W" 3.00s                      v_in 278 v_win 278 | stop 0.59s path  103 cm held 0.59s | pelvis drop 10.2 @0.40 settle 0.88 | drift L  9.4(0.03, 0.17) R  0.8(0.33, 0.88) nC 1/1 | CM_af_
+  seg 15 after "S+Sh" 2.50s            v_in 234 v_win 234 | stop 0.53s path   73 cm held 0.53s | pelvis drop  9.7 @0.37 settle 1.20 | drift L  4.1(0.0, 0.1) R  9.1(0.25, 0.64) nC 2/1 | M_Neutral_Run_P
+fin_V_var: 1524 frames, 0 above threshold (14 deg or 6 cm per 1/60 s)

@@ -1,0 +1,13 @@
+== RunA setters 1
+RunA <- Matematik|İnterpolasyon|FInterpTo.ReturnValue  [Graph.K2Node_CallFunction_23] Current= Target= DeltaTime= InterpSpeed=
+  Current <- Variables|Varsayılan|GetRunA.RunA  [tGraph.K2Node_VariableGet_27] 
+  Target <- Matematik|Kaydır|Clamp(Float).ReturnValue  [Graph.K2Node_CallFunction_22] Value= Min= Max=
+    Value <- İşlevsellikler|Operatörler|Böl.ReturnValue  [K2Node_PromotableOperator_47] A= B=
+      A <- İşlevsellikler|Operatörler|Çıkar.ReturnValue  [K2Node_PromotableOperator_46] A= B=
+        A <- Matematik|Vektör|VectorLengthXY.ReturnValue  [Graph.K2Node_CallFunction_21] A=
+          A <- Dönüşüm|GetVelocity.ReturnValue  [Graph.K2Node_CallFunction_20] self=
+  DeltaTime <- OlayEkle|OlayBlueprintUpdateAnimation.DeltaTimeX  [SP:EventGraph.K2Node_Event_0] 
+== PNeck1 setters 1
+   exec from [['execute', 'PSpine5']] ; then-> 
+== PHead setters 1
+   exec from [['execute', 'PNeck2']] ; then-> 
