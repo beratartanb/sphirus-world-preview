@@ -1,0 +1,5 @@
+# maskv.sh <label> "<dict>" : set mask bench framing values in memory (house map must be the editor world) and record the mask flow
+cd "/c/Users/berat/Documents/Unreal Projects/sphirus_UE59"; printf 'import builtins\nbuiltins.MASKV=%s\nexec(open(r"C:/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/UE59Work/r4/mask_vals.py",encoding="utf8").read())\n' "$2" > Saved/UE59Work/r5/maskv_job.py
+SHME_OWNER=emb SHME_KIND=control bash Tools/SHME_V2_20261014/run_v2.sh "$PWD/Saved/UE59Work/r5/maskv_job.py" emb_maskv 120 2>&1 | grep -E "MASKV|Error|Traceback" | cut -c1-200
+HKF="$(cat Saved/UE59Work/r5/hk3_line.txt)"; MAP=/Game/GraceRanger/Maps/L_GR_SphirusHouse VSHOT=1 VKEEP=1 POS="$(cat Saved/UE59Work/r4/maskpos.txt)" bash Tools/UE59_20261120/seqP.sh $1 Saved/UE59Work/planMask.txt "$HKF" 2>&1 | grep -E "VIDREC|LOADED|Error" | cut -c1-160
+bash Tools/UE59_20261121/strip.sh Saved/UE59Work/r5/img/$1.jpg 0 100 1150 800 0.5 "t5|t7|t9|t11|t13" Saved/Codex/Day_20261107/frames/$1 150 210 270 330 390 2>&1 | tail -1

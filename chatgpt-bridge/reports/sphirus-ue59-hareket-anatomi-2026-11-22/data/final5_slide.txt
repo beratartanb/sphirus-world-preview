@@ -1,0 +1,160 @@
+#### f5_A_60 (planU_A)
+f5_A_60: 75 contacts
+  t   9.15 s4  [W+Sh]->[-] +0.20s foot R dur 0.57 curve  14.1 ground  14.1 air  0% lift  4.5 v 132 M_Relaxed_Run_Stop_F_Rfoot
+  t  16.15 s7  [S]->[-] +0.00s foot L dur 0.60 curve  16.4 ground  16.4 air  0% lift  4.8 v 150 M_Neutral_Walk_Pivot_F_B_Lfoot
+  t  23.50 s10 [A+Sh]->[D+Sh] +0.35s foot L dur 0.52 curve  12.6 ground  10.6 air 38% lift 12.6 v   0 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  25.62 s11 [D+Sh]->[A+Sh] +0.47s foot L dur 0.35 curve  13.9 ground  13.9 air  0% lift  5.3 v  34 M_Relaxed_Run_Turn_R_180_Rfoot
+  TOTAL n 75 | curve: mean 2.0 p90 2.1 worst 16.4, >=10: 4, >=20: 0 | ground: mean 1.9 p90 2.1 worst 16.4, >=10: 4, >=20: 0
+f5_A_60: 2586 frames, 33 pop frames (k 6, floor 120 cm/s)
+f5_A_60      frames  2586 | pop frames  33: upper body   2, legs only  31 | largest upper-body step  2.2 cm | one-frame clip visits 2
+#### f5_B_60 (planU_B)
+f5_B_60: 81 contacts
+  t   5.40 s2  [W+Sh+Ct]->[S+Sh+Ct] +0.35s foot R dur 0.48 curve  24.8 ground  24.8 air  0% lift  4.0 v 152 M_Relaxed_Run_Stop_F_Rfoot
+  t  15.45 s6  [D+Sh+Ct]->[A+Sh+Ct] +0.20s foot L dur 0.63 curve  29.8 ground  29.8 air  0% lift  6.2 v 264 elaxed_Sprint_Turn_180_R_Lfoot
+  TOTAL n 81 | curve: mean 2.2 p90 3.4 worst 29.8, >=10: 2, >=20: 2 | ground: mean 2.1 p90 3.4 worst 29.8, >=10: 2, >=20: 2
+f5_B_60: 2841 frames, 88 pop frames (k 6, floor 120 cm/s)
+f5_B_60      frames  2841 | pop frames  88: upper body   8, legs only  80 | largest upper-body step  2.5 cm | one-frame clip visits 1
+#### f5_S_60 (planSt2)
+f5_S_60: 73 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 1.98 curve  11.3 ground  11.3 air  0% lift  6.1 v   0 M_Relaxed_Stand_Idle_Loop
+  t  10.42 s6  [A]->[-] +0.87s foot L dur 0.95 curve  10.4 ground  10.4 air  0% lift  4.4 v   0 M_Relaxed_Walk_Stop_F_Rfoot
+  TOTAL n 73 | curve: mean 2.0 p90 4.0 worst 11.3, >=10: 2, >=20: 0 | ground: mean 1.9 p90 4.0 worst 11.3, >=10: 2, >=20: 0
+f5_S_60: 2403 frames, 44 pop frames (k 6, floor 120 cm/s)
+f5_S_60      frames  2403 | pop frames  44: upper body   7, legs only  37 | largest upper-body step  2.6 cm | one-frame clip visits 0
+#### f5_Q_60 (planQt)
+f5_Q_60: 110 contacts
+  TOTAL n 110 | curve: mean 1.5 p90 2.4 worst 9.9, >=10: 0, >=20: 0 | ground: mean 1.4 p90 2.3 worst 5.6, >=10: 0, >=20: 0
+f5_Q_60: 3129 frames, 54 pop frames (k 6, floor 120 cm/s)
+f5_Q_60      frames  3129 | pop frames  54: upper body   2, legs only  52 | largest upper-body step  2.4 cm | one-frame clip visits 0
+#### f5_K_60 (planK1)
+f5_K_60: 77 contacts
+  t  35.10 s15 [W+Sh+Ct]->[S+Sh+Ct] +0.35s foot R dur 0.48 curve  24.2 ground  24.2 air  0% lift  4.0 v 152 M_Relaxed_Run_Stop_F_Rfoot
+  TOTAL n 77 | curve: mean 1.3 p90 1.6 worst 24.2, >=10: 1, >=20: 1 | ground: mean 1.3 p90 1.6 worst 24.2, >=10: 1, >=20: 1
+f5_K_60: 2853 frames, 91 pop frames (k 6, floor 120 cm/s)
+f5_K_60      frames  2853 | pop frames  91: upper body   2, legs only  89 | largest upper-body step  2.8 cm | one-frame clip visits 7
+#### f5_T_60 (planT1)
+f5_T_60: 56 contacts
+  t  15.28 s7  [S D+Sh]->[-] +0.23s foot L dur 0.18 curve  10.6 ground   0.0 air 92% lift 11.5 v 160 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  t  15.77 s7  [S D+Sh]->[-] +0.72s foot L dur 1.72 curve  16.7 ground  16.7 air  0% lift  6.1 v   0 M_Relaxed_Run_Stop_B_Rfoot
+  t  29.20 s13 [W+Sh+Ct]->[D+Sh+Ct] +0.15s foot L dur 0.08 curve  12.5 ground  12.5 air  0% lift  5.4 v 476 elaxed_Sprint_Turn_090_R_Lfoot
+  TOTAL n 56 | curve: mean 2.0 p90 2.7 worst 16.7, >=10: 3, >=20: 0 | ground: mean 1.7 p90 2.0 worst 16.7, >=10: 2, >=20: 0
+f5_T_60: 2040 frames, 39 pop frames (k 6, floor 120 cm/s)
+f5_T_60      frames  2040 | pop frames  39: upper body   4, legs only  35 | largest upper-body step  2.4 cm | one-frame clip visits 1
+#### f5_C_60 (planC1)
+f5_C_60: 77 contacts
+  t  31.72 s25 [A+Sh]->[D+Sh] +0.22s foot R dur 0.28 curve  20.4 ground  20.4 air  0% lift  4.2 v  94 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  36.20 s28 [W+Sh+Ct]->[S+Sh+Ct] +0.35s foot R dur 0.48 curve  20.4 ground  20.4 air  0% lift  4.0 v 153 M_Relaxed_Run_Stop_F_Rfoot
+  TOTAL n 77 | curve: mean 1.8 p90 3.4 worst 20.4, >=10: 2, >=20: 2 | ground: mean 1.6 p90 2.8 worst 20.4, >=10: 2, >=20: 2
+f5_C_60: 2658 frames, 63 pop frames (k 6, floor 120 cm/s)
+f5_C_60      frames  2658 | pop frames  63: upper body   4, legs only  59 | largest upper-body step  2.9 cm | one-frame clip visits 4
+#### f5_W_60 (planC2)
+f5_W_60: 53 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 1.48 curve  11.3 ground  11.3 air  0% lift  6.1 v   0 M_Relaxed_Stand_Idle_Loop
+  t  13.78 s9  [W+Sh]->[-] +1.23s foot L dur 0.70 curve  19.0 ground  19.0 air  0% lift  6.1 v   0 M_Relaxed_Run_Stop_F_Lfoot
+  t  19.25 s15 [S]->[W] +0.00s foot L dur 0.40 curve  15.7 ground  15.7 air  0% lift  4.6 v  24 M_Neutral_Walk_Pivot_F_B_Rfoot
+  t  20.80 s16 [W]->[-] +0.05s foot R dur 0.28 curve  16.0 ground  10.2 air 17% lift  7.4 v 167 M_Relaxed_Walk_Stop_F_Lfoot
+  t  24.25 s18 [A]->[-] +0.70s foot L dur 1.23 curve  12.6 ground  12.6 air  0% lift  6.1 v   0 M_Relaxed_Walk_Stop_F_Rfoot
+  TOTAL n 53 | curve: mean 3.4 p90 9.5 worst 19.0, >=10: 5, >=20: 0 | ground: mean 3.3 p90 9.3 worst 19.0, >=10: 5, >=20: 0
+f5_W_60: 2055 frames, 23 pop frames (k 6, floor 120 cm/s)
+f5_W_60      frames  2055 | pop frames  23: upper body   5, legs only  18 | largest upper-body step  2.5 cm | one-frame clip visits 0
+#### f5_D_60 (planDm)
+f5_D_60: 70 contacts
+  t  12.38 s9  [S D+Sh]->[-] +0.23s foot L dur 0.18 curve  11.7 ground   0.0 air 92% lift 11.5 v 158 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  t  16.68 s12 [S A+Sh]->[-] +0.23s foot L dur 0.18 curve  14.1 ground   0.0 air 92% lift 11.5 v 157 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  t  25.65 s18 [S A+Sh]->[-] +0.30s foot L dur 0.12 curve  14.5 ground   0.0 air 100% lift 11.5 v 121 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  t  30.28 s21 [S D+Sh+Ct]->[-] +0.23s foot L dur 0.18 curve  16.8 ground   0.0 air 92% lift 11.5 v 159 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  TOTAL n 70 | curve: mean 2.0 p90 3.1 worst 16.8, >=10: 4, >=20: 0 | ground: mean 1.1 p90 1.8 worst 4.5, >=10: 0, >=20: 0
+f5_D_60: 2181 frames, 49 pop frames (k 6, floor 120 cm/s)
+f5_D_60      frames  2181 | pop frames  49: upper body   0, legs only  49 | largest upper-body step  0.0 cm | one-frame clip visits 8
+#### f5_P_60 (planSp)
+f5_P_60: 29 contacts
+  TOTAL n 29 | curve: mean 1.1 p90 1.7 worst 3.3, >=10: 0, >=20: 0 | ground: mean 1.1 p90 1.7 worst 3.3, >=10: 0, >=20: 0
+f5_P_60: 1323 frames, 39 pop frames (k 6, floor 120 cm/s)
+f5_P_60      frames  1323 | pop frames  39: upper body   0, legs only  39 | largest upper-body step  0.0 cm | one-frame clip visits 1
+#### f5_R_60 (planR1)
+f5_R_60: 70 contacts
+  t   6.43 s4  [A+Sh]->[D+Sh] +0.13s foot R dur 0.10 curve  14.9 ground  14.9 air  0% lift  3.8 v 175 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  11.85 s7  [D+Sh]->[A+Sh] +0.30s foot L dur 0.52 curve  21.1 ground  20.0 air 38% lift 12.5 v   2 M_Relaxed_Run_Turn_L_180_Rfoot
+  t  13.87 s8  [A+Sh]->[-] +0.27s foot R dur 0.57 curve  10.5 ground  10.5 air  0% lift  4.5 v 160 M_Relaxed_Run_Stop_F_Rfoot
+  t  22.73 s13 [S]->[W] +0.18s foot R dur 0.37 curve  22.6 ground  22.6 air  0% lift  5.9 v   2 M_Neutral_Walk_Pivot_B_F_Rfoot
+  TOTAL n 70 | curve: mean 2.9 p90 6.2 worst 22.6, >=10: 4, >=20: 2 | ground: mean 2.7 p90 5.3 worst 22.6, >=10: 4, >=20: 1
+f5_R_60: 1848 frames, 34 pop frames (k 6, floor 120 cm/s)
+f5_R_60      frames  1848 | pop frames  34: upper body   4, legs only  30 | largest upper-body step  2.5 cm | one-frame clip visits 0
+#### f5_A_30 (planU_A)
+f5_A_30: 59 contacts
+  t   9.12 s4  [W+Sh]->[-] +0.20s foot R dur 0.53 curve  21.3 ground  21.3 air  0% lift  4.4 v 166 M_Relaxed_Run_Stop_F_Rfoot
+  TOTAL n 59 | curve: mean 1.5 p90 2.5 worst 21.3, >=10: 1, >=20: 1 | ground: mean 1.4 p90 2.1 worst 21.3, >=10: 1, >=20: 1
+f5_A_30: 1293 frames, 3 pop frames (k 6, floor 120 cm/s)
+f5_A_30      frames  1293 | pop frames   3: upper body   0, legs only   3 | largest upper-body step  0.0 cm | one-frame clip visits 2
+#### f5_B_30 (planU_B)
+f5_B_30: 69 contacts
+  t  15.42 s6  [D+Sh+Ct]->[A+Sh+Ct] +0.20s foot L dur 0.60 curve  44.9 ground  44.9 air  0% lift  5.5 v 270 elaxed_Sprint_Turn_180_R_Lfoot
+  t  24.75 s9  [W]->[S] +2.03s foot L dur 0.40 curve  13.2 ground  13.2 air  0% lift  4.4 v 150 M_Neutral_Walk_Pivot_F_B_Lfoot
+  t  25.25 s10 [S]->[W] +0.33s foot R dur 0.17 curve  23.3 ground  23.3 air  0% lift  6.2 v  31 M_Neutral_Walk_Pivot_B_F_Rfoot
+  t  27.05 s10 [S]->[W] +2.13s foot R dur 0.43 curve  14.6 ground  14.6 air  0% lift  6.0 v 180 M_Neutral_Walk_Start_F_Rfoot
+  TOTAL n 69 | curve: mean 2.9 p90 4.7 worst 44.9, >=10: 4, >=20: 2 | ground: mean 2.8 p90 4.3 worst 44.9, >=10: 4, >=20: 2
+f5_B_30: 1420 frames, 5 pop frames (k 6, floor 120 cm/s)
+f5_B_30      frames  1420 | pop frames   5: upper body   0, legs only   5 | largest upper-body step  0.0 cm | one-frame clip visits 2
+#### f5_S_30 (planSt2)
+f5_S_30: 67 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 1.95 curve  10.0 ground  10.0 air  0% lift  5.4 v   0 M_Relaxed_Stand_Idle_Loop
+  TOTAL n 67 | curve: mean 1.6 p90 2.7 worst 10.0, >=10: 1, >=20: 0 | ground: mean 1.5 p90 2.7 worst 10.0, >=10: 1, >=20: 0
+f5_S_30: 1201 frames, 4 pop frames (k 6, floor 120 cm/s)
+f5_S_30      frames  1201 | pop frames   4: upper body   0, legs only   4 | largest upper-body step  0.0 cm | one-frame clip visits 0
+#### f5_K_30 (planK1)
+f5_K_30: 65 contacts
+  TOTAL n 65 | curve: mean 0.9 p90 1.7 worst 4.4, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.6 worst 4.2, >=10: 0, >=20: 0
+f5_K_30: 1426 frames, 3 pop frames (k 6, floor 120 cm/s)
+f5_K_30      frames  1426 | pop frames   3: upper body   0, legs only   3 | largest upper-body step  0.0 cm | one-frame clip visits 6
+#### f5_C_30 (planC1)
+f5_C_30: 69 contacts
+  t  24.59 s19 [D+Sh]->[A+Sh] +0.20s foot L dur 0.27 curve  26.4 ground  26.4 air  0% lift  4.6 v   7 M_Relaxed_Run_Turn_R_180_Lfoot
+  t  31.69 s25 [A+Sh]->[D+Sh] +0.23s foot R dur 0.27 curve  13.5 ground  13.5 air  0% lift  3.6 v  82 M_Relaxed_Run_Turn_L_180_Rfoot
+  TOTAL n 69 | curve: mean 2.3 p90 6.1 worst 26.4, >=10: 2, >=20: 1 | ground: mean 2.0 p90 3.9 worst 26.4, >=10: 2, >=20: 1
+f5_C_30: 1329 frames, 2 pop frames (k 6, floor 120 cm/s)
+f5_C_30      frames  1329 | pop frames   2: upper body   0, legs only   2 | largest upper-body step  0.0 cm | one-frame clip visits 8
+#### f5_W_30 (planC2)
+f5_W_30: 52 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 1.45 curve  10.0 ground  10.0 air  0% lift  5.4 v   0 M_Relaxed_Stand_Idle_Loop
+  t   7.65 s5  [W]->[W] +0.13s foot L dur 0.47 curve  18.5 ground  18.5 air  0% lift  6.5 v 180 l_Transition_Run_to_Walk_Lfoot
+  t  13.79 s9  [W+Sh]->[-] +1.27s foot L dur 0.67 curve  17.8 ground  17.8 air  0% lift  5.4 v   0 M_Relaxed_Run_Stop_F_Lfoot
+  t  19.25 s15 [S]->[W] +0.03s foot L dur 0.37 curve  10.7 ground  10.7 air  0% lift  4.4 v  31 M_Neutral_Walk_Pivot_F_B_Rfoot
+  t  20.79 s16 [W]->[-] +0.07s foot R dur 0.27 curve  14.3 ground   9.9 air 11% lift  7.0 v 167 M_Relaxed_Walk_Stop_F_Lfoot
+  t  24.25 s18 [A]->[-] +0.73s foot L dur 1.20 curve  11.2 ground  11.2 air  0% lift  5.4 v   0 M_Relaxed_Walk_Stop_F_Rfoot
+  TOTAL n 52 | curve: mean 2.9 p90 8.3 worst 18.5, >=10: 6, >=20: 0 | ground: mean 2.8 p90 8.3 worst 18.5, >=10: 5, >=20: 0
+f5_W_30: 1028 frames, 11 pop frames (k 6, floor 120 cm/s)
+f5_W_30      frames  1028 | pop frames  11: upper body   1, legs only  10 | largest upper-body step  4.6 cm | one-frame clip visits 0
+#### f5_A_var (planU_A)
+f5_A_var: 63 contacts
+  t   9.11 s4  [W+Sh]->[-] +0.20s foot R dur 0.56 curve  13.3 ground  13.3 air  0% lift  4.5 v 159 M_Relaxed_Run_Stop_F_Rfoot
+  TOTAL n 63 | curve: mean 1.3 p90 2.0 worst 13.3, >=10: 1, >=20: 0 | ground: mean 1.2 p90 1.8 worst 13.3, >=10: 1, >=20: 0
+f5_A_var: 1640 frames, 7 pop frames (k 6, floor 120 cm/s)
+f5_A_var     frames  1640 | pop frames   7: upper body   0, legs only   7 | largest upper-body step  0.0 cm | one-frame clip visits 3
+#### f5_C_var (planC1)
+f5_C_var: 69 contacts
+  t  12.87 s9  [S+Sh]->[W+Sh] +0.03s foot L dur 0.09 curve  20.6 ground  20.6 air  0% lift  4.8 v  42 M_Neutral_Run_Pivot_F_B_Lfoot
+  t  24.57 s19 [D+Sh]->[A+Sh] +0.17s foot L dur 0.30 curve  32.6 ground  32.6 air  0% lift  5.3 v   5 M_Relaxed_Run_Turn_R_180_Lfoot
+  TOTAL n 69 | curve: mean 2.1 p90 3.3 worst 32.6, >=10: 2, >=20: 2 | ground: mean 2.0 p90 2.0 worst 32.6, >=10: 2, >=20: 2
+f5_C_var: 1687 frames, 11 pop frames (k 6, floor 120 cm/s)
+f5_C_var     frames  1687 | pop frames  11: upper body   4, legs only   7 | largest upper-body step  4.7 cm | one-frame clip visits 5
+#### f5_W_var (planC2)
+f5_W_var: 51 contacts
+  t   0.00 s0  [?]->[-] +0.00s foot L dur 1.43 curve  11.0 ground  11.0 air  0% lift  6.0 v   0 M_Relaxed_Stand_Idle_Loop
+  t   7.60 s5  [W]->[W] +0.11s foot L dur 0.47 curve  11.7 ground  11.7 air  5% lift  6.8 v 180 l_Transition_Run_to_Walk_Lfoot
+  t  13.75 s9  [W+Sh]->[-] +1.25s foot L dur 0.66 curve  17.2 ground  17.2 air  0% lift  5.3 v   0 M_Relaxed_Run_Stop_F_Lfoot
+  t  24.22 s18 [A]->[-] +0.72s foot L dur 1.21 curve  14.8 ground  14.8 air  0% lift  5.2 v   0 M_Relaxed_Walk_Stop_F_Rfoot
+  TOTAL n 51 | curve: mean 3.0 p90 6.9 worst 17.2, >=10: 4, >=20: 0 | ground: mean 2.9 p90 6.9 worst 17.2, >=10: 4, >=20: 0
+f5_W_var: 1307 frames, 10 pop frames (k 6, floor 120 cm/s)
+f5_W_var     frames  1307 | pop frames  10: upper body   3, legs only   7 | largest upper-body step  3.6 cm | one-frame clip visits 0
+s2  [W D LeftShift           ] turn  45 deg v 415 -> min 375 (90 %) at +0.18 s, back to 95 % of 415 at +0.25 s, peak decel  300
+s3  [W LeftShift             ] turn  45 deg v 415 -> min 373 (90 %) at +0.20 s, back to 95 % of 415 at +0.28 s, peak decel  303
+s4  [D LeftShift             ] turn  90 deg v 415 -> min 283 (68 %) at +0.15 s, back to 95 % of 415 at +0.47 s, peak decel 1260
+s5  [W LeftShift             ] turn  90 deg v 415 -> min 295 (71 %) at +0.22 s, back to 95 % of 415 at +0.58 s, peak decel  780
+s6  [S D LeftShift           ] turn 135 deg v 415 -> min 112 (27 %) at +0.27 s, back to 95 % of 234 at +0.93 s, peak decel 1592
+s7  STOP from 234: stand after 0.53 s,  69 cm
+s9  [W A                     ] turn  45 deg v 180 -> min 180 (100 %) at +1.05 s, back to 95 % of 180 at +1.07 s, peak decel    1
+s10 [A                       ] turn  45 deg v 180 -> min 180 (100 %) at +0.27 s, back to 95 % of 180 at +0.28 s, peak decel    1
+s11 STOP from 180: stand after 0.37 s,  32 cm
+s13 [D LeftShift LeftControl ] turn  90 deg v 585 -> min 375 (64 %) at +0.35 s, back to 95 % of 585 at +0.83 s, peak decel  918
+s14 STOP from 585: stand after 0.52 s, 111 cm
+FINAL5_DONE_slide

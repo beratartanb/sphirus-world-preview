@@ -1,0 +1,2 @@
+cd "/c/Users/berat/Documents/Unreal Projects/sphirus_UE59"; printf 'import builtins\nbuiltins.P5V=%s\nexec(open(r"C:/Users/berat/Documents/Unreal Projects/sphirus_UE59/Tools/UE59_20261122/c_player5_defaults.py",encoding="utf8").read())\n' "$1" > Saved/UE59Work/r5/p5_job.py
+SHME_OWNER=emb SHME_KIND=control bash Tools/SHME_V2_20261014/run_v2.sh "$PWD/Saved/UE59Work/r5/p5_job.py" emb_p5 120 2>&1 | grep -E "P5DEF|Error|Traceback" | cut -c1-200

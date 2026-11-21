@@ -1,0 +1,67 @@
+f5_wall_walk scene None frames 492
+  max speed 180, lowest pelvis (component z) 85.8, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+f5_wall_run scene None frames 492
+  max speed 415, lowest pelvis (component z) 73.5, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+f5_wall_sprint scene None frames 552
+  max speed 585, lowest pelvis (component z) 74.8, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+f5_waist_run scene None frames 492
+  max speed 415, lowest pelvis (component z) 73.5, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+f5_knee_walk scene None frames 492
+  t   3.42 IMPACT v 180 cm/s class knee severity 0.82 -> blocked | fat 0.00 | speed 0.1 s before 180, after 73
+  t   3.42 state normal -> blocked (lock 0.16 s)
+  t   3.92 state blocked -> normal (lock 0.00 s)
+  max speed 180, lowest pelvis (component z) 85.8, max trunk impulse lean PS_LP 3.9 / PS_LR 0.0
+f5_knee_tempo scene None frames 753
+  t   5.03 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | fat 0.00 | speed 0.1 s before 278, after 138
+  t   5.03 state normal -> stagger (lock 0.45 s)
+  t   6.13 state stagger -> normal (lock 0.00 s)
+  max speed 278, lowest pelvis (component z) 73.0, max trunk impulse lean PS_LP 6.0 / PS_LR 0.0
+f5_knee_run scene None frames 750
+  t   3.55 IMPACT v 415 cm/s class knee severity 2.26 -> down | fat 0.00 | speed 0.1 s before 415, after 21
+  t   3.55 state normal -> kneeling (lock 30.00 s)
+  t   4.52 state kneeling -> down (lock 29.03 s)
+  t   5.12 state down -> standing up (lock 28.43 s)
+  t   6.88 state standing up -> normal (lock 0.00 s)
+  max speed 415, lowest pelvis (component z) 48.2, max trunk impulse lean PS_LP 9.5 / PS_LR 0.0
+f5_knee_tempo_tired scene None frames 753
+  t   6.84 IMPACT v 162 cm/s class knee severity 1.07 -> stagger | fat 0.90 | speed 0.1 s before 168, after 163
+  t   6.84 state normal -> stagger (lock 0.72 s)
+  t   7.94 state stagger -> normal (lock 0.00 s)
+  max speed 180, lowest pelvis (component z) 84.8, max trunk impulse lean PS_LP 5.1 / PS_LR 0.0
+f5_side_graze scene None frames 432
+  graze: 3.55 s, speed 381 -> 70, reach max 0.70, roll lean (PS_LR) -3.0..-0.5
+  max speed 415, lowest pelvis (component z) 73.5, max trunk impulse lean PS_LP 0.0 / PS_LR 3.0
+f5_wall45_run scene None frames 492
+  graze: 1.43 s, speed 140 -> 81, reach max 0.70, roll lean (PS_LR) -3.0..-0.5
+  max speed 415, lowest pelvis (component z) 71.2, max trunk impulse lean PS_LP 0.0 / PS_LR 3.0
+f5_step_run scene None frames 492
+  max speed 415, lowest pelvis (component z) 62.5, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+CT_DONE_f5
+f5_knee_walk_tired scene None frames 492
+  t   3.49 IMPACT v 180 cm/s class knee severity 1.35 -> stagger | fat 0.90 | speed 0.1 s before 180, after 178
+  t   3.49 state normal -> stagger (lock 0.72 s)
+  t   4.60 state stagger -> normal (lock 0.00 s)
+  t   5.37 IMPACT v 148 cm/s class knee severity 0.98 -> stagger | fat 0.90 | speed 0.1 s before 155, after 159
+  t   5.37 state normal -> stagger (lock 0.72 s)
+  t   6.49 state stagger -> normal (lock 0.00 s)
+  max speed 180, lowest pelvis (component z) 82.3, max trunk impulse lean PS_LP 6.4 / PS_LR 0.0
+30Hz f5h30_wall_run scene None frames 246
+30Hz   max speed 415, lowest pelvis (component z) 73.4, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+30Hz f5h30_knee_walk scene None frames 246
+30Hz   t   3.42 IMPACT v 180 cm/s class knee severity 0.82 -> blocked | fat 0.00 | speed 0.1 s before 180, after 48
+30Hz   t   3.42 state normal -> blocked (lock 0.16 s)
+30Hz   t   3.92 state blocked -> normal (lock 0.00 s)
+30Hz   max speed 180, lowest pelvis (component z) 85.7, max trunk impulse lean PS_LP 3.3 / PS_LR 0.0
+30Hz f5h30_knee_tempo scene None frames 376
+30Hz   t   5.02 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | fat 0.00 | speed 0.1 s before 278, after 103
+30Hz   t   5.02 state normal -> stagger (lock 0.45 s)
+30Hz   t   6.12 state stagger -> normal (lock 0.00 s)
+30Hz   max speed 278, lowest pelvis (component z) 73.0, max trunk impulse lean PS_LP 5.1 / PS_LR 0.0
+30Hz f5h30_knee_run scene None frames 375
+30Hz   t   3.55 IMPACT v 415 cm/s class knee severity 2.26 -> down | fat 0.00 | speed 0.1 s before 415, after 6
+30Hz   t   3.55 state normal -> kneeling (lock 30.00 s)
+30Hz   t   4.52 state kneeling -> down (lock 29.03 s)
+30Hz   t   5.12 state down -> standing up (lock 28.43 s)
+30Hz   t   6.89 state standing up -> normal (lock 0.00 s)
+30Hz   max speed 415, lowest pelvis (component z) 48.2, max trunk impulse lean PS_LP 8.1 / PS_LR 0.0
+FINAL5_DONE_contact

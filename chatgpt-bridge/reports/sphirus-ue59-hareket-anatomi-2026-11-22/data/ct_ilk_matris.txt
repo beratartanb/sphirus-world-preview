@@ -1,0 +1,49 @@
+b_wall_walk scene None frames 492
+  approach: d  79 v 180 cap 348 reach 0.00 | d  55 v 180 cap 292 reach 0.00 | d  31 v 180 cap 218 reach 0.33 | d   9 v 102 cap 60 reach 0.74 | d   0 v   0 cap 60 reach 0.91 | d   0 v   0 cap 60 reach 0.96 | d   0 v   0 cap 60 reach 0.99 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00
+  max speed 180, lowest pelvis (component z) 85.9, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+b_wall_run scene None frames 492
+  approach: d 181 v 415 cap 514 reach 0.00 | d 127 v 415 cap 434 reach 0.00 | d  74 v 349 cap 336 reach 0.00 | d  33 v 242 cap 227 reach 0.21 | d   9 v  98 cap 60 reach 0.70 | d   0 v   0 cap 60 reach 0.89 | d   0 v   0 cap 60 reach 0.96 | d   0 v   0 cap 60 reach 0.98 | d   0 v   0 cap 60 reach 0.99 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00
+  max speed 415, lowest pelvis (component z) 73.3, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+b_wall_sprint scene None frames 552
+  approach: d 191 v 538 cap 526 reach 0.00 | d 124 v 443 cap 430 reach 0.00 | d  71 v 344 cap 331 reach 0.00 | d  32 v 237 cap 222 reach 0.24 | d   8 v  93 cap 60 reach 0.71 | d   0 v   6 cap 60 reach 0.89 | d   0 v   0 cap 60 reach 0.96 | d   0 v   0 cap 60 reach 0.99 | d   0 v   0 cap 60 reach 0.99 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00
+  max speed 585, lowest pelvis (component z) 75.0, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+b_waist_run scene None frames 492
+  approach: d 182 v 415 cap 514 reach 0.00 | d 127 v 415 cap 434 reach 0.00 | d  74 v 349 cap 336 reach 0.00 | d  33 v 241 cap 227 reach 0.22 | d   8 v  99 cap 60 reach 0.70 | d   0 v   0 cap 60 reach 0.89 | d   0 v   0 cap 60 reach 0.96 | d   0 v   0 cap 60 reach 0.98 | d   0 v   0 cap 60 reach 0.99 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00 | d   0 v   0 cap 60 reach 1.00
+  max speed 415, lowest pelvis (component z) 73.3, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+b_knee_walk scene None frames 492
+  t   3.37 IMPACT v 180 cm/s class knee severity 0.82 -> blocked | fat 0.00 | speed 0.1 s before 180, after 73
+  t   3.37 state normal -> blocked (lock 0.16 s)
+  t   3.87 state blocked -> normal (lock 0.00 s)
+  approach: d  79 v 180 cap - reach 0.00 | d  55 v 180 cap - reach 0.00 | d  31 v 180 cap - reach 0.00 | d   7 v 180 cap - reach 0.00 | d 999 v  41 cap 220 reach 0.00 | d   8 v   1 cap 220 reach 0.00 | d   6 v  34 cap 220 reach 0.00 | d   0 v   1 cap 220 reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00
+  max speed 180, lowest pelvis (component z) 85.9, max trunk impulse lean PS_LP 3.9 / PS_LR 0.0
+b_knee_tempo scene None frames 753
+  t   4.99 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | fat 0.00 | speed 0.1 s before 278, after 139
+  t   4.99 state normal -> stagger (lock 0.45 s)
+  t   6.10 state stagger -> normal (lock 0.00 s)
+  approach: d 124 v 278 cap - reach 0.00 | d  87 v 278 cap - reach 0.00 | d  49 v 278 cap - reach 0.00 | d  12 v 278 cap - reach 0.00 | d 999 v  35 cap 150 reach 0.00 | d  11 v  11 cap 150 reach 0.00 | d  12 v   0 cap 150 reach 0.00 | d  12 v   0 cap 150 reach 0.00 | d   9 v  55 cap 150 reach 0.00 | d   0 v   0 cap 150 reach 0.00 | d   0 v   0 cap 150 reach 0.00 | d   0 v   0 cap 150 reach 0.00 | d   0 v   0 cap 220 reach 0.00 | d   0 v   0 cap - reach 0.00
+  max speed 278, lowest pelvis (component z) 73.0, max trunk impulse lean PS_LP 6.0 / PS_LR 0.0
+b_knee_run scene None frames 750
+  t   3.50 IMPACT v 415 cm/s class knee severity 2.26 -> down | fat 0.00 | speed 0.1 s before 415, after 21
+  t   3.50 state normal -> kneeling (lock 30.00 s)
+  t   4.45 state kneeling -> down (lock 29.05 s)
+  t   5.05 state down -> standing up (lock 28.45 s)
+  t   6.82 state standing up -> normal (lock 0.00 s)
+  approach: d 182 v 415 cap - reach 0.00 | d 127 v 415 cap - reach 0.00 | d  71 v 415 cap - reach 0.00 | d  16 v 415 cap - reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00 | d   1 v   0 cap 0 reach 0.00
+  max speed 415, lowest pelvis (component z) 48.2, max trunk impulse lean PS_LP 9.5 / PS_LR 0.0
+b_knee_tempo_tired scene None frames 753
+  approach: d  78 v 180 cap - reach 0.00 | d  54 v 180 cap - reach 0.00 | d  30 v 178 cap - reach 0.00 | d   7 v 165 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00
+  max speed 180, lowest pelvis (component z) 85.1, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+b_side_graze scene None frames 432
+  approach: d 137 v 326 cap 325 reach 0.70 | d 999 v 294 cap 319 reach 0.70 | d 999 v 271 cap 317 reach 0.70 | d 999 v 280 cap 315 reach 0.70 | d 999 v 314 cap 314 reach 0.70 | d 999 v 312 cap 312 reach 0.70 | d 999 v 311 cap 311 reach 0.70 | d 999 v 309 cap 309 reach 0.70 | d 999 v 308 cap 307 reach 0.70 | d 999 v 306 cap 306 reach 0.70 | d 999 v 304 cap 304 reach 0.70 | d 999 v 303 cap 303 reach 0.70 | d 999 v 301 cap 301 reach 0.70 | d 999 v 300 cap 299 reach 0.70
+  graze: 3.52 s, speed 381 -> 71, reach max 0.70, roll lean (PS_LR) -3.0..-0.5
+  max speed 415, lowest pelvis (component z) 73.3, max trunk impulse lean PS_LP 0.0 / PS_LR 3.0
+b_wall45_run scene None frames 492
+  approach: d 185 v 415 cap 518 reach 0.00 | d 129 v 415 cap 438 reach 0.00 | d  75 v 353 cap 340 reach 0.00 | d  35 v 246 cap 232 reach 0.19 | d  38 v 115 cap - reach 0.57 | d 999 v 147 cap 327 reach 0.62 | d 999 v 172 cap 325 reach 0.67 | d 999 v 193 cap 323 reach 0.69 | d 999 v 209 cap 322 reach 0.70 | d 999 v 222 cap 320 reach 0.70 | d 999 v 232 cap 319 reach 0.70 | d 999 v 236 cap 317 reach 0.70 | d 999 v 239 cap 315 reach 0.70 | d 999 v 240 cap 314 reach 0.70
+  graze: 1.43 s, speed 140 -> 81, reach max 0.70, roll lean (PS_LR) -3.0..-0.5
+  max speed 415, lowest pelvis (component z) 71.8, max trunk impulse lean PS_LP 0.0 / PS_LR 3.0
+b_step_run scene None frames 492
+  max speed 415, lowest pelvis (component z) 59.3, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
+CT_DONE_b
+b_knee_walk_tired scene None frames 492
+  approach: d  80 v 180 cap - reach 0.00 | d  56 v 180 cap - reach 0.00 | d  32 v 180 cap - reach 0.00 | d   8 v 180 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00 | d   0 v   0 cap - reach 0.00
+  max speed 180, lowest pelvis (component z) 86.7, max trunk impulse lean PS_LP 0.0 / PS_LR 0.0
