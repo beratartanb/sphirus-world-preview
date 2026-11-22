@@ -1,0 +1,6 @@
+PlantSettings_Default (SpeedThreshold=25.000000,DistanceToGround=10.000000,LockType=PivotAroundBall,UnplantRadius=45.000000,ReplantRadiusRat
+PlantSettings_Stops (SpeedThreshold=25.000000,DistanceToGround=10.000000,LockType=PivotAroundBall,UnplantRadius=50.000000,ReplantRadiusRat
+player {'CT_RetD': 44.0, 'CT_KneelClr': 30.0, 'CT_TripV': 330.0, 'CT_TripH': 0.85, 'CT_FallRate': 2.2, 'CT_FallTf': 0.7, 'CT_StandOff': 20.0, 'CT_KneeSeeV': 230.0, 'CT_HandOff': 8.0, 'PS_KeepRun': 0.4, 'PS_LuK': 2.0, 'PS_LuMax': 15.0}
+motion {'KRelax': 3.0, 'StBoostMax': 1400.0, 'StBoostDur': 0.9, 'StBoostOn': True} idle ['v01', 'v02', 'v04', 'v06', 'v02']
+SphF_am_InjuredBelly_DropToFloor len 5.50 rm False lock <RootMotionRootLock.ZERO: 2> forced True
+SphF_am_InjuredBelly_DropToFloor_GetUp len 8.00 rm False lock <RootMotionRootLock.ZERO: 2> forced True

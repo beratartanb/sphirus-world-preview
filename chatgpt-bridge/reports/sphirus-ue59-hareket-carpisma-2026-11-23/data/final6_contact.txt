@@ -1,0 +1,148 @@
+c6_wall_walk lane wall frames 492 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -5147, end -5342 | max speed 180 | lowest pelvis (component z) 84.2 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_wall_run lane wall frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5147, end -5338 | max speed 415 | lowest pelvis (component z) 74.1 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_wall_sprint lane sprintwall frames 552 fat 0.06 seterr None
+  capsule travel: start x -6000, furthest -4547, end -4734 | max speed 585 | lowest pelvis (component z) 75.1 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_waist_run lane waist frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5147, end -5338 | max speed 415 | lowest pelvis (component z) 74.1 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_knee_walk lane knee frames 492 fat 0.00 seterr None
+  t   3.23 IMPACT v 180 cm/s class knee severity 0.82 -> light | support left | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 180, after 73
+  t   3.23 state normal -> blocked (dist to surface 0)
+  t   3.75 state blocked -> normal (dist to surface 0)
+  capsule travel: start x -5500, furthest -5130, end -5321 | max speed 180 | lowest pelvis (component z) 78.8 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): knee 3.9 at t 3.72 (blocked) | ball 2.5 at t 3.48 (blocked)
+c6_knee_tempo lane knee frames 753 fat 0.00 seterr None
+  t   5.03 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | support left | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 278, after 138
+  t   5.03 state normal -> stagger (dist to surface 0)
+  t   6.13 state stagger -> normal (dist to surface 0)
+  capsule travel: start x -6000, furthest -5130, end -5130 | max speed 278 | lowest pelvis (component z) 73.6 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 4.9 at t 5.28 (stagger)
+c6_knee_run lane knee frames 750 fat 0.00 seterr None
+  t   3.55 IMPACT v 415 cm/s class knee severity 2.26 -> balance lost | support none (airborne) | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 415, after 181
+  t   3.55 state normal -> stagger [retreat step, kneel pending] (dist to surface 1)
+  t   3.93 state stagger -> kneeling down (dist to surface 37)
+  t   4.90 state kneeling down -> on one knee (dist to surface 37)
+  t   5.40 state on one knee -> standing up (dist to surface 37)
+  t   7.17 state standing up -> normal (dist to surface 37)
+  capsule travel: start x -6000, furthest -5131, end -5167 | max speed 415 | lowest pelvis (component z) 48.2 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 4.3 at t 3.53 (normal)
+c6_knee_run_tired lane knee frames 750 fat 0.90 seterr None
+  t   6.30 IMPACT v 162 cm/s class knee severity 1.07 -> stagger | support right | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 168, after 163
+  t   6.30 state normal -> stagger (dist to surface 0)
+  t   7.41 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -5130, end -5262 | max speed 180 | lowest pelvis (component z) 86.7 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_knee_run_carry lane knee frames 750 fat 0.00 seterr None
+  t   5.83 IMPACT v 187 cm/s class knee severity 1.06 -> stagger | support right | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 187, after 128
+  t   5.83 state normal -> stagger (dist to surface 0)
+  t   6.93 state stagger -> normal (dist to surface 13)
+  capsule travel: start x -6000, furthest -5130, end -5143 | max speed 187 | lowest pelvis (component z) 84.3 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_knee_tempo_tired lane knee frames 753 fat 0.90 seterr None
+  t   6.84 IMPACT v 162 cm/s class knee severity 1.07 -> stagger | support right | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 168, after 163
+  t   6.84 state normal -> stagger (dist to surface 0)
+  t   7.95 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -5130, end -5262 | max speed 180 | lowest pelvis (component z) 85.1 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_side_graze lane side frames 432 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4465, end -4465 | max speed 415 | lowest pelvis (component z) 74.1 | hand reach max 0.30
+  PENETRATION (cm, limb surface inside the obstacle): elbow 7.6 at t 4.22 (normal) | hand 6.9 at t 6.48 (normal)
+c6_wall45_run lane None frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5068, end -5259 | max speed 415 | lowest pelvis (component z) 74.1 | hand reach max 1.00
+c6_step_run lane step frames 492 fat 0.00 seterr None
+  t   3.50 TRIP v 415 cm/s class low(trip) severity 1.28 -> stagger | support none (airborne) | rear room 0 cm | object StaticMeshActor_10 | speed 0.1 s before 415, after 415
+  t   3.50 state normal -> stagger (dist to surface 999)
+  t   4.62 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4676, end -4871 | max speed 415 | lowest pelvis (component z) 59.0 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 8.4 at t 3.53 (stagger) | foot 5.0 at t 3.55 (stagger)
+c6_step_sprint lane step frames 552 fat 0.05 seterr None
+  t   3.05 TRIP v 585 cm/s class low(trip) severity 1.81 -> balance lost | support none (airborne) | rear room 0 cm | object StaticMeshActor_10 | speed 0.1 s before 585, after 585
+  t   3.05 state normal -> stagger (dist to surface 999)
+  t   4.15 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -3811, end -4006 | max speed 585 | lowest pelvis (component z) 57.9 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): shin 6.5 at t 3.22 (stagger) | ball 5.2 at t 3.08 (stagger)
+c6_log_walk lane log frames 492 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -4763, end -4958 | max speed 180 | lowest pelvis (component z) 62.5 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 9.9 at t 3.33 (normal) | shin 4.7 at t 3.60 (normal) | foot 2.3 at t 3.33 (normal)
+c6_log_run lane log frames 750 fat 0.01 seterr None
+  t   3.50 TRIP v 415 cm/s class low(trip) severity 1.28 -> stagger | support none (airborne) | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 415, after 415
+  t   3.50 state normal -> stagger (dist to surface 999)
+  t   4.62 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4259, end -4259 | max speed 415 | lowest pelvis (component z) 61.3 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 8.3 at t 3.53 (stagger) | foot 5.0 at t 3.55 (stagger)
+c6_log_run_tired lane log frames 750 fat 0.90 seterr None
+  capsule travel: start x -6000, furthest -5003, end -5003 | max speed 180 | lowest pelvis (component z) 64.3 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_log_sprint lane log frames 552 fat 0.05 seterr None
+  t   3.05 TRIP v 585 cm/s class low(trip) severity 1.81 -> balance lost | support none (airborne) | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 585, after 448
+  t   3.05 state normal -> falling forward (dist to surface 999)
+  t   4.55 state falling forward -> lying (dist to surface 999)
+  t   5.07 state lying -> getting up (dist to surface 999)
+  t   8.08 state getting up -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4996, end -5039 | max speed 585 | lowest pelvis (component z) 16.2 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 8.2 at t 3.28 (falling forward) | foot 2.1 at t 3.28 (falling forward)
+c6_log_sprint_carry lane log frames 552 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5049, end -5244 | max speed 187 | lowest pelvis (component z) 61.8 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 10.2 at t 5.93 (normal) | foot 8.1 at t 7.58 (normal) | shin 3.3 at t 6.22 (normal)
+c6_tight_forced lane tight frames 492 fat 0.00 seterr None
+  t   1.38 IMPACT v 180 cm/s class knee severity 6.00 -> balance lost | support left | rear room 40 cm | object StaticMeshActor_22 | speed 0.1 s before 167, after 104
+  t   1.38 state normal -> stagger [retreat step, kneel pending] (dist to surface 0)
+  t   1.82 state stagger -> stagger [no room: standing brace] (dist to surface 19)
+  t   2.48 state stagger -> normal [no room: standing brace] (dist to surface 15)
+  capsule travel: start x -5805, furthest -5770, end -5793 | max speed 180 | lowest pelvis (component z) 91.2 | hand reach max 1.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 11.5 at t 1.37 (normal) | knee 4.2 at t 2.77 (normal) | shin 4.1 at t 1.37 (normal) | foot 0.2 at t 1.37 (normal)
+c6_beam_run lane beam frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5129, end -5316 | max speed 415 | lowest pelvis (component z) 74.1 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+c6_push_run lane None frames 492 fat 0.00 seterr None
+  t   3.50 TRIP v 415 cm/s class low(trip) severity 1.28 -> stagger | support none (airborne) | rear room 300 cm | object StaticMeshActor_25 | speed 0.1 s before 415, after 415
+  t   3.50 state normal -> stagger (dist to surface 999)
+  t   4.62 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4622, end -4817 | max speed 415 | lowest pelvis (component z) 51.3 | hand reach max 0.00
+c6_stair_run lane None frames 342 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4888, end -4888 | max speed 415 | lowest pelvis (component z) 37.8 | hand reach max 0.00
+c6_ramp_run lane None frames 330 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4865, end -4865 | max speed 415 | lowest pelvis (component z) 72.3 | hand reach max 0.00
+c6_stair_sprint lane None frames 552 fat 0.06 seterr None
+  capsule travel: start x -6000, furthest -3628, end -3823 | max speed 585 | lowest pelvis (component z) 47.9 | hand reach max 0.00
+CT6_DONE
+30Hz c6h30_wall_run lane wall frames 246 fat 0.00 seterr None
+30Hz   capsule travel: start x -6000, furthest -5144, end -5332 | max speed 415 | lowest pelvis (component z) 73.7 | hand reach max 1.00
+30Hz   PENETRATION: none (no visible limb surface inside the obstacle)
+30Hz c6h30_knee_walk lane knee frames 246 fat 0.00 seterr None
+30Hz   t   3.25 IMPACT v 180 cm/s class knee severity 0.82 -> light | support left | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 180, after 48
+30Hz   t   3.25 state normal -> blocked (dist to surface 1)
+30Hz   t   3.75 state blocked -> normal (dist to surface 0)
+30Hz   capsule travel: start x -5500, furthest -5130, end -5319 | max speed 180 | lowest pelvis (component z) 84.3 | hand reach max 0.00
+30Hz   PENETRATION (cm, limb surface inside the obstacle): ball 13.0 at t 3.72 (blocked) | foot 5.1 at t 3.72 (blocked) | shin 4.9 at t 3.69 (blocked) | knee 4.9 at t 3.65 (blocked)
+30Hz c6h30_knee_tempo lane knee frames 376 fat 0.00 seterr None
+30Hz   t   5.02 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | support left | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 278, after 102
+30Hz   t   5.02 state normal -> stagger (dist to surface 1)
+30Hz   t   6.12 state stagger -> normal (dist to surface 0)
+30Hz   capsule travel: start x -6000, furthest -5130, end -5130 | max speed 278 | lowest pelvis (component z) 73.6 | hand reach max 0.00
+30Hz   PENETRATION (cm, limb surface inside the obstacle): ball 11.2 at t 4.95 (normal) | shin 5.7 at t 4.95 (normal) | knee 0.5 at t 5.39 (stagger) | foot 0.1 at t 4.95 (normal)
+30Hz c6h30_knee_run lane knee frames 375 fat 0.00 seterr None
+30Hz   t   3.55 IMPACT v 415 cm/s class knee severity 2.26 -> balance lost | support none (airborne) | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 415, after 134
+30Hz   t   3.55 state normal -> stagger [retreat step, kneel pending] (dist to surface 1)
+30Hz   t   3.95 state stagger -> kneeling down (dist to surface 34)
+30Hz   t   4.92 state kneeling down -> on one knee (dist to surface 34)
+30Hz   t   5.45 state on one knee -> standing up (dist to surface 34)
+30Hz   t   7.22 state standing up -> normal (dist to surface 34)
+30Hz   capsule travel: start x -6000, furthest -5131, end -5164 | max speed 415 | lowest pelvis (component z) 48.1 | hand reach max 0.00
+30Hz   PENETRATION (cm, limb surface inside the obstacle): ball 4.8 at t 3.55 (stagger)
+30Hz c6h30_log_sprint lane log frames 276 fat 0.05 seterr None
+30Hz   t   3.06 TRIP v 585 cm/s class low(trip) severity 1.81 -> balance lost | support none (airborne) | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 585, after 456
+30Hz   t   3.06 state normal -> falling forward (dist to surface 999)
+30Hz   t   4.56 state falling forward -> lying (dist to surface 999)
+30Hz   t   5.09 state lying -> getting up (dist to surface 999)
+30Hz   t   8.12 state getting up -> normal (dist to surface 999)
+30Hz   capsule travel: start x -6000, furthest -4996, end -5021 | max speed 585 | lowest pelvis (component z) 16.3 | hand reach max 0.00
+30Hz   PENETRATION (cm, limb surface inside the obstacle): ball 8.2 at t 3.25 (falling forward) | foot 2.1 at t 3.25 (falling forward)
+30Hz c6h30_stair_sprint lane None frames 276 fat 0.06 seterr None
+30Hz   capsule travel: start x -6000, furthest -3630, end -3822 | max speed 585 | lowest pelvis (component z) 42.9 | hand reach max 0.00
+FINAL6_DONE_contact
