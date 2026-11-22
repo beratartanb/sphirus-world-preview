@@ -1,0 +1,76 @@
+#### g7_stair_walk
+g7_stair_walk frames 540 capsule z 88 -> max 223
+  flat       n  251 | speed 174 | trunk lean   1.4 | pelvis above lower foot mean  81.4 min  71.2, above higher foot mean  73.4 min  33.0 | knee angle min  61.1 p05 111.7
+  climbing   n  138 | speed 103 | trunk lean   1.3 | pelvis above lower foot mean  76.4 min  68.3, above higher foot mean  57.5 min  32.1 | knee angle min  59.2 p05  70.0
+  descending n 0
+  largest pelvis step/frame 3.1 cm | air (start s, duration s, distance cm, max gap cm): [(5.45, 3.58, 214, 138)]
+g7_stair_walk: 16 contacts
+  TOTAL n 16 | curve: mean 1.2 p90 1.7 worst 2.0, >=10: 0, >=20: 0 | ground: mean 1.1 p90 1.6 worst 2.0, >=10: 0, >=20: 0
+#### g7_stair_run
+g7_stair_run frames 342 capsule z 88 -> max 232
+  flat       n  112 | speed 359 | trunk lean  15.0 | pelvis above lower foot mean  76.8 min  65.4, above higher foot mean  57.7 min  36.9 | knee angle min  62.7 p05  70.2
+  climbing   n   77 | speed 242 | trunk lean  15.2 | pelvis above lower foot mean  59.9 min  39.6, above higher foot mean  43.0 min  11.5 | knee angle min  29.5 p05  44.8
+  descending n 0
+  largest pelvis step/frame 4.4 cm | air (start s, duration s, distance cm, max gap cm): [(3.23, 2.5, 235, 146)]
+g7_stair_run: 13 contacts
+  TOTAL n 13 | curve: mean 0.7 p90 1.0 worst 2.1, >=10: 0, >=20: 0 | ground: mean 0.6 p90 1.0 worst 1.2, >=10: 0, >=20: 0
+#### g7_stair_walk_down
+g7_stair_walk_down frames 450 capsule z 232 -> max 232
+  flat       n  163 | speed 159 | trunk lean   1.4 | pelvis above lower foot mean  81.4 min  73.9, above higher foot mean  73.4 min  47.7 | knee angle min  72.7 p05 108.9
+  climbing   n 0
+  descending n  144 | speed 105 | trunk lean   0.6 | pelvis above lower foot mean  83.9 min  79.3, above higher foot mean  62.8 min  34.2 | knee angle min  65.7 p05  73.3
+  largest pelvis step/frame 3.6 cm | air (start s, duration s, distance cm, max gap cm): [(0.0, 5.53, 590, 146)]
+g7_stair_walk_down: 13 contacts
+  TOTAL n 13 | curve: mean 1.5 p90 2.5 worst 3.4, >=10: 0, >=20: 0 | ground: mean 0.9 p90 1.3 worst 2.3, >=10: 0, >=20: 0
+#### g7_stair_run_down
+g7_stair_run_down frames 300 capsule z 232 -> max 232
+  flat       n   89 | speed 255 | trunk lean  13.7 | pelvis above lower foot mean  78.6 min  70.9, above higher foot mean  60.1 min  25.8 | knee angle min  64.6 p05  70.1
+  climbing   n 0
+  descending n   78 | speed 236 | trunk lean  15.3 | pelvis above lower foot mean  80.4 min  69.6, above higher foot mean  43.6 min  23.4 | knee angle min  43.4 p05  53.0
+  largest pelvis step/frame 5.1 cm | air (start s, duration s, distance cm, max gap cm): [(0.0, 3.37, 588, 146)]
+g7_stair_run_down: 10 contacts
+  TOTAL n 10 | curve: mean 1.1 p90 2.1 worst 2.1, >=10: 0, >=20: 0 | ground: mean 0.6 p90 1.1 worst 1.4, >=10: 0, >=20: 0
+#### g7_ramp_walk
+g7_ramp_walk frames 762 capsule z 88 -> max 228
+  flat       n  206 | speed 171 | trunk lean   1.4 | pelvis above lower foot mean  81.4 min  73.9, above higher foot mean  73.6 min  62.0 | knee angle min 106.5 p05 111.9
+  climbing   n  194 | speed 162 | trunk lean   1.7 | pelvis above lower foot mean  78.3 min  68.7, above higher foot mean  68.0 min  60.4 | knee angle min 106.3 p05 108.5
+  descending n  171 | speed 148 | trunk lean   0.9 | pelvis above lower foot mean  79.9 min  71.8, above higher foot mean  70.0 min  59.0 | knee angle min 107.8 p05 111.1
+  largest pelvis step/frame 1.7 cm | air (start s, duration s, distance cm, max gap cm): [(4.57, 8.17, 63, 142)]
+g7_ramp_walk: 23 contacts
+  TOTAL n 23 | curve: mean 2.0 p90 3.3 worst 4.4, >=10: 0, >=20: 0 | ground: mean 1.9 p90 3.1 worst 3.7, >=10: 0, >=20: 0
+#### g7_ramp_run
+g7_ramp_run frames 330 capsule z 88 -> max 240
+  flat       n   95 | speed 334 | trunk lean  15.2 | pelvis above lower foot mean  76.2 min  61.7, above higher foot mean  59.6 min  36.8 | knee angle min  62.7 p05  71.4
+  climbing   n  104 | speed 355 | trunk lean  14.0 | pelvis above lower foot mean  71.4 min  57.9, above higher foot mean  53.0 min  38.2 | knee angle min  63.4 p05  71.4
+  descending n 0
+  largest pelvis step/frame 2.5 cm | air (start s, duration s, distance cm, max gap cm): [(2.83, 2.7, 550, 154)]
+g7_ramp_run: 11 contacts
+  TOTAL n 11 | curve: mean 1.3 p90 2.4 worst 3.0, >=10: 0, >=20: 0 | ground: mean 1.2 p90 2.4 worst 3.0, >=10: 0, >=20: 0
+#### g7_jump
+g7_jump frames 1290 capsule z 88 -> max 153
+  flat       n  626 | speed 249 | trunk lean  22.9 | pelvis above lower foot mean  70.7 min  38.7, above higher foot mean  57.6 min  22.5 | knee angle min  34.0 p05  71.4
+  climbing   n   61 | speed 270 | trunk lean  16.4 | pelvis above lower foot mean  75.5 min  59.9, above higher foot mean  60.7 min  38.6 | knee angle min  62.9 p05  73.0
+  descending n   48 | speed 358 | trunk lean   3.8 | pelvis above lower foot mean  56.5 min  31.3, above higher foot mean  28.6 min  13.2 | knee angle min  18.5 p05  19.3
+  largest pelvis step/frame 8.5 cm | air (start s, duration s, distance cm, max gap cm): [(3.58, 0.62, 284, 67), (9.78, 0.6, 153, 63), (12.98, 0.62, 0, 67)]
+g7_jump: 36 contacts
+  TOTAL n 36 | curve: mean 1.4 p90 3.3 worst 6.2, >=10: 0, >=20: 0 | ground: mean 1.1 p90 1.8 worst 4.6, >=10: 0, >=20: 0
+#### g7_fresh (steady part, after 1.5 s)  values: p2p / rms cm
+seg  keys          v   | capsule z | driver pelvis z | visible pelvis z | world pelvis z | world head z | head-pelvis z | pelvis lat | head lat | trunk roll p2p | cam z  | cam lat
+s1   W             180 |   0.0/ 0.0 |   4.6/ 1.5     |   4.8/ 1.5      |   4.7/ 1.6    |   4.8/ 1.6  |   0.2/ 0.1   |   5.2/ 1.4 |   5.4/ 1.5 |   4.1        |   1.2/ 0.4 |   3.2/ 0.9
+s2   W Sh          415 |   0.0/ 0.0 |   8.1/ 2.2     |   8.4/ 2.2      |   8.3/ 2.2    |   8.5/ 2.3  |   2.4/ 0.5   |   2.7/ 0.8 |   5.1/ 1.6 |   6.2        |   3.5/ 1.0 |   2.4/ 0.6
+s3   W             180 |   0.0/ 0.0 |   4.9/ 1.7     |   5.1/ 1.8      |   5.0/ 1.8    |   5.1/ 1.8  |   0.3/ 0.1   |   5.1/ 1.7 |   4.9/ 1.7 |   3.5        |   1.2/ 0.4 |   3.1/ 1.1
+s4   W Sh          415 |   0.0/ 0.0 |   5.9/ 1.7     |   6.1/ 1.8      |   6.0/ 1.8    |   6.5/ 1.9  |   1.1/ 0.3   |   2.1/ 0.5 |   5.6/ 1.7 |   8.3        |   2.3/ 0.8 |   2.5/ 0.8
+s6   W Sh          180 |   0.0/ 0.0 |   5.2/ 1.4     |   5.4/ 1.5      |   5.3/ 1.5    |   7.0/ 1.9  |   2.0/ 0.5   |   2.7/ 0.7 |   5.8/ 1.7 |   7.7        |   8.5/ 2.6 |   5.8/ 1.3
+s7   W             180 |   0.0/ 0.0 |   5.6/ 1.4     |   5.7/ 1.5      |   5.7/ 1.5    |   6.3/ 1.6  |   1.3/ 0.4   |   2.2/ 0.6 |   5.8/ 1.6 |   8.1        |   1.3/ 0.4 |   2.2/ 0.7
+s9   W Sh Ct       180 |   0.0/ 0.0 |   5.2/ 1.4     |   5.3/ 1.5      |   5.3/ 1.5    |   6.8/ 1.8  |   2.0/ 0.5   |   2.6/ 0.6 |   5.7/ 1.6 |   8.2        |   9.2/ 2.7 |   5.9/ 1.4
+s10  W             180 |   0.0/ 0.0 |   5.0/ 1.4     |   5.1/ 1.4      |   5.1/ 1.4    |   5.3/ 1.6  |   2.3/ 0.5   |   1.6/ 0.5 |   6.0/ 1.7 |   8.4        |   1.3/ 0.3 |   2.5/ 0.8
+#### g7_tired (steady part, after 1.5 s)  values: p2p / rms cm
+seg  keys          v   | capsule z | driver pelvis z | visible pelvis z | world pelvis z | world head z | head-pelvis z | pelvis lat | head lat | trunk roll p2p | cam z  | cam lat
+s1   W             180 |   0.0/ 0.0 |   5.2/ 1.4     |   5.4/ 1.5      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |  12.6/ 3.6 |   5.3/ 1.3
+s2   W Sh          180 |   0.0/ 0.0 |   5.1/ 1.4     |   5.2/ 1.4      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |   1.4/ 0.3 |   4.3/ 1.3
+s3   W             180 |   0.0/ 0.0 |   5.2/ 1.8     |   5.4/ 1.9      |  91.9/41.7    | 148.5/67.3  |  56.6/25.7   | 1999.8/906.4 | 1998.4/905.7 |   1.5        |   1.4/ 0.3 |   3.7/ 1.0
+s4   W Sh          180 |   0.0/ 0.0 |   5.9/ 1.5     |   6.0/ 1.6      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |   1.6/ 0.5 |   3.7/ 1.3
+s6   W Sh          180 |   0.0/ 0.0 |   5.4/ 1.5     |   5.6/ 1.5      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |  12.2/ 3.8 |   5.0/ 1.2
+s7   W             180 |   0.0/ 0.0 |   5.5/ 1.4     |   5.6/ 1.5      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |   1.8/ 0.5 |   3.7/ 1.2
+s9   W Sh Ct       180 |   0.0/ 0.0 |   5.4/ 1.5     |   5.4/ 1.5      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |  12.8/ 3.7 |   5.2/ 1.3
+s10  W             180 |   0.0/ 0.0 |   5.3/ 1.4     |   5.5/ 1.4      |   0.0/ 0.0    |   0.0/ 0.0  |   0.0/ 0.0   |   0.0/ 0.0 |   0.0/ 0.0 |   0.0        |   2.2/ 0.6 |   4.1/ 1.3

@@ -1,0 +1,27 @@
+k15_corrk_tempo lane corr frames 753 fat 0.00 seterr None
+  t   5.57 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | support right | rear room 999 cm | object StaticMeshActor_30 | speed 0.1 s before 278, after 0
+  t   5.57 state normal -> stagger (dist to surface 10)
+  t   7.77 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -6600, furthest -5570, end -5642 | max speed 278 | lowest pelvis (component z) 75.8 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k15_corrk_run lane corr frames 750 fat 0.03 seterr None
+  t   4.60 IMPACT v 415 cm/s class knee severity 2.26 -> balance lost | support none (airborne) | rear room 999 cm | object StaticMeshActor_30 | speed 0.1 s before 415, after 181
+  t   4.60 state normal -> stagger [retreat step, kneel pending] (dist to surface 14)
+  t   4.99 state stagger -> kneeling down (dist to surface 999)
+  t   5.95 state kneeling down -> on one knee (dist to surface 999)
+  t   6.62 state on one knee -> standing up (dist to surface 999)
+  t   8.37 state standing up -> normal (dist to surface 999)
+  capsule travel: start x -6900, furthest -5574, end -5618 | max speed 415 | lowest pelvis (component z) 48.4 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k15_corrk_sprint lane corr frames 552 fat 0.06 seterr None
+  t   3.98 IMPACT v 585 cm/s class knee severity 3.22 -> balance lost | support none (airborne) | rear room 999 cm | object StaticMeshActor_30 | speed 0.1 s before 585, after 190
+  t   3.98 state normal -> stagger [retreat step, kneel pending] (dist to surface 19)
+  t   4.37 state stagger -> kneeling down (dist to surface 999)
+  t   5.32 state kneeling down -> on one knee (dist to surface 999)
+  t   5.83 state on one knee -> standing up (dist to surface 999)
+  t   7.60 state standing up -> normal (dist to surface 999)
+  capsule travel: start x -7000, furthest -5579, end -5725 | max speed 585 | lowest pelvis (component z) 48.3 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k15_corrk_walk lane corr frames 492 fat 0.00 seterr None
+  capsule travel: start x -6300, furthest -5602, end -5782 | max speed 180 | lowest pelvis (component z) 83.5 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)

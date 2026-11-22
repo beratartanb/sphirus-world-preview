@@ -1,0 +1,15 @@
+k17_back_walk lane wall frames 360 fat 0.00 seterr None
+  t   3.62 IMPACT v 150 cm/s class wall severity 0.45 -> light | support right | rear room 999 cm | object StaticMeshActor_1 | speed 0.1 s before 150, after 54
+  t   3.62 state normal -> blocked (dist to surface 10)
+  t   4.12 state blocked -> normal (dist to surface 0)
+  capsule travel: start x -5500, furthest -5130, end -5130 | max speed 150 | lowest pelvis (component z) 86.6 | hand reach max 0.99
+  PENETRATION (cm, limb surface inside the obstacle): foot 8.4 at t 4.12 (normal) | shin 5.4 at t 4.10 (blocked)
+    phase blocked          foot    frames   8 worst  8.4 cm
+    phase blocked          shin    frames   5 worst  5.4 cm
+    phase normal           foot    frames 116 worst  8.4 cm
+    phase normal           shin    frames 116 worst  5.0 cm
+k17_back_tempo lane wall frames 330 fat 0.00 seterr None
+  capsule travel: start x -5800, furthest -5161, end -5161 | max speed 234 | lowest pelvis (component z) 84.1 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k17_back_tempo_45 lane None frames 330 fat 0.00 seterr None
+  capsule travel: start x -5800, furthest -5200, end -5200 | max speed 234 | lowest pelvis (component z) 84.1 | hand reach max 0.00

@@ -1,0 +1,16 @@
+# real (wall) frame time per recorded frame (row rdt), editor PIE, data runs without screenshots, move test map; round 7 final (saved + reopened)
+g7s_A_60               n  2586 | real frame time ms: p50  41.7  p95  44.4  p99  45.8  max  111.8 | frames > 2 x p50: 2
+g7s_B_60               n  2841 | real frame time ms: p50  41.6  p95  44.4  p99  45.8  max  111.6 | frames > 2 x p50: 1
+g7_R_60                n  2556 | real frame time ms: p50  41.7  p95  44.6  p99  45.8  max  116.5 | frames > 2 x p50: 2
+g7_G                   n  1920 | real frame time ms: p50  41.7  p95  44.4  p99  45.6  max   93.1 | frames > 2 x p50: 1
+g7_knee_run            n   750 | real frame time ms: p50  41.7  p95  44.1  p99  45.3  max   94.0 | frames > 2 x p50: 1
+g7_log_sprint          n   552 | real frame time ms: p50  41.7  p95  44.5  p99  45.6  max   47.1 | frames > 2 x p50: 0
+g7_corrk_run           n   750 | real frame time ms: p50  41.7  p95  44.0  p99  45.1  max   45.9 | frames > 2 x p50: 0
+g7_back_tempo          n   330 | real frame time ms: p50  41.7  p95  44.1  p99  45.8  max   47.4 | frames > 2 x p50: 0
+g7_side_graze          n   432 | real frame time ms: p50  41.6  p95  44.6  p99  45.6  max   90.8 | frames > 2 x p50: 1
+g7_stair_run           n   342 | real frame time ms: p50  41.6  p95  44.5  p99  45.4  max   87.1 | frames > 2 x p50: 1
+# during reactions only (contact state != 0)
+g7_knee_run            n   215 | real frame time ms: p50  41.6  p95  44.1  p99  44.7  max   94.0 | frames > 2 x p50: 1
+g7_log_sprint          n   301 | real frame time ms: p50  41.7  p95  44.5  p99  45.5  max   47.1 | frames > 2 x p50: 0
+g7_corrk_run           n   225 | real frame time ms: p50  41.7  p95  44.2  p99  45.4  max   45.8 | frames > 2 x p50: 0
+g7_back_tempo          n   132 | real frame time ms: p50  41.7  p95  43.8  p99  45.9  max   47.4 | frames > 2 x p50: 0

@@ -1,0 +1,14 @@
+k18_back_walk lane wall frames 360 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -5168, end -5168 | max speed 150 | lowest pelvis (component z) 86.5 | hand reach max 0.91
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k18_back_tempo lane wall frames 330 fat 0.00 seterr None
+  t   3.18 IMPACT v 234 cm/s class wall severity 0.85 -> light | support none (airborne) | rear room 999 cm | object StaticMeshActor_1 | speed 0.1 s before 234, after 73
+  t   3.18 state normal -> blocked (dist to surface 9)
+  t   3.68 state blocked -> normal (dist to surface 13)
+  capsule travel: start x -5600, furthest -5139, end -5143 | max speed 234 | lowest pelvis (component z) 84.1 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k18_back_tempo_side lane None frames 330 fat 0.00 seterr None
+  t   3.32 IMPACT v 220 cm/s class wall severity 0.67 -> light | support left | rear room 999 cm | object StaticMeshActor_1 | speed 0.1 s before 234, after 85
+  t   3.32 state normal -> blocked (dist to surface 9)
+  t   3.82 state blocked -> normal (dist to surface 15)
+  capsule travel: start x -5600, furthest -5137, end -5142 | max speed 234 | lowest pelvis (component z) 84.0 | hand reach max 0.00

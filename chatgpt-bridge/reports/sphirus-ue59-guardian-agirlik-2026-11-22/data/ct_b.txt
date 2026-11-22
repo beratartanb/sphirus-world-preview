@@ -1,0 +1,20 @@
+k9_knee_run_carry lane knee frames 750 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5168, end -5168 | max speed 187 | lowest pelvis (component z) 83.7 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k9_knee_walk lane knee frames 492 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -5169, end -5348 | max speed 180 | lowest pelvis (component z) 83.5 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k9_log_walk lane log frames 492 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -4834, end -5014 | max speed 180 | lowest pelvis (component z) 72.3 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 4.0 at t 3.58 (normal)
+    phase normal           ball    frames   2 worst  4.0 cm
+k9_log_tempo lane log frames 753 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4597, end -4597 | max speed 278 | lowest pelvis (component z) 74.3 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 0.4 at t 5.05 (normal)
+    phase normal           ball    frames   1 worst  0.4 cm
+k9_knee_tempo lane knee frames 753 fat 0.00 seterr None
+  t   4.95 IMPACT v 278 cm/s class knee severity 1.26 -> stagger | support right | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 278, after 0
+  t   4.95 state normal -> stagger (dist to surface 12)
+  t   7.17 state stagger -> normal (dist to surface 35)
+  capsule travel: start x -6000, furthest -5142, end -5165 | max speed 278 | lowest pelvis (component z) 75.8 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)

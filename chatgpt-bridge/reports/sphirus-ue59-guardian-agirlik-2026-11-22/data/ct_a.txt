@@ -1,0 +1,11 @@
+k8_side_graze lane side frames 432 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4424, end -4424 | max speed 415 | lowest pelvis (component z) 78.2 | hand reach max 0.30
+  PENETRATION (cm, limb surface inside the obstacle): elbow 4.9 at t 4.77 (normal)
+    phase normal           elbow   frames  19 worst  4.9 cm
+k8_knee_run_carry lane knee frames 750 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5147, end -5147 | max speed 187 | lowest pelvis (component z) 83.6 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 9.1 at t 5.77 (normal)
+    phase normal           ball    frames  15 worst  9.1 cm
+k8_tight_forced lane tight frames 492 fat 0.00 seterr None
+  capsule travel: start x -5805, furthest -5787, end -5787 | max speed 106 | lowest pelvis (component z) 90.5 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)

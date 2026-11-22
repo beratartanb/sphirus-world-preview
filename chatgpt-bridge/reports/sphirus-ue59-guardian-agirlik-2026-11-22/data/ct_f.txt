@@ -1,0 +1,13 @@
+k13_corr_walk lane corr frames 492 fat 0.00 seterr None
+  capsule travel: start x -5900, furthest -5130, end -5322 | max speed 180 | lowest pelvis (component z) 64.1 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): knee 14.4 at t 5.78 (normal) | shin 8.9 at t 5.78 (normal) | thigh 8.3 at t 5.78 (normal) | ball 4.5 at t 5.75 (normal)
+    phase normal           ball    frames  44 worst  4.5 cm
+    phase normal           knee    frames  27 worst 14.4 cm
+    phase normal           shin    frames  20 worst  8.9 cm
+    phase normal           thigh   frames  16 worst  8.3 cm
+k13_corr_run lane corr frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5157, end -5337 | max speed 415 | lowest pelvis (component z) 78.2 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k13_corr_sprint lane corr frames 552 fat 0.06 seterr None
+  capsule travel: start x -6400, furthest -5157, end -5336 | max speed 585 | lowest pelvis (component z) 75.0 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)

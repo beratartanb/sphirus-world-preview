@@ -1,0 +1,14 @@
+k19_back_tempo lane wall frames 330 fat 0.00 seterr None
+  t   3.18 IMPACT v 234 cm/s class wall severity 1.19 -> stagger | support none (airborne) | rear room 999 cm | object StaticMeshActor_1 | speed 0.1 s before 234, after 0
+  t   3.18 state normal -> stagger (dist to surface 9)
+  t   5.38 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -5600, furthest -5139, end -5248 | max speed 234 | lowest pelvis (component z) 83.8 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+k19_back_tempo_side lane None frames 330 fat 0.00 seterr None
+  t   3.32 IMPACT v 220 cm/s class wall severity 0.93 -> stagger | support left | rear room 999 cm | object StaticMeshActor_1 | speed 0.1 s before 234, after 0
+  t   3.32 state normal -> stagger (dist to surface 10)
+  t   5.52 state stagger -> normal (dist to surface 999)
+  capsule travel: start x -5600, furthest -5137, end -5239 | max speed 234 | lowest pelvis (component z) 84.1 | hand reach max 0.00
+k19_back_walk lane wall frames 360 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -5171, end -5171 | max speed 150 | lowest pelvis (component z) 86.6 | hand reach max 0.84
+  PENETRATION: none (no visible limb surface inside the obstacle)

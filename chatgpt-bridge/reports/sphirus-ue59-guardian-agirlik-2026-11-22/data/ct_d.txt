@@ -1,0 +1,14 @@
+k11_wall_walk_propR lane wall frames 492 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -5147, end -5327 | max speed 180 | lowest pelvis (component z) 77.9 | hand reach max 1.00
+  PENETRATION (cm, limb surface inside the obstacle): hand 6.2 at t 3.25 (normal)
+    phase normal           hand    frames   5 worst  6.2 cm
+  k11_wall_walk_propR reach alpha max 1.00 cterr None
+k11_wall_walk_propL lane wall frames 492 fat 0.00 seterr None
+  capsule travel: start x -5500, furthest -5148, end -5327 | max speed 180 | lowest pelvis (component z) 77.9 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+  k11_wall_walk_propL reach alpha max 1.00 cterr None
+k11_side_graze_propR lane side frames 432 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4433, end -4433 | max speed 415 | lowest pelvis (component z) 78.2 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): hand 5.8 at t 3.90 (normal)
+    phase normal           hand    frames   4 worst  5.8 cm
+  k11_side_graze_propR reach alpha max 0.00 cterr None

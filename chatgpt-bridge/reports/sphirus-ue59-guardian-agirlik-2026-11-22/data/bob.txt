@@ -1,0 +1,22 @@
+#### g7_G (steady part, after 1.5 s)  values: p2p / rms cm
+seg  keys          v   | capsule z | driver pelvis z | visible pelvis z | world pelvis z | world head z | head-pelvis z | pelvis lat | head lat | trunk roll p2p | cam z  | cam lat
+s1   W             180 |   0.0/ 0.0 |   4.6/ 1.5     |   4.8/ 1.6      |   4.7/ 1.6    |   4.8/ 1.6  |   0.2/ 0.1   |   5.2/ 1.4 |   5.3/ 1.5 |   4.1        |   1.2/ 0.4 |   3.1/ 0.9
+s2   W Sh          415 |   0.0/ 0.0 |   8.1/ 2.2     |   8.4/ 2.2      |   8.3/ 2.2    |   8.6/ 2.3  |   2.4/ 0.5   |   2.7/ 0.8 |   5.1/ 1.6 |   6.2        |   3.5/ 1.0 |   2.4/ 0.6
+s3   W             180 |   0.0/ 0.0 |   4.9/ 1.7     |   5.1/ 1.8      |   5.0/ 1.8    |   5.0/ 1.8  |   0.3/ 0.1   |   5.1/ 1.7 |   4.9/ 1.7 |   3.5        |   1.2/ 0.4 |   3.1/ 1.1
+s4   W Sh          415 |   0.0/ 0.0 |   5.9/ 1.8     |   6.1/ 1.8      |   6.0/ 1.8    |   6.5/ 2.0  |   1.1/ 0.3   |   2.1/ 0.5 |   5.6/ 1.7 |   8.3        |   2.3/ 0.8 |   2.5/ 0.8
+s6   W Sh          415 |   0.0/ 0.0 |   6.7/ 2.1     |   6.9/ 2.2      |   6.9/ 2.2    |   7.3/ 2.3  |   0.9/ 0.2   |   3.4/ 1.0 |   3.9/ 1.1 |   7.2        |   1.8/ 0.4 |   1.5/ 0.4
+s7   W             180 |   0.0/ 0.0 |   4.9/ 1.6     |   5.0/ 1.7      |   5.1/ 1.7    |   5.1/ 1.7  |   0.2/ 0.1   |   4.8/ 1.5 |   5.2/ 1.8 |   3.3        |   1.3/ 0.4 |   3.0/ 1.0
+s9   W Sh Ct       585 |   0.0/ 0.0 |   4.0/ 0.9     |   4.1/ 1.0      |   4.1/ 1.0    |   4.3/ 1.1  |   1.3/ 0.4   |   3.4/ 0.9 |   6.6/ 1.9 |   7.3        |   4.8/ 1.4 |   2.8/ 0.8
+s10  W             180 |   0.0/ 0.0 |   5.1/ 1.7     |   5.2/ 1.7      |   5.2/ 1.7    |   5.2/ 1.7  |   0.2/ 0.0   |   3.9/ 1.2 |   5.2/ 1.6 |   4.2        |   2.1/ 0.5 |   2.8/ 0.9
+#### g7_G
+s1  [W             ] v   0 -> 180 | 90% in 0.32 s | peak acc   924 | capsule faster than clip 0.00 s | head dz/0.2s  9.7 pelvis  9.6 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 2.97
+s2  [W Sh          ] v 180 -> 415 | 90% in 0.37 s | peak acc   634 | capsule faster than clip 0.00 s | head dz/0.2s 13.9 pelvis 11.0 | N_Walk_Start_F_Rfoot 0.03 > R_Tr_Walk_to_Run_Lfoot 2.58 > N_Run_Loop_F 0.38
+s3  [W             ] v 415 -> 180 | 90% in 0.35 s | peak acc   655 | capsule faster than clip 0.20 s | head dz/0.2s  8.7 pelvis  8.5 | N_Run_Loop_F 0.03 > N_Walk_Loop_F 2.97
+s4  [W Sh          ] v 180 -> 415 | 90% in 0.38 s | peak acc   595 | capsule faster than clip 0.00 s | head dz/0.2s 15.0 pelvis  8.7 | N_Walk_Loop_F 0.03 > N_Run_Start_F_Lfoot 2.37 > N_Run_Loop_F 0.10
+s5  [-             ] v 415 ->   0 | 90% in 0.42 s | peak acc  3000 | capsule faster than clip 0.00 s | head dz/0.2s  7.5 pelvis  8.1 | N_Run_Loop_F 0.03 > R_Run_Stop_F_Rfoot 2.47
+s6  [W Sh          ] v   0 -> 415 | 90% in 0.60 s | peak acc  1404 | capsule faster than clip 0.00 s | head dz/0.2s 16.7 pelvis 14.4 | R_Run_Stop_F_Rfoot 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to_Run_Rfoot 2.18
+s7  [W             ] v 415 -> 180 | 90% in 0.38 s | peak acc   655 | capsule faster than clip 0.12 s | head dz/0.2s  8.1 pelvis  7.9 | R_Tr_Walk_to_Run_Rfoot 0.03 > N_Tr_Run_to_Walk_Lfoot 0.10 > N_Walk_Loop_F 2.87
+s8  [-             ] v 180 ->   0 | 90% in 0.37 s | peak acc  1437 | capsule faster than clip 0.00 s | head dz/0.2s  5.1 pelvis  5.3 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Rfoot 2.17 > R_Stand_Idle_Loop 0.30
+s9  [W Sh Ct       ] v   0 -> 585 | 90% in 0.95 s | peak acc  1400 | capsule faster than clip 0.00 s | head dz/0.2s 21.2 pelvis 17.1 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to_Run_Rfoot 0.12 > _Tr_Walk_to_Sprint_Rfoot 2.28 > R_Sprint_Loop_F 0.28
+s10 [W             ] v 585 -> 180 | 90% in 0.67 s | peak acc   655 | capsule faster than clip 0.13 s | head dz/0.2s  9.4 pelvis  9.3 | R_Sprint_Loop_F 0.03 > N_Tr_Run_to_Walk_Rfoot 0.03 > N_Tr_Run_to_Walk_Lfoot 0.37 > N_Walk_Loop_F 2.57
+s11 [-             ] v 180 ->   0 | 90% in 0.57 s | peak acc  1392 | capsule faster than clip 0.00 s | head dz/0.2s  4.3 pelvis  4.2 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Rfoot 2.35 > R_Stand_Idle_Loop 0.12
