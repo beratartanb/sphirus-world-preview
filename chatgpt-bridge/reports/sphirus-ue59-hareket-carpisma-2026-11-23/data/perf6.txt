@@ -1,0 +1,28 @@
+# real (wall) frame time per recorded frame, editor PIE, data runs (no screenshots), move test map; GPU-bound scene
+f7_knee_run        n  692 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max  95.1 | frames > 2 x p50: 1
+f7_knee_run_off    n  692 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max  88.5 | frames > 2 x p50: 1
+f7_log_sprint      n  494 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max  42.8 | frames > 2 x p50: 0
+f7_wall_sprint     n  494 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max  95.6 | frames > 2 x p50: 1
+f7_tight_forced    n  437 | real frame time ms: p50  41.7  p95  42.2  p99  42.5  max  42.6 | frames > 2 x p50: 0
+f7_stair_sprint    n  494 | real frame time ms: p50  41.7  p95  42.3  p99  42.7  max  88.0 | frames > 2 x p50: 1
+f7_A_60            n 2528 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max 113.2 | frames > 2 x p50: 2
+f5_A_60            n 2528 | real frame time ms: p50  41.7  p95  42.4  p99  43.0  max 125.0 | frames > 2 x p50: 2
+f7_B_60            n 2783 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max 104.7 | frames > 2 x p50: 1
+f5_B_60            n 2783 | real frame time ms: p50  41.7  p95  42.3  p99  42.8  max 125.0 | frames > 2 x p50: 2
+# during reactions only (contact state != 0)
+f7_knee_run        n  217 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max  43.2 | frames > 2 x p50: 0
+f7_log_sprint      n  300 | real frame time ms: p50  41.7  p95  42.4  p99  42.7  max  42.8 | frames > 2 x p50: 0
+# matched real-time route in L_GR_SphirusHouse (perf_cam.sh: idle 3 s -> walk 6 s -> sprint 4 s -> stop 3 s), engine CSV profiler, editor PIE, 1920x1200 window
+P19_R6_on    frames    5 | Frame p50 29.1 p95 39.6 max 39.6 | GameThread p50 13.8 p95 21.4 max 21.4 | RenderThread p50 0.0 p95 0.0 max 0.0 | GPU p50 28.6 p95 28.8 max 28.8 | avg fps 32.9
+P19_R6_off   frames   14 | Frame p50 27.0 p95 29.8 max 29.8 | GameThread p50 13.8 p95 19.0 max 19.0 | RenderThread p50 0.0 p95 0.0 max 0.0 | GPU p50 25.5 p95 25.8 max 25.8 | avg fps 37.2
+P19_R6_on2   frames  606 | Frame p50 29.9 p95 31.6 max 35.1 | GameThread p50 13.4 p95 15.0 max 21.8 | RenderThread p50 0.0 p95 0.0 max 0.1 | GPU p50 28.3 p95 29.7 max 32.1 | avg fps 33.5
+P19_R6_off2  frames    2 | Frame p50 29.7 p95 29.7 max 29.7 | GameThread p50 23.3 p95 23.3 max 23.3 | RenderThread p50 0.0 p95 0.0 max 0.0 | GPU p50 24.5 p95 24.5 max 24.5 | avg fps 38.7
+P19_F_final  frames   27 | Frame p50 29.5 p95 30.9 max 37.9 | GameThread p50 12.9 p95 15.1 max 21.3 | RenderThread p50 29.3 p95 30.8 max 30.9 | GPU p50 28.1 p95 28.5 max 28.5 | avg fps 34.1
+# robust parse (header row located, short rows skipped per column)
+P19_R6_on    frames  611 | Frame p50 29.5 p95 31.2 p99 31.9 max 72.2 | GameThread p50 13.4 p95 14.7 p99 16.7 max 68.3 | GPU p50 28.0 p95 29.3 p99 29.9 max 31.8 | avg fps 33.9
+P19_R6_off   frames  737 | Frame p50 23.8 p95 27.4 p99 28.2 max 29.8 | GameThread p50 13.6 p95 17.0 p99 17.8 max 19.0 | GPU p50 22.2 p95 25.7 p99 26.1 max 27.6 | avg fps 40.8
+P19_R6_on2   frames  605 | Frame p50 29.9 p95 31.6 p99 32.2 max 35.1 | GameThread p50 13.4 p95 15.0 p99 15.3 max 21.8 | GPU p50 28.3 p95 29.7 p99 30.2 max 32.1 | avg fps 33.5
+P19_R6_off2  frames  759 | Frame p50 23.5 p95 26.5 p99 27.8 max 30.0 | GameThread p50 13.9 p95 17.5 p99 18.6 max 23.3 | GPU p50 21.8 p95 24.7 p99 25.2 max 27.6 | avg fps 41.7
+P19_F_final  frames  631 | Frame p50 28.5 p95 30.6 p99 31.2 max 63.3 | GameThread p50 13.0 p95 15.2 p99 17.5 max 21.3 | GPU p50 27.0 p95 28.7 p99 29.2 max 62.7 | avg fps 35.2
+# STANDALONE (-game, 1280x720 window, L_GR_SphirusHouse, no input, frames 600..3000; the world is capped at 24 fps = 41.7 ms)
+standalone   frames 2399 | Frame p50 20.6 p95 21.3 p99 21.6 max 63.6 | GameThread p50 6.3 p95 9.7 p99 10.6 max 61.9 | GPU p50 19.5 p95 20.0 p99 20.2 max 20.4 | avg fps 48.6

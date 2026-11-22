@@ -248,7 +248,9 @@ capt = sel(sel('150.0', sel('250.0', '220.0', '(== %s 2)' % v('CT_Kind')), '(== 
 capd = sel('0.0', '100000.0', AND('(>= %s 5)' % v('CT_State'), '(<= %s 7)' % v('CT_State')))
 # round 6b: careful step over an isolated low obstacle below the trip speed (the toe went ~10 cm into a 25 cm log at 180 cm/s)
 caps = sel(v('CT_StepV'), '100000.0', AND('_on', '_bsh', '(not _bk2)', '(not _hitb)', '(< _dsh 75.0)', '(<= _sp %s)' % v('CT_TripV')))
-body.append(setmot('CtCap', sel(F('FMin', F('FMin', '_capa', F('FMin', '_capg', '_capz')), F('FMin', F('FMin', capt, capd), caps)), '100000.0', v('CT_On'))))
+# round 6b: after a soft start the capsule may not run ahead of the walk-to-run / walk-to-sprint transition clip (f7_C_30 43 cm, f7_Cv_30 39 cm)
+capss = sel('(+ (* (`AnimInstance.GetCurveValue` _ai "movedata_speed") %s) 30.0)' % v('GR_SoftCapK'), '100000.0', AND(v('GR_SoftStartOn'), '(> %s 0.0)' % mot('StartT'), '(< %s %s)' % (mot('StartT'), v('GR_SoftCapT')), '(> (`AnimInstance.GetCurveValue` _ai "movedata_speed") 40.0)', '(<= %s 0.0)' % mot('RcExit')))
+body.append(setmot('CtCap', sel(F('FMin', F('FMin', '_capa', F('FMin', '_capg', '_capz')), F('FMin', F('FMin', F('FMin', capt, capd), caps), capss)), '100000.0', v('CT_On'))))
 reach = AND('_head', OR('_bhi', '_bmid'), '(< _dw 55.0)', '(not _carry)', '(== %s 0)' % v('CT_State'))
 brace = AND('(== %s 4)' % v('CT_State'), '(== %s 2)' % v('CT_Pend'), '_hitb', '(< _db 40.0)', '(not _carry)')
 body.append('(bind _side %s)' % F('Dot_VectorVector', '(- _pt _loc)', '_rt'))
@@ -291,7 +293,7 @@ body.append(S('CT_Flat', '_flat'))
 ev = NL + NL + '(event `GR_Contact`' + NL + NL.join('  ' + x for x in L + body) + ')'
 if DRY:
     print(ev); sys.exit(0)
-PV = [(n, 'float') for n in ('CT_Since', 'CT_Sep', 'CT_SepMin', 'CT_TripV', 'CT_TanKeep', 'CT_TripKick', 'CT_RetD', 'CT_RetT', 'CT_KneelClr', 'CT_CutMin', 'CT_HandOff', 'CT_GrazeReach', 'CT_StandOff', 'CT_KneeSeeV', 'CT_SlopeLo', 'CT_SlopeHi', 'CT_StairV', 'CT_StairRunV', 'CT_Tuck', 'CT_DuckD', 'CT_DuckT', 'CT_StepV', 'CT_TripH', 'CT_FallRate', 'CT_FallV', 'CT_FallTf', 'CT_FallDur',
+PV = [(n, 'float') for n in ('CT_Since', 'CT_Sep', 'CT_SepMin', 'CT_TripV', 'CT_TanKeep', 'CT_TripKick', 'CT_RetD', 'CT_RetT', 'CT_KneelClr', 'CT_CutMin', 'CT_HandOff', 'CT_GrazeReach', 'CT_StandOff', 'CT_KneeSeeV', 'CT_SlopeLo', 'CT_SlopeHi', 'CT_StairV', 'CT_StairRunV', 'CT_Tuck', 'CT_DuckD', 'CT_DuckT', 'CT_StepV', 'GR_SoftCapK', 'GR_SoftCapT', 'CT_TripH', 'CT_FallRate', 'CT_FallV', 'CT_FallTf', 'CT_FallDur',
       'CT_LieHold', 'CT_UpRate', 'CT_UpDur', 'CT_HalfH', 'CT_Room', 'CT_DBk', 'CT_DSh')] + [(n, 'int') for n in ('CT_Pend', 'CT_Sup', 'CT_Kind')] + [('CT_Flat', 'bool'), ('CT_Duck', 'bool'), ('CT_DuckOn', 'bool'), ('CT_RetN', 'vector'), ('CT_HitDir', 'vector'), ('CT_ReachF', 'vector'), ('CT_PalmK', 'float'), ('CT_ReachN', 'vector'), ('CT_ObjN', 'string')]
 have = json.dumps(T('BlueprintToolsets.BlueprintToolset.ListVariables', {'blueprint': {'refPath': BP}}))
 for n, ty in PV:

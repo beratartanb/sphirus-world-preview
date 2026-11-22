@@ -1,0 +1,26 @@
+f8_knee_run lane knee frames 750 fat 0.00 seterr None
+  t   3.40 IMPACT v 415 cm/s class knee severity 2.18 -> balance lost | support none (airborne) | rear room 999 cm | object StaticMeshActor_6 | speed 0.1 s before 415, after 184
+  t   3.40 state normal -> stagger [retreat step, kneel pending] (dist to surface 1)
+  t   3.78 state stagger -> kneeling down (dist to surface 44)
+  t   4.73 state kneeling down -> on one knee (dist to surface 44)
+  t   5.23 state on one knee -> standing up (dist to surface 44)
+  t   7.00 state standing up -> normal (dist to surface 44)
+  capsule travel: start x -6000, furthest -5131, end -5174 | max speed 415 | lowest pelvis (component z) 48.3 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 8.9 at t 3.38 (normal) | foot 0.2 at t 3.38 (normal)
+f8_log_sprint lane log frames 552 fat 0.05 seterr None
+  t   2.90 TRIP v 585 cm/s class low(trip) severity 1.51 -> balance lost | support left | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 585, after 448
+  t   2.90 state normal -> falling forward (dist to surface 999)
+  t   4.40 state falling forward -> lying (dist to surface 999)
+  t   4.92 state lying -> getting up (dist to surface 999)
+  t   7.93 state getting up -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4997, end -5050 | max speed 585 | lowest pelvis (component z) 16.2 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 8.8 at t 3.13 (falling forward) | foot 2.7 at t 3.13 (falling forward)
+f8_wall_run lane wall frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5147, end -5338 | max speed 415 | lowest pelvis (component z) 83.0 | hand reach max 1.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+f8_beam_run lane beam frames 492 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -4584, end -4773 | max speed 415 | lowest pelvis (component z) 59.9 | hand reach max 0.00
+  PENETRATION: none (no visible limb surface inside the obstacle)
+f8_knee_run_off lane knee frames 750 fat 0.00 seterr None
+  capsule travel: start x -6000, furthest -5130, end -5130 | max speed 415 | lowest pelvis (component z) 84.1 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 9.5 at t 3.40 (normal) | foot 0.1 at t 3.38 (normal) | shin 0.1 at t 3.42 (normal)

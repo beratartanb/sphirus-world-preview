@@ -1,0 +1,39 @@
+#### f7_ramp_walk
+f7_ramp_walk: 23 contacts
+  TOTAL n 23 | curve: mean 1.8 p90 3.1 worst 3.9, >=10: 0, >=20: 0 | ground: mean 1.7 p90 3.1 worst 3.9, >=10: 0, >=20: 0
+f7_ramp_walk frames 762 capsule z 88 -> max 230
+  flat       n  205 | speed 172 | trunk lean   1.0 | pelvis above lower foot mean  81.8 min  70.5, above higher foot mean  74.2 min  58.9 | knee angle min 103.6 p05 112.9
+  climbing   n  197 | speed 162 | trunk lean   1.3 | pelvis above lower foot mean  78.7 min  66.1, above higher foot mean  67.9 min  56.8 | knee angle min 101.1 p05 104.7
+  descending n  180 | speed 149 | trunk lean  -0.9 | pelvis above lower foot mean  80.8 min  72.7, above higher foot mean  70.8 min  55.4 | knee angle min 107.0 p05 110.1
+  largest pelvis step/frame 2.4 cm | air (start s, duration s, distance cm, max gap cm): [(4.5, 8.23, 46, 144)]
+#### f7_ramp_run
+f7_ramp_run: 13 contacts
+  TOTAL n 13 | curve: mean 1.2 p90 2.1 worst 2.7, >=10: 0, >=20: 0 | ground: mean 1.2 p90 2.1 worst 2.7, >=10: 0, >=20: 0
+f7_ramp_run frames 330 capsule z 88 -> max 244
+  flat       n   92 | speed 345 | trunk lean  14.9 | pelvis above lower foot mean  77.2 min  62.8, above higher foot mean  59.8 min  36.3 | knee angle min  61.4 p05  69.8
+  climbing   n  109 | speed 349 | trunk lean  14.7 | pelvis above lower foot mean  69.6 min  55.9, above higher foot mean  52.8 min  36.1 | knee angle min  62.5 p05  72.3
+  descending n 0
+  largest pelvis step/frame 2.9 cm | air (start s, duration s, distance cm, max gap cm): [(2.73, 2.8, 563, 158)]
+#### f7_stair_walk
+f7_stair_walk: 16 contacts
+  TOTAL n 16 | curve: mean 1.2 p90 1.9 worst 2.1, >=10: 0, >=20: 0 | ground: mean 1.1 p90 1.6 worst 1.9, >=10: 0, >=20: 0
+f7_stair_walk frames 540 capsule z 88 -> max 228
+  flat       n  248 | speed 176 | trunk lean   0.9 | pelvis above lower foot mean  82.2 min  75.5, above higher foot mean  74.6 min  57.6 | knee angle min  93.1 p05 113.1
+  climbing   n  144 | speed 102 | trunk lean   1.4 | pelvis above lower foot mean  77.0 min  66.5, above higher foot mean  62.0 min  26.7 | knee angle min  60.2 p05  71.2
+  descending n 0
+  largest pelvis step/frame 2.4 cm | air (start s, duration s, distance cm, max gap cm): [(5.38, 3.65, 218, 142)]
+#### f7_stair_run
+f7_stair_run: 11 contacts
+  TOTAL n 11 | curve: mean 0.7 p90 1.3 worst 1.4, >=10: 0, >=20: 0 | ground: mean 0.7 p90 1.3 worst 1.4, >=10: 0, >=20: 0
+f7_stair_run frames 342 capsule z 88 -> max 232
+  flat       n  120 | speed 352 | trunk lean  14.8 | pelvis above lower foot mean  75.8 min  57.4, above higher foot mean  56.5 min  36.3 | knee angle min  61.4 p05  68.1
+  climbing   n   74 | speed 246 | trunk lean  15.1 | pelvis above lower foot mean  60.4 min  38.3, above higher foot mean  46.9 min  27.2 | knee angle min  46.1 p05  53.6
+  descending n 0
+  largest pelvis step/frame 4.5 cm | air (start s, duration s, distance cm, max gap cm): [(3.12, 2.62, 261, 146)]
+#### f7_jump
+f7_jump frames 1290 capsule z 88 -> max 153
+  flat       n  636 | speed 251 | trunk lean  22.5 | pelvis above lower foot mean  71.4 min  38.7, above higher foot mean  58.7 min  26.2 | knee angle min  48.7 p05  71.6
+  climbing   n   59 | speed 274 | trunk lean  17.0 | pelvis above lower foot mean  73.7 min  55.3, above higher foot mean  56.0 min  39.2 | knee angle min  54.4 p05  65.4
+  descending n   48 | speed 358 | trunk lean   3.8 | pelvis above lower foot mean  61.5 min  46.9, above higher foot mean  38.5 min  32.0 | knee angle min  43.7 p05  48.8
+  largest pelvis step/frame 9.4 cm | air (start s, duration s, distance cm, max gap cm): [(3.58, 0.62, 284, 67), (9.78, 0.6, 153, 63), (12.98, 0.62, 0, 67)]
+FINAL6_DONE_terrain
