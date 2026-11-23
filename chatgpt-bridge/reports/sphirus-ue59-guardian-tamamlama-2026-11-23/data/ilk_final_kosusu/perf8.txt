@@ -1,0 +1,12 @@
+# real (wall) frame time per recorded frame (row rdt), editor PIE, data runs without screenshots, move test map; round 8 final (saved + reopened). Round 7 reference: data of report 2026-11-22 perf7.txt
+g8_A_60                n  2586 | real frame time ms: p50  41.7  p95  44.4  p99  45.6  max  110.4 | frames > 2 x p50: 2
+g8_B_60                n  2841 | real frame time ms: p50  41.7  p95  44.6  p99  45.8  max  125.0 | frames > 2 x p50: 3
+g8_R_60                n  2556 | real frame time ms: p50  41.7  p95  42.3  p99  42.7  max  107.5 | frames > 2 x p50: 2
+g8_G                   n  1920 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max  108.2 | frames > 2 x p50: 2
+g8_knee_run            n   750 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max   42.9 | frames > 2 x p50: 0
+g8_log_sprint          n   552 | real frame time ms: p50  41.7  p95  42.3  p99  42.6  max   42.8 | frames > 2 x p50: 0
+g8_corrk_run           n   750 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max   94.0 | frames > 2 x p50: 1
+g8_back_tempo          n   330 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max   42.9 | frames > 2 x p50: 0
+g8_side_graze          n   432 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max   44.1 | frames > 2 x p50: 0
+g8_stair_run           n   342 | real frame time ms: p50  41.7  p95  42.3  p99  42.5  max   42.9 | frames > 2 x p50: 0
+g8_tired               n  1920 | real frame time ms: p50  41.6  p95  44.5  p99  45.9  max  100.5 | frames > 2 x p50: 1

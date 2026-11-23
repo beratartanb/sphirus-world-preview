@@ -1,0 +1,100 @@
+#### g8_stair_walk
+g8_stair_walk frames 540 capsule z 88 -> max 224
+  flat       n  250 | speed 174 | trunk lean   1.4 | pelvis above lower foot mean  81.5 min  71.3, above higher foot mean  73.6 min  33.1 | knee angle min  59.2 p05 111.9
+  climbing   n  139 | speed 103 | trunk lean   1.4 | pelvis above lower foot mean  76.4 min  68.3, above higher foot mean  56.3 min  32.1 | knee angle min  61.0 p05  70.0
+  descending n 0
+g8_stair_walk airborne phases 0 (rows without floor data 0): []
+g8_stair_walk: 16 contacts
+  TOTAL n 16 | curve: mean 1.2 p90 1.8 worst 2.0, >=10: 0, >=20: 0 | ground: mean 1.1 p90 1.6 worst 2.0, >=10: 0, >=20: 0
+#### g8_stair_run
+g8_stair_run frames 342 capsule z 88 -> max 232
+  flat       n  113 | speed 357 | trunk lean  15.0 | pelvis above lower foot mean  77.3 min  65.6, above higher foot mean  58.2 min  36.9 | knee angle min  62.8 p05  70.5
+  climbing   n   77 | speed 242 | trunk lean  15.2 | pelvis above lower foot mean  59.8 min  39.9, above higher foot mean  42.6 min  11.8 | knee angle min  29.7 p05  44.4
+  descending n 0
+g8_stair_run airborne phases 0 (rows without floor data 0): []
+g8_stair_run: 13 contacts
+  TOTAL n 13 | curve: mean 0.7 p90 1.0 worst 2.3, >=10: 0, >=20: 0 | ground: mean 0.6 p90 1.0 worst 1.3, >=10: 0, >=20: 0
+#### g8_stair_walk_down
+g8_stair_walk_down frames 450 capsule z 232 -> max 232
+  flat       n  164 | speed 159 | trunk lean   1.4 | pelvis above lower foot mean  81.6 min  75.4, above higher foot mean  73.5 min  48.1 | knee angle min  72.8 p05 108.7
+  climbing   n 0
+  descending n  143 | speed 106 | trunk lean   0.6 | pelvis above lower foot mean  83.9 min  80.3, above higher foot mean  61.7 min  34.2 | knee angle min  65.8 p05  72.6
+g8_stair_walk_down airborne phases 0 (rows without floor data 0): []
+g8_stair_walk_down: 13 contacts
+  TOTAL n 13 | curve: mean 1.4 p90 2.3 worst 3.5, >=10: 0, >=20: 0 | ground: mean 0.9 p90 1.6 worst 2.3, >=10: 0, >=20: 0
+#### g8_stair_run_down
+g8_stair_run_down frames 300 capsule z 232 -> max 232
+  flat       n   88 | speed 253 | trunk lean  14.0 | pelvis above lower foot mean  79.5 min  71.2, above higher foot mean  61.0 min  25.8 | knee angle min  65.0 p05  70.8
+  climbing   n 0
+  descending n   79 | speed 238 | trunk lean  15.4 | pelvis above lower foot mean  80.3 min  69.7, above higher foot mean  43.5 min  23.5 | knee angle min  43.3 p05  52.9
+g8_stair_run_down airborne phases 0 (rows without floor data 0): []
+g8_stair_run_down: 10 contacts
+  TOTAL n 10 | curve: mean 1.1 p90 2.3 worst 2.5, >=10: 0, >=20: 0 | ground: mean 0.6 p90 1.1 worst 1.4, >=10: 0, >=20: 0
+#### g8_ramp_walk
+g8_ramp_walk frames 762 capsule z 88 -> max 228
+  flat       n  204 | speed 171 | trunk lean   1.4 | pelvis above lower foot mean  81.5 min  75.5, above higher foot mean  73.8 min  62.9 | knee angle min 106.3 p05 111.9
+  climbing   n  196 | speed 162 | trunk lean   1.7 | pelvis above lower foot mean  78.2 min  68.7, above higher foot mean  68.0 min  60.5 | knee angle min 106.3 p05 108.5
+  descending n  171 | speed 148 | trunk lean   0.9 | pelvis above lower foot mean  80.0 min  72.0, above higher foot mean  70.1 min  60.0 | knee angle min 109.1 p05 111.3
+g8_ramp_walk airborne phases 0 (rows without floor data 0): []
+g8_ramp_walk: 23 contacts
+  TOTAL n 23 | curve: mean 2.0 p90 3.3 worst 4.6, >=10: 0, >=20: 0 | ground: mean 1.9 p90 3.0 worst 3.7, >=10: 0, >=20: 0
+#### g8_ramp_run
+g8_ramp_run frames 330 capsule z 88 -> max 240
+  flat       n   93 | speed 335 | trunk lean  15.4 | pelvis above lower foot mean  77.0 min  61.7, above higher foot mean  60.5 min  36.9 | knee angle min  62.8 p05  72.9
+  climbing   n  106 | speed 354 | trunk lean  13.9 | pelvis above lower foot mean  71.5 min  57.8, above higher foot mean  52.9 min  37.4 | knee angle min  63.6 p05  70.9
+  descending n 0
+g8_ramp_run airborne phases 0 (rows without floor data 0): []
+g8_ramp_run: 11 contacts
+  TOTAL n 11 | curve: mean 1.3 p90 2.4 worst 3.0, >=10: 0, >=20: 0 | ground: mean 1.2 p90 2.4 worst 3.0, >=10: 0, >=20: 0
+#### g8_jump
+g8_jump frames 1290 capsule z 88 -> max 153
+  flat       n  628 | speed 249 | trunk lean  23.0 | pelvis above lower foot mean  70.8 min  38.7, above higher foot mean  57.7 min  22.4 | knee angle min  33.9 p05  71.4
+  climbing   n   60 | speed 273 | trunk lean  15.9 | pelvis above lower foot mean  75.7 min  59.8, above higher foot mean  61.0 min  38.7 | knee angle min  63.1 p05  75.8
+  descending n   48 | speed 358 | trunk lean   3.8 | pelvis above lower foot mean  56.5 min  31.3, above higher foot mean  28.6 min  13.1 | knee angle min  18.4 p05  19.3
+g8_jump airborne phases 3 (rows without floor data 0): [(3.58, 'dur 0.62 s', 'dist 284 cm', 'max gap 67 cm'), (9.78, 'dur 0.60 s', 'dist 153 cm', 'max gap 63 cm'), (12.98, 'dur 0.62 s', 'dist 0 cm', 'max gap 67 cm')]
+g8_jump: 35 contacts
+  TOTAL n 35 | curve: mean 1.3 p90 3.3 worst 6.2, >=10: 0, >=20: 0 | ground: mean 1.1 p90 1.7 worst 4.7, >=10: 0, >=20: 0
+#### g8_fresh (steady part, after 1.5 s)  values: p2p / rms cm
+seg  keys          v   | capsule z | driver pelvis z | visible pelvis z | world pelvis z | world head z | head-pelvis z | pelvis lat | head lat | trunk roll p2p | cam z  | cam lat
+s1   W             180 |   0.0/ 0.0 |   4.6/ 1.5     |   4.8/ 1.6      |   4.8/ 1.6    |   4.8/ 1.6  |   0.2/ 0.1   |   5.2/ 1.4 |   5.4/ 1.5 |   4.1        |   1.2/ 0.4 |   3.1/ 0.9
+s2   W Sh          415 |   0.0/ 0.0 |   8.1/ 2.2     |   8.4/ 2.2      |   8.3/ 2.2    |   8.4/ 2.3  |   2.4/ 0.5   |   2.7/ 0.8 |   5.0/ 1.6 |   6.2        |   3.3/ 0.9 |   2.4/ 0.6
+s3   W             180 |   0.0/ 0.0 |   5.0/ 1.6     |   5.2/ 1.7      |   5.1/ 1.7    |   5.3/ 1.7  |   0.3/ 0.1   |   3.9/ 1.1 |   4.6/ 1.5 |   4.2        |   1.6/ 0.4 |   2.8/ 0.9
+s4   W Sh          415 |   0.0/ 0.0 |   5.9/ 1.7     |   6.1/ 1.8      |   6.0/ 1.8    |   6.5/ 1.9  |   1.2/ 0.3   |   2.1/ 0.5 |   5.6/ 1.7 |   8.0        |   2.2/ 0.7 |   2.5/ 0.8
+s6   W Sh          415 |   0.0/ 0.0 |   6.7/ 2.1     |   6.9/ 2.2      |   6.9/ 2.2    |   7.4/ 2.3  |   1.0/ 0.2   |   3.4/ 1.0 |   3.8/ 1.1 |   7.2        |   1.7/ 0.4 |   1.5/ 0.4
+s7   W             180 |   0.0/ 0.0 |   4.9/ 1.6     |   5.0/ 1.7      |   5.1/ 1.7    |   5.1/ 1.7  |   0.2/ 0.0   |   4.8/ 1.5 |   5.2/ 1.8 |   3.4        |   1.3/ 0.4 |   2.9/ 1.0
+s9   W Sh Ct       585 |   0.0/ 0.0 |   4.1/ 0.9     |   4.1/ 1.0      |   4.1/ 1.0    |   4.3/ 1.1  |   1.2/ 0.4   |   3.4/ 0.9 |   6.6/ 1.9 |   7.3        |   3.9/ 1.1 |   2.8/ 0.8
+s10  W             180 |   0.0/ 0.0 |   5.0/ 1.7     |   5.1/ 1.8      |   5.0/ 1.8    |   5.2/ 1.8  |   0.3/ 0.1   |   5.1/ 1.7 |   5.0/ 1.8 |   3.6        |   1.9/ 0.5 |   3.3/ 1.1
+#### g8_fresh
+s1  [W             ] v   0 -> 180 | 90% in 0.32 s | peak acc   928 | capsule faster than clip 0.00 s | head dz/0.2s  7.0 pelvis  6.8 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 2.97
+s2  [W Sh          ] v 180 -> 415 | 90% in 0.37 s | peak acc   635 | capsule faster than clip 0.00 s | head dz/0.2s 11.4 pelvis  8.3 | N_Walk_Start_F_Rfoot 0.03 > R_Tr_Walk_to_Run_Lfoot 2.58 > N_Run_L
+s3  [W             ] v 415 -> 180 | 90% in 0.35 s | peak acc   655 | capsule faster than clip 0.20 s | head dz/0.2s  8.3 pelvis  8.2 | N_Run_Loop_F 0.03 > N_Walk_Loop_F 2.97
+s4  [W Sh          ] v 180 -> 415 | 90% in 0.38 s | peak acc   596 | capsule faster than clip 0.00 s | head dz/0.2s 12.5 pelvis  5.8 | N_Walk_Loop_F 0.03 > N_Run_Start_F_Lfoot 2.35 > N_Run_Loop_F 0.12
+s5  [-             ] v 415 ->   0 | 90% in 0.32 s | peak acc  3012 | capsule faster than clip 0.00 s | head dz/0.2s  6.1 pelvis  5.2 | N_Run_Loop_F 0.03 > R_Run_Stop_F_Rfoot 2.47
+s6  [W Sh          ] v   0 -> 415 | 90% in 0.60 s | peak acc  1399 | capsule faster than clip 0.00 s | head dz/0.2s 11.6 pelvis  9.3 | R_Run_Stop_F_Rfoot 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_t
+s7  [W             ] v 415 -> 180 | 90% in 0.38 s | peak acc   657 | capsule faster than clip 0.12 s | head dz/0.2s  8.1 pelvis  7.9 | R_Tr_Walk_to_Run_Rfoot 0.03 > N_Tr_Run_to_Walk_Lfoot 0.10 > N_Wal
+s8  [-             ] v 180 ->   0 | 90% in 0.37 s | peak acc  1448 | capsule faster than clip 0.00 s | head dz/0.2s  5.2 pelvis  5.3 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Rfoot 2.17 > R_Stand_Idle_Loop
+s9  [W Sh Ct       ] v   0 -> 585 | 90% in 0.95 s | peak acc  1401 | capsule faster than clip 0.00 s | head dz/0.2s 14.0 pelvis 10.2 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to
+s10 [W             ] v 585 -> 180 | 90% in 0.67 s | peak acc   655 | capsule faster than clip 0.10 s | head dz/0.2s  9.1 pelvis  9.1 | R_Sprint_Loop_F 0.03 > N_Tr_Run_to_Walk_Rfoot 0.02 > N_Tr_Run_to_
+s11 [-             ] v 180 ->   0 | 90% in 0.57 s | peak acc  1414 | capsule faster than clip 0.00 s | head dz/0.2s  4.0 pelvis  4.1 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Rfoot 2.37 > R_Stand_Idle_Loop
+#### g8_tired (steady part, after 1.5 s)  values: p2p / rms cm
+seg  keys          v   | capsule z | driver pelvis z | visible pelvis z | world pelvis z | world head z | head-pelvis z | pelvis lat | head lat | trunk roll p2p | cam z  | cam lat
+s1   W             180 |   0.0/ 0.0 |   4.6/ 1.5     |   4.7/ 1.5      |   4.8/ 1.6    |   4.7/ 1.6  |   0.3/ 0.1   |   5.2/ 1.4 |   5.2/ 1.4 |   3.9        |   1.1/ 0.4 |   3.0/ 0.9
+s2   W Sh          370 |   0.0/ 0.0 |   7.1/ 1.9     |   7.3/ 2.0      |   7.3/ 2.0    |   7.4/ 2.1  |   0.9/ 0.3   |   2.7/ 0.8 |   5.4/ 1.7 |   6.6        |   3.8/ 1.0 |   2.5/ 0.7
+s3   W             180 |   0.0/ 0.0 |   4.9/ 1.7     |   5.1/ 1.7      |   5.1/ 1.7    |   5.0/ 1.7  |   0.4/ 0.1   |   5.2/ 1.7 |   4.5/ 1.7 |   3.3        |   1.6/ 0.4 |   2.9/ 1.0
+s4   W Sh          370 |   0.0/ 0.0 |   6.3/ 2.0     |   6.4/ 2.0      |   6.5/ 2.0    |   6.9/ 2.1  |   0.9/ 0.2   |   2.6/ 0.9 |   4.8/ 1.7 |   6.7        |   3.2/ 1.1 |   2.3/ 0.7
+s6   W Sh          370 |   0.0/ 0.0 |   5.6/ 1.8     |   5.7/ 1.9      |   5.7/ 1.9    |   6.0/ 1.9  |   1.0/ 0.3   |   3.4/ 1.0 |   4.3/ 1.3 |   8.0        |   1.8/ 0.5 |   2.0/ 0.5
+s7   W             180 |   0.0/ 0.0 |   4.7/ 1.6     |   4.8/ 1.6      |   4.8/ 1.6    |   5.0/ 1.6  |   0.3/ 0.1   |   5.2/ 1.6 |   4.6/ 1.7 |   3.4        |   1.8/ 0.5 |   3.1/ 1.0
+s9   W Sh Ct       522 |   0.0/ 0.0 |   4.8/ 1.1     |   5.0/ 1.1      |   5.0/ 1.1    |   6.3/ 1.5  |   2.0/ 0.6   |   3.4/ 0.9 |   6.9/ 2.0 |   7.6        |   4.9/ 1.5 |   3.1/ 0.8
+s10  W             180 |   0.0/ 0.0 |   5.0/ 1.7     |   5.1/ 1.7      |   5.0/ 1.7    |   5.0/ 1.8  |   0.4/ 0.1   |   5.0/ 1.6 |   4.7/ 1.7 |   3.3        |   1.4/ 0.4 |   3.0/ 1.0
+#### g8_tired
+s1  [W             ] v   0 -> 180 | 90% in 0.32 s | peak acc  1024 | capsule faster than clip 0.00 s | head dz/0.2s  6.9 pelvis  6.7 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 2.97
+s2  [W Sh          ] v 180 -> 370 | 90% in 0.33 s | peak acc   548 | capsule faster than clip 0.00 s | head dz/0.2s 12.3 pelvis  8.6 | N_Walk_Start_F_Rfoot 0.03 > R_Tr_Walk_to_Run_Lfoot 2.90 > N_Run_L
+s3  [W             ] v 370 -> 180 | 90% in 0.30 s | peak acc   655 | capsule faster than clip 0.12 s | head dz/0.2s  8.0 pelvis  7.9 | N_Run_Loop_F 0.03 > N_Walk_Loop_F 2.97
+s4  [W Sh          ] v 180 -> 370 | 90% in 0.35 s | peak acc   527 | capsule faster than clip 0.23 s | head dz/0.2s 16.8 pelvis 11.8 | N_Walk_Loop_F 0.03 > R_Tr_Walk_to_Run_Lfoot 2.47
+s5  [-             ] v 370 ->   0 | 90% in 0.40 s | peak acc  1796 | capsule faster than clip 0.00 s | head dz/0.2s  7.5 pelvis  7.9 | R_Tr_Walk_to_Run_Lfoot 0.03 > R_Run_Stop_F_Lfoot 2.47
+s6  [W Sh          ] v   0 -> 370 | 90% in 0.53 s | peak acc  1398 | capsule faster than clip 0.00 s | head dz/0.2s 11.6 pelvis  9.6 | R_Run_Stop_F_Lfoot 0.03 > N_Walk_Start_F_Rfoot 0.30 > R_Tr_Walk_t
+s7  [W             ] v 370 -> 180 | 90% in 0.30 s | peak acc   655 | capsule faster than clip 0.13 s | head dz/0.2s  8.2 pelvis  7.7 | R_Tr_Walk_to_Run_Rfoot 0.03 > N_Walk_Loop_F 2.97
+s8  [-             ] v 180 ->   0 | 90% in 0.33 s | peak acc  1494 | capsule faster than clip 0.00 s | head dz/0.2s  5.2 pelvis  5.9 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Lfoot 2.12 > R_Stand_Idle_Loop
+s9  [W Sh Ct       ] v   0 -> 522 | 90% in 0.87 s | peak acc  1404 | capsule faster than clip 0.00 s | head dz/0.2s 14.4 pelvis 10.0 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 0.30 > R_Tr_Walk_to
+s10 [W             ] v 522 -> 180 | 90% in 0.55 s | peak acc   655 | capsule faster than clip 0.10 s | head dz/0.2s  9.4 pelvis  9.3 | R_Sprint_Loop_F 0.03 > N_Tr_Run_to_Walk_Lfoot 0.03 > N_Tr_Run_to_
+s11 [-             ] v 180 ->   0 | 90% in 0.57 s | peak acc  1393 | capsule faster than clip 0.00 s | head dz/0.2s  4.0 pelvis  5.1 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Lfoot 2.37 > R_Stand_Idle_Loop

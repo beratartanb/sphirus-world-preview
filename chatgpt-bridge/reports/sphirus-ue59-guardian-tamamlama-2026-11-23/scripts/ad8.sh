@@ -1,0 +1,4 @@
+cd "/c/Users/berat/Documents/Unreal Projects/sphirus_UE59"; PY="/c/Program Files/Epic Games/UE_5.9/Engine/Binaries/ThirdParty/Python3/Win64/python.exe"; O=Saved/UE59Work/r8/ad8.txt; HKF="$(cat Saved/UE59Work/r5/hk3_line.txt)"
+rec() { DFPS=$2.0 bash Tools/UE59_20261120/seqP.sh $1 Saved/UE59Work/planAD8.txt "$HKF" > /dev/null 2>&1; echo "#### $1" >> $O; "$PY" Tools/UE59_20261122/an_slide3.py $1 Saved/UE59Work/planAD8.txt 8 2>&1 | cut -c1-220 >> $O; }
+setw() { printf 'import builtins\nbuiltins.SCHW=%s\nexec(open(r"C:/Users/berat/Documents/Unreal Projects/sphirus_UE59/Saved/UE59Work/r8/schw.py",encoding="utf8").read())\n' $1 > Saved/UE59Work/r8/schw_job.py; SHME_OWNER=emb SHME_KIND=control bash Tools/SHME_V2_20261014/run_v2.sh "$PWD/Saved/UE59Work/r8/schw_job.py" emb_schw 120 2>&1 | grep SCHW >> $O; sleep 45; }
+for a in "$@"; do case $a in w*) setw ${a#w};; *) rec ${a%:*} ${a#*:};; esac; done; echo AD8_DONE >> $O

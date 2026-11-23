@@ -1,0 +1,48 @@
+PSD_Relaxed_Stand_Run_F_Turns | /Game/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Databases/Relaxed/PSD_Relaxed_Stand_Run_F_Turns | schema /Game/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_Pivots.PSS_Relaxed_Pivots
+   continuing_pose_cost_bias -0.3499999940395355
+   base_cost_bias 0.0
+   looping_cost_bias -0.004999999888241291
+   pose_search_mode <PoseSearchMode.PCAKD_TREE: 1>
+   ch PoseSearchFeatureChannel_Trajectory w 10.0
+       samples [{}, {}, {}, {}, {}]
+   channels ERR PoseSearchFeatureChannel_Group: Failed to find property 'weight' for attribute 'weight' on 'PoseSearchFeatureChannel_Group'
+PSD_Dense_Stand_Run_Pivots | /Game/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Run_Pivots | schema /Game/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Default.PSS_Default
+   continuing_pose_cost_bias -0.05000000074505806
+   base_cost_bias 0.0
+   looping_cost_bias -0.004999999888241291
+   pose_search_mode <PoseSearchMode.PCAKD_TREE: 1>
+   ch PoseSearchFeatureChannel_Trajectory w 1.0
+       samples [{}, {}, {}, {}, {}]
+   channels ERR PoseSearchFeatureChannel_Group: Failed to find property 'weight' for attribute 'weight' on 'PoseSearchFeatureChannel_Group'
+PSD_Dense_Stand_Run_Pivots | /Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Integrated/PSD_Dense_Stand_Run_Pivots | schema /Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Schemas/PSS_Default.PSS_Default
+   continuing_pose_cost_bias 0.05000000074505806
+   base_cost_bias 0.0
+   looping_cost_bias -0.004999999888241291
+   pose_search_mode <PoseSearchMode.PCAKD_TREE: 1>
+   ch PoseSearchFeatureChannel_Trajectory w 1.0
+       samples [{}, {}, {}, {}, {}]
+   channels ERR PoseSearchFeatureChannel_Group: Failed to find property 'weight' for attribute 'weight' on 'PoseSearchFeatureChannel_Group'
+PSD_Dense_Stand_Run_Pivots | /Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Databases/Dense/PSD_Dense_Stand_Run_Pivots | schema /Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Schemas/PSS_Default.PSS_Default
+   continuing_pose_cost_bias -0.05000000074505806
+   base_cost_bias 0.0
+   looping_cost_bias -0.004999999888241291
+   pose_search_mode <PoseSearchMode.PCAKD_TREE: 1>
+   ch PoseSearchFeatureChannel_Trajectory w 1.0
+       samples [{}, {}, {}, {}, {}]
+   channels ERR PoseSearchFeatureChannel_Group: Failed to find property 'weight' for attribute 'weight' on 'PoseSearchFeatureChannel_Group'
+PSD_Dense_Stand_Run_Pivots | /Game/ActionAdventureMovementS/Animations/Locomotion/CoreMotionAAMS/Candidate/MotionMatching/Databases/Dense/PSD_Dense_Stand_Run_Pivots | schema /Game/AAMS/AAMS/Animations/Locomotion/MotionMatchingData/Schemas/PSS_Default.PSS_Default
+   continuing_pose_cost_bias -0.05000000074505806
+   base_cost_bias 0.0
+   looping_cost_bias -0.004999999888241291
+   pose_search_mode <PoseSearchMode.PCAKD_TREE: 1>
+   ch PoseSearchFeatureChannel_Trajectory w 1.0
+       samples [{}, {}, {}, {}, {}]
+   channels ERR PoseSearchFeatureChannel_Group: Failed to find property 'weight' for attribute 'weight' on 'PoseSearchFeatureChannel_Group'
+PSD_Sph_N_Run_S_Starts | /Game/Sphirus/Player/GASP/DB/PSD_Sph_N_Run_S_Starts | schema /Game/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Default.PSS_Default
+   continuing_pose_cost_bias -0.05000000074505806
+   base_cost_bias 0.0
+   looping_cost_bias -0.004999999888241291
+   pose_search_mode <PoseSearchMode.PCAKD_TREE: 1>
+   ch PoseSearchFeatureChannel_Trajectory w 1.0
+       samples [{}, {}, {}, {}, {}]
+   channels ERR PoseSearchFeatureChannel_Group: Failed to find property 'weight' for attribute 'weight' on 'PoseSearchFeatureChannel_Group'

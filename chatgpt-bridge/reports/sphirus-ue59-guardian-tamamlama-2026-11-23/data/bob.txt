@@ -1,0 +1,30 @@
+#### g8_L (steady = loop clip, whole step cycles)
+s1  M_Neutral_Walk_Loop_F  v 180 | cycles 5 x 1.11 s | pelvis z p2p mean  4.8 worst  5.1 | head z  4.9 | head lateral  4.7 | camera z  1.1
+s2  M_Neutral_Run_Loop_F   v 415 | cycles 9 x 0.73 s | pelvis z p2p mean  5.7 worst  6.5 | head z  6.0 | head lateral  5.6 | camera z  1.3
+s3  _Relaxed_Sprint_Loop_F v 566 | cycles 11 x 0.58 s | pelvis z p2p mean  3.3 worst  4.9 | head z  3.5 | head lateral  5.7 | camera z  1.0
+s4  no steady gait (loop frames 2 of 120; clips [('M_Relaxed_Run_Stop_F_Rfoot', 118), ('M_Relaxed_Sprint_Loop_F', 2)])
+  TOTAL n 46 | curve: mean 1.1 p90 1.7 worst 3.2, >=10: 0, >=20: 0 | ground: mean 1.0 p90 1.6 worst 2.0, >=10: 0, >=20: 0
+#### g8_G (steady = loop clip, whole step cycles)
+s1  no steady gait (loop frames 0 of 180; clips [('Neutral_Walk_Start_F_Rfoot', 178), ('M_Relaxed_Stand_Idle_Loop', 2)])
+s2  no steady gait (complete cycles 0, loop frames 23)
+s3  no steady gait (complete cycles 1, loop frames 157)
+s4  no steady gait (loop frames 9 of 150; clips [('_Neutral_Run_Start_F_Lfoot', 141), ('M_Neutral_Run_Loop_F', 7)])
+s5  no steady gait (loop frames 2 of 150; clips [('M_Relaxed_Run_Stop_F_Rfoot', 148), ('M_Neutral_Run_Loop_F', 2)])
+s6  no steady gait (loop frames 0 of 150; clips [('ansition_Walk_to_Run_Rfoot', 131), ('Neutral_Walk_Start_F_Rfoot', 17)])
+s7  M_Neutral_Walk_Loop_F  v 180 | cycles 2 x 1.09 s | pelvis z p2p mean  6.6 worst  8.0 | head z  6.7 | head lateral  5.1 | camera z  3.2
+s8  no steady gait (loop frames 2 of 150; clips [('_Relaxed_Walk_Stop_F_Rfoot', 129), ('M_Relaxed_Stand_Idle_Loop', 19)])
+s9  no steady gait (loop frames 16 of 180; clips [('ition_Walk_to_Sprint_Rfoot', 138), ('Neutral_Walk_Start_F_Rfoot', 17)])
+s10 M_Neutral_Walk_Loop_F  v 180 | cycles 2 x 1.10 s | pelvis z p2p mean  7.3 worst  9.4 | head z  7.3 | head lateral  5.1 | camera z  3.6
+s11 no steady gait (loop frames 2 of 150; clips [('_Relaxed_Walk_Stop_F_Rfoot', 141), ('M_Relaxed_Stand_Idle_Loop', 7)])
+#### g8_G
+s1  [W             ] v   0 -> 180 | 90% in 0.31 s | peak acc   922 | capsule faster than clip 0.00 s | head dz/0.2s  7.1 pelvis  6.8 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 2.97
+s2  [W Sh          ] v 180 -> 415 | 90% in 0.37 s | peak acc   635 | capsule faster than clip 0.00 s | head dz/0.2s 11.2 pelvis  8.4 | N_Walk_Start_F_Rfoot 0.03 > R_Tr_Walk_to_Run_Lfoot 2.58 > N_Run_Loop_F 0.38
+s3  [W             ] v 415 -> 180 | 90% in 0.35 s | peak acc   653 | capsule faster than clip 0.20 s | head dz/0.2s  8.2 pelvis  8.2 | N_Run_Loop_F 0.03 > N_Walk_Loop_F 2.97
+s4  [W Sh          ] v 180 -> 415 | 90% in 0.38 s | peak acc   596 | capsule faster than clip 0.00 s | head dz/0.2s 12.6 pelvis  5.8 | N_Walk_Loop_F 0.03 > N_Run_Start_F_Lfoot 2.35 > N_Run_Loop_F 0.12
+s5  [-             ] v 415 ->   0 | 90% in 0.32 s | peak acc  2994 | capsule faster than clip 0.00 s | head dz/0.2s  6.2 pelvis  5.4 | N_Run_Loop_F 0.03 > R_Run_Stop_F_Rfoot 2.47
+s6  [W Sh          ] v   0 -> 414 | 90% in 0.60 s | peak acc  1399 | capsule faster than clip 0.00 s | head dz/0.2s 11.6 pelvis  9.1 | R_Run_Stop_F_Rfoot 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to_Run_Rfoot 2.18
+s7  [W             ] v 414 -> 180 | 90% in 0.38 s | peak acc   657 | capsule faster than clip 0.10 s | head dz/0.2s  8.4 pelvis  8.2 | R_Tr_Walk_to_Run_Rfoot 0.03 > N_Tr_Run_to_Walk_Lfoot 0.10 > N_Walk_Loop_F 2.87
+s8  [-             ] v 180 ->   0 | 90% in 0.37 s | peak acc  1449 | capsule faster than clip 0.00 s | head dz/0.2s  5.1 pelvis  5.3 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Rfoot 2.15 > R_Stand_Idle_Loop 0.32
+s9  [W Sh Ct       ] v   0 -> 581 | 90% in 0.95 s | peak acc  1399 | capsule faster than clip 0.00 s | head dz/0.2s 14.1 pelvis 10.2 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to_Run_Rfoot 0.12 > _Tr_Walk_to_Sprint_Rfoot 2.30 > R_Sprint_Loop_F 0.27
+s10 [W             ] v 580 -> 180 | 90% in 0.65 s | peak acc   655 | capsule faster than clip 0.12 s | head dz/0.2s  9.4 pelvis  9.2 | R_Sprint_Loop_F 0.03 > N_Tr_Run_to_Walk_Rfoot 0.03 > N_Tr_Run_to_Walk_Lfoot 0.37 > N_Walk_Loop_F 2.57
+s11 [-             ] v 180 ->   0 | 90% in 0.57 s | peak acc  1389 | capsule faster than clip 0.00 s | head dz/0.2s  4.3 pelvis  4.2 | N_Walk_Loop_F 0.03 > R_Walk_Stop_F_Rfoot 2.35 > R_Stand_Idle_Loop 0.12

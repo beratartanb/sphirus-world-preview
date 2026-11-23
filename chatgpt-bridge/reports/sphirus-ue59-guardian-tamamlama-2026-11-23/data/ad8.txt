@@ -1,0 +1,17 @@
+#### adr_base60
+adr_base60: 28 contacts
+  TOTAL n 28 | curve: mean 0.9 p90 1.7 worst 3.3, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.4 worst 1.9, >=10: 0, >=20: 0
+#### adr_base60b
+adr_base60b: 28 contacts
+  t   6.56 s4  [A+Sh]->[D+Sh] +0.30s foot R dur 0.18 curve  37.7 ground  37.7 air  0% lift  4.8 v   8 M_Relaxed_Run_Turn_L_180_Rfoot
+  TOTAL n 28 | curve: mean 2.4 p90 1.6 worst 37.7, >=10: 1, >=20: 1 | ground: mean 2.1 p90 1.5 worst 37.7, >=10: 1, >=20: 1
+SCHW 10.0 -> 3.0
+#### adr_w3_60
+adr_w3_60: 28 contacts
+  TOTAL n 28 | curve: mean 0.9 p90 1.4 worst 3.0, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.3 worst 1.8, >=10: 0, >=20: 0
+#### adr_w3_60b
+adr_w3_60b: 28 contacts
+  t   6.56 s4  [A+Sh]->[D+Sh] +0.30s foot R dur 0.17 curve  36.3 ground  36.3 air  0% lift  4.1 v   8 M_Relaxed_Run_Turn_L_180_Rfoot
+  TOTAL n 28 | curve: mean 2.4 p90 1.7 worst 36.3, >=10: 1, >=20: 1 | ground: mean 2.1 p90 1.5 worst 36.3, >=10: 1, >=20: 1
+SCHW 3.0 -> 10.0
+AD8_DONE

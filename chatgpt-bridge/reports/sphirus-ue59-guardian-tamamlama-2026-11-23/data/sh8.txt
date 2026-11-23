@@ -1,0 +1,26 @@
+#### s8_30a planB8s 30
+s8_30a: 11 contacts
+  TOTAL n 11 | curve: mean 0.8 p90 1.3 worst 1.8, >=10: 0, >=20: 0 | ground: mean 0.7 p90 1.3 worst 1.7, >=10: 0, >=20: 0
+#### s8_30b planB8s 30
+s8_30b: 11 contacts
+  TOTAL n 11 | curve: mean 0.7 p90 1.3 worst 1.8, >=10: 0, >=20: 0 | ground: mean 0.7 p90 1.3 worst 1.7, >=10: 0, >=20: 0
+#### s8_60 planB8s 60
+s8_60: 13 contacts
+  TOTAL n 13 | curve: mean 0.9 p90 1.4 worst 2.0, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.3 worst 1.9, >=10: 0, >=20: 0
+#### s8_B30 planU_B 30
+s8_B30: 74 contacts
+  TOTAL n 74 | curve: mean 0.9 p90 1.5 worst 2.2, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.3 worst 2.2, >=10: 0, >=20: 0
+#### s8_K30 planK1 30
+s8_K30: 91 contacts
+  t  38.47 s16 [S+Sh+Ct]->[-] +0.27s foot L dur 0.16 curve  10.5 ground   0.0 air 100% lift 11.4 v 143 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  TOTAL n 91 | curve: mean 0.8 p90 1.4 worst 10.5, >=10: 1, >=20: 0 | ground: mean 0.7 p90 1.2 worst 1.7, >=10: 0, >=20: 0
+#### s8_B60 planU_B 60
+s8_B60: 87 contacts
+  TOTAL n 87 | curve: mean 1.0 p90 1.8 worst 4.1, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.5 worst 2.0, >=10: 0, >=20: 0
+#### s8_Q60 planQt 60
+s8_Q60: 105 contacts
+  t  22.14 s12 [S]->[-] +0.27s foot L dur 0.18 curve  17.3 ground   0.0 air 100% lift 11.5 v 195 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  t  31.32 s16 [S]->[-] +0.23s foot L dur 0.18 curve  11.9 ground   0.0 air 92% lift 11.5 v 159 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  t  50.47 s25 [S A]->[-] +0.23s foot L dur 0.18 curve  14.4 ground   0.0 air 92% lift 11.5 v 160 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  TOTAL n 105 | curve: mean 1.4 p90 2.4 worst 17.3, >=10: 3, >=20: 0 | ground: mean 0.8 p90 1.7 worst 2.4, >=10: 0, >=20: 0
+SH8_DONE
