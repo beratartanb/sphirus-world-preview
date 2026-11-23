@@ -1,0 +1,8 @@
+2026-11-23  Sphirus slice 01 (existing Unreal 5.9 project, sphirus_UE59)
+Intake: 8 images preserved and hashed; R01-R05 identified from content, R06 not supplied, 3 extra images kept as X01-X03.
+Changed and saved: /Game/Sphirus/Player/Camera/AC_Sph_Camera class defaults (OutD 165, OutDTight 135, HomeD 118, HomeDTight 98, HeadX 0.30, HeadY 0.24).
+Rollback: Saved/Codex/SHME_V233_20261027/checkpoint/manifests/r2g_cam_064140.json (backup sha1 59384767a5c094fe5ec39e91ef50dccc005b7d04), restore with the editor closed.
+Verified on the saved + reopened editor: readback, 15 fixed player-camera stills, 2 input-injected recordings, user save sha1 unchanged.
+Not changed: map, lighting, water, character, motion. Four water-glare candidates tested in memory and reverted (see README section 8).
+Blockers: R06 missing; sun-direction decision for the pond key view is the user's; build / standalone not tested; videos not watched at speed by the agent.
+Release validation is expected to fail: build, state_and_restart and assets checks are pending on purpose.

@@ -1,0 +1,96 @@
+{
+  "build_fingerprint": "fd7e5455ae2f40e90e12b0bb96aded78b6b15f79455d568e65854b6e47b74c2d",
+  "checks": {
+    "style": {
+      "status": "partial",
+      "evidence": [
+        {
+          "path": "review/compare/R04_vs_before_shore.png",
+          "sha256": "17a76d79d728e69d7576f66a009e801c7c3492e8cf0fcae65941b1c802bff029"
+        },
+        {
+          "path": "review/compare/R04_vs_after_shore.png",
+          "sha256": "50f00e6d0e291dd12500094a45ebcc54b10ec5b2bc0878894b0306c33b7a0f60"
+        },
+        {
+          "path": "review/compare/R02_vs_after_pond_view.png",
+          "sha256": "e0c4c948151ca6ffbbae8bfe39f9e4a3789e81be609dbf5db5fa90b15640c7fb"
+        },
+        {
+          "path": "review/compare/R03_vs_after_living_room.png",
+          "sha256": "0762e532a5639b34c4233708850f1041b03ae504d24fa3fb769df6974e5e6665"
+        },
+        {
+          "path": "review/candidates/atm_ab4.jpg",
+          "sha256": "816b15ac61505ec69567c1d54073d631acbc0b9d4f1f12a768fdf8c5be6551d0"
+        }
+      ],
+      "notes": "PARTIAL. Camera framing now matches the R04 figure scale and placement (head-to-hip, left third). Lighting and water do not match R02: the pond clips white toward the sun; four single-variable candidates were reverted. Outfit differs from R01. Interior unchanged. Author attestation from stills only."
+    },
+    "playability": {
+      "status": "partial",
+      "evidence": [
+        {
+          "path": "review/videos/r2g_after_out.mp4",
+          "sha256": "ed3c4043bb72b03b448be4aef700a5c1f81cb64a2a438e289bcc335e0ea51a07"
+        },
+        {
+          "path": "review/videos/r2g_after_in.mp4",
+          "sha256": "2d444c27f45265636433a60649dfd31e1e23728350ff33a185b06d9d5eea9c43"
+        },
+        {
+          "path": "review/candidates/vid_out_pairs.jpg",
+          "sha256": "422dee1c962f42a0364efd669982df555721ba1b7abad8a0420f45ef3cc4ae96"
+        },
+        {
+          "path": "review/candidates/vid_in_pairs.jpg",
+          "sha256": "9f315e63e838fa73e535145e9dbb414929b845a6ce7e7b650c73467e0ad7873a"
+        },
+        {
+          "path": "review/data/plan_out.txt",
+          "sha256": "2c8ce08a4f755737d95ae5a8a0e40d048a0a83192a2ddad760da35f1487ca0e1"
+        },
+        {
+          "path": "review/data/plan_in.txt",
+          "sha256": "c4c915c58a450d12c0ba79c985458685398aa573fd58e35b8d44a129deca6268"
+        }
+      ],
+      "notes": "PARTIAL. Two routes completed on the saved + reopened state with injected key events and harness-written look at a fixed 30 Hz step: shore path (walk, jog, curves, back-pedal, strafe, 180, sprint) and kitchen - rear door - garden. Not human or gamepad play. The agent inspected 1 fps frames, not the videos at speed; timing, weight and foot contact are visually unverified."
+    },
+    "state_and_restart": {
+      "status": "pending",
+      "evidence": [],
+      "notes": "Not exercised in this pass. Only the user save sha1 was checked before and after every run (unchanged)."
+    },
+    "build": {
+      "status": "pending",
+      "evidence": [],
+      "notes": "No cook, package or standalone run in this pass."
+    },
+    "performance": {
+      "status": "partial",
+      "evidence": [
+        {
+          "path": "review/data/perf_before_tour.txt",
+          "sha256": "9d5b3bb416ceb2cddadd315f1c145ea267c8867fa6c841ee929a2542e8f17a1a"
+        },
+        {
+          "path": "review/data/perf_after_tour.txt",
+          "sha256": "24e7b99ba42ab4909c30ec7e4d59b47a9353497b9daeb8a23d60dd791c112ff5"
+        }
+      ],
+      "notes": "PARTIAL. Editor PIE only, RTX 4060 Laptop GPU, i7-13650HX, 31.6 GB, 4 s average per fixed point: before 27.9-42.4 fps, after 29.3-44.9 fps at the same 15 points. Not a packaged or standalone measurement."
+    },
+    "assets": {
+      "status": "pending",
+      "evidence": [],
+      "notes": "No asset was produced. Outfit set for R01 and the pond key-view decision are deferred (assets.json)."
+    }
+  },
+  "limitations": [
+    "Statuses partial/pending are set by hand: the r2g evidence command can only write passed, which would overstate these checks.",
+    "Evidence is an author attestation with hashes; nothing here is independent verification or an art-quality grade.",
+    "R06 was not supplied. Videos were not watched at speed by the agent. Inputs were injected, not played.",
+    "The fingerprint covers the contract files and app/UNREAL_SOURCE_MANIFEST.json, which lists sha256 of the real Unreal files; r2g itself never reads .uasset/.umap."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "draft",
+  "premise": "First representative slice of Sphirus World in the existing Unreal project: leave the lived-in house, cross the yard, go down to the pond, start up the rear forest trail.",
+  "actions": [
+    "walk (W/A/S/D)",
+    "jog (hold Shift)",
+    "sprint (Shift+Ctrl)",
+    "back-pedal (S) without turning",
+    "look (mouse)",
+    "interact (E) at day stations"
+  ],
+  "loop": {
+    "goal": "observed (project): day stations - bed, wardrobe, tea, mask bench, wood, hearth - are the existing loop; this pass adds no mechanic.",
+    "success": "authored for this pass: the slice route is walkable with the saved player and reads as one identity from the gameplay camera.",
+    "failure_or_pressure": "none in this slice (exploration); fatigue only lowers pace.",
+    "restart": "PIE restart / Story Framework save-load; the user slot is never written by tests (sha1 checked per run)."
+  },
+  "mechanics": [
+    {
+      "name": "gait ladder",
+      "origin": "observed in project",
+      "detail": "Shift = jog, Shift+Ctrl = sprint, S = back-pedal. Unchanged."
+    },
+    {
+      "name": "resonance",
+      "origin": "observed in project",
+      "detail": "AC_Sph_Camera Res/ResTarget drive MPC_Sph_Perception (Resonance, ResonanceGrade) and PPV EX_Look_Resonance. No new rule, collision, route or puzzle is derived from any image; R06 was not supplied."
+    }
+  ],
+  "invariants": [
+    "Collision and layout of the slice are unchanged by this pass.",
+    "User save sha1 identical before and after every run.",
+    "No second camera or movement system."
+  ],
+  "levels": [
+    "/Game/GraceRanger/Maps/L_GR_SphirusHouse (+ L_GR_CurrentHouseContent, L_SphirusHouse_ASSET_YARD)"
+  ],
+  "assumptions": [
+    "Stills taken after a teleport prove framing and look at that point only.",
+    "Recorded sessions use injected key events and harness-written look rotation at a fixed 30 Hz game step; they are not a human-played or gamepad session."
+  ]
+}

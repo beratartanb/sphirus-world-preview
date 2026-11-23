@@ -1,0 +1,126 @@
+{
+  "status": "draft",
+  "anchors": [
+    {
+      "reference_id": "ref-002",
+      "notes": "R02 governs exterior mood: enclosed bowl of forest, dark calm water with a readable far bank, house above the water, one path to the shore and one up behind."
+    },
+    {
+      "reference_id": "ref-003",
+      "notes": "R03 governs interior mood: warm, worked-in, maintained; mask bench, hearth and kitchen read by function."
+    },
+    {
+      "reference_id": "ref-004",
+      "notes": "R04 governs gameplay framing: head-to-hip figure on the left third, travel space to the right."
+    },
+    {
+      "reference_id": "ref-001",
+      "notes": "R01 governs hair mass, relaxed posture and clothing materials; not the face."
+    },
+    {
+      "reference_id": "ref-005",
+      "notes": "R05 governs pose intent only."
+    }
+  ],
+  "palette": [
+    {
+      "role": "R02 water body (dark, reflective)",
+      "hex": "#3d4136",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.2, 0.55] (no ICC conversion)"
+    },
+    {
+      "role": "R02 canopy shadow mass",
+      "hex": "#4b4e34",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.3, 0.25] (no ICC conversion)"
+    },
+    {
+      "role": "R02 moss on rock",
+      "hex": "#625c51",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.1, 0.82] (no ICC conversion)"
+    },
+    {
+      "role": "R02 fern / understory green",
+      "hex": "#404726",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.93, 0.9] (no ICC conversion)"
+    },
+    {
+      "role": "R02 path soil",
+      "hex": "#454426",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.63, 0.63] (no ICC conversion)"
+    },
+    {
+      "role": "R02 plaster wall (shade)",
+      "hex": "#7d6e5d",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.718, 0.215] (no ICC conversion)"
+    },
+    {
+      "role": "R02 warm window accent",
+      "hex": "#9c774d",
+      "reference_id": "ref-002",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.604, 0.186] (no ICC conversion)"
+    },
+    {
+      "role": "R01 hair mass (median, close-up)",
+      "hex": "#4f2e1d",
+      "reference_id": "ref-001",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.7, 0.17] (no ICC conversion)"
+    },
+    {
+      "role": "R01 henley fabric",
+      "hex": "#bca28c",
+      "reference_id": "ref-001",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.195, 0.26] (no ICC conversion)"
+    },
+    {
+      "role": "R01 jeans slate",
+      "hex": "#514a47",
+      "reference_id": "ref-001",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.166, 0.6] (no ICC conversion)"
+    },
+    {
+      "role": "R01 boot leather",
+      "hex": "#4a3d39",
+      "reference_id": "ref-001",
+      "origin": "observed: r2g palette, median encoded RGB at uv [0.143, 0.925] (no ICC conversion)"
+    }
+  ],
+  "identity": [
+    "observed (R01): adult woman, copper messy bob to the jaw, long-sleeve henley with rolled sleeves, slate jeans, brown belt, worn ankle boots; arms hang close to the body, shoulders level and relaxed.",
+    "observed (live project): BP_HybridA_Player uses groom /Game/Grooms/001_Messy_Bob (matches the R01 hair mass), body SKM_MHC_Sph8_BodyMesh, face SKM_MHC_Sph8_FaceMesh, garments SKM_Sph_RetroTop + SKM_Sph_Pants70 + belt. MHC_HazelM is not the mesh on the active pawn.",
+    "authored: the fresh-start look (sleeveless top, shorts) is the at-home state; R01 clothing is the going-out look and belongs to the wardrobe stations (GR_Day_WardDoor, GR_Day_Set0-4), not to a forced default swap.",
+    "not decided from references: face details (protected), any later costume stage (shoulder cape / late equipment stays out of the start)."
+  ],
+  "materials": [
+    "observed (R02/R03/X01): rough plaster with patched areas, dark weathered timber, mossy shingle roof, field stone, woven wool and linen, hammered copper, worn leather.",
+    "observed (live project): plaster + dark timber veranda house, weathered boards, copper wheelbarrow, firewood; interior plaster walls, wood floor, leather sofa, stone hearth. Same family as the references; the references are rougher and more hand-built.",
+    "authored: no rebuild of the house shell from R02/X01/X02/R03; material work stays on project-owned overrides."
+  ],
+  "lighting": "observed (R02): soft, overcast-like forest light with no hard sun patches, dark reflective water, warm small window accents. observed (live project, 2026-11-23): low hard sun (pitch -24) with strong shafts; the pond clips to white when the view faces the sun (A00/A02), while the west-shore view (W01) already reads dark and calm. inferred: the mismatch is the key-view direction relative to the sun, not the water material (four single-variable tests ruled out roughness, sun volumetric scattering, sun specular scale and murkiness).",
+  "camera": "observed (R04): figure from head to hip, on the left third (head centre about x 0.28, y 0.25 of the frame), right two thirds open for the path and the house. authored (this pass): AC_Sph_Camera defaults OutD 165, OutDTight 135, HomeD 118, HomeDTight 98, HeadX 0.30, HeadY 0.24 chosen by matching figure scale in player-camera captures, not by deriving FOV/arm from R04. FOV values unchanged (66 out / 62 home, +3 at run).",
+  "ui": "not in scope of this pass; no reference shows UI. The existing Story Framework prompts stay.",
+  "motion": "observed (R05): balanced stance, walking stride with opposite arm swing, a turn with the trunk leading and a recovery/settle pose. authority limit: silhouettes only. Timing, weight transfer and camera behaviour come from the project motion work (reports sphirus-ue59-*-2026-11-2x) and real gameplay recordings.",
+  "nonnegotiables": [
+    "Enclosed Woodland Refuge: depth from far bank, rising slope and tree layers; no open horizon (AGENTS.md).",
+    "Approved MetaHuman face and user edits stay untouched.",
+    "One camera owner (AC_Sph_Camera), one locomotion owner (GASP / Motion Matching on BP_HybridA_Player).",
+    "Close right-shoulder camera, character on the left, mouse look has priority, S back-pedals without turning.",
+    "Animation faults are never hidden with DOF, blur, vignette or shake."
+  ],
+  "avoid": [
+    "Browser game / Three.js prototype / architecture copied from the r2g example games.",
+    "Rebuilding the house, pond or routes from a single perspective image.",
+    "Raising saturation, fog or bloom as a stand-in for lighting and material work.",
+    "Catwalk hip sway, posed-model stance, fatigue shown as dropped shoulders.",
+    "Temple / village / castle dressing in the start area."
+  ],
+  "deliberate_changes": [
+    "Gameplay camera moved from the previous tighter bust framing (OutD 124, head at x 0.34 / y 0.33) to the R04 head-to-hip framing. Rollback: manifest backup of AC_Sph_Camera (see STATUS.txt).",
+    "No atmosphere or water value was changed: every tested candidate was reverted because the captures showed no improvement."
+  ]
+}

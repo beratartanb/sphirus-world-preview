@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "id": "camera-ac-sph-camera",
+      "references": [
+        "ref-004"
+      ],
+      "representation": "existing Blueprint component /Game/Sphirus/Player/Camera/AC_Sph_Camera (class defaults)",
+      "status": "accepted",
+      "runtime_path": "app/UNREAL_SOURCE_MANIFEST.json",
+      "notes": "Changed in this pass (framing defaults). The runtime_path points at the hash manifest because the .uasset lives in the Unreal Content tree, outside this case."
+    },
+    {
+      "id": "hair-messy-bob",
+      "references": [
+        "ref-001"
+      ],
+      "representation": "existing groom /Game/Grooms/001_Messy_Bob + binding GB_Sph_Hair_81",
+      "status": "accepted",
+      "runtime_path": "app/UNREAL_SOURCE_MANIFEST.json",
+      "notes": "Already in the project and on the active pawn; matches the R01 hair mass. Not changed."
+    },
+    {
+      "id": "outfit-going-out",
+      "references": [
+        "ref-001"
+      ],
+      "representation": "needed: long-sleeve henley, slate jeans, ankle boots fitted to SKM_MHC_Sph8_BodyMesh",
+      "status": "deferred",
+      "notes": "Not verified in this pass whether a fitted henley/jeans/boots set exists among the wardrobe sets. The active start look is RetroTop + Pants70. No purchase, generation or external upload was made."
+    },
+    {
+      "id": "pond-water-key-view",
+      "references": [
+        "ref-002"
+      ],
+      "representation": "existing EX_Pond_CalmSurface with MI_EX_Pond; sun EX_PostRain_Sun",
+      "status": "deferred",
+      "notes": "White clipping toward the sun remains. Roughness, sun volumetric scattering, sun specular scale and murkiness were each tested alone and reverted. Next step is a sun-direction / canopy decision, which changes the approved look and needs the user."
+    },
+    {
+      "id": "house-shell",
+      "references": [
+        "ref-002",
+        "ref-003"
+      ],
+      "representation": "existing house (L_GR_CurrentHouseContent)",
+      "status": "accepted",
+      "runtime_path": "app/UNREAL_SOURCE_MANIFEST.json",
+      "notes": "Kept as is: the references are not a rebuild order."
+    },
+    {
+      "id": "resonance-look",
+      "references": [],
+      "representation": "existing M_Sph_Resonance, MPC_Sph_Perception, PPV EX_Look_Resonance",
+      "status": "deferred",
+      "notes": "R06 not supplied; nothing changed."
+    }
+  ]
+}

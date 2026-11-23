@@ -1,0 +1,169 @@
+{
+  "what_this_is": "sha256 / size / mtime of the Unreal files this case refers to. Hash record only; no judgement of art quality, no build, no playtest.",
+  "project_root": "<proje>/sphirus_UE59 (local path removed for publication)",
+  "source_control": "none (no git in this project); rollback is the manifest233 backup named in STATUS.txt",
+  "engine": "UE 5.9.0-60738873 (read live from the editor, 2026-11-23)",
+  "written": "2026-11-23 07:12:31",
+  "files": {
+    "changed_in_this_pass": {
+      "Content/Sphirus/Player/Camera/AC_Sph_Camera.uasset": {
+        "sha256": "f069ca2113f7f6617ccaf8ac51e86d33280905db0e3af1fef0180bca0aa25c5b",
+        "bytes": 2755326,
+        "mtime": "2026-11-23 06:41:43"
+      }
+    },
+    "verified_owners_unchanged": {
+      "Content/Sphirus/CharacterLab/Hazel_20261106/Playable/BP_HybridA_Player.uasset": {
+        "sha256": "0b531f1f87e7afba7a5eb807b500deca32ad113ba4b54c1d7d9751d2768cd9c9",
+        "bytes": 10146013,
+        "mtime": "2026-11-23 00:02:11"
+      },
+      "Content/Sphirus/Player/GASP/BP_Sph_GASPCharacter.uasset": {
+        "sha256": "01898b18905499f49cbe285f481bf57bf55dd0dc4b9e846220b8dff5aa46e699",
+        "bytes": 1459580,
+        "mtime": "2026-11-23 00:02:13"
+      },
+      "Content/Sphirus/Player/GASP/ABP_Sph_GASP.uasset": {
+        "sha256": "438863fb029fff1df81f8683f62334a3485baf22b575cae2591e22900bc16e71",
+        "bytes": 4327662,
+        "mtime": "2026-11-22 12:20:30"
+      },
+      "Content/Sphirus/Player/GASP/ABP_Sph_Body_GASP.uasset": {
+        "sha256": "abcc522c97c24de685967c14861c8a48d28c76b91909a13865e2ffd2e774b07f",
+        "bytes": 2657362,
+        "mtime": "2026-11-22 12:20:37"
+      },
+      "Content/Sphirus/Player/GASP/Rig/RTG_Sph_UEFN_to_MH.uasset": {
+        "sha256": "10fabff38a8eeda396f61600e5796c11f8e27b7ee8b8a5f1b2bf8ee502b40ad1",
+        "bytes": 39734,
+        "mtime": "2026-11-15 22:48:02"
+      },
+      "Content/Sphirus/Player/Motion/AC_Sph_Motion.uasset": {
+        "sha256": "bd20757b20b4e1379a3478f384b0a648162118e0919b9a871725be5ddab32a92",
+        "bytes": 2996589,
+        "mtime": "2026-11-23 00:02:12"
+      },
+      "Content/Sphirus/Player/Camera/M_Sph_Resonance.uasset": {
+        "sha256": "a034b271777d91ad1fd346c7c7316809e602f1ee76a3de6bcd8722416242003b",
+        "bytes": 33105,
+        "mtime": "2026-11-12 10:15:23"
+      },
+      "Content/Sphirus/Player/Camera/MPC_Sph_Perception.uasset": {
+        "sha256": "bc3e863f5cb7c84f7cf5a6e368df04eeabf52547f0c0f10a41829bbc69dd964a",
+        "bytes": 2193,
+        "mtime": "2026-11-12 10:15:19"
+      },
+      "Content/GraceRanger/BP_GM_GR_GraceRanger.uasset": {
+        "sha256": "0d1959ece7b3065795d6294fdcd0be2916ff52c0f7c8ae4e78eab9c47bd16ea6",
+        "bytes": 24615,
+        "mtime": "2026-11-08 02:18:17"
+      },
+      "Content/GraceRanger/Maps/L_GR_SphirusHouse.umap": {
+        "sha256": "93fc02132a14f96c416cb233e55d9e0937d061d0d6163d6daa5553a0e514e224",
+        "bytes": 18556625,
+        "mtime": "2026-11-21 05:41:34"
+      },
+      "Content/GraceRanger/Maps/L_GR_CurrentHouseContent.umap": {
+        "sha256": "675275efd49c652c33ac8e247f87e31d55fc82c3fe06e1c9fd61084d51ee94c0",
+        "bytes": 1591113,
+        "mtime": "2026-11-20 09:50:53"
+      },
+      "Content/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond.uasset": {
+        "sha256": "b09212073510c487bdb8007a548e90cfa8666282e007e4c1bd602f5b8d234131",
+        "bytes": 13203,
+        "mtime": "2026-11-12 01:35:30"
+      },
+      "Content/Grooms/001_Messy_Bob/001_Messy_Bob/001_Messy_Bob.uasset": {
+        "sha256": "6bd53f76ab782ba13089dfd4ddfee53996392d1c1f3c9c6f4d35b7d6ae93e7ab",
+        "bytes": 42136370,
+        "mtime": "2026-11-07 00:47:50"
+      }
+    },
+    "project_settings": {
+      "sphirus.uproject": {
+        "sha256": "fc43649148612d01d66ae37bcf2f0d89a47dce97e350d3bbcac20428ea549130",
+        "bytes": 2272,
+        "mtime": "2026-11-20 08:09:26"
+      },
+      "Config/DefaultEngine.ini": {
+        "sha256": "1844d012821ae38ae921a4737eeec0db1ee84a9e5bc9337b3b4640d6f657d934",
+        "bytes": 25520,
+        "mtime": "2026-11-09 23:26:39"
+      },
+      "Config/DefaultGame.ini": {
+        "sha256": "6e47231e47fc5f886d8f2d2e9aa70d0a4c981cbc2ecb9afe6664cd8faee8eec9",
+        "bytes": 2277,
+        "mtime": "2026-11-08 07:10:55"
+      },
+      "Config/DefaultInput.ini": {
+        "sha256": "95fa36f09c88a4190321aac757b1cbdae6baee17b8aa179b23e3788104bcb662",
+        "bytes": 9022,
+        "mtime": "2026-11-20 16:15:09"
+      },
+      ".claude/settings.json": {
+        "sha256": "5fbe044c36ef92ef69792d0b350ae8d61354b89c9442b199584e214d0995e1b5",
+        "bytes": 152,
+        "mtime": "2026-11-23 06:00:47"
+      }
+    },
+    "pass_tools": {
+      "Tools/R2G_20261123/w_cam_r2g.py": {
+        "sha256": "9adb7ebbd7d64ff69c8d724ece37530e6675353f4fad21a89a7f45109d16d313",
+        "bytes": 1642,
+        "mtime": "2026-11-23 06:41:39"
+      },
+      "Tools/R2G_20261123/c_cam.py": {
+        "sha256": "57499af27cd1a6d2b5df4d227ef2d0052a0b1aa18d22484f59ab040049fa46b1",
+        "bytes": 1256,
+        "mtime": "2026-11-23 06:13:57"
+      },
+      "Tools/R2G_20261123/c_atm.py": {
+        "sha256": "4358a55f4ccf096ce85a7c42356f7e5e9f884105d7153e90fa2dc39ea78a319f",
+        "bytes": 1416,
+        "mtime": "2026-11-23 06:24:01"
+      },
+      "Tools/R2G_20261123/c_water.py": {
+        "sha256": "a9bf79be19e3abb4f68e184e568ce13103f51fac664f3cfe9439acb8ed3c2428",
+        "bytes": 768,
+        "mtime": "2026-11-23 06:20:07"
+      },
+      "Tools/R2G_20261123/tour2_r2g.sh": {
+        "sha256": "616f3a88c7b39869aea3e4ec73a266eb95196d3787172c429a3bdd928bf13adb",
+        "bytes": 3296,
+        "mtime": "2026-11-23 06:51:46"
+      },
+      "Tools/R2G_20261123/rec_r2g.sh": {
+        "sha256": "caa7e601a7990d7b532dbdc068b4bc06515a102d05880242814634917e74886f",
+        "bytes": 1961,
+        "mtime": "2026-11-23 06:29:23"
+      },
+      "Tools/R2G_20261123/views_slice.txt": {
+        "sha256": "e90d9f94e16234a34b61da3e6ecc4ea0e2408bb02ff642368c055f54b8d51558",
+        "bytes": 508,
+        "mtime": "2026-11-23 06:06:08"
+      },
+      "Tools/R2G_20261123/views_cam.txt": {
+        "sha256": "f119c4f1abcec52f2d70b9650c11c1d2cacc26192c47951a75354706756b0c68",
+        "bytes": 280,
+        "mtime": "2026-11-23 06:13:57"
+      },
+      "Tools/R2G_20261123/fill_contracts.py": {
+        "sha256": "641a5717e9fa868c91d9bc5f05e68116e90015875e90a87252fbef607a336c8d",
+        "bytes": 13847,
+        "mtime": "2026-11-23 06:41:16"
+      },
+      "Tools/R2G_20261123/unreal_source_manifest.py": {
+        "sha256": "d482d4b3d2aa5faaee4853634c363abfb91b6948541b54c1fd9df21f7a2041ce",
+        "bytes": 3226,
+        "mtime": "2026-11-23 06:52:38"
+      }
+    },
+    "user_save_not_written": {
+      "Saved/SaveGames/SFSaveSlot.sav": {
+        "sha256": "37bc96bd5bf031d64b0c1aab17bbb0117911bb84dd69746867b7e830500d999a",
+        "bytes": 6910,
+        "mtime": "2026-11-18 14:53:17"
+      }
+    }
+  }
+}
