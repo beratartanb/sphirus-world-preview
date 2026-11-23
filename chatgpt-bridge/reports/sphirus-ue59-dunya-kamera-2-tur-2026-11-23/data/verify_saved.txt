@@ -1,0 +1,50 @@
+SUN pitch -30.0 yaw -60.0 intensity 900 source_angle 2.50 specular 0.55
+SKY intensity 2.80
+WATER channels False True False
+LAMP KitchenPendant temp 3600 int 220.0 indirect 1.30
+LAMP LivingPendantLight temp 3600 int 240.0 indirect 1.30
+LAMP WorkshopPendant temp 3600 int 190.0 indirect 1.30
+LAMP HearthGlow temp 2300 int 100.0 indirect 1.00
+INT_PPV bounds c(760 570 580) e(748 558 440) bias 0.35 wb 5300 prio 2.5 blend 90 unbound False lvl L_GR_SphirusHouse
+CAM HeadX=0.30 HeadXTight=0.20 HeadY=0.24 OutD=165.00 OutDTight=135.00 HomeD=118.00 HomeDTight=98.00 TightRaise=45.00 YKeep=1.00
+NEW R2G_Rear_DoorTools | StaticMeshActor | 952 -9 112 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_LogStore | StaticMeshActor | 1120 -62 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_0 | StaticMeshActor | 1012 -178 108 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_1 | StaticMeshActor | 1108 -212 104 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_2 | StaticMeshActor | 1212 -188 107 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_3 | StaticMeshActor | 1318 -214 104 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_4 | StaticMeshActor | 1424 -186 107 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_5 | StaticMeshActor | 1528 -206 101 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_6 | StaticMeshActor | 1610 -290 87 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Stone_7 | StaticMeshActor | 1692 -372 89 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_00 | StaticMeshActor | 1060 -43 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_01 | StaticMeshActor | 1077 -46 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_02 | StaticMeshActor | 1095 -44 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_03 | StaticMeshActor | 1112 -46 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_04 | StaticMeshActor | 1129 -41 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_05 | StaticMeshActor | 1145 -46 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_06 | StaticMeshActor | 1162 -45 128 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_07 | StaticMeshActor | 1059 -43 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_08 | StaticMeshActor | 1075 -43 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_09 | StaticMeshActor | 1092 -43 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_10 | StaticMeshActor | 1109 -46 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_11 | StaticMeshActor | 1126 -43 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_12 | StaticMeshActor | 1145 -44 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_13 | StaticMeshActor | 1161 -43 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_14 | StaticMeshActor | 1177 -41 139 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_15 | StaticMeshActor | 1064 -43 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_16 | StaticMeshActor | 1080 -46 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_17 | StaticMeshActor | 1097 -45 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_18 | StaticMeshActor | 1116 -46 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_19 | StaticMeshActor | 1133 -45 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_20 | StaticMeshActor | 1149 -41 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_21 | StaticMeshActor | 1166 -44 149 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_22 | StaticMeshActor | 1063 -44 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_23 | StaticMeshActor | 1081 -43 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_24 | StaticMeshActor | 1097 -42 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_25 | StaticMeshActor | 1116 -41 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_26 | StaticMeshActor | 1132 -46 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_27 | StaticMeshActor | 1151 -45 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rear_Wood_28 | StaticMeshActor | 1169 -42 160 | lvl L_GR_SphirusHouse
+NEW R2G_Rug_Entry | StaticMeshActor | 800 858 151 | lvl L_GR_SphirusHouse
+DIRTY [] []

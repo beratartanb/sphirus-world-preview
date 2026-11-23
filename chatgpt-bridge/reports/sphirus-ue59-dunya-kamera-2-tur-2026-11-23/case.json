@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "title": "Sphirus World - first representative slice (house / shore / uphill trail)",
+  "engine": "unreal",
+  "brief": "Existing Unreal Engine 5.9 project (sphirus_UE59). Use the references to improve world, character, camera and atmosphere of the first slice in place; no browser game, no Three.js prototype. Enclosed Woodland Refuge; natural human motion; close right-shoulder camera. PASS 2 (2026-11-23, world/environment/camera): apply the references to the real map; character movement systems are out of scope (separate work stream).",
+  "references": [
+    {
+      "id": "ref-001",
+      "kind": "image",
+      "priority": 5,
+      "role": "character direction sheet",
+      "authority": [
+        "style"
+      ],
+      "notes": "Authority: hair mass (copper messy bob), relaxed standing posture, shoulder-arm relation, everyday clothing, fabric/leather/skin material approach. NOT authority: the face. The approved MetaHuman face (live asset SKM_MHC_Sph8_FaceMesh on BP_HybridA_Player) and the user edits stay; this sheet is not a new identity approval. PASS2: used only to keep the character's on-screen identity; no motion work is derived from it in the world pass.",
+      "source": "69241a5f-image.png",
+      "path": "references/ref-001-69241a5f-image.png",
+      "sha256": "b705b5af0ea5328dddc64f9f00810e10648e55f4dc81ec340804fc0f22648410",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R01"
+    },
+    {
+      "id": "ref-002",
+      "kind": "image",
+      "priority": 2,
+      "role": "exterior world",
+      "authority": [
+        "style"
+      ],
+      "notes": "Authority (user instruction 2026-11-23, pass 2): house position relative to the pond, forest, slope, the two paths, surrounding composition and large-scale atmosphere. NOT authority: the shape or size of the house itself (the older, smaller house in this image must not decide the exterior architecture; R02-HOUSE does), metres, walking times.",
+      "source": "59230a22-image.png",
+      "path": "references/ref-002-59230a22-image.png",
+      "sha256": "64840a1e2ecf8285415ebe73e72f065f2c88d6e475ae70eacd4b7f57a0ada5fe",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R02"
+    },
+    {
+      "id": "ref-003",
+      "kind": "image",
+      "priority": 6,
+      "role": "earlier interior (superseded)",
+      "authority": [
+        "historical"
+      ],
+      "notes": "Superseded by ref-008 (user instruction 2026-11-23). Kept only as detail evidence for the mask bench and tools.",
+      "source": "de8800f6-image.png",
+      "path": "references/ref-003-de8800f6-image.png",
+      "sha256": "806933083063fdde88de13665088ca8db4b3139428fda8a559e1fb996b9aace2",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R03-OLD"
+    },
+    {
+      "id": "ref-004",
+      "kind": "image",
+      "priority": 4,
+      "role": "main gameplay camera",
+      "authority": [
+        "style"
+      ],
+      "notes": "Authority: size and position of the character in frame (close, behind the right shoulder, character on the left, travel space open), character and world read together. NOT authority: an exact FOV, arm length or follow spring constant.",
+      "source": "2fe623e6-image.png",
+      "path": "references/ref-004-2fe623e6-image.png",
+      "sha256": "3ba73e8b69541b840e4e5a4fb95c9b1c2af35c6ff96b9961fbf7c2069165d6b9",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R04"
+    },
+    {
+      "id": "ref-005",
+      "kind": "image",
+      "priority": 5,
+      "role": "natural movement poses",
+      "authority": [
+        "motion"
+      ],
+      "notes": "Authority (limited): silhouette, trunk balance, head-neck-shoulder relation, visual intent of the movement. Still images: no timing, foot lock, acceleration, retarget or physics evidence. Generated-pose anatomy errors are not transferred (see analysis/observations.md). PASS2: used only to keep the character's on-screen identity; no motion work is derived from it in the world pass.",
+      "source": "612cb22d-image.png",
+      "path": "references/ref-005-612cb22d-image.png",
+      "sha256": "f1c6b3bba252d6fcbda2c5600ffca52d8091fe28fb0967aa71edf971a238b80f",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R05"
+    },
+    {
+      "id": "ref-006",
+      "kind": "image",
+      "priority": 2,
+      "role": "new rear work garden",
+      "authority": [
+        "style"
+      ],
+      "notes": "Promoted from X01 by user instruction 2026-11-23. Authority: rear door, small work garden, firewood store at the wall, chopping block, tools, link to the forest trail. NOT a layout order: existing day stations and the yard stay where they are.",
+      "source": "72150e00-image.png",
+      "path": "references/ref-006-72150e00-image.png",
+      "sha256": "9860efcb764be18d62993f1926984b852214c87c0dd162f416b1f7c573c92fea",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R02-GARDEN"
+    },
+    {
+      "id": "ref-007",
+      "kind": "image",
+      "priority": 2,
+      "role": "new pond-facing front",
+      "authority": [
+        "style"
+      ],
+      "notes": "Promoted from X02 by user instruction 2026-11-23. Authority: wider house mass, long veranda, exterior proportion that matches real living rooms, roof and window language, plaster below / timber above, stone plinth. NOT a measured drawing: the real door, room, interaction and circulation relations of the existing map are kept and interpreted.",
+      "source": "b5c3375a-image.png",
+      "path": "references/ref-007-b5c3375a-image.png",
+      "sha256": "e85d6ab7f1f1653a9bdb875328161c6fe30b9af1a76cd56d176f678958117d74",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R02-HOUSE"
+    },
+    {
+      "id": "ref-008",
+      "kind": "image",
+      "priority": 3,
+      "role": "new wide interior",
+      "authority": [
+        "style"
+      ],
+      "notes": "Promoted from X03 by user instruction 2026-11-23; replaces the older narrow interior as the interior direction. Authority: comfortable circulation, separate but connected rooms, kitchen, hearth, masks and workshop read as one house, framed openings, runner in the hall. NOT a floor plan.",
+      "source": "e9b55243-image.png",
+      "path": "references/ref-008-e9b55243-image.png",
+      "sha256": "9f86adb5616db0f53276d870d1efa6722a36d2b2413aaf52dcca46ca86ccd556",
+      "inspection": "viewed in full by the agent (2026-11-23), metadata read with r2g inspect",
+      "sphirus_id": "R03"
+    }
+  ],
+  "generation": {
+    "enabled": false,
+    "budget_usd": 0
+  },
+  "notes": [
+    "R06 (resonance / hallucination state of the R04 place) was NOT supplied: eight images arrived, none shows an altered-perception state. No R06 decision is recorded as observed; the resonance section documents the existing project system only.",
+    "Priority order: current explicit user instruction > approved identity and project assets > the per-reference authority above > agent proposals.",
+    "Engine: the existing Unreal Engine 5.9 project (sphirus_UE59). r2g ships no Unreal generator; app/ holds only a hash manifest of the real Unreal source (see app/README.md).",
+    "Reference ids are the tool ids (ref-00N); the brief ids R01-R05 / X01-X03 are in sphirus_id."
+  ]
+}

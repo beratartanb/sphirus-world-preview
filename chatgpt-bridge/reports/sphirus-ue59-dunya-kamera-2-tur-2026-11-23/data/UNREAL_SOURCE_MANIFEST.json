@@ -1,0 +1,298 @@
+{
+  "what_this_is": "sha256 / size / mtime of the Unreal files this case refers to. Hash record only; no judgement of art quality, no build, no playtest.",
+  "project_root": "<PROJECT_ROOT>",
+  "source_control": "none (no git in this project); rollback is the manifest233 backup named in STATUS.txt",
+  "engine": "UE 5.9.0-60738873 (read live from the editor, 2026-11-23)",
+  "written": "2026-11-23 11:52:40",
+  "files": {
+    "changed_in_this_pass": {
+      "Content/Sphirus/Player/Camera/AC_Sph_Camera.uasset": {
+        "sha256": "a75c0ea9128d09184f98f99ae068d449c425894d5271a491cba156677289a5fa",
+        "bytes": 2763522,
+        "mtime": "2026-11-23 10:51:03"
+      }
+    },
+    "changed_in_pass2_world_20261123": {
+      "Content/GraceRanger/Maps/L_GR_SphirusHouse.umap": {
+        "sha256": "e11f4b4ba09e55f8dce9c42f84d18514507914a05df34f370b038068ce46c18d",
+        "bytes": 18655073,
+        "mtime": "2026-11-23 11:39:59"
+      },
+      "Content/GraceRanger/Maps/L_GR_CurrentHouseContent.umap": {
+        "sha256": "063f5127b79dfd30f6cfdecbed6d15c382921c627ca3bb027a37007f5579a999",
+        "bytes": 1591113,
+        "mtime": "2026-11-23 11:09:39"
+      },
+      "Content/Sphirus/Player/Camera/AC_Sph_Camera.uasset": {
+        "sha256": "a75c0ea9128d09184f98f99ae068d449c425894d5271a491cba156677289a5fa",
+        "bytes": 2763522,
+        "mtime": "2026-11-23 10:51:03"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GrassMedium01.uasset": {
+        "sha256": "bfeae6ff017494243613a4192df972b64a5e560c82435683180347dd0065d641",
+        "bytes": 10521,
+        "mtime": "2026-11-23 11:17:59"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GrassShort01.uasset": {
+        "sha256": "4ff330c5cd38602089134fd0609343b408c1dffe7c90b444b463f22d7fae9324",
+        "bytes": 10511,
+        "mtime": "2026-11-23 11:17:59"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GrassSmallSparse01.uasset": {
+        "sha256": "1c6d3950a8b6840a4da4b44d8c9a9c0e0aa94078d6a16cbe4c17d6b574df33af",
+        "bytes": 10603,
+        "mtime": "2026-11-23 11:17:59"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GrassLarge01.uasset": {
+        "sha256": "102ad55ffa23c98b4273bcd6607b85c04d1d59c680562678d5d6fb65ef9bbb11",
+        "bytes": 10511,
+        "mtime": "2026-11-23 11:18:00"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GrassLarge02.uasset": {
+        "sha256": "d0b3aeba32d551cfc2444446e8268dae508fe5b9f9a03fc18c75389c90593313",
+        "bytes": 10543,
+        "mtime": "2026-11-23 11:18:00"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GrassLarge03.uasset": {
+        "sha256": "2831e89bd756cc7d69334581356290854afbbc0da99ab85e3e3f1f2975e26ccb",
+        "bytes": 10543,
+        "mtime": "2026-11-23 11:18:00"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GroundCover01_FO.uasset": {
+        "sha256": "94b5b11937d8ddafc60978b04b254eb5cbcc3c5b1146b6d0aa4dbc7c74b20f3a",
+        "bytes": 10654,
+        "mtime": "2026-11-23 11:18:00"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GroundCover02_FO.uasset": {
+        "sha256": "5dfdef43519dde4631503ce52f89c96be9bef85586a4c4bedea590e96fd1b656",
+        "bytes": 10654,
+        "mtime": "2026-11-23 11:18:00"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GroundCover03_FO.uasset": {
+        "sha256": "24be468d9f2930c9a5dbcc9bf38c49178d21d0d9adf7aa7065a79916996ba158",
+        "bytes": 10654,
+        "mtime": "2026-11-23 11:18:00"
+      },
+      "Content/GraceRanger/Environment/GroundLayer20261111/Materials/MI_GL_GroundCover04_FO.uasset": {
+        "sha256": "a6212b41c813b3d4a3b72e40e84ccc292539c2fedb8f75b3e5f23b564761fe27",
+        "bytes": 10654,
+        "mtime": "2026-11-23 11:18:00"
+      }
+    },
+    "pass2_tools": {
+      "Tools/R2G2_20261123/apply_light.py": {
+        "sha256": "6a37bb69bd7113592f156e8a817ab671b9338751e634374bbfd3251ea423519b",
+        "bytes": 3580,
+        "mtime": "2026-11-23 10:05:12"
+      },
+      "Tools/R2G2_20261123/apply_facade.py": {
+        "sha256": "4d9859c53c6a5006f60983cd7d4cc6d3f76dbca5baa3b62ba04b02b50c20ecc5",
+        "bytes": 2174,
+        "mtime": "2026-11-23 11:09:36"
+      },
+      "Tools/R2G2_20261123/apply_dress.py": {
+        "sha256": "a0bf100eb5219d22a7e568813d05d067f5ba94149bb8b0ee33cca4fccb973710",
+        "bytes": 4542,
+        "mtime": "2026-11-23 11:39:53"
+      },
+      "Tools/R2G2_20261123/apply_grass.py": {
+        "sha256": "eb591a2244bc7d6eefa6df71887a6f79217280fd1cae60e797cd12eec7321de6",
+        "bytes": 1812,
+        "mtime": "2026-11-23 11:13:08"
+      },
+      "Tools/R2G2_20261123/grass_base.json": {
+        "sha256": "c57c03b13c4d8ec8823cb5200e9ed92f1a19bfd74f9ddd673b270104f1b9feb4",
+        "bytes": 3589,
+        "mtime": "2026-11-23 11:15:19"
+      },
+      "Tools/R2G2_20261123/m_camtight_mcp.py": {
+        "sha256": "b909a4b67daaa4bd0ff1664862ebe81997468415fd59beac09a03c8502574220",
+        "bytes": 2650,
+        "mtime": "2026-11-23 10:47:12"
+      },
+      "Tools/R2G2_20261123/w_light.py": {
+        "sha256": "f76cb68320db3688fe11a274cb9c56ccbb43fcd98c419eb655649f9792ea5e19",
+        "bytes": 621,
+        "mtime": "2026-11-23 10:09:50"
+      },
+      "Tools/R2G2_20261123/w_house.py": {
+        "sha256": "bc95a350c593b0deb84b89e1df12a512fea9d8917406df118eea2b8bcc88643b",
+        "bytes": 801,
+        "mtime": "2026-11-23 11:09:00"
+      },
+      "Tools/R2G2_20261123/w_facade.py": {
+        "sha256": "b6acd80554c777a7fd04037986b8aa4b019b5125c44d780f2ab9a3a621115e3b",
+        "bytes": 685,
+        "mtime": "2026-11-23 11:09:36"
+      },
+      "Tools/R2G2_20261123/w_grass.py": {
+        "sha256": "ec9fcaaf138608f01ea521a69b76273d17e5af799fccc734cd066568e5a0f633",
+        "bytes": 499,
+        "mtime": "2026-11-23 11:17:55"
+      },
+      "Tools/R2G2_20261123/mapwrite.sh": {
+        "sha256": "69d98c246c0ac092605020e335c566d13a9b7db8f1c9c3916987bc7d60384b6e",
+        "bytes": 1273,
+        "mtime": "2026-11-23 10:09:50"
+      },
+      "Tools/R2G2_20261123/views10.txt": {
+        "sha256": "75eb157c9c26430a7d04e0593141403542204b37afdd1d5560b30929a64fa94f",
+        "bytes": 675,
+        "mtime": "2026-11-23 08:55:23"
+      },
+      "Tools/R2G2_20261123/views_after.txt": {
+        "sha256": "9c2c4aa3b07233f81e1f435de1b58438a8ea05d30f32a46383beb2e03a947827",
+        "bytes": 1209,
+        "mtime": "2026-11-23 11:20:22"
+      },
+      "Tools/R2G2_20261123/rec_walk.sh": {
+        "sha256": "2e5eaadf43658fddf9be2c6f68d82ccc866a1f07c7b85edf55b2645c4880a4bc",
+        "bytes": 1311,
+        "mtime": "2026-11-23 11:39:53"
+      }
+    },
+    "verified_owners_unchanged": {
+      "Content/Sphirus/CharacterLab/Hazel_20261106/Playable/BP_HybridA_Player.uasset": {
+        "sha256": "0b531f1f87e7afba7a5eb807b500deca32ad113ba4b54c1d7d9751d2768cd9c9",
+        "bytes": 10146013,
+        "mtime": "2026-11-23 00:02:11"
+      },
+      "Content/Sphirus/Player/GASP/BP_Sph_GASPCharacter.uasset": {
+        "sha256": "01898b18905499f49cbe285f481bf57bf55dd0dc4b9e846220b8dff5aa46e699",
+        "bytes": 1459580,
+        "mtime": "2026-11-23 00:02:13"
+      },
+      "Content/Sphirus/Player/GASP/ABP_Sph_GASP.uasset": {
+        "sha256": "438863fb029fff1df81f8683f62334a3485baf22b575cae2591e22900bc16e71",
+        "bytes": 4327662,
+        "mtime": "2026-11-22 12:20:30"
+      },
+      "Content/Sphirus/Player/GASP/ABP_Sph_Body_GASP.uasset": {
+        "sha256": "abcc522c97c24de685967c14861c8a48d28c76b91909a13865e2ffd2e774b07f",
+        "bytes": 2657362,
+        "mtime": "2026-11-22 12:20:37"
+      },
+      "Content/Sphirus/Player/GASP/Rig/RTG_Sph_UEFN_to_MH.uasset": {
+        "sha256": "10fabff38a8eeda396f61600e5796c11f8e27b7ee8b8a5f1b2bf8ee502b40ad1",
+        "bytes": 39734,
+        "mtime": "2026-11-15 22:48:02"
+      },
+      "Content/Sphirus/Player/Motion/AC_Sph_Motion.uasset": {
+        "sha256": "bd20757b20b4e1379a3478f384b0a648162118e0919b9a871725be5ddab32a92",
+        "bytes": 2996589,
+        "mtime": "2026-11-23 00:02:12"
+      },
+      "Content/Sphirus/Player/Camera/M_Sph_Resonance.uasset": {
+        "sha256": "a034b271777d91ad1fd346c7c7316809e602f1ee76a3de6bcd8722416242003b",
+        "bytes": 33105,
+        "mtime": "2026-11-12 10:15:23"
+      },
+      "Content/Sphirus/Player/Camera/MPC_Sph_Perception.uasset": {
+        "sha256": "bc3e863f5cb7c84f7cf5a6e368df04eeabf52547f0c0f10a41829bbc69dd964a",
+        "bytes": 2193,
+        "mtime": "2026-11-12 10:15:19"
+      },
+      "Content/GraceRanger/BP_GM_GR_GraceRanger.uasset": {
+        "sha256": "0d1959ece7b3065795d6294fdcd0be2916ff52c0f7c8ae4e78eab9c47bd16ea6",
+        "bytes": 24615,
+        "mtime": "2026-11-08 02:18:17"
+      },
+      "Content/GraceRanger/Environment/Exterior20260921/Materials/MI_EX_Pond.uasset": {
+        "sha256": "b09212073510c487bdb8007a548e90cfa8666282e007e4c1bd602f5b8d234131",
+        "bytes": 13203,
+        "mtime": "2026-11-12 01:35:30"
+      },
+      "Content/Grooms/001_Messy_Bob/001_Messy_Bob/001_Messy_Bob.uasset": {
+        "sha256": "6bd53f76ab782ba13089dfd4ddfee53996392d1c1f3c9c6f4d35b7d6ae93e7ab",
+        "bytes": 42136370,
+        "mtime": "2026-11-07 00:47:50"
+      }
+    },
+    "project_settings": {
+      "sphirus.uproject": {
+        "sha256": "fc43649148612d01d66ae37bcf2f0d89a47dce97e350d3bbcac20428ea549130",
+        "bytes": 2272,
+        "mtime": "2026-11-20 08:09:26"
+      },
+      "Config/DefaultEngine.ini": {
+        "sha256": "1844d012821ae38ae921a4737eeec0db1ee84a9e5bc9337b3b4640d6f657d934",
+        "bytes": 25520,
+        "mtime": "2026-11-09 23:26:39"
+      },
+      "Config/DefaultGame.ini": {
+        "sha256": "6e47231e47fc5f886d8f2d2e9aa70d0a4c981cbc2ecb9afe6664cd8faee8eec9",
+        "bytes": 2277,
+        "mtime": "2026-11-08 07:10:55"
+      },
+      "Config/DefaultInput.ini": {
+        "sha256": "95fa36f09c88a4190321aac757b1cbdae6baee17b8aa179b23e3788104bcb662",
+        "bytes": 9022,
+        "mtime": "2026-11-20 16:15:09"
+      },
+      ".claude/settings.json": {
+        "sha256": "5fbe044c36ef92ef69792d0b350ae8d61354b89c9442b199584e214d0995e1b5",
+        "bytes": 152,
+        "mtime": "2026-11-23 06:00:47"
+      }
+    },
+    "pass_tools": {
+      "Tools/R2G_20261123/w_cam_r2g.py": {
+        "sha256": "9adb7ebbd7d64ff69c8d724ece37530e6675353f4fad21a89a7f45109d16d313",
+        "bytes": 1642,
+        "mtime": "2026-11-23 06:41:39"
+      },
+      "Tools/R2G_20261123/c_cam.py": {
+        "sha256": "57499af27cd1a6d2b5df4d227ef2d0052a0b1aa18d22484f59ab040049fa46b1",
+        "bytes": 1256,
+        "mtime": "2026-11-23 06:13:57"
+      },
+      "Tools/R2G_20261123/c_atm.py": {
+        "sha256": "4358a55f4ccf096ce85a7c42356f7e5e9f884105d7153e90fa2dc39ea78a319f",
+        "bytes": 1416,
+        "mtime": "2026-11-23 06:24:01"
+      },
+      "Tools/R2G_20261123/c_water.py": {
+        "sha256": "a9bf79be19e3abb4f68e184e568ce13103f51fac664f3cfe9439acb8ed3c2428",
+        "bytes": 768,
+        "mtime": "2026-11-23 06:20:07"
+      },
+      "Tools/R2G_20261123/tour2_r2g.sh": {
+        "sha256": "616f3a88c7b39869aea3e4ec73a266eb95196d3787172c429a3bdd928bf13adb",
+        "bytes": 3296,
+        "mtime": "2026-11-23 06:51:46"
+      },
+      "Tools/R2G_20261123/rec_r2g.sh": {
+        "sha256": "caa7e601a7990d7b532dbdc068b4bc06515a102d05880242814634917e74886f",
+        "bytes": 1961,
+        "mtime": "2026-11-23 06:29:23"
+      },
+      "Tools/R2G_20261123/views_slice.txt": {
+        "sha256": "e90d9f94e16234a34b61da3e6ecc4ea0e2408bb02ff642368c055f54b8d51558",
+        "bytes": 508,
+        "mtime": "2026-11-23 06:06:08"
+      },
+      "Tools/R2G_20261123/views_cam.txt": {
+        "sha256": "f119c4f1abcec52f2d70b9650c11c1d2cacc26192c47951a75354706756b0c68",
+        "bytes": 280,
+        "mtime": "2026-11-23 06:13:57"
+      },
+      "Tools/R2G_20261123/fill_contracts.py": {
+        "sha256": "641a5717e9fa868c91d9bc5f05e68116e90015875e90a87252fbef607a336c8d",
+        "bytes": 13847,
+        "mtime": "2026-11-23 06:41:16"
+      },
+      "Tools/R2G_20261123/unreal_source_manifest.py": {
+        "sha256": "a19e5909b9029edfc3b587e9edc7b12b31920457dcc3964a3762608441588551",
+        "bytes": 3961,
+        "mtime": "2026-11-23 11:42:35"
+      }
+    },
+    "user_save_not_written": {
+      "Saved/SaveGames/SFSaveSlot.sav": {
+        "sha256": "37bc96bd5bf031d64b0c1aab17bbb0117911bb84dd69746867b7e830500d999a",
+        "bytes": 6910,
+        "mtime": "2026-11-18 14:53:17"
+      }
+    }
+  }
+}

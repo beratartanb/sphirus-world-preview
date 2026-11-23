@@ -1,0 +1,43 @@
+{
+  "build_fingerprint": "d2d04a4e1411b9ccb35f3d001e4eba28e0235463e47cabc3891dfa5226d21491",
+  "checks": {
+    "style": {
+      "status": "partial",
+      "evidence": [],
+      "notes": "Pass 2 (2026-11-23): light, pond glare, interior tone, facade language, rear garden applied and re-shot from 37 fixed player-camera points on the saved, reopened project (review/pass2). House shell not enlarged (measured 15.2 x 11.4 m), interior partitions and room dressing unchanged, forest composition unchanged. No user acceptance."
+    },
+    "playability": {
+      "status": "partial",
+      "evidence": [],
+      "notes": "Pass 2: one injected-input walk (front yard -> veranda -> door -> hall -> workshop -> rear door -> stones -> chopping yard) completed with no stall (review/pass2/video, rec json). First attempt exposed a stone placed inside the existing log pile; fixed and re-recorded. Stations, stairs, upstairs and human play not tested."
+    },
+    "state_and_restart": {
+      "status": "pending",
+      "evidence": [],
+      "notes": ""
+    },
+    "build": {
+      "status": "pending",
+      "evidence": [],
+      "notes": ""
+    },
+    "performance": {
+      "status": "partial",
+      "evidence": [],
+      "notes": "Editor PIE only, RTX 4060 Laptop: 19 fixed points 28.9-39.7 fps before (mean 33.5), 30.3-42.5 after (mean 35.9), different editor sessions; rear views E1 44.0 -> 38.4 and E8 42.0 -> 39.6 after the rear garden (38 new static mesh actors), not isolated. No standalone, no GPU breakdown."
+    },
+    "assets": {
+      "status": "pending",
+      "evidence": [],
+      "notes": ""
+    }
+  },
+  "limitations": [
+    "Statuses partial/pending are set by hand: the r2g evidence command can only write passed, which would overstate these checks.",
+    "Evidence is an author attestation with hashes; nothing here is independent verification or an art-quality grade.",
+    "R06 was not supplied. Videos were not watched at speed by the agent. Inputs were injected, not played.",
+    "The fingerprint covers the contract files and app/UNREAL_SOURCE_MANIFEST.json, which lists sha256 of the real Unreal files; r2g itself never reads .uasset/.umap.",
+    "Pass 2 statuses were set by hand to 'partial'; r2g evidence can only write 'passed'.",
+    "Pass 2: ChatGPTBridge export / publish rule of AGENTS.md was not run."
+  ]
+}
