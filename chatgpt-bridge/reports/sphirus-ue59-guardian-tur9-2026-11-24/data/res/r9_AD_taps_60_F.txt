@@ -1,0 +1,14 @@
+#### r9_AD_taps_60_F plan AD_taps hz 60 tag F 02:57
+r9_AD_taps_60_F: 27 contacts
+  t   5.90 s7  [D+Sh]->[A+Sh] +0.30s foot L dur 0.38 curve  11.1 ground   0.6 air 42% lift 12.7 v  84 M_Relaxed_Run_Turn_L_180_Rfoot  EARLY-FLAG
+  t   6.44 s8  [A+Sh]->[D+Sh] +0.23s foot R dur 0.28 curve  23.3 ground  23.3 air  0% lift  4.2 v  39 M_Relaxed_Run_Turn_R_180_Rfoot
+  TOTAL n 27 | curve: mean 2.1 p90 2.0 worst 23.3, >=10: 2, >=20: 1 | ground: mean 1.6 p90 1.5 worst 23.3, >=10: 1, >=20: 1
+r9_AD_taps_60_F s2  t 3.54 v0 415 | cv L 86 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  70 cm at 0.32 s | real: zero after 0.90 s, overshoot 186 cm, -90% after 0.90 s
+r9_AD_taps_60_F s3  t 3.80 v0 153 | cv L100 R  0 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  20 cm at 0.22 s | real: zero after 0.63 s, overshoot 118 cm, -90% after 0.63 s
+r9_AD_taps_60_F s4  t 4.10 v0 312 | cv L 94 R 94 | M_Neutral_Run_Loop_F       | predicted overshoot 493 cm at 1.52 s | real: zero after 0.33 s, overshoot  52 cm, -90% after 0.47 s
+r9_AD_taps_60_F s6  t 5.02 v0 254 | cv L 75 R 98 | laxed_Run_Turn_L_090_Lfoot | predicted overshoot 396 cm at 1.52 s | real: zero after 0.18 s, overshoot  19 cm, -90% after 0.55 s
+r9_AD_taps_60_F s7  t 5.60 v0 253 | cv L100 R  7 | laxed_Run_Turn_R_090_Lfoot | predicted overshoot 556 cm at 1.52 s | real: zero after 0.20 s, overshoot  24 cm, -90% after 0.58 s
+r9_AD_taps_60_F s8  t 6.20 v0 243 | cv L  0 R100 | laxed_Run_Turn_L_180_Rfoot | predicted overshoot 550 cm at 1.52 s | real: zero after 0.20 s, overshoot  23 cm, -90% after 0.27 s
+r9_AD_taps_60_F s10 t 7.99 v0 404 | cv L100 R 30 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  66 cm at 0.32 s | real: zero after 0.40 s, overshoot  72 cm, -90% after 0.79 s
+r9_AD_taps_60_F s11 t 8.76 v0 268 | cv L100 R  0 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot 444 cm at 1.52 s | real: zero after 2.32 s, overshoot 592 cm, -90% after 2.32 s
+r9_AD_taps_60_F s13 t 10.49 v0 396 | cv L100 R 99 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 130 cm at 0.62 s | real: zero after 0.58 s, overshoot 110 cm, -90% after 1.97 s

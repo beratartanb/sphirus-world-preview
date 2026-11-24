@@ -1,0 +1,12 @@
+#### r9_AD_sprint_60_F plan AD_sprint hz 60 tag F 02:54
+r9_AD_sprint_60_F: 38 contacts
+  TOTAL n 38 | curve: mean 0.8 p90 1.2 worst 1.9, >=10: 0, >=20: 0 | ground: mean 0.7 p90 1.1 worst 1.8, >=10: 0, >=20: 0
+r9_AD_sprint_60_F s2  t 3.73 v0 585 | cv L100 R 56 | ed_Sprint_Turn_180_R_Lfoot | predicted overshoot 130 cm at 0.42 s | real: zero after 0.53 s, overshoot 168 cm, -90% after 1.45 s
+r9_AD_sprint_60_F s3  t 5.33 v0 564 | cv L100 R  1 | ed_Sprint_Turn_180_L_Lfoot | predicted overshoot 123 cm at 0.42 s | real: zero after 0.75 s, overshoot 273 cm, -90% after 1.65 s
+r9_AD_sprint_60_F s4  t 7.07 v0 534 | cv L 98 R100 | ed_Sprint_Turn_180_L_Rfoot | predicted overshoot 832 cm at 1.52 s | real: zero after 0.78 s, overshoot 274 cm, -90% after 1.61 s
+r9_AD_sprint_60_F s5  t 8.99 v0 553 | cv L 11 R100 | ed_Sprint_Turn_180_R_Rfoot | predicted overshoot 118 cm at 0.42 s | real: zero after 0.75 s, overshoot 269 cm, -90% after 1.65 s
+r9_AD_sprint_60_F s6  t 11.04 v0 548 | cv L100 R100 | ed_Sprint_Turn_180_R_Rfoot | predicted overshoot 115 cm at 0.42 s | real: zero after 0.75 s, overshoot 267 cm, -90% after 1.65 s
+r9_AD_sprint_60_F s7  t 12.69 v0 490 | cv L100 R 85 | ed_Sprint_Turn_180_L_Rfoot | predicted overshoot 789 cm at 1.52 s | real: zero after 0.77 s, overshoot 256 cm, -90% after 1.50 s
+r9_AD_sprint_60_F s8  t 14.54 v0 527 | cv L  1 R100 | ed_Sprint_Turn_180_R_Rfoot | predicted overshoot 108 cm at 0.42 s | real: zero after 0.75 s, overshoot 259 cm, -90% after 1.60 s
+r9_AD_sprint_60_F s9  t 16.50 v0 524 | cv L 83 R100 | ed_Sprint_Turn_180_R_Rfoot | predicted overshoot 106 cm at 0.42 s | real: zero after 0.75 s, overshoot 257 cm, -90% after 1.60 s
+r9_AD_sprint_60_F s10 t 18.62 v0 518 | cv L100 R 99 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 177 cm at 0.62 s | real: zero after 0.58 s, overshoot 126 cm, -90% after 1.97 s

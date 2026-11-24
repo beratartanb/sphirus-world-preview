@@ -1,0 +1,15 @@
+#### r9_fatigue_chain_60_F plan fatigue_chain hz 60 tag F 03:07
+r9_fatigue_chain_60_F: 138 contacts
+  TOTAL n 138 | curve: mean 0.8 p90 1.5 worst 2.0, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.4 worst 2.0, >=10: 0, >=20: 0
+r9_fatigue_chain_60_F s2  t 6.04 v0 180 | cv L 99 R  0 | l_Run_Reface_Start_F_R_090 | predicted overshoot  33 cm at 0.82 s | real: zero after 1.33 s, overshoot  32 cm, -90% after 5.99 s
+r9_fatigue_chain_60_F s3  t 12.05 v0 415 | cv L100 R 99 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  69 cm at 0.32 s | real: zero after 0.43 s, overshoot  83 cm, -90% after 0.98 s
+r9_fatigue_chain_60_F s4  t 18.06 v0 406 | cv L 87 R100 | ed_Sprint_Turn_180_R_Rfoot | predicted overshoot  69 cm at 0.31 s | real: zero after 0.33 s, overshoot  54 cm, -90% after 0.86 s
+r9_fatigue_chain_60_F s5  t 25.06 v0 545 | cv L100 R  1 | ed_Sprint_Turn_180_R_Lfoot | predicted overshoot 115 cm at 0.42 s | real: zero after 0.75 s, overshoot 263 cm, -90% after 1.63 s
+r9_fatigue_chain_60_F s6  t 32.08 v0 516 | cv L 17 R100 | ed_Sprint_Turn_180_L_Rfoot | predicted overshoot 103 cm at 0.42 s | real: zero after 0.53 s, overshoot 154 cm, -90% after 1.35 s
+r9_fatigue_chain_60_F s7  t 39.08 v0 515 | cv L100 R100 | ed_Sprint_Turn_180_L_Rfoot | predicted overshoot 102 cm at 0.42 s | real: zero after 0.53 s, overshoot 155 cm, -90% after 1.35 s
+r9_fatigue_chain_60_F s8  t 46.12 v0 515 | cv L 99 R100 | laxed_Run_Turn_L_180_Rfoot | predicted overshoot 101 cm at 0.42 s | real: zero after 0.37 s, overshoot  78 cm, -90% after 4.98 s
+r9_fatigue_chain_60_F s9  t 51.12 v0 365 | cv L 14 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 114 cm at 0.62 s | real: zero after 0.52 s, overshoot  86 cm, -90% after 8.03 s
+r9_fatigue_chain_60_F s11 t 64.18 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot 114 cm at 1.22 s | real: zero after 0.43 s, overshoot  40 cm, -90% after 10.02 s
+r9_fatigue_chain_60_F s13 t 79.22 v0 415 | cv L  2 R100 | ed_Sprint_Turn_180_R_Lfoot | predicted overshoot  70 cm at 0.32 s | real: zero after 0.30 s, overshoot  48 cm, -90% after 0.87 s
+r9_fatigue_chain_60_F s14 t 85.22 v0 563 | cv L100 R  8 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 188 cm at 0.62 s | real: zero after 0.58 s, overshoot 130 cm, -90% after 14.98 s
+r9_fatigue_chain_60_F s16 t 104.23 v0 180 | cv L100 R  0 | _Relaxed_Walk_Stop_F_Lfoot | predicted overshoot 153 cm at 1.52 s | real: zero after 0.37 s, overshoot  32 cm, -90% after 1.95 s

@@ -1,0 +1,17 @@
+#### r9_old_K1_30_h3 plan old_K1 hz 30 tag h3 22:28
+r9_old_K1_30_h3: 93 contacts
+  t   8.85 s3  [S+Sh]->[-] +0.33s foot L dur 0.10 curve  13.4 ground   0.0 air 100% lift 11.5 v 116 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  TOTAL n 93 | curve: mean 0.8 p90 1.3 worst 13.4, >=10: 1, >=20: 0 | ground: mean 0.7 p90 1.2 worst 1.7, >=10: 0, >=20: 0
+r9_old_K1_30_h3 s2  t 4.59 v0 415 | cv L100 R 99 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  60 cm at 0.33 s | real: zero after 0.30 s, overshoot  41 cm, -90% after 3.97 s
+r9_old_K1_30_h3 s3  t 8.59 v0 234 | cv L  3 R 98 | M_Relaxed_Run_Stop_B_Rfoot | predicted overshoot  62 cm at 0.53 s | real: zero after 0.50 s, overshoot  62 cm, -90% after 1.97 s
+r9_old_K1_30_h3 s5  t 13.09 v0 415 | cv L100 R  3 | utral_Walk_Pivot_F_B_Lfoot | predicted overshoot  62 cm at 0.33 s | real: zero after 2.47 s, overshoot 738 cm, -90% after 2.47 s
+r9_old_K1_30_h3 s7  t 14.99 v0 411 | cv L  4 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 122 cm at 0.63 s | real: zero after 0.57 s, overshoot 122 cm, -90% after 1.77 s
+r9_old_K1_30_h3 s9  t 19.29 v0 405 | cv L100 R 99 | CM_af_Loco_Jog_FwdLeft     | predicted overshoot  77 cm at 0.43 s | real: zero after 0.33 s, overshoot  59 cm, -90% after 2.97 s
+r9_old_K1_30_h3 s10 t 22.29 v0 226 | cv L100 R 99 | _Relaxed_Run_Stop_LL_Lfoot | predicted overshoot  61 cm at 0.53 s | real: zero after 0.47 s, overshoot  62 cm, -90% after 1.97 s
+r9_old_K1_30_h3 s12 t 26.79 v0 404 | cv L 97 R100 | CM_af_Loco_Jog_FwdRight    | predicted overshoot  77 cm at 0.43 s | real: zero after 0.33 s, overshoot  59 cm, -90% after 2.97 s
+r9_old_K1_30_h3 s13 t 29.79 v0 226 | cv L100 R 99 | M_Relaxed_Run_Stop_B_Lfoot | predicted overshoot  61 cm at 0.53 s | real: zero after 0.53 s, overshoot  72 cm, -90% after 1.97 s
+r9_old_K1_30_h3 s15 t 34.79 v0 569 | cv L100 R100 | sition_Sprint_to_Run_Lfoot | predicted overshoot 245 cm at 0.93 s | real: zero after 0.63 s, overshoot 173 cm, -90% after 3.47 s
+r9_old_K1_30_h3 s16 t 38.29 v0 223 | cv L100 R100 | M_Relaxed_Run_Stop_B_Lfoot | predicted overshoot  61 cm at 0.53 s | real: zero after 0.53 s, overshoot  68 cm, -90% after 1.97 s
+r9_old_K1_30_h3 s18 t 43.29 v0 555 | cv L100 R100 | sition_Sprint_to_Run_Lfoot | predicted overshoot 241 cm at 0.93 s | real: zero after 1.73 s, overshoot 183 cm, -90% after 1.73 s
+r9_old_K1_30_h3 s19 t 43.55 v0 382 | cv L 94 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 112 cm at 0.63 s | real: zero after 1.47 s, overshoot  71 cm, -90% after 2.03 s
+r9_old_K1_30_h3 s20 t 45.62 v0 387 | cv L 98 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 117 cm at 0.63 s | real: zero after 0.47 s, overshoot  84 cm, -90% after 1.93 s

@@ -1,0 +1,13 @@
+#### r9_brake_re_60_F plan brake_re hz 60 tag F 02:58
+r9_brake_re_60_F: 50 contacts
+  TOTAL n 50 | curve: mean 0.9 p90 1.6 worst 3.9, >=10: 0, >=20: 0 | ground: mean 0.7 p90 1.2 worst 2.7, >=10: 0, >=20: 0
+r9_brake_re_60_F s2  t 3.74 v0 415 | cv L  3 R 99 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  68 cm at 0.32 s | real: zero after 2.20 s, overshoot 727 cm, -90% after 2.20 s
+r9_brake_re_60_F s3  t 3.95 v0 194 | cv L 88 R 80 | eutral_Run_Pivot_F_B_Rfoot | predicted overshoot  31 cm at 0.32 s | real: zero after 1.98 s, overshoot 668 cm, -90% after 1.98 s
+r9_brake_re_60_F s4  t 5.58 v0 412 | cv L100 R  0 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  68 cm at 0.32 s | real: zero after 0.35 s, overshoot  69 cm, -90% after 0.43 s
+r9_brake_re_60_F s6  t 7.74 v0 408 | cv L 83 R100 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  67 cm at 0.32 s | real: zero after 0.25 s, overshoot  42 cm, -90% after 0.25 s
+r9_brake_re_60_F s8  t 9.49 v0 227 | cv L  0 R100 | CM_af_Loco_Jog_Fwd_Pivot   | predicted overshoot  18 cm at 0.12 s | real: zero after 0.15 s, overshoot  10 cm, -90% after 0.28 s
+r9_brake_re_60_F s10 t 11.41 v0 224 | cv L  3 R100 | M_Relaxed_Run_Stop_B_Rfoot | predicted overshoot 218 cm at 1.52 s | real: zero after 0.43 s, overshoot  48 cm, -90% after 1.47 s
+r9_brake_re_60_F s12 t 14.90 v0 394 | cv L 19 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  64 cm at 0.32 s | real: zero after 0.55 s, overshoot  81 cm, -90% after 0.55 s
+r9_brake_re_60_F s15 t 17.10 v0 389 | cv L100 R 99 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 123 cm at 0.62 s | real: zero after 0.30 s, overshoot  51 cm, -90% after 0.30 s
+r9_brake_re_60_F s16 t 17.25 v0 228 | cv L100 R100 | laxed_Run_Turn_L_180_Lfoot | predicted overshoot  18 cm at 0.12 s | real: zero after 0.15 s, overshoot  10 cm, -90% after 0.52 s
+r9_brake_re_60_F s17 t 18.85 v0 383 | cv L100 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 123 cm at 0.62 s | real: zero after 0.37 s, overshoot  49 cm, -90% after 1.97 s

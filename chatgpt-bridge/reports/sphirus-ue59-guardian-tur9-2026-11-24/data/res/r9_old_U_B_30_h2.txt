@@ -1,0 +1,17 @@
+#### r9_old_U_B_30_h2 plan old_U_B hz 30 tag h2 22:13
+r9_old_U_B_30_h2: 73 contacts
+  TOTAL n 73 | curve: mean 1.0 p90 1.6 worst 6.3, >=10: 0, >=20: 0 | ground: mean 0.9 p90 1.4 worst 6.3, >=10: 0, >=20: 0
+r9_old_U_B_30_h2 s2  t 5.09 v0 582 | cv L 98 R 97 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  55 cm at 0.13 s | real: zero after 0.57 s, overshoot 164 cm, -90% after 2.17 s
+r9_old_U_B_30_h2 s3  t 7.29 v0 229 | cv L100 R  3 | M_Relaxed_Run_Stop_B_Lfoot | predicted overshoot  63 cm at 0.53 s | real: zero after 0.53 s, overshoot  73 cm, -90% after 2.47 s
+r9_old_U_B_30_h2 s5  t 13.29 v0 562 | cv L100 R 43 | ed_Sprint_Turn_090_R_Lfoot | predicted overshoot 167 cm at 1.43 s | real: zero after 3.03 s, overshoot 210 cm, -90% after 3.03 s
+r9_old_U_B_30_h2 s6  t 15.29 v0 553 | cv L100 R100 | ed_Sprint_Turn_180_L_Rfoot | predicted overshoot 107 cm at 0.43 s | real: zero after 0.53 s, overshoot 160 cm, -90% after 1.43 s
+r9_old_U_B_30_h2 s7  t 17.29 v0 541 | cv L100 R  4 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 174 cm at 0.63 s | real: zero after 0.53 s, overshoot 118 cm, -90% after 2.47 s
+r9_old_U_B_30_h2 s9  t 22.79 v0 180 | cv L 96 R 18 | utral_Walk_Pivot_F_B_Lfoot | predicted overshoot  11 cm at 0.13 s | real: zero after 0.17 s, overshoot   6 cm, -90% after 2.17 s
+r9_old_U_B_30_h2 s10 t 24.99 v0 150 | cv L  0 R100 | utral_Walk_Pivot_B_F_Rfoot | predicted overshoot   9 cm at 0.13 s | real: zero after 0.13 s, overshoot   5 cm, -90% after 0.50 s
+r9_old_U_B_30_h2 s11 t 27.19 v0 180 | cv L100 R  0 | tral_Walk_Turn_L_090_Lfoot | predicted overshoot  29 cm at 0.63 s | real: zero after 1.20 s, overshoot  28 cm, -90% after 1.97 s
+r9_old_U_B_30_h2 s12 t 29.19 v0 180 | cv L  0 R100 | tral_Walk_Turn_L_180_Lfoot | predicted overshoot  11 cm at 0.13 s | real: zero after 0.17 s, overshoot   6 cm, -90% after 0.53 s
+r9_old_U_B_30_h2 s13 t 31.19 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot  45 cm at 0.53 s | real: zero after 0.47 s, overshoot  51 cm, -90% after 1.97 s
+r9_old_U_B_30_h2 s19 t 36.35 v0 300 | cv L  0 R 51 | ansition_Walk_to_Run_Rfoot | predicted overshoot 612 cm at 1.53 s | real: zero after 0.63 s, overshoot 133 cm, -90% after 1.53 s
+r9_old_U_B_30_h2 s21 t 40.95 v0 413 | cv L 99 R100 | ansition_Run_to_Walk_Rfoot | predicted overshoot 607 cm at 1.53 s | real: zero after 4.90 s, overshoot 1397 cm, -90% after 4.90 s
+r9_old_U_B_30_h2 s22 t 43.42 v0 180 | cv L100 R  0 | ansition_Walk_to_Run_Lfoot | predicted overshoot 568 cm at 1.53 s | real: zero after 2.43 s, overshoot 861 cm, -90% after 2.43 s
+r9_old_U_B_30_h2 s23 t 45.42 v0 414 | cv L100 R100 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 121 cm at 0.63 s | real: zero after 0.43 s, overshoot  77 cm, -90% after 1.93 s

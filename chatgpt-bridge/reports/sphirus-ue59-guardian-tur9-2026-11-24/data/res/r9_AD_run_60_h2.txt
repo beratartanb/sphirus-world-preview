@@ -1,0 +1,12 @@
+#### r9_AD_run_60_h2 plan AD_run hz 60 tag h2 22:22
+r9_AD_run_60_h2: 46 contacts
+  TOTAL n 46 | curve: mean 1.0 p90 1.6 worst 2.9, >=10: 0, >=20: 0 | ground: mean 0.9 p90 1.6 worst 1.8, >=10: 0, >=20: 0
+r9_AD_run_60_h2 s2  t 3.78 v0 415 | cv L100 R 98 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  70 cm at 0.32 s | real: zero after 0.43 s, overshoot  80 cm, -90% after 0.97 s
+r9_AD_run_60_h2 s3  t 5.08 v0 401 | cv L 99 R 51 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  66 cm at 0.32 s | real: zero after 0.42 s, overshoot  86 cm, -90% after 0.93 s
+r9_AD_run_60_h2 s4  t 6.53 v0 402 | cv L 99 R100 | laxed_Run_Turn_L_180_Rfoot | predicted overshoot  66 cm at 0.32 s | real: zero after 0.35 s, overshoot  69 cm, -90% after 0.85 s
+r9_AD_run_60_h2 s5  t 8.13 v0 401 | cv L100 R  0 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  66 cm at 0.32 s | real: zero after 0.42 s, overshoot  82 cm, -90% after 0.93 s
+r9_AD_run_60_h2 s6  t 9.88 v0 397 | cv L  0 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  64 cm at 0.32 s | real: zero after 0.40 s, overshoot  76 cm, -90% after 0.90 s
+r9_AD_run_60_h2 s7  t 11.25 v0 386 | cv L  1 R100 | laxed_Run_Turn_L_180_Rfoot | predicted overshoot  61 cm at 0.32 s | real: zero after 0.40 s, overshoot  75 cm, -90% after 0.88 s
+r9_AD_run_60_h2 s8  t 12.77 v0 386 | cv L 99 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  61 cm at 0.32 s | real: zero after 0.40 s, overshoot  75 cm, -90% after 0.88 s
+r9_AD_run_60_h2 s9  t 14.43 v0 383 | cv L100 R  1 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  60 cm at 0.32 s | real: zero after 0.42 s, overshoot  78 cm, -90% after 0.90 s
+r9_AD_run_60_h2 s10 t 16.25 v0 379 | cv L 12 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 123 cm at 0.62 s | real: zero after 0.48 s, overshoot  86 cm, -90% after 1.97 s

@@ -1,0 +1,8 @@
+#### r9_AD_walk_60_h4 plan AD_walk hz 60 tag h4 22:40
+r9_AD_walk_60_h4: 24 contacts
+  TOTAL n 24 | curve: mean 1.2 p90 2.0 worst 2.9, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.4 worst 2.9, >=10: 0, >=20: 0
+r9_AD_walk_60_h4 s2  t 3.78 v0 180 | cv L100 R  0 | tral_Walk_Turn_L_180_Lfoot | predicted overshoot  14 cm at 0.12 s | real: zero after 0.15 s, overshoot   8 cm, -90% after 0.50 s
+r9_AD_walk_60_h4 s3  t 5.38 v0 180 | cv L100 R  0 | tral_Walk_Turn_L_180_Lfoot | predicted overshoot  14 cm at 0.12 s | real: zero after 0.15 s, overshoot   8 cm, -90% after 0.52 s
+r9_AD_walk_60_h4 s4  t 7.13 v0 180 | cv L100 R  0 | tral_Walk_Turn_R_180_Lfoot | predicted overshoot  14 cm at 0.12 s | real: zero after 0.15 s, overshoot   8 cm, -90% after 0.52 s
+r9_AD_walk_60_h4 s5  t 9.03 v0 180 | cv L  0 R100 | tral_Walk_Turn_L_180_Lfoot | predicted overshoot  14 cm at 0.12 s | real: zero after 0.15 s, overshoot   9 cm, -90% after 0.53 s
+r9_AD_walk_60_h4 s6  t 11.10 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot  20 cm at 0.22 s | real: zero after 0.47 s, overshoot  47 cm, -90% after 1.95 s

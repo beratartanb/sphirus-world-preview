@@ -1,0 +1,15 @@
+#### r9_brake_re_30_F plan brake_re hz 30 tag F 03:12
+r9_brake_re_30_F: 41 contacts
+  t   9.92 s9  [W+Sh]->[S+Sh] +0.17s foot L dur 0.37 curve   9.0 ground   4.0 air 25% lift 13.0 v  33 CM_af_Loco_Jog_Bwd_Start
+  t  11.68 s10 [S+Sh]->[-] +0.33s foot L dur 0.10 curve  12.5 ground   0.0 air 100% lift 11.4 v 112 M_Relaxed_Run_Stop_B_Rfoot  EARLY-FLAG
+  TOTAL n 41 | curve: mean 1.2 p90 1.4 worst 12.5, >=10: 1, >=20: 0 | ground: mean 0.7 p90 1.1 worst 4.0, >=10: 0, >=20: 0
+r9_brake_re_30_F s2  t 3.72 v0 415 | cv L  3 R 97 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  60 cm at 0.33 s | real: zero after 2.23 s, overshoot 686 cm, -90% after 2.23 s
+r9_brake_re_30_F s4  t 5.58 v0 412 | cv L100 R  0 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  59 cm at 0.33 s | real: zero after 0.37 s, overshoot  56 cm, -90% after 0.43 s
+r9_brake_re_30_F s6  t 7.75 v0 408 | cv L 95 R100 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  58 cm at 0.33 s | real: zero after 0.30 s, overshoot  42 cm, -90% after 0.30 s
+r9_brake_re_30_F s8  t 9.52 v0 226 | cv L  0 R100 | CM_af_Loco_Jog_Fwd_Pivot   | predicted overshoot  13 cm at 0.13 s | real: zero after 0.13 s, overshoot   8 cm, -90% after 0.27 s
+r9_brake_re_30_F s10 t 11.42 v0 224 | cv L  3 R 98 | M_Relaxed_Run_Stop_B_Rfoot | predicted overshoot  62 cm at 0.53 s | real: zero after 0.50 s, overshoot  60 cm, -90% after 1.47 s
+r9_brake_re_30_F s12 t 14.94 v0 393 | cv L 34 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  55 cm at 0.33 s | real: zero after 0.54 s, overshoot  87 cm, -90% after 0.54 s
+r9_brake_re_30_F s13 t 15.17 v0 188 | cv L100 R  9 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  25 cm at 0.33 s | real: zero after 0.30 s, overshoot  25 cm, -90% after 0.43 s
+r9_brake_re_30_F s15 t 17.14 v0 388 | cv L100 R 92 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 116 cm at 0.63 s | real: zero after 0.30 s, overshoot  53 cm, -90% after 0.30 s
+r9_brake_re_30_F s16 t 17.20 v0 282 | cv L100 R100 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 106 cm at 0.73 s | real: zero after 0.23 s, overshoot  31 cm, -90% after 0.63 s
+r9_brake_re_30_F s17 t 18.87 v0 382 | cv L100 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 115 cm at 0.63 s | real: zero after 0.37 s, overshoot  51 cm, -90% after 1.93 s

@@ -1,0 +1,42 @@
+#### f9_H8_60
+s1  [W Sh        ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     0 | head drop 11.0 cm | trunk tilt max 22.8 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to_Run_Rfoot 2.18
+s2  [-           ] v0 415 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  1683 | head drop  9.8 cm | trunk tilt max 13.0 | R_Tr_Walk_to_Run_Rfoot 0.03 > R_Run_Stop_F_Lfoot 1.97
+s3  [D Sh        ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     6 | head drop 16.9 cm | trunk tilt max 26.8 | R_Run_Stop_F_Lfoot 0.03 > k_Reface_Start_F_R_090 0.02 > n_Reface_Start_F_R_090 2.45
+s4  [-           ] v0 414 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  3000 | head drop  6.5 cm | trunk tilt max 17.5 | n_Reface_Start_F_R_090 0.03 > R_Run_Stop_F_Lfoot 1.97
+s5  [W           ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     0 | head drop  7.6 cm | trunk tilt max  8.8 | R_Run_Stop_F_Lfoot 0.03 > k_Reface_Start_F_L_090 2.47
+s6  [-           ] v0 180 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  1387 | head drop  0.0 cm | trunk tilt max  5.4 | k_Reface_Start_F_L_090 0.03 > R_Walk_Stop_F_Rfoot 1.97
+#### f9_H8_60
+s1  [W Sh          ] v   0 -> 415 | 90% in 0.58 s | peak acc  1399 | capsule faster than clip 0.00 s | head dz/0.2s  8.5 pelvis  6.7 | R_Stand_Idle_Loop 0.03 > N_Walk_Start_F_Rfoot 0.28 > R_Tr_Walk_to_Run_Rfoot 2.18
+s2  [-             ] v 415 ->   0 | 90% in 0.52 s | peak acc  1683 | capsule faster than clip 0.00 s | head dz/0.2s  8.8 pelvis  9.4 | R_Tr_Walk_to_Run_Rfoot 0.03 > R_Run_Stop_F_Lfoot 1.97
+s3  [D Sh          ] v   0 -> 414 | 90% in 0.62 s | peak acc   729 | capsule faster than clip 0.10 s | head dz/0.2s 11.8 pelvis  9.0 | R_Run_Stop_F_Lfoot 0.03 > alk_Reface_Start_F_R_090 0.02 > Run_Reface_Start_F_R_090 2.45
+s4  [-             ] v 414 ->   0 | 90% in 0.48 s | peak acc  3000 | capsule faster than clip 0.00 s | head dz/0.2s  9.2 pelvis 10.6 | Run_Reface_Start_F_R_090 0.03 > R_Run_Stop_F_Lfoot 1.97
+s5  [W             ] v   0 -> 180 | 90% in 0.28 s | peak acc  1162 | capsule faster than clip 0.00 s | head dz/0.2s  6.6 pelvis  5.8 | R_Run_Stop_F_Lfoot 0.03 > alk_Reface_Start_F_L_090 2.47
+s6  [-             ] v 180 ->   0 | 90% in 0.57 s | peak acc  1387 | capsule faster than clip 0.00 s | head dz/0.2s  4.0 pelvis  4.1 | alk_Reface_Start_F_L_090 0.03 > R_Walk_Stop_F_Rfoot 1.97
+#### f9_H8_30
+s1  [W Sh        ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     0 | head drop 11.4 cm | trunk tilt max 22.1 | R_Stand_Idle_Loop 0.07 > N_Walk_Start_F_Rfoot 0.30 > R_Tr_Walk_to_Run_Rfoot 2.13
+s2  [-           ] v0 415 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  1754 | head drop  9.6 cm | trunk tilt max 12.8 | R_Tr_Walk_to_Run_Rfoot 0.07 > R_Run_Stop_F_Lfoot 1.93
+s3  [D Sh        ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     3 | head drop 16.7 cm | trunk tilt max 27.2 | R_Run_Stop_F_Lfoot 0.07 > k_Reface_Start_F_R_090 0.03 > n_Reface_Start_F_R_090 2.40
+s4  [-           ] v0 414 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  2072 | head drop  6.2 cm | trunk tilt max 16.9 | n_Reface_Start_F_R_090 0.07 > R_Run_Stop_F_Lfoot 1.93
+s5  [W           ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     0 | head drop  8.2 cm | trunk tilt max  8.3 | R_Run_Stop_F_Lfoot 0.07 > k_Reface_Start_F_L_090 2.43
+s6  [-           ] v0 180 | new direction after - s | back-loop while still going forward 0.00 s | peak decel   982 | head drop  0.0 cm | trunk tilt max  5.5 | k_Reface_Start_F_L_090 0.07 > R_Walk_Stop_F_Rfoot 1.93
+#### f9_H8_30
+s1  [W Sh          ] v   0 -> 415 | 90% in 0.60 s | peak acc  1398 | capsule faster than clip 0.00 s | head dz/0.2s  8.9 pelvis  7.4 | R_Stand_Idle_Loop 0.07 > N_Walk_Start_F_Rfoot 0.30 > R_Tr_Walk_to_Run_Rfoot 2.13
+s2  [-             ] v 415 ->   0 | 90% in 0.53 s | peak acc  1754 | capsule faster than clip 0.00 s | head dz/0.2s  9.5 pelvis 10.1 | R_Tr_Walk_to_Run_Rfoot 0.07 > R_Run_Stop_F_Lfoot 1.93
+s3  [D Sh          ] v   0 -> 414 | 90% in 0.63 s | peak acc   880 | capsule faster than clip 0.00 s | head dz/0.2s 13.5 pelvis 10.4 | R_Run_Stop_F_Lfoot 0.07 > alk_Reface_Start_F_R_090 0.03 > Run_Reface_Start_F_R_090 2.40
+s4  [-             ] v 414 ->   0 | 90% in 0.50 s | peak acc  2072 | capsule faster than clip 0.00 s | head dz/0.2s  9.7 pelvis 11.2 | Run_Reface_Start_F_R_090 0.07 > R_Run_Stop_F_Lfoot 1.93
+s5  [W             ] v   0 -> 180 | 90% in 0.33 s | peak acc   760 | capsule faster than clip 0.00 s | head dz/0.2s  7.3 pelvis  6.5 | R_Run_Stop_F_Lfoot 0.07 > alk_Reface_Start_F_L_090 2.43
+s6  [-             ] v 180 ->   0 | 90% in 0.57 s | peak acc   982 | capsule faster than clip 0.00 s | head dz/0.2s  3.9 pelvis  4.0 | alk_Reface_Start_F_L_090 0.07 > R_Walk_Stop_F_Rfoot 1.93
+#### f9_H8_var
+s1  [W Sh        ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     0 | head drop 11.8 cm | trunk tilt max 22.7 | R_Stand_Idle_Loop 0.07 > N_Walk_Start_F_Rfoot 0.29 > R_Tr_Walk_to_Run_Rfoot 2.13
+s2  [-           ] v0 415 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  3000 | head drop  6.6 cm | trunk tilt max 18.9 | R_Tr_Walk_to_Run_Rfoot 0.05 > R_Run_Stop_F_Rfoot 1.96
+s3  [D Sh        ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     6 | head drop 16.1 cm | trunk tilt max 27.3 | R_Run_Stop_F_Rfoot 0.03 > k_Reface_Start_F_R_090 0.02 > n_Reface_Start_F_R_090 2.43
+s4  [-           ] v0 414 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  2994 | head drop  6.1 cm | trunk tilt max 17.4 | n_Reface_Start_F_R_090 0.05 > R_Run_Stop_F_Lfoot 1.95
+s5  [W           ] v0   0 | new direction after - s | back-loop while still going forward 0.00 s | peak decel     0 | head drop  8.0 cm | trunk tilt max  9.0 | R_Run_Stop_F_Lfoot 0.05 > k_Reface_Start_F_L_090 2.46
+s6  [-           ] v0 180 | new direction after - s | back-loop while still going forward 0.00 s | peak decel  1133 | head drop  0.0 cm | trunk tilt max  5.5 | k_Reface_Start_F_L_090 0.04 > R_Walk_Stop_F_Rfoot 1.96
+#### f9_H8_var
+s1  [W Sh          ] v   0 -> 415 | 90% in 0.62 s | peak acc  1277 | capsule faster than clip 0.00 s | head dz/0.2s  9.2 pelvis  7.5 | R_Stand_Idle_Loop 0.07 > N_Walk_Start_F_Rfoot 0.29 > R_Tr_Walk_to_Run_Rfoot 2.13
+s2  [-             ] v 415 ->   0 | 90% in 0.30 s | peak acc  3000 | capsule faster than clip 0.02 s | head dz/0.2s  5.4 pelvis  4.0 | R_Tr_Walk_to_Run_Rfoot 0.05 > R_Run_Stop_F_Rfoot 1.96
+s3  [D Sh          ] v   0 -> 414 | 90% in 0.58 s | peak acc  1404 | capsule faster than clip 0.00 s | head dz/0.2s 10.7 pelvis  8.2 | R_Run_Stop_F_Rfoot 0.03 > alk_Reface_Start_F_R_090 0.02 > Run_Reface_Start_F_R_090 2.43
+s4  [-             ] v 414 ->   0 | 90% in 0.48 s | peak acc  2994 | capsule faster than clip 0.00 s | head dz/0.2s  9.8 pelvis 11.4 | Run_Reface_Start_F_R_090 0.05 > R_Run_Stop_F_Lfoot 1.95
+s5  [W             ] v   0 -> 180 | 90% in 0.31 s | peak acc  1014 | capsule faster than clip 0.00 s | head dz/0.2s  7.0 pelvis  6.2 | R_Run_Stop_F_Lfoot 0.05 > alk_Reface_Start_F_L_090 2.46
+s6  [-             ] v 180 ->   0 | 90% in 0.56 s | peak acc  1133 | capsule faster than clip 0.00 s | head dz/0.2s  4.5 pelvis  4.6 | alk_Reface_Start_F_L_090 0.04 > R_Walk_Stop_F_Rfoot 1.96

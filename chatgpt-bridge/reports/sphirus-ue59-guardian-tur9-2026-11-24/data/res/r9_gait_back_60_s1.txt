@@ -1,0 +1,12 @@
+#### r9_gait_back_60_s1 plan gait_back hz 60 tag s1 21:10
+r9_gait_back_60_s1: 57 contacts
+  t  22.69 s9  [S+Sh]->[S] +0.08s foot R dur 0.43 curve  43.7 ground  43.7 air  0% lift  5.8 v 257 M_Neutral_Walk_Loop_B
+  TOTAL n 57 | curve: mean 1.7 p90 1.8 worst 43.7, >=10: 1, >=20: 1 | ground: mean 1.7 p90 1.5 worst 43.7, >=10: 1, >=20: 1
+r9_gait_back_60_s1 s2  t 4.08 v0 150 | cv L100 R  0 | CM_af_Loco_Jog_Bwd         | predicted overshoot 343 cm at 1.52 s | real: zero after 11.37 s, overshoot 2227 cm, -90% after 11.37 s
+r9_gait_back_60_s1 s3  t 7.10 v0 234 | cv L100 R  0 | M_Neutral_Walk_Loop_B      | predicted overshoot 437 cm at 1.52 s | real: zero after 8.35 s, overshoot 1526 cm, -90% after 8.35 s
+r9_gait_back_60_s1 s4  t 9.68 v0 150 | cv L  0 R100 | CM_af_Loco_Jog_Bwd         | predicted overshoot 343 cm at 1.52 s | real: zero after 5.77 s, overshoot 1102 cm, -90% after 5.77 s
+r9_gait_back_60_s1 s5  t 12.40 v0 234 | cv L 97 R100 | M_Neutral_Walk_Loop_B      | predicted overshoot 437 cm at 1.52 s | real: zero after 3.05 s, overshoot 471 cm, -90% after 3.05 s
+r9_gait_back_60_s1 s6  t 15.17 v0 150 | cv L100 R  6 | _Relaxed_Walk_Stop_B_Lfoot | predicted overshoot 106 cm at 1.42 s | real: zero after 0.28 s, overshoot  19 cm, -90% after 1.95 s
+r9_gait_back_60_s1 s8  t 19.64 v0 415 | cv L100 R 78 | CM_af_Loco_Jog_Bwd_Pivot   | predicted overshoot  68 cm at 0.32 s | real: zero after 0.43 s, overshoot  80 cm, -90% after 2.98 s
+r9_gait_back_60_s1 s9  t 22.65 v0 233 | cv L 97 R 91 | M_Neutral_Walk_Loop_B      | predicted overshoot 436 cm at 1.52 s | real: zero after 2.77 s, overshoot 429 cm, -90% after 2.77 s
+r9_gait_back_60_s1 s10 t 25.17 v0 150 | cv L 10 R 62 | _Relaxed_Walk_Stop_B_Lfoot | predicted overshoot 106 cm at 1.42 s | real: zero after 0.25 s, overshoot  15 cm, -90% after 1.93 s
