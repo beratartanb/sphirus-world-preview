@@ -1,0 +1,84 @@
+OTHER Default__BP_HybridA_Player_C (BP_HybridA_Player_C)
+OTHER GR_PropL_GEN_VARIABLE (StaticMeshComponent)
+OTHER GR_Prop_GEN_VARIABLE (StaticMeshComponent)
+OTHER GR_Belt_GEN_VARIABLE (StaticMeshComponent)
+SKM GR_BeltSk_GEN_VARIABLE | mesh /Game/Sphirus/CharacterLab/Day_20261107/Garments/SKM_Sph_Belt2.SKM_Sph_Belt2 | anim None | visible True | leader? | castshadow True
+    physasset None | postprocess None | lods 1 | morphs 0
+    mat[0] Leather -> /Game/Sphirus/CharacterLab/Day_20261107/Skin/M_Sph_LeatherPlain.M_Sph_LeatherPlain
+SKM GR_Under_GEN_VARIABLE | mesh /Game/Sphirus/CharacterLab/Day_20261107/Garments/SKM_Sph_Underwear.SKM_Sph_Underwear | anim None | visible True | leader? | castshadow True
+    physasset None | postprocess None | lods 1 | morphs 0
+    mat[0] Slot0 -> /Game/EditableCharacters/HazelM/HazelM/FF_Fem_UnderwearA/Material/MI_FF_Fem_UnderwearA_Top.MI_FF_Fem_UnderwearA_Top
+SKM Shorts_GEN_VARIABLE | mesh /Game/Sphirus/CharacterLab/Day_20261107/Garments/SKM_Sph_Pants70.SKM_Sph_Pants70 | anim None | visible True | leader? | castshadow True
+    physasset None | postprocess None | lods 1 | morphs 0
+    mat[0] Slot0 -> /Game/Outfits/pants_70_Outfit/pants_70_Outfit/Materials/MI_Asset_Inst.MI_Asset_Inst
+SKM Face_GEN_VARIABLE | mesh /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/SKM_MHC_Sph8_FaceMesh.SKM_MHC_Sph8_FaceMesh | anim ABP_Hazel_Face_C | visible True | leader? | castshadow True
+    physasset /Game/Sphirus/CharacterLab/Hazel_20261106/Common/Face/PHYS_Face.PHYS_Face | postprocess <Object '/Game/Sphirus/CharacterLab/Hazel_20261106/Common/Face/ABP_Face_PostProcess.ABP_Face_PostProcess_C' (0x0000016CB0218C00) Class 'AnimBlueprintGeneratedClass'> | lods 4 | morphs 0
+    mat[0] teeth_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Teeth_Baked.MI_Teeth_Baked
+    mat[1] saliva_shader_shader -> /Game/Sphirus/CharacterLab/Hazel_20261106/Common/Materials/M_Hide.M_Hide
+    mat[2] eyeLeft_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_EyeL_Baked.MI_EyeL_Baked
+    mat[3] eyeRight_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_EyeR_Baked.MI_EyeR_Baked
+    mat[4] eyeshell_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_EyeShell.MI_Face_EyeShell
+    mat[5] eyelashes_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_Eyelashes.MI_Face_Eyelashes
+    mat[6] eyeEdge_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_LacrimalFluid.MI_Face_LacrimalFluid
+    mat[7] cartilage_shader_shader -> /Game/Sphirus/CharacterLab/Hazel_20261106/Common/Materials/M_Hide.M_Hide
+    mat[8] head_LOD1_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_Skin_Baked_LOD1_VT.MI_Face_Skin_Baked_LOD1_VT
+    mat[9] eyelashes_HiLOD_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_EyelashesHiLODs.MI_Face_EyelashesHiLODs
+    mat[10] head_LOD3_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_Skin_Baked_LOD3_VT.MI_Face_Skin_Baked_LOD3_VT
+    mat[11] head_LOD57_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Face/Materials/MI_Face_Skin_Baked_LOD5to7_VT.MI_Face_Skin_Baked_LOD5to7_VT
+    override[8] /Game/Sphirus/CharacterLab/Sph_20261108/Skin/MI_Sph8_Head_LOD1_VT.MI_Sph8_Head_LOD1_VT
+SKM Henley_GEN_VARIABLE | mesh /Game/Sphirus/CharacterLab/Day_20261107/Garments/SKM_Sph_RetroTop.SKM_Sph_RetroTop | anim None | visible True | leader? | castshadow True
+    physasset None | postprocess None | lods 1 | morphs 0
+    mat[0] Slot0 -> /Game/Fab/MetaHuman/Retro_top_blue/Materials/Disco_Top.Disco_Top
+GROOM Eyelashes2_GEN_VARIABLE | asset /Game/Sphirus/CharacterLab/GD31_IdentityMaster_20261011/Grooms/GR_GD31_Eyelashes_S_Thin.GR_GD31_Eyelashes_S_Thin | binding /Game/Sphirus/CharacterLab/Day_20261107/Hair/GB_Sph_Lash_81.GB_Sph_Lash_81 | attach 
+    simsettings (bOverrideSettings=False,SimulationSetup=(bResetSimulation=False,bDebugSimulation=False,bLocalSimulation=True,LinearVelocityScale=1.000000,AngularVelocityScale=1.000000,LocalBone="root",TeleportDistance=50.000000),SolverSettings=(bEnableSimulation=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendDamping=0.001000,BendStiffness=0.010000,StretchDamping=0.001000,StretchStiffness=1.0000
+    physics_asset None
+    hair_groups_physics[0] (SolverSettings=(bEnableDeformation=False,EnableSimulation=False,NiagaraSolver=AngularSprings,CustomSystem="/HairStrands/Emitters/StableSpringsSystem.StableSpringsSystem",GravityPreloading=0.000000,SubSteps=5,IterationCount=5,bForceVisible=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendConstraint=(SolveBend=True,ProjectBend=False,BendDamping=0.005000,BendStiffness=0.010000,BendScale=(EditorCurveData=(Keys=((InterpMode=RCIM_Cubic,Value=1.000000),(InterpMode=RCIM_Cubic,Time=1.000000,Value=1.000000)),DefaultValue=340282346638528859811704183484516925440.000000,PreInfinityExtrap=RCCE_Constant,PostInfinityExtrap=RCCE_Constant),ExternalCurve=None)),StretchConstraint=(SolveStretch=True,ProjectStretch=False,StretchDamping=0.005000,StretchStiffness=1.000000,StretchScale=(EditorCurv
+    hair_groups_rendering[0] (MaterialSlotName="MI_Hair",Material=None,GeometrySettings=(HairWidth=0.007500,HairWidth_Override=True,HairRootScale=1.000000,HairTipScale=0.600000),ShadowSettings=(HairShadowDensity=0.800000,HairRaytracingRadiusScale=0.800000,bUseHairRaytracingGeometry=True,bVoxelize=False),AdvancedSettings=(bUseStableRasterization=True,bScatterSceneLighting=False))
+    hair_groups_lod[0] (AutoLODBias=0.000000,LODs=((),(CurveDecimation=0.700000,VertexDecimation=0.600000,AngularThreshold=2.000000,ScreenSize=0.500000),(CurveDecimation=0.250000,VertexDecimation=0.250000,AngularThreshold=4.000000,ScreenSize=0.250000,bVisible=False,GeometryType=Cards),(CurveDecimation=0.125000,VertexDecimation=0.125000,AngularThreshold=8.000000,ScreenSize=0.125000,bVisible=False,GeometryType=Cards),(CurveDecimation=0.062500,VertexDecimation=0.062500,AngularThreshold=16.000000,ScreenSize=0.062500,bVisible=False,GeometryType=Cards),(CurveDecimation=0.031250,VertexDecimation=0.031250,AngularThreshold=32.000000,ScreenSize=0.031250,bVisible=False,GeometryType=Meshes),(CurveDecimation=0.015625,VertexDecimation=0.015625,AngularThreshold=64.000000,ScreenSize=0.015625,bVisible=False,GeometryType=Meshes),(CurveDecimation=0.007812,VertexDecimation=0.007812,AngularThreshold=128.000000,ScreenSize=0.007812,
+    hair_groups_interpolation[0] (DecimationSettings=(CurveDecimation=1.000000,VertexDecimation=1.000000),InterpolationSettings=(GuideType=Imported,HairToGuideDensity=0.100000,RiggedGuideNumCurves=10,RiggedGuideNumPoints=4,InterpolationQuality=High,InterpolationDistance=Parametric,bRandomizeGuide=False,bUseUniqueGuide=False),RiggingSettings=())
+    enable_simulation_cache False
+    groommat[0] MI_Hair -> /MetaHumanCharacter/Materials/MI_Hair.MI_Hair
+GROOM Eyebrows2_GEN_VARIABLE | asset /Game/Sphirus/CharacterLab/GD38_IdentityMaster_20261011/Grooms/GR_GD38_BrowCustom_ds8s.GR_GD38_BrowCustom_ds8s | binding /Game/Sphirus/CharacterLab/Day_20261107/Hair/GB_Sph_Brow_81.GB_Sph_Brow_81 | attach 
+    simsettings (bOverrideSettings=False,SimulationSetup=(bResetSimulation=False,bDebugSimulation=False,bLocalSimulation=True,LinearVelocityScale=1.000000,AngularVelocityScale=1.000000,LocalBone="root",TeleportDistance=50.000000),SolverSettings=(bEnableSimulation=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendDamping=0.001000,BendStiffness=0.010000,StretchDamping=0.001000,StretchStiffness=1.0000
+    physics_asset None
+    hair_groups_physics[0] (SolverSettings=(bEnableDeformation=False,EnableSimulation=False,NiagaraSolver=AngularSprings,CustomSystem="/HairStrands/Emitters/StableSpringsSystem.StableSpringsSystem",GravityPreloading=0.000000,SubSteps=5,IterationCount=5,bForceVisible=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendConstraint=(SolveBend=True,ProjectBend=False,BendDamping=0.005000,BendStiffness=0.010000,BendScale=(EditorCurveData=(Keys=((InterpMode=RCIM_Cubic,Value=1.000000),(InterpMode=RCIM_Cubic,Time=1.000000,Value=1.000000)),DefaultValue=340282346638528859811704183484516925440.000000,PreInfinityExtrap=RCCE_Constant,PostInfinityExtrap=RCCE_Constant),ExternalCurve=None)),StretchConstraint=(SolveStretch=True,ProjectStretch=False,StretchDamping=0.005000,StretchStiffness=1.000000,StretchScale=(EditorCurv
+    hair_groups_rendering[0] (MaterialSlotName="Hair",Material=None,GeometrySettings=(HairWidth=0.009500,HairWidth_Override=True,HairRootScale=1.000000,HairTipScale=0.500000),ShadowSettings=(HairShadowDensity=1.000000,HairRaytracingRadiusScale=0.500000,bUseHairRaytracingGeometry=False,bVoxelize=True),AdvancedSettings=(bUseStableRasterization=True,bScatterSceneLighting=False))
+    hair_groups_lod[0] (AutoLODBias=0.000000,LODs=(()))
+    hair_groups_interpolation[0] (DecimationSettings=(CurveDecimation=1.000000,VertexDecimation=1.000000),InterpolationSettings=(GuideType=Imported,HairToGuideDensity=0.100000,RiggedGuideNumCurves=10,RiggedGuideNumPoints=4,InterpolationQuality=High,InterpolationDistance=Parametric,bRandomizeGuide=False,bUseUniqueGuide=False),RiggingSettings=())
+    enable_simulation_cache False
+    groommat[0] Hair -> /Game/Sphirus/CharacterLab/GD35_IdentityMaster_20261011/Looks/MI_GD35_BrowS_n4.MI_GD35_BrowS_n4
+GROOM HairMain2_GEN_VARIABLE | asset /Game/Grooms/001_Messy_Bob/001_Messy_Bob/001_Messy_Bob.001_Messy_Bob | binding /Game/Sphirus/CharacterLab/Day_20261107/Hair/GB_Sph_Hair_81.GB_Sph_Hair_81 | attach 
+    simsettings (bOverrideSettings=True,SimulationSetup=(bResetSimulation=False,bDebugSimulation=False,bLocalSimulation=True,LinearVelocityScale=1.000000,AngularVelocityScale=1.000000,LocalBone="root",TeleportDistance=50.000000),SolverSettings=(bEnableSimulation=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendDamping=0.001000,BendStiffness=0.010000,StretchDamping=0.001000,StretchStiffness=1.00000
+    physics_asset None
+    hair_groups_physics[0] (SolverSettings=(bEnableDeformation=False,EnableSimulation=True,NiagaraSolver=AngularSprings,CustomSystem="/HairStrands/Emitters/StableSpringsSystem.StableSpringsSystem",GravityPreloading=0.000000,SubSteps=10,IterationCount=5,bForceVisible=False),ExternalForces=(GravityVector=(X=0.000000,Y=0.000000,Z=-981.000000),AirDrag=0.100000,AirVelocity=(X=0.000000,Y=0.000000,Z=0.000000)),MaterialConstraints=(BendConstraint=(SolveBend=True,ProjectBend=False,BendDamping=0.010000,BendStiffness=0.500000,BendScale=(EditorCurveData=(Keys=((InterpMode=RCIM_Cubic,Value=1.000000),(InterpMode=RCIM_Cubic,Time=0.597210,Value=0.797814)),DefaultValue=340282346638528859811704183484516925440.000000,PreInfinityExtrap=RCCE_Constant,PostInfinityExtrap=RCCE_Constant),ExternalCurve=None)),StretchConstraint=(SolveStretch=True,ProjectStretch=False,StretchDamping=0.005000,StretchStiffness=1.000000,StretchScale=(EditorCurv
+    hair_groups_rendering[0] (MaterialSlotName="",Material=None,GeometrySettings=(HairWidth=0.010000,HairWidth_Override=False,HairRootScale=1.000000,HairTipScale=1.000000),ShadowSettings=(HairShadowDensity=1.000000,HairRaytracingRadiusScale=1.000000,bUseHairRaytracingGeometry=False,bVoxelize=True),AdvancedSettings=(bUseStableRasterization=False,bScatterSceneLighting=False))
+    hair_groups_lod[0] (AutoLODBias=0.000000,LODs=(()))
+    hair_groups_interpolation[0] (DecimationSettings=(CurveDecimation=1.000000,VertexDecimation=1.000000),InterpolationSettings=(GuideType=Imported,HairToGuideDensity=0.100000,RiggedGuideNumCurves=10,RiggedGuideNumPoints=4,InterpolationQuality=High,InterpolationDistance=Parametric,bRandomizeGuide=False,bUseUniqueGuide=False),RiggingSettings=())
+    enable_simulation_cache False
+    groommat[0] MI_Hair -> /Game/Grooms/001_Messy_Bob/001_Messy_Bob/MI_001_Messy_Bob.MI_001_Messy_Bob
+OTHER GR_SpringArm_GEN_VARIABLE (SpringArmComponent)
+OTHER Cine_GEN_VARIABLE (CineCameraComponent)
+OTHER Camera_GEN_VARIABLE (CameraComponent)
+SKM Manny_GEN_VARIABLE | mesh /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Body/SKM_MHC_Sph8_BodyMesh.SKM_MHC_Sph8_BodyMesh | anim ABP_Sph_Body_GASP_C | visible True | leader? | castshadow True
+    physasset /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Body/PHYS_MHC_Sph8.PHYS_MHC_Sph8 | postprocess <Object '/Game/Sphirus/CharacterLab/Hazel_20261106/Common/Body/ABP_Body_PostProcess.ABP_Body_PostProcess_C' (0x0000016CB0215400) Class 'AnimBlueprintGeneratedClass'> | lods 4 | morphs 0
+    mat[0] body_shader_shader -> /Game/Sphirus/CharacterLab/Sph_20261108/Built/MHC_Sph8/Body/Materials/MI_Body_Baked_VT.MI_Body_Baked_VT
+    override[0] /Game/Sphirus/CharacterLab/Day_20261107/Skin/MI_Sph_Body_Home.MI_Sph_Body_Home
+OTHER VisualOverride_GEN_VARIABLE (ChildActorComponent)
+OTHER CollisionCylinder (CapsuleComponent)
+OTHER Arrow (ArrowComponent)
+SKM CharacterMesh0 | mesh /Game/Characters/UEFN_Mannequin/Meshes/SKM_UEFN_Mannequin.SKM_UEFN_Mannequin | anim ABP_Sph_GASP_C | visible True | leader? | castshadow False
+    physasset /Game/Characters/UEFN_Mannequin/Rigs/PA_UEFN_Mannequin.PA_UEFN_Mannequin | postprocess <Object '/Game/Characters/UEFN_Mannequin/Rigs/ABP_UEFN_Mannequin_PostProcess.ABP_UEFN_Mannequin_PostProcess_C' (0x0000016CC5108C00) Class 'AnimBlueprintGeneratedClass'> | lods 3 | morphs 0
+    mat[0] lambert1 -> /Game/Characters/UEFN_Mannequin/Materials/M_UEFN_Mannequin.M_UEFN_Mannequin
+    override[0] /Game/Characters/UEFN_Mannequin/Materials/MI_UEFN_Mannequin_CMC.MI_UEFN_Mannequin_CMC
+OTHER Camera(NotUsedByDefault)_GEN_VARIABLE (CameraComponent)
+OTHER SpringArm_GEN_VARIABLE (SpringArmComponent)
+OTHER GameplayCamera_GEN_VARIABLE (GameplayCameraComponent)
+OTHER AC_TraversalLogic_GEN_VARIABLE (AC_TraversalLogic_C)
+OTHER SphMotion_GEN_VARIABLE (AC_Sph_Motion_C)
+OTHER AC_PreCMCTick_GEN_VARIABLE (AC_PreCMCTick_C)
+OTHER MotionWarping_GEN_VARIABLE (MotionWarpingComponent)
+OTHER AC_FoleyEvents_GEN_VARIABLE (AC_FoleyEvents_C)
+OTHER CharMoveComp (CharacterMovementComponent)
+OTHER BP_VisualOverrideManager_GEN_VARIABLE (AC_VisualOverrideManager_C)
+OTHER AC_SmartObjectAnimation_GEN_VARIABLE (AC_SmartObjectAnimation_C)
+OTHER SphCamera_GEN_VARIABLE (AC_Sph_Camera_C)
