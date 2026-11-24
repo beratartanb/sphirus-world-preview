@@ -1,0 +1,8 @@
+REOPEN player {'PS_AbdBase': 8.5, 'PS_AbdRun': 13.5, 'HIP_On': 1.0, 'HIP_KYW': 0.45, 'HIP_KOW': 0.38, 'SH_KR': 0.35, 'SH_KS': 0.3, 'HIP_GY': 22.0, 'HIP_GO': 14.0, 'SH_G': 34.0, 'HIP_Rate': 150.0, 'HD_K': 0.0, 'HD_B': 1.0, 'HD_T': 0.0, 'SL_On': 1.0, 'SL_K': 0.06, 'SL_V0': 70.0, 'SL_Max': 6.0, 'ID_On': 1.0, 'ID_X': 2.2, 'ID_O': 3.0, 'ID_Y': 2.0, 'ID_KS': 1.3, 'ID_Delay': 1.2, 'ID_Period': 14.0, 'PS_FW': 1.0, 'BOB_DipK': 0.8}
+REOPEN motion RcOpen 150.0
+REOPEN abp vars ['SphBob', 'SphSelTime', 'PlantSettings_Turns', 'SphHipRot', 'SphSpineRot', 'SphNeckRot', 'SphSpineTr']
+RCHK player {'CT_BwdK': 1.7, 'CT_StumK': 0.85, 'FT_On': True, 'FT_In': 60.0, 'FT_Ext': 3.0, 'BOB_On': True, 'BOB_DipK': 0.8, 'BOB_DipFree': 3.0, 'BOB_DipMax': 12.0, 'PS_RK': 0.6, 'PS_BrEff': 1.6, 'GR_KFat': 0.12, 'GR_StopRel': 80.0, 'GR_StopLead': 2000.0}
+RCHK motion {'StSoftK': 1.0, 'RcMin': 750.0, 'RcMinSpr': 150.0, 'RcMinV': 500.0, 'StBoostRise': 250.0, 'DmMax': 650.0, 'RcOpen': 150.0, 'RcKMax': 1.3, 'DmMin': 150.0, 'DmOpen': 280.0, 'DmRate': 280.0, 'DmRateK': 0.75, 'DmWalkV': 300.0}
+RCHK abp plant default/turns 45.0 85.0 True
+RCHK world /Game/GraceRanger/Maps/L_GR_SphirusHouse
+REOPEN dirty [] []

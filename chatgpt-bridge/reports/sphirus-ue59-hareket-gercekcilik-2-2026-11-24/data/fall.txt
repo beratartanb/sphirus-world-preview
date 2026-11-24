@@ -1,0 +1,36 @@
+mr2F_log_sprint_60 lane log frames 552 fat 0.05 seterr None
+  t   3.02 TRIP v 585 cm/s class low(trip) severity 1.51 -> balance lost | support left | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 585, after 448
+  t   3.02 state normal -> falling forward (dist to surface 999)
+  t   4.52 state falling forward -> lying (dist to surface 999)
+  t   5.03 state lying -> getting up (dist to surface 999)
+  t   8.03 state getting up -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4968, end -5001 | max speed 585 | lowest pelvis (component z) 15.7 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 0.5 at t 3.23 (falling forward)
+    phase falling forward  ball    frames   1 worst  0.5 cm
+== mr2F_log_sprint_60
+  3.18 handL 120.5 handR 118.4 head 176.9 pelvis 120.5 footL  41.3 footR  38.7 | AnimMontage_46
+  3.93 handL   6.8 handR  20.1 head  66.7 pelvis  52.1 footL  18.0 footR  18.4 | AnimMontage_46
+  4.70 handL   3.0 handR   5.6 head  28.8 pelvis  22.6 footL  10.3 footR  24.0 | AnimMontage_47
+  5.48 handL   3.5 handR   6.5 head  37.8 pelvis  27.9 footL  11.5 footR  34.5 | AnimMontage_48
+  6.23 handL  18.3 handR  30.0 head  68.4 pelvis  57.1 footL  31.9 footR  12.7 | AnimMontage_48
+  7.00 handL  94.5 handR 108.4 head 149.2 pelvis  93.9 footL  15.3 footR  15.7 | AnimMontage_48
+  7.77 handL  97.5 handR  98.0 head 161.4 pelvis  99.8 footL  13.3 footR  13.3 | M_Relaxed_Stand_Idle_Loop
+mr2F_log_sprint_30 lane log frames 276 fat 0.05 seterr None
+  t   2.99 TRIP v 585 cm/s class low(trip) severity 1.51 -> balance lost | support left | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 585, after 455
+  t   2.99 state normal -> falling forward (dist to surface 999)
+  t   4.49 state falling forward -> lying (dist to surface 999)
+  t   4.99 state lying -> getting up (dist to surface 999)
+  t   8.02 state getting up -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4982, end -5015 | max speed 585 | lowest pelvis (component z) 15.7 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 3.6 at t 3.25 (falling forward) | foot 0.8 at t 3.29 (falling forward)
+    phase falling forward  ball    frames   2 worst  3.6 cm
+    phase falling forward  foot    frames   1 worst  0.8 cm
+    phase getting up       ball    frames   2 worst  2.5 cm
+== mr2F_log_sprint_30
+  3.19 handL 115.7 handR 112.9 head 169.4 pelvis 115.0 footL  45.0 footR  36.6 | AnimMontage_50
+  3.99 handL   6.0 handR  12.8 head  64.4 pelvis  47.9 footL  14.0 footR  18.8 | AnimMontage_50
+  4.79 handL   2.2 handR   3.7 head  28.0 pelvis  22.6 footL  10.3 footR  47.2 | AnimMontage_51
+  5.59 handL   5.9 handR   3.9 head  38.4 pelvis  32.9 footL  14.3 footR  26.5 | AnimMontage_52
+  6.39 handL  30.8 handR  54.5 head  75.7 pelvis  68.0 footL  25.3 footR  13.7 | AnimMontage_52
+  7.19 handL  99.3 handR 110.7 head 155.7 pelvis  99.2 footL  14.8 footR  14.4 | AnimMontage_52
+  7.99 handL  95.8 handR  97.1 head 162.4 pelvis 100.4 footL  13.4 footR  13.4 | M_Relaxed_Stand_Idle_Loop

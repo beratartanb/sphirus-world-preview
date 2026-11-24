@@ -1,0 +1,55 @@
+r9_gait_chain_60_F2 s1  START [W        ] v 180 | 50% 0.20 s  90% 0.32 s | peak accel  645 | dist@0.3s  22 cm | M_Neutral_Walk_Start_F_Rfoot
+r9_gait_chain_60_F2 s2  GAIT  [W        >W+Sh     ] 180 -> 415 | 90% 0.37 s | Transition_Walk_to_Run_Rfoot
+r9_gait_chain_60_F2 s3  GAIT  [W+Sh     >W        ] 415 -> 180 | 90% 0.78 s | Transition_Run_to_Walk_Lfoot
+r9_gait_chain_60_F2 s4  GAIT  [W        >W+Sh     ] 180 -> 415 | 90% 0.38 s | Transition_Walk_to_Run_Rfoot
+r9_gait_chain_60_F2 s5  GAIT  [W+Sh     >W        ] 415 -> 180 | 90% 0.78 s | Transition_Run_to_Walk_Rfoot
+r9_gait_chain_60_F2 s6  GAIT  [W        >W+Sh     ] 180 -> 415 | 90% 0.38 s | Transition_Walk_to_Run_Rfoot
+r9_gait_chain_60_F2 s7  GAIT  [W+Sh     >W        ] 415 -> 180 | 90% 0.78 s | Transition_Run_to_Walk_Rfoot
+r9_gait_chain_60_F2 s8  GAIT  [W        >W+Sh+Ct  ] 180 -> 579 | 90% 0.75 s | nsition_Walk_to_Sprint_Rfoot
+r9_gait_chain_60_F2 s9  GAIT  [W+Sh+Ct  >W+Sh     ] 579 -> 403 | 90% 0.85 s | M_Neutral_Run_Loop_F
+r9_gait_chain_60_F2 s10 GAIT  [W+Sh     >W        ] 403 -> 180 | 90% 0.80 s | Transition_Run_to_Walk_Lfoot
+r9_gait_chain_60_F2 s11 GAIT  [W        >W+Sh+Ct  ] 180 -> 561 | 90% 0.75 s | nsition_Walk_to_Sprint_Lfoot
+r9_gait_chain_60_F2 s12 GAIT  [W+Sh+Ct  >W        ] 561 -> 180 | 90% 1.18 s | Transition_Run_to_Walk_Lfoot
+r9_gait_chain_60_F2 s13 STOP  [W        ] v 180 | to rest 0.40 s | dist  37 cm | peak decel  733 | M_Relaxed_Walk_Stop_F_Rfoot
+arts_turn_walk_60_F2 s1  START [D        ] v 180 | 50% 0.20 s  90% 0.32 s | peak accel  665 | dist@0.3s  25 cm | al_Walk_Reface_Start_F_R_090
+arts_turn_walk_60_F2 s2  STOP  [D        ] v 180 | to rest 0.40 s | dist  37 cm | peak decel  762 | M_Relaxed_Walk_Stop_F_Lfoot
+arts_turn_walk_60_F2 s3  START [A        ] v 180 | 50% 0.15 s  90% 0.25 s | peak accel  805 | dist@0.3s  33 cm | al_Walk_Reface_Start_F_L_180
+arts_turn_walk_60_F2 s4  STOP  [A        ] v 180 | to rest 0.37 s | dist  32 cm | peak decel  737 | M_Relaxed_Walk_Stop_F_Rfoot
+arts_turn_walk_60_F2 s5  START [W D      ] v 180 | 50% 0.10 s  90% 0.18 s | peak accel 1229 | dist@0.3s  37 cm | al_Walk_Reface_Start_F_R_180
+arts_turn_walk_60_F2 s6  STOP  [W D      ] v 180 | to rest 0.60 s | dist  63 cm | peak decel  683 | M_Relaxed_Walk_Stop_F_Rfoot
+arts_turn_walk_60_F2 s7  START [W        ] v 180 | 50% 0.10 s  90% 0.15 s | peak accel 1400 | dist@0.3s  39 cm | al_Walk_Reface_Start_F_L_090
+arts_turn_walk_60_F2 s8  STOP  [W        ] v 180 | to rest 0.60 s | dist  63 cm | peak decel  684 | M_Relaxed_Walk_Stop_F_Lfoot
+arts_turn_walk_60_F2 s9  START [D        ] v 180 | 50% 0.20 s  90% 0.32 s | peak accel  663 | dist@0.3s  21 cm | al_Walk_Reface_Start_F_R_090
+arts_turn_walk_60_F2 s10 STOP  [D        ] v 180 | to rest 0.40 s | dist  37 cm | peak decel  733 | M_Relaxed_Walk_Stop_F_Lfoot
+arts_turn_walk_60_F2 s11 START [W        ] v 180 | 50% 0.20 s  90% 0.32 s | peak accel  663 | dist@0.3s  24 cm | al_Walk_Reface_Start_F_L_090
+arts_turn_walk_60_F2 s12 STOP  [W        ] v 180 | to rest 0.40 s | dist  37 cm | peak decel  734 | M_Relaxed_Walk_Stop_F_Rfoot
+arts_turn_walk_60_F2 s13 START [W A      ] v 180 | 50% 0.10 s  90% 0.15 s | peak accel 1400 | dist@0.3s  39 cm | al_Walk_Reface_Start_F_L_090
+arts_turn_walk_60_F2 s14 STOP  [W A      ] v 180 | to rest 0.60 s | dist  63 cm | peak decel  723 | M_Relaxed_Walk_Stop_F_Lfoot
+arts_turn_walk_60_F2 s15 START [D        ] v 180 | 50% 0.10 s  90% 0.18 s | peak accel 1244 | dist@0.3s  37 cm | al_Walk_Reface_Start_F_R_180
+arts_turn_walk_60_F2 s16 STOP  [D        ] v 180 | to rest 0.60 s | dist  63 cm | peak decel  721 | M_Relaxed_Walk_Stop_F_Rfoot
+tarts_turn_run_60_F2 s1  START [D+Sh     ] v 415 | 50% 0.32 s  90% 0.57 s | peak accel  869 | dist@0.3s  33 cm | ral_Run_Reface_Start_F_R_090
+tarts_turn_run_60_F2 s2  STOP  [D+Sh     ] v 415 | to rest 0.53 s | dist 100 cm | peak decel 1313 | M_Relaxed_Run_Stop_F_Lfoot
+tarts_turn_run_60_F2 s3  START [A+Sh     ] v 415 | 50% 0.30 s  90% 0.57 s | peak accel  955 | dist@0.3s  37 cm | ral_Run_Reface_Start_F_R_180
+tarts_turn_run_60_F2 s4  STOP  [A+Sh     ] v 415 | to rest 0.53 s | dist 100 cm | peak decel 1203 | M_Relaxed_Run_Stop_F_Lfoot
+tarts_turn_run_60_F2 s5  START [W D+Sh   ] v 414 | 50% 0.18 s  90% 0.45 s | peak accel 1401 | dist@0.3s  55 cm | ral_Run_Reface_Start_F_R_180
+tarts_turn_run_60_F2 s6  STOP  [W D+Sh   ] v 413 | to rest 0.63 s | dist 130 cm | peak decel 1134 | M_Relaxed_Run_Stop_F_Rfoot
+tarts_turn_run_60_F2 s7  START [W+Sh     ] v 410 | 50% 0.18 s  90% 0.43 s | peak accel 1401 | dist@0.3s  46 cm | ral_Run_Reface_Start_F_L_090
+tarts_turn_run_60_F2 s8  STOP  [W+Sh     ] v 408 | to rest 0.53 s | dist  99 cm | peak decel 1274 | M_Relaxed_Run_Stop_F_Rfoot
+tarts_turn_run_60_F2 s9  START [D+Sh     ] v 405 | 50% 0.37 s  90% 0.62 s | peak accel  682 | dist@0.3s  27 cm | ral_Run_Reface_Start_F_R_090
+tarts_turn_run_60_F2 s10 STOP  [D+Sh     ] v 404 | to rest 0.53 s | dist  98 cm | peak decel 1260 | M_Relaxed_Run_Stop_F_Lfoot
+tarts_turn_run_60_F2 s11 START [W+Sh     ] v 401 | 50% 0.37 s  90% 0.62 s | peak accel  751 | dist@0.3s  26 cm | ral_Run_Reface_Start_F_L_090
+tarts_turn_run_60_F2 s12 STOP  [W+Sh     ] v 400 | to rest 0.63 s | dist 127 cm | peak decel 1103 | M_Relaxed_Run_Stop_F_Rfoot
+tarts_turn_run_60_F2 s13 START [W A+Sh   ] v 398 | 50% 0.18 s  90% 0.42 s | peak accel 1400 | dist@0.3s  46 cm | ral_Run_Reface_Start_F_L_090
+tarts_turn_run_60_F2 s14 STOP  [W A+Sh   ] v 396 | to rest 0.53 s | dist  97 cm | peak decel 1242 | M_Relaxed_Run_Stop_F_Rfoot
+tarts_turn_run_60_F2 s15 START [D+Sh     ] v 394 | 50% 0.18 s  90% 0.43 s | peak accel 1400 | dist@0.3s  50 cm | ral_Run_Reface_Start_F_R_180
+tarts_turn_run_60_F2 s16 STOP  [D+Sh     ] v 392 | to rest 0.63 s | dist 126 cm | peak decel 1074 | M_Relaxed_Run_Stop_F_Rfoot
+r9_brake_re_60_F2 s1  START [W+Sh     ] v 415 | 50% 0.35 s  90% 0.58 s | peak accel  924 | dist@0.3s  25 cm | M_Neutral_Walk_Start_F_Rfoot
+r9_brake_re_60_F2 s7  START [S+Sh     ] v 227 | 50% 0.10 s  90% 0.47 s | peak accel  937 | dist@0.3s  45 cm | _Neutral_Run_Pivot_F_B_Rfoot
+r9_brake_re_60_F2 s10 STOP  [S+Sh     ] v 225 | to rest 0.57 s | dist  81 cm | peak decel  812 | M_Relaxed_Run_Stop_B_Rfoot
+r9_brake_re_60_F2 s11 START [A+Sh     ] v 396 | 50% 0.37 s  90% 0.62 s | peak accel  764 | dist@0.3s  26 cm | ral_Run_Reface_Start_F_L_090
+r9_brake_re_60_F2 s13 STOP  [D+Sh     ] v 152 | to rest 0.30 s | dist  17 cm | peak decel  566 | Walk_Reface_Stop_180_L_Lfoot
+r9_brake_re_60_F2 s14 START [A+Sh     ] v 389 | 50% 0.43 s  90% 0.67 s | peak accel  672 | dist@0.3s  22 cm | M_Neutral_Run_Start_F_Lfoot
+r9_brake_re_60_F2 s15 STOP  [A+Sh     ] v 389 | to rest 0.13 s | dist  43 cm | peak decel 1078 | M_Relaxed_Run_Stop_F_Lfoot
+r9_brake_re_60_F2 s17 STOP  [D+Sh     ] v 382 | to rest 0.47 s | dist  81 cm | peak decel 1127 | M_Relaxed_Run_Stop_F_Rfoot
+r9_AD_sprint_60_F2 s1  START [A+Sh+Ct  ] v 585 | 50% 0.45 s  90% 0.90 s | peak accel  800 | dist@0.3s  35 cm | ral_Run_Reface_Start_F_L_090
+r9_AD_sprint_60_F2 s10 STOP  [A+Sh+Ct  ] v 518 | to rest 0.60 s | dist 134 cm | peak decel 1549 | M_Relaxed_Run_Stop_F_Lfoot
