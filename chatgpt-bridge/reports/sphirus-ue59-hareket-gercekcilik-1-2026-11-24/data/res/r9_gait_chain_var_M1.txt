@@ -1,0 +1,15 @@
+#### r9_gait_chain_var_M1 plan gait_chain hz var tag M1 08:37
+r9_gait_chain_var_M1: 49 contacts
+  TOTAL n 49 | curve: mean 1.0 p90 1.6 worst 2.0, >=10: 0, >=20: 0 | ground: mean 1.0 p90 1.5 worst 1.8, >=10: 0, >=20: 0
+r9_gait_chain_var_M1 s2  t 4.04 v0 180 | cv L  0 R100 | ansition_Walk_to_Run_Rfoot | predicted overshoot 571 cm at 1.52 s | real: zero after 32.80 s, overshoot 11528 cm, -90% after 32.80 s
+r9_gait_chain_var_M1 s3  t 7.06 v0 415 | cv L100 R 80 | ansition_Run_to_Walk_Rfoot | predicted overshoot 604 cm at 1.52 s | real: zero after 29.78 s, overshoot 10315 cm, -90% after 29.78 s
+r9_gait_chain_var_M1 s4  t 9.63 v0 180 | cv L  0 R100 | ansition_Walk_to_Run_Rfoot | predicted overshoot 568 cm at 1.52 s | real: zero after 27.20 s, overshoot 9762 cm, -90% after 27.20 s
+r9_gait_chain_var_M1 s5  t 12.37 v0 415 | cv L100 R100 | ansition_Run_to_Walk_Rfoot | predicted overshoot 603 cm at 1.52 s | real: zero after 24.47 s, overshoot 8671 cm, -90% after 24.47 s
+r9_gait_chain_var_M1 s6  t 15.08 v0 180 | cv L  0 R100 | ansition_Walk_to_Run_Rfoot | predicted overshoot 571 cm at 1.53 s | real: zero after 21.77 s, overshoot 8095 cm, -90% after 21.77 s
+r9_gait_chain_var_M1 s7  t 17.97 v0 415 | cv L100 R 64 | ansition_Run_to_Walk_Rfoot | predicted overshoot 605 cm at 1.52 s | real: zero after 18.88 s, overshoot 6938 cm, -90% after 18.88 s
+r9_gait_chain_var_M1 s8  t 20.83 v0 180 | cv L 14 R 86 | ansition_Walk_to_Run_Rfoot | predicted overshoot 567 cm at 1.52 s | real: zero after 16.01 s, overshoot 6331 cm, -90% after 16.01 s
+r9_gait_chain_var_M1 s9  t 24.08 v0 579 | cv L100 R100 | M_Neutral_Run_Loop_F       | predicted overshoot 629 cm at 1.54 s | real: zero after 12.78 s, overshoot 4593 cm, -90% after 12.78 s
+r9_gait_chain_var_M1 s10 t 27.02 v0 403 | cv L100 R100 | ansition_Run_to_Walk_Lfoot | predicted overshoot 622 cm at 1.53 s | real: zero after 9.83 s, overshoot 3334 cm, -90% after 9.83 s
+r9_gait_chain_var_M1 s11 t 30.02 v0 180 | cv L 98 R 42 | _Neutral_Run_Start_F_Lfoot | predicted overshoot 552 cm at 1.53 s | real: zero after 6.82 s, overshoot 2692 cm, -90% after 6.82 s
+r9_gait_chain_var_M1 s12 t 33.33 v0 560 | cv L100 R  0 | ansition_Run_to_Walk_Rfoot | predicted overshoot 865 cm at 1.52 s | real: zero after 3.51 s, overshoot 967 cm, -90% after 3.51 s
+r9_gait_chain_var_M1 s13 t 36.54 v0 180 | cv L 86 R 14 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot  48 cm at 0.53 s | real: zero after 0.31 s, overshoot  29 cm, -90% after 1.91 s

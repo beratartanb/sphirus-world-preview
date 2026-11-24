@@ -1,0 +1,15 @@
+start 07:46 save 10201b8b41b7
+REOPEN player {'PS_AbdBase': 8.5, 'PS_AbdRun': 13.5, 'HIP_On': 1.0, 'HIP_LP': 1.5, 'HIP_KSp': 1.0, 'HIP_KYW': 0.45, 'HIP_KYR': 0.0, 'HIP_KYS': 0.35, 'HIP_KOW': 0.38, 'HIP_KOR': 0.2, 'HIP_KOS': 0.33, 'SH_KR': 0.35, 'SH_KS': 0.3, 'PS_FW': 1.0, 'BOB_DipK': 0.8, 'BOB_DipFree': 3.0, 'BOB_DipMax': 12.0}
+REOPEN abp vars ['SphBob', 'SphSelTime', 'PlantSettings_Turns', 'SphHipRot', 'SphSpineRot']
+REOPEN head {'Micro Skin Normal Strength': 1.2, 'Normal Flatten': 0.1, 'Scatter Distance Global Multiply Post-Bake': 0.6}
+REOPEN hair sim on False
+RCHK abp plant default/turns 45.0 85.0 True
+REOPEN dirty [] []
+SETP9 {'HIP_On': 0.0, 'PS_K': 
+SETP9 {'HIP_On': 1.0, 'PS_K': 
+hip 07:52
+r9 plans 08:37
+fall 08:39
+slide24 09:25
+save end 10201b8b41b7
+FINAL_MR1_DONE

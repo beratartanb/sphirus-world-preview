@@ -1,0 +1,11 @@
+#### r9_WAWD_sprint_60_M1 plan WAWD_sprint hz 60 tag M1 08:07
+r9_WAWD_sprint_60_M1: 32 contacts
+  t   1.94 s1  [-]->[W A+Sh+Ct] +0.38s foot L dur 0.20 curve  11.7 ground   0.7 air 62% lift 16.0 v 339 ransition_Walk_to_Sprint_Lfoot  EARLY-FLAG
+  TOTAL n 32 | curve: mean 1.0 p90 1.0 worst 11.7, >=10: 1, >=20: 0 | ground: mean 0.5 p90 0.9 worst 1.1, >=10: 0, >=20: 0
+r9_WAWD_sprint_60_M1 s2  t 3.78 v0 584 | cv L100 R 23 | ed_Sprint_Turn_090_R_Lfoot | predicted overshoot 184 cm at 1.52 s | real: zero after 11.33 s, overshoot 3455 cm, -90% after 11.33 s
+r9_WAWD_sprint_60_M1 s3  t 5.39 v0 575 | cv L100 R  2 | ed_Sprint_Turn_090_L_Lfoot | predicted overshoot 187 cm at 1.52 s | real: zero after 9.73 s, overshoot 1870 cm, -90% after 9.73 s
+r9_WAWD_sprint_60_M1 s4  t 7.14 v0 569 | cv L100 R  1 | ed_Sprint_Turn_090_R_Lfoot | predicted overshoot 182 cm at 1.52 s | real: zero after 7.98 s, overshoot 2465 cm, -90% after 7.98 s
+r9_WAWD_sprint_60_M1 s5  t 9.04 v0 562 | cv L 98 R100 | ed_Sprint_Turn_090_L_Lfoot | predicted overshoot 183 cm at 1.52 s | real: zero after 6.08 s, overshoot 965 cm, -90% after 6.08 s
+r9_WAWD_sprint_60_M1 s6  t 11.09 v0 554 | cv L  1 R100 | ed_Sprint_Turn_090_R_Rfoot | predicted overshoot 175 cm at 1.52 s | real: zero after 4.03 s, overshoot 1213 cm, -90% after 4.03 s
+r9_WAWD_sprint_60_M1 s7  t 12.75 v0 544 | cv L  6 R100 | ed_Sprint_Turn_090_L_Lfoot | predicted overshoot 185 cm at 1.52 s | real: zero after 2.37 s, overshoot 230 cm, -90% after 2.37 s
+r9_WAWD_sprint_60_M1 s8  t 14.57 v0 539 | cv L100 R  2 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 183 cm at 0.62 s | real: zero after 0.55 s, overshoot 116 cm, -90% after 1.97 s

@@ -1,0 +1,11 @@
+#### r9_gait_tempo_60_M1 plan gait_tempo hz 60 tag M1 08:17
+r9_gait_tempo_60_M1: 58 contacts
+  TOTAL n 58 | curve: mean 1.2 p90 2.2 worst 3.7, >=10: 0, >=20: 0 | ground: mean 1.1 p90 2.0 worst 2.4, >=10: 0, >=20: 0
+r9_gait_tempo_60_M1 s4  t 4.63 v0 278 | cv L 98 R100 | ansition_Walk_to_Run_Rfoot | predicted overshoot 603 cm at 1.52 s | real: zero after 11.98 s, overshoot 4093 cm, -90% after 11.98 s
+r9_gait_tempo_60_M1 s5  t 7.67 v0 415 | cv L100 R100 | M_Neutral_Run_Loop_F       | predicted overshoot 430 cm at 1.52 s | real: zero after 8.95 s, overshoot 2848 cm, -90% after 8.95 s
+r9_gait_tempo_60_M1 s6  t 10.63 v0 278 | cv L  0 R100 | CM_af_Loco_Jog_Fwd         | predicted overshoot 602 cm at 1.52 s | real: zero after 5.98 s, overshoot 1996 cm, -90% after 5.98 s
+r9_gait_tempo_60_M1 s7  t 13.37 v0 415 | cv L100 R100 | M_Neutral_Run_Loop_F       | predicted overshoot 430 cm at 1.52 s | real: zero after 3.25 s, overshoot 877 cm, -90% after 3.25 s
+r9_gait_tempo_60_M1 s8  t 16.13 v0 278 | cv L100 R  1 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot  80 cm at 0.52 s | real: zero after 0.48 s, overshoot  75 cm, -90% after 1.98 s
+r9_gait_tempo_60_M1 s10 t 21.30 v0 234 | cv L100 R  0 | CM_af_Loco_Jog_Bwd         | predicted overshoot 351 cm at 1.52 s | real: zero after 6.20 s, overshoot 1404 cm, -90% after 6.20 s
+r9_gait_tempo_60_M1 s11 t 24.30 v0 234 | cv L100 R  0 | CM_af_Loco_Jog_Bwd         | predicted overshoot 351 cm at 1.52 s | real: zero after 3.20 s, overshoot 702 cm, -90% after 3.20 s
+r9_gait_tempo_60_M1 s12 t 27.14 v0 234 | cv L100 R100 | M_Relaxed_Run_Stop_B_Rfoot | predicted overshoot  64 cm at 0.52 s | real: zero after 0.37 s, overshoot  39 cm, -90% after 1.98 s

@@ -1,0 +1,35 @@
+#### mr1_L_on
+s1  [W                     ] v 180 cm/s | 6 cycles x 1.11 s | clip M_Neutral_Walk_Loop_F
+   DRIVER  pelvis lat  4.4 cm ver  4.6 cm obliq  9.0 deg rot  9.6 deg | shoulder obliq 11.6 rot 16.4 | head lat  5.4 ver  4.8 | hand swing  35.6 cm hand-to-midline 27.8 | foot spacing 14.4 cm
+   VISIBLE pelvis lat  4.4 cm ver  4.7 cm obliq  9.1 deg rot  9.7 deg | shoulder obliq 10.8 rot 15.8 | head lat  4.6 ver  4.8 | hand swing  34.7 cm hand-to-midline 17.6 | foot spacing 14.4 cm
+s2  [W LeftShift           ] v 415 cm/s | 12 cycles x 0.71 s | clip M_Neutral_Run_Loop_F
+   DRIVER  pelvis lat  2.0 cm ver  5.5 cm obliq  8.6 deg rot  8.8 deg | shoulder obliq 21.5 rot 29.0 | head lat  8.3 ver  7.3 | hand swing  35.2 cm hand-to-midline 21.9 | foot spacing 10.6 cm
+   VISIBLE pelvis lat  2.0 cm ver  5.6 cm obliq  8.7 deg rot  8.8 deg | shoulder obliq 13.3 rot 31.1 | head lat  5.9 ver  5.8 | hand swing  34.0 cm hand-to-midline 18.2 | foot spacing 10.5 cm
+s3  [W LeftShift LeftControl] v 569 cm/s | 13 cycles x 0.58 s | clip M_Relaxed_Sprint_Loop_F
+   DRIVER  pelvis lat  2.6 cm ver  3.1 cm obliq 11.0 deg rot 17.4 deg | shoulder obliq 22.9 rot 28.0 | head lat  8.5 ver  3.8 | hand swing  52.4 cm hand-to-midline 26.1 | foot spacing 10.8 cm
+   VISIBLE pelvis lat  2.7 cm ver  3.1 cm obliq 10.9 deg rot 17.4 deg | shoulder obliq 14.1 rot 31.0 | head lat  5.1 ver  3.2 | hand swing  50.9 cm hand-to-midline 19.5 | foot spacing 10.8 cm
+#### mr1_L_on (steady = loop clip, whole step cycles)
+s1  M_Neutral_Walk_Loop_F  v 180 | cycles 4 x 1.11 s | pelvis z p2p mean  4.9 worst  5.1 | head z  5.0 | head lateral  4.8 | camera z  1.1
+s2  M_Neutral_Run_Loop_F   v 415 | cycles 9 x 0.73 s | pelvis z p2p mean  5.6 worst  6.5 | head z  6.0 | head lateral  7.1 | camera z  1.2
+s3  _Relaxed_Sprint_Loop_F v 566 | cycles 11 x 0.58 s | pelvis z p2p mean  3.3 worst  4.9 | head z  3.5 | head lateral  5.3 | camera z  1.0
+s4  no steady gait (loop frames 2 of 120; clips [('M_Relaxed_Run_Stop_F_Lfoot', 118), ('M_Relaxed_Sprint_Loop_F', 2)])
+#### mr1_L_off
+s1  [W                     ] v 180 cm/s | 6 cycles x 1.11 s | clip M_Neutral_Walk_Loop_F
+   DRIVER  pelvis lat  4.4 cm ver  4.6 cm obliq 13.1 deg rot 16.6 deg | shoulder obliq 11.6 rot 16.3 | head lat  5.1 ver  4.8 | hand swing  35.5 cm hand-to-midline 27.8 | foot spacing 14.4 cm
+   VISIBLE pelvis lat  4.4 cm ver  4.8 cm obliq 12.9 deg rot 16.7 deg | shoulder obliq 11.0 rot 15.7 | head lat  4.5 ver  4.8 | hand swing  34.7 cm hand-to-midline 17.9 | foot spacing 14.4 cm
+s2  [W LeftShift           ] v 415 cm/s | 12 cycles x 0.71 s | clip M_Neutral_Run_Loop_F
+   DRIVER  pelvis lat  1.9 cm ver  5.4 cm obliq 10.4 deg rot  9.2 deg | shoulder obliq 21.1 rot 44.0 | head lat  6.9 ver  7.4 | hand swing  40.4 cm hand-to-midline 20.6 | foot spacing 10.7 cm
+   VISIBLE pelvis lat  2.0 cm ver  5.5 cm obliq 10.5 deg rot  9.2 deg | shoulder obliq 12.8 rot 45.8 | head lat  5.0 ver  5.8 | hand swing  37.6 cm hand-to-midline 17.0 | foot spacing 10.7 cm
+s3  [W LeftShift LeftControl] v 569 cm/s | 13 cycles x 0.58 s | clip M_Relaxed_Sprint_Loop_F
+   DRIVER  pelvis lat  2.6 cm ver  3.0 cm obliq 15.0 deg rot 24.9 deg | shoulder obliq 22.9 rot 39.7 | head lat  9.7 ver  3.7 | hand swing  56.1 cm hand-to-midline 25.1 | foot spacing 10.8 cm
+   VISIBLE pelvis lat  2.7 cm ver  3.1 cm obliq 15.0 deg rot 25.1 deg | shoulder obliq 13.8 rot 42.4 | head lat  5.4 ver  3.2 | hand swing  53.7 cm hand-to-midline 19.2 | foot spacing 10.8 cm
+#### mr1_L_on30
+s1  [W                     ] v 180 cm/s | 6 cycles x 1.11 s | clip M_Neutral_Walk_Loop_F
+   DRIVER  pelvis lat  4.3 cm ver  5.0 cm obliq  8.7 deg rot  9.8 deg | shoulder obliq 11.4 rot 16.1 | head lat  5.4 ver  5.1 | hand swing  35.0 cm hand-to-midline 27.8 | foot spacing 14.5 cm
+   VISIBLE pelvis lat  4.3 cm ver  5.1 cm obliq  8.9 deg rot 10.1 deg | shoulder obliq 11.0 rot 15.6 | head lat  4.2 ver  5.1 | hand swing  34.4 cm hand-to-midline 17.7 | foot spacing 14.5 cm
+s2  [W LeftShift           ] v 415 cm/s | 12 cycles x 0.72 s | clip M_Neutral_Run_Loop_F
+   DRIVER  pelvis lat  2.0 cm ver  5.6 cm obliq  8.5 deg rot  8.5 deg | shoulder obliq 21.2 rot 28.4 | head lat  7.3 ver  7.6 | hand swing  34.9 cm hand-to-midline 21.9 | foot spacing 10.7 cm
+   VISIBLE pelvis lat  2.1 cm ver  5.7 cm obliq  8.5 deg rot  8.5 deg | shoulder obliq 13.9 rot 30.7 | head lat  5.8 ver  6.0 | hand swing  34.1 cm hand-to-midline 18.2 | foot spacing 10.7 cm
+s3  [W LeftShift LeftControl] v 569 cm/s | 12 cycles x 0.58 s | clip M_Relaxed_Sprint_Loop_F
+   DRIVER  pelvis lat  2.6 cm ver  2.8 cm obliq 10.5 deg rot 17.1 deg | shoulder obliq 22.5 rot 26.8 | head lat  7.5 ver  3.8 | hand swing  52.3 cm hand-to-midline 25.9 | foot spacing 10.9 cm
+   VISIBLE pelvis lat  2.7 cm ver  2.9 cm obliq 10.8 deg rot 17.1 deg | shoulder obliq 13.7 rot 30.7 | head lat  5.1 ver  2.9 | hand swing  50.7 cm hand-to-midline 19.4 | foot spacing 10.9 cm

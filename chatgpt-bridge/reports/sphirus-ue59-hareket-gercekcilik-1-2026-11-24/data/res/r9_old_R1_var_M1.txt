@@ -1,0 +1,17 @@
+#### r9_old_R1_var_M1 plan old_R1 hz var tag M1 08:32
+r9_old_R1_var_M1: 71 contacts
+  TOTAL n 71 | curve: mean 0.9 p90 1.6 worst 3.9, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.5 worst 1.7, >=10: 0, >=20: 0
+r9_old_R1_var_M1 s2  t 3.55 v0 415 | cv L 44 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  63 cm at 0.33 s | real: zero after 0.40 s, overshoot  81 cm, -90% after 0.99 s
+r9_old_R1_var_M1 s3  t 4.86 v0 401 | cv L  0 R100 | laxed_Run_Turn_L_180_Rfoot | predicted overshoot  61 cm at 0.33 s | real: zero after 0.41 s, overshoot  74 cm, -90% after 0.89 s
+r9_old_R1_var_M1 s4  t 6.31 v0 403 | cv L 99 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  63 cm at 0.32 s | real: zero after 0.40 s, overshoot  77 cm, -90% after 0.91 s
+r9_old_R1_var_M1 s5  t 7.91 v0 400 | cv L100 R  0 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  65 cm at 0.32 s | real: zero after 0.42 s, overshoot  81 cm, -90% after 0.94 s
+r9_old_R1_var_M1 s6  t 9.66 v0 397 | cv L  1 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  54 cm at 0.34 s | real: zero after 0.38 s, overshoot  69 cm, -90% after 0.91 s
+r9_old_R1_var_M1 s7  t 11.59 v0 393 | cv L  1 R100 | laxed_Run_Turn_L_180_Rfoot | predicted overshoot  55 cm at 0.33 s | real: zero after 0.38 s, overshoot  71 cm, -90% after 0.91 s
+r9_old_R1_var_M1 s8  t 13.63 v0 387 | cv L 10 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 116 cm at 0.64 s | real: zero after 0.51 s, overshoot  94 cm, -90% after 1.98 s
+r9_old_R1_var_M1 s10 t 17.60 v0 180 | cv L  0 R100 | utral_Walk_Pivot_F_B_Lfoot | predicted overshoot  14 cm at 0.12 s | real: zero after 0.16 s, overshoot   6 cm, -90% after 1.48 s
+r9_old_R1_var_M1 s11 t 19.13 v0 150 | cv L100 R  0 | utral_Walk_Pivot_B_F_Rfoot | predicted overshoot  10 cm at 0.12 s | real: zero after 0.16 s, overshoot   6 cm, -90% after 0.51 s
+r9_old_R1_var_M1 s12 t 20.79 v0 180 | cv L  0 R100 | utral_Walk_Pivot_F_B_Rfoot | predicted overshoot  13 cm at 0.12 s | real: zero after 0.15 s, overshoot   8 cm, -90% after 1.76 s
+r9_old_R1_var_M1 s13 t 22.59 v0 150 | cv L  1 R 99 | utral_Walk_Pivot_B_F_Rfoot | predicted overshoot  11 cm at 0.12 s | real: zero after 0.15 s, overshoot   5 cm, -90% after 0.49 s
+r9_old_R1_var_M1 s14 t 24.53 v0 180 | cv L 98 R 17 | utral_Walk_Pivot_F_B_Rfoot | predicted overshoot  13 cm at 0.12 s | real: zero after 0.16 s, overshoot   7 cm, -90% after 2.08 s
+r9_old_R1_var_M1 s15 t 26.66 v0 150 | cv L100 R  0 | utral_Walk_Pivot_B_F_Lfoot | predicted overshoot   9 cm at 0.13 s | real: zero after 0.13 s, overshoot   5 cm, -90% after 0.48 s
+r9_old_R1_var_M1 s16 t 28.92 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot  45 cm at 0.54 s | real: zero after 0.53 s, overshoot  54 cm, -90% after 1.93 s

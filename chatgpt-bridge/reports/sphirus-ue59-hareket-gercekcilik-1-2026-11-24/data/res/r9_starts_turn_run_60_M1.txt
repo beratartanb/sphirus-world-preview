@@ -1,0 +1,11 @@
+#### r9_starts_turn_run_60_M1 plan starts_turn_run hz 60 tag M1 08:19
+r9_starts_turn_run_60_M1: 55 contacts
+  TOTAL n 55 | curve: mean 0.6 p90 0.9 worst 1.8, >=10: 0, >=20: 0 | ground: mean 0.5 p90 0.8 worst 1.8, >=10: 0, >=20: 0
+r9_starts_turn_run_60_M1 s2  t 3.38 v0 415 | cv L100 R 49 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 122 cm at 0.52 s | real: zero after 0.52 s, overshoot  93 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s4  t 7.38 v0 415 | cv L100 R 19 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 128 cm at 0.62 s | real: zero after 0.52 s, overshoot  93 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s6  t 11.38 v0 413 | cv L100 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 129 cm at 0.62 s | real: zero after 0.62 s, overshoot 124 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s8  t 15.38 v0 408 | cv L  7 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 128 cm at 0.62 s | real: zero after 0.52 s, overshoot  92 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s10 t 19.38 v0 404 | cv L100 R  0 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 126 cm at 0.62 s | real: zero after 0.52 s, overshoot  91 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s12 t 23.39 v0 400 | cv L100 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 125 cm at 0.62 s | real: zero after 0.62 s, overshoot 121 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s14 t 27.39 v0 396 | cv L  5 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 124 cm at 0.62 s | real: zero after 0.52 s, overshoot  90 cm, -90% after 2.18 s
+r9_starts_turn_run_60_M1 s16 t 31.39 v0 392 | cv L100 R100 | M_Relaxed_Run_Stop_F_Rfoot | predicted overshoot 122 cm at 0.62 s | real: zero after 0.62 s, overshoot 119 cm, -90% after 2.17 s

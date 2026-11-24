@@ -1,0 +1,12 @@
+#### r9_AD_taps_60_M1 plan AD_taps hz 60 tag M1 08:08
+r9_AD_taps_60_M1: 25 contacts
+  TOTAL n 25 | curve: mean 0.8 p90 1.4 worst 1.8, >=10: 0, >=20: 0 | ground: mean 0.8 p90 1.4 worst 1.8, >=10: 0, >=20: 0
+r9_AD_taps_60_M1 s2  t 3.58 v0 415 | cv L 86 R100 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  69 cm at 0.32 s | real: zero after 0.88 s, overshoot 186 cm, -90% after 0.88 s
+r9_AD_taps_60_M1 s3  t 3.85 v0 152 | cv L100 R  0 | laxed_Run_Turn_R_180_Rfoot | predicted overshoot  20 cm at 0.22 s | real: zero after 0.62 s, overshoot 118 cm, -90% after 0.62 s
+r9_AD_taps_60_M1 s4  t 4.15 v0 310 | cv L 94 R 94 | M_Neutral_Run_Loop_F       | predicted overshoot 493 cm at 1.52 s | real: zero after 0.32 s, overshoot  51 cm, -90% after 0.47 s
+r9_AD_taps_60_M1 s6  t 5.07 v0 253 | cv L 74 R 98 | laxed_Run_Turn_L_090_Lfoot | predicted overshoot 393 cm at 1.52 s | real: zero after 0.18 s, overshoot  19 cm, -90% after 0.55 s
+r9_AD_taps_60_M1 s7  t 5.65 v0 253 | cv L100 R  0 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot 556 cm at 1.52 s | real: zero after 0.20 s, overshoot  24 cm, -90% after 0.58 s
+r9_AD_taps_60_M1 s8  t 6.25 v0 242 | cv L100 R  2 | laxed_Run_Turn_L_180_Lfoot | predicted overshoot 549 cm at 1.52 s | real: zero after 0.20 s, overshoot  23 cm, -90% after 0.27 s
+r9_AD_taps_60_M1 s10 t 8.03 v0 404 | cv L100 R  0 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot  66 cm at 0.32 s | real: zero after 0.42 s, overshoot  82 cm, -90% after 0.78 s
+r9_AD_taps_60_M1 s11 t 8.80 v0 264 | cv L100 R  0 | laxed_Run_Turn_R_180_Lfoot | predicted overshoot 462 cm at 1.52 s | real: zero after 2.32 s, overshoot 593 cm, -90% after 2.32 s
+r9_AD_taps_60_M1 s13 t 10.53 v0 396 | cv L100 R 99 | M_Relaxed_Run_Stop_F_Lfoot | predicted overshoot 130 cm at 0.62 s | real: zero after 0.58 s, overshoot 111 cm, -90% after 1.97 s

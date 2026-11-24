@@ -1,0 +1,13 @@
+#### r9_starts_turn_walk_60_M1 plan starts_turn_walk hz 60 tag M1 08:21
+r9_starts_turn_walk_60_M1: 54 contacts
+  t   9.72 s5  [-]->[W D] +0.17s foot R dur 0.48 curve  48.6 ground  47.9 air 10% lift  7.0 v 144 tral_Walk_Reface_Start_F_R_180
+  t  29.72 s15 [-]->[D] +0.17s foot R dur 0.48 curve  48.0 ground  47.3 air 10% lift  7.0 v 144 tral_Walk_Reface_Start_F_R_180
+  TOTAL n 54 | curve: mean 3.0 p90 1.9 worst 48.6, >=10: 2, >=20: 2 | ground: mean 2.7 p90 1.7 worst 47.9, >=10: 2, >=20: 2
+r9_starts_turn_walk_60_M1 s2  t 3.40 v0 180 | cv L100 R  0 | _Relaxed_Walk_Stop_F_Lfoot | predicted overshoot 153 cm at 1.52 s | real: zero after 0.37 s, overshoot  31 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s4  t 7.40 v0 180 | cv L  1 R 99 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot 122 cm at 1.32 s | real: zero after 0.33 s, overshoot  27 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s6  t 11.40 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot 124 cm at 1.32 s | real: zero after 0.57 s, overshoot  57 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s8  t 15.40 v0 180 | cv L100 R  0 | _Relaxed_Walk_Stop_F_Lfoot | predicted overshoot 126 cm at 1.32 s | real: zero after 0.57 s, overshoot  57 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s10 t 19.40 v0 180 | cv L100 R  0 | _Relaxed_Walk_Stop_F_Lfoot | predicted overshoot 144 cm at 1.52 s | real: zero after 0.37 s, overshoot  31 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s12 t 23.40 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot 147 cm at 1.52 s | real: zero after 0.37 s, overshoot  31 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s14 t 27.40 v0 180 | cv L100 R  0 | _Relaxed_Walk_Stop_F_Lfoot | predicted overshoot 123 cm at 1.32 s | real: zero after 0.57 s, overshoot  57 cm, -90% after 2.17 s
+r9_starts_turn_walk_60_M1 s16 t 31.42 v0 180 | cv L  0 R100 | _Relaxed_Walk_Stop_F_Rfoot | predicted overshoot  15 cm at 0.12 s | real: zero after 0.55 s, overshoot  54 cm, -90% after 2.13 s
