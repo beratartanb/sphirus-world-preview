@@ -1,0 +1,81 @@
+{
+ "command": [
+  "C:\\Users\\berat\\AppData\\Local\\Microsoft\\WinGet\\Packages\\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe\\uvx.exe",
+  "mcp-for-blender==2.3.1"
+ ],
+ "env_flags": {
+  "DISABLE_TELEMETRY": "true",
+  "BLENDER_MCP_SAFE_MODE": "1",
+  "BLENDER_HOST": "127.0.0.1",
+  "BLENDER_PORT": "9876"
+ },
+ "results": [
+  {
+   "step": "addon_listens_loopback_only",
+   "status": "PASS",
+   "detail": "['  TCP    127.0.0.1:9876         0.0.0.0:0              LISTENING       61512']"
+  },
+  {
+   "step": "initialize",
+   "status": "PASS",
+   "detail": "{'name': 'MCP for Blender', 'version': '1.30.0'}"
+  },
+  {
+   "step": "tools_list",
+   "status": "PASS",
+   "detail": "['get_addon_status', 'disable_telemetry', 'get_scene_info', 'execute_blender_code', 'record_trajectory_feedback', 'look', 'generate_3d', 'generate_gaussian_world', 'search_assets', 'import_asset']"
+  },
+  {
+   "step": "get_scene_info",
+   "status": "PASS",
+   "detail": "Scene 'Scene' | 1 camera, 1 light, 2 mesh | active SM_SPH_TEST_McpSmokeCube | selected SM_SPH_TEST_McpSmokeCube | mode OBJECT\n\nShowing 4 of 4 (name | type | location | size | hidden | children):\nCube | mesh | at (0.0, 0.0, 0.0) | size 2.0x2.0x2.0\nLight | light | at (4.08, 1.01, 5.9)\nCamera | camera "
+  },
+  {
+   "step": "execute_code_create_object",
+   "status": "PASS",
+   "detail": "Code executed successfully: CREATED SM_SPH_TEST_McpSmokeCube.001 (0.5, 0.5, 0.5)\n"
+  },
+  {
+   "step": "safe_mode_blocks_os",
+   "status": "PASS",
+   "detail": "Rejected by safe mode - line 1: import of 'os' is not allowed\n\nBLENDER_MCP_SAFE_MODE is enabled: scripts may only import bpy, bmesh, mathutils, and pure-python stdlib modules. No eval/exec/open, no os"
+  },
+  {
+   "step": "scene_readback",
+   "status": "PASS",
+   "detail": "Code executed successfully: OBJ ['SM_SPH_TEST_McpSmokeCube', 'SM_SPH_TEST_McpSmokeCube.001']\n"
+  },
+  {
+   "step": "viewport_screenshot",
+   "status": "PASS",
+   "detail": "look -> 1 image(s)"
+  },
+  {
+   "step": "cleanup_test_object",
+   "status": "PASS",
+   "detail": "Code executed successfully: CLEANED True\n"
+  },
+  {
+   "step": "telemetry_status_reported",
+   "status": "PASS",
+   "detail": "{\n  \"up_to_date\": true,\n  \"protocol_version\": 16,\n  \"expected_protocol_version\": 16,\n  \"addon_version\": [\n    2,\n    0\n  ],\n  \"capabilities\": [\n    \"bpy_api_lookup\",\n    \"describe_node_type\",\n    \"drain_human_activity\",\n    \"execute_code\",\n    \"get_addon_info\",\n    \"get_object_info\",\n    \"get_scene_"
+  }
+ ],
+ "server_stderr_tail": [
+  "2026-11-24 21:47:55,494 - BlenderMCPServer - INFO - Sending command: get_meshy_status with params: None\n",
+  "2026-11-24 21:47:55,494 - BlenderMCPServer - INFO - Command sent, waiting for response...\n",
+  "2026-11-24 21:47:55,549 - BlenderMCPServer - INFO - Received complete response (406 bytes)\n",
+  "2026-11-24 21:47:55,549 - BlenderMCPServer - INFO - Received 406 bytes of data\n",
+  "2026-11-24 21:47:55,549 - BlenderMCPServer - INFO - Response parsed, status: success\n",
+  "2026-11-24 21:47:55,549 - BlenderMCPServer - INFO - Sending command: get_tripo_status with params: None\n",
+  "2026-11-24 21:47:55,549 - BlenderMCPServer - INFO - Command sent, waiting for response...\n",
+  "2026-11-24 21:47:55,604 - BlenderMCPServer - INFO - Received complete response (380 bytes)\n",
+  "2026-11-24 21:47:55,604 - BlenderMCPServer - INFO - Received 380 bytes of data\n",
+  "2026-11-24 21:47:55,604 - BlenderMCPServer - INFO - Response parsed, status: success\n",
+  "2026-11-24 21:47:55,604 - BlenderMCPServer - INFO - Sending command: get_worldlabs_status with params: None\n",
+  "2026-11-24 21:47:55,604 - BlenderMCPServer - INFO - Command sent, waiting for response...\n",
+  "2026-11-24 21:47:55,660 - BlenderMCPServer - INFO - Received complete response (415 bytes)\n",
+  "2026-11-24 21:47:55,660 - BlenderMCPServer - INFO - Received 415 bytes of data\n",
+  "2026-11-24 21:47:55,660 - BlenderMCPServer - INFO - Response parsed, status: success\n"
+ ]
+}
