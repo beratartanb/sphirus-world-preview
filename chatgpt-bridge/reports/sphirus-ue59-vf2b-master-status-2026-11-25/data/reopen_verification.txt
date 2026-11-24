@@ -1,0 +1,13 @@
+VFIN outfit top ['MHC_S8Tank_Outfits', 'SKM_Sph_RetroTop_VF2', 'SKM_Sph_RetroTop_VF2', 'MHC_S8Tank_Outfits', 'MHC_S8Tank_Outfits']
+VFIN outfit low ['SKM_Sph_CuffedShorts_VF2', 'SKM_Sph_CuffedShorts_VF2', 'SKM_Sph_Pants70', 'SKM_Sph_CuffedShorts_VF2', 'SKM_Sph_Cargo']
+VFIN hair GR_Sph_MessyBob_VF2 bEnableSimulation=False
+VFIN SKM_Sph_RetroTop_VF2 verts 14618 ['MI_Sph_RetroTop_VF2'] skel metahuman_base_skel
+VFIN SKM_Sph_CuffedShorts_VF2 verts 9197 ['MI_Sph_CuffedShorts_VF2'] skel metahuman_base_skel
+VFIN shorts base usedWithSkeletalMesh True | fabric shading MSM_CLOTH: 8>
+VFIN MI_R3_Surface_lime parent M_Sph_LimePlaster_VF2 {'MacroAmount': 0.5, 'GrimeAmount': 0.6, 'ReliefStrength': 0.55}
+VFIN MI_R3_hearth_OriginalAtlas parent M_Sph_HearthStone_VF2 {'SootAmount': 1.25, 'AshAmount': 0.8}
+VFIN MI_R3_Surface_masonry parent M_Sph_HearthStone_VF2 {'SootAmount': 1.25, 'AshAmount': 0.8}
+VFIN MI_BR_ExteriorDeck parent M_HouseSurface {}
+VFIN grass translucency [0.437, 0.489, 0.302]
+VFIN vendor groom untouched GravityPreloading=0.000000
+VFIN dirty [] [] | level L_GR_SphirusHouse | VF2H actors 0
