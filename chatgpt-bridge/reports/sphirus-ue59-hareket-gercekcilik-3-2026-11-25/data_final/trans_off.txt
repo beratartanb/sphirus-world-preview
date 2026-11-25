@@ -1,0 +1,20 @@
+r9_accel_60_OFF5 s1  [-        >W        ]   0 -> 180 | settle 0.33 s  28 cm | peak accel   652 | plants 1 R0.20 | lean start  0.0 peak   1.7 end  1.7
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  Neutral_Walk_Start_F_Rfoot@0.03
+r9_accel_60_OFF5 s2  [W        >-        ] 180 ->   0 | settle 0.50 s  54 cm | peak accel  -646 | plants 1 R0.23 | lean start  1.0 peak  -2.0 end  0.0
+      clips: Neutral_Walk_Start_F_Rfoot@0.00  _Relaxed_Walk_Stop_F_Rfoot@0.03
+r9_accel_60_OFF5 s3  [-        >W+Sh     ]   0 -> 415 | settle 0.62 s 115 cm | peak accel   896 | plants 1 R0.53 | lean start  0.0 peak  18.0 end 18.0
+      clips: _Relaxed_Walk_Stop_F_Rfoot@0.00  Neutral_Walk_Start_F_Rfoot@0.03  ansition_Walk_to_Run_Rfoot@0.32
+r9_accel_60_OFF5 s4  [W+Sh     >-        ] 415 ->   0 | settle 0.47 s  96 cm | peak accel  -991 | plants 1 R0.28 | lean start 11.3 peak  19.0 end  0.0
+      clips: M_Neutral_Run_Loop_F@0.00  M_Relaxed_Run_Stop_F_Rfoot@0.03
+r9_accel_60_OFF5 s5  [-        >W+Sh+Ct  ]   0 -> 575 | settle 1.03 s 309 cm | peak accel   934 | plants 2 R0.50 L0.87 | lean start  0.0 peak  23.3 end 19.0
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  Neutral_Walk_Start_F_Rfoot@0.03  ansition_Walk_to_Run_Rfoot@0.32  ition_Walk_to_Sprint_Rfoot@0.43
+r9_accel_60_OFF5 s6  [W+Sh+Ct  >-        ] 575 ->   0 | settle 0.51 s 138 cm | peak accel -1636 | plants 2 L0.02 R0.33 | lean start 14.3 peak  17.8 end 17.8
+      clips: M_Relaxed_Sprint_Loop_F@0.00  M_Relaxed_Run_Stop_F_Rfoot@0.03
+r9_accel_60_OFF5 s7  [-        >W+Sh     ]   0 -> 397 | settle 0.60 s 107 cm | peak accel   999 | plants 1 R0.53 | lean start  0.0 peak  16.7 end 16.7
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  Neutral_Walk_Start_F_Rfoot@0.03  ansition_Walk_to_Run_Rfoot@0.33
+r9_accel_60_OFF5 s8  [W+Sh     >W+Sh+Ct  ] 397 -> 551 | settle 0.35 s 169 cm | peak accel   410 | plants 2 R0.02 L0.32 | lean start  9.9 peak  18.5 end 18.5
+      clips: ansition_Walk_to_Run_Rfoot@0.00  sition_Run_to_Sprint_Lfoot@0.03
+r9_accel_60_OFF5 s9  [W+Sh+Ct  >W+Sh     ] 551 -> 384 | settle 0.85 s 411 cm | peak accel  -264 | plants 2 R0.17 L0.52 | lean start 13.2 peak  15.7 end 14.6
+      clips: M_Relaxed_Sprint_Loop_F@0.00  M_Neutral_Run_Loop_F@0.03
+r9_accel_60_OFF5 s10 [W+Sh     >-        ] 384 ->   0 | settle 0.60 s 130 cm | peak accel  -977 | plants 2 L0.15 R0.40 | lean start 16.7 peak  18.8 end  0.0
+      clips: M_Neutral_Run_Loop_F@0.00  M_Relaxed_Run_Stop_F_Rfoot@0.03

@@ -1,0 +1,15 @@
+start 06:41 save 10201b8b41b7
+house 06:48
+hip 06:51
+plans60 07:20
+plans 07:38
+fall 07:39
+videos 08:26
+SETP9 {'CS_On': 0.0, 'GU_Run': 0.8, 'GU_Tempo': 0.8, 'CA_On': 0.0, 'PS_AbdBack': 0.0, 'TLM_On': 0.0, 'PS_S2': 0.0, 'PS_S3': 0.0, 'PS_S4': 0.0, 'BR_Sh': 0.0, 'BR_FatK': 0.0, 'PS_BrEff': 1.6, 'PS_K': 1.
+SETM9 {'StBoostMaxSt': 1400.0, 'StBoostDur': 0.9}
+MR3DEF {'StBoostMax': 1400.0, 'StBoostMaxSt': 1400.0, 'StBoostDur': 0.9} {'BR_Sh': 0.0, 'BR_FatK': 0.0, 'PS_BrEff': 1.6, 'PS_S2': 0.0, 'PS_S3': 0.0, 'PS_S4': 0.0, 'TLM_On': 0.0, 'TLM_Free': 14.0, 'TLM_K': 0.6, 'TLM_Max': 14.0, 'TLM_Rate': 120.0, 'TLM_KS': 0.5, 'CA_On': 0.0, 'CA_Tgt': 6.5, 'CA_K': 2.
+MR3DEF cam [('Default__AC_Sph_Camera_C', {'SpeedArm': 4.0, 'SprArm': 0.0, 'FovSpr': 0.0}), ('SphCamera_GEN_VARIABLE', {'SpeedArm': 4.0, 'SprArm': 0.0, 'FovSpr': 0.0})]
+off 08:47
+RUNNER_READY mr3_reopen5.log
+save end 10201b8b41b7
+FINAL_MR3_DONE

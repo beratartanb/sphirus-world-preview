@@ -1,0 +1,9 @@
+b4F_fall_sprint_60 lane log frames 552 fat 0.04 seterr None
+  t   3.16 TRIP v 585 cm/s class low(trip) severity 1.81 -> balance lost | support none (airborne) | rear room 300 cm | object StaticMeshActor_21 | speed 0.1 s before 585, after 444
+  t   3.16 state normal -> falling forward (dist to surface 999)
+  t   4.66 state falling forward -> lying (dist to surface 999)
+  t   5.16 state lying -> getting up (dist to surface 999)
+  t   8.17 state getting up -> normal (dist to surface 999)
+  capsule travel: start x -6000, furthest -4976, end -4980 | max speed 585 | lowest pelvis (component z) 15.7 | hand reach max 0.00
+  PENETRATION (cm, limb surface inside the obstacle): ball 3.5 at t 3.43 (falling forward)
+    phase falling forward  ball    frames   3 worst  3.5 cm
