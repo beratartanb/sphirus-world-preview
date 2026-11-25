@@ -1,0 +1,31 @@
+LG ReviewOnly_WindowDay_LivingSouth   RectLight int   12000.0 units LUMENS: 2>   att    600 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [1238, 1110, 330] rot
+LG ReviewOnly_WindowDay_LivingEast    RectLight int    6900.0 units LUMENS: 2>   att    600 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [1483, 875, 330] rot 
+LG ReviewOnly_WindowDay_KitchenNorth  RectLight int    7500.0 units LUMENS: 2>   att    450 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [1190, 30, 330] rot [
+LG ReviewOnly_WindowDay_KitchenEast   RectLight int    6600.0 units LUMENS: 2>   att    450 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [1482, 250, 330] rot 
+LG ReviewOnly_WindowDay_Workshop      RectLight int    9000.0 units LUMENS: 2>   att    450 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [420, 32, 330] rot [0
+LG ReviewOnly_WindowDay_Reading       RectLight int    7500.0 units LUMENS: 2>   att    450 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [1360, 60, 665] rot [
+LG ReviewOnly_WindowDay_Bedroom       RectLight int    7500.0 units LUMENS: 2>   att    450 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [1260, 1105, 645] rot
+LG ReviewOnly_WindowDay_Bath          RectLight int    4200.0 units LUMENS: 2>   att    450 vis False hidden_game False affects True shadows True temp 5500 col (255, 255, 255) at [40, 985, 625] rot [0
+LG EX_PostRain_Sun                    Direction int     900.0 units              att      0 vis True hidden_game False affects True shadows True temp 5600 col (255, 255, 255) at [0, 0, 1300] rot [-30,
+LG EX_PostRain_Sky                    SkyLight  int       2.8 units              att      0 vis True hidden_game False affects True shadows True temp - col (255, 255, 255) at [0, 0, 0] rot [0, 0] 
+LG ReviewOnly_SkyBounce_North         RectLight int  180000.0 units CANDELAS: 1> att   2600 vis False hidden_game False affects True shadows True temp 6500 col (255, 255, 255) at [750, -1400, 1350] ro
+LG ReviewOnly_SkyBounce_West          RectLight int  140000.0 units CANDELAS: 1> att   2600 vis False hidden_game False affects True shadows True temp 6500 col (255, 255, 255) at [-1200, 570, 1300] ro
+LG ReviewOnly_YardSoftbox             RectLight int  300000.0 units CANDELAS: 1> att   3200 vis False hidden_game False affects True shadows True temp 6500 col (255, 255, 255) at [3200, -250, 950] rot
+LG ReviewOnly_ExteriorSoftbox         RectLight int  300000.0 units CANDELAS: 1> att   4000 vis False hidden_game False affects True shadows True temp 6500 col (255, 255, 255) at [500, -1600, 1450] ro
+LG GR_Day_WardLight                   PointLigh int      18.0 units CANDELAS: 1> att    110 vis True hidden_game False affects True shadows False temp - col (255, 226, 190) at [1468, 756, 676] rot [0,
+LG GR_Day_FireLight                   PointLigh int       9.0 units CANDELAS: 1> att    520 vis True hidden_game False affects True shadows True temp - col (255, 150, 70) at [1404, 905, 222] rot [0, 0
+LG LivingLamp                         PointLigh int     201.6 units LUMENS: 2>   att    550 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [679, 920, 259] rot [0
+LG HearthGlow                         PointLigh int     100.0 units LUMENS: 2>   att    240 vis True hidden_game False affects True shadows True temp 2300 col (255, 255, 255) at [1445, 905, 205] rot [
+LG KitchenPendant                     PointLigh int     220.0 units LUMENS: 2>   att    500 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [1246, 318, 372] rot [
+LG WorkshopPendant                    PointLigh int     190.0 units LUMENS: 2>   att    500 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [393, 248, 376] rot [0
+LG HallSconce                         PointLigh int     192.0 units LUMENS: 2>   att     85 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [919, 370, 357] rot [9
+LG ReadingLamp                        PointLigh int      86.0 units LUMENS: 2>   att    400 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [1404, 99, 618] rot [0
+LG BathLamp                           PointLigh int     240.0 units LUMENS: 2>   att    420 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [397, 991, 698] rot [0
+LG LowerWCLight                       PointLigh int     144.0 units LUMENS: 2>   att    270 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [168, 1000, 411] rot [
+LG LowerStoreLight                    PointLigh int     105.6 units LUMENS: 2>   att    230 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [174, 758, 406] rot [0
+LG RearExit                           PointLigh int     114.0 units LUMENS: 2>   att    280 vis True hidden_game False affects True shadows True temp 3200 col (255, 255, 255) at [905, -19, 372] rot [0
+LG AtticServiceLight                  PointLigh int     220.0 units LUMENS: 2>   att    520 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [1410, 585, 900] rot [
+LG LivingPendantLight                 PointLigh int     240.0 units LUMENS: 2>   att    500 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [1240, 860, 393] rot [
+LG R05_BedsideLampRightLight          PointLigh int     216.0 units LUMENS: 2>   att    300 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [1308, 675, 578] rot [
+LG R05_LivingFloorLampLight           PointLigh int     150.0 units LUMENS: 2>   att   1000 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [1452, 487, 289] rot [
+LG R05_MainStairWallLampLight         PointLigh int     264.0 units LUMENS: 2>   att   1000 vis True hidden_game False affects True shadows True temp 3600 col (255, 255, 255) at [30, 515, 550] rot [0,
