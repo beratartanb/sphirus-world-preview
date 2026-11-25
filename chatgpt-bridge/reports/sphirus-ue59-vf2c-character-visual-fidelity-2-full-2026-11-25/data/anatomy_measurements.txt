@@ -1,0 +1,43 @@
+body abp ABP_Sph_Body_GASP_C | face abp ABP_Hazel_Face_C | curves 88 | err None
+floor z -1.3  head bone z 155.2  eye z 160.2  actor top 213.9
+  stature_est_cm               172.6
+  eye_height                   161.5
+  upperarm_len                 26.8
+  forearm_len                  24.8
+  hand_len(wrist-mid3)         13.2
+  biacromial(upperarm l-r)     24.8
+  hip joint width              14.6
+  thigh_len                    44.4
+  shank_len                    43.2
+  hip_height                   93.5
+  neck_len(neck_01-head)       10.8
+  torso(pelvis-neck_01)        52.0
+  shoulder height              140.2
+  L/R upperarm diff            0.1
+  shoulder z diff L-R          0.5
+  hand z L/R                   (91.6, 90.0)
+ratio                           measured  ref(female)  tol   verdict
+  upper arm / stature            0.155     0.172       0.012  LOW
+  forearm / stature              0.144     0.146       0.012  OK
+  arm total (sh-wrist) / stature 0.299     0.318       0.018  LOW
+  biacromial / stature           0.144     0.222       0.015  LOW
+  hip height / stature           0.542     0.530       0.020  OK
+  thigh / stature                0.257     0.245       0.015  OK
+  shank / stature                0.250     0.246       0.015  OK
+  shoulder height / stature      0.812     0.818       0.015  OK
+  hip width / biacromial         0.588     0.500       0.080  HIGH
+samples 393 over 12.01 s; watch ['head_cm1_color_head_wm1_blink_L', 'head_cm1_color_head_wm1_blink_R', 'head_wm1_normal_head_wm1_blink_L', 'head_wm1_normal_head_wm1_blink_R', 'CTRL_expressions_browRaiseInL', 'CTRL_expressions_browRaiseInR', 'head_cm1_color_head_wm1_jawOpen']
+  curve head_cm1_color_head_wm1_blink_L      min 0.060 max 0.060
+  curve head_cm1_color_head_wm1_blink_R      min 0.060 max 0.060
+  curve head_wm1_normal_head_wm1_blink_L     min 0.060 max 0.060
+  curve head_wm1_normal_head_wm1_blink_R     min 0.060 max 0.060
+  curve CTRL_expressions_browRaiseInL        min 0.040 max 0.040
+  curve CTRL_expressions_browRaiseInR        min 0.040 max 0.040
+  curve head_cm1_color_head_wm1_jawOpen      min 0.000 max 0.000
+  eye-vs-head yaw range -181.31..200.64  pitch range -89.48..-47.11 (deg)
+  morph2 min 0.000 max 0.000
+  morph3 min 0.000 max 0.000
+blinkish ['head_cm1_color_head_wm1_blink_L', 'head_cm1_color_head_wm1_blink_R', 'head_wm1_normal_head_wm1_blink_L', 'head_wm1_normal_head_wm1_blink_R']
+lookish []
+RB upperarm 26.8 forearm 24.8 joint-centre shoulder width 24.7 clavicle 12.3 thigh 44.4 shank 43.2 hip w 14.6 head z 157.7 neck 10.8
+RB acromial surface width (slab at shoulder joint z, |x|<0.26) 42.3 | waist min width 21.8 | hip max width 37.1 | mesh z max 147.2
