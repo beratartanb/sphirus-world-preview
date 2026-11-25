@@ -1,0 +1,16 @@
+VC face ABP variables ['VF2_Blink', 'VF2_LookL', 'VF2_LookR', 'VF2_VelS'] | anim graph nodes 9 | event graph nodes 33
+VC SKM_Sph_RetroTop_VF2 verts 14618 half width 14.9 ['MI_Sph_RetroTop_VF2']
+VC SKM_Sph_CuffedShorts_VF2 verts 9201 half width 19.4 ['MI_Sph_CuffedShorts_VF2']
+VC cloth collection ['Vel', 'VelSmooth']
+VC MI_Sph_RetroTop_VF2 {'MotionInertia': 0.022, 'MotionDrag': -0.003, 'MotionMax': 2.4, 'MotionFlutter': 0.12} WPO node True
+VC MI_Sph_CuffedShorts_VF2 {'MotionInertia': 0.014, 'MotionDrag': -0.002, 'MotionMax': 1.4, 'MotionFlutter': 0.12} WPO node True
+VC outfit SKM_Sph_RetroTop_VF2 SKM_Sph_CuffedShorts_VF2
+VC MI_R3_Surface_lime parent M_Sph_HL_Plaster_V3 pixel instr/samplers (289, 7)
+VC MI_R3_hearth_OriginalAtlas parent M_Sph_HL_Hearth_V3 pixel instr/samplers (311, 6)
+VC MI_R3_Surface_masonry parent M_Sph_HL_Hearth_V3 pixel instr/samplers (311, 6)
+VC MI_EX_Integration_OuterLimeOak parent M_Sph_HL_LimeOak_V3 pixel instr/samplers (438, 9)
+VC MI_EX_Integration_OuterLime parent M_Sph_HL_OuterLime_V3 pixel instr/samplers (427, 9)
+VC MI_BR_ExteriorDeck parent M_HouseSurface pixel instr/samplers (231, 5)
+VC dressing actors 8 [('VF2C_Workshop_DryRack', 'SM_HM_MaskDryRack', [40, 230, 150]), ('VF2C_Workshop_RackMask_A', 'SM_HM_MaskStage2_Rough', [49, 220, 245]), ('VF2C_Workshop_RackMask_B', 'SM_HM_MaskStage1_Blank', [54, 260, 211]), ('VF2C_Workshop_MaskForm', 'SM_HM_MaskForm', [84, 356, 262]), ('VF2C_Workshop_GluePot', 'SM_HM_GluePot', [126, 350, 262]), ('VF2C_Workshop_LinenStrips', 'SM_HM_LinenStrips', [44, 360, 262]),
+VC foliage instances 38494 (38474 before this pass) | actors 1491 (1483 before)
+VC dirty [] [] | level L_GR_SphirusHouse

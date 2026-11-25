@@ -1,0 +1,32 @@
+A1 H02_hearth           fps  36.3 ms 
+A1 H04_kitchen          fps  33.2 ms 
+A1 H05_workshop         fps  32.9 ms 
+A1 H08_pantry_wall      fps  36.3 ms 
+A1 H14_living_wall      fps  33.5 ms 
+A1 W08_east             fps  35.9 ms 
+B1 H02_hearth           fps  36.4 ms 
+B1 H04_kitchen          fps  33.2 ms 
+B1 H05_workshop         fps  32.3 ms 
+B1 H08_pantry_wall      fps  36.8 ms 
+B1 H14_living_wall      fps  33.8 ms 
+B1 W08_east             fps  35.4 ms 
+A2 H02_hearth           fps  35.4 ms 
+A2 H04_kitchen          fps  32.5 ms 
+A2 H05_workshop         fps  32.5 ms 
+A2 H08_pantry_wall      fps  36.4 ms 
+A2 H14_living_wall      fps  34.3 ms 
+A2 W08_east             fps  35.7 ms 
+B2 H02_hearth           fps  35.7 ms 
+B2 H04_kitchen          fps  32.5 ms 
+B2 H05_workshop         fps  33.3 ms 
+B2 H08_pantry_wall      fps  36.9 ms 
+B2 H14_living_wall      fps  34.4 ms 
+B2 W08_east             fps  35.5 ms 
+view              A1    B1    A2    B2   | mean A  mean B  A-B (layered - source)
+H02_hearth        36.3  36.4  35.4  35.7 |  35.8    36.0   -0.2
+H04_kitchen       33.2  33.2  32.5  32.5 |  32.9    32.9   +0.0
+H05_workshop      32.9  32.3  32.5  33.3 |  32.7    32.8   -0.1
+H08_pantry_wall   36.3  36.8  36.4  36.9 |  36.3    36.8   -0.5
+H14_living_wall   33.5  33.8  34.3  34.4 |  33.9    34.1   -0.2
+W08_east          35.9  35.4  35.7  35.5 |  35.8    35.5   +0.3
+MEAN over 6 views: layered 34.6 fps, source 34.7 fps, difference -0.1 fps
