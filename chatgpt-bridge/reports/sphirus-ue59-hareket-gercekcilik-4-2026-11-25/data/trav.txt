@@ -1,0 +1,20 @@
+p4FV_h60 | at jump: TR_Kind/GT_H/GT_D/GT_Dist [2.0, 59.85, 20.0, 36.72] | Ok/Room/Done/FlOk ['True', 'True', 'True', 'True'] | max z 146 (start 88) | end x +454 z 88
+  t  0.00 s0 x    +0 z  88.2 v   0 | montage None | clip M_Relaxed_Stand_Idle_Loop
+  t  1.93 s2 x  +171 z  88.2 v 165 | montage elaxed_Traversal_Hurdle_1_0_walk_F_Rfoot | clip M_Relaxed_Run_Stop_B_Rfoot
+  t  4.10 s4 x  +401 z  88.2 v 235 | montage None | clip M_Relaxed_Walk_Stop_F_Rfoot
+p4FV_h150 | at jump: TR_Kind/GT_H/GT_D/GT_Dist [3.0, 149.85, 200.0, 21.23] | Ok/Room/Done/FlOk ['True', 'True', 'False', 'False'] | max z 238 (start 88) | end x +375 z 238
+  t  0.00 s0 x    +0 z  88.2 v   0 | montage None | clip M_Relaxed_Stand_Idle_Loop
+  t  1.93 s2 x  +184 z  88.2 v  31 | montage laxed_Traversal_Mantle_1_0_stand_F_Rfoot | clip M_Relaxed_Stand_Idle_Loop
+  t  3.25 s3 x  +290 z 238.2 v  13 | montage None | clip Transition_Run_to_Walk_Lfoot
+p4FV_h240 | at jump: TR_Kind/GT_H/GT_D/GT_Dist [4.0, 239.85, 200.0, 21.29] | Ok/Room/Done/FlOk ['True', 'True', 'False', 'False'] | max z 328 (start 88) | end x +305 z 328
+  t  0.00 s0 x    +0 z  88.2 v   0 | montage None | clip M_Relaxed_Stand_Idle_Loop
+  t  1.93 s2 x  +184 z  88.2 v  36 | montage _Traversal_Climb_Start_2_5_stand_F_Rfoot | clip M_Relaxed_Stand_Idle_Loop
+  t  4.42 s4 x  +305 z 328.1 v   0 | montage None | clip Transition_Run_to_Walk_Lfoot
+p4FV_h330 | at jump: TR_Kind/GT_H/GT_D/GT_Dist [0.0, 329.85, 40.0, 21.25] | Ok/Room/Done/FlOk ['True', 'True', 'True', 'True'] | max z 153 (start 88) | end x +210 z 88
+  t  0.00 s0 x    +0 z  88.2 v   0 | montage None | clip M_Relaxed_Stand_Idle_Loop
+  t  1.93 s2 x  +184 z  94.7 v   0 | montage AM_Sph_Jump | clip xed_Jump_F_Start_Stand_Lfoot
+  t  2.53 s3 x  +204 z 101.8 v  72 | montage None | clip xed_Jump_F_Start_Stand_Lfoot
+p4FV_w90 | at jump: TR_Kind/GT_H/GT_D/GT_Dist [2.0, 89.85, 40.0, 33.47] | Ok/Room/Done/FlOk ['True', 'True', 'True', 'True'] | max z 176 (start 88) | end x +452 z 88
+  t  0.00 s0 x    +0 z  88.2 v   0 | montage None | clip M_Relaxed_Stand_Idle_Loop
+  t  2.18 s2 x   +92 z  88.2 v  25 | montage ed_Traversal_Hurdle_1_0_stand_F_V2_Rfoot | clip M_Relaxed_Stand_Idle_Loop
+  t  3.20 s3 x  +291 z  88.2 v   0 | montage None | clip Transition_Run_to_Walk_Lfoot

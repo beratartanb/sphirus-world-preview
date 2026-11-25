@@ -1,0 +1,26 @@
+P4DEF {'CS_DecSlope': 900.0, 'CS_SlopeTan': 0.36, 'CS_V5': 1.0, 'CS_StepUp': 25.0, 'SH_On': 1.0, 'SH_Rest': 0.15, 'SH_MaxFwd': 40.0, 'SH_MinLat': 8.0, 'SH_MaxLat': 45.0, 'SH_In': 10.0, 'SH_Out': 6.0} 
+p4Kv31_open release v 584 | coast 0.55 s (frames 32) | rest after 0.90 s | travel 289 cm | open lane | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > ansition_Run_to_Walk_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+   telemetry max: avail 323 floor 323 budget 283 | min budget while coasting 167
+p4Kv31_wall260 release v 584 | coast 0.08 s (frames 4) | rest after 0.63 s | travel 166 cm | box0(top +300 cm) closest 75 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 238 floor 250 budget 198 | min budget while coasting 171
+p4Kv31_wall150 release v 441 | coast 0.05 s (frames 2) | rest after 0.63 s | travel 136 cm | box0(top +300 cm) closest 11 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 146 floor 152 budget 106 | min budget while coasting 99
+p4Kv31_corner release v 524 | coast 0.05 s (frames 2) | rest after 0.63 s | travel 151 cm | box0(top +300 cm) closest 29 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 194 floor 233 budget 154 | min budget while coasting 146
+p4Kv31_narrow release v 584 | coast 0.57 s (frames 33) | rest after 0.92 s | travel 294 cm | box0(top +300 cm) closest 20 cm; box1(top +300 cm) closest 20 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > ansition_Run_to_Walk_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+   telemetry max: avail 323 floor 323 budget 283 | min budget while coasting 165
+p4Kv31_lowbox release v 584 | coast 0.00 s (frames 0) | rest after 0.60 s | travel 144 cm | box0(top +35 cm) closest 22 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 174 floor 323 budget 134 | min budget while coasting 0
+p4Kv31_cliff release v 584 | coast 0.00 s (frames 0) | rest after 0.60 s | travel 144 cm | box0(top +0 cm) closest -35 cm | z 148..148 | clips ition_Walk_to_Sprint_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 323 floor 129 budget 89 | min budget while coasting 0
+p4Kv31_ramp12 release v 584 | coast 0.43 s (frames 25) | rest after 0.92 s | travel 264 cm | box0(top +40 cm) closest -35 cm | z 88..122 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > ansition_Run_to_Walk_Lfoot > M_Relaxed_Run_Stop_F_Rfoot
+   telemetry max: avail 323 floor 323 budget 283 | min budget while coasting 165
+p4Kv31_ramp45 release v 529 | coast 0.00 s (frames 0) | rest after 0.60 s | travel 134 cm | box0(top +30 cm) closest -35 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 158 floor 117 budget 77 | min budget while coasting 0
+p4Kv31_stairs release v 584 | coast 0.03 s (frames 1) | rest after 0.62 s | travel 155 cm | box0(top +18 cm) closest -35 cm; box1(top +36 cm) closest -35 cm; box2(top +54 cm) closest -9 cm; box3(top +72 cm) closest 21 cm; box4(top +90 cm) closest 51 cm | z 88..127 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 323 floor 258 budget 218 | min budget while coasting 218
+p4Kv31_moving release v 584 | coast 0.48 s (frames 28) | rest after 1.33 s | travel 431 cm | box0(top +160 cm) closest 181 cm | z 88..88 | clips ition_Walk_to_Sprint_Rfoot > ansition_Run_to_Walk_Rfoot > ansition_Run_to_Walk_Lfoot > M_Relaxed_Run_Stop_F_Rfoot > _Relaxed_Walk_Stop_B_Rfoot
+   telemetry max: avail 323 floor 323 budget 283 | min budget while coasting 74
+p4Kv31_runopen release v 415 | coast 0.25 s (frames 14) | rest after 0.70 s | travel 151 cm | open lane | z 88..88 | clips ansition_Walk_to_Run_Rfoot > ansition_Run_to_Walk_Rfoot > M_Relaxed_Run_Stop_F_Lfoot > M_Relaxed_Stand_Idle_Loop
+   telemetry max: avail 247 floor 247 budget 207 | min budget while coasting 164
+BRAKE5_DONE

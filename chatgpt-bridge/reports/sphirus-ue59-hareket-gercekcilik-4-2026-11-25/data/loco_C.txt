@@ -1,0 +1,41 @@
+p4C_starts | real frame time ms p50 41.7 p95 44.6 max 125.0 | game dt ms p50 16.7 p95 17.1 | frames 1794
+rest->walk start                   s1  [W          ] v   0 -> 180 (max 180) | 90% of change after 0.33 s, 27 cm, 0 supports 
+walk stop                          s2  [-          ] v 180 ->   0 (max 180) | rest after 0.50 s, 54 cm | 3 supports R0.25 L0.67 R1.23 | feet after rest: max travel 22.5 cm, 2 new supports
+tap walk 0.15 s                    s3  [W          ] v   0 ->  57 (max  57) | NOT STOPPED in segment (end 57 cm/s after 0.13 s, 4 cm) | 0 supports 
+walk stop                          s4  [-          ] v  57 ->   0 (max  73) | rest after 0.27 s, 12 cm | 1 supports R0.63 | feet after rest: max travel 14.7 cm, 1 new supports
+tap walk 0.15 s                    s5  [W X        ] v   0 ->  56 (max  56) | NOT STOPPED in segment (end 56 cm/s after 0.13 s, 4 cm) | 0 supports 
+tempo->tempo                       s6  [W          ] v  56 -> 278 (max 278) | 90% of change after 0.37 s, 65 cm, 0 supports 
+tempo stop                         s7  [-          ] v 278 ->   0 (max 278) | rest after 0.60 s, 109 cm | 3 supports R0.37 L0.92 R1.47 | feet after rest: max travel 25.7 cm, 2 new supports
+tap tempo 0.20 s                   s8  [W          ] v   0 ->  78 (max  78) | NOT STOPPED in segment (end 78 cm/s after 0.18 s, 7 cm) | 0 supports 
+tempo stop                         s9  [-          ] v  78 ->   0 (max 103) | rest after 0.28 s, 17 cm | 1 supports R0.63 | feet after rest: max travel 19.8 cm, 1 new supports
+rest->run start                    s12 [W Sh       ] v   0 -> 415 (max 415) | 90% of change after 0.85 s, 182 cm, 1 supports R0.52
+run stop                           s13 [-          ] v 415 ->   0 (max 415) | rest after 0.62 s, 134 cm | 3 supports L0.45 R0.75 L1.30 | feet after rest: max travel 14.1 cm, 2 new supports
+tap run 0.25 s                     s14 [W Sh       ] v   0 -> 115 (max 115) | NOT STOPPED in segment (end 115 cm/s after 0.23 s, 12 cm) | 0 supports 
+run stop                           s15 [-          ] v 115 ->   0 (max 125) | rest after 0.32 s, 24 cm | 3 supports R0.28 L0.50 R1.07 | feet after rest: max travel 26.8 cm, 2 new supports
+rest->sprint start                 s16 [W Sh Ct    ] v   0 -> 580 (max 584) | 90% of change after 1.60 s, 518 cm, 2 supports L0.95 R1.23
+sprint stop                        s17 [-          ] v 580 ->   0 (max 582) | rest after 0.92 s, 304 cm | 3 supports R0.73 L1.23 R1.77 | feet after rest: max travel 26.0 cm, 2 new supports
+tap sprint 0.30 s                  s18 [W Sh Ct    ] v   0 -> 127 (max 127) | NOT STOPPED in segment (end 127 cm/s after 0.28 s, 18 cm) | 0 supports 
+sprint stop                        s19 [-          ] v 127 ->   0 (max 155) | rest after 0.50 s, 51 cm | 3 supports R0.27 L0.67 R1.23 | feet after rest: max travel 22.6 cm, 2 new supports
+p4C_repress | real frame time ms p50 41.7 p95 44.6 max 125.0 | game dt ms p50 16.7 p95 17.1 | frames 1500
+rest->sprint start                 s1  [W Sh Ct    ] v   0 -> 584 (max 585) | 90% of change after 1.50 s, 484 cm, 1 supports R1.20
+sprint stop                        s2  [-          ] v 584 -> 457 (max 585) | NOT STOPPED in segment (end 457 cm/s after 0.28 s, 159 cm) | 0 supports 
+re-press sprint during stop        s3  [W Sh Ct    ] v 457 -> 577 (max 581) | 90% of change after 0.72 s, 370 cm, 1 supports R0.60
+sprint stop                        s4  [-          ] v 577 -> 428 (max 579) | NOT STOPPED in segment (end 428 cm/s after 0.33 s, 179 cm) | 1 supports L0.23
+re-press run during stop           s5  [D Sh       ] v 428 -> 402 (max 419) | 90% of change after 0.03 s, 21 cm, 0 supports 
+run stop                           s6  [-          ] v 402 -> 149 (max 404) | NOT STOPPED in segment (end 149 cm/s after 0.28 s, 99 cm) | 0 supports 
+re-press back run during stop      s7  [S Sh       ] v 149 -> 224 (max 225) | 90% of change after 0.38 s, 58 cm, 0 supports 
+back run stop                      s8  [-          ] v 224 ->   0 (max 224) | rest after 0.53 s, 70 cm | 3 supports R0.33 L0.70 R1.05 | feet after rest: max travel 29.3 cm, 2 new supports
+rest->run start                    s9  [W Sh       ] v   0 -> 391 (max 393) | 90% of change after 0.83 s, 169 cm, 1 supports R0.53
+run stop                           s10 [-          ] v 391 -> 276 (max 396) | NOT STOPPED in segment (end 276 cm/s after 0.23 s, 90 cm) | 0 supports 
+re-press run during stop           s11 [A Sh       ] v 276 -> 388 (max 388) | 90% of change after 0.67 s, 161 cm, 1 supports R0.50
+run stop                           s12 [-          ] v 388 -> 344 (max 395) | NOT STOPPED in segment (end 344 cm/s after 0.18 s, 75 cm) | 0 supports 
+C key while moving (rest)          s13 [C          ] v 344 -> 166 (max 335) | 90% of change after 0.00 s, 6 cm, 0 supports 
+rest stop                          s14 [-          ] v 166 ->   0 (max 134) | rest after 0.08 s, 7 cm | 2 supports R0.13 L0.17 | feet after rest: max travel 5.4 cm, 2 new supports
+rest->sprint start                 s17 [W Sh Ct    ] v   0 -> 540 (max 542) | 90% of change after 1.57 s, 481 cm, 0 supports 
+sprint stop                        s18 [-          ] v 540 -> 444 (max 547) | NOT STOPPED in segment (end 444 cm/s after 0.29 s, 155 cm) | 0 supports 
+SpaceBar key while moving (rest)   s19 [SpaceBar   ] v 444 -> 474 (max 474) | 90% of change after 0.05 s, 28 cm, 0 supports 
+rest stop                          s20 [-          ] v 474 ->   0 (max 474) | rest after 1.05 s, 377 cm | 1 supports L1.05 | feet after rest: max travel 3.6 cm, 0 new supports
+REACTION s3 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.033 s
+REACTION s5 [D LeftShift] new key during brake assist -> assist off after 0.033 s
+REACTION s13 [C] new key during brake assist -> assist off after 0.050 s
+REACTION s19 [SpaceBar] new key during brake assist -> assist off after 0.034 s

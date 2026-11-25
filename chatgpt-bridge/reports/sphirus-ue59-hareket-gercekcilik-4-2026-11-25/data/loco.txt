@@ -1,0 +1,159 @@
+p4F_starts | real frame time ms p50 41.6 p95 44.6 max 106.7 | game dt ms p50 16.7 p95 17.1 | frames 1794
+rest->walk start                   s1  [W          ] v   0 -> 180 (max 180) | 90% of change after 0.53 s, 57 cm, 0 supports 
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+walk stop                          s2  [-          ] v 180 ->   0 (max 180) | rest after 0.53 s, 58 cm | 2 supports R0.27 L0.72 | feet after rest: max travel 16.0 cm, 1 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Rfoot@0.03
+tap walk 0.15 s                    s3  [W          ] v   0 ->  56 (max  56) | NOT STOPPED in segment (end 56 cm/s after 0.13 s, 4 cm) | 0 supports 
+      clips: M_Relaxed_Walk_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+walk stop                          s4  [-          ] v  56 ->   0 (max  73) | rest after 0.27 s, 12 cm | 2 supports L0.60 R0.67 | feet after rest: max travel 12.2 cm, 2 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Lfoot@0.03
+tap walk 0.15 s                    s5  [W X        ] v   0 ->  56 (max  56) | NOT STOPPED in segment (end 56 cm/s after 0.13 s, 4 cm) | 0 supports 
+      clips: M_Relaxed_Walk_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+tempo->tempo                       s6  [W          ] v  56 -> 278 (max 278) | 90% of change after 0.37 s, 65 cm, 0 supports 
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  Transition_Walk_to_Run_Rfoot@0.18
+tempo stop                         s7  [-          ] v 278 ->   0 (max 278) | rest after 0.60 s, 109 cm | 2 supports R0.37 L0.92 | feet after rest: max travel 25.7 cm, 1 new supports
+      clips: Transition_Walk_to_Run_Rfoot@0.00  M_Relaxed_Run_Stop_F_Rfoot@0.03
+tap tempo 0.20 s                   s8  [W          ] v   0 ->  78 (max  78) | NOT STOPPED in segment (end 78 cm/s after 0.18 s, 7 cm) | 0 supports 
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+tempo stop                         s9  [-          ] v  78 ->   0 (max 103) | rest after 0.28 s, 17 cm | 3 supports R0.67 L0.70 L1.28 | feet after rest: max travel 11.6 cm, 3 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Lfoot@0.03
+rest->run start                    s12 [W Sh       ] v   0 -> 415 (max 415) | 90% of change after 0.85 s, 182 cm, 1 supports R0.53
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33
+run stop                           s13 [-          ] v 415 ->   0 (max 415) | rest after 0.62 s, 133 cm | 2 supports L0.50 R0.75 | feet after rest: max travel 6.4 cm, 1 new supports
+      clips: Transition_Walk_to_Run_Rfoot@0.00  Transition_Run_to_Walk_Rfoot@0.03  M_Relaxed_Run_Stop_F_Lfoot@0.22
+tap run 0.25 s                     s14 [W Sh       ] v   0 -> 115 (max 115) | NOT STOPPED in segment (end 115 cm/s after 0.23 s, 12 cm) | 1 supports L0.20
+      clips: M_Relaxed_Run_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+run stop                           s15 [-          ] v 115 ->   0 (max 125) | rest after 0.32 s, 24 cm | 2 supports R0.28 L0.52 | feet after rest: max travel 22.8 cm, 1 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Rfoot@0.03
+rest->sprint start                 s16 [W Sh Ct    ] v   0 -> 580 (max 584) | 90% of change after 1.60 s, 519 cm, 1 supports R1.23
+      clips: M_Relaxed_Walk_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33  nsition_Walk_to_Sprint_Rfoot@0.47  M_Relaxed_Sprint_Loop_F@2.87
+sprint stop                        s17 [-          ] v 580 ->   0 (max 582) | rest after 0.88 s, 297 cm | 2 supports R0.73 L1.20 | feet after rest: max travel 25.8 cm, 1 new supports
+      clips: M_Relaxed_Sprint_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.03  Transition_Run_to_Walk_Lfoot@0.35  M_Relaxed_Run_Stop_F_Rfoot@0.58
+tap sprint 0.30 s                  s18 [W Sh Ct    ] v   0 -> 129 (max 129) | NOT STOPPED in segment (end 129 cm/s after 0.29 s, 19 cm) | 0 supports 
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+sprint stop                        s19 [-          ] v 129 ->   0 (max 148) | rest after 0.32 s, 25 cm | 2 supports R0.27 L0.52 | feet after rest: max travel 22.3 cm, 1 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Rfoot@0.03
+REACTION s1 [W] new key during brake assist -> assist off after 0.034 s
+REACTION s3 [W] new key during brake assist -> assist off after 0.034 s
+REACTION s5 [W X] new key during brake assist -> assist off after 0.033 s
+REACTION s8 [W] new key during brake assist -> assist off after 0.033 s
+REACTION s10 [X] new key during brake assist -> assist off after NEVER in segment
+REACTION s12 [W LeftShift] new key during brake assist -> assist off after 0.033 s
+REACTION s14 [W LeftShift] new key during brake assist -> assist off after 0.033 s
+REACTION s16 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.033 s
+REACTION s18 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.033 s
+p4F_repress | real frame time ms p50 41.7 p95 44.5 max 112.5 | game dt ms p50 16.7 p95 17.1 | frames 1500
+rest->sprint start                 s1  [W Sh Ct    ] v   0 -> 584 (max 585) | 90% of change after 1.50 s, 484 cm, 2 supports R0.53 R1.20
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33  nsition_Walk_to_Sprint_Rfoot@0.45  M_Relaxed_Sprint_Loop_F@2.82
+sprint stop                        s2  [-          ] v 584 -> 457 (max 585) | NOT STOPPED in segment (end 457 cm/s after 0.28 s, 159 cm) | 0 supports 
+      clips: M_Relaxed_Sprint_Loop_F@0.00  Transition_Run_to_Walk_Lfoot@0.03
+re-press sprint during stop        s3  [W Sh Ct    ] v 457 -> 577 (max 581) | 90% of change after 0.72 s, 370 cm, 1 supports R0.60
+      clips: Transition_Run_to_Walk_Lfoot@0.00  ansition_Run_to_Sprint_Rfoot@0.03
+sprint stop                        s4  [-          ] v 577 -> 431 (max 579) | NOT STOPPED in segment (end 431 cm/s after 0.33 s, 180 cm) | 1 supports L0.23
+      clips: ansition_Run_to_Sprint_Rfoot@0.00  Transition_Run_to_Walk_Lfoot@0.03
+re-press run during stop           s5  [D Sh       ] v 431 -> 402 (max 422) | 90% of change after 0.05 s, 27 cm, 0 supports 
+      clips: Transition_Run_to_Walk_Lfoot@0.00  Relaxed_Run_Turn_R_090_Rfoot@0.03
+run stop                           s6  [-          ] v 402 -> 150 (max 404) | NOT STOPPED in segment (end 150 cm/s after 0.28 s, 99 cm) | 0 supports 
+      clips: Relaxed_Run_Turn_R_090_Rfoot@0.00  Transition_Run_to_Walk_Rfoot@0.03  M_Relaxed_Run_Stop_F_Rfoot@0.22
+re-press back run during stop      s7  [S Sh       ] v 150 -> 224 (max 225) | 90% of change after 0.38 s, 58 cm, 0 supports 
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  CM_af_Loco_Jog_BwdRight@0.03  CM_af_Loco_Jog_Bwd@0.45
+back run stop                      s8  [-          ] v 224 ->   0 (max 224) | rest after 0.53 s, 69 cm | 3 supports R0.33 L0.67 R1.05 | feet after rest: max travel 29.3 cm, 2 new supports
+      clips: CM_af_Loco_Jog_Bwd@0.00  M_Relaxed_Run_Stop_B_Rfoot@0.03  M_Relaxed_Stand_Idle_Loop@1.35
+rest->run start                    s9  [W Sh       ] v   0 -> 391 (max 393) | 90% of change after 0.83 s, 170 cm, 1 supports R0.53
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33
+run stop                           s10 [-          ] v 391 -> 275 (max 396) | NOT STOPPED in segment (end 275 cm/s after 0.23 s, 89 cm) | 0 supports 
+      clips: Transition_Walk_to_Run_Rfoot@0.00  Transition_Run_to_Walk_Rfoot@0.03  M_Relaxed_Run_Stop_F_Rfoot@0.22
+re-press run during stop           s11 [A Sh       ] v 275 -> 388 (max 388) | 90% of change after 0.67 s, 161 cm, 1 supports R0.50
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  Relaxed_Run_Turn_L_090_Lfoot@0.03
+run stop                           s12 [-          ] v 388 -> 328 (max 395) | NOT STOPPED in segment (end 328 cm/s after 0.18 s, 74 cm) | 0 supports 
+      clips: Relaxed_Run_Turn_L_090_Lfoot@0.00  Transition_Run_to_Walk_Rfoot@0.03
+C key while moving (rest)          s13 [C          ] v 328 -> 150 (max 319) | 90% of change after 0.00 s, 5 cm, 0 supports 
+      clips: Transition_Run_to_Walk_Rfoot@0.00  M_Relaxed_Run_Stop_F_Lfoot@0.02  _Neutral_Crouch_Stop_F_Lfoot@0.03  _Neutral_Crouch_Stop_F_Rfoot@0.12
+rest stop                          s14 [-          ] v 150 ->   0 (max 149) | rest after 1.20 s, 108 cm | 3 supports L0.17 R0.70 L1.00 | feet after rest: max travel 0.6 cm, 0 new supports
+      clips: _Neutral_Crouch_Stop_F_Rfoot@0.00  _Neutral_Crouch_Stop_F_Lfoot@0.70
+rest->sprint start                 s17 [W Sh Ct    ] v   0 -> 538 (max 541) | 90% of change after 1.55 s, 471 cm, 0 supports 
+      clips: d_Transition_Crouch_to_Stand@0.00  al_Walk_Reface_Start_F_R_090@0.03  ral_Run_Reface_Start_F_R_090@0.05  nsition_Walk_to_Sprint_Lfoot@0.47
+sprint stop                        s18 [-          ] v 538 -> 446 (max 546) | NOT STOPPED in segment (end 446 cm/s after 0.28 s, 153 cm) | 0 supports 
+      clips: nsition_Walk_to_Sprint_Lfoot@0.00  Transition_Run_to_Walk_Rfoot@0.03
+SpaceBar key while moving (rest)   s19 [SpaceBar   ] v 446 -> 474 (max 474) | 90% of change after 0.05 s, 29 cm, 0 supports 
+      clips: Transition_Run_to_Walk_Rfoot@0.00  Transition_Run_to_Walk_Lfoot@0.02  ed_Jump_F_Start_Sprint_Rfoot@0.03
+rest stop                          s20 [-          ] v 474 ->   0 (max 474) | rest after 1.05 s, 377 cm | 2 supports L1.05 R1.52 | feet after rest: max travel 3.8 cm, 1 new supports
+      clips: ed_Jump_F_Start_Sprint_Rfoot@0.00  M_Relaxed_Jump_Loop_Fall@0.47  mp_LR_Land_Stand_Light_Rfoot@0.48
+REACTION s1 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.034 s
+REACTION s9 [W LeftShift] new key during brake assist -> assist off after 0.033 s
+REACTION s17 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.034 s
+p4F_accel_60 | real frame time ms p50 41.7 p95 44.4 max 96.7 | game dt ms p50 16.7 p95 17.1 | frames 1572
+rest->walk start                   s1  [W          ] v   0 -> 180 (max 180) | 90% of change after 0.33 s, 27 cm, 0 supports 
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03
+walk stop                          s2  [-          ] v 180 ->   0 (max 180) | rest after 0.50 s, 54 cm | 2 supports R0.25 L0.67 | feet after rest: max travel 17.1 cm, 1 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Rfoot@0.03
+rest->run start                    s3  [W Sh       ] v   0 -> 415 (max 415) | 90% of change after 0.83 s, 177 cm, 1 supports R0.55
+      clips: M_Relaxed_Walk_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33  M_Neutral_Run_Loop_F@2.93
+run stop                           s4  [-          ] v 415 ->   0 (max 415) | rest after 0.77 s, 177 cm | 2 supports L0.60 R0.92 | feet after rest: max travel 29.5 cm, 1 new supports
+      clips: M_Neutral_Run_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.03  M_Relaxed_Run_Stop_F_Lfoot@0.27
+rest->sprint start                 s5  [W Sh Ct    ] v   0 -> 578 (max 583) | 90% of change after 1.60 s, 516 cm, 2 supports L0.95 R1.23
+      clips: M_Relaxed_Run_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33  nsition_Walk_to_Sprint_Rfoot@0.47  M_Relaxed_Sprint_Loop_F@2.87
+sprint stop                        s6  [-          ] v 578 ->   0 (max 580) | rest after 1.07 s, 341 cm | 3 supports L0.90 R1.20 L1.75 | feet after rest: max travel 30.9 cm, 2 new supports
+      clips: M_Relaxed_Sprint_Loop_F@0.00  Transition_Run_to_Walk_Lfoot@0.03  M_Relaxed_Run_Stop_F_Lfoot@0.57
+rest->run start                    s7  [W Sh       ] v   0 -> 398 (max 401) | 90% of change after 0.87 s, 181 cm, 1 supports R0.53
+      clips: M_Relaxed_Run_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.03  Transition_Walk_to_Run_Rfoot@0.33
+run->sprint                        s8  [W Sh Ct    ] v 398 -> 552 (max 559) | 90% of change after 0.80 s, 384 cm, 2 supports L0.35 R0.67
+      clips: Transition_Walk_to_Run_Rfoot@0.00  ansition_Run_to_Sprint_Lfoot@0.03  M_Relaxed_Sprint_Loop_F@2.68
+sprint->run                        s9  [W Sh       ] v 552 -> 385 (max 552) | 90% of change after 0.00 s, 9 cm, 7 supports R0.28 L0.63 R1.02 L1.38 R1.73 L2.08 R2.48
+      clips: M_Relaxed_Sprint_Loop_F@0.00  M_Neutral_Run_Loop_F@0.03
+run stop                           s10 [-          ] v 385 ->   0 (max 392) | rest after 0.75 s, 165 cm | 3 supports L0.27 R0.52 L1.07 | feet after rest: max travel 25.4 cm, 1 new supports
+      clips: M_Neutral_Run_Loop_F@0.00  Transition_Run_to_Walk_Lfoot@0.03  M_Relaxed_Run_Stop_F_Rfoot@0.22
+REACTION s1 [W] new key during brake assist -> assist off after 0.033 s
+REACTION s3 [W LeftShift] new key during brake assist -> assist off after 0.033 s
+REACTION s5 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.033 s
+REACTION s7 [W LeftShift] new key during brake assist -> assist off after 0.033 s
+p4F_accel_30 | real frame time ms p50 41.7 p95 44.5 max 46.8 | game dt ms p50 33.4 p95 34.1 | frames 786
+rest->walk start                   s1  [W          ] v   0 -> 180 (max 180) | 90% of change after 0.37 s, 32 cm, 0 supports 
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.07
+walk stop                          s2  [-          ] v 180 ->   0 (max 180) | rest after 0.37 s, 42 cm | 3 supports R0.27 L0.57 R1.10 | feet after rest: max travel 19.1 cm, 2 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Rfoot@0.07
+rest->run start                    s3  [W Sh       ] v   0 -> 415 (max 415) | 90% of change after 0.87 s, 184 cm, 1 supports R0.57
+      clips: M_Relaxed_Walk_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.07  Transition_Walk_to_Run_Rfoot@0.37
+run stop                           s4  [-          ] v 415 ->   0 (max 415) | rest after 0.87 s, 219 cm | 3 supports L0.73 R1.03 L1.57 | feet after rest: max travel 32.9 cm, 2 new supports
+      clips: M_Neutral_Run_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.07  M_Relaxed_Run_Stop_F_Lfoot@0.33
+rest->sprint start                 s5  [W Sh Ct    ] v   0 -> 578 (max 583) | 90% of change after 1.67 s, 535 cm, 1 supports R0.60
+      clips: M_Relaxed_Run_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.07  Transition_Walk_to_Run_Rfoot@0.40  nsition_Walk_to_Sprint_Lfoot@0.50  M_Relaxed_Sprint_Loop_F@3.27
+sprint stop                        s6  [-          ] v 578 ->   0 (max 583) | rest after 1.13 s, 377 cm | 2 supports R0.93 L1.47 | feet after rest: max travel 28.1 cm, 1 new supports
+      clips: M_Relaxed_Sprint_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.07  M_Relaxed_Run_Stop_F_Rfoot@0.63
+rest->run start                    s7  [W Sh       ] v   0 -> 398 (max 401) | 90% of change after 0.93 s, 196 cm, 2 supports R0.60 L0.97
+      clips: M_Relaxed_Run_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.07  Transition_Walk_to_Run_Rfoot@0.40
+run->sprint                        s8  [W Sh Ct    ] v 398 -> 552 (max 559) | 90% of change after 0.83 s, 407 cm, 2 supports R0.13 L0.43
+      clips: Transition_Walk_to_Run_Rfoot@0.00  ansition_Run_to_Sprint_Lfoot@0.07  M_Relaxed_Sprint_Loop_F@2.77
+sprint->run                        s9  [W Sh       ] v 552 -> 385 (max 552) | 90% of change after 0.00 s, 18 cm, 1 supports L1.43
+      clips: M_Relaxed_Sprint_Loop_F@0.00  M_Neutral_Run_Loop_F@0.07
+run stop                           s10 [-          ] v 385 ->   0 (max 394) | rest after 0.80 s, 198 cm | 2 supports R0.60 L1.13 | feet after rest: max travel 28.1 cm, 1 new supports
+      clips: M_Neutral_Run_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.07  M_Relaxed_Run_Stop_F_Rfoot@0.33
+REACTION s1 [W] new key during brake assist -> assist off after 0.067 s
+REACTION s3 [W LeftShift] new key during brake assist -> assist off after 0.067 s
+REACTION s5 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.066 s
+REACTION s7 [W LeftShift] new key during brake assist -> assist off after 0.066 s
+p4F_accel_var | real frame time ms p50 41.7 p95 44.4 max 100.7 | game dt ms p50 24.1 p95 41.5 | frames 998
+rest->walk start                   s1  [W          ] v   0 -> 180 (max 180) | 90% of change after 0.36 s, 30 cm, 0 supports 
+      clips: M_Relaxed_Stand_Idle_Loop@0.00  M_Neutral_Walk_Start_F_Rfoot@0.07
+walk stop                          s2  [-          ] v 180 ->   0 (max 180) | rest after 0.54 s, 57 cm | 2 supports R0.28 L0.71 | feet after rest: max travel 17.6 cm, 1 new supports
+      clips: M_Neutral_Walk_Start_F_Rfoot@0.00  M_Relaxed_Walk_Stop_F_Rfoot@0.04
+rest->run start                    s3  [W Sh       ] v   0 -> 415 (max 415) | 90% of change after 0.85 s, 183 cm, 1 supports R0.55
+      clips: M_Relaxed_Walk_Stop_F_Rfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.05  Transition_Walk_to_Run_Rfoot@0.36  M_Neutral_Run_Loop_F@2.96
+run stop                           s4  [-          ] v 415 ->   0 (max 415) | rest after 0.83 s, 190 cm | 2 supports L0.66 R0.98 | feet after rest: max travel 30.3 cm, 1 new supports
+      clips: M_Neutral_Run_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.05  M_Relaxed_Run_Stop_F_Lfoot@0.29
+rest->sprint start                 s5  [W Sh Ct    ] v   0 -> 577 (max 583) | 90% of change after 1.60 s, 518 cm, 1 supports L0.96
+      clips: M_Relaxed_Run_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.05  Transition_Walk_to_Run_Rfoot@0.38  nsition_Walk_to_Sprint_Rfoot@0.50  M_Relaxed_Sprint_Loop_F@2.90
+sprint stop                        s6  [-          ] v 577 ->   0 (max 580) | rest after 1.10 s, 364 cm | 2 supports L0.93 R1.23 | feet after rest: max travel 30.5 cm, 1 new supports
+      clips: M_Relaxed_Sprint_Loop_F@0.00  Transition_Run_to_Walk_Lfoot@0.05  M_Neutral_Walk_Loop_F@0.59  M_Relaxed_Run_Stop_F_Lfoot@0.61
+rest->run start                    s7  [W Sh       ] v   0 -> 398 (max 401) | 90% of change after 0.86 s, 177 cm, 1 supports R0.56
+      clips: M_Relaxed_Run_Stop_F_Lfoot@0.00  M_Neutral_Walk_Start_F_Rfoot@0.06  Transition_Walk_to_Run_Rfoot@0.37
+run->sprint                        s8  [W Sh Ct    ] v 398 -> 552 (max 558) | 90% of change after 0.81 s, 390 cm, 1 supports L0.41
+      clips: Transition_Walk_to_Run_Rfoot@0.00  ansition_Run_to_Sprint_Lfoot@0.06  M_Relaxed_Sprint_Loop_F@2.73
+sprint->run                        s9  [W Sh       ] v 552 -> 385 (max 552) | 90% of change after 0.00 s, 21 cm, 4 supports L0.70 R1.08 L1.45 L2.17
+      clips: M_Relaxed_Sprint_Loop_F@0.00  M_Neutral_Run_Loop_F@0.05
+run stop                           s10 [-          ] v 385 ->   0 (max 390) | rest after 0.80 s, 189 cm | 2 supports R0.62 L1.14 | feet after rest: max travel 27.1 cm, 1 new supports
+      clips: M_Neutral_Run_Loop_F@0.00  Transition_Run_to_Walk_Rfoot@0.07  M_Relaxed_Run_Stop_F_Rfoot@0.28
+REACTION s1 [W] new key during brake assist -> assist off after 0.073 s
+REACTION s3 [W LeftShift] new key during brake assist -> assist off after 0.046 s
+REACTION s5 [W LeftShift LeftControl] new key during brake assist -> assist off after 0.051 s
+REACTION s7 [W LeftShift] new key during brake assist -> assist off after 0.064 s

@@ -1,0 +1,26 @@
+method: convex outline of posed shorts + thigh skin per 3 cm slice (one above crotch, one per leg below) | hand/forearm pts 1208, shorts 9195, thigh skin 2736
+#### b4F_arm_accel (1572 frames, every 1-th, frame step 0.0198 s)
+  WORST l hand    inside the shorts/thigh outline by  4.2 cm at t 20.873 (frame 1246) seg s8 [W+Sh+Ct] clip M_Relaxed_Transition_Run_to_Sprint_Lfoot
+  WORST r hand    inside the shorts/thigh outline by  2.4 cm at t 21.123 (frame 1261) seg s8 [W+Sh+Ct] clip M_Relaxed_Transition_Run_to_Sprint_Lfoot
+  RUN l hand    15.335-15.529 s = 0.214 s (13 consecutive frames) max depth 3.0 cm seg s6 [-] M_Relaxed_Run_Stop_F_Lfoot
+  RUN l hand    9.727-9.878 s = 0.170 s (10 consecutive frames) max depth 2.3 cm seg s4 [-] M_Relaxed_Run_Stop_F_Lfoot
+  RUN l hand    20.806-20.922 s = 0.136 s (8 consecutive frames) max depth 4.2 cm seg s8 [W+Sh+Ct] Transition_Run_to_Sprint_Lfoot
+  RUN l hand    22.897-23.010 s = 0.133 s (8 consecutive frames) max depth 1.8 cm seg s9 [W+Sh] M_Neutral_Run_Loop_F
+  RUN r hand    13.078-13.178 s = 0.119 s (7 consecutive frames) max depth 2.4 cm seg s5 [W+Sh+Ct] ransition_Walk_to_Sprint_Rfoot
+  RUN r hand    21.090-21.172 s = 0.102 s (6 consecutive frames) max depth 2.4 cm seg s8 [W+Sh+Ct] Transition_Run_to_Sprint_Lfoot
+  RUN r hand    14.226-14.259 s = 0.052 s (3 consecutive frames) max depth 1.4 cm seg s6 [-] l_Transition_Run_to_Walk_Lfoot
+  RUN r hand    19.904-19.921 s = 0.036 s (2 consecutive frames) max depth 0.9 cm seg s8 [W+Sh+Ct] Transition_Run_to_Sprint_Lfoot
+  TOP FRAMES (for synchronous video check): t 20.873 f1246 l hand 4.2, t 20.890 f1247 l hand 4.0, t 20.907 f1248 l hand 3.2, t 15.430 f921 l hand 3.0, t 20.857 f1245 l hand 3.0, t 15.414 f920 l hand 2.9, t 15.446 f922 l hand 2.9, t 15.462 f923 l hand 2.6
+#### b4F_arm_tempo (1782 frames, every 1-th, frame step 0.0207 s)
+  WORST l hand    inside the shorts/thigh outline by 10.8 cm at t 27.434 (frame 1637) seg s12 [-] clip M_Relaxed_Run_Stop_B_Rfoot
+  WORST r hand    inside the shorts/thigh outline by  5.7 cm at t 18.652 (frame 1114) seg s9 [S] clip CM_af_Loco_Jog_Bwd_Start
+  RUN l hand    27.316-27.566 s = 0.271 s (16 consecutive frames) max depth 10.8 cm seg s12 [-] M_Relaxed_Run_Stop_B_Rfoot
+  RUN l hand    23.629-23.713 s = 0.105 s (6 consecutive frames) max depth 7.3 cm seg s10 [S+Sh] CM_af_Loco_Jog_Bwd
+  RUN l hand    19.202-19.269 s = 0.088 s (5 consecutive frames) max depth 4.2 cm seg s9 [S] CM_af_Loco_Jog_Bwd
+  RUN l hand    20.692-20.758 s = 0.087 s (5 consecutive frames) max depth 5.9 cm seg s9 [S] CM_af_Loco_Jog_Bwd
+  RUN r hand    15.216-15.497 s = 0.302 s (17 consecutive frames) max depth 1.9 cm seg s7 [W] CM_af_Loco_Jog_Fwd
+  RUN r hand    8.339-8.609 s = 0.290 s (17 consecutive frames) max depth 3.2 cm seg s5 [W] CM_af_Loco_Jog_Fwd
+  RUN r hand    9.905-10.022 s = 0.138 s (8 consecutive frames) max depth 1.0 cm seg s5 [W] CM_af_Loco_Jog_Fwd
+  RUN r hand    13.911-14.011 s = 0.121 s (7 consecutive frames) max depth 2.3 cm seg s7 [W] CM_af_Loco_Jog_Fwd
+  TOP FRAMES (for synchronous video check): t 27.434 f1637 l hand 10.8, t 27.451 f1638 l hand 10.2, t 27.415 f1636 l hand 10.1, t 27.397 f1635 l hand 9.8, t 27.381 f1634 l hand 9.4, t 27.470 f1639 l hand 9.3, t 27.485 f1640 l hand 7.9, t 27.365 f1633 l hand 7.8
+ARMSURF5_DONE
