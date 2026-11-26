@@ -1,0 +1,32 @@
+== P6w_a1
+   FrameTime n366 p50 46.8 p95 49.6 p99 84.8 max 305.7
+   GameThreadTime n366 p50 90.1 p95 129.3 p99 256.3 max 416.6
+   RenderThreadTime n366 p50 0.0 p95 0.0 p99 0.0 max 0.0
+   GPUTime n366 p50 3.7 p95 6.7 p99 36.5 max 103.7
+   RHIThreadTime n366 p50 0.2 p95 0.4 p99 1.0 max 1.7
+   avg fps 21.6, frames over 50 ms: 12 of 366
+== P6w_b1
+   FrameTime n612 p50 27.8 p95 30.1 p99 31.1 max 99.5
+   GameThreadTime n612 p50 23.7 p95 27.0 p99 28.4 max 99.8
+   RenderThreadTime n612 p50 0.0 p95 0.0 p99 0.0 max 0.0
+   GPUTime n612 p50 26.4 p95 27.5 p99 27.7 max 28.7
+   RHIThreadTime n612 p50 0.5 p95 0.9 p99 1.2 max 1.6
+   avg fps 36.0, frames over 50 ms: 1 of 612
+== P6w_a2
+   FrameTime n583 p50 28.8 p95 32.2 p99 36.1 max 83.6
+   GameThreadTime n583 p50 25.2 p95 29.1 p99 34.5 max 74.5
+   RenderThreadTime n583 p50 0.0 p95 0.0 p99 0.0 max 0.0
+   GPUTime n583 p50 27.5 p95 29.3 p99 29.9 max 31.0
+   RHIThreadTime n583 p50 0.5 p95 1.0 p99 1.3 max 6.8
+   avg fps 34.4, frames over 50 ms: 2 of 583
+== P6w_b2
+   FrameTime n571 p50 29.7 p95 33.1 p99 36.6 max 39.1
+   GameThreadTime n571 p50 27.4 p95 31.7 p99 34.0 max 39.2
+   RenderThreadTime n571 p50 0.0 p95 0.0 p99 0.0 max 0.0
+   GPUTime n571 p50 27.8 p95 30.0 p99 30.7 max 32.4
+   RHIThreadTime n571 p50 0.5 p95 6.4 p99 7.3 max 8.2
+   avg fps 33.7, frames over 50 ms: 0 of 571
+10201b8b41b7
+PERF6_DONE
+
+[exited with code 0]

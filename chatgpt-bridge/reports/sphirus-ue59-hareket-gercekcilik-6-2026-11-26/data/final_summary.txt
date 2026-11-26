@@ -1,0 +1,82 @@
+== pf_tempo
+  idle        n 164 abd 6.3 elbow 26.9 | clearance p5 3.4 min 2.4  <0: 0%  <1cm: 0%
+  walk        n  34 abd 13.8 elbow 53.3 | clearance p5 5.1 min 4.6  <0: 0%  <1cm: 0%
+  jog         n 423 abd 14.5 elbow 83.9 | clearance p5 6.8 min 1.9  <0: 0%  <1cm: 0%
+  back_walk   n 269 abd 14.8 elbow 66.6 | clearance p5 5.8 min 0.7  <0: 0%  <1cm: 0%
+== pf_back
+  idle        n 157 abd 8.5 elbow 23.2 | clearance p5 4.4 min 3.9  <0: 0%  <1cm: 0%
+  walk        n  22 abd 10.6 elbow 27.5 | clearance p5 8.9 min 7.9  <0: 0%  <1cm: 0%
+  jog         n  63 abd 15.4 elbow 77.5 | clearance p5 11.3 min 8.4  <0: 0%  <1cm: 0%
+  back_walk   n 566 abd 11.9 elbow 50.4 | clearance p5 6.4 min 0.7  <0: 0%  <1cm: 0%
+  back_jog    n   3 abd 20.2 elbow 78.6 | clearance p5 11.2 min 11.2  <0: 0%  <1cm: 0%
+== pf_AD
+  idle        n 109 abd 6.5 elbow 35.5 | clearance p5 2.9 min 1.1  <0: 0%  <1cm: 0%
+  walk        n 171 abd 9.3 elbow 70.0 | clearance p5 5.6 min -4.3  <0: 1%  <1cm: 2%
+  jog         n 266 abd 14.0 elbow 74.4 | clearance p5 10.6 min 1.9  <0: 0%  <1cm: 0%
+== pf_throw max per-frame capsule jump 15.1 cm err []
+   t0.00 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_WALKING z88
+   t1.78 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko1 rcN1 MOVE_WALKING z88
+   t1.85 st1 T0.03 ph0 gnd0 tries0 free0 blk0 prone0 ko1 rcN1 MOVE_NONE: 0 z88
+   t2.58 st1 T0.77 ph1 gnd1 tries0 free0 blk0 prone0 ko1 rcN1 MOVE_NONE: 0 z88
+   t4.15 st2 T0.03 ph1 gnd1 tries0 free1 blk0 prone1 ko1 rcN1 MOVE_WALKING z88
+== pf_table max per-frame capsule jump 45.2 cm err []
+   t0.00 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_WALKING z88
+   t1.78 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko1 rcN1 MOVE_WALKING z88
+   t1.85 st1 T0.03 ph0 gnd0 tries0 free0 blk0 prone0 ko1 rcN1 MOVE_NONE: 0 z88
+   t2.62 st1 T0.80 ph1 gnd1 tries0 free0 blk0 prone0 ko1 rcN1 MOVE_NONE: 0 z88
+   t4.01 st2 T0.03 ph1 gnd1 tries0 free1 blk0 prone1 ko1 rcN1 MOVE_WALKING z88
+== pf_drop max per-frame capsule jump 46.0 cm err []
+   t0.00 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_WALKING z788
+   t2.12 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_FALLING z788
+   t3.22 st0 T0.00 ph0 gnd0 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_WALKING z88
+   t3.25 st1 T0.03 ph0 gnd0 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_NONE: 0 z88
+   t3.38 st1 T0.17 ph1 gnd1 tries0 free0 blk0 prone0 ko0 rcN0 MOVE_NONE: 0 z88
+   t4.42 st2 T0.03 ph1 gnd1 tries0 free1 blk0 prone1 ko0 rcN0 MOVE_WALKING z88
+   t11.18 st0 T6.80 ph1 gnd1 tries0 free1 blk0 prone1 ko0 rcN0 MOVE_WALKING z88
+pf_pole contacts ['t2.55 reg5 vn0'] ledge ['t0.00 s0 MOVE_WALKING'] max vz 0 end (-4868,2041,88)
+pf_throw contacts ['t1.78 reg4 vn878'] ledge ['t0.00 s0 MOVE_WALKING'] max vz 0 end (-6103,1922,88)
+pf_table contacts ['t1.78 reg4 vn878'] ledge ['t0.00 s0 MOVE_WALKING'] max vz 0 end (-6046,1893,88)
+pf_drop contacts [] ledge ['t0.00 s0 MOVE_WALKING'] max vz 0 end (-5297,2009,88)
+pf_cjump contacts [] ledge ['t0.00 s0 MOVE_WALKING'] max vz 0 end (-6000,2000,88)
+pf_lgclimb contacts ['t2.65 reg7 vn458'] ledge ['t0.00 s0 MOVE_WALKING', 't2.78 s1 MOVE_FLYING:', 't3.82 s2 MOVE_FLYING:', 't4.48 s3 MOVE_FLYING:', 't6.55 s0 MOVE_WALKING'] max vz 432 end (-5343,2000,408)
+pf_lgdrop contacts ['t2.65 reg7 vn458'] ledge ['t0.00 s0 MOVE_WALKING', 't2.78 s1 MOVE_FLYING:', 't3.82 s2 MOVE_FLYING:', 't4.79 s0 MOVE_FALLING'] max vz 359 end (-5727,2000,88)
+pf_lgfail contacts ['t2.65 reg4 vn477'] ledge ['t0.00 s0 MOVE_WALKING'] max vz 359 end (-5663,2000,88)
+== pf_longrun
+  t  0 v    0 fat 0.00 lean  1.2 fov 66.0 dist  193 behind  169 side   49 shake 0.00
+  t  1 v    0 fat 0.00 lean  0.6 fov 66.0 dist  193 behind  169 side   48 shake 0.01
+  t  2 v  152 fat 0.00 lean  2.2 fov 66.0 dist  202 behind  180 side   44 shake 0.07
+  t  3 v  180 fat 0.00 lean  1.1 fov 66.0 dist  201 behind  181 side   42 shake 0.05
+  t  4 v  180 fat 0.00 lean  1.9 fov 66.0 dist  201 behind  181 side   43 shake 0.06
+  t  5 v  326 fat 0.00 lean 17.4 fov 66.6 dist  202 behind  183 side   44 shake 0.09
+  t  6 v  415 fat 0.00 lean 14.3 fov 68.0 dist  192 behind  174 side   43 shake 0.12
+  t  7 v  415 fat 0.00 lean 14.3 fov 68.4 dist  191 behind  172 side   43 shake 0.11
+  t  8 v  415 fat 0.00 lean 20.4 fov 68.5 dist  191 behind  172 side   42 shake 0.09
+  t  9 v  517 fat 0.00 lean 27.4 fov 69.4 dist  189 behind  172 side   43 shake 0.09
+  t 10 v  584 fat 0.02 lean 22.3 fov 71.5 dist  184 behind  167 side   45 shake 0.05
+  t 11 v  581 fat 0.05 lean 19.1 fov 72.2 dist  184 behind  166 side   44 shake 0.06
+  t 12 v  578 fat 0.10 lean 20.1 fov 72.3 dist  184 behind  166 side   43 shake 0.05
+  t 13 v  574 fat 0.16 lean 19.8 fov 72.3 dist  185 behind  166 side   44 shake 0.06
+  t 14 v  570 fat 0.22 lean 19.5 fov 72.2 dist  185 behind  166 side   44 shake 0.05
+  t 15 v  565 fat 0.28 lean 20.1 fov 72.1 dist  185 behind  166 side   44 shake 0.05
+  t 16 v  561 fat 0.34 lean 19.6 fov 72.0 dist  185 behind  167 side   44 shake 0.05
+  t 17 v  557 fat 0.40 lean 20.4 fov 71.8 dist  185 behind  167 side   44 shake 0.05
+  t 18 v  553 fat 0.46 lean 19.7 fov 71.7 dist  186 behind  167 side   44 shake 0.06
+  t 19 v  549 fat 0.52 lean 20.4 fov 71.6 dist  185 behind  167 side   43 shake 0.05
+  t 20 v  544 fat 0.58 lean 20.0 fov 71.5 dist  186 behind  167 side   44 shake 0.05
+  t 21 v  540 fat 0.64 lean 19.7 fov 71.4 dist  186 behind  167 side   43 shake 0.05
+  t 22 v  536 fat 0.70 lean 20.3 fov 71.3 dist  186 behind  167 side   44 shake 0.05
+  t 23 v  532 fat 0.76 lean 19.6 fov 71.2 dist  186 behind  167 side   44 shake 0.05
+  t 24 v  527 fat 0.82 lean 20.4 fov 71.1 dist  186 behind  167 side   43 shake 0.05
+  t 25 v  523 fat 0.88 lean 19.9 fov 71.0 dist  186 behind  168 side   44 shake 0.05
+  t 26 v  519 fat 0.94 lean 19.6 fov 70.9 dist  186 behind  168 side   43 shake 0.05
+  t 27 v  515 fat 0.99 lean 20.3 fov 70.8 dist  186 behind  168 side   43 shake 0.05
+  t 28 v  515 fat 1.00 lean 19.7 fov 70.7 dist  187 behind  168 side   44 shake 0.05
+  t 29 v  515 fat 1.00 lean 20.4 fov 70.7 dist  186 behind  168 side   43 shake 0.04
+  t 30 v  515 fat 1.00 lean 20.0 fov 70.7 dist  187 behind  168 side   43 shake 0.05
+  t 31 v  325 fat 1.00 lean 15.1 fov 69.7 dist  185 behind  166 side   43 shake 0.11
+  t 32 v    0 fat 1.00 lean  6.4 fov 67.1 dist  185 behind  163 side   49 shake 0.05
+  t 33 v    0 fat 1.00 lean  1.7 fov 66.3 dist  192 behind  168 side   46 shake 0.01
+  t 34 v    0 fat 1.00 lean  0.7 fov 66.1 dist  192 behind  169 side   45 shake 0.00
+PF_DONE
+
+[exited with code 0]
