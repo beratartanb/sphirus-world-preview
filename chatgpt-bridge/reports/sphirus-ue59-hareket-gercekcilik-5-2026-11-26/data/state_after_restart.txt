@@ -1,0 +1,18 @@
+REOPEN6 vals {'PS_ShL': 6.9, 'PS_ShF': -1.6, 'PS_B3': -5.0, 'TR_PkDecay': 450.0, 'TR_On': 1.0, 'SH_On': 0.0, 'ATH_On': 0.0, 'AW_On': 1.0, 'CS_On': 1.0}
+REOPEN6 outfits ['SKM_Sph_Cargo_B13', 'SKM_Sph_CuffedShorts_B13', 'SKM_Sph_Pants70_B13', 'SKM_Sph_RetroTop_B13', 'SKM_Sph_S8Tank_B13']
+REOPEN6 comps {'Face': 'SKM_MHC_Sph8_FaceMesh', 'GR_Belt': None, 'GR_BeltSk': 'SKM_Sph_Belt2_B13', 'GR_Under': 'SKM_Sph_Underwear', 'Shorts': 'SKM_Sph_Pants70_B13', 'Henley': 'SKM_Sph_RetroTop_B13', 'HairScalp': 'SM_Sph8_ScalpCover', 'GR_PropL': None, 'HairLoose2': ('GR_C49_HairLoose_h1', 'GB_Sph8_HairLooseH1'), 'Eyelashes2': ('GR_GD31_Eyelashes_S_Thin', 'GB_Sph_Lash_81'), 'Eyebrows2': ('GR_GD38_BrowCustom_ds8s', 'GB_Sph_Brow_81'), 'HairMain2': ('GR_C49_HairMain_h1', 'GB_Sph8_HairMainH1'), 'GR_Prop': None, 'CharacterMesh0': 'SKM_UEFN_Mannequin', 'Manny': 'SKM_Sph_B13_BodyMesh'}
+REOPEN6 body verts 30455
+REOPEN6 dirty []
+REOPEN6 impact/fall {'IMP_W0': 0.85, 'IMP_OS': 250.0, 'IMP_FatK': 0.5, 'FL_OS': 1800.0, 'FL_AVS': 180.0, 'FL_FatK': 0.55, 'FL_GndT': 0.8, 'FL_RollW': 260.0, 'FL_ImpMin': 600.0, 'FL_LandV': -1100.0, 'FL_Fade': 0.75}
+REOPEN6 getup root motion True
+lines 1122
+23   (`SceneComponent.K2_AttachToComponent` (`self.HairScalp`) (`self.Face`) "head" "KeepRelative" "KeepRelative" "KeepRelative" true))
+111     (if (and (< (`self.FL_Ph`) 0.5) (> (`self.FL_T`) (`self.FL_GndT`)))
+122         (`PrimitiveComponent.AddAngularImpulseInDegrees` (`self.Mesh`) (* (`KismetMathLibrary.Normal` (- (`SceneComponent.GetSocketLocation` (`self.Mesh`) "
+123         (`PrimitiveComponent.AddAngularImpulseInDegrees` (`self.Mesh`) (* (`KismetMathLibrary.Normal` (- (`SceneComponent.GetSocketLocation` (`self.Mesh`) "
+124         (`PrimitiveComponent.AddAngularImpulseInDegrees` (`self.Mesh`) (* (`KismetMathLibrary.Normal` (- (`SceneComponent.GetSocketLocation` (`self.Mesh`) "
+125         (`PrimitiveComponent.AddAngularImpulseInDegrees` (`self.Mesh`) (* (`KismetMathLibrary.Normal` (- (`SceneComponent.GetSocketLocation` (`self.Mesh`) "
+126         (`PrimitiveComponent.AddAngularImpulseInDegrees` (`self.Mesh`) (* (`KismetMathLibrary.Normal` (- (`SceneComponent.GetSocketLocation` (`self.Mesh`) "
+160     (`PhysicalAnimationComponent.ApplyPhysicalAnimationSettingsBelow` (`self.SphPhysAnim`) (`self.IMP_SimB`) (make `PhysicalAnimationData` false (* (`self.I
+399   (if (< (.z (`self.GetVelocity`)) (`self.FL_LandV`))
+user save sha1 10201b8b41b7
